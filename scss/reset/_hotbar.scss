@@ -1,0 +1,111 @@
+#hotbar {
+	z-index: initial;
+	position: initial;
+	bottom: initial;
+	left: initial;
+	width: initial;
+	height: initial;
+	pointer-events: initial;
+}
+#hotbar .bar-controls {
+	flex: initial;
+	height: initial;
+	margin: initial;
+	text-align: initial;
+	color: initial;
+	background: initial;
+	border: initial;
+	box-shadow: initial;
+	border-radius: initial;
+}
+#hotbar .bar-controls a {
+	display: initial;
+}
+#hotbar .bar-controls a.page-control {
+	font-size: initial;
+	line-height: initial;
+}
+#hotbar .bar-controls span.page-number {
+	display: initial;
+	font-size: initial;
+	line-height: initial;
+}
+#hotbar #action-bar {
+	flex: initial;
+	height: initial;
+	pointer-events: initial;
+}
+#hotbar #action-bar.collapsed {
+	display: initial;
+	pointer-events: initial;
+}
+#hotbar #macro-list {
+	flex: initial;
+	height: initial;
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+	border: initial;
+	border-radius: initial;
+}
+#hotbar .macro {
+	position: initial;
+	flex: initial;
+	height: initial;
+	border: initial;
+	border-radius: initial;
+	background: initial;
+	box-shadow: initial;
+	cursor: initial;
+}
+#hotbar .macro.inactive {
+	box-shadow: initial;
+}
+#hotbar .macro:hover {
+	box-shadow: initial;
+}
+#hotbar .macro.active:hover {
+	border: initial;
+}
+#hotbar .macro .macro-key {
+	position: initial;
+	top: initial;
+	right: initial;
+	padding: initial;
+	background: initial;
+	color: initial;
+	font-weight: initial;
+}
+#hotbar .macro .macro-icon {
+	width: initial;
+	height: initial;
+	object-fit: initial;
+	object-position: initial;
+	border: initial;
+}
+#hotbar .macro .tooltip {
+	display: initial;
+	min-width: initial;
+	height: initial;
+	padding: initial;
+	position: initial;
+	top: initial;
+	left: initial;
+	background: initial;
+	border: initial;
+	border-radius: initial;
+	color: initial;
+	line-height: initial;
+	text-align: initial;
+	white-space: initial;
+	word-break: initial;
+}
+#hotbar #hotbar-directory-controls {
+	pointer-events: initial;
+}
+#hotbar #hotbar-directory-controls a {
+	line-height: initial;
+}
+.players-hidden #hotbar {
+	left: initial;
+}

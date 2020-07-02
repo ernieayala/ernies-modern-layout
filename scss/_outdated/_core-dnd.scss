@@ -1,0 +1,530 @@
+@import "base";
+
+// start vtt wrapper
+html.e-html body.e-body#e-rd {
+
+// dnd5e
+.sheet {
+	&.actor {
+		min-height: to-rem(688px);
+		min-width: to-rem(752px);
+
+		.sheet-header {
+			font-family: "Signika", sans-serif;
+
+			img {
+				@include size(space("portrait"));
+				margin-inline-end: m("sm");
+			}
+
+			input {
+				border: none;
+			}
+
+			.header-details {
+				display: flex;
+				flex: 1 1 auto;
+				flex-wrap: wrap;
+
+				h1 {
+					align-items: center;
+					display: flex;
+					flex: 1 1 auto;
+					font-size: fs("xl");
+
+					input {
+						height: auto;
+						padding: p("base") p("sm");
+					}
+				}
+
+				// dnd5e sheet
+				.header-exp {
+					align-items: center;
+					display: flex;
+					justify-content: flex-end;
+					padding-inline-start: p("md");
+					padding-inline-end: p("sm");
+					text-align: right;
+
+					.charlevel {
+						color: color("charcoal-400");
+						display: flex;
+						font-size: fs("md");
+						letter-spacing: 0.03rem;
+
+						.levels {
+							@include ellipsis(max-width 100%);
+							display: block;
+							margin-inline-start: m("base");
+						}
+					}
+				}
+
+				.summary {
+					@extend %attribute-row;
+					border-block-end: 0;
+					margin-block-start: m("base");
+
+					li {
+						&:first-child {
+							padding-inline-start: 0;
+						}
+
+						&:last-child {
+							flex: 0 0 auto;
+							letter-spacing: 0.03rem;
+							padding: p("base") p("sm");
+						}
+
+						input {
+							font-size: fs("md");
+							height: auto;
+							padding: p("base") p("sm");
+						}
+					}
+				}
+			}
+		}
+
+		.sheet-navigation {
+			font-family: "Signika", sans-serif;
+			margin-block-start: m("sm");
+		}
+
+		.sheet-body {
+			flex: 1 1 auto;
+			overflow: hidden;
+			position: relative;
+
+			//tabs
+			.tab {
+				flex: 1 1 auto;
+				height: 100%;
+			}
+
+			// dumb selector because dumb markup
+			// attributes tab
+			div.attributes {
+				padding-block-start: p("base");
+				position: relative;
+
+				.ability-scores,
+				.skills-list {
+					border: b("gray-200");
+					display: flex;
+					flex: 0 0 auto;
+					flex-direction: column;
+					list-style: none;
+					margin: 0;
+					margin-inline-end: m("base");
+					padding: 0;
+					position: relative;
+				}
+
+				.ability {
+					@include size(auto, 100%);
+					align-items: center;
+					border-block-end: b("gray-200");
+					display: flex;
+					flex: 1 1 auto;
+					flex-direction: column;
+					font-family: "Signika", sans-serif;
+					font-size: fs("md");
+					position: relative;
+
+					&:hover {
+						.ability-modifiers > a {
+							display: flex;
+						}
+					}
+
+					&:last-child {
+						border: none;
+					}
+
+					&:nth-child(even) {
+						background: color("charcoal-500", 0.02);
+					}
+
+					.ability-modifiers {
+						display: flex;
+						flex: 0 0 auto;
+						width: 100%;
+
+						> span,
+						> a {
+							align-items: center;
+							color: color("charcoal-400");
+							display: flex;
+							font-size: fs("md");
+							justify-content: center;
+						}
+
+						> span {
+							background: color("gray-100", 0.2);
+							border-block-start: b("gray-100");
+							border-inline-start: b("gray-200");
+							display: none;
+							flex: 1 1 50%;
+
+							&:first-of-type {
+								border-inline-start: 0;
+								display: flex;
+							}
+						}
+
+						> a {
+							@extend %icon-button;
+							@include absolute(top 50% left space("base"));
+							display: none;
+							margin-block-start: to-rem(-7px);
+						}
+
+						> input[value="1"],
+						> input[value="2"] {
+							+ a + span {
+								display: flex;
+							}
+						}
+					}
+
+					h4 {
+						align-items: center;
+						border-block-end: b("gray-200");
+						color: color("default-text");
+						cursor: pointer;
+						display: flex;
+						flex: 0 0 auto;
+						font-size: fs("md");
+						font-weight: normal;
+						justify-content: center;
+						padding: p("xs") p("base");
+						width: 100%;
+
+						&:hover {
+							@extend %global-hover;
+							background: color("primary");
+							color: color("white");
+						}
+					}
+
+					input {
+						@include size(to-rem(24px));
+						border: 0;
+						flex: 1 1 auto;
+						font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+						font-size: fs("xl");
+						margin: m("xs") 0;
+						padding: p("xs");
+						text-align: center;
+					}
+				}
+
+				.skill {
+					align-items: center;
+					display: flex;
+					flex: 1 1 auto;
+					padding: 0 p("base");
+
+					&:nth-child(even) {
+						background: color("charcoal-500", 0.02);
+					}
+
+					> a {
+						@extend %icon-button;
+					}
+
+					> h4 {
+						align-items: center;
+						color: color("default-text");
+						cursor: pointer;
+						display: flex;
+						flex: 1 1 auto;
+						font-size: fs("md");
+						font-weight: normal;
+						padding: p("xs") p("base");
+
+						&:hover {
+							@extend %global-hover;
+							background: color("primary");
+							color: color("white");
+						}
+					}
+
+					> span {
+						border-inline-start: b("gray-200");
+						color: color("charcoal-400");
+						display: flex;
+						font-size: fs("sm");
+						justify-content: flex-end;
+						padding-inline-end: p("base");
+						width: to-rem(30px);
+
+						&:first-of-type {
+							border-inline-start: 0;
+						}
+					}
+				}
+
+				.center-pane {
+					border: b("gray-200");
+					display: flex;
+					flex-direction: column;
+					overflow-x: 0;
+					overflow-y: auto;
+
+					// the dumb markup/selector
+					ul.attributes {
+						border: 0;
+						border-block-end: b("gray-200");
+
+						li {
+							.attribute-value {
+								font-size: fs("xl");
+								margin-block-end: 0;
+
+								> input {
+									padding: 0 p("base");
+								}
+
+								.recharge {
+									align-items: center;
+									color: color("charcoal-500");
+									cursor: pointer;
+									display: flex;
+									flex: 0 0 auto;
+									flex-direction: column-reverse;
+									font-family: "Signika", sans-serif;
+									font-size: fs("sm");
+									justify-content: center;
+									margin: 0 m("base");
+
+									input[type="checkbox"] {
+										@include size(to-rem(12px));
+									}
+								}
+							}
+						}
+					}
+
+					.counters {
+						align-items: center;
+						border-block-end: b("gray-200");
+						display: flex;
+						width: 100%;
+
+						.counter {
+							align-items: center;
+							border-inline-end: b("gray-200");
+							display: flex;
+							flex: 1 1 100%;
+							flex-direction: column;
+							font-family: "Signika", sans-serif;
+							font-size: fs("md");
+							height: 100%;
+							justify-content: center;
+							padding: p("base");
+
+							&:last-child {
+								border: none;
+								flex: 1 1 100%;
+							}
+
+							&.death-saves {
+								h4 {
+									color: color("default-text");
+									cursor: pointer;
+
+									&:hover {
+										@extend %global-hover;
+										background: color("primary");
+										color: color("white");
+									}
+								}
+
+								.counter-value {
+									input {
+										&:first-of-type {
+											background: color("green-50");
+											margin-inline-end: m("base");
+										}
+
+										&:last-of-type {
+											background: color("red-50");
+										}
+									}
+								}
+							}
+
+							h4 {
+								align-items: center;
+								border-block-end: b("gray-200");
+								color: color("default-text");
+								display: flex;
+								flex: 0 0 auto;
+								font-family: "Signika", sans-serif;
+								font-size: fs("sm");
+								font-weight: 600;
+								justify-content: center;
+								letter-spacing: 0.02rem;
+								padding: p("xs");
+								text-transform: uppercase;
+								width: 100%;
+							}
+
+							.counter-value {
+								align-items: center;
+								display: flex;
+								flex: 0 0 auto;
+								font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+								font-size: fs("xl");
+								margin-block-start: m("base");
+
+								> input[type="text"] {
+									border: 0;
+									flex: 1 1 auto;
+									height: auto;
+									padding: 0 p("base");
+									text-align: center;
+								}
+
+								> i {
+									display: none;
+								}
+							}
+						}
+					}
+
+					.traits {
+						.form-group {
+							padding: p("base");
+
+							label {
+								flex: 1 1 40%;
+							}
+
+							input[type="text"],
+							select {
+								flex: 0 0 60%;
+								height: auto;
+								padding: p("xs");
+							}
+
+							input[type="text"] {
+								padding: p("xs") p("sm");
+							}
+						}
+
+						.traits-list {
+							display: flex;
+							flex-wrap: wrap;
+							margin-block-start: m("xs");
+							width: 100%;
+
+							.tag {
+								flex: 0 0 auto;
+								margin-inline-end: m("xs");
+								margin-block-end: m("xs");
+							}
+						}
+
+						.trait-selector,
+						.configure-flags {
+							@extend %control-button;
+
+							&:hover {
+								i {
+									color: color("white");
+								}
+							}
+
+							i {
+								color: color("default-text");
+							}
+						}
+					}
+				}
+			}
+
+			// inventory tab
+			div.inventory {
+				flex-direction: column;
+				padding-block-start: p("base");
+				position: relative;
+
+				.inventory-filters {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.currency,
+				.filter-list {
+					display: flex;
+				}
+			}
+		}
+
+		// shared - gros
+		ul.attributes {
+			@extend %attribute-row;
+
+			li {
+				background: color("charcoal-500", 0.02);
+			}
+
+			.attribute-value {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+				font-size: fs("xxl");
+				margin: m("base") 0;
+
+				.sep {
+					flex: 0 0 auto;
+					margin: 0 m("base");
+				}
+
+				> span,
+				.hit-dice {
+					font-size: inherit;
+				}
+
+				> input {
+					border: 0;
+					flex: 1 1 auto;
+					height: auto;
+					text-align: center;
+				}
+			}
+
+			.attribute-footer {
+				@include size(100%, to-rem(20px));
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				justify-content: center;
+
+				span,
+				input,
+				a {
+					flex: 1 1 auto;
+					font-family: "Signika", sans-serif;
+					font-size:fs("sm");
+					height: auto;
+					padding: p("base");
+					text-align: center;
+				}
+
+				a {
+					@extend %primary-button;
+					@extend %button-row;
+				}
+			}
+		}
+	}
+}
+
+// end vtt wrapper
+}

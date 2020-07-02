@@ -1,0 +1,12 @@
+#sidebar,
+.sidebar-popout {
+	#playlists li.playlist {
+		.sound-control {
+			&.inactive i.fas,
+			i.fas.fa-square,
+			i.fas.fa-play {
+				color: inherit;
+			}
+		}
+	}
+}

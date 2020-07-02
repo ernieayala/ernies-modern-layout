@@ -1,0 +1,39 @@
+.window-app {
+	.window-header {
+		a.pop__btn-open,
+		a.tit-menu__btn-open--sheet.px-2 {
+			display: flex !important;
+			padding: 0 !important;
+			width: space("button-sm");
+
+			> i,
+			> span.fas {
+				margin-inline-end: 0;
+			}
+		}
+	}
+}
+
+#sidebar,
+.sidebar-popout {
+	.flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 {
+		margin-block-start: m("base");
+		padding: 0;
+
+		hr {
+			display: none;
+		}
+
+		button {
+			flex: 0 0 auto;
+
+			&:first-child {
+				flex: 1 1 auto;
+
+				> span {
+					margin-inline-end: m("base");
+				}
+			}
+		}
+	}
+}

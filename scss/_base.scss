@@ -1,0 +1,487 @@
+@import "../node_modules/teq-tonic/core/_teq-tonic.scss";
+
+@include settings(
+	"animation-time" (
+		"x-slow": 0.8s
+	)
+	"color" (
+		"primary": #E57509,
+		"default-text": #090E10
+	)
+	"font-sizes" (
+		"xxxl": to-rem(28px),
+		"xxl": to-rem(24px),
+		"xl": to-rem(20),
+		"lg": to-rem(16px),
+		"md": to-rem(14px),
+		"sm": to-rem(12px),
+		"xs": to-rem(10px),
+		"xxs": to-rem(8px),
+		"default": to-rem(16px)
+	)
+	"space" (
+		"button": to-rem(32px),
+		"button-sm": to-rem(24px),
+		"icon": to-rem(32px),
+		"image": to-rem(64px),
+		"portrait": to-rem(96px)
+	)
+	"z-index" (
+		"fixed": 10,
+		"popover": 15
+	)
+);
+
+:root {
+	@include css-vars($_palette-default);
+	scrollbar-color: color("charcoal-300") color("black", 0.3);
+	scrollbar-width: thin;
+}
+
+// Form Elements
+
+// Input
+// Select
+// Textarea
+%form-inp-sel-tex-shared {
+	background: transparent;
+	border: b("default-text");
+	border-radius: 0;
+	color: color("default-text");
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	position: relative;
+	transition: t(box-shadow, "link");
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+}
+
+// Input
+// Select
+%form-inp-sel-shared {
+	height: to-rem(32px);
+	padding-inline-start: p("sm");
+	padding-inline-end: p("sm");
+}
+
+// Input
+// Textarea
+%form-inp-tex-shared {
+	user-select: text;
+	width: 100%;
+
+	&::placeholder {
+		color: color("gray-400");
+	}
+}
+
+// Input Range
+%form-inp-range {
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	width: 100%;
+
+	&:hover,
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+
+	&::-webkit-slider-runnable-track {
+		@include size(100px, to-rem(8px));
+		background: color("charcoal-500", 0.8);
+		border: b("charcoal-600");
+		border-radius: 0;
+		cursor: pointer;
+		transition: t(background, "link");
+	}
+
+	&:focus::-webkit-slider-runnable-track {
+		background: color("charcoal-500");
+	}
+
+	&:focus::-ms-fill-lower {
+		background: color("charcoal-500");
+	}
+
+	&:focus::-ms-fill-upper {
+		background: color("charcoal-500");
+	}
+
+	&::-webkit-slider-thumb {
+		@include size(to-rem(16px));
+		background: color("primary");
+		border-radius: 0;
+		border: b("charcoal-800");
+		cursor: pointer;
+		margin-block-start: to-rem(-5px);
+		transition: t(box-shadow, "link");
+		-webkit-appearance: none;
+
+		&:hover {
+			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+		}
+	}
+
+	&::-moz-range-track {
+		@include size(100px, to-rem(8px));
+		background: color("charcoal-500", 0.8);
+		border: b("charcoal-600");
+		border-radius: 0;
+		cursor: pointer;
+		transition: t(background, "link");
+	}
+
+	&::-moz-range-thumb {
+		@include size(to-rem(16px));
+		background: color("primary");
+		border-radius: 0;
+		border: b("charcoal-600");
+		cursor: pointer;
+		margin-block-start: to-rem(-5px);
+		transition: t(box-shadow, "link");
+		-webkit-appearance: none;
+
+		&:hover {
+			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+		}
+	}
+
+	&::-ms-track {
+		@include size(100px, to-rem(8px));
+		background: color("charcoal-500", 0.8);
+		border: b("charcoal-600");
+		border-radius: 0;
+		cursor: pointer;
+		transition: t(background, "link");
+	}
+
+	&::-ms-fill-lower {
+		@include size(100px, to-rem(8px));
+		background: color("charcoal-500", 0.8);
+		border: b("charcoal-600");
+		border-radius: 0;
+		cursor: pointer;
+		transition: t(background, "link");
+	}
+
+	&::-ms-fill-upper {
+		@include size(100px, to-rem(8px));
+		background: color("charcoal-500", 0.8);
+		border: b("charcoal-800");
+		border-radius: 0;
+		cursor: pointer;
+		transition: t(background, "link");
+	}
+
+	&::-ms-thumb {
+		@include size(to-rem(16px));
+		background: color("primary");
+		border-radius: 0;
+		border: b("charcoal-600");
+		cursor: pointer;
+		margin-block-start: to-rem(-5px);
+		transition: t(box-shadow, "link");
+		-webkit-appearance: none;
+
+		&:hover {
+			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+		}
+	}
+
+	+ .range-value {
+		align-items: center;
+		color: color("default-text");
+		display: flex;
+		font-size: fs("md");
+		margin-inline-start: m("sm");
+	}
+}
+
+// Select
+%form-sel {
+	cursor: pointer;
+	text-overflow: ellipsis;
+
+	optgroup {
+		background: color("white");
+		color: color("default-text");
+	}
+}
+
+// Textarea
+%form-tex {
+	min-height: to-rem(64px);
+	padding: p("sm");
+}
+
+// Checkbox
+%form-checkbox {
+	@include size(to-rem(20px));
+	cursor: pointer;
+}
+
+// Text
+%h-tag {
+	color: color("primary");
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+}
+
+%h1 {
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	column-span: all;
+	font-size: fs("xxxl");
+}
+
+%h2 {
+	font-size: fs("xxl");
+}
+
+%h3 {
+	font-size: fs("xl");
+}
+
+%h4 {
+	font-size: fs("lg");
+}
+
+%h5 {
+	font-size: fs("md");
+	text-transform: uppercase;
+}
+
+// States
+%global-hover {
+	box-shadow:
+		// inset 0 0 0 2px color("primary"),
+		inset 0 0 0 2px color("white");
+	text-shadow: none;
+}
+
+%global-hover-alt {
+	box-shadow:
+		inset 0 0 0 2px color("primary");
+	text-shadow: none;
+}
+
+%global-focus {
+	box-shadow:
+		inset 0 0 0 2px color("primary"),
+		inset 0 0 0 3px color("white"), 0 1px 2px 0 color("black", 0.3);
+	text-shadow: none;
+	outline: none;
+}
+
+%global-active {
+	background: color("primary");
+	color: color("white");
+	text-shadow: none;
+
+	&:hover {
+		background: color("primary");
+		color: color("white");
+		text-shadow: none;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+}
+
+// Components
+%default-button {
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	color: color("white");
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "Signika", sans-serif;
+	font-size: fs("lg");
+	justify-content: center;
+	line-height: 1;
+	margin: 0;
+	padding: p("sm");
+	position: relative;
+	transition: t(background box-shadow, "link");
+
+	&:hover {
+		@extend %global-hover;
+		background: color("primary");
+		color: color("white");
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&.active {
+		@extend %global-active;
+	}
+}
+
+%primary-button {
+	@extend %default-button;
+	background: color("charcoal-400");
+}
+
+%secondary-button {
+	@extend %default-button;
+}
+
+%control-button {
+	@extend %default-button;
+	@include size(space("button-sm"));
+	flex: 0 0 auto;
+	font-size: fs("sm");
+	margin-inline-start: m("xs");
+	padding: 0;
+}
+
+%icon-button {
+	align-items: center;
+	color: color("default-text");
+	cursor: pointer;
+	display: flex;
+	flex: 0 0 auto;
+	font-size: fs("md");
+	justify-content: center;
+	line-height: 1;
+	overflow: hidden;
+	padding: p("xs");
+
+	&:hover {
+		color: color("primary");
+	}
+}
+
+%modal-tabs {
+	border-block-end: b("orange-700", 2px);
+	display: flex;
+	position: relative;
+
+	a {
+		@extend %primary-button;
+		background: transparent;
+		color: color("default-text");
+		flex: 1 1 auto;
+		font-size: fs("md");
+
+		> i {
+			margin-inline-end: m("sm");
+		}
+	}
+}
+
+// Until
+%button-row {
+	flex: 1 1 auto;
+	margin-inline-start: m("base");
+	width: 100%;
+
+	&:first-of-type {
+		margin-inline-start: 0;
+	}
+}
+
+%image-reset {
+	object-fit: cover;
+	object-position: 50% 50%;
+	position: relative;
+}
+
+%reset-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// Directory
+%directory-list {
+	flex: 1 1 auto;
+	list-style: none;
+	margin: 0;
+	min-height: to-rem(1px);
+	overflow-y: auto;
+	padding: 0;
+}
+
+// Panel Header
+%panel-header {
+	align-items: center;
+	background: color("charcoal-500", 0.5);
+	color: color("white");
+	display: flex;
+	flex: 0 0 auto;
+	padding: p("sm");
+	position: relative;
+
+	&:empty {
+		display: none;
+	}
+}
+
+// Attribute Rows 5e
+%attribute-row {
+	align-items: center;
+	border: b("gray-200");
+	display: flex;
+	list-style: none;
+	width: 100%;
+
+	li {
+		align-items: center;
+		border-inline-end: b("gray-200");
+		display: flex;
+		flex: 1 1 100%;
+		flex-direction: column;
+		font-family: "Signika", sans-serif;
+		font-size: fs("md");
+		height: 100%;
+		justify-content: center;
+		padding: p("base");
+
+		&:last-child {
+			border: none;
+			flex: 1 1 100%;
+		}
+
+		h4 {
+			align-items: center;
+			border-block-end: b("gray-200");
+			color: color("default-text");
+			display: flex;
+			flex: 0 0 auto;
+			font-family: "Signika", sans-serif;
+			font-size: fs("sm");
+			font-weight: 600;
+			justify-content: center;
+			letter-spacing: 0.02rem;
+			text-transform: uppercase;
+			width: 100%;
+
+			input {
+				border: 0;
+				font-family: "Signika", sans-serif;
+				font-size: fs("sm");
+				font-weight: 600;
+				height: auto;
+				letter-spacing: 0.02rem;
+				padding: p("base") p("sm");
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

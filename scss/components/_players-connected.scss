@@ -1,0 +1,91 @@
+#players {
+	@include fixed(bottom space("sm") left space("sm"));
+	background: color("charcoal-500", 0.8);
+	border: b("charcoal-600");
+	border-radius: 0;
+	box-shadow: none;
+	width: to-rem(200px);
+	z-index: z("fixed");
+
+	&.hidden {
+		display: none;
+	}
+
+	h3 {
+		border-block-end: b("charcoal-600");
+		color: color("white");
+		cursor: pointer;
+		display: flex;
+		font-size: fs("md");
+		font-weight: normal;
+		letter-spacing: to-rem(1.2px);
+		margin: 0;
+		padding: p("sm");
+		position: relative;
+		text-transform: uppercase;
+		transition: t(color, "link");
+
+		&:hover,
+		&:active {
+			color: color("primary");
+		}
+
+		.players-mode {
+			color: inherit;
+			flex: 1 1 auto;
+			font-size: fs("lg");
+			text-align: right;
+			position: relative;
+		}
+
+		i {
+			position: relative;
+
+			&:first-of-type {
+				margin-inline-end: m("sm");
+			}
+
+			&:last-of-type {
+				margin-inline-start: m("sm");
+			}
+		}
+	}
+
+	ol {
+		list-style: none;
+		padding: p("sm");
+		position: relative;
+
+		.player {
+			align-items: center;
+			display: flex;
+			flex-wrap: nowrap;
+			padding: p(xs) 0;
+			position: relative;
+			width: 100%;
+		}
+
+		.player-name {
+			@include ellipsis;
+			color: color("white");
+			flex: 1 1 auto;
+			position: relative;
+
+			&.self {
+				color: color("white");
+			}
+		}
+
+		.player-active {
+			@include size(to-rem(8px));
+			border-radius: 50%;
+			flex: 0 0 auto;
+			margin-inline-end: m("sm");
+			position: relative;
+
+			&.active {
+				box-shadow: 0 1px 2px 0 color("black", 0.3);
+			}
+		}
+	}
+}

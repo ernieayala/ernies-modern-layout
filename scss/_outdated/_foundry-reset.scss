@@ -1,0 +1,3793 @@
+#sidebar {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  position: initial;
+  right: initial;
+  top: initial;
+  width: initial;
+  height: initial;
+  overflow: initial;
+  margin: initial;
+  padding: initial;
+}
+#sidebar > * {
+  flex: initial;
+}
+#sidebar > .flex0 {
+  display: initial;
+  flex: initial;
+}
+#sidebar > .flex1 {
+  flex: initial;
+}
+#sidebar > .flex2 {
+  flex: initial;
+}
+#sidebar > .flex3 {
+  flex: initial;
+}
+// ----------------------------------------
+//  Text
+// ----------------------------------------
+// Headers
+h1,
+h2,
+h3,
+h4 {
+  margin: initial;
+  padding: initial;
+  font-weight: initial;
+}
+h1 {
+  font-size: initial;
+  border-bottom: initial;
+}
+h2 {
+  font-size: initial;
+  border-bottom: initial;
+}
+h3 {
+  font-size: initial;
+}
+// Links
+a {
+  cursor: initial;
+}
+a[href] {
+  color: initial;
+}
+a:hover {
+  text-shadow: initial;
+}
+a.entity-link,
+a.inline-roll {
+  background: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;
+  white-space: initial;
+  word-break: initial;
+}
+a.entity-link i,
+a.inline-roll i {
+  color: initial;
+}
+a.entity-link.broken {
+  background: initial;
+  border: initial;
+}
+a.inline-roll.gmroll {
+  background: initial;
+  border-color: initial;
+}
+a.inline-roll.blindroll {
+  background: initial;
+  border-color: initial;
+}
+// Paragraph
+p {
+  margin: initial;
+}
+::selection {
+  background: initial;
+}
+// Lists
+ul,
+ol {
+  margin: initial;
+  padding: initial;
+}
+// HR separators
+hr {
+  border: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+// Blockquote
+blockquote {
+  margin: initial;
+  padding: initial;
+  border-left: initial;
+  font-style: initial;
+}
+blockquote em {
+  font-style: initial;
+}
+// Secret Sections
+section.secret {
+  padding: initial;
+  background: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+// ----------------------------------------
+// Tables
+// ----------------------------------------
+table {
+  width: initial;
+  border-collapse: initial;
+  background: initial;
+  border: initial;
+  margin: initial;
+}
+table thead {
+  background: initial;
+  color: initial;
+  text-shadow: initial;
+  border-bottom: initial;
+}
+table thead th {
+  padding: initial;
+}
+// -----------------------------------------
+// Scrollbar
+// -----------------------------------------
+::-webkit-scrollbar {
+  width: initial;
+}
+::-webkit-scrollbar-track {
+  box-shadow: initial;
+  border-radius: initial;
+}
+::-webkit-scrollbar-thumb {
+  outline: initial;
+  border-radius: initial;
+  background: initial;
+  border: initial;
+}
+:root {
+  scrollbar-width: initial;
+  scrollbar-color: initial;
+}
+// -----------------------------------------
+// Images
+// -----------------------------------------
+img {
+  box-sizing: initial;
+  border: initial;
+  border-radius: initial;
+  max-width: initial;
+}
+img.noborder {
+  border: initial;
+  box-shadow: initial;
+  outline: initial;
+}
+//
+// Basic Application Wrapper
+//
+.app {
+  max-height: initial;
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  margin: initial;
+  padding: initial;
+  color: initial;
+  z-index: initial;
+}
+//
+// Pop-Out Window Application
+//
+.window-app {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  position: initial;
+  box-shadow: initial;
+  padding: initial;
+  z-index: initial;
+  // Resizable movement handle
+}
+.window-app > * {
+  flex: initial;
+}
+.window-app > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.window-app > .flex1 {
+  flex: initial;
+}
+.window-app > .flex2 {
+  flex: initial;
+}
+.window-app > .flex3 {
+  flex: initial;
+}
+.window-app .window-header {
+  flex: initial;
+  overflow: initial;
+  padding: initial;
+  line-height: initial;
+  border-bottom: initial;
+}
+.window-app .window-header .window-title {
+  margin: initial;
+  word-break: initial;
+}
+.window-app .window-header a {
+  flex: initial;
+  margin: initial;
+}
+.window-app .window-header i.fas {
+  margin-right: initial;
+}
+.window-app.minimized .window-header {
+  border: initial;
+}
+.window-app .window-content {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  background: initial;
+  padding: initial;
+  color: initial;
+  overflow-y: initial;
+  overflow-x: initial;
+}
+.window-app .window-content > * {
+  flex: initial;
+}
+.window-app .window-content > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.window-app .window-content > .flex1 {
+  flex: initial;
+}
+.window-app .window-content > .flex2 {
+  flex: initial;
+}
+.window-app .window-content > .flex3 {
+  flex: initial;
+}
+.window-app.zhover {
+  z-index: initial;
+}
+.window-app .window-resizable-handle {
+  width: initial;
+  height: initial;
+  position: initial;
+  bottom: initial;
+  right: initial;
+  background: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;
+}
+.window-app .window-resizable-handle i.fas {
+  transform: initial;
+}
+.window-app.minimized .window-resizable-handle {
+  display: initial;
+}
+// -----------------------------------------
+//  Context Dropdown Menu
+// -----------------------------------------
+#context-menu {
+  width: initial;
+  min-width: initial;
+  max-width: initial;
+  position: initial;
+  left: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  color: initial;
+  z-index: initial;
+}
+#context-menu.expand-down {
+  top: initial;
+}
+#context-menu.expand-up {
+  bottom: initial;
+}
+#context-menu ol.context-items {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#context-menu li.context-item {
+  padding: initial;
+  line-height: initial;
+}
+#context-menu li.context-item:hover {
+  color: initial;
+  text-shadow: initial;
+}
+#context-menu li.context-item > i {
+  margin-right: initial;
+}
+.window-app #context-menu {
+  z-index: initial;
+}
+// -----------------------------------------
+//  Player Config UI
+// -----------------------------------------
+#player-config label {
+  font-size: initial;
+  font-weight: initial;
+  color: initial;
+}
+#player-config .avatar {
+  flex: initial;
+  margin-bottom: initial;
+}
+#player-config .directory-list {
+  max-height: initial;
+  overflow-y: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#player-config .directory-item {
+  border-top: initial;
+  border-bottom: initial;
+}
+#player-config .directory-item.context {
+  border-top: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#player-config .directory-item .entity-name {
+  font-size: initial;
+  line-height: initial;
+  margin: initial;
+}
+#player-config .directory-item img.profile {
+  flex: initial;
+  height: initial;
+  border: initial;
+}
+#player-config button[type="submit"] {
+  margin-top: initial;
+}
+// -----------------------------------------
+//  Connected Players UI
+// -----------------------------------------
+#players {
+  position: initial;
+  bottom: initial;
+  left: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  border: initial;
+}
+#players.hidden {
+  display: initial;
+}
+#players h3 {
+  margin: initial;
+  padding: initial;
+  border-bottom: initial;
+}
+#players h3 i {
+  margin: initial;
+}
+#players h3 .players-mode {
+  font-size: initial;
+  margin: initial;
+  color: initial;
+}
+#players ol {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#players ol li.player {
+  line-height: initial;
+  padding: initial;
+}
+#players ol .player-name {
+  overflow: initial;
+  white-space: initial;
+  word-break: initial;
+}
+#players ol .player.context {
+  margin: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+#players ol .player.context .player-name {
+  text-shadow: initial;
+}
+#players ol .player-name.self {
+  color: initial;
+}
+#players ol .player-active {
+  flex: initial;
+  height: initial;
+  border: initial;
+  border-radius: initial;
+  margin: initial;
+}
+#players ol .player-active.active {
+  box-shadow: initial;
+}
+// ----------------------------------------
+// Notifications
+// ----------------------------------------
+#notifications {
+  position: initial;
+  width: initial;
+  top: initial;
+  left: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  z-index: initial;
+}
+.notification {
+  background: initial;
+  padding: initial;
+  margin-bottom: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  color: initial;
+}
+.notification::before {
+  font-family: initial;
+  font-weight: initial;
+  margin-right: initial;
+}
+.notification.info {
+  background: initial;
+  border: initial;
+}
+.notification.info::before {
+  content: initial;
+}
+.notification.warning {
+  background: initial;
+  border: initial;
+}
+.notification.warning::before {
+  content: initial;
+}
+.notification.error {
+  background: initial;
+  border: initial;
+}
+.notification.error::before {
+  content: initial;
+}
+// ----------------------------------------
+// Controls Reference
+// ----------------------------------------
+#controls-reference .window-content {
+  max-height: initial;
+}
+#controls-reference h2 {
+  padding: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+#controls-reference h3 {
+  padding: initial;
+  border-top: initial;
+  border-bottom: initial;
+  font-weight: initial;
+}
+#controls-reference ol.hotkey-list {
+  list-style: initial;
+  padding: initial;
+}
+#controls-reference ol.hotkey-list > li {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  margin: initial;
+}
+#controls-reference ol.hotkey-list > li > * {
+  flex: initial;
+}
+#controls-reference ol.hotkey-list > li > .flex0 {
+  display: initial;
+  flex: initial;
+}
+#controls-reference ol.hotkey-list > li > .flex1 {
+  flex: initial;
+}
+#controls-reference ol.hotkey-list > li > .flex2 {
+  flex: initial;
+}
+#controls-reference ol.hotkey-list > li > .flex3 {
+  flex: initial;
+}
+#controls-reference ol.hotkey-list h4 {
+  margin: initial;
+  flex: initial;
+  line-height: initial;
+}
+#controls-reference ol.hotkey-list .keys {
+  flex: initial;
+}
+#controls-reference ol.hotkey-list .key {
+  display: initial;
+  margin: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  text-align: initial;
+  min-width: initial;
+}
+#controls-reference ol.hotkey-list li.gm .key {
+  background: initial;
+}
+// ----------------------------------------
+//  Forms
+// ----------------------------------------
+form .form-group,
+form .form-group-stacked {
+  clear: initial;
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  margin: initial;
+}
+form .form-group > * {
+  flex: initial;
+}
+form .form-group > label {
+  flex: initial;
+}
+form .form-group label {
+  line-height: initial;
+}
+form .form-group .form-fields {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+}
+form .form-group .form-fields > * {
+  flex: initial;
+  margin: initial;
+}
+form .form-group .form-fields > *:last-child {
+  margin-right: initial;
+}
+form .form-group .form-fields > label {
+  flex: initial;
+  padding: initial;
+  text-align: initial;
+}
+form .form-group .form-fields > input[type="checkbox"] {
+  flex: initial;
+}
+form .form-group .form-fields button {
+  flex: initial;
+  margin: initial;
+  line-height: initial;
+}
+form .form-group span.units {
+  flex: initial;
+  line-height: initial;
+  font-size: initial;
+  color: initial;
+}
+form .form-group-stacked > *,
+form .form-group.stacked > * {
+  flex: initial;
+}
+form .form-group.hidden {
+  display: initial;
+}
+form .form-header {
+  margin: initial;
+  color: initial;
+}
+form .notes,
+form .hint {
+  flex: initial;
+  font-size: initial;
+  line-height: initial;
+  color: initial;
+  margin: initial;
+}
+// ----------------------------------------
+// Form Inputs
+// ----------------------------------------
+input:focus {
+  outline: initial;
+}
+// Text Input
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"] {
+  width: initial;
+  min-width: initial;
+  height: initial;
+  background: initial;
+  padding: initial;
+  margin: initial;
+  color: initial;
+  font-family: initial;
+  font-size: initial;
+  text-align: initial;
+  line-height: initial;
+  border: initial;
+  border-radius: initial;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime-local"]:focus {
+  box-shadow: initial;
+}
+// Checkboxes
+input[type="checkbox"] {
+  flex: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+}
+// Select Boxes
+select {
+  height: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  padding: initial;
+  text-overflow: initial;
+}
+select:focus {
+  box-shadow: initial;
+  outline: initial;
+}
+// Text Areas
+textarea {
+  width: initial;
+  min-height: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+textarea:focus {
+  outline: initial;
+  box-shadow: initial;
+}
+// Buttons
+button {
+  width: initial;
+  margin: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  font-size: initial;
+  line-height: initial;
+  font-family: initial;
+}
+button:hover {
+  box-shadow: initial;
+}
+button:focus {
+  outline: initial;
+}
+button:disabled {
+  color: initial;
+  box-shadow: initial;
+}
+button > i {
+  margin-right: initial;
+}
+form button {
+  background: initial;
+  border: initial;
+}
+input:disabled {
+  border: initial;
+  color: initial;
+}
+input:disabled:hover {
+  border: initial;
+  box-shadow: initial;
+  outline: initial;
+}
+input::placeholder {
+  color: initial;
+  opacity: initial;
+}
+// Color Picker
+input[type="text"].color {
+  flex: initial;
+}
+input[type="color"][data-edit] {
+  height: initial;
+  background: initial;
+  border: initial;
+}
+input[type="color"][data-edit][data-edit] {
+  margin-left: initial;
+  flex: initial;
+}
+// File Pickers
+button.file-picker {
+  flex: initial;
+  line-height: initial;
+  margin: initial;
+  order: initial;
+}
+button.file-picker + input[type="text"] {
+  height: initial;
+  margin-right: initial;
+}
+// Range Input
+input[type=range] {
+  background: initial;
+  -webkit-appearance: initial;
+  width: initial;
+  margin: initial;
+}
+input[type=range]:focus {
+  outline: initial;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: initial;
+  height: initial;
+  cursor: initial;
+  box-shadow: initial;
+  background: initial;
+  border-radius: initial;
+  border: initial;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: initial;
+  border: initial;
+  height: initial;
+  width: initial;
+  border-radius: initial;
+  background: initial;
+  cursor: initial;
+  -webkit-appearance: initial;
+  margin-top: initial;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: initial;
+}
+input[type=range]::-moz-range-track {
+  width: initial;
+  height: initial;
+  cursor: initial;
+  box-shadow: initial;
+  background: initial;
+  border-radius: initial;
+  border: initial;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: initial;
+  border: initial;
+  height: initial;
+  width: initial;
+  border-radius: initial;
+  background: initial;
+  cursor: initial;
+}
+input[type=range]::-ms-track {
+  width: initial;
+  height: initial;
+  cursor: initial;
+  background: initial;
+  border-color: initial;
+  color: initial;
+}
+input[type=range]::-ms-fill-lower {
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+input[type=range]::-ms-fill-upper {
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: initial;
+  border: initial;
+  height: initial;
+  width: initial;
+  border-radius: initial;
+  background: initial;
+  cursor: initial;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: initial;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: initial;
+}
+input[type="range"] + .range-value {
+  display: initial;
+  flex: initial;
+  text-align: initial;
+  border: initial;
+  padding: initial;
+  margin-left: initial;
+}
+//
+// Dark mode inputs
+//
+.dark button {
+  background: initial;
+  border: initial;
+}
+.dark input,
+.dark select {
+  background: initial;
+}
+// -----------------------------------------
+// TinyMCE Editor
+// -----------------------------------------
+.editor {
+  position: initial;
+  max-height: initial;
+}
+.editor-content * {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+.editor-edit {
+  display: initial;
+  font-size: initial;
+  position: initial;
+  top: initial;
+  right: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  padding: initial;
+  box-shadow: initial;
+}
+.editor:hover .editor-edit {
+  display: initial;
+}
+// Oxide Theme Overrides
+.tox.tox-tinymce {
+  border: initial;
+}
+.tox.tox-tinymce .tox-toolbar {
+  background: initial;
+}
+.tox.tox-tinymce .tox-tbtn {
+  font-size: initial;
+  padding: initial;
+}
+.tox.tox-tinymce .tox-tbtn[title="Formats"] {
+  width: initial;
+}
+.tox.tox-tinymce .tox-edit-area__iframe {
+  background: initial;
+}
+// Flexbox
+// .flexrow {
+//   display: initial;
+//   flex-direction: initial;
+//   flex-wrap: initial;
+//   justify-content: initial;
+// }
+// .flexcol {
+//   display: initial;
+//   flex-direction: initial;
+//   flex-wrap: initial;
+// }
+// .flexrow > *,
+// .flexcol > * {
+//   flex: initial;
+// }
+// .flexrow > .flex0,
+// .flexcol > .flex0 {
+//   display: initial;
+//   flex: initial;
+// }
+// .flexrow > .flex1,
+// .flexcol > .flex1 {
+//   flex: initial;
+// }
+// .flexrow > .flex2,
+// .flexcol > .flex2 {
+//   flex: initial;
+// }
+// .flexrow > .flex3,
+// .flexcol > .flex3 {
+//   flex: initial;
+// }
+// -----------------------------------------
+// Tabbed Containers
+// -----------------------------------------
+.tabs {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+}
+.tabs > * {
+  flex: initial;
+}
+.tabs > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.tabs > .flex1 {
+  flex: initial;
+}
+.tabs > .flex2 {
+  flex: initial;
+}
+.tabs > .flex3 {
+  flex: initial;
+}
+.tabs .item {
+  text-align: initial;
+}
+.tabs .item.active {
+  text-shadow: initial;
+}
+.tab[data-tab] {
+  display: initial;
+}
+.tab[data-tab].active {
+  display: initial;
+}
+.tab[data-tab].active.flexrow,
+.tab[data-tab].active.flexcol {
+  display: initial;
+}
+// Draggable Containers
+.draggable {
+  cursor: initial;
+}
+#drag-preview {
+  position: initial;
+  left: initial;
+  height: initial;
+  z-index: initial;
+}
+// -----------------------------------------
+// Dialog Window
+// -----------------------------------------
+.dialog .dialog-buttons {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  justify-content: initial;
+}
+.dialog .dialog-buttons > * {
+  flex: initial;
+}
+.dialog .dialog-buttons > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.dialog .dialog-buttons > .flex1 {
+  flex: initial;
+}
+.dialog .dialog-buttons > .flex2 {
+  flex: initial;
+}
+.dialog .dialog-buttons > .flex3 {
+  flex: initial;
+}
+.dialog .dialog-buttons button {
+  background: initial;
+  border: initial;
+  margin: initial;
+}
+.dialog .dialog-buttons button:last-child {
+  margin-right: initial;
+}
+// -----------------------------------------
+// File Picker
+// -----------------------------------------
+.filepicker {
+  line-height: initial;
+  // Private Directory
+}
+.filepicker .current-dir button {
+  flex: initial;
+  margin: initial;
+  line-height: initial;
+  text-align: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+}
+.filepicker .current-dir button > i {
+  margin: initial;
+}
+.filepicker .current-dir button:last-child {
+  margin-right: initial;
+}
+.filepicker .current-dir input[name="target"] {
+  height: initial;
+  margin: initial;
+}
+.filepicker .filter-dir label {
+  flex: initial;
+  line-height: initial;
+}
+.filepicker .filter-dir input {
+  flex: initial;
+}
+.filepicker .tile-size .form-fields {
+  flex: initial;
+}
+.filepicker .directory {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  max-height: initial;
+  overflow: initial;
+  scrollbar-width: initial;
+}
+.filepicker .directory > li {
+  height: initial;
+  line-height: initial;
+  cursor: initial;
+  padding-left: initial;
+  word-break: initial;
+  overflow: initial;
+  border-bottom: initial;
+}
+.filepicker .directory > li > i {
+  margin-right: initial;
+}
+.filepicker .directory > li.picked {
+  background: initial;
+  font-weight: initial;
+}
+.filepicker .directory > li:last-child {
+  border-bottom: initial;
+}
+.filepicker .directory > li:hover {
+  text-shadow: initial;
+}
+.filepicker .directory > li.dir {
+  font-weight: initial;
+}
+.filepicker .private button.privacy {
+  background: initial;
+  box-shadow: initial;
+}
+.filepicker .private .directory,
+.filepicker .public .private.dir {
+  background: initial;
+}
+.filepicker .thumbs-list li {
+  height: initial;
+  line-height: initial;
+}
+.filepicker .thumbs-list img {
+  flex: initial;
+  object-fit: initial;
+  object-position: initial;
+  margin-right: initial;
+  border: initial;
+}
+.filepicker .tiles-list {
+  display: initial;
+  grid-template-columns: initial;
+  width: initial;
+}
+.filepicker .tiles-list li {
+  width: initial;
+  height: initial;
+  padding: initial;
+  border: initial;
+  border-right: initial;
+  border-bottom: initial;
+}
+.filepicker .tiles-list li img {
+  border: initial;
+  margin: initial;
+  object-fit: initial;
+}
+.filepicker .tiles-list li.picked {
+  box-shadow: initial;
+}
+.filepicker .images-list li {
+  position: initial;
+  height: initial;
+  padding: initial;
+  border: initial;
+}
+.filepicker .images-list li img {
+  width: initial;
+  height: initial;
+  object-fit: initial;
+  object-position: initial;
+  border: initial;
+}
+.filepicker .images-list li span.filename {
+  position: initial;
+  top: initial;
+  width: initial;
+  left: initial;
+  background: initial;
+  border: initial;
+  border-top: initial;
+  border-radius: initial;
+  text-align: initial;
+  color: initial;
+  line-height: initial;
+  padding-top: initial;
+}
+.filepicker .upload-file label,
+.filepicker .selected-file label {
+  flex: initial;
+}
+.filepicker .display-modes {
+  flex: initial;
+  text-align: initial;
+}
+.filepicker .display-modes a {
+  margin: initial;
+  border: initial;
+  background: initial;
+  border-radius: initial;
+}
+.filepicker .display-modes a.active {
+  text-shadow: initial;
+  border: initial;
+  background: initial;
+}
+// -----------------------------------------
+// TinyMCE Editor
+// -----------------------------------------
+.app .mce-panel {
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  outline: initial;
+}
+.app .mce-panel span {
+  display: initial;
+}
+.app .mce-top-part {
+  border-bottom: initial;
+}
+.app .mce-top-part::before {
+  box-shadow: initial;
+}
+.app .mce-btn {
+  background: initial;
+  border: initial;
+  color: initial;
+}
+.app .mce-btn:hover {
+  background: initial;
+  border: initial;
+  color: initial;
+}
+.app .mce-btn .mce-ico {
+  color: initial;
+}
+.dice-roll {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  justify-content: initial;
+}
+.dice-roll > * {
+  flex: initial;
+}
+.dice-roll > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.dice-roll > .flex1 {
+  flex: initial;
+}
+.dice-roll > .flex2 {
+  flex: initial;
+}
+.dice-roll > .flex3 {
+  flex: initial;
+}
+.dice-roll .dice-result,
+.dice-roll .dice-tooltip {
+  flex: initial;
+}
+.dice-roll .dice-tooltip {
+  order: initial;
+}
+.dice-roll .dice-result {
+  order: initial;
+}
+.dice-roll .dice-formula,
+.dice-roll .dice-total {
+  flex: initial;
+  position: initial;
+  margin: initial;
+  line-height: initial;
+  text-align: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  word-break: initial;
+}
+.dice-roll .dice-formula {
+  margin-bottom: initial;
+}
+.dice-roll .dice-total {
+  flex: initial;
+  font-size: initial;
+  font-weight: initial;
+}
+.dice-roll .dice-total.success {
+  color: initial;
+}
+.dice-roll .dice-total.failure {
+  color: initial;
+}
+.dice-roll .dice-tooltip {
+  display: initial;
+}
+//
+// Legacy Tooltip Code
+//
+.dice-roll .dice-part:hover > .dice-tooltip {
+  display: initial;
+}
+.dice-roll .dice-part.die {
+  font-weight: initial;
+  cursor: initial;
+}
+.dice-roll .dice-part .dice-tooltip {
+  display: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  line-height: initial;
+  padding: initial;
+  background: initial;
+  font-size: initial;
+  color: initial;
+}
+.dice-roll .dice-tooltip .reroll {
+  color: initial;
+  text-decoration: initial;
+}
+.dice-roll .dice-tooltip .fail {
+  color: initial;
+}
+.dice-roll .dice-tooltip .crit {
+  color: initial;
+}
+.dice-roll .dice-flavor {
+  text-align: initial;
+  font-size: initial;
+}
+.message.ic .dice-roll {
+  font-style: initial;
+}
+// -----------------------------------------
+//  Dice Tooltip
+// -----------------------------------------
+.dice-tooltip .part-formula {
+  margin: initial;
+  line-height: initial;
+  border-bottom: initial;
+  padding-left: initial;
+}
+.dice-tooltip .part-formula .part-total {
+  float: initial;
+  font-size: initial;
+  font-weight: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  border-bottom: initial;
+  border-radius: initial;
+}
+.dice-tooltip .dice-rolls {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  overflow: initial;
+}
+.dice-tooltip .dice-rolls .roll {
+  width: initial;
+  line-height: initial;
+  float: initial;
+  margin-right: initial;
+  background-repeat: initial;
+  background-size: initial;
+  font-size: initial;
+  color: initial;
+  font-weight: initial;
+  text-align: initial;
+}
+.dice-tooltip .dice-rolls .roll.min {
+  color: initial;
+  filter: initial;
+}
+.dice-tooltip .dice-rolls .roll.max {
+  color: initial;
+  filter: initial;
+}
+.dice-tooltip .dice-rolls .roll.discarded,
+.dice-tooltip .dice-rolls .roll.rerolled {
+  filter: initial;
+}
+// Applications
+// #hud {
+//   position: initial;
+//   transform-origin: initial;
+//   pointer-events: initial;
+//   z-index: initial;
+// }
+// ----------------------------------------
+// HUD Application
+// ----------------------------------------
+// .placeable-hud {
+//   position: initial;
+//   text-align: initial;
+//   pointer-events: initial;
+//   transform-origin: initial;
+// }
+// .placeable-hud .col {
+//   display: initial;
+//   flex-direction: initial;
+//   flex-wrap: initial;
+//   align-items: initial;
+//   position: initial;
+//   height: initial;
+// }
+// .placeable-hud .col > * {
+//   flex: initial;
+// }
+// .placeable-hud .col > .flex0 {
+//   display: initial;
+//   flex: initial;
+// }
+// .placeable-hud .col > .flex1 {
+//   flex: initial;
+// }
+// .placeable-hud .col > .flex2 {
+//   flex: initial;
+// }
+// .placeable-hud .col > .flex3 {
+//   flex: initial;
+// }
+// .placeable-hud .col.left {
+//   width: initial;
+//   justify-content: initial;
+// }
+// .placeable-hud .col.middle {
+//   width: initial;
+//   left: initial;
+//   justify-content: initial;
+// }
+// .placeable-hud .col.right {
+//   width: initial;
+//   right: initial;
+//   justify-content: initial;
+// }
+// .placeable-hud input[type="text"] {
+//   width: initial;
+//   background: initial;
+//   box-shadow: initial;
+//   border: initial;
+//   color: initial;
+//   height: initial;
+//   line-height: initial;
+//   margin: initial;
+//   border-radius: initial;
+//   font-size: initial;
+//   font-weight: initial;
+//   pointer-events: initial;
+// }
+// .placeable-hud input[type="text"]:focus {
+//   box-shadow: initial;
+//   border: initial;
+// }
+// .placeable-hud .control-icon {
+//   box-sizing: initial;
+//   width: initial;
+//   flex: initial;
+//   margin: initial;
+//   font-size: initial;
+//   line-height: initial;
+//   text-align: initial;
+//   color: initial;
+//   background: initial;
+//   box-shadow: initial;
+//   border: initial;
+//   border-radius: initial;
+//   pointer-events: initial;
+// }
+// .placeable-hud .control-icon:first-child {
+//   margin-top: initial;
+// }
+// .placeable-hud .control-icon i.fas {
+//   position: initial;
+//   top: initial;
+// }
+// .placeable-hud .control-icon:hover {
+//   color: initial;
+// }
+// .placeable-hud .control-icon.active {
+//   border: initial;
+// }
+// .placeable-hud .control-icon img {
+//   display: initial;
+//   margin: initial;
+//   padding: initial;
+//   border: initial;
+//   opacity: initial;
+// }
+// .placeable-hud .control-icon img:hover {
+//   opacity: initial;
+// }
+// // ----------------------------------------
+// // Token HUD
+// // ----------------------------------------
+// #token-drop {
+//   opacity: initial;
+//   z-index: initial;
+//   border: initial;
+// }
+// #token-hud .col {
+//   height: initial;
+//   top: initial;
+// }
+// #token-hud .col.left {
+//   justify-content: initial;
+//   left: initial;
+// }
+// #token-hud .col.right {
+//   justify-content: initial;
+//   right: initial;
+// }
+// #token-hud .col.middle {
+//   width: initial;
+//   left: initial;
+//   justify-content: initial;
+// }
+// #token-hud .attribute {
+//   flex: initial;
+// }
+// #token-hud .attribute.bar1 {
+//   bottom: initial;
+// }
+// #token-hud .attribute.bar1 input {
+//   border: initial;
+// }
+// #token-hud .attribute.bar2 {
+//   top: initial;
+// }
+// #token-hud .attribute.bar2 input {
+//   border: initial;
+// }
+// #token-hud .attribute.elevation {
+//   position: initial;
+//   width: initial;
+//   margin: initial;
+// }
+// #token-hud .attribute i.fas {
+//   position: initial;
+//   top: initial;
+//   left: initial;
+//   font-size: initial;
+//   color: initial;
+// }
+// #token-hud .control-icon.effects {
+//   position: initial;
+// }
+// #token-hud .status-effects {
+//   visibility: initial;
+//   position: initial;
+//   left: initial;
+//   top: initial;
+//   display: initial;
+//   padding: initial;
+//   box-sizing: initial;
+//   width: initial;
+//   grid-template-columns: initial;
+//   background: initial;
+//   box-shadow: initial;
+//   border: initial;
+//   border-radius: initial;
+//   pointer-events: initial;
+// }
+// #token-hud .status-effects.active {
+//   visibility: initial;
+// }
+// #token-hud .status-effects .effect-control {
+//   width: initial;
+//   height: initial;
+//   margin: initial;
+//   padding: initial;
+//   border: initial;
+//   opacity: initial;
+// }
+// #token-hud .status-effects .effect-control:hover {
+//   opacity: initial;
+// }
+// #token-hud .status-effects .effect-control.active {
+//   opacity: initial;
+// }
+// #token-hud .status-effects .effect-control.overlay {
+//   opacity: initial;
+//   border: initial;
+// }
+// ----------------------------------------
+// Chat Bubbles
+// ----------------------------------------
+.chat-bubble {
+  position: initial;
+  padding: initial;
+  background: initial;
+  min-width: initial;
+  max-width: initial;
+  max-height: initial;
+  color: initial;
+  border: initial;
+  box-shadow: initial;
+  overflow: initial;
+}
+.chat-bubble .bubble-content {
+  position: initial;
+  top: initial;
+}
+.chat-bubble.left {
+  border-radius: initial;
+}
+.chat-bubble.right {
+  border-radius: initial;
+}
+.chat-bubble.emote {
+  background: initial;
+  border: initial;
+  color: initial;
+  font-style: initial;
+}
+#logo {
+  position: initial;
+  top: initial;
+  left: initial;
+  z-index: initial;
+  border: initial;
+  box-sizing: initial;
+}
+#navigation {
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  background: initial;
+  box-shadow: initial;
+  border: initial;
+}
+#navigation .nav-item {
+  line-height: initial;
+  padding: initial;
+  margin: initial;
+  border: initial;
+  border-radius: initial;
+  cursor: initial;
+  position: initial;
+}
+#navigation #nav-toggle {
+  flex: initial;
+  height: initial;
+  background: initial;
+  text-align: initial;
+}
+#navigation #nav-toggle:hover {
+  text-shadow: initial;
+}
+#navigation #scene-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#navigation #scene-list .scene {
+  float: initial;
+  background: initial;
+}
+#navigation #scene-list .scene:last-child {
+  margin-right: initial;
+}
+#navigation #scene-list .scene.gm {
+  background: initial;
+  border: initial;
+}
+#navigation #scene-list .scene.view,
+#navigation #scene-list .scene.context {
+  cursor: initial;
+  color: initial;
+  border: initial;
+  background: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#navigation #scene-list .scene ul.scene-players {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+}
+#navigation #scene-list .scene li.scene-player {
+  float: initial;
+  height: initial;
+  width: initial;
+  margin: initial;
+  line-height: initial;
+  font-size: initial;
+  text-align: initial;
+  color: initial;
+  font-weight: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+}
+#navigation.collapsed {
+  pointer-events: initial;
+}
+#navigation.collapsed #nav-toggle {
+  pointer-events: initial;
+}
+#navigation.collapsed #scene-list {
+  display: initial;
+}
+#loading {
+  display: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  border-radius: initial;
+  z-index: initial;
+}
+#loading label {
+  line-height: initial;
+  position: initial;
+  top: initial;
+  padding: initial;
+  font-size: initial;
+  color: initial;
+  background: initial;
+  text-shadow: initial;
+}
+#loading #loading-bar {
+  position: initial;
+  margin: initial;
+  height: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+}
+#loading #context {
+  left: initial;
+}
+#loading #progress {
+  top: initial;
+  right: initial;
+  padding: initial;
+}
+// -----------------------------------------
+//  Main Menu
+// -----------------------------------------
+#menu {
+  position: initial;
+  z-index: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  color: initial;
+  background: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+#menu #menu-items {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#menu #menu-items li {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  text-align: initial;
+  cursor: initial;
+}
+#menu #menu-items li > * {
+  flex: initial;
+}
+#menu #menu-items li > .flex0 {
+  display: initial;
+  flex: initial;
+}
+#menu #menu-items li > .flex1 {
+  flex: initial;
+}
+#menu #menu-items li > .flex2 {
+  flex: initial;
+}
+#menu #menu-items li > .flex3 {
+  flex: initial;
+}
+#menu #menu-items li > i {
+  flex: initial;
+  font-size: initial;
+  line-height: initial;
+}
+#menu #menu-items li h4 {
+  font-size: initial;
+  line-height: initial;
+  margin: initial;
+}
+#menu #menu-items li:hover {
+  text-shadow: initial;
+}
+// -----------------------------------------
+//  Scene Controls
+// -----------------------------------------
+#controls {
+  position: initial;
+  top: initial;
+  left: initial;
+  padding: initial;
+  list-style: initial;
+  background: initial;
+  box-shadow: initial;
+  border: initial;
+  // Toggle Type Tools
+}
+#controls .control-tools {
+  list-style: initial;
+  display: initial;
+  position: initial;
+  margin: initial;
+  padding: initial;
+  left: initial;
+  top: initial;
+}
+#controls .active .control-tools {
+  display: initial;
+}
+#controls .scene-control,
+#controls .control-tool {
+  width: initial;
+  height: initial;
+  box-sizing: initial;
+  font-size: initial;
+  line-height: initial;
+  background: initial;
+  box-shadow: initial;
+  margin: initial;
+  color: initial;
+  text-align: initial;
+  border: initial;
+  border-radius: initial;
+  cursor: initial;
+}
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+  color: initial;
+  border: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#controls .scene-control i.fas,
+#controls .control-tool i.fas {
+  margin: initial;
+}
+#controls .control-tool.toggle {
+  background: initial;
+  border: initial;
+}
+#controls .control-tool.toggle.active,
+#controls .control-tool.toggle:hover {
+  background: initial;
+  box-shadow: initial;
+}
+// -----------------------------------------
+//  Game Pause
+// -----------------------------------------
+#pause {
+  width: initial;
+  height: initial;
+  position: initial;
+  bottom: initial;
+  left: initial;
+  pointer-events: initial;
+  z-index: initial;
+  background: initial;
+  display: initial;
+}
+#pause.paused {
+  display: initial;
+}
+#pause img {
+  position: initial;
+  top: initial;
+  left: initial;
+  height: initial;
+  width: initial;
+  opacity: initial;
+  border: initial;
+  -webkit-animation: initial;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: initial;
+  }
+  to {
+    -webkit-transform: initial;
+  }
+}
+#pause h3 {
+  margin: initial;
+  font-size: initial;
+  font-weight: initial;
+  line-height: initial;
+  text-align: initial;
+  position: initial;
+  z-index: initial;
+  color: initial;
+  text-shadow: initial;
+}
+// ----------------------------------------
+//  Hotbar
+// ----------------------------------------
+#hotbar {
+  z-index: initial;
+  position: initial;
+  bottom: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  pointer-events: initial;
+}
+#hotbar .bar-controls {
+  flex: initial;
+  height: initial;
+  margin: initial;
+  text-align: initial;
+  color: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  border-radius: initial;
+}
+#hotbar .bar-controls a {
+  display: initial;
+}
+#hotbar .bar-controls a.page-control {
+  font-size: initial;
+  line-height: initial;
+}
+#hotbar .bar-controls span.page-number {
+  display: initial;
+  font-size: initial;
+  line-height: initial;
+}
+#hotbar #action-bar {
+  flex: initial;
+  height: initial;
+  pointer-events: initial;
+}
+#hotbar #action-bar.collapsed {
+  display: initial;
+  pointer-events: initial;
+}
+#hotbar #macro-list {
+  flex: initial;
+  height: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;
+}
+#hotbar .macro {
+  position: initial;
+  flex: initial;
+  height: initial;
+  border: initial;
+  border-radius: initial;
+  background: initial;
+  box-shadow: initial;
+  cursor: initial;
+}
+#hotbar .macro.inactive {
+  box-shadow: initial;
+}
+#hotbar .macro:hover {
+  box-shadow: initial;
+}
+#hotbar .macro.active:hover {
+  border: initial;
+}
+#hotbar .macro .macro-key {
+  position: initial;
+  top: initial;
+  right: initial;
+  padding: initial;
+  background: initial;
+  color: initial;
+  font-weight: initial;
+}
+#hotbar .macro .macro-icon {
+  width: initial;
+  height: initial;
+  object-fit: initial;
+  object-position: initial;
+  border: initial;
+}
+#hotbar .macro .tooltip {
+  display: initial;
+  min-width: initial;
+  height: initial;
+  padding: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  color: initial;
+  line-height: initial;
+  text-align: initial;
+  white-space: initial;
+  word-break: initial;
+}
+#hotbar #hotbar-directory-controls {
+  pointer-events: initial;
+}
+#hotbar #hotbar-directory-controls a {
+  line-height: initial;
+}
+.players-hidden #hotbar {
+  left: initial;
+}
+// ----------------------------------------
+//  Watermark
+// ----------------------------------------
+.watermark {
+  width: initial;
+  z-index: initial;
+  position: initial;
+  bottom: initial;
+  height: initial;
+  font-size: initial;
+  pointer-events: initial;
+  text-align: initial;
+  color: initial;
+  text-shadow: initial;
+}
+// -----------------------------------------
+// Sidebar Tabs
+// -----------------------------------------
+#sidebar {
+  border: initial;
+}
+#sidebar-tabs {
+  flex: initial;
+  box-sizing: initial;
+  margin: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#sidebar-tabs > .item {
+  position: initial;
+  flex: initial;
+  line-height: initial;
+  border: initial;
+  border-radius: initial;
+}
+#sidebar-tabs > .item.active {
+  color: initial;
+  border: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#sidebar-tabs > .item i.fas {
+  margin-right: initial;
+}
+#sidebar-tabs > .collapse {
+  position: initial;
+  flex: initial;
+  line-height: initial;
+  color: initial;
+  text-align: initial;
+}
+.sidebar-tab {
+  overflow: initial;
+}
+.sidebar-tab .directory-header {
+  flex: initial;
+  line-height: initial;
+  text-align: initial;
+  margin: initial;
+  border-bottom: initial;
+}
+.sidebar-tab .directory-header .header-search {
+  flex: initial;
+}
+.sidebar-tab .directory-header .header-search input {
+  background: initial;
+  width: initial;
+  margin: initial;
+}
+.sidebar-tab .directory-header .header-control {
+  display: initial;
+  flex: initial;
+  height: initial;
+}
+.sidebar-tab .directory-list {
+  flex: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  overflow-y: initial;
+  scrollbar-width: initial;
+}
+.sidebar-tab .directory-list .directory-item {
+  line-height: initial;
+}
+.sidebar-tab .directory-list .directory-item h3,
+.sidebar-tab .directory-list .directory-item h4 {
+  margin: initial;
+  white-space: initial;
+  overflow: initial;
+}
+.sidebar-tab .directory-list .directory-item img {
+  flex: initial;
+  height: initial;
+  width: initial;
+  object-fit: initial;
+  object-position: initial;
+  margin: initial;
+  border: initial;
+}
+.sidebar-tab .directory-list .directory-item img[data-src] {
+  visibility: initial;
+}
+.sidebar-tab .directory-list .directory-item.context,
+.sidebar-tab .directory-list .directory-item.active {
+  border-color: initial;
+}
+.sidebar-tab .directory-list .folder .context {
+  border-color: initial;
+}
+.sidebar-tab .directory-list .entity {
+  border-top: initial;
+  border-bottom: initial;
+}
+.sidebar-tab .directory-list .entity:last-child {
+  border-bottom: initial;
+}
+.sidebar-tab .directory-list .folder + .entity {
+  border-top: initial;
+}
+.sidebar-tab .directory-footer {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  flex: initial;
+  margin: initial;
+}
+.sidebar-tab .directory-footer > * {
+  flex: initial;
+}
+.sidebar-tab .directory-footer > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.sidebar-tab .directory-footer > .flex1 {
+  flex: initial;
+}
+.sidebar-tab .directory-footer > .flex2 {
+  flex: initial;
+}
+.sidebar-tab .directory-footer > .flex3 {
+  flex: initial;
+}
+.sidebar-tab .directory-footer button {
+  margin: initial;
+}
+#sidebar.collapsed #sidebar-tabs {
+  border-bottom: initial;
+  box-shadow: initial;
+}
+#sidebar.collapsed #sidebar-tabs > .item.active {
+  border-bottom: initial;
+  border-radius: initial;
+}
+#sidebar.collapsed .sidebar-tab {
+  display: initial;
+}
+// -----------------------------------------
+//  Folders and Subfolders
+// -----------------------------------------
+li.folder > .folder-header {
+  padding: initial;
+  line-height: initial;
+  background: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+li.folder > .folder-header h3 {
+  margin: initial;
+  color: initial;
+}
+li.folder > .folder-header h3 > i {
+  margin-right: initial;
+}
+li.folder > .folder-header .create-folder,
+li.folder > .folder-header .create-entity {
+  flex: initial;
+  text-align: initial;
+  color: initial;
+  font-size: initial;
+}
+li.folder.collapsed .subdirectory {
+  display: initial;
+}
+li.folder.collapsed > .folder-header {
+  background: initial;
+}
+li.folder.collapsed > .folder-header h3 {
+  text-shadow: initial;
+  color: initial;
+}
+li.folder.collapsed > .folder-header h3 > i:before {
+  content: initial;
+}
+li.folder.collapsed > .folder-header .create-folder {
+  display: initial;
+}
+//
+// Subdirectory Styles
+//
+.subdirectory {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  border-left: initial;
+  border-bottom: initial;
+}
+.subdirectory:empty {
+  border: initial;
+}
+.subdirectory .folder {
+  border-left: initial;
+}
+// -----------------------------------------
+//  1.0 - Chat Panel
+// -----------------------------------------
+.notification-pip {
+  display: initial;
+  color: initial;
+  text-shadow: initial;
+  position: initial;
+  top: initial;
+  right: initial;
+}
+#chat-notification {
+  display: initial;
+}
+#chat-controls {
+  flex: initial;
+  margin: initial;
+}
+#chat-controls i.fas {
+  font-size: initial;
+  line-height: initial;
+}
+#chat-controls div.roll-type-select select {
+  position: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  top: initial;
+}
+#chat-controls div.roll-type-select i.fas {
+  margin-right: initial;
+}
+#chat-controls .control-buttons {
+  flex: initial;
+}
+#chat-controls .control-buttons a {
+  display: initial;
+  width: initial;
+  text-align: initial;
+}
+#chat-log {
+  flex: initial;
+  height: initial;
+  margin: initial;
+  padding: initial;
+  overflow-y: initial;
+  overflow-x: initial;
+  list-style: initial;
+}
+#chat-log .message {
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  margin: initial;
+  padding: initial;
+  color: initial;
+  font-size: initial;
+}
+#chat-log .message .message-header {
+  line-height: initial;
+  color: initial;
+}
+#chat-log .message .message-header .message-sender {
+  flex: initial;
+  margin: initial;
+}
+#chat-log .message .message-header .message-metadata {
+  flex: initial;
+  text-align: initial;
+  font-size: initial;
+}
+#chat-log .message .message-header .flavor-text,
+#chat-log .message .message-header .whisper-to {
+  flex: initial;
+  font-size: initial;
+}
+#chat-log .message .message-content {
+  -webkit-user-select: initial;
+  -moz-user-select: initial;
+  -ms-user-select: initial;
+  user-select: initial;
+}
+#chat-log .message.emote {
+  background: initial;
+  border: initial;
+}
+#chat-log .message.whisper {
+  background: initial;
+  border: initial;
+}
+#chat-log .message.blind {
+  background: initial;
+  border: initial;
+}
+#chat-form {
+  height: initial;
+  flex: initial;
+  margin: initial;
+}
+#chat-form textarea {
+  width: initial;
+  height: initial;
+  resize: initial;
+  background: initial;
+}
+// Roll Table Results in the Chat Log
+#chat-log .table-draw .table-description {
+  border-top: initial;
+  color: initial;
+  font-size: initial;
+  padding: initial;
+}
+#chat-log .table-draw .table-results {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#chat-log .table-draw .table-results .table-result {
+  display: initial;
+  align-items: initial;
+  border-bottom: initial;
+  padding: initial;
+}
+#chat-log .table-draw .table-results .table-result img.result-image {
+  flex: initial;
+  width: initial;
+  height: initial;
+  margin-right: initial;
+  object-fit: initial;
+}
+#chat-log .table-draw .table-results .table-result .result-text {
+  margin: initial;
+  padding: initial;
+  line-height: initial;
+}
+#chat-log .table-draw .table-results .table-result:last-child {
+  border-bottom: initial;
+}
+// -----------------------------------------
+//  2.0 - Combat Tracker
+// -----------------------------------------
+#combat #combat-round {
+  flex: initial;
+  line-height: initial;
+  font-size: initial;
+  text-align: initial;
+  border-bottom: initial;
+}
+#combat #combat-round .encounters a {
+  font-size: initial;
+  flex: initial;
+  color: initial;
+}
+#combat #combat-round .encounters a.combat-cycle {
+  font-size: initial;
+}
+#combat #combat-round .encounters a[disabled] {
+  visibility: initial;
+}
+#combat #combat-round .encounters h4 {
+  flex: initial;
+  margin: initial;
+  font-size: initial;
+  color: initial;
+  text-align: initial;
+}
+#combat #combat-round .encounters h3 {
+  flex: initial;
+  margin: initial;
+  font-size: initial;
+  text-align: initial;
+}
+#combat #combat-tracker {
+  height: initial;
+  padding: initial;
+}
+#combat #combat-controls {
+  margin: initial;
+  border-top: initial;
+  padding-top: initial;
+}
+#combat #combat-controls a {
+  flex: initial;
+  font-size: initial;
+  text-align: initial;
+  line-height: initial;
+}
+#combat #combat-controls a.center {
+  flex: initial;
+}
+#combat li.combatant .token-image {
+  margin: initial;
+}
+#combat li.combatant .token-name {
+  flex: initial;
+  overflow: initial;
+  margin: initial;
+  text-shadow: initial;
+}
+#combat li.combatant .token-name h4 {
+  flex: initial;
+  line-height: initial;
+  margin: initial;
+}
+#combat li.combatant .token-name .combatant-controls {
+  flex: initial;
+  font-size: initial;
+  line-height: initial;
+}
+#combat li.combatant .token-name .combatant-control {
+  flex: initial;
+  height: initial;
+  float: initial;
+  color: initial;
+}
+#combat li.combatant .token-name .combatant-control.active {
+  color: initial;
+}
+#combat li.combatant .token-name .token-effects {
+  height: initial;
+  overflow: initial;
+}
+#combat li.combatant .token-name img.token-effect {
+  width: initial;
+  height: initial;
+  margin: initial;
+  border: initial;
+  border-radius: initial;
+}
+#combat li.combatant .token-resource {
+  flex: initial;
+  color: initial;
+  text-align: initial;
+  border-right: initial;
+}
+#combat li.combatant .token-initiative {
+  flex: initial;
+  text-align: initial;
+}
+#combat li.combatant .token-initiative .initiative {
+  font-size: initial;
+  text-shadow: initial;
+}
+#combat li.combatant .roll {
+  display: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  background-size: initial;
+  margin: initial;
+}
+#combat li.combatant .roll:hover {
+  background-image: initial;
+}
+#combat li.combatant.hover,
+#combat li.combatant:hover {
+  background: initial;
+}
+#combat li.combatant.active {
+  background: initial;
+}
+#combat li.combatant.active .initiative {
+  font-weight: initial;
+}
+#combat li.combatant.hidden {
+  color: initial;
+}
+#combat li.combatant.hidden img {
+  opacity: initial;
+}
+#combat li.combatant.defeated {
+  color: initial;
+}
+#combat li.combatant.defeated img {
+  opacity: initial;
+  transform: initial;
+}
+// -----------------------------------------
+//  3.0 - Scenes Directory
+// -----------------------------------------
+#scenes .scene {
+  position: initial;
+  height: initial;
+  line-height: initial;
+  background-size: initial;
+  background-position: initial;
+  border: initial;
+  box-shadow: initial;
+}
+#scenes .scene.context,
+#scenes .scene.active {
+  margin-top: initial;
+  border: initial;
+  box-shadow: initial;
+}
+#scenes .scene h3 {
+  line-height: initial;
+  text-align: initial;
+  font-size: initial;
+  font-weight: initial;
+  text-shadow: initial;
+}
+#scenes .subdirectory {
+  border-left: initial;
+  border-bottom: initial;
+}
+// -----------------------------------------
+//  6.0 - Journal
+// -----------------------------------------
+#journal li.journal {
+  line-height: initial;
+}
+#journal li.journal .entity-name {
+  margin: initial;
+}
+// -----------------------------------------
+//  7.0 - Playlists
+// -----------------------------------------
+#playlists .global-volume {
+  flex: initial;
+}
+#playlists li.playlist {
+  padding: initial;
+  line-height: initial;
+}
+#playlists li.playlist .playlist-header {
+  flex: initial;
+  justify-content: initial;
+  text-decoration: initial;
+}
+#playlists li.playlist .playlist-header .playlist-name {
+  cursor: initial;
+  max-width: initial;
+}
+#playlists li.playlist .playlist-header .playlist-name i.fa {
+  color: initial;
+  margin-left: initial;
+}
+#playlists li.playlist .playlist-header .playlist-controls {
+  flex: initial;
+  justify-content: initial;
+}
+#playlists li.playlist .playlist-header a.playlist-delete {
+  flex: initial;
+}
+#playlists li.playlist .playlist-sounds {
+  flex: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#playlists li.playlist.collapsed .playlist-sounds {
+  display: initial;
+}
+#playlists li.playlist .sound-control {
+  flex: initial;
+  text-align: initial;
+  color: initial;
+  font-size: initial;
+}
+#playlists li.playlist .sound-control.inactive {
+  color: initial;
+}
+#playlists li.playlist .sound-control.inactive:hover {
+  text-shadow: initial;
+}
+#playlists li.playlist .sound-control.disabled {
+  color: initial;
+}
+#playlists li.playlist .sound-control.disabled:hover {
+  text-shadow: initial;
+}
+#playlists li.sound {
+  margin: initial;
+  padding: initial;
+}
+#playlists li.sound .sound-name {
+  margin: initial;
+  max-width: initial;
+}
+#playlists li.sound .sound-controls {
+  flex: initial;
+  justify-content: initial;
+}
+// -----------------------------------------
+//  8.0 - Compendium Packs
+// -----------------------------------------
+#compendium h3 {
+  margin: initial;
+  padding: initial;
+  border: initial;
+  background: initial;
+}
+#compendium ol.compendium-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#compendium li.compendium-pack {
+  position: initial;
+  margin: initial;
+  padding: initial;
+  border-bottom: initial;
+}
+#compendium li.compendium-pack .pack-title i {
+  margin-right: initial;
+}
+#compendium li.compendium-pack .status-icons {
+  position: initial;
+  font-weight: initial;
+  color: initial;
+  right: initial;
+}
+#compendium li.compendium-pack:last-child {
+  border-bottom: initial;
+}
+//
+// Single Compendium Pack
+//
+.compendium .directory-header {
+  border-bottom: initial;
+}
+.compendium .directory-list .directory-item {
+  line-height: initial;
+  border-top: initial;
+  border-bottom: initial;
+  box-shadow: initial;
+}
+// -----------------------------------------
+//  Settings
+// -----------------------------------------
+#settings {
+  padding: initial;
+  overflow-y: initial;
+}
+#settings button {
+  position: initial;
+  margin: initial;
+}
+#module-management .package-title {
+  line-height: initial;
+  font-weight: initial;
+}
+#module-management input.active {
+  margin-left: initial;
+}
+#module-management .module-description {
+  color: initial;
+}
+#module-management .module-description p {
+  margin: initial;
+}
+#module-management .module-description ul {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+}
+#client-settings {
+  // Tab Section
+}
+#client-settings nav.tabs {
+  flex: initial;
+  line-height: initial;
+  font-size: initial;
+  border-bottom: initial;
+}
+#client-settings section.content {
+  border-top: initial;
+}
+#client-settings section.content .settings-list {
+  max-height: initial;
+  overflow-y: initial;
+  padding-right: initial;
+}
+#client-settings section.content .submenu > button {
+  height: initial;
+  font-size: initial;
+}
+#client-settings section.content .submenu > label {
+  line-height: initial;
+}
+#client-settings section.content h2.module-header {
+  margin: initial;
+}
+//
+// Role Permission Configuration Form
+//
+#permissions-config header.table-header {
+  background: initial;
+  padding: initial;
+  border: initial;
+  text-align: initial;
+  color: initial;
+  font-weight: initial;
+  text-shadow: initial;
+}
+#permissions-config ul.permissions-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  max-height: initial;
+  overflow: initial;
+  scrollbar-width: initial;
+}
+#permissions-config li.permission {
+  padding: initial;
+  border-bottom: initial;
+}
+#permissions-config li.permission .form-fields {
+  justify-content: initial;
+}
+#permissions-config li.permission input[type="checkbox"] {
+  margin: initial;
+}
+#permissions-config .index {
+  flex: initial;
+  text-align: initial;
+  font-weight: initial;
+}
+#permissions-config .hint {
+  flex: initial;
+  color: initial;
+  font-size: initial;
+  margin: initial;
+}
+// -----------------------------------------
+//  Sidebar Pop-out
+// -----------------------------------------
+.app.sidebar-popout {
+  min-height: initial;
+  max-height: initial;
+  border: initial;
+}
+.app.sidebar-popout .window-content {
+  background: initial;
+  color: initial;
+  padding: initial;
+}
+.app.sidebar-popout .directory-list {
+  max-height: initial;
+  overflow-y: initial;
+}
+// -----------------------------------------
+//  Module Management
+// -----------------------------------------
+.package-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  overflow-y: initial;
+}
+.package-list .package {
+  padding: initial;
+  border-bottom: initial;
+  border-top: initial;
+}
+.package-list .package:first-child {
+  border-top: initial;
+}
+.package-list .package:last-child {
+  border-bottom: initial;
+}
+.package-list .package .package-overview {
+  flex: initial;
+}
+.package-list .package .package-overview .package-title {
+  flex: initial;
+  text-decoration: initial;
+  font-size: initial;
+  margin: initial;
+  color: initial;
+}
+.package-list .package .package-overview .package-author {
+  margin: initial;
+  color: initial;
+}
+.package-list .package .package-overview .package-version {
+  float: initial;
+  background: initial;
+  padding: initial;
+  border: initial;
+  box-shadow: initial;
+  text-decoration: initial;
+  color: initial;
+}
+.package-list .package .package-overview .package-description {
+  flex: initial;
+  margin: initial;
+  color: initial;
+  font-size: initial;
+}
+.package-list .package .package-overview .package-description > * {
+  margin: initial;
+}
+.package-list .package .package-metadata,
+.package-list .package .package-controls {
+  margin: initial;
+  flex: initial;
+}
+.package-list .package .package-metadata ul,
+.package-list .package .package-controls ul {
+  margin: initial;
+}
+.package-list .package .package-metadata {
+  font-size: initial;
+  padding: initial;
+  color: initial;
+}
+.package-list .package .package-controls {
+  padding: initial;
+  text-align: initial;
+}
+.package-list .package .package-controls button {
+  display: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+  font-size: initial;
+  line-height: initial;
+  border: initial;
+}
+.package-list .package .package-url {
+  margin: initial;
+  color: initial;
+}
+.package-list .package .package-footer {
+  height: initial;
+  padding: initial;
+}
+.package-list .package .package-tags {
+  flex: initial;
+  text-align: initial;
+}
+.package-list .package .tag {
+  display: initial;
+  border: initial;
+  border-radius: initial;
+  padding: initial;
+  margin: initial;
+  font-size: initial;
+  line-height: initial;
+  text-decoration: initial;
+  background: initial;
+  color: initial;
+}
+.package-list .package .tag.javascript {
+  background: initial;
+}
+.package-list .package .tag.css {
+  background: initial;
+}
+.package-list .package .tag.compendium {
+  background: initial;
+}
+.package-list .package .tag.unavailable {
+  background: initial;
+}
+.package-list .package .tag.unknown {
+  background: initial;
+}
+.package-list .package .tag.languages {
+  background: initial;
+}
+#module-management .package-list {
+  max-height: initial;
+}
+#module-management .package-list h3 input[type="checkbox"] {
+  margin-top: initial;
+}
+#module-management .package-list .package-metadata {
+  flex: initial;
+}
+#module-management .package-list .package-title,
+#module-management .package-list .package-metadata,
+#module-management .package-list .package-description {
+  color: initial;
+}
+// -----------------------------------------
+// General Sheet Styling
+// -----------------------------------------
+.app.sheet .editor-content {
+  height: initial;
+  overflow-y: initial;
+}
+// -----------------------------------------
+// Actor and Item Sheets
+// -----------------------------------------
+.sheet {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+}
+.sheet > * {
+  flex: initial;
+}
+.sheet > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.sheet > .flex1 {
+  flex: initial;
+}
+.sheet > .flex2 {
+  flex: initial;
+}
+.sheet > .flex3 {
+  flex: initial;
+}
+.sheet .sheet-header {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+}
+.sheet .sheet-header > * {
+  flex: initial;
+}
+.sheet .sheet-header > .flex0 {
+  display: initial;
+  flex: initial;
+}
+.sheet .sheet-header > .flex1 {
+  flex: initial;
+}
+.sheet .sheet-header > .flex2 {
+  flex: initial;
+}
+.sheet .sheet-header > .flex3 {
+  flex: initial;
+}
+.sheet .sheet-header img {
+  flex: initial;
+  height: initial;
+  margin-right: initial;
+}
+.sheet .sheet-header h1 {
+  flex: initial;
+  margin: initial;
+  border-bottom: initial;
+}
+.sheet .sheet-header h1 input {
+  height: initial;
+  line-height: initial;
+  margin: initial;
+  width: initial;
+}
+// -----------------------------------------
+// Token Sheet
+// -----------------------------------------
+.token-sheet .sheet-tabs {
+  flex: initial;
+  border-bottom: initial;
+  line-height: initial;
+}
+.token-sheet .tab {
+  flex: initial;
+}
+.token-sheet .sheet-footer {
+  flex: initial;
+}
+.token-sheet .notes {
+  font-size: initial;
+  padding: initial;
+  margin-bottom: initial;
+  border-bottom: initial;
+}
+.token-sheet .bar-data .sep {
+  flex: initial;
+  text-align: initial;
+  font-size: initial;
+  line-height: initial;
+}
+// -----------------------------------------
+// Drawing Config
+// -----------------------------------------
+#drawing-config .sheet-tabs {
+  flex: initial;
+  border-bottom: initial;
+  line-height: initial;
+}
+#drawing-config .tab {
+  flex: initial;
+}
+#drawing-config .sheet-footer {
+  flex: initial;
+}
+// -----------------------------------------
+// Scene Notes
+// -----------------------------------------
+.window-app.scene-notes .window-content {
+  padding: initial;
+}
+.window-app.scene-notes form {
+  height: initial;
+  overflow: initial;
+}
+.window-app.scene-notes .editor {
+  height: initial;
+}
+.window-app.scene-notes .editor-content {
+  height: initial;
+  overflow-y: initial;
+}
+// ----------------------------------------
+// Roll Table Sheet
+// ----------------------------------------
+.roll-table-config h1.name input {
+  width: initial;
+  height: initial;
+  margin: initial;
+}
+.roll-table-config textarea {
+  resize: initial;
+  min-height: initial;
+}
+.roll-table-config ol.table-results {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  max-height: initial;
+  overflow-y: initial;
+}
+.roll-table-config ol.table-results .table-result {
+  padding: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+.roll-table-config ol.table-results .table-result input[type="text"] {
+  width: initial;
+  height: initial;
+}
+.roll-table-config ol.table-results .table-result > div {
+  line-height: initial;
+  margin-right: initial;
+}
+.roll-table-config ol.table-results .table-result .result-image {
+  flex: initial;
+  width: initial;
+  height: initial;
+  text-align: initial;
+  margin: initial;
+}
+.roll-table-config ol.table-results .table-result .result-image img {
+  border: initial;
+  object-fit: initial;
+  object-position: initial;
+}
+.roll-table-config ol.table-results .table-result .result-type {
+  flex: initial;
+}
+.roll-table-config ol.table-results .table-result .result-details {
+  flex: initial;
+}
+.roll-table-config ol.table-results .table-result .result-details select {
+  width: initial;
+}
+.roll-table-config ol.table-results .table-result .result-details .result-target {
+  width: initial;
+  margin-left: initial;
+}
+.roll-table-config ol.table-results .table-result .result-weight {
+  flex: initial;
+  text-align: initial;
+}
+.roll-table-config ol.table-results .table-result .result-range {
+  flex: initial;
+  text-align: initial;
+}
+.roll-table-config ol.table-results .table-result .result-range input {
+  width: initial;
+}
+.roll-table-config ol.table-results .table-result .result-controls {
+  flex: initial;
+  margin: initial;
+  text-align: initial;
+}
+.roll-table-config ol.table-results .table-result .result-controls a {
+  width: initial;
+}
+.roll-table-config ol.table-results .table-result .result-controls .lock-result {
+  color: initial;
+}
+.roll-table-config ol.table-results .table-result.roulette {
+  background: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+.roll-table-config ol.table-results .table-result.drawn {
+  background: initial;
+}
+.roll-table-config ol.table-results .table-result.drawn .lock-result {
+  color: initial;
+}
+.roll-table-config ol.table-results .table-header {
+  background: initial;
+  border: initial;
+  line-height: initial;
+  font-weight: initial;
+}
+// ---------------------------------------
+//  Macro Sheet
+// ---------------------------------------
+.macro-sheet {
+  min-width: initial;
+  min-height: initial;
+}
+.macro-sheet form > * {
+  flex: initial;
+}
+.macro-sheet .form-group.command {
+  flex: initial;
+}
+.macro-sheet .form-group.command label {
+  height: initial;
+}
+.macro-sheet .form-group.command textarea {
+  height: initial;
+  resize: initial;
+}
+// -----------------------------------------
+//  Journal Entry
+// -----------------------------------------
+.journal-sheet .window-content {
+  padding: initial;
+}
+.journal-sheet form {
+  overflow: initial;
+  padding: initial;
+}
+.journal-sheet form input[name="name"] {
+  height: initial;
+  font-size: initial;
+  line-height: initial;
+}
+.journal-sheet form select {
+  width: initial;
+  height: initial;
+  margin: initial;
+}
+.journal-sheet form .editor {
+  height: initial;
+}
+.journal-sheet form button[type="submit"] {
+  margin-top: initial;
+}
+// -----------------------------------------
+//  Journal Image
+// -----------------------------------------
+.window-app.image-popout .window-content {
+  background: initial;
+}
+.window-app.image-popout form {
+  justify-content: initial;
+  position: initial;
+}
+.window-app.image-popout .lightbox-image {
+  flex: initial;
+  background-size: initial;
+  background-position: initial;
+  background-repeat: initial;
+}
+.window-app.image-popout .form-group {
+  position: initial;
+  width: initial;
+  max-width: initial;
+  left: initial;
+}
+.window-app.image-popout .form-group.picker {
+  bottom: initial;
+  margin: initial;
+}
+.window-app.image-popout .form-group.picker input {
+  flex: initial;
+}
+.window-app.image-popout .form-group.title {
+  top: initial;
+}
+.window-app.image-popout .form-group.title input {
+  height: initial;
+  text-align: initial;
+}
+.window-app.image-popout .form-group button {
+  flex: initial;
+  height: initial;
+  margin: initial;
+  order: initial;
+}
+#camera-views {
+  position: initial;
+  bottom: initial;
+  left: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  align-items: initial;
+  z-index: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  pointer-events: initial;
+  // -----------------------------------------
+  //  Video Containers
+  // -----------------------------------------
+  // The following 3 blocks ensure that the video or avatar img use 4:3 aspect ratio.
+  // From https://css-tricks.com/aspect-ratio-boxes/
+  // Thanks to asacolips
+}
+#camera-views.webrtc-dock-empty {
+  padding: initial;
+}
+#camera-views.camera-size-large .camera-box-dock {
+  max-width: initial;
+}
+#camera-views.camera-size-medium .camera-box-dock {
+  max-width: initial;
+}
+#camera-views.camera-size-small .camera-box-dock {
+  max-width: initial;
+}
+#camera-views > .camera-box-dock.no-video {
+  max-width: initial;
+}
+#camera-views .video-containers {
+  display: initial;
+  flex: initial;
+  flex-wrap: initial;
+}
+#camera-views .video-container {
+  position: initial;
+}
+#camera-views .video-container::before {
+  // Create an empty text with a specific size due to the padding which has a 4:3 ratio
+  content: initial;
+  display: initial;
+  padding-bottom: initial;
+}
+#camera-views .video-container img.user-avatar,
+#camera-views .video-container video.user-camera {
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  border: initial;
+}
+#camera-views .video-container img.user-avatar.local-camera,
+#camera-views .video-container video.user-camera.local-camera {
+  -webkit-transform: initial;
+  -moz-transform: initial;
+  -ms-transform: initial;
+  -o-transform: initial;
+  transform: initial;
+}
+#camera-views .video-container img.user-avatar {
+  object-fit: initial;
+}
+.players-hidden #camera-views {
+  left: initial;
+  width: initial;
+}
+.camera-view-popout {
+  position: initial;
+  left: initial;
+  top: initial;
+  width: initial;
+  margin: initial;
+}
+.camera-view-popout .camera-view {
+  margin: initial;
+  padding: initial;
+}
+// -----------------------------------------
+// Single Camera View
+// -----------------------------------------
+.camera-view {
+  position: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  pointer-events: initial;
+  // Camera Control Button (28x24)
+  // Control Sidebar
+  // Notification Icons
+  // Volume Bar
+}
+.camera-view.speaking {
+  border-style: initial;
+}
+.camera-view .player-name {
+  width: initial;
+  height: initial;
+  margin: initial;
+  line-height: initial;
+  text-align: initial;
+  border-top: initial;
+}
+.camera-view .av-control {
+  flex: initial;
+  width: initial;
+  padding: initial;
+  text-align: initial;
+}
+.camera-view .av-control i {
+  font-size: initial;
+  line-height: initial;
+  color: initial;
+}
+.camera-view .av-control i:hover {
+  color: initial;
+}
+.camera-view .av-control.toggle .fa-arrows-alt-v {
+  transform: initial;
+}
+.camera-view .control-bar,
+.camera-view .notification-bar {
+  position: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  justify-content: initial;
+}
+.camera-view .control-bar.left,
+.camera-view .notification-bar.left {
+  top: initial;
+  left: initial;
+}
+.camera-view .control-bar.right,
+.camera-view .notification-bar.right {
+  top: initial;
+  right: initial;
+  background: initial;
+  border: initial;
+}
+.camera-view .control-bar.bottom,
+.camera-view .notification-bar.bottom {
+  width: initial;
+  left: initial;
+  bottom: initial;
+  height: initial;
+  padding: initial;
+}
+.camera-view .control-bar.hidden,
+.camera-view .notification-bar.hidden {
+  display: initial;
+}
+.camera-view .status-hidden,
+.camera-view .status-muted {
+  font-size: initial;
+  width: initial;
+  line-height: initial;
+  color: initial;
+}
+.camera-view .status-hidden.hidden,
+.camera-view .status-muted.hidden {
+  display: initial;
+}
+.camera-view .volume-bar {
+  height: initial;
+}
+.camera-view .volume-bar input {
+  float: initial;
+  width: initial;
+  padding: initial;
+}
+.camera-view .volume-bar i.vol-min,
+.camera-view .volume-bar i.vol-max {
+  float: initial;
+  width: initial;
+  line-height: initial;
+  text-align: initial;
+  color: initial;
+}
+// -----------------------------------------
+//  AV Configuration Sheet
+// -----------------------------------------
+#av-config .sheet-tabs {
+  flex: initial;
+  border-bottom: initial;
+  line-height: initial;
+}
+#av-config label {
+  font-weight: initial;
+  margin-bottom: initial;
+}
+// -----------------------------------------
+// Unclean Below
+// -----------------------------------------
+.window-content .camera-view,
+.camera-box-popout {
+  width: initial;
+  height: initial;
+}
+.webrtc-dock-camera-container.fa-external-link-square-alt {
+  transform: initial;
+}
+.camera-box-popout .window-resizable-handle {
+  width: initial;
+  height: initial;
+  position: initial;
+  bottom: initial;
+  right: initial;
+  background: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;
+}
+.camera-box-popout .window-resizable-handle i.fas {
+  transform: initial;
+}
+// Pages
+// ----------------------------------------
+//  Main Setup Form
+// ----------------------------------------
+#setup {
+  display: initial;
+  align-items: initial;
+  justify-content: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+}
+#setup .app {
+  margin: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  color: initial;
+}
+#setup form {
+  box-sizing: initial;
+}
+#setup h2 {
+  font-size: initial;
+  border-bottom: initial;
+  margin: initial;
+}
+#setup .notes {
+  color: initial;
+}
+#setup button {
+  margin: initial;
+}
+body.background #setup {
+  background: initial;
+}
+// Fatal Error
+#setup #error {
+  width: initial;
+  min-height: initial;
+}
+// -----------------------------------------
+//  Module Configuration
+// -----------------------------------------
+#setup-configuration {
+  width: initial;
+  height: initial;
+  padding: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  outline: initial;
+  color: initial;
+  // Config Header
+  // Config Tabs
+  // Tab Section
+}
+#setup-configuration header {
+  flex: initial;
+  border-bottom: initial;
+}
+#setup-configuration header h1 {
+  margin: initial;
+  padding: initial;
+  text-align: initial;
+  border-bottom: initial;
+}
+#setup-configuration nav.tabs {
+  flex: initial;
+  line-height: initial;
+  font-size: initial;
+  border-bottom: initial;
+}
+#setup-configuration nav.tabs a {
+  position: initial;
+}
+#setup-configuration section.content {
+  border-top: initial;
+}
+#setup-configuration section.content .package-list {
+  height: initial;
+}
+#setup-configuration h2 {
+  margin: initial;
+}
+#setup-configuration .form-group {
+  margin: initial;
+}
+#setup-configuration .form-group label.checkbox-label {
+  display: initial;
+  flex: initial;
+  justify-content: initial;
+}
+#setup-configuration .form-group label.checkbox-label input {
+  margin-left: initial;
+}
+#setup-configuration footer.setup-footer.flexcol {
+  flex: initial;
+  justify-content: initial;
+}
+#setup-configuration footer.setup-footer.flexcol > * {
+  flex: initial;
+}
+#setup-configuration .progress-bar {
+  visibility: initial;
+  position: initial;
+  flex: initial;
+  height: initial;
+  margin: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+}
+#setup-configuration .bar {
+  height: initial;
+  margin: initial;
+  display: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  max-width: initial;
+}
+#setup-configuration .pct {
+  display: initial;
+  position: initial;
+  margin-left: initial;
+  color: initial;
+  text-shadow: initial;
+  top: initial;
+  background: initial;
+  padding: initial;
+  border: initial;
+}
+#setup-configuration .tab.flexcol > * {
+  flex: initial;
+}
+#setup-configuration #configuration .setup-footer {
+  margin-bottom: initial;
+}
+#setup-configuration #update-channel {
+  flex: initial;
+}
+#setup-configuration #force-update {
+  flex: initial;
+}
+//
+// Package installation dialog
+//
+#install-package .package-list {
+  border-top: initial;
+  border-bottom: initial;
+  margin: initial;
+  height: initial;
+  overflow: initial;
+}
+#install-package .package-list .package {
+  padding: initial;
+  border-top: initial;
+  border-bottom: initial;
+}
+#install-package .package-list .package.hidden {
+  display: initial;
+}
+#install-package .package-list .package-title {
+  flex: initial;
+  margin: initial;
+  color: initial;
+  font-weight: initial;
+  text-decoration: initial;
+}
+#install-package .package-list .package-description {
+  flex: initial;
+  color: initial;
+  font-size: initial;
+}
+#install-package .package-list .package-description p {
+  margin: initial;
+}
+#install-package .package-list .package-tags,
+#install-package .package-list .package-controls {
+  flex: initial;
+}
+#install-package .package-list .tag.version {
+  width: initial;
+  text-align: initial;
+}
+// -----------------------------------------
+//  World Configuration
+// -----------------------------------------
+#world-config label {
+  font-weight: initial;
+}
+#world-config .editor-content {
+  height: initial;
+}
+#world-config input[name="name"] {
+  flex: initial;
+  margin-left: initial;
+}
+// -----------------------------------------
+//  Join Session
+// -----------------------------------------
+#setup.join .join-header,
+#setup.join .join-footer {
+  flex: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+}
+#setup.join .join-body {
+  flex: initial;
+  width: initial;
+}
+#setup.join #world-title h1 {
+  margin: initial;
+  font-size: initial;
+  line-height: initial;
+  border-bottom: initial;
+}
+#setup.join .left {
+  margin: initial;
+}
+#setup.join .right {
+  margin: initial;
+}
+#setup.join form h1 {
+  font-size: initial;
+  margin-bottom: initial;
+}
+#setup.join form .form-group,
+#setup.join form .form-group-stacked {
+  margin-bottom: initial;
+}
+#setup.join form select {
+  height: initial;
+}
+#setup.join form button {
+  margin: initial;
+}
+#setup.join #session-schedule {
+  margin-top: initial;
+}
+#setup.join #session-schedule .current-players span {
+  font-size: initial;
+  flex: initial;
+  text-align: initial;
+}
+#setup.join #session-schedule .current-players input[type="text"] {
+  flex: initial;
+}
+#setup.join #world-description {
+  height: initial;
+  overflow-y: initial;
+  padding: initial;
+}
+#setup.join .join-footer p {
+  padding: initial;
+}
+// -----------------------------------------
+//  Manage Players
+// -----------------------------------------
+#manage-players {
+  flex: initial;
+}
+#manage-players h1 {
+  border-bottom: initial;
+  margin-bottom: initial;
+}
+#manage-players #player-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  overflow-y: initial;
+  min-height: initial;
+  max-height: initial;
+}
+#manage-players li.player {
+  width: initial;
+  float: initial;
+  margin: initial;
+  padding: initial;
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+}
+#manage-players li.player > * {
+  flex: initial;
+}
+#manage-players li.player > .flex0 {
+  display: initial;
+  flex: initial;
+}
+#manage-players li.player > .flex1 {
+  flex: initial;
+}
+#manage-players li.player > .flex2 {
+  flex: initial;
+}
+#manage-players li.player > .flex3 {
+  flex: initial;
+}
+#manage-players li.player > * {
+  margin: initial;
+}
+#manage-players li.player .user-delete {
+  flex: initial;
+  line-height: initial;
+  text-align: initial;
+}
+#manage-players footer button {
+  margin: initial;
+}
+// -----------------------------------------
+// EULA and Notes
+// -----------------------------------------
+#eula {
+  height: initial;
+}
+#eula #eula-content {
+  flex: initial;
+  overflow-y: initial;
+}
+#eula #eula-content h3 {
+  font-weight: initial;
+}
+#eula #eula-content #eula-updated {
+  text-align: initial;
+}
+#eula #eula-sign {
+  flex: initial;
+}
+#eula #eula-sign label[for="eula-agree"] {
+  line-height: initial;
+  padding-left: initial;
+  font-weight: initial;
+}
+#update-notes .update-notes {
+  max-height: initial;
+  overflow-y: initial;
+}
+#update-notes button#return {
+  margin-top: initial;
+}
+body.stream {
+  background: initial;
+  box-shadow: initial;
+  // Stream Chat
+}
+body.stream .tab[data-tab] {
+  position: initial;
+  top: initial;
+  display: initial;
+  width: initial;
+  height: initial;
+}
+body.stream #chat {
+  left: initial;
+}
+body.stream #chat #chat-log {
+  height: initial;
+}

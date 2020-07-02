@@ -1,0 +1,32 @@
+#sidebar,
+.sidebar-popout {
+	#playlists {
+		.directory-list li.now-playing {
+			border: 0;
+
+			> .playlist-header {
+				pointer-events: none;
+
+				h4 {
+					padding-inline-start: 0;
+				}
+			}
+
+			> .playlist-sounds {
+				> .now-playing-item {
+					padding: 0;
+
+					&:last-child {
+						.playlist-sounds .sound {
+							border-block-end: 0;
+						}
+					}
+				}
+			}
+		}
+
+		li.sound.sound-is-playing {
+			background: transparent;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+#chat-controls {
+	align-items: center;
+	background: color("charcoal-500", 0.5);
+	border-block-start: b("charcoal-600");
+	color: color("white");
+	display: flex;
+	flex: 0 0 auto;
+	padding: p("sm");
+	position: relative;
+
+	.roll-type-select {
+		align-items: center;
+		display: flex;
+		flex: 1 1 auto;
+
+		.fas.fa-dice-d20 {
+			display: none;
+		}
+
+		select {
+			@extend %form-inp-sel-tex-shared;
+			@extend %form-inp-sel-shared;
+			@extend %form-sel;
+			background: color("charcoal-500", 0.5);
+			color: color("white");
+			height: to-rem(32px);
+		}
+	}
+
+	.control-buttons {
+		align-items: center;
+		display: flex;
+		flex: 0 0 auto;
+
+		.button {
+			@extend %control-button;
+		}
+	}
+}
+
+#chat-form {
+	align-items: center;
+	background: color("charcoal-500", 0.5);
+	border-block-start: b("charcoal-600");
+	color: color("white");
+	display: flex;
+	flex: 0 0 auto;
+	height: to-rem(112px);
+	padding: p("sm");
+	position: relative;
+
+	textarea {
+		@extend %form-inp-sel-tex-shared;
+		@extend %form-inp-tex-shared;
+		@extend %form-tex;
+		@include size(100%);
+		background: color("white", 0.9);
+		color: color("default-text");
+		resize: none;
+	}
+}

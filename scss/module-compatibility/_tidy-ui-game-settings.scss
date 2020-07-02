@@ -1,0 +1,11 @@
+.window-app {
+	&#client-settings,
+	&#module-management {
+		min-height: 10vh;
+
+		.package-list,
+		section.content .settings-list {
+			max-height: 100%;
+		}
+	}
+}

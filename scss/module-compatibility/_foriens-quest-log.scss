@@ -1,0 +1,24 @@
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab {
+		.directory-footer {
+			button.quest-log-btn {
+				flex: 1 1 100%;
+				margin: 0;
+				margin-block-start: m("base");
+			}
+		}
+	}
+}
+
+.window-app {
+	.window-header {
+		a.help {
+			@include size(space("button-sm"));
+
+			i {
+				margin-inline-end: 0;
+			}
+		}
+	}
+}

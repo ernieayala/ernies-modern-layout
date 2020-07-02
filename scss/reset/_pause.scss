@@ -1,0 +1,43 @@
+#pause {
+	width: initial;
+	height: initial;
+	position: initial;
+	bottom: initial;
+	left: initial;
+	pointer-events: initial;
+	z-index: initial;
+	background: initial;
+	display: initial;
+}
+#pause.paused {
+	display: initial;
+}
+#pause img {
+	position: initial;
+	top: initial;
+	left: initial;
+	height: initial;
+	width: initial;
+	opacity: initial;
+	border: initial;
+	-webkit-animation: initial;
+}
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: initial;
+	}
+	to {
+		-webkit-transform: initial;
+	}
+}
+#pause h3 {
+	margin: initial;
+	font-size: initial;
+	font-weight: initial;
+	line-height: initial;
+	text-align: initial;
+	position: initial;
+	z-index: initial;
+	color: initial;
+	text-shadow: initial;
+}

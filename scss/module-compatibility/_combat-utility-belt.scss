@@ -1,0 +1,40 @@
+#sidebar,
+.sidebar-popout {
+	#combat {
+		#combat-tracker {
+			.token-resource {
+				input {
+					@extend %form-inp-sel-tex-shared;
+					@extend %form-inp-sel-shared;
+					@extend %form-inp-tex-shared;
+					@include size(space("button-sm"));
+					border: none;
+					color: color("white");
+					padding: 0;
+					text-align: center;
+				}
+			}
+		}
+
+		.add-temporary {
+			@extend %primary-button;
+			margin: m("sm");
+			text-shadow: none;
+			width: 100%;
+
+			> i {
+				margin-inline-end: m("base");
+			}
+		}
+	}
+
+	#settings {
+		#combat-utility-belt {
+			h4 {
+				border-block-end: b("charcoal-600");
+				color: color("white");
+				margin-block-start: m("md");
+			}
+		}
+	}
+}

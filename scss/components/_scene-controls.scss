@@ -1,0 +1,82 @@
+#controls {
+	@include fixed(top space("sm") left space("sm"));
+	box-shadow: none;
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: z("fixed");
+
+	.scene-control,
+	.control-tool {
+		@include size(to-rem(40px));
+		align-items: center;
+		color: color("white");
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		margin-block-end: space("sm");
+		position: relative;
+		transition: t(background box-shadow color, "link");
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&.active {
+			@extend %global-active;
+			@extend %global-hover;
+		}
+
+		&:last-of-type {
+			margin-block-end: 0;
+		}
+
+		> i {
+			margin: 0;
+			position: relative;
+		}
+	}
+
+	.scene-control {
+		background: color("charcoal-900", 0.8);
+
+		&.active .control-tools {
+			display: block;
+		}
+	}
+
+	.control-tool {
+		background: color("charcoal-500", 0.8);
+
+		&.toggle {
+			background: color("white");
+			color: color("default-text");
+
+			&:hover {
+				@extend %global-hover;
+				background: color("primary");
+				color: color("white");
+			}
+
+			&:focus {
+				@extend %global-focus;
+			}
+
+			&.active {
+				@extend %global-active;
+				@extend %global-focus;
+				background: color("primary");
+			}
+		}
+	}
+
+	.control-tools {
+		@include absolute(top 0 left to-rem(48px));
+		display: none;
+	}
+}

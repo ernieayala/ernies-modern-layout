@@ -1,0 +1,43 @@
+#sidebar,
+.sidebar-popout {
+	.token-mold {
+		@extend %panel-header;
+		border-block-end: b("charcoal-600");
+		flex-wrap: wrap;
+
+		h3 {
+			@extend %h4;
+			margin: 0;
+			margin-block-end: m("base");
+			width: 100%;
+		}
+
+		> label {
+			flex: 1 1 auto;
+			padding: p("xs");
+
+			> span {
+				@extend %primary-button;
+				@include size(100%, space("button-sm"));
+				font-size: fs("sm");
+				padding: p("base");
+
+				> span {
+					margin-inline-end: m("base");
+				}
+			}
+
+			&:first-of-type {
+				padding-inline-start: 0;
+			}
+		}
+
+		> a {
+			@extend %control-button;
+
+			&:last-of-type {
+				padding-inline-end: 0;
+			}
+		}
+	}
+}

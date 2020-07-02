@@ -1,0 +1,94 @@
+.window-app {
+	background: color("charcoal-50");
+	border: b("charcoal-600");
+	border-radius: 0;
+	box-shadow: 0 2px 4px color("black");
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	max-height: 80vh;
+	position: absolute;
+	z-index: z("modal");
+
+	.window-header {
+		align-items: center;
+		background: color("charcoal-600");
+		border-bottom: b("charcoal-600");
+		color: color("white");
+		display: flex;
+		flex: 0 0 auto;
+		overflow: hidden;
+		padding: p("sm");
+		position: relative;
+
+		h4 {
+			@include ellipsis(max-width 100%);
+			color: color("white");
+			flex: 1 1 auto;
+			font-weight: normal;
+			position: relative;
+		}
+
+		a {
+			@extend %control-button;
+			background: transparent;
+			padding: p("base");
+			width: auto;
+
+			&:hover {
+				background: color("primary");
+			}
+
+			&.close {
+				color: transparent;
+				overflow: hidden;
+				padding: 0;
+				width: space("button-sm");
+
+				i {
+					@include absolute(top 0 left 0);
+					@include size(100%);
+					align-items: center;
+					color: color("white");
+					display: flex;
+					font-size: fs("lg");
+					justify-content: center;
+					margin: 0;
+				}
+			}
+
+			> i,
+			> span.fas {
+				margin-inline-end: m("base");
+			}
+		}
+	}
+
+	.window-resizable-handle {
+		@include absolute(bottom 0 right 0);
+		@include size(to-rem(20px));
+		align-items: center;
+		background: color("charcoal-800");
+		border: none;
+		border-top-left-radius: br("sm");
+		color: color("white");
+		cursor: pointer;
+		display: inline-flex;
+		font-size: fs("md");
+		justify-content: center;
+		margin: 0;
+		transition: t(background box-shadow, "link");
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		> i {
+			transform: rotate(45deg);
+		}
+	}
+}

@@ -1,0 +1,40 @@
+#effects-config {
+	.effects.directory-list {
+		height: auto;
+
+		.directory-item {
+			flex-direction: column;
+			padding: p("sm");
+
+			header {
+				display: flex;
+				width: 100%;
+
+				label {
+					align-items: center;
+					display: flex;
+					flex-direction: row-reverse;
+					font-size: fs("lg");
+					justify-content: flex-end;
+
+					> i {
+						margin-inline-end: m("base");
+					}
+				}
+
+				input[type="checkbox"] {
+					@extend %form-inp-sel-tex-shared;
+					@extend %form-checkbox;
+					margin: 0;
+					margin-inline-start: m("sm");
+				}
+			}
+
+			.config.collapsible {
+				margin: 0;
+				margin-block-start: m("base");
+				width: 100%;
+			}
+		}
+	}
+}

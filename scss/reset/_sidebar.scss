@@ -1,0 +1,557 @@
+#sidebar,
+.sidebar-popout {
+	border: initial;
+
+	// TODO Global
+	li.folder > .folder-header {
+		padding: initial;
+		line-height: initial;
+		background: initial;
+		border-top: initial;
+		border-bottom: initial;
+	}
+	li.folder > .folder-header h3 {
+		margin: initial;
+		color: initial;
+	}
+	li.folder > .folder-header h3 > i {
+		margin-right: initial;
+	}
+	li.folder > .folder-header .create-folder,
+	li.folder > .folder-header .create-entity {
+		flex: initial;
+		text-align: initial;
+		color: initial;
+		font-size: initial;
+	}
+	li.folder.collapsed .subdirectory {
+		display: initial;
+	}
+	li.folder.collapsed > .folder-header {
+		background: initial;
+	}
+	li.folder.collapsed > .folder-header h3 {
+		text-shadow: initial;
+		color: initial;
+	}
+	li.folder.collapsed > .folder-header h3 > i:before {
+		content: initial;
+	}
+	li.folder.collapsed > .folder-header .create-folder {
+		display: initial;
+	}
+	//
+	// Subdirectory Styles
+	//
+	.subdirectory {
+		list-style: initial;
+		margin: initial;
+		padding: initial;
+		border-left: initial;
+		border-bottom: initial;
+	}
+	.subdirectory:empty {
+		border: initial;
+	}
+	.subdirectory .folder {
+		border-left: initial;
+	}
+}
+#sidebar-tabs {
+	flex: initial;
+	box-sizing: initial;
+	margin: initial;
+	border-bottom: initial;
+	box-shadow: initial;
+}
+#sidebar-tabs > .item {
+	position: initial;
+	flex: initial;
+	line-height: initial;
+	border: initial;
+	border-radius: initial;
+}
+#sidebar-tabs > .item.active {
+	color: initial;
+	border: initial;
+	border-bottom: initial;
+	box-shadow: initial;
+}
+#sidebar-tabs > .item i.fas {
+	margin-right: initial;
+}
+#sidebar-tabs > .collapse {
+	position: initial;
+	flex: initial;
+	line-height: initial;
+	color: initial;
+	text-align: initial;
+}
+.sidebar-tab {
+	overflow: initial;
+}
+.sidebar-tab .directory-header {
+	flex: initial;
+	line-height: initial;
+	text-align: initial;
+	margin: initial;
+	border-bottom: initial;
+}
+.sidebar-tab .directory-header .header-search {
+	flex: initial;
+}
+.sidebar-tab .directory-header .header-search input {
+	background: initial;
+	width: initial;
+	margin: initial;
+}
+.sidebar-tab .directory-header .header-control {
+	display: initial;
+	flex: initial;
+	height: initial;
+}
+.sidebar-tab .directory-list {
+	flex: initial;
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+	overflow-y: initial;
+	scrollbar-width: initial;
+}
+.sidebar-tab .directory-list .directory-item {
+	line-height: initial;
+}
+.sidebar-tab .directory-list .directory-item h3,
+.sidebar-tab .directory-list .directory-item h4 {
+	margin: initial;
+	white-space: initial;
+	overflow: initial;
+}
+.sidebar-tab .directory-list .directory-item img {
+	flex: initial;
+	height: initial;
+	width: initial;
+	object-fit: initial;
+	object-position: initial;
+	margin: initial;
+	border: initial;
+}
+.sidebar-tab .directory-list .directory-item img[data-src] {
+	visibility: initial;
+}
+.sidebar-tab .directory-list .directory-item.context,
+.sidebar-tab .directory-list .directory-item.active {
+	border-color: initial;
+}
+.sidebar-tab .directory-list .folder .context {
+	border-color: initial;
+}
+.sidebar-tab .directory-list .entity {
+	border-top: initial;
+	border-bottom: initial;
+}
+.sidebar-tab .directory-list .entity:last-child {
+	border-bottom: initial;
+}
+.sidebar-tab .directory-list .folder + .entity {
+	border-top: initial;
+}
+.sidebar-tab .directory-footer {
+	display: initial;
+	flex-direction: initial;
+	flex-wrap: initial;
+	justify-content: initial;
+	flex: initial;
+	margin: initial;
+}
+.sidebar-tab .directory-footer > * {
+	flex: initial;
+}
+.sidebar-tab .directory-footer > .flex0 {
+	display: initial;
+	flex: initial;
+}
+.sidebar-tab .directory-footer > .flex1 {
+	flex: initial;
+}
+.sidebar-tab .directory-footer > .flex2 {
+	flex: initial;
+}
+.sidebar-tab .directory-footer > .flex3 {
+	flex: initial;
+}
+.sidebar-tab .directory-footer button {
+	margin: initial;
+}
+#sidebar.collapsed #sidebar-tabs {
+	border-bottom: initial;
+	box-shadow: initial;
+}
+#sidebar.collapsed #sidebar-tabs > .item.active {
+	border-bottom: initial;
+	border-radius: initial;
+}
+#sidebar.collapsed .sidebar-tab {
+	display: initial;
+}
+
+// -----------------------------------------
+//  2.0 - Combat Tracker
+// -----------------------------------------
+#combat #combat-round {
+	flex: initial;
+	line-height: initial;
+	font-size: initial;
+	text-align: initial;
+	border-bottom: initial;
+}
+#combat #combat-round .encounters a {
+	font-size: initial;
+	flex: initial;
+	color: initial;
+}
+#combat #combat-round .encounters a.combat-cycle {
+	font-size: initial;
+}
+#combat #combat-round .encounters a[disabled] {
+	visibility: initial;
+}
+#combat #combat-round .encounters h4 {
+	flex: initial;
+	margin: initial;
+	font-size: initial;
+	color: initial;
+	text-align: initial;
+}
+#combat #combat-round .encounters h3 {
+	flex: initial;
+	margin: initial;
+	font-size: initial;
+	text-align: initial;
+}
+#combat #combat-tracker {
+	height: initial;
+	padding: initial;
+}
+#combat #combat-controls {
+	margin: initial;
+	border-top: initial;
+	padding-top: initial;
+}
+#combat #combat-controls a {
+	flex: initial;
+	font-size: initial;
+	text-align: initial;
+	line-height: initial;
+}
+#combat #combat-controls a.center {
+	flex: initial;
+}
+#combat li.combatant .token-image {
+	margin: initial;
+}
+#combat li.combatant .token-name {
+	flex: initial;
+	overflow: initial;
+	margin: initial;
+	text-shadow: initial;
+}
+#combat li.combatant .token-name h4 {
+	flex: initial;
+	line-height: initial;
+	margin: initial;
+}
+#combat li.combatant .token-name .combatant-controls {
+	flex: initial;
+	font-size: initial;
+	line-height: initial;
+}
+#combat li.combatant .token-name .combatant-control {
+	flex: initial;
+	height: initial;
+	float: initial;
+	color: initial;
+}
+#combat li.combatant .token-name .combatant-control.active {
+	color: initial;
+}
+#combat li.combatant .token-name .token-effects {
+	height: initial;
+	overflow: initial;
+}
+#combat li.combatant .token-name img.token-effect {
+	width: initial;
+	height: initial;
+	margin: initial;
+	border: initial;
+	border-radius: initial;
+}
+#combat li.combatant .token-resource {
+	flex: initial;
+	color: initial;
+	text-align: initial;
+	border-right: initial;
+}
+#combat li.combatant .token-initiative {
+	flex: initial;
+	text-align: initial;
+}
+#combat li.combatant .token-initiative .initiative {
+	font-size: initial;
+	text-shadow: initial;
+}
+#combat li.combatant .roll {
+	display: initial;
+	width: initial;
+	height: initial;
+	background: initial;
+	background-size: initial;
+	margin: initial;
+}
+#combat li.combatant .roll:hover {
+	background-image: initial;
+}
+#combat li.combatant.hover,
+#combat li.combatant:hover {
+	background: initial;
+}
+#combat li.combatant.active {
+	background: initial;
+}
+#combat li.combatant.active .initiative {
+	font-weight: initial;
+}
+#combat li.combatant.hidden {
+	color: initial;
+}
+#combat li.combatant.hidden img {
+	opacity: initial;
+}
+#combat li.combatant.defeated {
+	color: initial;
+}
+#combat li.combatant.defeated img {
+	opacity: initial;
+	transform: initial;
+}
+// -----------------------------------------
+//  3.0 - Scenes Directory
+// -----------------------------------------
+#scenes .scene {
+	position: initial;
+	height: initial;
+	line-height: initial;
+	background-size: initial;
+	background-position: initial;
+	border: initial;
+	box-shadow: initial;
+}
+#scenes .scene.context,
+#scenes .scene.active {
+	margin-top: initial;
+	border: initial;
+	box-shadow: initial;
+}
+#scenes .scene h3 {
+	line-height: initial;
+	text-align: initial;
+	font-size: initial;
+	font-weight: initial;
+	text-shadow: initial;
+}
+#scenes .subdirectory {
+	border-left: initial;
+	border-bottom: initial;
+}
+// -----------------------------------------
+//  6.0 - Journal
+// -----------------------------------------
+#journal li.journal {
+	line-height: initial;
+}
+#journal li.journal .entity-name {
+	margin: initial;
+}
+// -----------------------------------------
+//  7.0 - Playlists
+// -----------------------------------------
+#playlists .global-volume {
+	flex: initial;
+}
+#playlists li.playlist {
+	padding: initial;
+	line-height: initial;
+}
+#playlists li.playlist .playlist-header {
+	flex: initial;
+	justify-content: initial;
+	text-decoration: initial;
+}
+#playlists li.playlist .playlist-header .playlist-name {
+	cursor: initial;
+	max-width: initial;
+}
+#playlists li.playlist .playlist-header .playlist-name i.fa {
+	color: initial;
+	margin-left: initial;
+}
+#playlists li.playlist .playlist-header .playlist-controls {
+	flex: initial;
+	justify-content: initial;
+}
+#playlists li.playlist .playlist-header a.playlist-delete {
+	flex: initial;
+}
+#playlists li.playlist .playlist-sounds {
+	flex: initial;
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+}
+#playlists li.playlist.collapsed .playlist-sounds {
+	display: initial;
+}
+#playlists li.playlist .sound-control {
+	flex: initial;
+	text-align: initial;
+	color: initial;
+	font-size: initial;
+}
+#playlists li.playlist .sound-control.inactive {
+	color: initial;
+}
+#playlists li.playlist .sound-control.inactive:hover {
+	text-shadow: initial;
+}
+#playlists li.playlist .sound-control.disabled {
+	color: initial;
+}
+#playlists li.playlist .sound-control.disabled:hover {
+	text-shadow: initial;
+}
+#playlists li.sound {
+	margin: initial;
+	padding: initial;
+}
+#playlists li.sound .sound-name {
+	margin: initial;
+	max-width: initial;
+}
+#playlists li.sound .sound-controls {
+	flex: initial;
+	justify-content: initial;
+}
+// -----------------------------------------
+//  8.0 - Compendium Packs
+// -----------------------------------------
+#compendium h3 {
+	margin: initial;
+	padding: initial;
+	border: initial;
+	background: initial;
+}
+#compendium ol.compendium-list {
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+}
+#compendium li.compendium-pack {
+	position: initial;
+	margin: initial;
+	padding: initial;
+	border-bottom: initial;
+}
+#compendium li.compendium-pack .pack-title i {
+	margin-right: initial;
+}
+#compendium li.compendium-pack .status-icons {
+	position: initial;
+	font-weight: initial;
+	color: initial;
+	right: initial;
+}
+#compendium li.compendium-pack:last-child {
+	border-bottom: initial;
+}
+//
+// Single Compendium Pack
+//
+.compendium .directory-header {
+	border-bottom: initial;
+}
+.compendium .directory-list .directory-item {
+	line-height: initial;
+	border-top: initial;
+	border-bottom: initial;
+	box-shadow: initial;
+}
+// -----------------------------------------
+//  Settings
+// -----------------------------------------
+#settings {
+	padding: initial;
+	overflow-y: initial;
+}
+#settings button {
+	position: initial;
+	margin: initial;
+}
+#module-management .package-title {
+	line-height: initial;
+	font-weight: initial;
+}
+#module-management input.active {
+	margin-left: initial;
+}
+#module-management .module-description {
+	color: initial;
+}
+#module-management .module-description p {
+	margin: initial;
+}
+#module-management .module-description ul {
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+}
+//
+// Role Permission Configuration Form
+//
+#permissions-config header.table-header {
+	background: initial;
+	padding: initial;
+	border: initial;
+	text-align: initial;
+	color: initial;
+	font-weight: initial;
+	text-shadow: initial;
+}
+#permissions-config ul.permissions-list {
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+	max-height: initial;
+	overflow: initial;
+	scrollbar-width: initial;
+}
+#permissions-config li.permission {
+	padding: initial;
+	border-bottom: initial;
+}
+#permissions-config li.permission .form-fields {
+	justify-content: initial;
+}
+#permissions-config li.permission input[type="checkbox"] {
+	margin: initial;
+}
+#permissions-config .index {
+	flex: initial;
+	text-align: initial;
+	font-weight: initial;
+}
+#permissions-config .hint {
+	flex: initial;
+	color: initial;
+	font-size: initial;
+	margin: initial;
+}

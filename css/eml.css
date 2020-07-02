@@ -1,0 +1,3187 @@
+:root {
+  --color-black: 0, 0, 0;
+  --color-white: 255, 255, 255;
+  --color-blue-50: 236, 241, 252;
+  --color-blue-100: 196, 211, 242;
+  --color-blue-200: 156, 181, 232;
+  --color-blue-300: 116, 151, 222;
+  --color-blue-400: 76, 121, 212;
+  --color-blue-500: 56, 106, 207;
+  --color-blue-600: 25, 51, 102;
+  --color-blue-700: 32, 63, 123;
+  --color-blue-800: 37, 73, 144;
+  --color-blue-900: 43, 84, 165;
+  --color-charcoal-50: 230, 233, 235;
+  --color-charcoal-100: 209, 214, 216;
+  --color-charcoal-200: 167, 176, 178;
+  --color-charcoal-300: 125, 138, 140;
+  --color-charcoal-400: 83, 100, 102;
+  --color-charcoal-500: 41, 62, 64;
+  --color-charcoal-600: 33, 50, 52;
+  --color-charcoal-700: 25, 38, 40;
+  --color-charcoal-800: 17, 26, 28;
+  --color-charcoal-900: 9, 14, 16;
+  --color-green-50: 234, 253, 244;
+  --color-green-100: 183, 238, 216;
+  --color-green-200: 135, 224, 190;
+  --color-green-300: 87, 210, 164;
+  --color-green-400: 39, 196, 138;
+  --color-green-500: 15, 189, 125;
+  --color-green-600: 12, 151, 99;
+  --color-green-700: 10, 132, 86;
+  --color-green-800: 8, 113, 73;
+  --color-green-900: 6, 75, 46;
+  --color-gray-50: 250, 250, 250;
+  --color-gray-100: 241, 241, 241;
+  --color-gray-200: 203, 203, 203;
+  --color-gray-300: 177, 177, 177;
+  --color-gray-400: 151, 151, 151;
+  --color-gray-500: 125, 125, 125;
+  --color-gray-600: 102, 102, 102;
+  --color-gray-700: 74, 74, 74;
+  --color-gray-800: 46, 46, 46;
+  --color-gray-900: 21, 21, 21;
+  --color-orange-50: 253, 229, 209;
+  --color-orange-100: 250, 215, 184;
+  --color-orange-200: 244, 187, 134;
+  --color-orange-300: 238, 159, 84;
+  --color-orange-400: 232, 131, 35;
+  --color-orange-500: 229, 117, 9;
+  --color-orange-600: 183, 93, 8;
+  --color-orange-700: 160, 81, 8;
+  --color-orange-800: 137, 69, 9;
+  --color-orange-900: 114, 57, 6;
+  --color-purple-50: 245, 233, 255;
+  --color-purple-100: 217, 195, 248;
+  --color-purple-200: 189, 157, 240;
+  --color-purple-300: 161, 119, 232;
+  --color-purple-400: 133, 81, 224;
+  --color-purple-500: 119, 62, 220;
+  --color-purple-600: 95, 50, 176;
+  --color-purple-700: 83, 44, 154;
+  --color-purple-800: 71, 38, 132;
+  --color-purple-900: 59, 32, 110;
+  --color-red-50: 255, 236, 240;
+  --color-red-100: 252, 212, 220;
+  --color-red-200: 244, 164, 180;
+  --color-red-300: 236, 117, 140;
+  --color-red-400: 228, 68, 100;
+  --color-red-500: 220, 20, 60;
+  --color-red-600: 176, 16, 48;
+  --color-red-700: 154, 14, 42;
+  --color-red-800: 132, 12, 36;
+  --color-red-900: 110, 10, 30;
+  --color-yellow-50: 255, 248, 242;
+  --color-yellow-100: 251, 234, 206;
+  --color-yellow-200: 247, 220, 170;
+  --color-yellow-300: 253, 202, 106;
+  --color-yellow-400: 241, 199, 116;
+  --color-yellow-500: 237, 185, 80;
+  --color-yellow-600: 189, 147, 64;
+  --color-yellow-700: 165, 128, 56;
+  --color-yellow-800: 141, 109, 47;
+  --color-yellow-900: 117, 89, 40;
+  --color-negative: 220, 20, 60;
+  --color-neutral: 56, 106, 207;
+  --color-positive: 15, 189, 125;
+  --color-warning: 229, 117, 9;
+  --color-primary: 229, 117, 9;
+  --color-default-text: 9, 14, 16;
+  scrollbar-color: rgba(var(--color-charcoal-300), 1) rgba(var(--color-black), 0.3);
+  scrollbar-width: thin; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input, html.e-html body.e-body#e-rd #chat-controls .roll-type-select select, html.e-html body.e-body#e-rd #chat-form textarea, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input, html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header input[type="checkbox"] {
+  background: transparent;
+  border: rgba(var(--color-default-text), 1) 1px solid;
+  border-radius: 0;
+  color: rgba(var(--color-default-text), 1);
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  position: relative;
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input, html.e-html body.e-body#e-rd #chat-controls .roll-type-select select, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input {
+  height: 2rem;
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input, html.e-html body.e-body#e-rd #chat-form textarea, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input {
+  user-select: text;
+  width: 100%; }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input::placeholder,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input::placeholder, html.e-html body.e-body#e-rd #chat-form textarea::placeholder, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input::placeholder, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input::placeholder,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input::placeholder {
+    color: rgba(var(--color-gray-400), 1); }
+
+html.e-html body.e-body#e-rd #chat-controls .roll-type-select select {
+  cursor: pointer;
+  text-overflow: ellipsis; }
+  html.e-html body.e-body#e-rd #chat-controls .roll-type-select select optgroup {
+    background: rgba(var(--color-white), 1);
+    color: rgba(var(--color-default-text), 1); }
+
+html.e-html body.e-body#e-rd #chat-form textarea {
+  min-height: 4rem;
+  padding: 0.5rem; }
+
+html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer; }
+
+html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4,
+html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4, html.e-html body.e-body#e-rd #pause h3 {
+  color: rgba(var(--color-primary), 1);
+  font-weight: 600;
+  margin: 0;
+  position: relative; }
+
+html.e-html body.e-body#e-rd #sidebar #settings h2,
+html.e-html body.e-body#e-rd .sidebar-popout #settings h2 {
+  font-size: 1.5rem; }
+
+html.e-html body.e-body#e-rd #pause h3 {
+  font-size: 1.25rem; }
+
+html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4,
+html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4, html.e-html body.e-body#e-rd #sidebar #settings h4,
+html.e-html body.e-body#e-rd .sidebar-popout #settings h4, html.e-html body.e-body#e-rd #sidebar .token-mold h3,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold h3 {
+  font-size: 1rem; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control:hover, html.e-html body.e-body#e-rd #sidebar #settings button:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button:hover, html.e-html body.e-body#e-rd #sidebar #combat .add-temporary:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary:hover, html.e-html body.e-body#e-rd #RTB-menu .RTB-entry:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span:hover, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-control:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-control:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-control:hover, html.e-html body.e-body#e-rd .window-app .window-header a:hover, html.e-html body.e-body#e-rd #navigation #nav-toggle:hover, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-folder:hover,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-entity:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-folder:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-entity:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control:hover, html.e-html body.e-body#e-rd #chat-controls .control-buttons .button:hover, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a:hover,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a:hover, html.e-html body.e-body#e-rd #RTB-button:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > a:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a:hover, html.e-html body.e-body#e-rd .window-app .window-resizable-handle:hover, html.e-html body.e-body#e-rd #navigation .scene-name:hover, html.e-html body.e-body#e-rd #controls .scene-control:hover,
+html.e-html body.e-body#e-rd #controls .control-tool:hover, html.e-html body.e-body#e-rd #controls .scene-control.active,
+html.e-html body.e-body#e-rd #controls .control-tool.active, html.e-html body.e-body#e-rd #controls .control-tool.toggle:hover, html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item:hover,
+html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse:hover, html.e-html body.e-body#e-rd #sidebar .folder .folder-header:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header:hover, html.e-html body.e-body#e-rd #sidebar .directory-item:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .directory-item:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant:hover, html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack:hover, html.e-html body.e-body#e-rd #hotbar .bar-controls .page-control:hover,
+html.e-html body.e-body#e-rd #hotbar .bar-controls #macro-directory:hover,
+html.e-html body.e-body#e-rd #hotbar .bar-controls #bar-toggle:hover, html.e-html body.e-body#e-rd #hotbar .macro:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item:hover {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
+  text-shadow: none; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input:hover,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input:hover, html.e-html body.e-body#e-rd #chat-controls .roll-type-select select:hover, html.e-html body.e-body#e-rd #chat-form textarea:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input:hover,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input:hover, html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header input:hover[type="checkbox"] {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input:focus, html.e-html body.e-body#e-rd #chat-controls .roll-type-select select:focus, html.e-html body.e-body#e-rd #chat-form textarea:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input:focus, html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header input:focus[type="checkbox"], html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button.active:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .active.combat-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .active.combat-control:focus, html.e-html body.e-body#e-rd #sidebar #settings button.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button.active:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button.active:focus, html.e-html body.e-body#e-rd #sidebar #combat .active.add-temporary:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .active.add-temporary:focus, html.e-html body.e-body#e-rd #RTB-menu .active.RTB-entry:focus, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span.active:focus, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .active.header-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .active.header-control:focus, html.e-html body.e-body#e-rd .window-app .window-header a.active:focus, html.e-html body.e-body#e-rd #navigation .active#nav-toggle:focus, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-folder:focus,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-entity:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-folder:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-entity:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a.active:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .active.combatant-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:focus, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .active.sound-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .active.sound-control:focus, html.e-html body.e-body#e-rd #chat-controls .control-buttons .active.button:focus, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a.active:focus, html.e-html body.e-body#e-rd .active#RTB-button:focus, html.e-html body.e-body#e-rd #sidebar .token-mold > a.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a.active:focus, html.e-html body.e-body#e-rd #navigation #scene-list .scene.active .scene-name:focus, html.e-html body.e-body#e-rd #navigation #scene-list .scene.view .scene-name:focus, html.e-html body.e-body#e-rd #controls .scene-control.active:focus,
+html.e-html body.e-body#e-rd #controls .control-tool.active:focus, html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item.active:focus,
+html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse.active:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.active:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.active:focus, html.e-html body.e-body#e-rd #hotbar .macro.active:focus, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control:focus, html.e-html body.e-body#e-rd #sidebar #settings button:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button:focus, html.e-html body.e-body#e-rd #sidebar #combat .add-temporary:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary:focus, html.e-html body.e-body#e-rd #RTB-menu .RTB-entry:focus, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span:focus, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-control:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-control:focus, html.e-html body.e-body#e-rd .window-app .window-header a:focus, html.e-html body.e-body#e-rd #navigation #nav-toggle:focus, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-folder:focus,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-entity:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-folder:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-entity:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a:focus, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control:focus, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control:focus, html.e-html body.e-body#e-rd #chat-controls .control-buttons .button:focus, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a:focus,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a:focus, html.e-html body.e-body#e-rd #RTB-button:focus, html.e-html body.e-body#e-rd #sidebar .token-mold > a:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a:focus, html.e-html body.e-body#e-rd .window-app .window-resizable-handle:focus, html.e-html body.e-body#e-rd #navigation #scene-list .scene.view .scene-name, html.e-html body.e-body#e-rd #navigation .scene-name:focus, html.e-html body.e-body#e-rd #controls .scene-control:focus,
+html.e-html body.e-body#e-rd #controls .control-tool:focus, html.e-html body.e-body#e-rd #controls .control-tool.toggle:focus, html.e-html body.e-body#e-rd #controls .control-tool.toggle.active, html.e-html body.e-body#e-rd #sidebar .folder .folder-header:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header:focus, html.e-html body.e-body#e-rd #sidebar .directory-item:focus,
+html.e-html body.e-body#e-rd .sidebar-popout .directory-item:focus, html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack:focus,
+html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack:focus, html.e-html body.e-body#e-rd #hotbar .bar-controls .page-control:focus,
+html.e-html body.e-body#e-rd #hotbar .bar-controls #macro-directory:focus,
+html.e-html body.e-body#e-rd #hotbar .bar-controls #bar-toggle:focus, html.e-html body.e-body#e-rd #hotbar .macro:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item:focus {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+  text-shadow: none;
+  outline: none; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button.active,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button.active, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .active.combat-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .active.combat-control, html.e-html body.e-body#e-rd #sidebar #settings button.active,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button.active, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button.active, html.e-html body.e-body#e-rd #sidebar #combat .active.add-temporary,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .active.add-temporary, html.e-html body.e-body#e-rd #RTB-menu .active.RTB-entry, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span.active,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span.active, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .active.header-control,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .active.header-control, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .active.header-control, html.e-html body.e-body#e-rd .window-app .window-header a.active, html.e-html body.e-body#e-rd #navigation .active#nav-toggle, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-folder,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-entity,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-folder,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-entity, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a.active,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a.active, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .active.combatant-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .active.sound-control,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .active.sound-control, html.e-html body.e-body#e-rd #chat-controls .control-buttons .active.button, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a.active,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a.active, html.e-html body.e-body#e-rd .active#RTB-button, html.e-html body.e-body#e-rd #sidebar .token-mold > a.active,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a.active, html.e-html body.e-body#e-rd #navigation #scene-list .scene.active .scene-name, html.e-html body.e-body#e-rd #navigation #scene-list .scene.view .scene-name, html.e-html body.e-body#e-rd #controls .scene-control.active,
+html.e-html body.e-body#e-rd #controls .control-tool.active, html.e-html body.e-body#e-rd #controls .control-tool.toggle.active, html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item.active,
+html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse.active,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item.active,
+html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse.active, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.active,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.active, html.e-html body.e-body#e-rd #hotbar .macro.active {
+  background: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-white), 1);
+  text-shadow: none; }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button.active:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .active.combat-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .active.combat-control:hover, html.e-html body.e-body#e-rd #sidebar #settings button.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #settings button.active:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button.active:hover, html.e-html body.e-body#e-rd #sidebar #combat .active.add-temporary:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat .active.add-temporary:hover, html.e-html body.e-body#e-rd #RTB-menu .active.RTB-entry:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span.active:hover, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .active.header-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .active.header-control:hover, html.e-html body.e-body#e-rd .window-app .window-header a.active:hover, html.e-html body.e-body#e-rd #navigation .active#nav-toggle:hover, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-folder:hover,
+  html.e-html body.e-body#e-rd #sidebar .folder .folder-header .active.create-entity:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-folder:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .active.create-entity:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a.active:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .active.combatant-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .active.sound-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .active.sound-control:hover, html.e-html body.e-body#e-rd #chat-controls .control-buttons .active.button:hover, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a.active:hover, html.e-html body.e-body#e-rd .active#RTB-button:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > a.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a.active:hover, html.e-html body.e-body#e-rd #navigation #scene-list .scene.active .scene-name:hover, html.e-html body.e-body#e-rd #navigation #scene-list .scene.view .scene-name:hover, html.e-html body.e-body#e-rd #controls .scene-control.active:hover,
+  html.e-html body.e-body#e-rd #controls .control-tool.active:hover, html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item.active:hover,
+  html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse.active:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.active:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.active:hover, html.e-html body.e-body#e-rd #hotbar .macro.active:hover {
+    background: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-white), 1);
+    text-shadow: none; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control, html.e-html body.e-body#e-rd #sidebar #settings button,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button, html.e-html body.e-body#e-rd #sidebar #combat .add-temporary,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary, html.e-html body.e-body#e-rd #RTB-menu .RTB-entry, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-control,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-control, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-control, html.e-html body.e-body#e-rd .window-app .window-header a, html.e-html body.e-body#e-rd #navigation #nav-toggle, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-folder,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-entity,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-folder,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-entity, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control, html.e-html body.e-body#e-rd #chat-controls .control-buttons .button, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a, html.e-html body.e-body#e-rd #RTB-button, html.e-html body.e-body#e-rd #sidebar .token-mold > a,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a {
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  color: rgba(var(--color-white), 1);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Signika", sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  padding: 0.5rem;
+  position: relative;
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control:hover, html.e-html body.e-body#e-rd #sidebar #settings button:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #settings button:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button:hover, html.e-html body.e-body#e-rd #sidebar #combat .add-temporary:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary:hover, html.e-html body.e-body#e-rd #RTB-menu .RTB-entry:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span:hover, html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-control:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-control:hover, html.e-html body.e-body#e-rd .window-app .window-header a:hover, html.e-html body.e-body#e-rd #navigation #nav-toggle:hover, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-folder:hover,
+  html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-entity:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-folder:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-entity:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a:hover, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control:hover, html.e-html body.e-body#e-rd #chat-controls .control-buttons .button:hover, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a:hover, html.e-html body.e-body#e-rd #RTB-button:hover, html.e-html body.e-body#e-rd #sidebar .token-mold > a:hover,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a:hover {
+    background: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-white), 1); }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button, html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control, html.e-html body.e-body#e-rd #sidebar #settings button,
+html.e-html body.e-body#e-rd .sidebar-popout #settings button, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button, html.e-html body.e-body#e-rd #sidebar #combat .add-temporary,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary, html.e-html body.e-body#e-rd #RTB-menu .RTB-entry, html.e-html body.e-body#e-rd #sidebar .token-mold > label > span,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span {
+  background: rgba(var(--color-charcoal-400), 1); }
+
+html.e-html body.e-body#e-rd .window-app .window-header a, html.e-html body.e-body#e-rd #navigation #nav-toggle, html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-folder,
+html.e-html body.e-body#e-rd #sidebar .folder .folder-header .create-entity,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-folder,
+html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header .create-entity, html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a, html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control, html.e-html body.e-body#e-rd #chat-controls .control-buttons .button, html.e-html body.e-body#e-rd #sidebar div.permission-viewer a,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a, html.e-html body.e-body#e-rd #RTB-button, html.e-html body.e-body#e-rd #sidebar .token-mold > a,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  margin-inline-start: 0.125rem;
+  padding: 0; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button {
+  flex: 1 1 auto;
+  margin-inline-start: 0.25rem;
+  width: 100%; }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button:first-of-type,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button:first-of-type, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button:first-of-type {
+    margin-inline-start: 0; }
+
+html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list,
+html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+html.e-html body.e-body#e-rd #sidebar .directory-list,
+html.e-html body.e-body#e-rd .sidebar-popout .directory-list, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list {
+  flex: 1 1 auto;
+  list-style: none;
+  margin: 0;
+  min-height: 0.0625rem;
+  overflow-y: auto;
+  padding: 0; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header,
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer, html.e-html body.e-body#e-rd #sidebar #combat #combat-round,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header,
+html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer, html.e-html body.e-body#e-rd #sidebar .token-mold,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold {
+  align-items: center;
+  background: rgba(var(--color-charcoal-500), 0.5);
+  color: rgba(var(--color-white), 1);
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  position: relative; }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header:empty,
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer:empty,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header:empty,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer:empty, html.e-html body.e-body#e-rd #sidebar #combat #combat-round:empty,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round:empty, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header:empty,
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer:empty, html.e-html body.e-body#e-rd #sidebar .token-mold:empty,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold:empty {
+    display: none; }
+
+::-webkit-scrollbar {
+  width: initial; }
+
+::-webkit-scrollbar-track {
+  box-shadow: initial;
+  border-radius: initial; }
+
+::-webkit-scrollbar-thumb {
+  outline: initial;
+  border-radius: initial;
+  background: initial;
+  border: initial; }
+
+:root {
+  scrollbar-width: initial;
+  scrollbar-color: initial; }
+
+#navigation {
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  background: initial;
+  box-shadow: initial;
+  border: initial; }
+
+#navigation .nav-item {
+  line-height: initial;
+  padding: initial;
+  margin: initial;
+  border: initial;
+  border-radius: initial;
+  cursor: initial;
+  position: initial; }
+
+#navigation #nav-toggle {
+  flex: initial;
+  height: initial;
+  background: initial;
+  text-align: initial; }
+
+#navigation #nav-toggle:hover {
+  text-shadow: initial; }
+
+#navigation #scene-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial; }
+
+#navigation #scene-list .scene {
+  float: initial;
+  background: initial; }
+
+#navigation #scene-list .scene:last-child {
+  margin-right: initial; }
+
+#navigation #scene-list .scene.gm {
+  background: initial;
+  border: initial; }
+
+#navigation #scene-list .scene.view,
+#navigation #scene-list .scene.context {
+  cursor: initial;
+  color: initial;
+  border: initial;
+  background: initial;
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#navigation #scene-list .scene ul.scene-players {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  position: initial;
+  top: initial;
+  left: initial; }
+
+#navigation #scene-list .scene li.scene-player {
+  float: initial;
+  height: initial;
+  width: initial;
+  margin: initial;
+  line-height: initial;
+  font-size: initial;
+  text-align: initial;
+  color: initial;
+  font-weight: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial; }
+
+#navigation.collapsed {
+  pointer-events: initial; }
+
+#navigation.collapsed #nav-toggle {
+  pointer-events: initial; }
+
+#navigation.collapsed #scene-list {
+  display: initial; }
+
+#loading {
+  display: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  border-radius: initial;
+  z-index: initial; }
+
+#loading label {
+  line-height: initial;
+  position: initial;
+  top: initial;
+  padding: initial;
+  font-size: initial;
+  color: initial;
+  background: initial;
+  text-shadow: initial; }
+
+#loading #loading-bar {
+  position: initial;
+  margin: initial;
+  height: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial; }
+
+#loading #context {
+  left: initial; }
+
+#loading #progress {
+  top: initial;
+  right: initial;
+  padding: initial; }
+
+#controls {
+  position: initial;
+  top: initial;
+  left: initial;
+  padding: initial;
+  list-style: initial;
+  background: initial;
+  box-shadow: initial;
+  border: initial; }
+
+#controls .control-tools {
+  list-style: initial;
+  display: initial;
+  position: initial;
+  margin: initial;
+  padding: initial;
+  left: initial;
+  top: initial; }
+
+#controls .active .control-tools {
+  display: initial; }
+
+#controls .scene-control,
+#controls .control-tool {
+  width: initial;
+  height: initial;
+  box-sizing: initial;
+  font-size: initial;
+  line-height: initial;
+  background: initial;
+  box-shadow: initial;
+  margin: initial;
+  color: initial;
+  text-align: initial;
+  border: initial;
+  border-radius: initial;
+  cursor: initial; }
+
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+  color: initial;
+  border: initial;
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#controls .scene-control i.fas,
+#controls .control-tool i.fas {
+  margin: initial; }
+
+#controls .control-tool.toggle {
+  background: initial;
+  border: initial; }
+
+#controls .control-tool.toggle.active,
+#controls .control-tool.toggle:hover {
+  background: initial;
+  box-shadow: initial; }
+
+#sidebar,
+.sidebar-popout {
+  border: initial; }
+  #sidebar li.folder > .folder-header,
+  .sidebar-popout li.folder > .folder-header {
+    padding: initial;
+    line-height: initial;
+    background: initial;
+    border-top: initial;
+    border-bottom: initial; }
+  #sidebar li.folder > .folder-header h3,
+  .sidebar-popout li.folder > .folder-header h3 {
+    margin: initial;
+    color: initial; }
+  #sidebar li.folder > .folder-header h3 > i,
+  .sidebar-popout li.folder > .folder-header h3 > i {
+    margin-right: initial; }
+  #sidebar li.folder > .folder-header .create-folder,
+  #sidebar li.folder > .folder-header .create-entity,
+  .sidebar-popout li.folder > .folder-header .create-folder,
+  .sidebar-popout li.folder > .folder-header .create-entity {
+    flex: initial;
+    text-align: initial;
+    color: initial;
+    font-size: initial; }
+  #sidebar li.folder.collapsed .subdirectory,
+  .sidebar-popout li.folder.collapsed .subdirectory {
+    display: initial; }
+  #sidebar li.folder.collapsed > .folder-header,
+  .sidebar-popout li.folder.collapsed > .folder-header {
+    background: initial; }
+  #sidebar li.folder.collapsed > .folder-header h3,
+  .sidebar-popout li.folder.collapsed > .folder-header h3 {
+    text-shadow: initial;
+    color: initial; }
+  #sidebar li.folder.collapsed > .folder-header h3 > i:before,
+  .sidebar-popout li.folder.collapsed > .folder-header h3 > i:before {
+    content: initial; }
+  #sidebar li.folder.collapsed > .folder-header .create-folder,
+  .sidebar-popout li.folder.collapsed > .folder-header .create-folder {
+    display: initial; }
+  #sidebar .subdirectory,
+  .sidebar-popout .subdirectory {
+    list-style: initial;
+    margin: initial;
+    padding: initial;
+    border-left: initial;
+    border-bottom: initial; }
+  #sidebar .subdirectory:empty,
+  .sidebar-popout .subdirectory:empty {
+    border: initial; }
+  #sidebar .subdirectory .folder,
+  .sidebar-popout .subdirectory .folder {
+    border-left: initial; }
+
+#sidebar-tabs {
+  flex: initial;
+  box-sizing: initial;
+  margin: initial;
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#sidebar-tabs > .item {
+  position: initial;
+  flex: initial;
+  line-height: initial;
+  border: initial;
+  border-radius: initial; }
+
+#sidebar-tabs > .item.active {
+  color: initial;
+  border: initial;
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#sidebar-tabs > .item i.fas {
+  margin-right: initial; }
+
+#sidebar-tabs > .collapse {
+  position: initial;
+  flex: initial;
+  line-height: initial;
+  color: initial;
+  text-align: initial; }
+
+.sidebar-tab {
+  overflow: initial; }
+
+.sidebar-tab .directory-header {
+  flex: initial;
+  line-height: initial;
+  text-align: initial;
+  margin: initial;
+  border-bottom: initial; }
+
+.sidebar-tab .directory-header .header-search {
+  flex: initial; }
+
+.sidebar-tab .directory-header .header-search input {
+  background: initial;
+  width: initial;
+  margin: initial; }
+
+.sidebar-tab .directory-header .header-control {
+  display: initial;
+  flex: initial;
+  height: initial; }
+
+.sidebar-tab .directory-list {
+  flex: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  overflow-y: initial;
+  scrollbar-width: initial; }
+
+.sidebar-tab .directory-list .directory-item {
+  line-height: initial; }
+
+.sidebar-tab .directory-list .directory-item h3,
+.sidebar-tab .directory-list .directory-item h4 {
+  margin: initial;
+  white-space: initial;
+  overflow: initial; }
+
+.sidebar-tab .directory-list .directory-item img {
+  flex: initial;
+  height: initial;
+  width: initial;
+  object-fit: initial;
+  object-position: initial;
+  margin: initial;
+  border: initial; }
+
+.sidebar-tab .directory-list .directory-item img[data-src] {
+  visibility: initial; }
+
+.sidebar-tab .directory-list .directory-item.context,
+.sidebar-tab .directory-list .directory-item.active {
+  border-color: initial; }
+
+.sidebar-tab .directory-list .folder .context {
+  border-color: initial; }
+
+.sidebar-tab .directory-list .entity {
+  border-top: initial;
+  border-bottom: initial; }
+
+.sidebar-tab .directory-list .entity:last-child {
+  border-bottom: initial; }
+
+.sidebar-tab .directory-list .folder + .entity {
+  border-top: initial; }
+
+.sidebar-tab .directory-footer {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  justify-content: initial;
+  flex: initial;
+  margin: initial; }
+
+.sidebar-tab .directory-footer > * {
+  flex: initial; }
+
+.sidebar-tab .directory-footer > .flex0 {
+  display: initial;
+  flex: initial; }
+
+.sidebar-tab .directory-footer > .flex1 {
+  flex: initial; }
+
+.sidebar-tab .directory-footer > .flex2 {
+  flex: initial; }
+
+.sidebar-tab .directory-footer > .flex3 {
+  flex: initial; }
+
+.sidebar-tab .directory-footer button {
+  margin: initial; }
+
+#sidebar.collapsed #sidebar-tabs {
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#sidebar.collapsed #sidebar-tabs > .item.active {
+  border-bottom: initial;
+  border-radius: initial; }
+
+#sidebar.collapsed .sidebar-tab {
+  display: initial; }
+
+#combat #combat-round {
+  flex: initial;
+  line-height: initial;
+  font-size: initial;
+  text-align: initial;
+  border-bottom: initial; }
+
+#combat #combat-round .encounters a {
+  font-size: initial;
+  flex: initial;
+  color: initial; }
+
+#combat #combat-round .encounters a.combat-cycle {
+  font-size: initial; }
+
+#combat #combat-round .encounters a[disabled] {
+  visibility: initial; }
+
+#combat #combat-round .encounters h4 {
+  flex: initial;
+  margin: initial;
+  font-size: initial;
+  color: initial;
+  text-align: initial; }
+
+#combat #combat-round .encounters h3 {
+  flex: initial;
+  margin: initial;
+  font-size: initial;
+  text-align: initial; }
+
+#combat #combat-tracker {
+  height: initial;
+  padding: initial; }
+
+#combat #combat-controls {
+  margin: initial;
+  border-top: initial;
+  padding-top: initial; }
+
+#combat #combat-controls a {
+  flex: initial;
+  font-size: initial;
+  text-align: initial;
+  line-height: initial; }
+
+#combat #combat-controls a.center {
+  flex: initial; }
+
+#combat li.combatant .token-image {
+  margin: initial; }
+
+#combat li.combatant .token-name {
+  flex: initial;
+  overflow: initial;
+  margin: initial;
+  text-shadow: initial; }
+
+#combat li.combatant .token-name h4 {
+  flex: initial;
+  line-height: initial;
+  margin: initial; }
+
+#combat li.combatant .token-name .combatant-controls {
+  flex: initial;
+  font-size: initial;
+  line-height: initial; }
+
+#combat li.combatant .token-name .combatant-control {
+  flex: initial;
+  height: initial;
+  float: initial;
+  color: initial; }
+
+#combat li.combatant .token-name .combatant-control.active {
+  color: initial; }
+
+#combat li.combatant .token-name .token-effects {
+  height: initial;
+  overflow: initial; }
+
+#combat li.combatant .token-name img.token-effect {
+  width: initial;
+  height: initial;
+  margin: initial;
+  border: initial;
+  border-radius: initial; }
+
+#combat li.combatant .token-resource {
+  flex: initial;
+  color: initial;
+  text-align: initial;
+  border-right: initial; }
+
+#combat li.combatant .token-initiative {
+  flex: initial;
+  text-align: initial; }
+
+#combat li.combatant .token-initiative .initiative {
+  font-size: initial;
+  text-shadow: initial; }
+
+#combat li.combatant .roll {
+  display: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  background-size: initial;
+  margin: initial; }
+
+#combat li.combatant .roll:hover {
+  background-image: initial; }
+
+#combat li.combatant.hover,
+#combat li.combatant:hover {
+  background: initial; }
+
+#combat li.combatant.active {
+  background: initial; }
+
+#combat li.combatant.active .initiative {
+  font-weight: initial; }
+
+#combat li.combatant.hidden {
+  color: initial; }
+
+#combat li.combatant.hidden img {
+  opacity: initial; }
+
+#combat li.combatant.defeated {
+  color: initial; }
+
+#combat li.combatant.defeated img {
+  opacity: initial;
+  transform: initial; }
+
+#scenes .scene {
+  position: initial;
+  height: initial;
+  line-height: initial;
+  background-size: initial;
+  background-position: initial;
+  border: initial;
+  box-shadow: initial; }
+
+#scenes .scene.context,
+#scenes .scene.active {
+  margin-top: initial;
+  border: initial;
+  box-shadow: initial; }
+
+#scenes .scene h3 {
+  line-height: initial;
+  text-align: initial;
+  font-size: initial;
+  font-weight: initial;
+  text-shadow: initial; }
+
+#scenes .subdirectory {
+  border-left: initial;
+  border-bottom: initial; }
+
+#journal li.journal {
+  line-height: initial; }
+
+#journal li.journal .entity-name {
+  margin: initial; }
+
+#playlists .global-volume {
+  flex: initial; }
+
+#playlists li.playlist {
+  padding: initial;
+  line-height: initial; }
+
+#playlists li.playlist .playlist-header {
+  flex: initial;
+  justify-content: initial;
+  text-decoration: initial; }
+
+#playlists li.playlist .playlist-header .playlist-name {
+  cursor: initial;
+  max-width: initial; }
+
+#playlists li.playlist .playlist-header .playlist-name i.fa {
+  color: initial;
+  margin-left: initial; }
+
+#playlists li.playlist .playlist-header .playlist-controls {
+  flex: initial;
+  justify-content: initial; }
+
+#playlists li.playlist .playlist-header a.playlist-delete {
+  flex: initial; }
+
+#playlists li.playlist .playlist-sounds {
+  flex: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial; }
+
+#playlists li.playlist.collapsed .playlist-sounds {
+  display: initial; }
+
+#playlists li.playlist .sound-control {
+  flex: initial;
+  text-align: initial;
+  color: initial;
+  font-size: initial; }
+
+#playlists li.playlist .sound-control.inactive {
+  color: initial; }
+
+#playlists li.playlist .sound-control.inactive:hover {
+  text-shadow: initial; }
+
+#playlists li.playlist .sound-control.disabled {
+  color: initial; }
+
+#playlists li.playlist .sound-control.disabled:hover {
+  text-shadow: initial; }
+
+#playlists li.sound {
+  margin: initial;
+  padding: initial; }
+
+#playlists li.sound .sound-name {
+  margin: initial;
+  max-width: initial; }
+
+#playlists li.sound .sound-controls {
+  flex: initial;
+  justify-content: initial; }
+
+#compendium h3 {
+  margin: initial;
+  padding: initial;
+  border: initial;
+  background: initial; }
+
+#compendium ol.compendium-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial; }
+
+#compendium li.compendium-pack {
+  position: initial;
+  margin: initial;
+  padding: initial;
+  border-bottom: initial; }
+
+#compendium li.compendium-pack .pack-title i {
+  margin-right: initial; }
+
+#compendium li.compendium-pack .status-icons {
+  position: initial;
+  font-weight: initial;
+  color: initial;
+  right: initial; }
+
+#compendium li.compendium-pack:last-child {
+  border-bottom: initial; }
+
+.compendium .directory-header {
+  border-bottom: initial; }
+
+.compendium .directory-list .directory-item {
+  line-height: initial;
+  border-top: initial;
+  border-bottom: initial;
+  box-shadow: initial; }
+
+#settings {
+  padding: initial;
+  overflow-y: initial; }
+
+#settings button {
+  position: initial;
+  margin: initial; }
+
+#module-management .package-title {
+  line-height: initial;
+  font-weight: initial; }
+
+#module-management input.active {
+  margin-left: initial; }
+
+#module-management .module-description {
+  color: initial; }
+
+#module-management .module-description p {
+  margin: initial; }
+
+#module-management .module-description ul {
+  list-style: initial;
+  margin: initial;
+  padding: initial; }
+
+#permissions-config header.table-header {
+  background: initial;
+  padding: initial;
+  border: initial;
+  text-align: initial;
+  color: initial;
+  font-weight: initial;
+  text-shadow: initial; }
+
+#permissions-config ul.permissions-list {
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  max-height: initial;
+  overflow: initial;
+  scrollbar-width: initial; }
+
+#permissions-config li.permission {
+  padding: initial;
+  border-bottom: initial; }
+
+#permissions-config li.permission .form-fields {
+  justify-content: initial; }
+
+#permissions-config li.permission input[type="checkbox"] {
+  margin: initial; }
+
+#permissions-config .index {
+  flex: initial;
+  text-align: initial;
+  font-weight: initial; }
+
+#permissions-config .hint {
+  flex: initial;
+  color: initial;
+  font-size: initial;
+  margin: initial; }
+
+#chat-controls {
+  flex: initial;
+  margin: initial; }
+
+#chat-controls i.fas {
+  font-size: initial;
+  line-height: initial; }
+
+#chat-controls div.roll-type-select select {
+  position: initial;
+  width: initial;
+  height: initial;
+  background: initial;
+  top: initial; }
+
+#chat-controls div.roll-type-select i.fas {
+  margin-right: initial; }
+
+#chat-controls .control-buttons {
+  flex: initial; }
+
+#chat-controls .control-buttons a {
+  display: initial;
+  width: initial;
+  text-align: initial; }
+
+#chat-form {
+  height: initial;
+  flex: initial;
+  margin: initial; }
+
+#chat-form textarea {
+  width: initial;
+  height: initial;
+  resize: initial;
+  background: initial; }
+
+#players {
+  position: initial;
+  bottom: initial;
+  left: initial;
+  width: initial;
+  margin: initial;
+  padding: initial;
+  border: initial; }
+
+#players.hidden {
+  display: initial; }
+
+#players h3 {
+  margin: initial;
+  padding: initial;
+  border-bottom: initial; }
+
+#players h3 i {
+  margin: initial; }
+
+#players h3 .players-mode {
+  font-size: initial;
+  margin: initial;
+  color: initial; }
+
+#players ol {
+  list-style: initial;
+  margin: initial;
+  padding: initial; }
+
+#players ol li.player {
+  line-height: initial;
+  padding: initial; }
+
+#players ol .player-name {
+  overflow: initial;
+  white-space: initial;
+  word-break: initial; }
+
+#players ol .player.context {
+  margin: initial;
+  border-top: initial;
+  border-bottom: initial; }
+
+#players ol .player.context .player-name {
+  text-shadow: initial; }
+
+#players ol .player-name.self {
+  color: initial; }
+
+#players ol .player-active {
+  flex: initial;
+  height: initial;
+  border: initial;
+  border-radius: initial;
+  margin: initial; }
+
+#players ol .player-active.active {
+  box-shadow: initial; }
+
+#hotbar {
+  z-index: initial;
+  position: initial;
+  bottom: initial;
+  left: initial;
+  width: initial;
+  height: initial;
+  pointer-events: initial; }
+
+#hotbar .bar-controls {
+  flex: initial;
+  height: initial;
+  margin: initial;
+  text-align: initial;
+  color: initial;
+  background: initial;
+  border: initial;
+  box-shadow: initial;
+  border-radius: initial; }
+
+#hotbar .bar-controls a {
+  display: initial; }
+
+#hotbar .bar-controls a.page-control {
+  font-size: initial;
+  line-height: initial; }
+
+#hotbar .bar-controls span.page-number {
+  display: initial;
+  font-size: initial;
+  line-height: initial; }
+
+#hotbar #action-bar {
+  flex: initial;
+  height: initial;
+  pointer-events: initial; }
+
+#hotbar #action-bar.collapsed {
+  display: initial;
+  pointer-events: initial; }
+
+#hotbar #macro-list {
+  flex: initial;
+  height: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial; }
+
+#hotbar .macro {
+  position: initial;
+  flex: initial;
+  height: initial;
+  border: initial;
+  border-radius: initial;
+  background: initial;
+  box-shadow: initial;
+  cursor: initial; }
+
+#hotbar .macro.inactive {
+  box-shadow: initial; }
+
+#hotbar .macro:hover {
+  box-shadow: initial; }
+
+#hotbar .macro.active:hover {
+  border: initial; }
+
+#hotbar .macro .macro-key {
+  position: initial;
+  top: initial;
+  right: initial;
+  padding: initial;
+  background: initial;
+  color: initial;
+  font-weight: initial; }
+
+#hotbar .macro .macro-icon {
+  width: initial;
+  height: initial;
+  object-fit: initial;
+  object-position: initial;
+  border: initial; }
+
+#hotbar .macro .tooltip {
+  display: initial;
+  min-width: initial;
+  height: initial;
+  padding: initial;
+  position: initial;
+  top: initial;
+  left: initial;
+  background: initial;
+  border: initial;
+  border-radius: initial;
+  color: initial;
+  line-height: initial;
+  text-align: initial;
+  white-space: initial;
+  word-break: initial; }
+
+#hotbar #hotbar-directory-controls {
+  pointer-events: initial; }
+
+#hotbar #hotbar-directory-controls a {
+  line-height: initial; }
+
+.players-hidden #hotbar {
+  left: initial; }
+
+#pause {
+  width: initial;
+  height: initial;
+  position: initial;
+  bottom: initial;
+  left: initial;
+  pointer-events: initial;
+  z-index: initial;
+  background: initial;
+  display: initial; }
+
+#pause.paused {
+  display: initial; }
+
+#pause img {
+  position: initial;
+  top: initial;
+  left: initial;
+  height: initial;
+  width: initial;
+  opacity: initial;
+  border: initial;
+  -webkit-animation: initial; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: initial; }
+  to {
+    -webkit-transform: initial; } }
+
+#pause h3 {
+  margin: initial;
+  font-size: initial;
+  font-weight: initial;
+  line-height: initial;
+  text-align: initial;
+  position: initial;
+  z-index: initial;
+  color: initial;
+  text-shadow: initial; }
+
+.window-app {
+  display: initial;
+  flex-direction: initial;
+  flex-wrap: initial;
+  position: initial;
+  box-shadow: initial;
+  padding: initial;
+  z-index: initial; }
+
+.window-app .window-header {
+  flex: initial;
+  overflow: initial;
+  padding: initial;
+  line-height: initial;
+  border-bottom: initial; }
+
+.window-app .window-header .window-title {
+  margin: initial;
+  word-break: initial; }
+
+.window-app .window-header a {
+  flex: initial;
+  margin: initial; }
+
+.window-app .window-header i.fas {
+  margin-right: initial; }
+
+.window-app.minimized .window-header {
+  border: initial; }
+
+.window-app .window-resizable-handle {
+  width: initial;
+  height: initial;
+  position: initial;
+  bottom: initial;
+  right: initial;
+  background: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial; }
+
+.window-app .window-resizable-handle i.fas {
+  transform: initial; }
+
+.window-app.minimized .window-resizable-handle {
+  display: initial; }
+
+*::before, 1 *::after {
+  box-sizing: border-box; }
+
+html.e-html body.e-body#e-rd ::-webkit-scrollbar {
+  width: 0.5rem; }
+
+html.e-html body.e-body#e-rd ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px 0 rgba(var(--color-black), 0.3);
+  border-radius: 0; }
+
+html.e-html body.e-body#e-rd ::-webkit-scrollbar-thumb {
+  background: rgba(var(--color-charcoal-300), 1);
+  border-radius: 0;
+  outline: none; }
+
+html.e-html body.e-body#e-rd ::selection {
+  background: rgba(var(--color-gray-200), 1); }
+
+html.e-html body.e-body#e-rd .window-app {
+  background: rgba(var(--color-charcoal-50), 1);
+  border: rgba(var(--color-charcoal-600), 1) 1px solid;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(var(--color-black), 1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-height: 80vh;
+  position: absolute;
+  z-index: 1050; }
+  html.e-html body.e-body#e-rd .window-app .window-header {
+    align-items: center;
+    background: rgba(var(--color-charcoal-600), 1);
+    border-bottom: rgba(var(--color-charcoal-600), 1) 1px solid;
+    color: rgba(var(--color-white), 1);
+    display: flex;
+    flex: 0 0 auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: relative; }
+    html.e-html body.e-body#e-rd .window-app .window-header h4 {
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: rgba(var(--color-white), 1);
+      flex: 1 1 auto;
+      font-weight: normal;
+      position: relative; }
+    html.e-html body.e-body#e-rd .window-app .window-header a {
+      background: transparent;
+      padding: 0.25rem;
+      width: auto; }
+      html.e-html body.e-body#e-rd .window-app .window-header a:hover {
+        background: rgba(var(--color-primary), 1); }
+      html.e-html body.e-body#e-rd .window-app .window-header a.close {
+        color: transparent;
+        overflow: hidden;
+        padding: 0;
+        width: 1.5rem; }
+        html.e-html body.e-body#e-rd .window-app .window-header a.close i {
+          top: 0;
+          left: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          color: rgba(var(--color-white), 1);
+          display: flex;
+          font-size: 1rem;
+          justify-content: center;
+          margin: 0; }
+      html.e-html body.e-body#e-rd .window-app .window-header a > i,
+      html.e-html body.e-body#e-rd .window-app .window-header a > span.fas {
+        margin-inline-end: 0.25rem; }
+  html.e-html body.e-body#e-rd .window-app .window-resizable-handle {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    align-items: center;
+    background: rgba(var(--color-charcoal-800), 1);
+    border: none;
+    border-top-left-radius: 2px;
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.875rem;
+    justify-content: center;
+    margin: 0;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd .window-app .window-resizable-handle > i {
+      transform: rotate(45deg); }
+
+html.e-html body.e-body#e-rd #logo {
+  display: none; }
+
+html.e-html body.e-body#e-rd #navigation {
+  top: 0.5rem;
+  left: 9.25rem;
+  position: fixed;
+  box-shadow: none;
+  width: calc(100% - 32.5rem);
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #navigation #nav-toggle {
+    top: 0;
+    left: -2rem;
+    position: absolute;
+    background: rgba(var(--color-charcoal-500), 0.8); }
+  html.e-html body.e-body#e-rd #navigation #scene-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    html.e-html body.e-body#e-rd #navigation #scene-list .scene {
+      margin-block-end: 0.5rem;
+      margin-inline-end: 0.5rem;
+      position: relative; }
+      html.e-html body.e-body#e-rd #navigation #scene-list .scene:last-of-type {
+        margin-inline-end: 0; }
+  html.e-html body.e-body#e-rd #navigation .scene-players {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    margin-block-start: -0.25rem;
+    padding: 0;
+    padding-inline-start: 0.5rem;
+    pointer-events: none; }
+  html.e-html body.e-body#e-rd #navigation .scene-player {
+    width: 0.75rem;
+    height: 0.75rem;
+    align-items: center;
+    background: rgba(var(--color-white), 1);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(var(--color-primary), 1), inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+    color: transparent;
+    display: flex;
+    font-size: 0.625rem;
+    justify-content: center;
+    margin-block-end: 0.125rem;
+    margin-inline-end: 0.125rem;
+    position: relative;
+    text-transform: uppercase; }
+  html.e-html body.e-body#e-rd #navigation .scene-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    height: 2.5rem;
+    background: rgba(var(--color-charcoal-900), 0.8);
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: block;
+    line-height: 2.5rem;
+    max-width: 15rem;
+    min-width: 7rem;
+    padding: 0 1rem;
+    position: relative;
+    text-align: center;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #navigation .scene-name > i {
+      margin-inline-end: 0.25rem; }
+
+html.e-html body.e-body#e-rd #loading {
+  top: 0.5rem;
+  left: 9.25rem;
+  position: fixed;
+  width: calc(100% - 37.5rem);
+  height: 1.5rem;
+  display: none;
+  background: rgba(var(--color-charcoal-500), 0.8);
+  box-shadow: none;
+  pointer-events: none;
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #loading::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    box-shadow: inset 0 0 0 1px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+    content: ""; }
+  html.e-html body.e-body#e-rd #loading #loading-bar {
+    background: rgba(var(--color-primary), 1);
+    height: 100%;
+    min-width: 25%;
+    position: relative; }
+  html.e-html body.e-body#e-rd #loading label {
+    top: 0;
+    position: absolute;
+    align-items: center;
+    color: rgba(var(--color-white), 1);
+    display: flex;
+    height: 100%;
+    font-size: 0.875rem;
+    margin: 0 1rem; }
+    html.e-html body.e-body#e-rd #loading label#context {
+      left: 0; }
+    html.e-html body.e-body#e-rd #loading label#progress {
+      right: 0; }
+
+html.e-html body.e-body#e-rd #controls {
+  top: 0.5rem;
+  left: 0.5rem;
+  position: fixed;
+  box-shadow: none;
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #controls .scene-control,
+  html.e-html body.e-body#e-rd #controls .control-tool {
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-block-end: 0.5rem;
+    position: relative;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #controls .scene-control:last-of-type,
+    html.e-html body.e-body#e-rd #controls .control-tool:last-of-type {
+      margin-block-end: 0; }
+    html.e-html body.e-body#e-rd #controls .scene-control > i,
+    html.e-html body.e-body#e-rd #controls .control-tool > i {
+      margin: 0;
+      position: relative; }
+  html.e-html body.e-body#e-rd #controls .scene-control {
+    background: rgba(var(--color-charcoal-900), 0.8); }
+    html.e-html body.e-body#e-rd #controls .scene-control.active .control-tools {
+      display: block; }
+  html.e-html body.e-body#e-rd #controls .control-tool {
+    background: rgba(var(--color-charcoal-500), 0.8); }
+    html.e-html body.e-body#e-rd #controls .control-tool.toggle {
+      background: rgba(var(--color-white), 1);
+      color: rgba(var(--color-default-text), 1); }
+      html.e-html body.e-body#e-rd #controls .control-tool.toggle:hover {
+        background: rgba(var(--color-primary), 1);
+        color: rgba(var(--color-white), 1); }
+      html.e-html body.e-body#e-rd #controls .control-tool.toggle.active {
+        background: rgba(var(--color-primary), 1); }
+  html.e-html body.e-body#e-rd #controls .control-tools {
+    top: 0;
+    left: 3rem;
+    position: absolute;
+    display: none; }
+
+html.e-html body.e-body#e-rd #sidebar,
+html.e-html body.e-body#e-rd .sidebar-popout {
+  top: 0.5rem;
+  right: 0;
+  position: fixed;
+  width: 20rem;
+  height: calc(100% - 1rem);
+  background: rgba(var(--color-charcoal-900), 0.8);
+  border: rgba(var(--color-charcoal-600), 1) 1px solid;
+  border-inline-end: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #sidebar #sidebar-tabs,
+  html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs {
+    border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    font-size: 0.75rem;
+    position: relative;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item,
+    html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse,
+    html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item,
+    html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse {
+      align-items: center;
+      color: rgba(var(--color-white), 1);
+      cursor: pointer;
+      display: flex;
+      flex: 1 1 20%;
+      justify-content: center;
+      padding: 0.5rem;
+      position: relative;
+      transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item > i,
+      html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse > i,
+      html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item > i,
+      html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse > i {
+        position: relative;
+        z-index: 1; }
+      html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item .notification-pip,
+      html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse .notification-pip,
+      html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item .notification-pip,
+      html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse .notification-pip {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-name: notification-flash;
+        animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+        background-color: rgba(var(--color-primary), 0);
+        display: none;
+        z-index: 0; }
+
+@keyframes notification-flash {
+  0% {
+    background-color: rgba(var(--color-primary), 0); }
+  50% {
+    background-color: rgba(var(--color-primary), 1); }
+  100% {
+    background-color: rgba(var(--color-primary), 0); } }
+        html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .item .notification-pip::before,
+        html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse .notification-pip::before,
+        html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .item .notification-pip::before,
+        html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse .notification-pip::before {
+          display: none; }
+    html.e-html body.e-body#e-rd #sidebar #sidebar-tabs > .collapse,
+    html.e-html body.e-body#e-rd .sidebar-popout #sidebar-tabs > .collapse {
+      top: 0;
+      right: 0;
+      position: absolute;
+      display: none; }
+  html.e-html body.e-body#e-rd #sidebar .window-content .sidebar-tab,
+  html.e-html body.e-body#e-rd .sidebar-popout .window-content .sidebar-tab {
+    display: flex; }
+  html.e-html body.e-body#e-rd #sidebar .folder,
+  html.e-html body.e-body#e-rd .sidebar-popout .folder {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-block-start: 0.25rem;
+    padding-inline-start: 0.5rem;
+    padding-inline-end: 0.5rem;
+    position: relative;
+    width: 100%; }
+    html.e-html body.e-body#e-rd #sidebar .folder.collapsed > .folder-header,
+    html.e-html body.e-body#e-rd .sidebar-popout .folder.collapsed > .folder-header {
+      border-inline-start: none; }
+      html.e-html body.e-body#e-rd #sidebar .folder.collapsed > .folder-header .create-folder,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder.collapsed > .folder-header .create-folder {
+        display: none; }
+      html.e-html body.e-body#e-rd #sidebar .folder.collapsed > .folder-header h3 i::before,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder.collapsed > .folder-header h3 i::before {
+        content: "\f07b"; }
+    html.e-html body.e-body#e-rd #sidebar .folder.collapsed .subdirectory,
+    html.e-html body.e-body#e-rd .sidebar-popout .folder.collapsed .subdirectory {
+      display: none; }
+      html.e-html body.e-body#e-rd #sidebar .folder.collapsed .subdirectory .folder-header,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder.collapsed .subdirectory .folder-header {
+        border-inline-start: none; }
+    html.e-html body.e-body#e-rd #sidebar .folder .folder-header,
+    html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header {
+      align-items: center;
+      background: rgba(var(--color-charcoal-200), 1);
+      border-inline-start: rgba(var(--color-primary), 1) 4px solid;
+      color: rgba(var(--color-default-text), 1);
+      cursor: pointer;
+      display: flex;
+      flex-wrap: nowrap;
+      min-height: 2rem;
+      padding: 0.25rem 0.5rem;
+      position: relative;
+      transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      width: 100%; }
+      html.e-html body.e-body#e-rd #sidebar .folder .folder-header:hover,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header:hover {
+        background: rgba(var(--color-primary), 1);
+        color: rgba(var(--color-white), 1); }
+      html.e-html body.e-body#e-rd #sidebar .folder .folder-header h3,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-block-end: 0;
+        color: inherit;
+        flex: 1 1 auto;
+        font-size: 1rem;
+        font-weight: normal; }
+        html.e-html body.e-body#e-rd #sidebar .folder .folder-header h3 > i,
+        html.e-html body.e-body#e-rd .sidebar-popout .folder .folder-header h3 > i {
+          margin-inline-end: 0.5rem; }
+    html.e-html body.e-body#e-rd #sidebar .folder .subdirectory,
+    html.e-html body.e-body#e-rd .sidebar-popout .folder .subdirectory {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      html.e-html body.e-body#e-rd #sidebar .folder .subdirectory .folder-header,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder .subdirectory .folder-header {
+        border-color: rgba(var(--color-orange-700), 1); }
+      html.e-html body.e-body#e-rd #sidebar .folder .subdirectory .subdirectory .folder-header,
+      html.e-html body.e-body#e-rd .sidebar-popout .folder .subdirectory .subdirectory .folder-header {
+        border-color: rgba(var(--color-orange-900), 1); }
+  html.e-html body.e-body#e-rd #sidebar .sidebar-tab,
+  html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab {
+    display: none;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 100%;
+    min-height: 12.5rem;
+    position: relative; }
+    html.e-html body.e-body#e-rd #sidebar .sidebar-tab.active,
+    html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab.active {
+      display: flex; }
+    html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header,
+    html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header {
+      border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid; }
+      html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search,
+      html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search {
+        align-items: center;
+        display: flex;
+        flex: 1 1 auto;
+        position: relative; }
+        html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search > i,
+        html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search > i {
+          flex: 0 0 auto;
+          margin-inline-end: 0.5rem; }
+        html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-search input,
+        html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-search input {
+          background: rgba(var(--color-white), 1);
+          flex: 1 1 auto; }
+      html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-header .header-control,
+      html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-header .header-control {
+        width: 2rem;
+        height: 2rem;
+        flex: 0 0 auto;
+        margin-inline-start: 0.25rem; }
+    html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer,
+    html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer {
+      border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid;
+      flex-wrap: wrap; }
+      html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button,
+      html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        flex: 1 1 48%;
+        width: auto; }
+        html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button > i,
+        html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button > i {
+          margin-inline-end: 0.5rem; }
+  html.e-html body.e-body#e-rd #sidebar > .directory-list,
+  html.e-html body.e-body#e-rd .sidebar-popout > .directory-list {
+    display: flex;
+    flex-direction: column; }
+  html.e-html body.e-body#e-rd #sidebar .directory-list,
+  html.e-html body.e-body#e-rd .sidebar-popout .directory-list {
+    max-height: 100%;
+    padding-block-start: 0.25rem; }
+    html.e-html body.e-body#e-rd #sidebar .directory-list .subdirectory,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-list .subdirectory {
+      background: rgba(var(--color-charcoal-100), 1);
+      border-inline-start: rgba(var(--color-primary), 1) 4px solid;
+      width: 100%; }
+      html.e-html body.e-body#e-rd #sidebar .directory-list .subdirectory .folder,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-list .subdirectory .folder {
+        padding-block-end: 0.25rem;
+        padding-inline-end: 0; }
+        html.e-html body.e-body#e-rd #sidebar .directory-list .subdirectory .folder + .folder,
+        html.e-html body.e-body#e-rd .sidebar-popout .directory-list .subdirectory .folder + .folder {
+          padding-block-start: 0; }
+      html.e-html body.e-body#e-rd #sidebar .directory-list .subdirectory .subdirectory,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-list .subdirectory .subdirectory {
+        border-inline-start: rgba(var(--color-orange-700), 1) 4px solid; }
+        html.e-html body.e-body#e-rd #sidebar .directory-list .subdirectory .subdirectory .subdirectory,
+        html.e-html body.e-body#e-rd .sidebar-popout .directory-list .subdirectory .subdirectory .subdirectory {
+          border-inline-start: rgba(var(--color-orange-900), 1) 4px solid; }
+  html.e-html body.e-body#e-rd #sidebar .directory-item,
+  html.e-html body.e-body#e-rd .sidebar-popout .directory-item {
+    align-items: center;
+    background: rgba(var(--color-charcoal-400), 1);
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    line-height: 1;
+    margin: 0.25rem 0.5rem;
+    min-height: 2rem;
+    padding: 0 0.5rem;
+    position: relative;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #sidebar .directory-item:hover,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item:hover {
+      background: rgba(var(--color-primary), 1);
+      color: rgba(var(--color-white), 1); }
+    html.e-html body.e-body#e-rd #sidebar .directory-item.folder, html.e-html body.e-body#e-rd #sidebar .directory-item.playlist,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item.folder,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item.playlist {
+      background: transparent;
+      cursor: default;
+      margin: 0;
+      padding: 0.25rem 0.5rem;
+      padding-block-end: 0; }
+      html.e-html body.e-body#e-rd #sidebar .directory-item.folder:hover, html.e-html body.e-body#e-rd #sidebar .directory-item.folder:focus, html.e-html body.e-body#e-rd #sidebar .directory-item.playlist:hover, html.e-html body.e-body#e-rd #sidebar .directory-item.playlist:focus,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item.folder:hover,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item.folder:focus,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item.playlist:hover,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item.playlist:focus {
+        background: transparent;
+        box-shadow: none; }
+    html.e-html body.e-body#e-rd #sidebar .directory-item img,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item img {
+      width: 2rem;
+      height: 2rem;
+      cursor: move;
+      flex: 0 0 auto;
+      margin-block-start: 0.25rem;
+      margin-block-end: 0.25rem;
+      margin-inline-end: 0.5rem;
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: relative; }
+    html.e-html body.e-body#e-rd #sidebar .directory-item h3,
+    html.e-html body.e-body#e-rd #sidebar .directory-item h4,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item h3,
+    html.e-html body.e-body#e-rd .sidebar-popout .directory-item h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: inherit;
+      flex: 1 1 auto;
+      font-size: 1rem;
+      font-weight: normal;
+      padding: 0; }
+      html.e-html body.e-body#e-rd #sidebar .directory-item h3 > i,
+      html.e-html body.e-body#e-rd #sidebar .directory-item h4 > i,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item h3 > i,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item h4 > i {
+        margin-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd #sidebar .directory-item h3 > a,
+      html.e-html body.e-body#e-rd #sidebar .directory-item h4 > a,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item h3 > a,
+      html.e-html body.e-body#e-rd .sidebar-popout .directory-item h4 > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: inherit;
+        cursor: pointer;
+        display: block;
+        flex: 1 1 auto;
+        font-size: 1rem;
+        line-height: 2rem;
+        position: relative;
+        text-shadow: none;
+        transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  html.e-html body.e-body#e-rd #sidebar #combat #combat-round,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round {
+    flex-direction: column; }
+    html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters,
+    html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters + .encounters,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters + .encounters {
+        margin-block-start: 0.25rem; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters h3,
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters h4,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters h3,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-block-end: none;
+        color: rgba(var(--color-gray-200), 1);
+        display: block;
+        flex: 1 1 auto;
+        font-size: 0.875rem;
+        font-weight: normal;
+        margin-inline-start: 0.25rem;
+        text-align: center; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters h3,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters h3 {
+        color: rgba(var(--color-white), 1);
+        font-size: 1.25rem; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a[disabled],
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a[disabled] {
+        pointer-events: none;
+        visibility: hidden; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-round .encounters a:first-child,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-round .encounters a:first-child {
+        margin-inline-start: 0; }
+  html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker {
+    padding-block-start: 0.25rem; }
+    html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant,
+    html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant {
+      align-items: center;
+      background: rgba(var(--color-charcoal-600), 1);
+      display: flex;
+      margin: 0.25rem 0.5rem;
+      padding: 0.25rem 0.5rem;
+      position: relative;
+      transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.hidden .token-name h4,
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.hidden .token-image,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.hidden .token-name h4,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.hidden .token-image {
+        opacity: 0.5; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.active .combatant-control.active,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.active .combatant-control.active {
+        background: rgba(var(--color-white), 1);
+        color: rgba(var(--color-primary), 1); }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.defeated,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.defeated {
+        background: rgba(var(--color-red-600), 0.5); }
+        html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant.defeated.active .combatant-control.active,
+        html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant.defeated.active .combatant-control.active {
+          background: rgba(var(--color-primary), 1);
+          color: rgba(var(--color-white), 1); }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-image,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-image {
+        width: 2rem;
+        height: 2rem;
+        cursor: default;
+        flex: 0 0 auto;
+        margin-inline-end: 0.5rem;
+        position: relative; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-name,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-name {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative; }
+        html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-name h4,
+        html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-name h4 {
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: rgba(var(--color-white), 1);
+          font-size: 1rem;
+          font-weight: normal; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-resource,
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-initiative,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-resource,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
+        align-items: center;
+        color: rgba(var(--color-white), 1);
+        display: flex;
+        flex: 0 0 auto;
+        position: relative; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-resource,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-resource {
+        font-size: 0.875rem;
+        margin-inline-start: 0.25rem;
+        padding-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-initiative,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
+        border-inline-start: rgba(var(--color-gray-200), 1) 1px solid;
+        padding-inline-start: 0.5rem; }
+        html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-initiative .initiative,
+        html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-initiative .initiative {
+          color: inherit;
+          font-size: 1rem; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-controls,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-controls {
+        align-items: center;
+        display: flex; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control {
+        margin-inline-start: 0;
+        margin-inline-end: 0.25rem; }
+        html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control.roll,
+        html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll {
+          width: 2rem;
+          height: 2rem;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          -webkit-font-smoothing: antialiased;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+          margin: 0; }
+          html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .combatant-control.roll::before,
+          html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll::before {
+            content: "\f6cf"; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-effects,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-effects {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        margin-inline-start: 0.25rem; }
+        html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .combatant .token-effects img,
+        html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .combatant .token-effects img {
+          cursor: default;
+          margin-block-end: 0.25rem;
+          margin-inline-end: 0.25rem;
+          max-height: 0.875rem;
+          max-width: 0.875rem; }
+  html.e-html body.e-body#e-rd #sidebar #combat #combat-controls,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls {
+    border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid;
+    padding-block-start: 0.5rem; }
+    html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control,
+    html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control {
+      flex: 1 1 auto;
+      margin-inline-start: 0.125rem; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control:first-child,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control:first-child {
+        margin-inline-start: 0; }
+      html.e-html body.e-body#e-rd #sidebar #combat #combat-controls .combat-control.center,
+      html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-controls .combat-control.center {
+        flex: 1 1 50%; }
+  html.e-html body.e-body#e-rd #sidebar #scenes .scene,
+  html.e-html body.e-body#e-rd .sidebar-popout #scenes .scene {
+    background-image: none !important; }
+  html.e-html body.e-body#e-rd #sidebar #playlists,
+  html.e-html body.e-body#e-rd .sidebar-popout #playlists {
+    color: rgba(var(--color-white), 1); }
+    html.e-html body.e-body#e-rd #sidebar #playlists .directory-list,
+    html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list {
+      padding-block-start: 0;
+      position: relative; }
+      html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child {
+        background: rgba(var(--color-charcoal-500), 0.5);
+        border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+        color: rgba(var(--color-white), 1);
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        padding: 0.5rem;
+        position: relative; }
+        html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-header,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-header {
+          background: transparent;
+          border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+          color: rgba(var(--color-white), 1);
+          font-size: 1.25rem;
+          padding-inline-start: 0;
+          pointer-events: none;
+          width: 100%; }
+          html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-header h4,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-header h4 {
+            padding-inline-start: 0; }
+        html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds {
+          background: transparent;
+          border-inline-start: none;
+          padding: 0;
+          padding-block-start: 0.25rem;
+          width: 100%; }
+          html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds h4,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds h4 {
+            border-block-end: 0;
+            color: rgba(var(--color-white), 1);
+            font-size: 1rem;
+            font-weight: normal;
+            margin: 0; }
+            html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds h4 + input[type="range"],
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds h4 + input[type="range"] {
+              margin-inline-start: 0.25rem; }
+          html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds .sound,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds .sound {
+            border-block-end: 0;
+            flex-wrap: nowrap;
+            padding-inline-start: 0;
+            padding-inline-end: 0; }
+            html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds .sound:last-of-type,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds .sound:last-of-type {
+              padding-block-end: 0; }
+            html.e-html body.e-body#e-rd #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds .sound .global-volume,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds .sound .global-volume {
+              flex: 0 0 50%; }
+    html.e-html body.e-body#e-rd #sidebar #playlists li.playlist,
+    html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist {
+      display: block;
+      padding-block-start: 0.25rem;
+      padding-inline-start: 0.5rem;
+      padding-inline-end: 0.5rem;
+      position: relative; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist:first-child,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist:first-child {
+        padding-block-start: 0.5rem; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist.collapsed .playlist-header,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist.collapsed .playlist-header {
+        border-inline-start: none; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist.collapsed .playlist-sounds,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist.collapsed .playlist-sounds {
+        display: none; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-header,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-header {
+        align-items: center;
+        background: rgba(var(--color-charcoal-200), 1);
+        color: rgba(var(--color-default-text), 1);
+        cursor: pointer;
+        border-radius: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        min-height: 2rem;
+        padding: 0.25rem 0.5rem;
+        position: relative;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-header:hover,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-header:hover {
+          background: rgba(var(--color-primary), 1);
+          box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
+          color: rgba(var(--color-white), 1); }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-header:focus,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-header:focus {
+          box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-header h4,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-header h4 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          border-block-end: 0;
+          color: inherit;
+          cursor: pointer;
+          display: block;
+          flex: 1 1 auto;
+          font-size: 1rem;
+          font-weight: normal;
+          margin: 0;
+          padding-inline-start: 1rem;
+          position: relative; }
+          html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-header h4 i.fa,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-header h4 i.fa {
+            top: 50%;
+            left: 0;
+            position: absolute;
+            color: inherit;
+            margin-block-start: -0.5rem; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds {
+        background: rgba(var(--color-charcoal-100), 1);
+        padding: 0;
+        position: relative; }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound {
+          align-items: center;
+          border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0.25rem 0.5rem;
+          position: relative; }
+          html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound h4,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound h4 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: rgba(var(--color-default-text), 1);
+            flex: 1 1 auto;
+            font-size: 1rem;
+            font-weight: normal;
+            margin: 0; }
+          html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control,
+          html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control {
+            color: rgba(var(--color-default-text), 1); }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control.disabled,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control.disabled {
+              color: rgba(var(--color-gray-100), 1);
+              display: none;
+              pointer-events: none; }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-repeat"],
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-repeat"] {
+              color: rgba(var(--color-primary), 1); }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control.inactive,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control.inactive {
+              color: rgba(var(--color-gray-500), 1); }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"],
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"] {
+              color: rgba(var(--color-positive), 1); }
+              html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"]:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"]:focus,
+              html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"]:hover,
+              html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-play"]:focus {
+                background: rgba(var(--color-positive), 1); }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"],
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"] {
+              color: rgba(var(--color-negative), 1); }
+              html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"]:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"]:focus,
+              html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"]:hover,
+              html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-stop"]:focus {
+                background: rgba(var(--color-negative), 1); }
+            html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control:hover, html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control:focus,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control:hover,
+            html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control:focus {
+              color: rgba(var(--color-white), 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-controls,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-controls {
+        display: flex;
+        flex: 0 0 auto; }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .playlist-controls .sound-control.disabled,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .playlist-controls .sound-control.disabled {
+          color: rgba(var(--color-gray-100), 1);
+          display: none;
+          pointer-events: none; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-controls,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-controls {
+        align-items: center;
+        display: flex;
+        flex: 0 0 100%;
+        flex-wrap: nowrap;
+        position: relative; }
+        html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-controls input,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-controls input {
+          flex: 1 1 100%;
+          margin-inline-start: 0.25rem;
+          position: relative; }
+      html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control:first-child,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control:first-child {
+        margin-inline-start: 0; }
+    html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"],
+    html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"] {
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      display: block;
+      margin: 0;
+      -webkit-appearance: none;
+      width: 100%; }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]:hover, html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]:focus,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]:hover,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]:focus {
+        box-shadow: none;
+        outline: none; }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-webkit-slider-runnable-track,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-webkit-slider-runnable-track {
+        width: 100px;
+        height: 0.5rem;
+        background: rgba(var(--color-charcoal-400), 0.8);
+        border: rgba(var(--color-charcoal-500), 1) 1px solid;
+        border-radius: 0;
+        box-shadow: none;
+        cursor: pointer;
+        outline: none;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]:focus::-webkit-slider-runnable-track,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: rgba(var(--color-charcoal-500), 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]:focus::-ms-fill-lower,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]:focus::-ms-fill-lower {
+        background: rgba(var(--color-charcoal-500), 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]:focus::-ms-fill-upper,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]:focus::-ms-fill-upper {
+        background: rgba(var(--color-charcoal-500), 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-webkit-slider-thumb,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-webkit-slider-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: rgba(var(--color-primary), 1);
+        border-radius: 0;
+        border: rgba(var(--color-charcoal-800), 1) 1px solid;
+        box-shadow: none;
+        cursor: pointer;
+        margin-block-start: -0.3125rem;
+        outline: none;
+        transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-appearance: none; }
+        html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-webkit-slider-thumb:hover,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-webkit-slider-thumb:hover {
+          box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-moz-range-track,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-moz-range-track {
+        width: 100px;
+        height: 0.5rem;
+        background: rgba(var(--color-charcoal-500), 0.8);
+        border: rgba(var(--color-charcoal-600), 1) 1px solid;
+        border-radius: 0;
+        box-shadow: 0;
+        cursor: pointer;
+        outline: none;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-moz-range-thumb,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-moz-range-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: rgba(var(--color-primary), 1);
+        border-radius: 0;
+        border: rgba(var(--color-charcoal-600), 1) 1px solid;
+        box-shadow: 0;
+        cursor: pointer;
+        margin-block-start: -0.3125rem;
+        outline: none;
+        transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-appearance: none; }
+        html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-moz-range-thumb:hover,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-moz-range-thumb:hover {
+          box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-ms-track,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-ms-track {
+        width: 100px;
+        height: 0.5rem;
+        background: rgba(var(--color-charcoal-500), 0.8);
+        border: rgba(var(--color-charcoal-600), 1) 1px solid;
+        border-radius: 0;
+        box-shadow: 0;
+        cursor: pointer;
+        outline: none;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-ms-fill-lower,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-ms-fill-lower {
+        width: 100px;
+        height: 0.5rem;
+        background: rgba(var(--color-charcoal-500), 0.8);
+        border: rgba(var(--color-charcoal-600), 1) 1px solid;
+        border-radius: 0;
+        cursor: pointer;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-ms-fill-upper,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-ms-fill-upper {
+        width: 100px;
+        height: 0.5rem;
+        background: rgba(var(--color-charcoal-500), 0.8);
+        border: rgba(var(--color-charcoal-800), 1) 1px solid;
+        border-radius: 0;
+        cursor: pointer;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-ms-thumb,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-ms-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: rgba(var(--color-primary), 1);
+        border-radius: 0;
+        border: rgba(var(--color-charcoal-600), 1) 1px solid;
+        border-radius: 0;
+        box-shadow: 0;
+        cursor: pointer;
+        margin-block-start: -0.3125rem;
+        outline: none;
+        transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-appearance: none; }
+        html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"]::-ms-thumb:hover,
+        html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"]::-ms-thumb:hover {
+          box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+      html.e-html body.e-body#e-rd #sidebar #playlists input[type="range"] + .range-value,
+      html.e-html body.e-body#e-rd .sidebar-popout #playlists input[type="range"] + .range-value {
+        align-items: center;
+        color: rgba(var(--color-default-text), 1);
+        display: flex;
+        font-size: 0.875rem;
+        margin-inline-start: 0.5rem; }
+  html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity,
+  html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity {
+    list-style: none;
+    padding: 0.25rem 0.5rem;
+    width: 100%; }
+    html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > h3,
+    html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      align-items: center;
+      background: rgba(var(--color-charcoal-200), 1);
+      color: rgba(var(--color-default-text), 1);
+      display: flex;
+      flex: 1 1 auto;
+      flex-wrap: nowrap;
+      font-size: 1rem;
+      font-weight: normal;
+      min-height: 2rem;
+      padding: 0.25rem 0.5rem;
+      position: relative;
+      transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      width: 100%; }
+    html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list,
+    html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list {
+      background: rgba(var(--color-charcoal-100), 1);
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack,
+      html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack {
+        align-items: center;
+        background: rgba(var(--color-charcoal-400), 1);
+        color: rgba(var(--color-white), 1);
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.25rem 0.25rem;
+        margin-block-end: 0;
+        min-height: 2rem;
+        padding: 0.25rem 0.5rem;
+        position: relative;
+        transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+        html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack:last-child,
+        html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack:last-child {
+          margin-block-end: 0.25rem; }
+        html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack:hover,
+        html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack:hover {
+          background: rgba(var(--color-primary), 1);
+          color: rgba(var(--color-white), 1); }
+        html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4,
+        html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 {
+          color: rgba(var(--color-white), 1);
+          display: flex;
+          font-weight: normal;
+          width: 100%; }
+          html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4 a,
+          html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 a {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            align-items: center;
+            display: flex;
+            flex: 1 1 auto;
+            margin-inline-end: 0.5rem;
+            text-shadow: none; }
+            html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4 a .folder,
+            html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 a .folder {
+              padding: 0;
+              margin-inline-end: 0.25rem;
+              width: auto; }
+          html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons,
+          html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons {
+            flex: 0 0 auto; }
+            html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons i,
+            html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons i {
+              padding: 0.125rem;
+              font-size: 0.875rem; }
+        html.e-html body.e-body#e-rd #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack .compendium-footer,
+        html.e-html body.e-body#e-rd .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack .compendium-footer {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 100%; }
+  html.e-html body.e-body#e-rd #sidebar #settings,
+  html.e-html body.e-body#e-rd .sidebar-popout #settings {
+    padding: 0.5rem; }
+    html.e-html body.e-body#e-rd #sidebar #settings h2,
+    html.e-html body.e-body#e-rd #sidebar #settings h4,
+    html.e-html body.e-body#e-rd .sidebar-popout #settings h2,
+    html.e-html body.e-body#e-rd .sidebar-popout #settings h4 {
+      color: rgba(var(--color-white), 1);
+      font-weight: normal;
+      margin: 0;
+      margin-block-end: 0.5rem; }
+    html.e-html body.e-body#e-rd #sidebar #settings h2,
+    html.e-html body.e-body#e-rd .sidebar-popout #settings h2 {
+      border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+      margin-block-start: 0.5rem; }
+    html.e-html body.e-body#e-rd #sidebar #settings h4,
+    html.e-html body.e-body#e-rd .sidebar-popout #settings h4 {
+      color: rgba(var(--color-primary), 1); }
+    html.e-html body.e-body#e-rd #sidebar #settings button,
+    html.e-html body.e-body#e-rd .sidebar-popout #settings button {
+      margin-block-end: 0.25rem; }
+      html.e-html body.e-body#e-rd #sidebar #settings button > i,
+      html.e-html body.e-body#e-rd .sidebar-popout #settings button > i {
+        margin-inline-end: 0.5rem; }
+
+html.e-html body.e-body#e-rd #chat-controls {
+  align-items: center;
+  background: rgba(var(--color-charcoal-500), 0.5);
+  border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid;
+  color: rgba(var(--color-white), 1);
+  display: flex;
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  position: relative; }
+  html.e-html body.e-body#e-rd #chat-controls .roll-type-select {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto; }
+    html.e-html body.e-body#e-rd #chat-controls .roll-type-select .fas.fa-dice-d20 {
+      display: none; }
+    html.e-html body.e-body#e-rd #chat-controls .roll-type-select select {
+      background: rgba(var(--color-charcoal-500), 0.5);
+      color: rgba(var(--color-white), 1);
+      height: 2rem; }
+  html.e-html body.e-body#e-rd #chat-controls .control-buttons {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto; }
+
+html.e-html body.e-body#e-rd #chat-form {
+  align-items: center;
+  background: rgba(var(--color-charcoal-500), 0.5);
+  border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid;
+  color: rgba(var(--color-white), 1);
+  display: flex;
+  flex: 0 0 auto;
+  height: 7rem;
+  padding: 0.5rem;
+  position: relative; }
+  html.e-html body.e-body#e-rd #chat-form textarea {
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--color-white), 0.9);
+    color: rgba(var(--color-default-text), 1);
+    resize: none; }
+
+html.e-html body.e-body#e-rd #players {
+  bottom: 0.5rem;
+  left: 0.5rem;
+  position: fixed;
+  background: rgba(var(--color-charcoal-500), 0.8);
+  border: rgba(var(--color-charcoal-600), 1) 1px solid;
+  border-radius: 0;
+  box-shadow: none;
+  width: 12.5rem;
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #players.hidden {
+    display: none; }
+  html.e-html body.e-body#e-rd #players h3 {
+    border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: flex;
+    font-size: 0.875rem;
+    font-weight: normal;
+    letter-spacing: 0.075rem;
+    margin: 0;
+    padding: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #players h3:hover, html.e-html body.e-body#e-rd #players h3:active {
+      color: rgba(var(--color-primary), 1); }
+    html.e-html body.e-body#e-rd #players h3 .players-mode {
+      color: inherit;
+      flex: 1 1 auto;
+      font-size: 1rem;
+      text-align: right;
+      position: relative; }
+    html.e-html body.e-body#e-rd #players h3 i {
+      position: relative; }
+      html.e-html body.e-body#e-rd #players h3 i:first-of-type {
+        margin-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd #players h3 i:last-of-type {
+        margin-inline-start: 0.5rem; }
+  html.e-html body.e-body#e-rd #players ol {
+    list-style: none;
+    padding: 0.5rem;
+    position: relative; }
+    html.e-html body.e-body#e-rd #players ol .player {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0.125rem 0;
+      position: relative;
+      width: 100%; }
+    html.e-html body.e-body#e-rd #players ol .player-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: rgba(var(--color-white), 1);
+      flex: 1 1 auto;
+      position: relative; }
+      html.e-html body.e-body#e-rd #players ol .player-name.self {
+        color: rgba(var(--color-white), 1); }
+    html.e-html body.e-body#e-rd #players ol .player-active {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      margin-inline-end: 0.5rem;
+      position: relative; }
+      html.e-html body.e-body#e-rd #players ol .player-active.active {
+        box-shadow: 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+
+html.e-html body.e-body#e-rd #hotbar {
+  bottom: 0.5rem;
+  left: 15rem;
+  position: fixed;
+  display: flex;
+  pointer-events: none;
+  z-index: 10; }
+  html.e-html body.e-body#e-rd #hotbar #action-bar {
+    display: block;
+    flex: 1 1 auto;
+    pointer-events: all;
+    position: relative; }
+  html.e-html body.e-body#e-rd #hotbar #macro-list {
+    display: flex;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+  html.e-html body.e-body#e-rd #hotbar .bar-controls {
+    width: 2.5rem;
+    height: 3.5rem;
+    border: rgba(var(--color-charcoal-600), 1) 1px solid;
+    display: flex;
+    flex-direction: column;
+    position: relative; }
+    html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child {
+      flex: 0 0 auto;
+      flex-direction: column-reverse;
+      margin-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #macro-directory,
+      html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #bar-toggle {
+        flex: 1 1 auto; }
+        html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #macro-directory:first-of-type,
+        html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #bar-toggle:first-of-type {
+          border: none;
+          border-radius: 0; }
+        html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #macro-directory:last-of-type,
+        html.e-html body.e-body#e-rd #hotbar .bar-controls:first-child #bar-toggle:last-of-type {
+          border-block-start: none;
+          border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+          border-radius: 0; }
+    html.e-html body.e-body#e-rd #hotbar .bar-controls:last-child {
+      float: left;
+      margin-inline-start: 0.5rem; }
+    html.e-html body.e-body#e-rd #hotbar .bar-controls .page-control,
+    html.e-html body.e-body#e-rd #hotbar .bar-controls #macro-directory,
+    html.e-html body.e-body#e-rd #hotbar .bar-controls #bar-toggle {
+      align-items: center;
+      background: rgba(var(--color-charcoal-500), 0.8);
+      color: rgba(var(--color-white), 1);
+      cursor: pointer;
+      display: flex;
+      flex: 0 0 auto;
+      justify-content: center;
+      position: relative;
+      transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      html.e-html body.e-body#e-rd #hotbar .bar-controls .page-control:first-of-type,
+      html.e-html body.e-body#e-rd #hotbar .bar-controls #macro-directory:first-of-type,
+      html.e-html body.e-body#e-rd #hotbar .bar-controls #bar-toggle:first-of-type {
+        border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid; }
+      html.e-html body.e-body#e-rd #hotbar .bar-controls .page-control:last-of-type,
+      html.e-html body.e-body#e-rd #hotbar .bar-controls #macro-directory:last-of-type,
+      html.e-html body.e-body#e-rd #hotbar .bar-controls #bar-toggle:last-of-type {
+        border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid; }
+    html.e-html body.e-body#e-rd #hotbar .bar-controls .page-number {
+      background: rgba(var(--color-charcoal-500), 0.5);
+      color: rgba(var(--color-white), 1);
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: center; }
+  html.e-html body.e-body#e-rd #hotbar .macro {
+    width: 3.5rem;
+    height: 3.5rem;
+    align-items: center;
+    background: rgba(var(--color-charcoal-500), 0.8);
+    border: rgba(var(--color-charcoal-600), 1) 1px solid;
+    border-inline-end: none;
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: border 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd #hotbar .macro:last-of-type {
+      border-inline-end: rgba(var(--color-charcoal-600), 1) 1px solid; }
+    html.e-html body.e-body#e-rd #hotbar .macro.active {
+      background: rgba(var(--color-charcoal-500), 0.8); }
+    html.e-html body.e-body#e-rd #hotbar .macro .macro-key {
+      top: 0.125rem;
+      right: 0.25rem;
+      position: absolute;
+      color: rgba(var(--color-white), 1);
+      font-weight: 600;
+      text-shadow: 2px 2px 2px rgba(var(--color-charcoal-900), 1);
+      z-index: 1; }
+    html.e-html body.e-body#e-rd #hotbar .macro .macro-icon {
+      width: 3.125rem;
+      height: 3.125rem;
+      border: none;
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: relative; }
+    html.e-html body.e-body#e-rd #hotbar .macro .tooltip {
+      bottom: 100%;
+      left: 0;
+      position: absolute;
+      background: rgba(var(--color-charcoal-900), 0.5);
+      color: rgba(var(--color-white), 1);
+      font-size: 0.875rem;
+      margin-block-end: 0.25rem;
+      padding: 0.125rem;
+      max-width: 200%; }
+
+html.e-html body.e-body#e-rd #pause {
+  bottom: 12.5rem;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  pointer-events: none; }
+  html.e-html body.e-body#e-rd #pause.paused {
+    display: flex; }
+  html.e-html body.e-body#e-rd #pause::before {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: pause-rotation-before;
+    animation-timing-function: linear;
+    background: rgba(var(--color-primary), 1);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 4px rgba(var(--color-white), 1), 0 0 0 4px rgba(var(--color-primary), 1);
+    content: "";
+    margin-block-start: -3.75rem;
+    margin-inline-start: -3.75rem; }
+
+@keyframes pause-rotation-before {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+  html.e-html body.e-body#e-rd #pause img {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 6.25rem;
+    height: 6.25rem;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-name: pause-rotation;
+    animation-timing-function: linear;
+    margin-block-start: -3.125rem;
+    margin-inline-start: -3.125rem; }
+
+@keyframes pause-rotation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  html.e-html body.e-body#e-rd #pause h3 {
+    margin-block-start: 10rem;
+    text-shadow: 1px 1px 4px rgba(var(--color-black), 1); }
+
+html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+  min-height: 12.5rem;
+  position: relative;
+  background: rgba(var(--color-charcoal-800), 1);
+  box-shadow: 0 8px 0 0 rgba(var(--color-charcoal-800), 1);
+  width: calc(100% + 16px);
+  margin-left: -8px;
+  margin-top: -8px; }
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header {
+    border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search {
+      align-items: center;
+      display: flex;
+      flex: 1 1 auto;
+      position: relative; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search > i {
+        flex: 0 0 auto;
+        margin-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-search input {
+        background: rgba(var(--color-white), 1);
+        flex: 1 1 auto; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-header .header-control {
+      width: 2rem;
+      height: 2rem;
+      flex: 0 0 auto;
+      margin-inline-start: 0.25rem; }
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer {
+    border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-footer button > i {
+        margin-inline-end: 0.5rem; }
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium > .directory-list {
+    display: flex;
+    flex-direction: column; }
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list {
+    max-height: 100%;
+    padding-block-start: 0.25rem; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list .subdirectory {
+      background: rgba(var(--color-charcoal-100), 1);
+      border-inline-start: rgba(var(--color-primary), 1) 4px solid;
+      width: 100%; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list .subdirectory .folder {
+        padding-block-end: 0.25rem;
+        padding-inline-end: 0; }
+        html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list .subdirectory .folder + .folder {
+          padding-block-start: 0; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list .subdirectory .subdirectory {
+        border-inline-start: rgba(var(--color-orange-700), 1) 4px solid; }
+        html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-list .subdirectory .subdirectory .subdirectory {
+          border-inline-start: rgba(var(--color-orange-900), 1) 4px solid; }
+  html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item {
+    align-items: center;
+    background: rgba(var(--color-charcoal-400), 1);
+    color: rgba(var(--color-white), 1);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0.25rem 0.5rem;
+    padding: 0 0.5rem;
+    position: relative;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item:hover {
+      background: rgba(var(--color-primary), 1);
+      color: rgba(var(--color-white), 1); }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.folder, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.playlist {
+      background: transparent;
+      cursor: default;
+      margin: 0;
+      padding: 0.25rem 0.5rem;
+      padding-block-end: 0; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.folder:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.folder:focus, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.playlist:hover, html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item.playlist:focus {
+        background: transparent;
+        box-shadow: none; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item img {
+      width: 2rem;
+      height: 2rem;
+      cursor: move;
+      flex: 0 0 auto;
+      margin-block-start: 0.25rem;
+      margin-block-end: 0.25rem;
+      margin-inline-end: 0.5rem;
+      object-fit: cover;
+      object-position: 50% 50%;
+      position: relative; }
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h3,
+    html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: inherit;
+      flex: 1 1 auto;
+      font-size: 1rem;
+      font-weight: normal; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h3 > i,
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h4 > i {
+        margin-inline-end: 0.5rem; }
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h3 > a,
+      html.e-html body.e-body#e-rd .window-app .sidebar-tab.compendium .directory-item h4 > a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: inherit;
+        cursor: pointer;
+        display: block;
+        flex: 1 1 auto;
+        font-size: 1rem;
+        line-height: 2rem;
+        position: relative;
+        text-shadow: none;
+        transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+html.e-html body.e-body#e-rd .window-app#client-settings, html.e-html body.e-body#e-rd .window-app#module-management {
+  min-height: 10vh; }
+  html.e-html body.e-body#e-rd .window-app#client-settings .package-list,
+  html.e-html body.e-body#e-rd .window-app#client-settings section.content .settings-list, html.e-html body.e-body#e-rd .window-app#module-management .package-list,
+  html.e-html body.e-body#e-rd .window-app#module-management section.content .settings-list {
+    max-height: 100%; }
+
+html.e-html body.e-body#e-rd #sidebar #combat #combat-tracker .token-resource input,
+html.e-html body.e-body#e-rd .sidebar-popout #combat #combat-tracker .token-resource input {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  color: rgba(var(--color-white), 1);
+  padding: 0;
+  text-align: center; }
+
+html.e-html body.e-body#e-rd #sidebar #combat .add-temporary,
+html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary {
+  margin: 0.5rem;
+  text-shadow: none;
+  width: 100%; }
+  html.e-html body.e-body#e-rd #sidebar #combat .add-temporary > i,
+  html.e-html body.e-body#e-rd .sidebar-popout #combat .add-temporary > i {
+    margin-inline-end: 0.25rem; }
+
+html.e-html body.e-body#e-rd #sidebar #settings #combat-utility-belt h4,
+html.e-html body.e-body#e-rd .sidebar-popout #settings #combat-utility-belt h4 {
+  border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+  color: rgba(var(--color-white), 1);
+  margin-block-start: 1rem; }
+
+html.e-html body.e-body#e-rd #sidebar .import-dd,
+html.e-html body.e-body#e-rd .sidebar-popout .import-dd {
+  display: flex  !important;
+  flex: 1 1 100% !important;
+  margin: 0 !important;
+  margin-block-start: 0.25rem !important; }
+
+html.e-html body.e-body#e-rd #sidebar .sidebar-tab .directory-footer button.quest-log-btn,
+html.e-html body.e-body#e-rd .sidebar-popout .sidebar-tab .directory-footer button.quest-log-btn {
+  flex: 1 1 100%;
+  margin: 0;
+  margin-block-start: 0.25rem; }
+
+html.e-html body.e-body#e-rd .window-app .window-header a.help {
+  width: 1.5rem;
+  height: 1.5rem; }
+  html.e-html body.e-body#e-rd .window-app .window-header a.help i {
+    margin-inline-end: 0; }
+
+html.e-html body.e-body#e-rd #sidebar #playlists .directory-list li.now-playing,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list li.now-playing {
+  border: 0; }
+  html.e-html body.e-body#e-rd #sidebar #playlists .directory-list li.now-playing > .playlist-header,
+  html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list li.now-playing > .playlist-header {
+    pointer-events: none; }
+    html.e-html body.e-body#e-rd #sidebar #playlists .directory-list li.now-playing > .playlist-header h4,
+    html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list li.now-playing > .playlist-header h4 {
+      padding-inline-start: 0; }
+  html.e-html body.e-body#e-rd #sidebar #playlists .directory-list li.now-playing > .playlist-sounds > .now-playing-item,
+  html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list li.now-playing > .playlist-sounds > .now-playing-item {
+    padding: 0; }
+    html.e-html body.e-body#e-rd #sidebar #playlists .directory-list li.now-playing > .playlist-sounds > .now-playing-item:last-child .playlist-sounds .sound,
+    html.e-html body.e-body#e-rd .sidebar-popout #playlists .directory-list li.now-playing > .playlist-sounds > .now-playing-item:last-child .playlist-sounds .sound {
+      border-block-end: 0; }
+
+html.e-html body.e-body#e-rd #sidebar #playlists li.sound.sound-is-playing,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.sound.sound-is-playing {
+  background: transparent; }
+
+html.e-html body.e-body#e-rd #effects-config .effects.directory-list {
+  height: auto; }
+  html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item {
+    flex-direction: column;
+    padding: 0.5rem; }
+    html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header {
+      display: flex;
+      width: 100%; }
+      html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header label {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1rem;
+        justify-content: flex-end; }
+        html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header label > i {
+          margin-inline-end: 0.25rem; }
+      html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item header input[type="checkbox"] {
+        margin: 0;
+        margin-inline-start: 0.5rem; }
+    html.e-html body.e-body#e-rd #effects-config .effects.directory-list .directory-item .config.collapsible {
+      margin: 0;
+      margin-block-start: 0.25rem;
+      width: 100%; }
+
+html.e-html body.e-body#e-rd #sidebar div.permission-viewer,
+html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer {
+  flex: 0 0 auto;
+  margin: 0;
+  margin-inline-start: 0.25rem; }
+  html.e-html body.e-body#e-rd #sidebar div.permission-viewer a,
+  html.e-html body.e-body#e-rd .sidebar-popout div.permission-viewer a {
+    padding: 0 0.375rem;
+    text-shadow: none;
+    width: auto; }
+
+html.e-html body.e-body#e-rd #RTB-button {
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.875rem;
+  margin: 0;
+  margin-inline-end: 0.25rem; }
+
+html.e-html body.e-body#e-rd #RTB-menu {
+  margin: 0;
+  padding: 0; }
+  html.e-html body.e-body#e-rd #RTB-menu .RTB-entry {
+    margin: 0;
+    margin-block-end: 0.25rem; }
+    html.e-html body.e-body#e-rd #RTB-menu .RTB-entry:last-child {
+      margin-block-end: 0; }
+    html.e-html body.e-body#e-rd #RTB-menu .RTB-entry > i {
+      margin-inline-end: 0.5rem; }
+
+html.e-html body.e-body#e-rd #players #player-list #userPing {
+  cursor: pointer;
+  margin-inline-end: 0 !important;
+  text-shadow: none; }
+  html.e-html body.e-body#e-rd #players #player-list #userPing:hover {
+    color: rgba(var(--color-primary), 1); }
+
+html.e-html body.e-body#e-rd #pingPop {
+  background: rgba(var(--color-charcoal-900), 0.8) !important;
+  border-radius: 0 !important;
+  opacity: 1 !important;
+  padding: 0.5rem !important; }
+
+html.e-html body.e-body#e-rd #sidebar .token-mold,
+html.e-html body.e-body#e-rd .sidebar-popout .token-mold {
+  border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
+  flex-wrap: wrap; }
+  html.e-html body.e-body#e-rd #sidebar .token-mold h3,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold h3 {
+    margin: 0;
+    margin-block-end: 0.25rem;
+    width: 100%; }
+  html.e-html body.e-body#e-rd #sidebar .token-mold > label,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label {
+    flex: 1 1 auto;
+    padding: 0.125rem; }
+    html.e-html body.e-body#e-rd #sidebar .token-mold > label > span,
+    html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span {
+      width: 100%;
+      height: 1.5rem;
+      font-size: 0.75rem;
+      padding: 0.25rem; }
+      html.e-html body.e-body#e-rd #sidebar .token-mold > label > span > span,
+      html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label > span > span {
+        margin-inline-end: 0.25rem; }
+    html.e-html body.e-body#e-rd #sidebar .token-mold > label:first-of-type,
+    html.e-html body.e-body#e-rd .sidebar-popout .token-mold > label:first-of-type {
+      padding-inline-start: 0; }
+  html.e-html body.e-body#e-rd #sidebar .token-mold > a:last-of-type,
+  html.e-html body.e-body#e-rd .sidebar-popout .token-mold > a:last-of-type {
+    padding-inline-end: 0; }
+
+html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control.inactive i.fas,
+html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control i.fas.fa-square,
+html.e-html body.e-body#e-rd #sidebar #playlists li.playlist .sound-control i.fas.fa-play,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control.inactive i.fas,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control i.fas.fa-square,
+html.e-html body.e-body#e-rd .sidebar-popout #playlists li.playlist .sound-control i.fas.fa-play {
+  color: inherit; }
+
+html.e-html body.e-body#e-rd .window-app .window-header a.pop__btn-open,
+html.e-html body.e-body#e-rd .window-app .window-header a.tit-menu__btn-open--sheet.px-2 {
+  display: flex !important;
+  padding: 0 !important;
+  width: 1.5rem; }
+  html.e-html body.e-body#e-rd .window-app .window-header a.pop__btn-open > i,
+  html.e-html body.e-body#e-rd .window-app .window-header a.pop__btn-open > span.fas,
+  html.e-html body.e-body#e-rd .window-app .window-header a.tit-menu__btn-open--sheet.px-2 > i,
+  html.e-html body.e-body#e-rd .window-app .window-header a.tit-menu__btn-open--sheet.px-2 > span.fas {
+    margin-inline-end: 0; }
+
+html.e-html body.e-body#e-rd #sidebar .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100,
+html.e-html body.e-body#e-rd .sidebar-popout .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 {
+  margin-block-start: 0.25rem;
+  padding: 0; }
+  html.e-html body.e-body#e-rd #sidebar .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 hr,
+  html.e-html body.e-body#e-rd .sidebar-popout .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 hr {
+    display: none; }
+  html.e-html body.e-body#e-rd #sidebar .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button,
+  html.e-html body.e-body#e-rd .sidebar-popout .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button {
+    flex: 0 0 auto; }
+    html.e-html body.e-body#e-rd #sidebar .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button:first-child,
+    html.e-html body.e-body#e-rd .sidebar-popout .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button:first-child {
+      flex: 1 1 auto; }
+      html.e-html body.e-body#e-rd #sidebar .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button:first-child > span,
+      html.e-html body.e-body#e-rd .sidebar-popout .flex-col.dir__wrp-footer.w-100.no-shrink.min-w-100 button:first-child > span {
+        margin-inline-end: 0.25rem; }

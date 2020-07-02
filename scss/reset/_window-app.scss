@@ -1,0 +1,48 @@
+.window-app {
+	display: initial;
+	flex-direction: initial;
+	flex-wrap: initial;
+	position: initial;
+	box-shadow: initial;
+	padding: initial;
+	z-index: initial;
+	// Resizable movement handle
+}
+.window-app .window-header {
+	flex: initial;
+	overflow: initial;
+	padding: initial;
+	line-height: initial;
+	border-bottom: initial;
+}
+.window-app .window-header .window-title {
+	margin: initial;
+	word-break: initial;
+}
+.window-app .window-header a {
+	flex: initial;
+	margin: initial;
+}
+.window-app .window-header i.fas {
+	margin-right: initial;
+}
+.window-app.minimized .window-header {
+	border: initial;
+}
+.window-app .window-resizable-handle {
+	width: initial;
+	height: initial;
+	position: initial;
+	bottom: initial;
+	right: initial;
+	background: initial;
+	padding: initial;
+	border: initial;
+	border-radius: initial;
+}
+.window-app .window-resizable-handle i.fas {
+	transform: initial;
+}
+.window-app.minimized .window-resizable-handle {
+	display: initial;
+}

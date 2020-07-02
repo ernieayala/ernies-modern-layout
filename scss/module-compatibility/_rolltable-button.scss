@@ -1,0 +1,26 @@
+#RTB-button {
+	@extend %control-button;
+	font-family: "Font Awesome 5 Free";
+	font-size: fs("md");
+	margin: 0;
+	margin-inline-end: m("base");
+}
+
+#RTB-menu {
+	margin: 0;
+	padding: 0;
+
+	.RTB-entry {
+		@extend %primary-button;
+		margin: 0;
+		margin-block-end: m("base");
+
+		&:last-child {
+			margin-block-end: 0;
+		}
+
+		> i {
+			margin-inline-end: m("sm");
+		}
+	}
+}
