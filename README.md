@@ -1,5 +1,6 @@
 # Ernie's Modern Layout
 Still a WIP. Let me know if there are bugs.
+Only tested on Chrome.
 
 ## Tested With These Modules Active
 - About Time
