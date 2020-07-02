@@ -2,11 +2,26 @@
 	"name": "ernies-modern-layout",
 	"title": "Ernie's Modern Layout",
 	"description": "An modern layout for Foundry.",
-	"author": "Ernie",
 	"version": "0.0.1",
-	"minimumCoreVersion": "0.6.0",
-	"compatibleCoreVersion": "0.6.0",
+	"author": "Ernie",
+	"authors": [
+		{
+			"name": "",
+			"email": "",
+			"url": ""
+		}
+	],
 	"system": "dnd5e",
 	"styles": ["./css/eml.css"],
-	"esmodules": ["./js/eml.js"]
+	"esmodules": ["./js/eml.js"],
+	"languages": [],
+	"minimumCoreVersion": "0.6.4",
+	"compatibleCoreVersion": "0.6.4",
+	"url": "https://github.com/ernieayala/ernies-modern-layout",
+	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
+	"download": "https://gitlab.com/tenuki.igo/foundryvtt-ping-times/-/raw/v0.2.5/package/response-times-v0.2.5.zip",
+	"license": "",
+	"readme": "",
+	"bugs": "",
+	"changelog": ""
 }
