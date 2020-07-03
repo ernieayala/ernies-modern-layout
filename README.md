@@ -1,11 +1,11 @@
-# Manifest Url
-https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
-
 # Ernie's Modern Layout
 Still a WIP. Let me know if there are bugs.
 Only tested on Chrome.
 
-## Tested With These Modules Active
+### Manifest Url
+https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
+
+### Tested With These Modules Active
 - About Time
 - Better Roll Tables
 - Better Rolls 5e
