@@ -1,8 +1,13 @@
 #hotbar {
-	@include fixed(bottom space("sm") left to-rem(240px));
+	@include fixed(bottom space("sm") left to-rem(224px));
 	display: flex;
 	pointer-events: none;
 	z-index: z("fixed");
+
+	.-compact & {
+		bottom: space("base");
+		left: to-rem(176px);
+	}
 
 	#action-bar {
 		display: block;
@@ -27,10 +32,18 @@
 		flex-direction: column;
 		position: relative;
 
+		.-compact & {
+			@include size(to-rem(32px), to-rem(40px));
+		}
+
 		&:first-child {
 			flex: 0 0 auto;
 			flex-direction: column-reverse;
-			margin-inline-end: m(sm);
+			margin-inline-end: m("sm");
+
+			.-compact & {
+				margin-inline-end: m("base");
+			}
 
 			#macro-directory,
 			#bar-toggle {
@@ -51,7 +64,11 @@
 
 		&:last-child {
 			float: left;
-			margin-inline-start: m(sm);
+			margin-inline-start: m("sm");
+
+			.-compact & {
+				margin-inline-start: m("base");
+			}
 		}
 
 		.page-control,
@@ -84,12 +101,22 @@
 			}
 		}
 
+		.page-control {
+			.-compact & {
+				font-size: fs("xs");
+			}
+		}
+
 		.page-number {
 			background: color("charcoal-500", 0.5);
 			color: color("white");
 			display: flex;
 			flex: 1 1 auto;
 			justify-content: center;
+
+			.-compact & {
+				font-size: fs("sm");
+			}
 		}
 	}
 
@@ -105,6 +132,10 @@
 		justify-content: center;
 		position: relative;
 		transition: t(border box-shadow, "link");
+
+		.-compact & {
+			@include size(to-rem(40px));
+		}
 
 		&:last-of-type {
 			border-inline-end: b("charcoal-600");
@@ -124,7 +155,7 @@
 		}
 
 		.macro-key {
-			@include absolute(top space(xs) right space(base));
+			@include absolute(top space("xs") right space("base"));
 			color: color("white");
 			font-weight: 600;
 			text-shadow: 2px 2px  2px color("charcoal-900");
@@ -139,6 +170,10 @@
 			object-fit: cover;
 			object-position: 50% 50%;
 			position: relative;
+
+			.-compact & {
+				@include size(to-rem(34px));
+			}
 		}
 
 		.tooltip {

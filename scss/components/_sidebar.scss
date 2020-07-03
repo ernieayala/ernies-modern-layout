@@ -9,8 +9,14 @@
 	box-shadow: none;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 	overflow: hidden;
 	z-index: z(fixed);
+
+	.-compact & {
+		@include size(to-rem(296px), calc(100% - #{to-rem(8px)}));
+		top: space("base");
+	}
 
 	&.collapsed {
 		height: auto !important;
@@ -46,6 +52,10 @@
 			padding: p("sm");
 			position: relative;
 			transition: t(box-shadow color, "link");
+
+			.-compact & {
+				padding: p("base");
+			}
 
 			&:hover {
 				@extend %global-hover;
@@ -99,6 +109,11 @@
 		position: relative;
 		width: 100%;
 
+		.-compact & {
+			padding-inline-start: p("base");
+			padding-inline-end: p("base");
+		}
+
 		&.collapsed {
 			> .folder-header {
 				border-inline-start: none;
@@ -137,6 +152,11 @@
 			transition: t(background box-shadow color, "link");
 			width: 100%;
 
+			.-compact & {
+				min-height: to-rem(24px);
+				padding: p("base");
+			}
+
 			&:hover {
 				@extend %global-hover;
 				background: color("primary");
@@ -157,6 +177,10 @@
 
 				> i {
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 			}
 
@@ -167,9 +191,7 @@
 		}
 
 		.subdirectory {
-			list-style: none;
-			margin: 0;
-			padding: 0;
+			@extend %reset-list;
 
 			.folder-header {
 				border-color: color("orange-700");
@@ -190,6 +212,10 @@
 		height: 100%;
 		min-height: to-rem(200px);
 		position: relative;
+
+		.-compact & {
+			min-height: to-rem(176px);
+		}
 
 		&.active {
 			display: flex;
@@ -212,6 +238,10 @@
 				> i {
 					flex: 0 0 auto;
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 
 				input {
@@ -228,6 +258,10 @@
 				@include size(to-rem(32px));
 				flex: 0 0 auto;
 				margin-inline-start: m("base");
+
+				.-compact & {
+					margin-inline-start: m("xs");
+				}
 			}
 		}
 
@@ -244,6 +278,10 @@
 
 				> i {
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 			}
 		}
@@ -268,8 +306,17 @@
 				padding-block-end: p("base");
 				padding-inline-end: 0;
 
+				.-compact & {
+					padding-block-end: p("base");
+					padding-inline-end: 0;
+				}
+
 				+ .folder {
 					padding-block-start: 0;
+
+					.-compact & {
+						padding-block-start: 0;
+					}
 				}
 			}
 
@@ -298,6 +345,12 @@
 		position: relative;
 		transition: t(background box-shadow color, "link");
 
+		.-compact & {
+			margin: m("base");
+			min-height: to-rem(24px);
+			padding: 0 p("base");
+		}
+
 		&:hover {
 			@extend %global-hover;
 			background: color("primary");
@@ -316,6 +369,11 @@
 			padding: p("base") p("sm");
 			padding-block-end: 0;
 
+			.-compact & {
+				padding: p("base");
+				padding-block-end: 0;
+			}
+
 			&:hover,
 			&:focus {
 				background: transparent;
@@ -325,6 +383,7 @@
 
 		img {
 			@include size(space("icon"));
+			border-radius: 0;
 			cursor: move;
 			flex: 0 0 auto;
 			margin-block-start: m("base");
@@ -333,6 +392,11 @@
 			object-fit: cover;
 			object-position: 50% 50%;
 			position: relative;
+
+			.-compact & {
+				@include size(to-rem(20px));
+				margin-inline-end: m("base");
+			}
 		}
 
 		h3,
@@ -346,6 +410,10 @@
 
 			> i {
 				margin-inline-end: m("sm");
+
+				.-compact & {
+					margin-inline-end: m("base");
+				}
 			}
 
 			> a {
@@ -359,6 +427,10 @@
 				position: relative;
 				text-shadow: none;
 				transition: t(color, "link");
+
+				.-compact & {
+					line-height: to-rem(24px); // figure out a better way
+				}
 			}
 		}
 	}
@@ -396,6 +468,10 @@
 				h3 {
 					color: color("white");
 					font-size: fs("xl");
+
+					.-compact & {
+						font-size: fs("lg");
+					}
 				}
 
 				a {
@@ -416,6 +492,10 @@
 		#combat-tracker {
 			padding-block-start: p("base");
 
+			.-compact & {
+				padding-block-start: 0;
+			}
+
 			.combatant {
 				align-items: center;
 				background: color("charcoal-600");
@@ -424,6 +504,11 @@
 				padding: p("base") p("sm");
 				position: relative;
 				transition: t(background box-shadow opacity, "link");
+
+				.-compact & {
+					margin: m("base");
+					padding: p("base");
+				}
 
 				&:hover {
 					@extend %global-hover;
@@ -462,6 +547,10 @@
 					flex: 0 0 auto;
 					margin-inline-end: m("sm");
 					position: relative;
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 
 				.token-name {
@@ -492,11 +581,19 @@
 					font-size: fs("md");
 					margin-inline-start: m("base");
 					padding-inline-end: p("sm");
+
+					.-compact & {
+						padding-inline-end: p("base");
+					}
 				}
 
 				.token-initiative {
 					border-inline-start: b("gray-200");
 					padding-inline-start: p("sm");
+
+					.-compact & {
+						padding-inline-start: p("base");
+					}
 
 					.initiative {
 						color: inherit;
@@ -554,6 +651,10 @@
 			border-block-start: b("charcoal-600");
 			padding-block-start: m("sm");
 
+			.-compact & {
+				padding-block-start: m("base");
+			}
+
 			.combat-control {
 				@extend %primary-button;
 				flex: 1 1 auto;
@@ -594,6 +695,10 @@
 				padding: p("sm");
 				position: relative;
 
+				.-compact & {
+					padding: p("base");
+				}
+
 				.playlist-header {
 					background: transparent;
 					border-block-end: b("charcoal-600");
@@ -602,6 +707,10 @@
 					padding-inline-start: 0;
 					pointer-events: none;
 					width: 100%;
+
+					.-compact & {
+						font-size: fs("lg");
+					}
 
 					h4 {
 						padding-inline-start: 0;
@@ -652,8 +761,17 @@
 			padding-inline-end: p("sm");
 			position: relative;
 
+			.-compact & {
+				padding-inline-start: p("base");
+				padding-inline-end: p("base");
+			}
+
 			&:first-child {
 				padding-block-start: p("sm");
+
+				.-compact & {
+					padding-block-start: p("base");
+				}
 			}
 
 			&.collapsed {
@@ -678,6 +796,11 @@
 				padding: p("base") p("sm");
 				position: relative;
 				transition: t(background box-shadow color, "link");
+
+				.-compact & {
+					min-height: to-rem(24px);
+					padding: p("base");
+				}
 
 				&:hover {
 					background: color("primary");
@@ -725,6 +848,10 @@
 					padding: p("base") p("sm");
 					position: relative;
 
+					.-compact & {
+						padding: p("base");
+					}
+
 					h4 {
 						@include ellipsis;
 						color: color("default-text");
@@ -732,6 +859,10 @@
 						font-size: fs("lg");
 						font-weight: normal;
 						margin: 0;
+
+						.-compact & {
+							font-size: fs("md");
+						}
 					}
 
 					.sound-control {
@@ -949,6 +1080,10 @@
 				display: flex;
 				font-size: fs("md");
 				margin-inline-start: m("sm");
+
+				.-compact & {
+					margin-inline-start: m("base");
+				}
 			}
 		}
 	}
@@ -959,6 +1094,10 @@
 			list-style: none;
 			padding: p("base") p("sm");
 			width: 100%;
+
+			.-compact & {
+				padding: p("base");
+			}
 
 			> h3 {
 				@include ellipsis;
@@ -975,6 +1114,11 @@
 				position: relative;
 				transition: t(background box-shadow color, "link");
 				width: 100%;
+
+				.-compact & {
+					min-height: to-rem(24px);
+					padding: p("base");
+				}
 			}
 
 			> .compendium-list {
@@ -991,12 +1135,17 @@
 					cursor: pointer;
 					display: flex;
 					flex-wrap: wrap;
-					margin: m("base") m("base");
+					margin: m("base");
 					margin-block-end: 0;
 					min-height: to-rem(32px);
 					padding: p("base") p("sm");
 					position: relative;
 					transition: t(background box-shadow color, "link");
+
+					.-compact & {
+						min-height: to-rem(24px);
+						padding: p("base");
+					}
 
 					&:last-child {
 						margin-block-end: m("base");
@@ -1028,6 +1177,10 @@
 							margin-inline-end: m("sm");
 							text-shadow: none;
 
+							.-compact & {
+								margin-inline-end: m("base");
+							}
+
 							.folder {
 								padding: 0;
 								margin-inline-end: m("base");
@@ -1058,23 +1211,40 @@
 	#settings {
 		padding: p("sm");
 
+		.-compact & {
+			padding: p("base");
+		}
+
 		h2,
 		h4 {
 			color: color("white");
 			font-weight: normal;
 			margin: 0;
 			margin-block-end: m("sm");
+
+			.-compact & {
+				margin-block-end: m("base");
+			}
 		}
 
 		h2 {
 			@extend %h2;
 			border-block-end: b("charcoal-600");
 			margin-block-start: m("sm");
+
+			.-compact & {
+				@extend %h3;
+				margin-block-start: m("base");
+			}
 		}
 
 		h4 {
 			@extend %h4;
 			color: color("primary");
+
+			.-compact & {
+				margin-block-start: m("base");
+			}
 		}
 
 		button {
@@ -1083,7 +1253,17 @@
 
 			> i {
 				margin-inline-end: m("sm");
+
+				.-compact & {
+					margin-inline-end: m("base");
+				}
 			}
 		}
 	}
+}
+
+.sidebar-popout {
+	@include absolute(top auto bottom auto right auto left auto);
+	height: auto;
+	min-height: to-rem(400px);
 }

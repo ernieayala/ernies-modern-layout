@@ -18,10 +18,14 @@
 }
 
 // start vtt wrapper
-html.e-html body.e-body#e-rd {
+body.eml.e-body#eml {
 	// Scroll Bars
 	::-webkit-scrollbar {
 		width: to-rem(8px);
+
+		.-compact & {
+			width: to-rem(4px);
+		}
 	}
 
 	::-webkit-scrollbar-track {

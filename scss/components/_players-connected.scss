@@ -7,6 +7,12 @@
 	width: to-rem(200px);
 	z-index: z("fixed");
 
+	.-compact & {
+		bottom: space("base");
+		left: space("base");
+		width: to-rem(168px);
+	}
+
 	&.hidden {
 		display: none;
 	}
@@ -24,6 +30,11 @@
 		position: relative;
 		text-transform: uppercase;
 		transition: t(color, "link");
+
+		.-compact & {
+			letter-spacing: initial;
+			padding: p("base");
+		}
 
 		&:hover,
 		&:active {
@@ -43,10 +54,18 @@
 
 			&:first-of-type {
 				margin-inline-end: m("sm");
+
+				.-compact & {
+					margin-inline-end: m("base");
+				}
 			}
 
 			&:last-of-type {
 				margin-inline-start: m("sm");
+
+				.-compact & {
+					margin-inline-start: m("base");
+				}
 			}
 		}
 	}
@@ -56,11 +75,15 @@
 		padding: p("sm");
 		position: relative;
 
+		.-compact & {
+			padding: p("base");
+		}
+
 		.player {
 			align-items: center;
 			display: flex;
 			flex-wrap: nowrap;
-			padding: p(xs) 0;
+			padding: p("xs") 0;
 			position: relative;
 			width: 100%;
 		}
@@ -82,6 +105,10 @@
 			flex: 0 0 auto;
 			margin-inline-end: m("sm");
 			position: relative;
+
+			.-compact & {
+				margin-inline-end: m("base");
+			}
 
 			&.active {
 				box-shadow: 0 1px 2px 0 color("black", 0.3);

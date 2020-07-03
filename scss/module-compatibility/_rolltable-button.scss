@@ -21,6 +21,10 @@
 
 		> i {
 			margin-inline-end: m("sm");
+
+			.-compact & {
+				margin-inline-end: m("base");
+			}
 		}
 	}
 }

@@ -1,5 +1,11 @@
 # Ernie's Modern Layout
-Still a WIP. Covers about 60% of the UI. Let me know if there are bugs. **Only tested on Chrome so far.**
+A cleaner UI layout with more user feedback(hover and focus states).
+
+Covers most UI items that are not in a modal/popup etc.
+
+Will cover more parts of the app as time goes on.
+
+**Only tested on Chrome so far.**
 
 ### Manifest Url
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json

@@ -10,6 +10,12 @@
 	position: absolute;
 	z-index: z("modal");
 
+	&.minimized {
+		.window-resizable-handle {
+			display: none;
+		}
+	}
+
 	.window-header {
 		align-items: center;
 		background: color("charcoal-600");
@@ -17,9 +23,14 @@
 		color: color("white");
 		display: flex;
 		flex: 0 0 auto;
+		flex-wrap: nowrap;
 		overflow: hidden;
 		padding: p("sm");
 		position: relative;
+
+		.-compact & {
+			padding: p("base");
+		}
 
 		h4 {
 			@include ellipsis(max-width 100%);
@@ -64,13 +75,20 @@
 		}
 	}
 
+	.window-content {
+		// padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+	}
+
 	.window-resizable-handle {
 		@include absolute(bottom 0 right 0);
 		@include size(to-rem(20px));
 		align-items: center;
 		background: color("charcoal-800");
 		border: none;
-		border-top-left-radius: br("sm");
 		color: color("white");
 		cursor: pointer;
 		display: inline-flex;

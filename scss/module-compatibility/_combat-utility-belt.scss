@@ -12,6 +12,10 @@
 					color: color("white");
 					padding: 0;
 					text-align: center;
+
+					.-compact & {
+						@include size(to-rem(20px));
+					}
 				}
 			}
 		}
@@ -22,8 +26,16 @@
 			text-shadow: none;
 			width: 100%;
 
+			.-compact & {
+				margin: m("base");
+			}
+
 			> i {
-				margin-inline-end: m("base");
+				margin-inline-end: m("sm");
+
+				.-compact & {
+					margin-inline-end: m("base");
+				}
 			}
 		}
 	}
@@ -34,6 +46,10 @@
 				border-block-end: b("charcoal-600");
 				color: color("white");
 				margin-block-start: m("md");
+
+				.-compact & {
+					margin-block-start: m("sm");
+				}
 			}
 		}
 	}

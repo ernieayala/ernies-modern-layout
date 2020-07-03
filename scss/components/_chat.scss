@@ -8,6 +8,10 @@
 	padding: p("sm");
 	position: relative;
 
+	.-compact & {
+		padding: p("base");
+	}
+
 	.roll-type-select {
 		align-items: center;
 		display: flex;
@@ -24,6 +28,10 @@
 			background: color("charcoal-500", 0.5);
 			color: color("white");
 			height: to-rem(32px);
+
+				.-compact & {
+					height: to-rem(24px);
+				}
 		}
 	}
 
@@ -48,6 +56,10 @@
 	height: to-rem(112px);
 	padding: p("sm");
 	position: relative;
+
+	.-compact & {
+		padding: p("base");
+	}
 
 	textarea {
 		@extend %form-inp-sel-tex-shared;

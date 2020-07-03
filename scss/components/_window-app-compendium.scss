@@ -15,6 +15,16 @@
 		margin-left: -8px;
 		margin-top: -8px;
 
+		.-compact & {
+			min-height: to-rem(168px);
+
+			// hack
+			box-shadow: 0 4px 0 0 color("charcoal-800");
+			width: calc(100% + 8px);
+			margin-left: -4px;
+			margin-top: -4px;
+		}
+
 		.directory-header,
 		.directory-footer {
 			@extend %panel-header;
@@ -32,6 +42,10 @@
 				> i {
 					flex: 0 0 auto;
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 
 				input {
@@ -61,6 +75,10 @@
 
 				> i {
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 			}
 		}
@@ -84,8 +102,17 @@
 					padding-block-end: p("base");
 					padding-inline-end: 0;
 
+					.-compact & {
+						padding-block-end: p("base");
+						padding-inline-end: 0;
+					}
+
 					+ .folder {
 						padding-block-start: 0;
+
+						.-compact & {
+							padding-block-start: 0;
+						}
 					}
 				}
 
@@ -106,10 +133,15 @@
 			cursor: pointer;
 			display: flex;
 			flex-wrap: nowrap;
-			margin: m("base") m("sm");
+			margin: m("xs") m("sm");
 			padding: 0 p("sm");
 			position: relative;
 			transition: t(background box-shadow color, "link");
+
+			.-compact & {
+				margin: m("xs") m("base");
+				padding: 0 p("base");
+			}
 
 			&:hover {
 				@extend %global-hover;
@@ -129,6 +161,11 @@
 				padding: p("base") p("sm");
 				padding-block-end: 0;
 
+				.-compact & {
+					padding: p("base");
+					padding-block-end: 0;
+				}
+
 				&:hover,
 				&:focus {
 					background: transparent;
@@ -146,6 +183,11 @@
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
+
+				.-compact & {
+					@include size(to-rem(20px));
+					margin-inline-end: m("base");
+				}
 			}
 
 			h3,
@@ -158,6 +200,10 @@
 
 				> i {
 					margin-inline-end: m("sm");
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
 				}
 
 				> a {
@@ -171,6 +217,10 @@
 					position: relative;
 					text-shadow: none;
 					transition: t(color, "link");
+
+					.-compact & {
+						line-height: to-rem(24px);
+					}
 				}
 			}
 		}

@@ -18,4 +18,8 @@
 	border-radius: 0 !important;
 	opacity: 1 !important;
 	padding: p("sm") !important;
+
+	.-compact & {
+		padding: p("base") !important;
+	}
 }

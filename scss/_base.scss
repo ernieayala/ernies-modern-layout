@@ -69,6 +69,11 @@
 	height: to-rem(32px);
 	padding-inline-start: p("sm");
 	padding-inline-end: p("sm");
+
+	.-compact & {
+		padding-inline-start: p("base");
+		padding-inline-end: p("base");
+	}
 }
 
 // Input
@@ -203,6 +208,10 @@
 		display: flex;
 		font-size: fs("md");
 		margin-inline-start: m("sm");
+
+		.-compact & {
+			margin-inline-start: m("base");
+		}
 	}
 }
 
@@ -221,12 +230,21 @@
 %form-tex {
 	min-height: to-rem(64px);
 	padding: p("sm");
+
+	.-compact & {
+		min-height: to-rem(48px);
+		padding: p("base");
+	}
 }
 
 // Checkbox
 %form-checkbox {
 	@include size(to-rem(20px));
 	cursor: pointer;
+
+	.-compact & {
+		@include size(to-rem(16px));
+	}
 }
 
 // Text
@@ -316,6 +334,10 @@
 	position: relative;
 	transition: t(background box-shadow, "link");
 
+	.-compact & {
+		padding: p("base");
+	}
+
 	&:hover {
 		@extend %global-hover;
 		background: color("primary");
@@ -347,6 +369,10 @@
 	font-size: fs("sm");
 	margin-inline-start: m("xs");
 	padding: 0;
+
+	.-compact & {
+		@include size(to-rem(20px));
+	}
 }
 
 %icon-button {
@@ -380,6 +406,10 @@
 
 		> i {
 			margin-inline-end: m("sm");
+
+			.-compact & {
+				margin-inline-end: m("base");
+			}
 		}
 	}
 }
@@ -426,6 +456,10 @@
 	flex: 0 0 auto;
 	padding: p("sm");
 	position: relative;
+
+	.-compact & {
+		padding: p("base");
+	}
 
 	&:empty {
 		display: none;

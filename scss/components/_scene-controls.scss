@@ -7,6 +7,11 @@
 	padding: 0;
 	z-index: z("fixed");
 
+	.-compact & {
+		left: space("base");
+		top: space("base");
+	}
+
 	.scene-control,
 	.control-tool {
 		@include size(to-rem(40px));
@@ -16,8 +21,14 @@
 		display: flex;
 		justify-content: center;
 		margin-block-end: space("sm");
+		pointer-events: all;
 		position: relative;
 		transition: t(background box-shadow color, "link");
+
+		.-compact & {
+			@include size(to-rem(32px));
+			margin-block-end: space("base");
+		}
 
 		&:hover {
 			@extend %global-hover;
@@ -34,6 +45,10 @@
 
 		&:last-of-type {
 			margin-block-end: 0;
+
+			.-compact & {
+				margin-block-end: 0;
+			}
 		}
 
 		> i {
@@ -78,5 +93,10 @@
 	.control-tools {
 		@include absolute(top 0 left to-rem(48px));
 		display: none;
+		pointer-events: none;
+
+		.-compact & {
+			left: to-rem(36px);
+		}
 	}
 }
