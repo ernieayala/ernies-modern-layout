@@ -1,6 +1,5 @@
 # Ernie's Modern Layout
-Still a WIP. Let me know if there are bugs.
-Only tested on Chrome.
+Still a WIP. Covers about 60% of the UI. Let me know if there are bugs. **Only tested on Chrome so far.**
 
 ### Manifest Url
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
