@@ -1,5 +1,5 @@
 # Ernie's Modern Layout
-A cleaner UI layout with more user feedback(hover and focus states).
+A cleaner UI layout with more user feedback(hover and focus states). There is also a "compact mode" and the ability to change the primary color.
 
 Covers most UI items that are not in a modal/popup etc.
 
