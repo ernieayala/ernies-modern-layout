@@ -10,6 +10,18 @@ Will cover more parts of the app as time goes on.
 ### Manifest Url
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
 
+### Default Layout
+<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
+     style="max-width: 100%;" />
+     
+### Compact Layout
+<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-compact.jpg"
+     style="max-width: 100%;" />
+     
+### Themed Layout
+<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-primary.jpg"
+     style="max-width: 100%;" />
+     
 ### Tested With These Modules Active
 - About Time
 - Better Roll Tables
