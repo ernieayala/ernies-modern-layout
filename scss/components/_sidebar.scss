@@ -12,6 +12,20 @@
 	overflow: hidden;
 	z-index: z(fixed);
 
+	&.collapsed {
+		height: auto !important;
+		width: to-rem(32px) !important;
+
+		#sidebar-tabs {
+			flex-wrap: wrap;
+		}
+
+		.sidebar-tab,
+		.sidebar-tab.active {
+			display: none;
+		}
+	}
+
 	#sidebar-tabs {
 		border-block-end: b("charcoal-600");
 		display: flex;
@@ -66,11 +80,6 @@
 					display: none;
 				}
 			}
-		}
-
-		> .collapse {
-			@include absolute(top 0 right 0);
-			display: none;
 		}
 	}
 

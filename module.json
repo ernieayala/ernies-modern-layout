@@ -2,7 +2,7 @@
 	"name": "ernies-modern-layout",
 	"title": "Ernie's Modern Layout",
 	"description": "An modern layout for Foundry.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "Ernie",
 	"authors": [
 		{
@@ -19,7 +19,7 @@
 	"compatibleCoreVersion": "0.6.4",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
-	"download": "https://github.com/ernieayala/ernies-modern-layout/raw/master/ernies-modern-layout.zip",
+	"download": "https://github.com/ernieayala/ernies-modern-layout/raw/master/ernies-modern-layout-0.0.2.zip",
 	"license": "",
 	"readme": "",
 	"bugs": "",
