@@ -53,4 +53,4 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 - Tweak Playlist
 
 #### Note
-I intentially made ultra specific selectors to have control of what I was styling.
+I intentionally made ultra-specific selectors have control of what I was styling.
