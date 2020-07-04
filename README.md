@@ -7,6 +7,8 @@ Covers most UI items that are not in a modal/popup etc.
 
 Will cover more parts of the app as time goes on.
 
+**Only tested on Chrome so far.**
+
 ### Manifest Url
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
 

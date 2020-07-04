@@ -2,14 +2,15 @@
 
 // Foundry Resets
 @import "./reset/base";
-@import "./reset/scene-navigation";
-@import "./reset/loading-bar";
-@import "./reset/scene-controls";
-@import "./reset/sidebar";
 @import "./reset/chat";
-@import "./reset/players-connected";
+@import "./reset/context-menu";
 @import "./reset/hotbar";
+@import "./reset/loading-bar";
 @import "./reset/pause";
+@import "./reset/players-connected";
+@import "./reset/scene-controls";
+@import "./reset/scene-navigation";
+@import "./reset/sidebar";
 @import "./reset/window-app";
 
 *::before,1
@@ -73,6 +74,9 @@ body.eml.e-body#eml {
 
 	// Pause
 	@import "./components/pause";
+
+	// Context Menu
+	@import "./components/context-menu";
 
 	// Garbage - fix once I move to globals
 	// Window App Compendium

@@ -1,0 +1,37 @@
+#context-menu {
+	width: initial;
+	min-width: initial;
+	max-width: initial;
+	position: initial;
+	left: initial;
+	background: initial;
+	border: initial;
+	border-radius: initial;
+	color: initial;
+	z-index: initial;
+}
+#context-menu.expand-down {
+	top: initial;
+}
+#context-menu.expand-up {
+	bottom: initial;
+}
+#context-menu ol.context-items {
+	list-style: initial;
+	margin: initial;
+	padding: initial;
+}
+#context-menu li.context-item {
+	padding: initial;
+	line-height: initial;
+}
+#context-menu li.context-item:hover {
+	color: initial;
+	text-shadow: initial;
+}
+#context-menu li.context-item > i {
+	margin-right: initial;
+}
+.window-app #context-menu {
+	z-index: initial;
+}

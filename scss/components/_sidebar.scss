@@ -298,11 +298,13 @@
 		padding-block-start: p("base");
 
 		.subdirectory {
+			display: flex;
+			flex-direction: column;
 			background: color("charcoal-100");
 			border-inline-start: b("primary", 4px);
 			width: 100%;
 
-			.folder {
+			.directory-item.folder {
 				padding-block-end: p("base");
 				padding-inline-end: 0;
 
@@ -311,11 +313,29 @@
 					padding-inline-end: 0;
 				}
 
-				+ .folder {
+				+ .directory-item.folder {
 					padding-block-start: 0;
 
 					.-compact & {
 						padding-block-start: 0;
+					}
+				}
+
+				+ .directory-item:not(.folder) {
+					margin-block-start: 0;
+
+					.-compact & {
+						margin-block-start: 0;
+					}
+				}
+			}
+
+			.directory-item:not(.folder) {
+				+ .directory-item:not(.folder) {
+					margin-block-start: 0;
+
+					.-compact & {
+						margin-block-start: 0;
 					}
 				}
 			}

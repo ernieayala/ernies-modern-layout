@@ -1,0 +1,42 @@
+#context-menu {
+	@include absolute(left 0);
+	background: color("charcoal-50");
+	border: b("charcoal-600");
+	color: color("default-text");
+	max-width: to-rem(320px);
+	min-width: to-rem(152px);
+	width: 100%;
+	z-index: z("popover");
+
+	&.expand-down {
+		top: calc(100% + #{to-rem(2px)});
+		bottom: auto;
+	}
+
+	&.expand-up {
+		bottom: calc(100% + #{to-rem(2px)});
+		top: auto;
+	}
+
+	ol.context-items {
+		@extend %reset-list;
+
+		.context-item {
+			cursor: pointer;
+			padding: p("base");
+
+			&:hover {
+				background: color("primary");
+				color: color("white");
+			}
+
+			> i {
+				margin-inline-end: m("base");
+			}
+		}
+	}
+
+	.window-app & {
+		z-index: 101; // hmm
+	}
+}
