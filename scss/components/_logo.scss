@@ -1,3 +1,14 @@
 #logo {
+	@include absolute(top space("sm") left space("sm"));
 	display: none;
+	height: auto !important;
+	max-width: to-rem(88px);
+
+	.-eml-tm & {
+		display: block;
+	}
+
+	.-compact & {
+		display: none;
+	}
 }

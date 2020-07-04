@@ -1,5 +1,7 @@
 # Ernie's Modern Layout
-A cleaner UI layout with more user feedback(hover and focus states). There is also a "compact mode" and the ability to change the primary color.
+A visual update for Foundry VTT UI.
+
+There is also a "compact mode" and the ability to change the primary color.
 
 Covers most UI items that are not in a modal/popup etc.
 
@@ -13,15 +15,15 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 ### Default Layout
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
      style="max-width: 100%;" />
-     
+
 ### Compact Layout
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-compact.jpg"
      style="max-width: 100%;" />
-     
+
 ### Themed Layout
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-primary.jpg"
      style="max-width: 100%;" />
-     
+
 ### Tested With These Modules Active
 - About Time
 - Better Roll Tables

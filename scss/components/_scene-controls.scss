@@ -7,6 +7,10 @@
 	padding: 0;
 	z-index: z("fixed");
 
+	.-eml-tm & {
+		top: to-rem(60px);
+	}
+
 	.-compact & {
 		left: space("base");
 		top: space("base");

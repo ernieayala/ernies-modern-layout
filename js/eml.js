@@ -46,12 +46,28 @@ Hooks.once('init', () => {
 		}
 	});
 
+	game.settings.register('ernies-modern-layout', 'toggleMark', {
+		name: 'Toggle Mark',
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.remove('-eml-tm') : myHtml[0].classList.add('-eml-tm');
+		}
+	});
+
 	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
 	if(primaryColor && primaryColor.length === 7) {
 		let rgbValue = convertHex(primaryColor);
 		if(rgbValue) {
 			document.documentElement.style.setProperty('--color-primary', rgbValue);
 		}
+	}
+
+	const toggleMark = game.settings.get('ernies-modern-layout', 'toggleMark');
+	if(toggleMark === false) {
+		myHtml[0].classList.add('-eml-tm');
 	}
 
 	const compactMode = game.settings.get('ernies-modern-layout', 'compactMode');
