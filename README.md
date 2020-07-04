@@ -1,4 +1,4 @@
-# Ernie's Modern Layout
+# Ernie's Modern UI
 A visual update for Foundry VTT UI.
 
 There is also a "compact mode" and the ability to change the primary color.
