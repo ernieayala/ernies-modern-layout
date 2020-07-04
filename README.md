@@ -51,3 +51,6 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 - Trigger Happy
 - Turn Marker
 - Tweak Playlist
+
+#### Note
+I intentially made ultra specific selectors to have control of what I was styling.
