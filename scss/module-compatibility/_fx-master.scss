@@ -31,9 +31,6 @@
 				}
 
 				input[type="checkbox"] {
-					@extend %form-inp-sel-tex-shared;
-					@extend %form-checkbox;
-					margin: 0;
 					margin-inline-start: m("sm");
 
 					.-compact & {

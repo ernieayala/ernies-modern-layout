@@ -125,11 +125,11 @@
 		align-items: center;
 		background: color("charcoal-500", 0.8);
 		border: b("charcoal-600");
-		border-inline-end: none;
 		color: color("white");
 		cursor: pointer;
 		display: flex;
 		justify-content: center;
+		margin-inline-start: -1px; // for the border and people messing with border color
 		position: relative;
 		transition: t(border box-shadow, "link");
 
@@ -137,8 +137,8 @@
 			@include size(to-rem(40px));
 		}
 
-		&:last-of-type {
-			border-inline-end: b("charcoal-600");
+		&:first-child {
+			margin-inline-start: 0;
 		}
 
 		&:hover {

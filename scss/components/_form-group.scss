@@ -1,0 +1,162 @@
+.form-group {
+	align-items: center;
+	color: color("default-text");
+	display: flex;
+	flex-wrap: wrap;
+	font-size: fs("lg");
+	justify-content: space-between;
+	padding: p("sm");
+
+	.-compact & {
+		padding: p("base");
+	}
+
+	&:nth-of-type(even) {
+		background: color("charcoal-300", 0.1);
+	}
+
+	&.initial-position {
+		.form-fields {
+			align-items: center;
+			display: inline-flex;
+			width: 1px; // hacky hack hack
+
+
+			input {
+				flex: 1 1 auto;
+
+				&[type="text"] {
+					width: 1px; // hack hack
+				}
+			}
+
+			label {
+				flex: 0 0 auto;
+				padding-inline-start: p("sm");
+				padding-inline-end: p("base");
+
+				.-compact & {
+					padding-inline-start: p("base");
+				}
+			}
+		}
+	}
+
+	&.stacked {
+		padding: 0;
+		padding-block-start: p("sm");
+
+		.-compact & {
+			padding-block-start: p("base");
+		}
+	}
+
+	label {
+		align-items: center;
+		display: inline-flex;
+		flex: 0 0 40%;
+		font-size: fs("md");
+		padding-inline-end: p("base");
+
+		.units {
+			@include ellipsis;
+			display: block;
+			font-size: fs("sm");
+			margin: 0 m("base");
+		}
+
+		+ input[type="checkbox"] {
+			flex: 0 0 auto
+		}
+
+		> i {
+			margin-inline-end: m("base");
+		}
+	}
+
+	input,
+	select {
+		flex: 1 1 auto;
+		width: 1px; // hack
+
+		+ .notes {
+			margin-block-start: m("sm");
+
+			.-compact & {
+				margin-block-start: m("base");
+			}
+		}
+
+		+ input {
+			flex: 1 1 25%;
+			margin-inline-start: m("base");
+		}
+	}
+
+	input[type="checkbox"] {
+		@include size(to-rem(20px));
+
+		.-compact & {
+			@include size(to-rem(16px));
+		}
+	}
+
+	.form-fields {
+		display: flex;
+		flex: 1 1 auto;
+
+		input,
+		select {
+			flex: 1 1 100%;
+
+			+ input,
+			+ select {
+				flex: 1 1 25%;
+				margin-inline-start: m("base");
+			}
+		}
+
+		button {
+			margin-inline-start: m("base");
+			width: auto;
+
+			&.file-picker,
+			&.grid-config,
+			&.capture-position {
+				> i {
+					margin-inline-end: 0;
+				}
+			}
+
+			+ input {
+				order: -1;
+			}
+
+			// fucking stupid line of code
+			&.file-picker + input[type="text"] {
+				margin-right: 0 !important;
+			}
+		}
+	}
+
+	.form-fields,
+	.range-value,
+	input[type="checkbox"] {
+		+ .notes,
+		+ .hint {
+			margin-block-start: m("sm");
+		}
+	}
+}
+
+.notes,
+.hint {
+	color: color("charcoal-500");
+	font-size: fs("md");
+	font-style: italic;
+	width: 100%;
+
+	+ .form-group {
+		margin-block-start: m("sm");
+	}
+}

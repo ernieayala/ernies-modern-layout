@@ -22,16 +22,9 @@
 		}
 
 		select {
-			@extend %form-inp-sel-tex-shared;
-			@extend %form-inp-sel-shared;
-			@extend %form-sel;
+			@extend %input-select;
 			background: color("charcoal-500", 0.5);
 			color: color("white");
-			height: to-rem(32px);
-
-				.-compact & {
-					height: to-rem(24px);
-				}
 		}
 	}
 
@@ -62,12 +55,8 @@
 	}
 
 	textarea {
-		@extend %form-inp-sel-tex-shared;
-		@extend %form-inp-tex-shared;
-		@extend %form-tex;
 		@include size(100%);
 		background: color("white", 0.9);
-		color: color("default-text");
 		resize: none;
 	}
 }

@@ -4,8 +4,10 @@
 @import "./reset/base";
 @import "./reset/chat";
 @import "./reset/context-menu";
+// @import "./reset/form-group";
 @import "./reset/hotbar";
 @import "./reset/loading-bar";
+@import "./reset/notifications";
 @import "./reset/pause";
 @import "./reset/players-connected";
 @import "./reset/scene-controls";
@@ -13,10 +15,18 @@
 @import "./reset/sidebar";
 @import "./reset/window-app";
 
-*::before,1
+*::before,
 *::after {
 	box-sizing: border-box;
 }
+
+// Globals
+
+// Form Elements
+@import "./components/form-elements";
+
+// Misc - Img,Button
+@import "./components/misc";
 
 // start vtt wrapper
 body.eml.e-body#eml {
@@ -48,6 +58,18 @@ body.eml.e-body#eml {
 	// Window App
 	@import "./components/window-app";
 
+	// Context Menu
+	@import "./components/context-menu";
+
+	// Players Connected
+	@import "./components/players-connected";
+
+	// Notifications
+	@import "./components/notifications";
+
+	// Form Group
+	// @import "./components/form-group";
+
 	// Logo
 	@import "./components/logo";
 
@@ -60,23 +82,17 @@ body.eml.e-body#eml {
 	// Scene Controls
 	@import "./components/scene-controls";
 
+	// Pause
+	@import "./components/pause";
+
+	// Hotbar
+	@import "./components/hotbar";
+
 	// Sidebar
 	@import "./components/sidebar";
 
 	// Chat
 	@import "./components/chat";
-
-	// Players Connected
-	@import "./components/players-connected";
-
-	// Hotbar
-	@import "./components/hotbar";
-
-	// Pause
-	@import "./components/pause";
-
-	// Context Menu
-	@import "./components/context-menu";
 
 	// Garbage - fix once I move to globals
 	// Window App Compendium
@@ -85,6 +101,7 @@ body.eml.e-body#eml {
 	// Module Compatibility
 	@import "./module-compatibility/tidy-ui-game-settings";
 	@import "./module-compatibility/combat-utility-belt";
+	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dungeondraft-importer";
 	@import "./module-compatibility/foriens-quest-log";
 	@import "./module-compatibility/furnace";

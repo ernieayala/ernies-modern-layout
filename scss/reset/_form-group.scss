@@ -1,0 +1,68 @@
+form .form-group,
+form .form-group-stacked {
+	clear: initial;
+	display: initial;
+	flex-direction: initial;
+	flex-wrap: initial;
+	margin: initial;
+}
+form .form-group > * {
+	flex: initial;
+}
+form .form-group > label {
+	flex: initial;
+}
+form .form-group label {
+	line-height: initial;
+}
+form .form-group .form-fields {
+	display: initial;
+	flex-direction: initial;
+	flex-wrap: initial;
+	justify-content: initial;
+}
+form .form-group .form-fields > * {
+	flex: initial;
+	margin: initial;
+}
+form .form-group .form-fields > *:last-child {
+	margin-right: initial;
+}
+form .form-group .form-fields > label {
+	flex: initial;
+	padding: initial;
+	text-align: initial;
+}
+form .form-group .form-fields > input[type="checkbox"] {
+	flex: initial;
+}
+form .form-group .form-fields button {
+	flex: initial;
+	margin: initial;
+	line-height: initial;
+}
+form .form-group span.units {
+	flex: initial;
+	line-height: initial;
+	font-size: initial;
+	color: initial;
+}
+form .form-group-stacked > *,
+form .form-group.stacked > * {
+	flex: initial;
+}
+form .form-group.hidden {
+	display: initial;
+}
+form .form-header {
+	margin: initial;
+	color: initial;
+}
+form .notes,
+form .hint {
+	flex: initial;
+	font-size: initial;
+	line-height: initial;
+	color: initial;
+	margin: initial;
+}

@@ -49,9 +49,6 @@
 				}
 
 				input {
-					@extend %form-inp-sel-tex-shared;
-					@extend %form-inp-sel-shared;
-					@extend %form-inp-tex-shared;
 					background: color("white");
 					flex: 1 1 auto;
 				}

@@ -2,6 +2,7 @@
 	@include absolute(left 0);
 	background: color("charcoal-50");
 	border: b("charcoal-600");
+	box-shadow: 0 2px 4px color("black");
 	color: color("default-text");
 	max-width: to-rem(320px);
 	min-width: to-rem(152px);

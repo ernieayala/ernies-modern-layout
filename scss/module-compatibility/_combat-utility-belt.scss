@@ -4,9 +4,6 @@
 		#combat-tracker {
 			.token-resource {
 				input {
-					@extend %form-inp-sel-tex-shared;
-					@extend %form-inp-sel-shared;
-					@extend %form-inp-tex-shared;
 					@include size(space("button-sm"));
 					border: none;
 					color: color("white");

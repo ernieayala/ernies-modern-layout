@@ -1,0 +1,34 @@
+#notifications {
+  position: initial;
+  width: initial;
+  top: initial;
+  left: initial;
+  list-style: initial;
+  margin: initial;
+  padding: initial;
+  z-index: initial;
+}
+.notification {
+  background: initial;
+  padding: initial;
+  margin-bottom: initial;
+  border: initial;
+  border-radius: initial;
+  box-shadow: initial;
+  color: initial;
+}
+.notification::before {
+  margin-right: initial;
+}
+.notification.info {
+  background: initial;
+  border: initial;
+}
+.notification.warning {
+  background: initial;
+  border: initial;
+}
+.notification.error {
+  background: initial;
+  border: initial;
+}

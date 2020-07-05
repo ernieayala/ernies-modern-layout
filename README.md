@@ -31,6 +31,7 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 - Cautious Gamemaster's Pack
 - Combat Utility Belt
 - Cursor Hider
+- Dice Tray
 - Dungeondraft Importer
 - Dynamic Effects
 - Follow Me
@@ -47,6 +48,7 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 - RollTable Button
 - Tidy UI - Game Settings
 - Tidy 5e Sheet
+- Token Marker
 - Token Mold
 - Trigger Happy
 - Turn Marker
