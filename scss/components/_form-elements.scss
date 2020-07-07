@@ -59,6 +59,7 @@ input[type="range"] {
 		border: none;
 		color: color("default-text");
 		display: flex;
+		flex: 0 0 auto;
 		font-size: fs("md");
 		margin-inline-start: m("sm");
 		padding: 0;

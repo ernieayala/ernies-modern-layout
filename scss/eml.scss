@@ -73,6 +73,12 @@ body.eml.e-body#eml {
 	// Chat
 	@import "./components/chat";
 
+	// Client Settings
+	@import "./components/client-settings";
+
+	// Menu
+	@import "./components/menu";
+
 	// Dialog
 	@import "./components/dialog";
 

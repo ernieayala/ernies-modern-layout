@@ -9,9 +9,9 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node-sass --watch scss -o css",
-		"build": "node-sass scss -o css & postcss css/eml.css -u autoprefixer --no-map -d css/"
+		"build": "node-sass scss -o css & postcss css/eml.css -u autoprefixer -d css/"
 	},
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"devDependencies": {
 		"teq-tonic": "*",
 		"node-sass": "*",

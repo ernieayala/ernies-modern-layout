@@ -9,3 +9,99 @@
 		}
 	}
 }
+
+#client-settings.app.window-app.form #config-tabs {
+	.module-settings-wrapper {
+		div.form-group {
+			flex-direction: row;
+			margin: 0;
+
+			label,
+			button,
+			.form-fields {
+				margin: 0;
+				order: initial;
+				width: auto;
+			}
+
+			button label {
+				flex-basis: initial !important;
+			}
+
+			.form-fields {
+				justify-content: flex-end;
+				width: 1px; // hacky hack
+
+				input,
+				select {
+					flex-basis: 100%;
+					width: 100%;
+				}
+
+				input[type="checkbox"] {
+					@extend %input-checkbox;
+					-webkit-appearance: checkbox;
+					-moz-appearance: checkbox;
+					appearance: checkbox;
+					left: initial;
+					position: relative;
+					top: initial;
+					transform-origin: initial;
+
+					&::after {
+						display: none;
+					}
+
+					&:hover {
+						@extend %global-hover-alt;
+						border: b("border");
+					}
+
+					&:focus {
+						@extend %global-focus;
+						border: b("border");
+					}
+
+					&:disabled {
+						pointer-events: none;
+					}
+				}
+			}
+		}
+	}
+
+	.module-wrapper {
+		h2.module-header {
+			@extend %default-button;
+			@extend %button-icon;
+			background: color("charcoal-500");
+			font-weight: normal;
+			justify-content: flex-start;
+			margin-block-end: m("base");
+			width: 100%;
+
+			&.open {
+				background: color("primary");
+			}
+
+			> span {
+				color: color("white");
+				margin-inline-end: m("sm");
+
+				.-compact & {
+					margin-inline-end: 0;
+				}
+			}
+		}
+
+		// dude...
+		div.form-group {
+			align-items: center !important;
+			justify-content: flex-start !important;
+
+			> label {
+				flex-basis: 40% !important;
+			}
+		}
+	}
+}

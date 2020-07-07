@@ -1,0 +1,50 @@
+#menu {
+	@include fixed(top 0 left 0);
+	@include size(100%);
+	align-items: center;
+	background: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	display: flex;
+	justify-content: center;
+	z-index: z("tooltip");
+
+	#menu-items {
+		@extend %reset-list;
+		background: color("charcoal-900", 0.8);
+		box-shadow: 0 2px 4px color("black");
+		display: flex;
+		flex-direction: column;
+		padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+
+		li {
+			@extend %primary-button;
+			@extend %button-icon;
+			font-size: fs("xl");
+			margin-block-end: m("sm");
+
+			.-compact & {
+				margin-block-end: m("base");
+			}
+
+			&:last-child {
+				margin-block-end: 0;
+
+				.-compact & {
+					margin-block-end: 0;
+				}
+			}
+
+			i,
+			h4 {
+				flex: initial;
+				font-size: inherit;
+				line-height: 1;
+			}
+		}
+	}
+}

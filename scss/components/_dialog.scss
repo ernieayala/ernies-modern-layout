@@ -112,19 +112,6 @@
 	.dialog-button {
 		@extend %primary-button;
 		@extend %button-icon;
-		flex: 1 1 auto;
-		margin-inline-start: m("sm");
-
-		.-compact & {
-			margin-inline-start: m("base");
-		}
-
-		&:first-child {
-			margin-inline-start: 0;
-
-			.-compact & {
-				margin-inline-start: 0;
-			}
-		}
+		@extend %button-row;
 	}
 }

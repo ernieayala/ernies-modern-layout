@@ -78,6 +78,7 @@
 		width: 1px; // hack
 
 		&[type="checkbox"] {
+			-webkit-filter: initial;
 			flex: 0 0 auto;
 			width: to-rem(20px);
 
@@ -104,8 +105,6 @@
 		}
 	}
 
-	input
-
 	.form-fields {
 		display: flex;
 		flex: 1 1 auto;
@@ -113,6 +112,16 @@
 		input,
 		select {
 			flex: 1 1 100%;
+
+			&[type="checkbox"] {
+				-webkit-filter: initial;
+				flex: 0 0 auto;
+				width: to-rem(20px);
+
+				.-compact & {
+					width: to-rem(16px);
+				}
+			}
 
 			+ input,
 			+ select {
