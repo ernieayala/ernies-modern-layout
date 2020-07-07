@@ -1,0 +1,56 @@
+#token-action-hud {
+	margin: 0;
+
+	&:hover {
+		#tah-reposition {
+			visibility: visible;
+		}
+	}
+
+	#tah-reposition {
+		@extend %control-button;
+		left: initial;
+		margin: 0;
+		visibility: hidden;
+	}
+
+	button.tah-title-button,
+	.tah-action button {
+		@extend %primary-button;
+		margin-inline-start: m("base");
+	}
+
+	.tah-subtitle {
+		padding-block-start: p("sm");
+		text-shadow: 2px 2px 2px color("charcoal-900");
+
+		.-compact & {
+			padding-block-start: p("base");
+		}
+	}
+
+	.tah-action {
+		margin: 0;
+		margin-block-end: m("base");
+		margin-inline-start: m("base");
+		padding: 0;
+
+		button {
+			background: color("charcoal-500");
+
+			> div {
+				margin-inline-start: m("base");
+				text-shadow: none;
+			}
+		}
+	}
+
+	.tah-content {
+		left: to-rem(-154px);
+		padding: p("sm") 0;
+
+		.-compact & {
+			padding: p("base") 0;
+		}
+	}
+}

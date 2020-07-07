@@ -1,4 +1,8 @@
 #effects-config {
+	.window-content {
+		overflow: hidden;
+	}
+
 	.effects.directory-list {
 		height: auto;
 
@@ -15,19 +19,12 @@
 				width: 100%;
 
 				label {
+					@extend %button-icon;
 					align-items: center;
 					display: flex;
 					flex-direction: row-reverse;
 					font-size: fs("lg");
 					justify-content: flex-end;
-
-					> i {
-						margin-inline-end: m("sm");
-
-						.-compact & {
-							margin-inline-end: m("base");
-						}
-					}
 				}
 
 				input[type="checkbox"] {
@@ -45,9 +42,65 @@
 				width: 100%;
 
 				.flexrow {
-					margin-block-end: m("base");
+					margin-block-end: m("sm");
+
+					&:last-child {
+						margin-block-end: 0;
+					}
+
+					input[type="checkbox"] + input {
+						margin-inline-start: m("base");
+					}
 				}
 			}
+		}
+	}
+
+	button {
+		@extend %primary-button;
+		@extend %button-icon;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		height: 1px; // hacky hack
+
+		.form-footer {
+			border-block-start: b("border");
+			flex: 0 0 auto;
+			padding: p("sm");
+		}
+	}
+}
+
+#filter-config {
+	height: auto !important;
+
+	.window-content {
+		@extend %window-content;
+		padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+	}
+
+	button {
+		@extend %primary-button;
+		@extend %button-icon;
+	}
+
+	input[type="checkbox"] + input {
+		margin-inline-start: m("base");
+	}
+
+	.fxmaster.filters.directory-list {
+		height: auto;
+		margin-block-end: m("sm");
+
+		.-compact & {
+			margin-block-end: m("base");
 		}
 	}
 }

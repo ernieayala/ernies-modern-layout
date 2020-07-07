@@ -1,0 +1,35 @@
+%global-hover {
+	box-shadow:
+		inset 0 0 0 2px color("white");
+	text-shadow: none;
+}
+
+%global-hover-alt {
+	box-shadow:
+		inset 0 0 0 2px color("primary");
+	text-shadow: none;
+}
+
+%global-focus {
+	box-shadow:
+		inset 0 0 0 2px color("primary"),
+		inset 0 0 0 3px color("white"), 0 1px 2px 0 color("black", 0.3);
+	text-shadow: none;
+	outline: none;
+}
+
+%global-active {
+	background: color("primary");
+	color: color("white");
+	text-shadow: none;
+
+	&:hover {
+		background: color("primary");
+		color: color("white");
+		text-shadow: none;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+}

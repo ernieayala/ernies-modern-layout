@@ -3,7 +3,7 @@
 	@include fixed(top space(sm) right 0);
 	@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
 	background: color("charcoal-900", 0.8);
-	border: b("charcoal-600");
+	border: b("border");
 	border-inline-end: none;
 	border-radius: 0;
 	box-shadow: none;
@@ -33,7 +33,7 @@
 	}
 
 	#sidebar-tabs {
-		border-block-end: b("charcoal-600");
+		border-block-end: b("border");
 		display: flex;
 		flex: 0 0 auto;
 		flex-wrap: nowrap;
@@ -100,109 +100,7 @@
 	// Eventually Make Global
 	// Folders
 	.folder {
-		display: flex;
-		flex-direction: column;
-		margin: 0;
-		padding-block-start: p("base");
-		padding-inline-start: p("sm");
-		padding-inline-end: p("sm");
-		position: relative;
-		width: 100%;
-
-		.-compact & {
-			padding-inline-start: p("base");
-			padding-inline-end: p("base");
-		}
-
-		&.collapsed {
-			> .folder-header {
-				border-inline-start: none;
-
-				.create-folder {
-					display: none;
-				}
-
-				h3 {
-					i::before {
-						content: "\f07b";
-					}
-				}
-			}
-
-			.subdirectory {
-				display: none;
-
-				.folder-header {
-					border-inline-start: none;
-				}
-			}
-		}
-
-		.folder-header {
-			align-items: center;
-			background: color("charcoal-200");
-			border-inline-start: b("primary", 4px);
-			color: color("default-text");
-			cursor: pointer;
-			display: flex;
-			flex-wrap: nowrap;
-			min-height: to-rem(32px);
-			padding: p("base") p("sm");
-			position: relative;
-			transition: t(background box-shadow color, "link");
-			width: 100%;
-
-			.-compact & {
-				min-height: to-rem(24px);
-				padding: p("base");
-			}
-
-			&:hover {
-				@extend %global-hover;
-				background: color("primary");
-				color: color("white");
-			}
-
-			&:focus {
-				@extend %global-focus;
-			}
-
-			h3 {
-				@include ellipsis;
-				border-block-end: 0;
-				color: inherit;
-				flex: 1 1 auto;
-				font-size: fs("lg");
-				font-weight: normal;
-
-				> i {
-					margin-inline-end: m("sm");
-
-					.-compact & {
-						margin-inline-end: m("base");
-					}
-				}
-			}
-
-			.create-folder,
-			.create-entity, {
-				@extend %control-button;
-			}
-		}
-
-		.subdirectory {
-			@extend %reset-list;
-
-			.folder-header {
-				border-color: color("orange-700");
-			}
-
-			.subdirectory {
-				.folder-header {
-					border-color: color("orange-900");
-				}
-			}
-		}
+		@extend %folder;
 	}
 
 	.sidebar-tab {
@@ -223,11 +121,11 @@
 
 		.directory-header,
 		.directory-footer {
-			@extend %panel-header;
+			@extend %panel-block;
 		}
 
 		.directory-header {
-			border-block-end: b("charcoal-600");
+			border-block-end: b("border");
 
 			.header-search {
 				align-items: center;
@@ -263,23 +161,16 @@
 		}
 
 		.directory-footer {
-			border-block-start: b("charcoal-600");
+			border-block-start: b("border");
 			flex-wrap: wrap;
 
 			button {
 				@extend %primary-button;
 				@extend %button-row;
+				@extend %button-icon;
 				@include ellipsis;
 				flex: 1 1 48%;
 				width: auto;
-
-				> i {
-					margin-inline-end: m("sm");
-
-					.-compact & {
-						margin-inline-end: m("base");
-					}
-				}
 			}
 		}
 	}
@@ -348,115 +239,14 @@
 	}
 
 	.directory-item {
-		align-items: center;
-		background: color("charcoal-400");
-		color: color("white");
-		cursor: pointer;
-		display: flex;
-		flex-wrap: nowrap;
-		height: auto;
-		line-height: 1;
-		margin: m("base") m("sm");
-		min-height: to-rem(32px);
-		padding: 0 p("sm");
-		position: relative;
-		transition: t(background box-shadow color, "link");
-
-		.-compact & {
-			margin: m("base");
-			min-height: to-rem(24px);
-			padding: 0 p("base");
-		}
-
-		&:hover {
-			@extend %global-hover;
-			background: color("primary");
-			color: color("white");
-		}
-
-		&:focus {
-			@extend %global-focus;
-		}
-
-		&.folder,
-		&.playlist {
-			background: transparent;
-			cursor: default;
-			margin: 0;
-			padding: p("base") p("sm");
-			padding-block-end: 0;
-
-			.-compact & {
-				padding: p("base");
-				padding-block-end: 0;
-			}
-
-			&:hover,
-			&:focus {
-				background: transparent;
-				box-shadow: none;
-			}
-		}
-
-		img {
-			@include size(space("icon"));
-			border-radius: 0;
-			cursor: move;
-			flex: 0 0 auto;
-			margin-block-start: m("base");
-			margin-block-end: m("base");
-			margin-inline-end: m("sm");
-			object-fit: cover;
-			object-position: 50% 50%;
-			position: relative;
-
-			.-compact & {
-				@include size(to-rem(20px));
-				margin-inline-end: m("base");
-			}
-		}
-
-		h3,
-		h4 {
-			@include ellipsis;
-			color: inherit;
-			flex: 1 1 auto;
-			font-size: fs("lg");
-			font-weight: normal;
-			padding: 0;
-
-			> i {
-				margin-inline-end: m("sm");
-
-				.-compact & {
-					margin-inline-end: m("base");
-				}
-			}
-
-			> a {
-				@include ellipsis;
-				color: inherit;
-				cursor: pointer;
-				display: block;
-				flex: 1 1 auto;
-				font-size: fs("lg");
-				line-height: to-rem(32px); // figure out a better way
-				position: relative;
-				text-shadow: none;
-				transition: t(color, "link");
-
-				.-compact & {
-					line-height: to-rem(24px); // figure out a better way
-				}
-			}
-		}
+		@extend %directory-item;
 	}
 
 	// Specific Tabs
 	// 2.Combat
 	#combat {
 		#combat-round {
-			@extend %panel-header;
+			@extend %panel-block;
 			flex-direction: column;
 
 			.encounters {
@@ -471,13 +261,13 @@
 
 				h3,
 				h4 {
+					@extend %h-tag;
 					@include ellipsis;
 					border-block-end: none;
 					color: color("gray-200");
 					display: block;
 					flex: 1 1 auto;
 					font-size: fs("md");
-					font-weight: normal;
 					margin-inline-start: m("base");
 					text-align: center;
 				}
@@ -515,7 +305,7 @@
 
 			.combatant {
 				align-items: center;
-				background: color("charcoal-600");
+				background: color("border");
 				display: flex;
 				margin: m("base") m("sm");
 				padding: p("base") p("sm");
@@ -578,10 +368,10 @@
 					position: relative;
 
 					h4 {
+						@extend %h-tag;
 						@include ellipsis(max-width 100%);
 						color: color("white");
 						font-size: fs("lg");
-						font-weight: normal;
 					}
 				}
 
@@ -665,7 +455,7 @@
 		}
 
 		#combat-controls {
-			border-block-start: b("charcoal-600");
+			border-block-start: b("border");
 			padding-block-start: m("sm");
 
 			.-compact & {
@@ -704,7 +494,7 @@
 
 			> .playlist:first-child {
 				background: color("charcoal-500", 0.5);
-				border-block-end: b("charcoal-600");
+				border-block-end: b("border");
 				color: color("white");
 				display: flex;
 				flex: 0 0 auto;
@@ -718,7 +508,7 @@
 
 				.playlist-header {
 					background: transparent;
-					border-block-end: b("charcoal-600");
+					border-block-end: b("border");
 					color: color("white");
 					font-size: fs("xl");
 					padding-inline-start: 0;
@@ -742,11 +532,10 @@
 					width: 100%;
 
 					h4 {
+						@extend %h-tag;
 						border-block-end: 0;
 						color: color("white");
 						font-size: fs("lg");
-						font-weight: normal;
-						margin: 0;
 
 						+ input[type="range"] {
 							margin-inline-start: m("base");
@@ -832,6 +621,7 @@
 				}
 
 				h4 {
+					@extend %h-tag;
 					@include ellipsis;
 					border-block-end: 0;
 					color: inherit;
@@ -839,10 +629,7 @@
 					display: block;
 					flex: 1 1 auto;
 					font-size: fs("lg");
-					font-weight: normal;
-					margin: 0;
 					padding-inline-start: p("md");
-					position: relative;
 
 					i.fa {
 						@include absolute(top 50% left 0);
@@ -853,9 +640,8 @@
 			}
 
 			.playlist-sounds {
+				@extend %reset-list;
 				background: color("charcoal-100");
-				padding: 0;
-				position: relative;
 
 				.sound {
 					align-items: center;
@@ -870,12 +656,11 @@
 					}
 
 					h4 {
+						@extend %h-tag;
 						@include ellipsis;
 						color: color("default-text");
 						flex: 1 1 auto;
 						font-size: fs("lg");
-						font-weight: normal;
-						margin: 0;
 
 						.-compact & {
 							font-size: fs("md");
@@ -965,7 +750,7 @@
 	// 9. Compendium
 	#compendium {
 		.compendium-entity {
-			list-style: none;
+			@extend %reset-list;
 			padding: p("base") p("sm");
 			width: 100%;
 
@@ -974,6 +759,7 @@
 			}
 
 			> h3 {
+				@extend %h-tag;
 				@include ellipsis;
 				align-items: center;
 				background: color("charcoal-200");
@@ -982,10 +768,8 @@
 				flex: 1 1 auto;
 				flex-wrap: nowrap;
 				font-size: fs("lg");
-				font-weight: normal;
 				min-height: to-rem(32px);
 				padding: p("base") p("sm");
-				position: relative;
 				transition: t(background box-shadow color, "link");
 				width: 100%;
 
@@ -1007,7 +791,6 @@
 					background: color("charcoal-400");
 					color: color("white");
 					cursor: pointer;
-					display: flex;
 					flex-wrap: wrap;
 					margin: m("base");
 					margin-block-end: 0;
@@ -1037,10 +820,9 @@
 
 					h4 {
 						@extend %h-tag;
-						@extend %h4;
 						color: color("white");
 						display: flex;
-						font-weight: normal;
+						font-size: fs("lg");
 						width: 100%;
 
 						a {
@@ -1065,7 +847,7 @@
 						.status-icons {
 							flex: 0 0 auto;
 
-							i {
+							> i {
 								padding: p("xs");
 								font-size: fs("md");
 							}
@@ -1091,9 +873,8 @@
 
 		h2,
 		h4 {
+			@extend %h-tag;
 			color: color("white");
-			font-weight: normal;
-			margin: 0;
 			margin-block-end: m("sm");
 
 			.-compact & {
@@ -1102,19 +883,19 @@
 		}
 
 		h2 {
-			@extend %h2;
 			border-block-end: b("charcoal-600");
+			font-size: fs("xxl");
 			margin-block-start: m("sm");
 
 			.-compact & {
-				@extend %h3;
+				font-size: fs("xl");
 				margin-block-start: m("base");
 			}
 		}
 
 		h4 {
-			@extend %h4;
 			color: color("primary");
+			font-size: fs("lg");
 
 			.-compact & {
 				margin-block-start: m("base");
@@ -1123,15 +904,8 @@
 
 		button {
 			@extend %primary-button;
+			@extend %button-icon;
 			margin-block-end: m("base");
-
-			> i {
-				margin-inline-end: m("sm");
-
-				.-compact & {
-					margin-inline-end: m("base");
-				}
-			}
 		}
 	}
 }

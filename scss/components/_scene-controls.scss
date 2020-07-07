@@ -1,10 +1,8 @@
 #controls {
+	@extend %reset-list;
 	@include fixed(top space("sm") left space("sm"));
 	box-shadow: none;
 	display: block;
-	list-style: none;
-	margin: 0;
-	padding: 0;
 	z-index: z("fixed");
 
 	.-eml-tm & {

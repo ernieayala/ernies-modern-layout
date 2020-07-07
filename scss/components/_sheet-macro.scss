@@ -1,0 +1,82 @@
+.sheet.macro-sheet {
+	form {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.sheet-header {
+		h1 input {
+			margin: 0;
+		}
+
+		img {
+			cursor: pointer;
+
+			&:hover {
+				@extend %global-hover;
+			}
+		}
+	}
+
+	.form-group.command {
+		align-items: flex-start;
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin-block-end: m("sm");
+		padding: 0 p("sm");
+		width: 100%;
+
+		.-compact & {
+			margin-block-end: m("base");
+			padding: 0 p("base");
+		}
+
+		label {
+			flex: 0 0 auto;
+			height: auto;
+			margin-block-end: m("base");
+			padding-inline-start: m("sm");
+
+			.-compact & {
+				padding-inline-start: m("base");
+			}
+		}
+
+		textarea {
+			flex: 1 1 auto;
+			font-family: Consolas, "Liberation Mono", Courier, monospace;
+			height: auto;
+			line-height: 1.5;
+			min-height: to-rem(200px);
+			white-space: pre-wrap;
+		}
+	}
+
+	.sheet-footer {
+		background: color("charcoal-50");
+		border-block-start: b("charcoal-600");
+		bottom: 0;
+		box-shadow: 0 space("sm") 0 0 color("charcoal-50");
+		display: flex;
+		flex: 0 0 auto;
+		margin-inline-start: -(m("sm"));
+		padding: 0 p("sm");
+		padding-block-start: p("sm");
+		position: sticky;
+		width: calc(100% + #{space("md")});
+
+		.-compact & {
+			box-shadow: 0 space("base") 0 0 color("charcoal-50");
+			margin-inline-start: -(m("base"));
+			padding: 0 p("base");
+			padding-block-start: p("base");
+			width: calc(100% + #{space("sm")});
+		}
+
+		button {
+			@extend %button-row;
+		}
+	}
+}

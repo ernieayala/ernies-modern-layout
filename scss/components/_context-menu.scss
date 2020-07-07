@@ -1,7 +1,7 @@
 #context-menu {
 	@include absolute(left 0);
 	background: color("charcoal-50");
-	border: b("charcoal-600");
+	border: b("border");
 	box-shadow: 0 2px 4px color("black");
 	color: color("default-text");
 	max-width: to-rem(320px);
@@ -26,6 +26,10 @@
 			cursor: pointer;
 			padding: p("base");
 
+			.-compact & {
+				padding: p("xs");
+			}
+
 			&:hover {
 				background: color("primary");
 				color: color("white");
@@ -33,6 +37,10 @@
 
 			> i {
 				margin-inline-end: m("base");
+
+				.-compact & {
+					margin-inline-end: m("xs");
+				}
 			}
 		}
 	}

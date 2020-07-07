@@ -1,6 +1,6 @@
 .window-app {
 	background: color("charcoal-50");
-	border: b("charcoal-600");
+	border: b("border");
 	border-radius: 0;
 	box-shadow: 0 2px 4px color("black");
 	display: flex;
@@ -19,7 +19,7 @@
 	.window-header {
 		align-items: center;
 		background: color("charcoal-600");
-		border-bottom: b("charcoal-600");
+		border-bottom: b("border");
 		color: color("white");
 		display: flex;
 		flex: 0 0 auto;
@@ -32,12 +32,11 @@
 			padding: p("base");
 		}
 
-		h4 {
+		.window-title {
+			@extend %h-tag;
 			@include ellipsis(max-width 100%);
 			color: color("white");
 			flex: 1 1 auto;
-			font-weight: normal;
-			position: relative;
 		}
 
 		a {
@@ -45,6 +44,10 @@
 			background: transparent;
 			padding: p("base");
 			width: auto;
+
+			.-compact & {
+				width: auto;
+			}
 
 			&:hover {
 				background: color("primary");
@@ -56,7 +59,7 @@
 				padding: 0;
 				width: space("button-sm");
 
-				i {
+				> i {
 					@include absolute(top 0 left 0);
 					@include size(100%);
 					align-items: center;
@@ -76,8 +79,6 @@
 	}
 
 	.window-content {
-		// padding: p("sm");
-
 		.-compact & {
 			padding: p("base");
 		}
@@ -95,7 +96,7 @@
 		font-size: fs("md");
 		justify-content: center;
 		margin: 0;
-		transition: t(background box-shadow, "link");
+		transition: t(background box-shadow color, "link");
 
 		&:hover {
 			@extend %global-hover;

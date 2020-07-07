@@ -1,7 +1,7 @@
 #players {
 	@include fixed(bottom space("sm") left space("sm"));
 	background: color("charcoal-500", 0.8);
-	border: b("charcoal-600");
+	border: b("border");
 	border-radius: 0;
 	box-shadow: none;
 	width: to-rem(200px);
@@ -18,16 +18,14 @@
 	}
 
 	h3 {
-		border-block-end: b("charcoal-600");
+		@extend %h-tag;
+		border-block-end: b("border");
 		color: color("white");
 		cursor: pointer;
 		display: flex;
 		font-size: fs("md");
-		font-weight: normal;
 		letter-spacing: to-rem(1.2px);
-		margin: 0;
 		padding: p("sm");
-		position: relative;
 		text-transform: uppercase;
 		transition: t(color, "link");
 
@@ -49,7 +47,7 @@
 			position: relative;
 		}
 
-		i {
+		> i {
 			position: relative;
 
 			&:first-of-type {
@@ -71,9 +69,8 @@
 	}
 
 	ol {
-		list-style: none;
+		@extend %reset-list;
 		padding: p("sm");
-		position: relative;
 
 		.-compact & {
 			padding: p("base");

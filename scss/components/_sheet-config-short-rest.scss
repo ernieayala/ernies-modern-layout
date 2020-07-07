@@ -1,0 +1,17 @@
+#short-rest-hd {
+	.form-group {
+		padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+
+		select {
+			flex: 1 1 auto;
+		}
+
+		button {
+			flex: 0 0 auto;
+		}
+	}
+}

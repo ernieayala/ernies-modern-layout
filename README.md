@@ -3,7 +3,7 @@ A visual update for Foundry VTT UI.
 
 There is also a "compact mode" and the ability to change the primary color.
 
-Covers most UI items that are not in a modal/popup etc.
+Covers most UI items but still a huge work in progress. There is a ton of redundant CSS but this is because I don't want to step on the globals just yet.
 
 Will cover more parts of the app as time goes on.
 
@@ -26,33 +26,51 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ### Tested With These Modules Active
 - About Time
+- Batch Permission By Folder
 - Better Roll Tables
 - Better Rolls 5e
+- Calendar/Weather
 - Cautious Gamemaster's Pack
+- Combat Template Cleanup
 - Combat Utility Belt
+- Compendium Hider
 - Cursor Hider
+- Custom Hotbar
+- Dancing Lights
 - Dice Tray
 - Dungeondraft Importer
 - Dynamic Effects
+- Dynamic Illumination
 - Follow Me
 - Foriens Quest Log
+- Foriens Scene Navigator
 - Foundry Community Macros
 - Foundry Community Tables
-- Furnace
 - FxMaster
 - Haste
 - Health Monitor
+- Journal Sync
+- Let Me Roll That For You
 - Loot Sheet NPC 5e
+- Macro Marker
 - Magic Items
+- Merge Walls
+- Permission Viewer
 - Response Time
 - RollTable Button
+- Show Notes
+- The Furnace
 - Tidy UI - Game Settings
 - Tidy 5e Sheet
-- Token Marker
+- Token Action HUD
+- Token Hotbar
 - Token Mold
 - Trigger Happy
 - Turn Marker
 - Tweak Playlist
+- Wall Height
 
-#### Note
-I intentionally made ultra-specific selectors have control of what I was styling.
+Not all the modules will have my styling. Make an issue on Github if you want me to look at one.
+
+## Contact
+Make issues on Github or message me on Discord: Teafortwo#4453

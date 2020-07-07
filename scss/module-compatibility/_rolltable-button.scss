@@ -1,3 +1,9 @@
+.RTB-window {
+	.window-content {
+		@extend %window-content;
+	}
+}
+
 #RTB-button {
 	@extend %control-button;
 	font-family: "Font Awesome 5 Free";
@@ -12,19 +18,12 @@
 
 	.RTB-entry {
 		@extend %primary-button;
+		@extend %button-icon;
 		margin: 0;
 		margin-block-end: m("base");
 
 		&:last-child {
 			margin-block-end: 0;
-		}
-
-		> i {
-			margin-inline-end: m("sm");
-
-			.-compact & {
-				margin-inline-end: m("base");
-			}
 		}
 	}
 }

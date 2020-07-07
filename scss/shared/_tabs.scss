@@ -1,0 +1,15 @@
+%modal-tabs {
+	border-block-end: b("orange-700", 2px);
+	display: flex;
+	position: relative;
+
+	a {
+		@extend %primary-button;
+		@extend %button-icon;
+		background: transparent;
+		color: color("default-text");
+		flex: 1 1 auto;
+		font-size: fs("md");
+		text-shadow: none;
+	}
+}

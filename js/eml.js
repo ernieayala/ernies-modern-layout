@@ -57,6 +57,18 @@ Hooks.once('init', () => {
 		}
 	});
 
+	// game.settings.register('ernies-modern-layout', 'toggleExperimental', {
+	// 	name: 'Toggle Experimental Features',
+	// 	hint: 'This is experimental. Highly possible to conflict with other Modules.',
+	// 	scope: 'user',
+	// 	config: true,
+	// 	default: false,
+	// 	type: Boolean,
+	// 	onChange: data => {
+	// 		data === true ? myHtml[0].classList.add('-eml-ef') : myHtml[0].classList.remove('-eml-ef');
+	// 	}
+	// });
+
 	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
 	if(primaryColor && primaryColor.length === 7) {
 		let rgbValue = convertHex(primaryColor);
@@ -66,7 +78,9 @@ Hooks.once('init', () => {
 	}
 
 	const toggleMark = game.settings.get('ernies-modern-layout', 'toggleMark');
-	if(toggleMark === false) {
+	if(toggleMark === true) {
+		myHtml[0].classList.remove('-eml-tm');
+	} else {
 		myHtml[0].classList.add('-eml-tm');
 	}
 
@@ -74,4 +88,9 @@ Hooks.once('init', () => {
 	if(compactMode === true) {
 		myHtml[0].classList.add('-compact');
 	}
+
+	// const toggleExperimental = game.settings.get('ernies-modern-layout', 'toggleExperimental');
+	// if(toggleExperimental === true) {
+	// 	myHtml[0].classList.add('-eml-ef');
+	// }
 });

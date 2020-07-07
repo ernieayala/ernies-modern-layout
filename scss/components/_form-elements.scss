@@ -2,6 +2,7 @@ input[type="text"],
 input[type="password"],
 input[type="datetime-local"],
 input[type="checkbox"],
+input[type="color"],
 input[type="color"][data-edit],
 select,
 textarea {
@@ -25,38 +26,12 @@ input[type="datetime-local"] {
 }
 
 input[type="checkbox"] {
-	@include size(to-rem(20px));
-	background: transparent;
-	border: b("default-text");
-	border-radius: 0;
-	color: color("default-text");
-	cursor: pointer;
-	margin: 0;
-	position: relative;
-	transition: t(box-shadow, "link");
-
-	.-compact & {
-		@include size(to-rem(16px));
-	}
+	@extend %input-checkbox;
 }
 
+input[type="color"],
 input[type="color"][data-edit] {
-	background: transparent;
-	border: b("default-text");
-	border-radius: 0;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
-	height: to-rem(32px);
-	margin: 0;
-	padding: 0 p("sm");
-	position: relative;
-	transition: t(box-shadow, "link");
-
-	.-compact & {
-		height: to-rem(24px);
-		padding: 0 p("base");
-	}
+	@extend %input-color;
 }
 
 input[type="color"][data-edit][data-edit] {
@@ -65,122 +40,15 @@ input[type="color"][data-edit][data-edit] {
 }
 
 input[type="range"] {
-	background: transparent;
-	border: 0;
-	box-shadow: none;
-	-webkit-appearance: none;
-	width: 100%;
-
-	&:hover,
-	&:focus {
-		box-shadow: none;
-		outline: none;
-	}
-
-	&::-webkit-slider-runnable-track {
-		@include size(100%, to-rem(8px));
-		background: color("charcoal-500", 0.8);
-		border: b("charcoal-600");
-		border-radius: 0;
-		box-shadow: none;
-		cursor: pointer;
-		transition: t(background, "link");
-	}
-
-	&:focus::-webkit-slider-runnable-track {
-		background: color("charcoal-500");
-	}
-
-	&:focus::-ms-fill-lower {
-		background: color("charcoal-500");
-	}
-
-	&:focus::-ms-fill-upper {
-		background: color("charcoal-500");
-	}
+	@extend %input-range;
 
 	&::-webkit-slider-thumb {
-		@include size(to-rem(16px));
-		background: color("primary");
-		border-radius: 0;
-		border: b("charcoal-800");
-		box-shadow: none;
-		cursor: pointer;
-		margin-block-start: to-rem(-5px);
-		transition: t(box-shadow, "link");
-		-webkit-appearance: none;
-
 		&:hover {
 			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
 		}
-	}
-
-	&::-moz-range-track {
-		@include size(100%, to-rem(8px));
-		background: color("charcoal-500", 0.8);
-		border: b("charcoal-600");
-		border-radius: 0;
-		box-shadow: none;
-		cursor: pointer;
-		transition: t(background, "link");
 	}
 
 	&::-moz-range-thumb {
-		@include size(to-rem(16px));
-		background: color("primary");
-		border-radius: 0;
-		border: b("charcoal-600");
-		box-shadow: none;
-		cursor: pointer;
-		margin-block-start: to-rem(-5px);
-		transition: t(box-shadow, "link");
-		-webkit-appearance: none;
-
-		&:hover {
-			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-		}
-	}
-
-	&::-ms-track {
-		@include size(100%, to-rem(8px));
-		background: color("charcoal-500", 0.8);
-		border: b("charcoal-600");
-		border-radius: 0;
-		cursor: pointer;
-		transition: t(background, "link");
-	}
-
-	// &::-ms-fill-lower {
-	// 	@include size(100px, to-rem(8px));
-	// 	background: color("charcoal-500", 0.8);
-	// 	border: b("charcoal-600");
-	// 	border-radius: 0;
-	// 	box-shadow: none;
-	// 	cursor: pointer;
-	// 	transition: t(background, "link");
-	// }
-
-	// &::-ms-fill-upper {
-	// 	@include size(100px, to-rem(8px));
-	// 	background: color("charcoal-500", 0.8);
-	// 	border: b("charcoal-800");
-	// 	border-radius: 0;
-	// 	box-shadow: none;
-	// 	cursor: pointer;
-	// 	transition: t(background, "link");
-	// }
-
-	&::-ms-thumb {
-		@include size(to-rem(16px));
-		background: color("primary");
-		border-radius: 0;
-		border: b("charcoal-600");
-		box-shadow: none;
-		cursor: pointer;
-		margin-block-start: to-rem(-5px);
-		transition: t(box-shadow, "link");
-		-webkit-appearance: none;
-
 		&:hover {
 			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
 		}
@@ -188,10 +56,12 @@ input[type="range"] {
 
 	+ .range-value {
 		align-items: center;
+		border: none;
 		color: color("default-text");
 		display: flex;
 		font-size: fs("md");
 		margin-inline-start: m("sm");
+		padding: 0;
 
 		.-compact & {
 			margin-inline-start: m("base");
@@ -202,11 +72,6 @@ input[type="range"] {
 select {
 	@extend %input-select;
 
-	.-compact & {
-		height: to-rem(24px);
-		padding: 0 p("base");
-	}
-
 	optgroup {
 		background: color("white");
 		color: color("default-text");
@@ -214,26 +79,5 @@ select {
 }
 
 textarea {
-	background: transparent;
-	border: b("default-text");
-	border-radius: 0;
-	color: color("default-text");
-	font-family: inherit;
-	font-size: inherit;
-	margin: 0;
-	min-height: to-rem(64px);
-	padding: p("sm");
-	position: relative;
-	transition: t(box-shadow, "link");
-	user-select: text;
-	width: 100%;
-
-	.-compact & {
-		min-height: to-rem(48px);
-		padding: p("base");
-	}
-
-	&::placeholder {
-		color: color("gray-400");
-	}
+	@extend %input-textarea;
 }

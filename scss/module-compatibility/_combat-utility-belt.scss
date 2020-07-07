@@ -19,6 +19,7 @@
 
 		.add-temporary {
 			@extend %primary-button;
+			@extend %button-icon;
 			margin: m("sm");
 			text-shadow: none;
 			width: 100%;
@@ -26,21 +27,13 @@
 			.-compact & {
 				margin: m("base");
 			}
-
-			> i {
-				margin-inline-end: m("sm");
-
-				.-compact & {
-					margin-inline-end: m("base");
-				}
-			}
 		}
 	}
 
 	#settings {
 		#combat-utility-belt {
 			h4 {
-				border-block-end: b("charcoal-600");
+				border-block-end: b("border");
 				color: color("white");
 				margin-block-start: m("md");
 

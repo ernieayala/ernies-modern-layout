@@ -1,0 +1,31 @@
+%button-row {
+	flex: 1 1 auto;
+	margin-inline-start: m("base");
+	width: 100%;
+
+	&:first-of-type {
+		margin-inline-start: 0;
+	}
+}
+
+%button-icon {
+	> i {
+		margin-inline-end: m("sm");
+
+		.-compact & {
+			margin-inline-end: m("base");
+		}
+	}
+}
+
+%reset-image {
+	object-fit: cover;
+	object-position: 50% 50%;
+	position: relative;
+}
+
+%reset-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

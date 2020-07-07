@@ -1,0 +1,33 @@
+#grid-config {
+	form {
+		.form-group:last-of-type {
+			background: transparent;
+			border-block-start: b("border");
+			flex-wrap: nowrap;
+			margin-block-start: m("sm");
+
+			.-compact & {
+				margin-block-start: m("base")
+			}
+
+			button {
+				@extend %button-icon;
+				@extend %button-row;
+			}
+		}
+
+		.form-fields {
+			label {
+				flex: 0 0 auto;
+
+				&:last-of-type {
+					padding-inline-start: p("md");
+
+					.-compact & {
+						padding-inline-start: p("sm");
+					}
+				}
+			}
+		}
+	}
+}

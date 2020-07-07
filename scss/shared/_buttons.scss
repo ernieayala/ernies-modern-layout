@@ -1,0 +1,77 @@
+%default-button {
+	align-items: center;
+	border: none;
+	border-radius: 0;
+	color: color("white");
+	cursor: pointer;
+	display: inline-flex;
+	font-family: "Signika", sans-serif;
+	font-size: fs("lg");
+	justify-content: center;
+	line-height: 1;
+	margin: 0;
+	padding: p("sm");
+	position: relative;
+	transition: t(background box-shadow color, "link");
+
+	.-compact & {
+		padding: p("base");
+	}
+
+	&:hover {
+		@extend %global-hover;
+		background: color("primary");
+		color: color("white");
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		pointer-events: none;
+	}
+
+	&.active {
+		@extend %global-active;
+	}
+}
+
+%primary-button {
+	@extend %default-button;
+	background: color("gray-500");
+}
+
+%secondary-button {
+	@extend %default-button;
+}
+
+%control-button {
+	@extend %default-button;
+	@include size(space("button-sm"));
+	flex: 0 0 auto;
+	font-size: fs("sm");
+	margin-inline-start: m("xs");
+	padding: 0;
+
+	.-compact & {
+		@include size(to-rem(20px));
+	}
+}
+
+%icon-button {
+	align-items: center;
+	color: color("default-text");
+	cursor: pointer;
+	display: flex;
+	flex: 0 0 auto;
+	font-size: fs("md");
+	justify-content: center;
+	line-height: 1;
+	overflow: hidden;
+	padding: p("xs");
+
+	&:hover {
+		color: color("primary");
+	}
+}

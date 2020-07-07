@@ -1,12 +1,13 @@
 #sidebar,
 .sidebar-popout {
 	.token-mold {
-		@extend %panel-header;
-		border-block-end: b("charcoal-600");
+		@extend %panel-block;
+		border-block-end: b("border");
 		flex-wrap: wrap;
 
 		h3 {
-			@extend %h4;
+			@extend %h-tag;
+			font-size: fs("lg");
 			margin: 0;
 			margin-block-end: m("base");
 			width: 100%;
@@ -34,10 +35,6 @@
 
 		> a {
 			@extend %control-button;
-
-			&:last-of-type {
-				padding-inline-end: 0;
-			}
 		}
 	}
 }

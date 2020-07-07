@@ -1,0 +1,20 @@
+.sheet.token-sheet {
+	.sheet-footer {
+		flex: 0 0 auto;
+
+		button {
+			@extend %button-icon;
+			@extend %button-row;
+		}
+	}
+
+	span.sep {
+		align-items: center;
+		display: flex;
+		flex: 0 0 auto;
+		font-size: fs("lg");
+		justify-content: center;
+		line-height: initial;
+		margin: 0 m("base");
+	}
+}

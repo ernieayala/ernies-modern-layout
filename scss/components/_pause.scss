@@ -51,6 +51,7 @@
 	h3 {
 		@extend %h-tag;
 		@extend %h3;
+		color: color("primary");
 		margin-block-start: to-rem(160px);
 		text-shadow: 1px 1px 4px color("black");
 	}

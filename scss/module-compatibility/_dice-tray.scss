@@ -1,7 +1,7 @@
 #sidebar {
 	.dice-tray {
-		@extend %panel-header;
-		border-block-start: b("charcoal-600");
+		@extend %panel-block;
+		border-block-start: b("border");
 		flex-direction: column;
 
 		> .flexrow {

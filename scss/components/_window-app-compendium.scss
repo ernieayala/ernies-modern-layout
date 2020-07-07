@@ -27,7 +27,7 @@
 
 		.directory-header,
 		.directory-footer {
-			@extend %panel-header;
+			@extend %panel-block;
 		}
 
 		.directory-header {

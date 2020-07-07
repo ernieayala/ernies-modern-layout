@@ -1,0 +1,17 @@
+%panel-block {
+	align-items: center;
+	background: color("charcoal-500", 0.5);
+	color: color("white");
+	display: flex;
+	flex: 0 0 auto;
+	padding: p("sm");
+	position: relative;
+
+	.-compact & {
+		padding: p("base");
+	}
+
+	&:empty {
+		display: none;
+	}
+}

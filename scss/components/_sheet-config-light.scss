@@ -1,0 +1,8 @@
+#light-config {
+	form {
+		input[type="color"][data-edit][data-edit] {
+			flex: 1 1 25%;
+			margin-inline-start: m("base");
+		}
+	}
+}

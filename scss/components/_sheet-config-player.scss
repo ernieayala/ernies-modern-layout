@@ -1,0 +1,59 @@
+#player-config {
+	.avatar {
+		@extend %reset-image;
+		@include size(space("image"));
+		cursor: pointer;
+		margin: 0;
+		transition: t(background box-shadow, "link");
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+	}
+
+	.form-group.stacked {
+		align-items: initial;
+		flex-direction: column;
+
+		label {
+			flex: 0 0 auto;
+			justify-content: flex-start;
+
+			#available-characters {
+				padding-block-start: p("base");
+			}
+		}
+
+		.directory-list {
+			@extend %directory-list;
+			max-height: 100%;
+			width: 100%;
+
+			+ button {
+				@extend %button-icon;
+				@extend %button-row;
+			}
+		}
+	}
+
+	.directory-item {
+		@extend %directory-item;
+		border: none;
+		box-shadow: none;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
+
+		&.context {
+			@extend %global-active;
+		}
+
+		label {
+			color: color("default-text");
+			font-weight: normal;
+		}
+	}
+}

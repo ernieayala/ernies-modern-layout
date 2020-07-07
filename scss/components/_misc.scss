@@ -10,35 +10,3 @@ img {
 		outline: initial;
 	}
 }
-
-// Buttons
-// button {
-// 	@extend %primary-button;
-
-// 	&.file-picker {
-// 		flex: 0 0 auto;
-// 		line-height: auto;
-// 		margin: 0;
-// 		order: 66; // not the younglings
-// 		width: to-rem(32px);
-
-// 		.-compact & {
-// 			width: to-rem(24px);
-// 		}
-
-// 		+ input[type="text"] {
-// 			height: to-rem(32px);
-// 			margin-right: 0 !important; // fucking gross
-// 			margin-inline-end: m("base") !important;
-
-// 			.-compact & {
-// 				height: to-rem(24px);
-// 			}
-// 		}
-// 	}
-// }
-
-// form button {
-// 	background: color("gray-500");
-// 	border: none;
-// }
