@@ -48,12 +48,14 @@
 		}
 
 		textarea {
+			@extend %input-textarea;
 			flex: 1 1 auto;
 			font-family: Consolas, "Liberation Mono", Courier, monospace;
 			height: auto;
 			line-height: 1.5;
 			min-height: to-rem(200px);
 			white-space: pre-wrap;
+			word-wrap: break-word;
 		}
 	}
 

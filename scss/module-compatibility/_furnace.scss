@@ -59,17 +59,16 @@ form .furnace-macro-run-as-gm.form-group {
 
 .sheet.macro-sheet {
 	.form-group.furnace-macro-command {
-		border: none;
+		border: b("border");
+		border-radius: 0;
 		flex: 1 1 auto;
 		height: auto;
 		margin-inline-start: m("sm");
 		padding: 0;
-		padding-block-end: p("sm");
 		width: calc(100% - #{to-rem(16px)});
 
 		.-compact & {
 			margin-inline-start: m("base");
-			padding-block-end: p("base");
 			width: calc(100% - #{to-rem(8px)});
 		}
 
@@ -78,7 +77,6 @@ form .furnace-macro-run-as-gm.form-group {
 			background: transparent;
 			margin-block-start: 10vh;
 			margin-inline-start: 10vh;
-			padding: 0;
 			z-index: 10000;
 
 			&::before {
@@ -97,28 +95,35 @@ form .furnace-macro-run-as-gm.form-group {
 			}
 
 			textarea {
-				background: color("charcoal-50");
 				height: 100%;
-				z-index: 2;
+				z-index: 10;
+			}
+
+			pre {
+				background: color("charcoal-50");
 			}
 
 			.furnace-macro-expand {
-				z-index: 3;
+				z-index: 11;
 			}
 		}
 
 		textarea {
+			border: none;
+			font-size: to-rem(14px);
+			height: 100%;
+			padding: to-rem(5px);
 			text-shadow: none;
-			z-index: initial;
-		}
-
-		pre {
-			pointer-events: none;
 		}
 	}
 
 	.furnace-macro-expand {
 		@extend %primary-button;
 		position: absolute;
+	}
+
+	.sheet-footer,
+	.window-resizable-handle {
+		z-index: 11;
 	}
 }
