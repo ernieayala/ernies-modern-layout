@@ -1,0 +1,250 @@
+#sidebar,
+.sidebar-popout {
+	#combat {
+		#combat-round {
+			@extend %panel-block;
+			flex-direction: column;
+
+			.encounters {
+				align-items: center;
+				display: flex;
+				flex-wrap: nowrap;
+				width: 100%;
+
+				+ .encounters {
+					margin-block-start: m("base");
+				}
+
+				h3,
+				h4 {
+					@extend %h-tag;
+					@include ellipsis;
+					border-block-end: none;
+					color: color("gray-200");
+					display: block;
+					flex: 1 1 auto;
+					font-size: fs("md");
+					margin-inline-start: m("base");
+					text-align: center;
+				}
+
+				h3 {
+					color: color("white");
+					font-size: fs("xl");
+
+					.-compact & {
+						font-size: fs("lg");
+					}
+				}
+
+				a {
+					@extend %control-button;
+
+					&[disabled] {
+						pointer-events: none;
+						visibility: hidden;
+					}
+
+					&:first-child {
+						margin-inline-start: 0;
+					}
+				}
+			}
+		}
+
+		#combat-tracker {
+			padding-block-start: p("base");
+
+			.-compact & {
+				padding-block-start: 0;
+			}
+
+			.combatant {
+				align-items: center;
+				background: color("border");
+				border: none;
+				display: flex;
+				line-height: initial;
+				margin: m("base") m("sm");
+				padding: p("base") p("sm");
+				position: relative;
+				transition: t(background box-shadow opacity, "link");
+
+				.-compact & {
+					margin: m("base");
+					padding: p("base");
+				}
+
+				&:hover {
+					@extend %global-hover;
+				}
+
+				&.hidden {
+					.token-name h4,
+					.token-image {
+						opacity: 0.5;
+					}
+				}
+
+				&.active {
+					@extend %global-active;
+
+					.combatant-control.active {
+						background: color("white");
+						color: color("primary");
+					}
+				}
+
+				&.defeated {
+					background: color("red-600", 0.5);
+
+					&.active {
+						@extend %global-hover-alt;
+
+						.combatant-control.active {
+							background: color("primary");
+							color: color("white");
+						}
+					}
+				}
+
+				.token-image {
+					@include size(space("icon"));
+					cursor: default;
+					flex: 0 0 auto;
+					margin-inline-end: m("sm");
+					position: relative;
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
+				}
+
+				.token-name {
+					display: flex;
+					flex: 1 1 auto;
+					flex-direction: column;
+					margin: 0;
+					overflow: hidden;
+					position: relative;
+					text-shadow: none;
+
+					h4 {
+						@extend %h-tag;
+						@include ellipsis(max-width 100%);
+						color: color("white");
+						flex: initial;
+						font-size: fs("lg");
+						line-height: initial;
+					}
+				}
+
+				.token-resource,
+				.token-initiative {
+					align-items: center;
+					color: color("white");
+					display: flex;
+					flex: 0 0 auto;
+					position: relative;
+				}
+
+				.token-resource {
+					border-inline-end: b("gray-200");
+					font-size: fs("md");
+					margin-inline-start: m("base");
+					padding-inline-end: p("sm");
+
+					.-compact & {
+						padding-inline-end: p("base");
+					}
+				}
+
+				.token-initiative {
+					padding-inline-start: p("sm");
+
+					.-compact & {
+						padding-inline-start: p("base");
+					}
+
+					.initiative {
+						color: inherit;
+						font-size: fs("lg");
+						font-weight: normal;
+						text-shadow: none;
+					}
+				}
+
+				.combatant-controls {
+					align-items: center;
+					display: flex;
+				}
+
+				.combatant-control {
+					@extend %control-button;
+					margin-inline-start: 0;
+					margin-inline-end: m("base");
+
+					// fa hack
+					&.roll {
+						@include size(space("button"));
+						background: transparent;
+						font-family: "Font Awesome 5 Free";
+						font-weight: 900;
+						-webkit-font-smoothing: antialiased;
+						font-size: fs("xl");
+						font-style: normal;
+						font-variant: normal;
+						text-rendering: auto;
+						line-height: 1;
+						margin: 0;
+
+						&::before {
+							content: "\f6cf";
+						}
+					}
+				}
+
+				.token-effects {
+					display: flex;
+					flex: 1 1 auto;
+					flex-wrap: wrap;
+					margin-inline-start: m("base");
+
+					img {
+						border-radius: 0;
+						cursor: default;
+						margin-block-end: m("base");
+						margin-inline-end: m("base");
+						max-height: to-rem(14px);
+						max-width: to-rem(14px);
+						opacity: 1;
+						transform: none;
+					}
+				}
+			}
+		}
+
+		#combat-controls {
+			border-block-start: b("border");
+			padding-block-start: m("sm");
+
+			.-compact & {
+				padding-block-start: m("base");
+			}
+
+			.combat-control {
+				@extend %primary-button;
+				flex: 1 1 auto;
+				margin-inline-start: m("xs");
+
+				&:first-child {
+					margin-inline-start: 0;
+				}
+
+				&.center {
+					flex: 1 1 50%;
+				}
+			}
+		}
+	}
+}

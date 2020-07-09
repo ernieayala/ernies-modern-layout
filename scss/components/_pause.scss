@@ -2,9 +2,11 @@
 	@include fixed(bottom to-rem(200px) left 0);
 	@include size(100%, auto);
 	align-items: center;
+	background: transparent;
 	display: none;
 	flex-direction: column;
 	pointer-events: none;
+	z-index: z("fixed");
 
 	&.paused {
 		display: flex;
@@ -46,12 +48,14 @@
 		animation-timing-function: linear;
 		margin-block-start: to-rem(-50px);
 		margin-inline-start: to-rem(-50px);
+		opacity: 1;
 	}
 
 	h3 {
 		@extend %h-tag;
 		@extend %h3;
 		color: color("primary");
+		line-height: initial;
 		margin-block-start: to-rem(160px);
 		text-shadow: 1px 1px 4px color("black");
 	}

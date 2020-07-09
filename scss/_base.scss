@@ -34,12 +34,6 @@
 	)
 );
 
-:root {
-	@include css-vars($_palette-default);
-	scrollbar-color: color("charcoal-300") color("black", 0.3);
-	scrollbar-width: thin;
-}
-
 // Shared
 @import "./shared/buttons";
 @import "./shared/directory";

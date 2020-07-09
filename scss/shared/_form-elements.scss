@@ -6,6 +6,8 @@
 	color: color("default-text");
 	font-family: inherit;
 	font-size: inherit;
+	font-weight: normal;
+	line-height: 1;
 	margin: 0;
 	min-width: to-rem(16px);
 	padding: 0 p("sm");
@@ -20,6 +22,19 @@
 
 	&::placeholder {
 		color: color("gray-400");
+	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
 	}
 }
 
@@ -42,6 +57,24 @@
 		height: to-rem(24px);
 		padding: 0 p("base");
 	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	optgroup {
+		background: color("white");
+		color: color("default-text");
+	}
 }
 
 %input-checkbox {
@@ -59,6 +92,24 @@
 
 	.-compact & {
 		@include size(to-rem(16px));
+	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+
+	&:checked {
+		background: color("primary");
+		color: color("white");
 	}
 }
 
@@ -78,6 +129,19 @@
 	.-compact & {
 		height: to-rem(24px);
 		padding: 0 p("base");
+	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
 	}
 }
 
@@ -158,6 +222,21 @@
 			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
 		}
 	}
+
+	+ .range-value {
+		align-items: center;
+		border: none;
+		color: color("default-text");
+		display: flex;
+		flex: 0 0 auto;
+		font-size: fs("md");
+		margin-inline-start: m("sm");
+		padding: 0;
+
+		.-compact & {
+			margin-inline-start: m("base");
+		}
+	}
 }
 
 %input-textarea {
@@ -183,5 +262,59 @@
 
 	&::placeholder {
 		color: color("gray-400");
+	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&:focus {
+		@extend %global-focus;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}
+
+%form-elements {
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime-local"] {
+		@extend %input-text;
+	}
+
+	input[type="checkbox"] {
+		@extend %input-checkbox;
+	}
+
+	input[type="color"],
+	input[type="color"][data-edit] {
+		@extend %input-color;
+	}
+
+	input[type="range"] {
+		@extend %input-range;
+
+		&::-webkit-slider-thumb {
+			&:hover {
+				box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+			}
+		}
+
+		&::-moz-range-thumb {
+			&:hover {
+				box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+			}
+		}
+	}
+
+	select {
+		@extend %input-select;
+	}
+
+	textarea {
+		@extend %input-textarea;
 	}
 }

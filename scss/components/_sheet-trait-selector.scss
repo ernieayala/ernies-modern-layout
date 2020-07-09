@@ -1,0 +1,39 @@
+#trait-selector {
+	@extend %window-common;
+	@extend %window-hack;
+
+	.trait-list {
+		li {
+			align-items: center;
+			display: flex;
+			font-size: fs("lg");
+
+			&:nth-of-type(even) {
+				background: color("charcoal-300", 0.1);
+			}
+
+			label {
+				align-items: center;
+				color: color("default-text");
+				cursor: pointer;
+				display: flex;
+				padding: p("base");
+				width :100%;
+
+				input {
+					margin-inline-end: m("base");
+				}
+			}
+		}
+	}
+
+	.form-group.stacked {
+		label {
+			flex: 0 0 100%;
+
+			+ input {
+				margin-block-start: m("base");
+			}
+		}
+	}
+}

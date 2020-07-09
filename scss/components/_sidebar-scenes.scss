@@ -1,0 +1,20 @@
+#sidebar,
+.sidebar-popout {
+	#scenes {
+		.directory-list {
+			@extend %directory-subdirectory;
+		}
+
+		.directory-item {
+			@extend %directory-item;
+
+			&.folder {
+				@extend %folder;
+			}
+		}
+
+		.scene {
+			background-image: none !important; // my sin
+		}
+	}
+}

@@ -4,11 +4,13 @@
 	height: auto !important;
 	max-width: to-rem(88px);
 
-	.-eml-tm & {
-		display: block;
+	.-compact & {
+		left: space("base");
+		max-width: to-rem(64px);
+		top: space("base");
 	}
 
-	.-compact & {
-		display: none;
+	.-eml-tm & {
+		display: block;
 	}
 }

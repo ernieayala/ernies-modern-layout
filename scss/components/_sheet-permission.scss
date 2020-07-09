@@ -1,0 +1,16 @@
+#permission {
+	@extend %window-common;
+	@extend %window-hack;
+
+	#permission-control hr {
+		@include size(100%, auto);
+		border-block-end: b("border");
+		margin: 0;
+		margin-block-end: m("sm");
+		position: relative;
+
+		.-compact & {
+			margin-block-end: m("base");
+		}
+	}
+}

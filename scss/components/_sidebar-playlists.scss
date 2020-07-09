@@ -1,0 +1,287 @@
+#sidebar,
+.sidebar-popout {
+	#playlists {
+		color: color("white");
+
+		.directory-list {
+			padding-block-start: 0;
+			position: relative;
+
+			> .playlist:first-child {
+				background: color("charcoal-500", 0.5);
+				border-block-end: b("border");
+				color: color("white");
+				display: flex;
+				flex: 0 0 auto;
+				flex-direction: column;
+				padding: p("sm");
+				position: relative;
+
+				.-compact & {
+					padding: p("base");
+				}
+
+				.playlist-header {
+					background: transparent;
+					border-block-end: b("border");
+					color: color("white");
+					font-size: fs("xl");
+					padding-inline-start: 0;
+					pointer-events: none;
+					width: 100%;
+
+					.-compact & {
+						font-size: fs("lg");
+					}
+
+					h4 {
+						padding-inline-start: 0;
+					}
+				}
+
+				.playlist-sounds {
+					background: transparent;
+					border-inline-start: none;
+					padding: 0;
+					padding-block-start: p("base");
+					width: 100%;
+
+					h4 {
+						@extend %h-tag;
+						border-block-end: 0;
+						color: color("white");
+						font-size: fs("lg");
+
+						+ input[type="range"] {
+							margin-inline-start: m("base");
+						}
+					}
+
+					.sound {
+						border-block-end: 0;
+						flex-wrap: nowrap;
+						padding-inline-start: 0;
+						padding-inline-end: 0;
+
+						&:last-of-type {
+							padding-block-end: 0;
+						}
+
+						.global-volume {
+							flex: 0 0 50%;
+						}
+					}
+				}
+			}
+		}
+
+		li.playlist {
+			border: none;
+			display: block;
+			line-height: initial;
+			padding: 0;
+			padding-block-start: p("base");
+			padding-inline-start: p("sm");
+			padding-inline-end: p("sm");
+			position: relative;
+
+			.-compact & {
+				padding-inline-start: p("base");
+				padding-inline-end: p("base");
+			}
+
+			&:first-child {
+				padding-block-start: p("sm");
+
+				.-compact & {
+					padding-block-start: p("base");
+				}
+			}
+
+			&.collapsed {
+				.playlist-header {
+					border-inline-start: none;
+				}
+
+				.playlist-sounds {
+					display: none;
+				}
+			}
+
+			.playlist-header {
+				align-items: center;
+				background: color("charcoal-200");
+				color: color("default-text");
+				cursor: pointer;
+				border-radius: 0;
+				display: flex;
+				flex-wrap: nowrap;
+				min-height: to-rem(32px);
+				padding: p("base") p("sm");
+				position: relative;
+				text-decoration: none;
+				transition: t(background box-shadow color, "link");
+
+				.-compact & {
+					min-height: to-rem(24px);
+					padding: p("base");
+				}
+
+				&:hover {
+					background: color("primary");
+					box-shadow: inset 0 0 0 2px color("white");
+					color: color("white");
+				}
+
+				&:focus {
+					box-shadow:
+						inset 0 0 0 2px color("primary"),
+						inset 0 0 0 3px color("white"), 0 1px 2px 0 color("black", 0.3);
+				}
+
+				h4 {
+					@extend %h-tag;
+					@include ellipsis;
+					border-block-end: 0;
+					color: inherit;
+					cursor: pointer;
+					display: block;
+					flex: 1 1 auto;
+					font-size: fs("lg");
+					padding-inline-start: p("md");
+
+					i.fa {
+						@include absolute(top 50% left 0);
+						color: inherit;
+						margin: 0;
+						margin-block-start: to-rem(-8px);
+					}
+				}
+			}
+
+			.playlist-sounds {
+				@extend %reset-list;
+				background: color("charcoal-100");
+
+				.sound {
+					align-items: center;
+					border-block-end: b("border");
+					display: flex;
+					flex-wrap: wrap;
+					margin: 0;
+					padding: p("base") p("sm");
+					position: relative;
+
+					.-compact & {
+						padding: p("base");
+					}
+
+					h4 {
+						@extend %h-tag;
+						@include ellipsis;
+						color: color("default-text");
+						flex: 1 1 auto;
+						font-size: fs("lg");
+						max-width: 100%;
+
+						.-compact & {
+							font-size: fs("md");
+						}
+					}
+
+					input[type="range"] {
+						@extend %input-range;
+
+						&::-webkit-slider-thumb {
+							&:hover {
+								box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+							}
+						}
+
+						&::-moz-range-thumb {
+							&:hover {
+								box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+							}
+						}
+					}
+
+					.sound-control {
+						color: color("default-text");
+
+						&.disabled {
+							color: color("gray-100");
+							display: none;
+							pointer-events: none;
+						}
+
+						&[data-action="sound-repeat"] {
+							color: color("primary");
+						}
+
+						&.inactive {
+							color: color("gray-500");
+						}
+
+						&[data-action="sound-play"] {
+							color: color("positive");
+
+							&:hover,
+							&:focus {
+								background: color("positive");
+							}
+						}
+
+						&[data-action="sound-stop"] {
+							color: color("negative");
+
+							&:hover,
+							&:focus {
+								background: color("negative");
+							}
+						}
+
+						&:hover,
+						&:focus {
+							color: color("white");
+						}
+					}
+				}
+			}
+
+			.playlist-controls {
+				display: flex;
+				flex: 0 0 auto;
+
+				.sound-control {
+					&.disabled {
+						color: color("gray-100");
+						display: none;
+						pointer-events: none;
+					}
+				}
+			}
+
+			.sound-controls {
+				align-items: center;
+				display: flex;
+				flex: 0 0 100%;
+				flex-wrap: nowrap;
+				position: relative;
+
+				input {
+					flex: 1 1 100%;
+					margin-inline-start: m("base");
+					position: relative;
+				}
+			}
+
+			.sound-control {
+				@extend %control-button;
+
+				&:first-child {
+					margin-inline-start: 0;
+				}
+			}
+		}
+	}
+}

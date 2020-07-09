@@ -1,0 +1,5 @@
+.sheet.scene-sheet {
+	@extend %window-common;
+	@extend %window-hack;
+	@extend %window-sheets;
+}

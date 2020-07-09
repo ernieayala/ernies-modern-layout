@@ -1,9 +1,11 @@
 #loading {
 	@include fixed(top space("sm") left to-rem(148px));
 	@include size(calc(100% - #{to-rem(600px)}), to-rem(24px));
-	display: none;
 	background: color("charcoal-500", 0.8);
+	border: none;
+	border-radius: 0;
 	box-shadow: none;
+	display: none;
 	pointer-events: none;
 	z-index: z("fixed");
 
@@ -19,7 +21,10 @@
 
 	#loading-bar {
 		background: color("primary");
+		border: none;
+		border-radius: 0;
 		height: 100%;
+		margin: 0;
 		min-width: 25%;
 		position: relative;
 	}
@@ -27,11 +32,15 @@
 	label {
 		@include absolute(top 0);
 		align-items: center;
+		background: transparent;
 		color: color("white");
 		display: flex;
 		height: 100%;
 		font-size: fs("md");
+		line-height: initial;
 		margin: 0 m("md");
+		padding: 0;
+		text-shadow: none;
 
 		&#context {
 			left: 0;

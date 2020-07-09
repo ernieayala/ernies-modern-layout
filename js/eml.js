@@ -57,24 +57,17 @@ Hooks.once('init', () => {
 		}
 	});
 
-	// game.settings.register('ernies-modern-layout', 'toggleExperimental', {
-	// 	name: 'Toggle Experimental Features',
-	// 	hint: 'This is experimental. Highly possible to conflict with other Modules.',
-	// 	scope: 'user',
-	// 	config: true,
-	// 	default: false,
-	// 	type: Boolean,
-	// 	onChange: data => {
-	// 		data === true ? myHtml[0].classList.add('-eml-ef') : myHtml[0].classList.remove('-eml-ef');
-	// 	}
-	// });
-
 	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
 	if(primaryColor && primaryColor.length === 7) {
 		let rgbValue = convertHex(primaryColor);
 		if(rgbValue) {
 			document.documentElement.style.setProperty('--color-primary', rgbValue);
 		}
+	}
+
+	const compactMode = game.settings.get('ernies-modern-layout', 'compactMode');
+	if(compactMode === true) {
+		myHtml[0].classList.add('-compact');
 	}
 
 	const toggleMark = game.settings.get('ernies-modern-layout', 'toggleMark');
@@ -84,13 +77,23 @@ Hooks.once('init', () => {
 		myHtml[0].classList.add('-eml-tm');
 	}
 
-	const compactMode = game.settings.get('ernies-modern-layout', 'compactMode');
-	if(compactMode === true) {
-		myHtml[0].classList.add('-compact');
-	}
+	// Turn off styling
+	game.settings.register('ernies-modern-layout', 'toggleCombatSidebar', {
+		name: 'Toggle Combat Sidebar Styles',
+		hint: 'This will turn off -most- of the styling in the combat sidebar.',
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.remove('-eml-tcsb') : myHtml[0].classList.add('-eml-tcsb');
+		}
+	});
 
-	// const toggleExperimental = game.settings.get('ernies-modern-layout', 'toggleExperimental');
-	// if(toggleExperimental === true) {
-	// 	myHtml[0].classList.add('-eml-ef');
-	// }
+	const toggleCombatSidebar = game.settings.get('ernies-modern-layout', 'toggleCombatSidebar');
+	if(toggleCombatSidebar === true) {
+		myHtml[0].classList.remove('-eml-tcsb');
+	} else {
+		myHtml[0].classList.add('-eml-tcsb');
+	}
 });

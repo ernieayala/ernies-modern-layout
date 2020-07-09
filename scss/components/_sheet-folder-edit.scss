@@ -1,0 +1,10 @@
+#folder-edit {
+	@extend %window-common;
+	@extend %window-hack;
+
+	// how many ways can you layout a form?
+	label + .flexrow {
+		display: flex;
+		flex: 1 1 auto;
+	}
+}

@@ -40,11 +40,13 @@
 	.folder-header {
 		align-items: center;
 		background: color("charcoal-200");
+		border: 0;
 		border-inline-start: b("primary", 4px);
 		color: color("default-text");
 		cursor: pointer;
 		display: flex;
 		flex-wrap: nowrap;
+		line-height: 1;
 		min-height: to-rem(32px);
 		padding: p("base") p("sm");
 		position: relative;
@@ -68,19 +70,15 @@
 
 		h3 {
 			@extend %h-tag;
+			@extend %button-icon;
 			@include ellipsis;
 			border-block-end: 0;
 			color: inherit;
 			flex: 1 1 auto;
 			font-size: fs("lg");
-
-			> i {
-				margin-inline-end: m("sm");
-
-				.-compact & {
-					margin-inline-end: m("base");
-				}
-			}
+			line-height: 1;
+			text-align: start;
+			text-shadow: none;
 		}
 
 		.create-folder,

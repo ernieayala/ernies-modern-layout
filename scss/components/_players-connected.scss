@@ -78,8 +78,11 @@
 
 		.player {
 			align-items: center;
+			border: none;
 			display: flex;
 			flex-wrap: nowrap;
+			line-height: initial;
+			margin: 0;
 			padding: p("xs") 0;
 			position: relative;
 			width: 100%;
@@ -90,6 +93,7 @@
 			color: color("white");
 			flex: 1 1 auto;
 			position: relative;
+			text-shadow: none;
 
 			&.self {
 				color: color("white");
@@ -100,6 +104,7 @@
 			@include size(to-rem(8px));
 			border-radius: 50%;
 			flex: 0 0 auto;
+			margin: 0;
 			margin-inline-end: m("sm");
 			position: relative;
 

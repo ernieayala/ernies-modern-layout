@@ -33,6 +33,10 @@
 	.sound-control-hidden {
 		display: flex;
 	}
+
+	#combat li.combatant.turn-done {
+		color: color("white");
+	}
 }
 
 form .furnace-macro-run-as-gm.form-group {

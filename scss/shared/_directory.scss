@@ -8,6 +8,8 @@
 %directory-item {
 	align-items: center;
 	background: color("charcoal-400");
+	border: none;
+	box-shadow: none;
 	color: color("white");
 	cursor: pointer;
 	display: flex;
@@ -80,7 +82,10 @@
 		color: inherit;
 		flex: 1 1 auto;
 		font-size: fs("lg");
+		line-height: 1;
 		padding: 0;
+		text-align: start;
+		text-shadow: none;
 
 		> a {
 			@include ellipsis;
@@ -96,6 +101,63 @@
 
 			.-compact & {
 				line-height: to-rem(24px); // figure out a better way
+			}
+		}
+	}
+}
+
+%directory-subdirectory {
+	padding-block-start: p("base");
+
+	.subdirectory {
+		display: flex;
+		flex-direction: column;
+		background: color("charcoal-100");
+		border: none;
+		border-inline-start: b("primary", 4px);
+		width: 100%;
+
+		.directory-item.folder {
+			padding-block-end: p("base");
+			padding-inline-end: 0;
+
+			.-compact & {
+				padding-block-end: p("base");
+				padding-inline-end: 0;
+			}
+
+			+ .directory-item.folder {
+				padding-block-start: 0;
+
+				.-compact & {
+					padding-block-start: 0;
+				}
+			}
+
+			+ .directory-item:not(.folder) {
+				margin-block-start: 0;
+
+				.-compact & {
+					margin-block-start: 0;
+				}
+			}
+		}
+
+		.directory-item:not(.folder) {
+			+ .directory-item:not(.folder) {
+				margin-block-start: 0;
+
+				.-compact & {
+					margin-block-start: 0;
+				}
+			}
+		}
+
+		.subdirectory {
+			border-inline-start: b("orange-700", 4px);
+
+			.subdirectory {
+				border-inline-start: b("orange-900", 4px);
 			}
 		}
 	}

@@ -1,4 +1,7 @@
 .sheet.token-sheet {
+	@extend %window-common;
+	@extend %window-sheets;
+
 	.sheet-footer {
 		flex: 0 0 auto;
 

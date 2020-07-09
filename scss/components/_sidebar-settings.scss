@@ -1,0 +1,48 @@
+#sidebar,
+.sidebar-popout {
+	#settings {
+		padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+
+		h2,
+		h4 {
+			@extend %h-tag;
+			color: color("white");
+			padding: 0;
+			margin-block-end: m("sm");
+
+			.-compact & {
+				margin-block-end: m("base");
+			}
+		}
+
+		h2 {
+			border-block-end: b("charcoal-600");
+			font-size: fs("xxl");
+			margin-block-start: m("sm");
+
+			.-compact & {
+				font-size: fs("xl");
+				margin-block-start: m("base");
+			}
+		}
+
+		h4 {
+			color: color("primary");
+			font-size: fs("lg");
+
+			.-compact & {
+				margin-block-start: m("base");
+			}
+		}
+
+		button {
+			@extend %primary-button;
+			@extend %button-icon;
+			margin-block-end: m("base");
+		}
+	}
+}

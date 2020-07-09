@@ -22,7 +22,6 @@
 			display: inline-flex;
 			width: 1px; // hacky hack hack
 
-
 			input {
 				flex: 1 1 auto;
 
@@ -52,24 +51,8 @@
 		}
 	}
 
-	label {
-		align-items: center;
-		display: inline-flex;
-		flex: 0 0 40%;
-		font-size: fs("md");
-		line-height: initial;
-		padding-inline-end: p("base");
-
-		.units {
-			@include ellipsis;
-			display: block;
-			font-size: fs("sm");
-			margin: 0 m("base");
-		}
-
-		> i {
-			margin-inline-end: m("base");
-		}
+	&.hidden {
+		display: none;
 	}
 
 	input,
@@ -102,6 +85,28 @@
 			&[type="checkbox"] {
 				flex: 0 0 auto;
 			}
+		}
+	}
+
+	label {
+		align-items: center;
+		display: inline-flex;
+		flex: 0 0 40%;
+		font-size: fs("md");
+		line-height: initial;
+		padding-inline-end: p("base");
+
+		.units {
+			@include ellipsis;
+			color: color("default-text");
+			display: block;
+			font-size: fs("sm");
+			line-height: initial;
+			margin: 0 m("base");
+		}
+
+		> i {
+			margin-inline-end: m("base");
 		}
 	}
 

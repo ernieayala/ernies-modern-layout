@@ -1,5 +1,6 @@
 #hotbar {
 	@include fixed(bottom space("sm") left to-rem(224px));
+	@include size(auto);
 	display: flex;
 	pointer-events: none;
 	z-index: z("fixed");
@@ -12,24 +13,30 @@
 	#action-bar {
 		display: block;
 		flex: 1 1 auto;
+		height: auto;
 		pointer-events: all;
 		position: relative;
 	}
 
 	#macro-list {
+		@extend %reset-list;
+		border: none;
+		border-radius: 0;
 		display: flex;
+		flex: 0 0 auto;
 		float: left;
-		list-style: none;
-		margin: 0;
-		padding: 0;
 		position: relative;
 	}
 
 	.bar-controls {
 		@include size(to-rem(40px), to-rem(56px));
+		background: transparent;
 		border: b("border");
+		border-radius: 0;
+		box-shadow: none;
 		display: flex;
 		flex-direction: column;
+		margin: 0;
 		position: relative;
 
 		.-compact & {
@@ -80,7 +87,9 @@
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
+			font-size: fs("lg");
 			justify-content: center;
+			line-height: initial;
 			position: relative;
 			transition: t(box-shadow, "link");
 
@@ -112,7 +121,9 @@
 			color: color("white");
 			display: flex;
 			flex: 1 1 auto;
+			font-size: fs("md");
 			justify-content: center;
+			line-height: initial;
 
 			.-compact & {
 				font-size: fs("sm");
@@ -125,9 +136,12 @@
 		align-items: center;
 		background: color("charcoal-500", 0.8);
 		border: b("border");
+		border-radius: 0;
+		box-shadow: none;
 		color: color("white");
 		cursor: pointer;
 		display: flex;
+		flex: 0 0 auto;
 		justify-content: center;
 		margin-inline-start: -1px; // for the border and people messing with border color
 		position: relative;
@@ -156,8 +170,10 @@
 
 		.macro-key {
 			@include absolute(top space("xs") right space("base"));
+			background: transparent;
 			color: color("white");
 			font-weight: 600;
+			padding: 0;
 			text-shadow: 2px 2px  2px color("charcoal-900");
 			z-index: 1;
 		}
@@ -177,13 +193,21 @@
 		}
 
 		.tooltip {
-			@include absolute(bottom 100% left 0);
 			background: color("charcoal-900", 0.5);
+			border: none;
 			border-radius: 0;
 			color: color("white");
 			font-size: fs("md");
+			height: auto;
+			left: 0;
+			line-height: auto;
 			margin-block-end: m("base");
-			padding: p("xs");
+			min-width: to-rem(56px);
+			padding: p("base") p("sm");
+
+			.compact & {
+				padding: p("xs") p("base");
+			}
 		}
 	}
 }

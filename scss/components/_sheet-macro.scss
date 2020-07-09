@@ -1,4 +1,7 @@
 .sheet.macro-sheet {
+	@extend %window-common;
+	@extend %window-sheets;
+
 	form {
 		overflow-x: hidden;
 		overflow-y: auto;

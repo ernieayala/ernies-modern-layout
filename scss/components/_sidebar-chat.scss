@@ -1,0 +1,93 @@
+#sidebar,
+.sidebar-popout {
+	#chat {
+		#chat-controls {
+			align-items: center;
+			background: color("charcoal-500", 0.5);
+			border-block-start: b("border");
+			color: color("white");
+			display: flex;
+			flex: 0 0 auto;
+			margin: 0;
+			padding: p("sm");
+			position: relative;
+
+			.-compact & {
+				padding: p("base");
+			}
+
+			.roll-type-select {
+				align-items: center;
+				display: flex;
+				flex: 1 1 auto;
+
+				.fas.fa-dice-d20 {
+					display: none;
+				}
+
+				select {
+					@extend %input-select;
+					background: color("charcoal-500", 0.5);
+					color: color("white");
+					top: auto;
+					width: auto;
+
+					&:hover {
+						@extend %global-hover-alt;
+					}
+
+					&:focus {
+						@extend %global-focus;
+					}
+
+					&:disabled {
+						pointer-events: none;
+					}
+				}
+			}
+
+			.control-buttons {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+
+				.button {
+					@extend %control-button;
+
+					> i {
+						font-size: inherit;
+						line-height: initial;
+					}
+				}
+			}
+		}
+
+		#chat-form {
+			align-items: center;
+			background: color("charcoal-500", 0.5);
+			border-block-start: b("border");
+			color: color("white");
+			display: flex;
+			flex: 0 0 auto;
+			height: to-rem(112px);
+			margin: 0;
+			padding: p("sm");
+			position: relative;
+
+			.-compact & {
+				padding: p("base");
+			}
+
+			textarea {
+				@extend %input-text;
+				@include size(100%);
+				background: color("white", 0.9);
+				padding: p("sm");
+
+				.compact & {
+					padding: p("base");
+				}
+			}
+		}
+	}
+}

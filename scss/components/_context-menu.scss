@@ -2,6 +2,7 @@
 	@include absolute(left 0);
 	background: color("charcoal-50");
 	border: b("border");
+	border-radius: 0;
 	box-shadow: 0 2px 4px color("black");
 	color: color("default-text");
 	max-width: to-rem(320px);
@@ -9,22 +10,14 @@
 	width: 100%;
 	z-index: z("popover");
 
-	&.expand-down {
-		top: calc(100% + #{to-rem(2px)});
-		bottom: auto;
-	}
-
-	&.expand-up {
-		bottom: calc(100% + #{to-rem(2px)});
-		top: auto;
-	}
-
 	ol.context-items {
 		@extend %reset-list;
 
 		.context-item {
 			cursor: pointer;
+			line-height: initial;
 			padding: p("base");
+			text-shadow: none;
 
 			.-compact & {
 				padding: p("xs");

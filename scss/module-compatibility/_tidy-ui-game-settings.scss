@@ -105,3 +105,36 @@
 		}
 	}
 }
+
+#client-settings #config-tabs div.tab[data-tab="modules"],
+#module-management .enhanced-module-management {
+	#searchField {
+		border: none;
+		border-radius: 0;
+		height: auto;
+		margin: 0;
+		margin-block-end: m("sm");
+
+		.compact & {
+			margin-block-end: m("base");
+		}
+
+		#searchInput {
+			@extend %input-text;
+		}
+
+		#clear {
+			@extend %control-button;
+			display: none;
+			position: absolute;
+
+			&.show {
+				display: flex;
+			}
+		}
+	}
+}
+
+#settings .game-system {
+	margin: 0;
+}

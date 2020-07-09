@@ -1,7 +1,5 @@
 #lmrtfy {
-	.window-content {
-		@extend %window-content;
-	}
+	@extend %window-common;
 
 	fieldset {
 		border: none;

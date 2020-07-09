@@ -1,0 +1,107 @@
+#client-settings {
+	@extend %window-common;
+	@extend %window-sheets;
+
+	.sheet-footer {
+		border-block-start: b("border");
+		flex: 0 0 auto;
+		flex-wrap: nowrap;
+		padding: 0;
+		padding-block-start: p("sm");
+
+		button {
+			@extend %primary-button;
+			@extend %button-row;
+			@extend %button-icon;
+		}
+	}
+
+	.settings-list {
+		padding: 0;
+		padding-block-start: p("sm");
+
+		.-compact & {
+			padding-block-start: p("base");
+		}
+
+		button {
+			@extend %primary-button;
+			@extend %button-icon;
+			height: auto;
+
+			label {
+				cursor: pointer;
+				flex: initial;
+				font-size: fs("lg");
+				padding: 0;
+			}
+
+			+ .notes,
+			+ .hint {
+				margin-block-start: m("sm");
+
+				.-compact & {
+					margin-block-start: m("base");
+				}
+			}
+		}
+	}
+
+	.module-header {
+		border-block-end: b("primary", 2px);
+		color: color("primary");
+		font-family: "Signika", sans-serif;
+		margin-block-start: m("lg");
+		margin-block-end: m("sm");
+		padding: 0  p("sm");
+
+		.-compact & {
+			margin-block-start: m("md");
+			margin-block-end: m("base");
+			padding: 0  p("base");
+		}
+
+		&:first-child {
+			margin-block-start: 0;
+
+			.-compact & {
+				margin-block-start: 0;
+			}
+		}
+
+		+ .notes {
+			padding: 0 p("sm");
+
+			.-compact & {
+				padding: 0 p("base");
+			}
+		}
+	}
+
+	#config-tabs {
+		border: none;
+		flex: 1 1 auto;
+		overflow-y: auto;
+	}
+
+	form {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		height: 100%;
+		padding: p("sm");
+		position: relative;
+
+		.-compact & {
+			padding: p("base");
+		}
+
+		.form-group {
+			@extend %form-group;
+		}
+
+		hr {
+			display: none;
+		}
+	}
+}

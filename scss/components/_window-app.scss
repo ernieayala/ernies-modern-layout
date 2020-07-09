@@ -6,9 +6,8 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	margin: 0;
 	max-height: 80vh;
-	position: absolute;
-	z-index: z("modal");
 
 	&.minimized {
 		.window-resizable-handle {
@@ -16,14 +15,20 @@
 		}
 	}
 
+	&.sidebar-popout {
+		background: color("charcoal-900", 0.8);
+	}
+
 	.window-header {
 		align-items: center;
 		background: color("charcoal-600");
-		border-bottom: b("border");
+		border: none;
+		border-block-end: b("border");
 		color: color("white");
 		display: flex;
 		flex: 0 0 auto;
 		flex-wrap: nowrap;
+		line-height: initial;
 		overflow: hidden;
 		padding: p("sm");
 		position: relative;
@@ -90,12 +95,14 @@
 		align-items: center;
 		background: color("charcoal-800");
 		border: none;
+		border-radius: 0;
 		color: color("white");
 		cursor: pointer;
 		display: inline-flex;
 		font-size: fs("md");
 		justify-content: center;
 		margin: 0;
+		padding: 0;
 		transition: t(background box-shadow color, "link");
 
 		&:hover {

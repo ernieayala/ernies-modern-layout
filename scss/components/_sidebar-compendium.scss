@@ -1,0 +1,123 @@
+#sidebar,
+.sidebar-popout {
+	#compendium {
+		.compendium-entity {
+			@extend %reset-list;
+			padding: p("base") p("sm");
+			width: 100%;
+
+			.-compact & {
+				padding: p("base");
+			}
+
+			> h3 {
+				@extend %h-tag;
+				@include ellipsis;
+				align-items: center;
+				background: color("charcoal-200");
+				border: none;
+				color: color("default-text");
+				display: flex;
+				flex: 1 1 auto;
+				flex-wrap: nowrap;
+				font-size: fs("lg");
+				min-height: to-rem(32px);
+				padding: p("base") p("sm");
+				transition: t(background box-shadow color, "link");
+				width: 100%;
+
+				.-compact & {
+					min-height: to-rem(24px);
+					padding: p("base");
+				}
+			}
+
+			> .compendium-list {
+				@extend %reset-list;
+				background: color("charcoal-100");
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+
+				.compendium-pack {
+					align-items: center;
+					background: color("charcoal-400");
+					border: none;
+					color: color("white");
+					cursor: pointer;
+					flex-wrap: wrap;
+					margin: m("base");
+					margin-block-end: 0;
+					min-height: to-rem(32px);
+					padding: p("base") p("sm");
+					position: relative;
+					transition: t(background box-shadow color, "link");
+
+					.-compact & {
+						min-height: to-rem(24px);
+						padding: p("base");
+					}
+
+					&:last-child {
+						margin-block-end: m("base");
+					}
+
+					&:hover {
+						@extend %global-hover;
+						background: color("primary");
+						color: color("white");
+					}
+
+					&:focus {
+						@extend %global-focus;
+					}
+
+					h4 {
+						@extend %h-tag;
+						color: color("white");
+						display: flex;
+						font-size: fs("lg");
+						width: 100%;
+
+						a {
+							@include ellipsis;
+							align-items: center;
+							display: flex;
+							flex: 1 1 auto;
+							margin-inline-end: m("sm");
+							text-shadow: none;
+
+							.-compact & {
+								margin-inline-end: m("base");
+							}
+
+							.folder {
+								padding: 0;
+								margin-inline-end: m("base");
+								width: auto;
+							}
+						}
+
+						.status-icons {
+							color: color("white");
+							flex: 0 0 auto;
+							position: relative;
+							right: auto;
+
+							> i {
+								margin: 0;
+								padding: p("xs");
+								font-size: fs("md");
+							}
+						}
+					}
+
+					.compendium-footer {
+						@include ellipsis;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+#sidebar,
+.sidebar-popout {
+	#tables {
+		.directory-list {
+			@extend %directory-subdirectory;
+		}
+
+		.directory-item {
+			@extend %directory-item;
+
+			&.folder {
+				@extend %folder;
+			}
+		}
+	}
+}

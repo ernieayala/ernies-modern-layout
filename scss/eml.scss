@@ -1,101 +1,96 @@
 @import "base";
 
-// Foundry Resets
-@import "./reset/chat";
-@import "./reset/context-menu";
-@import "./reset/hotbar";
-@import "./reset/loading-bar";
-@import "./reset/notifications";
-@import "./reset/pause";
-@import "./reset/players-connected";
-@import "./reset/scene-controls";
-@import "./reset/scene-navigation";
-@import "./reset/scroll-bar";
-@import "./reset/sidebar";
-@import "./reset/window-app";
+:root {
+	@include css-vars($_palette-default);
+	scrollbar-color: color("charcoal-300") color("black", 0.5);
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: to-rem(8px);
+
+	.-compact & {
+		width: to-rem(4px);
+	}
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px 0 color("charcoal-900", 0.5);
+	border: none;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: color("charcoal-300");
+	border: none;
+	border-radius: 0;
+	outline: none;
+}
 
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
-// Globals
-
-// Form Elements
-@import "./components/form-elements";
-
-// Misc - Img,Button
-@import "./components/misc";
-
-// start vtt wrapper
 body.eml.e-body#eml {
-	// Selection
 	::selection {
 		background: color("gray-200");
 	}
 
-	// Scroll Bar
-	@import "./components/scroll-bar";
-
-	// Window App
-	@import "./components/window-app";
-
-	// Context Menu
+	// Components
 	@import "./components/context-menu";
-
-	// Players Connected
-	@import "./components/players-connected";
-
-	// Notifications
-	@import "./components/notifications";
-
-	// Logo
-	@import "./components/logo";
-
-	// Scene Navigation
-	@import "./components/scene-navigation";
-
-	// Loading Bar
-	@import "./components/loading-bar";
-
-	// Scene Controls
-	@import "./components/scene-controls";
-
-	// Pause
-	@import "./components/pause";
-
-	// Hotbar
+	@import "./components/dialog";
 	@import "./components/hotbar";
+	@import "./components/loading-bar";
+	@import "./components/logo";
+	@import "./components/menu";
+	@import "./components/notes-hints";
+	@import "./components/notifications";
+	@import "./components/pause";
+	@import "./components/players-connected";
+	@import "./components/scene-controls";
+	@import "./components/scene-navigation";
+	@import "./components/window-app";
 
 	// Sidebar
 	@import "./components/sidebar";
+	@import "./components/sidebar-chat"; // 1
+	.-eml-tcsb & { @import "./components/sidebar-combat"; } // 2
+	@import "./components/sidebar-scenes"; // 3
+	@import "./components/sidebar-actors"; // 4
+	@import "./components/sidebar-items"; // 5
+	@import "./components/sidebar-journal"; // 6
+	@import "./components/sidebar-tables"; // 7
+	@import "./components/sidebar-playlists"; // 8
+	@import "./components/sidebar-compendium"; // 9
+	@import "./components/sidebar-settings"; // 10
 
-	// Chat
-	@import "./components/chat";
-
-	// Client Settings
-	@import "./components/client-settings";
-
-	// Menu
-	@import "./components/menu";
-
-	// Dialog
-	@import "./components/dialog";
-
-	// Filepicker
-	@import "./components/filepicker";
-
-	// Sheets - Lots of them
-	@import "./components/sheets";
-
-	// Notes and Hints
-	@import "./components/notes-hints";
-
-	// Garbage - fix once I move to globals
-	// Window App Compendium
-	@import "./components/window-app-compendium";
+	// Sheets Bulk
+	@import "./components/sheet-actor-flags";
+	@import "./components/sheet-client-settings";
+	@import "./components/sheet-combat-config";
+	@import "./components/sheet-drawing-config";
+	@import "./components/sheet-filepicker";
+	@import "./components/sheet-folder-edit";
+	@import "./components/sheet-grid-config";
+	@import "./components/sheet-light-config";
+	@import "./components/sheet-macro";
+	@import "./components/sheet-note-config";
+	@import "./components/sheet-permission";
+	@import "./components/sheet-player-config";
+	@import "./components/sheet-scene";
+	@import "./components/sheet-sheet-config";
+	@import "./components/sheet-short-rest-hd";
+	@import "./components/sheet-sound-config";
+	@import "./components/sheet-template-config";
+	@import "./components/sheet-tile-config";
+	@import "./components/sheet-token";
+	@import "./components/sheet-track-config";
+	@import "./components/sheet-trait-selector";
+	@import "./components/sheet-wall-config";
 
 	// Module Compatibility
+	@import "./module-compatibility/batch-folder-permissions";
 	@import "./module-compatibility/calendar-weather";
 	@import "./module-compatibility/combat-utility-belt";
 	@import "./module-compatibility/custom-hotbar";
@@ -107,18 +102,11 @@ body.eml.e-body#eml {
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/permission-viewer";
+	@import "./module-compatibility/plutonium";
 	@import "./module-compatibility/rolltable-button";
 	@import "./module-compatibility/response-time";
 	@import "./module-compatibility/tidy-ui-game-settings";
 	@import "./module-compatibility/token-action-hud";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/tweak-playlist";
-
-	// Plutonium Weirdness
-	@import "./module-compatibility/plutonium";
-
-	// Experimental
-	.-eml-ef & {
-		// Bulk Experimental
-	}
 }
