@@ -82,6 +82,7 @@
 					margin: 0;
 
 					img {
+						@extend %reset-image;
 						box-shadow: none;
 						transform: none;
 					}

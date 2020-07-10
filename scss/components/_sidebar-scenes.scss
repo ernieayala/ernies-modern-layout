@@ -14,7 +14,37 @@
 		}
 
 		.scene {
-			background-image: none !important; // my sin
+			background-position: 50%;
+			background-size: cover;
+
+			&:hover {
+				background-position: 50%;
+				background-size: cover;
+			}
+
+			h3 > a {
+				padding: p("sm") 0;
+				text-shadow: $global-text-shadow;
+
+				.-compact & {
+					padding: p("base") 0;
+				}
+			}
+		}
+
+		:not(.-emu-scene-thumbs) & {
+			.scene {
+				background-image: none !important;
+
+				h3 > a {
+					padding: 0;
+					text-shadow: none;
+
+					.-compact & {
+						padding: 0;
+					}
+				}
+			}
 		}
 	}
 }

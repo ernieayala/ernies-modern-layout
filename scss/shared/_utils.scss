@@ -19,6 +19,8 @@
 }
 
 %reset-image {
+	border: none;
+	border-radius: 0;
 	object-fit: cover;
 	object-position: 50% 50%;
 	position: relative;

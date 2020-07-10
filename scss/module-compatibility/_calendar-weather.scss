@@ -139,7 +139,7 @@
 			}
 
 			#calender-time-running {
-				@include absolute(bottom 0 right space("xs"));
+				@include absolute(bottom space("xs") right space("xs"));
 				margin-inline-start: m("base");
 			}
 		}

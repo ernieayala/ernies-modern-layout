@@ -32,7 +32,7 @@
 	box-sizing: border-box;
 }
 
-body.eml.e-body#eml {
+body.emu.e-body#emu {
 	::selection {
 		background: color("gray-200");
 	}
@@ -55,7 +55,7 @@ body.eml.e-body#eml {
 	// Sidebar
 	@import "./components/sidebar";
 	@import "./components/sidebar-chat"; // 1
-	.-eml-tcsb & { @import "./components/sidebar-combat"; } // 2
+	.-emu-sidebar-combat & { @import "./components/sidebar-combat"; } // 2
 	@import "./components/sidebar-scenes"; // 3
 	@import "./components/sidebar-actors"; // 4
 	@import "./components/sidebar-items"; // 5

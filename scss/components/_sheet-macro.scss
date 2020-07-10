@@ -13,6 +13,7 @@
 		}
 
 		img {
+			@extend %reset-image;
 			cursor: pointer;
 
 			&:hover {

@@ -5,11 +5,11 @@
 	display: block;
 	z-index: z("fixed");
 
-	.-eml-tm & {
+	.-emu-logo & {
 		top: to-rem(60px);
 	}
 
-	.-eml-tm.-compact & {
+	.-emu-logo.-compact & {
 		top: to-rem(40px);
 	}
 

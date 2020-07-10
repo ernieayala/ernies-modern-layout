@@ -14,10 +14,11 @@ Hooks.once('init', () => {
 	let myBody = document.getElementsByTagName('body');
 
 	// lets makes make this specificity stupid
-	myBody[0].classList.add('eml');
+	myBody[0].classList.add('emu');
 	myBody[0].classList.add('e-body');
-	myBody[0].setAttribute('id', 'eml');
+	myBody[0].setAttribute('id', 'emu');
 
+	// Theme
 	game.settings.register('ernies-modern-layout', 'primaryColor', {
 		name: 'Primary Theme Color',
 		hint: 'Use a full length hex value. Will make it better later. Default Value: #E57509',
@@ -34,7 +35,15 @@ Hooks.once('init', () => {
 			}
 		}
 	});
+	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
+	if(primaryColor && primaryColor.length === 7) {
+		let rgbValue = convertHex(primaryColor);
+		if(rgbValue) {
+			document.documentElement.style.setProperty('--color-primary', rgbValue);
+		}
+	}
 
+	// Layouts
 	game.settings.register('ernies-modern-layout', 'compactMode', {
 		name: 'Compact Mode',
 		scope: 'user',
@@ -45,36 +54,42 @@ Hooks.once('init', () => {
 			data === true ? myHtml[0].classList.add('-compact') : myHtml[0].classList.remove('-compact');
 		}
 	});
-
-	game.settings.register('ernies-modern-layout', 'toggleMark', {
-		name: 'Toggle Mark',
-		scope: 'user',
-		config: true,
-		default: false,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.remove('-eml-tm') : myHtml[0].classList.add('-eml-tm');
-		}
-	});
-
-	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
-	if(primaryColor && primaryColor.length === 7) {
-		let rgbValue = convertHex(primaryColor);
-		if(rgbValue) {
-			document.documentElement.style.setProperty('--color-primary', rgbValue);
-		}
-	}
-
 	const compactMode = game.settings.get('ernies-modern-layout', 'compactMode');
 	if(compactMode === true) {
 		myHtml[0].classList.add('-compact');
 	}
 
-	const toggleMark = game.settings.get('ernies-modern-layout', 'toggleMark');
-	if(toggleMark === true) {
-		myHtml[0].classList.remove('-eml-tm');
+	// Visual Toggles
+	game.settings.register('ernies-modern-layout', 'toggleLogo', {
+		name: 'Toggle Logo',
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
+		}
+	});
+	const toggleLogo = game.settings.get('ernies-modern-layout', 'toggleLogo');
+	if(toggleLogo === true) {
+		myHtml[0].classList.remove('-emu-logo');
 	} else {
-		myHtml[0].classList.add('-eml-tm');
+		myHtml[0].classList.add('-emu-logo');
+	}
+
+	game.settings.register('ernies-modern-layout', 'toggleSceneThumbs', {
+		name: 'Toggle Scene Thumbnails',
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
+		}
+	});
+	const toggleSceneThumbs = game.settings.get('ernies-modern-layout', 'toggleSceneThumbs');
+	if(toggleSceneThumbs === true) {
+		myHtml[0].classList.add('-emu-scene-thumbs');
 	}
 
 	// Turn off styling
@@ -86,14 +101,13 @@ Hooks.once('init', () => {
 		default: false,
 		type: Boolean,
 		onChange: data => {
-			data === true ? myHtml[0].classList.remove('-eml-tcsb') : myHtml[0].classList.add('-eml-tcsb');
+			data === true ? myHtml[0].classList.remove('-emu-sidebar-combat') : myHtml[0].classList.add('-emu-sidebar-combat');
 		}
 	});
-
 	const toggleCombatSidebar = game.settings.get('ernies-modern-layout', 'toggleCombatSidebar');
 	if(toggleCombatSidebar === true) {
-		myHtml[0].classList.remove('-eml-tcsb');
+		myHtml[0].classList.remove('-emu-sidebar-combat');
 	} else {
-		myHtml[0].classList.add('-eml-tcsb');
+		myHtml[0].classList.add('-emu-sidebar-combat');
 	}
 });

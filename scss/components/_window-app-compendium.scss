@@ -171,15 +171,13 @@
 			}
 
 			img {
+				@extend %reset-image;
 				@include size(space("icon"));
 				cursor: move;
 				flex: 0 0 auto;
 				margin-block-start: m("base");
 				margin-block-end: m("base");
 				margin-inline-end: m("sm");
-				object-fit: cover;
-				object-position: 50% 50%;
-				position: relative;
 
 				.-compact & {
 					@include size(to-rem(20px));

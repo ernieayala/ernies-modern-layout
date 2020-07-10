@@ -211,7 +211,7 @@
 					margin-inline-start: m("base");
 
 					img {
-						border-radius: 0;
+						@extend %reset-image;
 						cursor: default;
 						margin-block-end: m("base");
 						margin-inline-end: m("base");
