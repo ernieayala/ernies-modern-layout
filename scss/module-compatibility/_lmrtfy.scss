@@ -168,7 +168,7 @@
 
 			+ input[type="text"] {
 				height: to-rem(32px);
-				margin-right: 0 !important; // fucking gross
+				margin-right: 0 !important; // :(
 				margin-inline-end: m("base") !important;
 
 				.-compact & {

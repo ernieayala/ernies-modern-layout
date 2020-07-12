@@ -6,7 +6,7 @@
 
 #RTB-button {
 	@extend %control-button;
-	font-family: "Font Awesome 5 Free";
+	@extend %font-awesome;
 	font-size: fs("md");
 	margin: 0;
 	margin-inline-end: m("base");
@@ -14,7 +14,11 @@
 
 #RTB-menu {
 	margin: 0;
-	padding: 0;
+	padding: p("sm");
+
+	.-compact & {
+		padding: p("base");
+	}
 
 	.RTB-entry {
 		@extend %primary-button;

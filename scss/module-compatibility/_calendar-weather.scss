@@ -53,8 +53,7 @@
 
 		> i {
 			@extend %control-button;
-			font-family: "Font Awesome 5 Free";
-			font-weight: 900;
+			@extend %font-awesome;
 			margin: 0;
 
 			&:first-child {

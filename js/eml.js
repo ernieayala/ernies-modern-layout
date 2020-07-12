@@ -29,18 +29,14 @@ Hooks.once('init', () => {
 		onChange: data => {
 			if(data.length === 7) {
 				let rgbValue = convertHex(data);
-				if(rgbValue) {
-					document.documentElement.style.setProperty('--color-primary', rgbValue);
-				}
+				rgbValue ? document.documentElement.style.setProperty('--color-primary', rgbValue) : null;
 			}
 		}
 	});
 	const primaryColor = game.settings.get('ernies-modern-layout', 'primaryColor');
 	if(primaryColor && primaryColor.length === 7) {
 		let rgbValue = convertHex(primaryColor);
-		if(rgbValue) {
-			document.documentElement.style.setProperty('--color-primary', rgbValue);
-		}
+		rgbValue ? document.documentElement.style.setProperty('--color-primary', rgbValue): null;
 	}
 
 	// Layouts
@@ -55,9 +51,7 @@ Hooks.once('init', () => {
 		}
 	});
 	const compactMode = game.settings.get('ernies-modern-layout', 'compactMode');
-	if(compactMode === true) {
-		myHtml[0].classList.add('-compact');
-	}
+	compactMode ? myHtml[0].classList.add('-compact') : myHtml[0].classList.remove('-compact');
 
 	// Visual Toggles
 	game.settings.register('ernies-modern-layout', 'toggleLogo', {
@@ -71,11 +65,7 @@ Hooks.once('init', () => {
 		}
 	});
 	const toggleLogo = game.settings.get('ernies-modern-layout', 'toggleLogo');
-	if(toggleLogo === true) {
-		myHtml[0].classList.remove('-emu-logo');
-	} else {
-		myHtml[0].classList.add('-emu-logo');
-	}
+	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 
 	game.settings.register('ernies-modern-layout', 'toggleSceneThumbs', {
 		name: 'Toggle Scene Thumbnails',
@@ -88,9 +78,7 @@ Hooks.once('init', () => {
 		}
 	});
 	const toggleSceneThumbs = game.settings.get('ernies-modern-layout', 'toggleSceneThumbs');
-	if(toggleSceneThumbs === true) {
-		myHtml[0].classList.add('-emu-scene-thumbs');
-	}
+	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
 
 	// Turn off styling
 	game.settings.register('ernies-modern-layout', 'toggleCombatSidebar', {
@@ -105,9 +93,10 @@ Hooks.once('init', () => {
 		}
 	});
 	const toggleCombatSidebar = game.settings.get('ernies-modern-layout', 'toggleCombatSidebar');
-	if(toggleCombatSidebar === true) {
-		myHtml[0].classList.remove('-emu-sidebar-combat');
-	} else {
-		myHtml[0].classList.add('-emu-sidebar-combat');
-	}
+	toggleCombatSidebar ? myHtml[0].classList.remove('-emu-sidebar-combat') : myHtml[0].classList.add('-emu-sidebar-combat');
+
+	// Check for other modules
+	setTimeout(function() {
+		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
+	}, 1000);
 });

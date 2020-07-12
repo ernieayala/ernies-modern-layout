@@ -161,4 +161,34 @@
 			}
 		}
 	}
+
+	#chat #chat-controls .roll-type-select .fas.fa-dice-d20 {
+		@extend %control-button;
+		@extend %font-awesome;
+		font-size: fs("md");
+		margin: 0;
+		margin-inline-end: m("base");
+
+		.-emu-dice-tray-active & {
+			display: flex;
+		}
+	}
+}
+
+.dialog--dice-calculator {
+	.dice-calculator {
+		margin-block-start: m("sm");
+		margin-block-end: 0;
+
+		.dice-calculator__input > label {
+			font-size: fs("lg");
+			padding-inline-end: p("sm");
+		}
+
+		> button,
+		.dice-calculator--button {
+			@extend %default-button;
+			color: color("default-text");
+		}
+	}
 }

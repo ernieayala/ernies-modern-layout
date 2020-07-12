@@ -186,16 +186,10 @@
 
 					// fa hack
 					&.roll {
+						@extend %font-awesome;
 						@include size(space("button"));
 						background: transparent;
-						font-family: "Font Awesome 5 Free";
-						font-weight: 900;
-						-webkit-font-smoothing: antialiased;
 						font-size: fs("xl");
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
 						margin: 0;
 
 						&::before {
