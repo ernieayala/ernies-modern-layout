@@ -3,7 +3,7 @@
 	@include fixed(top to-rem(120px) left to-rem(148px));
 	border-radius: 0;
 	width: calc(100% - #{to-rem(520px)});
-	z-index: z("fixed");
+	z-index: z("tooltip");
 
 	.-compact & {
 		left: to-rem(112px);

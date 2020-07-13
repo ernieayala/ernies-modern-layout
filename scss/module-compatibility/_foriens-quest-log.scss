@@ -41,7 +41,7 @@
 
 	.editor-edit {
 		@extend %control-button;
-		@include absolute(top 0 right 0);
+		@include absolute(top space("base") right to-rem(12px));
 		background: color("gray-500");
 	}
 
@@ -217,6 +217,7 @@
 			button {
 				@extend %primary-button;
 				margin-block-start: m("sm");
+				width: 100%;
 			}
 		}
 
@@ -383,6 +384,11 @@
 }
 
 .forien-quest-preview {
+	.quest-body {
+		flex: 1 1 auto;
+		height: calc(100% - #{to-rem(32px)});
+	}
+
 	.details-tab,
 	.grid-container,
 	.tasks-gc,
@@ -471,10 +477,9 @@
 
 			img.open-actor-sheet {
 				@extend %reset-image;
-				@include size(auto);
+				@include size(100%, auto);
 				border-radius: 0;
 				max-height: to-rem(120px);
-				max-width: to-rem(120px);
 			}
 
 			span.open-actor-sheet,
@@ -482,6 +487,7 @@
 				@include ellipsis;
 				display: block;
 				font-size: fs("md");
+				text-align: left;
 			}
 
 			.quest-status {
@@ -497,15 +503,10 @@
 			.toggleImage {
 				@extend %control-button;
 				@extend %font-awesome;
-				@include absolute(bottom 0 right 0);
-				color: color("default-text");
+				@include absolute(top 0 right 0);
+				background: color("gray-500");
 				flex: 0 0 auto;
 				margin: 0;
-
-				&:hover,
-				&:focus {
-					color: color("white");
-				}
 			}
 		}
 
@@ -953,6 +954,12 @@
 					display: flex;
 				}
 			}
+		}
+	}
+
+	.gmnotes {
+		.editor-content {
+			overflow-y: auto;
 		}
 	}
 }
