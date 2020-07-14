@@ -201,6 +201,7 @@
 
 	.new-quest-btn {
 		@extend %primary-button;
+		text-transform: capitalize;
 	}
 }
 
@@ -427,6 +428,12 @@
 				position: sticky;
 				top: 0;
 				z-index: 1;
+
+				small.quest-name {
+					display: inline-block;
+					font-size: fs("md");
+					margin: 0;
+				}
 			}
 
 			.actions {
@@ -468,7 +475,7 @@
 			max-width: to-rem(200px);
 			padding-block-start: p("base");
 			padding-block-end: p("base");
-			padding-inline-end: p("base");
+			padding-inline-end: p("sm");
 
 			> div {
 				overflow: hidden;
@@ -515,7 +522,7 @@
 			height: 50%;
 			padding-block-start: p("base");
 			padding-block-end: p("base");
-			padding-inline-start: p("base");
+			padding-inline-start: p("sm");
 
 			&:hover {
 				.editor-edit{
@@ -548,7 +555,7 @@
 			flex: 1 1 60%;
 			flex-direction: column;
 			height: 50%;
-			padding-inline-end: p("base");
+			padding-inline-end: p("sm");
 
 			h3 {
 				@extend %h-tag;
@@ -595,8 +602,7 @@
 					top: auto;
 				}
 
-				> i,
-				.state-container > i {
+				> i {
 					left: auto;
 					margin-inline-end: m("base");
 					position: relative;
@@ -604,8 +610,36 @@
 				}
 
 				.state-container {
-					display: block;
-					margin-inline-start: m("base");
+					@include size(to-rem(16px));
+					align-items: center;
+					display: inline-flex;
+					font-size: fs("lg");
+					justify-content: center;
+					margin: 0 m("base");
+
+					> i {
+						@include absolute(top 0 left 0);
+						font-size: fs("lg");
+						opacity: 1;
+
+						&.state.fa-check {
+							color: color("positive");
+							font-size: to-rem(10px);
+							left: to-rem(2px);
+							top: to-rem(3px);
+						}
+
+						&.state.fa-times {
+							color: color("negative");
+							font-size: to-rem(11px);
+							left: to-rem(3px);
+							top: to-rem(2px);
+						}
+					}
+
+					+ span {
+						margin-inline-start: m("base");
+					}
 				}
 
 				.quest-name {
@@ -625,6 +659,10 @@
 
 					.task-name {
 						margin-inline-start: m("base");
+
+						&:only-child {
+							margin-inline-start: 0;
+						}
 					}
 				}
 
@@ -650,7 +688,7 @@
 			flex: 1 1 40%;
 			flex-direction: column;
 			height: 50%;
-			padding-inline-start: p("base");
+			padding-inline-start: p("sm");
 
 			h3 {
 				@extend %h-tag;

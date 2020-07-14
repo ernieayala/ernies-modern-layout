@@ -21,7 +21,7 @@ Hooks.once('init', () => {
 	// Theme
 	game.settings.register('ernies-modern-layout', 'primaryColor', {
 		name: 'Primary Theme Color',
-		hint: 'Use a full length hex value. Will make it better later. Default Value: #E57509',
+		hint: 'Use a full length hex value. Will make it better later. Default Value: #e57509 - Blue: #386acf - Green: #0fbd7d - Purple: #773edc - Red: #dc143c - Yellow: #edb950',
 		scope: 'user',
 		config: true,
 		default: '#E57509',

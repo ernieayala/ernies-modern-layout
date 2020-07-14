@@ -3182,10 +3182,8 @@ body.emu.e-body#emu .window-app {
       body.emu.e-body#emu .window-app .window-header a > span.fas {
         -webkit-margin-end: 0.25rem;
                 margin-inline-end: 0.25rem; }
-  body.emu.e-body#emu .window-app .window-content {
-    max-height: 80vh; }
-    .-compact body.emu.e-body#emu .window-app .window-content {
-      padding: 0.25rem; }
+  .-compact body.emu.e-body#emu .window-app .window-content {
+    padding: 0.25rem; }
   body.emu.e-body#emu .window-app .window-resizable-handle {
     right: 0;
     bottom: 0;
@@ -5317,6 +5315,9 @@ body.emu.e-body#emu #forien-quest-log .quest-log {
           max-height: 2.75rem;
           max-width: 2.75rem; }
 
+body.emu.e-body#emu #forien-quest-log .new-quest-btn {
+  text-transform: capitalize; }
+
 body.emu.e-body#emu #forien-quest-log-form .grid-container {
   gap: 0;
   grid-template-columns: 50% 50%;
@@ -5494,6 +5495,10 @@ body.emu.e-body#emu .forien-quest-preview .details .details-header {
     position: sticky;
     top: 0;
     z-index: 1; }
+    body.emu.e-body#emu .forien-quest-preview .details .details-header h2 small.quest-name {
+      display: inline-block;
+      font-size: 0.875rem;
+      margin: 0; }
   body.emu.e-body#emu .forien-quest-preview .details .details-header .actions {
     flex: 0 0 auto;
     -webkit-margin-start: 0.5rem;
@@ -5525,8 +5530,8 @@ body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc {
           padding-block-start: 0.25rem;
   -webkit-padding-after: 0.25rem;
           padding-block-end: 0.25rem;
-  -webkit-padding-end: 0.25rem;
-          padding-inline-end: 0.25rem; }
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem; }
   body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc > div {
     overflow: hidden;
     text-align: left; }
@@ -5562,8 +5567,8 @@ body.emu.e-body#emu .forien-quest-preview .details .description-gc {
           padding-block-start: 0.25rem;
   -webkit-padding-after: 0.25rem;
           padding-block-end: 0.25rem;
-  -webkit-padding-start: 0.25rem;
-          padding-inline-start: 0.25rem; }
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem; }
   body.emu.e-body#emu .forien-quest-preview .details .description-gc:hover .editor-edit {
     display: flex !important; }
   body.emu.e-body#emu .forien-quest-preview .details .description-gc .editor {
@@ -5584,8 +5589,8 @@ body.emu.e-body#emu .forien-quest-preview .details .tasks-gc {
   flex: 1 1 60%;
   flex-direction: column;
   height: 50%;
-  -webkit-padding-end: 0.25rem;
-          padding-inline-end: 0.25rem; }
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem; }
   body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 {
     align-items: center;
     -webkit-border-after: rgba(var(--color-primary), 1) 1px solid;
@@ -5622,17 +5627,39 @@ body.emu.e-body#emu .forien-quest-preview .details .tasks-gc {
       padding: 0.25rem;
       position: relative;
       top: auto; }
-    body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task > i,
-    body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container > i {
+    body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task > i {
       left: auto;
       -webkit-margin-end: 0.25rem;
               margin-inline-end: 0.25rem;
       position: relative;
       top: auto; }
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container {
-      display: block;
-      -webkit-margin-start: 0.25rem;
-              margin-inline-start: 0.25rem; }
+      width: 1rem;
+      height: 1rem;
+      align-items: center;
+      display: inline-flex;
+      font-size: 1rem;
+      justify-content: center;
+      margin: 0 0.25rem; }
+      body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container > i {
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-size: 1rem;
+        opacity: 1; }
+        body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container > i.state.fa-check {
+          color: rgba(var(--color-positive), 1);
+          font-size: 0.625rem;
+          left: 0.125rem;
+          top: 0.1875rem; }
+        body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container > i.state.fa-times {
+          color: rgba(var(--color-negative), 1);
+          font-size: 0.6875rem;
+          left: 0.1875rem;
+          top: 0.125rem; }
+      body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .state-container + span {
+        -webkit-margin-start: 0.25rem;
+                margin-inline-start: 0.25rem; }
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .quest-name {
       cursor: pointer;
       font-size: 0.875rem;
@@ -5647,6 +5674,9 @@ body.emu.e-body#emu .forien-quest-preview .details .tasks-gc {
       body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .editable-container .task-name {
         -webkit-margin-start: 0.25rem;
                 margin-inline-start: 0.25rem; }
+        body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .editable-container .task-name:only-child {
+          -webkit-margin-start: 0;
+                  margin-inline-start: 0; }
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState,
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn,
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleHidden {
@@ -5665,8 +5695,8 @@ body.emu.e-body#emu .forien-quest-preview .details .rewards-gc {
   flex: 1 1 40%;
   flex-direction: column;
   height: 50%;
-  -webkit-padding-start: 0.25rem;
-          padding-inline-start: 0.25rem; }
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem; }
   body.emu.e-body#emu .forien-quest-preview .details .rewards-gc h3 {
     align-items: center;
     -webkit-border-after: rgba(var(--color-primary), 1) 1px solid;

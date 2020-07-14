@@ -11,7 +11,7 @@
 		"start": "node-sass --watch scss -o css",
 		"build": "node-sass scss -o css & postcss css/eml.css -u autoprefixer --no-map -d css/"
 	},
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"devDependencies": {
 		"teq-tonic": "*",
 		"node-sass": "*",
