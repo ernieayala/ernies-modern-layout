@@ -51,10 +51,10 @@
 
 		.lmrtfy-submit {
 			@extend %button-icon;
-			background: color("charcoal-50");
+			background: color("background-lightest");
 			border-radius: 0;
 			border-block-start: b("border");
-			box-shadow: 0 space("sm") 0 0 color("charcoal-50");
+			box-shadow: 0 space("sm") 0 0 color("background-lightest");
 			bottom: 0;
 			display: flex;
 			left: 0;
@@ -179,7 +179,7 @@
 	}
 
 	form button {
-		background: color("gray-500");
+		background: color("background-button");
 		border: none;
 	}
 }

@@ -82,8 +82,8 @@
 		#macro-directory,
 		#bar-toggle {
 			align-items: center;
-			background: color("charcoal-500", 0.8);
-			color: color("white");
+			background: color("background", 0.8);
+			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -117,8 +117,8 @@
 		}
 
 		.page-number {
-			background: color("charcoal-500", 0.5);
-			color: color("white");
+			background: color("background", 0.5);
+			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
 			font-size: fs("md");
@@ -134,11 +134,11 @@
 	.macro {
 		@include size(to-rem(56px));
 		align-items: center;
-		background: color("charcoal-500", 0.8);
+		background: color("background", 0.8);
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
-		color: color("white");
+		color: color("text-lightest");
 		cursor: pointer;
 		display: flex;
 		flex: 0 0 auto;
@@ -165,13 +165,13 @@
 
 		&.active {
 			@extend %global-active;
-			background: color("charcoal-500", 0.8);
+			background: color("background", 0.8);
 		}
 
 		.macro-key {
 			@include absolute(top space("xs") right space("base"));
 			background: transparent;
-			color: color("white");
+			color: color("text-lightest");
 			font-weight: 600;
 			padding: 0;
 			text-shadow: 2px 2px  2px color("charcoal-900");
@@ -193,10 +193,10 @@
 		}
 
 		.tooltip {
-			background: color("charcoal-900", 0.5);
+			background: color("background-darkest", 0.5);
 			border: none;
 			border-radius: 0;
-			color: color("white");
+			color: color("text-lightest");
 			font-size: fs("md");
 			height: auto;
 			left: 0;

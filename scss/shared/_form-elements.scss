@@ -3,7 +3,7 @@
 	background: transparent;
 	border: b("border");
 	border-radius: 0;
-	color: color("default-text");
+	color: color("text");
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: normal;
@@ -42,7 +42,7 @@
 	background: transparent;
 	border: b("border");
 	border-radius: 0;
-	color: color("default-text");
+	color: color("text");
 	cursor: pointer;
 	font-family: inherit;
 	font-size: inherit;
@@ -73,7 +73,7 @@
 
 	optgroup {
 		background: color("white");
-		color: color("default-text");
+		color: color("text");
 	}
 }
 
@@ -83,11 +83,12 @@
 	border: b("border");
 	border-radius: 0;
 	box-shadow: none;
-	color: color("default-text");
+	color: color("text");
 	cursor: pointer;
 	flex: 0 0 auto;
 	margin: 0;
 	position: relative;
+	top: auto;
 	transition: t(box-shadow, "link");
 
 	.-compact & {
@@ -109,7 +110,7 @@
 
 	&:checked {
 		background: color("primary");
-		color: color("white");
+		color: color("text-lightest");
 	}
 }
 
@@ -161,7 +162,7 @@
 
 	&::-webkit-slider-runnable-track {
 		@include size(100%, to-rem(8px));
-		background: color("charcoal-500", 0.8);
+		background: color("background", 0.8);
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -170,15 +171,15 @@
 	}
 
 	&:focus::-webkit-slider-runnable-track {
-		background: color("charcoal-500");
+		background: color("background");
 	}
 
 	&:focus::-ms-fill-lower {
-		background: color("charcoal-500");
+		background: color("background");
 	}
 
 	&:focus::-ms-fill-upper {
-		background: color("charcoal-500");
+		background: color("background");
 	}
 
 	&::-webkit-slider-thumb {
@@ -199,7 +200,7 @@
 
 	&::-moz-range-track {
 		@include size(100%, to-rem(8px));
-		background: color("charcoal-500", 0.8);
+		background: color("background", 0.8);
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -226,7 +227,7 @@
 	+ .range-value {
 		align-items: center;
 		border: none;
-		color: color("default-text");
+		color: color("text");
 		display: flex;
 		flex: 0 0 auto;
 		font-size: fs("md");
@@ -243,7 +244,7 @@
 	background: transparent;
 	border: b("border");
 	border-radius: 0;
-	color: color("default-text");
+	color: color("text");
 	font-family: inherit;
 	font-size: inherit;
 	margin: 0;

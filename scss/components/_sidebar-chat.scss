@@ -3,9 +3,9 @@
 	#chat {
 		#chat-controls {
 			align-items: center;
-			background: color("charcoal-500", 0.5);
+			background: color("background", 0.5);
 			border-block-start: b("border");
-			color: color("white");
+			color: color("text-lightest");
 			display: flex;
 			flex: 0 0 auto;
 			margin: 0;
@@ -27,8 +27,8 @@
 
 				select {
 					@extend %input-select;
-					background: color("charcoal-500", 0.5);
-					color: color("white");
+					background: color("background", 0.5);
+					color: color("text-lightest");
 					top: auto;
 					width: auto;
 
@@ -64,9 +64,9 @@
 
 		#chat-form {
 			align-items: center;
-			background: color("charcoal-500", 0.5);
+			background: color("background", 0.5);
 			border-block-start: b("border");
-			color: color("white");
+			color: color("text-lightest");
 			display: flex;
 			flex: 0 0 auto;
 			height: to-rem(112px);

@@ -10,7 +10,7 @@
 		h2,
 		h4 {
 			@extend %h-tag;
-			color: color("white");
+			color: color("text-lightest");
 			padding: 0;
 			margin-block-end: m("sm");
 

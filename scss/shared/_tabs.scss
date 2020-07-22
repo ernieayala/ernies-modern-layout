@@ -9,7 +9,7 @@
 		@extend %primary-button;
 		@extend %button-icon;
 		background: transparent;
-		color: color("default-text");
+		color: color("text");
 		flex: 1 1 auto;
 		font-size: fs("md");
 		text-shadow: none;

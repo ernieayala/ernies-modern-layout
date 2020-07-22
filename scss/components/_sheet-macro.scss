@@ -61,10 +61,10 @@
 	}
 
 	.sheet-footer {
-		background: color("charcoal-50");
+		background: color("background-lightest");
 		border-block-start: b("charcoal-600");
 		bottom: 0;
-		box-shadow: 0 space("sm") 0 0 color("charcoal-50");
+		box-shadow: 0 space("sm") 0 0 color("background-lightest");
 		display: flex;
 		flex: 0 0 auto;
 		margin-inline-start: -(m("sm"));
@@ -74,7 +74,7 @@
 		width: calc(100% + #{space("md")});
 
 		.-compact & {
-			box-shadow: 0 space("base") 0 0 color("charcoal-50");
+			box-shadow: 0 space("base") 0 0 color("background-lightest");
 			margin-inline-start: -(m("base"));
 			padding: 0 p("base");
 			padding-block-start: p("base");

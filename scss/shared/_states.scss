@@ -20,12 +20,12 @@
 
 %global-active {
 	background: color("primary");
-	color: color("white");
+	color: color("text-lightest");
 	text-shadow: none;
 
 	&:hover {
 		background: color("primary");
-		color: color("white");
+		color: color("text-lightest");
 		text-shadow: none;
 	}
 

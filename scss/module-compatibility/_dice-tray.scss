@@ -58,7 +58,7 @@
 			align-items: center;
 			background: color("primary");
 			border-radius: 0;
-			color: color("white");
+			color: color("text-lightest");
 			display: flex;
 			font-size: fs("md");
 			justify-content: center;
@@ -188,7 +188,7 @@
 		> button,
 		.dice-calculator--button {
 			@extend %default-button;
-			color: color("default-text");
+			color: color("text");
 		}
 	}
 }

@@ -1,16 +1,16 @@
 #sidebar,
 .sidebar-popout {
 	#playlists {
-		color: color("white");
+		color: color("text-lightest");
 
 		.directory-list {
 			padding-block-start: 0;
 			position: relative;
 
 			> .playlist:first-child {
-				background: color("charcoal-500", 0.5);
+				background: color("background", 0.5);
 				border-block-end: b("border");
-				color: color("white");
+				color: color("text-lightest");
 				display: flex;
 				flex: 0 0 auto;
 				flex-direction: column;
@@ -24,7 +24,7 @@
 				.playlist-header {
 					background: transparent;
 					border-block-end: b("border");
-					color: color("white");
+					color: color("text-lightest");
 					font-size: fs("xl");
 					padding-inline-start: 0;
 					pointer-events: none;
@@ -49,7 +49,7 @@
 					h4 {
 						@extend %h-tag;
 						border-block-end: 0;
-						color: color("white");
+						color: color("text-lightest");
 						font-size: fs("lg");
 
 						+ input[type="range"] {
@@ -110,8 +110,8 @@
 
 			.playlist-header {
 				align-items: center;
-				background: color("charcoal-200");
-				color: color("default-text");
+				background: color("folder-header");
+				color: color("text");
 				cursor: pointer;
 				border-radius: 0;
 				display: flex;
@@ -130,7 +130,7 @@
 				&:hover {
 					background: color("primary");
 					box-shadow: inset 0 0 0 2px color("white");
-					color: color("white");
+					color: color("text-lightest");
 				}
 
 				&:focus {
@@ -161,7 +161,7 @@
 
 			.playlist-sounds {
 				@extend %reset-list;
-				background: color("charcoal-100");
+				background: color("folder-subdirectory");
 
 				.sound {
 					align-items: center;
@@ -179,7 +179,7 @@
 					h4 {
 						@extend %h-tag;
 						@include ellipsis;
-						color: color("default-text");
+						color: color("text");
 						flex: 1 1 auto;
 						font-size: fs("lg");
 						max-width: 100%;
@@ -206,11 +206,11 @@
 					}
 
 					.sound-control {
-						color: color("default-text");
+						color: color("text");
 
 						&.disabled {
 							color: color("gray-100");
-							display: none;
+							opacity: 0.4;
 							pointer-events: none;
 						}
 
@@ -242,7 +242,7 @@
 
 						&:hover,
 						&:focus {
-							color: color("white");
+							color: color("text-lightest");
 						}
 					}
 				}
@@ -255,7 +255,7 @@
 				.sound-control {
 					&.disabled {
 						color: color("gray-100");
-						display: none;
+						opacity: 0.4;
 						pointer-events: none;
 					}
 				}

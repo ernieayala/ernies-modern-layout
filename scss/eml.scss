@@ -92,6 +92,7 @@ body.emu.e-body#emu {
 	// Module Compatibility
 	@import "./module-compatibility/batch-folder-permissions";
 	@import "./module-compatibility/calendar-weather";
+	@import "./module-compatibility/color-picker";
 	@import "./module-compatibility/combat-utility-belt";
 	@import "./module-compatibility/custom-hotbar";
 	@import "./module-compatibility/dancing-lights";
@@ -107,6 +108,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/response-time";
 	@import "./module-compatibility/tidy-ui-game-settings";
 	@import "./module-compatibility/token-action-hud";
+	@import "./module-compatibility/token-auras";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/tweak-playlist";
 }

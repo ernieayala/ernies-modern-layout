@@ -49,7 +49,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   border: none;
   border-radius: 0;
   box-shadow: none;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   cursor: pointer;
   display: inline-flex;
   font-family: "Signika", sans-serif;
@@ -156,7 +156,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu .sidebar-popout .token-mold > a:hover, body.emu.e-body#emu .dialog--dice-calculator .dice-calculator > button:hover,
   body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--button:hover, body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wrapper h2.module-header:hover {
     background: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-white), 1); }
+    color: rgba(var(--color-text-lightest), 1); }
   body.emu.e-body#emu #client-settings .sheet-tabs a:disabled, body.emu.e-body#emu .window-app.filepicker .sheet-tabs a:disabled, body.emu.e-body#emu .sheet.macro-sheet .sheet-tabs a:disabled, body.emu.e-body#emu .sheet.scene-sheet .sheet-tabs a:disabled, body.emu.e-body#emu .sheet.token-sheet .sheet-tabs a:disabled, body.emu.e-body#emu #client-settings .sheet-navigation a:disabled, body.emu.e-body#emu .window-app.filepicker .sheet-navigation a:disabled, body.emu.e-body#emu .sheet.macro-sheet .sheet-navigation a:disabled, body.emu.e-body#emu .sheet.scene-sheet .sheet-navigation a:disabled, body.emu.e-body#emu .sheet.token-sheet .sheet-navigation a:disabled, body.emu.e-body#emu #drawing-config form .sheet-tabs a:disabled, body.emu.e-body#emu .window-app.filepicker .filepicker-header .tabs a:disabled, body.emu.e-body#emu #forien-quest-log .log-tabs a:disabled, body.emu.e-body#emu #forien-quest-log .quest-tabs a:disabled, body.emu.e-body#emu #forien-quest-log-form .log-tabs a:disabled, body.emu.e-body#emu #forien-quest-log-form .quest-tabs a:disabled, body.emu.e-body#emu .forien-quest-preview .log-tabs a:disabled, body.emu.e-body#emu .forien-quest-preview .quest-tabs a:disabled, body.emu.e-body#emu #actor-flags button:disabled, body.emu.e-body#emu #client-settings button:disabled, body.emu.e-body#emu #combat-config button:disabled, body.emu.e-body#emu #drawing-config button:disabled, body.emu.e-body#emu .window-app.filepicker button:disabled, body.emu.e-body#emu #folder-edit button:disabled, body.emu.e-body#emu #grid-config button:disabled, body.emu.e-body#emu #light-config button:disabled, body.emu.e-body#emu .sheet.macro-sheet button:disabled, body.emu.e-body#emu #note-config button:disabled, body.emu.e-body#emu #permission button:disabled, body.emu.e-body#emu #player-config button:disabled, body.emu.e-body#emu .sheet.scene-sheet button:disabled, body.emu.e-body#emu #sheet-config button:disabled, body.emu.e-body#emu #short-rest-hd button:disabled, body.emu.e-body#emu #sound-config button:disabled, body.emu.e-body#emu #template-config button:disabled, body.emu.e-body#emu #tile-config button:disabled, body.emu.e-body#emu .sheet.token-sheet button:disabled, body.emu.e-body#emu #track-config button:disabled, body.emu.e-body#emu #trait-selector button:disabled, body.emu.e-body#emu #wall-config button:disabled, body.emu.e-body#emu #batch-permissions button:disabled, body.emu.e-body#emu #lmrtfy button:disabled, body.emu.e-body#emu .window-app.dialog .dialog-buttons .dialog-button:disabled, body.emu.e-body#emu #menu #menu-items li:disabled, body.emu.e-body#emu #sidebar .sidebar-tab .directory-footer button:disabled,
   body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-footer button:disabled, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control:disabled,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control:disabled, body.emu.e-body#emu #sidebar #settings button:disabled,
@@ -219,7 +219,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu #RTB-menu .RTB-entry, body.emu.e-body#emu #token-action-hud button.tah-title-button,
 body.emu.e-body#emu #token-action-hud .tah-action button, body.emu.e-body#emu #sidebar .token-mold > label > span,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span {
-  background: rgba(var(--color-gray-500), 1); }
+  background: rgba(var(--color-background-button), 1); }
 
 body.emu.e-body#emu #sidebar #scenes .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu .sidebar-popout #scenes .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu #sidebar #actors .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu .sidebar-popout #actors .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu #sidebar #items .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu .sidebar-popout #items .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu #sidebar #journal .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu .sidebar-popout #journal .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu #sidebar #tables .directory-item.folder .folder-header .create-folder, body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder .folder-header .create-folder,
 body.emu.e-body#emu #sidebar #scenes .directory-item.folder .folder-header .create-entity,
@@ -310,10 +310,10 @@ body.emu.e-body#emu .sidebar-popout #items .directory-item, body.emu.e-body#emu 
 body.emu.e-body#emu .sidebar-popout #journal .directory-item, body.emu.e-body#emu #sidebar #tables .directory-item,
 body.emu.e-body#emu .sidebar-popout #tables .directory-item, body.emu.e-body#emu #player-config .directory-item {
   align-items: center;
-  background: rgba(var(--color-charcoal-400), 1);
+  background: rgba(var(--color-folder-directory), 1);
   border: none;
   box-shadow: none;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   cursor: pointer;
   display: flex;
   flex-wrap: nowrap;
@@ -340,7 +340,7 @@ body.emu.e-body#emu .sidebar-popout #tables .directory-item, body.emu.e-body#emu
   body.emu.e-body#emu .sidebar-popout #journal .directory-item:hover, body.emu.e-body#emu #sidebar #tables .directory-item:hover,
   body.emu.e-body#emu .sidebar-popout #tables .directory-item:hover, body.emu.e-body#emu #player-config .directory-item:hover {
     background: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-white), 1); }
+    color: rgba(var(--color-text-lightest), 1); }
   body.emu.e-body#emu #sidebar #scenes .folder.directory-item,
   body.emu.e-body#emu .sidebar-popout #scenes .folder.directory-item, body.emu.e-body#emu #sidebar #actors .folder.directory-item,
   body.emu.e-body#emu .sidebar-popout #actors .folder.directory-item, body.emu.e-body#emu #sidebar #items .folder.directory-item,
@@ -472,7 +472,7 @@ body.emu.e-body#emu .sidebar-popout #tables .directory-list {
   body.emu.e-body#emu #sidebar #scenes .directory-list .subdirectory, body.emu.e-body#emu .sidebar-popout #scenes .directory-list .subdirectory, body.emu.e-body#emu #sidebar #actors .directory-list .subdirectory, body.emu.e-body#emu .sidebar-popout #actors .directory-list .subdirectory, body.emu.e-body#emu #sidebar #items .directory-list .subdirectory, body.emu.e-body#emu .sidebar-popout #items .directory-list .subdirectory, body.emu.e-body#emu #sidebar #journal .directory-list .subdirectory, body.emu.e-body#emu .sidebar-popout #journal .directory-list .subdirectory, body.emu.e-body#emu #sidebar #tables .directory-list .subdirectory, body.emu.e-body#emu .sidebar-popout #tables .directory-list .subdirectory {
     display: flex;
     flex-direction: column;
-    background: rgba(var(--color-charcoal-100), 1);
+    background: rgba(var(--color-folder-subdirectory), 1);
     border: none;
     -webkit-border-start: rgba(var(--color-primary), 1) 4px solid;
             border-inline-start: rgba(var(--color-primary), 1) 4px solid;
@@ -553,11 +553,11 @@ body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder {
               border-inline-start: none; }
   body.emu.e-body#emu #sidebar #scenes .directory-item.folder .folder-header, body.emu.e-body#emu .sidebar-popout #scenes .directory-item.folder .folder-header, body.emu.e-body#emu #sidebar #actors .directory-item.folder .folder-header, body.emu.e-body#emu .sidebar-popout #actors .directory-item.folder .folder-header, body.emu.e-body#emu #sidebar #items .directory-item.folder .folder-header, body.emu.e-body#emu .sidebar-popout #items .directory-item.folder .folder-header, body.emu.e-body#emu #sidebar #journal .directory-item.folder .folder-header, body.emu.e-body#emu .sidebar-popout #journal .directory-item.folder .folder-header, body.emu.e-body#emu #sidebar #tables .directory-item.folder .folder-header, body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder .folder-header {
     align-items: center;
-    background: rgba(var(--color-charcoal-200), 1);
+    background: rgba(var(--color-folder-header), 1);
     border: 0;
     -webkit-border-start: rgba(var(--color-primary), 1) 4px solid;
             border-inline-start: rgba(var(--color-primary), 1) 4px solid;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     cursor: pointer;
     display: flex;
     flex-wrap: nowrap;
@@ -572,7 +572,7 @@ body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder {
       padding: 0.25rem; }
     body.emu.e-body#emu #sidebar #scenes .directory-item.folder .folder-header:hover, body.emu.e-body#emu .sidebar-popout #scenes .directory-item.folder .folder-header:hover, body.emu.e-body#emu #sidebar #actors .directory-item.folder .folder-header:hover, body.emu.e-body#emu .sidebar-popout #actors .directory-item.folder .folder-header:hover, body.emu.e-body#emu #sidebar #items .directory-item.folder .folder-header:hover, body.emu.e-body#emu .sidebar-popout #items .directory-item.folder .folder-header:hover, body.emu.e-body#emu #sidebar #journal .directory-item.folder .folder-header:hover, body.emu.e-body#emu .sidebar-popout #journal .directory-item.folder .folder-header:hover, body.emu.e-body#emu #sidebar #tables .directory-item.folder .folder-header:hover, body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder .folder-header:hover {
       background: rgba(var(--color-primary), 1);
-      color: rgba(var(--color-white), 1); }
+      color: rgba(var(--color-text-lightest), 1); }
     body.emu.e-body#emu #sidebar #scenes .directory-item.folder .folder-header h3, body.emu.e-body#emu .sidebar-popout #scenes .directory-item.folder .folder-header h3, body.emu.e-body#emu #sidebar #actors .directory-item.folder .folder-header h3, body.emu.e-body#emu .sidebar-popout #actors .directory-item.folder .folder-header h3, body.emu.e-body#emu #sidebar #items .directory-item.folder .folder-header h3, body.emu.e-body#emu .sidebar-popout #items .directory-item.folder .folder-header h3, body.emu.e-body#emu #sidebar #journal .directory-item.folder .folder-header h3, body.emu.e-body#emu .sidebar-popout #journal .directory-item.folder .folder-header h3, body.emu.e-body#emu #sidebar #tables .directory-item.folder .folder-header h3, body.emu.e-body#emu .sidebar-popout #tables .directory-item.folder .folder-header h3 {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -642,14 +642,15 @@ body.emu.e-body#emu #batch-permissions input[type="datetime-local"],
 body.emu.e-body#emu #lmrtfy input[type="datetime-local"],
 body.emu.e-body#emu .window-app.dialog input[type="datetime-local"], body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input,
 body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input, body.emu.e-body#emu #sidebar #chat #chat-form textarea,
-body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput,
+body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input,
+body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput {
   width: 100%;
   height: 2rem;
   background: transparent;
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   font-family: inherit;
   font-size: inherit;
   font-weight: normal;
@@ -715,15 +716,16 @@ body.emu.e-body#emu #module-management .enhanced-module-management #searchField 
   .-compact body.emu.e-body#emu #lmrtfy input[type="datetime-local"], body.emu.e-body#emu #lmrtfy .-compact input[type="datetime-local"],
   .-compact body.emu.e-body#emu .window-app.dialog input[type="datetime-local"], body.emu.e-body#emu .window-app.dialog .-compact input[type="datetime-local"], .-compact body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search .-compact input,
   .-compact body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search .-compact input, .-compact body.emu.e-body#emu #sidebar #chat #chat-form textarea, body.emu.e-body#emu #sidebar #chat #chat-form .-compact textarea,
-  .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea, body.emu.e-body#emu .sidebar-popout #chat #chat-form .-compact textarea, .-compact body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input, body.emu.e-body#emu #sidebar .dice-tray .-compact input.dice-tray__input, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"], body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset .-compact input[type="text"], .-compact body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header .-compact input[type="text"], .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact input, .-compact body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .-compact input, .-compact body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .-compact #searchInput,
+  .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea, body.emu.e-body#emu .sidebar-popout #chat #chat-form .-compact textarea, .-compact body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource .-compact input,
+  .-compact body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input, body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource .-compact input, .-compact body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input, body.emu.e-body#emu #sidebar .dice-tray .-compact input.dice-tray__input, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"], body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset .-compact input[type="text"], .-compact body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header .-compact input[type="text"], .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact input, .-compact body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .-compact input, .-compact body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .-compact #searchInput,
   .-compact body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput, body.emu.e-body#emu #module-management .enhanced-module-management #searchField .-compact #searchInput {
     height: 1.5rem;
     padding: 0 0.25rem; }
-  body.emu.e-body#emu #actor-flags input[type="text"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="text"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="text"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]::-moz-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="password"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="password"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]::-moz-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input::-moz-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input::-moz-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea::-moz-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::-moz-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::-moz-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::-moz-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-moz-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput::-moz-placeholder {
+  body.emu.e-body#emu #actor-flags input[type="text"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="text"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="text"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="text"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]::-moz-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="password"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="password"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="password"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]::-moz-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]::-moz-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input::-moz-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input::-moz-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea::-moz-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::-moz-placeholder, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input::-moz-placeholder, body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input::-moz-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::-moz-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::-moz-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::-moz-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-moz-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput::-moz-placeholder {
     color: rgba(var(--color-gray-400), 1); }
-  body.emu.e-body#emu #actor-flags input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input:-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input:-ms-input-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea:-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:-ms-input-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:-ms-input-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:-ms-input-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:-ms-input-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput:-ms-input-placeholder {
+  body.emu.e-body#emu #actor-flags input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]:-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]:-ms-input-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input:-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input:-ms-input-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea:-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:-ms-input-placeholder, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input:-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input:-ms-input-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:-ms-input-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:-ms-input-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:-ms-input-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput:-ms-input-placeholder {
     color: rgba(var(--color-gray-400), 1); }
-  body.emu.e-body#emu #actor-flags input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input::-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input::-ms-input-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea::-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::-ms-input-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::-ms-input-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::-ms-input-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-ms-input-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput::-ms-input-placeholder {
+  body.emu.e-body#emu #actor-flags input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="password"]::-ms-input-placeholder, body.emu.e-body#emu #actor-flags input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #client-settings input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #combat-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #drawing-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.filepicker input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #folder-edit input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #grid-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #light-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #note-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #permission input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #player-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sheet-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #short-rest-hd input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sound-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #template-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #tile-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #track-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #trait-selector input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #wall-config input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #batch-permissions input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #lmrtfy input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]::-ms-input-placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input::-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input::-ms-input-placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea::-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::-ms-input-placeholder, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input::-ms-input-placeholder, body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input::-ms-input-placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::-ms-input-placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::-ms-input-placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::-ms-input-placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-ms-input-placeholder, body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput::-ms-input-placeholder {
     color: rgba(var(--color-gray-400), 1); }
   body.emu.e-body#emu #actor-flags input[type="text"]::placeholder, body.emu.e-body#emu #client-settings input[type="text"]::placeholder, body.emu.e-body#emu #combat-config input[type="text"]::placeholder, body.emu.e-body#emu #drawing-config input[type="text"]::placeholder, body.emu.e-body#emu .window-app.filepicker input[type="text"]::placeholder, body.emu.e-body#emu #folder-edit input[type="text"]::placeholder, body.emu.e-body#emu #grid-config input[type="text"]::placeholder, body.emu.e-body#emu #light-config input[type="text"]::placeholder, body.emu.e-body#emu .sheet.macro-sheet input[type="text"]::placeholder, body.emu.e-body#emu #note-config input[type="text"]::placeholder, body.emu.e-body#emu #permission input[type="text"]::placeholder, body.emu.e-body#emu #player-config input[type="text"]::placeholder, body.emu.e-body#emu .sheet.scene-sheet input[type="text"]::placeholder, body.emu.e-body#emu #sheet-config input[type="text"]::placeholder, body.emu.e-body#emu #short-rest-hd input[type="text"]::placeholder, body.emu.e-body#emu #sound-config input[type="text"]::placeholder, body.emu.e-body#emu #template-config input[type="text"]::placeholder, body.emu.e-body#emu #tile-config input[type="text"]::placeholder, body.emu.e-body#emu .sheet.token-sheet input[type="text"]::placeholder, body.emu.e-body#emu #track-config input[type="text"]::placeholder, body.emu.e-body#emu #trait-selector input[type="text"]::placeholder, body.emu.e-body#emu #wall-config input[type="text"]::placeholder, body.emu.e-body#emu #batch-permissions input[type="text"]::placeholder, body.emu.e-body#emu #lmrtfy input[type="text"]::placeholder, body.emu.e-body#emu .window-app.dialog input[type="text"]::placeholder,
   body.emu.e-body#emu #actor-flags input[type="password"]::placeholder,
@@ -777,7 +779,8 @@ body.emu.e-body#emu #module-management .enhanced-module-management #searchField 
   body.emu.e-body#emu #lmrtfy input[type="datetime-local"]::placeholder,
   body.emu.e-body#emu .window-app.dialog input[type="datetime-local"]::placeholder, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input::placeholder,
   body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input::placeholder, body.emu.e-body#emu #sidebar #chat #chat-form textarea::placeholder,
-  body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder,
+  body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea::placeholder, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input::placeholder,
+  body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input::placeholder, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input::placeholder, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input[type="text"]::placeholder, body.emu.e-body#emu .forien-quest-preview .details .details-header input[type="text"]::placeholder, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input::placeholder, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input::placeholder, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder,
   body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput::placeholder {
     color: rgba(var(--color-gray-400), 1); }
   body.emu.e-body#emu #actor-flags input:disabled[type="text"], body.emu.e-body#emu #client-settings input:disabled[type="text"], body.emu.e-body#emu #combat-config input:disabled[type="text"], body.emu.e-body#emu #drawing-config input:disabled[type="text"], body.emu.e-body#emu .window-app.filepicker input:disabled[type="text"], body.emu.e-body#emu #folder-edit input:disabled[type="text"], body.emu.e-body#emu #grid-config input:disabled[type="text"], body.emu.e-body#emu #light-config input:disabled[type="text"], body.emu.e-body#emu .sheet.macro-sheet input:disabled[type="text"], body.emu.e-body#emu #note-config input:disabled[type="text"], body.emu.e-body#emu #permission input:disabled[type="text"], body.emu.e-body#emu #player-config input:disabled[type="text"], body.emu.e-body#emu .sheet.scene-sheet input:disabled[type="text"], body.emu.e-body#emu #sheet-config input:disabled[type="text"], body.emu.e-body#emu #short-rest-hd input:disabled[type="text"], body.emu.e-body#emu #sound-config input:disabled[type="text"], body.emu.e-body#emu #template-config input:disabled[type="text"], body.emu.e-body#emu #tile-config input:disabled[type="text"], body.emu.e-body#emu .sheet.token-sheet input:disabled[type="text"], body.emu.e-body#emu #track-config input:disabled[type="text"], body.emu.e-body#emu #trait-selector input:disabled[type="text"], body.emu.e-body#emu #wall-config input:disabled[type="text"], body.emu.e-body#emu #batch-permissions input:disabled[type="text"], body.emu.e-body#emu #lmrtfy input:disabled[type="text"], body.emu.e-body#emu .window-app.dialog input:disabled[type="text"],
@@ -832,7 +835,8 @@ body.emu.e-body#emu #module-management .enhanced-module-management #searchField 
   body.emu.e-body#emu #lmrtfy input:disabled[type="datetime-local"],
   body.emu.e-body#emu .window-app.dialog input:disabled[type="datetime-local"], body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input:disabled,
   body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input:disabled, body.emu.e-body#emu #sidebar #chat #chat-form textarea:disabled,
-  body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:disabled, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:disabled, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:disabled[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:disabled[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:disabled, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:disabled, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:disabled,
+  body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:disabled, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input:disabled,
+  body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input:disabled, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:disabled, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:disabled[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:disabled[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:disabled, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:disabled, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:disabled,
   body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput:disabled {
     opacity: 0.5;
     pointer-events: none; }
@@ -842,7 +846,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select selec
   background: transparent;
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   cursor: pointer;
   font-family: inherit;
   font-size: inherit;
@@ -862,7 +866,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select selec
     pointer-events: none; }
   body.emu.e-body#emu #actor-flags select optgroup, body.emu.e-body#emu #client-settings select optgroup, body.emu.e-body#emu #combat-config select optgroup, body.emu.e-body#emu #drawing-config select optgroup, body.emu.e-body#emu .window-app.filepicker select optgroup, body.emu.e-body#emu #folder-edit select optgroup, body.emu.e-body#emu #grid-config select optgroup, body.emu.e-body#emu #light-config select optgroup, body.emu.e-body#emu .sheet.macro-sheet select optgroup, body.emu.e-body#emu #note-config select optgroup, body.emu.e-body#emu #permission select optgroup, body.emu.e-body#emu #player-config select optgroup, body.emu.e-body#emu .sheet.scene-sheet select optgroup, body.emu.e-body#emu #sheet-config select optgroup, body.emu.e-body#emu #short-rest-hd select optgroup, body.emu.e-body#emu #sound-config select optgroup, body.emu.e-body#emu #template-config select optgroup, body.emu.e-body#emu #tile-config select optgroup, body.emu.e-body#emu .sheet.token-sheet select optgroup, body.emu.e-body#emu #track-config select optgroup, body.emu.e-body#emu #trait-selector select optgroup, body.emu.e-body#emu #wall-config select optgroup, body.emu.e-body#emu #batch-permissions select optgroup, body.emu.e-body#emu #lmrtfy select optgroup, body.emu.e-body#emu .window-app.dialog select optgroup, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select select optgroup, body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select select optgroup, body.emu.e-body#emu #short-rest-hd .form-group select optgroup, body.emu.e-body#emu #calendar-weather-container #calendar-weather-hdr #calendar-weather-climate optgroup {
     background: rgba(var(--color-white), 1);
-    color: rgba(var(--color-default-text), 1); }
+    color: rgba(var(--color-text), 1); }
 
 body.emu.e-body#emu #actor-flags input[type="checkbox"], body.emu.e-body#emu #client-settings input[type="checkbox"], body.emu.e-body#emu #combat-config input[type="checkbox"], body.emu.e-body#emu #drawing-config input[type="checkbox"], body.emu.e-body#emu .window-app.filepicker input[type="checkbox"], body.emu.e-body#emu #folder-edit input[type="checkbox"], body.emu.e-body#emu #grid-config input[type="checkbox"], body.emu.e-body#emu #light-config input[type="checkbox"], body.emu.e-body#emu .sheet.macro-sheet input[type="checkbox"], body.emu.e-body#emu #note-config input[type="checkbox"], body.emu.e-body#emu #permission input[type="checkbox"], body.emu.e-body#emu #player-config input[type="checkbox"], body.emu.e-body#emu .sheet.scene-sheet input[type="checkbox"], body.emu.e-body#emu #sheet-config input[type="checkbox"], body.emu.e-body#emu #short-rest-hd input[type="checkbox"], body.emu.e-body#emu #sound-config input[type="checkbox"], body.emu.e-body#emu #template-config input[type="checkbox"], body.emu.e-body#emu #tile-config input[type="checkbox"], body.emu.e-body#emu .sheet.token-sheet input[type="checkbox"], body.emu.e-body#emu #track-config input[type="checkbox"], body.emu.e-body#emu #trait-selector input[type="checkbox"], body.emu.e-body#emu #wall-config input[type="checkbox"], body.emu.e-body#emu #batch-permissions input[type="checkbox"], body.emu.e-body#emu #lmrtfy input[type="checkbox"], body.emu.e-body#emu .window-app.dialog input[type="checkbox"], body.emu.e-body#emu .forien-quest-preview .management .part input[type="checkbox"], body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields input[type="checkbox"] {
   width: 1.25rem;
@@ -871,11 +875,12 @@ body.emu.e-body#emu #actor-flags input[type="checkbox"], body.emu.e-body#emu #cl
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: none;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   cursor: pointer;
   flex: 0 0 auto;
   margin: 0;
   position: relative;
+  top: auto;
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-compact body.emu.e-body#emu #actor-flags input[type="checkbox"], body.emu.e-body#emu #actor-flags .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #client-settings input[type="checkbox"], body.emu.e-body#emu #client-settings .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #combat-config input[type="checkbox"], body.emu.e-body#emu #combat-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #drawing-config input[type="checkbox"], body.emu.e-body#emu #drawing-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .window-app.filepicker input[type="checkbox"], body.emu.e-body#emu .window-app.filepicker .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #folder-edit input[type="checkbox"], body.emu.e-body#emu #folder-edit .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #grid-config input[type="checkbox"], body.emu.e-body#emu #grid-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #light-config input[type="checkbox"], body.emu.e-body#emu #light-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .sheet.macro-sheet input[type="checkbox"], body.emu.e-body#emu .sheet.macro-sheet .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #note-config input[type="checkbox"], body.emu.e-body#emu #note-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #permission input[type="checkbox"], body.emu.e-body#emu #permission .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #player-config input[type="checkbox"], body.emu.e-body#emu #player-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .sheet.scene-sheet input[type="checkbox"], body.emu.e-body#emu .sheet.scene-sheet .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #sheet-config input[type="checkbox"], body.emu.e-body#emu #sheet-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #short-rest-hd input[type="checkbox"], body.emu.e-body#emu #short-rest-hd .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #sound-config input[type="checkbox"], body.emu.e-body#emu #sound-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #template-config input[type="checkbox"], body.emu.e-body#emu #template-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #tile-config input[type="checkbox"], body.emu.e-body#emu #tile-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .sheet.token-sheet input[type="checkbox"], body.emu.e-body#emu .sheet.token-sheet .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #track-config input[type="checkbox"], body.emu.e-body#emu #track-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #trait-selector input[type="checkbox"], body.emu.e-body#emu #trait-selector .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #wall-config input[type="checkbox"], body.emu.e-body#emu #wall-config .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #batch-permissions input[type="checkbox"], body.emu.e-body#emu #batch-permissions .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #lmrtfy input[type="checkbox"], body.emu.e-body#emu #lmrtfy .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .window-app.dialog input[type="checkbox"], body.emu.e-body#emu .window-app.dialog .-compact input[type="checkbox"], .-compact body.emu.e-body#emu .forien-quest-preview .management .part input[type="checkbox"], body.emu.e-body#emu .forien-quest-preview .management .part .-compact input[type="checkbox"], .-compact body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields input[type="checkbox"], body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields .-compact input[type="checkbox"] {
     width: 1rem;
@@ -885,7 +890,7 @@ body.emu.e-body#emu #actor-flags input[type="checkbox"], body.emu.e-body#emu #cl
     pointer-events: none; }
   body.emu.e-body#emu #actor-flags input:checked[type="checkbox"], body.emu.e-body#emu #client-settings input:checked[type="checkbox"], body.emu.e-body#emu #combat-config input:checked[type="checkbox"], body.emu.e-body#emu #drawing-config input:checked[type="checkbox"], body.emu.e-body#emu .window-app.filepicker input:checked[type="checkbox"], body.emu.e-body#emu #folder-edit input:checked[type="checkbox"], body.emu.e-body#emu #grid-config input:checked[type="checkbox"], body.emu.e-body#emu #light-config input:checked[type="checkbox"], body.emu.e-body#emu .sheet.macro-sheet input:checked[type="checkbox"], body.emu.e-body#emu #note-config input:checked[type="checkbox"], body.emu.e-body#emu #permission input:checked[type="checkbox"], body.emu.e-body#emu #player-config input:checked[type="checkbox"], body.emu.e-body#emu .sheet.scene-sheet input:checked[type="checkbox"], body.emu.e-body#emu #sheet-config input:checked[type="checkbox"], body.emu.e-body#emu #short-rest-hd input:checked[type="checkbox"], body.emu.e-body#emu #sound-config input:checked[type="checkbox"], body.emu.e-body#emu #template-config input:checked[type="checkbox"], body.emu.e-body#emu #tile-config input:checked[type="checkbox"], body.emu.e-body#emu .sheet.token-sheet input:checked[type="checkbox"], body.emu.e-body#emu #track-config input:checked[type="checkbox"], body.emu.e-body#emu #trait-selector input:checked[type="checkbox"], body.emu.e-body#emu #wall-config input:checked[type="checkbox"], body.emu.e-body#emu #batch-permissions input:checked[type="checkbox"], body.emu.e-body#emu #lmrtfy input:checked[type="checkbox"], body.emu.e-body#emu .window-app.dialog input:checked[type="checkbox"], body.emu.e-body#emu .forien-quest-preview .management .part input:checked[type="checkbox"], body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields input:checked[type="checkbox"] {
     background: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-white), 1); }
+    color: rgba(var(--color-text-lightest), 1); }
 
 body.emu.e-body#emu #actor-flags input[type="color"], body.emu.e-body#emu #client-settings input[type="color"], body.emu.e-body#emu #combat-config input[type="color"], body.emu.e-body#emu #drawing-config input[type="color"], body.emu.e-body#emu .window-app.filepicker input[type="color"], body.emu.e-body#emu #folder-edit input[type="color"], body.emu.e-body#emu #grid-config input[type="color"], body.emu.e-body#emu #light-config input[type="color"], body.emu.e-body#emu .sheet.macro-sheet input[type="color"], body.emu.e-body#emu #note-config input[type="color"], body.emu.e-body#emu #permission input[type="color"], body.emu.e-body#emu #player-config input[type="color"], body.emu.e-body#emu .sheet.scene-sheet input[type="color"], body.emu.e-body#emu #sheet-config input[type="color"], body.emu.e-body#emu #short-rest-hd input[type="color"], body.emu.e-body#emu #sound-config input[type="color"], body.emu.e-body#emu #template-config input[type="color"], body.emu.e-body#emu #tile-config input[type="color"], body.emu.e-body#emu .sheet.token-sheet input[type="color"], body.emu.e-body#emu #track-config input[type="color"], body.emu.e-body#emu #trait-selector input[type="color"], body.emu.e-body#emu #wall-config input[type="color"], body.emu.e-body#emu #batch-permissions input[type="color"], body.emu.e-body#emu #lmrtfy input[type="color"], body.emu.e-body#emu .window-app.dialog input[type="color"] {
   background: transparent;
@@ -923,7 +928,7 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sou
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: 0.5rem;
-    background: rgba(var(--color-charcoal-500), 0.8);
+    background: rgba(var(--color-background), 0.8);
     border: rgba(var(--color-border), 1) 1px solid;
     border-radius: 0;
     box-shadow: none;
@@ -932,13 +937,13 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sou
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.emu.e-body#emu #actor-flags input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #client-settings input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #combat-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #drawing-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu .window-app.filepicker input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #folder-edit input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #grid-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #light-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu .sheet.macro-sheet input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #note-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #permission input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #player-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu .sheet.scene-sheet input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #sheet-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #short-rest-hd input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #sound-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #template-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #tile-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu .sheet.token-sheet input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #track-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #trait-selector input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #wall-config input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #batch-permissions input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #lmrtfy input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu .window-app.dialog input[type="range"]:focus::-webkit-slider-runnable-track, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-webkit-slider-runnable-track,
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: rgba(var(--color-charcoal-500), 1); }
+    background: rgba(var(--color-background), 1); }
   body.emu.e-body#emu #actor-flags input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #client-settings input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #combat-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #drawing-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu .window-app.filepicker input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #folder-edit input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #grid-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #light-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu .sheet.macro-sheet input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #note-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #permission input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #player-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu .sheet.scene-sheet input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #sheet-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #short-rest-hd input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #sound-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #template-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #tile-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu .sheet.token-sheet input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #track-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #trait-selector input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #wall-config input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #batch-permissions input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #lmrtfy input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu .window-app.dialog input[type="range"]:focus::-ms-fill-lower, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-ms-fill-lower,
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-ms-fill-lower {
-    background: rgba(var(--color-charcoal-500), 1); }
+    background: rgba(var(--color-background), 1); }
   body.emu.e-body#emu #actor-flags input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #client-settings input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #combat-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #drawing-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu .window-app.filepicker input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #folder-edit input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #grid-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #light-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu .sheet.macro-sheet input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #note-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #permission input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #player-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu .sheet.scene-sheet input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #sheet-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #short-rest-hd input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #sound-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #template-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #tile-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu .sheet.token-sheet input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #track-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #trait-selector input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #wall-config input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #batch-permissions input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #lmrtfy input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu .window-app.dialog input[type="range"]:focus::-ms-fill-upper, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-ms-fill-upper,
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]:focus::-ms-fill-upper {
-    background: rgba(var(--color-charcoal-500), 1); }
+    background: rgba(var(--color-background), 1); }
   body.emu.e-body#emu #actor-flags input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #client-settings input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #combat-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #drawing-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu .window-app.filepicker input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #folder-edit input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #grid-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #light-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu .sheet.macro-sheet input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #note-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #permission input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #player-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu .sheet.scene-sheet input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #sheet-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #short-rest-hd input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #sound-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #template-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #tile-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu .sheet.token-sheet input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #track-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #trait-selector input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #wall-config input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #batch-permissions input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #lmrtfy input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu .window-app.dialog input[type="range"]::-webkit-slider-thumb, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound input[type="range"]::-webkit-slider-thumb,
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]::-webkit-slider-thumb {
     width: 1rem;
@@ -960,7 +965,7 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sou
   body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"]::-moz-range-track {
     width: 100%;
     height: 0.5rem;
-    background: rgba(var(--color-charcoal-500), 0.8);
+    background: rgba(var(--color-background), 0.8);
     border: rgba(var(--color-border), 1) 1px solid;
     border-radius: 0;
     box-shadow: none;
@@ -986,7 +991,7 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sou
   body.emu.e-body#emu #actor-flags input[type="range"] + .range-value, body.emu.e-body#emu #client-settings input[type="range"] + .range-value, body.emu.e-body#emu #combat-config input[type="range"] + .range-value, body.emu.e-body#emu #drawing-config input[type="range"] + .range-value, body.emu.e-body#emu .window-app.filepicker input[type="range"] + .range-value, body.emu.e-body#emu #folder-edit input[type="range"] + .range-value, body.emu.e-body#emu #grid-config input[type="range"] + .range-value, body.emu.e-body#emu #light-config input[type="range"] + .range-value, body.emu.e-body#emu .sheet.macro-sheet input[type="range"] + .range-value, body.emu.e-body#emu #note-config input[type="range"] + .range-value, body.emu.e-body#emu #permission input[type="range"] + .range-value, body.emu.e-body#emu #player-config input[type="range"] + .range-value, body.emu.e-body#emu .sheet.scene-sheet input[type="range"] + .range-value, body.emu.e-body#emu #sheet-config input[type="range"] + .range-value, body.emu.e-body#emu #short-rest-hd input[type="range"] + .range-value, body.emu.e-body#emu #sound-config input[type="range"] + .range-value, body.emu.e-body#emu #template-config input[type="range"] + .range-value, body.emu.e-body#emu #tile-config input[type="range"] + .range-value, body.emu.e-body#emu .sheet.token-sheet input[type="range"] + .range-value, body.emu.e-body#emu #track-config input[type="range"] + .range-value, body.emu.e-body#emu #trait-selector input[type="range"] + .range-value, body.emu.e-body#emu #wall-config input[type="range"] + .range-value, body.emu.e-body#emu #batch-permissions input[type="range"] + .range-value, body.emu.e-body#emu #lmrtfy input[type="range"] + .range-value, body.emu.e-body#emu .window-app.dialog input[type="range"] + .range-value, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound input[type="range"] + .range-value, body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound input[type="range"] + .range-value {
     align-items: center;
     border: none;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     display: flex;
     flex: 0 0 auto;
     font-size: 0.875rem;
@@ -1001,7 +1006,7 @@ body.emu.e-body#emu #actor-flags textarea, body.emu.e-body#emu #client-settings 
   background: transparent;
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   font-family: inherit;
   font-size: inherit;
   margin: 0;
@@ -1038,7 +1043,7 @@ body.emu.e-body#emu #actor-flags input[type="range"]::-moz-range-thumb:hover, bo
 
 body.emu.e-body#emu #actor-flags form .form-group, body.emu.e-body#emu #client-settings form .form-group, body.emu.e-body#emu #combat-config form .form-group, body.emu.e-body#emu #drawing-config form .form-group, body.emu.e-body#emu #folder-edit form .form-group, body.emu.e-body#emu #grid-config form .form-group, body.emu.e-body#emu #light-config form .form-group, body.emu.e-body#emu .sheet.macro-sheet form .form-group, body.emu.e-body#emu #note-config form .form-group, body.emu.e-body#emu #permission form .form-group, body.emu.e-body#emu #player-config form .form-group, body.emu.e-body#emu .sheet.scene-sheet form .form-group, body.emu.e-body#emu #sheet-config form .form-group, body.emu.e-body#emu #short-rest-hd form .form-group, body.emu.e-body#emu #sound-config form .form-group, body.emu.e-body#emu #template-config form .form-group, body.emu.e-body#emu #tile-config form .form-group, body.emu.e-body#emu .sheet.token-sheet form .form-group, body.emu.e-body#emu #track-config form .form-group, body.emu.e-body#emu #trait-selector form .form-group, body.emu.e-body#emu #wall-config form .form-group, body.emu.e-body#emu #batch-permissions form .form-group, body.emu.e-body#emu #lmrtfy form .form-group, body.emu.e-body#emu .window-app.dialog .form-group, body.emu.e-body#emu .window-app.filepicker .form-group {
   align-items: center;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   display: flex;
   flex-wrap: wrap;
   font-size: 1rem;
@@ -1048,7 +1053,7 @@ body.emu.e-body#emu #actor-flags form .form-group, body.emu.e-body#emu #client-s
   .-compact body.emu.e-body#emu #actor-flags form .form-group, body.emu.e-body#emu #actor-flags form .-compact .form-group, .-compact body.emu.e-body#emu #client-settings form .form-group, body.emu.e-body#emu #client-settings form .-compact .form-group, .-compact body.emu.e-body#emu #combat-config form .form-group, body.emu.e-body#emu #combat-config form .-compact .form-group, .-compact body.emu.e-body#emu #drawing-config form .form-group, body.emu.e-body#emu #drawing-config form .-compact .form-group, .-compact body.emu.e-body#emu #folder-edit form .form-group, body.emu.e-body#emu #folder-edit form .-compact .form-group, .-compact body.emu.e-body#emu #grid-config form .form-group, body.emu.e-body#emu #grid-config form .-compact .form-group, .-compact body.emu.e-body#emu #light-config form .form-group, body.emu.e-body#emu #light-config form .-compact .form-group, .-compact body.emu.e-body#emu .sheet.macro-sheet form .form-group, body.emu.e-body#emu .sheet.macro-sheet form .-compact .form-group, .-compact body.emu.e-body#emu #note-config form .form-group, body.emu.e-body#emu #note-config form .-compact .form-group, .-compact body.emu.e-body#emu #permission form .form-group, body.emu.e-body#emu #permission form .-compact .form-group, .-compact body.emu.e-body#emu #player-config form .form-group, body.emu.e-body#emu #player-config form .-compact .form-group, .-compact body.emu.e-body#emu .sheet.scene-sheet form .form-group, body.emu.e-body#emu .sheet.scene-sheet form .-compact .form-group, .-compact body.emu.e-body#emu #sheet-config form .form-group, body.emu.e-body#emu #sheet-config form .-compact .form-group, .-compact body.emu.e-body#emu #short-rest-hd form .form-group, body.emu.e-body#emu #short-rest-hd form .-compact .form-group, .-compact body.emu.e-body#emu #sound-config form .form-group, body.emu.e-body#emu #sound-config form .-compact .form-group, .-compact body.emu.e-body#emu #template-config form .form-group, body.emu.e-body#emu #template-config form .-compact .form-group, .-compact body.emu.e-body#emu #tile-config form .form-group, body.emu.e-body#emu #tile-config form .-compact .form-group, .-compact body.emu.e-body#emu .sheet.token-sheet form .form-group, body.emu.e-body#emu .sheet.token-sheet form .-compact .form-group, .-compact body.emu.e-body#emu #track-config form .form-group, body.emu.e-body#emu #track-config form .-compact .form-group, .-compact body.emu.e-body#emu #trait-selector form .form-group, body.emu.e-body#emu #trait-selector form .-compact .form-group, .-compact body.emu.e-body#emu #wall-config form .form-group, body.emu.e-body#emu #wall-config form .-compact .form-group, .-compact body.emu.e-body#emu #batch-permissions form .form-group, body.emu.e-body#emu #batch-permissions form .-compact .form-group, .-compact body.emu.e-body#emu #lmrtfy form .form-group, body.emu.e-body#emu #lmrtfy form .-compact .form-group, .-compact body.emu.e-body#emu .window-app.dialog .form-group, body.emu.e-body#emu .window-app.dialog .-compact .form-group, .-compact body.emu.e-body#emu .window-app.filepicker .form-group, body.emu.e-body#emu .window-app.filepicker .-compact .form-group {
     padding: 0.25rem; }
   body.emu.e-body#emu #actor-flags form .form-group:nth-of-type(even), body.emu.e-body#emu #client-settings form .form-group:nth-of-type(even), body.emu.e-body#emu #combat-config form .form-group:nth-of-type(even), body.emu.e-body#emu #drawing-config form .form-group:nth-of-type(even), body.emu.e-body#emu #folder-edit form .form-group:nth-of-type(even), body.emu.e-body#emu #grid-config form .form-group:nth-of-type(even), body.emu.e-body#emu #light-config form .form-group:nth-of-type(even), body.emu.e-body#emu .sheet.macro-sheet form .form-group:nth-of-type(even), body.emu.e-body#emu #note-config form .form-group:nth-of-type(even), body.emu.e-body#emu #permission form .form-group:nth-of-type(even), body.emu.e-body#emu #player-config form .form-group:nth-of-type(even), body.emu.e-body#emu .sheet.scene-sheet form .form-group:nth-of-type(even), body.emu.e-body#emu #sheet-config form .form-group:nth-of-type(even), body.emu.e-body#emu #short-rest-hd form .form-group:nth-of-type(even), body.emu.e-body#emu #sound-config form .form-group:nth-of-type(even), body.emu.e-body#emu #template-config form .form-group:nth-of-type(even), body.emu.e-body#emu #tile-config form .form-group:nth-of-type(even), body.emu.e-body#emu .sheet.token-sheet form .form-group:nth-of-type(even), body.emu.e-body#emu #track-config form .form-group:nth-of-type(even), body.emu.e-body#emu #trait-selector form .form-group:nth-of-type(even), body.emu.e-body#emu #wall-config form .form-group:nth-of-type(even), body.emu.e-body#emu #batch-permissions form .form-group:nth-of-type(even), body.emu.e-body#emu #lmrtfy form .form-group:nth-of-type(even), body.emu.e-body#emu .window-app.dialog .form-group:nth-of-type(even), body.emu.e-body#emu .window-app.filepicker .form-group:nth-of-type(even) {
-    background: rgba(var(--color-charcoal-300), 0.1); }
+    background: rgba(var(--color-background-light), 0.1); }
   body.emu.e-body#emu #actor-flags form .initial-position.form-group .form-fields, body.emu.e-body#emu #client-settings form .initial-position.form-group .form-fields, body.emu.e-body#emu #combat-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #drawing-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #folder-edit form .initial-position.form-group .form-fields, body.emu.e-body#emu #grid-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #light-config form .initial-position.form-group .form-fields, body.emu.e-body#emu .sheet.macro-sheet form .initial-position.form-group .form-fields, body.emu.e-body#emu #note-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #permission form .initial-position.form-group .form-fields, body.emu.e-body#emu #player-config form .initial-position.form-group .form-fields, body.emu.e-body#emu .sheet.scene-sheet form .initial-position.form-group .form-fields, body.emu.e-body#emu #sheet-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #short-rest-hd form .initial-position.form-group .form-fields, body.emu.e-body#emu #sound-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #template-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #tile-config form .initial-position.form-group .form-fields, body.emu.e-body#emu .sheet.token-sheet form .initial-position.form-group .form-fields, body.emu.e-body#emu #track-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #trait-selector form .initial-position.form-group .form-fields, body.emu.e-body#emu #wall-config form .initial-position.form-group .form-fields, body.emu.e-body#emu #batch-permissions form .initial-position.form-group .form-fields, body.emu.e-body#emu #lmrtfy form .initial-position.form-group .form-fields, body.emu.e-body#emu .window-app.dialog .initial-position.form-group .form-fields, body.emu.e-body#emu .window-app.filepicker .initial-position.form-group .form-fields {
     align-items: center;
     display: inline-flex;
@@ -1233,7 +1238,7 @@ body.emu.e-body#emu #actor-flags form .form-group, body.emu.e-body#emu #client-s
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: rgba(var(--color-default-text), 1);
+      color: rgba(var(--color-text), 1);
       display: block;
       font-size: 0.75rem;
       line-height: initial;
@@ -1531,9 +1536,9 @@ body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-footer, .-emu-sideba
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round, body.emu.e-body#emu #sidebar .dice-tray, body.emu.e-body#emu #sidebar .token-mold,
 body.emu.e-body#emu .sidebar-popout .token-mold {
   align-items: center;
-  background: rgba(var(--color-charcoal-500), 0.5);
+  background: rgba(var(--color-background), 0.5);
   border: none;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   display: flex;
   flex: 0 0 auto;
   line-height: initial;
@@ -1674,7 +1679,8 @@ body.emu.e-body#emu #batch-permissions input:hover[type="datetime-local"],
 body.emu.e-body#emu #lmrtfy input:hover[type="datetime-local"],
 body.emu.e-body#emu .window-app.dialog input:hover[type="datetime-local"], body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input:hover,
 body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input:hover, body.emu.e-body#emu #sidebar #chat #chat-form textarea:hover,
-body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:hover, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:hover[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:hover[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:hover, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:hover, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:hover,
+body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:hover, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input:hover,
+body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input:hover, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:hover[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:hover[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:hover, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:hover, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:hover,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput:hover, body.emu.e-body#emu #actor-flags select:hover, body.emu.e-body#emu #client-settings select:hover, body.emu.e-body#emu #combat-config select:hover, body.emu.e-body#emu #drawing-config select:hover, body.emu.e-body#emu .window-app.filepicker select:hover, body.emu.e-body#emu #folder-edit select:hover, body.emu.e-body#emu #grid-config select:hover, body.emu.e-body#emu #light-config select:hover, body.emu.e-body#emu .sheet.macro-sheet select:hover, body.emu.e-body#emu #note-config select:hover, body.emu.e-body#emu #permission select:hover, body.emu.e-body#emu #player-config select:hover, body.emu.e-body#emu .sheet.scene-sheet select:hover, body.emu.e-body#emu #sheet-config select:hover, body.emu.e-body#emu #short-rest-hd select:hover, body.emu.e-body#emu #sound-config select:hover, body.emu.e-body#emu #template-config select:hover, body.emu.e-body#emu #tile-config select:hover, body.emu.e-body#emu .sheet.token-sheet select:hover, body.emu.e-body#emu #track-config select:hover, body.emu.e-body#emu #trait-selector select:hover, body.emu.e-body#emu #wall-config select:hover, body.emu.e-body#emu #batch-permissions select:hover, body.emu.e-body#emu #lmrtfy select:hover, body.emu.e-body#emu .window-app.dialog select:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select select:hover,
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select select:hover, body.emu.e-body#emu #calendar-weather-container #calendar-weather-hdr #calendar-weather-climate:hover, body.emu.e-body#emu #actor-flags input:hover[type="checkbox"], body.emu.e-body#emu #client-settings input:hover[type="checkbox"], body.emu.e-body#emu #combat-config input:hover[type="checkbox"], body.emu.e-body#emu #drawing-config input:hover[type="checkbox"], body.emu.e-body#emu .window-app.filepicker input:hover[type="checkbox"], body.emu.e-body#emu #folder-edit input:hover[type="checkbox"], body.emu.e-body#emu #grid-config input:hover[type="checkbox"], body.emu.e-body#emu #light-config input:hover[type="checkbox"], body.emu.e-body#emu .sheet.macro-sheet input:hover[type="checkbox"], body.emu.e-body#emu #note-config input:hover[type="checkbox"], body.emu.e-body#emu #permission input:hover[type="checkbox"], body.emu.e-body#emu #player-config input:hover[type="checkbox"], body.emu.e-body#emu .sheet.scene-sheet input:hover[type="checkbox"], body.emu.e-body#emu #sheet-config input:hover[type="checkbox"], body.emu.e-body#emu #short-rest-hd input:hover[type="checkbox"], body.emu.e-body#emu #sound-config input:hover[type="checkbox"], body.emu.e-body#emu #template-config input:hover[type="checkbox"], body.emu.e-body#emu #tile-config input:hover[type="checkbox"], body.emu.e-body#emu .sheet.token-sheet input:hover[type="checkbox"], body.emu.e-body#emu #track-config input:hover[type="checkbox"], body.emu.e-body#emu #trait-selector input:hover[type="checkbox"], body.emu.e-body#emu #wall-config input:hover[type="checkbox"], body.emu.e-body#emu #batch-permissions input:hover[type="checkbox"], body.emu.e-body#emu #lmrtfy input:hover[type="checkbox"], body.emu.e-body#emu .window-app.dialog input:hover[type="checkbox"], body.emu.e-body#emu .forien-quest-preview .management .part input:hover[type="checkbox"], body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields input:hover[type="checkbox"], body.emu.e-body#emu #actor-flags input:hover[type="color"], body.emu.e-body#emu #client-settings input:hover[type="color"], body.emu.e-body#emu #combat-config input:hover[type="color"], body.emu.e-body#emu #drawing-config input:hover[type="color"], body.emu.e-body#emu .window-app.filepicker input:hover[type="color"], body.emu.e-body#emu #folder-edit input:hover[type="color"], body.emu.e-body#emu #grid-config input:hover[type="color"], body.emu.e-body#emu #light-config input:hover[type="color"], body.emu.e-body#emu .sheet.macro-sheet input:hover[type="color"], body.emu.e-body#emu #note-config input:hover[type="color"], body.emu.e-body#emu #permission input:hover[type="color"], body.emu.e-body#emu #player-config input:hover[type="color"], body.emu.e-body#emu .sheet.scene-sheet input:hover[type="color"], body.emu.e-body#emu #sheet-config input:hover[type="color"], body.emu.e-body#emu #short-rest-hd input:hover[type="color"], body.emu.e-body#emu #sound-config input:hover[type="color"], body.emu.e-body#emu #template-config input:hover[type="color"], body.emu.e-body#emu #tile-config input:hover[type="color"], body.emu.e-body#emu .sheet.token-sheet input:hover[type="color"], body.emu.e-body#emu #track-config input:hover[type="color"], body.emu.e-body#emu #trait-selector input:hover[type="color"], body.emu.e-body#emu #wall-config input:hover[type="color"], body.emu.e-body#emu #batch-permissions input:hover[type="color"], body.emu.e-body#emu #lmrtfy input:hover[type="color"], body.emu.e-body#emu .window-app.dialog input:hover[type="color"], body.emu.e-body#emu #actor-flags textarea:hover, body.emu.e-body#emu #client-settings textarea:hover, body.emu.e-body#emu #combat-config textarea:hover, body.emu.e-body#emu #drawing-config textarea:hover, body.emu.e-body#emu .window-app.filepicker textarea:hover, body.emu.e-body#emu #folder-edit textarea:hover, body.emu.e-body#emu #grid-config textarea:hover, body.emu.e-body#emu #light-config textarea:hover, body.emu.e-body#emu .sheet.macro-sheet textarea:hover, body.emu.e-body#emu #note-config textarea:hover, body.emu.e-body#emu #permission textarea:hover, body.emu.e-body#emu #player-config textarea:hover, body.emu.e-body#emu .sheet.scene-sheet textarea:hover, body.emu.e-body#emu #sheet-config textarea:hover, body.emu.e-body#emu #short-rest-hd textarea:hover, body.emu.e-body#emu #sound-config textarea:hover, body.emu.e-body#emu #template-config textarea:hover, body.emu.e-body#emu #tile-config textarea:hover, body.emu.e-body#emu .sheet.token-sheet textarea:hover, body.emu.e-body#emu #track-config textarea:hover, body.emu.e-body#emu #trait-selector textarea:hover, body.emu.e-body#emu #wall-config textarea:hover, body.emu.e-body#emu #batch-permissions textarea:hover, body.emu.e-body#emu #lmrtfy textarea:hover, body.emu.e-body#emu .window-app.dialog textarea:hover, body.emu.e-body#emu .sheet.macro-sheet .form-group.command textarea:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant.defeated.active,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant.defeated.active, body.emu.e-body#emu .forien-quest-preview .management .part.quest-splash .splash-img:hover {
@@ -1784,7 +1790,8 @@ body.emu.e-body#emu #batch-permissions input:focus[type="datetime-local"],
 body.emu.e-body#emu #lmrtfy input:focus[type="datetime-local"],
 body.emu.e-body#emu .window-app.dialog input:focus[type="datetime-local"], body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-search input:focus,
 body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-search input:focus, body.emu.e-body#emu #sidebar #chat #chat-form textarea:focus,
-body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:focus, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:focus[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:focus[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:focus, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:focus, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:focus,
+body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea:focus, body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input:focus,
+body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input:focus, body.emu.e-body#emu #sidebar .dice-tray input.dice-tray__input:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset input:focus[type="text"], body.emu.e-body#emu .forien-quest-preview .details .details-header input:focus[type="text"], body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task input:focus, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward input:focus, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #searchInput:focus,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #searchInput:focus, body.emu.e-body#emu #actor-flags select:focus, body.emu.e-body#emu #client-settings select:focus, body.emu.e-body#emu #combat-config select:focus, body.emu.e-body#emu #drawing-config select:focus, body.emu.e-body#emu .window-app.filepicker select:focus, body.emu.e-body#emu #folder-edit select:focus, body.emu.e-body#emu #grid-config select:focus, body.emu.e-body#emu #light-config select:focus, body.emu.e-body#emu .sheet.macro-sheet select:focus, body.emu.e-body#emu #note-config select:focus, body.emu.e-body#emu #permission select:focus, body.emu.e-body#emu #player-config select:focus, body.emu.e-body#emu .sheet.scene-sheet select:focus, body.emu.e-body#emu #sheet-config select:focus, body.emu.e-body#emu #short-rest-hd select:focus, body.emu.e-body#emu #sound-config select:focus, body.emu.e-body#emu #template-config select:focus, body.emu.e-body#emu #tile-config select:focus, body.emu.e-body#emu .sheet.token-sheet select:focus, body.emu.e-body#emu #track-config select:focus, body.emu.e-body#emu #trait-selector select:focus, body.emu.e-body#emu #wall-config select:focus, body.emu.e-body#emu #batch-permissions select:focus, body.emu.e-body#emu #lmrtfy select:focus, body.emu.e-body#emu .window-app.dialog select:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select select:focus,
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select select:focus, body.emu.e-body#emu #calendar-weather-container #calendar-weather-hdr #calendar-weather-climate:focus, body.emu.e-body#emu #actor-flags input:focus[type="checkbox"], body.emu.e-body#emu #client-settings input:focus[type="checkbox"], body.emu.e-body#emu #combat-config input:focus[type="checkbox"], body.emu.e-body#emu #drawing-config input:focus[type="checkbox"], body.emu.e-body#emu .window-app.filepicker input:focus[type="checkbox"], body.emu.e-body#emu #folder-edit input:focus[type="checkbox"], body.emu.e-body#emu #grid-config input:focus[type="checkbox"], body.emu.e-body#emu #light-config input:focus[type="checkbox"], body.emu.e-body#emu .sheet.macro-sheet input:focus[type="checkbox"], body.emu.e-body#emu #note-config input:focus[type="checkbox"], body.emu.e-body#emu #permission input:focus[type="checkbox"], body.emu.e-body#emu #player-config input:focus[type="checkbox"], body.emu.e-body#emu .sheet.scene-sheet input:focus[type="checkbox"], body.emu.e-body#emu #sheet-config input:focus[type="checkbox"], body.emu.e-body#emu #short-rest-hd input:focus[type="checkbox"], body.emu.e-body#emu #sound-config input:focus[type="checkbox"], body.emu.e-body#emu #template-config input:focus[type="checkbox"], body.emu.e-body#emu #tile-config input:focus[type="checkbox"], body.emu.e-body#emu .sheet.token-sheet input:focus[type="checkbox"], body.emu.e-body#emu #track-config input:focus[type="checkbox"], body.emu.e-body#emu #trait-selector input:focus[type="checkbox"], body.emu.e-body#emu #wall-config input:focus[type="checkbox"], body.emu.e-body#emu #batch-permissions input:focus[type="checkbox"], body.emu.e-body#emu #lmrtfy input:focus[type="checkbox"], body.emu.e-body#emu .window-app.dialog input:focus[type="checkbox"], body.emu.e-body#emu .forien-quest-preview .management .part input:focus[type="checkbox"], body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-settings-wrapper div.form-group .form-fields input:focus[type="checkbox"], body.emu.e-body#emu #actor-flags input:focus[type="color"], body.emu.e-body#emu #client-settings input:focus[type="color"], body.emu.e-body#emu #combat-config input:focus[type="color"], body.emu.e-body#emu #drawing-config input:focus[type="color"], body.emu.e-body#emu .window-app.filepicker input:focus[type="color"], body.emu.e-body#emu #folder-edit input:focus[type="color"], body.emu.e-body#emu #grid-config input:focus[type="color"], body.emu.e-body#emu #light-config input:focus[type="color"], body.emu.e-body#emu .sheet.macro-sheet input:focus[type="color"], body.emu.e-body#emu #note-config input:focus[type="color"], body.emu.e-body#emu #permission input:focus[type="color"], body.emu.e-body#emu #player-config input:focus[type="color"], body.emu.e-body#emu .sheet.scene-sheet input:focus[type="color"], body.emu.e-body#emu #sheet-config input:focus[type="color"], body.emu.e-body#emu #short-rest-hd input:focus[type="color"], body.emu.e-body#emu #sound-config input:focus[type="color"], body.emu.e-body#emu #template-config input:focus[type="color"], body.emu.e-body#emu #tile-config input:focus[type="color"], body.emu.e-body#emu .sheet.token-sheet input:focus[type="color"], body.emu.e-body#emu #track-config input:focus[type="color"], body.emu.e-body#emu #trait-selector input:focus[type="color"], body.emu.e-body#emu #wall-config input:focus[type="color"], body.emu.e-body#emu #batch-permissions input:focus[type="color"], body.emu.e-body#emu #lmrtfy input:focus[type="color"], body.emu.e-body#emu .window-app.dialog input:focus[type="color"], body.emu.e-body#emu #actor-flags textarea:focus, body.emu.e-body#emu #client-settings textarea:focus, body.emu.e-body#emu #combat-config textarea:focus, body.emu.e-body#emu #drawing-config textarea:focus, body.emu.e-body#emu .window-app.filepicker textarea:focus, body.emu.e-body#emu #folder-edit textarea:focus, body.emu.e-body#emu #grid-config textarea:focus, body.emu.e-body#emu #light-config textarea:focus, body.emu.e-body#emu .sheet.macro-sheet textarea:focus, body.emu.e-body#emu #note-config textarea:focus, body.emu.e-body#emu #permission textarea:focus, body.emu.e-body#emu #player-config textarea:focus, body.emu.e-body#emu .sheet.scene-sheet textarea:focus, body.emu.e-body#emu #sheet-config textarea:focus, body.emu.e-body#emu #short-rest-hd textarea:focus, body.emu.e-body#emu #sound-config textarea:focus, body.emu.e-body#emu #template-config textarea:focus, body.emu.e-body#emu #tile-config textarea:focus, body.emu.e-body#emu .sheet.token-sheet textarea:focus, body.emu.e-body#emu #track-config textarea:focus, body.emu.e-body#emu #trait-selector textarea:focus, body.emu.e-body#emu #wall-config textarea:focus, body.emu.e-body#emu #batch-permissions textarea:focus, body.emu.e-body#emu #lmrtfy textarea:focus, body.emu.e-body#emu .window-app.dialog textarea:focus, body.emu.e-body#emu .sheet.macro-sheet .form-group.command textarea:focus, body.emu.e-body#emu #client-settings .sheet-tabs a.active:focus, body.emu.e-body#emu .window-app.filepicker .sheet-tabs a.active:focus, body.emu.e-body#emu .sheet.macro-sheet .sheet-tabs a.active:focus, body.emu.e-body#emu .sheet.scene-sheet .sheet-tabs a.active:focus, body.emu.e-body#emu .sheet.token-sheet .sheet-tabs a.active:focus, body.emu.e-body#emu #client-settings .sheet-navigation a.active:focus, body.emu.e-body#emu .window-app.filepicker .sheet-navigation a.active:focus, body.emu.e-body#emu .sheet.macro-sheet .sheet-navigation a.active:focus, body.emu.e-body#emu .sheet.scene-sheet .sheet-navigation a.active:focus, body.emu.e-body#emu .sheet.token-sheet .sheet-navigation a.active:focus, body.emu.e-body#emu #drawing-config form .sheet-tabs a.active:focus, body.emu.e-body#emu .window-app.filepicker .filepicker-header .tabs a.active:focus, body.emu.e-body#emu #forien-quest-log .log-tabs a.active:focus, body.emu.e-body#emu #forien-quest-log .quest-tabs a.active:focus, body.emu.e-body#emu #forien-quest-log-form .log-tabs a.active:focus, body.emu.e-body#emu #forien-quest-log-form .quest-tabs a.active:focus, body.emu.e-body#emu .forien-quest-preview .log-tabs a.active:focus, body.emu.e-body#emu .forien-quest-preview .quest-tabs a.active:focus, body.emu.e-body#emu #actor-flags button.active:focus, body.emu.e-body#emu #client-settings button.active:focus, body.emu.e-body#emu #combat-config button.active:focus, body.emu.e-body#emu #drawing-config button.active:focus, body.emu.e-body#emu .window-app.filepicker button.active:focus, body.emu.e-body#emu #folder-edit button.active:focus, body.emu.e-body#emu #grid-config button.active:focus, body.emu.e-body#emu #light-config button.active:focus, body.emu.e-body#emu .sheet.macro-sheet button.active:focus, body.emu.e-body#emu #note-config button.active:focus, body.emu.e-body#emu #permission button.active:focus, body.emu.e-body#emu #player-config button.active:focus, body.emu.e-body#emu .sheet.scene-sheet button.active:focus, body.emu.e-body#emu #sheet-config button.active:focus, body.emu.e-body#emu #short-rest-hd button.active:focus, body.emu.e-body#emu #sound-config button.active:focus, body.emu.e-body#emu #template-config button.active:focus, body.emu.e-body#emu #tile-config button.active:focus, body.emu.e-body#emu .sheet.token-sheet button.active:focus, body.emu.e-body#emu #track-config button.active:focus, body.emu.e-body#emu #trait-selector button.active:focus, body.emu.e-body#emu #wall-config button.active:focus, body.emu.e-body#emu #batch-permissions button.active:focus, body.emu.e-body#emu #lmrtfy button.active:focus, body.emu.e-body#emu .window-app.dialog .dialog-buttons .active.dialog-button:focus, body.emu.e-body#emu #menu #menu-items li.active:focus, body.emu.e-body#emu #sidebar .sidebar-tab .directory-footer button.active:focus,
 body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-footer button.active:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .active.combat-control:focus,
@@ -1907,7 +1914,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save input[type=checkbox]:c
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability input[type=checkbox]:checked + label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + label {
   background: rgba(var(--color-primary), 1);
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   text-shadow: none; }
   body.emu.e-body#emu #client-settings .sheet-tabs a.active:hover, body.emu.e-body#emu .window-app.filepicker .sheet-tabs a.active:hover, body.emu.e-body#emu .sheet.macro-sheet .sheet-tabs a.active:hover, body.emu.e-body#emu .sheet.scene-sheet .sheet-tabs a.active:hover, body.emu.e-body#emu .sheet.token-sheet .sheet-tabs a.active:hover, body.emu.e-body#emu #client-settings .sheet-navigation a.active:hover, body.emu.e-body#emu .window-app.filepicker .sheet-navigation a.active:hover, body.emu.e-body#emu .sheet.macro-sheet .sheet-navigation a.active:hover, body.emu.e-body#emu .sheet.scene-sheet .sheet-navigation a.active:hover, body.emu.e-body#emu .sheet.token-sheet .sheet-navigation a.active:hover, body.emu.e-body#emu #drawing-config form .sheet-tabs a.active:hover, body.emu.e-body#emu .window-app.filepicker .filepicker-header .tabs a.active:hover, body.emu.e-body#emu #forien-quest-log .log-tabs a.active:hover, body.emu.e-body#emu #forien-quest-log .quest-tabs a.active:hover, body.emu.e-body#emu #forien-quest-log-form .log-tabs a.active:hover, body.emu.e-body#emu #forien-quest-log-form .quest-tabs a.active:hover, body.emu.e-body#emu .forien-quest-preview .log-tabs a.active:hover, body.emu.e-body#emu .forien-quest-preview .quest-tabs a.active:hover, body.emu.e-body#emu #actor-flags button.active:hover, body.emu.e-body#emu #client-settings button.active:hover, body.emu.e-body#emu #combat-config button.active:hover, body.emu.e-body#emu #drawing-config button.active:hover, body.emu.e-body#emu .window-app.filepicker button.active:hover, body.emu.e-body#emu #folder-edit button.active:hover, body.emu.e-body#emu #grid-config button.active:hover, body.emu.e-body#emu #light-config button.active:hover, body.emu.e-body#emu .sheet.macro-sheet button.active:hover, body.emu.e-body#emu #note-config button.active:hover, body.emu.e-body#emu #permission button.active:hover, body.emu.e-body#emu #player-config button.active:hover, body.emu.e-body#emu .sheet.scene-sheet button.active:hover, body.emu.e-body#emu #sheet-config button.active:hover, body.emu.e-body#emu #short-rest-hd button.active:hover, body.emu.e-body#emu #sound-config button.active:hover, body.emu.e-body#emu #template-config button.active:hover, body.emu.e-body#emu #tile-config button.active:hover, body.emu.e-body#emu .sheet.token-sheet button.active:hover, body.emu.e-body#emu #track-config button.active:hover, body.emu.e-body#emu #trait-selector button.active:hover, body.emu.e-body#emu #wall-config button.active:hover, body.emu.e-body#emu #batch-permissions button.active:hover, body.emu.e-body#emu #lmrtfy button.active:hover, body.emu.e-body#emu .window-app.dialog .dialog-buttons .active.dialog-button:hover, body.emu.e-body#emu #menu #menu-items li.active:hover, body.emu.e-body#emu #sidebar .sidebar-tab .directory-footer button.active:hover,
   body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-footer button.active:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .active.combat-control:hover,
@@ -1965,7 +1972,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + la
   body.emu.e-body#emu #lmrtfy form .lmrtfy-ability input[type=checkbox]:checked + label:hover,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + label:hover {
     background: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
 
 body.emu.e-body#emu #client-settings .sheet-tabs, body.emu.e-body#emu .window-app.filepicker .sheet-tabs, body.emu.e-body#emu .sheet.macro-sheet .sheet-tabs, body.emu.e-body#emu .sheet.scene-sheet .sheet-tabs, body.emu.e-body#emu .sheet.token-sheet .sheet-tabs,
@@ -1987,7 +1994,7 @@ body.emu.e-body#emu .forien-quest-preview .quest-tabs {
   position: relative; }
   body.emu.e-body#emu #client-settings .sheet-tabs a, body.emu.e-body#emu .window-app.filepicker .sheet-tabs a, body.emu.e-body#emu .sheet.macro-sheet .sheet-tabs a, body.emu.e-body#emu .sheet.scene-sheet .sheet-tabs a, body.emu.e-body#emu .sheet.token-sheet .sheet-tabs a, body.emu.e-body#emu #client-settings .sheet-navigation a, body.emu.e-body#emu .window-app.filepicker .sheet-navigation a, body.emu.e-body#emu .sheet.macro-sheet .sheet-navigation a, body.emu.e-body#emu .sheet.scene-sheet .sheet-navigation a, body.emu.e-body#emu .sheet.token-sheet .sheet-navigation a, body.emu.e-body#emu #drawing-config form .sheet-tabs a, body.emu.e-body#emu .window-app.filepicker .filepicker-header .tabs a, body.emu.e-body#emu #forien-quest-log .log-tabs a, body.emu.e-body#emu #forien-quest-log .quest-tabs a, body.emu.e-body#emu #forien-quest-log-form .log-tabs a, body.emu.e-body#emu #forien-quest-log-form .quest-tabs a, body.emu.e-body#emu .forien-quest-preview .log-tabs a, body.emu.e-body#emu .forien-quest-preview .quest-tabs a {
     background: transparent;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     flex: 1 1 auto;
     font-size: 0.875rem;
     text-shadow: none; }
@@ -2086,7 +2093,7 @@ body.emu.e-body#emu #actor-flags .window-content, body.emu.e-body#emu #client-se
 body.emu.e-body#emu #forien-quest-log-form .window-content,
 body.emu.e-body#emu .forien-quest-preview .window-content, body.emu.e-body#emu #filter-config .window-content, body.emu.e-body#emu .RTB-window .window-content {
   background: transparent;
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   flex: 1 1 auto;
   font-size: 0.875rem;
   overflow: hidden;
@@ -2146,7 +2153,7 @@ body.emu.e-body#emu #actor-flags button.file-picker, body.emu.e-body#emu #client
       height: 1.5rem; }
 
 body.emu.e-body#emu #actor-flags form button, body.emu.e-body#emu #client-settings form button, body.emu.e-body#emu #combat-config form button, body.emu.e-body#emu #drawing-config form button, body.emu.e-body#emu .window-app.filepicker form button, body.emu.e-body#emu #folder-edit form button, body.emu.e-body#emu #grid-config form button, body.emu.e-body#emu #light-config form button, body.emu.e-body#emu .sheet.macro-sheet form button, body.emu.e-body#emu #note-config form button, body.emu.e-body#emu #permission form button, body.emu.e-body#emu #player-config form button, body.emu.e-body#emu .sheet.scene-sheet form button, body.emu.e-body#emu #sheet-config form button, body.emu.e-body#emu #short-rest-hd form button, body.emu.e-body#emu #sound-config form button, body.emu.e-body#emu #template-config form button, body.emu.e-body#emu #tile-config form button, body.emu.e-body#emu .sheet.token-sheet form button, body.emu.e-body#emu #track-config form button, body.emu.e-body#emu #trait-selector form button, body.emu.e-body#emu #wall-config form button, body.emu.e-body#emu #batch-permissions form button, body.emu.e-body#emu #lmrtfy form button {
-  background: rgba(var(--color-gray-500), 1);
+  background: rgba(var(--color-background-button), 1);
   border: none; }
 
 body.emu.e-body#emu #actor-flags form, body.emu.e-body#emu #combat-config form, body.emu.e-body#emu #folder-edit form, body.emu.e-body#emu #light-config form, body.emu.e-body#emu #note-config form, body.emu.e-body#emu #permission form, body.emu.e-body#emu #player-config form, body.emu.e-body#emu .sheet.scene-sheet form, body.emu.e-body#emu #sheet-config form, body.emu.e-body#emu #sound-config form, body.emu.e-body#emu #template-config form, body.emu.e-body#emu #tile-config form, body.emu.e-body#emu #track-config form, body.emu.e-body#emu #trait-selector form, body.emu.e-body#emu #wall-config form, body.emu.e-body#emu #batch-permissions form {
@@ -2190,7 +2197,7 @@ body.emu.e-body#emu #client-settings .sheet-header, body.emu.e-body#emu .window-
     body.emu.e-body#emu #client-settings .sheet-header > h1 input, body.emu.e-body#emu .window-app.filepicker .sheet-header > h1 input, body.emu.e-body#emu .sheet.macro-sheet .sheet-header > h1 input, body.emu.e-body#emu .sheet.scene-sheet .sheet-header > h1 input, body.emu.e-body#emu .sheet.token-sheet .sheet-header > h1 input {
       width: 100%;
       height: 2.5rem;
-      background: rgba(var(--color-charcoal-300), 0.2);
+      background: rgba(var(--color-background-light), 0.2);
       flex: 0 0 auto;
       font-size: 1.5rem; }
 
@@ -2285,8 +2292,18 @@ body.emu.e-body#emu #client-settings .sheet-footer, body.emu.e-body#emu .window-
   --color-positive: 15, 189, 125;
   --color-warning: 237, 185, 80;
   --color-primary: 229, 117, 9;
-  --color-default-text: 9, 14, 16;
+  --color-default-text: 74, 74, 74;
+  --color-background-lightest: 230, 233, 235;
+  --color-background-light: 125, 138, 140;
+  --color-background: 41, 62, 64;
+  --color-background-darkest: 9, 14, 16;
+  --color-background-button: 125, 125, 125;
   --color-border: 33, 50, 52;
+  --color-folder-header: 167, 176, 178;
+  --color-folder-directory: 83, 100, 102;
+  --color-folder-subdirectory: 209, 214, 216;
+  --color-text-lightest: 255, 255, 255;
+  --color-text: 9, 14, 16;
   scrollbar-color: rgba(var(--color-charcoal-300), 1) rgba(var(--color-black), 0.5);
   scrollbar-width: thin; }
 
@@ -2319,11 +2336,11 @@ body.emu.e-body#emu ::selection {
 body.emu.e-body#emu #context-menu {
   left: 0;
   position: absolute;
-  background: rgba(var(--color-charcoal-50), 1);
+  background: rgba(var(--color-background-lightest), 1);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   max-width: 20rem;
   min-width: 9.5rem;
   width: 100%;
@@ -2337,7 +2354,7 @@ body.emu.e-body#emu #context-menu {
       padding: 0.125rem; }
     body.emu.e-body#emu #context-menu ol.context-items .context-item:hover {
       background: rgba(var(--color-primary), 1);
-      color: rgba(var(--color-white), 1); }
+      color: rgba(var(--color-text-lightest), 1); }
     body.emu.e-body#emu #context-menu ol.context-items .context-item > i {
       -webkit-margin-end: 0.25rem;
               margin-inline-end: 0.25rem; }
@@ -2373,7 +2390,7 @@ body.emu.e-body#emu .window-app.dialog form.dialog-content {
             padding-block-start: 0.5rem; }
 
 body.emu.e-body#emu .window-app.dialog .dialog-content {
-  color: rgba(var(--color-default-text), 1);
+  color: rgba(var(--color-text), 1);
   font-size: 1rem;
   padding: 0.5rem; }
   .-compact body.emu.e-body#emu .window-app.dialog .dialog-content {
@@ -2495,8 +2512,8 @@ body.emu.e-body#emu #hotbar {
     body.emu.e-body#emu #hotbar .bar-controls #macro-directory,
     body.emu.e-body#emu #hotbar .bar-controls #bar-toggle {
       align-items: center;
-      background: rgba(var(--color-charcoal-500), 0.8);
-      color: rgba(var(--color-white), 1);
+      background: rgba(var(--color-background), 0.8);
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       flex: 0 0 auto;
@@ -2518,8 +2535,8 @@ body.emu.e-body#emu #hotbar {
     .-compact body.emu.e-body#emu #hotbar .bar-controls .page-control {
       font-size: 0.625rem; }
     body.emu.e-body#emu #hotbar .bar-controls .page-number {
-      background: rgba(var(--color-charcoal-500), 0.5);
-      color: rgba(var(--color-white), 1);
+      background: rgba(var(--color-background), 0.5);
+      color: rgba(var(--color-text-lightest), 1);
       display: flex;
       flex: 1 1 auto;
       font-size: 0.875rem;
@@ -2531,11 +2548,11 @@ body.emu.e-body#emu #hotbar {
     width: 3.5rem;
     height: 3.5rem;
     align-items: center;
-    background: rgba(var(--color-charcoal-500), 0.8);
+    background: rgba(var(--color-background), 0.8);
     border: rgba(var(--color-border), 1) 1px solid;
     border-radius: 0;
     box-shadow: none;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: flex;
     flex: 0 0 auto;
@@ -2551,13 +2568,13 @@ body.emu.e-body#emu #hotbar {
       -webkit-margin-start: 0;
               margin-inline-start: 0; }
     body.emu.e-body#emu #hotbar .macro.active {
-      background: rgba(var(--color-charcoal-500), 0.8); }
+      background: rgba(var(--color-background), 0.8); }
     body.emu.e-body#emu #hotbar .macro .macro-key {
       top: 0.125rem;
       right: 0.25rem;
       position: absolute;
       background: transparent;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       font-weight: 600;
       padding: 0;
       text-shadow: 2px 2px 2px rgba(var(--color-charcoal-900), 1);
@@ -2577,10 +2594,10 @@ body.emu.e-body#emu #hotbar {
         width: 2.125rem;
         height: 2.125rem; }
     body.emu.e-body#emu #hotbar .macro .tooltip {
-      background: rgba(var(--color-charcoal-900), 0.5);
+      background: rgba(var(--color-background-darkest), 0.5);
       border: none;
       border-radius: 0;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       font-size: 0.875rem;
       height: auto;
       left: 0;
@@ -2598,7 +2615,7 @@ body.emu.e-body#emu #loading {
   position: fixed;
   width: calc(100% - 37.5rem);
   height: 1.5rem;
-  background: rgba(var(--color-charcoal-500), 0.8);
+  background: rgba(var(--color-background), 0.8);
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -2628,7 +2645,7 @@ body.emu.e-body#emu #loading {
     position: absolute;
     align-items: center;
     background: transparent;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     display: flex;
     height: 100%;
     font-size: 0.875rem;
@@ -2669,7 +2686,7 @@ body.emu.e-body#emu #menu {
   justify-content: center;
   z-index: 1070; }
   body.emu.e-body#emu #menu #menu-items {
-    background: rgba(var(--color-charcoal-900), 0.8);
+    background: rgba(var(--color-background-darkest), 0.8);
     box-shadow: 0 2px 4px rgba(var(--color-black), 1);
     display: flex;
     flex-direction: column;
@@ -2730,10 +2747,10 @@ body.emu.e-body#emu #notifications {
     left: 7rem;
     top: 6rem; }
   body.emu.e-body#emu #notifications .notification {
-    background: rgba(var(--color-charcoal-900), 0.8);
+    background: rgba(var(--color-background-darkest), 0.8);
     border: rgba(var(--color-border), 1) 1px solid;
     border-radius: 0;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
     padding: 0.5rem; }
@@ -2753,7 +2770,7 @@ body.emu.e-body#emu #notifications {
     body.emu.e-body#emu #notifications .notification.warning {
       background: rgba(var(--color-warning), 1);
       border-color: rgba(var(--color-yellow-800), 1);
-      color: rgba(var(--color-default-text), 1); }
+      color: rgba(var(--color-text), 1); }
     body.emu.e-body#emu #notifications .notification.error {
       background: rgba(var(--color-negative), 1);
       border-color: rgba(var(--color-red-800), 1); }
@@ -2848,7 +2865,7 @@ body.emu.e-body#emu #players {
   bottom: 0.5rem;
   left: 0.5rem;
   position: fixed;
-  background: rgba(var(--color-charcoal-500), 0.8);
+  background: rgba(var(--color-background), 0.8);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: none;
@@ -2863,7 +2880,7 @@ body.emu.e-body#emu #players {
   body.emu.e-body#emu #players h3 {
     -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
             border-block-end: rgba(var(--color-border), 1) 1px solid;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: flex;
     font-size: 0.875rem;
@@ -2914,12 +2931,12 @@ body.emu.e-body#emu #players {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       flex: 1 1 auto;
       position: relative;
       text-shadow: none; }
       body.emu.e-body#emu #players ol .player-name.self {
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
     body.emu.e-body#emu #players ol .player-active {
       width: 0.5rem;
       height: 0.5rem;
@@ -2958,7 +2975,7 @@ body.emu.e-body#emu #controls {
     border-radius: 0;
     box-shadow: none;
     box-sizing: border-box;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -2988,17 +3005,17 @@ body.emu.e-body#emu #controls {
       margin: 0;
       position: relative; }
   body.emu.e-body#emu #controls .scene-control {
-    background: rgba(var(--color-charcoal-900), 0.8); }
+    background: rgba(var(--color-background-darkest), 0.8); }
     body.emu.e-body#emu #controls .scene-control.active .control-tools {
       display: block; }
   body.emu.e-body#emu #controls .control-tool {
-    background: rgba(var(--color-charcoal-500), 0.8); }
+    background: rgba(var(--color-background), 0.8); }
     body.emu.e-body#emu #controls .control-tool.toggle {
       background: rgba(var(--color-white), 1);
-      color: rgba(var(--color-default-text), 1); }
+      color: rgba(var(--color-text), 1); }
       body.emu.e-body#emu #controls .control-tool.toggle:hover {
         background: rgba(var(--color-primary), 1);
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu #controls .control-tool.toggle.active {
         background: rgba(var(--color-primary), 1); }
   body.emu.e-body#emu #controls .control-tools {
@@ -3024,7 +3041,7 @@ body.emu.e-body#emu #navigation {
     top: 0;
     left: -2rem;
     position: absolute;
-    background: rgba(var(--color-charcoal-500), 0.8); }
+    background: rgba(var(--color-background), 0.8); }
     .-compact body.emu.e-body#emu #navigation #nav-toggle {
       left: -1.5rem; }
   body.emu.e-body#emu #navigation #scene-list {
@@ -3100,8 +3117,8 @@ body.emu.e-body#emu #navigation {
     white-space: nowrap;
     width: auto;
     height: 2.25rem;
-    background: rgba(var(--color-charcoal-900), 0.8);
-    color: rgba(var(--color-white), 1);
+    background: rgba(var(--color-background-darkest), 0.8);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: block;
     line-height: 2.25rem;
@@ -3118,7 +3135,7 @@ body.emu.e-body#emu #navigation {
       padding: 0 0.25rem; }
 
 body.emu.e-body#emu .window-app {
-  background: rgba(var(--color-charcoal-50), 1);
+  background: rgba(var(--color-background-lightest), 1);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
@@ -3129,14 +3146,14 @@ body.emu.e-body#emu .window-app {
   body.emu.e-body#emu .window-app.minimized .window-resizable-handle {
     display: none; }
   body.emu.e-body#emu .window-app.sidebar-popout {
-    background: rgba(var(--color-charcoal-900), 0.8); }
+    background: rgba(var(--color-background-darkest), 0.8); }
   body.emu.e-body#emu .window-app .window-header {
     align-items: center;
-    background: rgba(var(--color-charcoal-600), 1);
+    background: rgba(var(--color-background), 1);
     border: none;
     -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
             border-block-end: rgba(var(--color-border), 1) 1px solid;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     display: flex;
     flex: 0 0 auto;
     flex-wrap: nowrap;
@@ -3151,7 +3168,7 @@ body.emu.e-body#emu .window-app {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       flex: 1 1 auto; }
     body.emu.e-body#emu .window-app .window-header a {
       background: transparent;
@@ -3173,7 +3190,7 @@ body.emu.e-body#emu .window-app {
           width: 100%;
           height: 100%;
           align-items: center;
-          color: rgba(var(--color-white), 1);
+          color: rgba(var(--color-text-lightest), 1);
           display: flex;
           font-size: 1rem;
           justify-content: center;
@@ -3191,10 +3208,10 @@ body.emu.e-body#emu .window-app {
     width: 1.25rem;
     height: 1.25rem;
     align-items: center;
-    background: rgba(var(--color-charcoal-800), 1);
+    background: rgba(var(--color-background-button), 1);
     border: none;
     border-radius: 0;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: inline-flex;
     font-size: 0.875rem;
@@ -3212,7 +3229,7 @@ body.emu.e-body#emu .sidebar-popout {
   position: fixed;
   width: 20rem;
   height: calc(100% - 1rem);
-  background: rgba(var(--color-charcoal-900), 0.8);
+  background: rgba(var(--color-background-darkest), 0.8);
   border: rgba(var(--color-border), 1) 1px solid;
   -webkit-border-end: none;
           border-inline-end: none;
@@ -3260,7 +3277,7 @@ body.emu.e-body#emu .sidebar-popout {
       border: none;
       border-radius: 0;
       box-shadow: none;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       flex: 1 1 20%;
@@ -3393,10 +3410,10 @@ body.emu.e-body#emu .sidebar-popout {
 body.emu.e-body#emu #sidebar #chat #chat-controls,
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls {
   align-items: center;
-  background: rgba(var(--color-charcoal-500), 0.5);
+  background: rgba(var(--color-background), 0.5);
   -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
           border-block-start: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   display: flex;
   flex: 0 0 auto;
   margin: 0;
@@ -3415,8 +3432,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls {
       display: none; }
     body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select select,
     body.emu.e-body#emu .sidebar-popout #chat #chat-controls .roll-type-select select {
-      background: rgba(var(--color-charcoal-500), 0.5);
-      color: rgba(var(--color-white), 1);
+      background: rgba(var(--color-background), 0.5);
+      color: rgba(var(--color-text-lightest), 1);
       top: auto;
       width: auto; }
       body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select select:disabled,
@@ -3435,10 +3452,10 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls {
 body.emu.e-body#emu #sidebar #chat #chat-form,
 body.emu.e-body#emu .sidebar-popout #chat #chat-form {
   align-items: center;
-  background: rgba(var(--color-charcoal-500), 0.5);
+  background: rgba(var(--color-background), 0.5);
   -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
           border-block-start: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   display: flex;
   flex: 0 0 auto;
   height: 7rem;
@@ -3489,7 +3506,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
       text-align: center; }
     .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters h3,
     .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters h3 {
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       font-size: 1.25rem; }
       .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters h3, .-compact
       .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters h3 {
@@ -3514,7 +3531,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
   .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant {
     align-items: center;
-    background: rgba(var(--color-border), 1);
+    background: rgba(var(--color-background), 1);
     border: none;
     display: flex;
     line-height: initial;
@@ -3541,7 +3558,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
       .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant.defeated.active .combatant-control.active,
       .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant.defeated.active .combatant-control.active {
         background: rgba(var(--color-primary), 1);
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
     .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .token-image,
     .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .token-image {
       width: 2rem;
@@ -3570,7 +3587,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        color: rgba(var(--color-white), 1);
+        color: rgba(var(--color-text-lightest), 1);
         flex: initial;
         font-size: 1rem;
         line-height: initial; }
@@ -3579,7 +3596,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
     .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .token-resource,
     .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
       align-items: center;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       display: flex;
       flex: 0 0 auto;
       position: relative; }
@@ -3701,7 +3718,7 @@ body.emu.e-body#emu .sidebar-popout #scenes .scene {
 
 body.emu.e-body#emu #sidebar #playlists,
 body.emu.e-body#emu .sidebar-popout #playlists {
-  color: rgba(var(--color-white), 1); }
+  color: rgba(var(--color-text-lightest), 1); }
   body.emu.e-body#emu #sidebar #playlists .directory-list,
   body.emu.e-body#emu .sidebar-popout #playlists .directory-list {
     -webkit-padding-before: 0;
@@ -3709,10 +3726,10 @@ body.emu.e-body#emu .sidebar-popout #playlists {
     position: relative; }
     body.emu.e-body#emu #sidebar #playlists .directory-list > .playlist:first-child,
     body.emu.e-body#emu .sidebar-popout #playlists .directory-list > .playlist:first-child {
-      background: rgba(var(--color-charcoal-500), 0.5);
+      background: rgba(var(--color-background), 0.5);
       -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
               border-block-end: rgba(var(--color-border), 1) 1px solid;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       display: flex;
       flex: 0 0 auto;
       flex-direction: column;
@@ -3726,7 +3743,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
         background: transparent;
         -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
                 border-block-end: rgba(var(--color-border), 1) 1px solid;
-        color: rgba(var(--color-white), 1);
+        color: rgba(var(--color-text-lightest), 1);
         font-size: 1.25rem;
         -webkit-padding-start: 0;
                 padding-inline-start: 0;
@@ -3752,7 +3769,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
         body.emu.e-body#emu .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds h4 {
           -webkit-border-after: 0;
                   border-block-end: 0;
-          color: rgba(var(--color-white), 1);
+          color: rgba(var(--color-text-lightest), 1);
           font-size: 1rem; }
           body.emu.e-body#emu #sidebar #playlists .directory-list > .playlist:first-child .playlist-sounds h4 + input[type="range"],
           body.emu.e-body#emu .sidebar-popout #playlists .directory-list > .playlist:first-child .playlist-sounds h4 + input[type="range"] {
@@ -3811,8 +3828,8 @@ body.emu.e-body#emu .sidebar-popout #playlists {
     body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-header,
     body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-header {
       align-items: center;
-      background: rgba(var(--color-charcoal-200), 1);
-      color: rgba(var(--color-default-text), 1);
+      background: rgba(var(--color-folder-header), 1);
+      color: rgba(var(--color-text), 1);
       cursor: pointer;
       border-radius: 0;
       display: flex;
@@ -3830,7 +3847,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
       body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-header:hover {
         background: rgba(var(--color-primary), 1);
         box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-header:focus,
       body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-header:focus {
         box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
@@ -3859,7 +3876,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
                   margin-block-start: -0.5rem; }
     body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds,
     body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds {
-      background: rgba(var(--color-charcoal-100), 1); }
+      background: rgba(var(--color-folder-subdirectory), 1); }
       body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound,
       body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound {
         align-items: center;
@@ -3878,7 +3895,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          color: rgba(var(--color-default-text), 1);
+          color: rgba(var(--color-text), 1);
           flex: 1 1 auto;
           font-size: 1rem;
           max-width: 100%; }
@@ -3893,11 +3910,11 @@ body.emu.e-body#emu .sidebar-popout #playlists {
           box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
         body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control,
         body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control {
-          color: rgba(var(--color-default-text), 1); }
+          color: rgba(var(--color-text), 1); }
           body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control.disabled,
           body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control.disabled {
             color: rgba(var(--color-gray-100), 1);
-            display: none;
+            opacity: 0.4;
             pointer-events: none; }
           body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-repeat"],
           body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control[data-action="sound-repeat"] {
@@ -3922,7 +3939,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
           body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control:hover, body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-sounds .sound .sound-control:focus,
           body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control:hover,
           body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-sounds .sound .sound-control:focus {
-            color: rgba(var(--color-white), 1); }
+            color: rgba(var(--color-text-lightest), 1); }
     body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-controls,
     body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-controls {
       display: flex;
@@ -3930,7 +3947,7 @@ body.emu.e-body#emu .sidebar-popout #playlists {
       body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-controls .sound-control.disabled,
       body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-controls .sound-control.disabled {
         color: rgba(var(--color-gray-100), 1);
-        display: none;
+        opacity: 0.4;
         pointer-events: none; }
     body.emu.e-body#emu #sidebar #playlists li.playlist .sound-controls,
     body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-controls {
@@ -3963,9 +3980,9 @@ body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity {
     text-overflow: ellipsis;
     white-space: nowrap;
     align-items: center;
-    background: rgba(var(--color-charcoal-200), 1);
+    background: rgba(var(--color-folder-header), 1);
     border: none;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     display: flex;
     flex: 1 1 auto;
     flex-wrap: nowrap;
@@ -3980,16 +3997,16 @@ body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity {
       padding: 0.25rem; }
   body.emu.e-body#emu #sidebar #compendium .compendium-entity > .compendium-list,
   body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity > .compendium-list {
-    background: rgba(var(--color-charcoal-100), 1);
+    background: rgba(var(--color-folder-subdirectory), 1);
     display: flex;
     flex-direction: column;
     width: 100%; }
     body.emu.e-body#emu #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack,
     body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack {
       align-items: center;
-      background: rgba(var(--color-charcoal-400), 1);
+      background: rgba(var(--color-folder-directory), 1);
       border: none;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       flex-wrap: wrap;
       margin: 0.25rem;
@@ -4010,10 +4027,10 @@ body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity {
       body.emu.e-body#emu #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack:hover,
       body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack:hover {
         background: rgba(var(--color-primary), 1);
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4,
       body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 {
-        color: rgba(var(--color-white), 1);
+        color: rgba(var(--color-text-lightest), 1);
         display: flex;
         font-size: 1rem;
         width: 100%; }
@@ -4040,7 +4057,7 @@ body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity {
             width: auto; }
         body.emu.e-body#emu #sidebar #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons,
         body.emu.e-body#emu .sidebar-popout #compendium .compendium-entity > .compendium-list .compendium-pack h4 .status-icons {
-          color: rgba(var(--color-white), 1);
+          color: rgba(var(--color-text-lightest), 1);
           flex: 0 0 auto;
           position: relative;
           right: auto; }
@@ -4066,7 +4083,7 @@ body.emu.e-body#emu .sidebar-popout #settings {
   body.emu.e-body#emu #sidebar #settings h4,
   body.emu.e-body#emu .sidebar-popout #settings h2,
   body.emu.e-body#emu .sidebar-popout #settings h4 {
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     padding: 0;
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem; }
@@ -4101,81 +4118,79 @@ body.emu.e-body#emu .sidebar-popout #settings {
     -webkit-margin-after: 0.25rem;
             margin-block-end: 0.25rem; }
 
-body.emu.e-body#emu #client-settings .sheet-footer {
-  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
-          border-block-start: rgba(var(--color-border), 1) 1px solid;
-  flex: 0 0 auto;
-  flex-wrap: nowrap;
-  padding: 0;
-  -webkit-padding-before: 0.5rem;
-          padding-block-start: 0.5rem; }
-
-body.emu.e-body#emu #client-settings .settings-list {
-  padding: 0;
-  -webkit-padding-before: 0.5rem;
-          padding-block-start: 0.5rem; }
-  .-compact body.emu.e-body#emu #client-settings .settings-list {
-    -webkit-padding-before: 0.25rem;
-            padding-block-start: 0.25rem; }
-  body.emu.e-body#emu #client-settings .settings-list button {
-    height: auto; }
-    body.emu.e-body#emu #client-settings .settings-list button label {
-      cursor: pointer;
-      flex: initial;
-      font-size: 1rem;
-      padding: 0; }
-    body.emu.e-body#emu #client-settings .settings-list button + .notes,
-    body.emu.e-body#emu #client-settings .settings-list button + .hint {
-      -webkit-margin-before: 0.5rem;
-              margin-block-start: 0.5rem; }
-      .-compact body.emu.e-body#emu #client-settings .settings-list button + .notes, .-compact
+body.emu.e-body#emu #client-settings {
+  min-height: 31.25rem; }
+  body.emu.e-body#emu #client-settings .sheet-footer {
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid;
+    flex: 0 0 auto;
+    flex-wrap: nowrap;
+    padding: 0;
+    -webkit-padding-before: 0.5rem;
+            padding-block-start: 0.5rem; }
+  body.emu.e-body#emu #client-settings .settings-list {
+    padding: 0;
+    -webkit-padding-before: 0.5rem;
+            padding-block-start: 0.5rem; }
+    .-compact body.emu.e-body#emu #client-settings .settings-list {
+      -webkit-padding-before: 0.25rem;
+              padding-block-start: 0.25rem; }
+    body.emu.e-body#emu #client-settings .settings-list button {
+      height: auto; }
+      body.emu.e-body#emu #client-settings .settings-list button label {
+        cursor: pointer;
+        flex: initial;
+        font-size: 1rem;
+        padding: 0; }
+      body.emu.e-body#emu #client-settings .settings-list button + .notes,
       body.emu.e-body#emu #client-settings .settings-list button + .hint {
-        -webkit-margin-before: 0.25rem;
-                margin-block-start: 0.25rem; }
-
-body.emu.e-body#emu #client-settings .module-header {
-  -webkit-border-after: rgba(var(--color-primary), 1) 2px solid;
-          border-block-end: rgba(var(--color-primary), 1) 2px solid;
-  color: rgba(var(--color-primary), 1);
-  font-family: "Signika", sans-serif;
-  -webkit-margin-before: 1.5rem;
-          margin-block-start: 1.5rem;
-  -webkit-margin-after: 0.5rem;
-          margin-block-end: 0.5rem;
-  padding: 0 0.5rem; }
-  .-compact body.emu.e-body#emu #client-settings .module-header {
-    -webkit-margin-before: 1rem;
-            margin-block-start: 1rem;
-    -webkit-margin-after: 0.25rem;
-            margin-block-end: 0.25rem;
-    padding: 0 0.25rem; }
-  body.emu.e-body#emu #client-settings .module-header:first-child {
-    -webkit-margin-before: 0;
-            margin-block-start: 0; }
-    .-compact body.emu.e-body#emu #client-settings .module-header:first-child {
+        -webkit-margin-before: 0.5rem;
+                margin-block-start: 0.5rem; }
+        .-compact body.emu.e-body#emu #client-settings .settings-list button + .notes, .-compact
+        body.emu.e-body#emu #client-settings .settings-list button + .hint {
+          -webkit-margin-before: 0.25rem;
+                  margin-block-start: 0.25rem; }
+  body.emu.e-body#emu #client-settings .module-header {
+    -webkit-border-after: rgba(var(--color-primary), 1) 2px solid;
+            border-block-end: rgba(var(--color-primary), 1) 2px solid;
+    color: rgba(var(--color-primary), 1);
+    font-family: "Signika", sans-serif;
+    -webkit-margin-before: 1.5rem;
+            margin-block-start: 1.5rem;
+    -webkit-margin-after: 0.5rem;
+            margin-block-end: 0.5rem;
+    padding: 0 0.5rem; }
+    .-compact body.emu.e-body#emu #client-settings .module-header {
+      -webkit-margin-before: 1rem;
+              margin-block-start: 1rem;
+      -webkit-margin-after: 0.25rem;
+              margin-block-end: 0.25rem;
+      padding: 0 0.25rem; }
+    body.emu.e-body#emu #client-settings .module-header:first-child {
       -webkit-margin-before: 0;
               margin-block-start: 0; }
-  body.emu.e-body#emu #client-settings .module-header + .notes {
-    padding: 0 0.5rem; }
-    .-compact body.emu.e-body#emu #client-settings .module-header + .notes {
-      padding: 0 0.25rem; }
-
-body.emu.e-body#emu #client-settings #config-tabs {
-  border: none;
-  flex: 1 1 auto;
-  overflow-y: auto; }
-
-body.emu.e-body#emu #client-settings form {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  height: 100%;
-  padding: 0.5rem;
-  position: relative; }
-  .-compact body.emu.e-body#emu #client-settings form {
-    padding: 0.25rem; }
-  body.emu.e-body#emu #client-settings form hr {
-    display: none; }
+      .-compact body.emu.e-body#emu #client-settings .module-header:first-child {
+        -webkit-margin-before: 0;
+                margin-block-start: 0; }
+    body.emu.e-body#emu #client-settings .module-header + .notes {
+      padding: 0 0.5rem; }
+      .-compact body.emu.e-body#emu #client-settings .module-header + .notes {
+        padding: 0 0.25rem; }
+  body.emu.e-body#emu #client-settings #config-tabs {
+    border: none;
+    flex: 1 1 auto;
+    overflow-y: auto; }
+  body.emu.e-body#emu #client-settings form {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 100%;
+    padding: 0.5rem;
+    position: relative; }
+    .-compact body.emu.e-body#emu #client-settings form {
+      padding: 0.25rem; }
+    body.emu.e-body#emu #client-settings form hr {
+      display: none; }
 
 body.emu.e-body#emu #drawing-config form input[type="color"][data-edit][data-edit] {
   flex: 1 1 25%;
@@ -4293,10 +4308,10 @@ body.emu.e-body#emu .window-app.filepicker {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        background: rgba(var(--color-charcoal-900), 0.8);
+        background: rgba(var(--color-background-darkest), 0.8);
         border-radius: 0;
         display: block;
-        color: rgba(var(--color-white), 1);
+        color: rgba(var(--color-text-lightest), 1);
         font-size: 0.875rem;
         line-height: 1;
         margin: 0;
@@ -4368,7 +4383,7 @@ body.emu.e-body#emu .window-app.filepicker {
               margin-inline-start: 0; }
     body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode.active {
       background: rgba(var(--color-primary), 1);
-      color: rgba(var(--color-white), 1); }
+      color: rgba(var(--color-text-lightest), 1); }
   body.emu.e-body#emu .window-app.filepicker .directory {
     background: none;
     border: 0;
@@ -4410,20 +4425,20 @@ body.emu.e-body#emu .window-app.filepicker {
       body.emu.e-body#emu .window-app.filepicker .directory .file:hover {
         background: rgba(var(--color-primary), 1);
         box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu .window-app.filepicker .directory .dir:focus,
       body.emu.e-body#emu .window-app.filepicker .directory .file:focus {
         box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
     body.emu.e-body#emu .window-app.filepicker .directory .dir {
-      background: rgba(var(--color-charcoal-200), 0.9);
-      -webkit-border-after: rgba(var(--color-charcoal-600), 1) 1px solid;
-              border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
-      color: rgba(var(--color-default-text), 1); }
+      background: rgba(var(--color-folder-header), 0.9);
+      -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+              border-block-end: rgba(var(--color-border), 1) 1px solid;
+      color: rgba(var(--color-text), 1); }
     body.emu.e-body#emu .window-app.filepicker .directory .file {
-      background: rgba(var(--color-charcoal-600), 0.9);
-      -webkit-border-after: rgba(var(--color-charcoal-600), 1) 1px solid;
-              border-block-end: rgba(var(--color-charcoal-600), 1) 1px solid;
-      color: rgba(var(--color-white), 1); }
+      background: rgba(var(--color-folder-directory), 0.9);
+      -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+              border-block-end: rgba(var(--color-border), 1) 1px solid;
+      color: rgba(var(--color-text-lightest), 1); }
 
 body.emu.e-body#emu #folder-edit label + .flexrow {
   display: flex;
@@ -4498,11 +4513,11 @@ body.emu.e-body#emu .sheet.macro-sheet .form-group.command {
     word-wrap: break-word; }
 
 body.emu.e-body#emu .sheet.macro-sheet .sheet-footer {
-  background: rgba(var(--color-charcoal-50), 1);
+  background: rgba(var(--color-background-lightest), 1);
   -webkit-border-before: rgba(var(--color-charcoal-600), 1) 1px solid;
           border-block-start: rgba(var(--color-charcoal-600), 1) 1px solid;
   bottom: 0;
-  box-shadow: 0 0.5rem 0 0 rgba(var(--color-charcoal-50), 1);
+  box-shadow: 0 0.5rem 0 0 rgba(var(--color-background-lightest), 1);
   display: flex;
   flex: 0 0 auto;
   -webkit-margin-start: -0.5rem;
@@ -4514,7 +4529,7 @@ body.emu.e-body#emu .sheet.macro-sheet .sheet-footer {
   position: sticky;
   width: calc(100% + 1rem); }
   .-compact body.emu.e-body#emu .sheet.macro-sheet .sheet-footer {
-    box-shadow: 0 0.25rem 0 0 rgba(var(--color-charcoal-50), 1);
+    box-shadow: 0 0.25rem 0 0 rgba(var(--color-background-lightest), 1);
     -webkit-margin-start: -0.25rem;
             margin-inline-start: -0.25rem;
     padding: 0 0.25rem;
@@ -4563,7 +4578,7 @@ body.emu.e-body#emu #player-config .directory-item {
   -webkit-margin-end: 0;
           margin-inline-end: 0; }
   body.emu.e-body#emu #player-config .directory-item label {
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     font-weight: normal; }
 
 body.emu.e-body#emu #short-rest-hd {
@@ -4600,10 +4615,10 @@ body.emu.e-body#emu #trait-selector .trait-list li {
   display: flex;
   font-size: 1rem; }
   body.emu.e-body#emu #trait-selector .trait-list li:nth-of-type(even) {
-    background: rgba(var(--color-charcoal-300), 0.1); }
+    background: rgba(var(--color-background-light), 0.1); }
   body.emu.e-body#emu #trait-selector .trait-list li label {
     align-items: center;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     cursor: pointer;
     display: flex;
     padding: 0.25rem;
@@ -4620,7 +4635,7 @@ body.emu.e-body#emu #trait-selector .form-group.stacked label {
 
 body.emu.e-body#emu #calendar-time-container,
 body.emu.e-body#emu #calendar-weather-container {
-  background: rgba(var(--color-charcoal-500), 0.8);
+  background: rgba(var(--color-background), 0.8);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: none;
@@ -4650,7 +4665,7 @@ body.emu.e-body#emu #calendar-weather-container {
     align-items: center;
     -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
             border-block-end: rgba(var(--color-border), 1) 1px solid;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     display: flex;
     font-size: 0.875rem;
     height: auto;
@@ -4688,7 +4703,7 @@ body.emu.e-body#emu #calendar-weather-container {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       flex: 1 1 100%;
       margin: 0;
       opacity: 1;
@@ -4799,17 +4814,35 @@ body.emu.e-body#emu #calendar-weather-container #calendar-weather-hdr #calendar-
   bottom: initial; }
 
 body.emu.e-body#emu #calendar-weather-container #calendar-weather-precip {
-  color: rgba(var(--color-white), 1); }
+  color: rgba(var(--color-text-lightest), 1); }
   body.emu.e-body#emu #calendar-weather-container #calendar-weather-precip:hover {
     color: rgba(var(--color-primary), 1);
     text-shadow: none; }
+
+body.emu.e-body#emu #client-settings form .form-group .picker_wrapper.layout_default {
+  top: 50%;
+  right: 50%;
+  position: fixed;
+  width: 18.75rem;
+  height: 25rem;
+  box-shadow: 0 2px 4px rgba(var(--color-black), 1);
+  border: rgba(var(--color-border), 1) 1px solid;
+  transform: translateY(-12.5rem);
+  z-index: 1; }
+  body.emu.e-body#emu #client-settings form .form-group .picker_wrapper.layout_default .picker_editor input {
+    width: 100%; }
+  body.emu.e-body#emu #client-settings form .form-group .picker_wrapper.layout_default .picker_cancel {
+    width: 100%; }
+    body.emu.e-body#emu #client-settings form .form-group .picker_wrapper.layout_default .picker_cancel button {
+      padding: 0.25rem;
+      width: 100% !important; }
 
 body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input,
 body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input {
   width: 1.5rem;
   height: 1.5rem;
   border: none;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   padding: 0;
   text-align: center; }
   .-compact body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input, .-compact
@@ -4830,7 +4863,7 @@ body.emu.e-body#emu #sidebar #settings #combat-utility-belt h4,
 body.emu.e-body#emu .sidebar-popout #settings #combat-utility-belt h4 {
   -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
           border-block-end: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   -webkit-margin-before: 1rem;
           margin-block-start: 1rem; }
   .-compact body.emu.e-body#emu #sidebar #settings #combat-utility-belt h4, .-compact
@@ -4899,7 +4932,7 @@ body.emu.e-body#emu #custom-hotbar {
     body.emu.e-body#emu #custom-hotbar .bar-controls #custom-bar-toggle {
       align-items: center;
       background: rgba(var(--color-primary), 0.8);
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       flex: 0 0 auto;
@@ -4922,7 +4955,7 @@ body.emu.e-body#emu #custom-hotbar {
     body.emu.e-body#emu #custom-hotbar .bar-controls .page-number {
       align-items: center;
       background: rgba(var(--color-primary), 0.5);
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       display: flex;
       flex: 1 1 auto;
       justify-content: center; }
@@ -4947,7 +4980,7 @@ body.emu.e-body#emu #custom-hotbar {
     border: rgba(var(--color-border), 1) 1px solid;
     border-radius: 0;
     box-shadow: none;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     cursor: pointer;
     display: flex;
     flex: 0 0 auto;
@@ -4969,7 +5002,7 @@ body.emu.e-body#emu #custom-hotbar {
       right: 0.25rem;
       position: absolute;
       background: transparent;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       font-size: 0.875rem;
       font-weight: 600;
       padding: 0;
@@ -4993,9 +5026,9 @@ body.emu.e-body#emu #custom-hotbar {
       bottom: 100%;
       left: 0;
       position: absolute;
-      background: rgba(var(--color-charcoal-900), 0.5);
+      background: rgba(var(--color-background-darkest), 0.5);
       border-radius: 0;
-      color: rgba(var(--color-white), 1);
+      color: rgba(var(--color-text-lightest), 1);
       font-size: 0.875rem;
       -webkit-margin-after: 0.25rem;
               margin-block-end: 0.25rem;
@@ -5072,7 +5105,7 @@ body.emu.e-body#emu #sidebar .dice-tray {
     align-items: center;
     background: rgba(var(--color-primary), 1);
     border-radius: 0;
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     display: flex;
     font-size: 0.875rem;
     justify-content: center;
@@ -5158,7 +5191,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator {
             padding-inline-end: 0.5rem; }
   body.emu.e-body#emu .dialog--dice-calculator .dice-calculator > button,
   body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--button {
-    color: rgba(var(--color-default-text), 1); }
+    color: rgba(var(--color-text), 1); }
 
 body.emu.e-body#emu #sidebar .import-dd,
 body.emu.e-body#emu .sidebar-popout .import-dd {
@@ -5213,7 +5246,7 @@ body.emu.e-body#emu .forien-quest-preview .editor-edit {
   top: 0.25rem;
   right: 0.75rem;
   position: absolute;
-  background: rgba(var(--color-gray-500), 1); }
+  background: rgba(var(--color-background-button), 1); }
 
 body.emu.e-body#emu #forien-quest-log form,
 body.emu.e-body#emu #forien-quest-log-form form,
@@ -5235,7 +5268,7 @@ body.emu.e-body#emu #forien-quest-log .quest-log {
     top: 2.5rem;
     left: -7.5rem;
     position: absolute;
-    background: rgba(var(--color-charcoal-50), 1);
+    background: rgba(var(--color-background-lightest), 1);
     border: rgba(var(--color-border), 1) 1px solid;
     -webkit-border-start: none;
             border-inline-start: none;
@@ -5263,7 +5296,7 @@ body.emu.e-body#emu #forien-quest-log .quest-log {
     body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table thead {
       background: none;
       border: none;
-      color: rgba(var(--color-default-text), 1);
+      color: rgba(var(--color-text), 1);
       text-shadow: none; }
       body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table thead th {
         background: rgba(var(--color-primary), 0.1);
@@ -5275,12 +5308,12 @@ body.emu.e-body#emu #forien-quest-log .quest-log {
           width: 7.5rem; }
         body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table thead th.sortable:hover {
           background: rgba(var(--color-primary), 1);
-          color: rgba(var(--color-white), 1);
+          color: rgba(var(--color-text-lightest), 1);
           cursor: pointer; }
     body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tbody tr {
       background: transparent; }
       body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tbody tr:nth-of-type(even) {
-        background: rgba(var(--color-charcoal-300), 0.1); }
+        background: rgba(var(--color-background-light), 0.1); }
     body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr {
       height: auto; }
       body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td {
@@ -5303,9 +5336,9 @@ body.emu.e-body#emu #forien-quest-log .quest-log {
           -webkit-padding-start: 0;
                   padding-inline-start: 0; }
           body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i {
-            color: rgba(var(--color-default-text), 1); }
+            color: rgba(var(--color-text), 1); }
             body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:hover, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:focus {
-              color: rgba(var(--color-white), 1); }
+              color: rgba(var(--color-text-lightest), 1); }
             body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:first-child {
               -webkit-margin-start: 0;
                       margin-inline-start: 0; }
@@ -5333,7 +5366,7 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
       width: 100%; }
   body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset {
     border: 0;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     margin: 0;
     padding: 0;
     -webkit-padding-end: 0.5rem;
@@ -5369,9 +5402,9 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
         left: 0;
         position: absolute;
         align-items: center;
-        background: rgba(var(--color-charcoal-200), 0.2);
+        background: rgba(var(--color-folder-header), 0.2);
         border: 1px dotted rgba(var(--color-border), 1);
-        color: rgba(var(--color-default-text), 1);
+        color: rgba(var(--color-text), 1);
         display: flex;
         font-size: 1.25rem;
         font-variant: small-caps;
@@ -5398,7 +5431,7 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
       body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tinymce-fieldset .editor {
         height: calc(100% - 0.8125rem); }
       body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tinymce-fieldset .editor-content {
-        color: rgba(var(--color-default-text), 1);
+        color: rgba(var(--color-text), 1);
         overflow-x: hidden;
         overflow-y: auto;
         padding: 0; }
@@ -5408,7 +5441,7 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
         position: absolute;
         display: none !important; }
       body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tinymce-fieldset + .tinymce-fieldset {
-        background: rgba(var(--color-charcoal-200), 0.2);
+        background: rgba(var(--color-folder-header), 0.2);
         -webkit-padding-start: 0.25rem;
                 padding-inline-start: 0.25rem;
         -webkit-padding-end: 0;
@@ -5421,7 +5454,7 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
               padding-block-end: 0.5rem; }
       body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 {
         align-items: center;
-        background: rgba(var(--color-charcoal-50), 1);
+        background: rgba(var(--color-background-lightest), 1);
         -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
                 border-block-end: rgba(var(--color-border), 1) 1px solid;
         display: flex;
@@ -5444,9 +5477,9 @@ body.emu.e-body#emu #forien-quest-log-form .grid-container {
         -webkit-margin-before: 0.25rem;
                 margin-block-start: 0.25rem; }
         body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn {
-          color: rgba(var(--color-default-text), 1); }
+          color: rgba(var(--color-text), 1); }
           body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:focus {
-            color: rgba(var(--color-white), 1); }
+            color: rgba(var(--color-text-lightest), 1); }
     body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset label {
       display: block;
       font-size: 1rem;
@@ -5488,7 +5521,7 @@ body.emu.e-body#emu .forien-quest-preview .details .details-header {
     white-space: nowrap;
     align-items: center;
     border: none;
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     display: block;
     flex: 1 1 auto;
     position: -webkit-sticky;
@@ -5507,9 +5540,9 @@ body.emu.e-body#emu .forien-quest-preview .details .details-header {
     right: auto;
     top: auto; }
     body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i {
-      color: rgba(var(--color-default-text), 1); }
+      color: rgba(var(--color-text), 1); }
       body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:hover, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:focus {
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:first-child {
         -webkit-margin-start: 0;
                 margin-inline-start: 0; }
@@ -5556,7 +5589,7 @@ body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc {
     top: 0;
     right: 0;
     position: absolute;
-    background: rgba(var(--color-gray-500), 1);
+    background: rgba(var(--color-background-button), 1);
     flex: 0 0 auto;
     margin: 0; }
 
@@ -5574,7 +5607,7 @@ body.emu.e-body#emu .forien-quest-preview .details .description-gc {
   body.emu.e-body#emu .forien-quest-preview .details .description-gc .editor {
     height: calc(100% - 2rem); }
   body.emu.e-body#emu .forien-quest-preview .details .description-gc .editor-content {
-    color: rgba(var(--color-default-text), 1);
+    color: rgba(var(--color-text), 1);
     overflow-x: hidden;
     overflow-y: auto;
     padding: 0; }
@@ -5680,7 +5713,7 @@ body.emu.e-body#emu .forien-quest-preview .details .tasks-gc {
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState,
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn,
     body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleHidden {
-      color: rgba(var(--color-default-text), 1);
+      color: rgba(var(--color-text), 1);
       flex: 0 0 auto;
       margin: 0; }
       body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:focus,
@@ -5688,7 +5721,7 @@ body.emu.e-body#emu .forien-quest-preview .details .tasks-gc {
       body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn:focus,
       body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleHidden:hover,
       body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleHidden:focus {
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
 
 body.emu.e-body#emu .forien-quest-preview .details .rewards-gc {
   display: flex;
@@ -5709,14 +5742,14 @@ body.emu.e-body#emu .forien-quest-preview .details .rewards-gc {
     body.emu.e-body#emu .forien-quest-preview .details .rewards-gc h3 small {
       width: auto;
       height: auto;
-      color: rgba(var(--color-default-text), 1);
+      color: rgba(var(--color-text), 1);
       flex: 0 0 auto;
       margin: 0;
       -webkit-margin-start: 0.25rem;
               margin-inline-start: 0.25rem;
       padding: 0.25rem; }
       body.emu.e-body#emu .forien-quest-preview .details .rewards-gc h3 small:hover, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc h3 small:focus {
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu .forien-quest-preview .details .rewards-gc h3 small i {
         opacity: 1; }
   body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box {
@@ -5734,7 +5767,7 @@ body.emu.e-body#emu .forien-quest-preview .details .rewards-gc {
       position: absolute;
       align-items: center;
       bottom: 0.5rem;
-      color: rgba(var(--color-default-text), 1);
+      color: rgba(var(--color-text), 1);
       cursor: pointer;
       display: flex;
       font-size: 1.25rem;
@@ -5777,13 +5810,13 @@ body.emu.e-body#emu .forien-quest-preview .details .rewards-gc {
                 margin-inline-end: 0.5rem; }
       body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .del-btn,
       body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .toggleHidden {
-        color: rgba(var(--color-default-text), 1);
+        color: rgba(var(--color-text), 1);
         flex: 0 0 auto;
         margin: 0; }
         body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .del-btn:hover, body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .del-btn:focus,
         body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .toggleHidden:hover,
         body.emu.e-body#emu .forien-quest-preview .details .rewards-gc .rewards-box .reward .toggleHidden:focus {
-          color: rgba(var(--color-white), 1); }
+          color: rgba(var(--color-text-lightest), 1); }
 
 body.emu.e-body#emu .forien-quest-preview .management {
   flex-wrap: wrap; }
@@ -5813,11 +5846,11 @@ body.emu.e-body#emu .forien-quest-preview .management {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          color: rgba(var(--color-default-text), 1);
+          color: rgba(var(--color-text), 1);
           flex: 1 1 auto;
           font-size: 1rem; }
         body.emu.e-body#emu .forien-quest-preview .management .part.personal-quest .quest-is-personal small {
-          color: rgba(var(--color-default-text), 1);
+          color: rgba(var(--color-text), 1);
           flex: 0 0 100%;
           font-size: 0.75rem;
           -webkit-margin-before: 0.25rem;
@@ -5856,7 +5889,7 @@ body.emu.e-body#emu .forien-quest-preview .management {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            color: rgba(var(--color-default-text), 1);
+            color: rgba(var(--color-text), 1);
             flex: 1 1 auto;
             font-size: 0.875rem; }
     body.emu.e-body#emu .forien-quest-preview .management .part.subquests {
@@ -5891,7 +5924,7 @@ body.emu.e-body#emu .forien-quest-preview .management {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            color: rgba(var(--color-default-text), 1);
+            color: rgba(var(--color-text), 1);
             flex: 1 1 auto;
             font-size: 0.875rem;
             font-weight: normal; }
@@ -5900,9 +5933,9 @@ body.emu.e-body#emu .forien-quest-preview .management {
           body.emu.e-body#emu .forien-quest-preview .management .part.subquests .subquests-box .subquest .actions {
             flex: 0 0 auto; }
             body.emu.e-body#emu .forien-quest-preview .management .part.subquests .subquests-box .subquest .actions > i {
-              color: rgba(var(--color-default-text), 1); }
+              color: rgba(var(--color-text), 1); }
               body.emu.e-body#emu .forien-quest-preview .management .part.subquests .subquests-box .subquest .actions > i:hover, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .subquests-box .subquest .actions > i:focus {
-                color: rgba(var(--color-white), 1); }
+                color: rgba(var(--color-text-lightest), 1); }
       body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn {
         flex: 0 0 auto;
         -webkit-margin-before: 0.5rem;
@@ -5967,7 +6000,7 @@ body.emu.e-body#emu .sidebar-popout .sound-control-hidden {
 
 body.emu.e-body#emu #sidebar #combat li.combatant.turn-done,
 body.emu.e-body#emu .sidebar-popout #combat li.combatant.turn-done {
-  color: rgba(var(--color-white), 1); }
+  color: rgba(var(--color-text-lightest), 1); }
 
 body.emu.e-body#emu form .furnace-macro-run-as-gm.form-group label.form-group {
   flex: 1 1 auto;
@@ -5975,10 +6008,10 @@ body.emu.e-body#emu form .furnace-macro-run-as-gm.form-group label.form-group {
   padding: 0; }
 
 body.emu.e-body#emu form .furnace-macro-run-as-gm.form-group .tooltip {
-  background: rgba(var(--color-charcoal-900), 0.8);
+  background: rgba(var(--color-background-darkest), 0.8);
   border-radius: 0;
   bottom: 100% !important;
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   height: auto;
   max-width: 100%;
   right: 0 !important; }
@@ -6011,7 +6044,7 @@ body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command {
       position: fixed;
       width: 110vw;
       height: 110vh;
-      background: rgba(var(--color-charcoal-900), 0.8);
+      background: rgba(var(--color-background-darkest), 0.8);
       content: "";
       z-index: 1; }
     .-compact body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command.fullscreen {
@@ -6026,7 +6059,7 @@ body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command {
       height: 100%;
       z-index: 10; }
     body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command.fullscreen pre {
-      background: rgba(var(--color-charcoal-50), 1); }
+      background: rgba(var(--color-background-lightest), 1); }
     body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command.fullscreen .furnace-macro-expand {
       z-index: 11; }
   body.emu.e-body#emu .sheet.macro-sheet .form-group.furnace-macro-command textarea {
@@ -6149,11 +6182,11 @@ body.emu.e-body#emu #lmrtfy form {
   body.emu.e-body#emu #lmrtfy form .form-group input {
     background: none; }
   body.emu.e-body#emu #lmrtfy form .lmrtfy-submit {
-    background: rgba(var(--color-charcoal-50), 1);
+    background: rgba(var(--color-background-lightest), 1);
     border-radius: 0;
     -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
             border-block-start: rgba(var(--color-border), 1) 1px solid;
-    box-shadow: 0 0.5rem 0 0 rgba(var(--color-charcoal-50), 1);
+    box-shadow: 0 0.5rem 0 0 rgba(var(--color-background-lightest), 1);
     bottom: 0;
     display: flex;
     left: 0;
@@ -6241,7 +6274,7 @@ body.emu.e-body#emu #lmrtfy button.file-picker {
       height: 1.5rem; }
 
 body.emu.e-body#emu #lmrtfy form button {
-  background: rgba(var(--color-gray-500), 1);
+  background: rgba(var(--color-background-button), 1);
   border: none; }
 
 body.emu.e-body#emu #sidebar div.permission-viewer,
@@ -6319,7 +6352,7 @@ body.emu.e-body#emu #players #player-list #userPing {
     color: rgba(var(--color-primary), 1); }
 
 body.emu.e-body#emu #pingPop {
-  background: rgba(var(--color-charcoal-900), 0.8) !important;
+  background: rgba(var(--color-background-darkest), 0.8) !important;
   border-radius: 0 !important;
   opacity: 1 !important;
   padding: 0.5rem !important; }
@@ -6327,7 +6360,7 @@ body.emu.e-body#emu #pingPop {
     padding: 0.25rem !important; }
 
 body.emu.e-body#emu .window-app#client-settings, body.emu.e-body#emu .window-app#module-management {
-  min-height: 10vh; }
+  min-height: 31.25rem; }
   body.emu.e-body#emu .window-app#client-settings .package-list,
   body.emu.e-body#emu .window-app#client-settings section.content .settings-list, body.emu.e-body#emu .window-app#module-management .package-list,
   body.emu.e-body#emu .window-app#module-management section.content .settings-list {
@@ -6369,7 +6402,7 @@ body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-se
         pointer-events: none; }
 
 body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wrapper h2.module-header {
-  background: rgba(var(--color-charcoal-500), 1);
+  background: rgba(var(--color-background-button), 1);
   font-weight: normal;
   justify-content: flex-start;
   -webkit-margin-after: 0.25rem;
@@ -6378,7 +6411,7 @@ body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wr
   body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wrapper h2.module-header.open {
     background: rgba(var(--color-primary), 1); }
   body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wrapper h2.module-header > span {
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     -webkit-margin-end: 0.5rem;
             margin-inline-end: 0.5rem; }
     .-compact body.emu.e-body#emu #client-settings.app.window-app.form #config-tabs .module-wrapper h2.module-header > span {
@@ -6411,6 +6444,10 @@ body.emu.e-body#emu #module-management .enhanced-module-management #searchField 
     body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear.show {
       display: flex; }
 
+body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] div.form-group .picker_wrapper,
+body.emu.e-body#emu #module-management .enhanced-module-management div.form-group .picker_wrapper {
+  margin: 0; }
+
 body.emu.e-body#emu #settings .game-system {
   margin: 0; }
 
@@ -6441,7 +6478,7 @@ body.emu.e-body#emu #token-action-hud {
             margin-inline-start: 0.25rem;
     padding: 0; }
     body.emu.e-body#emu #token-action-hud .tah-action button {
-      background: rgba(var(--color-charcoal-500), 1); }
+      background: rgba(var(--color-background), 1); }
       body.emu.e-body#emu #token-action-hud .tah-action button > div {
         -webkit-margin-start: 0.25rem;
                 margin-inline-start: 0.25rem;
@@ -6451,6 +6488,32 @@ body.emu.e-body#emu #token-action-hud {
     padding: 0.5rem 0; }
     .-compact body.emu.e-body#emu #token-action-hud .tah-content {
       padding: 0.25rem 0; }
+
+body.emu.e-body#emu .sheet.token-sheet .auras {
+  border: rgba(var(--color-border), 1) 1px solid;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  padding: 0 "base"; }
+  body.emu.e-body#emu .sheet.token-sheet .auras .aura-row {
+    flex: 0 0 100%; }
+    body.emu.e-body#emu .sheet.token-sheet .auras .aura-row input {
+      flex: 1 1 auto; }
+      body.emu.e-body#emu .sheet.token-sheet .auras .aura-row input + span {
+        flex: 0 0 auto;
+        -webkit-margin-start: 0.25rem;
+                margin-inline-start: 0.25rem; }
+    body.emu.e-body#emu .sheet.token-sheet .auras .aura-row span {
+      font-size: 0.875rem; }
+      body.emu.e-body#emu .sheet.token-sheet .auras .aura-row span + input {
+        -webkit-margin-start: 0.5rem;
+                margin-inline-start: 0.5rem; }
+    body.emu.e-body#emu .sheet.token-sheet .auras .aura-row label {
+      flex: 0 0 auto;
+      -webkit-margin-start: 0.5rem;
+              margin-inline-start: 0.5rem; }
+      body.emu.e-body#emu .sheet.token-sheet .auras .aura-row label input {
+        -webkit-margin-end: 0.25rem;
+                margin-inline-end: 0.25rem; }
 
 body.emu.e-body#emu #sidebar .token-mold,
 body.emu.e-body#emu .sidebar-popout .token-mold {

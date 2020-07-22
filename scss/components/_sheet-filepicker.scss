@@ -88,10 +88,10 @@
 				.filename {
 					@include absolute(top 0 left 0);
 					@include ellipsis(max-width 100%);
-					background: color("charcoal-900", 0.8);
+					background: color("background-darkest", 0.8);
 					border-radius: 0;
 					display: block;
-					color: color("white");
+					color: color("text-lightest");
 					font-size: fs("md");
 					line-height: 1;
 					margin: 0;
@@ -205,7 +205,7 @@
 
 			&.active {
 				background: color("primary");
-				color: color("white");
+				color: color("text-lightest");
 			}
 		}
 	}
@@ -253,7 +253,7 @@
 			&:hover {
 				background: color("primary");
 				box-shadow: inset 0 0 0 2px color("white");
-				color: color("white");
+				color: color("text-lightest");
 			}
 
 			&:focus {
@@ -264,15 +264,15 @@
 		}
 
 		.dir {
-			background: color("charcoal-200", 0.9);
-			border-block-end: b("charcoal-600");
-			color: color("default-text");
+			background: color("folder-header", 0.9);
+			border-block-end: b("border");
+			color: color("text");
 		}
 
 		.file {
-			background: color("charcoal-600", 0.9);
-			border-block-end: b("charcoal-600");
-			color: color("white");
+			background: color("folder-directory", 0.9);
+			border-block-end: b("border");
+			color: color("text-lightest");
 		}
 	}
 }

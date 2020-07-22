@@ -1,7 +1,7 @@
 #calendar-time-container,
 #calendar-weather-container {
 	// @include fixed(bottom space("sm") left auto right to-rem(332px));
-	background: color("charcoal-500", 0.8);
+	background: color("background", 0.8);
 	border: b("border");
 	border-radius: 0;
 	box-shadow: none;
@@ -32,7 +32,7 @@
 		@include size(100%, auto);
 		align-items: center;
 		border-block-end: b("border");
-		color: color("white");
+		color: color("text-lightest");
 		display: flex;
 		font-size: fs("md");
 		height: auto;
@@ -68,7 +68,7 @@
 		#calendar-date,
 		#calendar-date-num {
 			@include ellipsis(max-width 100%);
-			color: color("white");
+			color: color("text-lightest");
 			flex: 1 1 100%;
 			margin: 0;
 			opacity: 1;
@@ -169,7 +169,7 @@
 	}
 
 	#calendar-weather-precip {
-		color: color("white");
+		color: color("text-lightest");
 
 		&:hover {
 			color: color("primary");

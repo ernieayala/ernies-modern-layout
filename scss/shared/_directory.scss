@@ -7,10 +7,10 @@
 
 %directory-item {
 	align-items: center;
-	background: color("charcoal-400");
+	background: color("folder-directory");
 	border: none;
 	box-shadow: none;
-	color: color("white");
+	color: color("text-lightest");
 	cursor: pointer;
 	display: flex;
 	flex-wrap: nowrap;
@@ -31,7 +31,7 @@
 	&:hover {
 		@extend %global-hover;
 		background: color("primary");
-		color: color("white");
+		color: color("text-lightest");
 	}
 
 	&:focus {
@@ -112,7 +112,7 @@
 	.subdirectory {
 		display: flex;
 		flex-direction: column;
-		background: color("charcoal-100");
+		background: color("folder-subdirectory");
 		border: none;
 		border-inline-start: b("primary", 4px);
 		width: 100%;

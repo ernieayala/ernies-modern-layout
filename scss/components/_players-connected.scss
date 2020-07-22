@@ -1,6 +1,6 @@
 #players {
 	@include fixed(bottom space("sm") left space("sm"));
-	background: color("charcoal-500", 0.8);
+	background: color("background", 0.8);
 	border: b("border");
 	border-radius: 0;
 	box-shadow: none;
@@ -20,7 +20,7 @@
 	h3 {
 		@extend %h-tag;
 		border-block-end: b("border");
-		color: color("white");
+		color: color("text-lightest");
 		cursor: pointer;
 		display: flex;
 		font-size: fs("md");
@@ -90,13 +90,13 @@
 
 		.player-name {
 			@include ellipsis;
-			color: color("white");
+			color: color("text-lightest");
 			flex: 1 1 auto;
 			position: relative;
 			text-shadow: none;
 
 			&.self {
-				color: color("white");
+				color: color("text-lightest");
 			}
 		}
 

@@ -1,6 +1,6 @@
 %window-content {
 	background: transparent;
-	color: color("default-text");
+	color: color("text");
 	flex: 1 1 auto;
 	font-size: fs("md");
 	overflow: hidden;
@@ -94,7 +94,7 @@
 	}
 
 	form button {
-		background: color("gray-500");
+		background: color("background-button");
 		border: none;
 	}
 }
@@ -170,7 +170,7 @@
 
 			input {
 				@include size(100%, to-rem(40px));
-				background: color("charcoal-300", 0.2);
+				background: color("background-light", 0.2);
 				flex: 0 0 auto;
 				font-size: fs("xxl");
 			}

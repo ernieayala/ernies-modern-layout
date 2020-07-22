@@ -1,5 +1,5 @@
 .window-app {
-	background: color("charcoal-50");
+	background: color("background-lightest");
 	border: b("border");
 	border-radius: 0;
 	box-shadow: 0 2px 4px color("black");
@@ -15,15 +15,15 @@
 	}
 
 	&.sidebar-popout {
-		background: color("charcoal-900", 0.8);
+		background: color("background-darkest", 0.8);
 	}
 
 	.window-header {
 		align-items: center;
-		background: color("charcoal-600");
+		background: color("background");
 		border: none;
 		border-block-end: b("border");
-		color: color("white");
+		color: color("text-lightest");
 		display: flex;
 		flex: 0 0 auto;
 		flex-wrap: nowrap;
@@ -39,7 +39,7 @@
 		.window-title {
 			@extend %h-tag;
 			@include ellipsis(max-width 100%);
-			color: color("white");
+			color: color("text-lightest");
 			flex: 1 1 auto;
 		}
 
@@ -67,7 +67,7 @@
 					@include absolute(top 0 left 0);
 					@include size(100%);
 					align-items: center;
-					color: color("white");
+					color: color("text-lightest");
 					display: flex;
 					font-size: fs("lg");
 					justify-content: center;
@@ -92,10 +92,10 @@
 		@include absolute(bottom 0 right 0);
 		@include size(to-rem(20px));
 		align-items: center;
-		background: color("charcoal-800");
+		background: color("background-button");
 		border: none;
 		border-radius: 0;
-		color: color("white");
+		color: color("text-lightest");
 		cursor: pointer;
 		display: inline-flex;
 		font-size: fs("md");

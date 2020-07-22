@@ -1,7 +1,7 @@
 #loading {
 	@include fixed(top space("sm") left to-rem(148px));
 	@include size(calc(100% - #{to-rem(600px)}), to-rem(24px));
-	background: color("charcoal-500", 0.8);
+	background: color("background", 0.8);
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
@@ -33,7 +33,7 @@
 		@include absolute(top 0);
 		align-items: center;
 		background: transparent;
-		color: color("white");
+		color: color("text-lightest");
 		display: flex;
 		height: 100%;
 		font-size: fs("md");

@@ -29,7 +29,7 @@
 				}
 
 				h3 {
-					color: color("white");
+					color: color("text-lightest");
 					font-size: fs("xl");
 
 					.-compact & {
@@ -61,7 +61,7 @@
 
 			.combatant {
 				align-items: center;
-				background: color("border");
+				background: color("background");
 				border: none;
 				display: flex;
 				line-height: initial;
@@ -103,7 +103,7 @@
 
 						.combatant-control.active {
 							background: color("primary");
-							color: color("white");
+							color: color("text-lightest");
 						}
 					}
 				}
@@ -132,7 +132,7 @@
 					h4 {
 						@extend %h-tag;
 						@include ellipsis(max-width 100%);
-						color: color("white");
+						color: color("text-lightest");
 						flex: initial;
 						font-size: fs("lg");
 						line-height: initial;
@@ -142,7 +142,7 @@
 				.token-resource,
 				.token-initiative {
 					align-items: center;
-					color: color("white");
+					color: color("text-lightest");
 					display: flex;
 					flex: 0 0 auto;
 					position: relative;

@@ -1,6 +1,6 @@
 %form-group {
 	align-items: center;
-	color: color("default-text");
+	color: color("text");
 	display: flex;
 	flex-wrap: wrap;
 	font-size: fs("lg");
@@ -13,7 +13,7 @@
 	}
 
 	&:nth-of-type(even) {
-		background: color("charcoal-300", 0.1);
+		background: color("background-light", 0.1);
 	}
 
 	&.initial-position {
@@ -98,7 +98,7 @@
 
 		.units {
 			@include ellipsis;
-			color: color("default-text");
+			color: color("text");
 			display: block;
 			font-size: fs("sm");
 			line-height: initial;

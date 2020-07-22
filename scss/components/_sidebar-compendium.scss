@@ -14,9 +14,9 @@
 				@extend %h-tag;
 				@include ellipsis;
 				align-items: center;
-				background: color("charcoal-200");
+				background: color("folder-header");
 				border: none;
-				color: color("default-text");
+				color: color("text");
 				display: flex;
 				flex: 1 1 auto;
 				flex-wrap: nowrap;
@@ -34,16 +34,16 @@
 
 			> .compendium-list {
 				@extend %reset-list;
-				background: color("charcoal-100");
+				background: color("folder-subdirectory");
 				display: flex;
 				flex-direction: column;
 				width: 100%;
 
 				.compendium-pack {
 					align-items: center;
-					background: color("charcoal-400");
+					background: color("folder-directory");
 					border: none;
-					color: color("white");
+					color: color("text-lightest");
 					cursor: pointer;
 					flex-wrap: wrap;
 					margin: m("base");
@@ -65,7 +65,7 @@
 					&:hover {
 						@extend %global-hover;
 						background: color("primary");
-						color: color("white");
+						color: color("text-lightest");
 					}
 
 					&:focus {
@@ -74,7 +74,7 @@
 
 					h4 {
 						@extend %h-tag;
-						color: color("white");
+						color: color("text-lightest");
 						display: flex;
 						font-size: fs("lg");
 						width: 100%;
@@ -99,7 +99,7 @@
 						}
 
 						.status-icons {
-							color: color("white");
+							color: color("text-lightest");
 							flex: 0 0 auto;
 							position: relative;
 							right: auto;

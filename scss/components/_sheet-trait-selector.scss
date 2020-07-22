@@ -9,12 +9,12 @@
 			font-size: fs("lg");
 
 			&:nth-of-type(even) {
-				background: color("charcoal-300", 0.1);
+				background: color("background-light", 0.1);
 			}
 
 			label {
 				align-items: center;
-				color: color("default-text");
+				color: color("text");
 				cursor: pointer;
 				display: flex;
 				padding: p("base");

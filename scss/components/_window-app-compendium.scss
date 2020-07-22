@@ -125,7 +125,7 @@
 		.directory-item {
 			align-items: center;
 			background: color("charcoal-400");
-			color: color("white");
+			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
 			flex-wrap: nowrap;
@@ -142,7 +142,7 @@
 			&:hover {
 				@extend %global-hover;
 				background: color("primary");
-				color: color("white");
+				color: color("text-lightest");
 			}
 
 			&:focus {

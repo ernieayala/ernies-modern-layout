@@ -4,9 +4,10 @@
 		#combat-tracker {
 			.token-resource {
 				input {
+					@extend %input-text;
 					@include size(space("button-sm"));
 					border: none;
-					color: color("white");
+					color: color("text-lightest");
 					padding: 0;
 					text-align: center;
 
@@ -34,7 +35,7 @@
 		#combat-utility-belt {
 			h4 {
 				border-block-end: b("border");
-				color: color("white");
+				color: color("text-lightest");
 				margin-block-start: m("md");
 
 				.-compact & {

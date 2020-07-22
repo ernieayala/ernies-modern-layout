@@ -1,6 +1,7 @@
 #client-settings {
 	@extend %window-common;
 	@extend %window-sheets;
+	min-height: to-rem(500px);
 
 	.sheet-footer {
 		border-block-start: b("border");

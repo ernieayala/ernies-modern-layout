@@ -1,0 +1,37 @@
+.sheet.token-sheet {
+	.auras {
+		border: b("border");
+		margin-block-end: m("sm");
+		padding: 0 ("base");
+
+		.aura-row {
+			flex: 0 0 100%;
+
+			input {
+				flex: 1 1 auto;
+
+				+ span {
+					flex: 0 0 auto;
+					margin-inline-start: m("base");
+				}
+			}
+
+			span {
+				font-size: fs("md");
+
+				+ input {
+					margin-inline-start: m("sm");
+				}
+			}
+
+			label {
+				flex: 0 0 auto;
+				margin-inline-start: m("sm");
+
+				input {
+					margin-inline-end: m("base");
+				}
+			}
+		}
+	}
+}

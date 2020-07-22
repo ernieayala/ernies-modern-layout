@@ -68,7 +68,7 @@
 		#custom-bar-toggle {
 			align-items: center;
 			background: color("primary", 0.8);
-			color: color("white");
+			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -101,7 +101,7 @@
 		.page-number {
 			align-items: center;
 			background: color("primary", 0.5);
-			color: color("white");
+			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
 			justify-content: center;
@@ -136,7 +136,7 @@
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
-		color: color("white");
+		color: color("text-lightest");
 		cursor: pointer;
 		display: flex;
 		flex: 0 0 auto;
@@ -169,7 +169,7 @@
 		.custom-macro-key {
 			@include absolute(top space("xs") right space("base"));
 			background: transparent;
-			color: color("white");
+			color: color("text-lightest");
 			font-size: fs("md");
 			font-weight: 600;
 			padding: 0;
@@ -193,9 +193,9 @@
 
 		.tooltip {
 			@include absolute(bottom 100% left 0);
-			background: color("charcoal-900", 0.5);
+			background: color("background-darkest", 0.5);
 			border-radius: 0;
-			color: color("white");
+			color: color("text-lightest");
 			font-size: fs("md");
 			margin-block-end: m("base");
 			padding: p("xs");

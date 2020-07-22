@@ -3,7 +3,7 @@
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-	color: color("white");
+	color: color("text-lightest");
 	cursor: pointer;
 	display: inline-flex;
 	font-family: "Signika", sans-serif;
@@ -22,7 +22,7 @@
 	&:hover {
 		@extend %global-hover;
 		background: color("primary");
-		color: color("white");
+		color: color("text-lightest");
 	}
 
 	&:focus {
@@ -40,7 +40,7 @@
 
 %primary-button {
 	@extend %default-button;
-	background: color("gray-500");
+	background: color("background-button");
 }
 
 %secondary-button {
@@ -62,7 +62,7 @@
 
 %icon-button {
 	align-items: center;
-	color: color("default-text");
+	color: color("text");
 	cursor: pointer;
 	display: flex;
 	flex: 0 0 auto;

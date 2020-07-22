@@ -1,0 +1,25 @@
+#client-settings {
+	form .form-group {
+		.picker_wrapper.layout_default {
+			@include fixed(top 50% right 50%);
+			@include size(to-rem(300px), to-rem(400px));
+			box-shadow: $global-box-shadow;
+			border: b("border");
+			transform: translateY(to-rem(-200px));
+			z-index: 1;
+
+			.picker_editor input {
+				width: 100%;
+			}
+
+			.picker_cancel {
+				width: 100%;
+
+				button {
+					padding: p("base");
+					width: 100% !important;
+				}
+			}
+		}
+	}
+}

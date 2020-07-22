@@ -39,10 +39,10 @@
 
 	.folder-header {
 		align-items: center;
-		background: color("charcoal-200");
+		background: color("folder-header");
 		border: 0;
 		border-inline-start: b("primary", 4px);
-		color: color("default-text");
+		color: color("text");
 		cursor: pointer;
 		display: flex;
 		flex-wrap: nowrap;
@@ -61,7 +61,7 @@
 		&:hover {
 			@extend %global-hover;
 			background: color("primary");
-			color: color("white");
+			color: color("text-lightest");
 		}
 
 		&:focus {

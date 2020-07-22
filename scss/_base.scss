@@ -5,10 +5,19 @@
 		"x-slow": 0.8s
 	)
 	"color" (
+		"background-lightest": #e6e9eb, // c50
+		"background-light": #7d8a8c, // c300
+		"background": #293e40, // c500
+		"background-darkest": #090e10, // c900
+		"background-button": #7d7d7d, // g500
+		"border": #213234,
+		"folder-header": #a7b0b2, // c200
+		"folder-directory":  #536466, // c400
+		"folder-subdirectory": #d1d6d8, // c100
 		"primary": #E57509,
-		"default-text": #090E10,
-		"warning": #EDB950,
-		"border": #213234
+		"text-lightest": #FFFFFF,
+		"text": #090E10,
+		"warning": #EDB950
 	)
 	"font-sizes" (
 		"xxxl": to-rem(28px),
@@ -48,4 +57,5 @@
 @import "./shared/window";
 
 // Sass Variables
+$global-box-shadow: 0 2px 4px color("black");
 $global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");

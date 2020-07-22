@@ -1,10 +1,10 @@
 #context-menu {
 	@include absolute(left 0);
-	background: color("charcoal-50");
+	background: color("background-lightest");
 	border: b("border");
 	border-radius: 0;
 	box-shadow: 0 2px 4px color("black");
-	color: color("default-text");
+	color: color("text");
 	max-width: to-rem(320px);
 	min-width: to-rem(152px);
 	width: 100%;
@@ -25,7 +25,7 @@
 
 			&:hover {
 				background: color("primary");
-				color: color("white");
+				color: color("text-lightest");
 			}
 
 			> i {

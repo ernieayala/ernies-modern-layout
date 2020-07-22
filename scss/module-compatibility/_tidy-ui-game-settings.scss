@@ -1,7 +1,7 @@
 .window-app {
 	&#client-settings,
 	&#module-management {
-		min-height: 10vh;
+		min-height: to-rem(500px);
 
 		.package-list,
 		section.content .settings-list {
@@ -74,7 +74,7 @@
 		h2.module-header {
 			@extend %default-button;
 			@extend %button-icon;
-			background: color("charcoal-500");
+			background: color("background-button");
 			font-weight: normal;
 			justify-content: flex-start;
 			margin-block-end: m("base");
@@ -85,7 +85,7 @@
 			}
 
 			> span {
-				color: color("white");
+				color: color("text-lightest");
 				margin-inline-end: m("sm");
 
 				.-compact & {
@@ -132,6 +132,10 @@
 				display: flex;
 			}
 		}
+	}
+
+	div.form-group .picker_wrapper {
+		margin: 0;
 	}
 }
 
