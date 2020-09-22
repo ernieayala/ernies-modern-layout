@@ -3,12 +3,11 @@ const myBody = document.getElementsByTagName('body');
 
 // Hex to RGB function
 function convertHex(color){
-	let hex = color.replace('#','');
-	let r = parseInt(hex.substring(0,2), 16);
-	let g = parseInt(hex.substring(2,4), 16);
-	let b = parseInt(hex.substring(4,6), 16);
-
-	return r+','+g+','+b;
+	const hex = color.replace('#','');
+	const r = parseInt(hex.substring(0,2), 16);
+	const g = parseInt(hex.substring(2,4), 16);
+	const b = parseInt(hex.substring(4,6), 16);
+	return `${r}, ${g}, ${b}`;
 }
 
 // Used to create an ultra specific selector

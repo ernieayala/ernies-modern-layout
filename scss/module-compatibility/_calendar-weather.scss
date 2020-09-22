@@ -1,6 +1,5 @@
 #calendar-time-container,
 #calendar-weather-container {
-	// @include fixed(bottom space("sm") left auto right to-rem(332px));
 	background: color("background", 0.8);
 	border: b("border");
 	border-radius: 0;
@@ -13,167 +12,109 @@
 		padding: p("base");
 	}
 
-	// .-compact & {
-	// 	bottom: space("base");
-	// 	right: to-rem(304px);
-	// }
-
-	#calendar {
-		@include size(100%);
+	#calendar-header,
+	.calendar--clock {
 		background: transparent;
-		border: none;
-		border-radius: 0;
-		margin: 0;
-		min-width: to-rem(200px);
-	}
-
-	#calendar-hdr,
-	#calendar-weather-hdr {
-		@include size(100%, auto);
-		align-items: center;
-		border-block-end: b("border");
-		color: color("text-lightest");
-		display: flex;
-		font-size: fs("md");
+		display: grid;
 		height: auto;
-		margin: 0;
-		min-width: 0;
+		gap: space("base");
+		grid-template-columns: to-rem(52px) 1fr to-rem(52px);
 		padding: 0;
-		padding-block-end: p("base");
 
-		&:hover {
-			// #calendar-date {
-			// 	display: none;
-			// }
-
-			// #calendar-date-num {
-			// 	display: block;
-			// }
-		}
-
-		> i {
-			@extend %control-button;
-			@extend %font-awesome;
-			margin: 0;
-
-			&:first-child {
-				margin-inline-end: m("base");
-			}
+		.header-navigation,
+		.day-time-cues {
+			justify-content: initial;
+			padding: 0;
+			transition: t(opacity, "shift");
 
 			&:last-child {
-				margin-inline-start: m("base");
+				justify-content: flex-end;
+
+				.calendar-btn {
+					margin-inline-start: m("base");
+					margin-inline-end: 0;
+				}
+			}
+
+			.calendar-btn {
+				margin-inline-end: m("base");
 			}
 		}
 
-		#calendar-date,
-		#calendar-date-num {
-			@include ellipsis(max-width 100%);
-			color: color("text-lightest");
-			flex: 1 1 100%;
-			margin: 0;
-			opacity: 1;
-			padding: 0;
-		}
-
-		#calendar-date-num {
-			display: none;
+		#calendar--move-handle,
+		#start-stop-clock {
+			font-size: fs("md");
 		}
 	}
 
-	.calendar-container,
-	#calendar-weather-precip {
-		display: flex;
-		flex: 0 0 auto;
-		margin: 0;
+	.calendar--clock {
 		margin-block-start: m("base");
-		padding: 0;
-		position: relative;
+	}
 
-		.calendar-btn-container-left,
-		.calendar-btn-container-right {
-			display: flex;
-			flex-wrap: wrap;
-			flex: 0 0 auto;
-			margin: 0;
-			position: relative;
-			width: to-rem(48px);
+	#calendar--date-display {
+		border: none;
 
-			> i {
-				@extend %control-button;
-				color: color("white") !important;
-				font-family: "Font Awesome 5 Free";
-				font-weight: 900;
-				margin: 0;
+		h2 {
+			font-size: fs("md");
+			padding: p("base");
+		}
+	}
+
+	.calendar--time-controls {
+		margin-block-start: m("sm");
+		transition: t(opacity, "shift");
+
+		.advance-btn {
+			@extend %primary-button;
+			font-size: fs("md");
+			margin-inline-end: m("xs");
+			padding: p("base");
+
+			&:last-of-type {
+				margin-inline-end: 0;
 			}
 		}
+	}
 
-		.calendar-weekday-time {
-			color: color("primary");
-			display: flex;
-			flex-direction: column;
-			flex: 1 1 auto;
-			padding: 0;
-			position: relative;
-			width: auto;
+	.calendar-btn,
+	#season-indicator {
+		@extend %icon-button;
+		@include size(to-rem(18px));
+		color: color("white");
+		margin: 0;
+		opacity: 0.5;
 
-			.calendar-weekday-cntr,
-			.calendar-time {
-				align-items: center;
-				display: flex;
-				flex: 1 1 auto;
-				justify-content: center;
-				margin: 0;
-				position: relative;
-				width: 100%;
-			}
-
-			.calendar-weekday-cntr {
-				border-block-end: b("border");
-			}
-
-			.calendar-time-disp {
-				bottom: initial;
-				margin: 0;
-				position: relative;
-			}
-
-			#calender-time-running {
-				@include absolute(bottom space("xs") right space("xs"));
-				margin-inline-start: m("base");
-			}
+		&:hover {
+			opacity: 1;
 		}
 	}
 }
 
-#calendar-weather-container {
-	#calendar-weather-hdr {
-		span {
-			margin: 0;
-			margin-inline-end: m("base");
-			padding: 0;
-			text-shadow: none;
+#weather {
+	transition: t(padding opacity width, "shift");
+}
 
-			&#calendar-weather-temp {
-				&:hover {
-					color: color("primary");
-					text-shadow: none;
-				}
-			}
+#calendar-weather--container {
+	border: none;
+	width: to-rem(250px);
+
+	header {
+		background: transparent;
+		flex: 0 0 auto;
+		padding: 0;
+
+		select {
+			margin-inline-end: m("base");
 		}
 
-		#calendar-weather-climate {
-			@extend %input-select;
-			background: color("white");
-			bottom: initial;
+		#calendar-weather--temp,
+		#calendar-weather-regenerate {
+			border: none;
 		}
 	}
 
-	#calendar-weather-precip {
-		color: color("text-lightest");
-
-		&:hover {
-			color: color("primary");
-			text-shadow: none;
-		}
+	.calendar-weather--content {
+		background: color("black", 0.1);
+		border: none;
 	}
 }

@@ -71,6 +71,7 @@
 	line-height: 1;
 	overflow: hidden;
 	padding: p("xs");
+	transition: t(background box-shadow color, "link");
 
 	&:hover {
 		color: color("primary");
