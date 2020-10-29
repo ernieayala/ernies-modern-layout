@@ -2901,7 +2901,6 @@ body.emu.e-body#emu #controls {
     -webkit-margin-after: 0.5rem;
             margin-block-end: 0.5rem;
     pointer-events: all;
-    position: relative;
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
     .-compact body.emu.e-body#emu #controls .scene-control, .-compact
     body.emu.e-body#emu #controls .control-tool {
