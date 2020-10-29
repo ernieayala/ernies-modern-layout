@@ -126,13 +126,16 @@
 
 		.directory-header {
 			border-block-end: b("border");
+			flex-direction: column;
 
 			.header-search {
 				@extend %button-icon;
 				align-items: center;
 				display: flex;
 				flex: 1 1 auto;
+				flex-wrap: nowrap;
 				position: relative;
+				width: 100%;
 
 				> i {
 					flex: 0 0 auto;
@@ -153,6 +156,28 @@
 
 				.-compact & {
 					margin-inline-start: m("xs");
+				}
+			}
+
+			.header-actions {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				margin-block-end: m("sm");
+				position: relative;
+				width: 100%;
+
+				.-compact & {
+					margin-block-end: m("xs");
+				}
+
+				button {
+					@extend %primary-button;
+					@extend %button-row;
+					@extend %button-icon;
+					@include ellipsis;
+					flex: 1 1 48%;
+					width: auto;
 				}
 			}
 		}

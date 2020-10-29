@@ -2,4 +2,13 @@
 	@extend %window-common;
 	@extend %window-hack;
 	@extend %window-sheets;
+
+	h3 {
+		border: none;
+		color: color("primary");
+		font-family: "Signika", sans-serif;
+		line-height: initial;
+		margin: 0;
+		padding: 0;
+	}
 }

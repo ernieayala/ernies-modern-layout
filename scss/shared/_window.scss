@@ -32,9 +32,11 @@
 		}
 
 		.form-header {
+			border-block-start: none;
 			border-block-end: b("primary", 2px);
 			color: color("primary");
 			font-family: "Signika", sans-serif;
+			line-height: initial;
 			margin-block-start: m("lg");
 			margin-block-end: m("sm");
 			padding: 0  p("sm");
@@ -51,6 +53,12 @@
 				.-compact & {
 					padding: 0 p("base");
 				}
+			}
+
+			.form-header {
+				border: none;
+				margin: 0;
+				padding: 0;
 			}
 		}
 

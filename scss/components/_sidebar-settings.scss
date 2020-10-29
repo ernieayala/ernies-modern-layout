@@ -7,9 +7,15 @@
 			padding: p("base");
 		}
 
+		div {
+			margin: 0;
+		}
+
 		h2,
 		h4 {
 			@extend %h-tag;
+			background: transparent;
+			border: none;
 			color: color("text-lightest");
 			padding: 0;
 			margin-block-end: m("sm");
@@ -20,7 +26,7 @@
 		}
 
 		h2 {
-			border-block-end: b("charcoal-600");
+			border-block-end: b("border");
 			font-size: fs("xxl");
 			margin-block-start: m("sm");
 
