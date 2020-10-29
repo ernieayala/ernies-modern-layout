@@ -3312,6 +3312,7 @@ body.emu.e-body#emu .sidebar-popout {
         text-overflow: ellipsis;
         white-space: nowrap;
         flex: 1 1 48%;
+        margin-top: 2px;
         width: auto; }
   body.emu.e-body#emu #sidebar > .directory-list,
   body.emu.e-body#emu .sidebar-popout > .directory-list {
