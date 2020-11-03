@@ -6326,6 +6326,9 @@ body.emu.e-body#emu #pingPop {
   .-compact body.emu.e-body#emu #pingPop {
     padding: 0.25rem !important; }
 
+body.emu.e-body#emu .simple-dice-roller-popup {
+  pointer-events: all; }
+
 body.emu.e-body#emu .window-app#client-settings, body.emu.e-body#emu .window-app#module-management {
   min-height: 31.25rem; }
   body.emu.e-body#emu .window-app#client-settings .package-list,
