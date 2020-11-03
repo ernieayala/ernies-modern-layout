@@ -281,4 +281,6 @@ Hooks.once('ready', () => {
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 	}, 1000);
+
+	console.log('Ernie\'s Modern UI - Loaded');
 });
