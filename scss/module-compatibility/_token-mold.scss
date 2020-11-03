@@ -4,6 +4,7 @@
 		@extend %panel-block;
 		border-block-end: b("border");
 		flex-wrap: wrap;
+		padding-block-end: 0;
 
 		h3 {
 			@extend %h-tag;

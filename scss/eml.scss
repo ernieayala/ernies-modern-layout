@@ -37,11 +37,6 @@ body.emu.e-body#emu {
 		background: color("gray-200");
 	}
 
-	// basic reset
-	h1, h2, h3, h4, h5, h6, p {
-		font-size: initial;
-	}
-
 	// Components
 	@import "./components/context-menu";
 	@import "./components/dialog";
