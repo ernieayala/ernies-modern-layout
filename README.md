@@ -28,3 +28,5 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Contact
 Make issues on Github or message me on Discord: Teafortwo#4453 and/or Ernie
+
+[![Github All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total.svg)]()
