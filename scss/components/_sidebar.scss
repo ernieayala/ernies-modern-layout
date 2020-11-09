@@ -211,4 +211,9 @@
 .sidebar-popout {
 	height: auto;
 	min-height: to-rem(400px);
+
+	.-compact & {
+		height: auto;
+		min-height: to-rem(300px);
+	}
 }

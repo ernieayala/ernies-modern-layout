@@ -21,6 +21,7 @@
 	padding: 0 p("sm");
 	position: relative;
 	transition: t(background box-shadow color, "link");
+	width: auto;
 
 	.-compact & {
 		margin: m("base");

@@ -69,6 +69,7 @@
 				padding: p("base") p("sm");
 				position: relative;
 				transition: t(background box-shadow opacity, "link");
+				width: auto;
 
 				.-compact & {
 					margin: m("base");

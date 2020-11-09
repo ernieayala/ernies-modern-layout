@@ -24,8 +24,8 @@ Hooks.once('ready', () => {
 	// Theme
 	if(defaultColorPicker) {
 		game.settings.register('ernies-modern-layout', 'colorPrimary', {
-			name: 'Primary Theme Color',
-			hint: 'Default Value: #e57509 - Blue: #386acf - Green: #0fbd7d - Purple: #773edc - Red: #dc143c - Yellow: #edb950',
+			name: game.i18n.localize('emu.theme-primary'),
+			hint: game.i18n.localize('emu.theme-primary-hint'),
 			scope: 'user',
 			config: true,
 			default: '#E57509',
@@ -39,8 +39,8 @@ Hooks.once('ready', () => {
 
 		// Background Default
 		game.settings.register('ernies-modern-layout', 'colorBackground', {
-			name: 'Background Default',
-			hint: 'Deault: #293e40',
+			name: game.i18n.localize('emu.theme-background-default'),
+			hint: game.i18n.localize('emu.theme-background-default-hint'),
 			scope: 'user',
 			config: true,
 			default: '#293e40',
@@ -54,8 +54,8 @@ Hooks.once('ready', () => {
 
 		// Background Lightest
 		game.settings.register('ernies-modern-layout', 'colorBackgroundLightest', {
-			name: 'Background Lightest',
-			hint: 'Deault: #e6e9eb',
+			name: game.i18n.localize('emu.theme-background-lightest'),
+			hint: game.i18n.localize('emu.theme-background-lightest-hint'),
 			scope: 'user',
 			config: true,
 			default: '#e6e9eb',
@@ -69,8 +69,8 @@ Hooks.once('ready', () => {
 
 		// Background Light
 		game.settings.register('ernies-modern-layout', 'colorBackgroundLight', {
-			name: 'Background Light',
-			hint: 'Deault: #7d8a8c',
+			name: game.i18n.localize('emu.theme-background-light'),
+			hint: game.i18n.localize('emu.theme-background-light-hint'),
 			scope: 'user',
 			config: true,
 			default: '#7d8a8c',
@@ -84,8 +84,8 @@ Hooks.once('ready', () => {
 
 		// Background Darkest
 		game.settings.register('ernies-modern-layout', 'colorBackgroundDarkest', {
-			name: 'Background Darkest',
-			hint: 'Deault: #090e10',
+			name: game.i18n.localize('emu.theme-background-darkest'),
+			hint: game.i18n.localize('emu.theme-background-darkest-hint'),
 			scope: 'user',
 			config: true,
 			default: '#090e10',
@@ -99,8 +99,8 @@ Hooks.once('ready', () => {
 
 		// Background Button
 		game.settings.register('ernies-modern-layout', 'colorBackgroundButton', {
-			name: 'Background Button',
-			hint: 'Deault: #7d7d7d',
+			name: game.i18n.localize('emu.theme-background-button'),
+			hint: game.i18n.localize('emu.theme-background-button-hint'),
 			scope: 'user',
 			config: true,
 			default: '#7d7d7d',
@@ -114,8 +114,8 @@ Hooks.once('ready', () => {
 
 		// Border
 		game.settings.register('ernies-modern-layout', 'colorBorder', {
-			name: 'Border',
-			hint: 'Deault: #213234',
+			name: game.i18n.localize('emu.theme-border'),
+			hint: game.i18n.localize('emu.theme-border-hint'),
 			scope: 'user',
 			config: true,
 			default: '#213234',
@@ -129,8 +129,8 @@ Hooks.once('ready', () => {
 
 		// Folder Header
 		game.settings.register('ernies-modern-layout', 'colorFolderHeader', {
-			name: 'Folder Header',
-			hint: 'Deault: #a7b0b2',
+			name: game.i18n.localize('emu.theme-folder-header'),
+			hint: game.i18n.localize('emu.theme-folder-header-hint'),
 			scope: 'user',
 			config: true,
 			default: '#a7b0b2',
@@ -144,8 +144,8 @@ Hooks.once('ready', () => {
 
 		// Folder Directory
 		game.settings.register('ernies-modern-layout', 'colorFolderDirectory', {
-			name: 'Folder Directory',
-			hint: 'Deault: #536466',
+			name: game.i18n.localize('emu.theme-folder-directory'),
+			hint: game.i18n.localize('emu.theme-folder-directory-hint'),
 			scope: 'user',
 			config: true,
 			default: '#536466',
@@ -159,8 +159,8 @@ Hooks.once('ready', () => {
 
 		// Folder Subdirectory
 		game.settings.register('ernies-modern-layout', 'colorFolderSubdirectory', {
-			name: 'Folder Subdirectory',
-			hint: 'Deault: #d1d6d8',
+			name: game.i18n.localize('emu.theme-folder-subdirectory'),
+			hint: game.i18n.localize('emu.theme-folder-subdirectory-hint'),
 			scope: 'user',
 			config: true,
 			default: '#d1d6d8',
@@ -174,8 +174,8 @@ Hooks.once('ready', () => {
 
 		// Text
 		game.settings.register('ernies-modern-layout', 'colorText', {
-			name: 'Text',
-			hint: 'Deault: #090E10',
+			name: game.i18n.localize('emu.theme-text'),
+			hint: game.i18n.localize('emu.theme-text-hint'),
 			scope: 'user',
 			config: true,
 			default: '#090E10',
@@ -189,8 +189,8 @@ Hooks.once('ready', () => {
 
 		// Text Lightest
 		game.settings.register('ernies-modern-layout', 'colorTextLightest', {
-			name: 'Text Lightest',
-			hint: 'Deault: #ffffff',
+			name: game.i18n.localize('emu.theme-text-lightest'),
+			hint: game.i18n.localize('emu.theme-text-lightest-hint'),
 			scope: 'user',
 			config: true,
 			default: '#ffffff',
@@ -223,7 +223,7 @@ Hooks.once('ready', () => {
 
 	// Layouts
 	game.settings.register('ernies-modern-layout', 'compactMode', {
-		name: 'Compact Mode',
+		name: game.i18n.localize('emu.layout-compact'),
 		scope: 'user',
 		config: true,
 		default: false,
@@ -237,7 +237,7 @@ Hooks.once('ready', () => {
 
 	// Visual Toggles
 	game.settings.register('ernies-modern-layout', 'toggleLogo', {
-		name: 'Toggle Logo',
+		name: game.i18n.localize('emu.toggle-logo'),
 		scope: 'user',
 		config: true,
 		default: false,
@@ -250,7 +250,7 @@ Hooks.once('ready', () => {
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 
 	game.settings.register('ernies-modern-layout', 'toggleSceneThumbs', {
-		name: 'Toggle Scene Thumbnails',
+		name: game.i18n.localize('emu.toggle-scene-thumbnails'),
 		scope: 'user',
 		config: true,
 		default: false,
@@ -264,8 +264,8 @@ Hooks.once('ready', () => {
 
 	// Turn off styling
 	game.settings.register('ernies-modern-layout', 'toggleCombatSidebar', {
-		name: 'Toggle Combat Sidebar Styles',
-		hint: 'This will turn off -most- of the styling in the combat sidebar.',
+		name: game.i18n.localize('emu.toggle-combat-sidebar'),
+		hint: game.i18n.localize('emu.toggle-combat-sidebar-hint'),
 		scope: 'user',
 		config: true,
 		default: false,
@@ -282,5 +282,5 @@ Hooks.once('ready', () => {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 	}, 1000);
 
-	console.log('Ernie\'s Modern UI - Loaded');
+	console.log('Ernie\'s Modern UI');
 });

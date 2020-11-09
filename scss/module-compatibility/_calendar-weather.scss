@@ -118,3 +118,16 @@
 		border: none;
 	}
 }
+
+.calendar--content {
+	padding: 0;
+}
+
+.calendar-weather-ltd {
+	.day-time-cues,
+	.header-navigation {
+		display: flex;
+		pointer-events: none;
+		visibility: hidden;
+	}
+}

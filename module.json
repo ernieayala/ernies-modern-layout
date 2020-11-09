@@ -2,26 +2,31 @@
 	"name": "ernies-modern-layout",
 	"title": "Ernie's Modern UI",
 	"description": "A visual update for Foundry VTT UI.",
-	"version": "0.1.10",
+	"version": "0.1.11",
 	"author": "Ernie",
 	"authors": [
 		{
-			"name": "",
-			"email": "",
-			"url": ""
+			"name": "Ernie",
+			"email": "teafortwo.ea@gmail.com",
+			"url": "https://github.com/ernieayala"
 		}
 	],
-	"system": "dnd5e",
 	"styles": ["./css/eml.css"],
 	"esmodules": ["./js/eml.js"],
-	"languages": [],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
 	"minimumCoreVersion": "0.6.4",
-	"compatibleCoreVersion": "0.7.5",
+	"compatibleCoreVersion": "0.7.6",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
-	"download": "https://github.com/ernieayala/ernies-modern-layout/raw/master/release/ernies-modern-layout-0.1.10.zip",
-	"license": "",
-	"readme": "",
-	"bugs": "",
-	"changelog": ""
+	"download": "https://github.com/ernieayala/ernies-modern-layout/raw/master/release/ernies-modern-layout-0.1.11.zip",
+	"license": "MIT",
+	"readme": "https://github.com/ernieayala/ernies-modern-layout",
+	"bugs": "https://github.com/ernieayala/ernies-modern-layout/issues",
+	"changelog": "https://github.com/ernieayala/ernies-modern-layout/releases"
 }

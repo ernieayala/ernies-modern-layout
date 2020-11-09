@@ -300,7 +300,8 @@ body.emu.e-body#emu .sidebar-popout #tables .directory-item, body.emu.e-body#emu
   min-height: 2rem;
   padding: 0 0.5rem;
   position: relative;
-  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: auto; }
   .-compact body.emu.e-body#emu #sidebar #scenes .directory-item, body.emu.e-body#emu #sidebar #scenes .-compact .directory-item,
   .-compact body.emu.e-body#emu .sidebar-popout #scenes .directory-item, body.emu.e-body#emu .sidebar-popout #scenes .-compact .directory-item, .-compact body.emu.e-body#emu #sidebar #actors .directory-item, body.emu.e-body#emu #sidebar #actors .-compact .directory-item,
   .-compact body.emu.e-body#emu .sidebar-popout #actors .directory-item, body.emu.e-body#emu .sidebar-popout #actors .-compact .directory-item, .-compact body.emu.e-body#emu #sidebar #items .directory-item, body.emu.e-body#emu #sidebar #items .-compact .directory-item,
@@ -2460,7 +2461,8 @@ body.emu.e-body#emu #hotbar {
     display: flex;
     flex: 0 0 auto;
     float: left;
-    position: relative; }
+    position: relative;
+    width: auto; }
   body.emu.e-body#emu #hotbar .bar-controls {
     width: 2.5rem;
     height: 3.5rem;
@@ -3425,6 +3427,9 @@ body.emu.e-body#emu .sidebar-popout {
 body.emu.e-body#emu .sidebar-popout {
   height: auto;
   min-height: 25rem; }
+  .-compact body.emu.e-body#emu .sidebar-popout {
+    height: auto;
+    min-height: 18.75rem; }
 
 body.emu.e-body#emu #sidebar #chat #chat-controls,
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls {
@@ -3558,7 +3563,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
     margin: 0.25rem 0.5rem;
     padding: 0.25rem 0.5rem;
     position: relative;
-    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: auto; }
     .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant, .-compact
     .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant {
       margin: 0.25rem;
@@ -3963,7 +3969,8 @@ body.emu.e-body#emu .sidebar-popout #playlists {
     body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-controls,
     body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-controls {
       display: flex;
-      flex: 0 0 auto; }
+      flex: 0 0 auto;
+      width: auto; }
       body.emu.e-body#emu #sidebar #playlists li.playlist .playlist-controls .sound-control.disabled,
       body.emu.e-body#emu .sidebar-popout #playlists li.playlist .playlist-controls .sound-control.disabled {
         color: rgba(var(--color-gray-100), 1);
@@ -4801,6 +4808,15 @@ body.emu.e-body#emu #calendar-weather--container {
   body.emu.e-body#emu #calendar-weather--container .calendar-weather--content {
     background: rgba(var(--color-black), 0.1);
     border: none; }
+
+body.emu.e-body#emu .calendar--content {
+  padding: 0; }
+
+body.emu.e-body#emu .calendar-weather-ltd .day-time-cues,
+body.emu.e-body#emu .calendar-weather-ltd .header-navigation {
+  display: flex;
+  pointer-events: none;
+  visibility: hidden; }
 
 body.emu.e-body#emu #sidebar #combat #combat-tracker .token-resource input,
 body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .token-resource input {

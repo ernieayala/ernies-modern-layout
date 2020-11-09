@@ -251,6 +251,7 @@
 			.playlist-controls {
 				display: flex;
 				flex: 0 0 auto;
+				width: auto;
 
 				.sound-control {
 					&.disabled {
