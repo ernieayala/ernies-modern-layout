@@ -28,3 +28,6 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Contact
 Make issues on Github or message me on Discord: Teafortwo#4453 and/or Ernie
+
+![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-Green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=X4NPDS84B9L7S)
