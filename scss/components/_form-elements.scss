@@ -1,4 +1,7 @@
 input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
 input[type="password"],
 input[type="datetime-local"],
 input[type="checkbox"],
@@ -20,6 +23,9 @@ textarea {
 }
 
 input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
 input[type="password"],
 input[type="datetime-local"] {
 	@extend %input-text;

@@ -114,6 +114,11 @@
 	}
 }
 
+%input-radio {
+	margin: 0;
+	top: auto;
+}
+
 %input-color {
 	background: transparent;
 	border: b("border");
@@ -281,6 +286,9 @@
 
 %form-elements {
 	input[type="text"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"],
 	input[type="password"],
 	input[type="datetime-local"] {
 		@extend %input-text;
@@ -288,6 +296,10 @@
 
 	input[type="checkbox"] {
 		@extend %input-checkbox;
+	}
+
+	input[type="radio"] {
+		@extend %input-radio;
 	}
 
 	input[type="color"],
