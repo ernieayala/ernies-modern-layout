@@ -70,6 +70,16 @@
 			}
 		}
 
+		&[type="radio"] {
+			flex: 0 0 auto;
+			margin-inline-end: m("sm");
+			width: auto;
+
+			.-compact & {
+				margin-inline-end: m("xs");
+			}
+		}
+
 		+ .notes {
 			margin-block-start: m("sm");
 
@@ -82,7 +92,8 @@
 			flex: 1 1 25%;
 			margin-inline-start: m("base");
 
-			&[type="checkbox"] {
+			&[type="checkbox"],
+			&[type="radio"] {
 				flex: 0 0 auto;
 			}
 		}
@@ -125,6 +136,16 @@
 
 				.-compact & {
 					width: to-rem(16px);
+				}
+			}
+
+			&[type="radio"] {
+				flex: 0 0 auto;
+				margin-inline-end: m("sm");
+				width: auto;
+
+				.-compact & {
+					margin-inline-end: m("xs");
 				}
 			}
 
