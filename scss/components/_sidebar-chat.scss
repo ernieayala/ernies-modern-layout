@@ -1,6 +1,17 @@
 #sidebar,
 .sidebar-popout {
 	#chat {
+		#chat-log {
+			.message {
+				background: color("background-lightest");
+				border: b("border");
+				border-radius: 0;
+				color: color("text");
+				padding: p("base");
+				margin: m("base");
+			}
+		}
+
 		#chat-controls {
 			align-items: center;
 			background: color("background", 0.5);
@@ -17,33 +28,34 @@
 				padding: p("base");
 			}
 
+			.chat-control-icon {
+				margin-inline-end: m("sm");
+
+				.-compact & {
+					padding: p("base");
+				}
+			}
+
 			.roll-type-select {
+				@extend %input-select;
 				align-items: center;
+				background: color("background", 0.5);
+				color: color("text-lightest");
 				display: flex;
 				flex: 1 1 auto;
+				top: auto;
+				width: auto;
 
-				.fas.fa-dice-d20 {
-					display: none;
+				&:hover {
+					@extend %global-hover-alt;
 				}
 
-				select {
-					@extend %input-select;
-					background: color("background", 0.5);
-					color: color("text-lightest");
-					top: auto;
-					width: auto;
+				&:focus {
+					@extend %global-focus;
+				}
 
-					&:hover {
-						@extend %global-hover-alt;
-					}
-
-					&:focus {
-						@extend %global-focus;
-					}
-
-					&:disabled {
-						pointer-events: none;
-					}
+				&:disabled {
+					pointer-events: none;
 				}
 			}
 

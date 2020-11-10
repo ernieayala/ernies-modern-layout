@@ -223,6 +223,10 @@
 			border-block-start: b("border");
 			padding-block-start: m("sm");
 
+			&:empty {
+				display: none;
+			}
+
 			.-compact & {
 				padding-block-start: m("base");
 			}
