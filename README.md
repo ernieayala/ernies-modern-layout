@@ -31,4 +31,4 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
      style="max-width: 100%;" />
 
 ## Contact
-Make issues on Github or message me on Discord: Ernie#4453 and/or Ernie on the Foundry channel.
+Make issues on Github or message me on Discord: Ernie#4453 or Ernie on the Foundry Discord channel.
