@@ -75,6 +75,10 @@
 		&.active .control-tools {
 			display: block;
 		}
+
+		.-control-align-tops & {
+			position: initial;
+		}
 	}
 
 	.control-tool {

@@ -73,6 +73,7 @@
 				img {
 					max-width: to-rem(86px);
 					max-height: to-rem(86px);
+					object-fit: contain;
 				}
 			}
 		}
@@ -103,6 +104,7 @@
 				img {
 					max-width: to-rem(100%);
 					max-height: to-rem(200px);
+					object-fit: contain;
 				}
 			}
 		}

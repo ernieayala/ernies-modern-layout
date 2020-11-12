@@ -50,5 +50,11 @@
 			@extend %button-icon;
 			margin-block-end: m("base");
 		}
+
+		#game-details {
+			color: color("text-lightest");
+			margin: 0;
+			padding: 0;
+		}
 	}
 }

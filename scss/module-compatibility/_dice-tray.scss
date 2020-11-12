@@ -3,6 +3,7 @@
 		@extend %panel-block;
 		border-block-start: b("border");
 		flex-direction: column;
+		padding-block-start: 0;
 
 		> .flexrow {
 			margin: 0;

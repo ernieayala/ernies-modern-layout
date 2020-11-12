@@ -1,3 +1,5 @@
+![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?style=flat-square)
+
 # Ernie's Modern UI
 A visual update for Foundry VTT UI.
 
@@ -28,5 +30,3 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Contact
 Make issues on Github or message me on Discord: Teafortwo#4453 and/or Ernie
-
-![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?style=flat-square)

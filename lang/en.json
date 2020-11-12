@@ -1,4 +1,7 @@
 {
+	"emu.settings-name": "GM Settings",
+	"emu.settings-label": "Settings",
+	"emu.modal-title": "Ernie's Modern UI",
 	"emu.theme-primary": "Primary Theme Color",
 	"emu.theme-primary-hint": "Default Value: #e57509 - Blue: #386acf - Green: #0fbd7d - Purple: #773edc - Red: #dc143c - Yellow: #edb950",
 	"emu.theme-background-default": "Background Default",
@@ -24,6 +27,8 @@
 	"emu.theme-text-lightest": "Text Lightest",
 	"emu.theme-text-lightest-hint": "Deault: #ffffff",
 	"emu.layout-compact": "Compact Mode",
+	"emu.layout-control-align": "Controls Align to Top",
+	"emu.layout-control-align-hint": "This aligns the children controls to the top of the screen.",
 	"emu.toggle-logo": "Toggle Logo",
 	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails",
 	"emu.toggle-combat-sidebar": "Toggle Combat Sidebar Styles",

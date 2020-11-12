@@ -71,7 +71,8 @@
 		pointer-events: none;
 	}
 
-	optgroup {
+	optgroup,
+	option {
 		background: color("white");
 		color: color("text");
 	}
