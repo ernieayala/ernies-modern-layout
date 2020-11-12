@@ -3,19 +3,20 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?style=flat-square)
 
 # Ernie's Modern UI
-A visual update for Foundry VTT UI.
+A clean and themeable visual update for Foundry VTT.
 
-There is also a "compact mode" and the ability to theme different areas of the application.
+## Features
+- Compact Mode
+- Various UI toggles
+- Theming
 
-Covers most UI items but still a huge work in progress. There is a ton of redundant CSS but this is because I don't want to step on the globals just yet.
+## You should know
+- There is a lot of redundant CSS because I don't want to step on the global formatting right now.
+- Not all the modules will have my styling. Make an issue on Github if you want me to look at one.
+- Only tested on Chrome. Feel free to make a issue on Github for other browsers.
+- This is a fun side project for me and I made it to support my GMing tastes but I'm happy that other people are enjoying it. 
 
-Will cover more parts of the app as time goes on.
-
-Not all the modules will have my styling. Make an issue on Github if you want me to look at one.
-
-**Only tested on Chrome so far.**
-
-### Manifest Url
+## Manifest Url
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
 
 ### Default Layout
@@ -29,6 +30,28 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 ### Compact Layout
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-compact.jpg"
      style="max-width: 100%;" />
+     
+## Partially Supported Modules
+- Batch Folder Premissions
+- Calendar Weather
+- Combat Utility Belt
+- Dancing Lights
+- Dice Try
+- Dungeondraft Importer
+- Furnace
+- FX Master
+- Lmrtfy
+- Mess
+- Permission Viewer
+- Polyglot
+- Response Time
+- Rolltable Button
+- Simple Dice Roller
+- Tidy UI Game Settings
+- Token Action Hud
+- Token Auras
+- Token Mold
+- Tweak Playlist
 
 ## Contact
 Make issues on Github or message me on Discord: Ernie#4453 or Ernie on the Foundry channel.
