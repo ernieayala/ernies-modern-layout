@@ -20,7 +20,7 @@
 					@extend %h-tag;
 					@include ellipsis;
 					border-block-end: none;
-					color: color("gray-200");
+					color: color("text-lightest");
 					display: block;
 					flex: 1 1 auto;
 					font-size: fs("md");

@@ -3,7 +3,6 @@
 		@extend %panel-block;
 		border-block-start: b("border");
 		flex-direction: column;
-		padding-block-start: 0;
 
 		> .flexrow {
 			margin: 0;
@@ -110,7 +109,7 @@
 
 		input.dice-tray__input {
 			@extend %input-text;
-			background: color("white");
+			background: color("background-lightest");
 			box-shadow: none;
 			margin-inline-end: m("base");
 
@@ -153,11 +152,11 @@
 			}
 
 			&.dice-tray__disadvantage {
-				border-block-start: b("charcoal-600");
+				border-block-start: b("border");
 
 				.-compact & {
 					border-block-start: 0;
-					border-inline-start: b("charcoal-600");
+					border-inline-start: b("border");
 				}
 			}
 		}

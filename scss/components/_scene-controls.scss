@@ -85,7 +85,7 @@
 		background: color("background", 0.8);
 
 		&.toggle {
-			background: color("white");
+			background: color("background-lightest");
 			color: color("text");
 
 			&:hover {

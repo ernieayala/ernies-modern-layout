@@ -10,14 +10,16 @@
 		"background": #293e40, // c500
 		"background-darkest": #090e10, // c900
 		"background-button": #7d7d7d, // g500
-		"border": #213234,
+		"border-lighter": #a7b0b2, // c200
+		"border": #213234, // c600
 		"folder-header": #a7b0b2, // c200
 		"folder-directory":  #536466, // c400
 		"folder-subdirectory": #d1d6d8, // c100
-		"primary": #E57509,
-		"text-lightest": #FFFFFF,
-		"text": #090E10,
-		"warning": #EDB950
+		"primary": #e57509,
+		"text-lightest": #ffffff,
+		"text": #090e10, // c900
+		"text-darker": #293e40, // c500
+		"warning": #edb950
 	)
 	"font-sizes" (
 		"xxxl": to-rem(28px),
