@@ -30,11 +30,13 @@ function updateSettings(settings) {
 		colorBackgroundDarkest,
 		colorBackgroundButton,
 		colorBorder,
+		colorBorderLighter,
 		colorFolderHeader,
 		colorFolderDirectory,
 		colorFolderSubdirectory,
 		colorText,
 		colorTextLightest,
+		colorTextDarker,
 		toggleLogo,
 		toggleSceneThumbs,
 		toggleCombatSidebar
@@ -48,11 +50,13 @@ function updateSettings(settings) {
 	colorBackgroundDarkest ? document.documentElement.style.setProperty('--color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
 	colorBackgroundButton ? document.documentElement.style.setProperty('--color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
 	colorBorder ? document.documentElement.style.setProperty('--color-border', convertHexToRgb(colorBorder)) : null;
+	colorBorderLighter ? document.documentElement.style.setProperty('--color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
 	colorFolderHeader ? document.documentElement.style.setProperty('--color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
 	colorFolderDirectory ? document.documentElement.style.setProperty('--color-folder-directory', convertHexToRgb(colorFolderDirectory)) : null;
 	colorFolderSubdirectory ? document.documentElement.style.setProperty('--color-folder-subdirectory', convertHexToRgb(colorFolderSubdirectory)) : null;
 	colorText ? document.documentElement.style.setProperty('--color-text', convertHexToRgb(colorText)) : null;
 	colorTextLightest ? document.documentElement.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
+	colorTextDarker ? document.documentElement.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
 	// Visual
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
@@ -76,11 +80,13 @@ class emuSettings {
 			colorBackgroundDarkest: '#090e10',
 			colorBackgroundButton: '#7d7d7d',
 			colorBorder: '#213234',
+			colorBorderLighter: '#a7b0b2',
 			colorFolderHeader: '#a7b0b2',
 			colorFolderDirectory: '#536466',
 			colorFolderSubdirectory: '#d1d6d8',
 			colorText: '#090e10',
 			colorTextLightest: '#ffffff',
+			colorTextDarker: '#293e40',
 			toggleLogo: true,
 			toggleSceneThumbs: false,
 			toggleCombatSidebar: false
@@ -112,8 +118,46 @@ class emuForm extends FormApplication {
 
 	activateListeners(html) {
 		super.activateListeners(html);
+		this.getThemePreset();
+		html.find('select[name="themePreset"]').change(this.getThemePreset.bind(this));
 		html.find('button[name="reset"]').click(this.onReset.bind(this));
 		this.reset = false;
+	}
+
+	getThemePreset(formData) {
+		if($('select[name="themePreset"]').val() === 'dark') {
+			$('input[name="colorPrimary"]').prop('value', '#111a1c');
+			$('input[name="colorBackground"]').prop('value', '#2e2e2e');
+			$('input[name="colorBackgroundLightest"]').prop('value', '#666666');
+			$('input[name="colorBackgroundLight"]').prop('value', '#4a4a4a');
+			$('input[name="colorBackgroundDarkest"]').prop('value', '#151515');
+			$('input[name="colorBackgroundButton"]').prop('value', '#111a1c');
+			$('input[name="colorBorder"]').prop('value', '#4a4a4a');
+			$('input[name="colorBorderLighter"]').prop('value', '#7d7d7d');
+			$('input[name="colorFolderHeader"]').prop('value', '#4a4a4a');
+			$('input[name="colorFolderDirectory"]').prop('value', '#151515');
+			$('input[name="colorFolderSubdirectory"]').prop('value', '#7d7d7d');
+			$('input[name="colorText"]').prop('value', '#f1f1f1');
+			$('input[name="colorTextLightest"]').prop('value', '#fafafa');
+			$('input[name="colorTextDarker"]').prop('value', '#cbcbcb');
+		}
+
+		if($('select[name="themePreset"]').val() === 'foundry') {
+			$('input[name="colorPrimary"]').prop('value', '#e57509');
+			$('input[name="colorBackground"]').prop('value', '#293e40');
+			$('input[name="colorBackgroundLightest"]').prop('value', '#e6e9eb');
+			$('input[name="colorBackgroundLight"]').prop('value', '#7d8a8c');
+			$('input[name="colorBackgroundDarkest"]').prop('value', '#090e10');
+			$('input[name="colorBackgroundButton"]').prop('value', '#7d7d7d');
+			$('input[name="colorBorder"]').prop('value', '#213234');
+			$('input[name="colorBorderLighter"]').prop('value', '#a7b0b2');
+			$('input[name="colorFolderHeader"]').prop('value', '#a7b0b2');
+			$('input[name="colorFolderDirectory"]').prop('value', '#536466');
+			$('input[name="colorFolderSubdirectory"]').prop('value', '#d1d6d8');
+			$('input[name="colorText"]').prop('value', '#090e10');
+			$('input[name="colorTextLightest"]').prop('value', '#ffffff');
+			$('input[name="colorTextDarker"]').prop('value', '#293e40');
+		}
 	}
 
 	onReset() {

@@ -75,3 +75,9 @@
 		margin-inline-start: m("xs");
 	}
 }
+
+.mess .mess-button-to-hit,
+.mess .mess-button-dmg,
+.mess .mess-dice-result {
+	color: color("text");
+}

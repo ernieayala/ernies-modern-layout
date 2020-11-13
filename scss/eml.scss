@@ -15,13 +15,13 @@
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 2px 0 color("charcoal-900", 0.5);
+	box-shadow: inset 0 0 2px 0 color("background-darkest", 0.5);
 	border: none;
 	border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: color("charcoal-300");
+	background: color("background-light");
 	border: none;
 	border-radius: 0;
 	outline: none;
@@ -76,6 +76,7 @@ body.emu.e-body#emu {
 	@import "./components/sheet-grid-config";
 	@import "./components/sheet-light-config";
 	@import "./components/sheet-macro";
+	@import "./components/sheet-module-management";
 	@import "./components/sheet-note-config";
 	@import "./components/sheet-permission";
 	@import "./components/sheet-player-config";
@@ -105,6 +106,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/mess";
+	@import "./module-compatibility/narrator-tools";
 	@import "./module-compatibility/permission-viewer";
 	@import "./module-compatibility/plutonium";
 	@import "./module-compatibility/polyglot";
@@ -116,4 +118,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/token-auras";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/tweak-playlist";
+
+	// System Compatibility
+	@import "./system-compatibility/dnd5e";
 }
