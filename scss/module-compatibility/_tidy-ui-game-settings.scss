@@ -142,3 +142,45 @@
 #settings .game-system {
 	margin: 0;
 }
+
+#module-management {
+	.package-title {
+		input {
+			-webkit-appearance: auto;
+			-moz-appearance: auto;
+			appearance: auto;
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	form {
+		> .enhanced-module-management {
+			margin: 0;
+			padding: 0;
+			padding-block-end: p("sm");
+
+			.-compact & {
+				padding-block-end: p("base");
+			}
+
+			button {
+				margin-inline-end: m("base");
+
+				.-compact & {
+					padding-block-end: p("xs");
+				}
+
+				&:last-of-type {
+					margin-inline-end: 0;
+
+					.-compact & {
+						padding-block-end: 0;
+					}
+				}
+			}
+		}
+	}
+}
