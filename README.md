@@ -9,6 +9,7 @@ A clean and themeable visual update for Foundry VTT.
 - Compact Mode
 - Various UI toggles
 - Theming
+- Dark Mode
 
 ## You should know
 - There is a lot of redundant CSS because I don't want to step on the global formatting right now.
