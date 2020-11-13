@@ -10,16 +10,19 @@
 		"background": #293e40, // c500
 		"background-darkest": #090e10, // c900
 		"background-button": #7d7d7d, // g500
+		"background-chat-message": #e6e9eb, // c50,
+		"background-chat-message-whisper": #ecf1fc, //b50
+		"background-chat-message-blind": #ffecf0, // r50
 		"border-lighter": #a7b0b2, // c200
 		"border": #213234, // c600
 		"folder-header": #a7b0b2, // c200
 		"folder-directory":  #536466, // c400
 		"folder-subdirectory": #d1d6d8, // c100
-		"primary": #e57509,
+		"primary": #e57509, // o500
 		"text-lightest": #ffffff,
 		"text": #090e10, // c900
 		"text-darker": #293e40, // c500
-		"warning": #edb950
+		"warning": #edb950 // y500
 	)
 	"font-sizes" (
 		"xxxl": to-rem(28px),
