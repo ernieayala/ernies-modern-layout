@@ -3,6 +3,7 @@
 	"keywords": [
 		"layout",
 		"dnd",
+		"vtt",
 		"foundry"
 	],
 	"name": "Ernie",
@@ -11,7 +12,7 @@
 		"start": "node-sass --watch scss -o css",
 		"build": "node-sass scss -o css & postcss css/eml.css -u autoprefixer --no-map -d css/"
 	},
-	"version": "0.1.12",
+	"version": "0.2.1",
 	"devDependencies": {
 		"autoprefixer": "^9.1.0",
 		"cssnano": "4.1.10",

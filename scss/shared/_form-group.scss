@@ -99,13 +99,23 @@
 		}
 	}
 
+	> label {
+		flex: 0 0 40%;
+	}
+
 	label {
 		align-items: center;
 		display: inline-flex;
-		flex: 0 0 40%;
 		font-size: fs("md");
 		line-height: initial;
+		margin: 0;
 		padding-inline-end: p("base");
+
+		&.checkbox {
+			input[type="checkbox"] {
+				margin-inline-start: m("base");
+			}
+		}
 
 		.units {
 			@include ellipsis;

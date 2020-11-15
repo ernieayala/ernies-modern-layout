@@ -1,0 +1,83 @@
+.mess-roll-control {
+	align-items: center;
+	display: flex;
+	flex: 0 0 100%;
+	height: auto;
+	margin: 0;
+	flex-flow: row nowrap;
+	justify-content: initial;
+	margin-block-end: m("sm");
+}
+
+.mess-adv-selector {
+	flex: 1 1 auto;
+	max-width: 100%;
+
+	#mess-roll-mod {
+		@extend %input-text;
+		background: color("background", 0.5);
+		color: color("text-lightest");
+	}
+
+	a {
+		@extend %control-button;
+		display: none;
+		margin: 0;
+		width: auto;
+
+		&.mess-selected {
+			display: inline-flex;
+		}
+
+		i {
+			color: inherit;
+			font-size: inherit;
+			line-height: initial;
+
+			&:nth-child(1),
+			&:nth-child(2) {
+				filter: initial;
+			}
+		}
+	}
+
+	> span {
+		display: block;
+		line-height: 1;
+		margin-inline-end: m("md");
+		margin-inline-start: m("base");
+	}
+}
+
+.mess-show-toggle {
+	flex: 0 0 auto;
+	font-size: initial;
+	height: auto;
+	width: auto;
+
+	a {
+		@extend %control-button;
+		top: auto;
+
+		i.fas {
+			font-size: inherit;
+			line-height: initial;
+		}
+	}
+}
+
+.mess-autoroll-selector {
+	flex: 0 0 auto;
+
+	a {
+		@extend %primary-button;
+		height: space("button-sm");
+		margin-inline-start: m("xs");
+	}
+}
+
+.mess .mess-button-to-hit,
+.mess .mess-button-dmg,
+.mess .mess-dice-result {
+	color: color("text");
+}

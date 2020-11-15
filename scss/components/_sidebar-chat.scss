@@ -9,6 +9,10 @@
 				color: color("text");
 				padding: p("base");
 				margin: m("base");
+
+				.message-header {
+					color: inherit;
+				}
 			}
 		}
 
@@ -19,7 +23,6 @@
 			color: color("text-lightest");
 			display: flex;
 			flex: 0 0 auto;
-			flex-wrap: nowrap;
 			margin: 0;
 			padding: p("sm");
 			position: relative;
@@ -29,10 +32,13 @@
 			}
 
 			.chat-control-icon {
-				margin-inline-end: m("sm");
+				margin-inline-end: m("xs");
 
-				.-compact & {
-					padding: p("base");
+				.fa-dice-d20 {
+					@extend %control-button;
+					@extend %font-awesome;
+					font-size: fs("md");
+					margin: 0;
 				}
 			}
 
@@ -92,9 +98,9 @@
 			}
 
 			textarea {
-				@extend %input-text;
+				@extend %input-textarea;
 				@include size(100%);
-				background: color("white", 0.9);
+				background: color("background-lightest", 0.9);
 				padding: p("sm");
 
 				.compact & {

@@ -2,27 +2,59 @@
 	margin: 0;
 
 	&:hover {
-		#tah-reposition {
+		#tah-reposition,
+		#tah-categories {
 			visibility: visible;
 		}
 	}
 
-	#tah-reposition {
+	#tah-hudTitle {
+		color: color("white");
+		font-size: fs("sm");
+		margin: 0;
+		margin-inline-start: to-rem(28px);
+		padding: 0;
+		text-shadow: 2px 2px 2px color("black");
+	}
+
+	#tah-reposition,
+	#tah-categories {
 		@extend %control-button;
 		left: initial;
 		margin: 0;
 		visibility: hidden;
+
+		i {
+			color: inherit;
+			font-size: fs("sm");
+			padding: initial;
+			margin: initial;
+			text-shadow: 2px 2px 2px color("black");
+			text-align: initial;
+		}
+	}
+
+	#tah-categories {
+		margin-inline-start: m("base");
 	}
 
 	button.tah-title-button,
 	.tah-action button {
 		@extend %primary-button;
 		margin-inline-start: m("base");
+
+		> .fa {
+			display: none;
+		}
 	}
 
 	.tah-subtitle {
+		color: color("white");
+		font-size: fs("sm");
+		line-height: initial;
+		padding: 0;
 		padding-block-start: p("sm");
-		text-shadow: 2px 2px 2px color("charcoal-900");
+		text-shadow: 2px 2px 2px color("black");
 
 		.-compact & {
 			padding-block-start: p("base");
@@ -42,6 +74,16 @@
 				margin-inline-start: m("base");
 				text-shadow: none;
 			}
+
+			> .tah-img {
+				@include size(to-rem(16px));
+				border: none;
+				border-radius: 0;
+				display: inline-block;
+				margin: 0;
+				margin-inline-end: m("sm");
+				padding: 0;
+			}
 		}
 	}
 
@@ -53,4 +95,12 @@
 			padding: p("base") 0;
 		}
 	}
+}
+
+.token-action-hud-taginput {
+	margin: m("sm") 0;
+}
+
+#token-action-hud-index {
+	margin-inline-end: m("base");
 }
