@@ -1,7 +1,7 @@
 %input-text {
 	@include size(100%, to-rem(32px));
 	background: transparent;
-	border: b("border");
+	border: b("border-lighter");
 	border-radius: 0;
 	color: color("text");
 	font-family: inherit;
@@ -40,7 +40,7 @@
 
 %input-select {
 	background: transparent;
-	border: b("border");
+	border: b("border-lighter");
 	border-radius: 0;
 	color: color("text");
 	cursor: pointer;
@@ -71,8 +71,9 @@
 		pointer-events: none;
 	}
 
-	optgroup {
-		background: color("white");
+	optgroup,
+	option {
+		background: color("background-lightest");
 		color: color("text");
 	}
 }
@@ -80,7 +81,7 @@
 %input-checkbox {
 	@include size(to-rem(20px));
 	background: transparent;
-	border: b("border");
+	border: b("border-lighter");
 	border-radius: 0;
 	box-shadow: none;
 	color: color("text");
@@ -121,7 +122,7 @@
 
 %input-color {
 	background: transparent;
-	border: b("border");
+	border: b("border-lighter");
 	border-radius: 0;
 	cursor: pointer;
 	font-family: inherit;
@@ -191,7 +192,7 @@
 		@include size(to-rem(16px));
 		background: color("primary");
 		border-radius: 0;
-		border: b("border");
+		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
 		margin-block-start: to-rem(-5px);
@@ -206,7 +207,7 @@
 	&::-moz-range-track {
 		@include size(100%, to-rem(8px));
 		background: color("background", 0.8);
-		border: b("border");
+		border: b("border-lighter");
 		border-radius: 0;
 		box-shadow: none;
 		cursor: pointer;
@@ -217,7 +218,7 @@
 		@include size(to-rem(16px));
 		background: color("primary");
 		border-radius: 0;
-		border: b("border");
+		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
 		margin-block-start: to-rem(-5px);
@@ -247,7 +248,7 @@
 
 %input-textarea {
 	background: transparent;
-	border: b("border");
+	border: b("border-lighter");
 	border-radius: 0;
 	color: color("text");
 	font-family: inherit;

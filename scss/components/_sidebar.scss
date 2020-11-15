@@ -167,8 +167,16 @@
 				position: relative;
 				width: 100%;
 
+				&:only-child {
+					margin-block-end: 0;
+				}
+
 				.-compact & {
 					margin-block-end: m("xs");
+
+					&:only-child {
+						margin-block-end: 0;
+					}
 				}
 
 				button {
