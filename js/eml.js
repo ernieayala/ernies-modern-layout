@@ -29,6 +29,9 @@ function updateSettings(settings) {
 		colorBackgroundLight,
 		colorBackgroundDarkest,
 		colorBackgroundButton,
+		colorBackgroundChatMessage,
+		colorBackgroundChatMessageWhisper,
+		colorBackgroundChatMessageBlind,
 		colorBorder,
 		colorBorderLighter,
 		colorFolderHeader,
@@ -49,6 +52,9 @@ function updateSettings(settings) {
 	colorBackgroundLight ? document.documentElement.style.setProperty('--color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
 	colorBackgroundDarkest ? document.documentElement.style.setProperty('--color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
 	colorBackgroundButton ? document.documentElement.style.setProperty('--color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
+	colorBackgroundChatMessage ? document.documentElement.style.setProperty('--color-background-chat-message', convertHexToRgb(colorBackgroundChatMessage)) : null;
+	colorBackgroundChatMessageWhisper ? document.documentElement.style.setProperty('--color-background-chat-message-whisper', convertHexToRgb(colorBackgroundChatMessageWhisper)) : null;
+	colorBackgroundChatMessageBlind ? document.documentElement.style.setProperty('--color-background-chat-message-blind', convertHexToRgb(colorBackgroundChatMessageBlind)) : null;
 	colorBorder ? document.documentElement.style.setProperty('--color-border', convertHexToRgb(colorBorder)) : null;
 	colorBorderLighter ? document.documentElement.style.setProperty('--color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
 	colorFolderHeader ? document.documentElement.style.setProperty('--color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
@@ -79,6 +85,9 @@ class emuSettings {
 			colorBackgroundLight: '#7d8a8c',
 			colorBackgroundDarkest: '#090e10',
 			colorBackgroundButton: '#7d7d7d',
+			colorBackgroundChatMessage: '#e6e9eb',
+			colorBackgroundChatMessageWhisper: '#ecf1fc',
+			colorBackgroundChatMessageBlind: '#ffecf0',
 			colorBorder: '#213234',
 			colorBorderLighter: '#a7b0b2',
 			colorFolderHeader: '#a7b0b2',
@@ -132,6 +141,9 @@ class emuForm extends FormApplication {
 			$('input[name="colorBackgroundLight"]').prop('value', '#4a4a4a');
 			$('input[name="colorBackgroundDarkest"]').prop('value', '#151515');
 			$('input[name="colorBackgroundButton"]').prop('value', '#111a1c');
+			$('input[name="colorBackgroundChatMessage"]').prop('value', '#666666');
+			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#193366');
+			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#b01030');
 			$('input[name="colorBorder"]').prop('value', '#4a4a4a');
 			$('input[name="colorBorderLighter"]').prop('value', '#7d7d7d');
 			$('input[name="colorFolderHeader"]').prop('value', '#4a4a4a');
@@ -149,6 +161,9 @@ class emuForm extends FormApplication {
 			$('input[name="colorBackgroundLight"]').prop('value', '#7d8a8c');
 			$('input[name="colorBackgroundDarkest"]').prop('value', '#090e10');
 			$('input[name="colorBackgroundButton"]').prop('value', '#7d7d7d');
+			$('input[name="colorBackgroundChatMessage"]').prop('value', '#e6e9eb');
+			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#ecf1fc');
+			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#ffecf0');
 			$('input[name="colorBorder"]').prop('value', '#213234');
 			$('input[name="colorBorderLighter"]').prop('value', '#a7b0b2');
 			$('input[name="colorFolderHeader"]').prop('value', '#a7b0b2');

@@ -11,10 +11,10 @@
 	}
 
 	.notification {
-		background: color("background-darkest", 0.8);
+		background: color("charcoal-900", 0.8);
 		border: b("border");
 		border-radius: 0;
-		color: color("text-lightest");
+		color: color("white");
 		margin-block-end: m("sm");
 		padding: p("sm");
 
@@ -39,7 +39,7 @@
 		&.warning {
 			background: color("warning");
 			border-color: color("yellow-800");
-			color: color("text");
+			color: color("charcoal-900");
 		}
 
 		&.error {
