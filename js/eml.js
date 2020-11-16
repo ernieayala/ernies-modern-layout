@@ -142,8 +142,8 @@ class emuForm extends FormApplication {
 			$('input[name="colorBackgroundDarkest"]').prop('value', '#151515');
 			$('input[name="colorBackgroundButton"]').prop('value', '#111a1c');
 			$('input[name="colorBackgroundChatMessage"]').prop('value', '#666666');
-			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#193366');
-			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#b01030');
+			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#192628');
+			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#293E40');
 			$('input[name="colorBorder"]').prop('value', '#4a4a4a');
 			$('input[name="colorBorderLighter"]').prop('value', '#7d7d7d');
 			$('input[name="colorFolderHeader"]').prop('value', '#4a4a4a');
