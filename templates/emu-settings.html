@@ -21,7 +21,6 @@
 			<input type="text"  name="colorBackground" value="{{ colorBackground }}" data-dtype="String"/>
 			<input type="color" name="colorBackgroundSelector" value="{{ colorBackground }}" data-edit="colorBackground"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-background-default-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-background-lightest" }}</label>
@@ -29,7 +28,6 @@
 			<input type="text"  name="colorBackgroundLightest" value="{{ colorBackgroundLightest }}" data-dtype="String"/>
 			<input type="color" name="colorBackgroundLightestSelector" value="{{ colorBackgroundLightest }}" data-edit="colorBackgroundLightest"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-background-lightest-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-background-light" }}</label>
@@ -37,7 +35,6 @@
 			<input type="text"  name="colorBackgroundLight" value="{{ colorBackgroundLight }}" data-dtype="String"/>
 			<input type="color" name="colorBackgroundLightSelector" value="{{ colorBackgroundLight }}" data-edit="colorBackgroundLight"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-background-light-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-background-darkest" }}</label>
@@ -45,7 +42,6 @@
 			<input type="text"  name="colorBackgroundDarkest" value="{{ colorBackgroundDarkest }}" data-dtype="String"/>
 			<input type="color" name="colorBackgroundDarkestSelector" value="{{ colorBackgroundDarkest }}" data-edit="colorBackgroundDarkest"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-background-darkest-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-background-button" }}</label>
@@ -53,7 +49,27 @@
 			<input type="text"  name="colorBackgroundButton" value="{{ colorBackgroundButton }}" data-dtype="String"/>
 			<input type="color" name="colorBackgroundButtonSelector" value="{{ colorBackgroundButton }}" data-edit="colorBackgroundButton"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-background-button-hint" }}</p>
+	</div>
+	<div class="form-group">
+		<label>{{ localize "emu.theme-background-chat-message" }}</label>
+		<div class="form-fields">
+			<input type="text"  name="colorBackgroundChatMessage" value="{{ colorBackgroundChatMessage }}" data-dtype="String"/>
+			<input type="color" name="colorBackgroundChatMessageSelector" value="{{ colorBackgroundChatMessage }}" data-edit="colorBackgroundChatMessage"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label>{{ localize "emu.theme-background-chat-message-whisper" }}</label>
+		<div class="form-fields">
+			<input type="text"  name="colorBackgroundChatMessageWhisper" value="{{ colorBackgroundChatMessageWhisper }}" data-dtype="String"/>
+			<input type="color" name="colorBackgroundChatMessageWhisperSelector" value="{{ colorBackgroundChatMessageWhisper }}" data-edit="colorBackgroundChatMessageWhisper"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label>{{ localize "emu.theme-background-chat-message-blind" }}</label>
+		<div class="form-fields">
+			<input type="text"  name="colorBackgroundChatMessageBlind" value="{{ colorBackgroundChatMessageBlind }}" data-dtype="String"/>
+			<input type="color" name="colorBackgroundChatMessageBlindSelector" value="{{ colorBackgroundChatMessageBlind }}" data-edit="colorBackgroundChatMessageBlind"/>
+		</div>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-border" }}</label>
@@ -61,7 +77,6 @@
 			<input type="text"  name="colorBorder" value="{{ colorBorder }}" data-dtype="String"/>
 			<input type="color" name="colorBorderSelector" value="{{ colorBorder }}" data-edit="colorBorder"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-border-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-border-lighter" }}</label>
@@ -69,7 +84,6 @@
 			<input type="text"  name="colorBorderLighter" value="{{ colorBorderLighter }}" data-dtype="String"/>
 			<input type="color" name="colorBorderLighterSelector" value="{{ colorBorderLighter }}" data-edit="colorBorderLighter"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-border-lighter-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-folder-header" }}</label>
@@ -77,7 +91,6 @@
 			<input type="text"  name="colorFolderHeader" value="{{ colorFolderHeader }}" data-dtype="String"/>
 			<input type="color" name="colorFolderHeaderSelector" value="{{ colorFolderHeader }}" data-edit="colorFolderHeader"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-folder-header-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-folder-directory" }}</label>
@@ -85,7 +98,6 @@
 			<input type="text"  name="colorFolderDirectory" value="{{ colorFolderDirectory }}" data-dtype="String"/>
 			<input type="color" name="colorFolderDirectorySelector" value="{{ colorFolderDirectory }}" data-edit="colorFolderDirectory"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-folder-directory-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-folder-subdirectory" }}</label>
@@ -93,7 +105,6 @@
 			<input type="text"  name="colorFolderSubdirectory" value="{{ colorFolderSubdirectory }}" data-dtype="String"/>
 			<input type="color" name="colorFolderSubdirectorySelector" value="{{ colorFolderSubdirectory }}" data-edit="colorFolderSubdirectory"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-folder-subdirectory-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-text" }}</label>
@@ -101,7 +112,6 @@
 			<input type="text"  name="colorText" value="{{ colorText }}" data-dtype="String"/>
 			<input type="color" name="colorTextSelector" value="{{ colorText }}" data-edit="colorText"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-text-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-text-lightest" }}</label>
@@ -109,7 +119,6 @@
 			<input type="text"  name="colorTextLightest" value="{{ colorTextLightest }}" data-dtype="String"/>
 			<input type="color" name="colorTextLightestSelector" value="{{ colorTextLightest }}" data-edit="colorTextLightest"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-text-lightest-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.theme-text-darker" }}</label>
@@ -117,7 +126,6 @@
 			<input type="text"  name="colorTextDarker" value="{{ colorTextDarker }}" data-dtype="String"/>
 			<input type="color" name="colorTextDarkerSelector" value="{{ colorTextDarker }}" data-edit="colorTextDarker"/>
 		</div>
-		<p class="notes">{{ localize "emu.theme-text-darker-hint" }}</p>
 	</div>
 	<div class="form-group">
 		<label>{{ localize "emu.toggle-logo" }}</label>

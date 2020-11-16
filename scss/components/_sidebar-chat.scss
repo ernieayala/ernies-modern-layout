@@ -3,15 +3,30 @@
 	#chat {
 		#chat-log {
 			.message {
-				background: color("background-lightest");
+				background: color("background-chat-message");
 				border: b("border");
 				border-radius: 0;
 				color: color("text");
 				padding: p("base");
 				margin: m("base");
 
+				&.whisper {
+					background: color("background-chat-message-whisper");
+				}
+
+				&.blind {
+					background: color("background-chat-message-blind");
+				}
+
 				.message-header {
 					color: inherit;
+				}
+
+				.dice-roll .dice-formula,
+				.dice-roll .dice-total {
+					box-shadow: none;
+					border: b("border");
+					border-radius: 0;
 				}
 			}
 		}
