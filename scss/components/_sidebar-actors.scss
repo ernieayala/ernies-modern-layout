@@ -11,6 +11,10 @@
 			&.folder {
 				@extend %folder;
 			}
+
+			.actor-profile {
+				object-position: 50% 0;
+			}
 		}
 	}
 }

@@ -1,4 +1,6 @@
 {
+	"I18N.LANGUAGE": "English",
+	"I18N.MAINTAINERS": "Ernie",
 	"emu.settings-name": "GM Settings",
 	"emu.settings-label": "Settings",
 	"emu.modal-title": "Ernie's Modern UI",

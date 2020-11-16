@@ -56,14 +56,14 @@
 
 		&.tiles {
 			.files-list {
-				display: flex;
-				flex-wrap: wrap;
+				gap: space("base");
+				grid-template-columns: repeat(1fr, 5);
 			}
 
 			.file {
 				@include size(to-rem(98px));
 				align-items: center;
-				background: transparent;
+				background: color("background-darkest", 0.05);
 				border: none;
 				display: flex;
 				flex: 0 0 auto;
@@ -82,28 +82,31 @@
 			.file {
 				border: 0;
 				border-block-end: b("border");
-				display: flex;
+				display: grid;
+				grid-template-areas: "title" "image";
+				grid-template-rows: min-content 1fr;
 				justify-content: center;
 				padding: p("base");
 
 				.filename {
-					@include absolute(top 0 left 0);
 					@include ellipsis(max-width 100%);
 					background: color("background-darkest", 0.8);
 					border-radius: 0;
 					display: block;
 					color: color("text-lightest");
 					font-size: fs("md");
+					grid-area: title;
+					left: auto;
 					line-height: 1;
 					margin: 0;
 					padding: p("base");
+					position: relative;
 					text-align: center;
 					width: 100%;
 				}
 
 				img {
-					max-width: to-rem(100%);
-					max-height: to-rem(200px);
+					grid-area: image;
 					object-fit: contain;
 				}
 			}

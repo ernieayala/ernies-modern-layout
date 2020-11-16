@@ -4256,6 +4256,10 @@ body.emu.e-body#emu .sidebar-popout #scenes .scene {
     body.emu.e-body#emu .sidebar-popout #scenes .scene h3 > a {
       padding: 0; }
 
+body.emu.e-body#emu #sidebar #actors .directory-item .actor-profile,
+body.emu.e-body#emu .sidebar-popout #actors .directory-item .actor-profile {
+  object-position: 50% 0; }
+
 body.emu.e-body#emu #sidebar #playlists,
 body.emu.e-body#emu .sidebar-popout #playlists {
   color: rgba(var(--color-text-lightest), 1); }
@@ -4764,13 +4768,13 @@ body.emu.e-body#emu .window-app.filepicker {
         max-width: 2rem;
         max-height: 2rem; }
     body.emu.e-body#emu .window-app.filepicker .filepicker-body.tiles .files-list {
-      display: flex;
-      flex-wrap: wrap; }
+      gap: 0.25rem;
+      grid-template-columns: repeat(1fr, 5); }
     body.emu.e-body#emu .window-app.filepicker .filepicker-body.tiles .file {
       width: 6.125rem;
       height: 6.125rem;
       align-items: center;
-      background: transparent;
+      background: rgba(var(--color-background-darkest), 0.05);
       border: none;
       display: flex;
       flex: 0 0 auto;
@@ -4783,13 +4787,12 @@ body.emu.e-body#emu .window-app.filepicker {
     body.emu.e-body#emu .window-app.filepicker .filepicker-body.images .file {
       border: 0;
       border-block-end: rgba(var(--color-border), 1) 1px solid;
-      display: flex;
+      display: grid;
+      grid-template-areas: "title" "image";
+      grid-template-rows: min-content 1fr;
       justify-content: center;
       padding: 0.25rem; }
       body.emu.e-body#emu .window-app.filepicker .filepicker-body.images .file .filename {
-        top: 0;
-        left: 0;
-        position: absolute;
         max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -4799,14 +4802,16 @@ body.emu.e-body#emu .window-app.filepicker {
         display: block;
         color: rgba(var(--color-text-lightest), 1);
         font-size: 0.875rem;
+        grid-area: title;
+        left: auto;
         line-height: 1;
         margin: 0;
         padding: 0.25rem;
+        position: relative;
         text-align: center;
         width: 100%; }
       body.emu.e-body#emu .window-app.filepicker .filepicker-body.images .file img {
-        max-width: 6.25rem;
-        max-height: 12.5rem;
+        grid-area: image;
         object-fit: contain; }
   body.emu.e-body#emu .window-app.filepicker section.filepicker-body {
     display: flex;
