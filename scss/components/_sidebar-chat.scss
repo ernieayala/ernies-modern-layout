@@ -7,6 +7,7 @@
 				border: b("border");
 				border-radius: 0;
 				color: color("text");
+				font-size: fs("md");
 				padding: p("base");
 				margin: m("base");
 
@@ -27,6 +28,20 @@
 					box-shadow: none;
 					border: b("border");
 					border-radius: 0;
+				}
+
+				a.entity-link,
+				a.inline-roll {
+					@extend %primary-button;
+					color: color("text-lightest");
+					font-size: fs("sm");
+					padding: p("xs") p("base");
+					text-indent: 0;
+
+					i {
+						color: inherit;
+						margin-inline-end: m("base");
+					}
 				}
 			}
 		}

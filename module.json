@@ -11,8 +11,8 @@
 			"url": "https://github.com/ernieayala"
 		}
 	],
-	"styles": ["./css/eml.css"],
-	"esmodules": ["./js/eml.js"],
+	"styles": ["./css/emu.css"],
+	"esmodules": ["./js/emu.js"],
 	"languages": [
 		{
 			"lang": "en",

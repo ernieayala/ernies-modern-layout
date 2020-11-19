@@ -73,7 +73,7 @@
 		background: color("background-darkest", 0.8);
 
 		&.active .control-tools {
-			display: block;
+			display: flex;
 		}
 
 		.-control-align-tops & {
@@ -110,6 +110,7 @@
 		@extend %reset-list;
 		@include absolute(top 0 left to-rem(48px));
 		display: none;
+		flex-direction: column;
 		pointer-events: none;
 
 		.-compact & {
