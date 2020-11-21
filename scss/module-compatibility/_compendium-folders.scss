@@ -1,0 +1,95 @@
+#sidebar,
+.sidebar-popout {
+	#compendium {
+		.compendium-entity.compendium-folder {
+			@extend %directory-item;
+			background: transparent;
+			cursor: default;
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding-block-start: p("base");
+			padding-inline-start: p("sm");
+			padding-inline-end: p("sm");
+			position: relative;
+			width: 100%;
+
+			.-compact & {
+				padding-inline-start: p("base");
+				padding-inline-end: p("base");
+			}
+
+			&:hover,
+			&:focus {
+				background: transparent;
+				box-shadow: none;
+			}
+
+			+ .folder-contents {
+				@extend %reset-list;
+			}
+		}
+
+		.compendium-folder-header {
+			align-items: center;
+			background: color("folder-header") !important; // wouldn't have to do this if people didn't use inline styles
+			border: 0;
+			border-inline-start: b("primary", 4px);
+			color: color("text") !important;  // wouldn't have to do this if people didn't use inline styles
+			cursor: pointer;
+			display: flex;
+			flex-wrap: nowrap;
+			line-height: 1;
+			min-height: to-rem(32px);
+			padding: p("base") p("sm");
+			position: relative;
+			transition: t(background box-shadow color, "link");
+			width: 100%;
+
+			.-compact & {
+				min-height: to-rem(24px);
+				padding: p("base");
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background: color("primary");
+				color: color("text-lightest");
+			}
+
+			&:focus {
+				@extend %global-focus;
+			}
+
+			h3 {
+				@extend %h-tag;
+				@extend %button-icon;
+				@include ellipsis;
+				border-block-end: 0;
+				color: inherit;
+				flex: 1 1 auto;
+				font-size: fs("lg");
+				line-height: 1;
+				text-align: start;
+				text-shadow: none;
+			}
+
+			.move-folder,
+			.create-folder,
+			.edit-folder, {
+				@extend %control-button;
+			}
+		}
+
+		.compendium-list {
+			@extend %reset-list;
+			display: flex;
+			flex-direction: column;
+			background: color("folder-subdirectory");
+			border: none;
+			border-inline-start: b("primary", 4px);
+			margin: initial !important;  // wouldn't have to do this if people didn't use inline styles
+			width: 100%;
+		}
+	}
+}

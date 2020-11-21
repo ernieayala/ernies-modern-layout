@@ -18,6 +18,13 @@
 		}
 	}
 
+	.form-group {
+		label {
+			color: color("text");
+			font-weight: normal;
+		}
+	}
+
 	.form-group.stacked {
 		align-items: initial;
 		flex-direction: column;

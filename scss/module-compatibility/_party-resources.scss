@@ -1,0 +1,16 @@
+.directory-header .action-buttons {
+	width: 100%;
+}
+
+#btn-dashboard {
+	@extend %primary-button;
+	margin-block-end: m("sm");
+
+	i {
+		margin-inline-end: m("base");
+	}
+
+	.-compact & {
+		margin-block-end: m("base");
+	}
+}

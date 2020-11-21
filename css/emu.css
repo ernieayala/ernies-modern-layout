@@ -13,7 +13,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__math,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll, body.emu.e-body#emu #forien-quest-log .new-quest-btn, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand, body.emu.e-body#emu #effects-config button, body.emu.e-body#emu #filter-config button, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu #btn-dashboard, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button, body.emu.e-body#emu #RTB-menu .RTB-entry, body.emu.e-body#emu #token-action-hud button.tah-title-button,
 body.emu.e-body#emu #token-action-hud .tah-action button, body.emu.e-body#emu #sidebar .token-mold > label > span,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control,
@@ -74,7 +74,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-compact body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll, body.emu.e-body#emu #sidebar .dice-tray .-compact button.dice-tray__roll, .-compact body.emu.e-body#emu #forien-quest-log .new-quest-btn, body.emu.e-body#emu #forien-quest-log .-compact .new-quest-btn, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer .-compact button, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .-compact .add-new-task, .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .-compact .add-new-task, .-compact body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .-compact .add-subquest-btn, .-compact body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand, body.emu.e-body#emu .sheet.macro-sheet .-compact .furnace-macro-expand, .-compact body.emu.e-body#emu #effects-config button, body.emu.e-body#emu #effects-config .-compact button, .-compact body.emu.e-body#emu #filter-config button, body.emu.e-body#emu #filter-config .-compact button, .-compact body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative .-compact label,
   .-compact body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save .-compact label,
   .-compact body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label, body.emu.e-body#emu #lmrtfy form .lmrtfy-ability .-compact label,
-  .-compact body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu #lmrtfy form .lmrtfy-skill .-compact label, .-compact body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu .mess-autoroll-selector .-compact a, .-compact body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header .-compact button,
+  .-compact body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu #lmrtfy form .lmrtfy-skill .-compact label, .-compact body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu .mess-autoroll-selector .-compact a, .-compact body.emu.e-body#emu #btn-dashboard, body.emu.e-body#emu .-compact #btn-dashboard, .-compact body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header .-compact button,
   .-compact body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button, body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header .-compact button, .-compact body.emu.e-body#emu #RTB-menu .RTB-entry, body.emu.e-body#emu #RTB-menu .-compact .RTB-entry, .-compact body.emu.e-body#emu #token-action-hud button.tah-title-button, body.emu.e-body#emu #token-action-hud .-compact button.tah-title-button,
   .-compact body.emu.e-body#emu #token-action-hud .tah-action button, body.emu.e-body#emu #token-action-hud .tah-action .-compact button, .-compact body.emu.e-body#emu #sidebar .token-mold > label > span, body.emu.e-body#emu #sidebar .-compact .token-mold > label > span,
   .-compact body.emu.e-body#emu .sidebar-popout .token-mold > label > span, body.emu.e-body#emu .sidebar-popout .-compact .token-mold > label > span, .-compact body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .-compact .header-control,
@@ -120,7 +120,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll:hover, body.emu.e-body#emu #forien-quest-log .new-quest-btn:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn:hover, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand:hover, body.emu.e-body#emu #effects-config button:hover, body.emu.e-body#emu #filter-config button:hover, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label:hover,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label:hover,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label:hover,
-  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:hover, body.emu.e-body#emu .mess-autoroll-selector a:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover,
+  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:hover, body.emu.e-body#emu .mess-autoroll-selector a:hover, body.emu.e-body#emu #btn-dashboard:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover,
   body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover, body.emu.e-body#emu #RTB-menu .RTB-entry:hover, body.emu.e-body#emu #token-action-hud button.tah-title-button:hover,
   body.emu.e-body#emu #token-action-hud .tah-action button:hover, body.emu.e-body#emu #sidebar .token-mold > label > span:hover,
   body.emu.e-body#emu .sidebar-popout .token-mold > label > span:hover, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control:hover,
@@ -167,7 +167,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll:disabled, body.emu.e-body#emu #forien-quest-log .new-quest-btn:disabled, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button:disabled, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task:disabled, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task:disabled, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn:disabled, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand:disabled, body.emu.e-body#emu #effects-config button:disabled, body.emu.e-body#emu #filter-config button:disabled, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label:disabled,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label:disabled,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label:disabled,
-  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:disabled, body.emu.e-body#emu .mess-autoroll-selector a:disabled, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:disabled,
+  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:disabled, body.emu.e-body#emu .mess-autoroll-selector a:disabled, body.emu.e-body#emu #btn-dashboard:disabled, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:disabled,
   body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:disabled, body.emu.e-body#emu #RTB-menu .RTB-entry:disabled, body.emu.e-body#emu #token-action-hud button.tah-title-button:disabled,
   body.emu.e-body#emu #token-action-hud .tah-action button:disabled, body.emu.e-body#emu #sidebar .token-mold > label > span:disabled,
   body.emu.e-body#emu .sidebar-popout .token-mold > label > span:disabled, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control:disabled,
@@ -214,7 +214,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__math,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll, body.emu.e-body#emu #forien-quest-log .new-quest-btn, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand, body.emu.e-body#emu #effects-config button, body.emu.e-body#emu #filter-config button, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label, body.emu.e-body#emu .mess-autoroll-selector a, body.emu.e-body#emu #btn-dashboard, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button, body.emu.e-body#emu #RTB-menu .RTB-entry, body.emu.e-body#emu #token-action-hud button.tah-title-button,
 body.emu.e-body#emu #token-action-hud .tah-action button, body.emu.e-body#emu #sidebar .token-mold > label > span,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span {
@@ -2054,7 +2054,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__math:hover,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll:hover, body.emu.e-body#emu #forien-quest-log .new-quest-btn:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn:hover, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand:hover, body.emu.e-body#emu #effects-config button:hover, body.emu.e-body#emu #filter-config button:hover, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label:hover,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label:hover,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label:hover,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:hover, body.emu.e-body#emu .mess-autoroll-selector a:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:hover, body.emu.e-body#emu .mess-autoroll-selector a:hover, body.emu.e-body#emu #btn-dashboard:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:hover, body.emu.e-body#emu #RTB-menu .RTB-entry:hover, body.emu.e-body#emu #token-action-hud button.tah-title-button:hover,
 body.emu.e-body#emu #token-action-hud .tah-action button:hover, body.emu.e-body#emu #sidebar .token-mold > label > span:hover,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span:hover, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control:hover,
@@ -2268,7 +2268,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__math:focus,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__roll:focus, body.emu.e-body#emu #forien-quest-log .new-quest-btn:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .add-new-task:focus, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .add-new-task:focus, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .add-subquest-btn:focus, body.emu.e-body#emu .sheet.macro-sheet .furnace-macro-expand:focus, body.emu.e-body#emu #effects-config button:focus, body.emu.e-body#emu #filter-config button:focus, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label:focus,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label:focus,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label:focus,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:focus, body.emu.e-body#emu .mess-autoroll-selector a:focus, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:focus,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label:focus, body.emu.e-body#emu .mess-autoroll-selector a:focus, body.emu.e-body#emu #btn-dashboard:focus, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:focus,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:focus, body.emu.e-body#emu #RTB-menu .RTB-entry:focus, body.emu.e-body#emu #token-action-hud button.tah-title-button:focus,
 body.emu.e-body#emu #token-action-hud .tah-action button:focus, body.emu.e-body#emu #sidebar .token-mold > label > span:focus,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span:focus, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-control:focus,
@@ -2462,7 +2462,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__math:focus,
 body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__roll:focus, body.emu.e-body#emu #forien-quest-log .active.new-quest-btn:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button.active:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .active.add-new-task:focus, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .active.add-new-task:focus, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .active.add-subquest-btn:focus, body.emu.e-body#emu .sheet.macro-sheet .active.furnace-macro-expand:focus, body.emu.e-body#emu #effects-config button.active:focus, body.emu.e-body#emu #filter-config button.active:focus, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label.active:focus,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label.active:focus,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label.active:focus,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active:focus, body.emu.e-body#emu .mess-autoroll-selector a.active:focus, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:focus,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active:focus, body.emu.e-body#emu .mess-autoroll-selector a.active:focus, body.emu.e-body#emu .active#btn-dashboard:focus, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:focus,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:focus, body.emu.e-body#emu #RTB-menu .active.RTB-entry:focus, body.emu.e-body#emu #token-action-hud button.active.tah-title-button:focus,
 body.emu.e-body#emu #token-action-hud .tah-action button.active:focus, body.emu.e-body#emu #sidebar .token-mold > label > span.active:focus,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span.active:focus, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .active.header-control:focus,
@@ -2525,7 +2525,7 @@ body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__math,
 body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__roll, body.emu.e-body#emu #forien-quest-log .active.new-quest-btn, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button.active, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .active.add-new-task, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .active.add-new-task, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .active.add-subquest-btn, body.emu.e-body#emu .sheet.macro-sheet .active.furnace-macro-expand, body.emu.e-body#emu #effects-config button.active, body.emu.e-body#emu #filter-config button.active, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label.active,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label.active,
 body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label.active,
-body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active, body.emu.e-body#emu .mess-autoroll-selector a.active, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active,
+body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active, body.emu.e-body#emu .mess-autoroll-selector a.active, body.emu.e-body#emu .active#btn-dashboard, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active,
 body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active, body.emu.e-body#emu #RTB-menu .active.RTB-entry, body.emu.e-body#emu #token-action-hud button.active.tah-title-button,
 body.emu.e-body#emu #token-action-hud .tah-action button.active, body.emu.e-body#emu #sidebar .token-mold > label > span.active,
 body.emu.e-body#emu .sidebar-popout .token-mold > label > span.active, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .active.header-control,
@@ -2581,7 +2581,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + la
   body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__roll:hover, body.emu.e-body#emu #forien-quest-log .active.new-quest-btn:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container .footer button.active:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks h2 .active.add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc h3 .active.add-new-task:hover, body.emu.e-body#emu .forien-quest-preview .management .part.subquests .active.add-subquest-btn:hover, body.emu.e-body#emu .sheet.macro-sheet .active.furnace-macro-expand:hover, body.emu.e-body#emu #effects-config button.active:hover, body.emu.e-body#emu #filter-config button.active:hover, body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-initiative label.active:hover,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-extra-death-save label.active:hover,
   body.emu.e-body#emu #lmrtfy form .lmrtfy-ability label.active:hover,
-  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active:hover, body.emu.e-body#emu .mess-autoroll-selector a.active:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:hover,
+  body.emu.e-body#emu #lmrtfy form .lmrtfy-skill label.active:hover, body.emu.e-body#emu .mess-autoroll-selector a.active:hover, body.emu.e-body#emu .active#btn-dashboard:hover, body.emu.e-body#emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:hover,
   body.emu.e-body#emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button.active:hover, body.emu.e-body#emu #RTB-menu .active.RTB-entry:hover, body.emu.e-body#emu #token-action-hud button.active.tah-title-button:hover,
   body.emu.e-body#emu #token-action-hud .tah-action button.active:hover, body.emu.e-body#emu #sidebar .token-mold > label > span.active:hover,
   body.emu.e-body#emu .sidebar-popout .token-mold > label > span.active:hover, body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .active.header-control:hover,
@@ -5142,6 +5142,10 @@ body.emu.e-body#emu #player-config .avatar {
   margin: 0;
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
 
+body.emu.e-body#emu #player-config .form-group label {
+  color: rgba(var(--color-text), 1);
+  font-weight: normal; }
+
 body.emu.e-body#emu #player-config .form-group.stacked {
   align-items: initial;
   flex-direction: column; }
@@ -6699,6 +6703,16 @@ body.emu.e-body#emu .mess .mess-dice-result {
 
 body.emu.e-body#emu .narrator-span {
   text-shadow: none; }
+
+body.emu.e-body#emu .directory-header .action-buttons {
+  width: 100%; }
+
+body.emu.e-body#emu #btn-dashboard {
+  margin-block-end: 0.5rem; }
+  body.emu.e-body#emu #btn-dashboard i {
+    margin-inline-end: 0.25rem; }
+  .-compact body.emu.e-body#emu #btn-dashboard {
+    margin-block-end: 0.25rem; }
 
 body.emu.e-body#emu #sidebar div.permission-viewer,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer {
