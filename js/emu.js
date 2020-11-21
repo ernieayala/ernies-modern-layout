@@ -1,8 +1,10 @@
+import * as THEME from './emu-theme.js';
+
 const myHtml = document.getElementsByTagName('html');
 const myBody = document.getElementsByTagName('body');
 const moduleName = 'ernies-modern-layout';
 
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+let __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
 	function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
 		return new (P || (P = Promise))(function (resolve, reject) {
 			function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -13,7 +15,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 
 // Hex to RGB functio
-function convertHexToRgb(color){
+function convertHexToRgb(color) {
 	const hex = color.replace('#','');
 	const r = parseInt(hex.substring(0,2), 16);
 	const g = parseInt(hex.substring(2,4), 16);
@@ -134,44 +136,16 @@ class emuForm extends FormApplication {
 	}
 
 	getThemePreset(formData) {
-		if($('select[name="themePreset"]').val() === 'dark') {
-			$('input[name="colorPrimary"]').prop('value', '#111a1c');
-			$('input[name="colorBackground"]').prop('value', '#2e2e2e');
-			$('input[name="colorBackgroundLightest"]').prop('value', '#666666');
-			$('input[name="colorBackgroundLight"]').prop('value', '#4a4a4a');
-			$('input[name="colorBackgroundDarkest"]').prop('value', '#151515');
-			$('input[name="colorBackgroundButton"]').prop('value', '#111a1c');
-			$('input[name="colorBackgroundChatMessage"]').prop('value', '#666666');
-			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#192628');
-			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#293E40');
-			$('input[name="colorBorder"]').prop('value', '#4a4a4a');
-			$('input[name="colorBorderLighter"]').prop('value', '#7d7d7d');
-			$('input[name="colorFolderHeader"]').prop('value', '#4a4a4a');
-			$('input[name="colorFolderDirectory"]').prop('value', '#151515');
-			$('input[name="colorFolderSubdirectory"]').prop('value', '#7d7d7d');
-			$('input[name="colorText"]').prop('value', '#f1f1f1');
-			$('input[name="colorTextLightest"]').prop('value', '#fafafa');
-			$('input[name="colorTextDarker"]').prop('value', '#cbcbcb');
+		if($('select[name="themePreset"]').val() === 'foundry') {
+			for (const [key, value] of Object.entries(THEME.FOUNDRY)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
 
-		if($('select[name="themePreset"]').val() === 'foundry') {
-			$('input[name="colorPrimary"]').prop('value', '#e57509');
-			$('input[name="colorBackground"]').prop('value', '#293e40');
-			$('input[name="colorBackgroundLightest"]').prop('value', '#e6e9eb');
-			$('input[name="colorBackgroundLight"]').prop('value', '#7d8a8c');
-			$('input[name="colorBackgroundDarkest"]').prop('value', '#090e10');
-			$('input[name="colorBackgroundButton"]').prop('value', '#7d7d7d');
-			$('input[name="colorBackgroundChatMessage"]').prop('value', '#e6e9eb');
-			$('input[name="colorBackgroundChatMessageWhisper"]').prop('value', '#ecf1fc');
-			$('input[name="colorBackgroundChatMessageBlind"]').prop('value', '#ffecf0');
-			$('input[name="colorBorder"]').prop('value', '#213234');
-			$('input[name="colorBorderLighter"]').prop('value', '#a7b0b2');
-			$('input[name="colorFolderHeader"]').prop('value', '#a7b0b2');
-			$('input[name="colorFolderDirectory"]').prop('value', '#536466');
-			$('input[name="colorFolderSubdirectory"]').prop('value', '#d1d6d8');
-			$('input[name="colorText"]').prop('value', '#090e10');
-			$('input[name="colorTextLightest"]').prop('value', '#ffffff');
-			$('input[name="colorTextDarker"]').prop('value', '#293e40');
+		if($('select[name="themePreset"]').val() === 'dark') {
+			for (const [key, value] of Object.entries(THEME.DARK)) { $(`input[name="${key}"]`).prop('value', value); }
+		}
+
+		if($('select[name="themePreset"]').val() === 'western') {
+			for (const [key, value] of Object.entries(THEME.WESTERN)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
 	}
 
