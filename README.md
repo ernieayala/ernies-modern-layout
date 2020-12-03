@@ -4,7 +4,9 @@
 
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 0.7.5+
+
 **Systems:** Any
+
 **Languages:** English, Spanish
 
 A clean and themeable visual update for Foundry VTT.
@@ -20,6 +22,7 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Contact and Support
 Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Foundry channel.
+
 <a href="https://www.buymeacoffee.com/ernieayala" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
 ## You should know
