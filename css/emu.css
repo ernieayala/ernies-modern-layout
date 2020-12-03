@@ -3320,6 +3320,10 @@ body.emu.e-body#emu #hotbar {
   display: flex;
   pointer-events: none;
   z-index: 10; }
+  .-emu-players body.emu.e-body#emu #hotbar {
+    left: 0.5rem; }
+  .-emu-players.-compact body.emu.e-body#emu #hotbar {
+    left: 0.25rem; }
   .-compact body.emu.e-body#emu #hotbar {
     bottom: 0.25rem;
     left: 11rem; }
@@ -3742,12 +3746,15 @@ body.emu.e-body#emu #players {
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
   box-shadow: none;
+  display: block;
   width: 12.5rem;
   z-index: 10; }
   .-compact body.emu.e-body#emu #players {
     bottom: 0.25rem;
     left: 0.25rem;
     width: 10.5rem; }
+  .-emu-players body.emu.e-body#emu #players {
+    display: none; }
   body.emu.e-body#emu #players.hidden {
     display: none; }
   body.emu.e-body#emu #players h3 {

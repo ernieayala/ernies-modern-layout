@@ -5,6 +5,14 @@
 	pointer-events: none;
 	z-index: z("fixed");
 
+	.-emu-players & {
+		left: space("sm");
+	}
+
+	.-emu-players.-compact & {
+		left: space("base");
+	}
+
 	.-compact & {
 		bottom: space("base");
 		left: to-rem(176px);

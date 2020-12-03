@@ -188,6 +188,20 @@ Hooks.once('init', () => {
 Hooks.once('ready', () => {
 	updateSettings(game.settings.get(moduleName, 'settings'));
 
+	// Toggle
+	game.settings.register(moduleName, 'togglePlayers', {
+		name: game.i18n.localize('emu.toggle-players'),
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+		}
+	});
+	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
+	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+
 	// Layouts
 	game.settings.register(moduleName, 'compactMode', {
 		name: game.i18n.localize('emu.layout-compact'),
