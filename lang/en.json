@@ -30,6 +30,7 @@
 	"emu.layout-control-align": "Controls Align to Top",
 	"emu.layout-control-align-hint": "This aligns the children controls to the top of the screen.",
 	"emu.toggle-logo": "Toggle Logo",
+	"emu.toggle-players": "Toggle Players",
 	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails",
 	"emu.toggle-combat-sidebar": "Toggle Combat Sidebar Styles",
 	"emu.toggle-combat-sidebar-hint": "This will turn off -most- of the styling in the combat sidebar."

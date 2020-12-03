@@ -4,6 +4,7 @@
 	border: b("border");
 	border-radius: 0;
 	box-shadow: none;
+	display: block;
 	width: to-rem(200px);
 	z-index: z("fixed");
 
@@ -11,6 +12,10 @@
 		bottom: space("base");
 		left: space("base");
 		width: to-rem(168px);
+	}
+
+	.-emu-players & {
+		display: none;
 	}
 
 	&.hidden {
