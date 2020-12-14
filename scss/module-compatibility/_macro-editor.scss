@@ -1,0 +1,28 @@
+.macro-editor-expand {
+	bottom: space("base");
+	position: absolute !important;
+	left: auto;
+	right: space("base");
+	top: auto;
+
+	&.fullscreen {
+		position: fixed !important;
+		z-index: z("popover") + 1;
+	}
+}
+
+.macro-editor.ace_editor {
+	flex: 1 1 auto;
+	height: 100%;
+
+	&.fullscreen {
+		height: calc(100% - 10rem);
+		z-index: z("popover");
+
+		&::before {
+			@include fixed(zero);
+			background: color("black", 0.5);
+			content: "";
+		}
+	}
+}

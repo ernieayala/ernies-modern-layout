@@ -1,0 +1,28 @@
+.dmgBtn-container-mqol {
+	align-items: center;
+	bottom: 0 !important; // gross
+	display: flex;
+	height: 100%;
+
+	button {
+		@extend %control-button !optional;
+		color: color("text");
+
+		// dude - the inlines are killing me
+		background: transparent !important;
+		font-size: fs("sm") !important;
+		height: to-rem(22px) !important;
+		line-height: 1 !important;
+		margin: 0;
+		margin-inline-end: m("xs");
+		width: to-rem(22px) !important;
+
+		&:hover {
+			background: color("primary") !important;
+		}
+
+		> i{
+			margin-inline-end: 0;
+		}
+	}
+}
