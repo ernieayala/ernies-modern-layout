@@ -54,7 +54,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Furnace
 - FX Master
 - Lmrtfy
+- Macro Editor
 - Mess
+- Midi QOL
 - Permission Viewer
 - Polyglot
 - Response Time
