@@ -1,0 +1,54 @@
+#sidebar,
+.sidebar-popout {
+	#combat {
+		#combat-tracker {
+			.combatant {
+				height: auto;
+
+				.ce-image-wrapper {
+					@include size(space("icon"));
+					cursor: default;
+					flex: 0 0 auto;
+					margin-inline-end: m("sm");
+					position: relative;
+
+					.-compact & {
+						margin-inline-end: m("base");
+					}
+
+					.token-image {
+						@include size(100%);
+						margin: 0;
+					}
+
+					svg {
+						box-shadow: none;
+					}
+				}
+
+				.ce-modify-hp-wrapper {
+					color: color("text-lightest");
+					flex: 0 0 auto;
+					font-size: fs("sm");
+
+					input {
+						@extend %input-text;
+						background: color("background-lightest");
+						height: auto;
+						margin-inline-start: m("xs");
+
+						width: to-rem(40px);
+					}
+				}
+
+				.token-resources {
+					line-height: 1;
+				}
+
+				.token-initiative {
+					padding-block-start: 0;
+				}
+			}
+		}
+	}
+}

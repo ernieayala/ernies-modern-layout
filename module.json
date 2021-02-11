@@ -2,7 +2,7 @@
 	"name": "ernies-modern-layout",
 	"title": "Ernie's Modern UI",
 	"description": "A visual update for Foundry VTT UI.",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"author": "Ernie",
 	"authors": [
 		{
@@ -29,7 +29,7 @@
 	"compatibleCoreVersion": "0.7.9",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
-	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.2.5.zip",
+	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.2.6.zip",
 	"license": "MIT",
 	"readme": "https://github.com/ernieayala/ernies-modern-layout",
 	"bugs": "https://github.com/ernieayala/ernies-modern-layout/issues",
