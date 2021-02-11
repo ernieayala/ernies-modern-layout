@@ -64,6 +64,7 @@
 				background: color("background");
 				border: none;
 				display: flex;
+				flex-wrap: nowrap;
 				line-height: initial;
 				margin: m("base") m("sm");
 				padding: p("base") p("sm");
@@ -203,13 +204,12 @@
 					display: flex;
 					flex: 1 1 auto;
 					flex-wrap: wrap;
-					margin-inline-start: m("base");
+					height: auto;
 
 					img {
 						@extend %reset-image;
 						cursor: default;
-						margin-block-end: m("base");
-						margin-inline-end: m("base");
+						margin: m("xs");
 						max-height: to-rem(14px);
 						max-width: to-rem(14px);
 						opacity: 1;

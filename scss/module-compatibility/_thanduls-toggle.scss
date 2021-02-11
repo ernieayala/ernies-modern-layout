@@ -1,0 +1,65 @@
+[data-tool="thandulTogglables"] i {
+	@include size(70%);
+	filter: initial;
+}
+
+.thandulTogglables {
+	@extend %reset-list;
+	@include absolute(left to-rem(48px));
+	background: color("background");
+	border: b("border");
+	border-radius: br("sm");
+	box-shadow: none;
+	color: color("text-lightest");
+	display: none;
+	padding: p("base");
+	top: 0 !important;
+
+	.-compact & {
+		padding: p("xs");
+	}
+
+	ul {
+		@include size(100%);
+		display: flex;
+		min-width: to-rem(400px);
+		padding: 0;
+	}
+
+	li {
+		@include size(25%, 100%);
+		border: none;
+		display: flex;
+		justify-content: center;
+		padding: p("sm");
+
+		.-compact & {
+			padding: p("base");
+		}
+
+		&:hover {
+			background: color("primary");
+			box-shadow: none;
+		}
+
+		img {
+			border: b("border");
+			border-radius: 0;
+			margin: 0;
+			max-width: to-rem(56px);
+		}
+
+		p {
+			margin: 0;
+			margin-block-start: m("sm");
+
+			.-compact & {
+				margin-block-start: m("base");
+			}
+		}
+	}
+}
+
+#controls li.active[data-tool="thandulTogglables"] div.thandulTogglables {
+	display: grid;
+}
