@@ -33,5 +33,7 @@
 	"emu.toggle-players": "Toggle Players",
 	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails",
 	"emu.toggle-combat-sidebar": "Toggle Combat Sidebar Styles",
-	"emu.toggle-combat-sidebar-hint": "This will turn off -most- of the styling in the combat sidebar."
+	"emu.toggle-combat-sidebar-hint": "This will turn off -most- of the styling in the combat sidebar.",
+	"emu.layout-hide-chatghosttextarea": "Hide Chat Ghost Area",
+	"emu.layout-hide-chatghosttextarea-hint": "Hide Chat Ghost Area"
 }

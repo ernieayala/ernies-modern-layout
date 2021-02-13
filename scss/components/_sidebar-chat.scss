@@ -136,7 +136,13 @@
 				.compact & {
 					padding: p("base");
 				}
+
+				&.hide-chatghosttextarea {
+					display: none;
+				}
 			}
+
+
 		}
 	}
 }

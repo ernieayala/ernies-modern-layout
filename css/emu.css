@@ -4094,6 +4094,9 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-form {
     .compact body.emu.e-body#emu #sidebar #chat #chat-form textarea, .compact
     body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea {
       padding: 0.25rem; }
+    body.emu.e-body#emu #sidebar #chat #chat-form textarea.hide-chatghosttextarea,
+    body.emu.e-body#emu .sidebar-popout #chat #chat-form textarea.hide-chatghosttextarea {
+      display: none; }
 
 .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round {

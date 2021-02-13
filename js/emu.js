@@ -230,6 +230,22 @@ Hooks.once('ready', () => {
 	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
 	controlAlignTop ? myHtml[0].classList.add('-control-align-tops') : myHtml[0].classList.remove('-control-align-tops');
 
+	game.settings.register(moduleName, 'hideChatghosttextarea', {
+		name: game.i18n.localize('emu.layout-hide-chatghosttextarea'),
+		hint: game.i18n.localize('emu.layout-hide-chatghosttextarea-hint'),
+		scope: 'user',
+		config: true,
+		default: true,
+		type: Boolean,
+		onChange: data => {
+			(data === true && document.getElementsByClassName('chatghosttextarea').length >= 1) ? document.getElementsByClassName('chatghosttextarea')[0].classList.add('hide-chatghosttextarea') : document.getElementsByClassName('chatghosttextarea')[0].classList.remove('hide-chatghosttextarea');
+		}
+	});
+
+	const hideChatghosttextarea = game.settings.get(moduleName, 'hideChatghosttextarea');
+	(hideChatghosttextarea && document.getElementsByClassName('chatghosttextarea').length >= 1) ? document.getElementsByClassName('chatghosttextarea')[0].classList.add('hide-chatghosttextarea') : document.getElementsByClassName('chatghosttextarea')[0].classList.remove('hide-chatghosttextarea');
+
+
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');

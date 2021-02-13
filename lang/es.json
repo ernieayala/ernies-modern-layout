@@ -33,5 +33,7 @@
 	"emu.toggle-players": "Alternar Jugadores",
 	"emu.toggle-scene-thumbnails": "Alternar miniaturas de escena",
 	"emu.toggle-combat-sidebar": "Alternar estilos de la barra lateral de combate",
-	"emu.toggle-combat-sidebar-hint": "Esto permite desactivar la -mayoría- de los estilos aplicados a la barra lateral de combate."
+	"emu.toggle-combat-sidebar-hint": "Esto permite desactivar la -mayoría- de los estilos aplicados a la barra lateral de combate.",
+	"emu.layout-hide-chatghosttextarea": "Esconder Chat Ghost Area",
+	"emu.layout-hide-chatghosttextarea-hint": "Esconder Chat Ghost Area"
 }
