@@ -7197,6 +7197,9 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control i.fas.
 body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control i.fas.fa-play {
   color: inherit; }
 
+body.emu.e-body#emu .illandril-chat-enhancements--currentSpeaker {
+  display: contents; }
+
 body.emu.e-body#emu .dnd5e.chat-card .card-buttons button,
 body.emu.e-body#emu .dnd5e.chat-card .card-header h3 {
   color: rgba(var(--color-text), 1); }
