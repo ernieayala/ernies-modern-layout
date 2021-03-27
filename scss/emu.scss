@@ -106,6 +106,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/foriens-quest-log";
 	@import "./module-compatibility/furnace";
 	@import "./module-compatibility/fx-master";
+	@import "./module-compatibility/_illandrils_chat_enhancements";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/macro-editor";
 	@import "./module-compatibility/mess";
@@ -127,4 +128,5 @@ body.emu.e-body#emu {
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";
+	@import "./system-compatibility/starfinder";
 }
