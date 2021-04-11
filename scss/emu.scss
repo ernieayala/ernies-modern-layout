@@ -100,12 +100,14 @@ body.emu.e-body#emu {
 	// @import "./module-compatibility/compendium-folders"; // maybe someday
 	@import "./module-compatibility/custom-hotbar";
 	@import "./module-compatibility/dancing-lights";
+	@import "./module-compatibility/df-chat-enhancements";
 	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dungeondraft-importer";
 	@import "./module-compatibility/ernies-modern-ui";
 	@import "./module-compatibility/foriens-quest-log";
 	@import "./module-compatibility/furnace";
 	@import "./module-compatibility/fx-master";
+	@import "./module-compatibility/_illandrils_chat_enhancements";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/macro-editor";
 	@import "./module-compatibility/mess";
@@ -124,7 +126,9 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/token-auras";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/tweak-playlist";
+	@import "./module-compatibility/world-anvil";
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";
+	@import "./system-compatibility/starfinder";
 }

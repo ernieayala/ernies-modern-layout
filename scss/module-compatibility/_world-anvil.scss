@@ -1,0 +1,21 @@
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab .directory-header .header-actions {
+		#world-anvil {
+			flex: 1 1 auto;
+			margin: 0;
+			margin-block-start: m("base");
+
+			&::after {
+				content: "World Anvil";
+			}
+
+			img {
+				color: inherit;
+				margin-inline-end: m("sm");
+				max-height: space("button-sm");
+				top: auto;
+			}
+		}
+	}
+}
