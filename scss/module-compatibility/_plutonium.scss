@@ -3,6 +3,7 @@
 		a.pop__btn-open,
 		a.tit-menu__btn-open--sheet.px-2 {
 			display: flex !important;
+			flex: 0 0 auto;
 			padding: 0 !important;
 			width: space("button-sm");
 

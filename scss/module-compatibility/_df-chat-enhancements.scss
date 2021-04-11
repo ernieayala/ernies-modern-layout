@@ -1,0 +1,56 @@
+#dfcp-rt-buttons {
+	justify-content: flex-end;
+	margin: 0 !important;
+
+	button {
+		@extend %control-button;
+		background: transparent;
+		font-size: fs("md");
+		margin: 0;
+		margin-inline-end: m("base");
+		min-height: 0;
+		max-height: 100%;
+
+		.-compact & {
+			margin-inline-end: m("xs");
+		}
+
+		&:last-child {
+			margin-inline-end: 0;
+
+			.-compact & {
+				margin-inline-end: 0;
+			}
+		}
+
+		&.chat-archive {
+			margin-inline-start: m("sm") !important;
+		}
+
+		> i {
+			color: color("text-lightest");
+			font-size: fs("md");
+			height: auto;
+			line-height: 1;
+			margin: 0;
+			width: auto;
+		}
+	}
+}
+
+#sidebar,
+.sidebar-popout {
+	#settings {
+		#df-chat-enhance-settings {
+			h4 {
+				border-block-end: b("border");
+				color: color("text-lightest");
+				margin-block-start: m("md") !important;
+
+				.-compact & {
+					margin-block-start: m("sm") !important;
+				}
+			}
+		}
+	}
+}

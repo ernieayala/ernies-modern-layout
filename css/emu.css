@@ -32,7 +32,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .editor-edit,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .editor-edit,
 body.emu.e-body#emu #forien-quest-log-form .editor-edit,
 body.emu.e-body#emu .forien-quest-preview .editor-edit, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn,
@@ -93,7 +93,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button, body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .-compact .button, .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters .-compact a,
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters .-compact a, .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .-compact .combatant-control,
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .-compact .combatant-control, .-compact body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control, body.emu.e-body#emu #sidebar #playlists li.playlist .-compact .sound-control,
-  .-compact body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu .sidebar-popout #playlists li.playlist .-compact .sound-control, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu #forien-quest-log .editor-edit, body.emu.e-body#emu #forien-quest-log .-compact .editor-edit,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu .sidebar-popout #playlists li.playlist .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu #forien-quest-log .editor-edit, body.emu.e-body#emu #forien-quest-log .-compact .editor-edit,
   .-compact body.emu.e-body#emu #forien-quest-log-form .editor-edit, body.emu.e-body#emu #forien-quest-log-form .-compact .editor-edit,
   .-compact body.emu.e-body#emu .forien-quest-preview .editor-edit, body.emu.e-body#emu .forien-quest-preview .-compact .editor-edit, .-compact body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr .-compact td.actions > i, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .-compact .del-btn, .-compact body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i, body.emu.e-body#emu .forien-quest-preview .details .details-header .-compact .actions > i, .-compact body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .-compact .toggleImage, .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact .toggleState,
   .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact .del-btn,
@@ -139,7 +139,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control:hover,
-  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .editor-edit:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .editor-edit:hover,
   body.emu.e-body#emu #forien-quest-log-form .editor-edit:hover,
   body.emu.e-body#emu .forien-quest-preview .editor-edit:hover, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:hover, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:hover, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:hover,
   body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn:hover,
@@ -186,7 +186,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button:disabled, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a:disabled,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a:disabled, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control:disabled,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:disabled, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control:disabled,
-  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:disabled, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:disabled, body.emu.e-body#emu #forien-quest-log .editor-edit:disabled,
+  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:disabled, body.emu.e-body#emu #dfcp-rt-buttons button:disabled, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:disabled, body.emu.e-body#emu #forien-quest-log .editor-edit:disabled,
   body.emu.e-body#emu #forien-quest-log-form .editor-edit:disabled,
   body.emu.e-body#emu .forien-quest-preview .editor-edit:disabled, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:disabled, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:disabled, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:disabled, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage:disabled, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:disabled,
   body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn:disabled,
@@ -235,7 +235,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .editor-edit,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .editor-edit,
 body.emu.e-body#emu #forien-quest-log-form .editor-edit,
 body.emu.e-body#emu .forien-quest-preview .editor-edit, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn,
@@ -266,7 +266,7 @@ body.emu.e-body#emu .sidebar-popout .token-mold > a {
   .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button, body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .-compact .button, .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters .-compact a,
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters .-compact a, .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .-compact .combatant-control,
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .-compact .combatant-control, .-compact body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control, body.emu.e-body#emu #sidebar #playlists li.playlist .-compact .sound-control,
-  .-compact body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu .sidebar-popout #playlists li.playlist .-compact .sound-control, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu #forien-quest-log .editor-edit, body.emu.e-body#emu #forien-quest-log .-compact .editor-edit,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control, body.emu.e-body#emu .sidebar-popout #playlists li.playlist .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu #forien-quest-log .editor-edit, body.emu.e-body#emu #forien-quest-log .-compact .editor-edit,
   .-compact body.emu.e-body#emu #forien-quest-log-form .editor-edit, body.emu.e-body#emu #forien-quest-log-form .-compact .editor-edit,
   .-compact body.emu.e-body#emu .forien-quest-preview .editor-edit, body.emu.e-body#emu .forien-quest-preview .-compact .editor-edit, .-compact body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr .-compact td.actions > i, .-compact body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .-compact .del-btn, .-compact body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i, body.emu.e-body#emu .forien-quest-preview .details .details-header .-compact .actions > i, .-compact body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .-compact .toggleImage, .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact .toggleState,
   .-compact body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .-compact .del-btn,
@@ -2077,7 +2077,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a:hover,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control:hover,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control:hover,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .editor-edit:hover,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .editor-edit:hover,
 body.emu.e-body#emu #forien-quest-log-form .editor-edit:hover,
 body.emu.e-body#emu .forien-quest-preview .editor-edit:hover, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:hover, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:hover, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:hover,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn:hover,
@@ -2292,7 +2292,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .button:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .combatant-control:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:focus, body.emu.e-body#emu #sidebar #playlists li.playlist .sound-control:focus,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:focus, body.emu.e-body#emu #forien-quest-log .editor-edit:focus,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:focus, body.emu.e-body#emu #forien-quest-log .editor-edit:focus,
 body.emu.e-body#emu #forien-quest-log-form .editor-edit:focus,
 body.emu.e-body#emu .forien-quest-preview .editor-edit:focus, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .del-btn:focus, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i:focus, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .toggleImage:focus, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .toggleState:focus,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .del-btn:focus,
@@ -2487,7 +2487,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .act
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .active.button:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a.active:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a.active:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .active.combatant-control:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:focus, body.emu.e-body#emu #sidebar #playlists li.playlist .active.sound-control:focus,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:focus, body.emu.e-body#emu #forien-quest-log .active.editor-edit:focus,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button.active:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:focus, body.emu.e-body#emu #forien-quest-log .active.editor-edit:focus,
 body.emu.e-body#emu #forien-quest-log-form .active.editor-edit:focus,
 body.emu.e-body#emu .forien-quest-preview .active.editor-edit:focus, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i.active:focus, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .active.del-btn:focus, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i.active:focus, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .active.toggleImage:focus, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.toggleState:focus,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.del-btn:focus,
@@ -2550,7 +2550,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .chat-control-icon .act
 body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .active.button, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a.active,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a.active, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .active.combatant-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control, body.emu.e-body#emu #sidebar #playlists li.playlist .active.sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .active.editor-edit,
+body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control, body.emu.e-body#emu #dfcp-rt-buttons button.active, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20, body.emu.e-body#emu #forien-quest-log .active.editor-edit,
 body.emu.e-body#emu #forien-quest-log-form .active.editor-edit,
 body.emu.e-body#emu .forien-quest-preview .active.editor-edit, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i.active, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .active.del-btn, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i.active, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .active.toggleImage, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.toggleState,
 body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.del-btn,
@@ -2606,7 +2606,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + la
   body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .active.button:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-round .encounters a.active:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-round .encounters a.active:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-tracker .combatant .active.combatant-control:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:hover, body.emu.e-body#emu #sidebar #playlists li.playlist .active.sound-control:hover,
-  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .active.editor-edit:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists li.playlist .active.sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button.active:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:hover, body.emu.e-body#emu #forien-quest-log .active.editor-edit:hover,
   body.emu.e-body#emu #forien-quest-log-form .active.editor-edit:hover,
   body.emu.e-body#emu .forien-quest-preview .active.editor-edit:hover, body.emu.e-body#emu #forien-quest-log .quest-log section.log-body .tab .table table tr td.actions > i.active:hover, body.emu.e-body#emu #forien-quest-log-form .grid-container fieldset.tasks .task-entry .active.del-btn:hover, body.emu.e-body#emu .forien-quest-preview .details .details-header .actions > i.active:hover, body.emu.e-body#emu .forien-quest-preview .details .quest-giver-gc .active.toggleImage:hover, body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.toggleState:hover,
   body.emu.e-body#emu .forien-quest-preview .details .tasks-gc .task .active.del-btn:hover,
@@ -5604,6 +5604,41 @@ body.emu.e-body#emu #light-config h2 {
     margin-block-end: 0.25rem;
     padding: 0 0.25rem; }
 
+body.emu.e-body#emu #dfcp-rt-buttons {
+  justify-content: flex-end;
+  margin: 0 !important; }
+  body.emu.e-body#emu #dfcp-rt-buttons button {
+    background: transparent;
+    font-size: 0.875rem;
+    margin: 0;
+    margin-inline-end: 0.25rem;
+    min-height: 0;
+    max-height: 100%; }
+    .-compact body.emu.e-body#emu #dfcp-rt-buttons button {
+      margin-inline-end: 0.125rem; }
+    body.emu.e-body#emu #dfcp-rt-buttons button:last-child {
+      margin-inline-end: 0; }
+      .-compact body.emu.e-body#emu #dfcp-rt-buttons button:last-child {
+        margin-inline-end: 0; }
+    body.emu.e-body#emu #dfcp-rt-buttons button.chat-archive {
+      margin-inline-start: 0.5rem !important; }
+    body.emu.e-body#emu #dfcp-rt-buttons button > i {
+      color: rgba(var(--color-text-lightest), 1);
+      font-size: 0.875rem;
+      height: auto;
+      line-height: 1;
+      margin: 0;
+      width: auto; }
+
+body.emu.e-body#emu #sidebar #settings #df-chat-enhance-settings h4,
+body.emu.e-body#emu .sidebar-popout #settings #df-chat-enhance-settings h4 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text-lightest), 1);
+  margin-block-start: 1rem !important; }
+  .-compact body.emu.e-body#emu #sidebar #settings #df-chat-enhance-settings h4, .-compact
+  body.emu.e-body#emu .sidebar-popout #settings #df-chat-enhance-settings h4 {
+    margin-block-start: 0.5rem !important; }
+
 body.emu.e-body#emu #sidebar .dice-tray {
   border-block-start: rgba(var(--color-border), 1) 1px solid;
   flex-direction: column; }
@@ -6837,6 +6872,7 @@ body.emu.e-body#emu .sidebar-popout div.permission-viewer {
 body.emu.e-body#emu .window-app .window-header a.pop__btn-open,
 body.emu.e-body#emu .window-app .window-header a.tit-menu__btn-open--sheet.px-2 {
   display: flex !important;
+  flex: 0 0 auto;
   padding: 0 !important;
   width: 1.5rem; }
   body.emu.e-body#emu .window-app .window-header a.pop__btn-open > i,
@@ -7201,6 +7237,21 @@ body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control.inacti
 body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control i.fas.fa-square,
 body.emu.e-body#emu .sidebar-popout #playlists li.playlist .sound-control i.fas.fa-play {
   color: inherit; }
+
+body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil,
+body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil {
+  flex: 1 1 auto;
+  margin: 0;
+  margin-block-start: 0.25rem; }
+  body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil::after,
+  body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil::after {
+    content: "World Anvil"; }
+  body.emu.e-body#emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil img,
+  body.emu.e-body#emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil img {
+    color: inherit;
+    margin-inline-end: 0.5rem;
+    max-height: 1.5rem;
+    top: auto; }
 
 body.emu.e-body#emu .dnd5e.chat-card .card-buttons button,
 body.emu.e-body#emu .dnd5e.chat-card .card-header h3 {
