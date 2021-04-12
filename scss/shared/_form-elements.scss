@@ -2,7 +2,7 @@
 	@include size(100%, to-rem(32px));
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-forms);
 	color: color("text");
 	font-family: inherit;
 	font-size: inherit;
@@ -41,7 +41,7 @@
 %input-select {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-forms);
 	color: color("text");
 	cursor: pointer;
 	font-family: inherit;
@@ -82,7 +82,7 @@
 	@include size(to-rem(20px));
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-forms);
 	box-shadow: none;
 	color: color("text");
 	cursor: pointer;
@@ -123,7 +123,7 @@
 %input-color {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-forms);
 	cursor: pointer;
 	font-family: inherit;
 	font-size: inherit;
@@ -170,7 +170,7 @@
 		@include size(100%, to-rem(8px));
 		background: color("background", 0.8);
 		border: b("border");
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-forms);
 		box-shadow: none;
 		cursor: pointer;
 		transition: t(background, "link");
@@ -191,7 +191,7 @@
 	&::-webkit-slider-thumb {
 		@include size(to-rem(16px));
 		background: color("primary");
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-forms);
 		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
@@ -208,7 +208,7 @@
 		@include size(100%, to-rem(8px));
 		background: color("background", 0.8);
 		border: b("border-lighter");
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-forms);
 		box-shadow: none;
 		cursor: pointer;
 		transition: t(background, "link");
@@ -217,7 +217,7 @@
 	&::-moz-range-thumb {
 		@include size(to-rem(16px));
 		background: color("primary");
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-forms);
 		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
@@ -249,7 +249,7 @@
 %input-textarea {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-forms);
 	color: color("text");
 	font-family: inherit;
 	font-size: inherit;

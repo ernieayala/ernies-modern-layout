@@ -12,6 +12,7 @@
 		@extend %primary-button;
 		@extend %button-icon;
 		background: transparent;
+		border-radius: var(--emu-border-radius-default) var(--emu-border-radius-default) 0 0;
 		color: color("text");
 		flex: 1;
 		font-size: fs("md");

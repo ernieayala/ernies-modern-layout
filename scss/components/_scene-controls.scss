@@ -23,7 +23,7 @@
 		@include size(to-rem(40px));
 		align-items: center;
 		border: none;
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-controls);
 		box-shadow: none;
 		box-sizing: border-box;
 		color: color("text-lightest");

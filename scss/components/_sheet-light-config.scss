@@ -1,4 +1,5 @@
-#light-config {
+#light-config,
+.window-app.light-sheet {
 	@extend %window-common;
 	@extend %window-hack;
 

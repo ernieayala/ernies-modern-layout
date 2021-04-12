@@ -63,6 +63,7 @@
 				align-items: center;
 				background: color("background");
 				border: none;
+				border-radius: var(--emu-border-radius-default);
 				display: flex;
 				flex-wrap: nowrap;
 				line-height: initial;

@@ -2,7 +2,7 @@
 #calendar-weather-container {
 	background: color("background", 0.8);
 	border: b("border");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-default);
 	box-shadow: none;
 	height: fit-content;
 	padding: p("sm");

@@ -5,7 +5,7 @@
 	background: color("background-darkest", 0.8);
 	border: b("border");
 	border-inline-end: none;
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-default) 0 0 var(--emu-border-radius-default);
 	box-shadow: none;
 	display: flex;
 	flex-direction: column;
@@ -217,6 +217,7 @@
 }
 
 .sidebar-popout {
+	border-radius: var(--emu-border-radius-default);
 	height: auto;
 	min-height: to-rem(400px);
 

@@ -3,7 +3,7 @@
 	@include size(100%);
 	align-items: center;
 	background: transparent;
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-default);
 	box-shadow: none;
 	display: flex;
 	justify-content: center;

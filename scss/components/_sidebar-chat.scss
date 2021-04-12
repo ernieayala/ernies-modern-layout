@@ -5,7 +5,7 @@
 			.message {
 				background: color("background-chat-message");
 				border: b("border");
-				border-radius: 0;
+				border-radius: var(--emu-border-radius-default);
 				color: color("text");
 				font-size: fs("md");
 				padding: p("base");
@@ -27,7 +27,7 @@
 				.dice-roll .dice-total {
 					box-shadow: none;
 					border: b("border");
-					border-radius: 0;
+					border-radius: var(--emu-border-radius-default);
 				}
 
 				a.entity-link,

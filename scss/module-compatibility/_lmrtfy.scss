@@ -52,7 +52,7 @@
 		.lmrtfy-submit {
 			@extend %button-icon;
 			background: color("background-lightest");
-			border-radius: 0;
+			border-radius: var(--emu-border-radius-controls);
 			border-block-start: b("border");
 			box-shadow: 0 space("sm") 0 0 color("background-lightest");
 			bottom: 0;

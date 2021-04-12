@@ -16,6 +16,7 @@
 				align-items: center;
 				background: color("folder-header");
 				border: none;
+				border-radius: var(--emu-border-radius-default) var(--emu-border-radius-default) 0 0;
 				color: color("text");
 				display: flex;
 				flex: 1 1 auto;
@@ -35,6 +36,7 @@
 			> .compendium-list {
 				@extend %reset-list;
 				background: color("folder-subdirectory");
+				border-radius: 0 0 var(--emu-border-radius-default) var(--emu-border-radius-default);
 				display: flex;
 				flex-direction: column;
 				width: 100%;
@@ -43,6 +45,7 @@
 					align-items: center;
 					background: color("folder-directory");
 					border: none;
+					border-radius: var(--emu-border-radius-default);
 					color: color("text-lightest");
 					cursor: pointer;
 					flex-wrap: wrap;

@@ -3,7 +3,7 @@
 	@include size(calc(100% - #{to-rem(600px)}), to-rem(24px));
 	background: color("background", 0.8);
 	border: none;
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-controls);
 	box-shadow: none;
 	display: none;
 	pointer-events: none;
@@ -22,7 +22,7 @@
 	#loading-bar {
 		background: color("primary");
 		border: none;
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-controls);
 		height: 100%;
 		margin: 0;
 		min-width: 25%;

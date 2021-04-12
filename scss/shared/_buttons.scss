@@ -1,7 +1,7 @@
 %default-button {
 	align-items: center;
 	border: none;
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-controls);
 	box-shadow: none;
 	color: color("text-lightest");
 	cursor: pointer;

@@ -9,6 +9,7 @@
 	align-items: center;
 	background: color("folder-directory");
 	border: none;
+	border-radius: var(--emu-border-radius-default);
 	box-shadow: none;
 	color: color("text-lightest");
 	cursor: pointer;
@@ -62,7 +63,7 @@
 	img {
 		@extend %reset-image;
 		@include size(space("icon"));
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-images);
 		cursor: move;
 		flex: 0 0 auto;
 		margin-block-start: m("base");

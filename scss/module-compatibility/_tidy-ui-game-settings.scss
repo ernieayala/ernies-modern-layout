@@ -110,7 +110,7 @@
 #module-management .enhanced-module-management {
 	#searchField {
 		border: none;
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-controls);
 		height: auto;
 		margin: 0;
 		margin-block-end: m("sm");

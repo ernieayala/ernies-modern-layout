@@ -48,7 +48,7 @@ form .furnace-macro-run-as-gm.form-group {
 
 	.tooltip {
 		background: color("background-darkest", 0.8);
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-default);
 		bottom: 100% !important;
 		color: color("text-lightest");
 		height: auto;

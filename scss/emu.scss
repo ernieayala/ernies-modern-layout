@@ -4,6 +4,11 @@
 	@include css-vars($_palette-default);
 	scrollbar-color: color("charcoal-300") color("black", 0.5);
 	scrollbar-width: thin;
+
+	--emu-border-radius-default: 4px;
+	--emu-border-radius-controls: 4px;
+	--emu-border-radius-forms: 4px;
+	--emu-border-radius-images: 2px;
 }
 
 ::-webkit-scrollbar {

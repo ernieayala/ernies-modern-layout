@@ -2,7 +2,7 @@
 	@include absolute(left 0);
 	background: color("background-lightest");
 	border: b("border");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-default);
 	box-shadow: 0 2px 4px color("black");
 	color: color("text");
 	max-width: to-rem(320px);
@@ -18,6 +18,14 @@
 			line-height: initial;
 			padding: p("base");
 			text-shadow: none;
+
+			&:first-child {
+				border-radius: var(--emu-border-radius-default) var(--emu-border-radius-default) 0 0;
+			}
+
+			&:last-child {
+				border-radius: 0 0 var(--emu-border-radius-default) var(--emu-border-radius-default);
+			}
 
 			.-compact & {
 				padding: p("xs");

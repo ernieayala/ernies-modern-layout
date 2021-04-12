@@ -113,7 +113,7 @@
 				background: color("folder-header");
 				color: color("text");
 				cursor: pointer;
-				border-radius: 0;
+				border-radius: var(--emu-border-radius-default);
 				display: flex;
 				flex-wrap: nowrap;
 				min-height: to-rem(32px);

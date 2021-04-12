@@ -1,7 +1,7 @@
 .window-app {
 	background: color("background-lightest");
 	border: b("border");
-	border-radius: 0;
+	border-radius: var(--emu-border-radius-default);
 	box-shadow: 0 2px 4px color("black");
 	display: flex;
 	flex-direction: column;
@@ -94,7 +94,7 @@
 		align-items: center;
 		background: color("background-button");
 		border: none;
-		border-radius: 0;
+		border-radius: var(--emu-border-radius-default) 0 0 0;
 		color: color("text-lightest");
 		cursor: pointer;
 		display: inline-flex;
