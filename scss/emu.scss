@@ -5,10 +5,10 @@
 	scrollbar-color: color("charcoal-300") color("black", 0.5);
 	scrollbar-width: thin;
 
-	--emu-border-radius-default: 4px;
-	--emu-border-radius-controls: 4px;
-	--emu-border-radius-forms: 4px;
-	--emu-border-radius-images: 2px;
+	--emu-border-radius-default: 0;
+	--emu-border-radius-controls: 0;
+	--emu-border-radius-forms: 0;
+	--emu-border-radius-images: 0;
 }
 
 ::-webkit-scrollbar {
@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: color("background-light");
+	background-color: color("background-light");
 	border: none;
 	border-radius: 0;
 	outline: none;
@@ -39,7 +39,7 @@
 
 body.emu.e-body#emu {
 	::selection {
-		background: color("gray-200");
+		background-color: color("gray-200");
 	}
 
 	// Components

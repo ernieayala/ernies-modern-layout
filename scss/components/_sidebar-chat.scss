@@ -3,20 +3,20 @@
 	#chat {
 		#chat-log {
 			.message {
-				background: color("background-chat-message");
+				background-color: color("background-chat-message");
 				border: b("border");
-				border-radius: var(--emu-border-radius-default);
+				border-radius: $global-border-radius-default;
 				color: color("text");
 				font-size: fs("md");
 				padding: p("base");
 				margin: m("base");
 
 				&.whisper {
-					background: color("background-chat-message-whisper");
+					background-color: color("background-chat-message-whisper");
 				}
 
 				&.blind {
-					background: color("background-chat-message-blind");
+					background-color: color("background-chat-message-blind");
 				}
 
 				.message-header {
@@ -27,7 +27,7 @@
 				.dice-roll .dice-total {
 					box-shadow: none;
 					border: b("border");
-					border-radius: var(--emu-border-radius-default);
+					border-radius: $global-border-radius-default;
 				}
 
 				a.entity-link,
@@ -48,7 +48,7 @@
 
 		#chat-controls {
 			align-items: center;
-			background: color("background", 0.5);
+			background-color: color("background", 0.5);
 			border-block-start: b("border");
 			color: color("text-lightest");
 			display: flex;
@@ -75,7 +75,7 @@
 			.roll-type-select {
 				@extend %input-select;
 				align-items: center;
-				background: color("background", 0.5);
+				background-color: color("background", 0.5);
 				color: color("text-lightest");
 				display: flex;
 				flex: 1 1 auto;
@@ -113,7 +113,7 @@
 
 		#chat-form {
 			align-items: center;
-			background: color("background", 0.5);
+			background-color: color("background", 0.5);
 			border-block-start: b("border");
 			color: color("text-lightest");
 			display: flex;
@@ -130,7 +130,7 @@
 			textarea {
 				@extend %input-textarea;
 				@include size(100%);
-				background: color("background-lightest", 0.9);
+				background-color: color("background-lightest", 0.9);
 				padding: p("sm");
 
 				.compact & {

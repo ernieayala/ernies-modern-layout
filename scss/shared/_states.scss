@@ -19,12 +19,12 @@
 }
 
 %global-active {
-	background: color("primary");
+	background-color: color("primary");
 	color: color("text-lightest");
 	text-shadow: none;
 
 	&:hover {
-		background: color("primary");
+		background-color: color("primary");
 		color: color("text-lightest");
 		text-shadow: none;
 	}

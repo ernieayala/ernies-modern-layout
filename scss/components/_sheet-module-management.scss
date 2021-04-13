@@ -72,7 +72,7 @@
 		.tag {
 			align-items: center;
 			border: none;
-			border-radius: var(--emu-border-radius-controls);
+			border-radius: $global-border-radius-controls;
 			color: color("white");
 			display: inline-flex;
 			font-size: fs("sm");

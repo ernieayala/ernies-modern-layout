@@ -39,10 +39,10 @@
 
 	.folder-header {
 		align-items: center;
-		background: color("folder-header");
+		background-color: color("folder-header");
 		border: 0;
 		border-inline-start: b("primary", 4px);
-		border-radius: var(--emu-border-radius-default) var(--emu-border-radius-default) 0 0;
+		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text");
 		cursor: pointer;
 		display: flex;
@@ -61,7 +61,7 @@
 
 		&:hover {
 			@extend %global-hover;
-			background: color("primary");
+			background-color: color("primary");
 			color: color("text-lightest");
 		}
 

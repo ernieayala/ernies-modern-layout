@@ -56,7 +56,7 @@
 			@include absolute(left 0 bottom 100%);
 			@include size(100%, to-rem(20px));
 			align-items: center;
-			background: color("primary");
+			background-color: color("primary");
 			border-radius: 0;
 			color: color("text-lightest");
 			display: flex;
@@ -96,20 +96,20 @@
 		button.dice-tray__advantage,
 		button.dice-tray__math--add {
 			&:hover {
-				background: color("positive");
+				background-color: color("positive");
 			}
 		}
 
 		button.dice-tray__disadvantage,
 		button.dice-tray__math--sub {
 			&:hover {
-				background: color("negative");
+				background-color: color("negative");
 			}
 		}
 
 		input.dice-tray__input {
 			@extend %input-text;
-			background: color("background-lightest");
+			background-color: color("background-lightest");
 			box-shadow: none;
 			margin-inline-end: m("base");
 

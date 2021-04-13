@@ -4,7 +4,7 @@
 		@extend %h3;
 		border-block-end: b("primary", 2px);
 		color: color("primary");
-		font-family: "Signika", sans-serif;
+		font-family: inherit;
 		margin-block-start: m("lg");
 		margin-block-end: m("sm");
 		padding: 0  p("sm");

@@ -61,9 +61,9 @@
 
 			.combatant {
 				align-items: center;
-				background: color("background");
+				background-color: color("background");
 				border: none;
-				border-radius: var(--emu-border-radius-default);
+				border-radius: $global-border-radius-default;
 				display: flex;
 				flex-wrap: nowrap;
 				line-height: initial;
@@ -93,19 +93,19 @@
 					@extend %global-active;
 
 					.combatant-control.active {
-						background: color("white");
+						background-color: color("white");
 						color: color("primary");
 					}
 				}
 
 				&.defeated {
-					background: color("red-600", 0.5);
+					background-color: color("red-600", 0.5);
 
 					&.active {
 						@extend %global-hover-alt;
 
 						.combatant-control.active {
-							background: color("primary");
+							background-color: color("primary");
 							color: color("text-lightest");
 						}
 					}

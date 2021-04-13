@@ -2,7 +2,7 @@
 	@include size(100%, to-rem(32px));
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: var(--emu-border-radius-forms);
+	border-radius: $global-border-radius-forms;
 	color: color("text");
 	font-family: inherit;
 	font-size: inherit;
@@ -41,7 +41,7 @@
 %input-select {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: var(--emu-border-radius-forms);
+	border-radius: $global-border-radius-forms;
 	color: color("text");
 	cursor: pointer;
 	font-family: inherit;
@@ -73,7 +73,7 @@
 
 	optgroup,
 	option {
-		background: color("background-lightest");
+		background-color: color("background-lightest");
 		color: color("text");
 	}
 }
@@ -82,7 +82,7 @@
 	@include size(to-rem(20px));
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: var(--emu-border-radius-forms);
+	border-radius: $global-border-radius-forms;
 	box-shadow: none;
 	color: color("text");
 	cursor: pointer;
@@ -110,7 +110,7 @@
 	}
 
 	&:checked {
-		background: color("primary");
+		background-color: color("primary");
 		color: color("text-lightest");
 	}
 }
@@ -123,7 +123,7 @@
 %input-color {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: var(--emu-border-radius-forms);
+	border-radius: $global-border-radius-forms;
 	cursor: pointer;
 	font-family: inherit;
 	font-size: inherit;
@@ -168,30 +168,30 @@
 
 	&::-webkit-slider-runnable-track {
 		@include size(100%, to-rem(8px));
-		background: color("background", 0.8);
+		background-color: color("background", 0.8);
 		border: b("border");
-		border-radius: var(--emu-border-radius-forms);
+		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		cursor: pointer;
 		transition: t(background, "link");
 	}
 
 	&:focus::-webkit-slider-runnable-track {
-		background: color("background");
+		background-color: color("background");
 	}
 
 	&:focus::-ms-fill-lower {
-		background: color("background");
+		background-color: color("background");
 	}
 
 	&:focus::-ms-fill-upper {
-		background: color("background");
+		background-color: color("background");
 	}
 
 	&::-webkit-slider-thumb {
 		@include size(to-rem(16px));
-		background: color("primary");
-		border-radius: var(--emu-border-radius-forms);
+		background-color: color("primary");
+		border-radius: $global-border-radius-forms;
 		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
@@ -206,9 +206,9 @@
 
 	&::-moz-range-track {
 		@include size(100%, to-rem(8px));
-		background: color("background", 0.8);
+		background-color: color("background", 0.8);
 		border: b("border-lighter");
-		border-radius: var(--emu-border-radius-forms);
+		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		cursor: pointer;
 		transition: t(background, "link");
@@ -216,8 +216,8 @@
 
 	&::-moz-range-thumb {
 		@include size(to-rem(16px));
-		background: color("primary");
-		border-radius: var(--emu-border-radius-forms);
+		background-color: color("primary");
+		border-radius: $global-border-radius-forms;
 		border: b("border-lighter");
 		box-shadow: none;
 		cursor: pointer;
@@ -249,7 +249,7 @@
 %input-textarea {
 	background: transparent;
 	border: b("border-lighter");
-	border-radius: var(--emu-border-radius-forms);
+	border-radius: $global-border-radius-forms;
 	color: color("text");
 	font-family: inherit;
 	font-size: inherit;

@@ -74,14 +74,14 @@
 		h2.module-header {
 			@extend %default-button;
 			@extend %button-icon;
-			background: color("background-button");
+			background-color: color("background-button");
 			font-weight: normal;
 			justify-content: flex-start;
 			margin-block-end: m("base");
 			width: 100%;
 
 			&.open {
-				background: color("primary");
+				background-color: color("primary");
 			}
 
 			> span {
@@ -110,7 +110,7 @@
 #module-management .enhanced-module-management {
 	#searchField {
 		border: none;
-		border-radius: var(--emu-border-radius-controls);
+		border-radius: $global-border-radius-controls;
 		height: auto;
 		margin: 0;
 		margin-block-end: m("sm");

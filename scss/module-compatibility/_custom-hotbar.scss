@@ -67,7 +67,7 @@
 		#custom-macro-directory,
 		#custom-bar-toggle {
 			align-items: center;
-			background: color("primary", 0.8);
+			background-color: color("primary", 0.8);
 			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
@@ -100,7 +100,7 @@
 
 		.page-number {
 			align-items: center;
-			background: color("primary", 0.5);
+			background-color: color("primary", 0.5);
 			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
@@ -132,7 +132,7 @@
 	.macro {
 		@include size(to-rem(56px));
 		align-items: center;
-		background: color("primary", 0.8);
+		background-color: color("primary", 0.8);
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -163,7 +163,7 @@
 
 		&.active {
 			@extend %global-active;
-			background: color("primary", 0.8);
+			background-color: color("primary", 0.8);
 		}
 
 		.custom-macro-key {
@@ -193,7 +193,7 @@
 
 		.tooltip {
 			@include absolute(bottom 100% left 0);
-			background: color("background-darkest", 0.5);
+			background-color: color("background-darkest", 0.5);
 			border-radius: 0;
 			color: color("text-lightest");
 			font-size: fs("md");

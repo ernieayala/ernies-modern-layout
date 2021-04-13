@@ -3,7 +3,7 @@
 	@include size(100%);
 	align-items: center;
 	background: transparent;
-	border-radius: var(--emu-border-radius-default);
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	display: flex;
 	justify-content: center;
@@ -11,7 +11,7 @@
 
 	#menu-items {
 		@extend %reset-list;
-		background: color("background-darkest", 0.8);
+		background-color: color("background-darkest", 0.8);
 		box-shadow: 0 2px 4px color("black");
 		display: flex;
 		flex-direction: column;

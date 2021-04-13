@@ -1,6 +1,6 @@
 #polyglot {
 	align-items: center;
-	background: color("background", 0.5);
+	background-color: color("background", 0.5);
 	display: flex;
 	flex: 0 0 auto;
 	margin: 0;
@@ -14,7 +14,7 @@
 
 	select {
 		@extend %input-select;
-		background: color("background", 0.5);
+		background-color: color("background", 0.5);
 		color: color("text-lightest");
 	}
 }

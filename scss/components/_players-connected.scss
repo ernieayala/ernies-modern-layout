@@ -1,8 +1,8 @@
 #players {
 	@include fixed(bottom space("sm") left space("sm"));
-	background: color("background", 0.8);
+	background-color: color("background", 0.8);
 	border: b("border");
-	border-radius: var(--emu-border-radius-default);
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	display: block;
 	width: to-rem(200px);

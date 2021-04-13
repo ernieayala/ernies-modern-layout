@@ -12,7 +12,7 @@
 	#nav-toggle {
 		@extend %control-button;
 		@include absolute(top 0 left to-rem(-32px));
-		background: color("background", 0.8);
+		background-color: color("background", 0.8);
 
 		.-compact & {
 			left: to-rem(-24px);
@@ -28,7 +28,7 @@
 		.scene {
 			background: transparent;
 			border: none;
-			border-radius: var(--emu-border-radius-controls);
+			border-radius: $global-border-radius-controls;
 			box-shadow: none;
 			color: inherit;
 			margin-block-end: space("sm");
@@ -84,8 +84,8 @@
 	.scene-player {
 		@include size(to-rem(12px));
 		align-items: center;
-		background: color("white");
-		border-radius: var(--emu-border-radius-controls);
+		background-color: color("white");
+		border-radius: $global-border-radius-controls;
 		border: none;
 		box-shadow:
 			inset 0 0 0 1px color("primary"),
@@ -108,8 +108,8 @@
 		@extend %button-icon;
 		@include ellipsis;
 		@include size(auto, to-rem(36px));
-		background: color("background-darkest", 0.8);
-		border-radius: var(--emu-border-radius-default);
+		background-color: color("background-darkest", 0.8);
+		border-radius: $global-border-radius-default;
 		color: color("text-lightest");
 		cursor: pointer;
 		display: block;

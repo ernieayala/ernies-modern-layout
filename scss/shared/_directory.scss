@@ -7,9 +7,9 @@
 
 %directory-item {
 	align-items: center;
-	background: color("folder-directory");
+	background-color: color("folder-directory");
 	border: none;
-	border-radius: var(--emu-border-radius-default);
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	color: color("text-lightest");
 	cursor: pointer;
@@ -32,7 +32,7 @@
 
 	&:hover {
 		@extend %global-hover;
-		background: color("primary");
+		background-color: color("primary");
 		color: color("text-lightest");
 	}
 
@@ -63,7 +63,7 @@
 	img {
 		@extend %reset-image;
 		@include size(space("icon"));
-		border-radius: var(--emu-border-radius-images);
+		border-radius: $global-border-radius-images;
 		cursor: move;
 		flex: 0 0 auto;
 		margin-block-start: m("base");
@@ -114,7 +114,7 @@
 	.subdirectory {
 		display: flex;
 		flex-direction: column;
-		background: color("folder-subdirectory");
+		background-color: color("folder-subdirectory");
 		border: none;
 		border-inline-start: b("primary", 4px);
 		width: 100%;

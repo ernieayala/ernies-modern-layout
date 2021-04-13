@@ -2,10 +2,11 @@
 .sidebar-popout {
 	@include fixed(top space(sm) right 0);
 	@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
-	background: color("background-darkest", 0.8);
+	background-color: color("background-darkest", 0.8);
+	background-image: none;
 	border: b("border");
 	border-inline-end: none;
-	border-radius: var(--emu-border-radius-default) 0 0 var(--emu-border-radius-default);
+	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 	box-shadow: none;
 	display: flex;
 	flex-direction: column;
@@ -143,7 +144,7 @@
 
 				input {
 					@extend %input-text;
-					background: color("white");
+					background-color: color("white");
 					flex: 1 1 auto;
 				}
 			}
@@ -217,7 +218,7 @@
 }
 
 .sidebar-popout {
-	border-radius: var(--emu-border-radius-default);
+	border-radius: $global-border-radius-default;
 	height: auto;
 	min-height: to-rem(400px);
 

@@ -33,7 +33,7 @@
 
 					input {
 						@extend %input-text;
-						background: color("background-lightest");
+						background-color: color("background-lightest");
 						height: auto;
 						margin-inline-start: m("xs");
 

@@ -14,8 +14,8 @@
 
 // because inline
 #pingPop {
-	background: color("background-darkest", 0.8) !important;
-	border-radius: var(--emu-border-radius-default) !important;
+	background-color: color("background-darkest", 0.8) !important;
+	border-radius: $global-border-radius-default !important;
 	opacity: 1 !important;
 	padding: p("sm") !important;
 

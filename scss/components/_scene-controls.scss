@@ -23,7 +23,7 @@
 		@include size(to-rem(40px));
 		align-items: center;
 		border: none;
-		border-radius: var(--emu-border-radius-controls);
+		border-radius: $global-border-radius-controls;
 		box-shadow: none;
 		box-sizing: border-box;
 		color: color("text-lightest");
@@ -70,7 +70,7 @@
 	}
 
 	.scene-control {
-		background: color("background-darkest", 0.8);
+		background-color: color("background-darkest", 0.8);
 
 		&.active .control-tools {
 			display: flex;
@@ -82,15 +82,15 @@
 	}
 
 	.control-tool {
-		background: color("background", 0.8);
+		background-color: color("background", 0.8);
 
 		&.toggle {
-			background: color("background-lightest");
+			background-color: color("background-lightest");
 			color: color("text");
 
 			&:hover {
 				@extend %global-hover;
-				background: color("primary");
+				background-color: color("primary");
 				color: color("text-lightest");
 			}
 
@@ -101,7 +101,7 @@
 			&.active {
 				@extend %global-active;
 				@extend %global-focus;
-				background: color("primary");
+				background-color: color("primary");
 			}
 		}
 	}

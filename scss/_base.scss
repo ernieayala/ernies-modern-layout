@@ -48,6 +48,15 @@
 	)
 );
 
+// Sass Variables
+$global-box-shadow: 0 2px 4px color("black");
+$global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");
+
+$global-border-radius-default: var(--emu-border-radius-default, 0px);
+$global-border-radius-controls: var(--emu-border-radius-controls, 0px);
+$global-border-radius-forms: var(--emu-border-radius-forms, 0px);
+$global-border-radius-images: var(--emu-border-radius-images, 0px);
+
 // Shared
 @import "./shared/buttons";
 @import "./shared/directory";
@@ -60,7 +69,3 @@
 @import "./shared/typography";
 @import "./shared/utils";
 @import "./shared/window";
-
-// Sass Variables
-$global-box-shadow: 0 2px 4px color("black");
-$global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");
