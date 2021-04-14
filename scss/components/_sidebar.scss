@@ -3,7 +3,7 @@
 	@include fixed(top space(sm) right 0);
 	@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
 	background-color: color("background-darkest", 0.8);
-	background-image: none;
+	background-image: $global-image-background-darkest;
 	border: b("border");
 	border-inline-end: none;
 	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
@@ -25,6 +25,10 @@
 
 		#sidebar-tabs {
 			flex-wrap: wrap;
+
+			> .collapse {
+				border-radius: 0 0 0 $global-border-radius-default;
+			}
 		}
 
 		.sidebar-tab,
@@ -70,6 +74,10 @@
 
 			&.active {
 				@extend %global-active;
+			}
+
+			&:first-child {
+				border-radius: $global-border-radius-default 0 0 0;
 			}
 
 			> i {

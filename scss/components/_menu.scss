@@ -12,6 +12,7 @@
 	#menu-items {
 		@extend %reset-list;
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 		box-shadow: 0 2px 4px color("black");
 		display: flex;
 		flex-direction: column;

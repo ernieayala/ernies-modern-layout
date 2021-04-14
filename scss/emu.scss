@@ -9,6 +9,10 @@
 	--emu-border-radius-controls: 0;
 	--emu-border-radius-forms: 0;
 	--emu-border-radius-images: 0;
+	--emu-image-background: none;
+	--emu-image-background-lightest: none;
+	--emu-image-background-light: none;
+	--emu-image-background-darkest: none;
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +32,7 @@
 ::-webkit-scrollbar-thumb {
 	background-color: color("background-light");
 	border: none;
-	border-radius: 0;
+	border-radius: $global-border-radius-default;
 	outline: none;
 }
 

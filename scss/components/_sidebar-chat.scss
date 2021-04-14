@@ -4,6 +4,7 @@
 		#chat-log {
 			.message {
 				background-color: color("background-chat-message");
+				background-image: $global-image-background-light;
 				border: b("border");
 				border-radius: $global-border-radius-default;
 				color: color("text");
@@ -43,12 +44,18 @@
 						margin-inline-end: m("base");
 					}
 				}
+
+				.button.message-delete {
+					@extend %control-button;
+					color: color("text");
+				}
 			}
 		}
 
 		#chat-controls {
 			align-items: center;
 			background-color: color("background", 0.5);
+			background-image: $global-image-background;
 			border-block-start: b("border");
 			color: color("text-lightest");
 			display: flex;
@@ -114,6 +121,7 @@
 		#chat-form {
 			align-items: center;
 			background-color: color("background", 0.5);
+			background-image: $global-image-background;
 			border-block-start: b("border");
 			color: color("text-lightest");
 			display: flex;
@@ -131,6 +139,7 @@
 				@extend %input-textarea;
 				@include size(100%);
 				background-color: color("background-lightest", 0.9);
+				background-image: $global-image-background-light;
 				padding: p("sm");
 
 				.compact & {

@@ -26,6 +26,10 @@ function convertHexToRgb(color) {
 
 function updateSettings(settings) {
 	const {
+		borderRadiusDefault,
+		borderRadiusControls,
+		borderRadiusForms,
+		borderRadiusImages,
 		colorPrimary,
 		colorBackground,
 		colorBackgroundLightest,
@@ -44,6 +48,11 @@ function updateSettings(settings) {
 		colorTextLightest,
 		colorTextDarker,
 		fontFamily,
+		imageBackground,
+		imageBackgroundLightest,
+		imageBackgroundLight,
+		imageBackgroundDarkest,
+		imageBackgroundControls,
 		toggleLogo,
 		toggleSceneThumbs,
 		toggleCombatSidebar
@@ -67,6 +76,17 @@ function updateSettings(settings) {
 	colorText ? document.documentElement.style.setProperty('--color-text', convertHexToRgb(colorText)) : null;
 	colorTextLightest ? document.documentElement.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
 	colorTextDarker ? document.documentElement.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
+
+	// Design
+	borderRadiusDefault ? document.documentElement.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : null;
+	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : null;
+	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : null;
+	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : null;
+	imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
+	imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
+	imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
+	imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
+	imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
@@ -103,6 +123,10 @@ class emuSettings {
 
 	static get defaultSettings() {
 		return {
+			borderRadiusDefault: '0',
+			borderRadiusControls: '0',
+			borderRadiusForms: '0',
+			borderRadiusImages: '0',
 			colorPrimary: '#e57509',
 			colorBackground: '#293e40',
 			colorBackgroundLightest: '#e6e9eb',
@@ -120,7 +144,12 @@ class emuSettings {
 			colorText: '#090e10',
 			colorTextLightest: '#ffffff',
 			colorTextDarker: '#293e40',
-			fontFamily: 'Roboto',
+			fontFamily: 'Signika',
+			imageBackground: 'none',
+			imageBackgroundLightest: 'none',
+			imageBackgroundLight: 'none',
+			imageBackgroundDarkest: 'none',
+			imageBackgroundControls: 'none',
 			toggleLogo: true,
 			toggleSceneThumbs: false,
 			toggleCombatSidebar: false,
@@ -169,6 +198,17 @@ class emuForm extends FormApplication {
 					'Source Sans Pro': 'Source Sans Pro',
 					'Teko': 'Teko',
 					'Titillium Web': 'Titillium Web'
+				},
+				imageBackgroundList: {
+					'none': 'None',
+					'denim': 'Denim',
+					'denim065': 'Denim 065',
+					'denim075': 'Denim 075',
+					'denim090': 'Denim 090',
+					'denim-dark': 'Denim Dark',
+					'denim-light': 'Denim Light',
+					'parchment': 'Parchment',
+					'parchment-white': 'Parchment White'
 				}
 			},
 			this.reset ? emuSettings.defaultSettings :

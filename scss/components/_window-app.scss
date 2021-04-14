@@ -1,5 +1,6 @@
 .window-app {
 	background-color: color("background-lightest");
+	background-image: $global-image-background-light;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
@@ -16,11 +17,13 @@
 
 	&.sidebar-popout {
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 	}
 
 	.window-header {
 		align-items: center;
 		background-color: color("background");
+		background-image: $global-image-background;
 		border: none;
 		border-block-end: b("border");
 		border-radius: $global-border-radius-default $global-border-radius-default 0 0;

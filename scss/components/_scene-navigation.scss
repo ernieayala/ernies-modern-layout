@@ -13,6 +13,7 @@
 		@extend %control-button;
 		@include absolute(top 0 left to-rem(-32px));
 		background-color: color("background", 0.8);
+		background-image: $global-image-background;
 
 		.-compact & {
 			left: to-rem(-24px);
@@ -53,6 +54,7 @@
 			&.view {
 				.scene-name {
 					@extend %global-active;
+					background-image: none;
 				}
 			}
 
@@ -109,6 +111,7 @@
 		@include ellipsis;
 		@include size(auto, to-rem(36px));
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background;
 		border-radius: $global-border-radius-default;
 		color: color("text-lightest");
 		cursor: pointer;
@@ -130,10 +133,12 @@
 
 		&:hover {
 			@extend %global-hover;
+			background-image: none;
 		}
 
 		&:focus {
 			@extend %global-focus;
+			background-image: none;
 		}
 	}
 }

@@ -71,6 +71,7 @@
 
 	.scene-control {
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 
 		&.active .control-tools {
 			display: flex;
@@ -83,14 +84,17 @@
 
 	.control-tool {
 		background-color: color("background", 0.8);
+		background-image: $global-image-background;
 
 		&.toggle {
 			background-color: color("background-lightest");
+			background-image: $global-image-background-lightest;
 			color: color("text");
 
 			&:hover {
 				@extend %global-hover;
 				background-color: color("primary");
+				background-image: none;
 				color: color("text-lightest");
 			}
 
@@ -102,6 +106,7 @@
 				@extend %global-active;
 				@extend %global-focus;
 				background-color: color("primary");
+				background-image: none;
 			}
 		}
 	}

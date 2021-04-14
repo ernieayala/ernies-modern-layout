@@ -1,6 +1,7 @@
 #players {
 	@include fixed(bottom space("sm") left space("sm"));
 	background-color: color("background", 0.8);
+	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: none;

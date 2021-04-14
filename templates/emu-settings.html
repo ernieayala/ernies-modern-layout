@@ -154,6 +154,63 @@
 					{{/select}}
 				</select>
 			</div>
+			<div class="form-group">
+				<label>Background Image</label>
+				<select name="imageBackground">
+					{{#select imageBackground}}
+						{{#each imageBackgroundList as |name key|}}
+							<option value="{{key}}">{{name}}</option>
+						{{/each}}
+					{{/select}}
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Background Image Light</label>
+				<select name="imageBackgroundLight">
+					{{#select imageBackgroundLight}}
+						{{#each imageBackgroundList as |name key|}}
+							<option value="{{key}}">{{name}}</option>
+						{{/each}}
+					{{/select}}
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Background Image Dark</label>
+				<select name="imageBackgroundDarkest">
+					{{#select imageBackgroundDarkest}}
+						{{#each imageBackgroundList as |name key|}}
+							<option value="{{key}}">{{name}}</option>
+						{{/each}}
+					{{/select}}
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Background Image Controls</label>
+				<select name="imageBackgroundControls">
+					{{#select imageBackgroundControls}}
+						{{#each imageBackgroundList as |name key|}}
+							<option value="{{key}}">{{name}}</option>
+						{{/each}}
+					{{/select}}
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Border Radius Default</label>
+				<input type="number"  name="borderRadiusDefault" value="{{ borderRadiusDefault }}" data-dtype="Number"/>
+				<p class="notes">Number in pixels</p>
+			</div>
+			<div class="form-group">
+				<label>Border Radius Controls</label>
+				<input type="number"  name="borderRadiusControls" value="{{ borderRadiusControls }}" data-dtype="Number"/>
+			</div>
+			<div class="form-group">
+				<label>Border Radius Forms</label>
+				<input type="number"  name="borderRadiusForms" value="{{ borderRadiusForms }}" data-dtype="Number"/>
+			</div>
+			<div class="form-group">
+				<label>Border Radius Images</label>
+				<input type="number"  name="borderRadiusImages" value="{{ borderRadiusImages }}" data-dtype="Number"/>
+			</div>
 		</div>
 		<div class="tab" data-tab="options" data-group="sections">
 			<div class="form-group">

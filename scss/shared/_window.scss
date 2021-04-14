@@ -105,6 +105,10 @@
 		background-color: color("background-button");
 		border: none;
 	}
+
+	.sheet-footer {
+		z-index: 10;
+	}
 }
 
 %window-hack {
@@ -112,34 +116,30 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 
+		&::after {
+			background-color: color("background-lightest");
+			background-image: $global-image-background-light;
+			border-block-start: 1px solid color("border");
+			bottom: -(space("sm"));
+			content: "";
+			flex: 0 0 auto;
+			height: to-rem(46px);
+			margin-block-start: to-rem(-38px);
+			position: sticky;
+			width: 100%;
+			z-index: 5;
+		}
+
 		.form-group:last-of-type {
 			margin-block-end: m("md");
 		}
 
 		> button[type="submit"] {
 			@extend %button-icon;
-
-			border-radius: 0; // can't do because of sticky hack
-			box-shadow:
-				0 0 0 8px color("background-lightest"),
-				0 0 0 9px color("border", 0.5);
+			border-radius: $global-border-radius-controls;
 			bottom: 0;
 			position: sticky;
-
-			&:hover {
-				box-shadow:
-					inset 0 0 0 2px color("white"),
-					0 0 0 8px color("background-lightest"),
-					0 0 0 9px color("border", 0.5);
-			}
-
-			&:focus {
-				box-shadow:
-					inset 0 0 0 2px color("primary"),
-					inset 0 0 0 3px color("white"),
-					0 0 0 8px color("background-lightest"),
-					0 0 0 9px color("border", 0.5);
-			}
+			z-index: 10;
 		}
 	}
 }
@@ -192,5 +192,9 @@
 
 	.sheet-footer {
 		flex-wrap: nowrap;
+
+		+ ::after {
+			display: none;
+		}
 	}
 }

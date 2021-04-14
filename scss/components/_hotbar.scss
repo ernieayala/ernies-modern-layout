@@ -41,7 +41,7 @@
 		@include size(to-rem(40px), to-rem(56px));
 		background: transparent;
 		border: b("border");
-		border-radius: $global-border-radius-controls;
+		border-radius: $global-border-radius-default;
 		box-shadow: none;
 		display: flex;
 		flex-direction: column;
@@ -67,13 +67,13 @@
 
 				&:first-of-type {
 					border: none;
-					border-radius: 0 0 $global-border-radius-controls $global-border-radius-controls;
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 				}
 
 				&:last-of-type {
 					border-block-start: none;
 					border-block-end: b("border");
-					border-radius: $global-border-radius-controls $global-border-radius-controls 0 0;
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 			}
 		}
@@ -89,11 +89,11 @@
 
 		.page-control {
 			&:first-of-type {
-				border-radius: $global-border-radius-controls $global-border-radius-controls 0 0;
+				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 			}
 
 			&:last-of-type {
-				border-radius: 0 0 $global-border-radius-controls $global-border-radius-controls;
+				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 			}
 		}
 
@@ -102,6 +102,7 @@
 		#bar-toggle {
 			align-items: center;
 			background-color: color("background", 0.8);
+			background-image: $global-image-background;
 			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
@@ -137,6 +138,7 @@
 
 		.page-number {
 			background-color: color("background", 0.5);
+			background-image: $global-image-background;
 			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
@@ -154,6 +156,7 @@
 		@include size(to-rem(56px));
 		align-items: center;
 		background-color: color("background", 0.8);
+		background-image: $global-image-background;
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -218,6 +221,7 @@
 
 		.tooltip {
 			background-color: color("background-darkest", 0.5);
+			background-image: $global-image-background-darkest;
 			border: none;
 			border-radius: $global-border-radius-default;
 			color: color("text-lightest");
