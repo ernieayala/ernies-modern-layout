@@ -1,5 +1,6 @@
 %default-button {
 	align-items: center;
+	background-image: $global-image-background-controls;
 	border: none;
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
@@ -23,6 +24,7 @@
 	&:hover {
 		@extend %global-hover;
 		background-color: color("primary");
+		background-image: none;
 		color: color("text-lightest");
 	}
 

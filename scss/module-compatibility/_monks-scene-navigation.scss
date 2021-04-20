@@ -1,0 +1,80 @@
+ #navigation .monks-scene-navigation {
+	flex: 0 0 auto;
+	height: auto;
+	margin-block-end: m("sm");
+	padding: 0;
+
+	.-compact & {
+		margin-block-end: m("base");
+	}
+
+	.scene-list {
+		background-color: transparent;
+		border: none;
+		border-radius: $global-border-radius-default;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			border: none;
+			flex: 0 0 auto;
+			height: auto;
+			line-height: to-rem(36px);
+			margin: 0;
+			margin-inline-end: space("sm");
+			max-width: to-rem(240px);
+			min-width: to-rem(112px);
+			padding: 0;
+			text-align: center;
+
+			&.active,
+			&.view,
+			&.expanded {
+				.scene-name {
+					@extend %global-active;
+					background-image: none;
+				}
+			}
+
+			&.folder {
+				&.folder-header {
+					background-color: color("background");
+					background-image: $global-image-background-controls;
+					border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+
+					> i {
+						margin-inline-end: m("base");
+					}
+				}
+
+				.folder-name {
+					border: 2px solid transparent;
+				}
+			}
+
+			li.active-indicator {
+				color: color("text-lightest");
+				float: initial;
+				height: auto;
+				line-height: 1;
+				margin: 0;
+				margin-inline-end: m("xs");
+				width: auto;
+			}
+		}
+	}
+}
+
+.sidebar-directory .directory-item.scene h3 .permissions {
+	align-items: center;
+	background-color: transparent;
+	color: color("text-lightest");
+	display: inline-flex;
+	height: space("button-sm");
+	left: auto;
+	padding: 0 p("base");
+	position: absolute;
+	right: 0;
+	top: space("base");
+	width: auto;
+}

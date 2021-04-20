@@ -102,7 +102,7 @@
 		#bar-toggle {
 			align-items: center;
 			background-color: color("background", 0.8);
-			background-image: $global-image-background;
+			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
@@ -138,7 +138,7 @@
 
 		.page-number {
 			background-color: color("background", 0.5);
-			background-image: $global-image-background;
+			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
@@ -156,7 +156,7 @@
 		@include size(to-rem(56px));
 		align-items: center;
 		background-color: color("background", 0.8);
-		background-image: $global-image-background;
+		background-image: $global-image-background-controls;
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -221,7 +221,6 @@
 
 		.tooltip {
 			background-color: color("background-darkest", 0.5);
-			background-image: $global-image-background-darkest;
 			border: none;
 			border-radius: $global-border-radius-default;
 			color: color("text-lightest");

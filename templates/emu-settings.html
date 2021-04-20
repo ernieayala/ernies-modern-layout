@@ -1,8 +1,8 @@
 <form autocomplete="off">
 	<nav class="sheet-tabs tabs" data-group="sections">
-		<a class="item" data-tab="colors">Colors</a>
-		<a class="item" data-tab="design">Design</a>
-		<a class="item" data-tab="options">Options</a>
+		<a class="item" data-tab="colors">{{ localize "emu.modal-tab-colors" }}</a>
+		<a class="item" data-tab="design">{{ localize "emu.modal-tab-design" }}</a>
+		<a class="item" data-tab="options">{{ localize "emu.modal-tab-options" }}</a>
 	</nav>
 	<section id="config-tabs" class="content">
 		<div class="tab" data-tab="colors" data-group="sections">
@@ -136,16 +136,10 @@
 					<input type="color" name="colorTextDarkerSelector" value="{{ colorTextDarker }}" data-edit="colorTextDarker"/>
 				</div>
 			</div>
-			<div class="form-group">
-				<button type="button" name="reset">
-					<i class="fas fa-undo"></i>
-					<span>Reset</span>
-				</button>
-			</div>
 		</div>
 		<div class="tab" data-tab="design" data-group="sections">
 			<div class="form-group">
-				<label>Font Family</label>
+				<label>{{ localize "emu.design-font-family" }}</label>
 				<select name="fontFamily">
 					{{#select fontFamily}}
 						{{#each fontFamilyList as |name key|}}
@@ -154,6 +148,7 @@
 					{{/select}}
 				</select>
 			</div>
+			<!--
 			<div class="form-group">
 				<label>Background Image</label>
 				<select name="imageBackground">
@@ -194,21 +189,22 @@
 					{{/select}}
 				</select>
 			</div>
+			-->
 			<div class="form-group">
-				<label>Border Radius Default</label>
+				<label>{{ localize "emu.design-border-radius-default" }}</label>
 				<input type="number"  name="borderRadiusDefault" value="{{ borderRadiusDefault }}" data-dtype="Number"/>
-				<p class="notes">Number in pixels</p>
+				<p class="notes">{{ localize "emu.design-border-radius-default-note" }}</p>
 			</div>
 			<div class="form-group">
-				<label>Border Radius Controls</label>
+				<label>{{ localize "emu.design-border-radius-controls" }}</label>
 				<input type="number"  name="borderRadiusControls" value="{{ borderRadiusControls }}" data-dtype="Number"/>
 			</div>
 			<div class="form-group">
-				<label>Border Radius Forms</label>
+				<label>{{ localize "emu.design-border-radius-forms" }}</label>
 				<input type="number"  name="borderRadiusForms" value="{{ borderRadiusForms }}" data-dtype="Number"/>
 			</div>
 			<div class="form-group">
-				<label>Border Radius Images</label>
+				<label>{{ localize "emu.design-border-radius-images" }}</label>
 				<input type="number"  name="borderRadiusImages" value="{{ borderRadiusImages }}" data-dtype="Number"/>
 			</div>
 		</div>
@@ -238,12 +234,18 @@
 					{{ checked toggleCombatSidebar }} />
 				<p class="notes">{{ localize "emu.toggle-combat-sidebar-hint" }}</p>
 			</div>
+			<div class="form-group">
+				<button type="button" name="reset">
+					<i class="fas fa-undo"></i>
+					<span>{{ localize "emu.modal-button-reset" }}</span>
+				</button>
+			</div>
 		</div>
 	</section>
 	<footer class="sheet-footer">
 		<button type="submit" name="submit">
 			<i class="fas fa-save"></i>
-			<span>Save</span>
+			<span>{{ localize "emu.modal-button-save" }}</span>
 		</button>
 	</footer>
 </form>

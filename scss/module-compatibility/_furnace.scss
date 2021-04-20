@@ -49,11 +49,17 @@ form .furnace-macro-run-as-gm.form-group {
 	.tooltip {
 		background-color: color("background-darkest", 0.8);
 		border-radius: $global-border-radius-default;
+		border: none;
 		bottom: 100% !important;
 		color: color("text-lightest");
 		height: auto;
+		left: auto;
 		max-width: 100%;
+		padding: p("base");
 		right: 0 !important;
+		top: auto;
+		white-space: initial;
+		word-break: break-word;
 	}
 }
 
@@ -110,10 +116,15 @@ form .furnace-macro-run-as-gm.form-group {
 
 		textarea {
 			border: none;
+			color: color("text-lightest");
 			font-size: to-rem(14px);
 			height: 100%;
 			padding: to-rem(5px);
 			text-shadow: none;
+		}
+
+		pre code {
+			color: color("text-lightest");
 		}
 	}
 

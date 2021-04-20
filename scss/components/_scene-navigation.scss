@@ -13,7 +13,7 @@
 		@extend %control-button;
 		@include absolute(top 0 left to-rem(-32px));
 		background-color: color("background", 0.8);
-		background-image: $global-image-background;
+		background-image: $global-image-background-controls;
 
 		.-compact & {
 			left: to-rem(-24px);
@@ -111,14 +111,17 @@
 		@include ellipsis;
 		@include size(auto, to-rem(36px));
 		background-color: color("background-darkest", 0.8);
-		background-image: $global-image-background;
+		background-image: $global-image-background-controls;
+		border: none;
 		border-radius: $global-border-radius-default;
+		box-shadow: none;
 		color: color("text-lightest");
 		cursor: pointer;
 		display: block;
 		line-height: to-rem(36px);
 		max-width: to-rem(240px);
 		min-width: to-rem(112px);
+		outline: none;
 		padding: 0 p("md");
 		position: relative;
 		text-align: center;

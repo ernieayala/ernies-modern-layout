@@ -8,6 +8,7 @@
 %directory-item {
 	align-items: center;
 	background-color: color("folder-directory");
+	background-image: $global-image-background-controls;
 	border: none;
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
@@ -33,11 +34,13 @@
 	&:hover {
 		@extend %global-hover;
 		background-color: color("primary");
+		background-image: none;
 		color: color("text-lightest");
 	}
 
 	&:focus {
 		@extend %global-focus;
+		background-image: none;
 	}
 
 	&.folder,
@@ -91,12 +94,15 @@
 
 		> a {
 			@include ellipsis;
+			background-color: transparent;
+			border-radius: 0;
 			color: inherit;
 			cursor: pointer;
 			display: block;
 			flex: 1 1 auto;
 			font-size: fs("lg");
 			line-height: to-rem(32px); // figure out a better way
+			padding: 0;
 			position: relative;
 			text-shadow: none;
 			transition: t(color, "link");
@@ -115,6 +121,7 @@
 		display: flex;
 		flex-direction: column;
 		background-color: color("folder-subdirectory");
+		background-image: $global-image-background-light;
 		border: none;
 		border-inline-start: b("primary", 4px);
 		width: 100%;

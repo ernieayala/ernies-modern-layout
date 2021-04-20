@@ -78,15 +78,15 @@ function updateSettings(settings) {
 	colorTextDarker ? document.documentElement.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
 	// Design
-	borderRadiusDefault ? document.documentElement.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : null;
-	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : null;
-	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : null;
-	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : null;
-	imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
-	imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
-	imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
-	imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
-	imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
+	borderRadiusDefault ? document.documentElement.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : document.documentElement.style.setProperty('--emu-border-radius-default', `0px`);
+	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
+	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
+	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
+	// imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
+	// imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
+	// imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
+	// imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
+	// imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
@@ -208,7 +208,12 @@ class emuForm extends FormApplication {
 					'denim-dark': 'Denim Dark',
 					'denim-light': 'Denim Light',
 					'parchment': 'Parchment',
-					'parchment-white': 'Parchment White'
+					'parchment-white': 'Parchment White',
+					'fancy': 'Fancy',
+					'holed-metal': 'Holed Metal',
+					'metal-texture': 'M etal Texture',
+					'sci-fi-hex': 'Sci-fi Hex',
+					'sci-fi-hex-2': 'Sci-fi Hex 2'
 				}
 			},
 			this.reset ? emuSettings.defaultSettings :

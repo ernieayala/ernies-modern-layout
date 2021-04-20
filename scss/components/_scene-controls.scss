@@ -44,15 +44,18 @@
 
 		&:hover {
 			@extend %global-hover;
+			background-image: none;
 		}
 
 		&:focus {
 			@extend %global-focus;
+			background-image: none;
 		}
 
 		&.active {
 			@extend %global-active;
 			@extend %global-hover;
+			background-image: none;
 		}
 
 		&:last-of-type {
@@ -71,7 +74,7 @@
 
 	.scene-control {
 		background-color: color("background-darkest", 0.8);
-		background-image: $global-image-background-darkest;
+		background-image: $global-image-background-controls;
 
 		&.active .control-tools {
 			display: flex;
@@ -84,11 +87,11 @@
 
 	.control-tool {
 		background-color: color("background", 0.8);
-		background-image: $global-image-background;
+		background-image: $global-image-background-controls;
 
 		&.toggle {
 			background-color: color("background-lightest");
-			background-image: $global-image-background-lightest;
+			background-image: $global-image-background-controls;
 			color: color("text");
 
 			&:hover {

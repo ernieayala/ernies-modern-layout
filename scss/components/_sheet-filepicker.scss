@@ -57,7 +57,7 @@
 		&.tiles {
 			.files-list {
 				gap: space("base");
-				grid-template-columns: repeat(1fr, 5);
+				grid-template-columns: repeat(5, 1fr);
 			}
 
 			.file {
@@ -68,6 +68,7 @@
 				display: flex;
 				flex: 0 0 auto;
 				justify-content: center;
+				max-width: 100%;
 				padding: p("base");
 
 				img {
@@ -120,9 +121,8 @@
 	}
 
 	section.filepicker-body {
-		display: flex;
+		display: grid;
 		flex: 1 1 auto;
-		flex-direction: column;
 		margin-block-start: m("sm");
 		overflow: hidden;
 		position: relative;

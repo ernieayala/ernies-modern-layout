@@ -41,3 +41,21 @@
 	text-rendering: auto;
 	line-height: 1;
 }
+
+%notification-pip {
+	@keyframes notification-flash {
+		0% { opacity: 0; }
+		50% { opacity: 1; }
+		100% { opacity: 0; }
+	}
+
+	animation-duration: time("x-slow");
+	animation-iteration-count: infinite;
+	animation-name: notification-flash;
+	animation-timing-function: map-get($_default-transitions, "shift");
+	background-color: color("primary");
+	display: none;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 0;
+}

@@ -40,6 +40,7 @@
 	.folder-header {
 		align-items: center;
 		background-color: color("folder-header");
+		background-image: $global-image-background-darkest;
 		border: 0;
 		border-inline-start: b("primary", 4px);
 		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
@@ -62,6 +63,7 @@
 		&:hover {
 			@extend %global-hover;
 			background-color: color("primary");
+			background-image: none;
 			color: color("text-lightest");
 		}
 

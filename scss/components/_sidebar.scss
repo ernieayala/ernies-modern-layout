@@ -86,20 +86,8 @@
 			}
 
 			.notification-pip {
-				@keyframes notification-flash {
-					0% { background-color: color("primary", 0); }
-					50% { background-color: color("primary"); }
-					100% { background-color: color("primary", 0); }
-				}
-
+				@extend %notification-pip;
 				@include absolute(zero);
-				animation-duration: time("x-slow");
-				animation-iteration-count: infinite;
-				animation-name: notification-flash;
-				animation-timing-function: map-get($_default-transitions, "shift");
-				background-color: color("primary", 0);
-				display: none;
-				z-index: 0;
 
 				&::before {
 					display: none;

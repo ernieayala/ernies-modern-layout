@@ -113,7 +113,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dungeondraft-importer";
 	@import "./module-compatibility/ernies-modern-ui";
-	@import "./module-compatibility/foriens-quest-log";
+	// @import "./module-compatibility/foriens-quest-log";
 	@import "./module-compatibility/furnace";
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/_illandrils_chat_enhancements";
@@ -121,7 +121,9 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/macro-editor";
 	@import "./module-compatibility/mess";
 	@import "./module-compatibility/midi-qol";
+	@import "./module-compatibility/monks-scene-navigation";
 	@import "./module-compatibility/narrator-tools";
+	@import "./module-compatibility/one-journal";
 	@import "./module-compatibility/party-resources";
 	@import "./module-compatibility/permission-viewer";
 	@import "./module-compatibility/plutonium";
@@ -129,6 +131,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/rolltable-button";
 	@import "./module-compatibility/response-time";
 	@import "./module-compatibility/simple-dice-roller";
+	@import "./module-compatibility/tabbed-chat-log";
 	@import "./module-compatibility/thanduls-toggle";
 	@import "./module-compatibility/tidy-ui-game-settings";
 	@import "./module-compatibility/token-action-hud";
