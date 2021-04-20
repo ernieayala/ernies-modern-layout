@@ -32,7 +32,7 @@
 
 		.compendium-folder-header {
 			align-items: center;
-			background: color("folder-header") !important; // wouldn't have to do this if people didn't use inline styles
+			background-color: color("folder-header") !important; // wouldn't have to do this if people didn't use inline styles
 			border: 0;
 			border-inline-start: b("primary", 4px);
 			color: color("text") !important;  // wouldn't have to do this if people didn't use inline styles
@@ -53,7 +53,7 @@
 
 			&:hover {
 				@extend %global-hover;
-				background: color("primary");
+				background-color: color("primary");
 				color: color("text-lightest");
 			}
 
@@ -85,7 +85,7 @@
 			@extend %reset-list;
 			display: flex;
 			flex-direction: column;
-			background: color("folder-subdirectory");
+			background-color: color("folder-subdirectory");
 			border: none;
 			border-inline-start: b("primary", 4px);
 			margin: initial !important;  // wouldn't have to do this if people didn't use inline styles

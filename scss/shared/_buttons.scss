@@ -1,12 +1,13 @@
 %default-button {
 	align-items: center;
+	background-image: $global-image-background-controls;
 	border: none;
-	border-radius: 0;
+	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	color: color("text-lightest");
 	cursor: pointer;
 	display: inline-flex;
-	font-family: "Signika", sans-serif;
+	font-family: inherit;
 	font-size: fs("lg");
 	height: initial;
 	justify-content: center;
@@ -22,7 +23,8 @@
 
 	&:hover {
 		@extend %global-hover;
-		background: color("primary");
+		background-color: color("primary");
+		background-image: none;
 		color: color("text-lightest");
 	}
 
@@ -41,7 +43,7 @@
 
 %primary-button {
 	@extend %default-button;
-	background: color("background-button");
+	background-color: color("background-button");
 }
 
 %secondary-button {

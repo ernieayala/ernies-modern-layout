@@ -57,17 +57,18 @@
 		&.tiles {
 			.files-list {
 				gap: space("base");
-				grid-template-columns: repeat(1fr, 5);
+				grid-template-columns: repeat(5, 1fr);
 			}
 
 			.file {
 				@include size(to-rem(98px));
 				align-items: center;
-				background: color("background-darkest", 0.05);
+				background-color: color("background-darkest", 0.05);
 				border: none;
 				display: flex;
 				flex: 0 0 auto;
 				justify-content: center;
+				max-width: 100%;
 				padding: p("base");
 
 				img {
@@ -90,7 +91,7 @@
 
 				.filename {
 					@include ellipsis(max-width 100%);
-					background: color("background-darkest", 0.8);
+					background-color: color("background-darkest", 0.8);
 					border-radius: 0;
 					display: block;
 					color: color("text-lightest");
@@ -120,9 +121,8 @@
 	}
 
 	section.filepicker-body {
-		display: flex;
+		display: grid;
 		flex: 1 1 auto;
-		flex-direction: column;
 		margin-block-start: m("sm");
 		overflow: hidden;
 		position: relative;
@@ -209,7 +209,7 @@
 			}
 
 			&.active {
-				background: color("primary");
+				background-color: color("primary");
 				color: color("text-lightest");
 			}
 		}
@@ -256,7 +256,7 @@
 			}
 
 			&:hover {
-				background: color("primary");
+				background-color: color("primary");
 				box-shadow: inset 0 0 0 2px color("white");
 				color: color("text-lightest");
 			}
@@ -269,13 +269,13 @@
 		}
 
 		.dir {
-			background: color("folder-header", 0.9);
+			background-color: color("folder-header", 0.9);
 			border-block-end: b("border");
 			color: color("text");
 		}
 
 		.file {
-			background: color("folder-directory", 0.9);
+			background-color: color("folder-directory", 0.9);
 			border-block-end: b("border");
 			color: color("text-lightest");
 		}

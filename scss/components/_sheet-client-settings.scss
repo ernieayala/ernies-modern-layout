@@ -51,7 +51,7 @@
 	.module-header {
 		border-block-end: b("border", 2px);
 		color: color("text-darker");
-		font-family: "Signika", sans-serif;
+		font-family: inherit;
 		margin-block-start: m("lg");
 		margin-block-end: m("sm");
 		padding: 0  p("sm");

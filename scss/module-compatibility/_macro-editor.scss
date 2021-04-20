@@ -21,7 +21,7 @@
 
 		&::before {
 			@include fixed(zero);
-			background: color("black", 0.5);
+			background-color: color("black", 0.5);
 			content: "";
 		}
 	}

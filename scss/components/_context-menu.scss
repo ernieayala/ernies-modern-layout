@@ -1,8 +1,9 @@
 #context-menu {
 	@include absolute(left 0);
-	background: color("background-lightest");
+	background-color: color("background-lightest");
+	background-image: $global-image-background-lightest;
 	border: b("border");
-	border-radius: 0;
+	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
 	color: color("text");
 	max-width: to-rem(320px);
@@ -19,12 +20,20 @@
 			padding: p("base");
 			text-shadow: none;
 
+			&:first-child {
+				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+			}
+
+			&:last-child {
+				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+			}
+
 			.-compact & {
 				padding: p("xs");
 			}
 
 			&:hover {
-				background: color("primary");
+				background-color: color("primary");
 				color: color("text-lightest");
 			}
 

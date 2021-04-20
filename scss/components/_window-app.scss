@@ -1,7 +1,8 @@
 .window-app {
-	background: color("background-lightest");
+	background-color: color("background-lightest");
+	background-image: $global-image-background-light;
 	border: b("border");
-	border-radius: 0;
+	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
 	display: flex;
 	flex-direction: column;
@@ -15,14 +16,17 @@
 	}
 
 	&.sidebar-popout {
-		background: color("background-darkest", 0.8);
+		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 	}
 
 	.window-header {
 		align-items: center;
-		background: color("background");
+		background-color: color("background");
+		background-image: $global-image-background;
 		border: none;
 		border-block-end: b("border");
+		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text-lightest");
 		display: flex;
 		flex: 0 0 auto;
@@ -54,7 +58,7 @@
 			}
 
 			&:hover {
-				background: color("primary");
+				background-color: color("primary");
 			}
 
 			&.close {
@@ -92,9 +96,9 @@
 		@include absolute(bottom 0 right 0);
 		@include size(to-rem(20px));
 		align-items: center;
-		background: color("background-button");
+		background-color: color("background-button");
 		border: none;
-		border-radius: 0;
+		border-radius: $global-border-radius-default 0 0 0;
 		color: color("text-lightest");
 		cursor: pointer;
 		display: inline-flex;

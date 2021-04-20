@@ -7,8 +7,10 @@
 
 %directory-item {
 	align-items: center;
-	background: color("folder-directory");
+	background-color: color("folder-directory");
+	background-image: $global-image-background-controls;
 	border: none;
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	color: color("text-lightest");
 	cursor: pointer;
@@ -31,12 +33,14 @@
 
 	&:hover {
 		@extend %global-hover;
-		background: color("primary");
+		background-color: color("primary");
+		background-image: none;
 		color: color("text-lightest");
 	}
 
 	&:focus {
 		@extend %global-focus;
+		background-image: none;
 	}
 
 	&.folder,
@@ -62,7 +66,7 @@
 	img {
 		@extend %reset-image;
 		@include size(space("icon"));
-		border-radius: 0;
+		border-radius: $global-border-radius-images;
 		cursor: move;
 		flex: 0 0 auto;
 		margin-block-start: m("base");
@@ -90,12 +94,15 @@
 
 		> a {
 			@include ellipsis;
+			background-color: transparent;
+			border-radius: 0;
 			color: inherit;
 			cursor: pointer;
 			display: block;
 			flex: 1 1 auto;
 			font-size: fs("lg");
 			line-height: to-rem(32px); // figure out a better way
+			padding: 0;
 			position: relative;
 			text-shadow: none;
 			transition: t(color, "link");
@@ -113,7 +120,8 @@
 	.subdirectory {
 		display: flex;
 		flex-direction: column;
-		background: color("folder-subdirectory");
+		background-color: color("folder-subdirectory");
+		background-image: $global-image-background-light;
 		border: none;
 		border-inline-start: b("primary", 4px);
 		width: 100%;

@@ -29,7 +29,7 @@
 	#macro-list {
 		@extend %reset-list;
 		border: none;
-		border-radius: 0;
+		border-radius: $global-border-radius-default;
 		display: flex;
 		flex: 0 0 auto;
 		float: left;
@@ -41,7 +41,7 @@
 		@include size(to-rem(40px), to-rem(56px));
 		background: transparent;
 		border: b("border");
-		border-radius: 0;
+		border-radius: $global-border-radius-default;
 		box-shadow: none;
 		display: flex;
 		flex-direction: column;
@@ -67,13 +67,13 @@
 
 				&:first-of-type {
 					border: none;
-					border-radius: 0;
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 				}
 
 				&:last-of-type {
 					border-block-start: none;
 					border-block-end: b("border");
-					border-radius: 0;
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 			}
 		}
@@ -87,11 +87,22 @@
 			}
 		}
 
+		.page-control {
+			&:first-of-type {
+				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+			}
+
+			&:last-of-type {
+				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+			}
+		}
+
 		.page-control,
 		#macro-directory,
 		#bar-toggle {
 			align-items: center;
-			background: color("background", 0.8);
+			background-color: color("background", 0.8);
+			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
@@ -126,7 +137,8 @@
 		}
 
 		.page-number {
-			background: color("background", 0.5);
+			background-color: color("background", 0.5);
+			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 			display: flex;
 			flex: 1 1 auto;
@@ -143,7 +155,8 @@
 	.macro {
 		@include size(to-rem(56px));
 		align-items: center;
-		background: color("background", 0.8);
+		background-color: color("background", 0.8);
+		background-image: $global-image-background-controls;
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
@@ -161,7 +174,12 @@
 		}
 
 		&:first-child {
+			border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 			margin-inline-start: 0;
+		}
+
+		&:last-child {
+			border-radius: 0 $global-border-radius-default $global-border-radius-default 0;
 		}
 
 		&:hover {
@@ -174,7 +192,7 @@
 
 		&.active {
 			@extend %global-active;
-			background: color("background", 0.8);
+			background-color: color("background", 0.8);
 		}
 
 		.macro-key {
@@ -202,9 +220,9 @@
 		}
 
 		.tooltip {
-			background: color("background-darkest", 0.5);
+			background-color: color("background-darkest", 0.5);
 			border: none;
-			border-radius: 0;
+			border-radius: $global-border-radius-default;
 			color: color("text-lightest");
 			font-size: fs("md");
 			height: auto;

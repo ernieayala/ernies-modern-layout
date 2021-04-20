@@ -6,7 +6,7 @@
 .thandulTogglables {
 	@extend %reset-list;
 	@include absolute(left to-rem(48px));
-	background: color("background");
+	background-color: color("background");
 	border: b("border");
 	border-radius: br("sm");
 	box-shadow: none;
@@ -38,7 +38,7 @@
 		}
 
 		&:hover {
-			background: color("primary");
+			background-color: color("primary");
 			box-shadow: none;
 		}
 

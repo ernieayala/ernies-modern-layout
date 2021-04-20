@@ -1,6 +1,7 @@
 import * as THEME from './emu-theme.js';
 
 const myHtml = document.getElementsByTagName('html');
+const myHead = document.getElementsByTagName('head')[0];
 const myBody = document.getElementsByTagName('body');
 const moduleName = 'ernies-modern-layout';
 
@@ -14,7 +15,7 @@ let __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 	});
 };
 
-// Hex to RGB functio
+// Hex to RGB function
 function convertHexToRgb(color) {
 	const hex = color.replace('#','');
 	const r = parseInt(hex.substring(0,2), 16);
@@ -25,6 +26,10 @@ function convertHexToRgb(color) {
 
 function updateSettings(settings) {
 	const {
+		borderRadiusDefault,
+		borderRadiusControls,
+		borderRadiusForms,
+		borderRadiusImages,
 		colorPrimary,
 		colorBackground,
 		colorBackgroundLightest,
@@ -42,6 +47,12 @@ function updateSettings(settings) {
 		colorText,
 		colorTextLightest,
 		colorTextDarker,
+		fontFamily,
+		imageBackground,
+		imageBackgroundLightest,
+		imageBackgroundLight,
+		imageBackgroundDarkest,
+		imageBackgroundControls,
 		toggleLogo,
 		toggleSceneThumbs,
 		toggleCombatSidebar
@@ -66,10 +77,41 @@ function updateSettings(settings) {
 	colorTextLightest ? document.documentElement.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
 	colorTextDarker ? document.documentElement.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
-	// Visual
+	// Design
+	borderRadiusDefault ? document.documentElement.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : document.documentElement.style.setProperty('--emu-border-radius-default', `0px`);
+	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
+	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
+	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
+	// imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
+	// imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
+	// imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
+	// imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
+	// imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
+
+	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
 	toggleCombatSidebar ? myHtml[0].classList.remove('-emu-sidebar-combat') : myHtml[0].classList.add('-emu-sidebar-combat');
+}
+
+function checkForUploadFolders(root, folder) {
+	FilePicker.browse('data', root).then(loc => {
+		if(!loc.dirs.includes(`${root}/${folder}`)) {
+			loc.target == FilePicker.createDirectory('data', `${root}/${folder}`, {});
+		}
+	}).catch(_ => {
+		throw new Error(`${moduleName} could not access ${root}/${folder}`);
+	});
+}
+
+function setFontFamily(family) {
+	let formattedLink = family.replace(' ', '+');
+	let googleFont  = document.createElement('link');
+	googleFont.id = 'emu-font-family';
+	googleFont.href = `https://fonts.googleapis.com/css2?family=${formattedLink}&display=swap`;
+	googleFont.rel = 'stylesheet';
+	myHead.appendChild(googleFont);
+	myBody[0].style.fontFamily = family;
 }
 
 class emuSettings {
@@ -81,6 +123,10 @@ class emuSettings {
 
 	static get defaultSettings() {
 		return {
+			borderRadiusDefault: '0',
+			borderRadiusControls: '0',
+			borderRadiusForms: '0',
+			borderRadiusImages: '0',
 			colorPrimary: '#e57509',
 			colorBackground: '#293e40',
 			colorBackgroundLightest: '#e6e9eb',
@@ -98,9 +144,17 @@ class emuSettings {
 			colorText: '#090e10',
 			colorTextLightest: '#ffffff',
 			colorTextDarker: '#293e40',
+			fontFamily: 'Signika',
+			imageBackground: 'none',
+			imageBackgroundLightest: 'none',
+			imageBackgroundLight: 'none',
+			imageBackgroundDarkest: 'none',
+			imageBackgroundControls: 'none',
 			toggleLogo: true,
 			toggleSceneThumbs: false,
-			toggleCombatSidebar: false
+			toggleCombatSidebar: false,
+			pathFonts: `worlds/${game.world.name}/${moduleName}/fonts`,
+			pathImages: `worlds/${game.world.name}/${moduleName}/images`
 		};
 	}
 }
@@ -112,13 +166,56 @@ class emuForm extends FormApplication {
 			id: 'emu-settings',
 			template: `modules/${moduleName}/templates/emu-settings.html`,
 			width: 420,
-			closeOnSubmit: true
+			closeOnSubmit: true,
+			tabs: [{
+				navSelector: '.tabs',
+				contentSelector: '.content',
+				initial: 'colors'
+			}]
 		});
 	}
 
 	getData(options) {
 		return mergeObject(
-			{},
+			{
+				themePresetList: {
+					'custom': game.i18n.localize('emu.theme-preset-custom'),
+					'foundry': 'Foundry',
+					'dark': game.i18n.localize('emu.theme-preset-dark'),
+					'western': game.i18n.localize('emu.theme-preset-western')
+				},
+				fontFamilyList: {
+					'Signika': 'Default',
+					'Cairo': 'Cairo',
+					'Fjalla One': 'Fjalla One',
+					'Lato': 'Lato',
+					'Lobster': 'Lobster',
+					'Nunito': 'Nunito',
+					'Open Sans': 'Open Sans',
+					'Roboto': 'Roboto',
+					'Roboto Condensed': 'Roboto Condensed',
+					'Source Code Pro': 'Source Code Pro',
+					'Source Sans Pro': 'Source Sans Pro',
+					'Teko': 'Teko',
+					'Titillium Web': 'Titillium Web'
+				},
+				imageBackgroundList: {
+					'none': 'None',
+					'denim': 'Denim',
+					'denim065': 'Denim 065',
+					'denim075': 'Denim 075',
+					'denim090': 'Denim 090',
+					'denim-dark': 'Denim Dark',
+					'denim-light': 'Denim Light',
+					'parchment': 'Parchment',
+					'parchment-white': 'Parchment White',
+					'fancy': 'Fancy',
+					'holed-metal': 'Holed Metal',
+					'metal-texture': 'M etal Texture',
+					'sci-fi-hex': 'Sci-fi Hex',
+					'sci-fi-hex-2': 'Sci-fi Hex 2'
+				}
+			},
 			this.reset ? emuSettings.defaultSettings :
 			mergeObject(
 				emuSettings.defaultSettings,
@@ -130,7 +227,9 @@ class emuForm extends FormApplication {
 	activateListeners(html) {
 		super.activateListeners(html);
 		this.getThemePreset();
+		this.getFontFamily();
 		html.find('select[name="themePreset"]').change(this.getThemePreset.bind(this));
+		html.find('select[name="fontFamily"]').change(this.getFontFamily.bind(this));
 		html.find('button[name="reset"]').click(this.onReset.bind(this));
 		this.reset = false;
 	}
@@ -147,6 +246,11 @@ class emuForm extends FormApplication {
 		if($('select[name="themePreset"]').val() === 'western') {
 			for (const [key, value] of Object.entries(THEME.WESTERN)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
+	}
+
+	getFontFamily(formData) {
+		document.getElementById('emu-font-family').remove();
+		setFontFamily($('select[name="fontFamily"]').val());
 	}
 
 	onReset() {
@@ -183,10 +287,22 @@ Hooks.once('init', () => {
 		type: Object,
 		config: false
 	});
+
+	// checkForUploadFolders(`worlds/${game.world.name}`, moduleName);
+	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'fonts');
+	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'images');
 });
 
 Hooks.once('ready', () => {
 	updateSettings(game.settings.get(moduleName, 'settings'));
+
+	// Google Fonts
+	let googleFontPre  = document.createElement('link');
+	googleFontPre.rel  = 'preconnect';
+	googleFontPre.href = 'https://fonts.gstatic.com';
+	myHead.appendChild(googleFontPre);
+
+	setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 
 	// Toggle
 	game.settings.register(moduleName, 'togglePlayers', {

@@ -9,7 +9,7 @@
 			font-size: fs("lg");
 
 			&:nth-of-type(even) {
-				background: color("background-light", 0.1);
+				background-color: color("background-light", 0.1);
 			}
 
 			label {

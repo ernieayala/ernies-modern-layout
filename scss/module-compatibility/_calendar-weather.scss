@@ -1,8 +1,8 @@
 #calendar-time-container,
 #calendar-weather-container {
-	background: color("background", 0.8);
+	background-color: color("background", 0.8);
 	border: b("border");
-	border-radius: 0;
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	height: fit-content;
 	padding: p("sm");
@@ -114,7 +114,7 @@
 	}
 
 	.calendar-weather--content {
-		background: color("black", 0.1);
+		background-color: color("black", 0.1);
 		border: none;
 	}
 }

@@ -1,9 +1,9 @@
 #loading {
 	@include fixed(top space("sm") left to-rem(148px));
 	@include size(calc(100% - #{to-rem(600px)}), to-rem(24px));
-	background: color("background", 0.8);
+	background-color: color("background", 0.8);
 	border: none;
-	border-radius: 0;
+	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	display: none;
 	pointer-events: none;
@@ -20,9 +20,9 @@
 	}
 
 	#loading-bar {
-		background: color("primary");
+		background-color: color("primary");
 		border: none;
-		border-radius: 0;
+		border-radius: $global-border-radius-controls;
 		height: 100%;
 		margin: 0;
 		min-width: 25%;

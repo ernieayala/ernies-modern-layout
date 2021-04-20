@@ -12,6 +12,7 @@
 		@extend %primary-button;
 		@extend %button-icon;
 		background: transparent;
+		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text");
 		flex: 1;
 		font-size: fs("md");

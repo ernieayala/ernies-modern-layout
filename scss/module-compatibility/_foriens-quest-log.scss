@@ -42,7 +42,7 @@
 	.editor-edit {
 		@extend %control-button;
 		@include absolute(top space("base") right to-rem(12px));
-		background: color("background-button");
+		background-color: color("background-button");
 	}
 
 	form {
@@ -67,7 +67,7 @@
 		.log-tabs {
 			&.bookmarks {
 				@include absolute(top to-rem(40px) left to-rem(-120px));
-				background: color("background-lightest");
+				background-color: color("background-lightest");
 				border: b("border");
 				border-inline-start: none;
 				flex-wrap: wrap;
@@ -111,7 +111,7 @@
 						text-shadow: none;
 
 						th {
-							background: color("primary", 0.1);
+							background-color: color("primary", 0.1);
 							border-block-end: b("primary");
 							padding: p("sm");
 							text-align: left;
@@ -122,7 +122,7 @@
 
 							&.sortable {
 								&:hover {
-									background: color("primary");
+									background-color: color("primary");
 									color: color("text-lightest");
 									cursor: pointer;
 								}
@@ -135,7 +135,7 @@
 							background: transparent;
 
 							&:nth-of-type(even) {
-								background: color("background-light", 0.1);
+								background-color: color("background-light", 0.1);
 							}
 						}
 					}
@@ -260,7 +260,7 @@
 				.drop-info {
 					@include absolute(top 0 right 0 bottom space("sm") left 0);
 					align-items: center;
-					background: color("folder-header", 0.2);
+					background-color: color("folder-header", 0.2);
 					border: 1px dotted color("border");
 					color: color("text");
 					display: flex;
@@ -312,7 +312,7 @@
 				}
 
 				+ .tinymce-fieldset {
-					background: color("folder-header", 0.2);
+					background-color: color("folder-header", 0.2);
 					padding-inline-start: p("base");
 					padding-inline-end: 0;
 				}
@@ -328,7 +328,7 @@
 					@extend %h-tag;
 					@extend %h3;
 					align-items: center;
-					background: color("background-lightest");
+					background-color: color("background-lightest");
 					border-block-end: b("border");
 					display: flex;
 					height: to-rem(26px); // i hate doing this
@@ -511,7 +511,7 @@
 				@extend %control-button;
 				@extend %font-awesome;
 				@include absolute(top 0 right 0);
-				background: color("background-button");
+				background-color: color("background-button");
 				flex: 0 0 auto;
 				margin: 0;
 			}

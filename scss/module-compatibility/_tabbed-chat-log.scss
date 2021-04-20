@@ -1,0 +1,17 @@
+.tabbedchatlog {
+	@extend %modal-tabs;
+	box-shadow: none;
+
+	a {
+		color: color("text-lightest");
+	}
+}
+
+#oocNotification {
+	@extend %notification-pip;
+	color: color("text-lightest");
+	padding: p("xs");
+	right: space("base");
+	text-shadow: none;
+	top: space("base");
+}

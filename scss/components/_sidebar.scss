@@ -2,10 +2,11 @@
 .sidebar-popout {
 	@include fixed(top space(sm) right 0);
 	@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
-	background: color("background-darkest", 0.8);
+	background-color: color("background-darkest", 0.8);
+	background-image: $global-image-background-darkest;
 	border: b("border");
 	border-inline-end: none;
-	border-radius: 0;
+	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 	box-shadow: none;
 	display: flex;
 	flex-direction: column;
@@ -24,6 +25,10 @@
 
 		#sidebar-tabs {
 			flex-wrap: wrap;
+
+			> .collapse {
+				border-radius: 0 0 0 $global-border-radius-default;
+			}
 		}
 
 		.sidebar-tab,
@@ -71,26 +76,18 @@
 				@extend %global-active;
 			}
 
+			&:first-child {
+				border-radius: $global-border-radius-default 0 0 0;
+			}
+
 			> i {
 				position: relative;
 				z-index: z("above");
 			}
 
 			.notification-pip {
-				@keyframes notification-flash {
-					0% { background-color: color("primary", 0); }
-					50% { background-color: color("primary"); }
-					100% { background-color: color("primary", 0); }
-				}
-
+				@extend %notification-pip;
 				@include absolute(zero);
-				animation-duration: time("x-slow");
-				animation-iteration-count: infinite;
-				animation-name: notification-flash;
-				animation-timing-function: map-get($_default-transitions, "shift");
-				background-color: color("primary", 0);
-				display: none;
-				z-index: 0;
 
 				&::before {
 					display: none;
@@ -143,7 +140,7 @@
 
 				input {
 					@extend %input-text;
-					background: color("white");
+					background-color: color("white");
 					flex: 1 1 auto;
 				}
 			}
@@ -217,6 +214,7 @@
 }
 
 .sidebar-popout {
+	border-radius: $global-border-radius-default;
 	height: auto;
 	min-height: to-rem(400px);
 
