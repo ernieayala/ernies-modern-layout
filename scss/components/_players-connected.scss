@@ -6,6 +6,7 @@
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	display: block;
+	transition: t(opacity, "link");
 	width: to-rem(200px);
 	z-index: z("fixed");
 
@@ -13,6 +14,32 @@
 		bottom: space("base");
 		left: space("base");
 		width: to-rem(168px);
+	}
+
+	.-emu-subtle-layout & {
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 1;
+
+			> h3 {
+				border-width: 1px;
+			}
+
+			> ol {
+				max-height: to-rem(700px);
+				overflow: visible;
+				padding: p("sm");
+			}
+		}
+
+		&.-compact {
+			&:hover {
+				ol {
+					padding: p("base");
+				}
+			}
+		}
 	}
 
 	.-emu-players & {
@@ -23,7 +50,7 @@
 		display: none;
 	}
 
-	h3 {
+	> h3 {
 		@extend %h-tag;
 		border-block-end: b("border");
 		color: color("text-lightest");
@@ -38,6 +65,10 @@
 		.-compact & {
 			letter-spacing: initial;
 			padding: p("base");
+		}
+
+		.-emu-subtle-layout & {
+			border-width: 0;
 		}
 
 		&:hover,
@@ -74,12 +105,18 @@
 		}
 	}
 
-	ol {
+	> ol {
 		@extend %reset-list;
 		padding: p("sm");
 
 		.-compact & {
 			padding: p("base");
+		}
+
+		.-emu-subtle-layout & {
+			max-height: 0;
+			overflow: hidden;
+			padding: 0;
 		}
 
 		.player {

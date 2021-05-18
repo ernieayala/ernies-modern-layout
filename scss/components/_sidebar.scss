@@ -12,6 +12,7 @@
 	flex-direction: column;
 	margin: 0;
 	overflow: hidden;
+	transition: t(opacity, "link");
 	z-index: z(fixed);
 
 	.-compact & {
@@ -22,6 +23,14 @@
 	&.collapsed {
 		height: auto !important;
 		width: to-rem(32px) !important;
+
+		.-emu-subtle-layout & {
+			opacity: 0.3;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
 
 		#sidebar-tabs {
 			flex-wrap: wrap;

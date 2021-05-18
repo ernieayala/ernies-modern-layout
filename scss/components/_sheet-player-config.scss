@@ -1,4 +1,4 @@
-#player-config {
+.window-app.sheet.user-config {
 	@extend %window-common;
 	@extend %window-hack;
 
@@ -27,7 +27,7 @@
 
 	.form-group.stacked {
 		align-items: initial;
-		flex-direction: column;
+		flex-direction: row;
 
 		label {
 			flex: 0 0 auto;

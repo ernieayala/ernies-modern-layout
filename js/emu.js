@@ -340,11 +340,24 @@ Hooks.once('ready', () => {
 		default: false,
 		type: Boolean,
 		onChange: data => {
-			data === true ? myHtml[0].classList.add('-control-align-tops') : myHtml[0].classList.remove('-control-align-tops');
+			data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
 		}
 	});
 	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
-	controlAlignTop ? myHtml[0].classList.add('-control-align-tops') : myHtml[0].classList.remove('-control-align-tops');
+	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+
+	game.settings.register(moduleName, 'subtleLayout', {
+		name: game.i18n.localize('emu.layout-subtle-layout'),
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-subtle-layout') : myHtml[0].classList.remove('-emu-subtle-layout');
+		}
+	});
+	const subtleLayout = game.settings.get(moduleName, 'subtleLayout');
+	subtleLayout ? myHtml[0].classList.add('-emu-subtle-layout') : myHtml[0].classList.remove('-emu-subtle-layout');
 
 	// Check for other modules
 	setTimeout(function() {

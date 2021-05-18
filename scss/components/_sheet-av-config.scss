@@ -1,10 +1,7 @@
-#drawing-config {
-	form {
-		input[type="color"][data-edit][data-edit] {
-			flex: 1 1 25%;
-			margin-inline-start: m("base");
-		}
+#av-config {
+	@extend %window-common;
 
+	form {
 		.sheet-tabs {
 			@extend %modal-tabs;
 			border-block-end: b("primary", 2px);
@@ -62,5 +59,10 @@
 				}
 			}
 		}
+	}
+
+	.notification {
+		@extend %notification;
+		box-shadow: none;
 	}
 }

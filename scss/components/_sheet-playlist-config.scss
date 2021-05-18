@@ -1,0 +1,7 @@
+.window-app.sheet {
+	&[id*="playlist-config-"],
+	&[id*="track-config-"] {
+		@extend %window-common;
+		@extend %window-hack;
+	}
+}

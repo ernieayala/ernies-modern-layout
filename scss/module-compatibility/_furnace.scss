@@ -67,6 +67,7 @@ form .furnace-macro-run-as-gm.form-group {
 	.form-group.furnace-macro-command {
 		border: b("border");
 		border-radius: 0;
+		color: color("text");
 		flex: 1 1 auto;
 		height: auto;
 		margin-inline-start: m("sm");
@@ -116,15 +117,10 @@ form .furnace-macro-run-as-gm.form-group {
 
 		textarea {
 			border: none;
-			color: color("text-lightest");
 			font-size: to-rem(14px);
 			height: 100%;
 			padding: to-rem(5px);
 			text-shadow: none;
-		}
-
-		pre code {
-			color: color("text-lightest");
 		}
 	}
 

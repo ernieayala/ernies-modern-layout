@@ -1,23 +1,10 @@
-// all these importants are ugly but neccissary until mod removes them
-
 #smalltime-app {
 	box-shadow: 0 2px 4px color("black");
 	height: auto;
-	left: to-rem(224px) !important;
-	bottom: to-rem(72px);
-	top: auto !important;
-
-	.-emu-players & {
-		left: space("sm") !important;
-	}
+	left: space("sm") !important;
 
 	.-emu-players.-compact & {
 		left: space("base") !important;
-	}
-
-	.-compact & {
-		bottom: to-rem(64px);
-		left: to-rem(176px) !important;
 	}
 
 	.window-header {

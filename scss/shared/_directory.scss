@@ -43,8 +43,7 @@
 		background-image: none;
 	}
 
-	&.folder,
-	&.playlist {
+	&.folder {
 		background: transparent;
 		cursor: default;
 		margin: 0;
@@ -69,6 +68,7 @@
 		border-radius: $global-border-radius-images;
 		cursor: move;
 		flex: 0 0 auto;
+		margin: 0;
 		margin-block-start: m("base");
 		margin-block-end: m("base");
 		margin-inline-end: m("sm");

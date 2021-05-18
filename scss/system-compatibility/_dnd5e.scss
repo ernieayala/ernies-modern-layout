@@ -1,7 +1,6 @@
-.dnd5e.chat-card .card-buttons button,
-.dnd5e.chat-card .card-header h3 {
-	color: color("text");
-}
+.dnd5e.chat-card
+
+.dnd5e.chat-card .card-buttons
 
 .dnd5e #ability-use-form {
 	.form-group label {
@@ -51,4 +50,41 @@
 
 .dnd5e.chat-card {
 	font-size: fs("sm");
+
+	.card-buttons button,
+	.card-header h3 {
+		color: color("text");
+		text-shadow: none;
+	}
+
+	.card-header {
+		border-block-start: b("border-lighter");
+		border-block-end: b("border-lighter");
+		padding: p("base") 0;
+
+		.-compact & {
+			padding: p("xs") 0;
+		}
+	}
+
+	.card-footer {
+		border-block-start: b("border-lighter");
+		padding-block-start: p("base");
+
+		.-compact & {
+			padding-block-start: p("xs");
+		}
+	}
+
+	.card-buttons {
+		margin: m("base") 0;
+
+		.-compact & {
+			margin: m("xs") 0;
+		}
+
+		button {
+			@extend %secondary-button;
+		}
+	}
 }

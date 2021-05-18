@@ -70,6 +70,7 @@
 				justify-content: center;
 				max-width: 100%;
 				padding: p("base");
+				width: 100%;
 
 				img {
 					max-width: to-rem(86px);
@@ -123,6 +124,8 @@
 	section.filepicker-body {
 		display: grid;
 		flex: 1 1 auto;
+		grid-auto-flow: row;
+		grid-template-rows: max-content;
 		margin-block-start: m("sm");
 		overflow: hidden;
 		position: relative;
@@ -219,6 +222,7 @@
 		background: none;
 		border: 0;
 		border-radius: 0;
+		display: block !important; // why is there inline grid now?
 		min-height: to-rem(32px);
 		list-style: none;
 		overflow-x: hidden;
@@ -226,6 +230,10 @@
 		position: relative;
 		margin: 0;
 		width: 100%;
+
+		&.tiles-list {
+			display: grid !important;
+		}
 
 		+ .directory {
 			margin-block-start: m("base");

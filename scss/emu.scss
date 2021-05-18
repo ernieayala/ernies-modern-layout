@@ -76,6 +76,7 @@ body.emu.e-body#emu {
 
 	// Sheets Bulk
 	@import "./components/sheet-actor-flags";
+	@import "./components/sheet-av-config";
 	@import "./components/sheet-client-settings";
 	@import "./components/sheet-combat-config";
 	@import "./components/sheet-drawing-config";
@@ -83,12 +84,14 @@ body.emu.e-body#emu {
 	@import "./components/sheet-folder-create";
 	@import "./components/sheet-folder-edit";
 	@import "./components/sheet-grid-config";
+	@import "./components/sheet-journal-entry";
 	@import "./components/sheet-light-config";
 	@import "./components/sheet-macro";
 	@import "./components/sheet-module-management";
 	@import "./components/sheet-note-config";
 	@import "./components/sheet-permission";
 	@import "./components/sheet-player-config";
+	@import "./components/sheet-playlist-config";
 	@import "./components/sheet-scene";
 	@import "./components/sheet-sheet-config";
 	@import "./components/sheet-short-rest-hd";
@@ -104,6 +107,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/batch-folder-permissions";
 	@import "./module-compatibility/calendar-weather";
 	// @import "./module-compatibility/color-picker";
+	@import "./module-compatibility/chat-indicators";
 	.-emu-sidebar-combat & { @import "./module-compatibility/combat-enhancements"; }
 	@import "./module-compatibility/combat-utility-belt";
 	// @import "./module-compatibility/compendium-folders"; // maybe someday
@@ -114,6 +118,7 @@ body.emu.e-body#emu {
 	@import "./module-compatibility/dungeondraft-importer";
 	@import "./module-compatibility/ernies-modern-ui";
 	// @import "./module-compatibility/foriens-quest-log";
+	@import "./module-compatibility/fps-counter";
 	@import "./module-compatibility/furnace";
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/_illandrils_chat_enhancements";
