@@ -12,6 +12,7 @@
 		background-color: transparent;
 		border: none;
 		border-radius: $global-border-radius-default;
+		flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
 
@@ -21,10 +22,11 @@
 			height: auto;
 			line-height: to-rem(36px);
 			margin: 0;
-			margin-inline-end: space("sm");
+			margin-block-end: space("base");
+			margin-inline-end: space("base");
 			max-width: to-rem(240px);
 			min-width: to-rem(112px);
-			padding: 0;
+			padding: 0 p("sm");
 			text-align: center;
 
 			&.active,
@@ -62,19 +64,35 @@
 				width: auto;
 			}
 		}
+
+		> .scene {
+			margin: 0;
+			margin-block-end: space("base");
+			padding: 0 p("base");
+		}
 	}
 }
 
-.sidebar-directory .directory-item.scene h3 .permissions {
-	align-items: center;
-	background-color: transparent;
-	color: color("text-lightest");
-	display: inline-flex;
-	height: space("button-sm");
-	left: auto;
-	padding: 0 p("base");
-	position: absolute;
-	right: 0;
-	top: space("base");
-	width: auto;
+#scenes .directory-item.scene h3 {
+	a {
+		max-width: 80%;
+
+		i {
+			margin-inline-end: m("base");
+		}
+	}
+
+	.permissions {
+		align-items: center;
+		background-color: transparent;
+		color: color("text-lightest");
+		display: inline-flex;
+		height: space("button-sm");
+		left: auto;
+		padding: 0 p("base");
+		position: absolute;
+		right: 0;
+		top: space("base");
+		width: auto;
+	}
 }
