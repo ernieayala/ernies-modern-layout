@@ -12,17 +12,39 @@
 
 		.directory-item {
 			@extend %directory-item;
+			flex-wrap: wrap;
 			margin: m("base");
 
 			&.folder {
 				@extend %folder;
 			}
 
+			h4 {
+				align-items: center;
+				display: flex;
+				width: 100%;
+
+				.status-icons {
+					color: color("text-lightest");
+					position: relative;
+
+					i {
+						margin: 0;
+						margin-inline-start: m("base");
+					}
+				}
+			}
+
 			.compendium-footer {
 				color: color("text-lightest");
 				flex: 0 0 auto;
 				font-size: fs("md");
-				margin-inline-start: m("base");
+				padding-block-end: m("sm");
+				width: 100%;
+
+				.-compact & {
+					padding-block-end: m("base");
+				}
 			}
 		}
 
