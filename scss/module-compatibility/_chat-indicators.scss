@@ -1,0 +1,14 @@
+.chat-message {
+	.chat-mode-indicator,
+	.whisper-to span {
+		align-items: center;
+		background-color: color("background-light", 0.2);
+		border-radius: $global-border-radius-default;
+		border: b("border");
+		display: inline-flex;
+		line-height: 1;
+		margin: 0;
+		margin-inline-end: m("base");
+		padding: p("base") p("base") p("xs");
+	}
+}

@@ -21,3 +21,22 @@
 		margin: 0 m("base");
 	}
 }
+
+#default-token-config {
+	@extend %window-common;
+	@extend %window-hack;
+
+	.sheet-footer {
+		bottom: 0;
+		flex: 0 0 auto;
+		flex-wrap: nowrap;
+		padding: 0;
+		padding-block-start: p("sm");
+		position: sticky;
+
+		button {
+			@extend %button-row;
+			@extend %button-icon;
+		}
+	}
+}

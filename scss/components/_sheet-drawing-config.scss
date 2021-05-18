@@ -9,7 +9,7 @@
 
 		.sheet-tabs {
 			@extend %modal-tabs;
-			border-block-end: b("orange-700", 2px);
+			border-block-end: b("primary", 2px);
 			flex: 0 0 auto;
 		}
 

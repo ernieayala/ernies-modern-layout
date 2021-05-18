@@ -3,12 +3,39 @@
 	@extend %window-hack;
 	@extend %window-sheets;
 
-	h3 {
-		border: none;
-		color: color("text-darker");
-		font-family: inherit;
-		line-height: initial;
-		margin: 0;
-		padding: 0;
+	form {
+		.form-header {
+			&:first-child {
+				margin-block-start: m("sm");
+
+				.-compact & {
+					margin-block-start: m("base");
+				}
+			}
+
+			+ .notes,
+			+ .hint {
+				margin: m("sm") 0 m("base");
+
+				.-compact & {
+					margin: m("base") 0 m("xs");
+				}
+			}
+
+			h3 {
+				border: none;
+				line-height: initial;
+				margin: 0;
+			}
+		}
+
+		> .notes,
+		> .hint {
+			margin: m("md") 0 m("base");
+
+			.-compact & {
+				margin: m("sm") 0 m("xs");
+			}
+		}
 	}
 }

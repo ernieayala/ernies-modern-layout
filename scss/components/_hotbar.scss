@@ -3,6 +3,7 @@
 	@include size(auto);
 	display: flex;
 	pointer-events: none;
+	transition: t(opacity, "link");
 	z-index: z("fixed");
 
 	.-emu-players & {
@@ -18,12 +19,38 @@
 		left: to-rem(176px);
 	}
 
+	.-emu-subtle-layout & {
+		opacity: $global-subtle-opacity;
+
+		&:hover {
+			opacity: 1;
+
+			#action-bar {
+				opacity: 1;
+			}
+		}
+
+		&::before {
+			content: "";
+			bottom: -(space("sm"));
+			left: -(space("sm"));
+			right: -(space("sm"));
+			top: -(space("sm"));
+			position: absolute;
+		}
+	}
+
 	#action-bar {
 		display: block;
 		flex: 1 1 auto;
 		height: auto;
 		pointer-events: all;
 		position: relative;
+		transition: t(opacity, "link");
+
+		.-emu-subtle-layout & {
+			opacity: 0;
+		}
 	}
 
 	#macro-list {
@@ -33,6 +60,7 @@
 		display: flex;
 		flex: 0 0 auto;
 		float: left;
+		height: auto;
 		position: relative;
 		width: auto;
 	}
@@ -54,11 +82,11 @@
 
 		&:first-child {
 			flex: 0 0 auto;
-			flex-direction: column-reverse;
-			margin-inline-end: m("sm");
+			flex-direction: column;
+			margin-inline-end: m("base");
 
 			.-compact & {
-				margin-inline-end: m("base");
+				margin-inline-end: m("xs");
 			}
 
 			#macro-directory,
@@ -67,12 +95,12 @@
 
 				&:first-of-type {
 					border: none;
+					border-block-end: b("border");
 					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 				}
 
 				&:last-of-type {
-					border-block-start: none;
-					border-block-end: b("border");
+					border: none;
 					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 			}
@@ -80,10 +108,10 @@
 
 		&:last-child {
 			float: left;
-			margin-inline-start: m("sm");
+			margin-inline-start: m("base");
 
 			.-compact & {
-				margin-inline-start: m("base");
+				margin-inline-start: m("xs");
 			}
 		}
 

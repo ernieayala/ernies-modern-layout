@@ -12,6 +12,13 @@
 				padding: p("base");
 				margin: m("base");
 
+				&:hover,
+				&:focus {
+					.message-metadata {
+						opacity: 1;
+					}
+				}
+
 				&.whisper {
 					background-color: color("background-chat-message-whisper");
 				}
@@ -22,6 +29,21 @@
 
 				.message-header {
 					color: inherit;
+					line-height: 1.2;
+					margin-block-end: m("base");
+				}
+
+				.message-metadata,
+				.message-sender {
+					align-items: center;
+					display: inline-flex;
+					font-size: fs("sm");
+				}
+
+				.message-metadata {
+					opacity: 0;
+					justify-content: flex-end;
+					transition: t("opacity", "link");
 				}
 
 				.dice-roll .dice-formula,

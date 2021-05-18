@@ -2,3 +2,7 @@
 	@extend %window-common;
 	@extend %window-hack;
 }
+
+.window-app.sheet[id*="combatant-config-"] {
+	@extend %window-common;
+}

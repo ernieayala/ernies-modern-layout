@@ -1,7 +1,60 @@
 #OneJournalShell {
+
+	.window-header .one-journal-header {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+
+	.window-content {
+		background-color: color("background-lightest", 1);
+		background-image: $global-image-background;
+	}
+
 	.one-journal-attached {
 		.window-header {
 			display: none;
+		}
+
+		form > input {
+			flex: 0 0 calc(100% - #{to-rem(98px))});
+		}
+	}
+
+	.shell-content {
+		.window-resizable-handle {
+			display: none;
+		}
+
+		.editor-edit {
+			right: to-rem(64px);
+		}
+	}
+
+	.history-navigation {
+		right: space("sm");
+		top: space("sm");
+
+		a {
+			@extend %primary-button;
+			opacity: 1;
+		}
+	}
+}
+
+
+#OneJournalDirectory {
+	#journal {
+		.directory-list {
+			@extend %directory-subdirectory;
+		}
+
+		.directory-item {
+			@extend %directory-item;
+
+			&.folder {
+				@extend %folder;
+			}
 		}
 	}
 }

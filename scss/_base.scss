@@ -63,12 +63,15 @@ $global-image-background-light: var(--emu-image-background-light, none);
 $global-image-background-darkest: var(--emu-image-background-darkest, none);
 $global-image-background-controls: var(--emu-image-background-controls, none);
 
+$global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
+
 // Shared
 @import "./shared/buttons";
 @import "./shared/directory";
 @import "./shared/folder";
 @import "./shared/form-elements";
 @import "./shared/form-group";
+@import "./shared/notifications";
 @import "./shared/panel";
 @import "./shared/states";
 @import "./shared/tabs";

@@ -40,6 +40,8 @@
 	"emu.layout-compact": "Modo compacto",
 	"emu.layout-control-align": "Alineación superior de controles",
 	"emu.layout-control-align-hint": "Permite alinear los controles subordinados a la parte superior de la pantalla.",
+	"emu.layout-subtle-layout": "Subtle Layout",
+	"emu.layout-subtle-layout-opacity": "Subtle Layout Opacity",
 	"emu.toggle-logo": "Alternar logo",
 	"emu.toggle-players": "Alternar Jugadores",
 	"emu.toggle-scene-thumbnails": "Alternar miniaturas de escena",

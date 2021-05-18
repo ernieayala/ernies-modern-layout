@@ -1,0 +1,79 @@
+#smalltime-app {
+	box-shadow: 0 2px 4px color("black");
+	height: auto;
+	left: space("sm") !important;
+
+	.-emu-players.-compact & {
+		left: space("base") !important;
+	}
+
+	.window-header {
+		display: none;
+
+		.header-button.close {
+			display: none;
+		}
+	}
+
+	.window-content {
+		border-radius: 0;
+	}
+
+	#slideContainer {
+		position: relative;
+	}
+
+	#displayContainer {
+		background-color: color("background-darkest");
+		border-block-start: b("border");
+		height: auto;
+		padding: 0 p("base");
+		position: relative;
+		top: auto;
+
+		.-compact & {
+			padding: 0 p("xs");
+		}
+
+		.arrow {
+			@extend %control-button;
+			font-family: "Font Awesome 5 Free";
+			margin: m("base") 0;
+		}
+	}
+
+	#dragHandle,
+	#dateDisplay {
+		&:empty {
+			display: none;
+			font-size: fs("md");
+			padding: p("base");
+		}
+	}
+
+	#dateDisplay {
+		background-color: color("background-darkest");
+		box-shadow: none;
+		bottom: 0;
+		color: color("text-lightest");
+		font-size: fs("sm");
+		padding: p("sm");
+		transform-origin: bottom;
+		top: auto;
+	}
+
+	#timeDisplay {
+		align-items: center;
+		display: inline-flex;
+		color: color("text-lightest");
+		font-size: fs("md");
+		justify-content: center;
+		padding: 0;
+		text-shadow: none;
+	}
+
+	#timeSeparator {
+		margin: 0;
+		top: auto;
+	}
+}

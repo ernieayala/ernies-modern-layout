@@ -40,6 +40,8 @@
 	"emu.layout-compact": "Compact Mode",
 	"emu.layout-control-align": "Controls Align to Top",
 	"emu.layout-control-align-hint": "This aligns the children controls to the top of the screen.",
+	"emu.layout-subtle-layout": "Subtle Layout",
+	"emu.layout-subtle-layout-opacity": "Subtle Layout Opacity",
 	"emu.toggle-logo": "Toggle Logo",
 	"emu.toggle-players": "Toggle Players",
 	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails",

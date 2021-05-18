@@ -14,3 +14,23 @@
 		}
 	}
 }
+
+#permissions-config {
+	@extend %window-common;
+	@extend %window-sheets;
+	min-height: to-rem(500px);
+
+	.window-content form > .form-group {
+		border-block-start: b("border");
+		flex: 0 0 auto;
+		flex-wrap: nowrap;
+		padding: 0;
+		padding-block-start: p("sm");
+
+		button {
+			@extend %primary-button;
+			@extend %button-row;
+			@extend %button-icon;
+		}
+	}
+}

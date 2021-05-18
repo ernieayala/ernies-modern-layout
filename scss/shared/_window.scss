@@ -192,6 +192,11 @@
 
 	.sheet-footer {
 		flex-wrap: nowrap;
+		margin-block-start: m("base");
+
+		.-compact & {
+			margin-block-start: m("xs");
+		}
 
 		+ ::after {
 			display: none;

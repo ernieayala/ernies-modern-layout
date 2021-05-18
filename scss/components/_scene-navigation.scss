@@ -1,6 +1,7 @@
 #navigation {
 	@include fixed(top space("sm") left to-rem(148px));
 	box-shadow: none;
+	transition: t(opacity, "link");
 	width: calc(100% - #{to-rem(520px)});
 	z-index: z("fixed");
 
@@ -9,14 +10,48 @@
 		left: to-rem(112px);
 	}
 
+	.-emu-subtle-layout & {
+		left: to-rem(112px);
+		opacity: $global-subtle-opacity;
+
+		&.-compact {
+			left: to-rem(74px);
+		}
+
+		&:hover,
+		&:active {
+			opacity: 1;
+
+			#scene-list .scene {
+				display: inline-flex;
+				opacity: 1;
+			}
+		}
+
+		#scene-list::before {
+			content: "";
+			bottom: -(space("sm"));
+			left: -(space("sm"));
+			right: -(space("sm"));
+			top: -(space("sm"));
+			position: absolute;
+		}
+	}
+
 	#nav-toggle {
 		@extend %control-button;
-		@include absolute(top 0 left to-rem(-32px));
+		@include absolute(top 0 left to-rem(-28px));
 		background-color: color("background", 0.8);
 		background-image: $global-image-background-controls;
+		margin: 0;
+		z-index: z("fixed");
 
 		.-compact & {
 			left: to-rem(-24px);
+		}
+
+		.-emu-subtle-layout & {
+			display: none;
 		}
 	}
 
@@ -25,6 +60,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
+		pointer-events: all;
 
 		.scene {
 			background: transparent;
@@ -32,14 +68,25 @@
 			border-radius: $global-border-radius-controls;
 			box-shadow: none;
 			color: inherit;
-			margin-block-end: space("sm");
-			margin-inline-end: space("sm");
+			margin-block-end: space("base");
+			margin-inline-end: space("base");
 			padding: 0;
 			position: relative;
+			transition: t(opacity, "link");
 
 			.-compact & {
-				margin-block-end: space("base");
-				margin-inline-end: space("base");
+				margin-block-end: space("xs");
+				margin-inline-end: space("xs");
+			}
+
+			.-emu-subtle-layout & {
+				display: none;
+				opacity: 0;
+
+				&.active {
+					display: inline-flex;
+					opacity: 1;
+				}
 			}
 
 			&:last-of-type {
