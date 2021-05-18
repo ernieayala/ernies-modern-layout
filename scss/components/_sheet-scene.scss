@@ -21,6 +21,12 @@
 					margin: m("base") 0 m("xs");
 				}
 			}
+
+			h3 {
+				border: none;
+				line-height: initial;
+				margin: 0;
+			}
 		}
 
 		> .notes,
