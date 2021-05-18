@@ -12,7 +12,7 @@
 
 	.-emu-subtle-layout & {
 		left: to-rem(112px);
-		opacity: 0.3;
+		opacity: $global-subtle-opacity;
 
 		&.-compact {
 			left: to-rem(74px);

@@ -25,7 +25,7 @@
 		width: to-rem(32px) !important;
 
 		.-emu-subtle-layout & {
-			opacity: 0.3;
+			opacity: $global-subtle-opacity;
 
 			&:hover {
 				opacity: 1;

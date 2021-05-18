@@ -359,6 +359,24 @@ Hooks.once('ready', () => {
 	const subtleLayout = game.settings.get(moduleName, 'subtleLayout');
 	subtleLayout ? myHtml[0].classList.add('-emu-subtle-layout') : myHtml[0].classList.remove('-emu-subtle-layout');
 
+	game.settings.register(moduleName, 'subtleLayoutOpacity', {
+		name: game.i18n.localize('emu.layout-subtle-layout-opacity'),
+		scope: 'user',
+		config: true,
+		default: 0.3,
+		type: Number,
+		range: {
+			min: 0.1,
+			max: 1,
+			step: 0.1
+		},
+		onChange: data => {
+			data ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${data}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
+		}
+	});
+	const subtleLayoutOpacity = game.settings.get(moduleName, 'subtleLayoutOpacity');
+	subtleLayout ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${subtleLayoutOpacity}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
+
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
