@@ -55,6 +55,19 @@
 	.card-header h3 {
 		color: color("text");
 		text-shadow: none;
+
+		> span {
+			border: 0;
+			padding: 0 p("base");
+		}
+	}
+
+	.card-buttons button + button {
+		margin-block-start: m("base");
+
+		.-compact & {
+			margin-block-start: 0;
+		}
 	}
 
 	.card-header {

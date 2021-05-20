@@ -366,9 +366,9 @@ Hooks.once('ready', () => {
 		default: 0.3,
 		type: Number,
 		range: {
-			min: 0.1,
+			min: 0.01,
 			max: 1,
-			step: 0.1
+			step: 0.01
 		},
 		onChange: data => {
 			data ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${data}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
