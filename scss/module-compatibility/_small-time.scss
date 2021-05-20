@@ -1,31 +1,29 @@
 #smalltime-app {
-	box-shadow: 0 2px 4px color("black");
+	box-shadow: none;
 	height: auto;
-	left: space("sm") !important;
-
-	.-emu-players.-compact & {
-		left: space("base") !important;
-	}
+	margin-inline-start: to-rem(-6px); // to off opening position
 
 	.window-header {
 		display: none;
-
-		.header-button.close {
-			display: none;
-		}
 	}
 
 	.window-content {
+		background-color: color("background-darkest");
 		border-radius: 0;
+		height: 100%;
+		overflow: visible;
 	}
 
 	#slideContainer {
+		flex: 0 0 auto;
 		position: relative;
 	}
 
 	#displayContainer {
-		background-color: color("background-darkest");
+		align-items: center;
+		background-color: transparent;
 		border-block-start: b("border");
+		box-shadow: none;
 		height: auto;
 		padding: 0 p("base");
 		position: relative;
@@ -37,29 +35,33 @@
 
 		.arrow {
 			@extend %control-button;
+			@include size(to-rem(20px));
 			font-family: "Font Awesome 5 Free";
-			margin: m("base") 0;
-		}
-	}
-
-	#dragHandle,
-	#dateDisplay {
-		&:empty {
-			display: none;
-			font-size: fs("md");
-			padding: p("base");
+			margin: m("xs") 0;
 		}
 	}
 
 	#dateDisplay {
-		background-color: color("background-darkest");
+		background-color: transparent;
 		box-shadow: none;
-		bottom: 0;
 		color: color("text-lightest");
-		font-size: fs("sm");
-		padding: p("sm");
-		transform-origin: bottom;
+		display: none;
+		font-size: fs("md");
+		justify-content: center;
+		padding: p("base");
+		position: relative;
+		text-shadow: none;
+		transform: initial;
+		transition: none;
 		top: auto;
+
+		&.active {
+			display: flex;
+		}
+
+		.-compact & {
+			padding: p("xs");
+		}
 	}
 
 	#timeDisplay {
@@ -75,5 +77,15 @@
 	#timeSeparator {
 		margin: 0;
 		top: auto;
+	}
+
+	#dragHandle {
+		background: transparent;
+		bottom: -(space("md"));
+		left: -(space("md"));
+		right: -(space("md"));
+		top: -(space("md"));
+		position: absolute;
+		z-index: -1;
 	}
 }
