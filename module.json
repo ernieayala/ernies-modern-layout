@@ -25,7 +25,7 @@
 			"path": "lang/es.json"
 		}
 	],
-	"minimumCoreVersion": "0.8.3",
+	"minimumCoreVersion": "0.8.4",
 	"compatibleCoreVersion": "0.8.4",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
