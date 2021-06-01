@@ -25,8 +25,8 @@
 			"path": "lang/es.json"
 		}
 	],
-	"minimumCoreVersion": "0.8.4",
-	"compatibleCoreVersion": "0.8.4",
+	"minimumCoreVersion": "0.8.6",
+	"compatibleCoreVersion": "0.8.6",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
 	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.3.0.zip",
