@@ -73,18 +73,22 @@
 	.card-header {
 		border-block-start: b("border-lighter");
 		border-block-end: b("border-lighter");
+		margin-block-end: m("base");
 		padding: p("base") 0;
 
 		.-compact & {
+			margin-block-end: m("xs");
 			padding: p("xs") 0;
 		}
 	}
 
 	.card-footer {
 		border-block-start: b("border-lighter");
+		margin-block-start: m("base");
 		padding-block-start: p("base");
 
 		.-compact & {
+			margin-block-start: m("xs");
 			padding-block-start: p("xs");
 		}
 	}
@@ -98,6 +102,7 @@
 
 		button {
 			@extend %secondary-button;
+			border: b("border");
 		}
 	}
 }

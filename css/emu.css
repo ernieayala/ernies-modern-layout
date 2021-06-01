@@ -5,7 +5,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.inline-roll,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control, body.emu.e-body#emu #sidebar #settings button,
-body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn,
+body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu .die-result-overlay-br button, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn, body.emu.e-body#emu #sidebar #combat .add-temporary,
 body.emu.e-body#emu .sidebar-popout #combat .add-temporary, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad,
@@ -64,7 +64,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link, body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .-compact a.entity-link,
   .-compact body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll, body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .-compact a.inline-roll, .-compact .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .-compact .combat-control,
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .-compact .combat-control, .-compact body.emu.e-body#emu #sidebar #settings button, body.emu.e-body#emu #sidebar #settings .-compact button,
-  .-compact body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu .sidebar-popout #settings .-compact button, .-compact body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .sheet-footer .-compact button, .-compact body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu #client-settings .settings-list .-compact button, .-compact body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .current-dir .-compact button, .-compact body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .window-app.filepicker .display-modes .-compact .display-mode, .-compact body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu .sheet.journal-sheet .-compact .editor-edit, .-compact body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #module-management form > footer .-compact button, .-compact body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu #permissions-config .window-content form > .form-group .-compact button, .-compact body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .-compact .advance-btn,
+  .-compact body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu .sidebar-popout #settings .-compact button, .-compact body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .sheet-footer .-compact button, .-compact body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu #client-settings .settings-list .-compact button, .-compact body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .current-dir .-compact button, .-compact body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .window-app.filepicker .display-modes .-compact .display-mode, .-compact body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu .sheet.journal-sheet .-compact .editor-edit, .-compact body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #module-management form > footer .-compact button, .-compact body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu #permissions-config .window-content form > .form-group .-compact button, .-compact body.emu.e-body#emu .die-result-overlay-br button, body.emu.e-body#emu .die-result-overlay-br .-compact button, .-compact body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .-compact .advance-btn,
   .-compact body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn, body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .-compact .advance-btn, .-compact body.emu.e-body#emu #sidebar #combat .add-temporary, body.emu.e-body#emu #sidebar #combat .-compact .add-temporary,
   .-compact body.emu.e-body#emu .sidebar-popout #combat .add-temporary, body.emu.e-body#emu .sidebar-popout #combat .-compact .add-temporary, .-compact body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button, body.emu.e-body#emu #sidebar .dice-tray .-compact button.dice-tray__button,
   .-compact body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad, body.emu.e-body#emu #sidebar .dice-tray .-compact button.dice-tray__ad,
@@ -107,7 +107,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link:hover,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control:hover, body.emu.e-body#emu #sidebar #settings button:hover,
-  body.emu.e-body#emu .sidebar-popout #settings button:hover, body.emu.e-body#emu #client-settings .sheet-footer button:hover, body.emu.e-body#emu #client-settings .settings-list button:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:hover, body.emu.e-body#emu #module-management form > footer button:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
+  body.emu.e-body#emu .sidebar-popout #settings button:hover, body.emu.e-body#emu #client-settings .sheet-footer button:hover, body.emu.e-body#emu #client-settings .settings-list button:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:hover, body.emu.e-body#emu #module-management form > footer button:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:hover, body.emu.e-body#emu .die-result-overlay-br button:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
   body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, body.emu.e-body#emu #sidebar #combat .add-temporary:hover,
   body.emu.e-body#emu .sidebar-popout #combat .add-temporary:hover, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button:hover,
   body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad:hover,
@@ -152,7 +152,7 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link:disabled,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll:disabled, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control:disabled,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control:disabled, body.emu.e-body#emu #sidebar #settings button:disabled,
-  body.emu.e-body#emu .sidebar-popout #settings button:disabled, body.emu.e-body#emu #client-settings .sheet-footer button:disabled, body.emu.e-body#emu #client-settings .settings-list button:disabled, body.emu.e-body#emu .window-app.filepicker .current-dir button:disabled, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:disabled, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:disabled, body.emu.e-body#emu #module-management form > footer button:disabled, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:disabled, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:disabled,
+  body.emu.e-body#emu .sidebar-popout #settings button:disabled, body.emu.e-body#emu #client-settings .sheet-footer button:disabled, body.emu.e-body#emu #client-settings .settings-list button:disabled, body.emu.e-body#emu .window-app.filepicker .current-dir button:disabled, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:disabled, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:disabled, body.emu.e-body#emu #module-management form > footer button:disabled, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:disabled, body.emu.e-body#emu .die-result-overlay-br button:disabled, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:disabled,
   body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn:disabled, body.emu.e-body#emu #sidebar #combat .add-temporary:disabled,
   body.emu.e-body#emu .sidebar-popout #combat .add-temporary:disabled, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button:disabled,
   body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad:disabled,
@@ -196,7 +196,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.inline-roll,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control, body.emu.e-body#emu #sidebar #settings button,
-body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn,
+body.emu.e-body#emu .sidebar-popout #settings button, body.emu.e-body#emu #client-settings .sheet-footer button, body.emu.e-body#emu #client-settings .settings-list button, body.emu.e-body#emu .window-app.filepicker .current-dir button, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode, body.emu.e-body#emu .sheet.journal-sheet .editor-edit, body.emu.e-body#emu #module-management form > footer button, body.emu.e-body#emu #permissions-config .window-content form > .form-group button, body.emu.e-body#emu .die-result-overlay-br button, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn, body.emu.e-body#emu #sidebar #combat .add-temporary,
 body.emu.e-body#emu .sidebar-popout #combat .add-temporary, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad,
@@ -2767,7 +2767,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.inline-roll:hover,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link:hover,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control:hover,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control:hover, body.emu.e-body#emu #sidebar #settings button:hover,
-body.emu.e-body#emu .sidebar-popout #settings button:hover, body.emu.e-body#emu #client-settings .sheet-footer button:hover, body.emu.e-body#emu #client-settings .settings-list button:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:hover, body.emu.e-body#emu #module-management form > footer button:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
+body.emu.e-body#emu .sidebar-popout #settings button:hover, body.emu.e-body#emu #client-settings .sheet-footer button:hover, body.emu.e-body#emu #client-settings .settings-list button:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:hover, body.emu.e-body#emu #module-management form > footer button:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:hover, body.emu.e-body#emu .die-result-overlay-br button:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, body.emu.e-body#emu #sidebar #combat .add-temporary:hover,
 body.emu.e-body#emu .sidebar-popout #combat .add-temporary:hover, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button:hover,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad:hover,
@@ -3036,7 +3036,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.inline-roll:focus,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link:focus,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.inline-roll:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .combat-control:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .combat-control:focus, body.emu.e-body#emu #sidebar #settings button:focus,
-body.emu.e-body#emu .sidebar-popout #settings button:focus, body.emu.e-body#emu #client-settings .sheet-footer button:focus, body.emu.e-body#emu #client-settings .settings-list button:focus, body.emu.e-body#emu .window-app.filepicker .current-dir button:focus, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:focus, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:focus, body.emu.e-body#emu #module-management form > footer button:focus, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:focus, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:focus,
+body.emu.e-body#emu .sidebar-popout #settings button:focus, body.emu.e-body#emu #client-settings .sheet-footer button:focus, body.emu.e-body#emu #client-settings .settings-list button:focus, body.emu.e-body#emu .window-app.filepicker .current-dir button:focus, body.emu.e-body#emu .window-app.filepicker .display-modes .display-mode:focus, body.emu.e-body#emu .sheet.journal-sheet .editor-edit:focus, body.emu.e-body#emu #module-management form > footer button:focus, body.emu.e-body#emu #permissions-config .window-content form > .form-group button:focus, body.emu.e-body#emu .die-result-overlay-br button:focus, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .advance-btn:focus,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .advance-btn:focus, body.emu.e-body#emu #sidebar #combat .add-temporary:focus,
 body.emu.e-body#emu .sidebar-popout #combat .add-temporary:focus, body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__button:focus,
 body.emu.e-body#emu #sidebar .dice-tray button.dice-tray__ad:focus,
@@ -3284,7 +3284,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.active.inline-roll:focus
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.entity-link:focus,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.inline-roll:focus, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .active.combat-control:focus,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .active.combat-control:focus, body.emu.e-body#emu #sidebar #settings button.active:focus,
-body.emu.e-body#emu .sidebar-popout #settings button.active:focus, body.emu.e-body#emu #client-settings .sheet-footer button.active:focus, body.emu.e-body#emu #client-settings .settings-list button.active:focus, body.emu.e-body#emu .window-app.filepicker .current-dir button.active:focus, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode:focus, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit:focus, body.emu.e-body#emu #module-management form > footer button.active:focus, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active:focus, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn:focus,
+body.emu.e-body#emu .sidebar-popout #settings button.active:focus, body.emu.e-body#emu #client-settings .sheet-footer button.active:focus, body.emu.e-body#emu #client-settings .settings-list button.active:focus, body.emu.e-body#emu .window-app.filepicker .current-dir button.active:focus, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode:focus, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit:focus, body.emu.e-body#emu #module-management form > footer button.active:focus, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active:focus, body.emu.e-body#emu .die-result-overlay-br button.active:focus, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn:focus,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .active.advance-btn:focus, body.emu.e-body#emu #sidebar #combat .active.add-temporary:focus,
 body.emu.e-body#emu .sidebar-popout #combat .active.add-temporary:focus, body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__button:focus,
 body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__ad:focus,
@@ -3346,7 +3346,7 @@ body.emu.e-body#emu #sidebar #chat #chat-log .message a.active.inline-roll,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.entity-link,
 body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.inline-roll, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .active.combat-control,
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .active.combat-control, body.emu.e-body#emu #sidebar #settings button.active,
-body.emu.e-body#emu .sidebar-popout #settings button.active, body.emu.e-body#emu #client-settings .sheet-footer button.active, body.emu.e-body#emu #client-settings .settings-list button.active, body.emu.e-body#emu .window-app.filepicker .current-dir button.active, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit, body.emu.e-body#emu #module-management form > footer button.active, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn,
+body.emu.e-body#emu .sidebar-popout #settings button.active, body.emu.e-body#emu #client-settings .sheet-footer button.active, body.emu.e-body#emu #client-settings .settings-list button.active, body.emu.e-body#emu .window-app.filepicker .current-dir button.active, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit, body.emu.e-body#emu #module-management form > footer button.active, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active, body.emu.e-body#emu .die-result-overlay-br button.active, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn,
 body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .active.advance-btn, body.emu.e-body#emu #sidebar #combat .active.add-temporary,
 body.emu.e-body#emu .sidebar-popout #combat .active.add-temporary, body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__button,
 body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__ad,
@@ -3400,7 +3400,7 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + la
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.entity-link:hover,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.active.inline-roll:hover, .-emu-sidebar-combat body.emu.e-body#emu #sidebar #combat #combat-controls .active.combat-control:hover,
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-controls .active.combat-control:hover, body.emu.e-body#emu #sidebar #settings button.active:hover,
-  body.emu.e-body#emu .sidebar-popout #settings button.active:hover, body.emu.e-body#emu #client-settings .sheet-footer button.active:hover, body.emu.e-body#emu #client-settings .settings-list button.active:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button.active:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit:hover, body.emu.e-body#emu #module-management form > footer button.active:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn:hover,
+  body.emu.e-body#emu .sidebar-popout #settings button.active:hover, body.emu.e-body#emu #client-settings .sheet-footer button.active:hover, body.emu.e-body#emu #client-settings .settings-list button.active:hover, body.emu.e-body#emu .window-app.filepicker .current-dir button.active:hover, body.emu.e-body#emu .window-app.filepicker .display-modes .active.display-mode:hover, body.emu.e-body#emu .sheet.journal-sheet .active.editor-edit:hover, body.emu.e-body#emu #module-management form > footer button.active:hover, body.emu.e-body#emu #permissions-config .window-content form > .form-group button.active:hover, body.emu.e-body#emu .die-result-overlay-br button.active:hover, body.emu.e-body#emu #calendar-time-container .calendar--time-controls .active.advance-btn:hover,
   body.emu.e-body#emu #calendar-weather-container .calendar--time-controls .active.advance-btn:hover, body.emu.e-body#emu #sidebar #combat .active.add-temporary:hover,
   body.emu.e-body#emu .sidebar-popout #combat .active.add-temporary:hover, body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__button:hover,
   body.emu.e-body#emu #sidebar .dice-tray button.active.dice-tray__ad:hover,
@@ -5136,6 +5136,7 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-log .message {
   body.emu.e-body#emu #sidebar #chat #chat-log .message .message-header,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .message-header {
     color: inherit;
+    flex-wrap: nowrap;
     line-height: 1.2;
     -webkit-margin-after: 0.25rem;
             margin-block-end: 0.25rem; }
@@ -5146,6 +5147,10 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-log .message {
     align-items: center;
     display: inline-flex;
     font-size: 0.75rem; }
+  body.emu.e-body#emu #sidebar #chat #chat-log .message .message-sender,
+  body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .message-sender {
+    overflow: hidden;
+    white-space: initial; }
   body.emu.e-body#emu #sidebar #chat #chat-log .message .message-metadata,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .message-metadata {
     opacity: 0;
@@ -5155,9 +5160,21 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-log .message {
   body.emu.e-body#emu #sidebar #chat #chat-log .message .dice-roll .dice-total,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total {
+    background-color: rgba(var(--color-background), 0.1);
     box-shadow: none;
     border: rgba(var(--color-border), 1) 1px solid;
-    border-radius: var(--emu-border-radius-default, 0); }
+    border-radius: var(--emu-border-radius-default, 0);
+    line-height: initial;
+    font-size: 1.25rem;
+    font-weight: normal; }
+  body.emu.e-body#emu #sidebar #chat #chat-log .message .dice-roll + .dice-roll,
+  body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .dice-roll + .dice-roll {
+    -webkit-margin-before: 0.25rem;
+            margin-block-start: 0.25rem; }
+    .-compact body.emu.e-body#emu #sidebar #chat #chat-log .message .dice-roll + .dice-roll, .-compact
+    body.emu.e-body#emu .sidebar-popout #chat #chat-log .message .dice-roll + .dice-roll {
+      -webkit-margin-before: 0.125rem;
+              margin-block-start: 0.125rem; }
   body.emu.e-body#emu #sidebar #chat #chat-log .message a.entity-link,
   body.emu.e-body#emu #sidebar #chat #chat-log .message a.inline-roll,
   body.emu.e-body#emu .sidebar-popout #chat #chat-log .message a.entity-link,
@@ -6207,8 +6224,6 @@ body.emu.e-body#emu .window-app.filepicker {
     display: grid;
     flex: 1 1 auto;
     grid-auto-flow: row;
-    grid-template-rows: -webkit-max-content;
-    grid-template-rows: max-content;
     -webkit-margin-before: 0.5rem;
             margin-block-start: 0.5rem;
     overflow: hidden;
@@ -6797,6 +6812,15 @@ body.emu.e-body#emu #trait-selector .form-group.stacked label {
   body.emu.e-body#emu #trait-selector .form-group.stacked label + input {
     -webkit-margin-before: 0.25rem;
             margin-block-start: 0.25rem; }
+
+body.emu.e-body#emu .die-result-overlay-br button {
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0; }
+
+body.emu.e-body#emu .die-result-overlay-br.header-overlay-br button {
+  width: 2rem;
+  height: 2rem; }
 
 body.emu.e-body#emu #calendar-time-container,
 body.emu.e-body#emu #calendar-weather-container {
@@ -8608,21 +8632,31 @@ body.emu.e-body#emu .dnd5e.chat-card {
             border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
     -webkit-border-after: rgba(var(--color-border-lighter), 1) 1px solid;
             border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
+    -webkit-margin-after: 0.25rem;
+            margin-block-end: 0.25rem;
     padding: 0.25rem 0; }
     .-compact body.emu.e-body#emu .dnd5e.chat-card .card-header {
+      -webkit-margin-after: 0.125rem;
+              margin-block-end: 0.125rem;
       padding: 0.125rem 0; }
   body.emu.e-body#emu .dnd5e.chat-card .card-footer {
     -webkit-border-before: rgba(var(--color-border-lighter), 1) 1px solid;
             border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
+    -webkit-margin-before: 0.25rem;
+            margin-block-start: 0.25rem;
     -webkit-padding-before: 0.25rem;
             padding-block-start: 0.25rem; }
     .-compact body.emu.e-body#emu .dnd5e.chat-card .card-footer {
+      -webkit-margin-before: 0.125rem;
+              margin-block-start: 0.125rem;
       -webkit-padding-before: 0.125rem;
               padding-block-start: 0.125rem; }
   body.emu.e-body#emu .dnd5e.chat-card .card-buttons {
     margin: 0.25rem 0; }
     .-compact body.emu.e-body#emu .dnd5e.chat-card .card-buttons {
       margin: 0.125rem 0; }
+    body.emu.e-body#emu .dnd5e.chat-card .card-buttons button {
+      border: rgba(var(--color-border), 1) 1px solid; }
 
 body.emu.e-body#emu #sidebar .sidebar-tab .directory-footer .browser-group {
   width: 100%; }

@@ -1,0 +1,11 @@
+.die-result-overlay-br {
+	button {
+		@extend %primary-button;
+		@include size(space("button-xs"));
+		padding: 0;
+	}
+
+	&.header-overlay-br button {
+		@include size(space("button"));
+	}
+}

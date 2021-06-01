@@ -29,6 +29,7 @@
 
 				.message-header {
 					color: inherit;
+					flex-wrap: nowrap;
 					line-height: 1.2;
 					margin-block-end: m("base");
 				}
@@ -40,6 +41,11 @@
 					font-size: fs("sm");
 				}
 
+				.message-sender {
+					overflow: hidden;
+					white-space: initial;
+				}
+
 				.message-metadata {
 					opacity: 0;
 					justify-content: flex-end;
@@ -48,9 +54,21 @@
 
 				.dice-roll .dice-formula,
 				.dice-roll .dice-total {
+					background-color: color("background", 0.1);
 					box-shadow: none;
 					border: b("border");
 					border-radius: $global-border-radius-default;
+					line-height: initial;
+					font-size: fs("xl");
+					font-weight: normal;
+				}
+
+				.dice-roll + .dice-roll {
+					margin-block-start: m("base");
+
+					.-compact & {
+						margin-block-start: m("xs");
+					}
 				}
 
 				a.entity-link,
