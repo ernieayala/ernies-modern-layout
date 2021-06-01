@@ -36,12 +36,13 @@
 
 		.global-control {
 			background-color: color("background", 0.5);
-			border: none;
+			border-block-end: b("border");
 			color: color("text-lightest");
 			display: flex;
 			flex: 0 0 auto;
 			flex-direction: column;
 			line-height: 1;
+			margin: 0;
 			padding: p("sm");
 			position: relative;
 
@@ -60,10 +61,10 @@
 			.playlist-header {
 				background: transparent;
 				border: none;
-				border-block-end: b("border");
+				border-block-end: none;
 				color: color("text-lightest");
 				font-size: fs("lg");
-				padding: 0;
+				padding: p("xs") 0;
 				width: 100%;
 
 				.-compact & {
@@ -192,6 +193,80 @@
 
 					.sound-control {
 						@extend %control-button;
+					}
+				}
+			}
+		}
+
+		#currently-playing {
+			.sound {
+				display: flex;
+				flex: 1 1 100%;
+				flex-wrap: wrap;
+				margin: 0;
+				text-decoration: none;
+				width: 100%;
+
+				+ .sound {
+					border-block-start: b("border");
+					margin-block-start: m("base");
+					padding-block-start: p("sm");
+
+					.-compact & {
+						margin-block-start: m("xs");
+						padding-block-start: p("base");
+					}
+				}
+
+				.sound-name {
+					align-items: center;
+					display: inline-flex;
+					flex: 1 1 auto;
+					overflow: visible;
+					padding: p("base") 0;
+					word-break: normal;
+					white-space: initial;
+				}
+
+				.sound-controls {
+					flex: 0 0 auto;
+					flex-wrap: nowrap;
+					margin: 0;
+					margin-inline-start: m("base");
+					padding: p("base") 0;
+
+					.-compact & {
+						margin-inline-start: m("xs");
+						padding: p("xs") 0;
+					}
+				}
+
+				.sound-control {
+					@extend %control-button;
+				}
+
+				.sound-playback {
+					align-items: center;
+					display: flex;
+					flex: 0 0 100%;
+					padding: p("base") 0;
+
+					.-compact & {
+						padding: p("xs") 0;
+					}
+
+					.sound-timer {
+						color: color("text-lightest");
+						font-size: fs("sm");
+						margin-inline-end: m("sm");
+
+						.-compact & {
+							margin-inline-end: m("base");
+						}
+					}
+
+					.volume-icon {
+						margin-inline-end: m("base");
 					}
 				}
 			}
