@@ -13,9 +13,9 @@
 A clean and themeable visual update for Foundry VTT.
 
 ## Features
-- Theming
-- Dark Mode
+- Theming (includes a dark mode theme)
 - Compact Mode
+- Subtle Layout
 - Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
 
 ## Manifest URL
@@ -32,18 +32,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Only tested on Chrome. Feel free to make a issue on Github for other browsers.
 - This is a fun side project for me and I made it to support my GMing tastes but I'm happy that other people are enjoying it.
 
-### Default Layout
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
      style="max-width: 100%;" />
+     
+### Features Video
+[![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Themed Layout
-<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-primary.jpg"
-     style="max-width: 100%;" />
-
-### Dark Mode Preset
-<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/update-0.2.1.jpg"
-     style="max-width: 100%;" />
-
-### Compact Layout
-<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-compact.jpg"
-     style="max-width: 100%;" />
