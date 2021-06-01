@@ -40,7 +40,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .butto
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu #sidebar div.permission-viewer a,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu #sidebar div.permission-viewer a,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a, body.emu.e-body#emu #RTB-button, body.emu.e-body#emu #smalltime-app #displayContainer .arrow, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear, body.emu.e-body#emu #token-action-hud #tah-reposition,
 body.emu.e-body#emu #token-action-hud #tah-categories, body.emu.e-body#emu #sidebar .token-mold > a,
@@ -105,7 +106,8 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .-compact .combatant-control, .-compact body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-compact .sound-control,
   .-compact body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .-compact .sound-control,
   .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-compact .sound-control,
-  .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-adv-selector .-compact a, .-compact body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .mess-show-toggle .-compact a, .-compact body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu .dmgBtn-container-mqol .-compact button, .-compact body.emu.e-body#emu #sidebar div.permission-viewer a, body.emu.e-body#emu #sidebar div.permission-viewer .-compact a,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-compact .sound-control, .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .-compact .sound-control,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-adv-selector .-compact a, .-compact body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .mess-show-toggle .-compact a, .-compact body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu .dmgBtn-container-mqol .-compact button, .-compact body.emu.e-body#emu #sidebar div.permission-viewer a, body.emu.e-body#emu #sidebar div.permission-viewer .-compact a,
   .-compact body.emu.e-body#emu .sidebar-popout div.permission-viewer a, body.emu.e-body#emu .sidebar-popout div.permission-viewer .-compact a, .-compact body.emu.e-body#emu #RTB-button, body.emu.e-body#emu .-compact #RTB-button, .-compact body.emu.e-body#emu #smalltime-app #displayContainer .arrow, body.emu.e-body#emu #smalltime-app #displayContainer .-compact .arrow, .-compact body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .-compact #clear,
   .-compact body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear, body.emu.e-body#emu #module-management .enhanced-module-management #searchField .-compact #clear, .-compact body.emu.e-body#emu #token-action-hud #tah-reposition, body.emu.e-body#emu #token-action-hud .-compact #tah-reposition,
   .-compact body.emu.e-body#emu #token-action-hud #tah-categories, body.emu.e-body#emu #token-action-hud .-compact #tah-categories, .-compact body.emu.e-body#emu #sidebar .token-mold > a, body.emu.e-body#emu #sidebar .-compact .token-mold > a,
@@ -154,7 +156,8 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control:hover,
   body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control:hover,
   body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control:hover,
-  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a:hover, body.emu.e-body#emu .mess-show-toggle a:hover, body.emu.e-body#emu .dmgBtn-container-mqol button:hover, body.emu.e-body#emu #sidebar div.permission-viewer a:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:hover, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a:hover, body.emu.e-body#emu .mess-show-toggle a:hover, body.emu.e-body#emu .dmgBtn-container-mqol button:hover, body.emu.e-body#emu #sidebar div.permission-viewer a:hover,
   body.emu.e-body#emu .sidebar-popout div.permission-viewer a:hover, body.emu.e-body#emu #RTB-button:hover, body.emu.e-body#emu #smalltime-app #displayContainer .arrow:hover, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear:hover,
   body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear:hover, body.emu.e-body#emu #token-action-hud #tah-reposition:hover,
   body.emu.e-body#emu #token-action-hud #tah-categories:hover, body.emu.e-body#emu #sidebar .token-mold > a:hover,
@@ -205,7 +208,8 @@ body.emu.e-body#emu .dialog--dice-calculator .dice-calculator .dice-calculator--
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:disabled, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control:disabled,
   body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control:disabled,
   body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control:disabled,
-  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:disabled, body.emu.e-body#emu #dfcp-rt-buttons button:disabled, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:disabled, body.emu.e-body#emu .mess-adv-selector a:disabled, body.emu.e-body#emu .mess-show-toggle a:disabled, body.emu.e-body#emu .dmgBtn-container-mqol button:disabled, body.emu.e-body#emu #sidebar div.permission-viewer a:disabled,
+  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:disabled, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control:disabled,
+  body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control:disabled, body.emu.e-body#emu #dfcp-rt-buttons button:disabled, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:disabled, body.emu.e-body#emu .mess-adv-selector a:disabled, body.emu.e-body#emu .mess-show-toggle a:disabled, body.emu.e-body#emu .dmgBtn-container-mqol button:disabled, body.emu.e-body#emu #sidebar div.permission-viewer a:disabled,
   body.emu.e-body#emu .sidebar-popout div.permission-viewer a:disabled, body.emu.e-body#emu #RTB-button:disabled, body.emu.e-body#emu #smalltime-app #displayContainer .arrow:disabled, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear:disabled,
   body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear:disabled, body.emu.e-body#emu #token-action-hud #tah-reposition:disabled,
   body.emu.e-body#emu #token-action-hud #tah-categories:disabled, body.emu.e-body#emu #sidebar .token-mold > a:disabled,
@@ -257,7 +261,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .butto
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu #sidebar div.permission-viewer a,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu #sidebar div.permission-viewer a,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a, body.emu.e-body#emu #RTB-button, body.emu.e-body#emu #smalltime-app #displayContainer .arrow, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear, body.emu.e-body#emu #token-action-hud #tah-reposition,
 body.emu.e-body#emu #token-action-hud #tah-categories, body.emu.e-body#emu #sidebar .token-mold > a,
@@ -292,7 +297,8 @@ body.emu.e-body#emu .sidebar-popout .token-mold > a {
   .-compact .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control, .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .-compact .combatant-control, .-compact body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-compact .sound-control,
   .-compact body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .-compact .sound-control,
   .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-compact .sound-control,
-  .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-adv-selector .-compact a, .-compact body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .mess-show-toggle .-compact a, .-compact body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu .dmgBtn-container-mqol .-compact button, .-compact body.emu.e-body#emu #sidebar div.permission-viewer a, body.emu.e-body#emu #sidebar div.permission-viewer .-compact a,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control, body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-compact .sound-control, .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .-compact .sound-control,
+  .-compact body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control, body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .-compact .sound-control, .-compact body.emu.e-body#emu #dfcp-rt-buttons button, body.emu.e-body#emu #dfcp-rt-buttons .-compact button, .-compact body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .-compact .fas.fa-dice-d20, .-compact body.emu.e-body#emu .mess-adv-selector a, body.emu.e-body#emu .mess-adv-selector .-compact a, .-compact body.emu.e-body#emu .mess-show-toggle a, body.emu.e-body#emu .mess-show-toggle .-compact a, .-compact body.emu.e-body#emu .dmgBtn-container-mqol button, body.emu.e-body#emu .dmgBtn-container-mqol .-compact button, .-compact body.emu.e-body#emu #sidebar div.permission-viewer a, body.emu.e-body#emu #sidebar div.permission-viewer .-compact a,
   .-compact body.emu.e-body#emu .sidebar-popout div.permission-viewer a, body.emu.e-body#emu .sidebar-popout div.permission-viewer .-compact a, .-compact body.emu.e-body#emu #RTB-button, body.emu.e-body#emu .-compact #RTB-button, .-compact body.emu.e-body#emu #smalltime-app #displayContainer .arrow, body.emu.e-body#emu #smalltime-app #displayContainer .-compact .arrow, .-compact body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .-compact #clear,
   .-compact body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear, body.emu.e-body#emu #module-management .enhanced-module-management #searchField .-compact #clear, .-compact body.emu.e-body#emu #token-action-hud #tah-reposition, body.emu.e-body#emu #token-action-hud .-compact #tah-reposition,
   .-compact body.emu.e-body#emu #token-action-hud #tah-categories, body.emu.e-body#emu #token-action-hud .-compact #tah-categories, .-compact body.emu.e-body#emu #sidebar .token-mold > a, body.emu.e-body#emu #sidebar .-compact .token-mold > a,
@@ -2868,7 +2874,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .butto
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:hover, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control:hover,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control:hover,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control:hover,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a:hover, body.emu.e-body#emu .mess-show-toggle a:hover, body.emu.e-body#emu .dmgBtn-container-mqol button:hover, body.emu.e-body#emu #sidebar div.permission-viewer a:hover,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:hover, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control:hover,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a:hover, body.emu.e-body#emu .mess-show-toggle a:hover, body.emu.e-body#emu .dmgBtn-container-mqol button:hover, body.emu.e-body#emu #sidebar div.permission-viewer a:hover,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a:hover, body.emu.e-body#emu #RTB-button:hover, body.emu.e-body#emu #smalltime-app #displayContainer .arrow:hover, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear:hover,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear:hover, body.emu.e-body#emu #token-action-hud #tah-reposition:hover,
 body.emu.e-body#emu #token-action-hud #tah-categories:hover, body.emu.e-body#emu #sidebar .token-mold > a:hover,
@@ -3145,7 +3152,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .butto
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control:focus, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control:focus,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control:focus,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control:focus,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:focus, body.emu.e-body#emu .mess-adv-selector a:focus, body.emu.e-body#emu .mess-show-toggle a:focus, body.emu.e-body#emu .dmgBtn-container-mqol button:focus, body.emu.e-body#emu #sidebar div.permission-viewer a:focus,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control:focus, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-control:focus,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .fas.fa-dice-d20:focus, body.emu.e-body#emu .mess-adv-selector a:focus, body.emu.e-body#emu .mess-show-toggle a:focus, body.emu.e-body#emu .dmgBtn-container-mqol button:focus, body.emu.e-body#emu #sidebar div.permission-viewer a:focus,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a:focus, body.emu.e-body#emu #RTB-button:focus, body.emu.e-body#emu #smalltime-app #displayContainer .arrow:focus, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField #clear:focus,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField #clear:focus, body.emu.e-body#emu #token-action-hud #tah-reposition:focus,
 body.emu.e-body#emu #token-action-hud #tah-categories:focus, body.emu.e-body#emu #sidebar .token-mold > a:focus,
@@ -3401,7 +3409,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .activ
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:focus, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .active.sound-control:focus,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .active.sound-control:focus,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .active.sound-control:focus,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button.active:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:focus, body.emu.e-body#emu .mess-adv-selector a.active:focus, body.emu.e-body#emu .mess-show-toggle a.active:focus, body.emu.e-body#emu .dmgBtn-container-mqol button.active:focus, body.emu.e-body#emu #sidebar div.permission-viewer a.active:focus,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control:focus, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .active.sound-control:focus,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .active.sound-control:focus, body.emu.e-body#emu #dfcp-rt-buttons button.active:focus, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:focus, body.emu.e-body#emu .mess-adv-selector a.active:focus, body.emu.e-body#emu .mess-show-toggle a.active:focus, body.emu.e-body#emu .dmgBtn-container-mqol button.active:focus, body.emu.e-body#emu #sidebar div.permission-viewer a.active:focus,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a.active:focus, body.emu.e-body#emu .active#RTB-button:focus, body.emu.e-body#emu #smalltime-app #displayContainer .active.arrow:focus, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .active#clear:focus,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField .active#clear:focus, body.emu.e-body#emu #token-action-hud .active#tah-reposition:focus,
 body.emu.e-body#emu #token-action-hud .active#tah-categories:focus, body.emu.e-body#emu #sidebar .token-mold > a.active:focus,
@@ -3468,7 +3477,8 @@ body.emu.e-body#emu .sidebar-popout #chat #chat-controls .control-buttons .activ
 .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .active.sound-control,
 body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .active.sound-control,
 body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .active.sound-control,
-body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control, body.emu.e-body#emu #dfcp-rt-buttons button.active, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a.active, body.emu.e-body#emu .mess-show-toggle a.active, body.emu.e-body#emu .dmgBtn-container-mqol button.active, body.emu.e-body#emu #sidebar div.permission-viewer a.active,
+body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .active.sound-control,
+body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .active.sound-control, body.emu.e-body#emu #dfcp-rt-buttons button.active, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20, body.emu.e-body#emu .mess-adv-selector a.active, body.emu.e-body#emu .mess-show-toggle a.active, body.emu.e-body#emu .dmgBtn-container-mqol button.active, body.emu.e-body#emu #sidebar div.permission-viewer a.active,
 body.emu.e-body#emu .sidebar-popout div.permission-viewer a.active, body.emu.e-body#emu .active#RTB-button, body.emu.e-body#emu #smalltime-app #displayContainer .active.arrow, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .active#clear,
 body.emu.e-body#emu #module-management .enhanced-module-management #searchField .active#clear, body.emu.e-body#emu #token-action-hud .active#tah-reposition,
 body.emu.e-body#emu #token-action-hud .active#tah-categories, body.emu.e-body#emu #sidebar .token-mold > a.active,
@@ -3528,7 +3538,8 @@ body.emu.e-body#emu #lmrtfy form .lmrtfy-skill input[type=checkbox]:checked + la
   .-emu-sidebar-combat body.emu.e-body#emu .sidebar-popout #combat #combat-tracker .combatant .active.combatant-control:hover, body.emu.e-body#emu #sidebar #playlists .directory-list .playlist-header .sound-controls .active.sound-control:hover,
   body.emu.e-body#emu #sidebar #playlists .directory-list .sound .sound-controls .active.sound-control:hover,
   body.emu.e-body#emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .active.sound-control:hover,
-  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button.active:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a.active:hover, body.emu.e-body#emu .mess-show-toggle a.active:hover, body.emu.e-body#emu .dmgBtn-container-mqol button.active:hover, body.emu.e-body#emu #sidebar div.permission-viewer a.active:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists .directory-list .sound .sound-controls .active.sound-control:hover, body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .active.sound-control:hover,
+  body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .active.sound-control:hover, body.emu.e-body#emu #dfcp-rt-buttons button.active:hover, body.emu.e-body#emu #sidebar #chat #chat-controls .roll-type-select .active.fas.fa-dice-d20:hover, body.emu.e-body#emu .mess-adv-selector a.active:hover, body.emu.e-body#emu .mess-show-toggle a.active:hover, body.emu.e-body#emu .dmgBtn-container-mqol button.active:hover, body.emu.e-body#emu #sidebar div.permission-viewer a.active:hover,
   body.emu.e-body#emu .sidebar-popout div.permission-viewer a.active:hover, body.emu.e-body#emu .active#RTB-button:hover, body.emu.e-body#emu #smalltime-app #displayContainer .active.arrow:hover, body.emu.e-body#emu #client-settings #config-tabs div.tab[data-tab="modules"] #searchField .active#clear:hover,
   body.emu.e-body#emu #module-management .enhanced-module-management #searchField .active#clear:hover, body.emu.e-body#emu #token-action-hud .active#tah-reposition:hover,
   body.emu.e-body#emu #token-action-hud .active#tah-categories:hover, body.emu.e-body#emu #sidebar .token-mold > a.active:hover,
@@ -5646,12 +5657,14 @@ body.emu.e-body#emu .sidebar-popout #playlists {
   body.emu.e-body#emu #sidebar #playlists .global-control,
   body.emu.e-body#emu .sidebar-popout #playlists .global-control {
     background-color: rgba(var(--color-background), 0.5);
-    border: none;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     color: rgba(var(--color-text-lightest), 1);
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     line-height: 1;
+    margin: 0;
     padding: 0.5rem;
     position: relative; }
     .-compact body.emu.e-body#emu #sidebar #playlists .global-control, .-compact
@@ -5666,11 +5679,11 @@ body.emu.e-body#emu .sidebar-popout #playlists {
     body.emu.e-body#emu .sidebar-popout #playlists .global-control .playlist-header {
       background: transparent;
       border: none;
-      -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
-              border-block-end: rgba(var(--color-border), 1) 1px solid;
+      -webkit-border-after: none;
+              border-block-end: none;
       color: rgba(var(--color-text-lightest), 1);
       font-size: 1rem;
-      padding: 0;
+      padding: 0.125rem 0;
       width: 100%; }
       .-compact body.emu.e-body#emu #sidebar #playlists .global-control .playlist-header, .-compact
       body.emu.e-body#emu .sidebar-popout #playlists .global-control .playlist-header {
@@ -5785,6 +5798,73 @@ body.emu.e-body#emu .sidebar-popout #playlists {
         -webkit-margin-start: 0.125rem;
                 margin-inline-start: 0.125rem;
         padding: 0.125rem 0; }
+  body.emu.e-body#emu #sidebar #playlists #currently-playing .sound,
+  body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound {
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    text-decoration: none;
+    width: 100%; }
+    body.emu.e-body#emu #sidebar #playlists #currently-playing .sound + .sound,
+    body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound + .sound {
+      -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+              border-block-start: rgba(var(--color-border), 1) 1px solid;
+      -webkit-margin-before: 0.25rem;
+              margin-block-start: 0.25rem;
+      -webkit-padding-before: 0.5rem;
+              padding-block-start: 0.5rem; }
+      .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound + .sound, .-compact
+      body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound + .sound {
+        -webkit-margin-before: 0.125rem;
+                margin-block-start: 0.125rem;
+        -webkit-padding-before: 0.25rem;
+                padding-block-start: 0.25rem; }
+    body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-name,
+    body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-name {
+      align-items: center;
+      display: inline-flex;
+      flex: 1 1 auto;
+      overflow: visible;
+      padding: 0.25rem 0;
+      word-break: normal;
+      white-space: initial; }
+    body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-controls,
+    body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-controls {
+      flex: 0 0 auto;
+      flex-wrap: nowrap;
+      margin: 0;
+      -webkit-margin-start: 0.25rem;
+              margin-inline-start: 0.25rem;
+      padding: 0.25rem 0; }
+      .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-controls, .-compact
+      body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-controls {
+        -webkit-margin-start: 0.125rem;
+                margin-inline-start: 0.125rem;
+        padding: 0.125rem 0; }
+    body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-playback,
+    body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-playback {
+      align-items: center;
+      display: flex;
+      flex: 0 0 100%;
+      padding: 0.25rem 0; }
+      .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-playback, .-compact
+      body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-playback {
+        padding: 0.125rem 0; }
+      body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-playback .sound-timer,
+      body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .sound-timer {
+        color: rgba(var(--color-text-lightest), 1);
+        font-size: 0.75rem;
+        -webkit-margin-end: 0.5rem;
+                margin-inline-end: 0.5rem; }
+        .-compact body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-playback .sound-timer, .-compact
+        body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .sound-timer {
+          -webkit-margin-end: 0.25rem;
+                  margin-inline-end: 0.25rem; }
+      body.emu.e-body#emu #sidebar #playlists #currently-playing .sound .sound-playback .volume-icon,
+      body.emu.e-body#emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .volume-icon {
+        -webkit-margin-end: 0.25rem;
+                margin-inline-end: 0.25rem; }
 
 body.emu.e-body#emu #sidebar #compendium > .directory-list,
 body.emu.e-body#emu .sidebar-popout #compendium > .directory-list {
