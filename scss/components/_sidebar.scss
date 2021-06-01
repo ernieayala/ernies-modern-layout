@@ -192,6 +192,10 @@
 					@include ellipsis;
 					flex: 1 1 48%;
 					width: auto;
+
+					> i {
+						font-size: fs("md");
+					}
 				}
 			}
 		}
@@ -207,6 +211,10 @@
 				@include ellipsis;
 				flex: 1 1 48%;
 				width: auto;
+
+				> i {
+					font-size: fs("md");
+				}
 			}
 		}
 	}

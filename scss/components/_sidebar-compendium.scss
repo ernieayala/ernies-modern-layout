@@ -1,124 +1,84 @@
 #sidebar,
 .sidebar-popout {
 	#compendium {
-		.compendium-entity {
-			@extend %reset-list;
-			padding: p("base") p("sm");
-			width: 100%;
+		> .directory-list {
+			@extend %directory-list;
+			padding: p("sm");
 
 			.-compact & {
 				padding: p("base");
 			}
+		}
 
-			> h3 {
-				@extend %h-tag;
-				@include ellipsis;
+		.directory-item {
+			@extend %directory-item;
+			flex-wrap: wrap;
+			margin: m("base");
+
+			&.folder {
+				@extend %folder;
+			}
+
+			h4 {
+				align-items: center;
+				display: flex;
+				width: 100%;
+
+				.status-icons {
+					color: color("text-lightest");
+					position: relative;
+
+					i {
+						margin: 0;
+						margin-inline-start: m("base");
+					}
+				}
+			}
+
+			.compendium-footer {
+				color: color("text-lightest");
+				flex: 0 0 auto;
+				font-size: fs("md");
+				padding-block-end: m("sm");
+				width: 100%;
+
+				.-compact & {
+					padding-block-end: m("base");
+				}
+			}
+		}
+
+		.compendium-type {
+			background-color: color("folder-subdirectory");
+			display: flex;
+			flex-direction: column;
+			margin-block-end: m("base");
+
+			.-compact & {
+				margin-block-end: m("xs");
+			}
+
+			h3 {
 				align-items: center;
 				background-color: color("folder-header");
-				border: none;
+				background-image: $global-image-background-darkest;
+				border: 0;
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				color: color("text");
+				cursor: default;
 				display: flex;
-				flex: 1 1 auto;
 				flex-wrap: nowrap;
 				font-size: fs("lg");
+				line-height: 1;
 				min-height: to-rem(32px);
 				padding: p("base") p("sm");
+				position: relative;
 				transition: t(background box-shadow color, "link");
 				width: 100%;
 
 				.-compact & {
 					min-height: to-rem(24px);
 					padding: p("base");
-				}
-			}
-
-			> .compendium-list {
-				@extend %reset-list;
-				background-color: color("folder-subdirectory");
-				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
-				display: flex;
-				flex-direction: column;
-				width: 100%;
-
-				.compendium-pack {
-					align-items: center;
-					background-color: color("folder-directory");
-					border: none;
-					border-radius: $global-border-radius-default;
-					color: color("text-lightest");
-					cursor: pointer;
-					flex-wrap: wrap;
-					margin: m("base");
-					margin-block-end: 0;
-					min-height: to-rem(32px);
-					padding: p("base") p("sm");
-					position: relative;
-					transition: t(background box-shadow color, "link");
-
-					.-compact & {
-						min-height: to-rem(24px);
-						padding: p("base");
-					}
-
-					&:last-child {
-						margin-block-end: m("base");
-					}
-
-					&:hover {
-						@extend %global-hover;
-						background-color: color("primary");
-						color: color("text-lightest");
-					}
-
-					&:focus {
-						@extend %global-focus;
-					}
-
-					h4 {
-						@extend %h-tag;
-						color: color("text-lightest");
-						display: flex;
-						font-size: fs("lg");
-						width: 100%;
-
-						a {
-							@include ellipsis;
-							align-items: center;
-							display: flex;
-							flex: 1 1 auto;
-							margin-inline-end: m("sm");
-							text-shadow: none;
-
-							.-compact & {
-								margin-inline-end: m("base");
-							}
-
-							.folder {
-								padding: 0;
-								margin-inline-end: m("base");
-								width: auto;
-							}
-						}
-
-						.status-icons {
-							color: color("text-lightest");
-							flex: 0 0 auto;
-							position: relative;
-							right: auto;
-
-							> i {
-								margin: 0;
-								padding: p("xs");
-								font-size: fs("md");
-							}
-						}
-					}
-
-					.compendium-footer {
-						@include ellipsis;
-						width: 100%;
-					}
 				}
 			}
 		}
