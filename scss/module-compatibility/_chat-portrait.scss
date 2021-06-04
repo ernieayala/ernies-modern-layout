@@ -1,0 +1,6 @@
+#chat-log .message .message-header img {
+	@include layout {
+		margin: m("xs") 0;
+		margin-inline-end: m("base");
+	}
+}

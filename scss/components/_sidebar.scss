@@ -1,30 +1,36 @@
 #sidebar,
 .sidebar-popout {
-	@include fixed(top space(sm) right 0);
-	@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
 	background-color: color("background-darkest", 0.8);
 	background-image: $global-image-background-darkest;
 	border: b("border");
 	border-inline-end: none;
 	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 	box-shadow: none;
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-	overflow: hidden;
 	transition: t(opacity, "link");
-	z-index: z(fixed);
 
-	.-compact & {
+	@include layout {
+		@include fixed(top space(sm) right 0);
+		@include size(to-rem(320px), calc(100% - #{to-rem(16px)}));
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		z-index: z(fixed);
+	}
+
+	@include layout(compact) {
 		@include size(to-rem(296px), calc(100% - #{to-rem(8px)}));
 		top: space("base");
 	}
 
 	&.collapsed {
-		height: auto !important;
-		width: to-rem(32px) !important;
+		@include layout {
+			height: auto !important;
+			width: to-rem(32px) !important;
+		}
 
-		.-emu-subtle-layout & {
+		@include layout-subtle {
 			opacity: $global-subtle-opacity;
 
 			&:hover {
@@ -33,7 +39,11 @@
 		}
 
 		#sidebar-tabs {
-			flex-wrap: wrap;
+			border-block-end: none;
+
+			@include layout {
+				flex-wrap: wrap;
+			}
 
 			> .collapse {
 				border-radius: 0 0 0 $global-border-radius-default;
@@ -42,38 +52,47 @@
 
 		.sidebar-tab,
 		.sidebar-tab.active {
-			display: none;
+			@include layout {
+				display: none;
+			}
 		}
 	}
 
 	#sidebar-tabs {
 		border-block-end: b("border");
 		box-shadow: none;
-		display: flex;
-		flex: 0 0 auto;
-		flex-wrap: nowrap;
-		font-size: fs("sm");
-		margin: 0;
-		position: relative;
 		transition: t(background box-shadow color, "link");
+
+		@include layout {
+			display: flex;
+			flex: 0 0 auto;
+			flex-wrap: nowrap;
+			font-size: fs("sm");
+			margin: 0;
+			position: relative;
+		}
 
 		> .item,
 		> .collapse {
-			align-items: center;
 			border: none;
 			border-radius: 0;
 			box-shadow: none;
 			color: color("text-lightest");
-			cursor: pointer;
-			display: flex;
-			flex: 1 1 20%;
-			justify-content: center;
-			line-height: initial;
-			padding: p("sm");
-			position: relative;
 			transition: t(box-shadow color, "link");
 
-			.-compact & {
+			@include layout {
+				align-items: center;
+				cursor: pointer;
+				display: flex;
+				flex: 1 1 20%;
+				font-size: fs("sm");
+				justify-content: center;
+				line-height: initial;
+				padding: p("sm");
+				position: relative;
+			}
+
+			@include layout(compact) {
 				padding: p("base");
 			}
 
@@ -83,6 +102,12 @@
 
 			&.active {
 				@extend %global-active;
+				border-radius: 0;
+				border: none;
+
+				&:first-child {
+					border-radius: $global-border-radius-default 0 0 0;
+				}
 			}
 
 			&:first-child {
@@ -90,39 +115,57 @@
 			}
 
 			> i {
-				position: relative;
-				z-index: z("above");
+				@include layout {
+					margin: 0;
+					position: relative;
+					z-index: z("above");
+				}
 			}
 
 			.notification-pip {
-				@extend %notification-pip;
-				@include absolute(zero);
+				background-color: color("primary");
 
-				&::before {
+				@include layout {
+					@include absolute(zero);
+					animation-duration: time("x-slow");
+					animation-iteration-count: infinite;
+					animation-name: emu-notification-flash;
+					animation-timing-function: map-get($_default-transitions, "shift");
 					display: none;
+					opacity: 0;
+					pointer-events: none;
+					z-index: 0;
+
+					&::before {
+						display: none;
+					}
 				}
 			}
 		}
 	}
 
 	.window-content .sidebar-tab {
-		display: flex;
+		@include layout {
+			display: flex;
+		}
 	}
 
 	.sidebar-tab {
-		display: none;
-		flex: 1 1 auto;
-		flex-direction: column;
-		height: 100%;
-		min-height: to-rem(200px);
-		position: relative;
+		@include layout {
+			display: none;
+			flex: 1 1 auto;
+			flex-direction: column;
+			height: 100%;
+			min-height: to-rem(200px);
+			position: relative;
 
-		.-compact & {
-			min-height: to-rem(176px);
+			&.active {
+				display: flex;
+			}
 		}
 
-		&.active {
-			display: flex;
+		@include layout(compact) {
+			min-height: to-rem(176px);
 		}
 
 		.directory-header,
@@ -130,67 +173,13 @@
 			@extend %panel-block;
 		}
 
-		.directory-header {
-			border-block-end: b("border");
-			flex-direction: column;
-
-			.header-search {
-				@extend %button-icon;
-				align-items: center;
-				display: flex;
-				flex: 1 1 auto;
-				flex-wrap: nowrap;
-				position: relative;
-				width: 100%;
-
-				> i {
-					flex: 0 0 auto;
-				}
-
-				input {
-					@extend %input-text;
-					background-color: color("white");
-					flex: 1 1 auto;
-				}
-			}
-
-			.header-control {
-				@extend %secondary-button;
-				@include size(to-rem(32px));
-				flex: 0 0 auto;
-				margin-inline-start: m("base");
-
-				.-compact & {
-					margin-inline-start: m("xs");
-				}
-			}
-
-			.header-actions {
-				align-items: center;
-				display: flex;
-				flex: 0 0 auto;
-				margin-block-end: m("sm");
-				position: relative;
-				width: 100%;
-
-				&:only-child {
-					margin-block-end: 0;
-				}
-
-				.-compact & {
-					margin-block-end: m("xs");
-
-					&:only-child {
-						margin-block-end: 0;
-					}
-				}
-
-				button {
-					@extend %primary-button;
-					@extend %button-row;
-					@extend %button-icon;
+		.directory-header .header-actions,
+		.directory-footer {
+			button {
+				@include layout {
 					@include ellipsis;
-					flex: 1 1 48%;
+					height: auto;
+					line-height: 1;
 					width: auto;
 
 					> i {
@@ -200,42 +189,106 @@
 			}
 		}
 
+		.directory-header {
+			border-block-end: b("border");
+
+			@include layout {
+				flex-direction: column;
+			}
+
+			.header-search {
+				@include layout {
+					@extend %button-icon-spacing;
+					align-items: center;
+					display: flex;
+					flex: 1 1 auto;
+					flex-wrap: nowrap;
+					position: relative;
+					width: 100%;
+
+					> i {
+						flex: 0 0 auto;
+					}
+				}
+
+				input {
+					background-color: color("white");
+
+					@include layout {
+						flex: 1 1 auto;
+						margin: 0;
+					}
+				}
+			}
+
+			.header-control {
+				@extend %default-button;
+
+				@include layout {
+					@include size(to-rem(32px));
+					flex: 0 0 auto;
+					margin-inline-start: m("base");
+				}
+
+				@include layout(compact) {
+					margin-inline-start: m("xs");
+				}
+			}
+
+			.header-actions {
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+					margin-block-end: m("sm");
+					position: relative;
+					width: 100%;
+
+					&:only-child {
+						margin-block-end: 0;
+					}
+				}
+
+				@include layout(compact) {
+					margin-block-end: m("xs");
+
+					&:only-child {
+						margin-block-end: 0;
+					}
+				}
+			}
+		}
+
 		.directory-footer {
 			border-block-start: b("border");
-			flex-wrap: wrap;
 
-			button {
-				@extend %primary-button;
-				@extend %button-row;
-				@extend %button-icon;
-				@include ellipsis;
-				flex: 1 1 48%;
-				width: auto;
-
-				> i {
-					font-size: fs("md");
-				}
+			@include layout {
+				flex-wrap: wrap;
 			}
 		}
 	}
 
 	> .directory-list {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.directory-list {
-		@extend %directory-list;
-		max-height: 100%;
+		@include layout {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
 
 .sidebar-popout {
 	border-radius: $global-border-radius-default;
-	height: auto;
-	min-height: to-rem(400px);
 
-	.-compact & {
+	@include layout {
+		height: auto;
+		min-height: to-rem(400px);
+
+		.window-content {
+			padding: 0;
+		}
+	}
+
+	@include layout(compact) {
 		height: auto;
 		min-height: to-rem(300px);
 	}

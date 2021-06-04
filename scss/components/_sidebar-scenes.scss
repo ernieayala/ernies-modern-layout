@@ -2,46 +2,72 @@
 .sidebar-popout {
 	#scenes {
 		.directory-list {
-			@extend %directory-subdirectory;
-		}
+			@include layout {
+				padding-block-start: p("base");
+			}
 
-		.directory-item {
-			@extend %directory-item;
+			.subdirectory {
+				border-inline-start: b("primary", 4px);
 
-			&.folder {
-				@extend %folder;
+				.subdirectory {
+					border-inline-start: b("orange-700", 4px);
+
+					.subdirectory {
+						border-inline-start: b("orange-900", 4px);
+					}
+				}
 			}
 		}
 
 		.scene {
 			background-position: 50%;
 			background-size: cover;
+			border: none;
+			box-shadow: none;
+
+			@include layout {
+				height: auto;
+				line-height: 1;
+			}
+
+			@include layout-scene-thumbs {
+				background-image: none !important;
+			}
 
 			&:hover {
 				background-position: 50%;
 				background-size: cover;
 			}
 
-			h3 > a {
-				padding: p("sm") 0;
-				text-shadow: $global-text-shadow;
+			&.context {
+				@include layout {
+					margin-block-start: m("base");
+				}
 
-				.-compact & {
-					padding: p("base") 0;
+				@include layout(compact) {
+					margin-block-start: m("xs");
 				}
 			}
-		}
 
-		:not(.-emu-scene-thumbs) & {
-			.scene {
-				background-image: none !important;
+			h3 {
+				text-shadow: none;
 
-				h3 > a {
-					padding: 0;
-					text-shadow: none;
+				@include layout {
+					font-size: fs("lg");
+					line-height: 1;
+					text-align: start;
+				}
 
-					.-compact & {
+				> a {
+					text-shadow: $global-text-shadow;
+
+					@include layout {
+						padding: p("sm") 0;
+					}
+
+					@include layout-scene-thumbs {
 						padding: 0;
+						text-shadow: none;
 					}
 				}
 			}

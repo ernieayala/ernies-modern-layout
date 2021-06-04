@@ -1,0 +1,21 @@
+.sheet[id*="combatant-config-"] {
+	.form-group + footer {
+		@include layout {
+			margin-block-start: m("sm");
+		}
+
+		@include layout(compact) {
+			margin-block-start: m("base");
+		}
+	}
+
+	.form-fields {
+		label.checkbox {
+			input[type="checkbox"] {
+				@include layout {
+					margin-inline-end: m("base");
+				}
+			}
+		}
+	}
+}

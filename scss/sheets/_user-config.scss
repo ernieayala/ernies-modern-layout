@@ -1,0 +1,52 @@
+.sheet.user-config {
+	.form-group {
+		label {
+			@include layout {
+				font-weight: normal;
+			}
+		}
+	}
+
+	.form-group.stacked {
+		@include layout {
+			align-items: initial;
+			flex-direction: row;
+
+			label {
+				flex: 0 0 auto;
+				justify-content: flex-start;
+
+				#available-characters {
+					padding-block-start: p("base");
+				}
+			}
+
+			.directory-list {
+				max-height: 100%;
+				width: 100%;
+			}
+		}
+	}
+
+	.directory-item {
+		border: none;
+		box-shadow: none;
+
+		@include layout {
+			margin-inline-start: 0;
+			margin-inline-end: 0;
+		}
+
+		&.context {
+			@extend %global-active;
+		}
+
+		label {
+			color: color("text");
+
+			@include layout {
+				font-weight: normal;
+			}
+		}
+	}
+}

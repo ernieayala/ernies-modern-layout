@@ -8,14 +8,22 @@
 	}
 }
 
-%button-icon {
-	> i {
-		margin-inline-end: m("sm");
+%button-icon-spacing {
+	@include layout {
+		> i {
+			margin-inline-end: m("sm");
+		}
+	}
 
-		.-compact & {
+	@include layout(compact) {
+		> i {
 			margin-inline-end: m("base");
 		}
 	}
+}
+
+%button-icon {
+	@extend %button-icon-spacing;
 }
 
 %reset-image {
@@ -43,15 +51,11 @@
 }
 
 %notification-pip {
-	@keyframes notification-flash {
-		0% { opacity: 0; }
-		50% { opacity: 1; }
-		100% { opacity: 0; }
-	}
+
 
 	animation-duration: time("x-slow");
 	animation-iteration-count: infinite;
-	animation-name: notification-flash;
+	animation-name: emu-notification-flash;
 	animation-timing-function: map-get($_default-transitions, "shift");
 	background-color: color("primary");
 	display: none;

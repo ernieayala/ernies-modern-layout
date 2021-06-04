@@ -1,21 +1,30 @@
 %modal-tabs {
 	border-block-start: none;
 	border-block-end: b("primary", 2px);
-	display: flex;
-	flex: 0 0 auto;
-	height: initial;
-	line-height: initial;
-	margin: 0;
-	position: relative;
+
+	@include layout {
+		display: flex;
+		flex: 0 0 auto;
+		height: initial;
+		line-height: initial;
+		margin: 0;
+		position: relative;
+	}
 
 	a {
 		@extend %primary-button;
-		@extend %button-icon;
-		background: transparent;
+		background-color: transparent;
 		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text");
-		flex: 1;
-		font-size: fs("md");
-		text-shadow: none;
+
+		@include layout {
+			flex: 1;
+			font-size: fs("md");
+			text-shadow: none;
+		}
+
+		&.active {
+			@extend %global-active;
+		}
 	}
 }

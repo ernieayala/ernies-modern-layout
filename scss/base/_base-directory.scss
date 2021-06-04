@@ -1,0 +1,331 @@
+.directory {
+	.directory-list {
+		@include layout {
+			@extend %reset-list;
+			flex: 1 1 auto;
+			max-height: 100%;
+			min-height: to-rem(1px);
+			overflow-y: auto;
+		}
+
+		.subdirectory {
+			background-color: color("folder-subdirectory");
+			background-image: $global-image-background-light;
+			border: none;
+			border-inline-start: b("primary", 4px);
+
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
+
+			.directory-item.folder {
+				@include layout {
+					padding-block-end: p("base");
+					padding-inline-end: 0;
+				}
+
+				@include layout(compact) {
+					padding-block-end: p("base");
+					padding-inline-end: 0;
+				}
+
+				+ .directory-item.folder {
+					@include layout {
+						padding-block-start: 0;
+					}
+
+					@include layout(compact) {
+						padding-block-start: 0;
+					}
+				}
+
+				+ .directory-item:not(.folder) {
+					@include layout {
+						margin-block-start: 0;
+					}
+
+					@include layout(compact) {
+						margin-block-start: 0;
+					}
+				}
+			}
+
+			.directory-item:not(.folder) {
+				+ .directory-item:not(.folder) {
+					@include layout {
+						margin-block-start: 0;
+					}
+
+					@include layout(compact) {
+						margin-block-start: 0;
+					}
+				}
+			}
+
+			.subdirectory {
+				border-inline-start: b("orange-700", 4px);
+
+				.subdirectory {
+					border-inline-start: b("orange-900", 4px);
+				}
+			}
+		}
+	}
+
+	.directory-item {
+		background-color: color("folder-directory");
+		background-image: $global-image-background-controls;
+		border-block-end: b("border");
+		border-radius: $global-border-radius-default;
+		box-shadow: none;
+		color: color("text-lightest");
+		transition: t(background box-shadow color, "link");
+
+		@include layout {
+			align-items: center;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			flex-wrap: nowrap;
+			height: auto;
+			line-height: 1;
+			margin: m("base") m("sm");
+			min-height: to-rem(32px);
+			padding: 0 p("sm");
+			position: relative;
+			width: auto;
+		}
+
+		@include layout(compact) {
+			margin: m("base");
+			min-height: to-rem(24px);
+			padding: 0 p("base");
+		}
+
+		&:hover {
+			@extend %global-hover;
+			background-color: color("primary");
+			background-image: none;
+			color: color("text-lightest");
+		}
+
+		&:focus {
+			@extend %global-focus;
+			background-image: none;
+		}
+
+		&.entity {
+			border: none;
+		}
+
+		&.context {
+			border: none;
+			box-shadow: none;
+		}
+
+		&.folder {
+			background: transparent;
+
+			@include layout {
+				cursor: default;
+				display: flex;
+				flex-direction: column;
+				margin: 0;
+				padding-block-start: p("base");
+				padding-block-end: 0;
+				padding-inline-start: p("sm");
+				padding-inline-end: p("sm");
+				position: relative;
+				width: 100%;
+			}
+
+			@include layout(compact) {
+				padding-inline-start: p("base");
+				padding-inline-end: p("base");
+			}
+
+			&:hover,
+			&:focus {
+				background: transparent;
+				box-shadow: none;
+			}
+
+			&.collapsed {
+				> .folder-header {
+					border-inline-start: none;
+
+					.create-folder {
+						@include layout {
+							display: none;
+						}
+					}
+
+					h3 {
+						i::before {
+							@include layout {
+								content: "\f07b";
+							}
+						}
+					}
+				}
+
+				.subdirectory {
+					@include layout {
+						display: none;
+					}
+
+					.folder-header {
+						border-inline-start: none;
+					}
+				}
+			}
+
+			.folder-header {
+				background-color: color("folder-header");
+				background-image: $global-image-background-darkest;
+				border: 0;
+				border-inline-start: b("primary", 4px);
+				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+				color: color("text");
+				transition: t(background box-shadow color, "link");
+
+				@include layout {
+					align-items: center;
+					cursor: pointer;
+					display: flex;
+					flex-wrap: nowrap;
+					line-height: 1;
+					min-height: to-rem(32px);
+					padding: p("base") p("sm");
+					position: relative;
+					width: 100%;
+				}
+
+				@include layout(compact) {
+					min-height: to-rem(24px);
+					padding: p("base");
+				}
+
+				&:hover {
+					@extend %global-hover;
+					background-color: color("primary");
+					background-image: none;
+					color: color("text-lightest");
+				}
+
+				&:focus {
+					@extend %global-focus;
+				}
+
+				h3 {
+					@extend %button-icon-spacing;
+					border-block-end: 0;
+					color: inherit;
+
+					@include layout {
+						@include ellipsis;
+						flex: 1 1 auto;
+						font-size: fs("lg");
+						font-weight: normal;
+						line-height: 1;
+						margin: 0;
+						position: relative;
+						text-align: start;
+						text-shadow: none;
+					}
+				}
+
+				.create-folder,
+				.create-entity, {
+					@extend %control-button;
+				}
+			}
+
+			.subdirectory {
+				@include layout {
+					@extend %reset-list;
+				}
+
+				.folder-header {
+					border-color: color("orange-700");
+				}
+
+				.subdirectory {
+					.folder-header {
+						border-color: color("orange-900");
+					}
+				}
+			}
+
+			.folder-header.context,
+			.directory-item.context {
+				background-color: color("primary") !important; // why the fuck...
+				color: color("text-lightest");
+			}
+		}
+
+		img {
+			border-radius: $global-border-radius-images;
+
+			@include layout {
+				@include size(space("icon"));
+				cursor: move;
+				flex: 0 0 auto;
+				margin: 0;
+				margin-block-start: m("base");
+				margin-block-end: m("base");
+				margin-inline-end: m("sm");
+			}
+
+			@include layout(compact) {
+				@include size(to-rem(20px));
+				margin-inline-end: m("base");
+			}
+		}
+
+		h3,
+		h4 {
+			@extend %button-icon;
+			color: inherit;
+			text-shadow: none;
+
+			@include layout {
+				@include ellipsis;
+				flex: 1 1 auto;
+				font-size: fs("lg");
+				font-weight: normal;
+				line-height: 1;
+				margin: 0;
+				padding: 0;
+				position: relative;
+				text-align: start;
+			}
+
+			> a {
+				@include ellipsis;
+				background-color: transparent;
+				border-radius: 0;
+				color: inherit;
+				text-shadow: none;
+				transition: t(color, "link");
+
+				@include layout {
+					cursor: pointer;
+					display: block;
+					flex: 1 1 auto;
+					font-size: fs("lg");
+					line-height: to-rem(32px); // figure out a better way
+					padding: 0;
+					position: relative;
+					text-shadow: none;
+				}
+
+				@include layout(compact) {
+					line-height: to-rem(24px); // figure out a better way
+				}
+			}
+		}
+	}
+}

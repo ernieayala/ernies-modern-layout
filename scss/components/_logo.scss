@@ -1,20 +1,18 @@
 #logo {
-	@include absolute(top space("sm") left space("sm"));
-	display: none;
-	height: auto !important;
-	max-width: to-rem(88px);
+	@include layout {
+		@include absolute(top space("sm") left space("sm"));
+		display: none;
+		height: auto !important;
+		max-width: to-rem(88px);
+	}
 
-	.-compact & {
+	@include layout(compact) {
 		left: space("base");
 		max-width: to-rem(64px);
 		top: space("base");
 	}
 
-	.-emu-logo & {
+	@include layout-logo {
 		display: block;
 	}
-}
-
-.watermark {
-	display: none;
 }

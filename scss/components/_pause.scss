@@ -1,63 +1,72 @@
 #pause {
-	@include fixed(bottom to-rem(200px) left 0);
-	@include size(100%, auto);
-	align-items: center;
 	background: transparent;
-	display: none;
-	flex-direction: column;
-	pointer-events: none;
-	z-index: z("fixed");
 
-	&.paused {
-		display: flex;
+	@include layout {
+		@include fixed(bottom to-rem(200px) left 0);
+		@include size(100%, auto);
+		align-items: center;
+		display: none;
+		flex-direction: column;
+		pointer-events: none;
+		z-index: z("fixed");
+
+		&.paused {
+			display: flex;
+		}
 	}
 
 	&::before {
-		@keyframes pause-rotation-before {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(-360deg); }
-		}
-
-		@include absolute(top 50% left 50%);
-		@include size(to-rem(120px));
-		animation-duration: 5s;
-		animation-iteration-count: infinite;
-		animation-name: pause-rotation-before;
-		animation-timing-function: linear;
 		background-color: color("primary");
-		border-radius: 50%;
 		box-shadow:
 			inset 0 0 0 4px color("white"),
 			0 0 0 4px color("primary");
 		content: "";
-		margin-block-start: to-rem(-60px);
-		margin-inline-start: to-rem(-60px);
+
+		@include layout {
+			@keyframes pause-rotation-before {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(-360deg); }
+			}
+
+			@include absolute(top 50% left 50%);
+			@include size(to-rem(120px));
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-name: pause-rotation-before;
+			animation-timing-function: linear;
+			border-radius: 50%;
+			margin-block-start: to-rem(-60px);
+			margin-inline-start: to-rem(-60px);
+		}
 	}
 
 	img {
-		@keyframes pause-rotation {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
-		}
+		@include layout {
+			@keyframes pause-rotation {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg); }
+			}
 
-		@extend %reset-image;
-		@include absolute(top 50% left 50%);
-		@include size(to-rem(100px));
-		animation-duration: 5s;
-		animation-iteration-count: infinite;
-		animation-name: pause-rotation;
-		animation-timing-function: linear;
-		margin-block-start: to-rem(-50px);
-		margin-inline-start: to-rem(-50px);
-		opacity: 1;
+			@include absolute(top 50% left 50%);
+			@include size(to-rem(100px));
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-name: pause-rotation;
+			animation-timing-function: linear;
+			margin-block-start: to-rem(-50px);
+			margin-inline-start: to-rem(-50px);
+			opacity: 1;
+		}
 	}
 
 	h3 {
-		@extend %h-tag;
-		@extend %h3;
 		color: color("primary");
-		line-height: initial;
-		margin-block-start: to-rem(160px);
 		text-shadow: 1px 1px 4px color("black");
+
+		@include layout {
+			font-size: fs("xl");
+			line-height: initial;
+			margin-block-start: to-rem(160px);
+		}
 	}
 }

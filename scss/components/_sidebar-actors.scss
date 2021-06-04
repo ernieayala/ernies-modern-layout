@@ -2,18 +2,16 @@
 .sidebar-popout {
 	#actors {
 		.directory-list {
-			@extend %directory-subdirectory;
+			@include layout {
+				padding-block-start: p("base");
+			}
 		}
 
 		.directory-item {
-			@extend %directory-item;
-
-			&.folder {
-				@extend %folder;
-			}
-
 			.actor-profile {
-				object-position: 50% 0;
+				@include layout {
+					object-position: 50% 0;
+				}
 			}
 		}
 	}

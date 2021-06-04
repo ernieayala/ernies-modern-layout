@@ -1,0 +1,60 @@
+:root {
+	@include css-vars($_palette-default);
+	--emu-border-radius-default: 0;
+	--emu-border-radius-controls: 0;
+	--emu-border-radius-forms: 0;
+	--emu-border-radius-images: 0;
+	--emu-image-background: none;
+	--emu-image-background-lightest: none;
+	--emu-image-background-light: none;
+	--emu-image-background-darkest: none;
+	--emu-subtle-opacity: 0.3;
+	scrollbar-color: color("charcoal-300") color("black", 0.5);
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: to-rem(8px);
+
+	@include layout(compact) {
+		width: to-rem(4px);
+	}
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 2px 0 color("background-darkest", 0.5);
+	border: none;
+	border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: color("background-light");
+	border: none;
+	border-radius: $global-border-radius-default;
+	outline: none;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@keyframes emu-notification-flash {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+body {
+	background-color: color("background");
+	background-image: $global-image-background;
+	box-shadow: none;
+
+	@include layout {
+		font-size: fs("md");
+	}
+
+	::selection {
+		background-color: color("gray-200");
+	}
+}

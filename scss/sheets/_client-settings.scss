@@ -1,0 +1,65 @@
+#client-settings {
+	nav.tabs {
+		border-block-end: b("primary", 2px);
+
+		@include layout {
+			flex: 0 0 auto;
+			height: initial;
+			line-height: initial;
+		}
+	}
+
+	#config-tabs {
+		border: none;
+
+		@include layout {
+			flex: 1 1 auto;
+			overflow-y: auto;
+		}
+	}
+
+	section.content {
+		.submenu > button {
+			@include layout {
+				height: initial;
+				font-size: fs("lg");
+
+				label {
+					padding: 0;
+					pointer-events: none;
+				}
+			}
+		}
+
+		.settings-list {
+			@include layout {
+				max-height: 100%;
+				overflow: initial;
+			}
+		}
+	}
+
+	.form-group.submenu {
+		.notes {
+			@include layout {
+				margin-block-start: m("sm");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("base");
+			}
+		}
+	}
+
+	.sheet-footer {
+		@include layout {
+			flex: 0 0 auto;
+			flex-wrap: nowrap;
+			padding-block-start: p("sm");
+		}
+
+		@include layout(compact) {
+			padding-block-start: p("base");
+		}
+	}
+}

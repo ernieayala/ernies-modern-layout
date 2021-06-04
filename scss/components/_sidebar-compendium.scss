@@ -2,47 +2,59 @@
 .sidebar-popout {
 	#compendium {
 		> .directory-list {
-			@extend %directory-list;
-			padding: p("sm");
+			@include layout {
+				padding: p("sm");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				padding: p("base");
 			}
 		}
 
 		.directory-item {
-			@extend %directory-item;
-			flex-wrap: wrap;
-			margin: m("base");
+			@include layout {
+				flex-wrap: wrap;
+				line-height: 1;
+				margin: m("base");
+				padding: 0 p("sm");
+			}
 
-			&.folder {
-				@extend %folder;
+			@include layout(compact) {
+				padding: 0 p("base");
 			}
 
 			h4 {
-				align-items: center;
-				display: flex;
-				width: 100%;
+				@include layout {
+					align-items: center;
+					display: flex;
+					width: 100%;
+				}
 
 				.status-icons {
 					color: color("text-lightest");
-					position: relative;
 
-					i {
-						margin: 0;
-						margin-inline-start: m("base");
+					@include layout {
+						position: relative;
+
+						i {
+							margin: 0;
+							margin-inline-start: m("base");
+						}
 					}
 				}
 			}
 
 			.compendium-footer {
 				color: color("text-lightest");
-				flex: 0 0 auto;
-				font-size: fs("md");
-				padding-block-end: m("sm");
-				width: 100%;
 
-				.-compact & {
+				@include layout {
+					flex: 0 0 auto;
+					font-size: fs("md");
+					padding-block-end: m("sm");
+					width: 100%;
+				}
+
+				@include layout(compact) {
 					padding-block-end: m("base");
 				}
 			}
@@ -50,33 +62,39 @@
 
 		.compendium-type {
 			background-color: color("folder-subdirectory");
-			display: flex;
-			flex-direction: column;
-			margin-block-end: m("base");
 
-			.-compact & {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				margin-block-end: m("base");
+			}
+
+			@include layout(compact) {
 				margin-block-end: m("xs");
 			}
 
 			h3 {
-				align-items: center;
 				background-color: color("folder-header");
 				background-image: $global-image-background-darkest;
-				border: 0;
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				color: color("text");
-				cursor: default;
-				display: flex;
-				flex-wrap: nowrap;
-				font-size: fs("lg");
-				line-height: 1;
-				min-height: to-rem(32px);
-				padding: p("base") p("sm");
-				position: relative;
 				transition: t(background box-shadow color, "link");
-				width: 100%;
 
-				.-compact & {
+				@include layout {
+					align-items: center;
+					border: 0;
+					cursor: default;
+					display: flex;
+					flex-wrap: nowrap;
+					font-size: fs("lg");
+					line-height: 1;
+					min-height: to-rem(32px);
+					padding: p("base") p("sm");
+					position: relative;
+					width: 100%;
+				}
+
+				@include layout(compact) {
 					min-height: to-rem(24px);
 					padding: p("base");
 				}

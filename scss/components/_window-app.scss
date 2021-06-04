@@ -1,17 +1,34 @@
+.app {
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	color: color("text-lightest");
+
+	@include layout {
+		margin: 0;
+		max-height: 100%;
+		padding: 0;
+		z-index: z("fixed");
+	}
+}
+
 .window-app {
 	background-color: color("background-lightest");
 	background-image: $global-image-background-light;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	margin: 0;
 
-	&.minimized {
-		.window-resizable-handle {
-			display: none;
+	@include layout {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		margin: 0;
+
+		&.minimized {
+			.window-resizable-handle {
+				display: none;
+			}
 		}
 	}
 
@@ -21,74 +38,114 @@
 	}
 
 	.window-header {
-		align-items: center;
 		background-color: color("background");
 		background-image: $global-image-background;
 		border: none;
 		border-block-end: b("border");
 		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text-lightest");
-		display: flex;
-		flex: 0 0 auto;
-		flex-wrap: nowrap;
-		line-height: initial;
-		overflow: hidden;
-		padding: p("sm");
-		position: relative;
 
-		.-compact & {
+		@include layout {
+			align-items: center;
+			display: flex;
+			flex: 0 0 auto;
+			flex-wrap: nowrap;
+			line-height: initial;
+			overflow: hidden;
+			padding: p("sm");
+			position: relative;
+		}
+
+		@include layout(compact) {
 			padding: p("base");
 		}
 
 		.window-title {
-			@extend %h-tag;
-			@include ellipsis(max-width 100%);
 			color: color("text-lightest");
-			flex: 1 1 auto;
+
+			@include layout {
+				@include ellipsis(max-width 100%);
+				color: color("text-lightest");
+				flex: 1 1 auto;
+				font-weight: normal;
+				margin: 0;
+				position: relative;
+			}
 		}
 
 		a {
-			@extend %control-button;
 			background: transparent;
-			padding: p("base");
-			width: auto;
+			text-shadow: none;
 
-			.-compact & {
+			@include layout {
+				@extend %control-button;
+				padding: p("base");
+				position: relative;
 				width: auto;
 			}
 
 			&:hover {
-				background-color: color("primary");
+				color: color("primary");
+			}
+
+			&:focus {
+				color: color("primary");
+				text-decoration: underline;
 			}
 
 			&.close {
-				color: transparent;
-				overflow: hidden;
-				padding: 0;
-				width: space("button-sm");
+				@include layout {
+					color: transparent;
+					overflow: hidden;
+					padding: 0;
+					width: space("button-sm");
+				}
 
 				> i {
-					@include absolute(top 0 left 0);
-					@include size(100%);
-					align-items: center;
-					color: color("text-lightest");
-					display: flex;
-					font-size: fs("lg");
-					justify-content: center;
-					margin: 0;
+					@include layout {
+						@include absolute(top 0 left 0);
+						@include size(100%);
+						align-items: center;
+						color: color("text-lightest");
+						display: flex;
+						font-size: fs("lg");
+						justify-content: center;
+						margin: 0;
+					}
 				}
 			}
 
 			> i,
 			> span.fas {
-				margin-inline-end: m("base");
+				@include layout {
+					margin-inline-end: m("base");
+				}
 			}
 		}
 	}
 
 	.window-content {
-		.-compact & {
+		background: transparent;
+		color: color("text");
+
+		@include layout {
+			flex: 1 1 auto;
+			font-size: fs("md");
+			// overflow: hidden;
+			overflow-x: hidden;
+			overflow-y: auto;
+			padding: p("sm");
+			position: relative;
+		}
+
+		@include layout(compact) {
 			padding: p("base");
+		}
+
+		form {
+			@include layout {
+				height: 100%;
+			}
 		}
 
 		.chat-message {
@@ -97,23 +154,30 @@
 	}
 
 	.window-resizable-handle {
-		@include absolute(bottom 0 right 0);
-		@include size(to-rem(20px));
-		align-items: center;
 		background-color: color("background-button");
 		border: none;
 		border-block-start: color("background-lightest") 2px solid;
 		border-inline-start: color("background-lightest") 2px solid;
 		border-radius: $global-border-radius-default 0 0 0;
 		color: color("text-lightest");
-		cursor: pointer;
-		display: inline-flex;
-		font-size: fs("md");
-		justify-content: center;
-		margin: 0;
-		padding: 0;
 		transition: t(background box-shadow color, "link");
-		z-index: z("fixed");
+
+		@include layout {
+			@include absolute(bottom 0 right 0);
+			@include size(to-rem(20px));
+			align-items: center;
+			cursor: pointer;
+			display: inline-flex;
+			font-size: fs("md");
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			z-index: z("fixed");
+
+			> i {
+				transform: rotate(45deg);
+			}
+		}
 
 		&:hover {
 			@extend %global-hover;
@@ -122,9 +186,75 @@
 		&:focus {
 			@extend %global-focus;
 		}
+	}
+}
 
-		> i {
-			transform: rotate(45deg);
+.sheet {
+	.sheet-header {
+		@include layout {
+			display: flex;
+			position: relative;
+		}
+
+		> img {
+			border: none;
+
+			@include layout {
+				@include size(to-rem(40px));
+				cursor: pointer;
+				flex: 0 0 auto;
+				margin-inline-end: m("sm");
+				object-fit: cover;
+				object-position: 50% 50%;
+				position: relative;
+			}
+
+			@include layout(compact) {
+				margin-inline-end: m("base");
+			}
+
+			&:hover {
+				@extend %global-hover;
+			}
+
+			&:focus {
+				@extend %global-focus;
+			}
+		}
+
+		> h1 {
+			@include layout {
+				flex: 1 1 auto;
+				margin: 0;
+			}
+
+			input {
+				background-color: color("background-light", 0.2);
+
+				@include layout {
+					@include size(100%, to-rem(40px));
+					flex: 0 0 auto;
+					font-size: fs("xxl");
+					line-height: 1;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.sheet-footer {
+		@include layout {
+			margin-block-start: m("sm");
+			z-index: 10;
+
+			// might not need anymore
+			+ ::after {
+				display: none;
+			}
+		}
+
+		@include layout(compact) {
+			margin-block-start: m("base");
 		}
 	}
 }

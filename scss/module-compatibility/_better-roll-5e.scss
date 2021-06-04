@@ -1,11 +1,26 @@
-.die-result-overlay-br {
-	button {
-		@extend %primary-button;
-		@include size(space("button-xs"));
-		padding: 0;
-	}
+.window-app[id*="chat-popout-"],
+#chat-log {
+	.chat-card {
+		.die-result-overlay-br {
+			@include layout {
+				padding: 0;
+			}
 
-	&.header-overlay-br button {
-		@include size(space("button"));
+			button {
+				@extend %control-button;
+
+				@include layout {
+					margin: 0 m("base");
+				}
+			}
+		}
+
+		.red-dual .dice-row .dice-row-item:not(.tooltip) {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			min-height: to-rem(32px);
+		}
 	}
 }
