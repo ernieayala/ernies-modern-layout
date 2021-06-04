@@ -33,6 +33,14 @@ h3 {
 	}
 }
 
+a {
+	text-shadow: none;
+
+	&:hover {
+		color: color("primary");
+	}
+}
+
 a[href] {
 	color: color("primary");
 	text-decoration: none;

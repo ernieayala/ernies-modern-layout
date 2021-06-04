@@ -84,6 +84,7 @@
 					align-items: center;
 					display: flex;
 					flex-wrap: nowrap;
+					height: auto;
 					line-height: initial;
 					margin: m("base") m("sm");
 					padding: p("base") p("sm");
@@ -111,6 +112,10 @@
 
 				&.active {
 					@extend %global-active;
+
+					.token-name h4 {
+						border-color: color("white");
+					}
 
 					.combatant-control.active {
 						background-color: color("white");
@@ -159,12 +164,14 @@
 
 					h4 {
 						color: color("text-lightest");
+						border-block-end: 1px solid color("border-lighter", 0.5);
 
 						@include layout {
 							@include ellipsis(max-width 100%);
 							flex: initial;
 							font-size: fs("lg");
 							line-height: initial;
+							margin-block-end: m("base");
 						}
 					}
 				}
@@ -186,17 +193,20 @@
 
 					@include layout {
 						font-size: fs("md");
-						margin-inline-start: m("base");
+						line-height: 1;
+						margin-inline-start: m("sm");
 						padding-inline-end: p("sm");
 					}
 
 					@include layout(compact) {
+						margin-inline-start: m("base");
 						padding-inline-end: p("base");
 					}
 				}
 
 				.token-initiative {
 					@include layout {
+						padding: 0;
 						padding-inline-start: p("sm");
 					}
 

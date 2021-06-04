@@ -10,7 +10,8 @@ body.-emu .dialog .tabs a, body.-emu .dialog .sheet-tabs a, body.-emu #sidebar .
 body.-emu #sidebar button,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button, body.-emu #menu #menu-items li, body.-emu #sidebar #combat #combat-controls .combat-control,
 body.-emu .sidebar-popout #combat #combat-controls .combat-control, body.-emu .filepicker.window-app .display-modes .display-mode, body.-emu .sheet.journal-sheet .editor-edit, body.-emu #calendar-time-container .calendar--time-controls .advance-btn,
-body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder,
+body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #sidebar #combat .add-temporary,
+body.-emu .sidebar-popout #combat .add-temporary, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder,
 body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity,
@@ -36,7 +37,8 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
   .-emu-layout body.-emu #sidebar button, body.-emu #sidebar .-emu-layout button,
   .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout button, .-emu-layout body.-emu #menu #menu-items li, body.-emu #menu #menu-items .-emu-layout li, .-emu-layout body.-emu #sidebar #combat #combat-controls .combat-control, body.-emu #sidebar #combat #combat-controls .-emu-layout .combat-control,
   .-emu-layout body.-emu .sidebar-popout #combat #combat-controls .combat-control, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout .combat-control, .-emu-layout body.-emu .filepicker.window-app .display-modes .display-mode, body.-emu .filepicker.window-app .display-modes .-emu-layout .display-mode, .-emu-layout body.-emu .sheet.journal-sheet .editor-edit, body.-emu .sheet.journal-sheet .-emu-layout .editor-edit, .-emu-layout body.-emu #calendar-time-container .calendar--time-controls .advance-btn, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout .advance-btn,
-  .-emu-layout body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout .advance-btn, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-folder,
+  .-emu-layout body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout .advance-btn, .-emu-layout body.-emu #sidebar #combat .add-temporary, body.-emu #sidebar #combat .-emu-layout .add-temporary,
+  .-emu-layout body.-emu .sidebar-popout #combat .add-temporary, body.-emu .sidebar-popout #combat .-emu-layout .add-temporary, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-folder,
   .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-entity,
   .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-folder,
   .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-entity,
@@ -61,13 +63,14 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
     margin: 0;
     padding: 0.5rem;
     position: relative; }
-    .-emu-layout body.-emu .dialog .tabs a > i, body.-emu .dialog .tabs .-emu-layout a > i, .-emu-layout body.-emu .dialog .sheet-tabs a > i, body.-emu .dialog .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .tabs a > i, body.-emu #sidebar .tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .sheet-tabs a > i, body.-emu #sidebar .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #module-management .list-filters a > i, body.-emu #module-management .list-filters .-emu-layout a > i, .-emu-layout body.-emu .dialog button > i, body.-emu .dialog .-emu-layout button > i, .-emu-layout body.-emu #sidebar button > i, body.-emu #sidebar .-emu-layout button > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout button > i, .-emu-layout body.-emu #menu #menu-items li > i, body.-emu #menu #menu-items .-emu-layout li > i, .-emu-layout body.-emu #sidebar #combat #combat-controls .combat-control > i, body.-emu #sidebar #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-controls .combat-control > i, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .filepicker.window-app .display-modes .display-mode > i, body.-emu .filepicker.window-app .display-modes .-emu-layout .display-mode > i, .-emu-layout body.-emu .sheet.journal-sheet .editor-edit > i, body.-emu .sheet.journal-sheet .-emu-layout .editor-edit > i, .-emu-layout body.-emu #calendar-time-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout .advance-btn > i, .-emu-layout body.-emu #calendar-weather-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout .advance-btn > i, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a > i, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a > i, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a > i, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a > i, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a > i, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu #navigation #nav-toggle > i, body.-emu #navigation .-emu-layout #nav-toggle > i, .-emu-layout body.-emu .window-app .window-header a > i, .-emu-layout body.-emu #sidebar #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .control-buttons .button > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .control-buttons .button > i, .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a > i, body.-emu #sidebar #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-round .encounters a > i, body.-emu .sidebar-popout #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control > i, body.-emu #sidebar #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control > i, body.-emu .sidebar-popout #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-control > i, body.-emu #sidebar #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control > i, body.-emu .sidebar-popout #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br button > i, body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #chat-log .chat-card .die-result-overlay-br button > i, body.-emu #chat-log .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-control > i, body.-emu #sidebar .sidebar-tab .directory-header .-emu-layout .header-control > i, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control > i, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout .header-control > i, .-emu-layout body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button > i, body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons .-emu-layout button > i, .-emu-layout body.-emu #chat-log .dnd5e.chat-card .card-buttons button > i, body.-emu #chat-log .dnd5e.chat-card .card-buttons .-emu-layout button > i {
+    .-emu-layout body.-emu .dialog .tabs a > i, body.-emu .dialog .tabs .-emu-layout a > i, .-emu-layout body.-emu .dialog .sheet-tabs a > i, body.-emu .dialog .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .tabs a > i, body.-emu #sidebar .tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .sheet-tabs a > i, body.-emu #sidebar .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #module-management .list-filters a > i, body.-emu #module-management .list-filters .-emu-layout a > i, .-emu-layout body.-emu .dialog button > i, body.-emu .dialog .-emu-layout button > i, .-emu-layout body.-emu #sidebar button > i, body.-emu #sidebar .-emu-layout button > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout button > i, .-emu-layout body.-emu #menu #menu-items li > i, body.-emu #menu #menu-items .-emu-layout li > i, .-emu-layout body.-emu #sidebar #combat #combat-controls .combat-control > i, body.-emu #sidebar #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-controls .combat-control > i, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .filepicker.window-app .display-modes .display-mode > i, body.-emu .filepicker.window-app .display-modes .-emu-layout .display-mode > i, .-emu-layout body.-emu .sheet.journal-sheet .editor-edit > i, body.-emu .sheet.journal-sheet .-emu-layout .editor-edit > i, .-emu-layout body.-emu #calendar-time-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout .advance-btn > i, .-emu-layout body.-emu #calendar-weather-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout .advance-btn > i, .-emu-layout body.-emu #sidebar #combat .add-temporary > i, body.-emu #sidebar #combat .-emu-layout .add-temporary > i, .-emu-layout body.-emu .sidebar-popout #combat .add-temporary > i, body.-emu .sidebar-popout #combat .-emu-layout .add-temporary > i, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a > i, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a > i, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a > i, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a > i, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a > i, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu #navigation #nav-toggle > i, body.-emu #navigation .-emu-layout #nav-toggle > i, .-emu-layout body.-emu .window-app .window-header a > i, .-emu-layout body.-emu #sidebar #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .control-buttons .button > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .control-buttons .button > i, .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a > i, body.-emu #sidebar #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-round .encounters a > i, body.-emu .sidebar-popout #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control > i, body.-emu #sidebar #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control > i, body.-emu .sidebar-popout #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-control > i, body.-emu #sidebar #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control > i, body.-emu .sidebar-popout #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br button > i, body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #chat-log .chat-card .die-result-overlay-br button > i, body.-emu #chat-log .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-control > i, body.-emu #sidebar .sidebar-tab .directory-header .-emu-layout .header-control > i, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control > i, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout .header-control > i, .-emu-layout body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button > i, body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons .-emu-layout button > i, .-emu-layout body.-emu #chat-log .dnd5e.chat-card .card-buttons button > i, body.-emu #chat-log .dnd5e.chat-card .card-buttons .-emu-layout button > i {
       margin-inline-end: 0.5rem; }
   .-emu-layout.-emu-compact body.-emu .dialog .tabs a, body.-emu .dialog .tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu .dialog .sheet-tabs a, body.-emu .dialog .sheet-tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu #sidebar .tabs a, body.-emu #sidebar .tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu #sidebar .sheet-tabs a, body.-emu #sidebar .sheet-tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu #module-management .list-filters a, body.-emu #module-management .list-filters .-emu-layout.-emu-compact a, .-emu-layout.-emu-compact body.-emu .dialog button, body.-emu .dialog .-emu-layout.-emu-compact button,
   .-emu-layout.-emu-compact body.-emu #sidebar button, body.-emu #sidebar .-emu-layout.-emu-compact button,
   .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout.-emu-compact button, .-emu-layout.-emu-compact body.-emu #menu #menu-items li, body.-emu #menu #menu-items .-emu-layout.-emu-compact li, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-controls .combat-control, body.-emu #sidebar #combat #combat-controls .-emu-layout.-emu-compact .combat-control,
   .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-controls .combat-control, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout.-emu-compact .combat-control, .-emu-layout.-emu-compact body.-emu .filepicker.window-app .display-modes .display-mode, body.-emu .filepicker.window-app .display-modes .-emu-layout.-emu-compact .display-mode, .-emu-layout.-emu-compact body.-emu .sheet.journal-sheet .editor-edit, body.-emu .sheet.journal-sheet .-emu-layout.-emu-compact .editor-edit, .-emu-layout.-emu-compact body.-emu #calendar-time-container .calendar--time-controls .advance-btn, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn,
-  .-emu-layout.-emu-compact body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout.-emu-compact .effects-header a, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-header a, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx-header a, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout.-emu-compact li a, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-result a, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx a, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder,
+  .-emu-layout.-emu-compact body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn, .-emu-layout.-emu-compact body.-emu #sidebar #combat .add-temporary, body.-emu #sidebar #combat .-emu-layout.-emu-compact .add-temporary,
+  .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat .add-temporary, body.-emu .sidebar-popout #combat .-emu-layout.-emu-compact .add-temporary, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .effects-header a, body.-emu .sheet.active-effect-sheet .-emu-layout.-emu-compact .effects-header a, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-header a, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-header a, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx-header a, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .changes-list li a, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout.-emu-compact li a, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-result a, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-result a, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx a, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder,
   .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity,
   .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder,
   .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity,
@@ -83,13 +86,14 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
   .-emu-layout.-emu-compact body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout.-emu-compact .header-control, .-emu-layout.-emu-compact body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button, body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button,
   .-emu-layout.-emu-compact body.-emu #chat-log .dnd5e.chat-card .card-buttons button, body.-emu #chat-log .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button {
     padding: 0.25rem; }
-    .-emu-layout.-emu-compact body.-emu .dialog .tabs a > i, body.-emu .dialog .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .dialog .sheet-tabs a > i, body.-emu .dialog .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar .tabs a > i, body.-emu #sidebar .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar .sheet-tabs a > i, body.-emu #sidebar .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #module-management .list-filters a > i, body.-emu #module-management .list-filters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .dialog button > i, body.-emu .dialog .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #sidebar button > i, body.-emu #sidebar .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #menu #menu-items li > i, body.-emu #menu #menu-items .-emu-layout.-emu-compact li > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-controls .combat-control > i, body.-emu #sidebar #combat #combat-controls .-emu-layout.-emu-compact .combat-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-controls .combat-control > i, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout.-emu-compact .combat-control > i, .-emu-layout.-emu-compact body.-emu .filepicker.window-app .display-modes .display-mode > i, body.-emu .filepicker.window-app .display-modes .-emu-layout.-emu-compact .display-mode > i, .-emu-layout.-emu-compact body.-emu .sheet.journal-sheet .editor-edit > i, body.-emu .sheet.journal-sheet .-emu-layout.-emu-compact .editor-edit > i, .-emu-layout.-emu-compact body.-emu #calendar-time-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn > i, .-emu-layout.-emu-compact body.-emu #calendar-weather-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn > i, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .effects-header a > i, body.-emu .sheet.active-effect-sheet .-emu-layout.-emu-compact .effects-header a > i, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-header a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-header a > i, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx-header a > i, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .changes-list li a > i, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout.-emu-compact li a > i, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-result a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-result a > i, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx a > i, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu #navigation #nav-toggle > i, body.-emu #navigation .-emu-layout.-emu-compact #nav-toggle > i, .-emu-layout.-emu-compact body.-emu .window-app .window-header a > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-log .message .button.message-delete > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-controls .control-buttons .button > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-controls .control-buttons .button > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-round .encounters a > i, body.-emu #sidebar #combat #combat-round .encounters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-round .encounters a > i, body.-emu .sidebar-popout #combat #combat-round .encounters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control > i, body.-emu #sidebar #combat #combat-tracker .combatant .-emu-layout.-emu-compact .combatant-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control > i, body.-emu .sidebar-popout #combat #combat-tracker .combatant .-emu-layout.-emu-compact .combatant-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .sound .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists #currently-playing .sound .sound-control > i, body.-emu #sidebar #playlists #currently-playing .sound .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control > i, body.-emu .sidebar-popout #playlists #currently-playing .sound .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br button > i, body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #chat-log .chat-card .die-result-overlay-br button > i, body.-emu #chat-log .chat-card .die-result-overlay-br .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-control > i, body.-emu #sidebar .sidebar-tab .directory-header .-emu-layout.-emu-compact .header-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control > i, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout.-emu-compact .header-control > i, .-emu-layout.-emu-compact body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button > i, body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #chat-log .dnd5e.chat-card .card-buttons button > i, body.-emu #chat-log .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button > i {
+    .-emu-layout.-emu-compact body.-emu .dialog .tabs a > i, body.-emu .dialog .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .dialog .sheet-tabs a > i, body.-emu .dialog .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar .tabs a > i, body.-emu #sidebar .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar .sheet-tabs a > i, body.-emu #sidebar .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #module-management .list-filters a > i, body.-emu #module-management .list-filters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .dialog button > i, body.-emu .dialog .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #sidebar button > i, body.-emu #sidebar .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #menu #menu-items li > i, body.-emu #menu #menu-items .-emu-layout.-emu-compact li > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-controls .combat-control > i, body.-emu #sidebar #combat #combat-controls .-emu-layout.-emu-compact .combat-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-controls .combat-control > i, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout.-emu-compact .combat-control > i, .-emu-layout.-emu-compact body.-emu .filepicker.window-app .display-modes .display-mode > i, body.-emu .filepicker.window-app .display-modes .-emu-layout.-emu-compact .display-mode > i, .-emu-layout.-emu-compact body.-emu .sheet.journal-sheet .editor-edit > i, body.-emu .sheet.journal-sheet .-emu-layout.-emu-compact .editor-edit > i, .-emu-layout.-emu-compact body.-emu #calendar-time-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-time-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn > i, .-emu-layout.-emu-compact body.-emu #calendar-weather-container .calendar--time-controls .advance-btn > i, body.-emu #calendar-weather-container .calendar--time-controls .-emu-layout.-emu-compact .advance-btn > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat .add-temporary > i, body.-emu #sidebar #combat .-emu-layout.-emu-compact .add-temporary > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat .add-temporary > i, body.-emu .sidebar-popout #combat .-emu-layout.-emu-compact .add-temporary > i, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .effects-header a > i, body.-emu .sheet.active-effect-sheet .-emu-layout.-emu-compact .effects-header a > i, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-header a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-header a > i, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx-header a > i, .-emu-layout.-emu-compact body.-emu .sheet.active-effect-sheet .changes-list li a > i, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout.-emu-compact li a > i, .-emu-layout.-emu-compact body.-emu .sheet.roll-table-config .table-results .table-result a > i, body.-emu .sheet.roll-table-config .table-results .-emu-layout.-emu-compact .table-result a > i, .-emu-layout.-emu-compact body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout.-emu-compact .sfx a > i, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-folder > i, .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout.-emu-compact .create-entity > i, .-emu-layout.-emu-compact body.-emu #navigation #nav-toggle > i, body.-emu #navigation .-emu-layout.-emu-compact #nav-toggle > i, .-emu-layout.-emu-compact body.-emu .window-app .window-header a > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-log .message .button.message-delete > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout.-emu-compact body.-emu #sidebar #chat #chat-controls .control-buttons .button > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #chat #chat-controls .control-buttons .button > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-round .encounters a > i, body.-emu #sidebar #combat #combat-round .encounters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-round .encounters a > i, body.-emu .sidebar-popout #combat #combat-round .encounters .-emu-layout.-emu-compact a > i, .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control > i, body.-emu #sidebar #combat #combat-tracker .combatant .-emu-layout.-emu-compact .combatant-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control > i, body.-emu .sidebar-popout #combat #combat-tracker .combatant .-emu-layout.-emu-compact .combatant-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .sound .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu #sidebar #playlists #currently-playing .sound .sound-control > i, body.-emu #sidebar #playlists #currently-playing .sound .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control > i, body.-emu .sidebar-popout #playlists #currently-playing .sound .-emu-layout.-emu-compact .sound-control > i, .-emu-layout.-emu-compact body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br button > i, body.-emu .window-app[id*="chat-popout-"] .chat-card .die-result-overlay-br .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #chat-log .chat-card .die-result-overlay-br button > i, body.-emu #chat-log .chat-card .die-result-overlay-br .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-control > i, body.-emu #sidebar .sidebar-tab .directory-header .-emu-layout.-emu-compact .header-control > i, .-emu-layout.-emu-compact body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control > i, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout.-emu-compact .header-control > i, .-emu-layout.-emu-compact body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button > i, body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button > i, .-emu-layout.-emu-compact body.-emu #chat-log .dnd5e.chat-card .card-buttons button > i, body.-emu #chat-log .dnd5e.chat-card .card-buttons .-emu-layout.-emu-compact button > i {
       margin-inline-end: 0.25rem; }
   body.-emu .dialog .tabs a:hover, body.-emu .dialog .sheet-tabs a:hover, body.-emu #sidebar .tabs a:hover, body.-emu #sidebar .sheet-tabs a:hover, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a:hover, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a:hover, body.-emu #module-management .list-filters a:hover, body.-emu .dialog button:hover,
   body.-emu #sidebar button:hover,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button:hover, body.-emu #menu #menu-items li:hover, body.-emu #sidebar #combat #combat-controls .combat-control:hover,
   body.-emu .sidebar-popout #combat #combat-controls .combat-control:hover, body.-emu .filepicker.window-app .display-modes .display-mode:hover, body.-emu .sheet.journal-sheet .editor-edit:hover, body.-emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
-  body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover,
+  body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, body.-emu #sidebar #combat .add-temporary:hover,
+  body.-emu .sidebar-popout #combat .add-temporary:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover,
   body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:hover,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder:hover,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:hover,
@@ -111,7 +115,8 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
   body.-emu #sidebar button:disabled,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button:disabled, body.-emu #menu #menu-items li:disabled, body.-emu #sidebar #combat #combat-controls .combat-control:disabled,
   body.-emu .sidebar-popout #combat #combat-controls .combat-control:disabled, body.-emu .filepicker.window-app .display-modes .display-mode:disabled, body.-emu .sheet.journal-sheet .editor-edit:disabled, body.-emu #calendar-time-container .calendar--time-controls .advance-btn:disabled,
-  body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:disabled, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:disabled, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:disabled, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:disabled, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:disabled, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:disabled, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:disabled, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:disabled, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:disabled, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:disabled, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:disabled, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:disabled, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:disabled, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:disabled,
+  body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:disabled, body.-emu #sidebar #combat .add-temporary:disabled,
+  body.-emu .sidebar-popout #combat .add-temporary:disabled, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:disabled, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:disabled, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:disabled, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:disabled, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:disabled, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:disabled, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:disabled, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:disabled, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:disabled, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:disabled, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:disabled, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:disabled, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:disabled,
   body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:disabled,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder:disabled,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:disabled,
@@ -133,7 +138,8 @@ body.-emu .dialog .tabs a, body.-emu .dialog .sheet-tabs a, body.-emu #sidebar .
 body.-emu #sidebar button,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button, body.-emu #menu #menu-items li, body.-emu #sidebar #combat #combat-controls .combat-control,
 body.-emu .sidebar-popout #combat #combat-controls .combat-control, body.-emu .filepicker.window-app .display-modes .display-mode, body.-emu .sheet.journal-sheet .editor-edit, body.-emu #calendar-time-container .calendar--time-controls .advance-btn,
-body.-emu #calendar-weather-container .calendar--time-controls .advance-btn {
+body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, body.-emu #sidebar #combat .add-temporary,
+body.-emu .sidebar-popout #combat .add-temporary {
   background-color: rgba(var(--color-background-button), 1); }
 
 body.-emu .dialog .dialog-buttons .dialog-button {
@@ -238,7 +244,8 @@ body.-emu .dialog .tabs a:hover, body.-emu .dialog .sheet-tabs a:hover, body.-em
 body.-emu #sidebar button:hover,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button:hover, body.-emu #menu #menu-items li:hover, body.-emu #sidebar #combat #combat-controls .combat-control:hover,
 body.-emu .sidebar-popout #combat #combat-controls .combat-control:hover, body.-emu .filepicker.window-app .display-modes .display-mode:hover, body.-emu .sheet.journal-sheet .editor-edit:hover, body.-emu #calendar-time-container .calendar--time-controls .advance-btn:hover,
-body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover,
+body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:hover, body.-emu #sidebar #combat .add-temporary:hover,
+body.-emu .sidebar-popout #combat .add-temporary:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:hover,
 body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:hover,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder:hover,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:hover,
@@ -306,7 +313,8 @@ body.-emu .dialog .tabs a:focus, body.-emu .dialog .sheet-tabs a:focus, body.-em
 body.-emu #sidebar button:focus,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button:focus, body.-emu #menu #menu-items li:focus, body.-emu #sidebar #combat #combat-controls .combat-control:focus,
 body.-emu .sidebar-popout #combat #combat-controls .combat-control:focus, body.-emu .filepicker.window-app .display-modes .display-mode:focus, body.-emu .sheet.journal-sheet .editor-edit:focus, body.-emu #calendar-time-container .calendar--time-controls .advance-btn:focus,
-body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:focus, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:focus, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:focus, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:focus,
+body.-emu #calendar-weather-container .calendar--time-controls .advance-btn:focus, body.-emu #sidebar #combat .add-temporary:focus,
+body.-emu .sidebar-popout #combat .add-temporary:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a:focus, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a:focus, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a:focus, body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder:focus,
 body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity:focus,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder:focus,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity:focus,
@@ -324,7 +332,8 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button:focus, body.-emu .dial
 body.-emu #sidebar button.active:focus,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button.active:focus, body.-emu #menu #menu-items li.active:focus, body.-emu #sidebar #combat #combat-controls .active.combat-control:focus,
 body.-emu .sidebar-popout #combat #combat-controls .active.combat-control:focus, body.-emu .filepicker.window-app .display-modes .active.display-mode:focus, body.-emu .sheet.journal-sheet .active.editor-edit:focus, body.-emu #calendar-time-container .calendar--time-controls .active.advance-btn:focus,
-body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active:focus, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active:focus, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active:focus, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder:focus,
+body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn:focus, body.-emu #sidebar #combat .active.add-temporary:focus,
+body.-emu .sidebar-popout #combat .active.add-temporary:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active:focus, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active:focus, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active:focus, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active:focus, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active:focus, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active:focus, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active:focus, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active:focus, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder:focus,
 body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity:focus,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder:focus,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity:focus,
@@ -389,7 +398,8 @@ body.-emu .dialog .tabs a.active, body.-emu .dialog .sheet-tabs a.active, body.-
 body.-emu #sidebar button.active,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button.active, body.-emu #menu #menu-items li.active, body.-emu #sidebar #combat #combat-controls .active.combat-control,
 body.-emu .sidebar-popout #combat #combat-controls .active.combat-control, body.-emu .filepicker.window-app .display-modes .active.display-mode, body.-emu .sheet.journal-sheet .active.editor-edit, body.-emu #calendar-time-container .calendar--time-controls .active.advance-btn,
-body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn, body.-emu #sidebar #combat .active.add-temporary,
+body.-emu .sidebar-popout #combat .active.add-temporary, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder,
 body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder,
 body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity,
@@ -416,7 +426,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .
   body.-emu #sidebar button.active:hover,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button.active:hover, body.-emu #menu #menu-items li.active:hover, body.-emu #sidebar #combat #combat-controls .active.combat-control:hover,
   body.-emu .sidebar-popout #combat #combat-controls .active.combat-control:hover, body.-emu .filepicker.window-app .display-modes .active.display-mode:hover, body.-emu .sheet.journal-sheet .active.editor-edit:hover, body.-emu #calendar-time-container .calendar--time-controls .active.advance-btn:hover,
-  body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder:hover,
+  body.-emu #calendar-weather-container .calendar--time-controls .active.advance-btn:hover, body.-emu #sidebar #combat .active.add-temporary:hover,
+  body.-emu .sidebar-popout #combat .active.add-temporary:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .effects-header a.active:hover, body.-emu .sheet.active-effect-sheet .-emu-layout .effects-header a.active:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-header a.active:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-header a.active:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a.active:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a.active:hover, .-emu-layout body.-emu .sheet.active-effect-sheet .changes-list li a.active:hover, body.-emu .sheet.active-effect-sheet .changes-list .-emu-layout li a.active:hover, .-emu-layout body.-emu .sheet.roll-table-config .table-results .table-result a.active:hover, body.-emu .sheet.roll-table-config .table-results .-emu-layout .table-result a.active:hover, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a.active:hover, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a.active:hover, body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-folder:hover,
   body.-emu .dialog .directory .directory-item.folder .folder-header .active.create-entity:hover,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-folder:hover,
   body.-emu #sidebar .directory .directory-item.folder .folder-header .active.create-entity:hover,
@@ -1959,6 +1970,15 @@ body.-emu #sidebar h3, .-emu-layout
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h3 {
   font-size: 1rem; }
 
+body.-emu .dialog a,
+body.-emu #sidebar a,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a {
+  text-shadow: none; }
+  body.-emu .dialog a:hover,
+  body.-emu #sidebar a:hover,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a:hover {
+    color: rgba(var(--color-primary), 1); }
+
 body.-emu .dialog a[href],
 body.-emu #sidebar a[href],
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a[href] {
@@ -3360,14 +3380,16 @@ body.-emu .sidebar-popout {
       margin-block-end: 0.5rem;
       position: relative;
       width: 100%; }
-      .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout
-      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:only-child {
+      .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions:last-child, .-emu-layout
+      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout
+      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:last-child {
         margin-block-end: 0; }
     .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-actions, .-emu-layout.-emu-compact
     body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions {
       margin-block-end: 0.125rem; }
-      .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout.-emu-compact
-      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:only-child {
+      .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab .directory-header .header-actions:last-child, .-emu-layout.-emu-compact
+      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout.-emu-compact
+      body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:last-child {
         margin-block-end: 0; }
   body.-emu #sidebar .sidebar-tab .directory-footer,
   body.-emu .sidebar-popout .sidebar-tab .directory-footer {
@@ -3616,6 +3638,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
+    height: auto;
     line-height: initial;
     margin: 0.25rem 0.5rem;
     padding: 0.25rem 0.5rem;
@@ -3630,6 +3653,9 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.hidden .token-name h4, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.hidden .token-image {
     opacity: 0.5; }
+  body.-emu #sidebar #combat #combat-tracker .combatant.active .token-name h4,
+  body.-emu .sidebar-popout #combat #combat-tracker .combatant.active .token-name h4 {
+    border-color: rgba(var(--color-white), 1); }
   body.-emu #sidebar #combat #combat-tracker .combatant.active .combatant-control.active,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active .combatant-control.active {
     background-color: rgba(var(--color-white), 1);
@@ -3665,7 +3691,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
       position: relative; }
     body.-emu #sidebar #combat #combat-tracker .combatant .token-name h4,
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-name h4 {
-      color: rgba(var(--color-text-lightest), 1); }
+      color: rgba(var(--color-text-lightest), 1);
+      border-block-end: 1px solid rgba(var(--color-border-lighter), 0.5); }
       .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-name h4, .-emu-layout
       body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-name h4 {
         max-width: 100%;
@@ -3674,7 +3701,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
         white-space: nowrap;
         flex: initial;
         font-size: 1rem;
-        line-height: initial; }
+        line-height: initial;
+        margin-block-end: 0.25rem; }
   body.-emu #sidebar #combat #combat-tracker .combatant .token-resource,
   body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource,
@@ -3694,13 +3722,16 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-resource, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource {
       font-size: 0.875rem;
-      margin-inline-start: 0.25rem;
+      line-height: 1;
+      margin-inline-start: 0.5rem;
       padding-inline-end: 0.5rem; }
     .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .combatant .token-resource, .-emu-layout.-emu-compact
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource {
+      margin-inline-start: 0.25rem;
       padding-inline-end: 0.25rem; }
   .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
+    padding: 0;
     padding-inline-start: 0.5rem; }
   .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative, .-emu-layout.-emu-compact
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
@@ -4315,6 +4346,9 @@ body.-emu #client-settings #config-tabs {
 .-emu-layout body.-emu #client-settings section.content .settings-list {
   max-height: 100%;
   overflow: initial; }
+
+.-emu-layout body.-emu #client-settings form .form-group button label {
+  font-size: 1rem; }
 
 .-emu-layout body.-emu #client-settings .form-group.submenu .notes {
   margin-block-start: 0.5rem; }
@@ -4944,6 +4978,257 @@ body.-emu .typing-notify {
 .-emu-layout body.-emu #chat-log .message .message-header img {
   margin: 0.125rem 0;
   margin-inline-end: 0.25rem; }
+
+.-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper, .-emu-layout
+body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper {
+  width: 2rem;
+  height: 2rem;
+  cursor: default;
+  flex: 0 0 auto;
+  margin-inline-end: 0.5rem;
+  position: relative; }
+
+.-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper, .-emu-layout.-emu-compact
+body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper {
+  margin-inline-end: 0.25rem; }
+
+.-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper .token-image, .-emu-layout
+body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper .token-image {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper svg, .-emu-layout
+body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper svg {
+  box-shadow: none; }
+
+body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper,
+body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper {
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper, .-emu-layout
+  body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 0.75rem;
+    padding: 0.125rem; }
+  body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input,
+  body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
+    background-color: rgba(var(--color-background-lightest), 1); }
+    .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input, .-emu-layout
+    body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
+      height: auto;
+      margin-inline-start: 0.25rem;
+      width: 2.5rem; }
+
+body.-emu .combatready-timebar,
+body.-emu .combatready-timebar-fill {
+  border-radius: var(--emu-border-radius-default, 0);
+  box-shadow: none; }
+  .-emu-layout body.-emu .combatready-timebar, .-emu-layout
+  body.-emu .combatready-timebar-fill {
+    bottom: 0;
+    height: 0.4375rem;
+    top: auto; }
+  .-emu-layout.-emu-compact body.-emu .combatready-timebar, .-emu-layout.-emu-compact
+  body.-emu .combatready-timebar-fill {
+    height: 0.1875rem; }
+
+body.-emu .combatready-timebar {
+  background: rgba(var(--color-background-darkest), 0.2); }
+
+body.-emu .combatready-timebar-fill {
+  background-color: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-white), 1); }
+  .-emu-layout body.-emu .combatready-timebar-fill .combatready-timebaricon {
+    display: none; }
+
+body.-emu #sidebar #combat #combat-tracker .token-resource input,
+body.-emu .sidebar-popout #combat #combat-tracker .token-resource input {
+  border: none;
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu #sidebar #combat #combat-tracker .token-resource input, .-emu-layout
+  body.-emu .sidebar-popout #combat #combat-tracker .token-resource input {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    text-align: center; }
+  .-emu-layout.-emu-compact body.-emu #sidebar #combat #combat-tracker .token-resource input, .-emu-layout.-emu-compact
+  body.-emu .sidebar-popout #combat #combat-tracker .token-resource input {
+    width: 1.25rem;
+    height: 1.25rem; }
+
+.-emu-layout body.-emu #sidebar #combat .add-temporary, .-emu-layout
+body.-emu .sidebar-popout #combat .add-temporary {
+  margin: 0.5rem;
+  text-shadow: none;
+  width: 100%; }
+
+.-emu-layout.-emu-compact body.-emu #sidebar #combat .add-temporary, .-emu-layout.-emu-compact
+body.-emu .sidebar-popout #combat .add-temporary {
+  margin: 0.25rem; }
+
+body.-emu #sidebar #settings #combat-utility-belt h4,
+body.-emu .sidebar-popout #settings #combat-utility-belt h4 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu #sidebar #settings #combat-utility-belt h4, .-emu-layout
+  body.-emu .sidebar-popout #settings #combat-utility-belt h4 {
+    margin-block-start: 1rem; }
+  .-emu-layout.-emu-compact body.-emu #sidebar #settings #combat-utility-belt h4, .-emu-layout.-emu-compact
+  body.-emu .sidebar-popout #settings #combat-utility-belt h4 {
+    margin-block-start: 0.5rem; }
+
+body.-emu #combat-utility-belt-about a {
+  text-shadow: none; }
+
+.-emu-layout body.-emu #cub-puter::before, .-emu-layout body.-emu #cub-puter::after {
+  display: none; }
+
+body.-emu #cub-puter .terminal {
+  color: rgba(var(--color-primary), 1); }
+
+.-emu-layout body.-emu .compendium-browser-btn {
+  flex: 1 1 auto; }
+
+.-emu-layout body.-emu .compendium-browser.window-app {
+  overflow: hidden; }
+
+.-emu-layout body.-emu .compendium-browser.window-app .tabs {
+  max-height: 100%; }
+
+.-emu-layout body.-emu .compendium-browser.window-app .control-area, .-emu-layout
+body.-emu .compendium-browser.window-app .list-area {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.25rem; }
+
+body.-emu .compendium-browser.window-app .filtercontainer {
+  border: none;
+  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  border-radius: 0; }
+  .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer {
+    margin-block-end: 0.25rem; }
+    .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer:last-child {
+      margin-block-end: 0; }
+    .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer > div {
+      margin: 0.25rem 0; }
+  body.-emu .compendium-browser.window-app .filtercontainer:last-child {
+    border: none; }
+  body.-emu .compendium-browser.window-app .filtercontainer .multiselect {
+    background: rgba(var(--color-background), 0.1);
+    border: none;
+    border-radius: 0; }
+    .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer .multiselect {
+      line-height: 1;
+      margin: 0;
+      padding: 0.25rem; }
+  .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer dd {
+    display: inline-flex; }
+    .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer dd select {
+      flex: 1 1 auto;
+      width: auto; }
+      .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer dd select + input {
+        border-inline-start: none;
+        flex: 1 1 100%; }
+
+body.-emu .compendium-browser.window-app .settings-group {
+  border: none;
+  border-radius: 0; }
+  .-emu-layout body.-emu .compendium-browser.window-app .settings-group {
+    margin: 0;
+    padding: 0.25rem; }
+  .-emu-layout body.-emu .compendium-browser.window-app .settings-group label {
+    align-items: center;
+    display: flex;
+    padding: 0.25rem; }
+    .-emu-layout body.-emu .compendium-browser.window-app .settings-group label:nth-of-type(even) {
+      background-color: rgba(var(--color-background-light), 0.1); }
+    .-emu-layout body.-emu .compendium-browser.window-app .settings-group label input[type="checkbox"] {
+      margin-inline-end: 0.5rem; }
+    .-emu-layout body.-emu .compendium-browser.window-app .settings-group label h4 {
+      margin: 0; }
+
+body.-emu .compendium-browser.window-app ul {
+  margin: 0;
+  padding: 0; }
+
+.-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item, .-emu-layout
+body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item {
+  margin: 0;
+  margin-block-end: 0.25rem;
+  padding: 0; }
+  .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack, .-emu-layout
+  body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack {
+    cursor: pointer;
+    line-height: 1 !important;
+    margin: 0.25rem !important;
+    padding: 0 0.5rem !important; }
+    .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack:hover, .-emu-layout
+    body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack:hover {
+      background-color: rgba(var(--color-primary), 1); }
+      .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack:hover .pack-title,
+      .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack:hover .compendium-footer, .-emu-layout
+      body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack:hover .pack-title,
+      .-emu-layout
+      body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack:hover .compendium-footer {
+        color: rgba(var(--color-white), 1); }
+    .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title,
+    .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack .compendium-footer, .-emu-layout
+    body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title,
+    .-emu-layout
+    body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack .compendium-footer {
+      color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title, .-emu-layout
+    body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title {
+      margin: 0 !important; }
+    .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack i.folder, .-emu-layout
+    body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack i.folder {
+      border: none; }
+
+.-emu-layout body.-emu .ddb-muncher.window-app .tab {
+  margin-block-start: 0.5rem; }
+
+.-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-spell-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-item-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-monster-config {
+  align-items: center;
+  display: flex;
+  margin-block-end: 0.5rem; }
+  .-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-spell-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-item-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-monster-config input[type="checkbox"] {
+    margin-inline-end: 0.25rem; }
+
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-adventure-config-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-adventure-import-start {
+  margin-block-end: 0.5rem;
+  width: auto; }
+
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-feats-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-races-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-classes-start {
+  margin: 0;
+  margin-block-end: 0.5rem; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium #ddb-importer-settings hr {
+  display: none; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium .form-group h3 {
+  flex: 1 1 auto;
+  margin: 0; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium .form-group select {
+  flex: 1 1 auto !important; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting {
+  align-items: center;
+  display: flex;
+  margin: 0.5rem 0; }
+  .-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting input[type="checkbox"] {
+    margin-inline-end: 0.25rem; }
 
 body.-emu .dice-so-nice .dice-more-theme {
   background: none;

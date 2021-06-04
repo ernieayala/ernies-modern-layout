@@ -1,0 +1,30 @@
+.combatready-timebar,
+.combatready-timebar-fill {
+	border-radius: $global-border-radius-default;
+	box-shadow: none;
+
+	@include layout {
+		bottom: 0;
+		height: to-rem(7px);
+		top: auto;
+	}
+
+	@include layout(compact) {
+		height: to-rem(3px);
+	}
+}
+
+.combatready-timebar {
+	background: color("background-darkest", 0.2);
+}
+
+.combatready-timebar-fill {
+	background-color: color("primary");
+	color: color("white");
+
+	.combatready-timebaricon {
+		@include layout {
+			display: none;
+		}
+	}
+}

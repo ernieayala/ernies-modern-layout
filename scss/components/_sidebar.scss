@@ -244,7 +244,8 @@
 					position: relative;
 					width: 100%;
 
-					&:only-child {
+					&:only-child,
+					&:last-child {
 						margin-block-end: 0;
 					}
 				}
@@ -252,7 +253,8 @@
 				@include layout(compact) {
 					margin-block-end: m("xs");
 
-					&:only-child {
+					&:only-child,
+					&:last-child {
 						margin-block-end: 0;
 					}
 				}

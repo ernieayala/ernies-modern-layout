@@ -39,6 +39,14 @@
 		}
 	}
 
+	form .form-group {
+		@include layout {
+			button label {
+				font-size: fs("lg");
+			}
+		}
+	}
+
 	.form-group.submenu {
 		.notes {
 			@include layout {

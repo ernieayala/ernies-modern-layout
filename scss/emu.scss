@@ -66,15 +66,22 @@ body.-emu {
 	@import "./sheets/wall-config";
 
 	// // Module Compatibility
-	// @import "./module-compatibility/batch-folder-permissions";
 	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/better-npc-sheet";
 	@import "./module-compatibility/calendar-weather";
 	@import "./module-compatibility/cautious-gamemaster-pack";
 	@import "./module-compatibility/chat-portrait";
+	@import "./module-compatibility/combat-enhancements";
+	@import "./module-compatibility/combat-ready";
+	@import "./module-compatibility/combat-utility-belt";
+	@import "./module-compatibility/compendium-browser";
+	@import "./module-compatibility/compendium-folders";
+	@import "./module-compatibility/dnd-beyond-importer";
+	@import "./module-compatibility/dice-so-nice";
+
+	// @import "./module-compatibility/batch-folder-permissions";
 	// // @import "./module-compatibility/color-picker";
 	// @import "./module-compatibility/chat-indicators";
-	// .-emu-sidebar-combat & { @import "./module-compatibility/combat-enhancements"; }
 	// @import "./module-compatibility/combat-utility-belt";
 	// // @import "./module-compatibility/compendium-folders"; // maybe someday
 	// @import "./module-compatibility/custom-hotbar";
@@ -82,7 +89,6 @@ body.-emu {
 	// @import "./module-compatibility/df-chat-enhancements";
 	// @import "./module-compatibility/df-curvy-walls";
 	// @import "./module-compatibility/dice-tray";
-	@import "./module-compatibility/dice-so-nice";
 	// @import "./module-compatibility/dungeondraft-importer";
 	// @import "./module-compatibility/ernies-modern-ui";
 	// // @import "./module-compatibility/foriens-quest-log";

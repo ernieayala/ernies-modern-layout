@@ -1,95 +1,44 @@
 #sidebar,
 .sidebar-popout {
 	#compendium {
-		.compendium-entity.compendium-folder {
-			@extend %directory-item;
-			background: transparent;
-			cursor: default;
-			display: flex;
-			flex-direction: column;
-			margin: 0;
-			padding-block-start: p("base");
-			padding-inline-start: p("sm");
-			padding-inline-end: p("sm");
-			position: relative;
-			width: 100%;
+		> ul.directory-list {
+			@include layout {
+				> .directory-item {
+					margin: 0;
+					margin-block-end: m("base");
+					padding: 0;
 
-			.-compact & {
-				padding-inline-start: p("base");
-				padding-inline-end: p("base");
+					// holy fucking christ !importants - so gross
+					.compendium-pack {
+						cursor: pointer;
+						line-height: 1 !important;
+						margin: m("base") !important;
+						padding: 0 p("sm") !important;
+
+						&:hover {
+							background-color: color("primary");
+
+							.pack-title,
+							.compendium-footer {
+								color: color("white");
+							}
+						}
+
+						.pack-title,
+						.compendium-footer {
+							color: color("text");
+						}
+
+						.pack-title {
+							margin: 0 !important;
+						}
+
+						i.folder {
+							border: none;
+						}
+					}
+				}
 			}
-
-			&:hover,
-			&:focus {
-				background: transparent;
-				box-shadow: none;
-			}
-
-			+ .folder-contents {
-				@extend %reset-list;
-			}
-		}
-
-		.compendium-folder-header {
-			align-items: center;
-			background-color: color("folder-header") !important; // wouldn't have to do this if people didn't use inline styles
-			border: 0;
-			border-inline-start: b("primary", 4px);
-			color: color("text") !important;  // wouldn't have to do this if people didn't use inline styles
-			cursor: pointer;
-			display: flex;
-			flex-wrap: nowrap;
-			line-height: 1;
-			min-height: to-rem(32px);
-			padding: p("base") p("sm");
-			position: relative;
-			transition: t(background box-shadow color, "link");
-			width: 100%;
-
-			.-compact & {
-				min-height: to-rem(24px);
-				padding: p("base");
-			}
-
-			&:hover {
-				@extend %global-hover;
-				background-color: color("primary");
-				color: color("text-lightest");
-			}
-
-			&:focus {
-				@extend %global-focus;
-			}
-
-			h3 {
-				@extend %h-tag;
-				@extend %button-icon;
-				@include ellipsis;
-				border-block-end: 0;
-				color: inherit;
-				flex: 1 1 auto;
-				font-size: fs("lg");
-				line-height: 1;
-				text-align: start;
-				text-shadow: none;
-			}
-
-			.move-folder,
-			.create-folder,
-			.edit-folder, {
-				@extend %control-button;
-			}
-		}
-
-		.compendium-list {
-			@extend %reset-list;
-			display: flex;
-			flex-direction: column;
-			background-color: color("folder-subdirectory");
-			border: none;
-			border-inline-start: b("primary", 4px);
-			margin: initial !important;  // wouldn't have to do this if people didn't use inline styles
-			width: 100%;
 		}
 	}
 }

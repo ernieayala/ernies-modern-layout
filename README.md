@@ -50,18 +50,18 @@ Cautious Gamemaster's Pack
 Character Actions List dnd5e
 Chat Images
 Chat Portrait
-
 Combat Enhancements
 Combat Ready
 Combat Utility Belt
 CommunityLighting by Blitz
 Compendium Browser
 Compendium Folders
+
 D&D Beyond Importer
 Deselection
 Dice So Nice!
+
 Dice Tray
-DnD5e
 DNDBeyond Character Sheet for 5E
 Domille's Wondrous Works - Battlemap Collection
 Drag Ruler
