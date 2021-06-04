@@ -1,21 +1,25 @@
 %input-text {
-	@include size(100%, to-rem(32px));
 	background: transparent;
 	border: b("border-lighter");
 	border-radius: $global-border-radius-forms;
+	box-shadow: none;
 	color: color("text");
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: normal;
-	line-height: 1;
-	margin: 0;
-	min-width: to-rem(16px);
-	padding: 0 p("sm");
-	position: relative;
 	transition: t(box-shadow, "link");
-	user-select: text;
 
-	.-compact & {
+	@include layout {
+		@include size(100%, to-rem(32px));
+		font-family: inherit;
+		font-size: inherit;
+		font-weight: normal;
+		line-height: 1;
+		margin: 0;
+		min-width: to-rem(16px);
+		padding: 0 p("sm");
+		position: relative;
+		user-select: text;
+	}
+
+	@include layout(compact) {
 		height: to-rem(24px);
 		padding: 0 p("base");
 	}

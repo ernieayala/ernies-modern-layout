@@ -7,6 +7,7 @@ input[type="datetime-local"] {
 	background: transparent;
 	border: b("border-lighter");
 	border-radius: $global-border-radius-forms;
+	box-shadow: none;
 	color: color("text");
 	transition: t(box-shadow, "link");
 

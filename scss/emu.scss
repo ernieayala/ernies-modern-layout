@@ -21,6 +21,7 @@ body.-emu {
 	@import "./components/context-menu";
 	@import "./components/dialog";
 	@import "./components/hotbar";
+	@import "./components/hud";
 	@import "./components/loading-bar";
 	@import "./components/logo";
 	@import "./components/menu";
@@ -78,6 +79,8 @@ body.-emu {
 	@import "./module-compatibility/compendium-folders";
 	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dice-so-nice";
+	@import "./module-compatibility/dice-tray";
+	@import "./module-compatibility/dynamic-active-effects";
 
 	// @import "./module-compatibility/batch-folder-permissions";
 	// // @import "./module-compatibility/color-picker";

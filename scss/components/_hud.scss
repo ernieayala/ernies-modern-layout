@@ -1,72 +1,81 @@
 #hud {
 	input[type="text"] {
-		background-color: color("background-lightest");
-		box-shadow: none;
-		font-size: fs("lg");
-
-		&:hover {
-			@extend %global-hover-alt;
-		}
-
-		&:focus {
-			@extend %global-focus;
-		}
+		@extend %input-text;
+		background: color("background-lightest");
+		border: b("primary");
 	}
 
 	.attribute {
-		margin: 0;
-		margin-block-end: space("base");
+		@include layout {
+			margin: 0;
+			margin-block-end: space("base");
+		}
 
 		&.elevation {
-			@include size(to-rem(40px));
-			flex: 0 0 auto;
-			padding: 0;
-
-			input {
-				height: 100%;
+			@include layout {
+				@include size(to-rem(40px));
+				flex: 0 0 auto;
+				padding: 0;
 			}
 
 			> i {
 				color: color("text");
-				z-index: 1;
+
+				@include layout {
+					z-index: 1;
+				}
 			}
 		}
 
-		@include emu-compact {
+		@include layout(compact) {
 			margin-block-end: space("xs");
 		}
 
 		&:last-child {
-			margin-block-end: 0;
+			@include layout {
+				margin-block-end: 0;
+			}
 
-			@include emu-compact {
+			@include layout(compact) {
 				margin-block-end: 0;
 			}
 		}
 	}
 
 	.control-icon {
-		@include size(to-rem(40px));
-		align-items: center;
 		background-color: color("background-darkest", 0.8);
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		box-sizing: border-box;
 		color: color("text-lightest");
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		font-size: fs("lg");
-		line-height: initial;
-		margin: 0;
-		margin-block-end: space("base");
-		pointer-events: all;
-		position: relative;
 		transition: t(background box-shadow color opacity, "link");
 
-		@include emu-compact {
+		@include layout {
+			@include size(to-rem(40px));
+			align-items: center;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			font-size: fs("lg");
+			line-height: initial;
+			margin: 0;
+			margin-block-end: space("base");
+			pointer-events: all;
+			position: relative;
+
+			> i {
+				margin: 0;
+				position: relative;
+			}
+
+			img {
+				margin: 0;
+				opacity: 1;
+			}
+		}
+
+		@include layout(compact) {
 			@include size(to-rem(32px));
 			margin-block-end: space("xs");
 		}
@@ -82,9 +91,11 @@
 		}
 
 		&:last-child {
-			margin-block-end: 0;
+			@include layout {
+				margin-block-end: 0;
+			}
 
-			@include emu-compact {
+			@include layout(compact) {
 				margin-block-end: 0;
 			}
 		}
@@ -93,16 +104,6 @@
 			@extend %global-active;
 			@extend %global-hover;
 			background-image: none;
-		}
-
-		> i {
-			margin: 0;
-			position: relative;
-		}
-
-		img {
-			margin: 0;
-			opacity: 1;
 		}
 	}
 
@@ -114,19 +115,27 @@
 			border-radius: $global-border-radius-default;
 			box-shadow: none;
 			color: color("text-lightest");
-			padding: p("base");
-			left: to-rem(48px);
 
-			@include emu-compact {
-				padding: p("xs");
+
+			@include layout {
+				padding: p("base");
+				left: to-rem(48px);
+
+				.effect-control {
+					opacity: 0.4;
+
+					&:hover {
+						opacity: 0.6;
+					}
+
+					&.active {
+						opacity: 1;
+					}
+				}
 			}
 
-			.effect-control {
-				opacity: 0.4;
-
-				&.active {
-					opacity: 1;
-				}
+			@include layout(compact) {
+				padding: p("xs");
 			}
 		}
 	}

@@ -44,7 +44,6 @@ Ambient Doors
 Better NPC Sheet 5e
 Better Rolls for 5e
 Better Rolltables
-Blood 'n Guts *
 Calendar/Weather
 Cautious Gamemaster's Pack
 Character Actions List dnd5e
@@ -56,27 +55,18 @@ Combat Utility Belt
 CommunityLighting by Blitz
 Compendium Browser
 Compendium Folders
-
 D&D Beyond Importer
-Deselection
 Dice So Nice!
-
 Dice Tray
 DNDBeyond Character Sheet for 5E
-Domille's Wondrous Works - Battlemap Collection
 Drag Ruler
-Drag Upload (Get Over Here!)
 Dynamic Active Effects
 Dynamic Active Effects SRD
 Easy Target
+
 Forien's Quest Log
 Forien's Unidentified Items
-Foundry Community Macros
-Foundry Community Tables
-Foundry VTT - Game Audio Bundle 1 of 4
-Foundry VTT - Game Audio Bundle 2 of 4
-Foundry VTT - Game Audio Bundle 3 of 4
-Foundry VTT - Game Audio Bundle 4 of 4
+
 FXMaster
 GM Notes
 GM Screen
