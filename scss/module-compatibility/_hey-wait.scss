@@ -1,0 +1,7 @@
+.sheet[id*="tile-config-"] {
+	input[name="isHeyWaitTile"] + button {
+		@include layout {
+			margin-block-end: m("sm");
+		}
+	}
+}

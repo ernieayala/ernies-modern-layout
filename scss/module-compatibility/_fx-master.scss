@@ -1,106 +1,198 @@
-#effects-config {
-	.window-content {
-		overflow: hidden;
-	}
+#specials-config {
+	.fxmaster {
+		background-color: color("background-lightest");
 
-	.effects.directory-list {
-		height: auto;
+		.directory-header {
+			box-shadow: none;
 
-		.directory-item {
-			flex-direction: column;
-			padding: p("sm");
+			@include layout {
+				flex-direction: row;
 
-			.-compact & {
-				padding: p("base");
+				> div {
+					flex: 1 1 auto;
+
+					&:first-child {
+						padding-inline-end: p("base");
+
+						a {
+							i {
+								margin: 0;
+							}
+						}
+					}
+				}
 			}
 
-			header {
-				display: flex;
+			a {
+				@extend %primary-button;
 				width: 100%;
 
-				label {
-					@extend %button-icon;
+				> i {
+					margin-inline-start: m("sm");
+				}
+			}
+		}
+
+		.special-effects {
+			background-color: color("folder-directory");
+
+			.preview {
+				background-color: color("black", 0.1);
+				border: none;
+
+				@include layout {
+					@include size(to-rem(32px));
+					flex: 0 0 auto;
+					margin: m("base");
+					overflow: hidden;
+
+					> video {
+						height: 100%;
+						width: 100%;
+					}
+				}
+			}
+
+			.description {
+				@include layout {
 					align-items: center;
 					display: flex;
-					flex-direction: row-reverse;
-					font-size: fs("lg");
-					justify-content: flex-end;
+					padding: p("sm");
+
+					h4 {
+						color: color("text-lightest");
+						font-size: fs("lg");
+						height: auto;
+						text-indent: 0;
+					}
 				}
 
-				input[type="checkbox"] {
-					margin-inline-start: m("sm");
+				.author {
+					color: color("text-lightest");
 
-					.-compact & {
-						margin-inline-start: m("base");
+					@include layout {
+						font-size: fs("sm");
+						line-height: 1.2;
+						text-align: left;
 					}
 				}
 			}
 
-			.config.collapsible {
-				margin: 0;
-				margin-block-start: m("base");
-				width: 100%;
+			.controls {
+				@include layout {
+					flex: 0 0 auto;
+					line-height: 1;
+					padding: 0;
+				}
 
-				.flexrow {
+				a {
+					@extend %control-button;
+				}
+			}
+		}
+
+		.directory-item {
+			&:last-of-type {
+				@include layout {
 					margin-block-end: m("sm");
+				}
+			}
+		}
 
-					&:last-child {
-						margin-block-end: 0;
-					}
+		.directory-footer {
+			@include layout {
+				display: none;
+			}
+		}
+	}
+}
 
-					input[type="checkbox"] + input {
-						margin-inline-start: m("base");
-					}
+#effects-config {
+	.directory-list {
+		background-color: color("background-lightest");
+
+		@include layout {
+			height: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+	}
+
+	.directory-item {
+		border-block-end: b("border");
+
+		@include layout {
+			padding: p("base");
+		}
+
+		header {
+			@include layout {
+				align-items: center;
+			}
+
+			label {
+				color: color("text");
+				text-shadow: none;
+
+				@include layout {
+					padding-inline-start: p("sm");
+					text-indent: 0;
+				}
+
+				&:hover {
+					color: color("primary");
 				}
 			}
 		}
 	}
 
-	button {
-		@extend %primary-button;
-		@extend %button-icon;
+	.form-footer {
+		background-color: color("background-lightest");
+
+		@include layout {
+			bottom: 0;
+			padding: p("sm");
+			position: sticky;
+		}
 	}
 
-	form {
-		display: flex;
-		flex-direction: column;
-		height: 1px; // hacky hack
-
-		.form-footer {
-			border-block-start: b("border");
-			flex: 0 0 auto;
-			padding: p("sm");
+	input[type="checkbox"] + input[type="color"] {
+		@include layout {
+			margin-inline-start: m("base");
 		}
 	}
 }
 
 #filter-config {
-	height: auto !important;
-
-	.window-content {
-		@extend %window-content;
-		padding: p("sm");
-
-		.-compact & {
-			padding: p("base");
+	.window-content form {
+		@include layout {
+			height: auto;
 		}
 	}
 
-	button {
-		@extend %primary-button;
-		@extend %button-icon;
+	.directory-list {
+		@include layout {
+			height: auto;
+			overflow-x: hidden;
+			overflow-y: auto;
+			padding-block-end: p("sm");
+		}
 	}
 
-	input[type="checkbox"] + input {
-		margin-inline-start: m("base");
+	.form-footer {
+		background-color: color("background-lightest");
+		border-block-start: b("border");
+
+		@include layout {
+			bottom: 0;
+			padding-block-start: p("sm");
+			position: sticky;
+		}
 	}
 
-	.fxmaster.filters.directory-list {
-		height: auto;
-		margin-block-end: m("sm");
-
-		.-compact & {
-			margin-block-end: m("base");
+	input[type="checkbox"] + input[type="color"] {
+		@include layout {
+			margin-inline-start: m("base");
 		}
 	}
 }

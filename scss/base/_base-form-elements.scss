@@ -280,11 +280,20 @@ select {
 		padding: 0 p("sm");
 		position: relative;
 		text-overflow: ellipsis;
+
+		&[multiple] {
+			height: auto;
+			padding: p("sm");
+		}
 	}
 
 	@include layout(compact) {
 		height: to-rem(24px);
 		padding: 0 p("base");
+
+		&[multiple] {
+			padding: p("base");
+		}
 	}
 
 	&:hover {
@@ -347,5 +356,14 @@ textarea {
 	&:disabled {
 		opacity: 0.5;
 		pointer-events: none;
+	}
+}
+
+fieldset {
+	border: none;
+
+	@include layout {
+		margin: 0;
+		padding: 0;
 	}
 }

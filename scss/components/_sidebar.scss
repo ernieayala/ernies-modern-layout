@@ -228,6 +228,10 @@
 					@include size(to-rem(32px));
 					flex: 0 0 auto;
 					margin-inline-start: m("base");
+
+					> i {
+						margin: 0;
+					}
 				}
 
 				@include layout(compact) {

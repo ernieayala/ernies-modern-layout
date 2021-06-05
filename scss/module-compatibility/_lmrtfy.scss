@@ -1,185 +1,50 @@
-#lmrtfy {
-	@extend %window-common;
-
-	fieldset {
-		border: none;
-		border-block-end: b("border");
-		margin: 0;
-		padding: 0;
-
-		&:last-of-type {
-			border-block-end: 0;
+#lmrtfy.lmrtfy-parchment {
+	.window-content {
+		@include layout {
+			padding-block-end: 0;
 		}
 	}
 
-	form {
-		display: flex;
-		flex: 1 1 auto;
-		flex-direction: column;
-		height: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
-		padding: p("sm");
-		position: relative;
-
-		.form-header {
-			border-block-end: b("primary", 2px);
-			color: color("primary");
-			font-family: inherit;
-			margin-block-start: m("lg");
-			margin-block-end: m("sm");
-			padding: 0  p("sm");
-
-			+ .notes {
-				padding: 0 p("sm");
-			}
+	.lmrtfy-actor {
+		@include layout {
+			flex: 0 0 auto;
 		}
+	}
 
-		.form-group {
-			@extend %form-group;
-
-			button + button,
-			select + select {
-				margin-inline-start: m("base");
-			}
-
-			select,
-			input {
-				background: none;
-			}
+	.lmrtfy-actor-avatars {
+		input:checked + label img {
+			@extend %global-active;
+			box-shadow: none;
 		}
+	}
 
-		.lmrtfy-submit {
-			@extend %button-icon;
-			background-color: color("background-lightest");
-			border-radius: $global-border-radius-controls;
-			border-block-start: b("border");
-			box-shadow: 0 space("sm") 0 0 color("background-lightest");
+	.lmrtfy-submit {
+		background-color: color("background-lightest");
+		border-block-start: b("border");
+
+		@include layout {
 			bottom: 0;
 			display: flex;
-			left: 0;
-			margin-inline-start: -(m("sm"));
+			flex-wrap: nowrap;
 			padding: p("sm");
-			padding-block-end: 0;
 			position: sticky;
-			width: calc(100% + #{to-rem(16px)});
-
-			button {
-				@extend %button-row;
-			}
-		}
-
-		.lmrtfy-actor-avatars {
-			justify-content: initial;
-
-			.lmrtfy-actor {
-				flex: 0 0 auto;
-				padding: p("base");
-
-				input[type=checkbox]:checked + label {
-					@extend %global-active;
-					@extend %global-focus;
-					margin: 0;
-
-					img {
-						@extend %reset-image;
-						box-shadow: none;
-						transform: none;
-					}
-				}
-
-				label {
-					cursor: pointer;
-					flex: 0 0 auto;
-					margin: 0;
-					padding: 0;
-				}
-			}
-		}
-
-		.lmrtfy-actor-avatars img {
-			@extend %reset-image;
-			@include size(to-rem(56px));
-			transform: none;
-			transition: none;
-		}
-
-		.lmrtfy-extra-initiative,
-		.lmrtfy-extra-death-save,
-		.lmrtfy-ability,
-		.lmrtfy-skill {
-			input[type=checkbox]:checked + label {
-				@extend %global-active;
-				font-weight: normal;
-			}
-
-			label {
-				@extend %primary-button;
-				flex: 1 1 auto;
-				padding-inline-end: p("sm");
-			}
-		}
-
-		.lmrtfy-ability-checks > div,
-		.lmrtfy-saving-throws > div,
-		.lmrtfy-skill-checks > div,
-		.lmrtfy-extras > div {
-			flex: 1 1 auto;
-			margin-inline-end: m("base");
-			padding: 0;
-
-			&:last-child {
-				margin-inline-end: 0;
-			}
-		}
-
-		.lmrtfy-skill-checks {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			flex: 0 0 100%;
-			justify-content: initial;
-			max-height: 100%;
-
-			.lmrtfy-skill {
-				margin-block-end: m("base");
-			}
-		}
-
-		hr {
-			display: none;
 		}
 	}
 
-	button {
-		@extend %primary-button;
-		@extend %button-icon;
-
-		&.file-picker {
-			flex: 0 0 auto;
-			line-height: auto;
-			margin: 0;
-			order: 66; // not the younglings
-			width: to-rem(32px);
-
-			.-compact & {
-				width: to-rem(24px);
-			}
-
-			+ input[type="text"] {
-				height: to-rem(32px);
-				margin-right: 0 !important; // :(
-				margin-inline-end: m("base") !important;
-
-				.-compact & {
-					height: to-rem(24px);
-				}
-			}
+	input[type=checkbox] + label {
+		@include layout {
+			cursor: pointer;
 		}
 	}
 
-	form button {
-		background-color: color("background-button");
-		border: none;
+	input[type=checkbox]:checked + label {
+		color: color("primary");
+		font-weight: normal;
+	}
+
+	select + select {
+		@include layout {
+			margin-inline-start: m("base");
+		}
 	}
 }

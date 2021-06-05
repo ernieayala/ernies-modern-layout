@@ -1,0 +1,19 @@
+.app.window-app .open-gm-note {
+	> i {
+		@include layout {
+			margin: 0 m("base");
+		}
+	}
+}
+
+.gm-notes.window-app {
+	.controlls {
+		@include layout {
+			display: flex;
+
+			button {
+				flex: 1 1 auto;
+			}
+		}
+	}
+}

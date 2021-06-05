@@ -60,7 +60,7 @@
 			padding: p("base");
 		}
 
-		.window-title {
+		h4.window-title {
 			color: color("text-lightest");
 
 			@include layout {
@@ -244,6 +244,8 @@
 
 	.sheet-footer {
 		@include layout {
+			flex: 0 0 auto;
+			line-height: initial;
 			margin-block-start: m("sm");
 			z-index: 10;
 

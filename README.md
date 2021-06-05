@@ -38,6 +38,15 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
+### Systems Tested
+DND 5e
+
+### Systems WIP
+Pathfinder 2
+Starfinder
+CoC
+
+#### Mods Tested
 About Time
 Actually Private Rolls
 Ambient Doors
@@ -63,34 +72,25 @@ Drag Ruler
 Dynamic Active Effects
 Dynamic Active Effects SRD
 Easy Target
-
-Forien's Quest Log
-Forien's Unidentified Items
-
 FXMaster
 GM Notes
-GM Screen
-Grid Scaler
 Health Estimate
 Hey, Wait!
-Iconizer
-Jack Kerouac's Animated Spell Effects
-JB2A - Jules&Ben's Animated Assets
-Jinker's Animated Art Pack
 Less Fog
 Let Me Roll That For You
-lib - ColorSettings
 Library: DF Hotkeys
 libWrapper
 Loot Sheet NPC 5E
 Maestro
 Magic Items
-Math.js
 Mess - Moerills enhancing super-suit(e)
-Michael Ghelfi Audio Pack
+
+#### Mods WIP
+Forien's Quest Log
+Forien's Unidentified Items
+GM Screen
 Midi Quality of Life Improvements
-MikWewa Battlemap Bundle
-Miska's Maps - Battlemap Pack
+Moulinette
 Mount Up!
 Multilevel Tokens
 Music d20 Sampler
@@ -116,7 +116,6 @@ Spellarena Battlemap Collection
 Tabletop RPG Music
 TacticalMap Battlemaps Pack
 The Furnace
-The MAD Cartographer | Free Battlemap Pack
 Tidy UI Game Settings
 Tidy5e Sheet
 Token Action HUD

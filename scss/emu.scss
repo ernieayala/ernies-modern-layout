@@ -81,47 +81,14 @@ body.-emu {
 	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dynamic-active-effects";
-
-	// @import "./module-compatibility/batch-folder-permissions";
-	// // @import "./module-compatibility/color-picker";
-	// @import "./module-compatibility/chat-indicators";
-	// @import "./module-compatibility/combat-utility-belt";
-	// // @import "./module-compatibility/compendium-folders"; // maybe someday
-	// @import "./module-compatibility/custom-hotbar";
-	// @import "./module-compatibility/dancing-lights";
-	// @import "./module-compatibility/df-chat-enhancements";
-	// @import "./module-compatibility/df-curvy-walls";
-	// @import "./module-compatibility/dice-tray";
-	// @import "./module-compatibility/dungeondraft-importer";
-	// @import "./module-compatibility/ernies-modern-ui";
-	// // @import "./module-compatibility/foriens-quest-log";
-	// @import "./module-compatibility/fps-counter";
-	// @import "./module-compatibility/furnace";
-	// @import "./module-compatibility/fx-master";
-	// @import "./module-compatibility/_illandrils_chat_enhancements";
-	// @import "./module-compatibility/lmrtfy";
-	// @import "./module-compatibility/macro-editor";
-	// @import "./module-compatibility/mess";
-	// @import "./module-compatibility/midi-qol";
-	// @import "./module-compatibility/monks-scene-navigation";
-	// @import "./module-compatibility/narrator-tools";
-	// @import "./module-compatibility/one-journal";
-	// @import "./module-compatibility/party-resources";
-	// @import "./module-compatibility/permission-viewer";
-	// @import "./module-compatibility/plutonium";
-	// @import "./module-compatibility/polyglot";
-	// @import "./module-compatibility/rolltable-button";
-	// @import "./module-compatibility/response-time";
-	// @import "./module-compatibility/simple-dice-roller";
-	// 	@import "./module-compatibility/small-time";
-	// @import "./module-compatibility/tabbed-chat-log";
-	// @import "./module-compatibility/thanduls-toggle";
-	// @import "./module-compatibility/tidy-ui-game-settings";
-	// @import "./module-compatibility/token-action-hud";
-	// @import "./module-compatibility/token-auras";
-	// @import "./module-compatibility/token-mold";
-	// @import "./module-compatibility/tweak-playlist";
-	// @import "./module-compatibility/world-anvil";
+	@import "./module-compatibility/fx-master";
+	@import "./module-compatibility/gm-notes";
+	@import "./module-compatibility/health-estimate";
+	@import "./module-compatibility/hey-wait";
+	@import "./module-compatibility/lmrtfy";
+	@import "./module-compatibility/lib-wrapper";
+	@import "./module-compatibility/maestro";
+	@import "./module-compatibility/mess";
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";
