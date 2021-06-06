@@ -1,0 +1,8 @@
+#sidebar,
+.sidebar-popout {
+	.directory-footer button.npc-generator-btn {
+		@include layout {
+			width: 100%;
+		}
+	}
+}

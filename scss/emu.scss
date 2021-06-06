@@ -89,6 +89,9 @@ body.-emu {
 	@import "./module-compatibility/lib-wrapper";
 	@import "./module-compatibility/maestro";
 	@import "./module-compatibility/mess";
+	@import "./module-compatibility/midi-qol";
+	@import "./module-compatibility/moulinette";
+	@import "./module-compatibility/not-enough-npcs";
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";

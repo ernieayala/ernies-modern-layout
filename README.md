@@ -46,7 +46,8 @@ Pathfinder 2
 Starfinder
 CoC
 
-#### Mods Tested
+
+### Mods Tested
 About Time
 Actually Private Rolls
 Ambient Doors
@@ -84,19 +85,16 @@ Loot Sheet NPC 5E
 Maestro
 Magic Items
 Mess - Moerills enhancing super-suit(e)
+Midi Quality of Life Improvements
+Moulinette
+Multilevel Tokens
 
-#### Mods WIP
+### Mods WIP
 Forien's Quest Log
 Forien's Unidentified Items
 GM Screen
-Midi Quality of Life Improvements
-Moulinette
-Mount Up!
-Multilevel Tokens
-Music d20 Sampler
 Not Enough NPCs: A 5e NPC Generator
 Parallaxia
-Pathfinder 2e
 PDFoundry
 Perfect Vision
 Permission Viewer
@@ -112,9 +110,6 @@ Simplefog - Manual Fog of War
 Skill Customization for D&D5e
 socketlib
 SoundBoard by Blitz
-Spellarena Battlemap Collection
-Tabletop RPG Music
-TacticalMap Battlemaps Pack
 The Furnace
 Tidy UI Game Settings
 Tidy5e Sheet
@@ -129,6 +124,28 @@ Torch
 Trigger Happy
 Turn Marker
 Universal Battlemap Importer
-Virtual Tabletop Assets - D&D Beyond Integration
-Virtual Tabletop Assets - Party overview
 Wall Height
+
+### More Mods
+Active Effects to Chat
+Autocomplete Whiser
+Background Volumne
+Batch Permissions by Folder
+Chat Alias
+DF Chat Enhancements
+DF Curvy Walls
+FPS Meter
+Illandrils' Chat Enhancements
+Macro Editor
+Monk's Scene Navigation
+Narrator Tools
+OneJournal
+Party Resources
+Plutonium
+RollTable Buttons
+Search Anywhere
+Simple Dice Roller
+SmallTime
+Tabbed Chat Log
+Thandul's Togglable Effects
+Wordl Anvil Integration

@@ -1,0 +1,177 @@
+.moulinette-options {
+	background-color: color("background-darkest", 0.8);
+	border-radius: $global-border-radius-controls;
+	box-shadow: none;
+	color: color("text-lightest");
+
+	@include layout {
+		box-sizing: border-box;
+		font-size: fs("lg");
+		line-height: 1;
+		z-index: z("fixed");
+	}
+
+	li {
+		@extend %primary-button;
+
+		&[data-type="empty"] {
+			pointer-events: none;
+		}
+	}
+}
+
+#moulinette.forge {
+	.window-content form {
+		@include layout {
+			display: grid;
+			grid-template-areas:
+				"nav nav"
+				"body body"
+				"logo logo-text";
+			grid-template-columns: min-content 1fr;
+			grid-template-rows: min-content 1fr min-content;
+			overflow: hidden;
+
+			> nav {
+				grid-area: nav;
+			}
+
+			> .main {
+				display: flex;
+				flex-direction: column;
+				grid-area: body;
+				margin: 0;
+				overflow: auto;
+
+				> * {
+					flex: 0 0 auto;
+				}
+
+				.list {
+					flex: 1 1 auto;
+				}
+
+				.options {
+					align-items: center;
+					display: flex;
+					padding: 0;
+
+					input {
+						margin: 0 m("base");
+						width: auto;
+					}
+
+					.option {
+						align-items: center;
+						display: flex;
+						margin-inline-end: m("sm");
+
+						> i {
+							margin: 0 m("base");
+						}
+					}
+				}
+
+				.form-group.search button i {
+					margin: 0;
+				}
+
+				footer {
+					.actions {
+						margin-block-start: m("base");
+
+						&:empty {
+							display: none;
+						}
+					}
+				}
+			}
+
+			> .logo {
+				@include size(to-rem(56px));
+				float: initial;
+				grid-area: logo;
+				max-width: initial;
+				padding: 0;
+				margin-block-start: m("sm");
+				margin-inline-end: m("sm");
+			}
+
+			> p {
+				grid-area: logo-text;
+				margin: 0;
+				margin-block-start: m("sm");
+			}
+		}
+	}
+
+	&.mtte .list {
+		@include layout {
+			height: auto;
+			margin-block-start: m("base");
+			overflow: auto;
+		}
+
+		> div {
+			padding: p("xs") p("base");
+
+			@include layout {
+				background-color: transparent;
+				min-height: 0;
+
+				&:nth-of-type(even) {
+					background-color: color("background-light", 0.1);
+				}
+
+				&:hover {
+					background-color: color("primary");
+					color: color("text-lightest");
+
+					> a {
+						color: color("text-lightest");
+					}
+				}
+
+				> * {
+					flex: 0 0 auto;
+				}
+
+				> span,
+				> a {
+					width: auto;
+				}
+
+				> span {
+					flex: 1 1 auto;
+				}
+
+				> img {
+					margin: 0;
+				}
+
+				> input {
+					margin-inline-end: m("sm");
+				}
+			}
+		}
+	}
+
+	.filepicker {
+		@include layout {
+			max-width: to-rem(88px);
+		}
+
+		.display-modes a {
+			@extend %primary-button;
+
+			@include layout {
+				margin-inline-start: m("base");
+				width: auto;
+
+				> i {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
