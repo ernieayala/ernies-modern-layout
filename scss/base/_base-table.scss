@@ -1,5 +1,5 @@
 table {
-	background-color: color("black", 0.2);
+	background-color: color("black", 0.05);
 	border-block-start: b("border");
 	border-block-end: b("border");
 
@@ -15,7 +15,7 @@ table {
 	}
 
 	tr:nth-child(even) {
-		background-color: color("white", 0.2);
+		background-color: color("white", 0.1);
 	}
 
 	td:first-child {

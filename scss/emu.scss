@@ -77,21 +77,28 @@ body.-emu {
 	@import "./module-compatibility/combat-utility-belt";
 	@import "./module-compatibility/compendium-browser";
 	@import "./module-compatibility/compendium-folders";
+	@import "./module-compatibility/df-chat-enhancements";
+	@import "./module-compatibility/df-curvy-walls";
 	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dynamic-active-effects";
+	@import "./module-compatibility/fps-counter";
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/gm-notes";
 	@import "./module-compatibility/health-estimate";
 	@import "./module-compatibility/hey-wait";
+	@import "./module-compatibility/illandrils-chat-enhancements";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/lib-wrapper";
+	@import "./module-compatibility/macro-editor";
 	@import "./module-compatibility/maestro";
 	@import "./module-compatibility/mess";
 	@import "./module-compatibility/midi-qol";
 	@import "./module-compatibility/moulinette";
 	@import "./module-compatibility/not-enough-npcs";
+	@import "./module-compatibility/universal-battlemap-importer";
+	@import "./module-compatibility/world-anvil";
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";

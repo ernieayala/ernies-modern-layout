@@ -1,38 +1,43 @@
-// arbitrary placement because lack of mod logic
-
 #df-curvy-walls-tools {
-	display: flex;
-	left: to-rem(96px);
-	top: to-rem(184px);
+	@include layout {
+		display: flex;
+		left: to-rem(96px);
+		top: to-rem(184px);
+	}
 
 	.control-tools {
-		@extend %reset-list;
-		flex-direction: column;
-		flex: 0 0 auto;
-		margin-inline-end: m("base");
-		pointer-events: none;
-		transition: t(opacity left, "link");
+		@include layout {
+			@extend %reset-list;
+			flex-direction: column;
+			flex: 0 0 auto;
+			margin-inline-end: m("base");
+			pointer-events: none;
+			transition: t(opacity left, "link");
+		}
 	}
 
 	.control-tool {
-		@include size(to-rem(40px));
-		align-items: center;
 		background-color: color("background-lightest");
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		box-sizing: border-box;
 		color: color("text");
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		font-size: fs("lg");
-		line-height: initial;
-		margin-block-end: space("base");
-		pointer-events: all;
-		position: relative;
 		transition: t(background box-shadow color opacity, "link");
+
+		@include layout {
+			@include size(to-rem(40px));
+			align-items: center;
+			box-sizing: border-box;
+			cursor: pointer;
+			display: flex;
+			justify-content: center;
+			font-size: fs("lg");
+			line-height: initial;
+			margin-block-end: space("base");
+			pointer-events: all;
+			position: relative;
+		}
 
 		&:hover {
 			@extend %global-hover;

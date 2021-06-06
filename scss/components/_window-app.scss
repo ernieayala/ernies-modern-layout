@@ -82,6 +82,15 @@
 				padding: p("base");
 				position: relative;
 				width: auto;
+
+				&:hover {
+					color: color("white");
+				}
+
+				&:focus {
+					color: color("white");
+					text-decoration: none;
+				}
 			}
 
 			&:hover {
