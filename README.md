@@ -46,7 +46,6 @@ Pathfinder 2
 Starfinder
 CoC
 
-
 ### Mods Tested
 About Time
 Actually Private Rolls
@@ -90,26 +89,47 @@ Moulinette
 Multilevel Tokens
 
 ### Mods WIP
+Active Effects to Chat
+Autocomplete Whiser
+Background Volumne
+Batch Permissions by Folder
+Chat Alias
+DF Chat Enhancements
+DF Curvy Walls
 Forien's Quest Log
 Forien's Unidentified Items
+FPS Meter
 GM Screen
+Illandrils' Chat Enhancements
+Macro Editor
+Monk's Scene Navigation
+Narrator Tools
 Not Enough NPCs: A 5e NPC Generator
+OneJournal
 Parallaxia
+Party Resources
 PDFoundry
 Perfect Vision
 Permission Viewer
 Pings
 Playlist Importer
+Plutonium
 Polyglot
 PopOut!
 Quick Insert - Search Widget
+RollTable Buttons
 Roofs & Overhead Tiles
+Search Anywhere
 Settings Extender
 Show Drag Distance
+Simple Dice Roller
 Simplefog - Manual Fog of War
 Skill Customization for D&D5e
+SmallTime
 socketlib
 SoundBoard by Blitz
+Tabbed Chat Log
+Thandul's Togglable Effects
 The Furnace
 Tidy UI Game Settings
 Tidy5e Sheet
@@ -125,27 +145,4 @@ Trigger Happy
 Turn Marker
 Universal Battlemap Importer
 Wall Height
-
-### More Mods
-Active Effects to Chat
-Autocomplete Whiser
-Background Volumne
-Batch Permissions by Folder
-Chat Alias
-DF Chat Enhancements
-DF Curvy Walls
-FPS Meter
-Illandrils' Chat Enhancements
-Macro Editor
-Monk's Scene Navigation
-Narrator Tools
-OneJournal
-Party Resources
-Plutonium
-RollTable Buttons
-Search Anywhere
-Simple Dice Roller
-SmallTime
-Tabbed Chat Log
-Thandul's Togglable Effects
 Wordl Anvil Integration
