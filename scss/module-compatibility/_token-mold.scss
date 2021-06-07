@@ -3,38 +3,121 @@
 	.token-mold {
 		@extend %panel-block;
 		border-block-end: b("border");
-		flex-wrap: wrap;
+
+		@include layout {
+			flex-wrap: wrap;
+		}
 
 		h3 {
-			@extend %h-tag;
-			font-size: fs("lg");
-			margin: 0;
-			margin-block-end: m("base");
-			width: 100%;
+			@include layout {
+				font-size: fs("lg");
+				font-weight: normal;
+				margin: 0;
+				margin-block-end: m("base");
+				width: 100%;
+			}
 		}
 
 		> label {
-			flex: 1 1 auto;
-			padding: p("xs");
+			@include layout {
+				flex: 1 1 auto;
+				padding: p("xs");
+			}
 
 			> span {
 				@extend %primary-button;
-				@include size(100%, space("button-sm"));
-				font-size: fs("sm");
-				padding: p("base");
 
-				> span {
-					margin-inline-end: m("base");
+				@include layout {
+					@include size(100%, space("button-sm"));
+					font-size: fs("sm");
+					padding: p("base");
+
+					> span {
+						margin-inline-end: m("base");
+					}
 				}
 			}
 
 			&:first-of-type {
-				padding-inline-start: 0;
+				@include layout {
+					padding-inline-start: 0;
+				}
 			}
 		}
 
 		> a {
 			@extend %control-button;
 		}
+	}
+}
+
+.window-app.token-mold .window-content {
+	@include layout {
+		overflow: hidden;
+	}
+
+	nav {
+		background-color: transparent;
+
+		@include layout {
+			padding: 0;
+		}
+	}
+
+	form {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+		}
+
+		section + section {
+			@include layout {
+				margin-block-start: m("base");
+			}
+		}
+
+		select.icon.fas.fa {
+			@include layout {
+				@extend %font-awesome;
+			}
+		}
+
+		.add-attribute {
+			@include layout {
+				display: flex;
+				margin-block-start: m("sm");
+			}
+		}
+
+		.flexcol {
+			border: none;
+
+			@include layout {
+				padding: 0;
+				width: 1px; // super hack
+
+				> select {
+					margin-block-start: m("base");
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.form-group {
+		input[type="checkbox"] + label {
+			@include layout {
+				flex: 1 1 40%;
+				padding-inline-start: p("sm");
+			}
+		}
+	}
+
+	.form-group.unlinked {
+		border: none;
+	}
+
+	.info {
+		height: auto;
 	}
 }

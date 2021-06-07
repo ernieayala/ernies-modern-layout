@@ -1,9 +1,26 @@
-#OneJournalShell {
+#OneJournalShell.window-app {
+	&.maximized {
+		> .window-header {
+			@include layout {
+				position: relative;
+			}
+		}
+	}
 
 	.window-header .one-journal-header {
 		background-color: transparent;
 		border: none;
-		padding: 0;
+
+		@include layout {
+			margin: 0;
+			padding: 0 p("sm");
+		}
+
+		a {
+			@include layout {
+				position: relative;
+			}
+		}
 	}
 
 	.window-content {
@@ -12,48 +29,110 @@
 	}
 
 	.one-journal-attached {
-		.window-header {
-			display: none;
-		}
+		@include layout {
+			.window-header {
+				display: none;
+			}
 
-		form > input {
-			flex: 0 0 calc(100% - #{to-rem(98px))});
+			form > input {
+				flex: 0 0 calc(100% - #{to-rem(98px))});
+			}
 		}
 	}
 
 	.shell-content {
-		.window-resizable-handle {
-			display: none;
-		}
+		border: none;
 
-		.editor-edit {
-			right: to-rem(64px);
+		@include layout {
+			.window-resizable-handle {
+				display: none;
+			}
+
+			.editor-edit {
+				right: to-rem(64px);
+			}
 		}
 	}
 
 	.history-navigation {
-		right: space("sm");
-		top: space("sm");
+		@include layout {
+			right: space("sm");
+			top: space("sm");
+		}
 
 		a {
 			@extend %primary-button;
-			opacity: 1;
+
+			@include layout {
+				opacity: 1;
+
+				> i {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	.sidebar-toggle {
+		background-color: color("background-button");
+		border: none;
+		border-block-end: color("background-lightest") 2px solid;
+		border-inline-start: color("background-lightest") 2px solid;
+		border-radius: $global-border-radius-default 0 0 0;
+		color: color("text-lightest");
+		transition: t(background box-shadow color, "link");
+
+		@include layout {
+			@include absolute(top 0 right 0);
+			@include size(to-rem(20px));
+			align-items: center;
+			cursor: pointer;
+			display: inline-flex;
+			font-size: fs("sm");
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			z-index: z("fixed");
+		}
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
 		}
 	}
 }
 
-
 #OneJournalDirectory {
-	#journal {
-		.directory-list {
-			@extend %directory-subdirectory;
+	#journal.sidebar-tab {
+		.directory-header {
+			@include layout {
+				margin: 0;
+				padding: p("sm");
+
+				button {
+					height: auto;
+				}
+			}
+
+			.header-actions {
+				border: none;
+
+				@include layout {
+					margin-block-end: m("base");
+				}
+			}
+		}
+
+		.subdirectory {
+			border-block-end: none;
 		}
 
 		.directory-item {
-			@extend %directory-item;
-
-			&.folder {
-				@extend %folder;
+			&.selected {
+				background-color: color("primary");
 			}
 		}
 	}

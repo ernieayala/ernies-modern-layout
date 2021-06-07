@@ -96,6 +96,13 @@ Mess - Moerills enhancing super-suit(e)
 Midi Quality of Life Improvements
 Moulinette
 Multilevel Tokens
+Narrator Tools
+OneJournal
+SmallTime
+Token Mold
+Torch
+Trigger Happy
+Turn Marker
 Universal Battlemap Importer
 Wall Height
 Wordl Anvil Integration
@@ -105,9 +112,7 @@ Forien's Quest Log
 Forien's Unidentified Items
 GM Screen
 Monk's Scene Navigation
-Narrator Tools
 Not Enough NPCs: A 5e NPC Generator
-OneJournal
 Parallaxia
 Party Resources
 PDFoundry
@@ -127,7 +132,6 @@ Show Drag Distance
 Simple Dice Roller
 Simplefog - Manual Fog of War
 Skill Customization for D&D5e
-SmallTime
 socketlib
 SoundBoard by Blitz
 Tabbed Chat Log
@@ -140,8 +144,6 @@ Token Attacher
 Token Auras
 Token Info Icons
 Token Magic FX
-Token Mold
+
+### Won't Support
 Tokenizer
-Torch
-Trigger Happy
-Turn Marker

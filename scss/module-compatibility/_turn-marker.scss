@@ -1,0 +1,10 @@
+#turnmarker-settings-form {
+	@extend %window-common;
+	@extend %window-hack;
+
+	form > p:last-of-type {
+		@include layout {
+			margin-block-end: m("lg");
+		}
+	}
+}
