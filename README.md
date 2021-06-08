@@ -40,10 +40,10 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 ### Systems Tested
 DND 5e
+Starfinder
 
 ### Systems WIP
 Pathfinder 2
-Starfinder
 CoC
 
 ### Mods Tested
@@ -78,6 +78,7 @@ Drag Ruler
 Dynamic Active Effects
 Dynamic Active Effects SRD
 Easy Target
+Forien's Unidentified Items
 FPS Meter
 FXMaster
 GM Notes
@@ -130,17 +131,16 @@ Wordl Anvil Integration
 
 ### Mods WIP
 Forien's Quest Log
-Forien's Unidentified Items
 GM Screen
 Monk's Scene Navigation
 Not Enough NPCs: A 5e NPC Generator
 SoundBoard by Blitz
 The Furnace
 
-### Won't Support
+### Won't Support Currently
 Custom Hotbar
 Tokenizer
 Tidy UI Game Settings
 
 #### Key
-FNS = Function but not styled
+FNS = Functions but not styled

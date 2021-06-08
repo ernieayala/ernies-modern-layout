@@ -5,7 +5,7 @@ body.-emu {
 	// Base
 	.dialog,
 	#sidebar,
-	.window-app:not([id*="actor-"]):not([id*="item-"]) {
+	.window-app:not(.actor):not(.item) {
 		@import "./base/base-button";
 		@import "./base/base-directory";
 		@import "./base/base-form-elements";
@@ -85,6 +85,7 @@ body.-emu {
 	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dynamic-active-effects";
 	@import "./module-compatibility/ernies-modern-ui";
+	@import "./module-compatibility/foriens-unidentified-items";
 	@import "./module-compatibility/fps-counter";
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/gm-notes";

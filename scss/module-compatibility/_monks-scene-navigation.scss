@@ -1,118 +1,118 @@
-#navigation .monks-scene-navigation {
-	@include layout {
-		flex: 0 0 auto;
-		height: auto;
-		margin-block-end: m("sm");
-		padding: 0;
-	}
+// #navigation .monks-scene-navigation {
+// 	@include layout {
+// 		flex: 0 0 auto;
+// 		height: auto;
+// 		margin-block-end: m("sm");
+// 		padding: 0;
+// 	}
 
-	@include layout(compact) {
-		margin-block-end: m("base");
-	}
+// 	@include layout(compact) {
+// 		margin-block-end: m("base");
+// 	}
 
-	.scene-list {
-		background-color: transparent;
-		border: none;
-		border-radius: $global-border-radius-default;
+// 	.scene-list {
+// 		background-color: transparent;
+// 		border: none;
+// 		border-radius: $global-border-radius-default;
 
-		@include layout {
-			flex-wrap: wrap;
-			margin: 0;
-			padding: 0;
-		}
+// 		@include layout {
+// 			flex-wrap: wrap;
+// 			margin: 0;
+// 			padding: 0;
+// 		}
 
-		> li {
-			border: none;
+// 		> li {
+// 			border: none;
 
-			@include layout {
-				flex: 0 0 auto;
-				height: auto;
-				line-height: to-rem(36px);
-				margin: 0;
-				margin-block-end: space("base");
-				margin-inline-end: space("base");
-				max-width: to-rem(240px);
-				min-width: to-rem(112px);
-				padding: 0 p("sm");
-				text-align: center;
-			}
+// 			@include layout {
+// 				flex: 0 0 auto;
+// 				height: auto;
+// 				line-height: to-rem(36px);
+// 				margin: 0;
+// 				margin-block-end: space("base");
+// 				margin-inline-end: space("base");
+// 				max-width: to-rem(240px);
+// 				min-width: to-rem(112px);
+// 				padding: 0 p("sm");
+// 				text-align: center;
+// 			}
 
-			&.active,
-			&.view,
-			&.expanded {
-				.scene-name {
-					@extend %global-active;
-					background-image: none;
-				}
-			}
+// 			&.active,
+// 			&.view,
+// 			&.expanded {
+// 				.scene-name {
+// 					@extend %global-active;
+// 					background-image: none;
+// 				}
+// 			}
 
-			&.folder {
-				&.folder-header {
-					background-color: color("background");
-					background-image: $global-image-background-controls;
-					border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+// 			&.folder {
+// 				&.folder-header {
+// 					background-color: color("background");
+// 					background-image: $global-image-background-controls;
+// 					border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 
-					> i {
-						@include layout {
-							margin-inline-end: m("base");
-						}
-					}
-				}
+// 					> i {
+// 						@include layout {
+// 							margin-inline-end: m("base");
+// 						}
+// 					}
+// 				}
 
-				.folder-name {
-					border: 2px solid transparent;
-				}
-			}
+// 				.folder-name {
+// 					border: 2px solid transparent;
+// 				}
+// 			}
 
-			li.active-indicator {
-				color: color("text-lightest");
+// 			li.active-indicator {
+// 				color: color("text-lightest");
 
-				@include layout {
-					float: initial;
-					height: auto;
-					line-height: 1;
-					margin: 0;
-					margin-inline-end: m("xs");
-					width: auto;
-				}
-			}
-		}
+// 				@include layout {
+// 					float: initial;
+// 					height: auto;
+// 					line-height: 1;
+// 					margin: 0;
+// 					margin-inline-end: m("xs");
+// 					width: auto;
+// 				}
+// 			}
+// 		}
 
-		> .scene {
-			@include layout {
-				margin: 0;
-				margin-block-end: space("base");
-				padding: 0 p("base");
-			}
-		}
-	}
-}
+// 		> .scene {
+// 			@include layout {
+// 				margin: 0;
+// 				margin-block-end: space("base");
+// 				padding: 0 p("base");
+// 			}
+// 		}
+// 	}
+// }
 
-#scenes .directory-item.scene h3 {
-	a {
-		@include layout {
-			max-width: 80%;
+// #scenes .directory-item.scene h3 {
+// 	a {
+// 		@include layout {
+// 			max-width: 80%;
 
-			i {
-				margin-inline-end: m("base");
-			}
-		}
-	}
+// 			i {
+// 				margin-inline-end: m("base");
+// 			}
+// 		}
+// 	}
 
-	.permissions {
-		background-color: transparent;
-		color: color("text-lightest");
+// 	.permissions {
+// 		background-color: transparent;
+// 		color: color("text-lightest");
 
-		@include layout {
-			align-items: center;
-			display: inline-flex;
-			height: space("button-sm");
-			left: auto;
-			padding: 0 p("base");
-			position: absolute;
-			right: 0;
-			top: space("base");
-			width: auto;
-		}
-	}
-}
+// 		@include layout {
+// 			align-items: center;
+// 			display: inline-flex;
+// 			height: space("button-sm");
+// 			left: auto;
+// 			padding: 0 p("base");
+// 			position: absolute;
+// 			right: 0;
+// 			top: space("base");
+// 			width: auto;
+// 		}
+// 	}
+// }
