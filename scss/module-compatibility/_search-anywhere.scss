@@ -1,0 +1,73 @@
+#search-anywhere-modal {
+	.modal-content {
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+	}
+
+	#search-anywhere-autocomplete {
+		@extend %global-focus;
+		background: color("background-lightest");
+		color: color("text");
+
+		@include layout {
+			font-size: fs("xl");
+			height: auto;
+			padding: p("md");
+		}
+	}
+}
+
+ul.command-menu {
+	background-color: color("background-darkest", 0.8);
+	background-image: $global-image-background-darkest;
+	border-radius: $global-border-radius-default;
+	box-shadow: 0 2px 4px color("black");
+
+
+	@include layout {
+		@extend %reset-list;
+		display: flex;
+		flex-direction: column;
+		padding: p("sm");
+		z-index: z("tooltip");
+	}
+
+	@include layout(compact) {
+		padding: p("base");
+	}
+
+	li {
+		@extend %primary-button;
+
+		@include layout {
+			font-size: fs("xl");
+			margin-block-end: m("sm");
+		}
+
+		@include layout(compact) {
+			margin-block-end: m("base");
+		}
+
+		&:last-child {
+			@include layout {
+				margin-block-end: 0;
+			}
+
+			@include layout(compact) {
+				margin-block-end: 0;
+			}
+		}
+
+		h2 {
+			color: inherit;
+
+			@include layout {
+				flex: initial;
+				font-size: inherit;
+				line-height: 1;
+				padding: 0;
+			}
+		}
+	}
+}

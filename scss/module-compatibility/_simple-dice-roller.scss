@@ -1,3 +1,48 @@
 .simple-dice-roller-popup {
-	pointer-events: all;
+	background-color: color("background");
+	border: b("border");
+	border-radius: $global-border-radius-default;
+	box-shadow: none;
+	color: color("text-lightest");
+
+	@include layout {
+		line-height: initial;
+		margin: 0;
+		pointer-events: all;
+	}
+
+	ul {
+		border-block-end: b("border");
+	}
+
+	li {
+		border: none;
+		border-inline-end: b("border");
+
+		@include layout {
+			@include size(to-rem(48px));
+			align-items: center;
+			display: inline-flex;
+			height: auto;
+			justify-content: center;
+		}
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:first-child {
+			@include layout {
+				width: to-rem(112px);
+			}
+		}
+
+		&:last-child {
+			border-inline-end: none;
+		}
+
+		> i {
+			margin-inline-end: m("base");
+		}
+	}
 }

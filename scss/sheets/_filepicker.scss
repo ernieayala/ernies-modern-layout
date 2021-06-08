@@ -1,22 +1,9 @@
 .filepicker.window-app {
-	@include layout {
-		// display: flex;
-		// flex-direction: column;
-	}
-
 	.filepicker-header {
 		@include layout {
 			flex: 0 0 auto;
 			position: relative;
 		}
-
-		// .units {
-		// 	align-items: center;
-		// 	display: inline-flex;
-		// 	flex: 0 0 auto;
-		// 	font-size: fs("md");
-		// 	margin-inline-start: m("base");
-		// }
 
 		.current-dir {
 			button {
@@ -35,8 +22,6 @@
 
 	.filepicker-body {
 		@include layout {
-			// display: flex;
-			// flex-direction: column;
 			flex: 1 1 auto;
 			min-height: to-rem(200px);
 			overflow-y: auto;
@@ -136,10 +121,7 @@
 
 	section.filepicker-body {
 		@include layout {
-			// display: grid;
-			// grid-auto-flow: row;
 			margin-block-start: m("sm");
-			// overflow: hidden;
 			position: relative;
 		}
 
@@ -162,29 +144,6 @@
 		@include layout(compact) {
 			margin-block-start: m("base");
 		}
-
-		// .form-group {
-		// 	&:last-of-type {
-		// 		border-block-end: b("border");
-		// 	}
-
-		// 	&:only-child {
-		// 		border-block-end: 0;
-		// 	}
-		// }
-
-		// .upload-file {
-		// 	border-block-start: b("border");
-		// }
-
-		// > button[type="submit"] {
-		// 	@extend %button-row;
-		// 	margin-block-start: m("sm");
-
-		// 	@include layout(compact) {
-		// 		margin-block-start: m("base");
-		// 	}
-		// }
 	}
 
 	.display-modes {
@@ -218,7 +177,6 @@
 			background: none;
 			border: 0;
 			border-radius: 0;
-			// display: block !important; // why is there inline grid now?
 			min-height: to-rem(32px);
 			list-style: none;
 			overflow-x: hidden;
@@ -231,10 +189,6 @@
 				margin-block-start: m("base");
 			}
 		}
-
-		// &.tiles-list {
-		// 	display: grid !important;
-		// }
 
 		.dir,
 		.file {

@@ -98,7 +98,28 @@ Moulinette
 Multilevel Tokens
 Narrator Tools
 OneJournal
+Parallaxia
+Party Resources
+PDFoundry
+Perfect Vision
+Permission Viewer
+Pings
+Polyglot
+Search Anywhere
+Settings Extender
+Show Drag Distance
+Simple Dice Roller
+Simplefog - Manual Fog of War (FNS)
+Skill Customization for D&D5e
 SmallTime
+Tabbed Chat Log
+Thandul's Togglable Effects
+Tidy5e Sheet
+Token Action HUD
+Token Attacher
+Token Auras
+Token Info Icons
+Token Magic FX
 Token Mold
 Torch
 Trigger Happy
@@ -113,37 +134,13 @@ Forien's Unidentified Items
 GM Screen
 Monk's Scene Navigation
 Not Enough NPCs: A 5e NPC Generator
-Parallaxia
-Party Resources
-PDFoundry
-Perfect Vision
-Permission Viewer
-Pings
-Playlist Importer
-Plutonium
-Polyglot
-PopOut!
-Quick Insert - Search Widget
-RollTable Buttons
-Roofs & Overhead Tiles
-Search Anywhere
-Settings Extender
-Show Drag Distance
-Simple Dice Roller
-Simplefog - Manual Fog of War
-Skill Customization for D&D5e
-socketlib
 SoundBoard by Blitz
-Tabbed Chat Log
-Thandul's Togglable Effects
 The Furnace
-Tidy UI Game Settings
-Tidy5e Sheet
-Token Action HUD
-Token Attacher
-Token Auras
-Token Info Icons
-Token Magic FX
 
 ### Won't Support
+Custom Hotbar
 Tokenizer
+Tidy UI Game Settings
+
+#### Key
+FNS = Function but not styled

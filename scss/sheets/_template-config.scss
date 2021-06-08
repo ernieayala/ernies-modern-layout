@@ -1,4 +1,4 @@
-#batch-permissions {
+.window-app.sheet[id*="template-config"] {
 	@extend %window-common;
 	@extend %window-hack;
 }

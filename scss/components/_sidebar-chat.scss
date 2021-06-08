@@ -31,6 +31,7 @@
 				}
 
 				.message-header {
+					background-color: transparent;
 					color: inherit;
 
 					@include layout {
@@ -42,6 +43,8 @@
 
 				.message-metadata,
 				.message-sender {
+					color: inherit;
+
 					@include layout {
 						align-items: center;
 						display: inline-flex;

@@ -1,16 +1,39 @@
-.directory-header .action-buttons {
-	width: 100%;
+#fvtt-party-resources-dashboard.fvtt-party-resources.window-app {
+	.version {
+		color: color("text", 0.5);
+
+		@include layout {
+			display: none;
+
+			+ p {
+				margin: 0;
+			}
+		}
+	}
 }
 
-#btn-dashboard {
-	@extend %primary-button;
-	margin-block-end: m("sm");
+#edit-resource-form.fvtt-party-resources.window-app,
+#add-resource-form.fvtt-party-resources.window-app {
+	form .form-group {
+		label.checkbox {
+			@include layout {
+				flex: 1 1 auto;
+				font-size: fs("md") !important;
+				margin: 0;
 
-	i {
-		margin-inline-end: m("base");
-	}
+				input[type="checkbox"] {
+					margin: 0;
+					margin-inline-end: m("sm");
+				}
 
-	.-compact & {
-		margin-block-end: m("base");
+				+ .notes {
+					margin-block-start: m("base");
+				}
+			}
+		}
+
+		#configure-permissions {
+			margin-block-start: m("base");
+		}
 	}
 }

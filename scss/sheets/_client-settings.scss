@@ -1,4 +1,4 @@
-#client-settings {
+#client-settings.window-app {
 	nav.tabs {
 		border-block-end: b("primary", 2px);
 
@@ -19,6 +19,18 @@
 	}
 
 	section.content {
+		h2.module-header {
+			@include layout {
+				margin-block-start: m("md");
+				margin-block-end: m("base");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("sm");
+				margin-block-end: m("xs");
+			}
+		}
+
 		.submenu > button {
 			@include layout {
 				height: initial;

@@ -1,0 +1,37 @@
+#hud {
+	.token-info-container {
+		@include layout {
+			margin: 0;
+		}
+
+		.token-info-column-left {
+			left: to-rem(-120px);
+		}
+
+		.token-info-column-right {
+			right: to-rem(-120px);
+		}
+
+		.token-info-column-left,
+		.token-info-column-right, {
+			@include layout {
+				padding: 0;
+				width: auto;
+			}
+		}
+
+		.token-info-icon {
+			@include layout {
+				margin: 0 0 m("base") 0 !important;
+				min-width: 0;
+				padding: 0 p("sm");
+				width: auto;
+
+				i,
+				> i {
+					margin-inline-end: m("base");
+				}
+			}
+		}
+	}
+}

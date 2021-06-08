@@ -73,7 +73,7 @@
 			}
 		}
 
-		a {
+		a.header-button {
 			background: transparent;
 			text-shadow: none;
 
@@ -108,6 +108,11 @@
 					overflow: hidden;
 					padding: 0;
 					width: space("button-sm");
+
+					&:hover,
+					&:focus {
+						color: transparent;
+					}
 				}
 
 				> i {

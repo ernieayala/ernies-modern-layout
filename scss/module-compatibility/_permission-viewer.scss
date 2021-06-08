@@ -1,17 +1,22 @@
 #sidebar,
 .sidebar-popout {
 	div.permission-viewer {
-		flex: 0 0 auto;
-		margin: 0;
-		margin-inline-start: m("base");
+		@include layout {
+			flex: 0 0 auto;
+			margin: 0;
+			margin-inline-start: m("base");
+		}
 
 		a {
 			@extend %control-button;
-			padding: 0 to-rem(6px);
 			text-shadow: none;
-			width: auto;
 
-			.-compact & {
+			@include layout {
+				padding: 0 to-rem(6px);
+				width: auto;
+			}
+
+			@include layout(compact) {
 				padding: 0 p("base");
 				width: auto;
 			}

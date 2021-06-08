@@ -1,10 +1,12 @@
- #navigation .monks-scene-navigation {
-	flex: 0 0 auto;
-	height: auto;
-	margin-block-end: m("sm");
-	padding: 0;
+#navigation .monks-scene-navigation {
+	@include layout {
+		flex: 0 0 auto;
+		height: auto;
+		margin-block-end: m("sm");
+		padding: 0;
+	}
 
-	.-compact & {
+	@include layout(compact) {
 		margin-block-end: m("base");
 	}
 
@@ -12,22 +14,28 @@
 		background-color: transparent;
 		border: none;
 		border-radius: $global-border-radius-default;
-		flex-wrap: wrap;
-		margin: 0;
-		padding: 0;
+
+		@include layout {
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 0;
+		}
 
 		> li {
 			border: none;
-			flex: 0 0 auto;
-			height: auto;
-			line-height: to-rem(36px);
-			margin: 0;
-			margin-block-end: space("base");
-			margin-inline-end: space("base");
-			max-width: to-rem(240px);
-			min-width: to-rem(112px);
-			padding: 0 p("sm");
-			text-align: center;
+
+			@include layout {
+				flex: 0 0 auto;
+				height: auto;
+				line-height: to-rem(36px);
+				margin: 0;
+				margin-block-end: space("base");
+				margin-inline-end: space("base");
+				max-width: to-rem(240px);
+				min-width: to-rem(112px);
+				padding: 0 p("sm");
+				text-align: center;
+			}
 
 			&.active,
 			&.view,
@@ -45,7 +53,9 @@
 					border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 
 					> i {
-						margin-inline-end: m("base");
+						@include layout {
+							margin-inline-end: m("base");
+						}
 					}
 				}
 
@@ -56,43 +66,53 @@
 
 			li.active-indicator {
 				color: color("text-lightest");
-				float: initial;
-				height: auto;
-				line-height: 1;
-				margin: 0;
-				margin-inline-end: m("xs");
-				width: auto;
+
+				@include layout {
+					float: initial;
+					height: auto;
+					line-height: 1;
+					margin: 0;
+					margin-inline-end: m("xs");
+					width: auto;
+				}
 			}
 		}
 
 		> .scene {
-			margin: 0;
-			margin-block-end: space("base");
-			padding: 0 p("base");
+			@include layout {
+				margin: 0;
+				margin-block-end: space("base");
+				padding: 0 p("base");
+			}
 		}
 	}
 }
 
 #scenes .directory-item.scene h3 {
 	a {
-		max-width: 80%;
+		@include layout {
+			max-width: 80%;
 
-		i {
-			margin-inline-end: m("base");
+			i {
+				margin-inline-end: m("base");
+			}
 		}
 	}
 
 	.permissions {
-		align-items: center;
 		background-color: transparent;
 		color: color("text-lightest");
-		display: inline-flex;
-		height: space("button-sm");
-		left: auto;
-		padding: 0 p("base");
-		position: absolute;
-		right: 0;
-		top: space("base");
-		width: auto;
+
+		@include layout {
+			align-items: center;
+			display: inline-flex;
+			height: space("button-sm");
+			left: auto;
+			padding: 0 p("base");
+			position: absolute;
+			right: 0;
+			top: space("base");
+			width: auto;
+		}
 	}
 }

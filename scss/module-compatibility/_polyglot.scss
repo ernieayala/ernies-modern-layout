@@ -1,20 +1,72 @@
 #polyglot {
-	align-items: center;
 	background-color: color("background", 0.5);
-	display: flex;
-	flex: 0 0 auto;
-	margin: 0;
-	padding: 0 p("sm");
-	padding-block-end: p("base");
+
+	@include layout {
+		align-items: center;
+		display: flex;
+		flex: 0 0 auto;
+		margin: 0;
+		padding: 0 p("sm");
+		padding-block-end: p("base");
+	}
 
 	label {
-		flex: 0 0 auto;
-		margin-inline-end: m("base");
+		@include layout {
+			flex: 0 0 auto;
+			margin-inline-end: m("base");
+		}
 	}
 
 	select {
-		@extend %input-select;
 		background-color: color("background", 0.5);
 		color: color("text-lightest");
+	}
+}
+
+#client-settings.window-app form {
+	.polyglot-group-header {
+		background-color: transparent;
+		border-block-end: b("border");
+
+		@include layout {
+			margin-block-start: m("base");
+		}
+	}
+}
+
+#polyglot-death-form.window-app {
+	.window-content form {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			padding: 0 !important;
+
+			> div:not(.sheet-footer) {
+				flex: 1 1 auto;
+				overflow: auto;
+				margin-block-end: m("base");
+				padding-inline-end: p("sm");
+				padding-block-end: p("sm");
+
+				ul {
+					padding: 0;
+				}
+
+				li {
+					margin-block-end: m("base");
+
+					&:last-child {
+						margin-block-end: 0;
+					}
+				}
+			}
+
+			.sheet-footer {
+				flex: 0 0 auto;
+				margin: 0;
+				margin-block-start: m("sm") !important;
+			}
+		}
 	}
 }

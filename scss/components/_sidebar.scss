@@ -17,6 +17,12 @@
 		overflow: hidden;
 		padding: 0;
 		z-index: z(fixed);
+
+		ol,
+		ul {
+			margin: 0;
+			padding: 0;
+		}
 	}
 
 	@include layout(compact) {
@@ -219,6 +225,16 @@
 						margin: 0;
 					}
 				}
+
+				+ .header-actions {
+					@include layout {
+						margin-block-start: m("sm");
+					}
+
+					@include layout(compact) {
+						margin-block-start: m("base");
+					}
+				}
 			}
 
 			.header-control {
@@ -260,6 +276,26 @@
 					&:only-child,
 					&:last-child {
 						margin-block-end: 0;
+					}
+				}
+			}
+
+			> .action-buttons {
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+					position: relative;
+					width: 100%;
+				}
+
+				+ .action-buttons {
+					@include layout {
+						margin-block-start: m("base");
+					}
+
+					@include layout(compact) {
+						margin-block-start: m("xs");
 					}
 				}
 			}

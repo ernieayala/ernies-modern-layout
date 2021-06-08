@@ -61,14 +61,15 @@ body.-emu {
 	@import "./sheets/module-management";
 	@import "./sheets/roll-table-config";
 	@import "./sheets/scene";
+	@import "./sheets/template-config";
 	@import "./sheets/tile-config";
 	@import "./sheets/token-config";
 	@import "./sheets/user-config";
 	@import "./sheets/wall-config";
 
 	// // Module Compatibility
-	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/better-npc-sheet";
+	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/calendar-weather";
 	@import "./module-compatibility/cautious-gamemaster-pack";
 	@import "./module-compatibility/chat-portrait";
@@ -79,9 +80,9 @@ body.-emu {
 	@import "./module-compatibility/compendium-folders";
 	@import "./module-compatibility/df-chat-enhancements";
 	@import "./module-compatibility/df-curvy-walls";
-	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
+	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dynamic-active-effects";
 	@import "./module-compatibility/ernies-modern-ui";
 	@import "./module-compatibility/fps-counter";
@@ -90,17 +91,33 @@ body.-emu {
 	@import "./module-compatibility/health-estimate";
 	@import "./module-compatibility/hey-wait";
 	@import "./module-compatibility/illandrils-chat-enhancements";
-	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/lib-wrapper";
+	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/macro-editor";
 	@import "./module-compatibility/maestro";
 	@import "./module-compatibility/mess";
 	@import "./module-compatibility/midi-qol";
+	@import "./module-compatibility/monks-scene-navigation";
 	@import "./module-compatibility/moulinette";
 	@import "./module-compatibility/narrator-tools";
 	@import "./module-compatibility/not-enough-npcs";
 	@import "./module-compatibility/one-journal";
+	@import "./module-compatibility/party-resources";
+	@import "./module-compatibility/pdf-foundry";
+	@import "./module-compatibility/permission-viewer";
+	@import "./module-compatibility/polyglot";
+	@import "./module-compatibility/search-anywhere";
+	@import "./module-compatibility/simple-dice-roller";
 	@import "./module-compatibility/small-time";
+	@import "./module-compatibility/tabbed-chat-log";
+	@import "./module-compatibility/thanduls-toggle";
+	@import "./module-compatibility/the-furnace";
+	@import "./module-compatibility/tidy-sheet";
+	@import "./module-compatibility/token-action-hud";
+	@import "./module-compatibility/token-attacher";
+	@import "./module-compatibility/token-auras";
+	@import "./module-compatibility/token-info-icon";
+	@import "./module-compatibility/token-magic-fx";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/turn-marker";
 	@import "./module-compatibility/universal-battlemap-importer";
@@ -108,5 +125,5 @@ body.-emu {
 
 	// System Compatibility
 	@import "./system-compatibility/dnd5e";
-	// @import "./system-compatibility/starfinder";
+	@import "./system-compatibility/starfinder";
 }

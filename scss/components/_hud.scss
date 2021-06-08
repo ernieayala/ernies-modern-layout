@@ -19,7 +19,8 @@
 			}
 
 			> i {
-				color: color("text");
+				color: color("primary");
+				text-shadow: 2px 2px 2px color("black");
 
 				@include layout {
 					z-index: 1;
