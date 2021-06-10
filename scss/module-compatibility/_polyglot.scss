@@ -5,6 +5,7 @@
 		align-items: center;
 		display: flex;
 		flex: 0 0 auto;
+		flex-wrap: nowrap;
 		margin: 0;
 		padding: 0 p("sm");
 		padding-block-end: p("base");
@@ -20,6 +21,11 @@
 	select {
 		background-color: color("background", 0.5);
 		color: color("text-lightest");
+
+		@include layout {
+			flex: 1 1 auto;
+			width: 1px; // flex hack
+		}
 	}
 }
 

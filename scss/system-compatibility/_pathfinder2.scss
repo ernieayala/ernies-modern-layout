@@ -1,0 +1,29 @@
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab {
+		.directory-footer .bestiary-browser-btn {
+			@include layout {
+				width: 100%;
+			}
+		}
+	}
+}
+
+#world-clock.window-app {
+	.input-grid button {
+		@include layout {
+			margin: 0;
+		}
+	}
+}
+
+.window-app[id*="chat-popout-"],
+#chat-log {
+	.chat-damage-buttons {
+		button > i {
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+}

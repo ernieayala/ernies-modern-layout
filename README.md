@@ -40,11 +40,13 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 ### Systems Tested
 DND 5e
-Starfinder
 
-### Systems WIP
+### Systems Partially Tested
+CoC 7
+Pathfinder 1
 Pathfinder 2
-CoC
+Savage Worlds
+Starfinder
 
 ### Mods Tested
 About Time
@@ -82,6 +84,7 @@ Forien's Unidentified Items
 FPS Meter
 FXMaster
 GM Notes
+GM Screen
 Health Estimate
 Hey, Wait!
 Illandrils' Chat Enhancements
@@ -95,9 +98,11 @@ Maestro
 Magic Items
 Mess - Moerills enhancing super-suit(e)
 Midi Quality of Life Improvements
+Monk's Scene Navigation
 Moulinette
 Multilevel Tokens
 Narrator Tools
+Not Enough NPCs: A 5e NPC Generator
 OneJournal
 Parallaxia
 Party Resources
@@ -113,8 +118,10 @@ Simple Dice Roller
 Simplefog - Manual Fog of War (FNS)
 Skill Customization for D&D5e
 SmallTime
+SoundBoard by Blitz (FNS)
 Tabbed Chat Log
 Thandul's Togglable Effects
+The Furnace
 Tidy5e Sheet
 Token Action HUD
 Token Attacher
@@ -131,11 +138,6 @@ Wordl Anvil Integration
 
 ### Mods WIP
 Forien's Quest Log
-GM Screen
-Monk's Scene Navigation
-Not Enough NPCs: A 5e NPC Generator
-SoundBoard by Blitz
-The Furnace
 
 ### Won't Support Currently
 Custom Hotbar

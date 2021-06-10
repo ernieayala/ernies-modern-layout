@@ -55,7 +55,7 @@ function updateSettings(settings) {
 		imageBackgroundControls,
 		toggleLogo,
 		toggleSceneThumbs,
-		// toggleCombatSidebar
+		emuLayout
 	} = settings;
 
 	// Theme
@@ -91,7 +91,7 @@ function updateSettings(settings) {
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
-	// toggleCombatSidebar ? myHtml[0].classList.remove('-emu-sidebar-combat') : myHtml[0].classList.add('-emu-sidebar-combat');
+	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
 }
 
 function checkForUploadFolders(root, folder) {
@@ -152,7 +152,7 @@ class emuSettings {
 			imageBackgroundControls: 'none',
 			toggleLogo: true,
 			toggleSceneThumbs: true,
-			// toggleCombatSidebar: false,
+			emuLayout: true,
 			pathFonts: `worlds/${game.world.name}/${moduleName}/fonts`,
 			pathImages: `worlds/${game.world.name}/${moduleName}/images`
 		};
@@ -303,19 +303,6 @@ Hooks.once('ready', () => {
 	setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 
 	// Layouts
-	game.settings.register(moduleName, 'emuLayout', {
-		name: game.i18n.localize('emu.layout-emu-layout'),
-		scope: 'user',
-		config: true,
-		default: true,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
-		}
-	});
-	const emuLayout = game.settings.get(moduleName, 'emuLayout');
-	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
-
 	game.settings.register(moduleName, 'compactMode', {
 		name: game.i18n.localize('emu.layout-compact'),
 		scope: 'user',

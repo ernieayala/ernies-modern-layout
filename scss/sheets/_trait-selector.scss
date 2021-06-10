@@ -1,0 +1,44 @@
+.window-app[id*="trait-selector-"] {
+	.window-content {
+		form {
+			> ol,
+			> ul {
+				@include layout {
+					margin: 0;
+				}
+
+				li {
+					@include layout {
+						margin-block-end: m("base");
+
+						&:last-child {
+							margin-block-end: 0;
+						}
+					}
+				}
+
+				li,
+				label {
+					color: color("text");
+
+					@include layout {
+						align-items: center;
+						display: flex;
+					}
+				}
+
+				label.checkbox {
+					@include layout {
+						height: auto;
+						font-size: fs("md");
+						line-height: initial;
+
+						> input {
+							margin-inline-end: m("base");
+						}
+					}
+				}
+			}
+		}
+	}
+}

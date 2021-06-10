@@ -1,7 +1,6 @@
 table {
 	background-color: color("black", 0.05);
-	border-block-start: b("border");
-	border-block-end: b("border");
+	border: none;
 
 	@include layout {
 		margin: m("base") 0;

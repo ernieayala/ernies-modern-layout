@@ -1,0 +1,42 @@
+.gm-screen-config.window-app.app {
+	table {
+		@include layout {
+			td {
+				padding: p("base");
+			}
+
+			button > i {
+				margin: 0;
+			}
+
+			~ button {
+				width: auto;
+			}
+		}
+	}
+}
+
+.gm-screen-app.gm-screen-drawer.window-app {
+	@include layout {
+		transition: t(transform, "shift");
+
+		.gm-screen-actions.tabs {
+			position: absolute;
+
+			button {
+				&:empty {
+					display: none;
+				}
+			}
+
+			.meta-actions {
+				transition-delay: initial;
+				transition: t(transform, "shift");
+
+				button > i {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

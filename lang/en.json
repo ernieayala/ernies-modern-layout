@@ -38,6 +38,7 @@
 	"emu.design-border-radius-forms": "Border Radius Forms",
 	"emu.design-border-radius-images": "Border Radius Images",
 	"emu.layout-emu-layout": "Ernie's Layout",
+	"emu.layout-emu-layout-hint": "This will remove all spacing features and will only change colors. Many feature will not be available such as Compact Mode and Subtle Layout.",
 	"emu.layout-compact": "Compact Mode",
 	"emu.layout-control-align": "Controls Align to Top",
 	"emu.layout-control-align-hint": "This aligns the children controls to the top of the screen.",
@@ -45,7 +46,5 @@
 	"emu.layout-subtle-layout-opacity": "Subtle Layout Opacity",
 	"emu.toggle-logo": "Toggle Logo",
 	"emu.toggle-players": "Toggle Players",
-	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails",
-	"emu.toggle-combat-sidebar": "Toggle Combat Sidebar Styles",
-	"emu.toggle-combat-sidebar-hint": "This will turn off -most- of the styling in the combat sidebar."
+	"emu.toggle-scene-thumbnails": "Toggle Scene Thumbnails"
 }

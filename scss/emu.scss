@@ -5,7 +5,7 @@ body.-emu {
 	// Base
 	.dialog,
 	#sidebar,
-	.window-app:not(.actor):not(.item) {
+	.window-app:not([id*="actor-"]):not([id*="item-"]) {
 		@import "./base/base-button";
 		@import "./base/base-directory";
 		@import "./base/base-form-elements";
@@ -64,8 +64,16 @@ body.-emu {
 	@import "./sheets/template-config";
 	@import "./sheets/tile-config";
 	@import "./sheets/token-config";
+	@import "./sheets/trait-selector";
 	@import "./sheets/user-config";
 	@import "./sheets/wall-config";
+
+	// System Compatibility
+	@import "./system-compatibility/callofcthulhu7";
+	@import "./system-compatibility/dnd5e";
+	@import "./system-compatibility/pathfinder1";
+	@import "./system-compatibility/pathfinder2";
+	@import "./system-compatibility/starfinder";
 
 	// // Module Compatibility
 	@import "./module-compatibility/better-npc-sheet";
@@ -85,10 +93,12 @@ body.-emu {
 	@import "./module-compatibility/dnd-beyond-importer";
 	@import "./module-compatibility/dynamic-active-effects";
 	@import "./module-compatibility/ernies-modern-ui";
+	@import "./module-compatibility/foriens-quest-log";
 	@import "./module-compatibility/foriens-unidentified-items";
 	@import "./module-compatibility/fps-counter";
 	@import "./module-compatibility/fx-master";
 	@import "./module-compatibility/gm-notes";
+	@import "./module-compatibility/gm-screen";
 	@import "./module-compatibility/health-estimate";
 	@import "./module-compatibility/hey-wait";
 	@import "./module-compatibility/illandrils-chat-enhancements";
@@ -123,8 +133,4 @@ body.-emu {
 	@import "./module-compatibility/turn-marker";
 	@import "./module-compatibility/universal-battlemap-importer";
 	@import "./module-compatibility/world-anvil";
-
-	// System Compatibility
-	@import "./system-compatibility/dnd5e";
-	@import "./system-compatibility/starfinder";
 }

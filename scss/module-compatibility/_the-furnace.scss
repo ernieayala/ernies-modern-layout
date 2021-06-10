@@ -35,6 +35,10 @@ form .furnace-macro-run-as-gm.form-group {
 			word-break: break-word;
 		}
 	}
+
+	+ .form-group.stacked.command {
+		padding: p("sm");
+	}
 }
 
 .sheet.macro-sheet[id*="macro-config-"] {
@@ -44,16 +48,7 @@ form .furnace-macro-run-as-gm.form-group {
 		color: color("text");
 
 		@include layout {
-			flex: 1 1 auto;
-			height: auto;
-			margin-inline-start: m("sm");
 			padding: 0;
-			width: calc(100% - #{to-rem(16px)});
-		}
-
-		@include layout(compact) {
-			margin-inline-start: m("base");
-			width: calc(100% - #{to-rem(8px)});
 		}
 
 		&.fullscreen {
@@ -106,8 +101,13 @@ form .furnace-macro-run-as-gm.form-group {
 
 			@include layout {
 				font-size: to-rem(14px);
+				font-family: Consolas,Liberation Mono,Courier,monospace;
 				height: 100%;
 				padding: to-rem(5px);
+			}
+
+			&::selection {
+				background-color: color("primary", 0.2);
 			}
 		}
 	}
