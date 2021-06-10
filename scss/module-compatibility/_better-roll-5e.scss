@@ -3,14 +3,15 @@
 	.chat-card {
 		.die-result-overlay-br {
 			@include layout {
-				padding: 0;
+				padding: 0 p("xs");
 			}
 
 			button {
 				@extend %control-button;
+				@extend %font-awesome;
 
 				@include layout {
-					margin: 0 m("base");
+					margin: 0 m("xs");
 				}
 			}
 		}

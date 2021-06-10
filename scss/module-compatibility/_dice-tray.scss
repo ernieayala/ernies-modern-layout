@@ -176,7 +176,7 @@
 	}
 }
 
-.dialog--dice-calculator {
+.dialog--dice-calculator.window-app {
 	.dice-calculator {
 		@include layout {
 			margin-block-start: m("sm");
@@ -190,7 +190,15 @@
 
 		> button,
 		.dice-calculator--button {
-			color: color("text");
+			color: color("text-lightest");
+
+			@include layout {
+				font-weight: normal;
+
+				+ button {
+					margin: 0;
+				}
+			}
 		}
 	}
 }

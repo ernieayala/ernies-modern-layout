@@ -1,13 +1,3 @@
-%button-row {
-	flex: 1 1 auto;
-	margin-inline-start: m("base");
-	width: 100%;
-
-	&:first-of-type {
-		margin-inline-start: 0;
-	}
-}
-
 %button-icon-spacing {
 	@include layout {
 		> i {
@@ -24,14 +14,6 @@
 
 %button-icon {
 	@extend %button-icon-spacing;
-}
-
-%reset-image {
-	border: none;
-	border-radius: 0;
-	object-fit: cover;
-	object-position: 50% 50%;
-	position: relative;
 }
 
 %reset-list {

@@ -122,6 +122,10 @@
 
 				@include layout {
 					margin-block-end: m("base");
+
+					#world-anvil {
+						display: none;
+					}
 				}
 			}
 		}

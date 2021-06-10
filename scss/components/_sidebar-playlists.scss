@@ -242,11 +242,22 @@
 		}
 
 		#currently-playing {
+			@include layout {
+				flex-direction: row;
+				max-height: 30%;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+
 			.sound {
 				@include layout {
-					display: flex;
+					display: grid;
 					flex: 1 1 100%;
-					flex-wrap: wrap;
+					grid-template-areas:
+						"name controls"
+						"playback playback";
+					grid-template-columns: 1fr min-content;
+					grid-template-rows: min-content min-content;
 					margin: 0;
 					text-decoration: none;
 					width: 100%;
@@ -256,33 +267,29 @@
 					border-block-start: b("border");
 
 					@include layout {
-						margin-block-start: m("base");
 						padding-block-start: p("sm");
 					}
 
 					@include layout(compact) {
-						margin-block-start: m("xs");
 						padding-block-start: p("base");
 					}
 				}
 
 				.sound-name {
 					@include layout {
+						@include ellipsis;
 						align-items: center;
 						display: inline-flex;
-						flex: 1 1 auto;
+						grid-area: name;
 						margin: 0;
-						overflow: visible;
 						padding: p("base") 0;
-						word-break: normal;
-						white-space: initial;
 					}
 				}
 
 				.sound-controls {
 					@include layout {
-						flex: 0 0 auto;
 						flex-wrap: nowrap;
+						grid-area: controls;
 						margin: 0;
 						margin-inline-start: m("base");
 						padding: p("base") 0;
@@ -302,7 +309,7 @@
 					@include layout {
 						align-items: center;
 						display: flex;
-						flex: 0 0 100%;
+						grid-area: playback;
 						padding: p("base") 0;
 					}
 

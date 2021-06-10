@@ -33,7 +33,8 @@
 		"sm": to-rem(12px),
 		"xs": to-rem(10px),
 		"xxs": to-rem(8px),
-		"default": to-rem(16px)
+		"default": to-rem(16px),
+		"chat-roll": to-rem(18px)
 	)
 	"space" (
 		"button": to-rem(32px),
@@ -151,15 +152,11 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 
 // Shared
 @import "./shared/buttons";
-@import "./shared/directory";
-@import "./shared/folder";
 @import "./shared/form-elements";
-@import "./shared/form-group";
 @import "./shared/notifications";
 @import "./shared/panel";
 @import "./shared/states";
 @import "./shared/table";
 @import "./shared/tabs";
-@import "./shared/typography";
 @import "./shared/utils";
 @import "./shared/window";
