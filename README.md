@@ -6,7 +6,7 @@
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 0.8.6+
 
-**Systems:** Any
+**Systems:** Potentially any but primarily tested on DND5e.
 
 **Languages:** English, Spanish
 
@@ -27,10 +27,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T24X2VD)
 
 ## You should know
-- There is a lot of redundant CSS because I don't want to step on the global formatting right now.
-- Not all the modules will have my styling. Make an issue on Github if you want me to look at one.
-- Only tested on Chrome. Feel free to make a issue on Github for other browsers.
 - This is a fun side project for me and I made it to support my GMing tastes but I'm happy that other people are enjoying it.
+- Not all the modules and systems will have my styling. Make an issue on Github if you want me to look at one.
+- Only tested on Chrome. Feel free to make a issue on Github for other browsers.
 
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
      style="max-width: 100%;" />
