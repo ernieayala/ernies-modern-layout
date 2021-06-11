@@ -3,11 +3,14 @@
 		@include absolute(top space("sm") left space("sm"));
 		display: none;
 		height: auto !important;
+		max-height: to-rem(44px);
 		max-width: to-rem(88px);
+		width: auto;
 	}
 
 	@include layout(compact) {
 		left: space("base");
+		max-height: to-rem(44px);
 		max-width: to-rem(64px);
 		top: space("base");
 	}

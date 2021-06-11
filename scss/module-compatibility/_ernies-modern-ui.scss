@@ -6,6 +6,20 @@
 			height: 40vh;
 			overflow: hidden;
 		}
+
+		h3 {
+			border-block-end: b("border");
+
+			@include layout {
+				margin-block-start: m("sm");
+			}
+		}
+	}
+
+	.tab > .notes {
+		@include layout {
+			margin-block-start: m("sm");
+		}
 	}
 
 	.content {

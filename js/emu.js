@@ -53,6 +53,7 @@ function updateSettings(settings) {
 		imageBackgroundLight,
 		imageBackgroundDarkest,
 		imageBackgroundControls,
+		imageLogo,
 		toggleLogo,
 		toggleSceneThumbs,
 		emuLayout
@@ -82,26 +83,17 @@ function updateSettings(settings) {
 	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
 	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
 	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
-	// imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
-	// imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
-	// imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
-	// imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
-	// imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
+	imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
+	imageBackgroundLightest === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
+	imageBackgroundLight === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
+	imageBackgroundDarkest === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
+	imageBackgroundControls === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
+	imageLogo === '' ? null : document.getElementById('logo').setAttribute('src', `/${imageLogo}`);
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
 	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
-}
-
-function checkForUploadFolders(root, folder) {
-	FilePicker.browse('data', root).then(loc => {
-		if(!loc.dirs.includes(`${root}/${folder}`)) {
-			loc.target == FilePicker.createDirectory('data', `${root}/${folder}`, {});
-		}
-	}).catch(_ => {
-		throw new Error(`${moduleName} could not access ${root}/${folder}`);
-	});
 }
 
 function setFontFamily(family) {
@@ -145,16 +137,15 @@ class emuSettings {
 			colorTextLightest: '#ffffff',
 			colorTextDarker: '#293e40',
 			fontFamily: 'Signika',
-			imageBackground: 'none',
-			imageBackgroundLightest: 'none',
-			imageBackgroundLight: 'none',
-			imageBackgroundDarkest: 'none',
-			imageBackgroundControls: 'none',
+			imageBackground: '',
+			imageBackgroundLightest: '',
+			imageBackgroundLight: '',
+			imageBackgroundDarkest: '',
+			imageBackgroundControls: '',
+			imageLogo: '',
 			toggleLogo: true,
 			toggleSceneThumbs: true,
-			emuLayout: true,
-			pathFonts: `worlds/${game.world.name}/${moduleName}/fonts`,
-			pathImages: `worlds/${game.world.name}/${moduleName}/images`
+			emuLayout: true
 		};
 	}
 }
@@ -211,7 +202,7 @@ class emuForm extends FormApplication {
 					'parchment-white': 'Parchment White',
 					'fancy': 'Fancy',
 					'holed-metal': 'Holed Metal',
-					'metal-texture': 'M etal Texture',
+					'metal-texture': 'Metal Texture',
 					'sci-fi-hex': 'Sci-fi Hex',
 					'sci-fi-hex-2': 'Sci-fi Hex 2'
 				}
@@ -268,7 +259,6 @@ class emuForm extends FormApplication {
 }
 
 Hooks.once('init', () => {
-	// lets makes make this specificity stupid
 	myBody[0].classList.add('-emu');
 
 	game.settings.registerMenu(moduleName, moduleName, {
@@ -285,10 +275,6 @@ Hooks.once('init', () => {
 		type: Object,
 		config: false
 	});
-
-	// checkForUploadFolders(`worlds/${game.world.name}`, moduleName);
-	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'fonts');
-	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'images');
 });
 
 Hooks.once('ready', () => {
@@ -380,5 +366,5 @@ Hooks.once('ready', () => {
 	}, 1000);
 
 	// Say Hello
-	console.log('Ernie\'s Modern UI');
+	console.log('Ernie\'s Modern UI Active');
 });

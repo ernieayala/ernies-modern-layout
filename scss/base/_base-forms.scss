@@ -146,6 +146,7 @@ form {
 			button {
 				@include layout {
 					margin-inline-start: m("base");
+					order: initial;
 					width: auto;
 				}
 

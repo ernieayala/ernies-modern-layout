@@ -62,6 +62,8 @@
 
 		.compendium-type {
 			background-color: color("folder-subdirectory");
+			background-image: none;
+			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 
 			@include layout {
 				display: flex;
@@ -75,7 +77,7 @@
 
 			h3 {
 				background-color: color("folder-header");
-				background-image: $global-image-background-darkest;
+				background-image: none;
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				color: color("text");
 				transition: t(background box-shadow color, "link");

@@ -10,7 +10,7 @@
 
 		.subdirectory {
 			background-color: color("folder-subdirectory");
-			background-image: $global-image-background-light;
+			background-image: none;
 			border: none;
 			border-inline-start: b("primary", 4px);
 
@@ -76,7 +76,7 @@
 
 	.directory-item {
 		background-color: color("folder-directory");
-		background-image: $global-image-background-controls;
+		background-image: none;
 		border-block-end: b("border");
 		border-radius: $global-border-radius-default;
 		box-shadow: none;
@@ -184,7 +184,7 @@
 
 			.folder-header {
 				background-color: color("folder-header");
-				background-image: $global-image-background-darkest;
+				background-image: none;
 				border: 0;
 				border-inline-start: b("primary", 4px);
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
