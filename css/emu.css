@@ -631,6 +631,7 @@ body.-emu .sidebar-popout .sidebar-tab .directory-footer, body.-emu #sidebar #co
 body.-emu .sidebar-popout #combat #combat-round, body.-emu #sidebar .dice-tray, body.-emu #sidebar .token-mold,
 body.-emu .sidebar-popout .token-mold {
   background-color: rgba(var(--color-background), 0.5);
+  background-image: var(--emu-image-background, none);
   border: none;
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header, body.-emu #sidebar .sidebar-tab .-emu-layout .directory-header,
@@ -2357,11 +2358,11 @@ body.-emu #hotbar .bar-controls {
   body.-emu #hotbar .bar-controls:first-child #bar-toggle:first-of-type {
     border: none;
     border-block-end: rgba(var(--color-border), 1) 1px solid;
-    border-radius: 0 0 var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0); }
+    border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0; }
   body.-emu #hotbar .bar-controls:first-child #macro-directory:last-of-type,
   body.-emu #hotbar .bar-controls:first-child #bar-toggle:last-of-type {
     border: none;
-    border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0; }
+    border-radius: 0 0 var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0); }
   .-emu-layout body.-emu #hotbar .bar-controls:last-child {
     float: left;
     margin-inline-start: 0.25rem; }
@@ -5288,6 +5289,7 @@ body.-emu #sidebar #chat #chat-log .chat-message .chat-card .red-dual .dice-row 
 body.-emu #calendar-time-container,
 body.-emu #calendar-weather-container {
   background-color: rgba(var(--color-background), 0.8);
+  background-image: var(--emu-image-background, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: none; }
@@ -5521,7 +5523,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapp
     padding: 0.125rem; }
   body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
-    background-color: rgba(var(--color-background-lightest), 1); }
+    background-color: rgba(var(--color-background-lightest), 1);
+    background-image: var(--emu-image-background-lightest, none); }
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
       height: auto;
@@ -5982,7 +5985,8 @@ body.-emu .ddb-muncher.window-app #munch-classes-start {
   text-align: initial !important; }
 
 body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration {
-  background-color: rgba(var(--color-background), 0.05); }
+  background-color: rgba(var(--color-background), 0.05);
+  background-image: var(--emu-image-background, none); }
   .-emu-layout body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration {
     align-items: center;
     padding: 0.25rem 0.5rem; }
@@ -6116,6 +6120,7 @@ body.-emu #fui-item-properties .nav-tabs {
 body.-emu .fpsCounter {
   background: none;
   background-color: rgba(var(--color-background-darkest), 0.8);
+  background-image: var(--emu-image-background-darkest, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
@@ -6135,7 +6140,8 @@ body.-emu .fpsCounter {
     z-index: 10; }
 
 body.-emu #specials-config .fxmaster {
-  background-color: rgba(var(--color-background-lightest), 1); }
+  background-color: rgba(var(--color-background-lightest), 1);
+  background-image: var(--emu-image-background-lightest, none); }
   body.-emu #specials-config .fxmaster .directory-header {
     box-shadow: none; }
     .-emu-layout body.-emu #specials-config .fxmaster .directory-header {
@@ -6189,7 +6195,8 @@ body.-emu #specials-config .fxmaster {
     display: none; }
 
 body.-emu #effects-config .directory-list {
-  background-color: rgba(var(--color-background-lightest), 1); }
+  background-color: rgba(var(--color-background-lightest), 1);
+  background-image: var(--emu-image-background-lightest, none); }
   .-emu-layout body.-emu #effects-config .directory-list {
     height: auto;
     overflow-x: hidden;
@@ -6211,7 +6218,8 @@ body.-emu #effects-config .directory-item {
       color: rgba(var(--color-primary), 1); }
 
 body.-emu #effects-config .form-footer {
-  background-color: rgba(var(--color-background-lightest), 1); }
+  background-color: rgba(var(--color-background-lightest), 1);
+  background-image: var(--emu-image-background-lightest, none); }
   .-emu-layout body.-emu #effects-config .form-footer {
     bottom: 0;
     padding: 0.5rem;
@@ -6231,6 +6239,7 @@ body.-emu #effects-config .form-footer {
 
 body.-emu #filter-config .form-footer {
   background-color: rgba(var(--color-background-lightest), 1);
+  background-image: var(--emu-image-background-lightest, none);
   border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #filter-config .form-footer {
     bottom: 0;
@@ -6287,7 +6296,8 @@ body.-emu #filter-config .form-footer {
 
 body.-emu .illandril-chat-enhancements--currentSpeaker {
   align-items: center;
-  background-color: rgba(var(--color-background), 0.5); }
+  background-color: rgba(var(--color-background), 0.5);
+  background-image: var(--emu-image-background, none); }
   .-emu-layout body.-emu .illandril-chat-enhancements--currentSpeaker {
     display: flex;
     flex: 0 0 auto;
@@ -6344,6 +6354,7 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label i
 
 body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit {
   background-color: rgba(var(--color-background-lightest), 1);
+  background-image: var(--emu-image-background-lightest, none);
   border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit {
     bottom: 0;
@@ -6589,6 +6600,7 @@ body.-emu .sidebar-popout #scenes .directory-item.scene h3 .permissions {
 
 body.-emu .moulinette-options {
   background-color: rgba(var(--color-background-darkest), 0.8);
+  background-image: var(--emu-image-background-darkest, none);
   border-radius: var(--emu-border-radius-controls, 0);
   box-shadow: none;
   color: rgba(var(--color-text-lightest), 1); }
@@ -6824,7 +6836,7 @@ body.-emu #OneJournalShell.window-app .window-header .one-journal-header {
 
 body.-emu #OneJournalShell.window-app .window-content {
   background-color: rgba(var(--color-background-lightest), 1);
-  background-image: var(--emu-image-background, none); }
+  background-image: var(--emu-image-background-lightest, none); }
 
 .-emu-layout body.-emu #OneJournalShell.window-app .one-journal-attached .window-header {
   display: none; }
@@ -6957,7 +6969,8 @@ body.-emu .sidebar-popout div.permission-viewer a {
     width: auto; }
 
 body.-emu #polyglot {
-  background-color: rgba(var(--color-background), 0.5); }
+  background-color: rgba(var(--color-background), 0.5);
+  background-image: var(--emu-image-background, none); }
   .-emu-layout body.-emu #polyglot {
     align-items: center;
     display: flex;
@@ -7055,6 +7068,7 @@ body.-emu ul.command-menu {
 
 body.-emu .simple-dice-roller-popup {
   background-color: rgba(var(--color-background), 1);
+  background-image: var(--emu-image-background, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: none;
@@ -7091,6 +7105,7 @@ body.-emu #smalltime-app {
     display: none; }
   body.-emu #smalltime-app .window-content {
     background-color: rgba(var(--color-background-darkest), 1);
+    background-image: var(--emu-image-background-darkest, none);
     border-radius: 0; }
     .-emu-layout body.-emu #smalltime-app .window-content {
       height: 100%;
@@ -7190,6 +7205,7 @@ body.-emu .sidebar-popout #chat #oocNotification {
 
 body.-emu .thandulTogglables {
   background-color: rgba(var(--color-background), 1);
+  background-image: var(--emu-image-background, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 2px;
   box-shadow: none;
@@ -7246,6 +7262,7 @@ body.-emu .sidebar-popout #playlists li.sound.sound-is-playing {
 
 body.-emu form .furnace-macro-run-as-gm.form-group .tooltip {
   background-color: rgba(var(--color-background-darkest), 0.8);
+  background-image: var(--emu-image-background-darkest, none);
   border-radius: var(--emu-border-radius-default, 0);
   border: none;
   color: rgba(var(--color-text-lightest), 1); }
@@ -7296,7 +7313,8 @@ body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro
     height: 100%;
     z-index: 10; }
   body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro-command.fullscreen pre {
-    background-color: rgba(var(--color-background-lightest), 1); }
+    background-color: rgba(var(--color-background-lightest), 1);
+    background-image: var(--emu-image-background-lightest, none); }
   .-emu-layout body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro-command.fullscreen .furnace-macro-expand {
     z-index: 11; }
   body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro-command textarea {
@@ -7509,7 +7527,8 @@ body.-emu #token-action-hud .tah-subtitle {
   padding: 0; }
 
 body.-emu #token-action-hud .tah-action button {
-  background-color: rgba(var(--color-background), 1); }
+  background-color: rgba(var(--color-background), 1);
+  background-image: var(--emu-image-background-controls, none); }
   body.-emu #token-action-hud .tah-action button > div {
     text-shadow: none; }
     .-emu-layout body.-emu #token-action-hud .tah-action button > div {
@@ -7563,6 +7582,7 @@ body.-emu #tokenAttacherQuickEdit {
 
 body.-emu #tokenAttacher .image {
   background-color: rgba(var(--color-background-darkest), 0.8);
+  background-image: var(--emu-image-background-darkest, none);
   border-radius: var(--emu-border-radius-images, 0) var(--emu-border-radius-images, 0) 0 0;
   border: rgba(var(--color-primary), 1) 1px solid; }
   .-emu-layout body.-emu #tokenAttacher .image {
@@ -7573,6 +7593,7 @@ body.-emu #tokenAttacher .image {
     min-width: 0; }
   body.-emu #tokenAttacher .image .token-name {
     background-color: rgba(var(--color-background-darkest), 1);
+    background-image: var(--emu-image-background-darkest, none);
     border: rgba(var(--color-primary), 1) 1px solid;
     border-radius: 0 0 var(--emu-border-radius-images, 0) var(--emu-border-radius-images, 0);
     color: rgba(var(--color-text-lightest), 1); }

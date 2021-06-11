@@ -43,6 +43,7 @@
 
 					input {
 						background-color: color("background-lightest");
+						background-image: $global-image-background-lightest;
 
 						@include layout {
 							height: auto;

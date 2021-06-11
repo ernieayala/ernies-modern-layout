@@ -18,6 +18,7 @@ form .furnace-macro-run-as-gm.form-group {
 
 	.tooltip {
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 		border-radius: $global-border-radius-default;
 		border: none;
 		color: color("text-lightest");
@@ -86,6 +87,7 @@ form .furnace-macro-run-as-gm.form-group {
 
 			pre {
 				background-color: color("background-lightest");
+				background-image: $global-image-background-lightest;
 			}
 
 			.furnace-macro-expand {

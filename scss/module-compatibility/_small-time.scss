@@ -14,6 +14,7 @@
 
 	.window-content {
 		background-color: color("background-darkest");
+		background-image: $global-image-background-darkest;
 		border-radius: 0;
 
 		@include layout {

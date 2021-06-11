@@ -40,6 +40,7 @@
 
 	.image {
 		background-color: color("background-darkest", 0.8);
+		background-image: $global-image-background-darkest;
 		border-radius: $global-border-radius-images $global-border-radius-images 0 0;
 		border: b("primary");
 
@@ -52,6 +53,7 @@
 
 		.token-name {
 			background-color: color("background-darkest");
+			background-image: $global-image-background-darkest;
 			border: b("primary");
 			border-radius: 0 0 $global-border-radius-images $global-border-radius-images;
 			color: color("text-lightest");

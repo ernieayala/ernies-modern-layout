@@ -1,5 +1,6 @@
 .moulinette-options {
 	background-color: color("background-darkest", 0.8);
+	background-image: $global-image-background-darkest;
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	color: color("text-lightest");

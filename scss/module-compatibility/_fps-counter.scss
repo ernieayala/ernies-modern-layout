@@ -1,6 +1,7 @@
 .fpsCounter {
 	background: none;
 	background-color: color("background-darkest", 0.8);
+	background-image: $global-image-background-darkest;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");

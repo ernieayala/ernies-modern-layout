@@ -14,6 +14,7 @@
 
 	.effect-special-duration {
 		background-color: color("background", 0.05);
+		background-image: $global-image-background;
 
 		@include layout {
 			align-items: center;

@@ -112,12 +112,12 @@
 				&:first-of-type {
 					border: none;
 					border-block-end: b("border");
-					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 
 				&:last-of-type {
 					border: none;
-					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 				}
 			}
 		}
