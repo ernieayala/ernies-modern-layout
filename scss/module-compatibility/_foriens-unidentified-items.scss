@@ -1,0 +1,61 @@
+#fui-default-icons {
+	.item-type-entry{
+		@include layout {
+			margin-block-end: m("base");
+
+			img {
+				@include size(to-rem(44px));
+				flex: 0 0 auto;
+			}
+
+			label {
+				flex: 1 1 auto;
+				margin: 0 m("sm");
+			}
+
+			input {
+				flex: 1 1 auto;
+				font-size: fs("md");
+				height: space("button");
+				margin: 0 m("base");
+				min-width: 0;
+			}
+
+			button.file-picker > i {
+				margin: 0;
+			}
+		}
+	}
+}
+
+#fui-item-properties {
+	.window-content {
+		@include layout {
+			padding: p("sm");
+
+			section {
+				padding: 0;
+			}
+
+			.nav-body {
+				margin: m("sm") 0;
+
+				.type-property {
+					margin-block-end: m("base");
+
+					> label {
+						margin-inline-start: m("base");
+					}
+				}
+			}
+		}
+
+		@include layout(compact) {
+			padding: p("base");
+		}
+	}
+
+	.nav-tabs {
+		border-block-start: 2px solid color("primary");
+	}
+}

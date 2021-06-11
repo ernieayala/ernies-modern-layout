@@ -1,0 +1,129 @@
+#client-settings.window-app.form {
+	.window-content {
+		@include layout {
+			padding: p("sm");
+		}
+
+		@include layout(compact) {
+			padding: p("base");
+		}
+	}
+
+	nav.tabs {
+		border-block-end: b("primary", 2px);
+
+		@include layout {
+			flex: 0 0 auto;
+			height: initial;
+			line-height: initial;
+		}
+
+		.item {
+			@include layout {
+				padding: p("sm");
+			}
+
+			@include layout(compact) {
+				padding: p("base");
+			}
+		}
+	}
+
+	#config-tabs {
+		border: none;
+
+		@include layout {
+			flex: 1 1 auto;
+			overflow-y: auto;
+		}
+	}
+
+	section.content {
+		h2.module-header {
+			@include layout {
+				margin-block-start: m("md");
+				margin-block-end: m("base");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("sm");
+				margin-block-end: m("xs");
+			}
+		}
+
+		.submenu {
+			> button {
+				@include layout {
+					height: initial;
+					font-size: fs("lg");
+
+					label {
+						padding: 0;
+						pointer-events: none;
+					}
+				}
+			}
+
+			> label {
+				@include layout {
+					line-height: initial;
+				}
+			}
+		}
+
+		.settings-list {
+			border: none;
+
+			@include layout {
+				max-height: 100%;
+				overflow: initial;
+				padding: 0;
+			}
+		}
+	}
+
+	form .form-group {
+		@include layout {
+			button label {
+				font-size: fs("lg");
+			}
+		}
+	}
+
+	.form-group.submenu {
+		.notes {
+			@include layout {
+				margin-block-start: m("sm");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("base");
+			}
+		}
+	}
+
+	.sheet-footer {
+		@include layout {
+			flex: 0 0 auto;
+			flex-wrap: nowrap;
+			padding: 0;
+			padding-block-start: p("sm");
+		}
+
+		@include layout(compact) {
+			padding-block-start: p("base");
+		}
+
+		button {
+			border: none;
+
+			@include layout {
+				margin: 0;
+
+				+ button {
+					margin-inline-start: m("base");
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+.ddb-muncher.window-app {
+	.tab {
+		@include layout {
+			margin-block-start: m("sm");
+		}
+	}
+
+	.munching-generic-config,
+	.munching-spell-config,
+	.munching-item-config,
+	.munching-monster-config {
+		@include layout {
+			align-items: center;
+			display: flex;
+			margin-block-end: m("sm");
+
+			input[type="checkbox"] {
+				margin-inline-end: m("base");
+			}
+		}
+	}
+
+	#munch-adventure-config-start,
+	#munch-adventure-import-start {
+		@include layout {
+			margin-block-end: m("sm");
+			width: auto
+		}
+	}
+
+	#munch-feats-start,
+	#munch-races-start,
+	#munch-classes-start {
+		@include layout {
+			margin: 0;
+			margin-block-end: m("sm");
+		}
+	}
+}
+
+#ddb-importer-settings-compendium {
+	#ddb-importer-settings {
+		hr {
+			@include layout {
+				display: none;
+			}
+		}
+	}
+
+	.form-group {
+		@include layout {
+			h3 {
+				flex: 1 1 auto;
+				margin: 0;
+			}
+
+			select {
+				flex: 1 1 auto !important; //because of inline
+			}
+		}
+	}
+
+	.munching-compendium-setting {
+		@include layout {
+			align-items: center;
+			display: flex;
+			margin: m("sm") 0;
+
+			input[type="checkbox"] {
+				margin-inline-end: m("base");
+			}
+		}
+	}
+}

@@ -3,58 +3,32 @@
 	#playlists {
 		color: color("text-lightest");
 
-		h4,
-		i,
-		input[type=range] {
-			color: inherit;
-			height: auto;
-			line-height: initial;
-		}
-
-		h4,
-		i {
-			+ input[type="range"] {
-				margin-inline-start: m("base");
-			}
-		}
-
-		input[type="range"] {
-			@extend %input-range;
-
-			&::-webkit-slider-thumb {
-				&:hover {
-					box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-				}
-			}
-
-			&::-moz-range-thumb {
-				&:hover {
-					box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-				}
-			}
-		}
-
 		.global-control {
 			background-color: color("background", 0.5);
 			border-block-end: b("border");
 			color: color("text-lightest");
-			display: flex;
-			flex: 0 0 auto;
-			flex-direction: column;
-			line-height: 1;
-			margin: 0;
-			padding: p("sm");
-			position: relative;
 
-			.-compact & {
+			@include layout {
+				display: flex;
+				flex: 0 0 auto;
+				flex-direction: column;
+				line-height: 1;
+				margin: 0;
+				padding: p("sm");
+				position: relative;
+			}
+
+			@include layout(compact) {
 				padding: p("base");
 			}
 
 			&.collapsed {
 				.playlist-sounds {
-					height: 0 !important;
-					padding: 0 !important;
-					transform: none !important;
+					@include layout {
+						@extend %reset-list;
+						max-height: 0 !important;
+						padding: 0 !important;
+					}
 				}
 			}
 
@@ -63,22 +37,32 @@
 				border: none;
 				border-block-end: none;
 				color: color("text-lightest");
-				font-size: fs("lg");
-				padding: p("xs") 0;
-				width: 100%;
 
-				.-compact & {
+				@include layout {
 					font-size: fs("lg");
+					padding: p("xs") 0;
+					width: 100%;
+				}
+
+				@include layout(compact) {
+					font-size: fs("md");
 				}
 
 				h4 {
-					height: auto;
-					padding-inline-start: 0;
 					text-decoration: none;
+
+					@include layout {
+						height: auto;
+						margin: 0;
+						padding-inline-start: 0;
+					}
 
 					i.fa {
 						color: inherit;
-						margin-inline-start: m("xs");
+
+						@include layout {
+							margin-inline-start: m("xs");
+						}
 					}
 				}
 			}
@@ -86,52 +70,64 @@
 			.playlist-sounds {
 				background: transparent;
 				border-inline-start: none;
-				padding: 0;
-				padding-block-start: p("base");
-				transition: none !important;
-				width: 100%;
+
+				@include layout {
+					@extend %reset-list;
+					padding: 0;
+					padding-block-start: p("base");
+					width: 100%;
+				}
 
 				h4 {
-					@extend %h-tag;
 					border-block-end: 0;
 					color: color("text-lightest");
-					font-size: fs("lg");
 
-					+ input[type="range"] {
-						margin-inline-start: m("base");
+					@include layout {
+						font-size: fs("lg");
+
+						+ input[type="range"] {
+							margin-inline-start: m("base");
+						}
 					}
 				}
 
 				.sound {
 					border-block-end: 0;
-					flex-wrap: nowrap;
-					padding-inline-start: 0;
-					padding-inline-end: 0;
-					transition: none !important;
 
-					&:last-of-type {
-						padding-block-end: 0;
-					}
+					@include layout {
+						flex-wrap: nowrap;
+						padding-inline-start: 0;
+						padding-inline-end: 0;
+						transition: none !important;
 
-					.global-volume {
-						flex: 0 0 50%;
+						&:last-of-type {
+							padding-block-end: 0;
+						}
+
+						.global-volume {
+							flex: 0 0 50%;
+						}
 					}
 				}
 			}
 		}
 
 		.directory-list {
-			@extend %directory-subdirectory;
+			@include layout {
+				padding-block-start: p("base");
+			}
 
 			.directory-item {
-				@extend %directory-item;
-
-				&.folder {
-					@extend %folder;
-				}
-
 				&.playlist {
-					flex-direction: column;
+					@include layout {
+						flex-direction: column;
+						line-height: 1;
+						padding: 0 p("sm");
+					}
+
+					@include layout(compact) {
+						padding: 0 p("base");
+					}
 
 					&:not(.collapsed) {
 						@extend %global-hover-alt;
@@ -149,44 +145,52 @@
 			}
 
 			.playlist-sounds {
-				width: 100%;
+				@include layout {
+					width: 100%;
+				}
 			}
 
 			.playlist-header,
 			.sound {
-				display: flex;
-				flex: 1 1 100%;
-				flex-wrap: nowrap;
-				margin: 0;
-				text-decoration: none;
-				width: 100%;
+				@include layout {
+					display: flex;
+					flex: 1 1 100%;
+					flex-wrap: nowrap;
+					margin: 0;
+					text-decoration: none;
+					width: 100%;
+				}
 
 				.playlist-name {
-					align-items: center;
-					display: inline-flex;
-					flex: 1 1 100%;
-					overflow: visible;
-					padding: p("base") 0;
-					word-break: normal;
-					white-space: initial;
-					width: 100%;
+					@include layout {
+						align-items: center;
+						display: inline-flex;
+						flex: 1 1 100%;
+						overflow: visible;
+						padding: p("base") 0;
+						word-break: normal;
+						white-space: initial;
+						width: 100%;
 
-					.-compact & {
-						padding: p("xs") 0;
+						> i {
+							display: none;
+						}
 					}
 
-					> i {
-						display: none;
+					@include layout(compact) {
+						padding: p("xs") 0;
 					}
 				}
 
 				.sound-controls {
-					flex: 0 0 auto;
-					flex-wrap: nowrap;
-					margin-inline-start: m("base");
-					padding: p("base") 0;
+					@include layout {
+						flex: 0 0 auto;
+						flex-wrap: nowrap;
+						margin-inline-start: m("base");
+						padding: p("base") 0;
+					}
 
-					.-compact & {
+					@include layout(compact) {
 						margin-inline-start: m("xs");
 						padding: p("xs") 0;
 					}
@@ -196,46 +200,102 @@
 					}
 				}
 			}
+
+			.sound {
+				&:nth-child(even) {
+					background-color: color("background-darkest", 0.2);
+				}
+			}
+		}
+
+		h4,
+		i,
+		input[type=range] {
+			color: inherit;
+
+			@include layout {
+				height: auto;
+				line-height: 1.2;
+				word-break: normal;
+			}
+		}
+
+		h4,
+		i {
+			+ input[type="range"] {
+				@include layout {
+					margin-inline-start: m("base");
+				}
+			}
+		}
+
+		h4 {
+			@include layout {
+				padding: p("base");
+			}
+		}
+
+		input[type="range"] {
+			@include layout {
+				margin: 0;
+			}
 		}
 
 		#currently-playing {
+			@include layout {
+				flex-direction: row;
+				max-height: 30%;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+
 			.sound {
-				display: flex;
-				flex: 1 1 100%;
-				flex-wrap: wrap;
-				margin: 0;
-				text-decoration: none;
-				width: 100%;
+				@include layout {
+					display: grid;
+					flex: 1 1 100%;
+					grid-template-areas:
+						"name controls"
+						"playback playback";
+					grid-template-columns: 1fr min-content;
+					grid-template-rows: min-content min-content;
+					margin: 0;
+					text-decoration: none;
+					width: 100%;
+				}
 
 				+ .sound {
 					border-block-start: b("border");
-					margin-block-start: m("base");
-					padding-block-start: p("sm");
 
-					.-compact & {
-						margin-block-start: m("xs");
+					@include layout {
+						padding-block-start: p("sm");
+					}
+
+					@include layout(compact) {
 						padding-block-start: p("base");
 					}
 				}
 
 				.sound-name {
-					align-items: center;
-					display: inline-flex;
-					flex: 1 1 auto;
-					overflow: visible;
-					padding: p("base") 0;
-					word-break: normal;
-					white-space: initial;
+					@include layout {
+						@include ellipsis;
+						align-items: center;
+						display: inline-flex;
+						grid-area: name;
+						margin: 0;
+						padding: p("base") 0;
+					}
 				}
 
 				.sound-controls {
-					flex: 0 0 auto;
-					flex-wrap: nowrap;
-					margin: 0;
-					margin-inline-start: m("base");
-					padding: p("base") 0;
+					@include layout {
+						flex-wrap: nowrap;
+						grid-area: controls;
+						margin: 0;
+						margin-inline-start: m("base");
+						padding: p("base") 0;
+					}
 
-					.-compact & {
+					@include layout(compact) {
 						margin-inline-start: m("xs");
 						padding: p("xs") 0;
 					}
@@ -246,27 +306,34 @@
 				}
 
 				.sound-playback {
-					align-items: center;
-					display: flex;
-					flex: 0 0 100%;
-					padding: p("base") 0;
+					@include layout {
+						align-items: center;
+						display: flex;
+						grid-area: playback;
+						padding: p("base") 0;
+					}
 
-					.-compact & {
+					@include layout(compact) {
 						padding: p("xs") 0;
 					}
 
 					.sound-timer {
 						color: color("text-lightest");
-						font-size: fs("sm");
-						margin-inline-end: m("sm");
 
-						.-compact & {
+						@include layout {
+							font-size: fs("sm");
+							margin-inline-end: m("sm");
+						}
+
+						@include layout(compact) {
 							margin-inline-end: m("base");
 						}
 					}
 
 					.volume-icon {
-						margin-inline-end: m("base");
+						@include layout {
+							margin-inline-end: m("base");
+						}
 					}
 				}
 			}

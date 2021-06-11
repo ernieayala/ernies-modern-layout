@@ -1,0 +1,32 @@
+table {
+	background-color: color("black", 0.05);
+	border: none;
+
+	@include layout {
+		margin: m("base") 0;
+	}
+
+	thead {
+		background-color: color("black", 0.2);
+		border-block-end: b("border");
+		color: color("text-lightest");
+		text-shadow: none;
+	}
+
+	tr:nth-child(even) {
+		background-color: color("white", 0.1);
+	}
+
+	td:first-child {
+		@include layout {
+			padding-inline-start: p("base");
+		}
+	}
+
+	td,
+	th {
+		@include layout {
+			padding: p("xs") 0;
+		}
+	}
+}

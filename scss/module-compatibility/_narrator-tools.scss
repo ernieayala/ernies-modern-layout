@@ -1,3 +1,14 @@
+#narrator-config {
+	@extend %window-common;
+	@extend %window-hack;
+}
+
 .narrator-span {
 	text-shadow: none;
+}
+
+.narrator-sidebarBG {
+	@include layout {
+		width: to-rem(320px);
+	}
 }

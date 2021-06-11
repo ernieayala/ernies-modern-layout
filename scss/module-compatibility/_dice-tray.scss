@@ -2,14 +2,19 @@
 	.dice-tray {
 		@extend %panel-block;
 		border-block-start: b("border");
-		flex-direction: column;
+
+		@include layout {
+			flex-direction: column;
+		}
 
 		> .flexrow {
-			margin: 0;
-			width: 100%;
+			@include layout {
+				margin: 0;
+				width: 100%;
 
-			&:last-child {
-				margin-block-start: m("base");
+				&:last-child {
+					margin-block-start: m("base");
+				}
 			}
 		}
 
@@ -17,29 +22,36 @@
 		button.dice-tray__ad,
 		button.dice-tray__math,
 		button.dice-tray__roll {
-			@extend %primary-button;
 			box-shadow: none;
-			flex: 1 1 auto;
-			font-weight: normal;
-			margin-inline-end: m("base");
 
-			.-compact & {
+			@include layout {
+				flex: 1 1 auto;
+				font-weight: normal;
+				margin-inline-end: m("base");
+			}
+
+			@include layout(compact) {
 				margin-inline-end: m("xs");
 			}
 
 			&:last-child {
-				margin-inline-end: 0;
+				@include layout {
+					margin-inline-end: 0;
+				}
 
-				.-compact & {
+				@include layout(compact) {
 					margin-inline-end: 0;
 				}
 			}
 		}
 
 		button.dice-tray__button {
-			padding: p("base") p("sm");
+			@include layout {
+				margin-inline-start: 0;
+				padding: p("base") p("sm");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				padding: p("xs") p("base");
 			}
 
@@ -53,41 +65,48 @@
 		}
 
 		.dice-tray__flag {
-			@include absolute(left 0 bottom 100%);
-			@include size(100%, to-rem(20px));
-			align-items: center;
 			background-color: color("primary");
 			border-radius: 0;
 			color: color("text-lightest");
-			display: flex;
-			font-size: fs("md");
-			justify-content: center;
-			line-height: 1;
-			max-height: to-rem(20px);
-			overflow: hidden;
 			transition: t(max-height, "shift", "fast");
-			width: 100%;
 
-			&.hide {
-				max-height: 0;
+			@include layout {
+				@include absolute(left 0 bottom 100%);
+				@include size(100%, to-rem(20px));
+				align-items: center;
+				display: flex;
+				font-size: fs("md");
+				justify-content: center;
+				line-height: 1;
+				max-height: to-rem(20px);
+				overflow: hidden;
+				width: 100%;
+
+				&.hide {
+					max-height: 0;
+				}
 			}
 		}
 
 		button.dice-tray__math,
 		button.dice-tray__roll {
-			@include size(auto, to-rem(32px));
-			flex: 0 0 auto;
+			@include layout {
+				@include size(auto, to-rem(32px));
+				flex: 0 0 auto;
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				height: to-rem(24px);
 			}
 		}
 
 		button.dice-tray__math--add,
 		button.dice-tray__math--sub {
-			min-width: to-rem(34px);
+			@include layout {
+				min-width: to-rem(34px);
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				height: to-rem(24px);
 				min-width: to-rem(24px);
 			}
@@ -110,31 +129,23 @@
 		input.dice-tray__input {
 			@extend %input-text;
 			background-color: color("background-lightest");
-			box-shadow: none;
-			margin-inline-end: m("base");
 
-			.-compact & {
+			@include layout {
+				margin-inline-end: m("base");
+			}
+
+			@include layout(compact) {
 				margin-inline-end: m("xs");
-			}
-
-			&:hover {
-				@extend %global-hover-alt;
-			}
-
-			&:focus {
-				@extend %global-focus;
-			}
-
-			&:disabled {
-				pointer-events: none;
 			}
 		}
 
 		.dice-tray__stacked {
-			height: to-rem(32px);
-			margin-inline-end: m("base");
+			@include layout {
+				height: to-rem(32px);
+				margin-inline-end: m("base");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				flex-direction: row;
 				height: to-rem(24px);
 				margin-inline-end: m("xs");
@@ -142,11 +153,13 @@
 		}
 
 		button.dice-tray__ad {
-			font-size: fs("xs");
-			margin: 0;
-			padding: 0;
+			@include layout {
+				font-size: fs("xs");
+				margin: 0;
+				padding: 0;
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				height: 100%;
 				margin: 0;
 			}
@@ -161,34 +174,31 @@
 			}
 		}
 	}
-
-	#chat #chat-controls .roll-type-select .fas.fa-dice-d20 {
-		@extend %control-button;
-		@extend %font-awesome;
-		font-size: fs("md");
-		margin: 0;
-		margin-inline-end: m("base");
-
-		.-emu-dice-tray-active & {
-			display: flex;
-		}
-	}
 }
 
-.dialog--dice-calculator {
+.dialog--dice-calculator.window-app {
 	.dice-calculator {
-		margin-block-start: m("sm");
-		margin-block-end: 0;
+		@include layout {
+			margin-block-start: m("sm");
+			margin-block-end: 0;
 
-		.dice-calculator__input > label {
-			font-size: fs("lg");
-			padding-inline-end: p("sm");
+			.dice-calculator__input > label {
+				font-size: fs("lg");
+				padding-inline-end: p("sm");
+			}
 		}
 
 		> button,
 		.dice-calculator--button {
-			@extend %default-button;
-			color: color("text");
+			color: color("text-lightest");
+
+			@include layout {
+				font-weight: normal;
+
+				+ button {
+					margin: 0;
+				}
+			}
 		}
 	}
 }

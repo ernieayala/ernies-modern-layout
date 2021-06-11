@@ -1,0 +1,12 @@
+.tabs,
+.sheet-tabs {
+	@extend %modal-tabs;
+
+	~ .tab {
+		@include layout {
+			flex: 1 1 auto;
+			overflow-y: auto;
+			overflow-x: hidden;
+		}
+	}
+}

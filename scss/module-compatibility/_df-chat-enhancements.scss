@@ -1,39 +1,36 @@
 #dfcp-rt-buttons {
-	justify-content: flex-end;
-	margin: 0 !important;
+	@include layout {
+		justify-content: flex-end;
+		margin: 0 !important;
+	}
 
 	button {
 		@extend %control-button;
 		background: transparent;
-		font-size: fs("md");
-		margin: 0;
-		margin-inline-end: m("base");
-		min-height: 0;
-		max-height: 100%;
 
-		.-compact & {
-			margin-inline-end: m("xs");
-		}
-
-		&:last-child {
-			margin-inline-end: 0;
-
-			.-compact & {
-				margin-inline-end: 0;
-			}
+		@include layout {
+			font-size: fs("md");
+			margin: 0;
+			min-height: 0;
+			max-height: 100%;
 		}
 
 		&.chat-archive {
-			margin-inline-start: m("sm") !important;
+			@include layout {
+				margin-inline-start: m("base") !important;
+			}
 		}
 
 		> i {
 			color: color("text-lightest");
-			font-size: fs("md");
-			height: auto;
-			line-height: 1;
-			margin: 0;
-			width: auto;
+
+			@include layout {
+				font-size: fs("md");
+				height: auto;
+				line-height: 1;
+				margin: 0;
+				width: auto;
+			}
 		}
 	}
 }
@@ -43,14 +40,48 @@
 	#settings {
 		#df-chat-enhance-settings {
 			h4 {
-				border-block-end: b("border");
+				border-block-end: b("border-lighter");
 				color: color("text-lightest");
-				margin-block-start: m("md") !important;
 
-				.-compact & {
+				@include layout {
+					margin-block-start: m("md") !important;
+				}
+
+				@include layout(compact) {
 					margin-block-start: m("sm") !important;
 				}
 			}
+		}
+	}
+}
+
+.app.window-app {
+	.archive-new {
+		table {
+			background-color: transparent;
+			border: none;
+
+			tr {
+				td {
+					@include layout {
+						padding: p("base");
+
+						button {
+							margin-block-start: m("sm");
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#dfca-delete-all {
+		background-color: color("negative");
+		border-color: color("red-800");
+
+		@include layout {
+			margin: 0;
+			width: 100%;
 		}
 	}
 }

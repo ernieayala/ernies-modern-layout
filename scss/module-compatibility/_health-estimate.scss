@@ -1,0 +1,33 @@
+#healthestimate-style-form {
+	@extend %window-common;
+	@extend %window-hack;
+
+	.window-content {
+		form {
+			@include layout {
+				padding: p("sm") !important;
+			}
+		}
+
+		.sheet-footer {
+			@include layout {
+				bottom: 0;
+				position: sticky;
+			}
+		}
+	}
+}
+
+#healthestimate-death-form {
+	.sheet-footer {
+		button {
+			@include layout {
+				margin-block-start: m("sm");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("base");
+			}
+		}
+	}
+}

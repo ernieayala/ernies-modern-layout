@@ -1,81 +1,106 @@
-.window-app.dialog {
-	@extend %form-elements;
+.dialog {
+	&.window-app > .window-content {
+		background: transparent;
 
-	.form-group {
-		@extend %form-group;
+		@include layout {
+			padding: 0;
+		}
 	}
 
 	div.dialog-content {
-		padding: 0 p("sm");
+		@include layout {
+			padding: 0 p("sm");
+			padding-block-start: p("sm");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: 0 p("base");
+			padding-block-start: p("base");
 		}
 
 		h4:first-child,
 		p:first-child {
-			margin-block-start: m("md");
+			@include layout {
+				margin-block-start: m("base");
+			}
 
-			.-compact & {
-				margin-block-start: m("sm");
+			@include layout(compact) {
+				margin-block-start: m("xs");
 			}
 		}
 
 		> p {
-			margin: 0;
-			margin-block-end: m("sm");
+			@include layout {
+				margin: 0;
+				margin-block-end: m("sm");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				margin-block-end: m("base");
 			}
 		}
 	}
 
 	form.dialog-content {
-		padding-block-start: p("md");
+		@include layout {
+			padding-block-start: p("md");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding-block-start: p("sm");
 		}
 	}
 
 	.dialog-content {
 		color: color("text");
-		font-size: fs("lg");
-		padding: p("sm");
 
-		.-compact & {
+		@include layout {
+			font-size: fs("lg");
+			padding: p("sm");
+		}
+
+		@include layout(compact) {
 			padding: p("base");
 		}
 
 		> p + .form-group {
-			margin-block-start: m("sm");
+			@include layout {
+				margin-block-start: m("md");
+			}
 
-			.-compact & {
-				margin-block-start: m("base");
+			@include layout(compact) {
+				margin-block-start: m("sm");
 			}
 		}
 
 		> .form-group {
-			padding: 0;
+			@include layout {
+				padding: 0;
+			}
 
 			+ .dialog-buttons {
-				padding: 0;
-				padding-block-start: p("sm");
+				@include layout {
+					padding: 0;
+					padding-block-start: p("sm");
+				}
 
-				.-compact & {
+				@include layout(compact) {
 					padding-block-start: p("base");
 				}
 			}
 		}
 
 		> h3 {
-			margin-block-start: 0;
+			@include layout {
+				margin-block-start: 0;
+			}
 
 			&:first-child {
-				margin-block-start: m("md");
+				@include layout {
+					margin-block-start: m("md");
+				}
 
-				.-compact & {
+				@include layout(compact) {
 					margin-block-start: m("sm");
 				}
 			}
@@ -83,22 +108,25 @@
 
 		> p {
 			&:first-child {
-				margin-block-start: m("md");
-
-				.-compact & {
+				@include layout {
 					margin-block-start: m("sm");
+				}
+
+				@include layout(compact) {
+					margin-block-start: m("base");
 				}
 			}
 		}
 	}
 
 	.dialog-buttons {
-		display: flex;
-		flex: 0 0 auto;
-		flex-wrap: nowrap;
-		padding: p("sm");
+		@include layout {
+			display: flex;
+			flex: 0 0 auto;
+			padding: p("sm");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base");
 		}
 
@@ -107,14 +135,7 @@
 		}
 
 		.dialog-button {
-			@extend %primary-button;
-			@extend %button-icon;
-			@extend %button-row;
+			@extend %primary-button-simple-reset;
 		}
-	}
-
-	> .window-content {
-		background: transparent;
-		padding: 0;
 	}
 }

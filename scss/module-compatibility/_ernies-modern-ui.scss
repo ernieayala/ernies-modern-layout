@@ -1,24 +1,24 @@
 #emu-settings {
-	@extend %window-common;
-	@extend %window-hack;
-
 	form {
-		display: flex;
-		flex-direction: column;
-		height: 40vh;
-		overflow: hidden;
-	}
-
-	.sheet-tabs {
-		@extend %modal-tabs;
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			height: 40vh;
+			overflow: hidden;
+		}
 	}
 
 	.content {
-		flex: 1 1 auto;
-		overflow: auto;
+		@include layout {
+			flex: 1 1 auto;
+			overflow: auto;
+		}
 	}
 
 	.sheet-footer {
-		flex: 0 0 auto;
+		@include layout {
+			flex: 0 0 auto;
+			padding-block-start: p("sm");
+		}
 	}
 }

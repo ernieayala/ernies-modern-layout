@@ -33,7 +33,8 @@
 		"sm": to-rem(12px),
 		"xs": to-rem(10px),
 		"xxs": to-rem(8px),
-		"default": to-rem(16px)
+		"default": to-rem(16px),
+		"chat-roll": to-rem(18px)
 	)
 	"space" (
 		"button": to-rem(32px),
@@ -49,33 +50,112 @@
 	)
 );
 
-// Sass Variables
+// Shadows
 $global-box-shadow: 0 2px 4px color("black");
 $global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");
 
+// Border Radius
 $global-border-radius-default: var(--emu-border-radius-default, 0);
 $global-border-radius-controls: var(--emu-border-radius-controls, 0);
 $global-border-radius-forms: var(--emu-border-radius-forms, 0);
 $global-border-radius-images: var(--emu-border-radius-images, 0);
 
+// Image Background
 $global-image-background: var(--emu-image-background, none);
 $global-image-background-lightest: var(--emu-image-background-lightest, none);
 $global-image-background-light: var(--emu-image-background-light, none);
 $global-image-background-darkest: var(--emu-image-background-darkest, none);
 $global-image-background-controls: var(--emu-image-background-controls, none);
 
+// Opacity
 $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
+
+// Mixins
+@mixin layout($compact: null) {
+	@if not $compact {
+		.-emu-layout & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-logo($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-logo & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-logo.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-subtle($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-subtle-layout & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu--subtle-layout.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-control-align-top($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-control-align-top & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-control-align-top.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-scene-thumbs($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-scene-thumbs & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-scene-thumbs.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-players($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-players & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-players.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+// Animations
+@keyframes emu-notification-flash {
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
 
 // Shared
 @import "./shared/buttons";
-@import "./shared/directory";
-@import "./shared/folder";
 @import "./shared/form-elements";
-@import "./shared/form-group";
-@import "./shared/notifications";
 @import "./shared/panel";
 @import "./shared/states";
+@import "./shared/table";
 @import "./shared/tabs";
-@import "./shared/typography";
 @import "./shared/utils";
 @import "./shared/window";

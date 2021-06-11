@@ -1,60 +1,30 @@
 @import "base";
+@import "init";
 
-:root {
-	@include css-vars($_palette-default);
-	scrollbar-color: color("charcoal-300") color("black", 0.5);
-	scrollbar-width: thin;
-
-	--emu-border-radius-default: 0;
-	--emu-border-radius-controls: 0;
-	--emu-border-radius-forms: 0;
-	--emu-border-radius-images: 0;
-	--emu-image-background: none;
-	--emu-image-background-lightest: none;
-	--emu-image-background-light: none;
-	--emu-image-background-darkest: none;
-	--emu-subtle-opacity: 0.3;
-}
-
-::-webkit-scrollbar {
-	width: to-rem(8px);
-
-	.-compact & {
-		width: to-rem(4px);
-	}
-}
-
-::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 2px 0 color("background-darkest", 0.5);
-	border: none;
-	border-radius: 0;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: color("background-light");
-	border: none;
-	border-radius: $global-border-radius-default;
-	outline: none;
-}
-
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-body.emu.e-body#emu {
-	::selection {
-		background-color: color("gray-200");
+body.-emu {
+	// Base
+	.dialog,
+	#sidebar,
+	.window-app:not([id*="actor-"]):not([id*="item-"]) {
+		@import "./base/base-button";
+		@import "./base/base-directory";
+		@import "./base/base-form-elements";
+		@import "./base/base-forms";
+		@import "./base/base-image";
+		@import "./base/base-table";
+		@import "./base/base-tabs";
+		@import "./base/base-text";
+		@import "./base/base-tox-editor";
 	}
 
 	// Components
 	@import "./components/context-menu";
 	@import "./components/dialog";
 	@import "./components/hotbar";
+	@import "./components/hud";
 	@import "./components/loading-bar";
 	@import "./components/logo";
 	@import "./components/menu";
-	@import "./components/notes-hints";
 	@import "./components/notifications";
 	@import "./components/pause";
 	@import "./components/players-connected";
@@ -65,7 +35,7 @@ body.emu.e-body#emu {
 	// Sidebar
 	@import "./components/sidebar";
 	@import "./components/sidebar-chat"; // 1
-	.-emu-sidebar-combat & { @import "./components/sidebar-combat"; } // 2
+	@import "./components/sidebar-combat"; // 2
 	@import "./components/sidebar-scenes"; // 3
 	@import "./components/sidebar-actors"; // 4
 	@import "./components/sidebar-items"; // 5
@@ -75,81 +45,93 @@ body.emu.e-body#emu {
 	@import "./components/sidebar-compendium"; // 9
 	@import "./components/sidebar-settings"; // 10
 
-	// Sheets Bulk
-	@import "./components/sheet-actor-flags";
-	@import "./components/sheet-av-config";
-	@import "./components/sheet-client-settings";
-	@import "./components/sheet-combat-config";
-	@import "./components/sheet-drawing-config";
-	@import "./components/sheet-filepicker";
-	@import "./components/sheet-folder-create";
-	@import "./components/sheet-folder-edit";
-	@import "./components/sheet-grid-config";
-	@import "./components/sheet-journal-entry";
-	@import "./components/sheet-light-config";
-	@import "./components/sheet-macro";
-	@import "./components/sheet-module-management";
-	@import "./components/sheet-note-config";
-	@import "./components/sheet-permission";
-	@import "./components/sheet-player-config";
-	@import "./components/sheet-playlist-config";
-	@import "./components/sheet-scene";
-	@import "./components/sheet-sheet-config";
-	@import "./components/sheet-short-rest-hd";
-	@import "./components/sheet-sound-config";
-	@import "./components/sheet-template-config";
-	@import "./components/sheet-tile-config";
-	@import "./components/sheet-token";
-	@import "./components/sheet-track-config";
-	@import "./components/sheet-trait-selector";
-	@import "./components/sheet-wall-config";
+	// Sheets
+	@import "./sheets/active-effects";
+	@import "./sheets/actor-flags";
+	@import "./sheets/av-config";
+	@import "./sheets/chat-popout";
+	@import "./sheets/client-settings";
+	@import "./sheets/combatant-config";
+	@import "./sheets/default-token-config";
+	@import "./sheets/drawing-config";
+	@import "./sheets/filepicker";
+	@import "./sheets/folder-edit";
+	@import "./sheets/journal-entry";
+	@import "./sheets/macro-config";
+	@import "./sheets/module-management";
+	@import "./sheets/roll-table-config";
+	@import "./sheets/scene";
+	@import "./sheets/template-config";
+	@import "./sheets/tile-config";
+	@import "./sheets/token-config";
+	@import "./sheets/trait-selector";
+	@import "./sheets/user-config";
+	@import "./sheets/wall-config";
 
-	// Module Compatibility
-	@import "./module-compatibility/batch-folder-permissions";
+	// System Compatibility
+	@import "./system-compatibility/callofcthulhu7";
+	@import "./system-compatibility/dnd5e";
+	@import "./system-compatibility/pathfinder1";
+	@import "./system-compatibility/pathfinder2";
+	@import "./system-compatibility/starfinder";
+
+	// // Module Compatibility
+	@import "./module-compatibility/better-npc-sheet";
 	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/calendar-weather";
-	// @import "./module-compatibility/color-picker";
-	@import "./module-compatibility/chat-indicators";
-	.-emu-sidebar-combat & { @import "./module-compatibility/combat-enhancements"; }
+	@import "./module-compatibility/cautious-gamemaster-pack";
+	@import "./module-compatibility/chat-portrait";
+	@import "./module-compatibility/combat-enhancements";
+	@import "./module-compatibility/combat-ready";
 	@import "./module-compatibility/combat-utility-belt";
-	// @import "./module-compatibility/compendium-folders"; // maybe someday
-	@import "./module-compatibility/custom-hotbar";
-	@import "./module-compatibility/dancing-lights";
+	@import "./module-compatibility/compendium-browser";
+	@import "./module-compatibility/compendium-folders";
 	@import "./module-compatibility/df-chat-enhancements";
 	@import "./module-compatibility/df-curvy-walls";
+	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
-	@import "./module-compatibility/dungeondraft-importer";
+	@import "./module-compatibility/dnd-beyond-importer";
+	@import "./module-compatibility/dynamic-active-effects";
 	@import "./module-compatibility/ernies-modern-ui";
-	// @import "./module-compatibility/foriens-quest-log";
+	@import "./module-compatibility/foriens-quest-log";
+	@import "./module-compatibility/foriens-unidentified-items";
 	@import "./module-compatibility/fps-counter";
-	@import "./module-compatibility/furnace";
 	@import "./module-compatibility/fx-master";
-	@import "./module-compatibility/_illandrils_chat_enhancements";
+	@import "./module-compatibility/gm-notes";
+	@import "./module-compatibility/gm-screen";
+	@import "./module-compatibility/health-estimate";
+	@import "./module-compatibility/hey-wait";
+	@import "./module-compatibility/illandrils-chat-enhancements";
+	@import "./module-compatibility/lib-wrapper";
 	@import "./module-compatibility/lmrtfy";
 	@import "./module-compatibility/macro-editor";
+	@import "./module-compatibility/maestro";
 	@import "./module-compatibility/mess";
 	@import "./module-compatibility/midi-qol";
 	@import "./module-compatibility/monks-scene-navigation";
+	@import "./module-compatibility/moulinette";
 	@import "./module-compatibility/narrator-tools";
+	@import "./module-compatibility/not-enough-npcs";
 	@import "./module-compatibility/one-journal";
 	@import "./module-compatibility/party-resources";
+	@import "./module-compatibility/pdf-foundry";
 	@import "./module-compatibility/permission-viewer";
-	@import "./module-compatibility/plutonium";
 	@import "./module-compatibility/polyglot";
-	@import "./module-compatibility/rolltable-button";
-	@import "./module-compatibility/response-time";
+	@import "./module-compatibility/search-anywhere";
 	@import "./module-compatibility/simple-dice-roller";
-		@import "./module-compatibility/small-time";
+	@import "./module-compatibility/small-time";
 	@import "./module-compatibility/tabbed-chat-log";
 	@import "./module-compatibility/thanduls-toggle";
-	@import "./module-compatibility/tidy-ui-game-settings";
+	@import "./module-compatibility/the-furnace";
+	@import "./module-compatibility/tidy-sheet";
+	@import "./module-compatibility/tidy-game-settings";
 	@import "./module-compatibility/token-action-hud";
+	@import "./module-compatibility/token-attacher";
 	@import "./module-compatibility/token-auras";
+	@import "./module-compatibility/token-info-icon";
+	@import "./module-compatibility/token-magic-fx";
 	@import "./module-compatibility/token-mold";
-	@import "./module-compatibility/tweak-playlist";
+	@import "./module-compatibility/turn-marker";
+	@import "./module-compatibility/universal-battlemap-importer";
 	@import "./module-compatibility/world-anvil";
-
-	// System Compatibility
-	@import "./system-compatibility/dnd5e";
-	@import "./system-compatibility/starfinder";
 }

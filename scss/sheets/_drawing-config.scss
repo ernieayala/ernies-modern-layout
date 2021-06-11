@@ -1,0 +1,24 @@
+#drawing-config {
+	@extend %window-common;
+
+	form {
+		.sheet-tabs {
+			border-block-end: b("primary", 2px);
+
+			@include layout {
+				flex: 0 0 auto;
+				line-height: 1;
+			}
+		}
+
+		> .tab {
+			@include layout {
+				padding-block-start: p("sm");
+			}
+
+			@include layout(compact) {
+				padding-block-start: p("base");
+			}
+		}
+	}
+}

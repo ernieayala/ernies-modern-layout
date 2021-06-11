@@ -1,0 +1,50 @@
+.lib-wrapper.settings.window-app .window-content form {
+	.package-priority-group {
+		@include layout {
+			display: flex;
+			height: auto;
+
+			> div {
+				display: flex;
+				flex-flow: initial;
+				flex: 0 0 auto;
+				float: initial !important;
+				left: auto;
+				margin: 0;
+				padding-block-start: 0 !important;
+				width: auto !important;
+
+				button {
+					height: space("button");
+				}
+			}
+
+			.vertical-arrow-btn-group {
+				margin-inline-end: m("sm");
+			}
+
+			.form-group {
+				flex: 1 1 auto;
+				flex-wrap: wrap;
+
+				> label {
+					flex: 1 1 auto;
+					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+
+	h1 {
+		@include layout {
+			margin-block-start: m("sm");
+		}
+	}
+
+	select {
+		@include layout {
+			height: auto;
+			padding: p("sm");
+		}
+	}
+}

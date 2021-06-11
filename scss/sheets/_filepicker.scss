@@ -1,0 +1,245 @@
+.filepicker.window-app {
+	.filepicker-header {
+		@include layout {
+			flex: 0 0 auto;
+			position: relative;
+		}
+
+		.current-dir {
+			button {
+				@include layout {
+					> i {
+						margin: 0;
+					}
+
+					+ .form-fields {
+						margin: 0 m("base");
+					}
+				}
+			}
+		}
+	}
+
+	.filepicker-body {
+		@include layout {
+			flex: 1 1 auto;
+			min-height: to-rem(200px);
+			overflow-y: auto;
+			position: relative;
+		}
+
+		&.private {
+			@extend %global-focus;
+
+			.current-dir button.privacy {
+				@extend %global-active;
+			}
+		}
+
+		&.thumbs {
+			.file {
+				@include layout {
+					padding: p("base");
+
+					img {
+						margin-inline-end: m("base");
+						max-width: space("icon");
+						max-height: space("icon");
+					}
+				}
+			}
+		}
+
+		&.tiles {
+			.tiles-list {
+				@include layout {
+					grid-template-columns: repeat(5, 20%);
+				}
+			}
+
+			.file {
+				@include layout {
+					align-items: center;
+					background-color: color("background-darkest", 0.05);
+					border: none;
+					display: flex;
+					flex: 0 0 auto;
+					justify-content: center;
+					max-width: 100%;
+					padding: p("base");
+					width: 100%;
+
+					img {
+						max-height: 100%;
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
+		&.images {
+			.file {
+				border: 0;
+				border-block-end: b("border");
+
+				@include layout {
+					display: grid;
+					grid-template-areas: "title" "image";
+					grid-template-rows: min-content 1fr;
+					justify-content: center;
+					padding: p("base");
+				}
+
+				.filename {
+					background-color: color("background-darkest", 0.8);
+					border-radius: 0;
+					color: color("text-lightest");
+
+					@include layout {
+						@include ellipsis(max-width 100%);
+						display: block;
+						font-size: fs("md");
+						grid-area: title;
+						left: auto;
+						line-height: 1;
+						margin: 0;
+						padding: p("base");
+						position: relative;
+						text-align: center;
+						width: 100%;
+					}
+				}
+
+				img {
+					@include layout {
+						grid-area: image;
+					}
+				}
+			}
+		}
+	}
+
+	section.filepicker-body {
+		@include layout {
+			margin-block-start: m("sm");
+			position: relative;
+		}
+
+		@include layout(compact) {
+			margin-block-start: m("base");
+		}
+	}
+
+	.filepicker-footer {
+		@include layout {
+			flex: 0 0 auto;
+			margin-block-start: m("sm");
+			position: relative;
+
+			&:empty {
+				display: none;
+			}
+		}
+
+		@include layout(compact) {
+			margin-block-start: m("base");
+		}
+	}
+
+	.display-modes {
+		.display-mode {
+			@extend %primary-button;
+
+			@include layout {
+				flex: 1 1 auto;
+				margin-inline-start: m("base");
+				width: auto;
+
+				&:first-child {
+					margin-inline-start: 0;
+				}
+
+				> i {
+					margin: 0;
+				}
+			}
+
+			&.active {
+				background-color: color("primary");
+				color: color("text-lightest");
+			}
+		}
+	}
+
+	.directory {
+		@include layout {
+			@extend %reset-list;
+			background: none;
+			border: 0;
+			border-radius: 0;
+			min-height: to-rem(32px);
+			list-style: none;
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: relative;
+			margin: 0;
+			width: 100%;
+
+			+ .directory {
+				margin-block-start: m("base");
+			}
+		}
+
+		.dir,
+		.file {
+			text-shadow: none;
+			transition: t(background box-shadow color, "link");
+
+			@include layout {
+				@include ellipsis;
+				align-items: center;
+				cursor: pointer;
+				display: flex;
+				font-size: fs("md");
+				font-weight: normal;
+				height: auto;
+				line-height: to-rem(32px);
+				padding: 0 p("sm");
+				position: relative;
+			}
+
+			@include layout(compact) {
+				line-height: to-rem(24px);
+				padding: 0 p("base");
+			}
+
+			&:last-child {
+				border-block-end: 0;
+			}
+
+			&:hover {
+				background-color: color("primary");
+				box-shadow: inset 0 0 0 2px color("white");
+				color: color("text-lightest");
+			}
+
+			&:focus {
+				box-shadow:
+					inset 0 0 0 2px color("primary"),
+					inset 0 0 0 3px color("white"), 0 1px 2px 0 color("black", 0.3);
+			}
+		}
+
+		.dir {
+			background-color: color("folder-header", 0.9);
+			border-block-end: b("border");
+			color: color("text");
+		}
+
+		.file {
+			background-color: color("folder-directory", 0.9);
+			border-block-end: b("border");
+			color: color("text-lightest");
+		}
+	}
+}

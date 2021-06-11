@@ -1,36 +1,45 @@
 #sidebar,
 .sidebar-popout {
 	#settings {
-		padding: p("sm");
+		@include layout {
+			padding: p("sm");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base");
 		}
 
 		div {
-			margin: 0;
+			@include layout {
+				margin: 0;
+			}
 		}
 
 		h2,
 		h4 {
-			@extend %h-tag;
 			background: transparent;
 			border: none;
 			color: color("text-lightest");
-			padding: 0;
-			margin-block-end: m("sm");
 
-			.-compact & {
+			@include layout {
+				padding: 0;
+				margin-block-end: m("sm");
+			}
+
+			@include layout(compact) {
 				margin-block-end: m("base");
 			}
 		}
 
 		h2 {
-			border-block-end: b("border");
-			font-size: fs("xxl");
-			margin-block-start: m("sm");
+			border-block-end: b("border-lighter");
 
-			.-compact & {
+			@include layout {
+				font-size: fs("xxl");
+				margin-block-start: m("sm");
+			}
+
+			@include layout(compact) {
 				font-size: fs("xl");
 				margin-block-start: m("base");
 			}
@@ -38,23 +47,30 @@
 
 		h4 {
 			color: color("primary");
-			font-size: fs("lg");
 
-			.-compact & {
+			@include layout {
+				font-size: fs("lg");
+			}
+
+			@include layout(compact) {
 				margin-block-start: m("base");
 			}
 		}
 
 		button {
-			@extend %primary-button;
-			@extend %button-icon;
-			margin-block-end: m("base");
+			@include layout {
+				margin: 0;
+				margin-block-end: m("base");
+			}
 		}
 
 		#game-details {
 			color: color("text-lightest");
-			margin: 0;
-			padding: 0;
+
+			@include layout {
+				margin: 0;
+				padding: 0;
+			}
 		}
 	}
 }

@@ -4,14 +4,16 @@
 		#combat-tracker {
 			.token-resource {
 				input {
-					@extend %input-text;
-					@include size(space("button-sm"));
 					border: none;
 					color: color("text-lightest");
-					padding: 0;
-					text-align: center;
 
-					.-compact & {
+					@include layout {
+						@include size(space("button-sm"));
+						padding: 0;
+						text-align: center;
+					}
+
+					@include layout(compact) {
 						@include size(to-rem(20px));
 					}
 				}
@@ -20,12 +22,14 @@
 
 		.add-temporary {
 			@extend %primary-button;
-			@extend %button-icon;
-			margin: m("sm");
-			text-shadow: none;
-			width: 100%;
 
-			.-compact & {
+			@include layout {
+				margin: m("sm");
+				text-shadow: none;
+				width: 100%;
+			}
+
+			@include layout(compact) {
 				margin: m("base");
 			}
 		}
@@ -36,12 +40,34 @@
 			h4 {
 				border-block-end: b("border");
 				color: color("text-lightest");
-				margin-block-start: m("md");
 
-				.-compact & {
+				@include layout {
+					margin-block-start: m("md");
+				}
+
+				@include layout(compact) {
 					margin-block-start: m("sm");
 				}
 			}
 		}
+	}
+}
+
+#combat-utility-belt-about {
+	a {
+		text-shadow: none;
+	}
+}
+
+#cub-puter {
+	@include layout {
+		&::before,
+		&::after {
+			display: none;
+		}
+	}
+
+	.terminal {
+		color: color("primary");
 	}
 }

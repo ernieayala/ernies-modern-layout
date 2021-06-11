@@ -1,0 +1,44 @@
+.app.window-app {
+	form.pdf-item-sheet {
+		@include layout {
+			.field-row {
+				align-items: center;
+				display: flex;
+				margin-block-end: m("base");
+
+				> label {
+					margin-inline-end: m("sm");
+				}
+			}
+		}
+	}
+}
+
+.pdf-app.app.window-app {
+	section.window-content {
+		background-image: $global-image-background-light !important;
+	}
+
+	div.flex {
+		@include layout {
+			margin-block-end: m("base");
+		}
+
+		> * {
+			@include layout {
+				height: auto;
+			}
+		}
+	}
+}
+
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab .directory-footer {
+		button.create-pdf {
+			@include layout {
+				width: 100%;
+			}
+		}
+	}
+}

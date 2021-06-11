@@ -1,39 +1,49 @@
 [data-tool="thandulTogglables"] i {
-	@include size(70%);
-	filter: initial;
+	@include layout {
+		@include size(70%);
+		filter: initial;
+	}
 }
 
 .thandulTogglables {
-	@extend %reset-list;
-	@include absolute(left to-rem(48px));
 	background-color: color("background");
 	border: b("border");
 	border-radius: br("sm");
 	box-shadow: none;
 	color: color("text-lightest");
-	display: none;
-	padding: p("base");
-	top: 0 !important;
 
-	.-compact & {
+
+	@include layout {
+		@extend %reset-list;
+		@include absolute(left to-rem(48px));
+		display: none;
+		padding: p("base");
+		top: 0 !important;
+	}
+
+	@include layout(compact) {
 		padding: p("xs");
 	}
 
 	ul {
-		@include size(100%);
-		display: flex;
-		min-width: to-rem(400px);
-		padding: 0;
+		@include layout {
+			@include size(100%);
+			display: flex;
+			min-width: to-rem(400px);
+			padding: 0;
+		}
 	}
 
 	li {
-		@include size(25%, 100%);
-		border: none;
-		display: flex;
-		justify-content: center;
-		padding: p("sm");
+		@include layout {
+			@include size(25%, 100%);
+			border: none;
+			display: flex;
+			justify-content: center;
+			padding: p("sm");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base");
 		}
 
@@ -45,15 +55,20 @@
 		img {
 			border: b("border");
 			border-radius: 0;
-			margin: 0;
-			max-width: to-rem(56px);
+
+			@include layout {
+				margin: 0;
+				max-width: to-rem(56px);
+			}
 		}
 
 		p {
-			margin: 0;
-			margin-block-start: m("sm");
+			@include layout {
+				margin: 0;
+				margin-block-start: m("sm");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				margin-block-start: m("base");
 			}
 		}
@@ -61,5 +76,7 @@
 }
 
 #controls li.active[data-tool="thandulTogglables"] div.thandulTogglables {
-	display: grid;
+	@include layout {
+		display: grid;
+	}
 }

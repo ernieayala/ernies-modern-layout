@@ -1,0 +1,44 @@
+.dice-so-nice {
+	.dice-more-theme {
+		background: none;
+		border: none;
+
+		@include layout {
+			padding: p("sm");
+		}
+	}
+
+	section.content .settings-list {
+		@include layout {
+			padding: 0;
+		}
+
+		.sfxs-list {
+			.sfx {
+				@extend %table-row;
+
+				@include layout {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr min-content;
+					line-height: initial;
+
+					&:nth-of-type(odd):not(.table-header) {
+						background-color: color("background-light", 0.1);
+					}
+
+					> div {
+						width: auto;
+					}
+
+					select + input {
+						margin-inline-start: m("base");
+					}
+				}
+			}
+
+			.sfx-header {
+				@extend %table-header;
+			}
+		}
+	}
+}

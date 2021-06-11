@@ -1,29 +1,19 @@
-%button-row {
-	flex: 1 1 auto;
-	margin-inline-start: m("base");
-	width: 100%;
-
-	&:first-of-type {
-		margin-inline-start: 0;
+%button-icon-spacing {
+	@include layout {
+		> i {
+			margin-inline-end: m("sm");
+		}
 	}
-}
 
-%button-icon {
-	> i {
-		margin-inline-end: m("sm");
-
-		.-compact & {
+	@include layout(compact) {
+		> i {
 			margin-inline-end: m("base");
 		}
 	}
 }
 
-%reset-image {
-	border: none;
-	border-radius: 0;
-	object-fit: cover;
-	object-position: 50% 50%;
-	position: relative;
+%button-icon {
+	@extend %button-icon-spacing;
 }
 
 %reset-list {
@@ -43,15 +33,9 @@
 }
 
 %notification-pip {
-	@keyframes notification-flash {
-		0% { opacity: 0; }
-		50% { opacity: 1; }
-		100% { opacity: 0; }
-	}
-
 	animation-duration: time("x-slow");
 	animation-iteration-count: infinite;
-	animation-name: notification-flash;
+	animation-name: emu-notification-flash;
 	animation-timing-function: map-get($_default-transitions, "shift");
 	background-color: color("primary");
 	display: none;

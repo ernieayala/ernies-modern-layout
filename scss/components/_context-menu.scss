@@ -1,24 +1,46 @@
 #context-menu {
-	@include absolute(left 0);
 	background-color: color("background-lightest");
 	background-image: $global-image-background-lightest;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
 	color: color("text");
-	max-width: to-rem(320px);
-	min-width: to-rem(152px);
-	width: 100%;
-	z-index: z("popover");
+
+	@include layout {
+		@include absolute(left 0);
+		max-width: to-rem(320px);
+		min-width: to-rem(152px);
+		width: 100%;
+		z-index: z("popover");
+
+		&.expand-down {
+			top: 100%;
+		}
+
+		&.expand-up {
+			bottom: 100%;
+		}
+	}
 
 	ol.context-items {
-		@extend %reset-list;
+		@include layout {
+			@extend %reset-list;
+		}
 
 		.context-item {
-			cursor: pointer;
-			line-height: initial;
-			padding: p("base");
+			@extend %button-icon-spacing;
 			text-shadow: none;
+
+			@include layout {
+				cursor: pointer;
+				line-height: initial;
+				padding: p("base");
+				text-align: left;
+			}
+
+			@include layout(compact) {
+				padding: p("xs");
+			}
 
 			&:first-child {
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
@@ -28,26 +50,19 @@
 				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 			}
 
-			.-compact & {
-				padding: p("xs");
-			}
-
 			&:hover {
 				background-color: color("primary");
 				color: color("text-lightest");
 			}
 
-			> i {
-				margin-inline-end: m("base");
-
-				.-compact & {
-					margin-inline-end: m("xs");
-				}
+			&:focus {
+				@extend %global-focus;
 			}
 		}
 	}
 
+	// legacy - keep in case
 	.window-app & {
-		z-index: 101; // hmm
+		z-index: 101;
 	}
 }

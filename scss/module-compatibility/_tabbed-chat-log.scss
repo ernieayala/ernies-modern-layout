@@ -1,17 +1,29 @@
-.tabbedchatlog {
-	@extend %modal-tabs;
-	box-shadow: none;
+#sidebar,
+.sidebar-popout {
+	#chat {
+		.tabbedchatlog {
+			border-radius: none;
+			box-shadow: none;
 
-	a {
-		color: color("text-lightest");
+			a {
+				color: color("text-lightest");
+			}
+		}
+
+		#icNotification,
+		#rollsNotification,
+		#oocNotification {
+			@extend %notification-pip;
+			color: color("text-lightest");
+			text-shadow: none;
+
+			@include layout {
+				margin-block-start: m("xs");
+				margin-inline-end: m("xs");
+				padding: p("xs");
+				right: 0;
+				top: 0;
+			}
+		}
 	}
-}
-
-#oocNotification {
-	@extend %notification-pip;
-	color: color("text-lightest");
-	padding: p("xs");
-	right: space("base");
-	text-shadow: none;
-	top: space("base");
 }

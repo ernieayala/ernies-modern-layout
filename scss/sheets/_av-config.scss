@@ -1,0 +1,21 @@
+#av-config {
+	form {
+		.sheet-tabs {
+			border-block-end: b("primary", 2px);
+
+			@include layout {
+				flex: 0 0 auto;
+			}
+		}
+
+		> button {
+			@include layout {
+				margin-block-start: m("sm");
+			}
+
+			@include layout(compact) {
+				margin-block-start: m("base");
+			}
+		}
+	}
+}

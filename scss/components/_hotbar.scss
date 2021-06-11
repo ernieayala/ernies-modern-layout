@@ -1,25 +1,27 @@
 #hotbar {
-	@include fixed(bottom space("sm") left to-rem(224px));
-	@include size(auto);
-	display: flex;
-	pointer-events: none;
-	transition: t(opacity, "link");
-	z-index: z("fixed");
+	@include layout {
+		@include fixed(bottom space("sm") left to-rem(216px));
+		@include size(auto);
+		display: flex;
+		pointer-events: none;
+		transition: t(opacity, "link");
+		z-index: z("fixed");
+	}
 
-	.-emu-players & {
+	@include layout-players {
 		left: space("sm");
 	}
 
-	.-emu-players.-compact & {
+	@include layout-players(compact) {
 		left: space("base");
 	}
 
-	.-compact & {
+	@include layout(compact) {
 		bottom: space("base");
 		left: to-rem(176px);
 	}
 
-	.-emu-subtle-layout & {
+	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 
 		&:hover {
@@ -41,57 +43,70 @@
 	}
 
 	#action-bar {
-		display: block;
-		flex: 1 1 auto;
-		height: auto;
-		pointer-events: all;
-		position: relative;
 		transition: t(opacity, "link");
 
-		.-emu-subtle-layout & {
+		@include layout {
+			display: block;
+			flex: 1 1 auto;
+			height: auto;
+			pointer-events: all;
+			position: relative;
+		}
+
+		@include layout-subtle {
 			opacity: 0;
 		}
 	}
 
 	#macro-list {
-		@extend %reset-list;
 		border: none;
 		border-radius: $global-border-radius-default;
-		display: flex;
-		flex: 0 0 auto;
-		float: left;
-		height: auto;
-		position: relative;
-		width: auto;
+
+		@include layout {
+			@extend %reset-list;
+			display: flex;
+			flex: 0 0 auto;
+			float: left;
+			height: auto;
+			position: relative;
+			width: auto;
+		}
 	}
 
 	.bar-controls {
-		@include size(to-rem(40px), to-rem(56px));
 		background: transparent;
 		border: b("border");
 		border-radius: $global-border-radius-default;
 		box-shadow: none;
-		display: flex;
-		flex-direction: column;
-		margin: 0;
-		position: relative;
 
-		.-compact & {
+		@include layout {
+			@include size(to-rem(40px), to-rem(56px));
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			position: relative;
+		}
+
+		@include layout(compact) {
 			@include size(to-rem(32px), to-rem(40px));
 		}
 
 		&:first-child {
-			flex: 0 0 auto;
-			flex-direction: column;
-			margin-inline-end: m("base");
+			@include layout {
+				flex: 0 0 auto;
+				flex-direction: column;
+				margin-inline-end: m("base");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				margin-inline-end: m("xs");
 			}
 
 			#macro-directory,
 			#bar-toggle {
-				flex: 1 1 auto;
+				@include layout {
+					flex: 1 1 auto;
+				}
 
 				&:first-of-type {
 					border: none;
@@ -107,10 +122,12 @@
 		}
 
 		&:last-child {
-			float: left;
-			margin-inline-start: m("base");
+			@include layout {
+				float: left;
+				margin-inline-start: m("base");
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				margin-inline-start: m("xs");
 			}
 		}
@@ -128,18 +145,21 @@
 		.page-control,
 		#macro-directory,
 		#bar-toggle {
-			align-items: center;
 			background-color: color("background", 0.8);
 			background-image: $global-image-background-controls;
 			color: color("text-lightest");
-			cursor: pointer;
-			display: flex;
-			flex: 0 0 auto;
-			font-size: fs("lg");
-			justify-content: center;
-			line-height: initial;
-			position: relative;
 			transition: t(box-shadow, "link");
+
+			@include layout {
+				align-items: center;
+				cursor: pointer;
+				display: flex;
+				flex: 0 0 auto;
+				font-size: fs("lg");
+				justify-content: center;
+				line-height: initial;
+				position: relative;
+			}
 
 			&:hover {
 				@extend %global-hover;
@@ -159,7 +179,7 @@
 		}
 
 		.page-control {
-			.-compact & {
+			@include layout(compact) {
 				font-size: fs("xs");
 			}
 		}
@@ -168,42 +188,50 @@
 			background-color: color("background", 0.5);
 			background-image: $global-image-background-controls;
 			color: color("text-lightest");
-			display: flex;
-			flex: 1 1 auto;
-			font-size: fs("md");
-			justify-content: center;
-			line-height: initial;
 
-			.-compact & {
+			@include layout {
+				display: flex;
+				flex: 1 1 auto;
+				font-size: fs("md");
+				justify-content: center;
+				line-height: initial;
+			}
+
+			@include layout(compact) {
 				font-size: fs("sm");
 			}
 		}
 	}
 
 	.macro {
-		@include size(to-rem(56px));
-		align-items: center;
 		background-color: color("background", 0.8);
 		background-image: $global-image-background-controls;
 		border: b("border");
 		border-radius: 0;
 		box-shadow: none;
 		color: color("text-lightest");
-		cursor: pointer;
-		display: flex;
-		flex: 0 0 auto;
-		justify-content: center;
-		margin-inline-start: -1px; // for the border and people messing with border color
-		position: relative;
 		transition: t(border box-shadow, "link");
 
-		.-compact & {
+		@include layout {
+			@include size(to-rem(56px));
+			cursor: pointer;
+			display: flex;
+			flex: 0 0 auto;
+			justify-content: center;
+			margin-inline-start: -1px; // for the border and people messing with border color
+			position: relative;
+		}
+
+		@include layout(compact) {
 			@include size(to-rem(40px));
 		}
 
 		&:first-child {
 			border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
-			margin-inline-start: 0;
+
+			@include layout {
+				margin-inline-start: 0;
+			}
 		}
 
 		&:last-child {
@@ -224,25 +252,31 @@
 		}
 
 		.macro-key {
-			@include absolute(top space("xs") right space("base"));
 			background: transparent;
 			color: color("text-lightest");
 			font-weight: 600;
-			padding: 0;
 			text-shadow: 2px 2px  2px color("black");
-			z-index: 1;
+
+			@include layout {
+				@include absolute(top space("xs") right space("base"));
+				padding: 0;
+				z-index: 1;
+			}
 		}
 
 		.macro-icon {
-			@include size(to-rem(50px));
 			border: none;
-			max-height: 100%;
-			max-width: 100%;
-			object-fit: cover;
-			object-position: 50% 50%;
-			position: relative;
 
-			.-compact & {
+			@include layout {
+				@include size(to-rem(50px));
+				max-height: 100%;
+				max-width: 100%;
+				object-fit: cover;
+				object-position: 50% 50%;
+				position: relative;
+			}
+
+			@include layout(compact) {
 				@include size(to-rem(34px));
 			}
 		}
@@ -252,15 +286,18 @@
 			border: none;
 			border-radius: $global-border-radius-default;
 			color: color("text-lightest");
-			font-size: fs("md");
-			height: auto;
-			left: 0;
-			line-height: auto;
-			margin-block-end: m("base");
-			min-width: to-rem(56px);
-			padding: p("base") p("sm");
 
-			.compact & {
+			@include layout {
+				font-size: fs("md");
+				height: auto;
+				left: 0;
+				line-height: auto;
+				margin-block-end: m("base");
+				min-width: to-rem(56px);
+				padding: p("base") p("sm");
+			}
+
+			@include layout(compact) {
 				padding: p("xs") p("base");
 			}
 		}

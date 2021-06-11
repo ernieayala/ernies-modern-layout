@@ -1,22 +1,29 @@
 #players {
-	@include fixed(bottom space("sm") left space("sm"));
 	background-color: color("background", 0.8);
 	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
-	display: block;
 	transition: t(opacity, "link");
-	width: to-rem(200px);
-	z-index: z("fixed");
 
-	.-compact & {
+	@include layout {
+		@include fixed(bottom space("sm") left space("sm"));
+		display: block;
+		width: to-rem(200px);
+		z-index: z("fixed");
+
+		&.hidden {
+			display: none;
+		}
+	}
+
+	@include layout(compact) {
 		bottom: space("base");
 		left: space("base");
 		width: to-rem(168px);
 	}
 
-	.-emu-subtle-layout & {
+	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 
 		&:hover {
@@ -32,42 +39,43 @@
 				padding: p("sm");
 			}
 		}
+	}
 
-		&.-compact {
-			&:hover {
-				ol {
-					padding: p("base");
-				}
+	@include layout-subtle(compact) {
+		&:hover {
+			> ol {
+				padding: p("base");
 			}
 		}
 	}
 
-	.-emu-players & {
-		display: none;
-	}
-
-	&.hidden {
+	@include layout-players {
 		display: none;
 	}
 
 	> h3 {
-		@extend %h-tag;
 		border-block-end: b("border");
 		color: color("text-lightest");
-		cursor: pointer;
-		display: flex;
-		font-size: fs("md");
-		letter-spacing: to-rem(1.2px);
-		padding: p("sm");
-		text-transform: uppercase;
 		transition: t(color, "link");
 
-		.-compact & {
+		@include layout {
+			cursor: pointer;
+			display: flex;
+			font-size: fs("md");
+			font-weight: normal;
+			letter-spacing: to-rem(1.2px);
+			margin: 0;
+			padding: p("sm");
+			position: relative;
+			text-transform: uppercase;
+		}
+
+		@include layout(compact) {
 			letter-spacing: initial;
 			padding: p("base");
 		}
 
-		.-emu-subtle-layout & {
+		@include layout-subtle {
 			border-width: 0;
 		}
 
@@ -78,27 +86,36 @@
 
 		.players-mode {
 			color: inherit;
-			flex: 1 1 auto;
-			font-size: fs("lg");
-			text-align: right;
-			position: relative;
+
+			@include layout {
+				flex: 1 1 auto;
+				font-size: fs("lg");
+				text-align: right;
+				position: relative;
+			}
 		}
 
 		> i {
-			position: relative;
+			@include layout {
+				position: relative;
+			}
 
 			&:first-of-type {
-				margin-inline-end: m("sm");
+				@include layout {
+					margin-inline-end: m("sm");
+				}
 
-				.-compact & {
+				@include layout(compact) {
 					margin-inline-end: m("base");
 				}
 			}
 
 			&:last-of-type {
-				margin-inline-start: m("sm");
+				@include layout {
+					margin-inline-start: m("sm");
+				}
 
-				.-compact & {
+				@include layout(compact) {
 					margin-inline-start: m("base");
 				}
 			}
@@ -106,37 +123,51 @@
 	}
 
 	> ol {
-		@extend %reset-list;
-		padding: p("sm");
+		@include layout {
+			@extend %reset-list;
+			padding: p("sm");
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base");
 		}
 
-		.-emu-subtle-layout & {
+		@include layout-subtle {
 			max-height: 0;
 			overflow: hidden;
 			padding: 0;
 		}
 
 		.player {
-			align-items: center;
-			border: none;
-			display: flex;
-			flex-wrap: nowrap;
-			line-height: initial;
-			margin: 0;
-			padding: p("xs") 0;
-			position: relative;
-			width: 100%;
+			@include layout {
+				align-items: center;
+				border: none;
+				display: flex;
+				flex-wrap: nowrap;
+				line-height: initial;
+				margin: 0;
+				padding: p("xs") 0;
+				position: relative;
+				width: 100%;
+			}
+
+			&.context {
+				.player-name {
+					color: color("primary");
+					text-shadow: none;
+				}
+			}
 		}
 
 		.player-name {
-			@include ellipsis;
 			color: color("text-lightest");
-			flex: 1 1 auto;
-			position: relative;
 			text-shadow: none;
+
+			@include layout {
+				@include ellipsis;
+				flex: 1 1 auto;
+				position: relative;
+			}
 
 			&.self {
 				color: color("text-lightest");
@@ -144,14 +175,16 @@
 		}
 
 		.player-active {
-			@include size(to-rem(8px));
-			border-radius: 50%;
-			flex: 0 0 auto;
-			margin: 0;
-			margin-inline-end: m("sm");
-			position: relative;
+			@include layout {
+				@include size(to-rem(8px));
+				border-radius: 50%;
+				flex: 0 0 auto;
+				margin: 0;
+				margin-inline-end: m("sm");
+				position: relative;
+			}
 
-			.-compact & {
+			@include layout(compact) {
 				margin-inline-end: m("base");
 			}
 

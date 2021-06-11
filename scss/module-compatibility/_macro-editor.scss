@@ -1,28 +1,40 @@
-.macro-editor-expand {
-	bottom: space("base");
-	position: absolute !important;
-	left: auto;
-	right: space("base");
-	top: auto;
+.window-app.sheet[id*="macro-config-"] {
+	.macro-editor-expand {
+		@include layout {
+			bottom: space("base");
+			position: absolute !important;
+			left: auto;
+			right: space("base");
+			top: auto;
 
-	&.fullscreen {
-		position: fixed !important;
-		z-index: z("popover") + 1;
+			&.fullscreen {
+				position: fixed !important;
+				z-index: z("popover") + 1;
+			}
+
+			> i {
+				margin: 0;
+			}
+		}
 	}
-}
 
-.macro-editor.ace_editor {
-	flex: 1 1 auto;
-	height: 100%;
+	.macro-editor.ace_editor {
+		@include layout {
+			flex: 1 1 auto;
+			height: 100%;
+			margin-block-end: m("md");
 
-	&.fullscreen {
-		height: calc(100% - 10rem);
-		z-index: z("popover");
+			&.fullscreen {
+				height: calc(100% - 10rem);
+				margin: 0;
+				z-index: z("popover");
 
-		&::before {
-			@include fixed(zero);
-			background-color: color("black", 0.5);
-			content: "";
+				&::before {
+					@include fixed(zero);
+					background-color: color("black", 0.5);
+					content: "";
+				}
+			}
 		}
 	}
 }

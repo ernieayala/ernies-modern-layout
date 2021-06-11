@@ -1,11 +1,38 @@
-.die-result-overlay-br {
-	button {
-		@extend %primary-button;
-		@include size(space("button-xs"));
-		padding: 0;
-	}
+.window-app[id*="chat-popout-"],
+#sidebar #chat #chat-log {
+	.chat-message .chat-card {
+		.die-result-overlay-br {
+			@include layout {
+				padding: 0 p("xs");
+			}
 
-	&.header-overlay-br button {
-		@include size(space("button"));
+			button {
+				@extend %control-button;
+				@extend %font-awesome;
+
+				@include layout {
+					margin: 0 m("xs");
+				}
+			}
+		}
+
+		.red-dual .dice-row {
+			.dice-row-item:not(.tooltip) {
+				@include layout {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					margin: 0;
+					min-height: to-rem(32px);
+				}
+			}
+
+			.dice-total + .dice-total {
+				@include layout {
+					margin-block-start: 0;
+					margin-inline-start: m("base");
+				}
+			}
+		}
 	}
 }

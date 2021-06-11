@@ -1,0 +1,127 @@
+#sidebar,
+.sidebar-popout {
+	#playlists {
+		li.sound.sound-is-playing {
+			background: transparent;
+		}
+	}
+}
+
+form .furnace-macro-run-as-gm.form-group {
+	label.form-group {
+		@include layout {
+			flex: 1 1 auto;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.tooltip {
+		background-color: color("background-darkest", 0.8);
+		border-radius: $global-border-radius-default;
+		border: none;
+		color: color("text-lightest");
+
+		@include layout {
+			bottom: 100% !important;
+			height: auto;
+			left: auto;
+			max-width: 100%;
+			padding: p("base");
+			pointer-events: none;
+			right: 0 !important;
+			top: auto;
+			white-space: initial;
+			word-break: break-word;
+		}
+	}
+
+	+ .form-group.stacked.command {
+		padding: p("sm");
+	}
+}
+
+.sheet.macro-sheet[id*="macro-config-"] {
+	form .form-group.furnace-macro-command {
+		border: b("border");
+		border-radius: 0;
+		color: color("text");
+
+		@include layout {
+			padding: 0;
+		}
+
+		&.fullscreen {
+			@include layout {
+				@include size(80vw, 80vh);
+				background: transparent;
+				margin-block-start: 10vh;
+				margin-inline-start: 10vh;
+				z-index: 10000;
+			}
+
+			@include layout(compact) {
+				@include size(80vw, 80vh);
+				margin-block-start: 10vh;
+				margin-inline-start: 10vh;
+				padding: 0;
+			}
+
+			&::before {
+				@include layout {
+					@include fixed(left -10vw top -10vh);
+					@include size(110vw, 110vh);
+					background-color: color("background-darkest", 0.8);
+					content: "";
+					z-index: 1;
+				}
+			}
+
+			textarea {
+				@include layout {
+					height: 100%;
+					z-index: 10;
+				}
+			}
+
+			pre {
+				background-color: color("background-lightest");
+			}
+
+			.furnace-macro-expand {
+				@include layout {
+					z-index: 11;
+				}
+			}
+		}
+
+		textarea {
+			border: none;
+			text-shadow: none;
+
+			@include layout {
+				font-size: to-rem(14px);
+				font-family: Consolas,Liberation Mono,Courier,monospace;
+				height: 100%;
+				padding: to-rem(5px);
+			}
+
+			&::selection {
+				background-color: color("primary", 0.2);
+			}
+		}
+	}
+
+	.furnace-macro-expand {
+		@include layout {
+			position: absolute;
+		}
+	}
+
+	.sheet-footer,
+	.window-resizable-handle {
+		@include layout {
+			z-index: 11;
+		}
+	}
+}

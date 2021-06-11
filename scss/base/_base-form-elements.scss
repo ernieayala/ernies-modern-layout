@@ -1,0 +1,56 @@
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="password"],
+input[type="datetime-local"] {
+	@extend %input-text;
+}
+
+input[type="checkbox"] {
+	@extend %input-checkbox;
+}
+
+input[type="radio"] {
+	@extend %input-radio;
+}
+
+input[type="text"] {
+	@include layout {
+		+ input[type="color"] {
+			margin-inline-start: m("base");
+		}
+	}
+
+	@include layout(compact) {
+		+ input[type="color"] {
+			margin-inline-start: m("xs");
+		}
+	}
+}
+
+input[type="color"],
+input[type="color"][data-edit] {
+	@extend %input-color;
+}
+
+input[type="range"] {
+	@extend %input-range;
+}
+
+select {
+	@extend %input-select;
+}
+
+textarea {
+	@extend %input-textarea;
+}
+
+fieldset {
+	border: none;
+
+	@include layout {
+		margin: 0;
+		padding: 0;
+	}
+}

@@ -3,50 +3,53 @@
 	#combat {
 		#combat-tracker {
 			.combatant {
-				height: auto;
-
 				.ce-image-wrapper {
-					@include size(space("icon"));
-					cursor: default;
-					flex: 0 0 auto;
-					margin-inline-end: m("sm");
-					position: relative;
+					@include layout {
+						@include size(space("icon"));
+						cursor: default;
+						flex: 0 0 auto;
+						margin-inline-end: m("sm");
+						position: relative;
+					}
 
-					.-compact & {
+					@include layout(compact) {
 						margin-inline-end: m("base");
 					}
 
 					.token-image {
-						@include size(100%);
-						margin: 0;
+						@include layout {
+							@include size(100%);
+							margin: 0;
+						}
 					}
 
 					svg {
-						box-shadow: none;
+						@include layout {
+							box-shadow: none;
+						}
 					}
 				}
 
 				.ce-modify-hp-wrapper {
 					color: color("text-lightest");
-					flex: 0 0 auto;
-					font-size: fs("sm");
+
+					@include layout {
+						align-items: center;
+						display: flex;
+						flex: 0 0 auto;
+						font-size: fs("sm");
+						padding: p("xs");
+					}
 
 					input {
-						@extend %input-text;
 						background-color: color("background-lightest");
-						height: auto;
-						margin-inline-start: m("xs");
 
-						width: to-rem(40px);
+						@include layout {
+							height: auto;
+							margin-inline-start: m("base");
+							width: to-rem(40px);
+						}
 					}
-				}
-
-				.token-resources {
-					line-height: 1;
-				}
-
-				.token-initiative {
-					padding-block-start: 0;
 				}
 			}
 		}

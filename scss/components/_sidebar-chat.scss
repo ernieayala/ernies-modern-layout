@@ -8,14 +8,17 @@
 				border: b("border");
 				border-radius: $global-border-radius-default;
 				color: color("text");
-				font-size: fs("md");
-				padding: p("base");
-				margin: m("base");
 
-				&:hover,
-				&:focus {
-					.message-metadata {
-						opacity: 1;
+				@include layout {
+					font-size: fs("md");
+					padding: p("base");
+					margin: m("base");
+
+					&:hover,
+					&:focus {
+						.message-metadata {
+							opacity: 1;
+						}
 					}
 				}
 
@@ -28,28 +31,46 @@
 				}
 
 				.message-header {
+					background-color: transparent;
 					color: inherit;
-					flex-wrap: nowrap;
-					line-height: 1.2;
-					margin-block-end: m("base");
+
+					@include layout {
+						align-items: center;
+						line-height: 1.2;
+						margin-block-end: m("base");
+					}
 				}
 
 				.message-metadata,
 				.message-sender {
-					align-items: center;
-					display: inline-flex;
-					font-size: fs("sm");
+					color: inherit;
+
+					@include layout {
+						align-items: center;
+						display: inline-flex;
+						font-size: fs("sm");
+					}
 				}
 
 				.message-sender {
-					overflow: hidden;
-					white-space: initial;
+					@include layout {
+						margin: m("base") 0;
+						overflow: hidden;
+						white-space: initial;
+					}
+
+					@include layout {
+						margin: m("xs") 0;
+					}
 				}
 
 				.message-metadata {
-					opacity: 0;
-					justify-content: flex-end;
 					transition: t("opacity", "link");
+
+					@include layout {
+						opacity: 0;
+						justify-content: flex-end;
+					}
 				}
 
 				.dice-roll .dice-formula,
@@ -58,131 +79,138 @@
 					box-shadow: none;
 					border: b("border");
 					border-radius: $global-border-radius-default;
-					line-height: initial;
-					font-size: fs("xl");
-					font-weight: normal;
+
+					@include layout {
+						line-height: initial;
+						font-size: fs("chat-roll");
+						font-weight: normal;
+					}
 				}
 
-				.dice-roll + .dice-roll {
-					margin-block-start: m("base");
+				.dice-roll + .dice-roll,
+				.dice-total + .dice-total {
+					@include layout {
+						margin-block-start: m("base");
+					}
 
-					.-compact & {
+					@include layout(compact) {
 						margin-block-start: m("xs");
 					}
 				}
 
-				a.entity-link,
-				a.inline-roll {
-					@extend %primary-button;
-					color: color("text-lightest");
-					font-size: fs("sm");
-					padding: p("xs") p("base");
-					text-indent: 0;
-
-					i {
-						color: inherit;
-						margin-inline-end: m("base");
-					}
-				}
-
 				.button.message-delete {
-					@extend %control-button;
+					@extend %link-button;
 					color: color("text");
+
+					@include layout {
+						@extend %control-button;
+						color: color("text");
+					}
 				}
 			}
 		}
 
 		#chat-controls {
-			align-items: center;
 			background-color: color("background", 0.5);
 			background-image: $global-image-background;
 			border-block-start: b("border");
 			color: color("text-lightest");
-			display: flex;
-			flex: 0 0 auto;
-			margin: 0;
-			padding: p("sm");
-			position: relative;
 
-			.-compact & {
+			@include layout {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				margin: 0;
+				padding: p("sm");
+				position: relative;
+			}
+
+			@include layout(compact) {
 				padding: p("base");
 			}
 
 			.chat-control-icon {
-				margin-inline-end: m("xs");
+				@include layout {
+					margin-inline-end: m("xs");
+				}
 
 				.fa-dice-d20 {
-					@extend %control-button;
-					@extend %font-awesome;
-					font-size: fs("md");
-					margin: 0;
+					@extend %link-button;
+
+					@include layout {
+						@extend %control-button;
+						@extend %font-awesome;
+						font-size: fs("md");
+						margin: 0;
+					}
 				}
 			}
 
 			.roll-type-select {
-				@extend %input-select;
-				align-items: center;
 				background-color: color("background", 0.5);
 				color: color("text-lightest");
-				display: flex;
-				flex: 1 1 auto;
-				top: auto;
-				width: auto;
 
-				&:hover {
-					@extend %global-hover-alt;
-				}
-
-				&:focus {
-					@extend %global-focus;
-				}
-
-				&:disabled {
-					pointer-events: none;
+				@include layout {
+					height: to-rem(32px);
+					margin: 0;
+					width: auto;
 				}
 			}
 
 			.control-buttons {
-				align-items: center;
-				display: flex;
-				flex: 0 0 auto;
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+				}
 
 				.button {
-					@extend %control-button;
+					@extend %link-button;
+
+					@include layout {
+						@extend %control-button;
+					}
 
 					> i {
-						font-size: inherit;
-						line-height: initial;
+						@include layout {
+							font-size: inherit;
+							line-height: initial;
+						}
 					}
 				}
 			}
 		}
 
 		#chat-form {
-			align-items: center;
 			background-color: color("background", 0.5);
 			background-image: $global-image-background;
 			border-block-start: b("border");
 			color: color("text-lightest");
-			display: flex;
-			flex: 0 0 auto;
-			height: to-rem(112px);
-			margin: 0;
-			padding: p("sm");
-			position: relative;
 
-			.-compact & {
+			@include layout {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				height: to-rem(112px);
+				margin: 0;
+				padding: p("sm");
+				position: relative;
+			}
+
+			@include layout(compact) {
 				padding: p("base");
 			}
 
 			textarea {
-				@extend %input-textarea;
-				@include size(100%);
 				background-color: color("background-lightest", 0.9);
 				background-image: $global-image-background-light;
-				padding: p("sm");
 
-				.compact & {
+				@include layout {
+					@include size(100%);
+					padding: p("sm");
+				}
+
+				@include layout(compact) {
 					padding: p("base");
 				}
 			}

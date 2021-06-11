@@ -1,83 +1,44 @@
-.mess-roll-control {
-	align-items: center;
-	display: flex;
-	flex: 0 0 100%;
-	height: auto;
-	margin: 0;
-	flex-flow: row nowrap;
-	justify-content: initial;
-	margin-block-end: m("sm");
-}
+.mess.window-app.settings {
+	nav {
+		background-color: transparent;
 
-.mess-adv-selector {
-	flex: 1 1 auto;
-	max-width: 100%;
-
-	#mess-roll-mod {
-		@extend %input-text;
-		background-color: color("background", 0.5);
-		color: color("text-lightest");
+		@include layout {
+			padding: 0;
+		}
 	}
 
-	a {
-		@extend %control-button;
-		display: none;
-		margin: 0;
-		width: auto;
+	.form-checkbox-group {
+		@include layout {
+			margin: 0;
+			padding: p("sm");
 
-		&.mess-selected {
-			display: inline-flex;
+			> input[type="checkbox"] {
+				width: 0;
+			}
 		}
 
-		i {
-			color: inherit;
-			font-size: inherit;
-			line-height: initial;
+		label {
+			box-shadow: none;
+			text-shadow: none;
 
-			&:nth-child(1),
-			&:nth-child(2) {
-				filter: initial;
+			&:hover {
+				color: color("primary");
 			}
 		}
 	}
 
-	> span {
-		display: block;
-		line-height: 1;
-		margin-inline-end: m("md");
-		margin-inline-start: m("base");
-	}
-}
+	.mess-template-chooser {
+		background-color: transparent;
+		border: none;
 
-.mess-show-toggle {
-	flex: 0 0 auto;
-	font-size: initial;
-	height: auto;
-	width: auto;
+		@include layout {
+			overflow: auto;
+		}
 
-	a {
-		@extend %control-button;
-		top: auto;
-
-		i.fas {
-			font-size: inherit;
-			line-height: initial;
+		> h3 {
+			@include layout {
+				margin-block-start: m("sm");
+			}
 		}
 	}
-}
-
-.mess-autoroll-selector {
-	flex: 0 0 auto;
-
-	a {
-		@extend %primary-button;
-		height: space("button-sm");
-		margin-inline-start: m("xs");
-	}
-}
-
-.mess .mess-button-to-hit,
-.mess .mess-button-dmg,
-.mess .mess-dice-result {
-	color: color("text");
 }

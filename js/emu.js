@@ -55,7 +55,7 @@ function updateSettings(settings) {
 		imageBackgroundControls,
 		toggleLogo,
 		toggleSceneThumbs,
-		toggleCombatSidebar
+		emuLayout
 	} = settings;
 
 	// Theme
@@ -91,7 +91,7 @@ function updateSettings(settings) {
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
-	toggleCombatSidebar ? myHtml[0].classList.remove('-emu-sidebar-combat') : myHtml[0].classList.add('-emu-sidebar-combat');
+	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
 }
 
 function checkForUploadFolders(root, folder) {
@@ -151,8 +151,8 @@ class emuSettings {
 			imageBackgroundDarkest: 'none',
 			imageBackgroundControls: 'none',
 			toggleLogo: true,
-			toggleSceneThumbs: false,
-			toggleCombatSidebar: false,
+			toggleSceneThumbs: true,
+			emuLayout: true,
 			pathFonts: `worlds/${game.world.name}/${moduleName}/fonts`,
 			pathImages: `worlds/${game.world.name}/${moduleName}/images`
 		};
@@ -269,9 +269,7 @@ class emuForm extends FormApplication {
 
 Hooks.once('init', () => {
 	// lets makes make this specificity stupid
-	myBody[0].classList.add('emu');
-	myBody[0].classList.add('e-body');
-	myBody[0].setAttribute('id', 'emu');
+	myBody[0].classList.add('-emu');
 
 	game.settings.registerMenu(moduleName, moduleName, {
 		name: game.i18n.localize('emu.settings-name'),
@@ -302,22 +300,6 @@ Hooks.once('ready', () => {
 	googleFontPre.href = 'https://fonts.gstatic.com';
 	myHead.appendChild(googleFontPre);
 
-	setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
-
-	// Toggle
-	game.settings.register(moduleName, 'togglePlayers', {
-		name: game.i18n.localize('emu.toggle-players'),
-		scope: 'user',
-		config: true,
-		default: false,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
-		}
-	});
-	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
-	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
-
 	// Layouts
 	game.settings.register(moduleName, 'compactMode', {
 		name: game.i18n.localize('emu.layout-compact'),
@@ -326,25 +308,11 @@ Hooks.once('ready', () => {
 		default: false,
 		type: Boolean,
 		onChange: data => {
-			data === true ? myHtml[0].classList.add('-compact') : myHtml[0].classList.remove('-compact');
+			data === true ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
 		}
 	});
 	const compactMode = game.settings.get(moduleName, 'compactMode');
-	compactMode ? myHtml[0].classList.add('-compact') : myHtml[0].classList.remove('-compact');
-
-	game.settings.register(moduleName, 'controlAlignTop', {
-		name: game.i18n.localize('emu.layout-control-align'),
-		hint: game.i18n.localize('emu.layout-control-align-hint'),
-		scope: 'user',
-		config: true,
-		default: false,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
-		}
-	});
-	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
-	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+	compactMode ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
 
 	game.settings.register(moduleName, 'subtleLayout', {
 		name: game.i18n.localize('emu.layout-subtle-layout'),
@@ -377,9 +345,38 @@ Hooks.once('ready', () => {
 	const subtleLayoutOpacity = game.settings.get(moduleName, 'subtleLayoutOpacity');
 	subtleLayout ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${subtleLayoutOpacity}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
 
+	// Toggle
+	game.settings.register(moduleName, 'togglePlayers', {
+		name: game.i18n.localize('emu.toggle-players'),
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+		}
+	});
+	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
+	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+
+	game.settings.register(moduleName, 'controlAlignTop', {
+		name: game.i18n.localize('emu.layout-control-align'),
+		hint: game.i18n.localize('emu.layout-control-align-hint'),
+		scope: 'user',
+		config: true,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+		}
+	});
+	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
+	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
+		setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 	}, 1000);
 
 	// Say Hello

@@ -1,205 +1,74 @@
-%window-content {
-	background: transparent;
-	color: color("text");
-	flex: 1 1 auto;
-	font-size: fs("md");
-	overflow: hidden;
-	padding: 0;
-	position: relative;
-
-	.-compact & {
-		padding: 0;
-	}
-}
-
 %window-common {
-	@extend %form-elements;
-
 	.window-content {
-		@extend %window-content;
+		@include layout {
+			padding: 0;
+		}
+
+		@include layout(compact) {
+			padding: 0;
+		}
 	}
 
 	form {
-		display: flex;
-		flex: 1 1 auto;
-		flex-direction: column;
-		height: 100%;
-		padding: p("sm");
-		position: relative;
+		@include layout {
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+			height: 100%;
+			padding: p("sm");
+			position: relative;
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base");
 		}
-
-		.form-header {
-			border-block-start: none;
-			border-block-end: b("text-darker", 2px);
-			color: color("text-darker");
-			font-family: inherit;
-			line-height: initial;
-			margin-block-start: m("lg");
-			margin-block-end: m("sm");
-			padding: 0  p("sm");
-
-			.-compact & {
-				margin-block-start: m("md");
-				margin-block-end: m("base");
-				padding: 0  p("base");
-			}
-
-			+ .notes {
-				padding: 0 p("sm");
-
-				.-compact & {
-					padding: 0 p("base");
-				}
-			}
-
-			.form-header {
-				border: none;
-				margin: 0;
-				padding: 0;
-			}
-		}
-
-		.form-group {
-			@extend %form-group;
-		}
-
-		hr {
-			display: none;
-		}
-	}
-
-	button {
-		@extend %primary-button;
-
-		&[type="submit"] {
-			@extend %button-icon;
-		}
-
-		&.file-picker {
-			flex: 0 0 auto;
-			line-height: auto;
-			margin: 0;
-			order: 66; // not the younglings
-			width: to-rem(32px);
-
-			.-compact & {
-				width: to-rem(24px);
-			}
-
-			+ input[type="text"] {
-				height: to-rem(32px);
-				margin-right: 0 !important; // :(
-				margin-inline-end: m("base") !important;
-
-				.-compact & {
-					height: to-rem(24px);
-				}
-			}
-		}
-	}
-
-	form button {
-		background-color: color("background-button");
-		border: none;
-	}
-
-	.sheet-footer {
-		z-index: 10;
 	}
 }
 
 %window-hack {
+	.window-content {
+		@include layout {
+			overflow: hidden;
+		}
+	}
+
 	form {
-		overflow-x: hidden;
-		overflow-y: auto;
+		@include layout {
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
 
 		&::after {
 			background-color: color("background-lightest");
 			background-image: $global-image-background-light;
 			border-block-start: 1px solid color("border");
-			bottom: -(space("sm"));
-			content: "";
-			flex: 0 0 auto;
-			height: to-rem(46px);
-			margin-block-start: to-rem(-38px);
-			position: sticky;
-			width: 100%;
-			z-index: 5;
+
+			@include layout {
+				bottom: -(space("sm"));
+				content: "";
+				flex: 0 0 auto;
+				height: to-rem(46px);
+				margin-block-start: to-rem(-38px);
+				position: sticky;
+				width: 100%;
+				z-index: 5;
+			}
 		}
 
 		.form-group:last-of-type {
-			margin-block-end: m("md");
+			@include layout {
+				margin-block-end: m("md");
+			}
 		}
 
 		> button[type="submit"] {
-			@extend %button-icon;
 			border-radius: $global-border-radius-controls;
-			bottom: 0;
-			position: sticky;
-			z-index: 10;
-		}
-	}
-}
 
-%window-sheets {
-	.sheet-header {
-		display: flex;
-		position: relative;
-
-		> img {
-			@include size(to-rem(40px));
-			border: none;
-			cursor: pointer;
-			flex: 0 0 auto;
-			margin-inline-end: m("sm");
-			object-fit: cover;
-			object-position: 50% 50%;
-			position: relative;
-
-			.-compact & {
-				margin-inline-end: m("base");
+			@include layout {
+				bottom: 0;
+				position: sticky;
+				z-index: 10;
 			}
-
-			&:hover {
-				@extend %global-hover;
-			}
-
-			&:focus {
-				@extend %global-focus;
-			}
-		}
-
-		> h1 {
-			@extend %h-tag;
-			flex: 1 1 auto;
-
-			input {
-				@include size(100%, to-rem(40px));
-				background-color: color("background-light", 0.2);
-				flex: 0 0 auto;
-				font-size: fs("xxl");
-			}
-		}
-	}
-
-	.sheet-tabs,
-	.sheet-navigation {
-		@extend %modal-tabs;
-	}
-
-	.sheet-footer {
-		flex-wrap: nowrap;
-		margin-block-start: m("base");
-
-		.-compact & {
-			margin-block-start: m("xs");
-		}
-
-		+ ::after {
-			display: none;
 		}
 	}
 }

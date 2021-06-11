@@ -1,0 +1,13 @@
+.sheet[id*="tile-config-"] {
+	form {
+		> .tab {
+			@include layout {
+				padding-block-start: p("sm");
+			}
+
+			@include layout(compact) {
+				padding-block-start: p("base");
+			}
+		}
+	}
+}

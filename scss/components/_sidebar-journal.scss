@@ -2,14 +2,8 @@
 .sidebar-popout {
 	#journal {
 		.directory-list {
-			@extend %directory-subdirectory;
-		}
-
-		.directory-item {
-			@extend %directory-item;
-
-			&.folder {
-				@extend %folder;
+			@include layout {
+				padding-block-start: p("base");
 			}
 		}
 	}

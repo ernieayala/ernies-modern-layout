@@ -1,14 +1,16 @@
-#sidebar .sidebar-tab {
-	.directory-footer .browser-group {
-		width: 100%;
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab {
+		.directory-footer .browser-group {
+			@include layout {
+				flex-direction: row;
+				width: 100%;
+			}
 
-		.spell-browser-btn {
-			flex: 1 1 auto;
-			margin: 0;
-			margin-block-end: m("xs");
-
-			&:last-child {
-				margin-block-end: 0;
+			.spell-browser-btn {
+				@include layout {
+					flex: 1 1 auto;
+				}
 			}
 		}
 	}

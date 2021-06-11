@@ -1,106 +1,141 @@
 #token-action-hud {
-	margin: 0;
+	@include layout {
+		margin: 0;
+	}
 
 	&:hover {
 		#tah-reposition,
 		#tah-categories {
-			visibility: visible;
+			@include layout {
+				visibility: visible;
+			}
 		}
 	}
 
 	#tah-hudTitle {
 		color: color("white");
-		font-size: fs("sm");
-		margin: 0;
-		margin-inline-start: to-rem(28px);
-		padding: 0;
 		text-shadow: 2px 2px 2px color("black");
+
+		@include layout {
+			font-size: fs("sm");
+			margin: 0;
+			margin-inline-start: to-rem(28px);
+			padding: 0;
+		}
 	}
 
 	#tah-reposition,
 	#tah-categories {
 		@extend %control-button;
-		left: initial;
-		margin: 0;
-		visibility: hidden;
+
+		@include layout {
+			left: initial;
+			margin: 0;
+			visibility: hidden;
+		}
 
 		i {
 			color: inherit;
-			font-size: fs("sm");
-			padding: initial;
-			margin: initial;
 			text-shadow: 2px 2px 2px color("black");
-			text-align: initial;
+
+			@include layout {
+				font-size: fs("sm");
+				padding: initial;
+				margin: initial;
+				text-align: initial;
+			}
 		}
 	}
 
 	#tah-categories {
-		margin-inline-start: m("base");
+		@include layout {
+			margin-inline-start: m("base");
+		}
 	}
 
 	button.tah-title-button,
 	.tah-action button {
 		@extend %primary-button;
-		margin-inline-start: m("base");
 
-		> .fa {
-			display: none;
+		@include layout {
+			margin-inline-start: m("base");
+
+			> .fa {
+				display: none;
+			}
 		}
 	}
 
 	.tah-subtitle {
 		color: color("white");
-		font-size: fs("sm");
-		line-height: initial;
-		padding: 0;
-		padding-block-start: p("sm");
 		text-shadow: 2px 2px 2px color("black");
 
-		.-compact & {
+		@include layout {
+			font-size: fs("sm");
+			line-height: initial;
+			padding: 0;
+			padding-block-start: p("sm");
+		}
+
+		@include layout(compact) {
 			padding-block-start: p("base");
 		}
 	}
 
 	.tah-action {
-		margin: 0;
-		margin-block-end: m("base");
-		margin-inline-start: m("base");
-		padding: 0;
+		@include layout {
+			margin: 0;
+			margin-block-end: m("base");
+			margin-inline-start: m("base");
+			padding: 0;
+		}
 
 		button {
 			background-color: color("background");
 
 			> div {
-				margin-inline-start: m("base");
 				text-shadow: none;
+
+				@include layout {
+					margin-inline-start: m("base");
+				}
 			}
 
 			> .tah-img {
-				@include size(to-rem(16px));
 				border: none;
-				border-radius: 0;
-				display: inline-block;
-				margin: 0;
-				margin-inline-end: m("sm");
-				padding: 0;
+
+				@include layout {
+					@include size(to-rem(16px));
+					border-radius: 0;
+					display: inline-block;
+					margin: 0;
+					margin-inline-end: m("sm");
+					padding: 0;
+				}
 			}
 		}
 	}
 
 	.tah-content {
-		left: to-rem(-154px);
-		padding: p("sm") 0;
+		@include layout {
+			left: to-rem(-154px);
+			padding: p("sm") 0;
+		}
 
-		.-compact & {
+		@include layout(compact) {
 			padding: p("base") 0;
 		}
 	}
 }
 
 .token-action-hud-taginput {
-	margin: m("sm") 0;
+	@include layout {
+		margin: m("sm") 0;
+	}
 }
 
 #token-action-hud-index {
-	margin-inline-end: m("base");
+	@include layout {
+		margin-inline-end: m("base");
+	}
 }

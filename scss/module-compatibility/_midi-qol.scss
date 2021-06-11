@@ -1,28 +1,65 @@
-.dmgBtn-container-mqol {
-	align-items: center;
-	bottom: 0 !important; // gross
-	display: flex;
-	height: 100%;
+#sidebar,
+.sidebar-popout {
+	#chat {
+		#chat-log {
+			.midi-qol-item-card.chat-card {
+				.card-buttons {
+					button[data-action="attack"] {
+						@include layout {
+							margin-block-end: m("base");
+						}
 
-	button {
-		@extend %control-button !optional;
-		color: color("text");
-
-		// dude - the inlines are killing me
-		background: transparent !important;
-		font-size: fs("sm") !important;
-		height: to-rem(22px) !important;
-		line-height: 1 !important;
-		margin: 0;
-		margin-inline-end: m("xs");
-		width: to-rem(22px) !important;
-
-		&:hover {
-			background-color: color("primary") !important;
+						@include layout(compact) {
+							margin-block-end: m("xs");
+						}
+					}
+				}
+			}
 		}
+	}
+}
 
-		> i{
-			margin-inline-end: 0;
+#midi-qol-settings {
+	@extend %window-common;
+	@extend %window-hack;
+
+	.midi-qol-box {
+		border: none;
+
+		@include layout {
+			margin-block-start: m("sm");
+			padding: 0;
+
+			select[name="showItemDetails"] {
+				width: auto;
+			}
+		}
+	}
+
+	.midi-qol-faint {
+		color: color("text", 0.8);
+	}
+
+	.sheet-footer {
+		@include layout {
+			bottom: 0;
+			flex: 0 0 auto;
+			padding: 0;
+			padding-block-start: p("sm");
+			position: sticky;
+			z-index: 6;
+		}
+	}
+}
+
+#midi-qol-statistics {
+	.tab.active[data-tab="config"] {
+		@include layout {
+			display: flex;
+
+			button {
+				flex: 1 1 49%;
+			}
 		}
 	}
 }

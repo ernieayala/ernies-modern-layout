@@ -1,0 +1,38 @@
+.sheet.roll-table-config {
+	.sheet-header {
+		@include layout {
+			margin-block-end: m("base");
+		}
+
+		h1 {
+			border: none;
+
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+
+	.table-results {
+		.table-result {
+			@extend %table-row;
+
+			@include layout {
+				display: grid;
+				grid-template-columns: to-rem(40px) to-rem(128px) 1fr to-rem(60px) to-rem(80px) to-rem(60px);
+
+				&:nth-of-type(odd):not(.table-header) {
+					background-color: color("background-light", 0.1);
+				}
+
+				select + input {
+					margin-inline-start: m("base");
+				}
+			}
+		}
+
+		.table-header {
+			@extend %table-header;
+		}
+	}
+}

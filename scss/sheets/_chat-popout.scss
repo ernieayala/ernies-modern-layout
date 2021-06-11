@@ -1,0 +1,21 @@
+.window-app[id*="chat-popout-"] {
+	.window-content {
+		@include layout {
+			padding: 0;
+		}
+
+		.chat-message {
+			background: none;
+			border: none;
+
+			@include layout {
+				margin: 0;
+				padding: p("sm");
+			}
+
+			@include layout(compact) {
+				padding: p("base");
+			}
+		}
+	}
+}

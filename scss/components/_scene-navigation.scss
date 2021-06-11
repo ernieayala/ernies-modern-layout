@@ -1,22 +1,21 @@
 #navigation {
-	@include fixed(top space("sm") left to-rem(148px));
 	box-shadow: none;
-	transition: t(opacity, "link");
-	width: calc(100% - #{to-rem(520px)});
-	z-index: z("fixed");
 
-	.-compact & {
+	@include layout {
+		@include fixed(top space("sm") left to-rem(148px));
+		transition: t(opacity, "link");
+		width: calc(100% - #{to-rem(520px)});
+		z-index: z("fixed");
+	}
+
+	@include layout(compact) {
 		top: space("base");
 		left: to-rem(112px);
 	}
 
-	.-emu-subtle-layout & {
+	@include layout-subtle {
 		left: to-rem(112px);
 		opacity: $global-subtle-opacity;
-
-		&.-compact {
-			left: to-rem(74px);
-		}
 
 		&:hover,
 		&:active {
@@ -38,48 +37,83 @@
 		}
 	}
 
+	@include layout-subtle(compact) {
+		left: to-rem(74px);
+	}
+
 	#nav-toggle {
 		@extend %control-button;
-		@include absolute(top 0 left to-rem(-28px));
 		background-color: color("background", 0.8);
 		background-image: $global-image-background-controls;
-		margin: 0;
-		z-index: z("fixed");
 
-		.-compact & {
+		@include layout {
+			@include absolute(top 0 left to-rem(-28px));
+			margin: 0;
+			z-index: z("fixed");
+		}
+
+		@include layout(compact) {
 			left: to-rem(-24px);
 		}
 
-		.-emu-subtle-layout & {
+		@include layout-subtle {
 			display: none;
 		}
 	}
 
-	#scene-list {
-		@extend %reset-list;
-		display: flex;
-		flex-wrap: wrap;
-		position: relative;
-		pointer-events: all;
+	#scene-list,
+	.scene-list {
+		@include layout {
+			@extend %reset-list;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			pointer-events: all;
+		}
 
 		.scene {
-			background: transparent;
+			background-color: color("background-darkest", 0.8);
+			background-image: $global-image-background-controls;
 			border: none;
-			border-radius: $global-border-radius-controls;
+			border-radius: $global-border-radius-default;
 			box-shadow: none;
-			color: inherit;
-			margin-block-end: space("base");
-			margin-inline-end: space("base");
-			padding: 0;
-			position: relative;
-			transition: t(opacity, "link");
+			color: color("text-lightest");
+			outline: none;
+			text-shadow: none;
+			transition: t(box-shadow color opacity, "link");
 
-			.-compact & {
-				margin-block-end: space("xs");
-				margin-inline-end: space("xs");
+			@include layout {
+				@include size(auto, to-rem(36px));
+				cursor: pointer;
+				display: block;
+				line-height: to-rem(36px);
+				margin-block-end: space("base");
+				margin-inline-end: space("base");
+				max-width: to-rem(240px);
+				min-width: to-rem(112px);
+				padding: 0 p("md");
+				position: relative;
+				text-align: center;
+
+				&:last-of-type {
+					margin-inline-end: 0;
+				}
 			}
 
-			.-emu-subtle-layout & {
+			@include layout(compact) {
+				height: to-rem(28px);
+				line-height: to-rem(28px);
+				margin-block-end: space("xs");
+				margin-inline-end: space("xs");
+				min-width: to-rem(88px);
+				padding: 0 p("base");
+
+				&:last-of-type {
+					margin-inline-end: 0;
+				}
+			}
+
+			@include layout-subtle {
 				display: none;
 				opacity: 0;
 
@@ -89,106 +123,89 @@
 				}
 			}
 
-			&:last-of-type {
-				margin-inline-end: 0;
-
-				.-compact & {
-					margin-inline-end: 0;
-				}
-			}
-
 			&.active,
 			&.view {
-				.scene-name {
-					@extend %global-active;
-					background-image: none;
-				}
+				@extend %global-active;
+				background-image: none;
 			}
 
 			&.view {
-				.scene-name {
-					@extend %global-focus;
+				@extend %global-focus;
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background-image: none;
+			}
+
+			&:focus {
+				@extend %global-focus;
+				background-image: none;
+			}
+
+			a {
+				text-shadow: none;
+
+				@include layout {
+					@include ellipsis(width 100%);
+					display: block;
+
+					> i {
+						margin-inline-end: m("base");
+					}
+				}
+
+				@include layout(compact) {
+					> i {
+						margin-inline-end: m("xs");
+					}
 				}
 			}
 		}
-	}
 
-	.scene-players {
-		@include absolute(top 0 left 0);
-		display: flex;
-		flex-wrap: wrap;
-		list-style: none;
-		margin: 0;
-		margin-block-start: -(m("base"));
-		padding: 0;
-		padding-inline-start: m("sm");
-		pointer-events: none;
+		.scene-players {
+			@include layout {
+				@include absolute(top 0 left 0);
+				display: flex;
+				flex-wrap: wrap;
+				list-style: none;
+				margin: 0;
+				margin-block-start: -(m("base"));
+				padding: 0;
+				padding-inline-start: m("sm");
+				pointer-events: none;
+			}
 
-		.-compact & {
-			margin-block-start: -(m("xs"));
-			padding-inline-start: m("base");
-		}
-	}
-
-	.scene-player {
-		@include size(to-rem(12px));
-		align-items: center;
-		background-color: color("white");
-		border-radius: $global-border-radius-controls;
-		border: none;
-		box-shadow:
-			inset 0 0 0 1px color("primary"),
-			inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-		color: transparent;
-		display: flex;
-		font-size: fs("xs");
-		justify-content: center;
-		margin-block-end: m("xs");
-		margin-inline-end: m("xs");
-		position: relative;
-		text-transform: uppercase;
-
-		.-compact & {
-			@include size(to-rem(8px));
-		}
-	}
-
-	.scene-name {
-		@extend %button-icon;
-		@include ellipsis;
-		@include size(auto, to-rem(36px));
-		background-color: color("background-darkest", 0.8);
-		background-image: $global-image-background-controls;
-		border: none;
-		border-radius: $global-border-radius-default;
-		box-shadow: none;
-		color: color("text-lightest");
-		cursor: pointer;
-		display: block;
-		line-height: to-rem(36px);
-		max-width: to-rem(240px);
-		min-width: to-rem(112px);
-		outline: none;
-		padding: 0 p("md");
-		position: relative;
-		text-align: center;
-		transition: t(box-shadow color, "link");
-
-		.-compact & {
-			height: to-rem(28px);
-			line-height: to-rem(28px);
-			min-width: to-rem(88px);
-			padding: 0 p("base");
+			@include layout(compact) {
+				margin-block-start: -(m("xs"));
+				padding-inline-start: m("base");
+			}
 		}
 
-		&:hover {
-			@extend %global-hover;
-			background-image: none;
-		}
+		.scene-player {
+			background-color: color("white");
+			border-radius: $global-border-radius-controls;
+			border: none;
+			box-shadow:
+				inset 0 0 0 1px color("primary"),
+				inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
+			color: transparent;
+			font-size: fs("xs");
 
-		&:focus {
-			@extend %global-focus;
-			background-image: none;
+			@include layout {
+				@include size(to-rem(12px));
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				margin-block-end: m("xs");
+				margin-inline-end: m("xs");
+				position: relative;
+				text-transform: uppercase;
+			}
+
+			@include layout(compact) {
+				@include size(to-rem(8px));
+			}
 		}
 	}
 }

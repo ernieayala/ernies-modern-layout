@@ -1,24 +1,35 @@
 %default-button {
-	align-items: center;
 	background-image: $global-image-background-controls;
 	border: none;
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	color: color("text-lightest");
-	cursor: pointer;
-	display: inline-flex;
-	font-family: inherit;
-	font-size: fs("lg");
-	height: initial;
-	justify-content: center;
-	line-height: 1;
-	margin: 0;
-	padding: p("sm");
-	position: relative;
 	transition: t(background box-shadow color, "link");
 
-	.-compact & {
+	@include layout {
+		align-items: center;
+		cursor: pointer;
+		display: inline-flex;
+		font-size: fs("lg");
+		font-family: inherit;
+		height: initial;
+		justify-content: center;
+		line-height: 1;
+		margin: 0;
+		padding: p("sm");
+		position: relative;
+
+		> i {
+			margin-inline-end: m("sm");
+		}
+	}
+
+	@include layout(compact) {
 		padding: p("base");
+
+		> i {
+			margin-inline-end: m("base");
+		}
 	}
 
 	&:hover {
@@ -33,6 +44,7 @@
 	}
 
 	&:disabled {
+		opacity: 0.5;
 		pointer-events: none;
 	}
 
@@ -46,35 +58,58 @@
 	background-color: color("background-button");
 }
 
+%primary-button-simple-reset {
+	background-color: color("background-button");
+	background-image: $global-image-background-controls;
+	border: none;
+
+	@include layout {
+		margin: 0;
+	}
+
+	&:hover {
+		background-color: color("primary");
+		background-image: none;
+		color: color("text-lightest");
+	}
+
+	+ button {
+		@include layout {
+			margin-inline-start: m("base");
+		}
+	}
+}
+
 %secondary-button {
 	@extend %default-button;
 }
 
 %control-button {
 	@extend %default-button;
-	@include size(space("button-sm"));
-	flex: 0 0 auto;
-	font-size: fs("sm");
-	margin-inline-start: m("xs");
-	padding: 0;
 
-	.-compact & {
+	@include layout {
+		@include size(space("button-sm"));
+		flex: 0 0 auto;
+		font-size: fs("sm");
+		margin-inline-start: m("xs");
+		padding: 0;
+
+		> i {
+			margin: 0;
+		}
+	}
+
+	@include layout(compact) {
 		@include size(to-rem(20px));
+
+		> i {
+			margin: 0;
+		}
 	}
 }
 
-%icon-button {
-	align-items: center;
-	color: color("text");
-	cursor: pointer;
-	display: flex;
-	flex: 0 0 auto;
-	font-size: fs("md");
-	justify-content: center;
-	line-height: 1;
-	overflow: hidden;
-	padding: p("xs");
-	transition: t(background box-shadow color, "link");
+%link-button {
+	text-shadow: none;
 
 	&:hover {
 		color: color("primary");
