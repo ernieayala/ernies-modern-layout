@@ -189,22 +189,6 @@ class emuForm extends FormApplication {
 					'Source Sans Pro': 'Source Sans Pro',
 					'Teko': 'Teko',
 					'Titillium Web': 'Titillium Web'
-				},
-				imageBackgroundList: {
-					'none': 'None',
-					'denim': 'Denim',
-					'denim065': 'Denim 065',
-					'denim075': 'Denim 075',
-					'denim090': 'Denim 090',
-					'denim-dark': 'Denim Dark',
-					'denim-light': 'Denim Light',
-					'parchment': 'Parchment',
-					'parchment-white': 'Parchment White',
-					'fancy': 'Fancy',
-					'holed-metal': 'Holed Metal',
-					'metal-texture': 'Metal Texture',
-					'sci-fi-hex': 'Sci-fi Hex',
-					'sci-fi-hex-2': 'Sci-fi Hex 2'
 				}
 			},
 			this.reset ? emuSettings.defaultSettings :
