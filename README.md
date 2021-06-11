@@ -17,6 +17,7 @@ A clean and themeable visual update for Foundry VTT.
 - Compact Mode
 - Subtle Layout
 - Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
+- Ernie's Layout: Pushes pixels and adjustest fonts, heights, widths, padding and margins.
 
 ## Manifest URL
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
