@@ -363,7 +363,7 @@ Hooks.once('ready', () => {
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 		setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
-	}, 1000);
+	}, 2000);
 
 	// Say Hello
 	console.log('Ernie\'s Modern UI Active');
