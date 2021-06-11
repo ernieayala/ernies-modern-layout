@@ -4,7 +4,6 @@
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	color: color("text-lightest");
-	font-family: inherit;
 	transition: t(background box-shadow color, "link");
 
 	@include layout {
@@ -12,6 +11,7 @@
 		cursor: pointer;
 		display: inline-flex;
 		font-size: fs("lg");
+		font-family: inherit;
 		height: initial;
 		justify-content: center;
 		line-height: 1;

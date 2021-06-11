@@ -122,6 +122,7 @@ Tabbed Chat Log
 Thandul's Togglable Effects
 The Furnace
 Tidy5e Sheet
+Tidy UI Game Settings
 Token Action HUD
 Token Attacher
 Token Auras
@@ -141,7 +142,6 @@ Forien's Quest Log
 ### Won't Support Currently
 Custom Hotbar
 Tokenizer
-Tidy UI Game Settings
 
 #### Key
 FNS = Functions but not styled

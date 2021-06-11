@@ -1,6 +1,8 @@
 .dnd5e {
 	.form-header {
-		font-family: inherit;
+		@include layout {
+			font-family: inherit;
+		}
 	}
 
 	.form-group {
@@ -124,7 +126,8 @@
 				}
 
 				button {
-					@extend %default-button;
+					@extend %primary-button;
+					border: b("border");
 					color: color("text-lightest");
 
 					@include layout {

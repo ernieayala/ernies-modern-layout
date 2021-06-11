@@ -141,6 +141,11 @@
 	}
 
 	form {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+		}
+
 		> .notes {
 			@include layout {
 				margin-block-end: m("sm");

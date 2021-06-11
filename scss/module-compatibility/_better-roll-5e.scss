@@ -1,6 +1,6 @@
 .window-app[id*="chat-popout-"],
-#chat-log {
-	.chat-card {
+#sidebar #chat #chat-log {
+	.chat-message .chat-card {
 		.die-result-overlay-br {
 			@include layout {
 				padding: 0 p("xs");
@@ -16,12 +16,23 @@
 			}
 		}
 
-		.red-dual .dice-row .dice-row-item:not(.tooltip) {
-			align-items: center;
-			display: flex;
-			justify-content: center;
-			margin: 0;
-			min-height: to-rem(32px);
+		.red-dual .dice-row {
+			.dice-row-item:not(.tooltip) {
+				@include layout {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					margin: 0;
+					min-height: to-rem(32px);
+				}
+			}
+
+			.dice-total + .dice-total {
+				@include layout {
+					margin-block-start: 0;
+					margin-inline-start: m("base");
+				}
+			}
 		}
 	}
 }

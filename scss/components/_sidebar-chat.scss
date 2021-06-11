@@ -87,7 +87,8 @@
 					}
 				}
 
-				.dice-roll + .dice-roll {
+				.dice-roll + .dice-roll,
+				.dice-total + .dice-total {
 					@include layout {
 						margin-block-start: m("base");
 					}

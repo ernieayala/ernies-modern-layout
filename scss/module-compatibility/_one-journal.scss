@@ -103,6 +103,11 @@
 			@extend %global-focus;
 		}
 	}
+
+	.one-journal-attached,
+	.shell-sidebar {
+		border: none;
+	}
 }
 
 #OneJournalDirectory {

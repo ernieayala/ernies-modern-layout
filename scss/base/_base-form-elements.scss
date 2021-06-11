@@ -4,94 +4,15 @@ input[type="date"],
 input[type="time"],
 input[type="password"],
 input[type="datetime-local"] {
-	background: transparent;
-	border: b("border-lighter");
-	border-radius: $global-border-radius-forms;
-	box-shadow: none;
-	color: color("text");
-	transition: t(box-shadow, "link");
-
-	@include layout {
-		@include size(100%, to-rem(32px));
-		font-family: inherit;
-		font-size: inherit;
-		font-weight: normal;
-		line-height: 1;
-		margin: 0;
-		min-width: to-rem(16px);
-		padding: 0 p("sm");
-		position: relative;
-		user-select: text;
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
-	}
-
-	&::placeholder {
-		color: color("gray-400");
-	}
-
-	&:hover {
-		@extend %global-hover-alt;
-	}
-
-	&:focus {
-		@extend %global-focus;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
+	@extend %input-text;
 }
 
 input[type="checkbox"] {
-	background: transparent;
-	border: b("border-lighter");
-	border-radius: $global-border-radius-forms;
-	box-shadow: none;
-	color: color("text");
-	transition: t(box-shadow, "link");
-
-	@include layout {
-		@include size(to-rem(20px));
-		cursor: pointer;
-		flex: 0 0 auto;
-		margin: 0;
-		position: relative;
-		top: auto;
-	}
-
-	@include layout(compact) {
-		@include size(to-rem(16px));
-	}
-
-	&:hover {
-		@extend %global-hover-alt;
-	}
-
-	&:focus {
-		@extend %global-focus;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
-
-	&:checked {
-		background-color: color("primary");
-		color: color("text-lightest");
-	}
+	@extend %input-checkbox;
 }
 
 input[type="radio"] {
-	@include layout {
-		margin: 0;
-		top: auto;
-	}
+	@extend %input-radio;
 }
 
 input[type="text"] {
@@ -110,253 +31,19 @@ input[type="text"] {
 
 input[type="color"],
 input[type="color"][data-edit] {
-	background: transparent;
-	border: b("border-lighter");
-	border-radius: $global-border-radius-forms;
-	transition: t(box-shadow, "link");
-
-	@include layout {
-		cursor: pointer;
-		font-family: inherit;
-		font-size: inherit;
-		height: to-rem(32px);
-		margin: 0;
-		padding: 0 p("sm");
-		position: relative;
-
-		+ input[type="color"] {
-			margin-inline-start: m("base");
-		}
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
-
-		+ input[type="color"] {
-			margin-inline-start: m("xs");
-		}
-	}
-
-	&:hover {
-		@extend %global-hover-alt;
-	}
-
-	&:focus {
-		@extend %global-focus;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
+	@extend %input-color;
 }
 
 input[type="range"] {
-	background: transparent;
-	border: 0;
-	box-shadow: none;
-	-webkit-appearance: none;
-
-	@include layout {
-		margin: 0;
-		width: 100%;
-	}
-
-	&:hover,
-	&:focus {
-		box-shadow: none;
-		outline: none;
-	}
-
-	&::-webkit-slider-runnable-track {
-		background-color: color("background", 0.8);
-		border: b("border");
-		border-radius: $global-border-radius-forms;
-		box-shadow: none;
-		transition: t(background, "link");
-
-		@include layout {
-			@include size(100%, to-rem(8px));
-			cursor: pointer;
-		}
-	}
-
-	&:focus::-webkit-slider-runnable-track {
-		background-color: color("background");
-	}
-
-	&:focus::-ms-fill-lower {
-		background-color: color("background");
-	}
-
-	&:focus::-ms-fill-upper {
-		background-color: color("background");
-	}
-
-	&::-webkit-slider-thumb {
-		background-color: color("primary");
-		border-radius: $global-border-radius-forms;
-		border: b("border-lighter");
-		box-shadow: none;
-		transition: t(box-shadow, "link");
-		-webkit-appearance: none;
-
-		@include layout {
-			@include size(to-rem(16px));
-			cursor: pointer;
-			margin-block-start: to-rem(-5px);
-		}
-
-		&:hover {
-			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-		}
-	}
-
-	&::-moz-range-track {
-		background-color: color("background", 0.8);
-		border: b("border-lighter");
-		border-radius: $global-border-radius-forms;
-		box-shadow: none;
-		transition: t(background, "link");
-
-		@include layout {
-			@include size(100%, to-rem(8px));
-			cursor: pointer;
-		}
-	}
-
-	&::-moz-range-thumb {
-		background-color: color("primary");
-		border-radius: $global-border-radius-forms;
-		border: b("border-lighter");
-		box-shadow: none;
-		transition: t(box-shadow, "link");
-		-webkit-appearance: none;
-
-		@include layout {
-			@include size(to-rem(16px));
-			cursor: pointer;
-			margin-block-start: to-rem(-5px);
-		}
-
-		&:hover {
-			box-shadow: inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
-		}
-	}
-
-	+ .range-value {
-		border: none;
-		color: color("text");
-
-		@include layout {
-			align-items: center;
-			display: flex;
-			flex: 0 0 auto;
-			font-size: fs("md");
-			margin-inline-start: m("sm");
-			padding: 0;
-		}
-
-		@include layout(compact) {
-			margin-inline-start: m("base");
-		}
-	}
+	@extend %input-range;
 }
 
 select {
-	background: transparent;
-	border: b("border-lighter");
-	border-radius: $global-border-radius-forms;
-	color: color("text");
-	transition: t(box-shadow, "link");
-
-	@include layout {
-		cursor: pointer;
-		font-family: inherit;
-		font-size: inherit;
-		height: to-rem(32px);
-		margin: 0;
-		padding: 0 p("sm");
-		position: relative;
-		text-overflow: ellipsis;
-
-		&[multiple] {
-			height: auto;
-			padding: p("sm");
-		}
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
-
-		&[multiple] {
-			padding: p("base");
-		}
-	}
-
-	&:hover {
-		@extend %global-hover-alt;
-	}
-
-	&:focus {
-		@extend %global-focus;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
-
-	optgroup,
-	option {
-		background-color: color("background-lightest");
-		color: color("text");
-	}
+	@extend %input-select;
 }
 
 textarea {
-	background: transparent;
-	border: b("border-lighter");
-	border-radius: $global-border-radius-forms;
-	color: color("text");
-	transition: t(box-shadow, "link");
-
-	@include layout {
-		font-family: inherit;
-		font-size: inherit;
-		margin: 0;
-		min-height: to-rem(64px);
-		padding: p("sm");
-		position: relative;
-		resize: none;
-		transition: t(box-shadow, "link");
-		user-select: text;
-		width: 100%;
-	}
-
-	@include layout(compact) {
-		min-height: to-rem(48px);
-		padding: p("base");
-	}
-
-	&::placeholder {
-		color: color("gray-400");
-	}
-
-	&:hover {
-		@extend %global-hover-alt;
-	}
-
-	&:focus {
-		@extend %global-focus;
-	}
-
-	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
+	@extend %input-textarea;
 }
 
 fieldset {

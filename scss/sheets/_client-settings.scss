@@ -1,4 +1,14 @@
-#client-settings.window-app {
+#client-settings.window-app.form {
+	.window-content {
+		@include layout {
+			padding: p("sm");
+		}
+
+		@include layout(compact) {
+			padding: p("base");
+		}
+	}
+
 	nav.tabs {
 		border-block-end: b("primary", 2px);
 
@@ -6,6 +16,16 @@
 			flex: 0 0 auto;
 			height: initial;
 			line-height: initial;
+		}
+
+		.item {
+			@include layout {
+				padding: p("sm");
+			}
+
+			@include layout(compact) {
+				padding: p("base");
+			}
 		}
 	}
 
@@ -31,22 +51,33 @@
 			}
 		}
 
-		.submenu > button {
-			@include layout {
-				height: initial;
-				font-size: fs("lg");
+		.submenu {
+			> button {
+				@include layout {
+					height: initial;
+					font-size: fs("lg");
 
-				label {
-					padding: 0;
-					pointer-events: none;
+					label {
+						padding: 0;
+						pointer-events: none;
+					}
+				}
+			}
+
+			> label {
+				@include layout {
+					line-height: initial;
 				}
 			}
 		}
 
 		.settings-list {
+			border: none;
+
 			@include layout {
 				max-height: 100%;
 				overflow: initial;
+				padding: 0;
 			}
 		}
 	}
@@ -75,11 +106,24 @@
 		@include layout {
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
+			padding: 0;
 			padding-block-start: p("sm");
 		}
 
 		@include layout(compact) {
 			padding-block-start: p("base");
+		}
+
+		button {
+			border: none;
+
+			@include layout {
+				margin: 0;
+
+				+ button {
+					margin-inline-start: m("base");
+				}
+			}
 		}
 	}
 }

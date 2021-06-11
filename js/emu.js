@@ -300,8 +300,6 @@ Hooks.once('ready', () => {
 	googleFontPre.href = 'https://fonts.gstatic.com';
 	myHead.appendChild(googleFontPre);
 
-	setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
-
 	// Layouts
 	game.settings.register(moduleName, 'compactMode', {
 		name: game.i18n.localize('emu.layout-compact'),
@@ -378,6 +376,7 @@ Hooks.once('ready', () => {
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
+		setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 	}, 1000);
 
 	// Say Hello
