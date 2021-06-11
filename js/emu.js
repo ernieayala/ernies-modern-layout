@@ -1,4 +1,5 @@
 import * as THEME from './emu-theme.js';
+import * as FONTS from './emu-fonts.js';
 
 const myHtml = document.getElementsByTagName('html');
 const myHead = document.getElementsByTagName('head')[0];
@@ -175,21 +176,7 @@ class emuForm extends FormApplication {
 					'dark': game.i18n.localize('emu.theme-preset-dark'),
 					'western': game.i18n.localize('emu.theme-preset-western')
 				},
-				fontFamilyList: {
-					'Signika': 'Default',
-					'Cairo': 'Cairo',
-					'Fjalla One': 'Fjalla One',
-					'Lato': 'Lato',
-					'Lobster': 'Lobster',
-					'Nunito': 'Nunito',
-					'Open Sans': 'Open Sans',
-					'Roboto': 'Roboto',
-					'Roboto Condensed': 'Roboto Condensed',
-					'Source Code Pro': 'Source Code Pro',
-					'Source Sans Pro': 'Source Sans Pro',
-					'Teko': 'Teko',
-					'Titillium Web': 'Titillium Web'
-				}
+				fontFamilyList: FONTS.GOOGLE_FONTS
 			},
 			this.reset ? emuSettings.defaultSettings :
 			mergeObject(
