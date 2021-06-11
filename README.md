@@ -38,17 +38,17 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Systems Tested
+### Systems Tested Continually
 - DND 5e
 
-### Systems Partially Tested
+### Systems Partially Tested as of June 9th, 2021
 - CoC 7
 - Pathfinder 1
 - Pathfinder 2
 - Savage Worlds
 - Starfinder
 
-### Mods Tested
+### Mods Tested as of June 9th, 2021
 - About Time
 - Active Effects to Chat
 - Actually Private Rolls
