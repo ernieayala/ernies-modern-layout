@@ -42,7 +42,7 @@
 				border: none;
 
 				@include layout {
-					@include size(to-rem(32px));
+					@include size(space("button"));
 					flex: 0 0 auto;
 					margin: m("base");
 					overflow: hidden;

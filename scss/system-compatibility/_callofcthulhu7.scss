@@ -13,10 +13,6 @@
 			margin-block-start: m("base");
 		}
 
-		@include layout(compact) {
-			margin-block-start: m("xs");
-		}
-
 		.custom-control {
 			background-color: color("background-darkest", 0.8) !important;
 			border: none !important;

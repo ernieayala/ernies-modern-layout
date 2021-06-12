@@ -5,10 +5,6 @@
 			padding: p("sm");
 		}
 
-		@include layout(compact) {
-			padding: p("base");
-		}
-
 		div {
 			@include layout {
 				margin: 0;
@@ -25,23 +21,14 @@
 				padding: 0;
 				margin-block-end: m("sm");
 			}
-
-			@include layout(compact) {
-				margin-block-end: m("base");
-			}
 		}
 
 		h2 {
 			border-block-end: b("border-lighter");
 
 			@include layout {
-				font-size: fs("xxl");
-				margin-block-start: m("sm");
-			}
-
-			@include layout(compact) {
 				font-size: fs("xl");
-				margin-block-start: m("base");
+				margin-block-start: m("sm");
 			}
 		}
 
@@ -50,10 +37,6 @@
 
 			@include layout {
 				font-size: fs("lg");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("base");
 			}
 		}
 

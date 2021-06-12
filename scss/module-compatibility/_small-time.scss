@@ -43,10 +43,6 @@
 			top: auto;
 		}
 
-		@include layout(compact) {
-			padding: 0 p("xs");
-		}
-
 		.arrow {
 			@extend %control-button;
 
@@ -78,10 +74,6 @@
 				display: flex;
 			}
 		}
-
-		@include layout(compact) {
-			padding: p("xs");
-		}
 	}
 
 	#timeDisplay {
@@ -108,10 +100,10 @@
 		background: transparent;
 
 		@include layout {
-			bottom: -(space("md"));
-			left: -(space("md"));
-			right: -(space("md"));
-			top: -(space("md"));
+			bottom: calc(-1 * #{space("md")});
+			left: calc(-1 * #{space("md")});
+			right: calc(-1 * #{space("md")});
+			top: calc(-1 * #{space("md")});
 			position: absolute;
 			z-index: -1;
 		}

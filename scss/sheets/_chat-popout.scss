@@ -12,10 +12,6 @@
 				margin: 0;
 				padding: p("sm");
 			}
-
-			@include layout(compact) {
-				padding: p("base");
-			}
 		}
 	}
 }

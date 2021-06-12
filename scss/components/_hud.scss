@@ -13,9 +13,13 @@
 
 		&.elevation {
 			@include layout {
-				@include size(to-rem(40px));
+				@include size(space("button-lg"));
 				flex: 0 0 auto;
 				padding: 0;
+
+				> input {
+					height: 100%;
+				}
 			}
 
 			> i {
@@ -28,16 +32,8 @@
 			}
 		}
 
-		@include layout(compact) {
-			margin-block-end: space("xs");
-		}
-
 		&:last-child {
 			@include layout {
-				margin-block-end: 0;
-			}
-
-			@include layout(compact) {
 				margin-block-end: 0;
 			}
 		}
@@ -53,11 +49,12 @@
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(to-rem(40px));
+			@include size(space("button-lg"));
 			align-items: center;
 			cursor: pointer;
 			display: flex;
 			justify-content: center;
+			flex: 0 0 auto;
 			font-size: fs("lg");
 			line-height: initial;
 			margin: 0;
@@ -76,11 +73,6 @@
 			}
 		}
 
-		@include layout(compact) {
-			@include size(to-rem(32px));
-			margin-block-end: space("xs");
-		}
-
 		&:hover {
 			@extend %global-hover;
 			background-image: none;
@@ -93,10 +85,6 @@
 
 		&:last-child {
 			@include layout {
-				margin-block-end: 0;
-			}
-
-			@include layout(compact) {
 				margin-block-end: 0;
 			}
 		}
@@ -133,10 +121,6 @@
 						opacity: 1;
 					}
 				}
-			}
-
-			@include layout(compact) {
-				padding: p("xs");
 			}
 		}
 	}

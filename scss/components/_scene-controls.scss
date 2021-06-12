@@ -8,11 +8,6 @@
 		z-index: z("fixed");
 	}
 
-	@include layout(compact) {
-		left: space("base");
-		top: space("base");
-	}
-
 	@include layout-logo {
 		top: to-rem(60px);
 	}
@@ -26,10 +21,10 @@
 
 		&::before {
 			content: "";
-			bottom: -(space("sm"));
-			left: -(space("sm"));
+			bottom: calc(-1 * #{space("sm")});
+			left: calc(-1 * #{space("sm")});
 			right: to-rem(-54px);
-			top: -(space("sm"));
+			top: calc(-1 * #{space("sm")});
 			position: absolute;
 		}
 
@@ -55,7 +50,7 @@
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(to-rem(40px));
+			@include size(space("button-lg"));
 			align-items: center;
 			cursor: pointer;
 			display: flex;
@@ -72,15 +67,6 @@
 			> i {
 				margin: 0;
 				position: relative;
-			}
-		}
-
-		@include layout(compact) {
-			@include size(to-rem(32px));
-			margin-block-end: space("xs");
-
-			&:last-of-type {
-				margin-block-end: 0;
 			}
 		}
 

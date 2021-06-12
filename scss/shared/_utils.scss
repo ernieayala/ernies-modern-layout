@@ -4,12 +4,6 @@
 			margin-inline-end: m("sm");
 		}
 	}
-
-	@include layout(compact) {
-		> i {
-			margin-inline-end: m("base");
-		}
-	}
 }
 
 %button-icon {

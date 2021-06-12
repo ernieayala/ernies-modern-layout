@@ -18,8 +18,6 @@
 	}
 
 	@include layout(compact) {
-		bottom: space("base");
-		left: space("base");
 		width: to-rem(168px);
 	}
 
@@ -41,14 +39,6 @@
 		}
 	}
 
-	@include layout-subtle(compact) {
-		&:hover {
-			> ol {
-				padding: p("base");
-			}
-		}
-	}
-
 	@include layout-players {
 		display: none;
 	}
@@ -63,16 +53,10 @@
 			display: flex;
 			font-size: fs("md");
 			font-weight: normal;
-			letter-spacing: to-rem(1.2px);
 			margin: 0;
 			padding: p("sm");
 			position: relative;
 			text-transform: uppercase;
-		}
-
-		@include layout(compact) {
-			letter-spacing: initial;
-			padding: p("base");
 		}
 
 		@include layout-subtle {
@@ -104,19 +88,11 @@
 				@include layout {
 					margin-inline-end: m("sm");
 				}
-
-				@include layout(compact) {
-					margin-inline-end: m("base");
-				}
 			}
 
 			&:last-of-type {
 				@include layout {
 					margin-inline-start: m("sm");
-				}
-
-				@include layout(compact) {
-					margin-inline-start: m("base");
 				}
 			}
 		}
@@ -126,10 +102,6 @@
 		@include layout {
 			@extend %reset-list;
 			padding: p("sm");
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		@include layout-subtle {
@@ -182,10 +154,6 @@
 				margin: 0;
 				margin-inline-end: m("sm");
 				position: relative;
-			}
-
-			@include layout(compact) {
-				margin-inline-end: m("base");
 			}
 
 			&.active {

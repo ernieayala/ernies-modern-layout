@@ -3,10 +3,6 @@
 		@include layout {
 			padding: 0;
 		}
-
-		@include layout(compact) {
-			padding: 0;
-		}
 	}
 
 	form {
@@ -17,10 +13,6 @@
 			height: 100%;
 			padding: p("sm");
 			position: relative;
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 	}
 }
@@ -44,7 +36,7 @@
 			border-block-start: 1px solid color("border");
 
 			@include layout {
-				bottom: -(space("sm"));
+				bottom: calc(-1 * #{space("sm")});
 				content: "";
 				flex: 0 0 auto;
 				height: to-rem(46px);
@@ -52,6 +44,11 @@
 				position: sticky;
 				width: 100%;
 				z-index: 5;
+			}
+
+			@include layout(compact) {
+				height: to-rem(38px);
+				margin-block-start: to-rem(-30px);
 			}
 		}
 

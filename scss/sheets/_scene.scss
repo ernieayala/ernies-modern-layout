@@ -6,9 +6,5 @@
 		@include layout {
 			margin-block-start: m("sm");
 		}
-
-		@include layout(compact) {
-			margin-block-start: m("base");
-		}
 	}
 }

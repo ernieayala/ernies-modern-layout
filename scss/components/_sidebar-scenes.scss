@@ -43,10 +43,6 @@
 				@include layout {
 					margin-block-start: m("base");
 				}
-
-				@include layout(compact) {
-					margin-block-start: m("xs");
-				}
 			}
 
 			h3 {

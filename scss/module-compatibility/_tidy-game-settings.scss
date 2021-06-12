@@ -20,10 +20,6 @@
 					}
 				}
 
-				@include layout(compact) {
-					padding: p("base");
-				}
-
 				&.submenu {
 					> .notes {
 						@include layout {

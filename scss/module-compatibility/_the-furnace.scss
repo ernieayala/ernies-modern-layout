@@ -61,13 +61,6 @@ form .furnace-macro-run-as-gm.form-group {
 				z-index: 10000;
 			}
 
-			@include layout(compact) {
-				@include size(80vw, 80vh);
-				margin-block-start: 10vh;
-				margin-inline-start: 10vh;
-				padding: 0;
-			}
-
 			&::before {
 				@include layout {
 					@include fixed(left -10vw top -10vh);

@@ -24,14 +24,6 @@
 		}
 	}
 
-	@include layout(compact) {
-		padding: p("base");
-
-		> i {
-			margin-inline-end: m("base");
-		}
-	}
-
 	&:hover {
 		@extend %global-hover;
 		background-color: color("primary");
@@ -93,14 +85,6 @@
 		font-size: fs("sm");
 		margin-inline-start: m("xs");
 		padding: 0;
-
-		> i {
-			margin: 0;
-		}
-	}
-
-	@include layout(compact) {
-		@include size(to-rem(20px));
 
 		> i {
 			margin: 0;

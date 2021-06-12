@@ -8,10 +8,6 @@
 						@include layout {
 							margin-block-end: m("base");
 						}
-
-						@include layout(compact) {
-							margin-block-end: m("xs");
-						}
 					}
 				}
 			}

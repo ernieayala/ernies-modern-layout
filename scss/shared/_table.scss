@@ -22,11 +22,6 @@
 		}
 	}
 
-	@include layout(compact) {
-		margin-block-start: m("xs");
-		padding: p("base");
-	}
-
 	a {
 		@extend %link-button;
 		color: color("text");
@@ -59,10 +54,6 @@
 				padding-inline-start: 0;
 			}
 		}
-	}
-
-	@include layout(compact) {
-		padding: p("base");
 	}
 
 	a {

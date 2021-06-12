@@ -17,11 +17,6 @@
 				margin-inline-end: m("base");
 				margin-block-end: m("base");
 			}
-
-			@include layout(compact) {
-				margin-inline-start: m("xs");
-				margin-block-end: m("xs");
-			}
 		}
 
 		.expand {
@@ -37,11 +32,6 @@
 					margin: 0;
 				}
 			}
-
-			@include layout(compact) {
-				margin-inline-start: m("xs");
-				margin-block-end: m("xs");
-			}
 		}
 	}
 
@@ -53,11 +43,6 @@
 			max-height: initial;
 			padding: p("sm") 0;
 		}
-
-		@include layout(compact) {
-			height: to-rem(400px);
-			padding: p("base") 0;
-		}
 	}
 
 	.package {
@@ -65,10 +50,6 @@
 
 		@include layout {
 			padding: p("sm");
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		&[data-module-name="ernies-modern-layout"] {
@@ -99,10 +80,6 @@
 				margin-inline-start: m("xs");
 				padding: p("base");
 			}
-
-			@include layout(compact) {
-				padding: p("xs");
-			}
 		}
 	}
 
@@ -125,17 +102,9 @@
 			text-decoration: none;
 		}
 
-		@include layout(compact) {
-			font-size: fs("sm");
-		}
-
 		input {
 			@include layout {
 				margin-inline-end: m("sm");
-			}
-
-			@include layout(compact) {
-				margin-inline-end: m("base");
 			}
 		}
 	}
@@ -150,10 +119,6 @@
 			@include layout {
 				margin-block-end: m("sm");
 			}
-
-			@include layout(compact) {
-				margin-block-end: m("base");
-			}
 		}
 
 		> footer {
@@ -162,10 +127,6 @@
 				flex-wrap: nowrap;
 				padding: 0;
 				padding-block-start: p("sm");
-			}
-
-			@include layout(compact) {
-				padding-block-start: p("base");
 			}
 		}
 	}

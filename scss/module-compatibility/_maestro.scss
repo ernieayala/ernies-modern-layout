@@ -7,11 +7,6 @@
 					flex: 0 0 100%;
 					margin-block-end: m("base");
 				}
-
-				@include layout(compact) {
-					flex: 0 0 100%;
-					margin-block-end: m("xs");
-				}
 			}
 		}
 	}

@@ -8,13 +8,6 @@
 		width: auto;
 	}
 
-	@include layout(compact) {
-		left: space("base");
-		max-height: to-rem(44px);
-		max-width: to-rem(64px);
-		top: space("base");
-	}
-
 	@include layout-logo {
 		display: block;
 	}

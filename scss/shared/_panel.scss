@@ -18,8 +18,4 @@
 			display: none;
 		}
 	}
-
-	@include layout(compact) {
-		padding: p("base");
-	}
 }

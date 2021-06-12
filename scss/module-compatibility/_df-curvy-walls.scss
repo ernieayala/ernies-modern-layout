@@ -26,7 +26,7 @@
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(to-rem(40px));
+			@include size(space("button-lg"));
 			align-items: center;
 			box-sizing: border-box;
 			cursor: pointer;

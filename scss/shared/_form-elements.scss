@@ -7,21 +7,16 @@
 	transition: t(box-shadow, "link");
 
 	@include layout {
-		@include size(100%, to-rem(32px));
+		@include size(100%, space("button"));
 		font-family: inherit;
 		font-size: inherit;
 		font-weight: normal;
 		line-height: 1;
 		margin: 0;
-		min-width: to-rem(16px);
+		min-width: space("xl");
 		padding: 0 p("sm");
 		position: relative;
 		user-select: text;
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
 	}
 
 	&::placeholder {
@@ -53,7 +48,7 @@
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
-		height: to-rem(32px);
+		height: space("button");
 		margin: 0;
 		padding: 0 p("sm");
 		position: relative;
@@ -62,15 +57,6 @@
 		&[multiple] {
 			height: auto;
 			padding: p("sm");
-		}
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
-
-		&[multiple] {
-			padding: p("base");
 		}
 	}
 
@@ -103,16 +89,12 @@
 	transition: t(box-shadow, "link");
 
 	@include layout {
-		@include size(to-rem(20px));
+		@include size(space("button-xs"));
 		cursor: pointer;
 		flex: 0 0 auto;
 		margin: 0;
 		position: relative;
 		top: auto;
-	}
-
-	@include layout(compact) {
-		@include size(to-rem(16px));
 	}
 
 	&:hover {
@@ -151,22 +133,13 @@
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
-		height: to-rem(32px);
+		height: space("button");
 		margin: 0;
 		padding: 0 p("sm");
 		position: relative;
 
 		+ input[type="color"] {
 			margin-inline-start: m("base");
-		}
-	}
-
-	@include layout(compact) {
-		height: to-rem(24px);
-		padding: 0 p("base");
-
-		+ input[type="color"] {
-			margin-inline-start: m("xs");
 		}
 	}
 
@@ -289,10 +262,6 @@
 			margin-inline-start: m("sm");
 			padding: 0;
 		}
-
-		@include layout(compact) {
-			margin-inline-start: m("base");
-		}
 	}
 }
 
@@ -318,7 +287,6 @@
 
 	@include layout(compact) {
 		min-height: to-rem(48px);
-		padding: p("base");
 	}
 
 	&::placeholder {

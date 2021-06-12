@@ -12,10 +12,6 @@
 		z-index: z("fixed");
 	}
 
-	@include layout(compact) {
-		padding: p("base");
-	}
-
 	#calendar-header,
 	.calendar--clock {
 		background: transparent;

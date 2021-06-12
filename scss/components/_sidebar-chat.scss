@@ -92,10 +92,6 @@
 					@include layout {
 						margin-block-start: m("base");
 					}
-
-					@include layout(compact) {
-						margin-block-start: m("xs");
-					}
 				}
 
 				.button.message-delete {
@@ -123,10 +119,6 @@
 				margin: 0;
 				padding: p("sm");
 				position: relative;
-			}
-
-			@include layout(compact) {
-				padding: p("base");
 			}
 
 			.chat-control-icon {
@@ -197,10 +189,6 @@
 				position: relative;
 			}
 
-			@include layout(compact) {
-				padding: p("base");
-			}
-
 			textarea {
 				background-color: color("background-lightest", 0.9);
 				background-image: $global-image-background-light;
@@ -208,10 +196,6 @@
 				@include layout {
 					@include size(100%);
 					padding: p("sm");
-				}
-
-				@include layout(compact) {
-					padding: p("base");
 				}
 			}
 		}

@@ -42,10 +42,6 @@
 					@include layout {
 						font-size: fs("xl");
 					}
-
-					@include layout(compact) {
-						font-size: fs("lg");
-					}
 				}
 
 				a {
@@ -70,10 +66,6 @@
 				padding-block-start: p("base");
 			}
 
-			@include layout(compact) {
-				padding-block-start: 0;
-			}
-
 			.combatant {
 				background-color: color("background");
 				border: none;
@@ -90,11 +82,6 @@
 					padding: p("base") p("sm");
 					position: relative;
 					width: auto;
-				}
-
-				@include layout(compact) {
-					margin: m("base");
-					padding: p("base");
 				}
 
 				&:hover {
@@ -143,10 +130,6 @@
 						flex: 0 0 auto;
 						margin-inline-end: m("sm");
 						position: relative;
-					}
-
-					@include layout(compact) {
-						margin-inline-end: m("base");
 					}
 				}
 
@@ -197,21 +180,12 @@
 						margin-inline-start: m("sm");
 						padding-inline-end: p("sm");
 					}
-
-					@include layout(compact) {
-						margin-inline-start: m("base");
-						padding-inline-end: p("base");
-					}
 				}
 
 				.token-initiative {
 					@include layout {
 						padding: 0;
 						padding-inline-start: p("sm");
-					}
-
-					@include layout(compact) {
-						padding-inline-start: p("base");
 					}
 
 					.initiative {
@@ -287,10 +261,6 @@
 				&:empty {
 					display: none;
 				}
-			}
-
-			@include layout(compact) {
-				padding-block-start: m("base");
 			}
 
 			.combat-control {

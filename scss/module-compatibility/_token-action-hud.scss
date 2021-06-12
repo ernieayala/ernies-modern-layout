@@ -76,10 +76,6 @@
 			padding: 0;
 			padding-block-start: p("sm");
 		}
-
-		@include layout(compact) {
-			padding-block-start: p("base");
-		}
 	}
 
 	.tah-action {
@@ -121,10 +117,6 @@
 		@include layout {
 			left: to-rem(-154px);
 			padding: p("sm") 0;
-		}
-
-		@include layout(compact) {
-			padding: p("base") 0;
 		}
 	}
 }

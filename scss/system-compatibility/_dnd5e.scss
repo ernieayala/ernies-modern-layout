@@ -67,10 +67,6 @@
 				@include layout {
 					margin-block-start: m("base");
 				}
-
-				@include layout(compact) {
-					margin-block-start: 0;
-				}
 			}
 
 			.card-header {
@@ -81,11 +77,6 @@
 				@include layout {
 					padding: p("base") 0;
 				}
-
-				@include layout(compact) {
-					margin-block-end: m("xs");
-					padding: p("xs") 0;
-				}
 			}
 
 			.card-footer {
@@ -94,11 +85,6 @@
 				@include layout {
 					margin-block-start: m("base");
 					padding-block-start: p("base");
-				}
-
-				@include layout(compact) {
-					margin-block-start: m("xs");
-					padding-block-start: p("xs");
 				}
 
 				span {
@@ -119,10 +105,6 @@
 			.card-buttons {
 				@include layout {
 					margin: m("base") 0;
-				}
-
-				@include layout(compact) {
-					margin: m("xs") 0;
 				}
 
 				button {

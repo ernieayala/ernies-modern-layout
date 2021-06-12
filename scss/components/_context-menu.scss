@@ -38,10 +38,6 @@
 				text-align: left;
 			}
 
-			@include layout(compact) {
-				padding: p("xs");
-			}
-
 			&:first-child {
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 			}

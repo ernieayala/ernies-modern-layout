@@ -26,11 +26,22 @@
 			}
 		}
 
+		@include layout(compact) {
+			> select {
+				flex: 1 1 calc(30% - #{to-rem(28px))});
+				margin-inline-end: to-rem(28px);
+			}
+		}
+
 		.editor {
 			@include layout {
 				height: calc(100% - #{to-rem(70px)});
 				margin-block-start: m("base");
 				overflow: visible;
+			}
+
+			@include layout(compact) {
+				height: calc(100% - #{to-rem(58px)});
 			}
 		}
 	}
@@ -49,6 +60,10 @@
 			> i {
 				margin: 0;
 			}
+		}
+
+		@include layout(compact) {
+			top: to-rem(-28px);
 		}
 	}
 

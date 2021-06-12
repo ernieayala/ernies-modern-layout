@@ -13,19 +13,10 @@
 			padding-block-start: p("sm");
 		}
 
-		@include layout(compact) {
-			padding: 0 p("base");
-			padding-block-start: p("base");
-		}
-
 		h4:first-child,
 		p:first-child {
 			@include layout {
 				margin-block-start: m("base");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("xs");
 			}
 		}
 
@@ -34,20 +25,12 @@
 				margin: 0;
 				margin-block-end: m("sm");
 			}
-
-			@include layout(compact) {
-				margin-block-end: m("base");
-			}
 		}
 	}
 
 	form.dialog-content {
 		@include layout {
 			padding-block-start: p("md");
-		}
-
-		@include layout(compact) {
-			padding-block-start: p("sm");
 		}
 	}
 
@@ -59,17 +42,9 @@
 			padding: p("sm");
 		}
 
-		@include layout(compact) {
-			padding: p("base");
-		}
-
 		> p + .form-group {
 			@include layout {
 				margin-block-start: m("md");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("sm");
 			}
 		}
 
@@ -83,10 +58,6 @@
 					padding: 0;
 					padding-block-start: p("sm");
 				}
-
-				@include layout(compact) {
-					padding-block-start: p("base");
-				}
 			}
 		}
 
@@ -99,10 +70,6 @@
 				@include layout {
 					margin-block-start: m("md");
 				}
-
-				@include layout(compact) {
-					margin-block-start: m("sm");
-				}
 			}
 		}
 
@@ -110,10 +77,6 @@
 			&:first-child {
 				@include layout {
 					margin-block-start: m("sm");
-				}
-
-				@include layout(compact) {
-					margin-block-start: m("base");
 				}
 			}
 		}
@@ -124,10 +87,6 @@
 			display: flex;
 			flex: 0 0 auto;
 			padding: p("sm");
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		&:empty {

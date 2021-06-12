@@ -124,10 +124,6 @@
 			margin-block-start: m("sm");
 			position: relative;
 		}
-
-		@include layout(compact) {
-			margin-block-start: m("base");
-		}
 	}
 
 	.filepicker-footer {
@@ -139,10 +135,6 @@
 			&:empty {
 				display: none;
 			}
-		}
-
-		@include layout(compact) {
-			margin-block-start: m("base");
 		}
 	}
 
@@ -177,7 +169,7 @@
 			background: none;
 			border: 0;
 			border-radius: 0;
-			min-height: to-rem(32px);
+			min-height: space("button");
 			list-style: none;
 			overflow-x: hidden;
 			overflow-y: auto;
@@ -203,14 +195,9 @@
 				font-size: fs("md");
 				font-weight: normal;
 				height: auto;
-				line-height: to-rem(32px);
+				line-height: space("button");
 				padding: 0 p("sm");
 				position: relative;
-			}
-
-			@include layout(compact) {
-				line-height: to-rem(24px);
-				padding: 0 p("base");
 			}
 
 			&:last-child {

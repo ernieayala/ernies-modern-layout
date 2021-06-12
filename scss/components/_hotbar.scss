@@ -12,12 +12,7 @@
 		left: space("sm");
 	}
 
-	@include layout-players(compact) {
-		left: space("base");
-	}
-
 	@include layout(compact) {
-		bottom: space("base");
 		left: to-rem(176px);
 	}
 
@@ -34,10 +29,10 @@
 
 		&::before {
 			content: "";
-			bottom: -(space("sm"));
-			left: -(space("sm"));
-			right: -(space("sm"));
-			top: -(space("sm"));
+			bottom: calc(-1 * #{space("sm")});
+			left: calc(-1 * #{space("sm")});
+			right: calc(-1 * #{space("sm")});
+			top: calc(-1 * #{space("sm")});
 			position: absolute;
 		}
 	}
@@ -99,10 +94,6 @@
 				margin-inline-end: m("base");
 			}
 
-			@include layout(compact) {
-				margin-inline-end: m("xs");
-			}
-
 			#macro-directory,
 			#bar-toggle {
 				@include layout {
@@ -126,10 +117,6 @@
 			@include layout {
 				float: left;
 				margin-inline-start: m("base");
-			}
-
-			@include layout(compact) {
-				margin-inline-start: m("xs");
 			}
 		}
 
@@ -196,10 +183,6 @@
 				font-size: fs("md");
 				justify-content: center;
 				line-height: initial;
-			}
-
-			@include layout(compact) {
-				font-size: fs("sm");
 			}
 		}
 	}
@@ -296,10 +279,6 @@
 				margin-block-end: m("base");
 				min-width: to-rem(56px);
 				padding: p("base") p("sm");
-			}
-
-			@include layout(compact) {
-				padding: p("xs") p("base");
 			}
 		}
 	}

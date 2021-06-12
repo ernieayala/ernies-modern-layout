@@ -9,16 +9,23 @@
 	--emu-image-background-light: none;
 	--emu-image-background-darkest: none;
 	--emu-subtle-opacity: 0.3;
+	--emu-space-pf: #{to-rem(1px)};
+	--emu-space-base: #{to-rem(4px)};
+	--emu-space-xs: #{to-rem(2px)};
+	--emu-space-sm: #{to-rem(8px)};
+	--emu-space-md: #{to-rem(16px)};
+	--emu-space-lg: #{to-rem(24px)};
+	--emu-space-xl: #{to-rem(32px)};
+	--emu-space-button-lg: #{to-rem(40px)};
+	--emu-space-button: #{to-rem(32px)};
+	--emu-space-button-sm: #{to-rem(24px)};
+	--emu-space-button-xs: #{to-rem(20px)};
 	scrollbar-color: color("charcoal-300") color("black", 0.5);
 	scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
-	width: to-rem(8px);
-
-	@include layout(compact) {
-		width: to-rem(4px);
-	}
+	width: #{space("sm")};
 }
 
 ::-webkit-scrollbar-track {
@@ -43,6 +50,18 @@
 	0% { opacity: 0; }
 	50% { opacity: 1; }
 	100% { opacity: 0; }
+}
+
+html.-emu-compact {
+	--emu-space-base: #{to-rem(2px)};
+	--emu-space-sm: #{to-rem(4px)};
+	--emu-space-md: #{to-rem(8px)};
+	--emu-space-lg: #{to-rem(12px)};
+	--emu-space-xl: #{to-rem(16px)};
+	--emu-space-button-lg: #{to-rem(32px)};
+	--emu-space-button: #{to-rem(24px)};
+	--emu-space-button-sm: #{to-rem(20px)};
+	--emu-space-button-xs: #{to-rem(18px)};
 }
 
 body {
