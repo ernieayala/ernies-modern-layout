@@ -12,6 +12,10 @@
 		left: space("sm");
 	}
 
+	@include layout-players(compact) {
+		left: space("sm");
+	}
+
 	@include layout(compact) {
 		left: to-rem(176px);
 	}

@@ -6,7 +6,7 @@
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 0.8.6+
 
-**Systems:** Potentially any but primarily tested on DND5e.
+**Systems:** Any*
 
 **Languages:** English, Spanish
 
@@ -16,6 +16,7 @@ A clean and themeable visual update for Foundry VTT.
 - Theming (includes a dark mode theme)
 - Compact Mode
 - Subtle Layout
+- Custom Logo
 - Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
 - Ernie's Layout: Pushes pixels and adjustest fonts, heights, widths, padding and margins.
 
@@ -38,17 +39,17 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Systems Tested
+### Systems Tested Continually
 - DND 5e
 
-### Systems Partially Tested
+### Systems Partially Tested as of June 9th, 2021
 - CoC 7
 - Pathfinder 1
 - Pathfinder 2
 - Savage Worlds
 - Starfinder
 
-### Mods Tested
+### Mods Tested as of June 9th, 2021
 - About Time
 - Active Effects to Chat
 - Actually Private Rolls
@@ -146,3 +147,4 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 #### Key
 FNS = Functions but not styled
+* = Primarily tested for DND5e

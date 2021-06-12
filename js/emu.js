@@ -84,12 +84,31 @@ function updateSettings(settings) {
 	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
 	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
 	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
-	imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
-	imageBackgroundLightest === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
-	imageBackgroundLight === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
-	imageBackgroundDarkest === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
-	imageBackgroundControls === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
-	imageLogo === '' ? null : document.getElementById('logo').setAttribute('src', `/${imageLogo}`);
+
+	// Backgrounds
+	if(imageBackground != 'none' || imageBackground == null) {
+		imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
+	}
+
+	if(imageBackgroundLightest != 'none' || imageBackgroundLightest == null) {
+		imageBackgroundLightest === '' ? document.documentElement.style.setProperty('--emu-image-background-lightest', `none`) : document.documentElement.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
+	}
+
+	if(imageBackgroundLight != 'none' || imageBackgroundLight == null) {
+		imageBackgroundLight === '' ? document.documentElement.style.setProperty('--emu-image-background-light', `none`) : document.documentElement.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
+	}
+
+	if(imageBackgroundDarkest != 'none' || imageBackgroundDarkest == null) {
+		imageBackgroundDarkest === '' ? document.documentElement.style.setProperty('--emu-image-background-darkest', `none`) : document.documentElement.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
+	}
+
+	if(imageBackgroundControls != 'none' || imageBackgroundControls == null) {
+		imageBackgroundControls === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
+	}
+
+	if(imageLogo != 'none' || imageLogo == null) {
+		imageLogo === '' ? null : document.getElementById('logo').setAttribute('src', `/${imageLogo}`);
+	}
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
