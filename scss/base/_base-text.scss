@@ -58,34 +58,9 @@ a[href] {
 
 a.entity-link,
 a.inline-roll {
-	// @extend %primary-button;
-	// color: color("text-lightest");
-
-	// @include layout {
-	// 	font-size: fs("sm");
-	// 	padding: p("xs") p("base");
-	// 	text-indent: 0;
-	// }
-
-	// &.broken {
-
-	// }
-
-	// &.gmroll {
-
-	// }
-
-	// &.blindroll {
-
-	// }
-
 	> i {
 		@include layout {
 			margin-inline-end: m("base");
-		}
-
-		@include layout(compact) {
-			margin-inline-end: m("xs");
 		}
 	}
 }
@@ -147,9 +122,5 @@ section.secret {
 
 	@include layout {
 		padding: 0 p("base");
-	}
-
-	@include layout(compact) {
-		padding: 0 p("xs");
 	}
 }

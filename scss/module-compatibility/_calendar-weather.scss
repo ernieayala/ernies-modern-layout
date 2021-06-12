@@ -1,6 +1,7 @@
 #calendar-time-container,
 #calendar-weather-container {
 	background-color: color("background", 0.8);
+	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
@@ -9,10 +10,6 @@
 		height: fit-content;
 		padding: p("sm");
 		z-index: z("fixed");
-	}
-
-	@include layout(compact) {
-		padding: p("base");
 	}
 
 	#calendar-header,

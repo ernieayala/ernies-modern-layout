@@ -2,9 +2,13 @@
 .sidebar-popout {
 	.sidebar-tab .directory-header .header-actions {
 		#world-anvil {
+			@include layout {
+				flex: 0 0 auto;
+			}
+
 			img {
 				@include layout {
-					max-height: space("button-sm");
+					max-height: space("button-xs");
 					top: auto;
 				}
 			}

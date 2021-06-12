@@ -46,10 +46,6 @@
 				@include layout {
 					margin-block-start: m("md") !important;
 				}
-
-				@include layout(compact) {
-					margin-block-start: m("sm") !important;
-				}
 			}
 		}
 	}

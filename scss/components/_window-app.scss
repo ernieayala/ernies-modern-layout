@@ -57,10 +57,6 @@
 			position: relative;
 		}
 
-		@include layout(compact) {
-			padding: p("base");
-		}
-
 		h4.window-title {
 			color: color("text-lightest");
 
@@ -147,15 +143,10 @@
 			flex: 1 1 auto;
 			font-size: fs("md");
 			margin: 0;
-			// overflow: hidden;
 			overflow-x: hidden;
 			overflow-y: auto;
 			padding: p("sm");
 			position: relative;
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		form {
@@ -180,7 +171,7 @@
 
 		@include layout {
 			@include absolute(bottom 0 right 0);
-			@include size(to-rem(20px));
+			@include size(space("button-xs"));
 			align-items: center;
 			cursor: pointer;
 			display: inline-flex;
@@ -216,17 +207,13 @@
 			border: none;
 
 			@include layout {
-				@include size(to-rem(40px));
+				@include size(space("button-lg"));
 				cursor: pointer;
 				flex: 0 0 auto;
 				margin-inline-end: m("sm");
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
-			}
-
-			@include layout(compact) {
-				margin-inline-end: m("base");
 			}
 
 			&:hover {
@@ -269,10 +256,6 @@
 			+ ::after {
 				display: none;
 			}
-		}
-
-		@include layout(compact) {
-			margin-block-start: m("base");
 		}
 	}
 }

@@ -14,6 +14,7 @@
 
 	.window-content {
 		background-color: color("background-darkest");
+		background-image: $global-image-background-darkest;
 		border-radius: 0;
 
 		@include layout {
@@ -40,10 +41,6 @@
 			padding: 0 p("base");
 			position: relative;
 			top: auto;
-		}
-
-		@include layout(compact) {
-			padding: 0 p("xs");
 		}
 
 		.arrow {
@@ -77,10 +74,6 @@
 				display: flex;
 			}
 		}
-
-		@include layout(compact) {
-			padding: p("xs");
-		}
 	}
 
 	#timeDisplay {
@@ -107,10 +100,10 @@
 		background: transparent;
 
 		@include layout {
-			bottom: -(space("md"));
-			left: -(space("md"));
-			right: -(space("md"));
-			top: -(space("md"));
+			bottom: calc(-1 * #{space("md")});
+			left: calc(-1 * #{space("md")});
+			right: calc(-1 * #{space("md")});
+			top: calc(-1 * #{space("md")});
 			position: absolute;
 			z-index: -1;
 		}

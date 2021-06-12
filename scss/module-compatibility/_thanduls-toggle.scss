@@ -7,6 +7,7 @@
 
 .thandulTogglables {
 	background-color: color("background");
+	background-image: $global-image-background;
 	border: b("border");
 	border-radius: br("sm");
 	box-shadow: none;
@@ -19,10 +20,6 @@
 		display: none;
 		padding: p("base");
 		top: 0 !important;
-	}
-
-	@include layout(compact) {
-		padding: p("xs");
 	}
 
 	ul {
@@ -41,10 +38,6 @@
 			display: flex;
 			justify-content: center;
 			padding: p("sm");
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		&:hover {
@@ -66,10 +59,6 @@
 			@include layout {
 				margin: 0;
 				margin-block-start: m("sm");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("base");
 			}
 		}
 	}

@@ -1,4 +1,5 @@
 import * as THEME from './emu-theme.js';
+import * as FONTS from './emu-fonts.js';
 
 const myHtml = document.getElementsByTagName('html');
 const myHead = document.getElementsByTagName('head')[0];
@@ -53,6 +54,7 @@ function updateSettings(settings) {
 		imageBackgroundLight,
 		imageBackgroundDarkest,
 		imageBackgroundControls,
+		imageLogo,
 		toggleLogo,
 		toggleSceneThumbs,
 		emuLayout
@@ -82,26 +84,36 @@ function updateSettings(settings) {
 	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
 	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
 	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
-	// imageBackground ? document.documentElement.style.setProperty('--emu-image-background', `url(../backgrounds/${imageBackground}.webp)`) : null;
-	// imageBackgroundLightest ? document.documentElement.style.setProperty('--emu-image-background-lightest', `url('../backgrounds/${imageBackgroundLightest}.webp')`): null;
-	// imageBackgroundLight ? document.documentElement.style.setProperty('--emu-image-background-light', `url('../backgrounds/${imageBackgroundLight}.webp')`) : null;
-	// imageBackgroundDarkest ? document.documentElement.style.setProperty('--emu-image-background-darkest', `url('../backgrounds/${imageBackgroundDarkest}.webp')`) : null;
-	// imageBackgroundControls ? document.documentElement.style.setProperty('--emu-image-background-controls', `url('../backgrounds/${imageBackgroundControls}.webp')`) : null;
+
+	// Backgrounds
+	if(imageBackground != 'none' || imageBackground == null) {
+		imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
+	}
+
+	if(imageBackgroundLightest != 'none' || imageBackgroundLightest == null) {
+		imageBackgroundLightest === '' ? document.documentElement.style.setProperty('--emu-image-background-lightest', `none`) : document.documentElement.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
+	}
+
+	if(imageBackgroundLight != 'none' || imageBackgroundLight == null) {
+		imageBackgroundLight === '' ? document.documentElement.style.setProperty('--emu-image-background-light', `none`) : document.documentElement.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
+	}
+
+	if(imageBackgroundDarkest != 'none' || imageBackgroundDarkest == null) {
+		imageBackgroundDarkest === '' ? document.documentElement.style.setProperty('--emu-image-background-darkest', `none`) : document.documentElement.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
+	}
+
+	if(imageBackgroundControls != 'none' || imageBackgroundControls == null) {
+		imageBackgroundControls === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
+	}
+
+	if(imageLogo != 'none' || imageLogo == null) {
+		imageLogo === '' ? null : document.getElementById('logo').setAttribute('src', `/${imageLogo}`);
+	}
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
 	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
-}
-
-function checkForUploadFolders(root, folder) {
-	FilePicker.browse('data', root).then(loc => {
-		if(!loc.dirs.includes(`${root}/${folder}`)) {
-			loc.target == FilePicker.createDirectory('data', `${root}/${folder}`, {});
-		}
-	}).catch(_ => {
-		throw new Error(`${moduleName} could not access ${root}/${folder}`);
-	});
 }
 
 function setFontFamily(family) {
@@ -145,16 +157,15 @@ class emuSettings {
 			colorTextLightest: '#ffffff',
 			colorTextDarker: '#293e40',
 			fontFamily: 'Signika',
-			imageBackground: 'none',
-			imageBackgroundLightest: 'none',
-			imageBackgroundLight: 'none',
-			imageBackgroundDarkest: 'none',
-			imageBackgroundControls: 'none',
+			imageBackground: '',
+			imageBackgroundLightest: '',
+			imageBackgroundLight: '',
+			imageBackgroundDarkest: '',
+			imageBackgroundControls: '',
+			imageLogo: '',
 			toggleLogo: true,
 			toggleSceneThumbs: true,
-			emuLayout: true,
-			pathFonts: `worlds/${game.world.name}/${moduleName}/fonts`,
-			pathImages: `worlds/${game.world.name}/${moduleName}/images`
+			emuLayout: true
 		};
 	}
 }
@@ -184,37 +195,7 @@ class emuForm extends FormApplication {
 					'dark': game.i18n.localize('emu.theme-preset-dark'),
 					'western': game.i18n.localize('emu.theme-preset-western')
 				},
-				fontFamilyList: {
-					'Signika': 'Default',
-					'Cairo': 'Cairo',
-					'Fjalla One': 'Fjalla One',
-					'Lato': 'Lato',
-					'Lobster': 'Lobster',
-					'Nunito': 'Nunito',
-					'Open Sans': 'Open Sans',
-					'Roboto': 'Roboto',
-					'Roboto Condensed': 'Roboto Condensed',
-					'Source Code Pro': 'Source Code Pro',
-					'Source Sans Pro': 'Source Sans Pro',
-					'Teko': 'Teko',
-					'Titillium Web': 'Titillium Web'
-				},
-				imageBackgroundList: {
-					'none': 'None',
-					'denim': 'Denim',
-					'denim065': 'Denim 065',
-					'denim075': 'Denim 075',
-					'denim090': 'Denim 090',
-					'denim-dark': 'Denim Dark',
-					'denim-light': 'Denim Light',
-					'parchment': 'Parchment',
-					'parchment-white': 'Parchment White',
-					'fancy': 'Fancy',
-					'holed-metal': 'Holed Metal',
-					'metal-texture': 'M etal Texture',
-					'sci-fi-hex': 'Sci-fi Hex',
-					'sci-fi-hex-2': 'Sci-fi Hex 2'
-				}
+				fontFamilyList: FONTS.GOOGLE_FONTS
 			},
 			this.reset ? emuSettings.defaultSettings :
 			mergeObject(
@@ -268,7 +249,6 @@ class emuForm extends FormApplication {
 }
 
 Hooks.once('init', () => {
-	// lets makes make this specificity stupid
 	myBody[0].classList.add('-emu');
 
 	game.settings.registerMenu(moduleName, moduleName, {
@@ -285,10 +265,6 @@ Hooks.once('init', () => {
 		type: Object,
 		config: false
 	});
-
-	// checkForUploadFolders(`worlds/${game.world.name}`, moduleName);
-	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'fonts');
-	// checkForUploadFolders(`worlds/${game.world.name}/${moduleName}`, 'images');
 });
 
 Hooks.once('ready', () => {
@@ -377,8 +353,8 @@ Hooks.once('ready', () => {
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 		setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
-	}, 1000);
+	}, 2000);
 
 	// Say Hello
-	console.log('Ernie\'s Modern UI');
+	console.log('Ernie\'s Modern UI Active');
 });

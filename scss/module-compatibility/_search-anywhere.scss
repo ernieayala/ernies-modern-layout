@@ -33,10 +33,6 @@ ul.command-menu {
 		z-index: z("tooltip");
 	}
 
-	@include layout(compact) {
-		padding: p("base");
-	}
-
 	li {
 		@extend %primary-button;
 
@@ -45,16 +41,8 @@ ul.command-menu {
 			margin-block-end: m("sm");
 		}
 
-		@include layout(compact) {
-			margin-block-end: m("base");
-		}
-
 		&:last-child {
 			@include layout {
-				margin-block-end: 0;
-			}
-
-			@include layout(compact) {
 				margin-block-end: 0;
 			}
 		}

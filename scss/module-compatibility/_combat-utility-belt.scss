@@ -12,10 +12,6 @@
 						padding: 0;
 						text-align: center;
 					}
-
-					@include layout(compact) {
-						@include size(to-rem(20px));
-					}
 				}
 			}
 		}
@@ -28,10 +24,6 @@
 				text-shadow: none;
 				width: 100%;
 			}
-
-			@include layout(compact) {
-				margin: m("base");
-			}
 		}
 	}
 
@@ -43,10 +35,6 @@
 
 				@include layout {
 					margin-block-start: m("md");
-				}
-
-				@include layout(compact) {
-					margin-block-start: m("sm");
 				}
 			}
 		}

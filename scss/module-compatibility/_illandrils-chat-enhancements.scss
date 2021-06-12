@@ -1,6 +1,7 @@
 .illandril-chat-enhancements--currentSpeaker {
 	align-items: center;
 	background-color: color("background", 0.5);
+	background-image: $global-image-background;
 
 	@include layout {
 		display: flex;

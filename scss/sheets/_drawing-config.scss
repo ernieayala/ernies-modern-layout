@@ -15,10 +15,6 @@
 			@include layout {
 				padding-block-start: p("sm");
 			}
-
-			@include layout(compact) {
-				padding-block-start: p("base");
-			}
 		}
 	}
 }

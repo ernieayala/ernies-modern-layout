@@ -12,11 +12,6 @@
 			text-shadow: none;
 
 			@include layout {
-				padding: 0 to-rem(6px);
-				width: auto;
-			}
-
-			@include layout(compact) {
 				padding: 0 p("base");
 				width: auto;
 			}

@@ -26,18 +26,9 @@
 		padding: p("sm");
 	}
 
-	@include layout(compact) {
-		margin-block-end: m("base");
-		padding: p("base");
-	}
-
 	&::before {
 		@include layout {
 			margin-inline-end: m("sm");
-		}
-
-		@include layout(compact) {
-			margin-inline-end: m("base");
 		}
 	}
 

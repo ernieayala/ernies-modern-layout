@@ -3,8 +3,6 @@ img {
 	border-radius: $global-border-radius-images;
 
 	@include layout {
-		object-fit: cover;
-		object-position: 50% 50%;
 		position: relative;
 	}
 }

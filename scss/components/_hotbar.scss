@@ -13,11 +13,10 @@
 	}
 
 	@include layout-players(compact) {
-		left: space("base");
+		left: space("sm");
 	}
 
 	@include layout(compact) {
-		bottom: space("base");
 		left: to-rem(176px);
 	}
 
@@ -34,10 +33,10 @@
 
 		&::before {
 			content: "";
-			bottom: -(space("sm"));
-			left: -(space("sm"));
-			right: -(space("sm"));
-			top: -(space("sm"));
+			bottom: calc(-1 * #{space("sm")});
+			left: calc(-1 * #{space("sm")});
+			right: calc(-1 * #{space("sm")});
+			top: calc(-1 * #{space("sm")});
 			position: absolute;
 		}
 	}
@@ -49,6 +48,7 @@
 			display: block;
 			flex: 1 1 auto;
 			height: auto;
+			margin: 0;
 			pointer-events: all;
 			position: relative;
 		}
@@ -98,10 +98,6 @@
 				margin-inline-end: m("base");
 			}
 
-			@include layout(compact) {
-				margin-inline-end: m("xs");
-			}
-
 			#macro-directory,
 			#bar-toggle {
 				@include layout {
@@ -111,12 +107,12 @@
 				&:first-of-type {
 					border: none;
 					border-block-end: b("border");
-					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 
 				&:last-of-type {
 					border: none;
-					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
 				}
 			}
 		}
@@ -125,10 +121,6 @@
 			@include layout {
 				float: left;
 				margin-inline-start: m("base");
-			}
-
-			@include layout(compact) {
-				margin-inline-start: m("xs");
 			}
 		}
 
@@ -195,10 +187,6 @@
 				font-size: fs("md");
 				justify-content: center;
 				line-height: initial;
-			}
-
-			@include layout(compact) {
-				font-size: fs("sm");
 			}
 		}
 	}
@@ -295,10 +283,6 @@
 				margin-block-end: m("base");
 				min-width: to-rem(56px);
 				padding: p("base") p("sm");
-			}
-
-			@include layout(compact) {
-				padding: p("xs") p("base");
 			}
 		}
 	}

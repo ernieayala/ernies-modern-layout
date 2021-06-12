@@ -3,6 +3,7 @@
 	.whisper-to span {
 		align-items: center;
 		background-color: color("background-light", 0.2);
+		background-image: $global-image-background-light;
 		border-radius: $global-border-radius-default;
 		border: b("border");
 		display: inline-flex;

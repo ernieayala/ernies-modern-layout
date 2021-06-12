@@ -1,6 +1,7 @@
 #specials-config {
 	.fxmaster {
 		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 
 		.directory-header {
 			box-shadow: none;
@@ -41,7 +42,7 @@
 				border: none;
 
 				@include layout {
-					@include size(to-rem(32px));
+					@include size(space("button"));
 					flex: 0 0 auto;
 					margin: m("base");
 					overflow: hidden;
@@ -110,6 +111,7 @@
 #effects-config {
 	.directory-list {
 		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 
 		@include layout {
 			height: auto;
@@ -148,6 +150,7 @@
 
 	.form-footer {
 		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 
 		@include layout {
 			bottom: 0;
@@ -181,6 +184,7 @@
 
 	.form-footer {
 		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 		border-block-start: b("border");
 
 		@include layout {

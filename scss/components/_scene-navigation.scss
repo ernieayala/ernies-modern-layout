@@ -9,7 +9,6 @@
 	}
 
 	@include layout(compact) {
-		top: space("base");
 		left: to-rem(112px);
 	}
 
@@ -29,10 +28,10 @@
 
 		#scene-list::before {
 			content: "";
-			bottom: -(space("sm"));
-			left: -(space("sm"));
-			right: -(space("sm"));
-			top: -(space("sm"));
+			bottom: calc(-1 * #{space("sm")});
+			left: calc(-1 * #{space("sm")});
+			right: calc(-1 * #{space("sm")});
+			top: calc(-1 * #{space("sm")});
 			position: absolute;
 		}
 	}
@@ -103,14 +102,7 @@
 			@include layout(compact) {
 				height: to-rem(28px);
 				line-height: to-rem(28px);
-				margin-block-end: space("xs");
-				margin-inline-end: space("xs");
 				min-width: to-rem(88px);
-				padding: 0 p("base");
-
-				&:last-of-type {
-					margin-inline-end: 0;
-				}
 			}
 
 			@include layout-subtle {
@@ -154,12 +146,6 @@
 						margin-inline-end: m("base");
 					}
 				}
-
-				@include layout(compact) {
-					> i {
-						margin-inline-end: m("xs");
-					}
-				}
 			}
 		}
 
@@ -170,15 +156,10 @@
 				flex-wrap: wrap;
 				list-style: none;
 				margin: 0;
-				margin-block-start: -(m("base"));
+				margin-block-start: calc(-1 * #{m("base")});
 				padding: 0;
 				padding-inline-start: m("sm");
 				pointer-events: none;
-			}
-
-			@include layout(compact) {
-				margin-block-start: -(m("xs"));
-				padding-inline-start: m("base");
 			}
 		}
 

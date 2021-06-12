@@ -1,5 +1,6 @@
 .simple-dice-roller-popup {
 	background-color: color("background");
+	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: none;

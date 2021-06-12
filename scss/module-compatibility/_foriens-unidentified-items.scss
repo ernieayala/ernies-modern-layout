@@ -49,10 +49,6 @@
 				}
 			}
 		}
-
-		@include layout(compact) {
-			padding: p("base");
-		}
 	}
 
 	.nav-tabs {

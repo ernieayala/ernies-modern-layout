@@ -1,5 +1,6 @@
 %panel-block {
 	background-color: color("background", 0.5);
+	background-image: $global-image-background;
 	border: none;
 	color: color("text-lightest");
 
@@ -16,9 +17,5 @@
 		&:empty {
 			display: none;
 		}
-	}
-
-	@include layout(compact) {
-		padding: p("base");
 	}
 }

@@ -21,12 +21,6 @@ input[type="text"] {
 			margin-inline-start: m("base");
 		}
 	}
-
-	@include layout(compact) {
-		+ input[type="color"] {
-			margin-inline-start: m("xs");
-		}
-	}
 }
 
 input[type="color"],

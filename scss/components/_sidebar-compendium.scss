@@ -5,10 +5,6 @@
 			@include layout {
 				padding: p("sm");
 			}
-
-			@include layout(compact) {
-				padding: p("base");
-			}
 		}
 
 		.directory-item {
@@ -17,10 +13,6 @@
 				line-height: 1;
 				margin: m("base");
 				padding: 0 p("sm");
-			}
-
-			@include layout(compact) {
-				padding: 0 p("base");
 			}
 
 			h4 {
@@ -53,15 +45,13 @@
 					padding-block-end: m("sm");
 					width: 100%;
 				}
-
-				@include layout(compact) {
-					padding-block-end: m("base");
-				}
 			}
 		}
 
 		.compendium-type {
 			background-color: color("folder-subdirectory");
+			background-image: none;
+			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 
 			@include layout {
 				display: flex;
@@ -69,13 +59,9 @@
 				margin-block-end: m("base");
 			}
 
-			@include layout(compact) {
-				margin-block-end: m("xs");
-			}
-
 			h3 {
 				background-color: color("folder-header");
-				background-image: $global-image-background-darkest;
+				background-image: none;
 				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				color: color("text");
 				transition: t(background box-shadow color, "link");
@@ -89,15 +75,10 @@
 					font-size: fs("lg");
 					line-height: 1;
 					margin: 0;
-					min-height: to-rem(32px);
+					min-height: space("button");
 					padding: p("base") p("sm");
 					position: relative;
 					width: 100%;
-				}
-
-				@include layout(compact) {
-					min-height: to-rem(24px);
-					padding: p("base");
 				}
 			}
 		}

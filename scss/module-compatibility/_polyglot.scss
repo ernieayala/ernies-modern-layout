@@ -1,5 +1,6 @@
 #polyglot {
 	background-color: color("background", 0.5);
+	background-image: $global-image-background;
 
 	@include layout {
 		align-items: center;

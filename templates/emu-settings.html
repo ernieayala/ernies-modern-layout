@@ -8,13 +8,15 @@
 		<div class="tab" data-tab="colors" data-group="sections">
 			<div class="form-group">
 				<label>{{ localize "emu.theme-preset" }}</label>
-				<select name="themePreset">
-					{{#select themePreset}}
-						{{#each themePresetList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
+				<div class="form-fields">
+					<select name="themePreset">
+						{{#select themePreset}}
+							{{#each themePresetList as |name key|}}
+								<option value="{{key}}">{{name}}</option>
+							{{/each}}
+						{{/select}}
+					</select>
+				</div>
 			</div>
 			<div class="form-group">
 				<label>{{ localize "emu.theme-primary" }}</label>
@@ -138,74 +140,102 @@
 			</div>
 		</div>
 		<div class="tab" data-tab="design" data-group="sections">
+			<p class="notes">{{ localize "emu.design-note" }}</p>
+			<h3>{{ localize "emu.design-header-font" }}</h3>
 			<div class="form-group">
 				<label>{{ localize "emu.design-font-family" }}</label>
-				<select name="fontFamily">
-					{{#select fontFamily}}
-						{{#each fontFamilyList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
+				<div class="form-fields">
+					<select name="fontFamily">
+						{{#select fontFamily}}
+							{{#each fontFamilyList as |name key|}}
+								<option value="{{key}}">{{name}}</option>
+							{{/each}}
+						{{/select}}
+					</select>
+				</div>
 			</div>
-			<!--
-			<div class="form-group">
-				<label>Background Image</label>
-				<select name="imageBackground">
-					{{#select imageBackground}}
-						{{#each imageBackgroundList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Background Image Light</label>
-				<select name="imageBackgroundLight">
-					{{#select imageBackgroundLight}}
-						{{#each imageBackgroundList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Background Image Dark</label>
-				<select name="imageBackgroundDarkest">
-					{{#select imageBackgroundDarkest}}
-						{{#each imageBackgroundList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
-			</div>
-			<div class="form-group">
-				<label>Background Image Controls</label>
-				<select name="imageBackgroundControls">
-					{{#select imageBackgroundControls}}
-						{{#each imageBackgroundList as |name key|}}
-							<option value="{{key}}">{{name}}</option>
-						{{/each}}
-					{{/select}}
-				</select>
-			</div>
-			-->
+			<h3>{{ localize "emu.design-header-border" }}</h3>
 			<div class="form-group">
 				<label>{{ localize "emu.design-border-radius-default" }}</label>
-				<input type="number"  name="borderRadiusDefault" value="{{ borderRadiusDefault }}" data-dtype="Number"/>
+				<div class="form-fields">
+					<input type="number"  name="borderRadiusDefault" value="{{ borderRadiusDefault }}" data-dtype="Number"/>
+				</div>
 				<p class="notes">{{ localize "emu.design-border-radius-default-note" }}</p>
 			</div>
 			<div class="form-group">
 				<label>{{ localize "emu.design-border-radius-controls" }}</label>
-				<input type="number"  name="borderRadiusControls" value="{{ borderRadiusControls }}" data-dtype="Number"/>
+				<div class="form-fields">
+					<input type="number"  name="borderRadiusControls" value="{{ borderRadiusControls }}" data-dtype="Number"/>
+				</div>
 			</div>
 			<div class="form-group">
 				<label>{{ localize "emu.design-border-radius-forms" }}</label>
-				<input type="number"  name="borderRadiusForms" value="{{ borderRadiusForms }}" data-dtype="Number"/>
+				<div class="form-fields">
+					<input type="number"  name="borderRadiusForms" value="{{ borderRadiusForms }}" data-dtype="Number"/>
+				</div>
 			</div>
 			<div class="form-group">
 				<label>{{ localize "emu.design-border-radius-images" }}</label>
-				<input type="number"  name="borderRadiusImages" value="{{ borderRadiusImages }}" data-dtype="Number"/>
+				<div class="form-fields">
+					<input type="number"  name="borderRadiusImages" value="{{ borderRadiusImages }}" data-dtype="Number"/>
+				</div>
+			</div>
+			<h3>{{ localize "emu.design-header-background" }}</h3>
+			<p class="notes">{{ localize "emu.design-header-background-hint" }}</p>
+			<div class="form-group">
+				<label>{{ localize "emu.design-background-image" }}</label>
+				<div class="form-fields">
+					<button id="imageBackgroundButton" data-target="imageBackground" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageBackground" name="imageBackground" type="text" value="{{imageBackground}}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{ localize "emu.design-background-image-lightest" }}</label>
+				<div class="form-fields">
+					<button id="imageBackgroundLightestButton" data-target="imageBackgroundLightest" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageBackgroundLightest" name="imageBackgroundLightest" type="text" value="{{imageBackgroundLightest}}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{ localize "emu.design-background-image-light" }}</label>
+				<div class="form-fields">
+					<button id="imageBackgroundLightButton" data-target="imageBackgroundLight" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageBackgroundLight" name="imageBackgroundLight" type="text" value="{{imageBackgroundLight}}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{ localize "emu.design-background-image-dark" }}</label>
+				<div class="form-fields">
+					<button id="imageBackgroundDarkestButton" data-target="imageBackgroundDarkest" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageBackgroundDarkest" name="imageBackgroundDarkest" type="text" value="{{imageBackgroundDarkest}}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label>{{ localize "emu.design-background-image-controls" }}</label>
+				<div class="form-fields">
+					<button id="imageBackgroundControlsButton" data-target="imageBackgroundControls" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageBackgroundControls" name="imageBackgroundControls" type="text" value="{{imageBackgroundControls}}" />
+				</div>
+			</div>
+			<h3>{{ localize "emu.design-header-logo" }}</h3>
+			<div class="form-group">
+				<label>{{ localize "emu.design-logo-custom" }}</label>
+				<div class="form-fields">
+					<button id="imageLogoButton" data-target="imageLogo" class="file-picker" type="button" data-type="image" title="Browse Files">
+						<i class="fas fa-file-import fa-fw"></i>
+					</button>
+					<input id="imageLogo" name="imageLogo" type="text" value="{{imageLogo}}" />
+				</div>
 			</div>
 		</div>
 		<div class="tab" data-tab="options" data-group="sections">

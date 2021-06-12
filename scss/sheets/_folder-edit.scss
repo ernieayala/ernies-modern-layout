@@ -3,9 +3,5 @@
 		@include layout {
 			margin-inline-start: m("sm");
 		}
-
-		@include layout(compact) {
-			margin-inline-start: m("base");
-		}
 	}
 }

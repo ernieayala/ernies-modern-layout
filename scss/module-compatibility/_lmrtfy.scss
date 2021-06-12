@@ -38,6 +38,7 @@
 
 	.lmrtfy-submit {
 		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 		border-block-start: b("border");
 
 		@include layout {

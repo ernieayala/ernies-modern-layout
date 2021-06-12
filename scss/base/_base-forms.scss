@@ -10,12 +10,6 @@ form {
 			margin-block-end: m("base");
 			padding: p("base");
 		}
-
-		@include layout(compact) {
-			margin-block-start: m("sm");
-			margin-block-end: m("xs");
-			padding: p("xs")
-		}
 	}
 
 	.form-group {
@@ -33,10 +27,6 @@ form {
 			&:nth-of-type(even) {
 				background-color: color("background-light", 0.1);
 			}
-		}
-
-		@include layout(compact) {
-			padding: p("base");
 		}
 
 		&.initial-position {
@@ -63,10 +53,6 @@ form {
 						padding-inline-start: p("sm");
 						padding-inline-end: p("base");
 					}
-
-					@include layout(compact) {
-						padding-inline-start: p("base");
-					}
 				}
 			}
 		}
@@ -77,17 +63,9 @@ form {
 				padding-block-start: p("sm");
 			}
 
-			@include layout(compact) {
-				padding-block-start: p("base");
-			}
-
 			textarea {
 				@include layout {
 					margin-block-end: m("base");
-				}
-
-				@include layout(compact) {
-					margin-block-end: m("xs");
 				}
 			}
 		}
@@ -114,11 +92,7 @@ form {
 					@include layout {
 						-webkit-filter: initial;
 						flex: 0 0 auto;
-						width: to-rem(20px);
-					}
-
-					@include layout(compact) {
-						width: to-rem(16px);
+						width: space("button-xs");
 					}
 				}
 
@@ -127,10 +101,6 @@ form {
 						flex: 0 0 auto;
 						margin-inline-end: m("sm");
 						width: auto;
-					}
-
-					@include layout(compact) {
-						margin-inline-end: m("xs");
 					}
 				}
 
@@ -146,6 +116,7 @@ form {
 			button {
 				@include layout {
 					margin-inline-start: m("base");
+					order: initial;
 					width: auto;
 				}
 
@@ -182,10 +153,6 @@ form {
 				@include layout {
 					margin-block-start: m("sm");
 				}
-
-				@include layout(compact) {
-					margin-block-start: m("base");
-				}
 			}
 		}
 
@@ -200,11 +167,7 @@ form {
 				@include layout {
 					-webkit-filter: initial;
 					flex: 0 0 auto;
-					width: to-rem(20px);
-				}
-
-				@include layout(compact) {
-					width: to-rem(16px);
+					width: space("button-xs");
 				}
 			}
 
@@ -214,19 +177,11 @@ form {
 					margin-inline-end: m("sm");
 					width: auto;
 				}
-
-				@include layout(compact) {
-					margin-inline-end: m("xs");
-				}
 			}
 
 			+ .notes {
 				@include layout {
 					margin-block-start: m("sm");
-				}
-
-				@include layout(compact) {
-					margin-block-start: m("base");
 				}
 			}
 
@@ -303,10 +258,6 @@ form {
 			@include layout {
 				margin-block-start: m("sm");
 			}
-
-			@include layout(compact) {
-				margin-block-start: m("base");
-			}
 		}
 	}
 
@@ -334,10 +285,6 @@ form {
 		+ .form-group {
 			@include layout {
 				margin-block-start: m("sm");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("base");
 			}
 		}
 	}

@@ -5,9 +5,5 @@ button {
 		@include layout {
 			margin-inline-start: m("base");
 		}
-
-		@include layout(compact) {
-			margin-inline-start: m("xs");
-		}
 	}
 }

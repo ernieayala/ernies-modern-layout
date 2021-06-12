@@ -37,12 +37,17 @@
 		"chat-roll": to-rem(18px)
 	)
 	"space" (
-		"button": to-rem(32px),
-		"button-sm": to-rem(24px),
-		"button-xs": to-rem(20px),
-		"icon": to-rem(32px),
-		"image": to-rem(64px),
-		"portrait": to-rem(96px)
+		"button-lg": var(--emu-space-button-lg),
+		"button": var(--emu-space-button),
+		"button-sm": var(--emu-space-button-sm),
+		"button-xs": var(--emu-space-button-xs),
+		"icon": var(--emu-space-button),
+		"pf": var(--emu-space-pf),
+		"base": var(--emu-space-base),
+		"xs": var(--emu-space-xs),
+		"sm": var(--emu-space-sm),
+		"md": var(--emu-space-md),
+		"xl": var(--emu-space-xl)
 	)
 	"z-index" (
 		"fixed": 10,

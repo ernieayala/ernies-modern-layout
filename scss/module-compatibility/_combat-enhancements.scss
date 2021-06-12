@@ -12,10 +12,6 @@
 						position: relative;
 					}
 
-					@include layout(compact) {
-						margin-inline-end: m("base");
-					}
-
 					.token-image {
 						@include layout {
 							@include size(100%);
@@ -43,11 +39,12 @@
 
 					input {
 						background-color: color("background-lightest");
+						background-image: $global-image-background-lightest;
 
 						@include layout {
 							height: auto;
 							margin-inline-start: m("base");
-							width: to-rem(40px);
+							width: space("button-lg");
 						}
 					}
 				}

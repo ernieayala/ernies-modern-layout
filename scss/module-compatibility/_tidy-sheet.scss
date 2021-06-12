@@ -9,10 +9,6 @@
 		@include layout {
 			padding: p("sm");
 		}
-
-		@include layout(compact) {
-			padding: p("base");
-		}
 	}
 
 	.sheet-tabs {
@@ -36,10 +32,6 @@
 			padding: p("sm");
 		}
 
-		@include layout(compact) {
-			padding: p("base");
-		}
-
 		&:nth-of-type(even) {
 			background-color: color("background-light", 0.1);
 		}
@@ -47,10 +39,6 @@
 		+ h3 {
 			@include layout {
 				margin-block-start: m("sm");
-			}
-
-			@include layout(compact) {
-				margin-block-start: m("base");
 			}
 		}
 

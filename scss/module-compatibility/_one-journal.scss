@@ -24,8 +24,8 @@
 	}
 
 	.window-content {
-		background-color: color("background-lightest", 1);
-		background-image: $global-image-background;
+		background-color: color("background-lightest");
+		background-image: $global-image-background-lightest;
 	}
 
 	.one-journal-attached {

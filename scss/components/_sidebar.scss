@@ -27,7 +27,6 @@
 
 	@include layout(compact) {
 		@include size(to-rem(296px), calc(100% - #{to-rem(8px)}));
-		top: space("base");
 	}
 
 	&.collapsed {
@@ -98,10 +97,6 @@
 				position: relative;
 			}
 
-			@include layout(compact) {
-				padding: p("base");
-			}
-
 			&:hover {
 				@extend %global-hover;
 			}
@@ -162,6 +157,8 @@
 			flex: 1 1 auto;
 			flex-direction: column;
 			height: 100%;
+			justify-content: initial;
+			margin: 0;
 			min-height: to-rem(200px);
 			position: relative;
 
@@ -230,10 +227,6 @@
 					@include layout {
 						margin-block-start: m("sm");
 					}
-
-					@include layout(compact) {
-						margin-block-start: m("base");
-					}
 				}
 			}
 
@@ -249,10 +242,6 @@
 						margin: 0;
 					}
 				}
-
-				@include layout(compact) {
-					margin-inline-start: m("xs");
-				}
 			}
 
 			.header-actions {
@@ -263,15 +252,6 @@
 					margin-block-end: m("sm");
 					position: relative;
 					width: 100%;
-
-					&:only-child,
-					&:last-child {
-						margin-block-end: 0;
-					}
-				}
-
-				@include layout(compact) {
-					margin-block-end: m("xs");
 
 					&:only-child,
 					&:last-child {
@@ -292,10 +272,6 @@
 				+ .action-buttons {
 					@include layout {
 						margin-block-start: m("base");
-					}
-
-					@include layout(compact) {
-						margin-block-start: m("xs");
 					}
 				}
 			}
@@ -328,10 +304,5 @@
 		.window-content {
 			padding: 0;
 		}
-	}
-
-	@include layout(compact) {
-		height: auto;
-		min-height: to-rem(300px);
 	}
 }

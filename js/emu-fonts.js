@@ -1,0 +1,20 @@
+export const GOOGLE_FONTS = {
+	'Signika': 'Default',
+	'Cairo': 'Cairo',
+	'Fjalla One': 'Fjalla One',
+	'Lato': 'Lato',
+	'Lobster': 'Lobster',
+	'Nunito': 'Nunito',
+	'Open Sans': 'Open Sans',
+	'Oswald': 'Oswald',
+	'Oxygen': 'Oxygen',
+	'Roboto': 'Roboto',
+	'Roboto Condensed': 'Roboto Condensed',
+	'Source Code Pro': 'Source Code Pro',
+	'Source Sans Pro': 'Source Sans Pro',
+	'Staatliches': 'Staatliches',
+	'Stint Ultra Condensed': 'Stint Ultra Condensed',
+	'Teko': 'Teko',
+	'Titillium Web': 'Titillium Web',
+	'Viaoda Libre': 'Viaoda Libre'
+}
