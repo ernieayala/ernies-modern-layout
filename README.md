@@ -115,6 +115,7 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Search Anywhere
 - Settings Extender
 - Show Drag Distance
+- Simple Calendar (FNS)
 - Simple Dice Roller
 - Simplefog - Manual Fog of War (FNS)
 - Skill Customization for D&D5e
@@ -128,6 +129,7 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Token Action HUD
 - Token Attacher
 - Token Auras
+- Token HUD Wildcard (FNS)
 - Token Info Icons
 - Token Magic FX
 - Token Mold
