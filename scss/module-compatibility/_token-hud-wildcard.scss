@@ -1,6 +1,8 @@
 #hud {
 	#token-hud .thwildcard-button-select {
-		display: inline-flex;
-		height: auto;
+		@include layout {
+			display: inline-flex;
+			height: auto;
+		}
 	}
 }
