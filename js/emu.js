@@ -139,6 +139,7 @@ function updateSettings(settings) {
 }
 
 function setFontFamily(family) {
+	console.log(family);
 	let cleanString = family.replaceAll('+', ' ');
 	let formattedLink = family.replaceAll(' ', '+');
 	let googleFont  = document.createElement('link');
@@ -265,11 +266,7 @@ class emuForm extends FormApplication {
 	getFontFamily(formData) {
 		document.getElementById('emu-font-family').remove();
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
-		if(_fontFamilyCustom != '' || _fontFamilyCustom != null) {
-			setFontFamily(_fontFamilyCustom);
-		} else {
-			setFontFamily($('select[name="fontFamily"]').val());
-		}
+		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily($('select[name="fontFamily"]').val());
 	}
 
 	onReset() {
@@ -390,15 +387,8 @@ Hooks.once('ready', () => {
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
-		const _fontFamily = game.settings.get(moduleName, 'settings').fontFamily;
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
-
-
-		if(_fontFamilyCustom != '' || _fontFamilyCustom != null) {
-			setFontFamily(_fontFamilyCustom);
-		} else {
-			setFontFamily(_fontFamily);
-		}
+		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 	}, 1000);
 
 	// Say Hello
