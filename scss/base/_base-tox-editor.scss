@@ -6,3 +6,11 @@
 		color: inherit;
 	}
 }
+
+.tox.tox-tinymce .tox-edit-area__iframe {
+	background-color: color("white");
+
+	@include layout {
+		padding: p("sm");
+	}
+}

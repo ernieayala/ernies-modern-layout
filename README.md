@@ -42,12 +42,23 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Systems Tested Continually
 - DND 5e
 
+### Systems Partially Tested as of June 14th, 2021
+- DSA5
+- Pathfinder 2
+
 ### Systems Partially Tested as of June 9th, 2021
 - CoC 7
 - Pathfinder 1
-- Pathfinder 2
 - Savage Worlds
 - Starfinder
+
+### Mods Tested as of June 14th, 2021
+- Advanced Macros
+- Dfreds Droppables
+- Inititive Double Click
+- Mount Up
+- Simple Calendar (FNS)
+- Token HUD Wildcard (FNS)
 
 ### Mods Tested as of June 9th, 2021
 - About Time
@@ -115,7 +126,6 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Search Anywhere
 - Settings Extender
 - Show Drag Distance
-- Simple Calendar (FNS)
 - Simple Dice Roller
 - Simplefog - Manual Fog of War (FNS)
 - Skill Customization for D&D5e
@@ -129,7 +139,6 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Token Action HUD
 - Token Attacher
 - Token Auras
-- Token HUD Wildcard (FNS)
 - Token Info Icons
 - Token Magic FX
 - Token Mold
