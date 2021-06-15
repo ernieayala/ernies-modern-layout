@@ -1,5 +1,5 @@
-.coc7.window-app[id*="actor-"],
-.coc7.window-app[id*="item-"] {
+.coc7.actor.window-app,
+.coc7.item.window-app {
 	@include layout {
 		.window-content {
 			padding: 0;

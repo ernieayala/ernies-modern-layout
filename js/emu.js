@@ -399,7 +399,7 @@ Hooks.once('ready', () => {
 		} else {
 			setFontFamily(_fontFamily);
 		}
-	}, 500);
+	}, 1000);
 
 	// Say Hello
 	console.log('Ernie\'s Modern UI Active');
