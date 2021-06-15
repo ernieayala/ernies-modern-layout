@@ -37,7 +37,7 @@
 	.sidebar-tab .directory-footer {
 		button.create-pdf {
 			@include layout {
-				width: 100%;
+				flex: 1 1 auto;
 			}
 		}
 	}

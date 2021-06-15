@@ -73,7 +73,7 @@ body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     font-family: inherit;
     height: initial;
     justify-content: center;
@@ -184,7 +184,7 @@ body.-emu .dialog .dialog-buttons .dialog-button {
   width: var(--emu-space-button-sm);
   height: var(--emu-space-button-sm);
   flex: 0 0 auto;
-  font-size: 0.75rem;
+  font-size: var(--emu-font-size-sm);
   -webkit-margin-start: var(--emu-space-xs);
           margin-inline-start: var(--emu-space-xs);
   padding: 0; }
@@ -527,7 +527,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="range"]
       align-items: center;
       display: flex;
       flex: 0 0 auto;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       -webkit-margin-start: var(--emu-space-sm);
               margin-inline-start: var(--emu-space-sm);
       padding: 0; }
@@ -923,7 +923,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
     color: rgba(var(--color-text), 1); }
     .-emu-layout body.-emu .dialog .tabs a, body.-emu .dialog .-emu-layout .tabs a, .-emu-layout body.-emu .dialog .sheet-tabs a, body.-emu .dialog .-emu-layout .sheet-tabs a, .-emu-layout body.-emu #sidebar .tabs a, body.-emu #sidebar .-emu-layout .tabs a, .-emu-layout body.-emu #sidebar .sheet-tabs a, body.-emu #sidebar .-emu-layout .sheet-tabs a, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .tabs a, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .sheet-tabs a, .-emu-layout body.-emu #module-management .list-filters a, body.-emu #module-management .-emu-layout .list-filters a {
       flex: 1;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       text-shadow: none; }
 
 .-emu-layout body.-emu .dialog .directory .directory-item h3 > i, body.-emu .dialog .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .dialog .directory .directory-item h4 > i, body.-emu .dialog .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h3 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h4 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h4 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header h3 > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header h3 > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #context-menu ol.context-items .context-item > i, body.-emu #context-menu ol.context-items .-emu-layout .context-item > i, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-search > i, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-search > i {
@@ -935,7 +935,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
   margin: 0;
   padding: 0; }
 
-.-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
+.-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button, .-emu-layout body.-emu .window-app.token-mold .window-content form select.icon.fas.fa {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -965,10 +965,10 @@ body.-emu .sidebar-popout #chat #oocNotification {
   pointer-events: none;
   z-index: 0; }
 
-.-emu-layout body.-emu .window-app[id*="actor-flags-"] .window-content, body.-emu .-emu-layout .window-app[id*="actor-flags-"] .window-content, .-emu-layout body.-emu #default-token-config .window-content, body.-emu .-emu-layout #default-token-config .window-content, .-emu-layout body.-emu #drawing-config .window-content, body.-emu .-emu-layout #drawing-config .window-content, .-emu-layout body.-emu .sheet.scene-sheet .window-content, body.-emu .-emu-layout .sheet.scene-sheet .window-content, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] .window-content, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] .window-content, .-emu-layout body.-emu #wall-config .window-content, body.-emu .-emu-layout #wall-config .window-content, .-emu-layout body.-emu #healthestimate-style-form .window-content, body.-emu .-emu-layout #healthestimate-style-form .window-content, .-emu-layout body.-emu #midi-qol-settings .window-content, body.-emu .-emu-layout #midi-qol-settings .window-content, .-emu-layout body.-emu #narrator-config .window-content, body.-emu .-emu-layout #narrator-config .window-content, .-emu-layout body.-emu #turnmarker-settings-form .window-content, body.-emu .-emu-layout #turnmarker-settings-form .window-content {
+.-emu-layout body.-emu .window-app[id*="actor-flags-"] .window-content, body.-emu .-emu-layout .window-app[id*="actor-flags-"] .window-content, .-emu-layout body.-emu #default-token-config .window-content, body.-emu .-emu-layout #default-token-config .window-content, .-emu-layout body.-emu #drawing-config .window-content, body.-emu .-emu-layout #drawing-config .window-content, .-emu-layout body.-emu .sheet.scene-sheet .window-content, body.-emu .-emu-layout .sheet.scene-sheet .window-content, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] .window-content, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] .window-content, .-emu-layout body.-emu #wall-config .window-content, body.-emu .-emu-layout #wall-config .window-content, .-emu-layout body.-emu #healthestimate-style-form .window-content, body.-emu .-emu-layout #healthestimate-style-form .window-content, .-emu-layout body.-emu #midi-qol-settings .window-content, body.-emu .-emu-layout #midi-qol-settings .window-content, .-emu-layout body.-emu #mountup-settings-form .window-content, body.-emu .-emu-layout #mountup-settings-form .window-content, .-emu-layout body.-emu #narrator-config .window-content, body.-emu .-emu-layout #narrator-config .window-content, .-emu-layout body.-emu #turnmarker-settings-form .window-content, body.-emu .-emu-layout #turnmarker-settings-form .window-content {
   padding: 0; }
 
-.-emu-layout body.-emu .window-app[id*="actor-flags-"] form, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form, .-emu-layout body.-emu #default-token-config form, body.-emu .-emu-layout #default-token-config form, .-emu-layout body.-emu #drawing-config form, body.-emu .-emu-layout #drawing-config form, .-emu-layout body.-emu .sheet.scene-sheet form, body.-emu .-emu-layout .sheet.scene-sheet form, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form, .-emu-layout body.-emu #wall-config form, body.-emu .-emu-layout #wall-config form, .-emu-layout body.-emu #healthestimate-style-form form, body.-emu .-emu-layout #healthestimate-style-form form, .-emu-layout body.-emu #midi-qol-settings form, body.-emu .-emu-layout #midi-qol-settings form, .-emu-layout body.-emu #narrator-config form, body.-emu .-emu-layout #narrator-config form, .-emu-layout body.-emu #turnmarker-settings-form form, body.-emu .-emu-layout #turnmarker-settings-form form {
+.-emu-layout body.-emu .window-app[id*="actor-flags-"] form, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form, .-emu-layout body.-emu #default-token-config form, body.-emu .-emu-layout #default-token-config form, .-emu-layout body.-emu #drawing-config form, body.-emu .-emu-layout #drawing-config form, .-emu-layout body.-emu .sheet.scene-sheet form, body.-emu .-emu-layout .sheet.scene-sheet form, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form, .-emu-layout body.-emu #wall-config form, body.-emu .-emu-layout #wall-config form, .-emu-layout body.-emu #healthestimate-style-form form, body.-emu .-emu-layout #healthestimate-style-form form, .-emu-layout body.-emu #midi-qol-settings form, body.-emu .-emu-layout #midi-qol-settings form, .-emu-layout body.-emu #mountup-settings-form form, body.-emu .-emu-layout #mountup-settings-form form, .-emu-layout body.-emu #narrator-config form, body.-emu .-emu-layout #narrator-config form, .-emu-layout body.-emu #turnmarker-settings-form form, body.-emu .-emu-layout #turnmarker-settings-form form {
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
@@ -976,19 +976,19 @@ body.-emu .sidebar-popout #chat #oocNotification {
   padding: var(--emu-space-sm);
   position: relative; }
 
-.-emu-layout body.-emu .window-app[id*="actor-flags-"] .window-content, body.-emu .-emu-layout .window-app[id*="actor-flags-"] .window-content, .-emu-layout body.-emu #default-token-config .window-content, body.-emu .-emu-layout #default-token-config .window-content, .-emu-layout body.-emu .sheet.scene-sheet .window-content, body.-emu .-emu-layout .sheet.scene-sheet .window-content, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] .window-content, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] .window-content, .-emu-layout body.-emu #wall-config .window-content, body.-emu .-emu-layout #wall-config .window-content, .-emu-layout body.-emu #healthestimate-style-form .window-content, body.-emu .-emu-layout #healthestimate-style-form .window-content, .-emu-layout body.-emu #midi-qol-settings .window-content, body.-emu .-emu-layout #midi-qol-settings .window-content, .-emu-layout body.-emu #narrator-config .window-content, body.-emu .-emu-layout #narrator-config .window-content, .-emu-layout body.-emu #turnmarker-settings-form .window-content, body.-emu .-emu-layout #turnmarker-settings-form .window-content {
+.-emu-layout body.-emu .window-app[id*="actor-flags-"] .window-content, body.-emu .-emu-layout .window-app[id*="actor-flags-"] .window-content, .-emu-layout body.-emu #default-token-config .window-content, body.-emu .-emu-layout #default-token-config .window-content, .-emu-layout body.-emu .sheet.scene-sheet .window-content, body.-emu .-emu-layout .sheet.scene-sheet .window-content, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] .window-content, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] .window-content, .-emu-layout body.-emu #wall-config .window-content, body.-emu .-emu-layout #wall-config .window-content, .-emu-layout body.-emu #healthestimate-style-form .window-content, body.-emu .-emu-layout #healthestimate-style-form .window-content, .-emu-layout body.-emu #midi-qol-settings .window-content, body.-emu .-emu-layout #midi-qol-settings .window-content, .-emu-layout body.-emu #mountup-settings-form .window-content, body.-emu .-emu-layout #mountup-settings-form .window-content, .-emu-layout body.-emu #narrator-config .window-content, body.-emu .-emu-layout #narrator-config .window-content, .-emu-layout body.-emu #turnmarker-settings-form .window-content, body.-emu .-emu-layout #turnmarker-settings-form .window-content {
   overflow: hidden; }
 
-.-emu-layout body.-emu .window-app[id*="actor-flags-"] form, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form, .-emu-layout body.-emu #default-token-config form, body.-emu .-emu-layout #default-token-config form, .-emu-layout body.-emu .sheet.scene-sheet form, body.-emu .-emu-layout .sheet.scene-sheet form, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form, .-emu-layout body.-emu #wall-config form, body.-emu .-emu-layout #wall-config form, .-emu-layout body.-emu #healthestimate-style-form form, body.-emu .-emu-layout #healthestimate-style-form form, .-emu-layout body.-emu #midi-qol-settings form, body.-emu .-emu-layout #midi-qol-settings form, .-emu-layout body.-emu #narrator-config form, body.-emu .-emu-layout #narrator-config form, .-emu-layout body.-emu #turnmarker-settings-form form, body.-emu .-emu-layout #turnmarker-settings-form form {
+.-emu-layout body.-emu .window-app[id*="actor-flags-"] form, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form, .-emu-layout body.-emu #default-token-config form, body.-emu .-emu-layout #default-token-config form, .-emu-layout body.-emu .sheet.scene-sheet form, body.-emu .-emu-layout .sheet.scene-sheet form, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form, .-emu-layout body.-emu #wall-config form, body.-emu .-emu-layout #wall-config form, .-emu-layout body.-emu #healthestimate-style-form form, body.-emu .-emu-layout #healthestimate-style-form form, .-emu-layout body.-emu #midi-qol-settings form, body.-emu .-emu-layout #midi-qol-settings form, .-emu-layout body.-emu #mountup-settings-form form, body.-emu .-emu-layout #mountup-settings-form form, .-emu-layout body.-emu #narrator-config form, body.-emu .-emu-layout #narrator-config form, .-emu-layout body.-emu #turnmarker-settings-form form, body.-emu .-emu-layout #turnmarker-settings-form form {
   overflow-x: hidden;
   overflow-y: auto; }
 
-body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu #default-token-config form::after, body.-emu .sheet.scene-sheet form::after, body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu #wall-config form::after, body.-emu #healthestimate-style-form form::after, body.-emu #midi-qol-settings form::after, body.-emu #narrator-config form::after, body.-emu #turnmarker-settings-form form::after {
+body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu #default-token-config form::after, body.-emu .sheet.scene-sheet form::after, body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu #wall-config form::after, body.-emu #healthestimate-style-form form::after, body.-emu #midi-qol-settings form::after, body.-emu #mountup-settings-form form::after, body.-emu #narrator-config form::after, body.-emu #turnmarker-settings-form form::after {
   background-color: rgba(var(--color-background-lightest), 1);
   background-image: var(--emu-image-background-light, none);
   -webkit-border-before: 1px solid rgba(var(--color-border), 1);
           border-block-start: 1px solid rgba(var(--color-border), 1); }
-  .-emu-layout body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form::after, .-emu-layout body.-emu #default-token-config form::after, body.-emu .-emu-layout #default-token-config form::after, .-emu-layout body.-emu .sheet.scene-sheet form::after, body.-emu .-emu-layout .sheet.scene-sheet form::after, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form::after, .-emu-layout body.-emu #wall-config form::after, body.-emu .-emu-layout #wall-config form::after, .-emu-layout body.-emu #healthestimate-style-form form::after, body.-emu .-emu-layout #healthestimate-style-form form::after, .-emu-layout body.-emu #midi-qol-settings form::after, body.-emu .-emu-layout #midi-qol-settings form::after, .-emu-layout body.-emu #narrator-config form::after, body.-emu .-emu-layout #narrator-config form::after, .-emu-layout body.-emu #turnmarker-settings-form form::after, body.-emu .-emu-layout #turnmarker-settings-form form::after {
+  .-emu-layout body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form::after, .-emu-layout body.-emu #default-token-config form::after, body.-emu .-emu-layout #default-token-config form::after, .-emu-layout body.-emu .sheet.scene-sheet form::after, body.-emu .-emu-layout .sheet.scene-sheet form::after, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form::after, .-emu-layout body.-emu #wall-config form::after, body.-emu .-emu-layout #wall-config form::after, .-emu-layout body.-emu #healthestimate-style-form form::after, body.-emu .-emu-layout #healthestimate-style-form form::after, .-emu-layout body.-emu #midi-qol-settings form::after, body.-emu .-emu-layout #midi-qol-settings form::after, .-emu-layout body.-emu #mountup-settings-form form::after, body.-emu .-emu-layout #mountup-settings-form form::after, .-emu-layout body.-emu #narrator-config form::after, body.-emu .-emu-layout #narrator-config form::after, .-emu-layout body.-emu #turnmarker-settings-form form::after, body.-emu .-emu-layout #turnmarker-settings-form form::after {
     bottom: calc(-1 * var(--emu-space-sm));
     content: "";
     flex: 0 0 auto;
@@ -999,18 +999,18 @@ body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu #default-token-
     position: sticky;
     width: 100%;
     z-index: 5; }
-  .-emu-layout.-emu-compact body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu .-emu-layout.-emu-compact .window-app[id*="actor-flags-"] form::after, .-emu-layout.-emu-compact body.-emu #default-token-config form::after, body.-emu .-emu-layout.-emu-compact #default-token-config form::after, .-emu-layout.-emu-compact body.-emu .sheet.scene-sheet form::after, body.-emu .-emu-layout.-emu-compact .sheet.scene-sheet form::after, .-emu-layout.-emu-compact body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu .-emu-layout.-emu-compact .window-app.sheet[id*="template-config"] form::after, .-emu-layout.-emu-compact body.-emu #wall-config form::after, body.-emu .-emu-layout.-emu-compact #wall-config form::after, .-emu-layout.-emu-compact body.-emu #healthestimate-style-form form::after, body.-emu .-emu-layout.-emu-compact #healthestimate-style-form form::after, .-emu-layout.-emu-compact body.-emu #midi-qol-settings form::after, body.-emu .-emu-layout.-emu-compact #midi-qol-settings form::after, .-emu-layout.-emu-compact body.-emu #narrator-config form::after, body.-emu .-emu-layout.-emu-compact #narrator-config form::after, .-emu-layout.-emu-compact body.-emu #turnmarker-settings-form form::after, body.-emu .-emu-layout.-emu-compact #turnmarker-settings-form form::after {
+  .-emu-layout.-emu-compact body.-emu .window-app[id*="actor-flags-"] form::after, body.-emu .-emu-layout.-emu-compact .window-app[id*="actor-flags-"] form::after, .-emu-layout.-emu-compact body.-emu #default-token-config form::after, body.-emu .-emu-layout.-emu-compact #default-token-config form::after, .-emu-layout.-emu-compact body.-emu .sheet.scene-sheet form::after, body.-emu .-emu-layout.-emu-compact .sheet.scene-sheet form::after, .-emu-layout.-emu-compact body.-emu .window-app.sheet[id*="template-config"] form::after, body.-emu .-emu-layout.-emu-compact .window-app.sheet[id*="template-config"] form::after, .-emu-layout.-emu-compact body.-emu #wall-config form::after, body.-emu .-emu-layout.-emu-compact #wall-config form::after, .-emu-layout.-emu-compact body.-emu #healthestimate-style-form form::after, body.-emu .-emu-layout.-emu-compact #healthestimate-style-form form::after, .-emu-layout.-emu-compact body.-emu #midi-qol-settings form::after, body.-emu .-emu-layout.-emu-compact #midi-qol-settings form::after, .-emu-layout.-emu-compact body.-emu #mountup-settings-form form::after, body.-emu .-emu-layout.-emu-compact #mountup-settings-form form::after, .-emu-layout.-emu-compact body.-emu #narrator-config form::after, body.-emu .-emu-layout.-emu-compact #narrator-config form::after, .-emu-layout.-emu-compact body.-emu #turnmarker-settings-form form::after, body.-emu .-emu-layout.-emu-compact #turnmarker-settings-form form::after {
     height: 2.375rem;
     -webkit-margin-before: -1.875rem;
             margin-block-start: -1.875rem; }
 
-.-emu-layout body.-emu .window-app[id*="actor-flags-"] form .form-group:last-of-type, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form .form-group:last-of-type, .-emu-layout body.-emu #default-token-config form .form-group:last-of-type, body.-emu .-emu-layout #default-token-config form .form-group:last-of-type, .-emu-layout body.-emu .sheet.scene-sheet form .form-group:last-of-type, body.-emu .-emu-layout .sheet.scene-sheet form .form-group:last-of-type, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form .form-group:last-of-type, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form .form-group:last-of-type, .-emu-layout body.-emu #wall-config form .form-group:last-of-type, body.-emu .-emu-layout #wall-config form .form-group:last-of-type, .-emu-layout body.-emu #healthestimate-style-form form .form-group:last-of-type, body.-emu .-emu-layout #healthestimate-style-form form .form-group:last-of-type, .-emu-layout body.-emu #midi-qol-settings form .form-group:last-of-type, body.-emu .-emu-layout #midi-qol-settings form .form-group:last-of-type, .-emu-layout body.-emu #narrator-config form .form-group:last-of-type, body.-emu .-emu-layout #narrator-config form .form-group:last-of-type, .-emu-layout body.-emu #turnmarker-settings-form form .form-group:last-of-type, body.-emu .-emu-layout #turnmarker-settings-form form .form-group:last-of-type {
+.-emu-layout body.-emu .window-app[id*="actor-flags-"] form .form-group:last-of-type, body.-emu .-emu-layout .window-app[id*="actor-flags-"] form .form-group:last-of-type, .-emu-layout body.-emu #default-token-config form .form-group:last-of-type, body.-emu .-emu-layout #default-token-config form .form-group:last-of-type, .-emu-layout body.-emu .sheet.scene-sheet form .form-group:last-of-type, body.-emu .-emu-layout .sheet.scene-sheet form .form-group:last-of-type, .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form .form-group:last-of-type, body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form .form-group:last-of-type, .-emu-layout body.-emu #wall-config form .form-group:last-of-type, body.-emu .-emu-layout #wall-config form .form-group:last-of-type, .-emu-layout body.-emu #healthestimate-style-form form .form-group:last-of-type, body.-emu .-emu-layout #healthestimate-style-form form .form-group:last-of-type, .-emu-layout body.-emu #midi-qol-settings form .form-group:last-of-type, body.-emu .-emu-layout #midi-qol-settings form .form-group:last-of-type, .-emu-layout body.-emu #mountup-settings-form form .form-group:last-of-type, body.-emu .-emu-layout #mountup-settings-form form .form-group:last-of-type, .-emu-layout body.-emu #narrator-config form .form-group:last-of-type, body.-emu .-emu-layout #narrator-config form .form-group:last-of-type, .-emu-layout body.-emu #turnmarker-settings-form form .form-group:last-of-type, body.-emu .-emu-layout #turnmarker-settings-form form .form-group:last-of-type {
   -webkit-margin-after: var(--emu-space-md);
           margin-block-end: var(--emu-space-md); }
 
-body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-emu #default-token-config form > button[type="submit"], body.-emu .sheet.scene-sheet form > button[type="submit"], body.-emu .window-app.sheet[id*="template-config"] form > button[type="submit"], body.-emu #wall-config form > button[type="submit"], body.-emu #healthestimate-style-form form > button[type="submit"], body.-emu #midi-qol-settings form > button[type="submit"], body.-emu #narrator-config form > button[type="submit"], body.-emu #turnmarker-settings-form form > button[type="submit"] {
+body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-emu #default-token-config form > button[type="submit"], body.-emu .sheet.scene-sheet form > button[type="submit"], body.-emu .window-app.sheet[id*="template-config"] form > button[type="submit"], body.-emu #wall-config form > button[type="submit"], body.-emu #healthestimate-style-form form > button[type="submit"], body.-emu #midi-qol-settings form > button[type="submit"], body.-emu #mountup-settings-form form > button[type="submit"], body.-emu #narrator-config form > button[type="submit"], body.-emu #turnmarker-settings-form form > button[type="submit"] {
   border-radius: var(--emu-border-radius-controls, 0); }
-  .-emu-layout body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-emu .-emu-layout .window-app[id*="actor-flags-"] form > button[type="submit"], .-emu-layout body.-emu #default-token-config form > button[type="submit"], body.-emu .-emu-layout #default-token-config form > button[type="submit"], .-emu-layout body.-emu .sheet.scene-sheet form > button[type="submit"], body.-emu .-emu-layout .sheet.scene-sheet form > button[type="submit"], .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form > button[type="submit"], body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form > button[type="submit"], .-emu-layout body.-emu #wall-config form > button[type="submit"], body.-emu .-emu-layout #wall-config form > button[type="submit"], .-emu-layout body.-emu #healthestimate-style-form form > button[type="submit"], body.-emu .-emu-layout #healthestimate-style-form form > button[type="submit"], .-emu-layout body.-emu #midi-qol-settings form > button[type="submit"], body.-emu .-emu-layout #midi-qol-settings form > button[type="submit"], .-emu-layout body.-emu #narrator-config form > button[type="submit"], body.-emu .-emu-layout #narrator-config form > button[type="submit"], .-emu-layout body.-emu #turnmarker-settings-form form > button[type="submit"], body.-emu .-emu-layout #turnmarker-settings-form form > button[type="submit"] {
+  .-emu-layout body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-emu .-emu-layout .window-app[id*="actor-flags-"] form > button[type="submit"], .-emu-layout body.-emu #default-token-config form > button[type="submit"], body.-emu .-emu-layout #default-token-config form > button[type="submit"], .-emu-layout body.-emu .sheet.scene-sheet form > button[type="submit"], body.-emu .-emu-layout .sheet.scene-sheet form > button[type="submit"], .-emu-layout body.-emu .window-app.sheet[id*="template-config"] form > button[type="submit"], body.-emu .-emu-layout .window-app.sheet[id*="template-config"] form > button[type="submit"], .-emu-layout body.-emu #wall-config form > button[type="submit"], body.-emu .-emu-layout #wall-config form > button[type="submit"], .-emu-layout body.-emu #healthestimate-style-form form > button[type="submit"], body.-emu .-emu-layout #healthestimate-style-form form > button[type="submit"], .-emu-layout body.-emu #midi-qol-settings form > button[type="submit"], body.-emu .-emu-layout #midi-qol-settings form > button[type="submit"], .-emu-layout body.-emu #mountup-settings-form form > button[type="submit"], body.-emu .-emu-layout #mountup-settings-form form > button[type="submit"], .-emu-layout body.-emu #narrator-config form > button[type="submit"], body.-emu .-emu-layout #narrator-config form > button[type="submit"], .-emu-layout body.-emu #turnmarker-settings-form form > button[type="submit"], body.-emu .-emu-layout #turnmarker-settings-form form > button[type="submit"] {
     bottom: 0;
     position: -webkit-sticky;
     position: sticky;
@@ -1130,6 +1130,13 @@ body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-em
   --emu-image-background-light: none;
   --emu-image-background-darkest: none;
   --emu-image-background-controls: none;
+  --emu-font-size-xxl: 1.5rem;
+  --emu-font-size-xl: 1.25rem;
+  --emu-font-size-lg: 1rem;
+  --emu-font-size-md: 0.875rem;
+  --emu-font-size-sm: 0.75rem;
+  --emu-font-size-xs: 0.625rem;
+  --emu-font-size-chat-roll: 1.125rem;
   --emu-subtle-opacity: 0.3;
   --emu-space-pf: 0.0625rem;
   --emu-space-base: 0.25rem;
@@ -1187,7 +1194,7 @@ body {
   background-image: var(--emu-image-background, none);
   box-shadow: none; }
   .-emu-layout body {
-    font-size: 0.875rem; }
+    font-size: var(--emu-font-size-md); }
   body ::-moz-selection {
     background-color: rgba(var(--color-gray-200), 1); }
   body ::selection {
@@ -1391,7 +1398,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
           text-overflow: ellipsis;
           white-space: nowrap;
           flex: 1 1 auto;
-          font-size: 1rem;
+          font-size: var(--emu-font-size-lg);
           font-weight: normal;
           line-height: 1;
           margin: 0;
@@ -1450,7 +1457,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
       text-overflow: ellipsis;
       white-space: nowrap;
       flex: 1 1 auto;
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       font-weight: normal;
       line-height: 1;
       margin: 0;
@@ -1480,7 +1487,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
         cursor: pointer;
         display: block;
         flex: 1 1 auto;
-        font-size: 1rem;
+        font-size: var(--emu-font-size-lg);
         line-height: var(--emu-space-button);
         padding: 0;
         position: relative;
@@ -1512,7 +1519,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header
   .-emu-layout body.-emu .dialog form h3.form-header, .-emu-layout
   body.-emu #sidebar form h3.form-header, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header {
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     -webkit-margin-before: var(--emu-space-md);
             margin-block-start: var(--emu-space-md);
     -webkit-margin-after: var(--emu-space-base);
@@ -1529,7 +1536,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     justify-content: space-between;
     margin: 0;
     padding: var(--emu-space-sm); }
@@ -1729,7 +1736,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group label {
     align-items: center;
     display: inline-flex;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     line-height: initial;
     margin: 0;
     -webkit-padding-end: var(--emu-space-base);
@@ -1762,7 +1769,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
       text-overflow: ellipsis;
       white-space: nowrap;
       display: block;
-      font-size: 0.75rem;
+      font-size: var(--emu-font-size-sm);
       line-height: initial;
       margin: 0 var(--emu-space-base); }
   .-emu-layout body.-emu .dialog form .form-group label > i, .-emu-layout
@@ -1790,7 +1797,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .hint {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .notes, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .hint {
     flex: 0 0 auto;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     font-style: italic;
     line-height: initial;
     margin: 0;
@@ -1910,7 +1917,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h1 {
   .-emu-layout body.-emu .dialog h1, .-emu-layout
   body.-emu #sidebar h1, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h1 {
-    font-size: 1.5rem; }
+    font-size: var(--emu-font-size-xxl); }
 
 body.-emu .dialog h2,
 body.-emu #sidebar h2,
@@ -1920,12 +1927,12 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h2 {
   .-emu-layout body.-emu .dialog h2, .-emu-layout
   body.-emu #sidebar h2, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h2 {
-    font-size: 1.25rem; }
+    font-size: var(--emu-font-size-xl); }
 
 .-emu-layout body.-emu .dialog h3, .-emu-layout
 body.-emu #sidebar h3, .-emu-layout
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h3 {
-  font-size: 1rem; }
+  font-size: var(--emu-font-size-lg); }
 
 body.-emu .dialog a,
 body.-emu #sidebar a,
@@ -2037,6 +2044,15 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox-toolbar__prima
     background: transparent;
     color: inherit; }
 
+body.-emu .dialog .tox.tox-tinymce .tox-edit-area__iframe,
+body.-emu #sidebar .tox.tox-tinymce .tox-edit-area__iframe,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox.tox-tinymce .tox-edit-area__iframe {
+  background-color: rgba(var(--color-white), 1); }
+  .-emu-layout body.-emu .dialog .tox.tox-tinymce .tox-edit-area__iframe, .-emu-layout
+  body.-emu #sidebar .tox.tox-tinymce .tox-edit-area__iframe, .-emu-layout
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox.tox-tinymce .tox-edit-area__iframe {
+    padding: var(--emu-space-sm); }
+
 body.-emu #context-menu {
   background-color: rgba(var(--color-background-lightest), 1);
   background-image: var(--emu-image-background-lightest, none);
@@ -2099,7 +2115,7 @@ body.-emu .dialog div.dialog-content p:first-child {
 body.-emu .dialog .dialog-content {
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu .dialog .dialog-content {
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     padding: var(--emu-space-sm); }
   .-emu-layout body.-emu .dialog .dialog-content > p + .form-group {
     -webkit-margin-before: var(--emu-space-md);
@@ -2240,7 +2256,7 @@ body.-emu #hotbar .bar-controls {
       cursor: pointer;
       display: flex;
       flex: 0 0 auto;
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       justify-content: center;
       line-height: initial;
       position: relative; }
@@ -2255,7 +2271,7 @@ body.-emu #hotbar .bar-controls {
       -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
               border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout.-emu-compact body.-emu #hotbar .bar-controls .page-control {
-    font-size: 0.625rem; }
+    font-size: var(--emu-font-size-xs); }
   body.-emu #hotbar .bar-controls .page-number {
     background-color: rgba(var(--color-background), 0.5);
     background-image: var(--emu-image-background-controls, none);
@@ -2263,7 +2279,7 @@ body.-emu #hotbar .bar-controls {
     .-emu-layout body.-emu #hotbar .bar-controls .page-number {
       display: flex;
       flex: 1 1 auto;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       line-height: initial; }
 
@@ -2329,7 +2345,7 @@ body.-emu #hotbar .macro {
     border-radius: var(--emu-border-radius-default, 0);
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #hotbar .macro .tooltip {
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       height: auto;
       left: 0;
       line-height: auto;
@@ -2381,7 +2397,7 @@ body.-emu #hud .control-icon {
     display: flex;
     justify-content: center;
     flex: 0 0 auto;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     line-height: initial;
     margin: 0;
     -webkit-margin-after: var(--emu-space-base);
@@ -2466,7 +2482,7 @@ body.-emu #loading {
       align-items: center;
       display: flex;
       height: 100%;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       line-height: initial;
       margin: 0 var(--emu-space-md);
       padding: 0; }
@@ -2515,7 +2531,7 @@ body.-emu #menu {
       flex-direction: column;
       padding: var(--emu-space-sm); }
     .-emu-layout body.-emu #menu #menu-items li {
-      font-size: 1.25rem;
+      font-size: var(--emu-font-size-xl);
       -webkit-margin-after: var(--emu-space-sm);
               margin-block-end: var(--emu-space-sm); }
     .-emu-layout body.-emu #menu #menu-items li:last-child {
@@ -2654,7 +2670,7 @@ body.-emu #pause {
     color: rgba(var(--color-primary), 1);
     text-shadow: 1px 1px 4px rgba(var(--color-black), 1); }
     .-emu-layout body.-emu #pause h3 {
-      font-size: 1.25rem;
+      font-size: var(--emu-font-size-xl);
       line-height: initial;
       -webkit-margin-before: 10rem;
               margin-block-start: 10rem; }
@@ -2697,7 +2713,7 @@ body.-emu #players {
     .-emu-layout body.-emu #players > h3 {
       cursor: pointer;
       display: flex;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       font-weight: normal;
       margin: 0;
       padding: var(--emu-space-sm);
@@ -2711,7 +2727,7 @@ body.-emu #players {
       color: inherit; }
       .-emu-layout body.-emu #players > h3 .players-mode {
         flex: 1 1 auto;
-        font-size: 1rem;
+        font-size: var(--emu-font-size-lg);
         text-align: right;
         position: relative; }
     .-emu-layout body.-emu #players > h3 > i {
@@ -2799,7 +2815,7 @@ body.-emu #controls .control-tool {
   border-radius: var(--emu-border-radius-controls, 0);
   box-shadow: none;
   color: rgba(var(--color-text-lightest), 1);
-  font-size: 1rem;
+  font-size: var(--emu-font-size-lg);
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu #controls .scene-control, .-emu-layout
   body.-emu #controls .control-tool {
@@ -2810,8 +2826,10 @@ body.-emu #controls .control-tool {
     display: flex;
     justify-content: center;
     line-height: initial;
+    margin: 0;
     -webkit-margin-after: var(--emu-space-base);
             margin-block-end: var(--emu-space-base);
+    padding: 0;
     pointer-events: all;
     position: relative; }
     .-emu-layout body.-emu #controls .scene-control:last-of-type, .-emu-layout
@@ -2982,6 +3000,7 @@ body.-emu #navigation {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        border: none;
         display: block; }
         .-emu-layout body.-emu #navigation #scene-list .scene a > i, .-emu-layout
         body.-emu #navigation .scene-list .scene a > i {
@@ -3009,7 +3028,7 @@ body.-emu #navigation {
     border: none;
     box-shadow: inset 0 0 0 1px rgba(var(--color-primary), 1), inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
     color: transparent;
-    font-size: 0.625rem; }
+    font-size: var(--emu-font-size-xs); }
     .-emu-layout body.-emu #navigation #scene-list .scene-player, .-emu-layout
     body.-emu #navigation .scene-list .scene-player {
       width: 0.75rem;
@@ -3118,7 +3137,7 @@ body.-emu .window-app {
         align-items: center;
         color: rgba(var(--color-text-lightest), 1);
         display: flex;
-        font-size: 1rem;
+        font-size: var(--emu-font-size-lg);
         justify-content: center;
         margin: 0; }
       .-emu-layout body.-emu .window-app .window-header a.header-button > i, .-emu-layout
@@ -3130,7 +3149,7 @@ body.-emu .window-app {
     color: rgba(var(--color-text), 1); }
     .-emu-layout body.-emu .window-app .window-content {
       flex: 1 1 auto;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       margin: 0;
       overflow-x: hidden;
       overflow-y: auto;
@@ -3159,7 +3178,7 @@ body.-emu .window-app {
       align-items: center;
       cursor: pointer;
       display: inline-flex;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       margin: 0;
       padding: 0;
@@ -3196,7 +3215,7 @@ body.-emu .sheet .sheet-header > h1 input {
     width: 100%;
     height: 2.5rem;
     flex: 0 0 auto;
-    font-size: 1.5rem;
+    font-size: var(--emu-font-size-xxl);
     line-height: 1;
     margin: 0; }
 
@@ -3279,7 +3298,7 @@ body.-emu .sidebar-popout {
       display: flex;
       flex: 0 0 auto;
       flex-wrap: nowrap;
-      font-size: 0.75rem;
+      font-size: var(--emu-font-size-sm);
       margin: 0;
       position: relative; }
     body.-emu #sidebar #sidebar-tabs > .item,
@@ -3299,11 +3318,14 @@ body.-emu .sidebar-popout {
         cursor: pointer;
         display: flex;
         flex: 1 1 20%;
-        font-size: 0.75rem;
+        font-size: var(--emu-font-size-sm);
         justify-content: center;
+        left: auto;
         line-height: initial;
+        margin: 0;
         padding: var(--emu-space-sm);
-        position: relative; }
+        position: relative;
+        top: auto; }
       body.-emu #sidebar #sidebar-tabs > .item.active,
       body.-emu #sidebar #sidebar-tabs > .collapse.active,
       body.-emu .sidebar-popout #sidebar-tabs > .item.active,
@@ -3391,7 +3413,7 @@ body.-emu .sidebar-popout {
     body.-emu #sidebar .sidebar-tab .directory-footer button > i, .-emu-layout
     body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions button > i, .-emu-layout
     body.-emu .sidebar-popout .sidebar-tab .directory-footer button > i {
-      font-size: 0.875rem; }
+      font-size: var(--emu-font-size-md); }
   body.-emu #sidebar .sidebar-tab .directory-header,
   body.-emu .sidebar-popout .sidebar-tab .directory-header {
     -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
@@ -3485,7 +3507,7 @@ body.-emu .sidebar-popout #chat #chat-log .message {
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-log .message {
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     padding: var(--emu-space-base);
     margin: var(--emu-space-base); }
     .-emu-layout body.-emu #sidebar #chat #chat-log .message:hover .message-metadata, .-emu-layout body.-emu #sidebar #chat #chat-log .message:focus .message-metadata, .-emu-layout
@@ -3519,7 +3541,7 @@ body.-emu .sidebar-popout #chat #chat-log .message {
     body.-emu .sidebar-popout #chat #chat-log .message .message-sender {
       align-items: center;
       display: inline-flex;
-      font-size: 0.75rem; }
+      font-size: var(--emu-font-size-sm); }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message .message-sender, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-log .message .message-sender {
     margin: var(--emu-space-base) 0;
@@ -3548,7 +3570,7 @@ body.-emu .sidebar-popout #chat #chat-log .message {
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula, .-emu-layout
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total {
       line-height: initial;
-      font-size: 1.125rem;
+      font-size: var(--emu-font-size-chat-roll);
       font-weight: normal; }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll + .dice-roll, .-emu-layout
   body.-emu #sidebar #chat #chat-log .message .dice-total + .dice-total, .-emu-layout
@@ -3584,7 +3606,7 @@ body.-emu .sidebar-popout #chat #chat-controls {
             margin-inline-end: var(--emu-space-xs); }
   .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 {
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     margin: 0; }
   body.-emu #sidebar #chat #chat-controls .roll-type-select,
   body.-emu .sidebar-popout #chat #chat-controls .roll-type-select {
@@ -3662,7 +3684,7 @@ body.-emu .sidebar-popout #combat #combat-round .encounters h4 {
     white-space: nowrap;
     display: block;
     flex: 1 1 auto;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     -webkit-margin-start: var(--emu-space-base);
             margin-inline-start: var(--emu-space-base);
     text-align: center; }
@@ -3672,7 +3694,7 @@ body.-emu .sidebar-popout #combat #combat-round .encounters h3 {
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu #sidebar #combat #combat-round .encounters h3, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-round .encounters h3 {
-    font-size: 1.25rem; }
+    font-size: var(--emu-font-size-xl); }
 
 .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a[disabled], .-emu-layout
 body.-emu .sidebar-popout #combat #combat-round .encounters a[disabled] {
@@ -3757,7 +3779,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
         text-overflow: ellipsis;
         white-space: nowrap;
         flex: initial;
-        font-size: 1rem;
+        font-size: var(--emu-font-size-lg);
         line-height: initial;
         -webkit-margin-after: var(--emu-space-base);
                 margin-block-end: var(--emu-space-base); }
@@ -3780,7 +3802,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
             border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-resource, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource {
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       line-height: 1;
       -webkit-margin-start: var(--emu-space-sm);
               margin-inline-start: var(--emu-space-sm);
@@ -3797,7 +3819,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
     text-shadow: none; }
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative .initiative, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative .initiative {
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       font-weight: normal; }
   .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-controls, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-controls {
@@ -3817,7 +3839,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
       width: var(--emu-space-button);
       height: var(--emu-space-button);
       background: transparent;
-      font-size: 1.25rem;
+      font-size: var(--emu-font-size-xl);
       margin: 0; }
       .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll::before, .-emu-layout
       body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll::before {
@@ -3900,7 +3922,7 @@ body.-emu .sidebar-popout #scenes .scene {
     text-shadow: none; }
     .-emu-layout body.-emu #sidebar #scenes .scene h3, .-emu-layout
     body.-emu .sidebar-popout #scenes .scene h3 {
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       line-height: 1;
       text-align: start; }
     body.-emu #sidebar #scenes .scene h3 > a,
@@ -3970,7 +3992,7 @@ body.-emu .sidebar-popout #playlists {
       color: rgba(var(--color-text-lightest), 1); }
       .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-header, .-emu-layout
       body.-emu .sidebar-popout #playlists .global-control .playlist-header {
-        font-size: 0.875rem;
+        font-size: var(--emu-font-size-md);
         padding: var(--emu-space-xs) 0;
         width: 100%; }
       body.-emu #sidebar #playlists .global-control .playlist-header h4,
@@ -4007,7 +4029,7 @@ body.-emu .sidebar-popout #playlists {
         color: rgba(var(--color-text-lightest), 1); }
         .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4, .-emu-layout
         body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 {
-          font-size: 1rem; }
+          font-size: var(--emu-font-size-lg); }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4 + input[type="range"], .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 + input[type="range"] {
             -webkit-margin-start: var(--emu-space-base);
@@ -4173,7 +4195,7 @@ body.-emu .sidebar-popout #playlists {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-playback .sound-timer, .-emu-layout
     body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .sound-timer {
-      font-size: 0.75rem;
+      font-size: var(--emu-font-size-sm);
       -webkit-margin-end: var(--emu-space-sm);
               margin-inline-end: var(--emu-space-sm); }
   .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-playback .volume-icon, .-emu-layout
@@ -4216,7 +4238,7 @@ body.-emu .sidebar-popout #compendium .directory-item .compendium-footer {
   .-emu-layout body.-emu #sidebar #compendium .directory-item .compendium-footer, .-emu-layout
   body.-emu .sidebar-popout #compendium .directory-item .compendium-footer {
     flex: 0 0 auto;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     -webkit-padding-after: var(--emu-space-sm);
             padding-block-end: var(--emu-space-sm);
     width: 100%; }
@@ -4246,7 +4268,7 @@ body.-emu .sidebar-popout #compendium .compendium-type {
       cursor: default;
       display: flex;
       flex-wrap: nowrap;
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       line-height: 1;
       margin: 0;
       min-height: var(--emu-space-button);
@@ -4283,7 +4305,7 @@ body.-emu .sidebar-popout #settings h2 {
           border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
   .-emu-layout body.-emu #sidebar #settings h2, .-emu-layout
   body.-emu .sidebar-popout #settings h2 {
-    font-size: 1.25rem;
+    font-size: var(--emu-font-size-xl);
     -webkit-margin-before: var(--emu-space-sm);
             margin-block-start: var(--emu-space-sm); }
 
@@ -4292,7 +4314,7 @@ body.-emu .sidebar-popout #settings h4 {
   color: rgba(var(--color-primary), 1); }
   .-emu-layout body.-emu #sidebar #settings h4, .-emu-layout
   body.-emu .sidebar-popout #settings h4 {
-    font-size: 1rem; }
+    font-size: var(--emu-font-size-lg); }
 
 .-emu-layout body.-emu #sidebar #settings button, .-emu-layout
 body.-emu .sidebar-popout #settings button {
@@ -4384,7 +4406,7 @@ body.-emu #client-settings.window-app.form #config-tabs {
 
 .-emu-layout body.-emu #client-settings.window-app.form section.content .submenu > button {
   height: initial;
-  font-size: 1rem; }
+  font-size: var(--emu-font-size-lg); }
   .-emu-layout body.-emu #client-settings.window-app.form section.content .submenu > button label {
     padding: 0;
     pointer-events: none; }
@@ -4400,7 +4422,7 @@ body.-emu #client-settings.window-app.form section.content .settings-list {
     padding: 0; }
 
 .-emu-layout body.-emu #client-settings.window-app.form form .form-group button label {
-  font-size: 1rem; }
+  font-size: var(--emu-font-size-lg); }
 
 .-emu-layout body.-emu #client-settings.window-app.form .form-group.submenu .notes {
   -webkit-margin-before: var(--emu-space-sm);
@@ -4511,7 +4533,7 @@ body.-emu .filepicker.window-app .filepicker-body.images .file {
       text-overflow: ellipsis;
       white-space: nowrap;
       display: block;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       grid-area: title;
       left: auto;
       line-height: 1;
@@ -4578,7 +4600,7 @@ body.-emu .filepicker.window-app .directory .file {
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     font-weight: normal;
     height: auto;
     line-height: var(--emu-space-button);
@@ -4721,7 +4743,7 @@ body.-emu #module-management .package {
     .-emu-layout body.-emu #module-management .package .tag {
       align-items: center;
       display: inline-flex;
-      font-size: 0.75rem;
+      font-size: var(--emu-font-size-sm);
       height: auto;
       justify-content: center;
       line-height: initial;
@@ -4738,7 +4760,7 @@ body.-emu #module-management .package-title {
   .-emu-layout body.-emu #module-management .package-title {
     align-items: center;
     display: flex;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     font-weight: normal;
     height: initial;
     line-height: 1;
@@ -4820,7 +4842,7 @@ body.-emu .window-app[id*="trait-selector-"] .window-content form > ul label {
 .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol label.checkbox, .-emu-layout
 body.-emu .window-app[id*="trait-selector-"] .window-content form > ul label.checkbox {
   height: auto;
-  font-size: 0.875rem;
+  font-size: var(--emu-font-size-md);
   line-height: initial; }
   .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol label.checkbox > input, .-emu-layout
   body.-emu .window-app[id*="trait-selector-"] .window-content form > ul label.checkbox > input {
@@ -4900,6 +4922,27 @@ body.-emu #link-creation.coc7 .form-group label {
     -webkit-margin-end: var(--emu-space-sm);
             margin-inline-end: var(--emu-space-sm); }
 
+.-emu-layout body.-emu.system-dsa5 #players::before,
+.-emu-layout body.-emu.system-dsa5 #players h3::before,
+.-emu-layout body.-emu.system-dsa5 #player-list::before,
+.-emu-layout body.-emu.system-dsa5 #hotbar::before,
+.-emu-layout body.-emu.system-dsa5 #sidebar::before {
+  display: none; }
+
+.-emu-layout body.-emu.system-dsa5 .window-app::after {
+  display: none; }
+
+.-emu-layout body.-emu.system-dsa5 .window-app .window-header {
+  top: auto; }
+
+.-emu-layout body.-emu.system-dsa5 .window-content form {
+  padding: 0; }
+
+.-emu-layout body.-emu.system-dsa5 .character-sheet form {
+  background: none;
+  border: none;
+  padding: 0; }
+
 .-emu-layout body.-emu .dnd5e .form-header {
   font-family: inherit; }
 
@@ -4918,7 +4961,7 @@ body.-emu .dnd5e .form-group label {
 
 .-emu-layout body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card, .-emu-layout
 body.-emu #chat-log .dnd5e.chat-card {
-  font-size: 0.75rem; }
+  font-size: var(--emu-font-size-sm); }
 
 body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-buttons button,
 body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-header h3,
@@ -4982,7 +5025,7 @@ body.-emu #chat-log .dnd5e.chat-card .card-footer {
             border-inline-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu .window-app[id*="chat-popout-"] .dnd5e.chat-card .card-footer span, .-emu-layout
     body.-emu #chat-log .dnd5e.chat-card .card-footer span {
-      font-size: 0.625rem;
+      font-size: var(--emu-font-size-xs);
       -webkit-margin-end: var(--emu-space-xs);
               margin-inline-end: var(--emu-space-xs);
       -webkit-padding-end: var(--emu-space-base);
@@ -5004,6 +5047,9 @@ body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
   body.-emu #chat-log .dnd5e.chat-card .card-buttons button {
     font-weight: normal; }
 
+body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button {
+  color: rgba(var(--color-text), 1); }
+
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .compendium-footer, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer {
   width: 100%; }
@@ -5016,16 +5062,19 @@ body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer {
     -webkit-margin-after: 0;
             margin-block-end: 0; }
 
-.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .bestiary-browser-btn, .-emu-layout
-body.-emu .sidebar-popout .sidebar-tab .directory-footer .bestiary-browser-btn {
+.-emu-layout body.-emu.system-pf2e .window-app.actor.pc .window-content {
+  padding: 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app[id*="chat-popout-"] .chat-damage-buttons button > i,
+.-emu-layout body.-emu.system-pf2e #chat-log .chat-damage-buttons button > i {
+  margin: 0; }
+
+.-emu-layout body.-emu.system-pf2e #world-clock.window-app .input-grid button {
+  margin: 0; }
+
+.-emu-layout body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .bestiary-browser-btn,
+.-emu-layout body.-emu.system-pf2e .sidebar-popout .sidebar-tab .directory-footer .bestiary-browser-btn {
   width: 100%; }
-
-.-emu-layout body.-emu #world-clock.window-app .input-grid button {
-  margin: 0; }
-
-.-emu-layout body.-emu .window-app[id*="chat-popout-"] .chat-damage-buttons button > i, .-emu-layout
-body.-emu #chat-log .chat-damage-buttons button > i {
-  margin: 0; }
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .browser-group, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-footer .browser-group {
@@ -5140,7 +5189,7 @@ body.-emu #calendar-weather-container {
     body.-emu #calendar-weather-container #calendar-header #start-stop-clock, .-emu-layout
     body.-emu #calendar-weather-container .calendar--clock #calendar--move-handle, .-emu-layout
     body.-emu #calendar-weather-container .calendar--clock #start-stop-clock {
-      font-size: 0.875rem; }
+      font-size: var(--emu-font-size-md); }
   .-emu-layout body.-emu #calendar-time-container .calendar--clock, .-emu-layout
   body.-emu #calendar-weather-container .calendar--clock {
     -webkit-margin-before: var(--emu-space-base);
@@ -5150,7 +5199,7 @@ body.-emu #calendar-weather-container {
     border: none; }
     .-emu-layout body.-emu #calendar-time-container #calendar--date-display h2, .-emu-layout
     body.-emu #calendar-weather-container #calendar--date-display h2 {
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       padding: var(--emu-space-base); }
   .-emu-layout body.-emu #calendar-time-container .calendar--time-controls, .-emu-layout
   body.-emu #calendar-weather-container .calendar--time-controls {
@@ -5159,7 +5208,7 @@ body.-emu #calendar-weather-container {
     transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
   .-emu-layout body.-emu #calendar-time-container .calendar--time-controls .advance-btn, .-emu-layout
   body.-emu #calendar-weather-container .calendar--time-controls .advance-btn {
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     -webkit-margin-end: var(--emu-space-xs);
             margin-inline-end: var(--emu-space-xs);
     padding: var(--emu-space-base); }
@@ -5183,7 +5232,7 @@ body.-emu #calendar-weather-container {
       cursor: pointer;
       display: flex;
       flex: 0 0 auto;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       line-height: 1;
       margin: 0;
@@ -5305,7 +5354,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapp
     align-items: center;
     display: flex;
     flex: 0 0 auto;
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     padding: var(--emu-space-xs); }
   body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
@@ -5487,7 +5536,7 @@ body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item {
 body.-emu #dfcp-rt-buttons button {
   background: transparent; }
   .-emu-layout body.-emu #dfcp-rt-buttons button {
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     margin: 0;
     min-height: 0;
     max-height: 100%; }
@@ -5497,7 +5546,7 @@ body.-emu #dfcp-rt-buttons button {
   body.-emu #dfcp-rt-buttons button > i {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #dfcp-rt-buttons button > i {
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       height: auto;
       line-height: 1;
       margin: 0;
@@ -5558,7 +5607,7 @@ body.-emu #df-curvy-walls-tools .control-tool {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     line-height: initial;
     -webkit-margin-after: var(--emu-space-base);
             margin-block-end: var(--emu-space-base);
@@ -5571,6 +5620,9 @@ body.-emu #df-curvy-walls-tools .control-tool {
   body.-emu #df-curvy-walls-tools .control-tool.active {
     background-color: rgba(var(--color-primary), 1);
     background-image: none; }
+
+.-emu-layout body.-emu .dialog #drop-folder {
+  margin: 0; }
 
 body.-emu .dice-so-nice .dice-more-theme {
   background: none;
@@ -5645,7 +5697,7 @@ body.-emu #sidebar .dice-tray {
       height: var(--emu-space-button-xs);
       align-items: center;
       display: flex;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       line-height: 1;
       max-height: var(--emu-space-button-xs);
@@ -5677,7 +5729,7 @@ body.-emu #sidebar .dice-tray {
     -webkit-margin-end: var(--emu-space-base);
             margin-inline-end: var(--emu-space-base); }
   .-emu-layout body.-emu #sidebar .dice-tray button.dice-tray__ad {
-    font-size: 0.625rem;
+    font-size: var(--emu-font-size-xs);
     margin: 0;
     padding: 0; }
   body.-emu #sidebar .dice-tray button.dice-tray__ad.dice-tray__disadvantage {
@@ -5690,7 +5742,7 @@ body.-emu #sidebar .dice-tray {
   -webkit-margin-after: 0;
           margin-block-end: 0; }
   .-emu-layout body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator__input > label {
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     -webkit-padding-end: var(--emu-space-sm);
             padding-inline-end: var(--emu-space-sm); }
 
@@ -5812,7 +5864,7 @@ body.-emu .window-app[id*="ActiveEffects-"] .window-content > form li.filter-ite
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu .window-app[id*="ActiveEffects-"] .window-content > form li.filter-item {
     flex: 1;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     text-shadow: none; }
 
 .-emu-layout body.-emu .window-app[id*="ActiveEffects-"] .window-content > form .dnd5e.sheet.item {
@@ -5838,7 +5890,7 @@ body.-emu .window-app[id*="ActiveEffects-"] .window-content > form .dnd5e.sheet.
 .-emu-layout body.-emu #emu-settings form {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  max-height: 80vh;
   overflow: hidden; }
 
 body.-emu #emu-settings form h3 {
@@ -5863,7 +5915,7 @@ body.-emu #emu-settings form h3 {
 
 body.-emu #sidebar .sidebar-tab .directory-footer button.quest-log-btn,
 body.-emu .sidebar-popout .sidebar-tab .directory-footer button.quest-log-btn {
-  flex: 1 1 100%; }
+  flex: 1 1 auto; }
 
 .-emu-layout body.-emu #fui-default-icons .item-type-entry {
   -webkit-margin-after: var(--emu-space-base);
@@ -5877,7 +5929,7 @@ body.-emu .sidebar-popout .sidebar-tab .directory-footer button.quest-log-btn {
     margin: 0 var(--emu-space-sm); }
   .-emu-layout body.-emu #fui-default-icons .item-type-entry input {
     flex: 1 1 auto;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     height: var(--emu-space-button);
     margin: 0 var(--emu-space-base);
     min-width: 0; }
@@ -5913,7 +5965,7 @@ body.-emu .fpsCounter {
     align-items: center;
     display: flex;
     flex: 0 0 auto;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     height: var(--emu-space-button);
     line-height: initial;
     margin: 0;
@@ -5962,13 +6014,13 @@ body.-emu #specials-config .fxmaster {
       padding: var(--emu-space-sm); }
       .-emu-layout body.-emu #specials-config .fxmaster .special-effects .description h4 {
         color: rgba(var(--color-text-lightest), 1);
-        font-size: 1rem;
+        font-size: var(--emu-font-size-lg);
         height: auto;
         text-indent: 0; }
     body.-emu #specials-config .fxmaster .special-effects .description .author {
       color: rgba(var(--color-text-lightest), 1); }
       .-emu-layout body.-emu #specials-config .fxmaster .special-effects .description .author {
-        font-size: 0.75rem;
+        font-size: var(--emu-font-size-sm);
         line-height: 1.2;
         text-align: left; }
     .-emu-layout body.-emu #specials-config .fxmaster .special-effects .controls {
@@ -6409,7 +6461,7 @@ body.-emu .moulinette-options {
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu .moulinette-options {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     line-height: 1;
     z-index: 10; }
   body.-emu .moulinette-options li[data-type="empty"] {
@@ -6513,6 +6565,9 @@ body.-emu #moulinette.forge.mtte .list > div {
   width: auto; }
   .-emu-layout body.-emu #moulinette.forge .filepicker .display-modes a > i {
     margin: 0; }
+
+body.-emu #mountup-settings-form hr {
+  display: none; }
 
 body.-emu .narrator-span {
   text-shadow: none; }
@@ -6646,7 +6701,7 @@ body.-emu #npcgenerator-menu.window-app .npc-generator .npc-generator-character-
           padding-block-end: var(--emu-space-sm);
   text-align: initial; }
   .-emu-layout body.-emu #npcgenerator-menu.window-app .npc-generator .npc-generator-character-name input {
-    font-size: 1rem; }
+    font-size: var(--emu-font-size-lg); }
     .-emu-layout body.-emu #npcgenerator-menu.window-app .npc-generator .npc-generator-character-name input:last-child {
       -webkit-margin-start: var(--emu-space-base);
               margin-inline-start: var(--emu-space-base); }
@@ -6708,7 +6763,7 @@ body.-emu #OneJournalShell.window-app .sidebar-toggle {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -6739,6 +6794,16 @@ body.-emu #OneJournalDirectory #journal.sidebar-tab .subdirectory {
 body.-emu #OneJournalDirectory #journal.sidebar-tab .directory-item.selected {
   background-color: rgba(var(--color-primary), 1); }
 
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer button + button + button.one-journal-open, .-emu-layout
+body.-emu .sidebar-popout .sidebar-tab .directory-footer button + button + button.one-journal-open {
+  margin: 0;
+  -webkit-margin-before: var(--emu-space-base);
+          margin-block-start: var(--emu-space-base); }
+
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer button.one-journal-open, .-emu-layout
+body.-emu .sidebar-popout .sidebar-tab .directory-footer button.one-journal-open {
+  flex: 1 1 auto; }
+
 body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .version {
   color: rgba(var(--color-text), 0.5); }
   .-emu-layout body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .version {
@@ -6749,7 +6814,7 @@ body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .versi
 .-emu-layout body.-emu #edit-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox, .-emu-layout
 body.-emu #add-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox {
   flex: 1 1 auto;
-  font-size: 0.875rem !important;
+  font-size: var(--emu-font-size-md) !important;
   margin: 0; }
   .-emu-layout body.-emu #edit-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox input[type="checkbox"], .-emu-layout
   body.-emu #add-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox input[type="checkbox"] {
@@ -6787,7 +6852,7 @@ body.-emu .pdf-app.app.window-app section.window-content {
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer button.create-pdf, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-footer button.create-pdf {
-  width: 100%; }
+  flex: 1 1 auto; }
 
 .-emu-layout body.-emu #sidebar div.permission-viewer, .-emu-layout
 body.-emu .sidebar-popout div.permission-viewer {
@@ -6879,7 +6944,7 @@ body.-emu #search-anywhere-modal #search-anywhere-autocomplete {
   background: rgba(var(--color-background-lightest), 1);
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu #search-anywhere-modal #search-anywhere-autocomplete {
-    font-size: 1.25rem;
+    font-size: var(--emu-font-size-xl);
     height: auto;
     padding: var(--emu-space-md); }
 
@@ -6894,7 +6959,7 @@ body.-emu ul.command-menu {
     padding: var(--emu-space-sm);
     z-index: 1070; }
   .-emu-layout body.-emu ul.command-menu li {
-    font-size: 1.25rem;
+    font-size: var(--emu-font-size-xl);
     -webkit-margin-after: var(--emu-space-sm);
             margin-block-end: var(--emu-space-sm); }
   .-emu-layout body.-emu ul.command-menu li:last-child {
@@ -6907,6 +6972,10 @@ body.-emu ul.command-menu {
       font-size: inherit;
       line-height: 1;
       padding: 0; }
+
+.-emu-layout body.-emu .simple-calendar-configuration.window-app #simpleCalendarConfiguration .config-save {
+  position: -webkit-sticky;
+  position: sticky; }
 
 body.-emu .simple-dice-roller-popup {
   background-color: rgba(var(--color-background), 1);
@@ -6982,7 +7051,7 @@ body.-emu #smalltime-app {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #smalltime-app #dateDisplay {
       display: none;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       padding: var(--emu-space-base);
       position: relative;
@@ -6998,7 +7067,7 @@ body.-emu #smalltime-app {
     .-emu-layout body.-emu #smalltime-app #timeDisplay {
       align-items: center;
       display: inline-flex;
-      font-size: 0.875rem;
+      font-size: var(--emu-font-size-md);
       justify-content: center;
       padding: 0; }
   .-emu-layout body.-emu #smalltime-app #timeSeparator {
@@ -7209,7 +7278,7 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs .module-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     justify-content: space-between !important;
     margin: 0;
     padding: var(--emu-space-sm);
@@ -7239,7 +7308,7 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs .module-
   .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group label {
     align-items: center;
     display: inline-flex;
-    font-size: 0.875rem;
+    font-size: var(--emu-font-size-md);
     line-height: initial;
     margin: 0;
     order: initial;
@@ -7272,7 +7341,8 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
   .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header {
     align-items: center;
     display: flex;
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
+    font-weight: normal;
     margin: 0;
     padding: var(--emu-space-sm); }
   body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header:hover {
@@ -7323,7 +7393,7 @@ body.-emu #token-action-hud #tah-hudTitle {
   color: rgba(var(--color-white), 1);
   text-shadow: 2px 2px 2px rgba(var(--color-black), 1); }
   .-emu-layout body.-emu #token-action-hud #tah-hudTitle {
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     margin: 0;
     -webkit-margin-start: 1.75rem;
             margin-inline-start: 1.75rem;
@@ -7341,7 +7411,7 @@ body.-emu #token-action-hud #tah-categories i {
   text-shadow: 2px 2px 2px rgba(var(--color-black), 1); }
   .-emu-layout body.-emu #token-action-hud #tah-reposition i, .-emu-layout
   body.-emu #token-action-hud #tah-categories i {
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     padding: initial;
     margin: initial;
     text-align: initial; }
@@ -7362,7 +7432,7 @@ body.-emu #token-action-hud .tah-subtitle {
   color: rgba(var(--color-white), 1);
   text-shadow: 2px 2px 2px rgba(var(--color-black), 1); }
   .-emu-layout body.-emu #token-action-hud .tah-subtitle {
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     line-height: initial;
     padding: 0;
     -webkit-padding-before: var(--emu-space-sm);
@@ -7421,7 +7491,7 @@ body.-emu #tokenAttacherQuickEdit {
     color: rgba(var(--color-primary), 1);
     text-shadow: 1px 1px 4px rgba(var(--color-black), 1); }
     .-emu-layout body.-emu #tokenAttacherQuickEdit h3 {
-      font-size: 1.25rem;
+      font-size: var(--emu-font-size-xl);
       line-height: initial; }
 
 .-emu-layout body.-emu #tokenAttacher {
@@ -7454,7 +7524,7 @@ body.-emu #tokenAttacher .image {
       bottom: auto;
       box-sizing: border-box;
       display: flex;
-      font-size: 1rem;
+      font-size: var(--emu-font-size-lg);
       justify-content: center;
       overflow: hidden;
       padding: var(--emu-space-base);
@@ -7483,7 +7553,7 @@ body.-emu #tokenAttacher .control-tool {
   border-radius: var(--emu-border-radius-controls, 0);
   box-shadow: none;
   color: rgba(var(--color-text-lightest), 1);
-  font-size: 1rem;
+  font-size: var(--emu-font-size-lg);
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu #tokenAttacher .control-tool {
     width: var(--emu-space-button-lg);
@@ -7534,7 +7604,7 @@ body.-emu .token-sheet.sheet[id*="token-config-"] .window-content form .auras {
           -webkit-margin-start: var(--emu-space-base);
                   margin-inline-start: var(--emu-space-base); }
       .-emu-layout body.-emu .token-sheet.sheet[id*="token-config-"] .window-content form .auras .aura-row span {
-        font-size: 0.875rem; }
+        font-size: var(--emu-font-size-md); }
         .-emu-layout body.-emu .token-sheet.sheet[id*="token-config-"] .window-content form .auras .aura-row span + input {
           -webkit-margin-start: var(--emu-space-sm);
                   margin-inline-start: var(--emu-space-sm); }
@@ -7545,6 +7615,10 @@ body.-emu .token-sheet.sheet[id*="token-config-"] .window-content form .auras {
         .-emu-layout body.-emu .token-sheet.sheet[id*="token-config-"] .window-content form .auras .aura-row label input {
           -webkit-margin-end: var(--emu-space-base);
                   margin-inline-end: var(--emu-space-base); }
+
+.-emu-layout body.-emu #hud #token-hud .thwildcard-button-select {
+  display: inline-flex;
+  height: auto; }
 
 .-emu-layout body.-emu #hud .token-info-container {
   margin: 0; }
@@ -7606,7 +7680,7 @@ body.-emu .sidebar-popout .token-mold {
     flex-wrap: wrap; }
   .-emu-layout body.-emu #sidebar .token-mold h3, .-emu-layout
   body.-emu .sidebar-popout .token-mold h3 {
-    font-size: 1rem;
+    font-size: var(--emu-font-size-lg);
     font-weight: normal;
     margin: 0;
     -webkit-margin-after: var(--emu-space-base);
@@ -7620,7 +7694,7 @@ body.-emu .sidebar-popout .token-mold {
   body.-emu .sidebar-popout .token-mold > label > span {
     width: 100%;
     height: var(--emu-space-button-sm);
-    font-size: 0.75rem;
+    font-size: var(--emu-font-size-sm);
     padding: var(--emu-space-base); }
     .-emu-layout body.-emu #sidebar .token-mold > label > span > span, .-emu-layout
     body.-emu .sidebar-popout .token-mold > label > span > span {
@@ -7714,7 +7788,7 @@ body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil img, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil img {
-  max-height: var(--emu-space-button-xs);
+  max-height: var(--emu-font-size-lg);
   top: auto; }
 
 .-emu-layout body.-emu #world-anvil-config.window-app.world-anvil .world-articles {

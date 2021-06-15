@@ -25,6 +25,11 @@ function convertHexToRgb(color) {
 	return `${r}, ${g}, ${b}`;
 }
 
+// Get REM value
+function toRem(value) {
+	return value / 16;
+}
+
 function updateSettings(settings) {
 	const {
 		borderRadiusDefault,
@@ -49,6 +54,14 @@ function updateSettings(settings) {
 		colorTextLightest,
 		colorTextDarker,
 		fontFamily,
+		fontFamilyCustom,
+		fontSizeMD,
+		fontSizeLG,
+		fontSizeXL,
+		fontSizeXXL,
+		fontSizeSM,
+		fontSizeXS,
+		fontSizeChatRoll,
 		imageBackground,
 		imageBackgroundLightest,
 		imageBackgroundLight,
@@ -85,6 +98,15 @@ function updateSettings(settings) {
 	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
 	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
 
+	// Font Size
+	fontSizeMD ? document.documentElement.style.setProperty('--emu-font-size-md', `${toRem(fontSizeMD)}rem`) : document.documentElement.style.setProperty('--emu-font-size-md', `${toRem(14)}rem`);
+	fontSizeLG ? document.documentElement.style.setProperty('--emu-font-size-lg', `${toRem(fontSizeLG)}rem`) : document.documentElement.style.setProperty('--emu-font-size-lg', `${toRem(16)}rem`);
+	fontSizeXL ? document.documentElement.style.setProperty('--emu-font-size-xl', `${toRem(fontSizeXL)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xl', `${toRem(20)}rem`);
+	fontSizeXXL ? document.documentElement.style.setProperty('--emu-font-size-xxl', `${toRem(fontSizeXXL)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xxl', `${toRem(24)}rem`);
+	fontSizeSM ? document.documentElement.style.setProperty('--emu-font-size-sm', `${toRem(fontSizeSM)}rem`) : document.documentElement.style.setProperty('--emu-font-size-sm', `${toRem(12)}rem`);
+	fontSizeXS ? document.documentElement.style.setProperty('--emu-font-size-xs', `${toRem(fontSizeXS)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xs', `${toRem(10)}rem`);
+	fontSizeChatRoll ? document.documentElement.style.setProperty('--emu-font-size-chat-roll', `${toRem(fontSizeChatRoll)}rem`) : document.documentElement.style.setProperty('--emu-font-size-chat-roll', `${toRem(18)}rem`);
+
 	// Backgrounds
 	if(imageBackground != 'none' || imageBackground == null) {
 		imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
@@ -117,13 +139,17 @@ function updateSettings(settings) {
 }
 
 function setFontFamily(family) {
-	let formattedLink = family.replace(' ', '+');
+	console.log(family);
+	let cleanString = family.replaceAll('+', ' ');
+	let formattedLink = family.replaceAll(' ', '+');
 	let googleFont  = document.createElement('link');
 	googleFont.id = 'emu-font-family';
-	googleFont.href = `https://fonts.googleapis.com/css2?family=${formattedLink}&display=swap`;
 	googleFont.rel = 'stylesheet';
+	googleFont.type = 'text/css';
+	googleFont.media = 'all';
+	googleFont.href = `https://fonts.googleapis.com/css2?family=${formattedLink}&display=swap`;
 	myHead.appendChild(googleFont);
-	myBody[0].style.fontFamily = family;
+	myBody[0].style.fontFamily = cleanString;
 }
 
 class emuSettings {
@@ -157,6 +183,14 @@ class emuSettings {
 			colorTextLightest: '#ffffff',
 			colorTextDarker: '#293e40',
 			fontFamily: 'Signika',
+			fontFamilyCustom: '',
+			fontSizeMD: 14,
+			fontSizeLG: 16,
+			fontSizeXL: 20,
+			fontSizeXXL: 24,
+			fontSizeSM: 12,
+			fontSizeXS: 10,
+			fontSizeChatRoll: 18,
 			imageBackground: '',
 			imageBackgroundLightest: '',
 			imageBackgroundLight: '',
@@ -231,7 +265,8 @@ class emuForm extends FormApplication {
 
 	getFontFamily(formData) {
 		document.getElementById('emu-font-family').remove();
-		setFontFamily($('select[name="fontFamily"]').val());
+		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
+		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily($('select[name="fontFamily"]').val());
 	}
 
 	onReset() {
@@ -352,8 +387,9 @@ Hooks.once('ready', () => {
 	// Check for other modules
 	setTimeout(function() {
 		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
-		setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
-	}, 2000);
+		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
+		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
+	}, 1000);
 
 	// Say Hello
 	console.log('Ernie\'s Modern UI Active');

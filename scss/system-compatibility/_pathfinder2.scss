@@ -1,28 +1,30 @@
-#sidebar,
-.sidebar-popout {
-	.sidebar-tab {
-		.directory-footer .bestiary-browser-btn {
-			@include layout {
-				width: 100%;
+@include system("pf2e") {
+	.window-app.actor.pc {
+		.window-content {
+			padding: 0;
+		}
+	}
+
+	.window-app[id*="chat-popout-"],
+	#chat-log {
+		.chat-damage-buttons {
+			button > i {
+				margin: 0;
 			}
 		}
 	}
-}
 
-#world-clock.window-app {
-	.input-grid button {
-		@include layout {
+	#world-clock.window-app {
+		.input-grid button {
 			margin: 0;
 		}
 	}
-}
 
-.window-app[id*="chat-popout-"],
-#chat-log {
-	.chat-damage-buttons {
-		button > i {
-			@include layout {
-				margin: 0;
+	#sidebar,
+	.sidebar-popout {
+		.sidebar-tab {
+			.directory-footer .bestiary-browser-btn {
+				width: 100%;
 			}
 		}
 	}

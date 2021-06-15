@@ -146,3 +146,21 @@
 		}
 	}
 }
+
+#sidebar,
+.sidebar-popout {
+	.sidebar-tab .directory-footer {
+		button + button + button.one-journal-open {
+			@include layout {
+				margin: 0;
+				margin-block-start: m("base");
+			}
+		}
+
+		button.one-journal-open {
+			@include layout {
+				flex: 1 1 auto;
+			}
+		}
+	}
+}

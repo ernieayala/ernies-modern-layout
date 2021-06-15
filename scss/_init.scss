@@ -9,6 +9,13 @@
 	--emu-image-background-light: none;
 	--emu-image-background-darkest: none;
 	--emu-image-background-controls: none;
+	--emu-font-size-xxl: #{to-rem(24px)};
+	--emu-font-size-xl: #{to-rem(20)};
+	--emu-font-size-lg: #{to-rem(16px)};
+	--emu-font-size-md: #{to-rem(14px)};
+	--emu-font-size-sm: #{to-rem(12px)};
+	--emu-font-size-xs: #{to-rem(10px)};
+	--emu-font-size-chat-roll: #{to-rem(18px)};
 	--emu-subtle-opacity: 0.3;
 	--emu-space-pf: #{to-rem(1px)};
 	--emu-space-base: #{to-rem(4px)};

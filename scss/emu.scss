@@ -70,7 +70,9 @@ body.-emu {
 
 	// System Compatibility
 	@import "./system-compatibility/callofcthulhu7";
+	@import "./system-compatibility/dasschwarzeauge5";
 	@import "./system-compatibility/dnd5e";
+	@import "./system-compatibility/fate";
 	@import "./system-compatibility/pathfinder1";
 	@import "./system-compatibility/pathfinder2";
 	@import "./system-compatibility/starfinder";
@@ -88,6 +90,7 @@ body.-emu {
 	@import "./module-compatibility/compendium-folders";
 	@import "./module-compatibility/df-chat-enhancements";
 	@import "./module-compatibility/df-curvy-walls";
+	@import "./module-compatibility/dfreds-droppables";
 	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
 	@import "./module-compatibility/dnd-beyond-importer";
@@ -110,6 +113,7 @@ body.-emu {
 	@import "./module-compatibility/midi-qol";
 	@import "./module-compatibility/monks-scene-navigation";
 	@import "./module-compatibility/moulinette";
+	@import "./module-compatibility/mount-up";
 	@import "./module-compatibility/narrator-tools";
 	@import "./module-compatibility/not-enough-npcs";
 	@import "./module-compatibility/one-journal";
@@ -118,6 +122,7 @@ body.-emu {
 	@import "./module-compatibility/permission-viewer";
 	@import "./module-compatibility/polyglot";
 	@import "./module-compatibility/search-anywhere";
+	@import "./module-compatibility/simple-calendar";
 	@import "./module-compatibility/simple-dice-roller";
 	@import "./module-compatibility/small-time";
 	@import "./module-compatibility/tabbed-chat-log";
@@ -128,6 +133,7 @@ body.-emu {
 	@import "./module-compatibility/token-action-hud";
 	@import "./module-compatibility/token-attacher";
 	@import "./module-compatibility/token-auras";
+	@import "./module-compatibility/token-hud-wildcard";
 	@import "./module-compatibility/token-info-icon";
 	@import "./module-compatibility/token-magic-fx";
 	@import "./module-compatibility/token-mold";

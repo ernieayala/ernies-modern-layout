@@ -8,7 +8,7 @@
 
 			img {
 				@include layout {
-					max-height: space("button-xs");
+					max-height: fs("lg");
 					top: auto;
 				}
 			}

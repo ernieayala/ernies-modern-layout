@@ -25,16 +25,13 @@
 		"warning": #edb950 // y500
 	)
 	"font-sizes" (
-		"xxxl": to-rem(28px),
-		"xxl": to-rem(24px),
-		"xl": to-rem(20),
-		"lg": to-rem(16px),
-		"md": to-rem(14px),
-		"sm": to-rem(12px),
-		"xs": to-rem(10px),
-		"xxs": to-rem(8px),
-		"default": to-rem(16px),
-		"chat-roll": to-rem(18px)
+		"xxl": var(--emu-font-size-xxl),
+		"xl": var(--emu-font-size-xl),
+		"lg": var(--emu-font-size-lg),
+		"md": var(--emu-font-size-md),
+		"sm": var(--emu-font-size-sm),
+		"xs": var(--emu-font-size-xs),
+		"chat-roll": var(--emu-font-size-chat-roll)
 	)
 	"space" (
 		"button-lg": var(--emu-space-button-lg),
@@ -143,6 +140,14 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 		}
 	} @else {
 		.-emu-layout.-emu-players.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin system($system, $compact: null) {
+	@if not $compact {
+		@at-root .-emu-layout body.-emu.system-#{$system} {
 			@content;
 		}
 	}
