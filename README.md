@@ -158,4 +158,3 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 #### Key
 FNS = Functions but not styled
-* = Primarily tested for DND5e
