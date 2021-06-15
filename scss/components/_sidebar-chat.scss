@@ -79,6 +79,7 @@
 					box-shadow: none;
 					border: b("border");
 					border-radius: $global-border-radius-default;
+					color: inherit;
 
 					@include layout {
 						line-height: initial;

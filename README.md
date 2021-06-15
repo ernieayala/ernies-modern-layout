@@ -1,7 +1,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ernieayala/ernies-modern-layout?style=flat-square)
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
-![GitHub 0.2.11 Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/0.2.11/total?style=flat-square)
-![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?style=flat-square)
+![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
 
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 0.8.6+
@@ -10,7 +9,7 @@
 
 **Languages:** English, Spanish
 
-A clean and themeable visual update for Foundry VTT.
+A clean and theme-able visual update for Foundry VTT.
 
 ## Features
 - Theming (includes a dark mode theme)
@@ -18,7 +17,7 @@ A clean and themeable visual update for Foundry VTT.
 - Subtle Layout
 - Custom Logo
 - Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
-- Ernie's Layout: Pushes pixels and adjustest fonts, heights, widths, padding and margins.
+- Ernie's Layout: Pushes pixels and adjusts fonts, heights, widths, padding and margins.
 
 ## Manifest URL
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
@@ -45,12 +44,12 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Systems Partially Tested as of June 14th, 2021
 - DSA5
 - Pathfinder 2
+- Starfinder
 
 ### Systems Partially Tested as of June 9th, 2021
 - CoC 7
 - Pathfinder 1
 - Savage Worlds
-- Starfinder
 
 ### Mods Tested as of June 14th, 2021
 - Advanced Macros

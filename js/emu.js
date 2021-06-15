@@ -139,7 +139,10 @@ function updateSettings(settings) {
 }
 
 function setFontFamily(family) {
-	console.log(family);
+	if (typeof family != 'string') {
+		return;
+	}
+
 	let cleanString = family.replaceAll('+', ' ');
 	let formattedLink = family.replaceAll(' ', '+');
 	let googleFont  = document.createElement('link');
