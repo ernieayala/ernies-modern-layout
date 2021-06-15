@@ -10,7 +10,7 @@
 
 **Languages:** English, Spanish
 
-A clean and themeable visual update for Foundry VTT.
+A clean and theme-able visual update for Foundry VTT.
 
 ## Features
 - Theming (includes a dark mode theme)
@@ -18,7 +18,7 @@ A clean and themeable visual update for Foundry VTT.
 - Subtle Layout
 - Custom Logo
 - Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
-- Ernie's Layout: Pushes pixels and adjustest fonts, heights, widths, padding and margins.
+- Ernie's Layout: Pushes pixels and adjusts fonts, heights, widths, padding and margins.
 
 ## Manifest URL
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
