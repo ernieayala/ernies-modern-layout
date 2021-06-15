@@ -264,7 +264,9 @@ class emuForm extends FormApplication {
 	}
 
 	getFontFamily(formData) {
-		document.getElementById('emu-font-family').remove();
+		if(document.getElementById('emu-font-family')){
+			document.getElementById('emu-font-family').remove();
+		}
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
 		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily($('select[name="fontFamily"]').val());
 	}
