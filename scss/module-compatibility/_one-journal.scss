@@ -1,8 +1,18 @@
 #OneJournalShell.window-app {
 	&.maximized {
+		@include layout {
+			width: calc(100% - #{space("sidebar")}) !important;
+		}
+
 		> .window-header {
 			@include layout {
 				position: relative;
+			}
+		}
+
+		> .window-content {
+			@include layout {
+				padding: 0;
 			}
 		}
 	}
@@ -78,7 +88,7 @@
 		border: none;
 		border-block-end: color("background-lightest") 2px solid;
 		border-inline-start: color("background-lightest") 2px solid;
-		border-radius: $global-border-radius-default 0 0 0;
+		border-radius: 0 0 0 $global-border-radius-default;
 		color: color("text-lightest");
 		transition: t(background box-shadow color, "link");
 
@@ -136,12 +146,35 @@
 		}
 
 		.subdirectory {
+			border-inline-start: b("primary", 4px);
 			border-block-end: none;
+
+			.subdirectory {
+				border-inline-start: b("orange-700", 4px);
+
+				.subdirectory {
+					border-inline-start: b("orange-900", 4px);
+				}
+			}
 		}
 
 		.directory-item {
 			&.selected {
 				background-color: color("primary");
+			}
+
+			.folder-header {
+				background-color: color("folder-header");
+				border-block-start: none;
+			}
+
+			h3 {
+				color: color("text");
+			}
+
+			a.create-folder,
+			a.create-entity {
+				color: color("text-lightest");
 			}
 		}
 	}

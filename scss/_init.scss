@@ -28,6 +28,7 @@
 	--emu-space-button: #{to-rem(32px)};
 	--emu-space-button-sm: #{to-rem(24px)};
 	--emu-space-button-xs: #{to-rem(20px)};
+	--emu-space-sidebar: #{to-rem(320px)};
 	scrollbar-color: color("charcoal-300") color("black", 0.5);
 	scrollbar-width: thin;
 }
@@ -60,7 +61,7 @@
 	100% { opacity: 0; }
 }
 
-html.-emu-compact {
+html.-emu-layout.-emu-compact {
 	--emu-space-base: #{to-rem(2px)};
 	--emu-space-sm: #{to-rem(4px)};
 	--emu-space-md: #{to-rem(8px)};
@@ -70,6 +71,7 @@ html.-emu-compact {
 	--emu-space-button: #{to-rem(24px)};
 	--emu-space-button-sm: #{to-rem(20px)};
 	--emu-space-button-xs: #{to-rem(18px)};
+	--emu-space-sidebar: #{to-rem(286px)};
 }
 
 body {

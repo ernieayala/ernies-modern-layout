@@ -5,6 +5,19 @@
 			position: relative;
 		}
 
+		.units {
+			color: color("text");
+
+			@include layout {
+				@include ellipsis;
+				display: block;
+				flex: 0 0 auto;
+				font-size: fs("sm");
+				line-height: initial;
+				margin: 0 m("base");
+			}
+		}
+
 		.current-dir {
 			button {
 				@include layout {
@@ -23,6 +36,7 @@
 	.filepicker-body {
 		@include layout {
 			flex: 1 1 auto;
+			max-height: 100%;
 			min-height: to-rem(200px);
 			overflow-y: auto;
 			position: relative;
@@ -66,6 +80,7 @@
 					flex: 0 0 auto;
 					justify-content: center;
 					max-width: 100%;
+					min-height: to-rem(100px);
 					padding: p("base");
 					width: 100%;
 
@@ -119,8 +134,17 @@
 		}
 	}
 
+	form.filepicker-body {
+		@include layout {
+			display: grid;
+			grid-template-rows: min-content 1fr min-content;
+		}
+	}
+
 	section.filepicker-body {
 		@include layout {
+			display: flex;
+			flex-direction: column;
 			margin-block-start: m("sm");
 			position: relative;
 		}
@@ -169,7 +193,9 @@
 			background: none;
 			border: 0;
 			border-radius: 0;
-			min-height: space("button");
+			flex: 1;
+			max-height: 100%;
+			min-height: to-rem(100px);
 			list-style: none;
 			overflow-x: hidden;
 			overflow-y: auto;
@@ -178,7 +204,9 @@
 			width: 100%;
 
 			+ .directory {
+				border: b("folder-directory");
 				margin-block-start: m("base");
+				padding: p("base");
 			}
 		}
 

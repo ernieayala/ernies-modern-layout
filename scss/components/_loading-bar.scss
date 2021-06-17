@@ -1,7 +1,7 @@
 #loading {
 	background-color: color("background", 0.8);
 	border: none;
-	border-radius: $global-border-radius-controls;
+	border-radius: $global-border-radius-default;
 	box-shadow: none;
 
 	@include layout {
@@ -25,7 +25,7 @@
 	#loading-bar {
 		background-color: color("primary");
 		border: none;
-		border-radius: $global-border-radius-controls;
+		border-radius: $global-border-radius-default;
 
 		@include layout {
 			height: 100%;

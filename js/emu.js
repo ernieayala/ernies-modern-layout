@@ -389,9 +389,7 @@ Hooks.once('ready', () => {
 	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
 	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
 
-	// Check for other modules
 	setTimeout(function() {
-		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
 		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 	}, 1000);

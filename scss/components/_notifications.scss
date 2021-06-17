@@ -24,6 +24,7 @@
 	@include layout {
 		margin-block-end: m("sm");
 		padding: p("sm");
+		padding-inilne-end: p("xl");
 	}
 
 	&::before {
@@ -53,6 +54,7 @@
 			@include absolute(top space("sm") right space("sm"));
 			line-height: 1;
 			margin: 0;
+			margin-block-start: m("xs");
 		}
 	}
 }

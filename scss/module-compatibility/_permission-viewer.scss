@@ -1,20 +1,17 @@
-#sidebar,
-.sidebar-popout {
-	div.permission-viewer {
+div.permission-viewer {
+	@include layout {
+		flex: 0 0 auto;
+		margin: 0;
+		margin-inline-start: m("base");
+	}
+
+	a {
+		@extend %control-button;
+		text-shadow: none;
+
 		@include layout {
-			flex: 0 0 auto;
-			margin: 0;
-			margin-inline-start: m("base");
-		}
-
-		a {
-			@extend %control-button;
-			text-shadow: none;
-
-			@include layout {
-				padding: 0 p("base");
-				width: auto;
-			}
+			padding: 0 p("base");
+			width: auto;
 		}
 	}
 }

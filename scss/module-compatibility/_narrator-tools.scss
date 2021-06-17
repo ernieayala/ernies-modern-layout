@@ -9,6 +9,6 @@
 
 .narrator-sidebarBG {
 	@include layout {
-		width: to-rem(320px);
+		width: space("sidebar");
 	}
 }

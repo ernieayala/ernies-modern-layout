@@ -45,6 +45,7 @@
 
 	> h3 {
 		border-block-end: b("border");
+		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: color("text-lightest");
 		transition: t(color, "link");
 
@@ -65,7 +66,8 @@
 
 		&:hover,
 		&:active {
-			color: color("primary");
+			background-color: color("primary");
+			color: color("white");
 		}
 
 		.players-mode {

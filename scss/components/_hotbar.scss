@@ -45,8 +45,9 @@
 		transition: t(opacity, "link");
 
 		@include layout {
-			display: block;
+			display: flex;
 			flex: 1 1 auto;
+			flex-wrap: nowrap;
 			height: auto;
 			margin: 0;
 			pointer-events: all;

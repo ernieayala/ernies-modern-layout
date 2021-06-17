@@ -54,9 +54,11 @@
 
 		@include layout {
 			margin-block-end: m("base");
+			padding: p("base") 0;
 		}
 	}
 
+	button.world-anvil-control[data-action="sync-folder"],
 	button.world-anvil-control[data-action="link-entry"],
 	button.world-anvil-control[data-action="link-folder"] {
 		i {

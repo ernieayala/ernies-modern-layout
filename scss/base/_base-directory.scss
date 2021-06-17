@@ -16,6 +16,7 @@
 
 			@include layout {
 				display: flex;
+				border-radius: 0 0 0 $global-border-radius-default;
 				flex-direction: column;
 				width: 100%;
 			}
@@ -127,6 +128,7 @@
 			&.collapsed {
 				> .folder-header {
 					border-inline-start: none;
+					border-radius: $global-border-radius-default;
 
 					.create-folder {
 						@include layout {
@@ -213,6 +215,20 @@
 			.subdirectory {
 				@include layout {
 					@extend %reset-list;
+				}
+
+				.directory-item.folder {
+					&.collapsed .folder-header {
+						@include layout {
+							border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+						}
+					}
+
+					.folder-header {
+						@include layout {
+							border-radius: $global-border-radius-default 0 0 0;
+						}
+					}
 				}
 
 				.folder-header {
