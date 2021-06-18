@@ -94,8 +94,11 @@
 		background-image: $global-image-background-controls;
 
 		&.active .control-tools {
-			display: inline-flex;
 			opacity: 1;
+
+			@include layout {
+				display: inline-flex;
+			}
 
 			@include layout-subtle {
 				opacity: 0;

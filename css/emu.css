@@ -2887,8 +2887,9 @@ body.-emu #controls .scene-control {
   background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-scene-control, 0.8));
   background-image: var(--emu-image-background-controls, none); }
   body.-emu #controls .scene-control.active .control-tools {
-    display: inline-flex;
     opacity: 1; }
+    .-emu-layout body.-emu #controls .scene-control.active .control-tools {
+      display: inline-flex; }
     .-emu-layout.-emu-subtle-layout body.-emu #controls .scene-control.active .control-tools {
       opacity: 0; }
   .-emu-layout.-emu-control-align-top body.-emu #controls .scene-control {
