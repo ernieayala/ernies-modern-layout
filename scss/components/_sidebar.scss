@@ -1,10 +1,8 @@
 #sidebar,
 .sidebar-popout {
-	background-color: color("background-darkest", 0.8);
+	background-color: color("background-darkest", $global-background-opacity-sidebar);
 	background-image: $global-image-background-darkest;
 	border: b("border");
-	border-inline-end: none;
-	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 	box-shadow: none;
 	transition: t(opacity, "link");
 
@@ -294,6 +292,9 @@
 }
 
 #sidebar {
+	border-inline-end: none;
+	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+
 	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 		overflow: visible;
@@ -348,13 +349,17 @@
 
 .sidebar-popout {
 	border-radius: $global-border-radius-default;
-	border: b("border");
 
 	@include layout {
 		height: auto;
 		min-height: 50vh;
+		min-width: space("sidebar");
+	}
 
-		.window-content {
+	.window-content {
+		background-color: transparent;
+
+		@include layout {
 			padding: 0;
 		}
 	}

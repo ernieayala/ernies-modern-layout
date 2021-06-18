@@ -1,5 +1,14 @@
 :root {
 	@include css-vars($_palette-default);
+	--emu-background-opacity-button-primary: 1;
+	--emu-background-opacity-hotbar: 0.8;
+	--emu-background-opacity-hud: 0.8;
+	--emu-background-opacity-players: 0.8;
+	--emu-background-opacity-scene-control: 0.8;
+	--emu-background-opacity-scene-navigation: 0.8;
+	--emu-background-opacity-sidebar: 0.8;
+	--emu-background-opacity-window: 1;
+	--emu-background-opacity-window-content: 1;
 	--emu-border-radius-default: 0;
 	--emu-border-radius-controls: 0;
 	--emu-border-radius-forms: 0;

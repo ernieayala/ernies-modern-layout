@@ -47,11 +47,11 @@
 
 %primary-button {
 	@extend %default-button;
-	background-color: color("background-button");
+	background-color: color("background-button", $global-background-opacity-button-primary);
 }
 
 %primary-button-simple-reset {
-	background-color: color("background-button");
+	background-color: color("background-button", $global-background-opacity-button-primary);
 	background-image: $global-image-background-controls;
 	border: none;
 

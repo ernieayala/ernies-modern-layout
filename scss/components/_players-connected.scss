@@ -1,5 +1,5 @@
 #players {
-	background-color: color("background", 0.8);
+	background-color: color("background", $global-background-opacity-players);
 	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;

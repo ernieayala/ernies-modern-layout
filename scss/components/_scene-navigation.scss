@@ -44,7 +44,7 @@
 
 	#nav-toggle {
 		@extend %control-button;
-		background-color: color("background", 0.8);
+		background-color: color("background", $global-background-opacity-scene-navigation);
 		background-image: $global-image-background-controls;
 
 		@include layout {
@@ -73,7 +73,7 @@
 		}
 
 		.scene {
-			background-color: color("background-darkest", 0.8);
+			background-color: color("background-darkest", $global-background-opacity-scene-navigation);
 			background-image: $global-image-background-controls;
 			border: none;
 			border-radius: $global-border-radius-controls;

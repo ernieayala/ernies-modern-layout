@@ -1,7 +1,5 @@
 .dialog {
 	&.window-app > .window-content {
-		background: transparent;
-
 		@include layout {
 			padding: 0;
 		}

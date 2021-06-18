@@ -145,10 +145,10 @@ body.-emu #calendar-weather-container .calendar--time-controls .advance-btn, bod
 body.-emu .sidebar-popout #combat .add-temporary, body.-emu .window-app[id*="ActiveEffects-"] .window-content > form li.filter-item, body.-emu #specials-config .fxmaster .directory-header a, body.-emu .moulinette-options li, body.-emu #moulinette.forge .filepicker .display-modes a, body.-emu #OneJournalShell.window-app .history-navigation a, body.-emu ul.command-menu li, body.-emu #token-action-hud button.tah-title-button,
 body.-emu #token-action-hud .tah-action button, body.-emu #sidebar .token-mold > label > span,
 body.-emu .sidebar-popout .token-mold > label > span {
-  background-color: rgba(var(--color-background-button), 1); }
+  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1)); }
 
 body.-emu .dialog .dialog-buttons .dialog-button {
-  background-color: rgba(var(--color-background-button), 1);
+  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
   background-image: var(--emu-image-background-controls, none);
   border: none; }
   .-emu-layout body.-emu .dialog .dialog-buttons .dialog-button, body.-emu .dialog .dialog-buttons .-emu-layout .dialog-button {
@@ -581,7 +581,7 @@ body.-emu .sidebar-popout .sidebar-tab .directory-footer, body.-emu #sidebar #co
 body.-emu .sidebar-popout #combat #combat-round, body.-emu #sidebar #chat section.dice-tray,
 body.-emu .sidebar-popout #chat section.dice-tray, body.-emu #sidebar .token-mold,
 body.-emu .sidebar-popout .token-mold {
-  background-color: rgba(var(--color-background), 0.5);
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-sidebar, 0.8));
   background-image: var(--emu-image-background, none);
   border: none;
   color: rgba(var(--color-text-lightest), 1); }
@@ -1121,6 +1121,15 @@ body.-emu .window-app[id*="actor-flags-"] form > button[type="submit"], body.-em
   --color-text-lightest: 255, 255, 255;
   --color-text: 9, 14, 16;
   --color-text-darker: 41, 62, 64;
+  --emu-background-opacity-button-primary: 1;
+  --emu-background-opacity-hotbar: 0.8;
+  --emu-background-opacity-hud: 0.8;
+  --emu-background-opacity-players: 0.8;
+  --emu-background-opacity-scene-control: 0.8;
+  --emu-background-opacity-scene-navigation: 0.8;
+  --emu-background-opacity-sidebar: 0.8;
+  --emu-background-opacity-window: 1;
+  --emu-background-opacity-window-content: 1;
   --emu-border-radius-default: 0;
   --emu-border-radius-controls: 0;
   --emu-border-radius-forms: 0;
@@ -1749,6 +1758,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
     align-items: center;
     display: inline-flex;
     font-size: var(--emu-font-size-md);
+    font-weight: normal;
     line-height: initial;
     margin: 0;
     -webkit-padding-end: var(--emu-space-base);
@@ -2100,10 +2110,8 @@ body.-emu #context-menu {
   .window-app body.-emu #context-menu {
     z-index: 101; }
 
-body.-emu .dialog.window-app > .window-content {
-  background: transparent; }
-  .-emu-layout body.-emu .dialog.window-app > .window-content {
-    padding: 0; }
+.-emu-layout body.-emu .dialog.window-app > .window-content {
+  padding: 0; }
 
 .-emu-layout body.-emu .dialog div.dialog-content {
   padding: 0 var(--emu-space-sm);
@@ -2258,7 +2266,7 @@ body.-emu #hotbar .bar-controls {
   body.-emu #hotbar .bar-controls .page-control,
   body.-emu #hotbar .bar-controls #macro-directory,
   body.-emu #hotbar .bar-controls #bar-toggle {
-    background-color: rgba(var(--color-background), 0.8);
+    background-color: rgba(var(--color-background), var(--emu-background-opacity-hotbar, 0.8));
     background-image: var(--emu-image-background-controls, none);
     color: rgba(var(--color-text-lightest), 1);
     transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -2286,7 +2294,7 @@ body.-emu #hotbar .bar-controls {
   .-emu-layout.-emu-compact body.-emu #hotbar .bar-controls .page-control {
     font-size: var(--emu-font-size-xs); }
   body.-emu #hotbar .bar-controls .page-number {
-    background-color: rgba(var(--color-background), 0.5);
+    background-color: rgba(var(--color-background), var(--emu-background-opacity-hotbar, 0.8));
     background-image: var(--emu-image-background-controls, none);
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #hotbar .bar-controls .page-number {
@@ -2297,7 +2305,7 @@ body.-emu #hotbar .bar-controls {
       line-height: initial; }
 
 body.-emu #hotbar .macro {
-  background-color: rgba(var(--color-background), 0.8);
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-hotbar, 0.8));
   background-image: var(--emu-image-background-controls, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0;
@@ -2325,7 +2333,7 @@ body.-emu #hotbar .macro {
   body.-emu #hotbar .macro:last-child {
     border-radius: 0 var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0; }
   body.-emu #hotbar .macro.active {
-    background-color: rgba(var(--color-background), 0.8); }
+    background-color: rgba(var(--color-background), var(--emu-background-opacity-hotbar, 0.8)); }
   body.-emu #hotbar .macro .macro-key {
     background: transparent;
     color: rgba(var(--color-text-lightest), 1);
@@ -2353,7 +2361,7 @@ body.-emu #hotbar .macro {
       width: 2.125rem;
       height: 2.125rem; }
   body.-emu #hotbar .macro .tooltip {
-    background-color: rgba(var(--color-background-darkest), 0.5);
+    background-color: rgba(var(--color-background-darkest), 1);
     border: none;
     border-radius: var(--emu-border-radius-default, 0);
     color: rgba(var(--color-text-lightest), 1); }
@@ -2370,8 +2378,11 @@ body.-emu #hotbar .macro {
 body.-emu #hud input[type="text"] {
   background: rgba(var(--color-background-lightest), 1);
   border: rgba(var(--color-primary), 1) 1px solid; }
+  .-emu-layout body.-emu #hud input[type="text"] {
+    font-size: var(--emu-font-size-lg); }
 
 .-emu-layout body.-emu #hud .attribute {
+  flex: 0 0 auto;
   margin: 0;
   -webkit-margin-after: var(--emu-space-base);
           margin-block-end: var(--emu-space-base); }
@@ -2390,12 +2401,16 @@ body.-emu #hud .attribute.elevation > i {
   .-emu-layout body.-emu #hud .attribute.elevation > i {
     z-index: 1; }
 
+.-emu-layout body.-emu #hud .attribute.bar2 {
+  -webkit-margin-after: 0;
+          margin-block-end: 0; }
+
 .-emu-layout body.-emu #hud .attribute:last-child {
   -webkit-margin-after: 0;
           margin-block-end: 0; }
 
 body.-emu #hud .control-icon {
-  background-color: rgba(var(--color-background-darkest), 0.8);
+  background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-hud, 0.8));
   background-image: var(--emu-image-background-controls, none);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
@@ -2451,7 +2466,7 @@ body.-emu #hud #token-hud .status-effects {
         opacity: 1; }
 
 body.-emu #loading {
-  background-color: rgba(var(--color-background), 0.8);
+  background-color: rgba(var(--color-background), 1);
   border: none;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: none; }
@@ -2536,7 +2551,7 @@ body.-emu #menu {
     justify-content: center;
     z-index: 1070; }
   body.-emu #menu #menu-items {
-    background-color: rgba(var(--color-background-darkest), 0.8);
+    background-color: rgba(var(--color-background-darkest), 1);
     background-image: var(--emu-image-background-darkest, none);
     box-shadow: 0 2px 4px rgba(var(--color-black), 1); }
     .-emu-layout body.-emu #menu #menu-items {
@@ -2569,7 +2584,7 @@ body.-emu #notifications {
     top: 6rem; }
 
 body.-emu .notification {
-  background-color: rgba(var(--color-charcoal-900), 0.8);
+  background-color: rgba(var(--color-charcoal-900), 1);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
@@ -2692,7 +2707,7 @@ body.-emu #pause {
               margin-block-start: 10rem; }
 
 body.-emu #players {
-  background-color: rgba(var(--color-background), 0.8);
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-players, 0.8));
   background-image: var(--emu-image-background, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
@@ -2869,9 +2884,10 @@ body.-emu #controls .control-tool {
     background-image: none; }
 
 body.-emu #controls .scene-control {
-  background-color: rgba(var(--color-background-darkest), 0.8);
+  background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-scene-control, 0.8));
   background-image: var(--emu-image-background-controls, none); }
   body.-emu #controls .scene-control.active .control-tools {
+    display: inline-flex;
     opacity: 1; }
     .-emu-layout.-emu-subtle-layout body.-emu #controls .scene-control.active .control-tools {
       opacity: 0; }
@@ -2879,8 +2895,11 @@ body.-emu #controls .scene-control {
     position: initial; }
 
 body.-emu #controls .control-tool {
-  background-color: rgba(var(--color-background), 0.8);
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-scene-control, 0.8));
   background-image: var(--emu-image-background-controls, none); }
+  .-emu-layout body.-emu #controls .control-tool {
+    -webkit-margin-end: var(--emu-space-base);
+            margin-inline-end: var(--emu-space-base); }
   body.-emu #controls .control-tool.toggle {
     background-color: rgba(var(--color-background-lightest), 1);
     background-image: var(--emu-image-background-controls, none);
@@ -2898,7 +2917,9 @@ body.-emu #controls .control-tool {
   left: 2.75rem;
   position: absolute;
   flex-direction: column;
+  flex-wrap: wrap;
   pointer-events: none;
+  max-height: 60vh;
   opacity: 0;
   transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), left 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
 
@@ -2939,7 +2960,7 @@ body.-emu #navigation {
   .-emu-layout.-emu--subtle-layout.-emu-compact body.-emu #navigation {
     left: 4.625rem; }
   body.-emu #navigation #nav-toggle {
-    background-color: rgba(var(--color-background), 0.8);
+    background-color: rgba(var(--color-background), var(--emu-background-opacity-scene-navigation, 0.8));
     background-image: var(--emu-image-background-controls, none); }
     .-emu-layout body.-emu #navigation #nav-toggle {
       top: 0;
@@ -2959,7 +2980,7 @@ body.-emu #navigation {
     pointer-events: all; }
   body.-emu #navigation #scene-list .scene,
   body.-emu #navigation .scene-list .scene {
-    background-color: rgba(var(--color-background-darkest), 0.8);
+    background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-scene-navigation, 0.8));
     background-image: var(--emu-image-background-controls, none);
     border: none;
     border-radius: var(--emu-border-radius-controls, 0);
@@ -3079,8 +3100,8 @@ body.-emu .app {
     z-index: 10; }
 
 body.-emu .window-app {
-  background-color: rgba(var(--color-background-lightest), 1);
-  background-image: var(--emu-image-background-light, none);
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-window, 1));
+  background-image: var(--emu-image-background, none);
   border: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: 0 2px 4px rgba(var(--color-black), 1); }
@@ -3091,12 +3112,7 @@ body.-emu .window-app {
     margin: 0; }
     .-emu-layout body.-emu .window-app.minimized .window-resizable-handle {
       display: none; }
-  body.-emu .window-app.sidebar-popout {
-    background-color: rgba(var(--color-background-darkest), 0.8);
-    background-image: var(--emu-image-background-darkest, none); }
   body.-emu .window-app .window-header {
-    background-color: rgba(var(--color-background), 1);
-    background-image: var(--emu-image-background, none);
     border: none;
     -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
             border-block-end: rgba(var(--color-border), 1) 1px solid;
@@ -3177,7 +3193,8 @@ body.-emu .window-app {
         -webkit-margin-end: var(--emu-space-base);
                 margin-inline-end: var(--emu-space-base); }
   body.-emu .window-app .window-content {
-    background: transparent;
+    background-color: rgba(var(--color-background-lightest), var(--emu-background-opacity-window-content, 1));
+    background-image: var(--emu-image-background-lightest, none);
     color: rgba(var(--color-text), 1); }
     .-emu-layout body.-emu .window-app .window-content {
       flex: 1 1 auto;
@@ -3262,12 +3279,9 @@ body.-emu .sheet .sheet-header > h1 input {
 
 body.-emu #sidebar,
 body.-emu .sidebar-popout {
-  background-color: rgba(var(--color-background-darkest), 0.8);
+  background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-sidebar, 0.8));
   background-image: var(--emu-image-background-darkest, none);
   border: rgba(var(--color-border), 1) 1px solid;
-  -webkit-border-end: none;
-          border-inline-end: none;
-  border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0);
   box-shadow: none;
   transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu #sidebar, .-emu-layout
@@ -3518,53 +3532,59 @@ body.-emu .sidebar-popout {
     display: flex;
     flex-direction: column; }
 
-.-emu-layout.-emu-subtle-layout body.-emu #sidebar {
-  opacity: var(--emu-subtle-opacity, 0.3);
-  overflow: visible;
-  right: calc(-1 * var(--emu-space-sidebar));
-  transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1), right 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
-  .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover {
-    opacity: 1;
-    right: 0; }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after {
-      content: "\f0da"; }
-  .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed {
-    right: 0; }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::after {
-      display: none; }
-  .-emu-layout.-emu-subtle-layout body.-emu #sidebar::before {
-    top: calc(-1 * var(--emu-space-md) / 2);
-    right: 0;
-    position: absolute;
-    background-color: transparent;
-    content: "";
-    height: calc(100% + var(--emu-space-md));
-    width: calc(100% + var(--emu-space-button));
-    z-index: -1; }
-  .-emu-layout.-emu-subtle-layout body.-emu #sidebar::after {
-    top: 50%;
-    right: 100%;
-    position: absolute;
-    align-items: center;
-    background-color: rgba(var(--color-background), 1);
-    border: rgba(var(--color-border), 1) 1px solid;
-    -webkit-border-end: 0;
-            border-inline-end: 0;
-    content: "\f0d9";
-    cursor: pointer;
-    display: flex;
-    height: 4rem;
-    justify-content: center;
-    -webkit-margin-before: -2rem;
-            margin-block-start: -2rem;
-    width: var(--emu-space-button); }
+body.-emu #sidebar {
+  -webkit-border-end: none;
+          border-inline-end: none;
+  border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0); }
+  .-emu-layout.-emu-subtle-layout body.-emu #sidebar {
+    opacity: var(--emu-subtle-opacity, 0.3);
+    overflow: visible;
+    right: calc(-1 * var(--emu-space-sidebar));
+    transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1), right 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover {
+      opacity: 1;
+      right: 0; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after {
+        content: "\f0da"; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed {
+      right: 0; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::after {
+        display: none; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar::before {
+      top: calc(-1 * var(--emu-space-md) / 2);
+      right: 0;
+      position: absolute;
+      background-color: transparent;
+      content: "";
+      height: calc(100% + var(--emu-space-md));
+      width: calc(100% + var(--emu-space-button));
+      z-index: -1; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar::after {
+      top: 50%;
+      right: 100%;
+      position: absolute;
+      align-items: center;
+      background-color: rgba(var(--color-background), 1);
+      border: rgba(var(--color-border), 1) 1px solid;
+      -webkit-border-end: 0;
+              border-inline-end: 0;
+      content: "\f0d9";
+      cursor: pointer;
+      display: flex;
+      height: 4rem;
+      justify-content: center;
+      -webkit-margin-before: -2rem;
+              margin-block-start: -2rem;
+      width: var(--emu-space-button); }
 
 body.-emu .sidebar-popout {
-  border-radius: var(--emu-border-radius-default, 0);
-  border: rgba(var(--color-border), 1) 1px solid; }
+  border-radius: var(--emu-border-radius-default, 0); }
   .-emu-layout body.-emu .sidebar-popout {
     height: auto;
-    min-height: 50vh; }
+    min-height: 50vh;
+    min-width: var(--emu-space-sidebar); }
+  body.-emu .sidebar-popout .window-content {
+    background-color: transparent; }
     .-emu-layout body.-emu .sidebar-popout .window-content {
       padding: 0; }
 
@@ -8075,7 +8095,7 @@ body.-emu .sidebar-popout .import-dd {
     -webkit-margin-before: 0 !important;
             margin-block-start: 0 !important; }
 
-body.-emu #dd-importer .window-content {
+.-emu-layout body.-emu #dd-importer .window-content {
   overflow: auto; }
 
 .-emu-layout body.-emu #dd-importer .form-group {
