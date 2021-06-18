@@ -59,3 +59,40 @@ ul.command-menu {
 		}
 	}
 }
+
+.window-app {
+	.window-draggable-handle {
+		background-color: color("background-button");
+		border: none;
+		border-block-start: color("background-lightest") 2px solid;
+		border-inline-end: color("background-lightest") 2px solid;
+		border-radius: 0 $global-border-radius-default 0 0;
+		color: color("text-lightest");
+		transition: t(background box-shadow color, "link");
+
+		@include layout {
+			@include absolute(bottom 0 left 0);
+			@include size(space("button-xs"));
+			align-items: center;
+			cursor: pointer;
+			display: inline-flex;
+			font-size: fs("md");
+			justify-content: center;
+			margin: 0;
+			padding: 0;
+			z-index: z("fixed");
+
+			> i {
+				transform: rotate(45deg);
+			}
+		}
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+	}
+}

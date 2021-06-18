@@ -1,135 +1,139 @@
-#sidebar {
-	.dice-tray {
-		@extend %panel-block;
-		border-block-start: b("border");
+#sidebar,
+.sidebar-popout {
+	#chat {
+		section.dice-tray {
+			@extend %panel-block;
+			border-block-start: b("border");
 
-		@include layout {
-			flex-direction: column;
-		}
-
-		> .flexrow {
 			@include layout {
-				margin: 0;
-				width: 100%;
+				flex-direction: column;
+			}
+
+			> .flexrow {
+				@include layout {
+					margin: 0;
+					width: 100%;
+
+					&:last-child {
+						margin-block-start: m("base");
+					}
+				}
+			}
+
+			button.dice-tray__button,
+			button.dice-tray__ad,
+			button.dice-tray__math,
+			button.dice-tray__roll {
+				box-shadow: none;
+
+				@include layout {
+					flex: 1 1 auto;
+					font-weight: normal;
+					margin: 0;
+					margin-inline-end: m("base");
+				}
 
 				&:last-child {
-					margin-block-start: m("base");
+					@include layout {
+						margin-inline-end: 0;
+					}
 				}
 			}
-		}
 
-		button.dice-tray__button,
-		button.dice-tray__ad,
-		button.dice-tray__math,
-		button.dice-tray__roll {
-			box-shadow: none;
-
-			@include layout {
-				flex: 1 1 auto;
-				font-weight: normal;
-				margin-inline-end: m("base");
-			}
-
-			&:last-child {
+			button.dice-tray__button {
 				@include layout {
-					margin-inline-end: 0;
+					margin-inline-start: 0;
+					padding: p("base") p("sm");
+				}
+
+				&:hover svg * {
+					fill: color("white");
+				}
+
+				svg {
+					transition: initial;
 				}
 			}
-		}
 
-		button.dice-tray__button {
-			@include layout {
-				margin-inline-start: 0;
-				padding: p("base") p("sm");
-			}
+			.dice-tray__flag {
+				background-color: color("primary");
+				border-radius: 0;
+				color: color("text-lightest");
+				transition: t(max-height, "shift", "fast");
 
-			&:hover svg * {
-				fill: color("white");
-			}
+				@include layout {
+					@include absolute(left 0 bottom 100%);
+					@include size(100%, space("button-xs"));
+					align-items: center;
+					display: flex;
+					font-size: fs("md");
+					justify-content: center;
+					line-height: 1;
+					max-height: space("button-xs");
+					overflow: hidden;
+					width: 100%;
 
-			svg {
-				transition: initial;
-			}
-		}
-
-		.dice-tray__flag {
-			background-color: color("primary");
-			border-radius: 0;
-			color: color("text-lightest");
-			transition: t(max-height, "shift", "fast");
-
-			@include layout {
-				@include absolute(left 0 bottom 100%);
-				@include size(100%, space("button-xs"));
-				align-items: center;
-				display: flex;
-				font-size: fs("md");
-				justify-content: center;
-				line-height: 1;
-				max-height: space("button-xs");
-				overflow: hidden;
-				width: 100%;
-
-				&.hide {
-					max-height: 0;
+					&.hide {
+						max-height: 0;
+					}
 				}
 			}
-		}
 
-		button.dice-tray__math,
-		button.dice-tray__roll {
-			@include layout {
-				@include size(auto, space("button"));
-				flex: 0 0 auto;
-			}
-		}
-
-		button.dice-tray__math--add,
-		button.dice-tray__math--sub {
-			@include layout {
-				min-width: space("button");
-			}
-		}
-
-		button.dice-tray__advantage,
-		button.dice-tray__math--add {
-			&:hover {
-				background-color: color("positive");
-			}
-		}
-
-		button.dice-tray__disadvantage,
-		button.dice-tray__math--sub {
-			&:hover {
-				background-color: color("negative");
-			}
-		}
-
-		input.dice-tray__input {
-			@extend %input-text;
-			background-color: color("background-lightest");
-
-			@include layout {
-				margin-inline-end: m("base");
-			}
-		}
-
-		.dice-tray__stacked {
-			@include layout {
-				height: space("button");
-				margin-inline-end: m("base");
-			}
-		}
-
-		button.dice-tray__ad {
-			@include layout {
-				font-size: fs("xs");
-				margin: 0;
-				padding: 0;
+			button.dice-tray__math,
+			button.dice-tray__roll {
+				@include layout {
+					@include size(auto, space("button"));
+					flex: 0 0 auto;
+				}
 			}
 
-			&.dice-tray__disadvantage {
-				border-block-start: b("border");
+			button.dice-tray__math--add,
+			button.dice-tray__math--sub {
+				@include layout {
+					min-width: space("button");
+				}
+			}
+
+			button.dice-tray__advantage,
+			button.dice-tray__math--add {
+				&:hover {
+					background-color: color("positive");
+				}
+			}
+
+			button.dice-tray__disadvantage,
+			button.dice-tray__math--sub {
+				&:hover {
+					background-color: color("negative");
+				}
+			}
+
+			input.dice-tray__input {
+				@extend %input-text;
+				background-color: color("background-lightest");
+
+				@include layout {
+					margin-inline-end: m("base");
+				}
+			}
+
+			.dice-tray__stacked {
+				@include layout {
+					height: space("button");
+					margin-inline-end: m("base");
+				}
+			}
+
+			button.dice-tray__ad {
+				@include layout {
+					font-size: fs("xs");
+					margin: 0;
+					padding: 0;
+				}
+
+				&.dice-tray__disadvantage {
+					border-block-start: b("border");
+				}
 			}
 		}
 	}

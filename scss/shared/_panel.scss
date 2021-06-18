@@ -1,5 +1,5 @@
 %panel-block {
-	background-color: color("background", 0.5);
+	background-color: color("background", $global-background-opacity-sidebar);
 	background-image: $global-image-background;
 	border: none;
 	color: color("text-lightest");

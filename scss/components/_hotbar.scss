@@ -45,8 +45,9 @@
 		transition: t(opacity, "link");
 
 		@include layout {
-			display: block;
+			display: flex;
 			flex: 1 1 auto;
+			flex-wrap: nowrap;
 			height: auto;
 			margin: 0;
 			pointer-events: all;
@@ -137,7 +138,7 @@
 		.page-control,
 		#macro-directory,
 		#bar-toggle {
-			background-color: color("background", 0.8);
+			background-color: color("background", $global-background-opacity-hotbar);
 			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 			transition: t(box-shadow, "link");
@@ -177,7 +178,7 @@
 		}
 
 		.page-number {
-			background-color: color("background", 0.5);
+			background-color: color("background", $global-background-opacity-hotbar);
 			background-image: $global-image-background-controls;
 			color: color("text-lightest");
 
@@ -192,7 +193,7 @@
 	}
 
 	.macro {
-		background-color: color("background", 0.8);
+		background-color: color("background", $global-background-opacity-hotbar);
 		background-image: $global-image-background-controls;
 		border: b("border");
 		border-radius: 0;
@@ -236,7 +237,7 @@
 
 		&.active {
 			@extend %global-active;
-			background-color: color("background", 0.8);
+			background-color: color("background", $global-background-opacity-hotbar);
 		}
 
 		.macro-key {
@@ -270,7 +271,7 @@
 		}
 
 		.tooltip {
-			background-color: color("background-darkest", 0.5);
+			background-color: color("background-darkest");
 			border: none;
 			border-radius: $global-border-radius-default;
 			color: color("text-lightest");

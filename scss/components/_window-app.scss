@@ -13,8 +13,8 @@
 }
 
 .window-app {
-	background-color: color("background-lightest");
-	background-image: $global-image-background-light;
+	background-color: color("background", $global-background-opacity-window);
+	background-image: $global-image-background;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
@@ -32,17 +32,10 @@
 		}
 	}
 
-	&.sidebar-popout {
-		background-color: color("background-darkest", 0.8);
-		background-image: $global-image-background-darkest;
-	}
-
 	.window-header {
-		background-color: color("background");
-		background-image: $global-image-background;
 		border: none;
 		border-block-end: b("border");
-		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+		border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
 		color: color("text-lightest");
 
 		@include layout {
@@ -70,7 +63,8 @@
 			}
 		}
 
-		> a {
+		> a,
+		a.header-button {
 			background: transparent;
 			text-shadow: none;
 
@@ -136,7 +130,8 @@
 	}
 
 	.window-content {
-		background: transparent;
+		background-color: color("background-lightest", $global-background-opacity-window-content);
+		background-image: $global-image-background-lightest;
 		color: color("text");
 
 		@include layout {

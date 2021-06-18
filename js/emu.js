@@ -67,6 +67,15 @@ function updateSettings(settings) {
 		imageBackgroundLight,
 		imageBackgroundDarkest,
 		imageBackgroundControls,
+		backgroundOpacityButtonPrimary,
+		backgroundOpacityHotbar,
+		backgroundOpacityHud,
+		backgroundOpacityPlayers,
+		backgroundOpacitySceneControls,
+		backgroundOpacitySceneNavigation,
+		backgroundOpacitySidebar,
+		backgroundOpacityWindow,
+		backgroundOpacityWindowContent,
 		imageLogo,
 		toggleLogo,
 		toggleSceneThumbs,
@@ -131,6 +140,17 @@ function updateSettings(settings) {
 	if(imageLogo != 'none' || imageLogo == null) {
 		imageLogo === '' ? null : document.getElementById('logo').setAttribute('src', `/${imageLogo}`);
 	}
+
+	// Background Color Opacity
+	backgroundOpacityButtonPrimary ? document.documentElement.style.setProperty('--emu-background-opacity-button-primary', `${backgroundOpacityButtonPrimary}`) : document.documentElement.style.setProperty('--emu-background-opacity-button-primary', `1`);
+	backgroundOpacityHotbar ? document.documentElement.style.setProperty('--emu-background-opacity-hotbar', `${backgroundOpacityHotbar}`) : document.documentElement.style.setProperty('--emu-background-opacity-hotbar', `0.8`);
+	backgroundOpacityHud ? document.documentElement.style.setProperty('--emu-background-opacity-hud', `${backgroundOpacityHud}`) : document.documentElement.style.setProperty('--emu-background-opacity-hud', `0.8`);
+	backgroundOpacityPlayers ? document.documentElement.style.setProperty('--emu-background-opacity-players', `${backgroundOpacityPlayers}`) : document.documentElement.style.setProperty('--emu-background-opacity-players', `0.8`);
+	backgroundOpacitySceneControls ? document.documentElement.style.setProperty('--emu-background-opacity-scene-control', `${backgroundOpacitySceneControls}`) : document.documentElement.style.setProperty('--emu-background-opacity-scene-control', `0.8`);
+	backgroundOpacitySceneNavigation ? document.documentElement.style.setProperty('--emu-background-opacity-scene-navigation', `${backgroundOpacitySceneNavigation}`) : document.documentElement.style.setProperty('--emu-background-opacity-scene-navigation', `0.8`);
+	backgroundOpacitySidebar ? document.documentElement.style.setProperty('--emu-background-opacity-sidebar', `${backgroundOpacitySidebar}`) : document.documentElement.style.setProperty('--emu-background-opacity-sidebar', `0.8`);
+	backgroundOpacityWindow ? document.documentElement.style.setProperty('--emu-background-opacity-window', `${backgroundOpacityWindow}`) : document.documentElement.style.setProperty('--emu-background-opacity-window', `1`);
+	backgroundOpacityWindowContent ? document.documentElement.style.setProperty('--emu-background-opacity-window-content', `${backgroundOpacityWindowContent}`) : document.documentElement.style.setProperty('--emu-background-opacity-window-content', `1`);
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
@@ -199,6 +219,15 @@ class emuSettings {
 			imageBackgroundLight: '',
 			imageBackgroundDarkest: '',
 			imageBackgroundControls: '',
+			backgroundOpacityButtonPrimary: 1,
+			backgroundOpacityHotbar: 0.8,
+			backgroundOpacityHud: 0.8,
+			backgroundOpacityPlayers: 0.8,
+			backgroundOpacitySceneControls: 0.8,
+			backgroundOpacitySceneNavigation: 0.8,
+			backgroundOpacitySidebar: 0.8,
+			backgroundOpacityWindow: 1,
+			backgroundOpacityWindowContent: 1,
 			imageLogo: '',
 			toggleLogo: true,
 			toggleSceneThumbs: true,
@@ -316,11 +345,14 @@ Hooks.once('ready', () => {
 	googleFontPre.href = 'https://fonts.gstatic.com';
 	myHead.appendChild(googleFontPre);
 
+	// Status of Ernie's Layout
+	const emuLayoutStatus = game.settings.get(moduleName, 'settings').emuLayout;
+
 	// Layouts
 	game.settings.register(moduleName, 'compactMode', {
 		name: game.i18n.localize('emu.layout-compact'),
 		scope: 'user',
-		config: true,
+		config: emuLayoutStatus,
 		default: false,
 		type: Boolean,
 		onChange: data => {
@@ -333,7 +365,7 @@ Hooks.once('ready', () => {
 	game.settings.register(moduleName, 'subtleLayout', {
 		name: game.i18n.localize('emu.layout-subtle-layout'),
 		scope: 'user',
-		config: true,
+		config: emuLayoutStatus,
 		default: false,
 		type: Boolean,
 		onChange: data => {
@@ -346,7 +378,7 @@ Hooks.once('ready', () => {
 	game.settings.register(moduleName, 'subtleLayoutOpacity', {
 		name: game.i18n.localize('emu.layout-subtle-layout-opacity'),
 		scope: 'user',
-		config: true,
+		config: emuLayoutStatus,
 		default: 0.3,
 		type: Number,
 		range: {
@@ -365,7 +397,7 @@ Hooks.once('ready', () => {
 	game.settings.register(moduleName, 'togglePlayers', {
 		name: game.i18n.localize('emu.toggle-players'),
 		scope: 'user',
-		config: true,
+		config: emuLayoutStatus,
 		default: false,
 		type: Boolean,
 		onChange: data => {
@@ -379,7 +411,7 @@ Hooks.once('ready', () => {
 		name: game.i18n.localize('emu.layout-control-align'),
 		hint: game.i18n.localize('emu.layout-control-align-hint'),
 		scope: 'user',
-		config: true,
+		config: emuLayoutStatus,
 		default: false,
 		type: Boolean,
 		onChange: data => {
@@ -389,9 +421,7 @@ Hooks.once('ready', () => {
 	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
 	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
 
-	// Check for other modules
 	setTimeout(function() {
-		document.getElementsByClassName('dice-tray').length >= 1 ? myHtml[0].classList.add('-emu-dice-tray-active') : myHtml[0].classList.remove('-emu-dice-tray-active');
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
 		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
 	}, 1000);

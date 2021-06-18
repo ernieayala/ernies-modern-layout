@@ -4,17 +4,19 @@
 	@include layout {
 		@include fixed(top space("sm") left to-rem(148px));
 		transition: t(opacity, "link");
-		width: calc(100% - #{to-rem(520px)});
+		width: calc(100% - #{to-rem(148px)} - #{space("sm")} - #{space("sidebar")});
 		z-index: z("fixed");
 	}
 
 	@include layout(compact) {
 		left: to-rem(112px);
+		width: calc(100% - #{to-rem(112px)} - #{space("sm")} - #{space("sidebar")});
 	}
 
 	@include layout-subtle {
 		left: to-rem(112px);
 		opacity: $global-subtle-opacity;
+		width: calc(100% - #{to-rem(112px)} - #{space("sm")} - #{space("sidebar")});
 
 		&:hover,
 		&:active {
@@ -42,7 +44,7 @@
 
 	#nav-toggle {
 		@extend %control-button;
-		background-color: color("background", 0.8);
+		background-color: color("background", $global-background-opacity-scene-navigation);
 		background-image: $global-image-background-controls;
 
 		@include layout {
@@ -71,10 +73,10 @@
 		}
 
 		.scene {
-			background-color: color("background-darkest", 0.8);
+			background-color: color("background-darkest", $global-background-opacity-scene-navigation);
 			background-image: $global-image-background-controls;
 			border: none;
-			border-radius: $global-border-radius-default;
+			border-radius: $global-border-radius-controls;
 			box-shadow: none;
 			color: color("text-lightest");
 			outline: none;

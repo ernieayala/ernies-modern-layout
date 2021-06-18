@@ -90,10 +90,11 @@
 	}
 
 	.scene-control {
-		background-color: color("background-darkest", 0.8);
+		background-color: color("background-darkest", $global-background-opacity-scene-control);
 		background-image: $global-image-background-controls;
 
 		&.active .control-tools {
+			display: inline-flex;
 			opacity: 1;
 
 			@include layout-subtle {
@@ -107,8 +108,12 @@
 	}
 
 	.control-tool {
-		background-color: color("background", 0.8);
+		background-color: color("background", $global-background-opacity-scene-control);
 		background-image: $global-image-background-controls;
+
+		@include layout {
+			margin-inline-end: space("base");
+		}
 
 		&.toggle {
 			background-color: color("background-lightest");
@@ -140,7 +145,9 @@
 			@extend %reset-list;
 			@include absolute(top 0 left to-rem(44px));
 			flex-direction: column;
+			flex-wrap: wrap;
 			pointer-events: none;
+			max-height: 60vh;
 			opacity: 0;
 			transition: t(opacity left, "link");
 		}

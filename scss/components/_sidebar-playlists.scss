@@ -22,6 +22,7 @@
 				.playlist-sounds {
 					@include layout {
 						@extend %reset-list;
+						height: auto !important;
 						max-height: 0 !important;
 						padding: 0 !important;
 					}
@@ -31,7 +32,6 @@
 			.playlist-header {
 				background: transparent;
 				border: none;
-				border-block-end: none;
 				color: color("text-lightest");
 
 				@include layout {
@@ -65,8 +65,8 @@
 
 				@include layout {
 					@extend %reset-list;
-					padding: 0;
-					padding-block-start: p("base");
+					height: auto !important;
+					padding: 0 !important;
 					width: 100%;
 				}
 
@@ -90,7 +90,6 @@
 						flex-wrap: nowrap;
 						padding-inline-start: 0;
 						padding-inline-end: 0;
-						transition: none !important;
 
 						&:last-of-type {
 							padding-block-end: 0;
@@ -125,8 +124,10 @@
 							background-color: color("folder-directory");
 						}
 
-						.playlist-header {
-							border-block-end: b("border");
+						.playlist-sounds {
+							.sound:first-child {
+								border-block-start: b("border");
+							}
 						}
 					}
 				}
@@ -134,7 +135,12 @@
 
 			.playlist-sounds {
 				@include layout {
+					height: auto !important;
 					width: 100%;
+				}
+
+				.sound:first-child {
+					border-block-start: b("transparent");
 				}
 			}
 
@@ -176,7 +182,17 @@
 
 					.sound-control {
 						@extend %control-button;
+
+						&.inactive {
+							opacity: 0.5;
+						}
 					}
+				}
+			}
+
+			.playlist-header {
+				@include layout {
+					flex: 0 0 auto;
 				}
 			}
 
@@ -273,6 +289,10 @@
 
 				.sound-control {
 					@extend %control-button;
+
+					&.inactive {
+						opacity: 0.5;
+					}
 				}
 
 				.sound-playback {
@@ -280,7 +300,7 @@
 						align-items: center;
 						display: flex;
 						grid-area: playback;
-						padding: p("base") 0;
+						padding: 0;
 					}
 
 					.sound-timer {

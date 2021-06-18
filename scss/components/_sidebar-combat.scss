@@ -147,7 +147,7 @@
 
 					h4 {
 						color: color("text-lightest");
-						border-block-end: 1px solid color("border-lighter", 0.5);
+						border-block-end: 1px solid color("border-lighter", 0.1);
 
 						@include layout {
 							@include ellipsis(max-width 100%);
@@ -256,6 +256,7 @@
 			border-block-start: b("border");
 
 			@include layout {
+				flex-wrap: nowrap;
 				padding-block-start: m("sm");
 
 				&:empty {
@@ -267,6 +268,11 @@
 				@extend %primary-button;
 
 				@include layout {
+					&.center {
+						flex: 1 1 auto;
+						white-space: nowrap;
+					}
+
 					+ .combat-control {
 						margin-inline-start: m("base");
 					}

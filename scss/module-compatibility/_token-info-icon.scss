@@ -22,10 +22,34 @@
 
 		.token-info-icon {
 			@include layout {
+				flex-wrap: wrap;
+				height: auto;
 				margin: 0 0 m("base") 0 !important;
+				min-height: space("button-lg");
 				min-width: 0;
 				padding: 0 p("sm");
-				width: auto;
+
+				.token-info-speed {
+					font-size: to-rem(12px);
+					margin: m("xs") 0;
+					width: 100%;
+
+					&:first-child {
+						margin-block-start: m("base");
+					}
+
+					&:last-child {
+						margin-block-end: m("base");
+					}
+
+					> i {
+						font-size: to-rem(10px);
+					}
+
+					> span {
+						font-size: inherit !important;
+					}
+				}
 
 				i,
 				> i {
