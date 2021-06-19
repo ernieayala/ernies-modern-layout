@@ -13,7 +13,7 @@
 	}
 
 	#tah-hudTitle {
-		color: color("white");
+		color: color("text-lightest");
 		text-shadow: 2px 2px 2px color("black");
 
 		@include layout {
@@ -67,7 +67,7 @@
 	}
 
 	.tah-subtitle {
-		color: color("white");
+		color: color("text-lightest");
 		text-shadow: 2px 2px 2px color("black");
 
 		@include layout {

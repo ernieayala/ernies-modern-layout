@@ -20,7 +20,7 @@
 
 .combatready-timebar-fill {
 	background-color: color("primary");
-	color: color("white");
+	color: color("text-lightest");
 
 	.combatready-timebaricon {
 		@include layout {

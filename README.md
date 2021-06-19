@@ -51,6 +51,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Pathfinder 1
 - Savage Worlds
 
+### Mods Tested as of June 19th, 2021
+- Hey Listen: Chat Notifications (FNS)
+
 ### Mods Tested as of June 14th, 2021
 - Advanced Macros
 - Dfreds Droppables
