@@ -4751,6 +4751,20 @@ body.-emu #link-creation.coc7 .form-group label {
   border: none;
   padding: 0; }
 
+.-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content {
+  padding: var(--emu-space-sm); }
+  .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields {
+    flex-wrap: nowrap; }
+    .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields .sep {
+      margin-inline-start: var(--emu-space-base); }
+    .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields .max {
+      flex: 1; }
+
+.-emu-layout body.-emu .dnd5e.dialog #short-rest-hd {
+  padding-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu .dnd5e.dialog #short-rest-hd .form-fields select {
+    flex: 1 1 auto; }
+
 .-emu-layout body.-emu .dnd5e .form-header {
   font-family: inherit; }
 
@@ -5217,6 +5231,12 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapp
       margin-inline-start: var(--emu-space-base);
       width: var(--emu-space-button-lg); }
 
+.-emu-layout body.-emu #sidebar #chat.small-chat + #combat {
+  flex: 1; }
+
+body.-emu #sidebar .small-chat::after {
+  border-color: rgba(var(--color-primary), 1); }
+
 body.-emu .combatready-timebar,
 body.-emu .combatready-timebar-fill {
   border-radius: var(--emu-border-radius-default, 0);
@@ -5664,7 +5684,7 @@ body.-emu .ddb-muncher.window-app #munch-classes-start {
   padding: 0 !important;
   text-align: initial !important; }
 
-body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .tab .effect-change textarea {
+.-emu-layout body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .tab .effect-change textarea {
   min-height: var(--emu-space-button);
   padding-block-start: calc(var(--emu-space-base) + var(--emu-space-xs));
   padding-block-end: calc(var(--emu-space-base) + var(--emu-space-xs)); }
@@ -6096,6 +6116,21 @@ body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]:checked + label {
       position: fixed;
       background-color: rgba(var(--color-black), 0.5);
       content: ""; }
+
+body.-emu #macro-popout.window-app .folder-header.macro-folder-header h3 {
+  margin: 0 !important; }
+
+body.-emu .select-folder.window-app.form .form-folder-list {
+  background-color: transparent;
+  border: none; }
+
+body.-emu #macro-folder-edit .form-macro-list {
+  background-color: transparent;
+  border: none;
+  border-radius: 0; }
+  .-emu-layout body.-emu #macro-folder-edit .form-macro-list {
+    font-size: var(--emu-font-size-md);
+    padding: 0; }
 
 .-emu-layout body.-emu #sidebar #playlists .header-actions > .flexrow, .-emu-layout
 body.-emu .sidebar-popout #playlists .header-actions > .flexrow {

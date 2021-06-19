@@ -1,0 +1,13 @@
+#sidebar {
+	#chat.small-chat {
+		+ #combat {
+			@include layout {
+				flex: 1;
+			}
+		}
+	}
+
+	.small-chat::after {
+		border-color: color("primary");
+	}
+}

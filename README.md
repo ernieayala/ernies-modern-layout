@@ -52,7 +52,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Savage Worlds
 
 ### Mods Tested as of June 19th, 2021
+- Combat Focus
 - Hey Listen: Chat Notifications (FNS)
+- Macro Folders
 
 ### Mods Tested as of June 14th, 2021
 - Advanced Macros

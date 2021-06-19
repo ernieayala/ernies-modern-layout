@@ -12,10 +12,13 @@
 		}
 
 		.effect-change {
+			// so confused
 			textarea {
-				min-height: space("button");
-				padding-block-start: calc(#{p("base")} + #{p("xs")});
-				padding-block-end: calc(#{p("base")} + #{p("xs")});
+				@include layout {
+					min-height: space("button");
+					padding-block-start: calc(#{p("base")} + #{p("xs")});
+					padding-block-end: calc(#{p("base")} + #{p("xs")});
+				}
 			}
 		}
 	}

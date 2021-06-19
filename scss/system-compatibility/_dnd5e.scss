@@ -1,4 +1,36 @@
 .dnd5e {
+	&.hd-config.dialog {
+		.window-content {
+			@include layout {
+				padding: p("sm");
+
+				.form-group .form-fields {
+					flex-wrap: nowrap;
+
+					.sep {
+						margin-inline-start: m("base");
+					}
+
+					.max {
+						flex: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&.dialog {
+		#short-rest-hd {
+			@include layout {
+				padding-block-start: p("sm");
+
+				.form-fields select {
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+
 	.form-header {
 		@include layout {
 			font-family: inherit;
