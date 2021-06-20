@@ -435,7 +435,7 @@ Hooks.once('ready', () => {
 	function addLockElement () {
 		const lockElement = document.createElement('div');
 		lockElement.setAttribute('id', 'emu-sidebar-lock');
-		// lockElement.setAttribute('onclick', 'lockTheSidebar()');
+
 		const sideBarElement = document.getElementById('sidebar');
 		sideBarElement.appendChild(lockElement);
 
