@@ -421,10 +421,28 @@ Hooks.once('ready', () => {
 	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
 	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
 
+	// Timeout because i'm bad at javascript
 	setTimeout(function() {
+		// Set Font Family
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
 		_fontFamilyCustom != '' ? setFontFamily(_fontFamilyCustom) : setFontFamily(game.settings.get(moduleName, 'settings').fontFamily);
+
+		// Sidebar Lock
+		addLockElement();
 	}, 1000);
+
+	// Sidebar Lock Element
+	function addLockElement () {
+		const lockElement = document.createElement('div');
+		lockElement.setAttribute('id', 'emu-sidebar-lock');
+		// lockElement.setAttribute('onclick', 'lockTheSidebar()');
+		const sideBarElement = document.getElementById('sidebar');
+		sideBarElement.appendChild(lockElement);
+
+		lockElement.onclick = function(){
+			sideBarElement.classList.toggle('is-locked');
+		};
+	}
 
 	// Say Hello
 	console.log('Ernie\'s Modern UI Active');

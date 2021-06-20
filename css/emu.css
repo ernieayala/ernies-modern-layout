@@ -715,7 +715,7 @@ body.-emu #navigation .scene-list .scene.active:focus,
 body.-emu #navigation .scene-list .scene.view:focus, body.-emu #sidebar #sidebar-tabs > .item.active:focus,
 body.-emu #sidebar #sidebar-tabs > .collapse.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active:focus,
-body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:focus:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
+body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:focus, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:focus, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:focus, body.-emu .sheet.user-config .directory-item.context:focus, body.-emu #df-curvy-walls-tools .control-tool.active:focus, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:focus, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:focus, body.-emu .dialog .directory .directory-item:focus,
 body.-emu #sidebar .directory .directory-item:focus,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item:focus, body.-emu .dialog .directory .directory-item.folder .folder-header:focus,
@@ -761,7 +761,7 @@ body.-emu #navigation .scene-list .scene.active,
 body.-emu #navigation .scene-list .scene.view, body.-emu #sidebar #sidebar-tabs > .item.active,
 body.-emu #sidebar #sidebar-tabs > .collapse.active,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active,
-body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active,
+body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock, body.-emu #sidebar #combat #combat-tracker .combatant.active,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy, body.-emu .sheet.user-config .directory-item.context, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name {
   background-color: rgba(var(--color-primary), 1);
   color: rgba(var(--color-text-lightest), 1);
@@ -795,7 +795,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .
   body.-emu #navigation .scene-list .scene.view:hover, body.-emu #sidebar #sidebar-tabs > .item.active:hover,
   body.-emu #sidebar #sidebar-tabs > .collapse.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .item.active:hover,
-  body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
+  body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:hover, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:hover, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:hover, body.-emu .sheet.user-config .directory-item.context:hover, body.-emu #df-curvy-walls-tools .control-tool.active:hover, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:hover, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1);
@@ -882,7 +882,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
   margin: 0;
   padding: 0; }
 
-.-emu-layout.-emu-subtle-layout body.-emu #sidebar::after, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button, .-emu-layout body.-emu .window-app.token-mold .window-content form select.icon.fas.fa {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -3090,6 +3090,7 @@ body.-emu .sidebar-popout {
   body.-emu .sidebar-popout {
     top: calc(var(--emu-space-md) / 2);
     right: 0;
+    bottom: auto;
     position: fixed;
     width: var(--emu-space-sidebar);
     height: calc(100% - var(--emu-space-md));
@@ -3329,15 +3330,18 @@ body.-emu #sidebar {
     overflow: visible;
     right: calc(-1 * var(--emu-space-sidebar));
     transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1), right 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover {
-      opacity: 1;
-      right: 0; }
-      .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after {
-        content: "\f0da"; }
     .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed {
       right: 0; }
-      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::after {
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before,
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed #emu-sidebar-lock {
         display: none; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked {
+      opacity: 1;
+      right: 0; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock::before {
+        content: "\f0da"; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock::before {
+      content: "\f023"; }
     .-emu-layout.-emu-subtle-layout body.-emu #sidebar::before {
       top: calc(-1 * var(--emu-space-md) / 2);
       right: 0;
@@ -3347,7 +3351,7 @@ body.-emu #sidebar {
       height: calc(100% + var(--emu-space-md));
       width: calc(100% + var(--emu-space-button));
       z-index: -1; }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar::after {
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock {
       top: 50%;
       right: 100%;
       position: absolute;
@@ -3355,13 +3359,17 @@ body.-emu #sidebar {
       background-color: rgba(var(--color-background), 1);
       border: rgba(var(--color-border), 1) 1px solid;
       border-inline-end: 0;
-      content: "\f0d9";
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       height: 4rem;
       justify-content: center;
       margin-block-start: -2rem;
       width: var(--emu-space-button); }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock::before {
+        content: "\f0d9"; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock:hover::before {
+        content: "\f023"; }
 
 body.-emu .sidebar-popout {
   border-radius: var(--emu-border-radius-default, 0); }
