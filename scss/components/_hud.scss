@@ -2,10 +2,11 @@
 	input[type="text"] {
 		@extend %input-text;
 		background: color("background-lightest");
-		border: b("primary");
+		border: b("border");
 
 		@include layout {
-			font-size: fs("lg");
+			font-size: fs("xl");
+			height: space("button-lg");
 		}
 	}
 
@@ -37,9 +38,19 @@
 			}
 		}
 
+		&.bar1 {
+			input[type="text"] {
+				border-color: color("positive");
+			}
+		}
+
 		&.bar2 {
 			@include layout {
 				margin-block-end: 0;
+			}
+
+			input[type="text"] {
+				border-color: color("neutral");
 			}
 		}
 
