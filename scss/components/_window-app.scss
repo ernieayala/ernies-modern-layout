@@ -75,11 +75,11 @@
 				width: auto;
 
 				&:hover {
-					color: color("white");
+					color: color("text-lightest");
 				}
 
 				&:focus {
-					color: color("white");
+					color: color("text-lightest");
 					text-decoration: none;
 				}
 			}

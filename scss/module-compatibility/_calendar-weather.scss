@@ -94,7 +94,7 @@
 
 	.calendar-btn,
 	#season-indicator {
-		color: color("white");
+		color: color("text-lightest");
 		transition: t(background box-shadow color, "link");
 
 		@include layout {

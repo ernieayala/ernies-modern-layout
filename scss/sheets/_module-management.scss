@@ -55,7 +55,10 @@
 		&[data-module-name="ernies-modern-layout"] {
 			background-color: color("primary", 0.8);
 
-			.package-title {
+			a,
+			.package-title,
+			.package-description,
+			.package-metadata {
 				color: color("text-lightest");
 			}
 		}
@@ -67,7 +70,7 @@
 		.tag {
 			border: none;
 			border-radius: $global-border-radius-controls;
-			color: color("white");
+			color: color("text-lightest");
 
 			@include layout {
 				align-items: center;
@@ -106,6 +109,18 @@
 			@include layout {
 				margin-inline-end: m("sm");
 			}
+		}
+	}
+
+	.package-description {
+		color: color("text-darker");
+	}
+
+	.package-metadata {
+		color: color("text");
+
+		@include layout {
+			font-size: fs("sm");
 		}
 	}
 

@@ -10,6 +10,17 @@
 				text-align: initial !important;
 			}
 		}
+
+		.effect-change {
+			// so confused
+			textarea {
+				@include layout {
+					min-height: space("button");
+					padding-block-start: calc(#{p("base")} + #{p("xs")});
+					padding-block-end: calc(#{p("base")} + #{p("xs")});
+				}
+			}
+		}
 	}
 
 	.effect-special-duration {

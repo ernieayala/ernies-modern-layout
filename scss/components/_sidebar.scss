@@ -7,7 +7,7 @@
 	transition: t(opacity, "link");
 
 	@include layout {
-		@include fixed(top calc(#{space("md")} / 2) right 0);
+		@include fixed(top calc(#{space("md")} / 2) right 0 bottom auto);
 		@include size(space("sidebar"), calc(100% - #{space("md")}));
 		display: flex;
 		flex-direction: column;
@@ -212,7 +212,7 @@
 				}
 
 				input {
-					background-color: color("white");
+					background-color: color("background-lightest");
 
 					@include layout {
 						flex: 1 1 auto;
@@ -301,22 +301,34 @@
 		right: calc(-1 * #{space("sidebar")});
 		transition: t(opacity right, "shift");
 
-		&:hover {
-			opacity: 1;
-			right: 0;
-
-			&::after {
-				@extend %global-active;
-				content: "\f0da";
-			}
-		}
-
 		&.collapsed {
 			right: 0;
 
 			&::before,
-			&::after {
+			#emu-sidebar-lock {
 				display: none;
+			}
+		}
+
+		&:hover,
+		&.is-locked {
+			opacity: 1;
+			right: 0;
+
+			#emu-sidebar-lock {
+				@extend %global-active;
+
+				&::before {
+					content: "\f0da";
+				}
+			}
+		}
+
+		&.is-locked {
+			#emu-sidebar-lock {
+				&::before {
+					content: "\f023";
+				}
 			}
 		}
 
@@ -329,20 +341,30 @@
 			z-index: z("below");
 		}
 
-		&::after {
+		#emu-sidebar-lock {
 			@include absolute(top 50% right 100%);
 			@extend %font-awesome;
 			align-items: center;
 			background-color: color("background");
 			border: b("border");
 			border-inline-end: 0;
-			content: "\f0d9";
+			color: color("text-lightest");
 			cursor: pointer;
 			display: flex;
 			height: to-rem(64px);
 			justify-content: center;
 			margin-block-start: to-rem(-32px);
 			width: space("button");
+
+			&::before {
+				content: "\f0d9";
+			}
+
+			&:hover {
+				&::before {
+					content: "\f023";
+				}
+			}
 		}
 	}
 }

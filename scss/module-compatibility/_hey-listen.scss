@@ -1,0 +1,32 @@
+.chat-notifications.settings {
+	nav {
+		background-color: transparent;
+
+		@include layout {
+			padding: 0;
+		}
+	}
+
+	.multi-input-row {
+		@include layout {
+			.input-group-col {
+				flex-flow: row;
+
+				&:first-child {
+					flex: 1 1 auto;
+					margin-inline-end: m("base");
+
+					select {
+						flex: 1 1 100%;
+					}
+				}
+			}
+		}
+
+		> * {
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+}

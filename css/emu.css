@@ -276,7 +276,7 @@ body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input, body.-
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="password"]::-moz-placeholder,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="datetime-local"]::-moz-placeholder, body.-emu #hud input[type="text"]::-moz-placeholder, body.-emu #sidebar #chat section.dice-tray input.dice-tray__input::-moz-placeholder,
   body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input::-moz-placeholder, body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-moz-placeholder {
-    color: rgba(var(--color-gray-400), 1); }
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog input[type="text"]::placeholder,
   body.-emu .dialog input[type="number"]::placeholder,
   body.-emu .dialog input[type="date"]::placeholder,
@@ -296,7 +296,7 @@ body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input, body.-
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="password"]::placeholder,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="datetime-local"]::placeholder, body.-emu #hud input[type="text"]::placeholder, body.-emu #sidebar #chat section.dice-tray input.dice-tray__input::placeholder,
   body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input::placeholder, body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::placeholder {
-    color: rgba(var(--color-gray-400), 1); }
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog input:disabled[type="text"],
   body.-emu .dialog input:disabled[type="number"],
   body.-emu .dialog input:disabled[type="date"],
@@ -563,11 +563,11 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea {
   body.-emu .dialog textarea::-moz-placeholder,
   body.-emu #sidebar textarea::-moz-placeholder,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea::-moz-placeholder {
-    color: rgba(var(--color-gray-400), 1); }
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog textarea::placeholder,
   body.-emu #sidebar textarea::placeholder,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea::placeholder {
-    color: rgba(var(--color-gray-400), 1); }
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog textarea:disabled,
   body.-emu #sidebar textarea:disabled,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea:disabled {
@@ -759,7 +759,7 @@ body.-emu #navigation .scene-list .scene.active:focus,
 body.-emu #navigation .scene-list .scene.view:focus, body.-emu #sidebar #sidebar-tabs > .item.active:focus,
 body.-emu #sidebar #sidebar-tabs > .collapse.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active:focus,
-body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:focus:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
+body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:focus, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:focus, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:focus, body.-emu .sheet.user-config .directory-item.context:focus, body.-emu #df-curvy-walls-tools .control-tool.active:focus, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:focus, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:focus, body.-emu .dialog .directory .directory-item:focus,
 body.-emu #sidebar .directory .directory-item:focus,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item:focus, body.-emu .dialog .directory .directory-item.folder .folder-header:focus,
@@ -805,7 +805,7 @@ body.-emu #navigation .scene-list .scene.active,
 body.-emu #navigation .scene-list .scene.view, body.-emu #sidebar #sidebar-tabs > .item.active,
 body.-emu #sidebar #sidebar-tabs > .collapse.active,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active,
-body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active,
+body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock, body.-emu #sidebar #combat #combat-tracker .combatant.active,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy, body.-emu .sheet.user-config .directory-item.context, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name {
   background-color: rgba(var(--color-primary), 1);
   color: rgba(var(--color-text-lightest), 1);
@@ -839,7 +839,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .
   body.-emu #navigation .scene-list .scene.view:hover, body.-emu #sidebar #sidebar-tabs > .item.active:hover,
   body.-emu #sidebar #sidebar-tabs > .collapse.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .item.active:hover,
-  body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
+  body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:hover, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:hover, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:hover, body.-emu .sheet.user-config .directory-item.context:hover, body.-emu #df-curvy-walls-tools .control-tool.active:hover, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:hover, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1);
@@ -935,7 +935,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
   margin: 0;
   padding: 0; }
 
-.-emu-layout.-emu-subtle-layout body.-emu #sidebar::after, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
+.-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control.roll, .-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button,
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button, .-emu-layout body.-emu .window-app.token-mold .window-content form select.icon.fas.fa {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -2377,9 +2377,10 @@ body.-emu #hotbar .macro {
 
 body.-emu #hud input[type="text"] {
   background: rgba(var(--color-background-lightest), 1);
-  border: rgba(var(--color-primary), 1) 1px solid; }
+  border: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #hud input[type="text"] {
-    font-size: var(--emu-font-size-lg); }
+    font-size: var(--emu-font-size-xl);
+    height: var(--emu-space-button-lg); }
 
 .-emu-layout body.-emu #hud .attribute {
   flex: 0 0 auto;
@@ -2401,9 +2402,15 @@ body.-emu #hud .attribute.elevation > i {
   .-emu-layout body.-emu #hud .attribute.elevation > i {
     z-index: 1; }
 
+body.-emu #hud .attribute.bar1 input[type="text"] {
+  border-color: rgba(var(--color-positive), 1); }
+
 .-emu-layout body.-emu #hud .attribute.bar2 {
   -webkit-margin-after: 0;
           margin-block-end: 0; }
+
+body.-emu #hud .attribute.bar2 input[type="text"] {
+  border-color: rgba(var(--color-neutral), 1); }
 
 .-emu-layout body.-emu #hud .attribute:last-child {
   -webkit-margin-after: 0;
@@ -2755,7 +2762,7 @@ body.-emu #players {
       border-width: 0; }
     body.-emu #players > h3:hover, body.-emu #players > h3:active {
       background-color: rgba(var(--color-primary), 1);
-      color: rgba(var(--color-white), 1); }
+      color: rgba(var(--color-text-lightest), 1); }
     body.-emu #players > h3 .players-mode {
       color: inherit; }
       .-emu-layout body.-emu #players > h3 .players-mode {
@@ -3152,10 +3159,10 @@ body.-emu .window-app {
         width: auto; }
         .-emu-layout body.-emu .window-app .window-header > a:hover, .-emu-layout
         body.-emu .window-app .window-header a.header-button:hover {
-          color: rgba(var(--color-white), 1); }
+          color: rgba(var(--color-text-lightest), 1); }
         .-emu-layout body.-emu .window-app .window-header > a:focus, .-emu-layout
         body.-emu .window-app .window-header a.header-button:focus {
-          color: rgba(var(--color-white), 1);
+          color: rgba(var(--color-text-lightest), 1);
           text-decoration: none; }
       body.-emu .window-app .window-header > a:hover,
       body.-emu .window-app .window-header a.header-button:hover {
@@ -3289,6 +3296,7 @@ body.-emu .sidebar-popout {
   body.-emu .sidebar-popout {
     top: calc(var(--emu-space-md) / 2);
     right: 0;
+    bottom: auto;
     position: fixed;
     width: var(--emu-space-sidebar);
     height: calc(100% - var(--emu-space-md));
@@ -3477,7 +3485,7 @@ body.-emu .sidebar-popout {
         flex: 0 0 auto; }
     body.-emu #sidebar .sidebar-tab .directory-header .header-search input,
     body.-emu .sidebar-popout .sidebar-tab .directory-header .header-search input {
-      background-color: rgba(var(--color-white), 1); }
+      background-color: rgba(var(--color-background-lightest), 1); }
       .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-search input, .-emu-layout
       body.-emu .sidebar-popout .sidebar-tab .directory-header .header-search input {
         flex: 1 1 auto;
@@ -3542,15 +3550,18 @@ body.-emu #sidebar {
     overflow: visible;
     right: calc(-1 * var(--emu-space-sidebar));
     transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1), right 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover {
-      opacity: 1;
-      right: 0; }
-      .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover::after {
-        content: "\f0da"; }
     .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed {
       right: 0; }
-      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::after {
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed::before,
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar.collapsed #emu-sidebar-lock {
         display: none; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked {
+      opacity: 1;
+      right: 0; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock::before, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock::before {
+        content: "\f0da"; }
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock::before {
+      content: "\f023"; }
     .-emu-layout.-emu-subtle-layout body.-emu #sidebar::before {
       top: calc(-1 * var(--emu-space-md) / 2);
       right: 0;
@@ -3560,7 +3571,7 @@ body.-emu #sidebar {
       height: calc(100% + var(--emu-space-md));
       width: calc(100% + var(--emu-space-button));
       z-index: -1; }
-    .-emu-layout.-emu-subtle-layout body.-emu #sidebar::after {
+    .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock {
       top: 50%;
       right: 100%;
       position: absolute;
@@ -3569,7 +3580,7 @@ body.-emu #sidebar {
       border: rgba(var(--color-border), 1) 1px solid;
       -webkit-border-end: 0;
               border-inline-end: 0;
-      content: "\f0d9";
+      color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       height: 4rem;
@@ -3577,6 +3588,10 @@ body.-emu #sidebar {
       -webkit-margin-before: -2rem;
               margin-block-start: -2rem;
       width: var(--emu-space-button); }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock::before {
+        content: "\f0d9"; }
+      .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock:hover::before {
+        content: "\f023"; }
 
 body.-emu .sidebar-popout {
   border-radius: var(--emu-border-radius-default, 0); }
@@ -3623,13 +3638,17 @@ body.-emu .sidebar-popout #chat #chat-log .message {
               margin-block-end: var(--emu-space-base); }
   body.-emu #sidebar #chat #chat-log .message .message-metadata,
   body.-emu #sidebar #chat #chat-log .message .message-sender,
+  body.-emu #sidebar #chat #chat-log .message .flavor-text,
   body.-emu .sidebar-popout #chat #chat-log .message .message-metadata,
-  body.-emu .sidebar-popout #chat #chat-log .message .message-sender {
+  body.-emu .sidebar-popout #chat #chat-log .message .message-sender,
+  body.-emu .sidebar-popout #chat #chat-log .message .flavor-text {
     color: inherit; }
     .-emu-layout body.-emu #sidebar #chat #chat-log .message .message-metadata, .-emu-layout
     body.-emu #sidebar #chat #chat-log .message .message-sender, .-emu-layout
+    body.-emu #sidebar #chat #chat-log .message .flavor-text, .-emu-layout
     body.-emu .sidebar-popout #chat #chat-log .message .message-metadata, .-emu-layout
-    body.-emu .sidebar-popout #chat #chat-log .message .message-sender {
+    body.-emu .sidebar-popout #chat #chat-log .message .message-sender, .-emu-layout
+    body.-emu .sidebar-popout #chat #chat-log .message .flavor-text {
       align-items: center;
       display: inline-flex;
       font-size: var(--emu-font-size-sm); }
@@ -3663,13 +3682,47 @@ body.-emu .sidebar-popout #chat #chat-log .message {
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total {
       line-height: initial;
       font-size: var(--emu-font-size-chat-roll);
-      font-weight: normal; }
+      font-weight: normal;
+      margin: 0;
+      -webkit-margin-before: var(--emu-space-base);
+              margin-block-start: var(--emu-space-base); }
+      .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-formula:first-child, .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-formula:only-child, .-emu-layout
+      body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total:first-child, .-emu-layout
+      body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total:only-child, .-emu-layout
+      body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula:first-child, .-emu-layout
+      body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula:only-child, .-emu-layout
+      body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total:first-child, .-emu-layout
+      body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total:only-child {
+        -webkit-margin-before: 0;
+                margin-block-start: 0; }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll + .dice-roll, .-emu-layout
-  body.-emu #sidebar #chat #chat-log .message .dice-total + .dice-total, .-emu-layout
+  body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total + .dice-roll .dice-total, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-log .message .dice-roll + .dice-roll, .-emu-layout
-  body.-emu .sidebar-popout #chat #chat-log .message .dice-total + .dice-total {
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total + .dice-roll .dice-total {
     -webkit-margin-before: var(--emu-space-base);
             margin-block-start: var(--emu-space-base); }
+  body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total.critical,
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total.critical {
+    background-color: rgba(var(--color-positive), 1);
+    border-color: rgba(var(--color-green-800), 1);
+    color: rgba(var(--color-white), 1); }
+  body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total.fumble,
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total.fumble {
+    background-color: rgba(var(--color-negative), 1);
+    border-color: rgba(var(--color-red-800), 1);
+    color: rgba(var(--color-white), 1); }
+  .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-tooltip, .-emu-layout
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-tooltip {
+    -webkit-margin-before: var(--emu-space-base);
+            margin-block-start: var(--emu-space-base); }
+    .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-tooltip:first-child, .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-tooltip:only-child, .-emu-layout
+    body.-emu .sidebar-popout #chat #chat-log .message .dice-tooltip:first-child, .-emu-layout
+    body.-emu .sidebar-popout #chat #chat-log .message .dice-tooltip:only-child {
+      -webkit-margin-before: 0;
+              margin-block-start: 0; }
+  .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-rolls, .-emu-layout
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-rolls {
+    margin: var(--emu-space-base); }
   body.-emu #sidebar #chat #chat-log .message .button.message-delete,
   body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete {
     color: rgba(var(--color-text), 1); }
@@ -3827,7 +3880,7 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
     opacity: 0.5; }
   body.-emu #sidebar #combat #combat-tracker .combatant.active .token-name h4,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active .token-name h4 {
-    border-color: rgba(var(--color-white), 1); }
+    border-color: rgba(var(--color-text-lightest), 1); }
   body.-emu #sidebar #combat #combat-tracker .combatant.active .combatant-control.active,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active .combatant-control.active {
     background-color: rgba(var(--color-white), 1);
@@ -4866,7 +4919,10 @@ body.-emu #module-management .package {
     padding: var(--emu-space-sm); }
   body.-emu #module-management .package[data-module-name="ernies-modern-layout"] {
     background-color: rgba(var(--color-primary), 0.8); }
-    body.-emu #module-management .package[data-module-name="ernies-modern-layout"] .package-title {
+    body.-emu #module-management .package[data-module-name="ernies-modern-layout"] a,
+    body.-emu #module-management .package[data-module-name="ernies-modern-layout"] .package-title,
+    body.-emu #module-management .package[data-module-name="ernies-modern-layout"] .package-description,
+    body.-emu #module-management .package[data-module-name="ernies-modern-layout"] .package-metadata {
       color: rgba(var(--color-text-lightest), 1); }
   body.-emu #module-management .package:last-child {
     -webkit-border-after: none;
@@ -4874,7 +4930,7 @@ body.-emu #module-management .package {
   body.-emu #module-management .package .tag {
     border: none;
     border-radius: var(--emu-border-radius-controls, 0);
-    color: rgba(var(--color-white), 1); }
+    color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #module-management .package .tag {
       align-items: center;
       display: inline-flex;
@@ -4903,6 +4959,14 @@ body.-emu #module-management .package-title {
   .-emu-layout body.-emu #module-management .package-title input {
     -webkit-margin-end: var(--emu-space-sm);
             margin-inline-end: var(--emu-space-sm); }
+
+body.-emu #module-management .package-description {
+  color: rgba(var(--color-text-darker), 1); }
+
+body.-emu #module-management .package-metadata {
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu #module-management .package-metadata {
+    font-size: var(--emu-font-size-sm); }
 
 .-emu-layout body.-emu #module-management form {
   display: flex;
@@ -5077,6 +5141,22 @@ body.-emu #link-creation.coc7 .form-group label {
   background: none;
   border: none;
   padding: 0; }
+
+.-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content {
+  padding: var(--emu-space-sm); }
+  .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields {
+    flex-wrap: nowrap; }
+    .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields .sep {
+      -webkit-margin-start: var(--emu-space-base);
+              margin-inline-start: var(--emu-space-base); }
+    .-emu-layout body.-emu .dnd5e.hd-config.dialog .window-content .form-group .form-fields .max {
+      flex: 1; }
+
+.-emu-layout body.-emu .dnd5e.dialog #short-rest-hd {
+  -webkit-padding-before: var(--emu-space-sm);
+          padding-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu .dnd5e.dialog #short-rest-hd .form-fields select {
+    flex: 1 1 auto; }
 
 .-emu-layout body.-emu .dnd5e .form-header {
   font-family: inherit; }
@@ -5443,7 +5523,7 @@ body.-emu #calendar-weather-container {
   body.-emu #calendar-time-container #season-indicator,
   body.-emu #calendar-weather-container .calendar-btn,
   body.-emu #calendar-weather-container #season-indicator {
-    color: rgba(var(--color-white), 1);
+    color: rgba(var(--color-text-lightest), 1);
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
     .-emu-layout body.-emu #calendar-time-container .calendar-btn, .-emu-layout
     body.-emu #calendar-time-container #season-indicator, .-emu-layout
@@ -5540,7 +5620,7 @@ body.-emu .window-app.form .calendar-form-container {
 body.-emu .typing-notify {
   background-color: rgba(var(--color-primary), 1);
   border-radius: 0;
-  color: rgba(var(--color-white), 1); }
+  color: rgba(var(--color-text-lightest), 1); }
   body.-emu .typing-notify .dot {
     background-color: rgba(var(--color-white), 1); }
 
@@ -5590,6 +5670,12 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapp
               margin-inline-start: var(--emu-space-base);
       width: var(--emu-space-button-lg); }
 
+.-emu-layout body.-emu #sidebar #chat.small-chat + #combat {
+  flex: 1; }
+
+body.-emu #sidebar .small-chat::after {
+  border-color: rgba(var(--color-primary), 1); }
+
 body.-emu .combatready-timebar,
 body.-emu .combatready-timebar-fill {
   border-radius: var(--emu-border-radius-default, 0);
@@ -5608,7 +5694,7 @@ body.-emu .combatready-timebar {
 
 body.-emu .combatready-timebar-fill {
   background-color: rgba(var(--color-primary), 1);
-  color: rgba(var(--color-white), 1); }
+  color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu .combatready-timebar-fill .combatready-timebaricon {
     display: none; }
 
@@ -5738,7 +5824,7 @@ body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item {
       body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack:hover .pack-title,
       .-emu-layout
       body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack:hover .compendium-footer {
-        color: rgba(var(--color-white), 1); }
+        color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title,
     .-emu-layout body.-emu #sidebar #compendium > ul.directory-list > .directory-item .compendium-pack .compendium-footer, .-emu-layout
     body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item .compendium-pack .pack-title,
@@ -6070,6 +6156,13 @@ body.-emu .ddb-muncher.window-app #munch-classes-start {
   padding: 0 !important;
   text-align: initial !important; }
 
+.-emu-layout body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .tab .effect-change textarea {
+  min-height: var(--emu-space-button);
+  -webkit-padding-before: calc(var(--emu-space-base) + var(--emu-space-xs));
+          padding-block-start: calc(var(--emu-space-base) + var(--emu-space-xs));
+  -webkit-padding-after: calc(var(--emu-space-base) + var(--emu-space-xs));
+          padding-block-end: calc(var(--emu-space-base) + var(--emu-space-xs)); }
+
 body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration {
   background-color: rgba(var(--color-background), 0.05);
   background-image: var(--emu-image-background, none); }
@@ -6397,6 +6490,23 @@ body.-emu #filter-config .form-footer {
   -webkit-margin-before: var(--emu-space-sm);
           margin-block-start: var(--emu-space-sm); }
 
+body.-emu .chat-notifications.settings nav {
+  background-color: transparent; }
+  .-emu-layout body.-emu .chat-notifications.settings nav {
+    padding: 0; }
+
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col {
+  flex-flow: row; }
+  .-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child {
+    flex: 1 1 auto;
+    -webkit-margin-end: var(--emu-space-base);
+            margin-inline-end: var(--emu-space-base); }
+    .-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child select {
+      flex: 1 1 100%; }
+
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row > * {
+  margin: 0; }
+
 .-emu-layout body.-emu .sheet[id*="tile-config-"] input[name="isHeyWaitTile"] + button {
   -webkit-margin-after: var(--emu-space-sm);
           margin-block-end: var(--emu-space-sm); }
@@ -6517,6 +6627,21 @@ body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]:checked + label {
       position: fixed;
       background-color: rgba(var(--color-black), 0.5);
       content: ""; }
+
+body.-emu #macro-popout.window-app .folder-header.macro-folder-header h3 {
+  margin: 0 !important; }
+
+body.-emu .select-folder.window-app.form .form-folder-list {
+  background-color: transparent;
+  border: none; }
+
+body.-emu #macro-folder-edit .form-macro-list {
+  background-color: transparent;
+  border: none;
+  border-radius: 0; }
+  .-emu-layout body.-emu #macro-folder-edit .form-macro-list {
+    font-size: var(--emu-font-size-md);
+    padding: 0; }
 
 .-emu-layout body.-emu #sidebar #playlists .header-actions > .flexrow, .-emu-layout
 body.-emu .sidebar-popout #playlists .header-actions > .flexrow {
@@ -7664,7 +7789,7 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
     padding: var(--emu-space-sm); }
   body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header:hover {
     background-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-white), 1); }
+    color: rgba(var(--color-text-lightest), 1); }
   body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header > span {
     color: inherit; }
     .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header > span {
@@ -7707,7 +7832,7 @@ body.-emu #token-action-hud:hover #tah-categories {
   visibility: visible; }
 
 body.-emu #token-action-hud #tah-hudTitle {
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   text-shadow: 2px 2px 2px rgba(var(--color-black), 1); }
   .-emu-layout body.-emu #token-action-hud #tah-hudTitle {
     font-size: var(--emu-font-size-sm);
@@ -7746,7 +7871,7 @@ body.-emu #token-action-hud .tah-action button {
     display: none; }
 
 body.-emu #token-action-hud .tah-subtitle {
-  color: rgba(var(--color-white), 1);
+  color: rgba(var(--color-text-lightest), 1);
   text-shadow: 2px 2px 2px rgba(var(--color-black), 1); }
   .-emu-layout body.-emu #token-action-hud .tah-subtitle {
     font-size: var(--emu-font-size-sm);

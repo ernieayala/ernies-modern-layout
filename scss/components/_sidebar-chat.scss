@@ -42,7 +42,8 @@
 				}
 
 				.message-metadata,
-				.message-sender {
+				.message-sender,
+				.flavor-text {
 					color: inherit;
 
 					@include layout {
@@ -85,13 +86,51 @@
 						line-height: initial;
 						font-size: fs("chat-roll");
 						font-weight: normal;
+						margin: 0;
+						margin-block-start: m("base");
+
+						&:first-child,
+						&:only-child {
+							margin-block-start: 0;
+						}
 					}
 				}
 
 				.dice-roll + .dice-roll,
-				.dice-total + .dice-total {
+				.dice-roll .dice-total + .dice-roll .dice-total {
 					@include layout {
 						margin-block-start: m("base");
+					}
+				}
+
+				.dice-roll .dice-total {
+					&.critical {
+						background-color: color("positive");
+						border-color: color("green-800");
+						color: color("white");
+					}
+
+					&.fumble {
+						background-color: color("negative");
+						border-color: color("red-800");
+						color: color("white");
+					}
+				}
+
+				.dice-tooltip {
+					@include layout {
+						margin-block-start: m("base");
+
+						&:first-child,
+						&:only-child {
+							margin-block-start: 0;
+						}
+					}
+				}
+
+				.dice-rolls {
+					@include layout {
+						margin: m("base");
 					}
 				}
 
