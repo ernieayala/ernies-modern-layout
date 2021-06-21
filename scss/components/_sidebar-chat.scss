@@ -84,7 +84,7 @@
 
 					@include layout {
 						line-height: initial;
-						font-size: fs("chat-roll");
+						font-size: inherit;
 						font-weight: normal;
 						margin: 0;
 						margin-block-start: m("base");
@@ -93,6 +93,20 @@
 						&:only-child {
 							margin-block-start: 0;
 						}
+					}
+				}
+
+				.dice-roll .dice-formula {
+					@include layout {
+						font-size: fs("md");
+						padding: p("xs") 0;
+					}
+				}
+
+				.dice-roll .dice-total {
+					@include layout {
+						font-size: fs("chat-roll");
+						padding: p("xs") 0;
 					}
 				}
 

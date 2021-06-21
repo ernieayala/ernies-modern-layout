@@ -3592,6 +3592,8 @@ body.-emu #sidebar {
         content: "\f0d9"; }
       .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock:hover::before {
         content: "\f023"; }
+  body.-emu #sidebar #emu-sidebar-lock {
+    display: none; }
 
 body.-emu .sidebar-popout {
   border-radius: var(--emu-border-radius-default, 0); }
@@ -3681,7 +3683,7 @@ body.-emu .sidebar-popout #chat #chat-log .message {
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula, .-emu-layout
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total {
       line-height: initial;
-      font-size: var(--emu-font-size-chat-roll);
+      font-size: inherit;
       font-weight: normal;
       margin: 0;
       -webkit-margin-before: var(--emu-space-base);
@@ -3695,6 +3697,14 @@ body.-emu .sidebar-popout #chat #chat-log .message {
       body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total:only-child {
         -webkit-margin-before: 0;
                 margin-block-start: 0; }
+  .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-formula, .-emu-layout
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-formula {
+    font-size: var(--emu-font-size-md);
+    padding: var(--emu-space-xs) 0; }
+  .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total, .-emu-layout
+  body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-total {
+    font-size: var(--emu-font-size-chat-roll);
+    padding: var(--emu-space-xs) 0; }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll + .dice-roll, .-emu-layout
   body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-total + .dice-roll .dice-total, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-log .message .dice-roll + .dice-roll, .-emu-layout
