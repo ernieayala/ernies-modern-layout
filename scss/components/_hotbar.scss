@@ -8,7 +8,7 @@
 		z-index: z("fixed");
 
 		&:hover {
-			z-index: z("tooltip");
+			z-index: z("fixed") + 1;
 		}
 	}
 
