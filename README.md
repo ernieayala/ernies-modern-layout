@@ -41,15 +41,20 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Systems Tested Continually
 - DND 5e
 
+### Systems Partially Tested as of June 21th, 2021
+- Pathfinder 2e
+
 ### Systems Partially Tested as of June 14th, 2021
 - DSA5
-- Pathfinder 2
 - Starfinder
 
 ### Systems Partially Tested as of June 9th, 2021
 - CoC 7
-- Pathfinder 1
+- Pathfinder 1e
 - Savage Worlds
+
+### Mods Tested as of June 21th, 2021
+- Custom Hotbar (FNS)
 
 ### Mods Tested as of June 19th, 2021
 - Combat Focus
@@ -157,7 +162,6 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Forien's Quest Log
 
 ### Won't Support Currently
-- Custom Hotbar
 - Tokenizer
 
 #### Key

@@ -68,11 +68,8 @@
 
 			.card-buttons button {
 				margin: 0;
+				margin-block-start: m("xs");
 				width: 100%;
-
-				+ button {
-					margin-block-start: m("xs");
-				}
 			}
 
 			.card-footer {
