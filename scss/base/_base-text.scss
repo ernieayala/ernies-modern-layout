@@ -58,9 +58,21 @@ a[href] {
 
 a.entity-link,
 a.inline-roll {
+	background-color: color("background-lightest");
+	box-shadow: 0 0 0 1px inset color("border");
+	border: none;
+	border-radius: $global-border-radius-controls;
+
+	@include layout {
+		padding: p("pf") p("xs");
+		padding-inline-start: p("base");
+	}
+
 	> i {
+		color: inherit;
+
 		@include layout {
-			margin-inline-end: m("base");
+			margin-inline-end: m("xs");
 		}
 	}
 }

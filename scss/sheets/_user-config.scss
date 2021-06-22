@@ -1,4 +1,4 @@
-.sheet.user-config {
+.user-config.sheet.window-app {
 	.form-group {
 		label {
 			@include layout {
@@ -28,6 +28,7 @@
 		}
 	}
 
+	#characters .directory-item,
 	.directory-item {
 		border: none;
 		box-shadow: none;
@@ -39,6 +40,12 @@
 
 		&.context {
 			@extend %global-active;
+
+			h3 {
+				@include layout {
+					font-weight: normal;
+				}
+			}
 		}
 
 		label {

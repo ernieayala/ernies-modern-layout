@@ -15,8 +15,24 @@
 	}
 
 	#world-clock.window-app {
-		.input-grid button {
+		h1 {
+			font-size: fs("lg");
+			margin-block-end: m("base");
+		}
+
+		.input-grid > * {
+			font-size: fs("sm");
+			height: space("button-sm");
+			line-height: 1;
 			margin: 0;
+			margin-block-start: m("xs");
+		}
+	}
+
+	#world-clock-settings.window-app {
+		form > .form-group:last-child {
+			background-color: transparent;
+			padding: 0;
 		}
 	}
 
@@ -27,5 +43,76 @@
 				width: 100%;
 			}
 		}
+
+		#chat #chat-log {
+			.message-sender,
+			.message-metadata {
+				background: transparent;
+				text-shadow: none;
+			}
+
+			.card-header {
+				border-block-start: b("border-lighter");
+				border-block-end: b("border-lighter");
+				padding: p("xs") 0;
+
+				h3 {
+					margin-block-end: 0;
+				}
+			}
+
+			.card-content,
+			.card-buttons {
+				margin: m("base") 0;
+			}
+
+			.card-buttons button {
+				margin: 0;
+				width: 100%;
+
+				+ button {
+					margin-block-start: m("xs");
+				}
+			}
+
+			.card-footer {
+				border-block-start: b("border-lighter");
+				padding: 0;
+			}
+
+			.message .flavor-text {
+				strong {
+					margin-inline-end: m("xs");
+				}
+			}
+
+			.dice-total {
+				.dmgBtn-container {
+					bottom: auto;
+					padding: 0 p("xs");
+
+					button {
+						font-size: fs("sm") !important;
+						height: space("button-sm") !important;
+						width: space("button-sm") !important;
+
+						> i {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tab[data-tab].active {
+		display: block;
+	}
+
+	#trait-selector .trait-footer {
+		border: none;
+		flex: 0 0 auto;
+		line-height: 1;
+		margin: 0;
 	}
 }

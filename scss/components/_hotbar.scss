@@ -6,6 +6,10 @@
 		pointer-events: none;
 		transition: t(opacity, "link");
 		z-index: z("fixed");
+
+		&:hover {
+			z-index: z("tooltip");
+		}
 	}
 
 	@include layout-players {

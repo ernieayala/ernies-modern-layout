@@ -4,6 +4,7 @@
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
 	color: color("text-lightest");
+	text-shadow: none;
 	transition: t(background box-shadow color, "link");
 
 	@include layout {

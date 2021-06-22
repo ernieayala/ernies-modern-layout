@@ -95,4 +95,12 @@
 			@extend %primary-button-simple-reset;
 		}
 	}
+
+	#entity-create {
+		label {
+			@include layout {
+				flex: 0 0 30%;
+			}
+		}
+	}
 }

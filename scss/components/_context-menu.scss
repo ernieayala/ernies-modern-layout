@@ -11,7 +11,7 @@
 		max-width: to-rem(320px);
 		min-width: to-rem(152px);
 		width: 100%;
-		z-index: z("popover");
+		z-index: z("tooltip");
 
 		&.expand-down {
 			top: 100%;

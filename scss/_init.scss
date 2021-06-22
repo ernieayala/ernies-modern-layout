@@ -84,8 +84,8 @@ html.-emu-layout.-emu-compact {
 }
 
 body {
-	background-color: color("background");
-	background-image: $global-image-background;
+	background-color: color("background-darkest");
+	background-image: $global-image-background-darkest;
 	box-shadow: none;
 
 	@include layout {

@@ -74,6 +74,12 @@
 					}
 				}
 
+				.flavor-text {
+					@include layout {
+						flex-wrap: wrap;
+					}
+				}
+
 				.dice-roll .dice-formula,
 				.dice-roll .dice-total {
 					background-color: color("background", 0.1);
@@ -118,13 +124,15 @@
 				}
 
 				.dice-roll .dice-total {
-					&.critical {
+					&.critical,
+					&.success {
 						background-color: color("positive");
 						border-color: color("green-800");
 						color: color("white");
 					}
 
-					&.fumble {
+					&.fumble,
+					&.failure {
 						background-color: color("negative");
 						border-color: color("red-800");
 						color: color("white");

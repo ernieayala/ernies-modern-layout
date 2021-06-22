@@ -34,6 +34,7 @@ input[type="range"] {
 
 select {
 	@extend %input-select;
+	box-shadow: none;
 }
 
 textarea {
