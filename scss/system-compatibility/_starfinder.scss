@@ -16,8 +16,8 @@
 	}
 }
 
-.window-app[id*="chat-popout-"],
-#chat-log {
+#sidebar,
+.sidebar-popout {
 	.sfrpg {
 		&.chat-card {
 			@include layout {

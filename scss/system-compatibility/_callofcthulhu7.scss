@@ -1,8 +1,47 @@
-.coc7.actor.window-app,
-.coc7.item.window-app {
-	@include layout {
-		.window-content {
-			padding: 0;
+.coc7 {
+	&.actor.window-app,
+	&.item.window-app {
+		@include layout {
+			.window-content {
+				padding: 0;
+			}
+		}
+	}
+
+	&.dialogue.actor-importer {
+		.dialog-buttons {
+			@include layout {
+				display: flex;
+			}
+		}
+	}
+
+	&#link-creation {
+		form#link-creation {
+			> button {
+				@include layout {
+					margin: 0;
+					margin-block-start: m("base");
+				}
+			}
+		}
+
+		.form-group label {
+			border: none;
+			color: color("text");
+			font-weight: normal;
+
+			@include layout {
+				height: auto;
+				padding: 0;
+				padding-inline-end: p("base");
+			}
+
+			&.checkbox {
+				> input {
+					margin-inline-end: m("sm");
+				}
+			}
 		}
 	}
 }
@@ -30,49 +69,12 @@
 	}
 }
 
-.coc7.dialogue.actor-importer {
-	.dialog-buttons {
-		@include layout {
-			display: flex;
-		}
-	}
-}
-
 .dialog {
 	#bonus-roll-form {
 		> .flexcol > .flexrow {
 			@include layout {
 				align-items: center;
 				margin-block-end: m("base");
-			}
-		}
-	}
-}
-
-#link-creation.coc7 {
-	form#link-creation {
-		> button {
-			@include layout {
-				margin: 0;
-				margin-block-start: m("base");
-			}
-		}
-	}
-
-	.form-group label {
-		border: none;
-		color: color("text");
-		font-weight: normal;
-
-		@include layout {
-			height: auto;
-			padding: 0;
-			padding-inline-end: p("base");
-		}
-
-		&.checkbox {
-			> input {
-				margin-inline-end: m("sm");
 			}
 		}
 	}

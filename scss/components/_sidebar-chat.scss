@@ -42,8 +42,7 @@
 				}
 
 				.message-metadata,
-				.message-sender,
-				.flavor-text {
+				.message-sender {
 					color: inherit;
 
 					@include layout {
@@ -74,9 +73,12 @@
 					}
 				}
 
-				.flavor-text {
+				.flavor-text,
+				.whisper-to {
+					color: inherit;
+
 					@include layout {
-						flex-wrap: wrap;
+						font-size: fs("sm");
 					}
 				}
 

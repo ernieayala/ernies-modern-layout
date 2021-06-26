@@ -31,6 +31,131 @@
 		}
 	}
 
+	&.actor.sheet {
+		.sheet-header {
+			border-block-end: b("border-lighter");
+
+			img.profile {
+				border-inline-end: b("border-lighter");
+			}
+
+			.summary {
+				border-block-start: b("border-lighter");
+				border-block-end: b("border-lighter");
+
+				li {
+					border-inline-end: b("border-lighter");
+					color: inherit;
+
+					&:last-child {
+						border-inline-end: none;
+					}
+				}
+			}
+
+			.attributes {
+				.attribute {
+					border-inline-end: b("border-lighter");
+					color: inherit;
+
+					&:last-child {
+						border-inline-end: none;
+					}
+				}
+
+				a.rest {
+					border-color: color("border");
+				}
+			}
+
+			.charlevel,
+			.experience span.max {
+				color: color("text-darker");
+			}
+
+			.xpbar {
+				background-color: color("background");
+				border-color: color("border");
+				border-style: solid;
+			}
+		}
+
+		.sheet-navigation {
+			.item {
+				border-color: color("border");
+
+				&.active {
+					border-color: color("primary");
+				}
+			}
+		}
+
+		.ability-scores,
+		.skills-list,
+		.center-pane {
+			border: b("border-lighter");
+		}
+
+		.ability-scores {
+			.ability {
+				border-block-end: b("border-lighter");
+
+				.ability-modifiers span.ability-mod,
+				.ability-modifiers span.ability-save {
+					border-block-start: b("border-lighter");
+				}
+
+				.ability-modifiers span.ability-mod {
+					border-inline-end: b("border-lighter");
+				}
+
+				.ability-modifiers span.ability-save {
+					border-inline-start: b("border-lighter");
+				}
+			}
+		}
+
+		.skills-list li.skill .skill-passive {
+			color: color("text-darker");
+		}
+
+		ul.attributes li.attribute {
+			border: b("border-lighter");
+
+			.attribute-value label.recharge {
+				color: inherit;
+			}
+		}
+
+		h4.box-title {
+			border-color: color("border-lighter");
+			color: inherit;
+		}
+
+		span.sep,
+		.proficient .proficiency-toggle,
+		.counters .counter h4,
+		.traits i,
+		.traits .trait-selector {
+			color: inherit;
+		}
+
+		.proficiency-toggle,
+		.traits .inactive {
+			color: color("text-darker");
+		}
+
+		input[type="text"],
+		input[type="number"],
+		select {
+			color: inherit;
+
+			&::placeholder {
+				color: color("text", 0.5);
+			}
+		}
+	}
+
 	.form-header {
 		@include layout {
 			font-family: inherit;
@@ -58,10 +183,14 @@
 			}
 		}
 	}
+
+	.tag {
+		border-color: color("border");
+	}
 }
 
-.window-app[id*="chat-popout-"],
-#chat-log {
+#sidebar,
+.sidebar-popout {
 	.dnd5e {
 		&.chat-card {
 			@include layout {

@@ -54,3 +54,39 @@
 	background-color: color("background-lightest");
 	background-image: $global-image-background-lightest;
 }
+
+.tidy5e.sheet.actor {
+	.window-content {
+		@include layout {
+			padding: 0;
+			position: initial;
+		}
+	}
+
+	#item-info-container {
+		background-color: color("background-lightest", $global-background-opacity-window-content);
+		background-image: $global-image-background-lightest;
+		border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+		border: b("border");
+		border-inline-end: 0;
+		box-shadow: $global-box-shadow;
+		color: color("text");
+
+		@include layout {
+			transition: t(width, "shift");
+			transition-delay: 0s;
+		}
+
+		.info-wrap {
+			border-inline-end: b("border-lighter")
+		}
+
+		.info-card {
+			border-radius: 0;
+
+			@include layout {
+				padding: p("sm");
+			}
+		}
+	}
+}
