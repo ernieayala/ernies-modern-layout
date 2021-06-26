@@ -15,31 +15,6 @@
 		}
 	}
 
-	&::before {
-		background-color: color("primary");
-		box-shadow:
-			inset 0 0 0 4px color("white"),
-			0 0 0 4px color("primary");
-		content: "";
-
-		@include layout {
-			@keyframes pause-rotation-before {
-				0% { transform: rotate(0deg); }
-				100% { transform: rotate(-360deg); }
-			}
-
-			@include absolute(top 50% left 50%);
-			@include size(to-rem(120px));
-			animation-duration: 5s;
-			animation-iteration-count: infinite;
-			animation-name: pause-rotation-before;
-			animation-timing-function: linear;
-			border-radius: 50%;
-			margin-block-start: to-rem(-60px);
-			margin-inline-start: to-rem(-60px);
-		}
-	}
-
 	img {
 		@include layout {
 			@keyframes pause-rotation {
@@ -60,13 +35,11 @@
 	}
 
 	h3 {
-		color: color("primary");
-		text-shadow: 1px 1px 4px color("black");
+		color: color("text-lightest");
 
 		@include layout {
-			font-size: fs("xl");
+			font-size: fs("xxl");
 			line-height: initial;
-			margin-block-start: to-rem(160px);
 		}
 	}
 }
