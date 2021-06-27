@@ -1,0 +1,37 @@
+.-emu-layout body.-emu .coc7.actor.window-app .window-content, .-emu-layout body.-emu .coc7.item.window-app .window-content {
+  padding: 0; }
+
+.-emu-layout body.-emu .coc7.dialogue.actor-importer .dialog-buttons {
+  display: flex; }
+
+.-emu-layout body.-emu .coc7#link-creation form#link-creation > button {
+  margin: 0;
+  margin-block-start: var(--emu-space-base); }
+
+body.-emu .coc7#link-creation .form-group label {
+  border: none;
+  color: rgba(var(--color-text), 1);
+  font-weight: normal; }
+  .-emu-layout body.-emu .coc7#link-creation .form-group label {
+    height: auto;
+    padding: 0;
+    padding-inline-end: var(--emu-space-base); }
+  body.-emu .coc7#link-creation .form-group label.checkbox > input {
+    margin-inline-end: var(--emu-space-sm); }
+
+.-emu-layout body.-emu #controls .scene-control + div {
+  margin-block-start: var(--emu-space-base); }
+
+body.-emu #controls .scene-control + div .custom-control {
+  background-color: rgba(var(--color-background-darkest), 0.8) !important;
+  border: none !important; }
+  body.-emu #controls .scene-control + div .custom-control.active {
+    background-color: rgba(var(--color-primary), 1) !important;
+    box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1) !important;
+    color: rgba(var(--color-text-lightest), 1) !important; }
+  body.-emu #controls .scene-control + div .custom-control:hover {
+    box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1) !important; }
+
+.-emu-layout body.-emu .dialog #bonus-roll-form > .flexcol > .flexrow {
+  align-items: center;
+  margin-block-end: var(--emu-space-base); }

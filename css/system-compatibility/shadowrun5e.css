@@ -1,0 +1,405 @@
+body.-emu .sr5.window-app button {
+  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
+  background-image: var(--emu-image-background-controls, none);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text-lightest), 1);
+  text-shadow: none;
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app button:hover {
+    background-color: rgba(var(--color-primary), 1);
+    background-image: none;
+    color: rgba(var(--color-text-lightest), 1); }
+  body.-emu .sr5.window-app button:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app input[type="text"],
+body.-emu .sr5.window-app input[type="number"],
+body.-emu .sr5.window-app input[type="date"],
+body.-emu .sr5.window-app input[type="time"],
+body.-emu .sr5.window-app input[type="password"],
+body.-emu .sr5.window-app input[type="datetime-local"] {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app input[type="text"]::placeholder,
+  body.-emu .sr5.window-app input[type="number"]::placeholder,
+  body.-emu .sr5.window-app input[type="date"]::placeholder,
+  body.-emu .sr5.window-app input[type="time"]::placeholder,
+  body.-emu .sr5.window-app input[type="password"]::placeholder,
+  body.-emu .sr5.window-app input[type="datetime-local"]::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .sr5.window-app input[type="text"]:disabled,
+  body.-emu .sr5.window-app input[type="number"]:disabled,
+  body.-emu .sr5.window-app input[type="date"]:disabled,
+  body.-emu .sr5.window-app input[type="time"]:disabled,
+  body.-emu .sr5.window-app input[type="password"]:disabled,
+  body.-emu .sr5.window-app input[type="datetime-local"]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app input[type="checkbox"] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu .sr5.window-app input[type="checkbox"]:checked {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+body.-emu .sr5.window-app input[type="color"],
+body.-emu .sr5.window-app input[type="color"][data-edit] {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app input[type="color"]:disabled,
+  body.-emu .sr5.window-app input[type="color"][data-edit]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app select {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu .sr5.window-app select optgroup,
+  body.-emu .sr5.window-app select option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app textarea {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .sr5.window-app textarea::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .sr5.window-app textarea:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app fieldset {
+  border: none; }
+
+body.-emu .sr5.window-app table {
+  background-color: rgba(var(--color-black), 0.05);
+  border: none; }
+  body.-emu .sr5.window-app table thead {
+    background-color: rgba(var(--color-black), 0.2);
+    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    color: rgba(var(--color-text-lightest), 1);
+    text-shadow: none; }
+  body.-emu .sr5.window-app table tr:nth-child(even) {
+    background-color: rgba(var(--color-white), 0.1); }
+
+body.-emu .sr5.window-app h1,
+body.-emu .sr5.window-app h2,
+body.-emu .sr5.window-app h3,
+body.-emu .sr5.window-app h4 {
+  font-weight: normal; }
+
+body.-emu .sr5.window-app h1 {
+  border-block-end: 2px solid rgba(var(--color-border), 1); }
+
+
+body.-emu .sr5.window-app h2 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+
+body.-emu .sr5.window-app a {
+  text-shadow: none; }
+  body.-emu .sr5.window-app a:hover {
+    color: rgba(var(--color-primary), 1); }
+
+body.-emu .sr5.window-app a[href] {
+  color: rgba(var(--color-primary), 1);
+  text-decoration: none;
+  text-shadow: none; }
+  body.-emu .sr5.window-app a[href]:hover {
+    text-decoration: underline;
+    text-shadow: none; }
+
+body.-emu .sr5.window-app a.entity-link,
+body.-emu .sr5.window-app a.inline-roll {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0); }
+  body.-emu .sr5.window-app a.entity-link > i,
+  body.-emu .sr5.window-app a.inline-roll > i {
+    color: inherit; }
+
+body.-emu .sr5.window-app hr {
+  border: none;
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: none; }
+
+body.-emu .sr5.window-app blockquote {
+  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app section.secret {
+  background-color: rgba(var(--color-background-light), 0.2);
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+
+body.-emu .sr5.window-app button:hover {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app input[type="text"]:hover,
+body.-emu .sr5.window-app input[type="number"]:hover,
+body.-emu .sr5.window-app input[type="date"]:hover,
+body.-emu .sr5.window-app input[type="time"]:hover,
+body.-emu .sr5.window-app input[type="password"]:hover,
+body.-emu .sr5.window-app input[type="datetime-local"]:hover, body.-emu .sr5.window-app input[type="checkbox"]:hover, body.-emu .sr5.window-app input[type="color"]:hover, body.-emu .sr5.window-app select:hover, body.-emu .sr5.window-app textarea:hover {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app button:focus, body.-emu .sr5.window-app input[type="text"]:focus,
+body.-emu .sr5.window-app input[type="number"]:focus,
+body.-emu .sr5.window-app input[type="date"]:focus,
+body.-emu .sr5.window-app input[type="time"]:focus,
+body.-emu .sr5.window-app input[type="password"]:focus,
+body.-emu .sr5.window-app input[type="datetime-local"]:focus, body.-emu .sr5.window-app input[type="checkbox"]:focus, body.-emu .sr5.window-app input[type="color"]:focus, body.-emu .sr5.window-app select:focus, body.-emu .sr5.window-app textarea:focus, body.-emu .sr5.window-app a[href]:focus, body.-emu .sr5.window-app .sunken.env-modifier-active:focus {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+  text-shadow: none;
+  outline: none; }
+
+body.-emu .sr5.window-app button.active, body.-emu .sr5.window-app .sunken.env-modifier-active {
+  background-color: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-text-lightest), 1);
+  text-shadow: none; }
+  body.-emu .sr5.window-app button.active:hover, body.-emu .sr5.window-app .sunken.env-modifier-active:hover {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1);
+    text-shadow: none; }
+
+body.-emu .sr5.window-app.item .item-header {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.item .item-header .source .source-button {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-type {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-image {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-info > :not(:last-child) {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .technology {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .description {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .item-form .header {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app.item .item-form .form-line .label {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.item .item-form .form-line select {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-form .form-line select > option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.item .item-form .form-line input {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.actor .attributes {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes + :not(.attributes) {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes:last-child {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes .attribute {
+    color: rgba(var(--color-text), 1);
+    text-shadow: none; }
+    body.-emu .sr5.window-app.actor .attributes .attribute:not(:last-child) {
+      border-color: rgba(var(--color-border), 1); }
+    body.-emu .sr5.window-app.actor .attributes .attribute > .attribute-name.roll:hover {
+      color: rgba(var(--color-primary), 1);
+      text-shadow: none; }
+    body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers {
+      background-color: transparent;
+      border-color: rgba(var(--color-border-lighter), 1); }
+      body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers > .value-modifiers-base,
+      body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers > .value-modifiers-total {
+        border-color: rgba(var(--color-border-lighter), 1); }
+
+body.-emu .sr5.window-app .chat-select-link img:hover {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .Roll:hover {
+  color: rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app .input .unit {
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app label.checkbox:hover input ~ .checkmark {
+  text-shadow: none; }
+
+body.-emu .sr5.window-app button.plus1_button {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app input[type='checkbox'].display {
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app input[type='checkbox'].display:hover {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app input[type='text'].disabled-for-display {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app input[type='text'].display {
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+  body.-emu .sr5.window-app input[type='text'].display::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .sr5.window-app input[type='text'].display:disabled {
+    color: rgba(var(--color-text), 1);
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app select.display {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app select.display > option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .entity-link {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .roll:hover {
+  color: rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app .editor .tox-edit-area {
+  background-color: rgba(var(--color-white), 1); }
+
+body.-emu .sr5.window-app .window-content {
+  background-color: rgba(var(--color-background-lightest), 1);
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .description > .editor {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .border-right {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .tabs {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .tabs > a {
+    border-color: rgba(var(--color-border), 1); }
+    body.-emu .sr5.window-app .tabs > a:hover {
+      color: rgba(var(--color-primary), 1);
+      text-shadow: none; }
+    body.-emu .sr5.window-app .tabs > a.active {
+      background-color: rgba(var(--color-primary), 1);
+      color: rgba(var(--color-text-lightest), 1);
+      text-shadow: none; }
+
+body.-emu .sr5.window-app .split-container > *:not(:last-child) {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .block:not(:last-child) {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .block .block-line.border-bottom {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell.filled {
+    background-color: rgba(var(--color-background-light), 1); }
+  body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell:hover {
+    background-color: rgba(var(--color-background-lightest), 1); }
+
+body.-emu .sr5.window-app .list-item {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .list-item .has-desc:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+  body.-emu .sr5.window-app .list-item.item-section {
+    border: none;
+    border-radius: 0; }
+  body.-emu .sr5.window-app .list-item .item-img.item-roll:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+  body.-emu .sr5.window-app .list-item .item-desc .props > * {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .list-item .item-text {
+    border-color: rgba(var(--color-border-lighter), 1); }
+    body.-emu .sr5.window-app .list-item .item-text.faded {
+      color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .list-item .item-create,
+  body.-emu .sr5.window-app .list-item .add-new-ammo,
+  body.-emu .sr5.window-app .list-item .add-new-mod,
+  body.-emu .sr5.window-app .list-item .add-new-license {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .list-item.skill-header:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+
+body.-emu .sr5.window-app .sunken {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: none; }
+  .-emu-layout body.-emu .sr5.window-app .sunken tr td, .-emu-layout
+  body.-emu .sr5.window-app .sunken tr td {
+    padding: var(--emu-space-xs); }
+
+body.-emu .sr5.window-app button,
+body.-emu .sr5.window-app button.display {
+  background-color: rgba(var(--color-background-button), 1);
+  color: rgba(var(--color-text-lightest), 1); }
+  body.-emu .sr5.window-app button.light,
+  body.-emu .sr5.window-app button.display.light {
+    background-color: rgba(var(--color-background-button), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-header,
+body.-emu .sidebar-popout .sr5.chat-card .card-header {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu #sidebar .sr5.chat-card .card-header :first-of-type,
+  body.-emu .sidebar-popout .sr5.chat-card .card-header :first-of-type {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-content,
+body.-emu .sidebar-popout .sr5.chat-card .card-content {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-buttons .button,
+body.-emu .sidebar-popout .sr5.chat-card .card-buttons .button {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-description span,
+body.-emu .sidebar-popout .sr5.chat-card .card-description span {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-description .card-description-content,
+body.-emu .sidebar-popout .sr5.chat-card .card-description .card-description-content {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .damage-line .button,
+body.-emu .sidebar-popout .sr5.chat-card .damage-line .button {
+  background-color: rgba(var(--color-background), 1);
+  border-color: rgba(var(--color-border), 1); }

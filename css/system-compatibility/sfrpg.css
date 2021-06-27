@@ -1,0 +1,85 @@
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .browser-group, .-emu-layout
+body.-emu .sidebar-popout .sidebar-tab .directory-footer .browser-group {
+  flex-direction: row;
+  width: 100%; }
+
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .browser-group .spell-browser-btn, .-emu-layout
+body.-emu .sidebar-popout .sidebar-tab .directory-footer .browser-group .spell-browser-btn {
+  flex: 1 1 auto; }
+
+.-emu-layout body.-emu #sidebar .sfrpg.chat-card, .-emu-layout
+body.-emu .sidebar-popout .sfrpg.chat-card {
+  font-size: var(--emu-font-size-sm); }
+
+body.-emu #sidebar .sfrpg.chat-card .card-buttons button,
+body.-emu #sidebar .sfrpg.chat-card .card-header h3,
+body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button,
+body.-emu .sidebar-popout .sfrpg.chat-card .card-header h3 {
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+  .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-buttons button, .-emu-layout
+  body.-emu #sidebar .sfrpg.chat-card .card-header h3, .-emu-layout
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button, .-emu-layout
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-header h3 {
+    font-family: inherit;
+    line-height: initial;
+    margin: 0; }
+  body.-emu #sidebar .sfrpg.chat-card .card-buttons button > span,
+  body.-emu #sidebar .sfrpg.chat-card .card-header h3 > span,
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button > span,
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-header h3 > span {
+    border: 0; }
+    .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-buttons button > span, .-emu-layout
+    body.-emu #sidebar .sfrpg.chat-card .card-header h3 > span, .-emu-layout
+    body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button > span, .-emu-layout
+    body.-emu .sidebar-popout .sfrpg.chat-card .card-header h3 > span {
+      padding: 0 var(--emu-space-base); }
+
+.-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-header h3, .-emu-layout
+body.-emu .sidebar-popout .sfrpg.chat-card .card-header h3 {
+  align-items: center;
+  display: inline-flex; }
+
+.-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-buttons button + button, .-emu-layout
+body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button + button {
+  margin-block-start: var(--emu-space-base); }
+
+body.-emu #sidebar .sfrpg.chat-card .card-header,
+body.-emu .sidebar-popout .sfrpg.chat-card .card-header {
+  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
+  margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-header, .-emu-layout
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-header {
+    padding: var(--emu-space-base) 0; }
+
+body.-emu #sidebar .sfrpg.chat-card .card-footer,
+body.-emu .sidebar-popout .sfrpg.chat-card .card-footer {
+  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+  .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-footer, .-emu-layout
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-footer {
+    margin-block-start: var(--emu-space-base);
+    padding-block-start: var(--emu-space-base); }
+  body.-emu #sidebar .sfrpg.chat-card .card-footer span,
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-footer span {
+    border-inline-end: rgba(var(--color-border), 1) 1px solid; }
+    .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-footer span, .-emu-layout
+    body.-emu .sidebar-popout .sfrpg.chat-card .card-footer span {
+      font-size: var(--emu-font-size-xs);
+      margin-inline-end: var(--emu-space-xs);
+      padding-inline-end: var(--emu-space-base); }
+    body.-emu #sidebar .sfrpg.chat-card .card-footer span:last-child,
+    body.-emu .sidebar-popout .sfrpg.chat-card .card-footer span:last-child {
+      border-inline-end: none; }
+
+.-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-buttons, .-emu-layout
+body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons {
+  margin: var(--emu-space-base) 0; }
+
+body.-emu #sidebar .sfrpg.chat-card .card-buttons button,
+body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button {
+  border: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu #sidebar .sfrpg.chat-card .card-buttons button, .-emu-layout
+  body.-emu .sidebar-popout .sfrpg.chat-card .card-buttons button {
+    font-weight: normal; }

@@ -1,0 +1,9 @@
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .compendium-footer, .-emu-layout
+body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer {
+  width: 100%; }
+  .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .compendium-footer .flexrow button, .-emu-layout
+  body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer .flexrow button {
+    margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .compendium-footer .flexrow:last-child button, .-emu-layout
+  body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer .flexrow:last-child button {
+    margin-block-end: 0; }
