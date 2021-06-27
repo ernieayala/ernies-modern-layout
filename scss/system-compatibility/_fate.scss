@@ -9,3 +9,105 @@
 		}
 	}
 }
+
+@include system("fate-core-official") {
+	[id*="actor-"].window-app,
+	[id*="item-"].window-app {
+		.window-content {
+			padding: 0;
+
+			.circle-input,
+			.circle-input:disabled {
+				border-color: color("primary") !important;
+			}
+		}
+
+		.mfate-sheet {
+			background-color: transparent !important;
+
+			*::-webkit-scrollbar-thumb {
+				background-color: color("background-light");
+				border: none;
+			}
+
+			button {
+				background-color: inherit;
+				color: color("text");
+			}
+
+			&__header {
+				box-shadow: inset 0px -1px 0 0 color("border");
+			}
+
+			&__identity-avatar {
+				border-color: color("border");
+			}
+
+			&__identity-name {
+				border-color: color("border");
+				color: color("text");
+			}
+
+			&__meta-value {
+				border-color: color("border");
+
+				&:hover {
+					border-color: color("primary");
+				}
+			}
+
+			&__tabs-nav-link {
+				background-color: color("background-lightest");
+				border-color: color("border");
+
+				&:not(.active) {
+					box-shadow: none;
+				}
+			}
+		}
+
+		.mfate-panel {
+			&__panel {
+				border-color: color("border");
+			}
+
+			&__header {
+				background-color: color("background");
+				color: color("text-lightest");
+			}
+		}
+
+		.mfate-sheet-notes {
+			background-color: color("background-lightest") !important;
+		}
+
+		.mfate-skills-list__number,
+		.mfate-skills-list__adjective,
+		.mfate-skills-list__skill-name,
+		.mfate-skills-list__skill-name_item {
+			border-color: color("border-lighter");
+		}
+
+		.mfate-tracks__item + .mfate-tracks__item {
+			box-shadow: inset 0 1px color("border-lighter");
+		}
+
+		.mfate-stunts__table {
+			background-color: color("background-lightest");
+			color: color("text");
+		}
+
+		.mfate-stunts__row {
+			border-color: color("border-lighter");
+		}
+
+		.fate-extras__row {
+			background-color: color("background-lightest");
+			color: color("text");
+		}
+
+		.fate-extras__row-header-button {
+			background-color: color("background-lightest");
+		}
+	}
+}
