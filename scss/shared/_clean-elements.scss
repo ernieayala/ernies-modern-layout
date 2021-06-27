@@ -1,5 +1,4 @@
-[id*="actor-"].window-app,
-[id*="item-"].window-app {
+%clean-elements {
 	button {
 		background-color: color("background-button", $global-background-opacity-button-primary);
 		background-image: $global-image-background-controls;
@@ -38,7 +37,7 @@
 	input[type="password"],
 	input[type="datetime-local"] {
 		background: transparent;
-		border: b("border-lighter");
+		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		color: color("text");
@@ -89,14 +88,10 @@
 		}
 	}
 
-	input[type="radio"] {
-		@extend %input-radio;
-	}
-
 	input[type="color"],
 	input[type="color"][data-edit] {
 		background: transparent;
-		border: b("border-lighter");
+		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		transition: t(box-shadow, "link");
 
@@ -114,13 +109,9 @@
 		}
 	}
 
-	// input[type="range"] {
-	// 	@extend %input-range;
-	// }
-
 	select {
 		background: transparent;
-		border: b("border-lighter");
+		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		color: color("text");
@@ -148,7 +139,7 @@
 
 	textarea {
 		background: transparent;
-		border: b("border-lighter");
+		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		color: color("text");
 		transition: t(box-shadow, "link");

@@ -31,7 +31,6 @@ body.-emu {
 	@import "./components/scene-controls";
 	@import "./components/scene-navigation";
 	@import "./components/window-app";
-	@import "./components/window-app-actor-item";
 
 	// Sidebar
 	@import "./components/sidebar";
@@ -76,6 +75,7 @@ body.-emu {
 	@import "./system-compatibility/fate";
 	@import "./system-compatibility/pathfinder1";
 	@import "./system-compatibility/pathfinder2";
+	@import "./system-compatibility/shadowrun5e";
 	@import "./system-compatibility/starfinder";
 
 	// // Module Compatibility

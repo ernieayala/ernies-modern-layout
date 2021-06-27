@@ -189,6 +189,234 @@ body.-emu .sidebar-popout #chat #chat-log .message .button.polyglot-message-lang
   body.-emu .sidebar-popout #chat #chat-log .message .button.polyglot-message-language:hover {
     color: rgba(var(--color-primary), 1); }
 
+body.-emu .dnd5e button, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button, body.-emu .sr5.window-app button {
+  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
+  background-image: var(--emu-image-background-controls, none);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text-lightest), 1);
+  text-shadow: none;
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover, body.-emu .sr5.window-app button:hover {
+    background-color: rgba(var(--color-primary), 1);
+    background-image: none;
+    color: rgba(var(--color-text-lightest), 1); }
+  body.-emu .dnd5e button:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:disabled, body.-emu .sr5.window-app button:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .dnd5e input[type="text"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"], body.-emu .sr5.window-app input[type="text"],
+body.-emu .dnd5e input[type="number"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"],
+body.-emu .sr5.window-app input[type="number"],
+body.-emu .dnd5e input[type="date"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"],
+body.-emu .sr5.window-app input[type="date"],
+body.-emu .dnd5e input[type="time"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"],
+body.-emu .sr5.window-app input[type="time"],
+body.-emu .dnd5e input[type="password"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"],
+body.-emu .sr5.window-app input[type="password"],
+body.-emu .dnd5e input[type="datetime-local"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"],
+body.-emu .sr5.window-app input[type="datetime-local"] {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e input[type="text"]::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]::placeholder, body.-emu .sr5.window-app input[type="text"]::placeholder,
+  body.-emu .dnd5e input[type="number"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]::placeholder,
+  body.-emu .sr5.window-app input[type="number"]::placeholder,
+  body.-emu .dnd5e input[type="date"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]::placeholder,
+  body.-emu .sr5.window-app input[type="date"]::placeholder,
+  body.-emu .dnd5e input[type="time"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]::placeholder,
+  body.-emu .sr5.window-app input[type="time"]::placeholder,
+  body.-emu .dnd5e input[type="password"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]::placeholder,
+  body.-emu .sr5.window-app input[type="password"]::placeholder,
+  body.-emu .dnd5e input[type="datetime-local"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]::placeholder,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]::placeholder,
+  body.-emu .sr5.window-app input[type="datetime-local"]::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .dnd5e input[type="text"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:disabled, body.-emu .sr5.window-app input[type="text"]:disabled,
+  body.-emu .dnd5e input[type="number"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:disabled,
+  body.-emu .sr5.window-app input[type="number"]:disabled,
+  body.-emu .dnd5e input[type="date"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:disabled,
+  body.-emu .sr5.window-app input[type="date"]:disabled,
+  body.-emu .dnd5e input[type="time"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:disabled,
+  body.-emu .sr5.window-app input[type="time"]:disabled,
+  body.-emu .dnd5e input[type="password"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:disabled,
+  body.-emu .sr5.window-app input[type="password"]:disabled,
+  body.-emu .dnd5e input[type="datetime-local"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:disabled,
+  body.-emu .sr5.window-app input[type="datetime-local"]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .dnd5e input[type="checkbox"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"], body.-emu .sr5.window-app input[type="checkbox"] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e input[type="checkbox"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:disabled, body.-emu .sr5.window-app input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu .dnd5e input[type="checkbox"]:checked, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:checked, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:checked, body.-emu .sr5.window-app input[type="checkbox"]:checked {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+body.-emu .dnd5e input[type="color"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"], body.-emu .sr5.window-app input[type="color"],
+body.-emu .dnd5e input[type="color"][data-edit],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit],
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit],
+body.-emu .sr5.window-app input[type="color"][data-edit] {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e input[type="color"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:disabled, body.-emu .sr5.window-app input[type="color"]:disabled,
+  body.-emu .dnd5e input[type="color"][data-edit]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:disabled,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:disabled,
+  body.-emu .sr5.window-app input[type="color"][data-edit]:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .dnd5e select, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select, body.-emu .sr5.window-app select {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e select:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:disabled, body.-emu .sr5.window-app select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu .dnd5e select optgroup, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select optgroup, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select optgroup, body.-emu .sr5.window-app select optgroup,
+  body.-emu .dnd5e select option,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select option,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select option,
+  body.-emu .sr5.window-app select option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .dnd5e textarea, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea, body.-emu .sr5.window-app textarea {
+  background: transparent;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  body.-emu .dnd5e textarea::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea::placeholder, body.-emu .sr5.window-app textarea::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .dnd5e textarea:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:disabled, body.-emu .sr5.window-app textarea:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .dnd5e fieldset, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] fieldset, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] fieldset, body.-emu .sr5.window-app fieldset {
+  border: none; }
+
+body.-emu .dnd5e table, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table, body.-emu .sr5.window-app table {
+  background-color: rgba(var(--color-black), 0.05);
+  border: none; }
+  body.-emu .dnd5e table thead, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table thead, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table thead, body.-emu .sr5.window-app table thead {
+    background-color: rgba(var(--color-black), 0.2);
+    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    color: rgba(var(--color-text-lightest), 1);
+    text-shadow: none; }
+  body.-emu .dnd5e table tr:nth-child(even), .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table tr:nth-child(even), .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table tr:nth-child(even), body.-emu .sr5.window-app table tr:nth-child(even) {
+    background-color: rgba(var(--color-white), 0.1); }
+
+body.-emu .dnd5e h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h1, body.-emu .sr5.window-app h1,
+body.-emu .dnd5e h2,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h2,
+body.-emu .sr5.window-app h2,
+body.-emu .dnd5e h3,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h3,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h3,
+body.-emu .sr5.window-app h3,
+body.-emu .dnd5e h4,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h4,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h4,
+body.-emu .sr5.window-app h4 {
+  font-weight: normal; }
+
+body.-emu .dnd5e h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h1, body.-emu .sr5.window-app h1 {
+  border-block-end: 2px solid rgba(var(--color-border), 1); }
+
+
+body.-emu .dnd5e h2,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h2,
+body.-emu .sr5.window-app h2 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+
+body.-emu .dnd5e a, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a, body.-emu .sr5.window-app a {
+  text-shadow: none; }
+  body.-emu .dnd5e a:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a:hover, body.-emu .sr5.window-app a:hover {
+    color: rgba(var(--color-primary), 1); }
+
+body.-emu .dnd5e a[href], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href], body.-emu .sr5.window-app a[href] {
+  color: rgba(var(--color-primary), 1);
+  text-decoration: none;
+  text-shadow: none; }
+  body.-emu .dnd5e a[href]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:hover, body.-emu .sr5.window-app a[href]:hover {
+    text-decoration: underline;
+    text-shadow: none; }
+
+body.-emu .dnd5e a.entity-link, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link, body.-emu .sr5.window-app a.entity-link,
+body.-emu .dnd5e a.inline-roll,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll,
+body.-emu .sr5.window-app a.inline-roll {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0); }
+  body.-emu .dnd5e a.entity-link > i, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link > i, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link > i, body.-emu .sr5.window-app a.entity-link > i,
+  body.-emu .dnd5e a.inline-roll > i,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll > i,
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll > i,
+  body.-emu .sr5.window-app a.inline-roll > i {
+    color: inherit; }
+
+body.-emu .dnd5e hr, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] hr, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] hr, body.-emu .sr5.window-app hr {
+  border: none;
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: none; }
+
+body.-emu .dnd5e blockquote, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] blockquote, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] blockquote, body.-emu .sr5.window-app blockquote {
+  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+
+body.-emu .dnd5e section.secret, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] section.secret, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] section.secret, body.-emu .sr5.window-app section.secret {
+  background-color: rgba(var(--color-background-light), 0.2);
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+
 body.-emu .dialog input[type="text"],
 body.-emu .dialog input[type="number"],
 body.-emu .dialog input[type="date"],
@@ -354,8 +582,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="checkbo
 
 .-emu-layout body.-emu .dialog input[type="radio"], body.-emu .dialog .-emu-layout input[type="radio"],
 .-emu-layout body.-emu #sidebar input[type="radio"], body.-emu #sidebar .-emu-layout input[type="radio"],
-.-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="radio"], body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout input[type="radio"], .-emu-layout body.-emu [id*="actor-"].window-app input[type="radio"], body.-emu [id*="actor-"].window-app .-emu-layout input[type="radio"],
-.-emu-layout body.-emu [id*="item-"].window-app input[type="radio"], body.-emu [id*="item-"].window-app .-emu-layout input[type="radio"] {
+.-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="radio"], body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout input[type="radio"] {
   margin: 0;
   top: auto; }
 
@@ -590,7 +817,7 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control:ho
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button:hover, body.-emu #dfcp-rt-buttons button:hover, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .effect-control:hover, body.-emu #specials-config .fxmaster .special-effects .controls a:hover, body.-emu div.permission-viewer a:hover, .-emu-layout body.-emu #sidebar #chat #chat-log .message .button.polyglot-message-language:hover, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .button.polyglot-message-language:hover, body.-emu #smalltime-app #displayContainer .arrow:hover, body.-emu #token-action-hud #tah-reposition:hover,
 body.-emu #token-action-hud #tah-categories:hover, body.-emu #sidebar .token-mold > a:hover,
 body.-emu .sidebar-popout .token-mold > a:hover, body.-emu #sidebar .sidebar-tab .directory-header .header-control:hover,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:hover, body.-emu .dialog .directory .directory-item:hover,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:hover, body.-emu .dnd5e button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover, body.-emu .sr5.window-app button:hover, body.-emu .dialog .directory .directory-item:hover,
 body.-emu #sidebar .directory .directory-item:hover,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item:hover, body.-emu .dialog .directory .directory-item.folder .folder-header:hover,
 body.-emu #sidebar .directory .directory-item.folder .folder-header:hover,
@@ -599,8 +826,7 @@ body.-emu #hotbar .bar-controls #macro-directory:hover,
 body.-emu #hotbar .bar-controls #bar-toggle:hover, body.-emu #hotbar .macro:hover, body.-emu #hud .control-icon:hover, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control:hover,
 body.-emu #controls .control-tool:hover, body.-emu #controls .scene-control.active,
 body.-emu #controls .control-tool.active, body.-emu #controls .control-tool.toggle:hover, body.-emu #navigation #scene-list .scene:hover,
-body.-emu #navigation .scene-list .scene:hover, body.-emu .window-app .window-resizable-handle:hover, body.-emu .sheet .sheet-header > img:hover, body.-emu [id*="actor-"].window-app button:hover,
-body.-emu [id*="item-"].window-app button:hover, body.-emu #sidebar #sidebar-tabs > .item:hover,
+body.-emu #navigation .scene-list .scene:hover, body.-emu .window-app .window-resizable-handle:hover, body.-emu .sheet .sheet-header > img:hover, body.-emu #sidebar #sidebar-tabs > .item:hover,
 body.-emu #sidebar #sidebar-tabs > .collapse:hover,
 body.-emu .sidebar-popout #sidebar-tabs > .item:hover,
 body.-emu .sidebar-popout #sidebar-tabs > .collapse:hover, body.-emu #sidebar #combat #combat-tracker .combatant:hover,
@@ -608,7 +834,31 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant:hover, body.-emu #d
   box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
   text-shadow: none; }
 
-body.-emu .dialog input:hover[type="text"],
+body.-emu .dnd5e input[type="text"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:hover, body.-emu .sr5.window-app input[type="text"]:hover,
+body.-emu .dnd5e input[type="number"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:hover,
+body.-emu .sr5.window-app input[type="number"]:hover,
+body.-emu .dnd5e input[type="date"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:hover,
+body.-emu .sr5.window-app input[type="date"]:hover,
+body.-emu .dnd5e input[type="time"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:hover,
+body.-emu .sr5.window-app input[type="time"]:hover,
+body.-emu .dnd5e input[type="password"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:hover,
+body.-emu .sr5.window-app input[type="password"]:hover,
+body.-emu .dnd5e input[type="datetime-local"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:hover,
+body.-emu .sr5.window-app input[type="datetime-local"]:hover, body.-emu .dnd5e input[type="checkbox"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:hover, body.-emu .sr5.window-app input[type="checkbox"]:hover, body.-emu .dnd5e input[type="color"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:hover, body.-emu .sr5.window-app input[type="color"]:hover,
+body.-emu .dnd5e input[type="color"][data-edit]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:hover,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:hover,
+body.-emu .sr5.window-app input[type="color"][data-edit]:hover, body.-emu .dnd5e select:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:hover, body.-emu .sr5.window-app select:hover, body.-emu .dnd5e textarea:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:hover, body.-emu .sr5.window-app textarea:hover, body.-emu .dialog input:hover[type="text"],
 body.-emu .dialog input:hover[type="number"],
 body.-emu .dialog input:hover[type="date"],
 body.-emu .dialog input:hover[type="time"],
@@ -634,24 +884,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input:hover[type="c
 body.-emu #sidebar input:hover[type="color"],
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input:hover[type="color"], body.-emu .dialog textarea:hover,
 body.-emu #sidebar textarea:hover,
-body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea:hover, body.-emu [id*="actor-"].window-app input[type="text"]:hover,
-body.-emu [id*="actor-"].window-app input[type="number"]:hover,
-body.-emu [id*="actor-"].window-app input[type="date"]:hover,
-body.-emu [id*="actor-"].window-app input[type="time"]:hover,
-body.-emu [id*="actor-"].window-app input[type="password"]:hover,
-body.-emu [id*="actor-"].window-app input[type="datetime-local"]:hover,
-body.-emu [id*="item-"].window-app input[type="text"]:hover,
-body.-emu [id*="item-"].window-app input[type="number"]:hover,
-body.-emu [id*="item-"].window-app input[type="date"]:hover,
-body.-emu [id*="item-"].window-app input[type="time"]:hover,
-body.-emu [id*="item-"].window-app input[type="password"]:hover,
-body.-emu [id*="item-"].window-app input[type="datetime-local"]:hover, body.-emu [id*="actor-"].window-app input[type="checkbox"]:hover,
-body.-emu [id*="item-"].window-app input[type="checkbox"]:hover, body.-emu [id*="actor-"].window-app input[type="color"]:hover,
-body.-emu [id*="actor-"].window-app input[type="color"][data-edit]:hover,
-body.-emu [id*="item-"].window-app input[type="color"]:hover,
-body.-emu [id*="item-"].window-app input[type="color"][data-edit]:hover, body.-emu [id*="actor-"].window-app select:hover,
-body.-emu [id*="item-"].window-app select:hover, body.-emu [id*="actor-"].window-app textarea:hover,
-body.-emu [id*="item-"].window-app textarea:hover, body.-emu #sidebar #combat #combat-tracker .combatant.defeated.active,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea:hover, body.-emu #sidebar #combat #combat-tracker .combatant.defeated.active,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.defeated.active, body.-emu #sidebar #playlists .directory-list .directory-item.playlist:not(.collapsed),
 body.-emu .sidebar-popout #playlists .directory-list .directory-item.playlist:not(.collapsed), body.-emu #npcgenerator-menu.window-app .npc-generator .npc-generator-header:hover, body.-emu .simple-dice-roller-popup li:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
@@ -680,7 +913,31 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control:fo
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button:focus, body.-emu #dfcp-rt-buttons button:focus, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .effect-control:focus, body.-emu #specials-config .fxmaster .special-effects .controls a:focus, body.-emu div.permission-viewer a:focus, .-emu-layout body.-emu #sidebar #chat #chat-log .message .button.polyglot-message-language:focus, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .button.polyglot-message-language:focus, body.-emu #smalltime-app #displayContainer .arrow:focus, body.-emu #token-action-hud #tah-reposition:focus,
 body.-emu #token-action-hud #tah-categories:focus, body.-emu #sidebar .token-mold > a:focus,
 body.-emu .sidebar-popout .token-mold > a:focus, body.-emu #sidebar .sidebar-tab .directory-header .header-control:focus,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:focus, body.-emu .dialog input:focus[type="text"],
+body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control:focus, body.-emu .dnd5e button:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:focus, body.-emu .sr5.window-app button:focus, body.-emu .dnd5e input[type="text"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:focus, body.-emu .sr5.window-app input[type="text"]:focus,
+body.-emu .dnd5e input[type="number"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:focus,
+body.-emu .sr5.window-app input[type="number"]:focus,
+body.-emu .dnd5e input[type="date"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:focus,
+body.-emu .sr5.window-app input[type="date"]:focus,
+body.-emu .dnd5e input[type="time"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:focus,
+body.-emu .sr5.window-app input[type="time"]:focus,
+body.-emu .dnd5e input[type="password"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:focus,
+body.-emu .sr5.window-app input[type="password"]:focus,
+body.-emu .dnd5e input[type="datetime-local"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:focus,
+body.-emu .sr5.window-app input[type="datetime-local"]:focus, body.-emu .dnd5e input[type="checkbox"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:focus, body.-emu .sr5.window-app input[type="checkbox"]:focus, body.-emu .dnd5e input[type="color"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:focus, body.-emu .sr5.window-app input[type="color"]:focus,
+body.-emu .dnd5e input[type="color"][data-edit]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:focus,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:focus,
+body.-emu .sr5.window-app input[type="color"][data-edit]:focus, body.-emu .dnd5e select:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:focus, body.-emu .sr5.window-app select:focus, body.-emu .dnd5e textarea:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:focus, body.-emu .sr5.window-app textarea:focus, body.-emu .dnd5e a[href]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:focus, body.-emu .sr5.window-app a[href]:focus, body.-emu .dialog input:focus[type="text"],
 body.-emu .dialog input:focus[type="number"],
 body.-emu .dialog input:focus[type="date"],
 body.-emu .dialog input:focus[type="time"],
@@ -729,16 +986,15 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .active.sound-con
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active:focus, body.-emu #dfcp-rt-buttons button.active:focus, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control:focus, body.-emu #specials-config .fxmaster .special-effects .controls a.active:focus, body.-emu div.permission-viewer a.active:focus, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language:focus, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language:focus, body.-emu #smalltime-app #displayContainer .active.arrow:focus, body.-emu #token-action-hud .active#tah-reposition:focus,
 body.-emu #token-action-hud .active#tah-categories:focus, body.-emu #sidebar .token-mold > a.active:focus,
 body.-emu .sidebar-popout .token-mold > a.active:focus, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control:focus,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, body.-emu #hotbar .macro.active:focus, body.-emu #hud .control-icon.active:focus, body.-emu #controls .scene-control.active:focus,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, body.-emu .dnd5e button.active:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button.active:focus, body.-emu .sr5.window-app button.active:focus, body.-emu #hotbar .macro.active:focus, body.-emu #hud .control-icon.active:focus, body.-emu #controls .scene-control.active:focus,
 body.-emu #controls .control-tool.active:focus, body.-emu #controls .control-tool.toggle.active:focus, body.-emu #navigation #scene-list .scene.active:focus, body.-emu #navigation #scene-list .scene.view:focus,
 body.-emu #navigation .scene-list .scene.active:focus,
-body.-emu #navigation .scene-list .scene.view:focus, body.-emu [id*="actor-"].window-app button.active:focus,
-body.-emu [id*="item-"].window-app button.active:focus, body.-emu #sidebar #sidebar-tabs > .item.active:focus,
+body.-emu #navigation .scene-list .scene.view:focus, body.-emu #sidebar #sidebar-tabs > .item.active:focus,
 body.-emu #sidebar #sidebar-tabs > .collapse.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:focus, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:focus, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:focus, body.-emu .user-config.sheet.window-app #characters .directory-item.context:focus,
-body.-emu .user-config.sheet.window-app .directory-item.context:focus, body.-emu #df-curvy-walls-tools .control-tool.active:focus, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:focus, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:focus, body.-emu .dialog .directory .directory-item:focus,
+body.-emu .user-config.sheet.window-app .directory-item.context:focus, body.-emu .sr5.window-app .sunken.env-modifier-active:focus, body.-emu #df-curvy-walls-tools .control-tool.active:focus, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:focus, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:focus, body.-emu .dialog .directory .directory-item:focus,
 body.-emu #sidebar .directory .directory-item:focus,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item:focus, body.-emu .dialog .directory .directory-item.folder .folder-header:focus,
 body.-emu #sidebar .directory .directory-item.folder .folder-header:focus,
@@ -749,30 +1005,7 @@ body.-emu #hotbar .bar-controls #macro-directory:focus,
 body.-emu #hotbar .bar-controls #bar-toggle:focus, body.-emu #hotbar .macro:focus, body.-emu #hud .control-icon:focus, body.-emu #controls .scene-control:focus,
 body.-emu #controls .control-tool:focus, body.-emu #controls .control-tool.toggle:focus, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.view, body.-emu #navigation #scene-list .scene:focus,
-body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu [id*="actor-"].window-app button:focus,
-body.-emu [id*="item-"].window-app button:focus, body.-emu [id*="actor-"].window-app input[type="text"]:focus,
-body.-emu [id*="actor-"].window-app input[type="number"]:focus,
-body.-emu [id*="actor-"].window-app input[type="date"]:focus,
-body.-emu [id*="actor-"].window-app input[type="time"]:focus,
-body.-emu [id*="actor-"].window-app input[type="password"]:focus,
-body.-emu [id*="actor-"].window-app input[type="datetime-local"]:focus,
-body.-emu [id*="item-"].window-app input[type="text"]:focus,
-body.-emu [id*="item-"].window-app input[type="number"]:focus,
-body.-emu [id*="item-"].window-app input[type="date"]:focus,
-body.-emu [id*="item-"].window-app input[type="time"]:focus,
-body.-emu [id*="item-"].window-app input[type="password"]:focus,
-body.-emu [id*="item-"].window-app input[type="datetime-local"]:focus, body.-emu [id*="actor-"].window-app input[type="checkbox"]:focus,
-body.-emu [id*="item-"].window-app input[type="checkbox"]:focus, body.-emu [id*="actor-"].window-app input[type="color"]:focus,
-body.-emu [id*="actor-"].window-app input[type="color"][data-edit]:focus,
-body.-emu [id*="item-"].window-app input[type="color"]:focus,
-body.-emu [id*="item-"].window-app input[type="color"][data-edit]:focus, body.-emu [id*="actor-"].window-app select:focus,
-body.-emu [id*="item-"].window-app select:focus, body.-emu [id*="actor-"].window-app textarea:focus,
-body.-emu [id*="item-"].window-app textarea:focus, body.-emu [id*="actor-"].window-app a[href]:focus,
-body.-emu [id*="item-"].window-app a[href]:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu .dnd5e input[type="text"]:hover, body.-emu .dnd5e input[type="text"]:focus,
-body.-emu .dnd5e input[type="number"]:hover,
-body.-emu .dnd5e input[type="number"]:focus,
-body.-emu .dnd5e select:hover,
-body.-emu .dnd5e select:focus, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
+body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
@@ -800,16 +1033,15 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .active.sound-con
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active, body.-emu #dfcp-rt-buttons button.active, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control, body.-emu #specials-config .fxmaster .special-effects .controls a.active, body.-emu div.permission-viewer a.active, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language, body.-emu #smalltime-app #displayContainer .active.arrow, body.-emu #token-action-hud .active#tah-reposition,
 body.-emu #token-action-hud .active#tah-categories, body.-emu #sidebar .token-mold > a.active,
 body.-emu .sidebar-popout .token-mold > a.active, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control.active,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu .dnd5e button.active, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button.active, body.-emu .sr5.window-app button.active, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control.active,
 body.-emu #controls .control-tool.active, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.active,
-body.-emu #navigation .scene-list .scene.view, body.-emu [id*="actor-"].window-app button.active,
-body.-emu [id*="item-"].window-app button.active, body.-emu #sidebar #sidebar-tabs > .item.active,
+body.-emu #navigation .scene-list .scene.view, body.-emu #sidebar #sidebar-tabs > .item.active,
 body.-emu #sidebar #sidebar-tabs > .collapse.active,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active,
 body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock, body.-emu #sidebar #combat #combat-tracker .combatant.active,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.active, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy, body.-emu .user-config.sheet.window-app #characters .directory-item.context,
-body.-emu .user-config.sheet.window-app .directory-item.context, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name {
+body.-emu .user-config.sheet.window-app .directory-item.context, body.-emu .sr5.window-app .sunken.env-modifier-active, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name {
   background-color: rgba(var(--color-primary), 1);
   color: rgba(var(--color-text-lightest), 1);
   text-shadow: none; }
@@ -836,16 +1068,15 @@ body.-emu .user-config.sheet.window-app .directory-item.context, body.-emu #df-c
   body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active:hover, body.-emu #dfcp-rt-buttons button.active:hover, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control:hover, body.-emu #specials-config .fxmaster .special-effects .controls a.active:hover, body.-emu div.permission-viewer a.active:hover, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language:hover, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language:hover, body.-emu #smalltime-app #displayContainer .active.arrow:hover, body.-emu #token-action-hud .active#tah-reposition:hover,
   body.-emu #token-action-hud .active#tah-categories:hover, body.-emu #sidebar .token-mold > a.active:hover,
   body.-emu .sidebar-popout .token-mold > a.active:hover, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control:hover,
-  body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, body.-emu #hotbar .macro.active:hover, body.-emu #hud .control-icon.active:hover, body.-emu #controls .scene-control.active:hover,
+  body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, body.-emu .dnd5e button.active:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button.active:hover, body.-emu .sr5.window-app button.active:hover, body.-emu #hotbar .macro.active:hover, body.-emu #hud .control-icon.active:hover, body.-emu #controls .scene-control.active:hover,
   body.-emu #controls .control-tool.active:hover, body.-emu #controls .control-tool.toggle.active:hover, body.-emu #navigation #scene-list .scene.active:hover, body.-emu #navigation #scene-list .scene.view:hover,
   body.-emu #navigation .scene-list .scene.active:hover,
-  body.-emu #navigation .scene-list .scene.view:hover, body.-emu [id*="actor-"].window-app button.active:hover,
-  body.-emu [id*="item-"].window-app button.active:hover, body.-emu #sidebar #sidebar-tabs > .item.active:hover,
+  body.-emu #navigation .scene-list .scene.view:hover, body.-emu #sidebar #sidebar-tabs > .item.active:hover,
   body.-emu #sidebar #sidebar-tabs > .collapse.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .item.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:hover, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant.active:hover, body.-emu .filepicker.window-app .filepicker-body.private .current-dir button.privacy:hover, body.-emu .user-config.sheet.window-app #characters .directory-item.context:hover,
-  body.-emu .user-config.sheet.window-app .directory-item.context:hover, body.-emu #df-curvy-walls-tools .control-tool.active:hover, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:hover, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:hover {
+  body.-emu .user-config.sheet.window-app .directory-item.context:hover, body.-emu .sr5.window-app .sunken.env-modifier-active:hover, body.-emu #df-curvy-walls-tools .control-tool.active:hover, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label:hover, body.-emu #navigation .monks-scene-navigation .scene-list > .nav-item.active > .scene-name:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
@@ -3145,221 +3376,6 @@ body.-emu .sheet .sheet-header > h1 input {
   .-emu-layout body.-emu .sheet .sheet-footer + ::after {
     display: none; }
 
-body.-emu [id*="actor-"].window-app button,
-body.-emu [id*="item-"].window-app button {
-  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
-  background-image: var(--emu-image-background-controls, none);
-  border: none;
-  border-radius: var(--emu-border-radius-controls, 0);
-  box-shadow: none;
-  color: rgba(var(--color-text-lightest), 1);
-  text-shadow: none;
-  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app button:hover,
-  body.-emu [id*="item-"].window-app button:hover {
-    background-color: rgba(var(--color-primary), 1);
-    background-image: none;
-    color: rgba(var(--color-text-lightest), 1); }
-  body.-emu [id*="actor-"].window-app button:disabled,
-  body.-emu [id*="item-"].window-app button:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-
-body.-emu [id*="actor-"].window-app input[type="text"],
-body.-emu [id*="actor-"].window-app input[type="number"],
-body.-emu [id*="actor-"].window-app input[type="date"],
-body.-emu [id*="actor-"].window-app input[type="time"],
-body.-emu [id*="actor-"].window-app input[type="password"],
-body.-emu [id*="actor-"].window-app input[type="datetime-local"],
-body.-emu [id*="item-"].window-app input[type="text"],
-body.-emu [id*="item-"].window-app input[type="number"],
-body.-emu [id*="item-"].window-app input[type="date"],
-body.-emu [id*="item-"].window-app input[type="time"],
-body.-emu [id*="item-"].window-app input[type="password"],
-body.-emu [id*="item-"].window-app input[type="datetime-local"] {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-radius: var(--emu-border-radius-forms, 0);
-  box-shadow: none;
-  color: rgba(var(--color-text), 1);
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app input[type="text"]::placeholder,
-  body.-emu [id*="actor-"].window-app input[type="number"]::placeholder,
-  body.-emu [id*="actor-"].window-app input[type="date"]::placeholder,
-  body.-emu [id*="actor-"].window-app input[type="time"]::placeholder,
-  body.-emu [id*="actor-"].window-app input[type="password"]::placeholder,
-  body.-emu [id*="actor-"].window-app input[type="datetime-local"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="text"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="number"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="date"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="time"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="password"]::placeholder,
-  body.-emu [id*="item-"].window-app input[type="datetime-local"]::placeholder {
-    color: rgba(var(--color-text), 0.5); }
-  body.-emu [id*="actor-"].window-app input[type="text"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="number"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="date"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="time"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="password"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="datetime-local"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="text"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="number"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="date"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="time"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="password"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="datetime-local"]:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-
-body.-emu [id*="actor-"].window-app input[type="checkbox"],
-body.-emu [id*="item-"].window-app input[type="checkbox"] {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-radius: var(--emu-border-radius-forms, 0);
-  box-shadow: none;
-  color: rgba(var(--color-text), 1);
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app input[type="checkbox"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="checkbox"]:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-  body.-emu [id*="actor-"].window-app input[type="checkbox"]:checked,
-  body.-emu [id*="item-"].window-app input[type="checkbox"]:checked {
-    background-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-text-lightest), 1); }
-
-body.-emu [id*="actor-"].window-app input[type="color"],
-body.-emu [id*="actor-"].window-app input[type="color"][data-edit],
-body.-emu [id*="item-"].window-app input[type="color"],
-body.-emu [id*="item-"].window-app input[type="color"][data-edit] {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-radius: var(--emu-border-radius-forms, 0);
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app input[type="color"]:disabled,
-  body.-emu [id*="actor-"].window-app input[type="color"][data-edit]:disabled,
-  body.-emu [id*="item-"].window-app input[type="color"]:disabled,
-  body.-emu [id*="item-"].window-app input[type="color"][data-edit]:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-
-body.-emu [id*="actor-"].window-app select,
-body.-emu [id*="item-"].window-app select {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-radius: var(--emu-border-radius-forms, 0);
-  box-shadow: none;
-  color: rgba(var(--color-text), 1);
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app select:disabled,
-  body.-emu [id*="item-"].window-app select:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-  body.-emu [id*="actor-"].window-app select optgroup,
-  body.-emu [id*="actor-"].window-app select option,
-  body.-emu [id*="item-"].window-app select optgroup,
-  body.-emu [id*="item-"].window-app select option {
-    background-color: rgba(var(--color-background-lightest), 1);
-    color: rgba(var(--color-text), 1); }
-
-body.-emu [id*="actor-"].window-app textarea,
-body.-emu [id*="item-"].window-app textarea {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-radius: var(--emu-border-radius-forms, 0);
-  color: rgba(var(--color-text), 1);
-  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  body.-emu [id*="actor-"].window-app textarea::placeholder,
-  body.-emu [id*="item-"].window-app textarea::placeholder {
-    color: rgba(var(--color-text), 0.5); }
-  body.-emu [id*="actor-"].window-app textarea:disabled,
-  body.-emu [id*="item-"].window-app textarea:disabled {
-    opacity: 0.5;
-    pointer-events: none; }
-
-body.-emu [id*="actor-"].window-app fieldset,
-body.-emu [id*="item-"].window-app fieldset {
-  border: none; }
-
-body.-emu [id*="actor-"].window-app table,
-body.-emu [id*="item-"].window-app table {
-  background-color: rgba(var(--color-black), 0.05);
-  border: none; }
-  body.-emu [id*="actor-"].window-app table thead,
-  body.-emu [id*="item-"].window-app table thead {
-    background-color: rgba(var(--color-black), 0.2);
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
-    color: rgba(var(--color-text-lightest), 1);
-    text-shadow: none; }
-  body.-emu [id*="actor-"].window-app table tr:nth-child(even),
-  body.-emu [id*="item-"].window-app table tr:nth-child(even) {
-    background-color: rgba(var(--color-white), 0.1); }
-
-body.-emu [id*="actor-"].window-app h1,
-body.-emu [id*="actor-"].window-app h2,
-body.-emu [id*="actor-"].window-app h3,
-body.-emu [id*="actor-"].window-app h4,
-body.-emu [id*="item-"].window-app h1,
-body.-emu [id*="item-"].window-app h2,
-body.-emu [id*="item-"].window-app h3,
-body.-emu [id*="item-"].window-app h4 {
-  font-weight: normal; }
-
-body.-emu [id*="actor-"].window-app h1,
-body.-emu [id*="item-"].window-app h1 {
-  border-block-end: 2px solid rgba(var(--color-border), 1); }
-
-body.-emu [id*="actor-"].window-app h2,
-body.-emu [id*="item-"].window-app h2 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
-
-body.-emu [id*="actor-"].window-app a,
-body.-emu [id*="item-"].window-app a {
-  text-shadow: none; }
-  body.-emu [id*="actor-"].window-app a:hover,
-  body.-emu [id*="item-"].window-app a:hover {
-    color: rgba(var(--color-primary), 1); }
-
-body.-emu [id*="actor-"].window-app a[href],
-body.-emu [id*="item-"].window-app a[href] {
-  color: rgba(var(--color-primary), 1);
-  text-decoration: none;
-  text-shadow: none; }
-  body.-emu [id*="actor-"].window-app a[href]:hover,
-  body.-emu [id*="item-"].window-app a[href]:hover {
-    text-decoration: underline;
-    text-shadow: none; }
-
-body.-emu [id*="actor-"].window-app a.entity-link,
-body.-emu [id*="actor-"].window-app a.inline-roll,
-body.-emu [id*="item-"].window-app a.entity-link,
-body.-emu [id*="item-"].window-app a.inline-roll {
-  background-color: rgba(var(--color-background-lightest), 1);
-  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
-  border: none;
-  border-radius: var(--emu-border-radius-controls, 0); }
-  body.-emu [id*="actor-"].window-app a.entity-link > i,
-  body.-emu [id*="actor-"].window-app a.inline-roll > i,
-  body.-emu [id*="item-"].window-app a.entity-link > i,
-  body.-emu [id*="item-"].window-app a.inline-roll > i {
-    color: inherit; }
-
-body.-emu [id*="actor-"].window-app hr,
-body.-emu [id*="item-"].window-app hr {
-  border: none;
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: none; }
-
-body.-emu [id*="actor-"].window-app blockquote,
-body.-emu [id*="item-"].window-app blockquote {
-  border-inline-start: 3px solid rgba(var(--color-border), 1); }
-
-body.-emu [id*="actor-"].window-app section.secret,
-body.-emu [id*="item-"].window-app section.secret {
-  background-color: rgba(var(--color-background-light), 0.2);
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
-
 body.-emu #sidebar,
 body.-emu .sidebar-popout {
   background-color: rgba(var(--color-background-darkest), var(--emu-background-opacity-sidebar, 0.8));
@@ -5113,23 +5129,6 @@ body.-emu #controls .scene-control + div .custom-control {
   .-emu-layout body.-emu .dnd5e.dialog #short-rest-hd .form-fields select {
     flex: 1 1 auto; }
 
-body.-emu .dnd5e input[type="text"],
-body.-emu .dnd5e input[type="number"],
-body.-emu .dnd5e select {
-  border-color: rgba(var(--color-border), 1);
-  color: rgba(var(--color-text), 1); }
-  body.-emu .dnd5e input[type="text"]:disabled,
-  body.-emu .dnd5e input[type="number"]:disabled,
-  body.-emu .dnd5e select:disabled {
-    opacity: 0.5; }
-    .-emu-layout body.-emu .dnd5e input[type="text"]:disabled, .-emu-layout
-    body.-emu .dnd5e input[type="number"]:disabled, .-emu-layout
-    body.-emu .dnd5e select:disabled {
-      pointer-events: none; }
-
-body.-emu .dnd5e button {
-  border: rgba(var(--color-border), 1) 1px solid; }
-
 body.-emu .dnd5e .form-group label {
   color: rgba(var(--color-text), 1); }
 
@@ -5654,6 +5653,224 @@ body.-emu .sidebar-popout .sidebar-tab .directory-footer .compendium-footer {
   flex: 0 0 auto;
   line-height: 1;
   margin: 0; }
+
+body.-emu .sr5.window-app.item .item-header {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.item .item-header .source .source-button {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-type {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-image {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.item .item-header .item-info > :not(:last-child) {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .technology {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .description {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app.item .item-form .header {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app.item .item-form .form-line .label {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.item .item-form .form-line select {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app.item .item-form .form-line select > option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.item .item-form .form-line input {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app.actor .attributes {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes + :not(.attributes) {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes:last-child {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app.actor .attributes .attribute {
+    color: rgba(var(--color-text), 1);
+    text-shadow: none; }
+    body.-emu .sr5.window-app.actor .attributes .attribute:not(:last-child) {
+      border-color: rgba(var(--color-border), 1); }
+    body.-emu .sr5.window-app.actor .attributes .attribute > .attribute-name.roll:hover {
+      color: rgba(var(--color-primary), 1);
+      text-shadow: none; }
+    body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers {
+      background-color: transparent;
+      border-color: rgba(var(--color-border-lighter), 1); }
+      body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers > .value-modifiers-base,
+      body.-emu .sr5.window-app.actor .attributes .attribute .value .value-modifiers > .value-modifiers-total {
+        border-color: rgba(var(--color-border-lighter), 1); }
+
+body.-emu .sr5.window-app .chat-select-link img:hover {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .Roll:hover {
+  color: rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app .input .unit {
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app label.checkbox:hover input ~ .checkmark {
+  text-shadow: none; }
+
+body.-emu .sr5.window-app button.plus1_button {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app input[type='checkbox'].display {
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app input[type='checkbox'].display:hover {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app input[type='text'].disabled-for-display {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app input[type='text'].display {
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+  body.-emu .sr5.window-app input[type='text'].display::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu .sr5.window-app input[type='text'].display:disabled {
+    color: rgba(var(--color-text), 1);
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu .sr5.window-app select.display {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app select.display > option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .entity-link {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .roll:hover {
+  color: rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu .sr5.window-app .editor .tox-edit-area {
+  background-color: rgba(var(--color-white), 1); }
+
+body.-emu .sr5.window-app .window-content {
+  background-color: rgba(var(--color-background-lightest), 1);
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .description > .editor {
+  color: rgba(var(--color-text), 1); }
+
+body.-emu .sr5.window-app .border-right {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .tabs {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .tabs > a {
+    border-color: rgba(var(--color-border), 1); }
+    body.-emu .sr5.window-app .tabs > a:hover {
+      color: rgba(var(--color-primary), 1);
+      text-shadow: none; }
+    body.-emu .sr5.window-app .tabs > a.active {
+      background-color: rgba(var(--color-primary), 1);
+      color: rgba(var(--color-text-lightest), 1);
+      text-shadow: none; }
+
+body.-emu .sr5.window-app .split-container > *:not(:last-child) {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .block:not(:last-child) {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .block .block-line.border-bottom {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell {
+  border-color: rgba(var(--color-border), 1);
+  color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell.filled {
+    background-color: rgba(var(--color-background-light), 1); }
+  body.-emu .sr5.window-app .horizontal-cell-input .cell-container .cell:hover {
+    background-color: rgba(var(--color-background-lightest), 1); }
+
+body.-emu .sr5.window-app .list-item {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .list-item .has-desc:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+  body.-emu .sr5.window-app .list-item.item-section {
+    border: none;
+    border-radius: 0; }
+  body.-emu .sr5.window-app .list-item .item-img.item-roll:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+  body.-emu .sr5.window-app .list-item .item-desc .props > * {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu .sr5.window-app .list-item .item-text {
+    border-color: rgba(var(--color-border-lighter), 1); }
+    body.-emu .sr5.window-app .list-item .item-text.faded {
+      color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .list-item .item-create,
+  body.-emu .sr5.window-app .list-item .add-new-ammo,
+  body.-emu .sr5.window-app .list-item .add-new-mod,
+  body.-emu .sr5.window-app .list-item .add-new-license {
+    color: rgba(var(--color-text), 1); }
+  body.-emu .sr5.window-app .list-item.skill-header:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+
+body.-emu .sr5.window-app .sunken {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: none; }
+  .-emu-layout body.-emu .sr5.window-app .sunken tr td, .-emu-layout
+  body.-emu .sr5.window-app .sunken tr td {
+    padding: var(--emu-space-xs); }
+
+body.-emu .sr5.window-app button,
+body.-emu .sr5.window-app button.display {
+  background-color: rgba(var(--color-background-button), 1);
+  color: rgba(var(--color-text-lightest), 1); }
+  body.-emu .sr5.window-app button.light,
+  body.-emu .sr5.window-app button.display.light {
+    background-color: rgba(var(--color-background-button), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-header,
+body.-emu .sidebar-popout .sr5.chat-card .card-header {
+  border-color: rgba(var(--color-border), 1); }
+  body.-emu #sidebar .sr5.chat-card .card-header :first-of-type,
+  body.-emu .sidebar-popout .sr5.chat-card .card-header :first-of-type {
+    border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-content,
+body.-emu .sidebar-popout .sr5.chat-card .card-content {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-buttons .button,
+body.-emu .sidebar-popout .sr5.chat-card .card-buttons .button {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-description span,
+body.-emu .sidebar-popout .sr5.chat-card .card-description span {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .card-description .card-description-content,
+body.-emu .sidebar-popout .sr5.chat-card .card-description .card-description-content {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu #sidebar .sr5.chat-card .damage-line .button,
+body.-emu .sidebar-popout .sr5.chat-card .damage-line .button {
+  background-color: rgba(var(--color-background), 1);
+  border-color: rgba(var(--color-border), 1); }
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer .browser-group, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-footer .browser-group {

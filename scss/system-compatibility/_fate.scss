@@ -13,6 +13,8 @@
 @include system("fate-core-official") {
 	[id*="actor-"].window-app,
 	[id*="item-"].window-app {
+		@extend %clean-elements;
+
 		.window-content {
 			padding: 0;
 

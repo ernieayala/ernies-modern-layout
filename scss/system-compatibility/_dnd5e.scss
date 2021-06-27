@@ -1,4 +1,6 @@
 .dnd5e {
+	@extend %clean-elements;
+
 	&.hd-config.dialog {
 		.window-content {
 			@include layout {
@@ -31,30 +33,6 @@
 		}
 	}
 
-	input[type="text"],
-	input[type="number"],
-	select {
-		border-color: color("border");
-		color: color("text");
-
-		&:hover,
-		&:focus {
-			@extend %global-focus;
-		}
-
-		&:disabled {
-			opacity: 0.5;
-
-			@include layout {
-				pointer-events: none;
-			}
-		}
-	}
-
-	button {
-		border: b("border");
-	}
-
 	.form-group {
 		label {
 			color: color("text");
@@ -64,6 +42,7 @@
 	.form-header {
 		border-block-start: b("border-lighter");
 		border-block-end: b("border-lighter");
+		// font-family: inherit;
 	}
 
 	.tag {
@@ -114,19 +93,27 @@
 					}
 				}
 			}
+
+			.header-details {
+				// font-family: inherit;
+			}
 		}
 
-		.sheet-navigation .item {
-			border-color: color("border");
-			text-shadow: none;
+		.sheet-navigation {
+			// font-family: inherit;
 
-			&:hover {
-				color: color("primary");
-			}
+			.item {
+				border-color: color("border");
+				text-shadow: none;
 
-			&.active {
-				border-color: color("primary");
-				color: color("primary");
+				&:hover {
+					color: color("primary");
+				}
+
+				&.active {
+					border-color: color("primary");
+					color: color("primary");
+				}
 			}
 		}
 
@@ -169,6 +156,10 @@
 
 			.items-header {
 				border: b("border-lighter");
+
+				h3 {
+					// font-family: inherit;
+				}
 			}
 		}
 
@@ -197,14 +188,24 @@
 		h4.box-title {
 			border-color: color("border-lighter");
 			color: color("text");
+			// font-family: inherit;
 		}
 
 		ul.attributes li.attribute {
 			border: b("border-lighter");
+
+			.attribute-value {
+				// font-family: inherit;
+			}
+
+			.attribute-footer {
+				// font-family: inherit;
+			}
 		}
 
 		.ability-scores {
 			border: b("border-lighter");
+			// font-family: inherit;
 
 			.ability {
 				border-block-end: b("border-lighter");
@@ -415,6 +416,7 @@
 
 		.resource .attribute-value label.recharge {
 			color: color("text");
+			// font-family: inherit;
 		}
 
 		.inventory .item-controls .item-toggle,
@@ -432,8 +434,15 @@
 			color: color("text");
 		}
 
-		.characteristics textarea {
-			border-color: color("border-lighter");
+		.characteristics {
+			label {
+				// font-family: inherit;
+			}
+
+			textarea {
+				border-color: color("border-lighter");
+				// font-family: inherit;
+			}
 		}
 	}
 
@@ -451,6 +460,10 @@
 				color: color("primary");
 			}
 		}
+	}
+
+	.modesto {
+		// font-family: inherit;
 	}
 }
 
