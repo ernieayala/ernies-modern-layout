@@ -697,7 +697,9 @@ body.-emu .sidebar-popout .token-mold > a.active:focus, body.-emu #sidebar .side
 body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, body.-emu #hotbar .macro.active:focus, body.-emu #hud .control-icon.active:focus, body.-emu #controls .scene-control.active:focus,
 body.-emu #controls .control-tool.active:focus, body.-emu #controls .control-tool.toggle.active:focus, body.-emu #navigation #scene-list .scene.active:focus, body.-emu #navigation #scene-list .scene.view:focus,
 body.-emu #navigation .scene-list .scene.active:focus,
-body.-emu #navigation .scene-list .scene.view:focus, body.-emu #sidebar #sidebar-tabs > .item.active:focus,
+body.-emu #navigation .scene-list .scene.view:focus, body.-emu #navigation #scene-list .scene.active:focus:not(.gm), body.-emu #navigation #scene-list .scene.view:focus:not(.gm),
+body.-emu #navigation .scene-list .scene.active:focus:not(.gm),
+body.-emu #navigation .scene-list .scene.view:focus:not(.gm), body.-emu #sidebar #sidebar-tabs > .item.active:focus,
 body.-emu #sidebar #sidebar-tabs > .collapse.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active:focus,
 body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:focus, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:focus, body.-emu #sidebar #combat #combat-tracker .combatant.active:focus,
@@ -743,7 +745,9 @@ body.-emu .sidebar-popout .token-mold > a.active, body.-emu #sidebar .sidebar-ta
 body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control.active,
 body.-emu #controls .control-tool.active, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.active,
-body.-emu #navigation .scene-list .scene.view, body.-emu #sidebar #sidebar-tabs > .item.active,
+body.-emu #navigation .scene-list .scene.view, body.-emu #navigation #scene-list .scene.active:not(.gm), body.-emu #navigation #scene-list .scene.view:not(.gm),
+body.-emu #navigation .scene-list .scene.active:not(.gm),
+body.-emu #navigation .scene-list .scene.view:not(.gm), body.-emu #sidebar #sidebar-tabs > .item.active,
 body.-emu #sidebar #sidebar-tabs > .collapse.active,
 body.-emu .sidebar-popout #sidebar-tabs > .item.active,
 body.-emu .sidebar-popout #sidebar-tabs > .collapse.active, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock, body.-emu #sidebar #combat #combat-tracker .combatant.active,
@@ -777,7 +781,9 @@ body.-emu .user-config.sheet.window-app .directory-item.context, body.-emu #df-c
   body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, body.-emu #hotbar .macro.active:hover, body.-emu #hud .control-icon.active:hover, body.-emu #controls .scene-control.active:hover,
   body.-emu #controls .control-tool.active:hover, body.-emu #controls .control-tool.toggle.active:hover, body.-emu #navigation #scene-list .scene.active:hover, body.-emu #navigation #scene-list .scene.view:hover,
   body.-emu #navigation .scene-list .scene.active:hover,
-  body.-emu #navigation .scene-list .scene.view:hover, body.-emu #sidebar #sidebar-tabs > .item.active:hover,
+  body.-emu #navigation .scene-list .scene.view:hover, body.-emu #navigation #scene-list .scene.active:hover:not(.gm), body.-emu #navigation #scene-list .scene.view:hover:not(.gm),
+  body.-emu #navigation .scene-list .scene.active:hover:not(.gm),
+  body.-emu #navigation .scene-list .scene.view:hover:not(.gm), body.-emu #sidebar #sidebar-tabs > .item.active:hover,
   body.-emu #sidebar #sidebar-tabs > .collapse.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .item.active:hover,
   body.-emu .sidebar-popout #sidebar-tabs > .collapse.active:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar:hover #emu-sidebar-lock:hover, .-emu-layout.-emu-subtle-layout body.-emu #sidebar.is-locked #emu-sidebar-lock:hover, body.-emu #sidebar #combat #combat-tracker .combatant.active:hover,
@@ -2840,10 +2846,18 @@ body.-emu #navigation {
       body.-emu #navigation .scene-list .scene.active {
         display: inline-flex;
         opacity: 1; }
+    body.-emu #navigation #scene-list .scene:not(.gm),
+    body.-emu #navigation .scene-list .scene:not(.gm) {
+      background-color: rgba(var(--color-background), var(--emu-background-opacity-scene-navigation, 0.8));
+      background-image: var(--emu-image-background, none); }
     body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view,
     body.-emu #navigation .scene-list .scene.active,
     body.-emu #navigation .scene-list .scene.view {
       background-image: none; }
+      body.-emu #navigation #scene-list .scene.active:not(.gm), body.-emu #navigation #scene-list .scene.view:not(.gm),
+      body.-emu #navigation .scene-list .scene.active:not(.gm),
+      body.-emu #navigation .scene-list .scene.view:not(.gm) {
+        background-image: none; }
     body.-emu #navigation #scene-list .scene:hover,
     body.-emu #navigation .scene-list .scene:hover {
       background-image: none; }
@@ -3396,6 +3410,7 @@ body.-emu .sidebar-popout #chat #chat-log .message {
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu #sidebar #chat #chat-log .message, .-emu-layout
   body.-emu .sidebar-popout #chat #chat-log .message {
+    font-family: inherit;
     font-size: var(--emu-font-size-md);
     padding: var(--emu-space-base);
     margin: var(--emu-space-base); }
@@ -6505,6 +6520,38 @@ body.-emu div.permission-viewer a {
   .-emu-layout body.-emu div.permission-viewer a {
     padding: 0 var(--emu-space-base);
     width: auto; }
+
+body.-emu .window-app .window-header a.pop__btn-open,
+body.-emu .window-app .window-header a.tit-menu__btn-open--sheet.px-2 {
+  display: flex !important;
+  flex: 0 0 auto;
+  padding: 0 !important;
+  width: var(--emu-space-button-sm); }
+  body.-emu .window-app .window-header a.pop__btn-open > i,
+  body.-emu .window-app .window-header a.pop__btn-open > span.fas,
+  body.-emu .window-app .window-header a.tit-menu__btn-open--sheet.px-2 > i,
+  body.-emu .window-app .window-header a.tit-menu__btn-open--sheet.px-2 > span.fas {
+    margin-inline-end: 0; }
+
+body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header,
+body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header {
+  margin-block-end: var(--emu-space-sm);
+  padding: 0; }
+  body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header hr,
+  body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header hr {
+    display: none; }
+  body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header .btn-group button:last-child,
+  body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header .btn-group button:last-child {
+    margin-inline-start: var(--emu-space-xs) !important; }
+  body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button,
+  body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button {
+    flex: 0 0 auto; }
+    body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:first-child,
+    body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:first-child {
+      flex: 1 1 auto; }
+      body.-emu #sidebar .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:first-child > span,
+      body.-emu .sidebar-popout .flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header button:first-child > span {
+        margin-inline-end: var(--emu-space-base); }
 
 body.-emu #polyglot {
   background-color: rgba(var(--color-background), 0.5);

@@ -1,4 +1,4 @@
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] button, body.-emu.system-fate-core-official .window-app[id*="item-"] button {
   background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
   background-image: var(--emu-image-background-controls, none);
   border: none;
@@ -7,220 +7,220 @@
   color: rgba(var(--color-text-lightest), 1);
   text-shadow: none;
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover {
     background-color: rgba(var(--color-primary), 1);
     background-image: none;
     color: rgba(var(--color-text-lightest), 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] button:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] button:disabled {
     opacity: 0.5;
     pointer-events: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"] {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"], body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"] {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
   color: rgba(var(--color-text), 1);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]::placeholder,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]::placeholder {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]::placeholder, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]::placeholder,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]::placeholder {
     color: rgba(var(--color-text), 0.5); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:disabled {
     opacity: 0.5;
     pointer-events: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"] {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"], body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"] {
   background: transparent;
   border: rgba(var(--color-border-lighter), 1) 1px solid;
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
   color: rgba(var(--color-text), 1);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:disabled {
     opacity: 0.5;
     pointer-events: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:checked, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:checked {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:checked, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:checked {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit],
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit] {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"], body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"],
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit],
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit] {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:disabled,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:disabled,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:disabled {
     opacity: 0.5;
     pointer-events: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] select, body.-emu.system-fate-core-official .window-app[id*="item-"] select {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
   color: rgba(var(--color-text), 1);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] select:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] select:disabled {
     opacity: 0.5;
     pointer-events: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select optgroup, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select optgroup,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select option,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select option {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] select optgroup, body.-emu.system-fate-core-official .window-app[id*="item-"] select optgroup,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] select option,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] select option {
     background-color: rgba(var(--color-background-lightest), 1);
     color: rgba(var(--color-text), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   color: rgba(var(--color-text), 1);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea::placeholder, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea::placeholder {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea::placeholder, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea::placeholder {
     color: rgba(var(--color-text), 0.5); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:disabled, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:disabled {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:disabled, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:disabled {
     opacity: 0.5;
     pointer-events: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] fieldset, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] fieldset {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] fieldset, body.-emu.system-fate-core-official .window-app[id*="item-"] fieldset {
   border: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] table, body.-emu.system-fate-core-official .window-app[id*="item-"] table {
   background-color: rgba(var(--color-black), 0.05);
   border: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table thead, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table thead {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] table thead, body.-emu.system-fate-core-official .window-app[id*="item-"] table thead {
     background-color: rgba(var(--color-black), 0.2);
     border-block-end: rgba(var(--color-border), 1) 1px solid;
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] table tr:nth-child(even), .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] table tr:nth-child(even) {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] table tr:nth-child(even), body.-emu.system-fate-core-official .window-app[id*="item-"] table tr:nth-child(even) {
     background-color: rgba(var(--color-white), 0.1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h1,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h2,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h3,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h3,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h4,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h4 {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, body.-emu.system-fate-core-official .window-app[id*="item-"] h1,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
+body.-emu.system-fate-core-official .window-app[id*="item-"] h2,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h3,
+body.-emu.system-fate-core-official .window-app[id*="item-"] h3,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h4,
+body.-emu.system-fate-core-official .window-app[id*="item-"] h4 {
   font-weight: normal; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h1 {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h1, body.-emu.system-fate-core-official .window-app[id*="item-"] h1 {
   border-block-end: 2px solid rgba(var(--color-border), 1); }
 
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] h2 {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] h2,
+body.-emu.system-fate-core-official .window-app[id*="item-"] h2 {
   border-block-end: rgba(var(--color-border), 1) 1px solid; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] a, body.-emu.system-fate-core-official .window-app[id*="item-"] a {
   text-shadow: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a:hover {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] a:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] a:hover {
     color: rgba(var(--color-primary), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href], .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href] {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href], body.-emu.system-fate-core-official .window-app[id*="item-"] a[href] {
   color: rgba(var(--color-primary), 1);
   text-decoration: none;
   text-shadow: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:hover {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:hover {
     text-decoration: underline;
     text-shadow: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link, body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll,
+body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll {
   background-color: rgba(var(--color-background-lightest), 1);
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0); }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link > i, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link > i,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll > i,
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll > i {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] a.entity-link > i, body.-emu.system-fate-core-official .window-app[id*="item-"] a.entity-link > i,
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] a.inline-roll > i,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] a.inline-roll > i {
     color: inherit; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] hr, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] hr {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] hr, body.-emu.system-fate-core-official .window-app[id*="item-"] hr {
   border: none;
   border-block-start: rgba(var(--color-border), 1) 1px solid;
   border-block-end: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] blockquote, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] blockquote {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] blockquote, body.-emu.system-fate-core-official .window-app[id*="item-"] blockquote {
   border-inline-start: 3px solid rgba(var(--color-border), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] section.secret, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] section.secret {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] section.secret, body.-emu.system-fate-core-official .window-app[id*="item-"] section.secret {
   background-color: rgba(var(--color-background-light), 0.2);
   border-block-start: rgba(var(--color-border), 1) 1px solid;
   border-block-end: rgba(var(--color-border), 1) 1px solid; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
   text-shadow: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:hover,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:hover {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
   text-shadow: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:focus,
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] select:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:focus, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:focus {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] button:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] button:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="text"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="text"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="number"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="number"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="date"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="date"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="time"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button.active {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active, body.-emu.system-fate-core-official .window-app[id*="item-"] button.active {
   background-color: rgba(var(--color-primary), 1);
   color: rgba(var(--color-text-lightest), 1);
   text-shadow: none; }
-  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active:hover, .-emu-layout body.-emu.system-fate-core-official .window-app[id*="item-"] button.active:hover {
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] button.active:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
 
-.-emu-layout body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button {
+.-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities button.fu_button {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   -webkit-font-smoothing: antialiased;
@@ -229,94 +229,134 @@
   text-rendering: auto;
   line-height: 1; }
 
-body.-emu #FateUtilities.window-app form#FateUtilities button.fu_button {
+body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities button.fu_button {
   color: rgba(var(--color-text), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .window-content,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .window-content {
-  padding: 0; }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .window-content .circle-input,
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .window-content .circle-input:disabled,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .window-content .circle-input,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .window-content .circle-input:disabled {
-    border-color: rgba(var(--color-primary), 1) !important; }
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .fu_button:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] .fu_button:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fu_button:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fu_button:focus {
+  color: rgba(var(--color-primary), 1);
+  filter: none !important; }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet {
-  background-color: transparent !important; }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet *::-webkit-scrollbar-thumb,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet *::-webkit-scrollbar-thumb {
-    background-color: rgba(var(--color-background-light), 1);
-    border: none; }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet button,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet button {
-    background-color: inherit;
-    color: rgba(var(--color-text), 1); }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__header,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__header {
-    box-shadow: inset 0px -1px 0 0 rgba(var(--color-border), 1); }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__identity-avatar,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__identity-avatar {
-    border-color: rgba(var(--color-border), 1); }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__identity-name,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__identity-name {
-    border-color: rgba(var(--color-border), 1);
-    color: rgba(var(--color-text), 1); }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__meta-value,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__meta-value {
-    border-color: rgba(var(--color-border), 1); }
-    .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__meta-value:hover,
-    .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__meta-value:hover {
-      border-color: rgba(var(--color-primary), 1); }
-  .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__tabs-nav-link,
-  .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__tabs-nav-link {
-    background-color: rgba(var(--color-background-lightest), 1);
-    border-color: rgba(var(--color-border), 1); }
-    .-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet__tabs-nav-link:not(.active),
-    .-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet__tabs-nav-link:not(.active) {
-      box-shadow: none; }
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .cs_box,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .aspect_box,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .long_text_rich,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .cs_box,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .aspect_box,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .long_text_rich {
+  background-color: rgba(var(--color-background-lightest), 1) !important;
+  border-color: rgba(var(--color-border), 1) !important; }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-panel__panel,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-panel__panel {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .notes,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .hint,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .notes,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .hint {
+  color: rgba(var(--color-text-darker), 1); }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .checkmark,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .checkmark {
+  background-color: rgba(var(--color-background-lightest), 1);
   border-color: rgba(var(--color-border), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-panel__header,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-panel__header {
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content, .-emu-layout
+body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content {
+  padding: 0; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form {
+  background-color: transparent !important; }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form > table,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form > table {
+    background-color: transparent !important; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content .circle-input,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content .circle-input:disabled,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content .circle-input,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content .circle-input:disabled {
+  background-color: rgba(var(--color-background-lightest), 1) !important;
+  border-color: rgba(var(--color-primary), 1) !important; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet {
+  background-color: transparent !important; }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet *::-webkit-scrollbar-thumb,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet *::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--color-background-light), 1);
+    border: none; }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet button,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet button {
+    background-color: inherit;
+    color: rgba(var(--color-text), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__header,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__header {
+    box-shadow: inset 0px -1px 0 0 rgba(var(--color-border), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__identity-avatar,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__identity-avatar {
+    border-color: rgba(var(--color-border), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__identity-name,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__identity-name {
+    border-color: rgba(var(--color-border), 1);
+    color: rgba(var(--color-text), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__meta-value,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__meta-value {
+    border-color: rgba(var(--color-border), 1); }
+    body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__meta-value:hover,
+    body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__meta-value:hover {
+      border-color: rgba(var(--color-primary), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__tabs-nav-link,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__tabs-nav-link {
+    background-color: rgba(var(--color-background-lightest), 1);
+    border-color: rgba(var(--color-border), 1); }
+    body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__tabs-nav-link:not(.active),
+    body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__tabs-nav-link:not(.active) {
+      box-shadow: none; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__panel,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__panel {
+  border-color: rgba(var(--color-border), 1); }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header {
   background-color: rgba(var(--color-background), 1);
   color: rgba(var(--color-text-lightest), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-sheet-notes,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-sheet-notes {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header-button:hover,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header-button:hover {
+  color: rgba(var(--color-primary), 1);
+  filter: none; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet-notes,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet-notes {
   background-color: rgba(var(--color-background-lightest), 1) !important; }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-skills-list__number,
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-skills-list__adjective,
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-skills-list__skill-name,
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-skills-list__skill-name_item,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-skills-list__number,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-skills-list__adjective,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-skills-list__skill-name,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-skills-list__skill-name_item {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-skills-list__number,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-skills-list__adjective,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-skills-list__skill-name,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-skills-list__skill-name_item,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list__number,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list__adjective,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list__skill-name,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list__skill-name_item {
   border-color: rgba(var(--color-border-lighter), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-tracks__item + .mfate-tracks__item,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-tracks__item + .mfate-tracks__item {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-tracks__item + .mfate-tracks__item,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-tracks__item + .mfate-tracks__item {
   box-shadow: inset 0 1px rgba(var(--color-border-lighter), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-stunts__table,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-stunts__table {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__table,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__table {
   background-color: rgba(var(--color-background-lightest), 1);
   color: rgba(var(--color-text), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .mfate-stunts__row,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .mfate-stunts__row {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__row,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__row {
   border-color: rgba(var(--color-border-lighter), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .fate-extras__row,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .fate-extras__row {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row {
   background-color: rgba(var(--color-background-lightest), 1);
   color: rgba(var(--color-text), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official [id*="actor-"].window-app .fate-extras__row-header-button,
-.-emu-layout body.-emu.system-fate-core-official [id*="item-"].window-app .fate-extras__row-header-button {
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row-header-button,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row-header-button {
   background-color: rgba(var(--color-background-lightest), 1); }

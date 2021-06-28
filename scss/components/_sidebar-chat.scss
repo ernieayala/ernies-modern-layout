@@ -10,6 +10,7 @@
 				color: color("text");
 
 				@include layout {
+					font-family: inherit;
 					font-size: fs("md");
 					padding: p("base");
 					margin: m("base");

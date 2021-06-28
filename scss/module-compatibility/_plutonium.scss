@@ -25,8 +25,13 @@
 			display: none;
 		}
 
+		.btn-group {
+			button:last-child {
+				margin-inline-start: m("xs") !important;
+			}
+		}
+
 		button {
-			@extend %primary-button;
 			flex: 0 0 auto;
 
 			&:first-child {
