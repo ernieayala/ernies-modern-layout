@@ -4024,7 +4024,8 @@ body.-emu .sidebar-popout #playlists {
     flex: 0 0 auto;
     flex-wrap: nowrap;
     margin-inline-start: var(--emu-space-base);
-    padding: var(--emu-space-base) 0; }
+    padding: var(--emu-space-base) 0;
+    width: auto; }
   body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control.inactive,
   body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control.inactive,
   body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control.inactive,
@@ -4101,7 +4102,8 @@ body.-emu .sidebar-popout #playlists {
     grid-area: controls;
     margin: 0;
     margin-inline-start: var(--emu-space-base);
-    padding: var(--emu-space-base) 0; }
+    padding: var(--emu-space-base) 0;
+    width: auto; }
   body.-emu #sidebar #playlists #currently-playing .sound .sound-control.inactive,
   body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control.inactive {
     opacity: 0.5; }

@@ -1,326 +1,326 @@
 @import "../base";
 
 body#{$emu} {
-	.sr5.window-app {
-		@extend %clean-elements;
-
-		&.item {
-			.item-header {
-				border-color: color("border");
-
-				.item-name {
-					// font-family: inherit;
-				}
-
-				.source .source-button {
-					color: color("text");
-				}
-
-				.item-type {
-					color: color("text");
-					// font-family: inherit;
-				}
-
-				.item-image {
-					border-color: color("border");
-				}
-
-				.item-info > :not(:last-child) {
-					border-color: color("border");
-				}
-			}
-
-			.technology {
-				border-color: color("border");
-				// font-family: inherit;
-			}
-
-			.description {
-				border-color: color("border");
-			}
-
-			.item-form {
-				.header {
-					border-color: color("border");
-					color: color("text");
-					// font-family: inherit;
-					text-shadow: none;
-				}
-
-				.form-line .label {
-					color: color("text");
-					// font-family: inherit;
-				}
-
-				.form-line {
-					select {
-						border-color: color("border");
-						color: color("text");
-
-						> option {
-							background-color: color("background-lightest");
-							color: color("text");
-						}
-					}
-
-					input {
-						border-color: color("border");
-						color: color("text");
-					}
-				}
-			}
-		}
-
-		&.actor {
-			.name {
-				// font-family: inherit;
-			}
-
-			.attributes {
-				border-color: color("border");
-
-				+ :not(.attributes) {
-					border-color: color("border");
-				}
-
-				&:last-child {
-					border-color: color("border");
-				}
-
-				.attribute {
-					color: color("text");
-					// font-family: inherit;
-					text-shadow: none;
-
-					&:not(:last-child) {
-						border-color: color("border");
-					}
-
-					> .attribute-name.roll:hover {
-						color: color("primary");
-						text-shadow: none;
-					}
-
-					.value .value-modifiers {
-						background-color: transparent;
-						border-color: color("border-lighter");
-
-						> .value-modifiers-base,
-						> .value-modifiers-total {
-							border-color: color("border-lighter");
-						}
-					}
-				}
-			}
-
-			.limit {
-				// font-family: inherit;
-			}
-		}
-
-		.chat-select-link img:hover {
-			border-color: color("border");
-		}
-
-		.Roll:hover {
-			color: color("primary");
-			text-shadow: none;
-		}
-
-		.input .unit {
-			color: color("text");
-			text-shadow: none;
-		}
-
-		label.checkbox:hover input ~ .checkmark {
-			text-shadow: none;
-		}
-
-		button.plus1_button {
-			color: color("text");
-		}
-
-		input[type='checkbox'].display {
-			color: color("text");
-
-			&:hover {
-				border-color: color("border");
-			}
-		}
-
-		input[type='text'].disabled-for-display {
-			color: color("text");
-		}
-
-		input[type='text'].display {
-			color: color("text");
-			text-shadow: none;
-
-			&::placeholder {
-				color: color("text", 0.5);
-			}
-
-			&:disabled {
-				color: color("text");
-				opacity: 0.5;
-				pointer-events: none;
-			}
-		}
-
-		select.display {
-			border-color: color("border");
-			color: color("text");
-
-			> option {
-				background-color: color("background-lightest");
-				color: color("text");
-			}
-		}
-
-		.entity-link {
-			color: color("text");
-		}
-
-		.roll:hover {
-			color: color("primary");
-			text-shadow: none;
-		}
-
-		.editor .tox-edit-area {
-			background-color: color("white");
-		}
-
-		.window-content {
-			background-color: color("background-lightest");
-			color: color("text");
-		}
-
-		.description > .editor {
-			color: color("text");
-		}
-
-		.border-right {
-			border-color: color("border");
-		}
-
-		.tabs {
-			border-color: color("border");
-
-			> a {
-				border-color: color("border");
-
-				&:hover {
-					color: color("primary");
-					text-shadow: none;
-				}
-
-				&.active {
-					background-color: color("primary");
-					color: color("text-lightest");
-					text-shadow: none;
-				}
-			}
-		}
-
-		.split-container > *:not(:last-child) {
-			border-color: color("border");
-		}
-
-		.block {
-			&:not(:last-child) {
-				border-color: color("border");
-			}
-
-			.block-line.border-bottom {
-				border-color: color("border");
-			}
-		}
-
-		.horizontal-cell-input .cell-container .cell {
-			border-color: color("border");
-			color: color("text");
-
-			&.filled {
-				background-color: color("background-light");
-			}
-
-			&:hover {
-				background-color: color("background-lightest");
-			}
-		}
-
-		.list-item {
-			border-color: color("border");
-
-			.has-desc:hover {
-				color: color("primary");
-				text-shadow: none;
-			}
-
-			&.item-section {
-				border: none;
-				border-radius: 0;
-			}
-
-			.item-img.item-roll:hover {
-				color: color("primary");
-				text-shadow: none;
-			}
-
-			.item-desc .props > * {
-				border-color: color("border");
-			}
-
-			.item-text {
-				border-color: color("border-lighter");
-
-				&.faded {
-					color: color("text")
-				}
-			}
-
-			.item-create,
-			.add-new-ammo,
-			.add-new-mod,
-			.add-new-license {
-				color: color("text");
-			}
-
-			&.skill-header:hover {
-				color: color("primary");
-				text-shadow: none;
-			}
-		}
-
-		.sunken {
-			background-color: color("background-lightest");
-			box-shadow: none;
-
-			tr {
-				td,
-				td {
-					@include layout {
-						padding: p("xs");
-					}
-				}
-			}
-
-			&.env-modifier-active {
-				@extend %global-active;
-			}
-		}
-
-		button,
-		button.display {
-			background-color: color("background-button");
-			color: color("text-lightest");
-
-			&.light {
-				background-color: color("background-button");
-				color: color("text-lightest");
-			}
-		}
-	}
+	// .sr5.window-app {
+	// 	@extend %clean-elements;
+
+	// 	&.item {
+	// 		.item-header {
+	// 			border-color: color("border");
+
+	// 			.item-name {
+	// 				// font-family: inherit;
+	// 			}
+
+	// 			.source .source-button {
+	// 				color: color("text");
+	// 			}
+
+	// 			.item-type {
+	// 				color: color("text");
+	// 				// font-family: inherit;
+	// 			}
+
+	// 			.item-image {
+	// 				border-color: color("border");
+	// 			}
+
+	// 			.item-info > :not(:last-child) {
+	// 				border-color: color("border");
+	// 			}
+	// 		}
+
+	// 		.technology {
+	// 			border-color: color("border");
+	// 			// font-family: inherit;
+	// 		}
+
+	// 		.description {
+	// 			border-color: color("border");
+	// 		}
+
+	// 		.item-form {
+	// 			.header {
+	// 				border-color: color("border");
+	// 				color: color("text");
+	// 				// font-family: inherit;
+	// 				text-shadow: none;
+	// 			}
+
+	// 			.form-line .label {
+	// 				color: color("text");
+	// 				// font-family: inherit;
+	// 			}
+
+	// 			.form-line {
+	// 				select {
+	// 					border-color: color("border");
+	// 					color: color("text");
+
+	// 					> option {
+	// 						background-color: color("background-lightest");
+	// 						color: color("text");
+	// 					}
+	// 				}
+
+	// 				input {
+	// 					border-color: color("border");
+	// 					color: color("text");
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	&.actor {
+	// 		.name {
+	// 			// font-family: inherit;
+	// 		}
+
+	// 		.attributes {
+	// 			border-color: color("border");
+
+	// 			+ :not(.attributes) {
+	// 				border-color: color("border");
+	// 			}
+
+	// 			&:last-child {
+	// 				border-color: color("border");
+	// 			}
+
+	// 			.attribute {
+	// 				color: color("text");
+	// 				// font-family: inherit;
+	// 				text-shadow: none;
+
+	// 				&:not(:last-child) {
+	// 					border-color: color("border");
+	// 				}
+
+	// 				> .attribute-name.roll:hover {
+	// 					color: color("primary");
+	// 					text-shadow: none;
+	// 				}
+
+	// 				.value .value-modifiers {
+	// 					background-color: transparent;
+	// 					border-color: color("border-lighter");
+
+	// 					> .value-modifiers-base,
+	// 					> .value-modifiers-total {
+	// 						border-color: color("border-lighter");
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+
+	// 		.limit {
+	// 			// font-family: inherit;
+	// 		}
+	// 	}
+
+	// 	.chat-select-link img:hover {
+	// 		border-color: color("border");
+	// 	}
+
+	// 	.Roll:hover {
+	// 		color: color("primary");
+	// 		text-shadow: none;
+	// 	}
+
+	// 	.input .unit {
+	// 		color: color("text");
+	// 		text-shadow: none;
+	// 	}
+
+	// 	label.checkbox:hover input ~ .checkmark {
+	// 		text-shadow: none;
+	// 	}
+
+	// 	button.plus1_button {
+	// 		color: color("text");
+	// 	}
+
+	// 	input[type='checkbox'].display {
+	// 		color: color("text");
+
+	// 		&:hover {
+	// 			border-color: color("border");
+	// 		}
+	// 	}
+
+	// 	input[type='text'].disabled-for-display {
+	// 		color: color("text");
+	// 	}
+
+	// 	input[type='text'].display {
+	// 		color: color("text");
+	// 		text-shadow: none;
+
+	// 		&::placeholder {
+	// 			color: color("text", 0.5);
+	// 		}
+
+	// 		&:disabled {
+	// 			color: color("text");
+	// 			opacity: 0.5;
+	// 			pointer-events: none;
+	// 		}
+	// 	}
+
+	// 	select.display {
+	// 		border-color: color("border");
+	// 		color: color("text");
+
+	// 		> option {
+	// 			background-color: color("background-lightest");
+	// 			color: color("text");
+	// 		}
+	// 	}
+
+	// 	.entity-link {
+	// 		color: color("text");
+	// 	}
+
+	// 	.roll:hover {
+	// 		color: color("primary");
+	// 		text-shadow: none;
+	// 	}
+
+	// 	.editor .tox-edit-area {
+	// 		background-color: color("white");
+	// 	}
+
+	// 	.window-content {
+	// 		background-color: color("background-lightest");
+	// 		color: color("text");
+	// 	}
+
+	// 	.description > .editor {
+	// 		color: color("text");
+	// 	}
+
+	// 	.border-right {
+	// 		border-color: color("border");
+	// 	}
+
+	// 	.tabs {
+	// 		border-color: color("border");
+
+	// 		> a {
+	// 			border-color: color("border");
+
+	// 			&:hover {
+	// 				color: color("primary");
+	// 				text-shadow: none;
+	// 			}
+
+	// 			&.active {
+	// 				background-color: color("primary");
+	// 				color: color("text-lightest");
+	// 				text-shadow: none;
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.split-container > *:not(:last-child) {
+	// 		border-color: color("border");
+	// 	}
+
+	// 	.block {
+	// 		&:not(:last-child) {
+	// 			border-color: color("border");
+	// 		}
+
+	// 		.block-line.border-bottom {
+	// 			border-color: color("border");
+	// 		}
+	// 	}
+
+	// 	.horizontal-cell-input .cell-container .cell {
+	// 		border-color: color("border");
+	// 		color: color("text");
+
+	// 		&.filled {
+	// 			background-color: color("background-light");
+	// 		}
+
+	// 		&:hover {
+	// 			background-color: color("background-lightest");
+	// 		}
+	// 	}
+
+	// 	.list-item {
+	// 		border-color: color("border");
+
+	// 		.has-desc:hover {
+	// 			color: color("primary");
+	// 			text-shadow: none;
+	// 		}
+
+	// 		&.item-section {
+	// 			border: none;
+	// 			border-radius: 0;
+	// 		}
+
+	// 		.item-img.item-roll:hover {
+	// 			color: color("primary");
+	// 			text-shadow: none;
+	// 		}
+
+	// 		.item-desc .props > * {
+	// 			border-color: color("border");
+	// 		}
+
+	// 		.item-text {
+	// 			border-color: color("border-lighter");
+
+	// 			&.faded {
+	// 				color: color("text")
+	// 			}
+	// 		}
+
+	// 		.item-create,
+	// 		.add-new-ammo,
+	// 		.add-new-mod,
+	// 		.add-new-license {
+	// 			color: color("text");
+	// 		}
+
+	// 		&.skill-header:hover {
+	// 			color: color("primary");
+	// 			text-shadow: none;
+	// 		}
+	// 	}
+
+	// 	.sunken {
+	// 		background-color: color("background-lightest");
+	// 		box-shadow: none;
+
+	// 		tr {
+	// 			td,
+	// 			td {
+	// 				@include layout {
+	// 					padding: p("xs");
+	// 				}
+	// 			}
+	// 		}
+
+	// 		&.env-modifier-active {
+	// 			@extend %global-active;
+	// 		}
+	// 	}
+
+	// 	button,
+	// 	button.display {
+	// 		background-color: color("background-button");
+	// 		color: color("text-lightest");
+
+	// 		&.light {
+	// 			background-color: color("background-button");
+	// 			color: color("text-lightest");
+	// 		}
+	// 	}
+	// }
 
 	#sidebar,
 	.sidebar-popout {
@@ -330,7 +330,7 @@ body#{$emu} {
 					border-color: color("border");
 
 					h3 {
-						// font-family: inherit;
+						font-family: inherit;
 					}
 
 					:first-of-type {

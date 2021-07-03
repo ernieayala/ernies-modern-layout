@@ -178,6 +178,299 @@ body.-emu.system-fate-core-official .window-app[id*="actor-"] section.secret, bo
   border-block-start: rgba(var(--color-border), 1) 1px solid;
   border-block-end: rgba(var(--color-border), 1) 1px solid; }
 
+body.-emu.system-fate-core-official .dialog input#dialog_box, body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #EditTrack.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #EditSkill.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:not([type="checkbox"]) {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-fate-core-official .dialog input#dialog_box, body.-emu.system-fate-core-official .dialog .-emu-layout input#dialog_box, .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #EditLinkedSkills.window-app .-emu-layout input:not([type="checkbox"]), .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #EditTrack.window-app .-emu-layout input:not([type="checkbox"]), .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app input:not([type="checkbox"]), body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout input:not([type="checkbox"]), .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:not([type="checkbox"]), body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .-emu-layout input:not([type="checkbox"]) {
+    width: 100%;
+    height: var(--emu-space-button);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    min-width: var(--emu-space-xl);
+    padding: 0 var(--emu-space-sm);
+    position: relative;
+    user-select: text; }
+  body.-emu.system-fate-core-official .dialog input#dialog_box::placeholder, body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:not([type="checkbox"])::placeholder, body.-emu.system-fate-core-official #EditTrack.window-app input:not([type="checkbox"])::placeholder, body.-emu.system-fate-core-official #EditSkill.window-app input:not([type="checkbox"])::placeholder, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:not([type="checkbox"])::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu.system-fate-core-official .dialog input#dialog_box:disabled, body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:disabled:not([type="checkbox"]), body.-emu.system-fate-core-official #EditTrack.window-app input:disabled:not([type="checkbox"]), body.-emu.system-fate-core-official #EditSkill.window-app input:disabled:not([type="checkbox"]), body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:disabled:not([type="checkbox"]) {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app select, body.-emu.system-fate-core-official #EditTrack.window-app select, body.-emu.system-fate-core-official #EditSkill.window-app select {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app select, body.-emu.system-fate-core-official #EditLinkedSkills.window-app .-emu-layout select, .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app select, body.-emu.system-fate-core-official #EditTrack.window-app .-emu-layout select, .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app select, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout select {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    height: var(--emu-space-button);
+    margin: 0;
+    padding: 0 var(--emu-space-sm);
+    position: relative;
+    text-overflow: ellipsis; }
+    .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app select[multiple], body.-emu.system-fate-core-official #EditLinkedSkills.window-app .-emu-layout select[multiple], .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app select[multiple], body.-emu.system-fate-core-official #EditTrack.window-app .-emu-layout select[multiple], .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app select[multiple], body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout select[multiple] {
+      height: auto;
+      padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #EditLinkedSkills.window-app select:disabled, body.-emu.system-fate-core-official #EditTrack.window-app select:disabled, body.-emu.system-fate-core-official #EditSkill.window-app select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu.system-fate-core-official #EditLinkedSkills.window-app select optgroup, body.-emu.system-fate-core-official #EditTrack.window-app select optgroup, body.-emu.system-fate-core-official #EditSkill.window-app select optgroup,
+  body.-emu.system-fate-core-official #EditLinkedSkills.window-app select option,
+  body.-emu.system-fate-core-official #EditTrack.window-app select option,
+  body.-emu.system-fate-core-official #EditSkill.window-app select option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #edit_aspect_description_rich,
+body.-emu.system-fate-core-official #edit_aspect_description,
+body.-emu.system-fate-core-official #scene_notes_rich,
+body.-emu.system-fate-core-official #scene_notes,
+body.-emu.system-fate-core-official #edit_track_when_marked_rich,
+body.-emu.system-fate-core-official #edit_track_when_marked,
+body.-emu.system-fate-core-official #edit_track_description_rich,
+body.-emu.system-fate-core-official #edit_track_description,
+body.-emu.system-fate-core-official #edit_track_when_recovers_rich,
+body.-emu.system-fate-core-official #edit_track_when_recovers,
+body.-emu.system-fate-core-official #game_date_time_rich,
+body.-emu.system-fate-core-official #game_date_time,
+body.-emu.system-fate-core-official #game_notes_rich,
+body.-emu.system-fate-core-official #game_notes,
+body.-emu.system-fate-core-official #cd_description,
+body.-emu.system-fate-core-official #game__FUAspectNotes,
+body.-emu.system-fate-core-official [id*="_FUTrackNotes"],
+body.-emu.system-fate-core-official [id*="_permValue"],
+body.-emu.system-fate-core-official [id*="_costsValue"],
+body.-emu.system-fate-core-official [id*="_descValue"],
+body.-emu.system-fate-core-official [id*="_overcomeValue"],
+body.-emu.system-fate-core-official [id*="_createValue"],
+body.-emu.system-fate-core-official [id*="_attackValue"],
+body.-emu.system-fate-core-official [id*="_defendValue"],
+body.-emu.system-fate-core-official [id*="aspect_description"],
+body.-emu.system-fate-core-official .aspect_notes,
+body.-emu.system-fate-core-official #edit_entity_track_description_rich,
+body.-emu.system-fate-core-official #edit_entity_track_description,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers,
+body.-emu.system-fate-core-official #edit_stunt_desc_rich,
+body.-emu.system-fate-core-official #edit_stunt_desc,
+body.-emu.system-fate-core-official .mfate-aspects-notes__input {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_description_rich,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_description,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_overcome_rich,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_overcome,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_caa_rich,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_caa,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_attack_rich,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_attack,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_defend_rich,
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout #edit_skill_defend, .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab .-emu-layout div[id*="_FUAspectNotes"], .-emu-layout body.-emu.system-fate-core-official #edit_aspect_description_rich, body.-emu.system-fate-core-official .-emu-layout #edit_aspect_description_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_aspect_description, body.-emu.system-fate-core-official .-emu-layout #edit_aspect_description,
+  .-emu-layout body.-emu.system-fate-core-official #scene_notes_rich, body.-emu.system-fate-core-official .-emu-layout #scene_notes_rich,
+  .-emu-layout body.-emu.system-fate-core-official #scene_notes, body.-emu.system-fate-core-official .-emu-layout #scene_notes,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_when_marked_rich, body.-emu.system-fate-core-official .-emu-layout #edit_track_when_marked_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_when_marked, body.-emu.system-fate-core-official .-emu-layout #edit_track_when_marked,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_description_rich, body.-emu.system-fate-core-official .-emu-layout #edit_track_description_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_description, body.-emu.system-fate-core-official .-emu-layout #edit_track_description,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_when_recovers_rich, body.-emu.system-fate-core-official .-emu-layout #edit_track_when_recovers_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_track_when_recovers, body.-emu.system-fate-core-official .-emu-layout #edit_track_when_recovers,
+  .-emu-layout body.-emu.system-fate-core-official #game_date_time_rich, body.-emu.system-fate-core-official .-emu-layout #game_date_time_rich,
+  .-emu-layout body.-emu.system-fate-core-official #game_date_time, body.-emu.system-fate-core-official .-emu-layout #game_date_time,
+  .-emu-layout body.-emu.system-fate-core-official #game_notes_rich, body.-emu.system-fate-core-official .-emu-layout #game_notes_rich,
+  .-emu-layout body.-emu.system-fate-core-official #game_notes, body.-emu.system-fate-core-official .-emu-layout #game_notes,
+  .-emu-layout body.-emu.system-fate-core-official #cd_description, body.-emu.system-fate-core-official .-emu-layout #cd_description,
+  .-emu-layout body.-emu.system-fate-core-official #game__FUAspectNotes, body.-emu.system-fate-core-official .-emu-layout #game__FUAspectNotes,
+  .-emu-layout body.-emu.system-fate-core-official [id*="_FUTrackNotes"], body.-emu.system-fate-core-official .-emu-layout [id*="_FUTrackNotes"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_permValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_permValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_costsValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_costsValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_descValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_descValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_overcomeValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_overcomeValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_createValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_createValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_attackValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_attackValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="_defendValue"], body.-emu.system-fate-core-official .-emu-layout [id*="_defendValue"],
+  .-emu-layout body.-emu.system-fate-core-official [id*="aspect_description"], body.-emu.system-fate-core-official .-emu-layout [id*="aspect_description"],
+  .-emu-layout body.-emu.system-fate-core-official .aspect_notes, body.-emu.system-fate-core-official .-emu-layout .aspect_notes,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_description_rich, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_description_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_description, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_description,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_when_marked_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_when_marked, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_when_marked,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_when_recovers_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_entity_track_when_recovers, body.-emu.system-fate-core-official .-emu-layout #edit_entity_track_when_recovers,
+  .-emu-layout body.-emu.system-fate-core-official #edit_stunt_desc_rich, body.-emu.system-fate-core-official .-emu-layout #edit_stunt_desc_rich,
+  .-emu-layout body.-emu.system-fate-core-official #edit_stunt_desc, body.-emu.system-fate-core-official .-emu-layout #edit_stunt_desc,
+  .-emu-layout body.-emu.system-fate-core-official .mfate-aspects-notes__input, body.-emu.system-fate-core-official .-emu-layout .mfate-aspects-notes__input {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    min-height: 4rem;
+    padding: var(--emu-space-sm);
+    position: relative;
+    resize: none;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    user-select: text;
+    width: 100%; }
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_description_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_description,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_overcome_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_overcome,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_caa_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_caa,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_attack_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_attack,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_defend_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend, body.-emu.system-fate-core-official #EditSkill.window-app .-emu-layout.-emu-compact #edit_skill_defend, .-emu-layout.-emu-compact body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab .-emu-layout.-emu-compact div[id*="_FUAspectNotes"], .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_aspect_description_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_aspect_description_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_aspect_description, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_aspect_description,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #scene_notes_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #scene_notes_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #scene_notes, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #scene_notes,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_when_marked_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_when_marked_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_when_marked, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_when_marked,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_description_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_description_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_description, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_description,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_when_recovers_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_when_recovers_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_track_when_recovers, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_track_when_recovers,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #game_date_time_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #game_date_time_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #game_date_time, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #game_date_time,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #game_notes_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #game_notes_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #game_notes, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #game_notes,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #cd_description, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #cd_description,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #game__FUAspectNotes, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #game__FUAspectNotes,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_FUTrackNotes"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_FUTrackNotes"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_permValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_permValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_costsValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_costsValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_descValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_descValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_overcomeValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_overcomeValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_createValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_createValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_attackValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_attackValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="_defendValue"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="_defendValue"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official [id*="aspect_description"], body.-emu.system-fate-core-official .-emu-layout.-emu-compact [id*="aspect_description"],
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official .aspect_notes, body.-emu.system-fate-core-official .-emu-layout.-emu-compact .aspect_notes,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_description_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_description_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_description, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_description,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_when_marked_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_when_marked, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_when_marked,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_when_recovers_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_entity_track_when_recovers, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_entity_track_when_recovers,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_stunt_desc_rich, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_stunt_desc_rich,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official #edit_stunt_desc, body.-emu.system-fate-core-official .-emu-layout.-emu-compact #edit_stunt_desc,
+  .-emu-layout.-emu-compact body.-emu.system-fate-core-official .mfate-aspects-notes__input, body.-emu.system-fate-core-official .-emu-layout.-emu-compact .mfate-aspects-notes__input {
+    min-height: 3rem; }
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich::placeholder,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend::placeholder, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"]::placeholder, body.-emu.system-fate-core-official #edit_aspect_description_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_aspect_description::placeholder,
+  body.-emu.system-fate-core-official #scene_notes_rich::placeholder,
+  body.-emu.system-fate-core-official #scene_notes::placeholder,
+  body.-emu.system-fate-core-official #edit_track_when_marked_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_track_when_marked::placeholder,
+  body.-emu.system-fate-core-official #edit_track_description_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_track_description::placeholder,
+  body.-emu.system-fate-core-official #edit_track_when_recovers_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_track_when_recovers::placeholder,
+  body.-emu.system-fate-core-official #game_date_time_rich::placeholder,
+  body.-emu.system-fate-core-official #game_date_time::placeholder,
+  body.-emu.system-fate-core-official #game_notes_rich::placeholder,
+  body.-emu.system-fate-core-official #game_notes::placeholder,
+  body.-emu.system-fate-core-official #cd_description::placeholder,
+  body.-emu.system-fate-core-official #game__FUAspectNotes::placeholder,
+  body.-emu.system-fate-core-official [id*="_FUTrackNotes"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_permValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_costsValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_descValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_overcomeValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_createValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_attackValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="_defendValue"]::placeholder,
+  body.-emu.system-fate-core-official [id*="aspect_description"]::placeholder,
+  body.-emu.system-fate-core-official .aspect_notes::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_description_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_description::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers::placeholder,
+  body.-emu.system-fate-core-official #edit_stunt_desc_rich::placeholder,
+  body.-emu.system-fate-core-official #edit_stunt_desc::placeholder,
+  body.-emu.system-fate-core-official .mfate-aspects-notes__input::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich:disabled,
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend:disabled, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div:disabled[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #edit_aspect_description_rich:disabled,
+  body.-emu.system-fate-core-official #edit_aspect_description:disabled,
+  body.-emu.system-fate-core-official #scene_notes_rich:disabled,
+  body.-emu.system-fate-core-official #scene_notes:disabled,
+  body.-emu.system-fate-core-official #edit_track_when_marked_rich:disabled,
+  body.-emu.system-fate-core-official #edit_track_when_marked:disabled,
+  body.-emu.system-fate-core-official #edit_track_description_rich:disabled,
+  body.-emu.system-fate-core-official #edit_track_description:disabled,
+  body.-emu.system-fate-core-official #edit_track_when_recovers_rich:disabled,
+  body.-emu.system-fate-core-official #edit_track_when_recovers:disabled,
+  body.-emu.system-fate-core-official #game_date_time_rich:disabled,
+  body.-emu.system-fate-core-official #game_date_time:disabled,
+  body.-emu.system-fate-core-official #game_notes_rich:disabled,
+  body.-emu.system-fate-core-official #game_notes:disabled,
+  body.-emu.system-fate-core-official #cd_description:disabled,
+  body.-emu.system-fate-core-official #game__FUAspectNotes:disabled,
+  body.-emu.system-fate-core-official :disabled[id*="_FUTrackNotes"],
+  body.-emu.system-fate-core-official :disabled[id*="_permValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_costsValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_descValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_overcomeValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_createValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_attackValue"],
+  body.-emu.system-fate-core-official :disabled[id*="_defendValue"],
+  body.-emu.system-fate-core-official :disabled[id*="aspect_description"],
+  body.-emu.system-fate-core-official .aspect_notes:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_description_rich:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_description:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich:disabled,
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers:disabled,
+  body.-emu.system-fate-core-official #edit_stunt_desc_rich:disabled,
+  body.-emu.system-fate-core-official #edit_stunt_desc:disabled,
+  body.-emu.system-fate-core-official .mfate-aspects-notes__input:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
 body.-emu.system-fate-core-official .window-app[id*="actor-"] button:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] button:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
   text-shadow: none; }
@@ -192,7 +485,50 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:
 body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:hover,
 body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:hover,
 body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:hover,
-body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:hover {
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] select:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:hover, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:hover, body.-emu.system-fate-core-official .dialog input#dialog_box:hover, body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:hover:not([type="checkbox"]), body.-emu.system-fate-core-official #EditTrack.window-app input:hover:not([type="checkbox"]), body.-emu.system-fate-core-official #EditSkill.window-app input:hover:not([type="checkbox"]), body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:hover:not([type="checkbox"]), body.-emu.system-fate-core-official #EditLinkedSkills.window-app select:hover, body.-emu.system-fate-core-official #EditTrack.window-app select:hover, body.-emu.system-fate-core-official #EditSkill.window-app select:hover, body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich:hover,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend:hover, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div:hover[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #edit_aspect_description_rich:hover,
+body.-emu.system-fate-core-official #edit_aspect_description:hover,
+body.-emu.system-fate-core-official #scene_notes_rich:hover,
+body.-emu.system-fate-core-official #scene_notes:hover,
+body.-emu.system-fate-core-official #edit_track_when_marked_rich:hover,
+body.-emu.system-fate-core-official #edit_track_when_marked:hover,
+body.-emu.system-fate-core-official #edit_track_description_rich:hover,
+body.-emu.system-fate-core-official #edit_track_description:hover,
+body.-emu.system-fate-core-official #edit_track_when_recovers_rich:hover,
+body.-emu.system-fate-core-official #edit_track_when_recovers:hover,
+body.-emu.system-fate-core-official #game_date_time_rich:hover,
+body.-emu.system-fate-core-official #game_date_time:hover,
+body.-emu.system-fate-core-official #game_notes_rich:hover,
+body.-emu.system-fate-core-official #game_notes:hover,
+body.-emu.system-fate-core-official #cd_description:hover,
+body.-emu.system-fate-core-official #game__FUAspectNotes:hover,
+body.-emu.system-fate-core-official :hover[id*="_FUTrackNotes"],
+body.-emu.system-fate-core-official :hover[id*="_permValue"],
+body.-emu.system-fate-core-official :hover[id*="_costsValue"],
+body.-emu.system-fate-core-official :hover[id*="_descValue"],
+body.-emu.system-fate-core-official :hover[id*="_overcomeValue"],
+body.-emu.system-fate-core-official :hover[id*="_createValue"],
+body.-emu.system-fate-core-official :hover[id*="_attackValue"],
+body.-emu.system-fate-core-official :hover[id*="_defendValue"],
+body.-emu.system-fate-core-official :hover[id*="aspect_description"],
+body.-emu.system-fate-core-official .aspect_notes:hover,
+body.-emu.system-fate-core-official #edit_entity_track_description_rich:hover,
+body.-emu.system-fate-core-official #edit_entity_track_description:hover,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich:hover,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked:hover,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich:hover,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers:hover,
+body.-emu.system-fate-core-official #edit_stunt_desc_rich:hover,
+body.-emu.system-fate-core-official #edit_stunt_desc:hover,
+body.-emu.system-fate-core-official .mfate-aspects-notes__input:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
   text-shadow: none; }
 
@@ -206,7 +542,52 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="time"]:
 body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="password"]:focus,
 body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="password"]:focus,
 body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="datetime-local"]:focus,
-body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:focus {
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="datetime-local"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="checkbox"]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"]:focus,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input[type="color"][data-edit]:focus,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input[type="color"][data-edit]:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] select:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] textarea:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] a[href]:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] a[href]:focus, body.-emu.system-fate-core-official .dialog input#dialog_box:focus, body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:focus:not([type="checkbox"]), body.-emu.system-fate-core-official #EditTrack.window-app input:focus:not([type="checkbox"]), body.-emu.system-fate-core-official #EditSkill.window-app input:focus:not([type="checkbox"]), body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:focus:not([type="checkbox"]), body.-emu.system-fate-core-official #EditLinkedSkills.window-app select:focus, body.-emu.system-fate-core-official #EditTrack.window-app select:focus, body.-emu.system-fate-core-official #EditSkill.window-app select:focus, body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich:focus,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend:focus, body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div:focus[id*="_FUAspectNotes"], body.-emu.system-fate-core-official #edit_aspect_description_rich:focus,
+body.-emu.system-fate-core-official #edit_aspect_description:focus,
+body.-emu.system-fate-core-official #scene_notes_rich:focus,
+body.-emu.system-fate-core-official #scene_notes:focus,
+body.-emu.system-fate-core-official #edit_track_when_marked_rich:focus,
+body.-emu.system-fate-core-official #edit_track_when_marked:focus,
+body.-emu.system-fate-core-official #edit_track_description_rich:focus,
+body.-emu.system-fate-core-official #edit_track_description:focus,
+body.-emu.system-fate-core-official #edit_track_when_recovers_rich:focus,
+body.-emu.system-fate-core-official #edit_track_when_recovers:focus,
+body.-emu.system-fate-core-official #game_date_time_rich:focus,
+body.-emu.system-fate-core-official #game_date_time:focus,
+body.-emu.system-fate-core-official #game_notes_rich:focus,
+body.-emu.system-fate-core-official #game_notes:focus,
+body.-emu.system-fate-core-official #cd_description:focus,
+body.-emu.system-fate-core-official #game__FUAspectNotes:focus,
+body.-emu.system-fate-core-official :focus[id*="_FUTrackNotes"],
+body.-emu.system-fate-core-official :focus[id*="_permValue"],
+body.-emu.system-fate-core-official :focus[id*="_costsValue"],
+body.-emu.system-fate-core-official :focus[id*="_descValue"],
+body.-emu.system-fate-core-official :focus[id*="_overcomeValue"],
+body.-emu.system-fate-core-official :focus[id*="_createValue"],
+body.-emu.system-fate-core-official :focus[id*="_attackValue"],
+body.-emu.system-fate-core-official :focus[id*="_defendValue"],
+body.-emu.system-fate-core-official :focus[id*="aspect_description"],
+body.-emu.system-fate-core-official .aspect_notes:focus,
+body.-emu.system-fate-core-official #edit_entity_track_description_rich:focus,
+body.-emu.system-fate-core-official #edit_entity_track_description:focus,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich:focus,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked:focus,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich:focus,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers:focus,
+body.-emu.system-fate-core-official #edit_stunt_desc_rich:focus,
+body.-emu.system-fate-core-official #edit_stunt_desc:focus,
+body.-emu.system-fate-core-official .mfate-aspects-notes__input:focus, body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active:focus, body.-emu.system-fate-core-official .window-app[id*="item-"] button.active:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
@@ -220,17 +601,605 @@ body.-emu.system-fate-core-official .window-app[id*="actor-"] button.active, bod
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
 
-.-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities button.fu_button {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  -webkit-font-smoothing: antialiased;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1; }
+body.-emu.system-fate-core-official .dialog .dialog-content > div {
+  background-color: transparent !important;
+  color: inherit !important; }
+  body.-emu.system-fate-core-official .dialog .dialog-content > div > textarea {
+    background-color: transparent !important;
+    border-color: rgba(var(--color-border), 1) !important;
+    color: rgba(var(--color-text), 1) !important; }
 
-body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities button.fu_button {
+.-emu-layout body.-emu.system-fate-core-official .dialog input#dialog_box {
+  margin: 0 !important;
+  width: 100% !important; }
+
+body.-emu.system-fate-core-official .window-app .window-content form {
+  background-color: transparent !important; }
+  .-emu-layout body.-emu.system-fate-core-official .window-app .window-content form {
+    font-family: inherit !important;
+    padding: 0 !important; }
+
+body.-emu.system-fate-core-official #TrackSetup.window-app table,
+body.-emu.system-fate-core-official #AspectSetup.window-app table,
+body.-emu.system-fate-core-official #SkillSetup.window-app table {
+  background-color: transparent; }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table {
+    margin: 0; }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table td, .-emu-layout
+  body.-emu.system-fate-core-official #TrackSetup.window-app table tr, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table td, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table tr, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table td, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table tr {
+    padding: 0; }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table tbody tr:first-child button, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table tbody tr:first-child button, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table tbody tr:first-child button {
+    margin-block-end: var(--emu-space-base); }
+    .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table tbody tr:first-child button:last-child, .-emu-layout
+    body.-emu.system-fate-core-official #AspectSetup.window-app table tbody tr:first-child button:last-child, .-emu-layout
+    body.-emu.system-fate-core-official #SkillSetup.window-app table tbody tr:first-child button:last-child {
+      margin-block-end: 0; }
+    .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table tbody tr:first-child button + p, .-emu-layout
+    body.-emu.system-fate-core-official #AspectSetup.window-app table tbody tr:first-child button + p, .-emu-layout
+    body.-emu.system-fate-core-official #SkillSetup.window-app table tbody tr:first-child button + p {
+      display: none; }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table tbody tr:last-child td, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table tbody tr:last-child td, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table tbody tr:last-child td {
+    padding-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app table tbody tr:last-child button, .-emu-layout
+  body.-emu.system-fate-core-official #AspectSetup.window-app table tbody tr:last-child button, .-emu-layout
+  body.-emu.system-fate-core-official #SkillSetup.window-app table tbody tr:last-child button {
+    width: auto; }
+
+body.-emu.system-fate-core-official #TrackSetup.window-app #track_categories_select {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app #track_categories_select {
+    font-family: inherit !important;
+    padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #TrackSetup.window-app #track_categories_select option {
+    background-color: transparent; }
+
+.-emu-layout body.-emu.system-fate-core-official #TrackSetup.window-app #add_category, .-emu-layout
+body.-emu.system-fate-core-official #TrackSetup.window-app #delete_category {
+  height: var(--emu-space-button) !important;
+  margin: 0;
+  width: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #AspectSetup.window-app #aspectListBox {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #AspectSetup.window-app #aspectListBox {
+    font-family: inherit !important;
+    padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #AspectSetup.window-app #aspectListBox option {
+    background-color: transparent; }
+
+body.-emu.system-fate-core-official #SkillSetup.window-app #skillListBox {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #SkillSetup.window-app #skillListBox {
+    font-family: inherit !important;
+    padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #SkillSetup.window-app #skillListBox option {
+    background-color: transparent; }
+
+body.-emu.system-fate-core-official #EditAspect.window-app form > table {
+  background-color: transparent; }
+  body.-emu.system-fate-core-official #EditAspect.window-app form > table input[type="text"] {
+    background: transparent !important;
+    color: rgba(var(--color-text), 1) !important; }
+    .-emu-layout body.-emu.system-fate-core-official #EditAspect.window-app form > table input[type="text"] {
+      font-family: inherit !important; }
+
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app table {
+  background-color: transparent; }
+  .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app table {
+    margin: 0; }
+  .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app table td {
+    padding: var(--emu-space-base) 0; }
+
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app select {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app select {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important;
+    margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:not([type="checkbox"]) {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app input:not([type="checkbox"]) {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #EditLinkedSkills.window-app input[type="checkbox"] {
+  margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app #delete_linked_skill,
+body.-emu.system-fate-core-official #EditLinkedSkills.window-app #add_linked_skill {
+  height: var(--emu-space-button) !important;
+  margin: 0;
+  margin-inline-end: var(--emu-space-base);
+  width: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #EditTrack.window-app table {
+  background-color: transparent; }
+  .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app table {
+    margin: 0; }
+  .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app table td {
+    padding: var(--emu-space-base) 0; }
+
+body.-emu.system-fate-core-official #EditTrack.window-app select {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app select {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important;
+    margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #EditTrack.window-app input:not([type="checkbox"]) {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app input:not([type="checkbox"]) {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app input[type="checkbox"] {
+  float: left;
+  margin-inline-end: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app button {
+  float: left;
+  height: var(--emu-space-button) !important;
+  margin: 0;
+  margin-inline-end: var(--emu-space-base);
+  width: auto !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #EditTrack.window-app #copy, .-emu-layout
+body.-emu.system-fate-core-official #EditTrack.window-app #exportTrack, .-emu-layout
+body.-emu.system-fate-core-official #EditTrack.window-app .fas.fa-trash {
+  width: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #EditSkill.window-app table {
+  background-color: transparent; }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app table {
+    margin: 0; }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app table td {
+    padding: var(--emu-space-base) 0; }
+
+body.-emu.system-fate-core-official #EditSkill.window-app select {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app select {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important;
+    margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #EditSkill.window-app input:not([type="checkbox"]) {
+  background-color: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app input:not([type="checkbox"]) {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #EditSkill.window-app input[type="checkbox"] {
+  float: left;
+  margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich,
+body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend {
+  background: transparent !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich, .-emu-layout
+  body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend {
+    cursor: text;
+    font-family: inherit !important;
+    min-height: 2.75rem !important; }
+    .-emu-layout body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_description p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_overcome p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_caa p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_attack p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #EditSkill.window-app #edit_skill_defend p {
+      margin: 0; }
+
+.-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app form > div > div, .-emu-layout
+body.-emu.system-fate-core-official #OrderTracks.window-app form > div > div {
+  align-items: center;
+  display: flex;
+  height: auto !important;
+  margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app form > div > div > span, .-emu-layout
+  body.-emu.system-fate-core-official #OrderTracks.window-app form > div > div > span {
+    align-items: center;
+    display: flex; }
+    .-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app form > div > div > span:first-child, .-emu-layout
+    body.-emu.system-fate-core-official #OrderTracks.window-app form > div > div > span:first-child {
+      flex: 1 1 100%; }
+
+.-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app button, .-emu-layout
+body.-emu.system-fate-core-official #OrderTracks.window-app button {
+  height: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #OrderAspects.window-app .fas.fa-sort-up,
+body.-emu.system-fate-core-official #OrderAspects.window-app .fas.fa-sort-down,
+body.-emu.system-fate-core-official #OrderTracks.window-app .fas.fa-sort-up,
+body.-emu.system-fate-core-official #OrderTracks.window-app .fas.fa-sort-down {
+  background-color: rgba(var(--color-background-button), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app .fas.fa-sort-up, .-emu-layout
+  body.-emu.system-fate-core-official #OrderAspects.window-app .fas.fa-sort-down, .-emu-layout
+  body.-emu.system-fate-core-official #OrderTracks.window-app .fas.fa-sort-up, .-emu-layout
+  body.-emu.system-fate-core-official #OrderTracks.window-app .fas.fa-sort-down {
+    width: var(--emu-space-button) !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #OrderAspects.window-app .fas.fa-save, .-emu-layout
+body.-emu.system-fate-core-official #OrderTracks.window-app .fas.fa-save {
+  margin-block-start: var(--emu-space-base); }
+
+body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities {
+  background-color: transparent !important; }
+  .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities {
+    padding: var(--emu-space-sm) !important; }
+  body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation {
+    border-block-end: 2px solid rgba(var(--color-primary), 1); }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation {
+      display: flex; }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > i {
+      display: none; }
+    body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > .item {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      color: rgba(var(--color-text), 1); }
+      .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > .item {
+        font-size: var(--emu-font-size-lg);
+        height: auto;
+        padding: var(--emu-space-md);
+        width: auto; }
+      body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > .item.active {
+        background-color: rgba(var(--color-primary), 1);
+        color: rgba(var(--color-text-lightest), 1); }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > div {
+      display: flex;
+      flex: 1 1 auto;
+      justify-content: flex-end; }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities nav.navigation > div:last-child {
+      display: none; }
+  .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body {
+    padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab {
+    background-color: transparent !important; }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab {
+      font-family: inherit !important;
+      padding: 0 !important; }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab#fu_scene_tab button {
+      height: var(--emu-space-button) !important; }
+      .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab#fu_scene_tab button.fas {
+        width: var(--emu-space-button) !important; }
+    body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab > div {
+      background-color: transparent !important; }
+    body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table {
+      background-color: transparent; }
+      body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table tr {
+        border-block-start: rgba(var(--color-border), 1) 1px solid !important; }
+      .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td {
+        font-family: inherit !important;
+        vertical-align: middle !important; }
+        .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div {
+          font-family: inherit !important; }
+          .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div.fu_button {
+            font-family: "Font Awesome 5 Free" !important; }
+          .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div > div {
+            align-items: center !important;
+            padding: var(--emu-space-xs) !important; }
+            .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div > div > span {
+              align-items: center;
+              display: inline-flex; }
+            .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div > div .fu_button + b {
+              padding: var(--emu-space-base) !important; }
+      body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div > div {
+        border: none !important;
+        border-block-end: rgba(var(--color-border-lighter), 1) 1px solid !important; }
+        body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab table td > div > div:last-child {
+          border: none !important; }
+    body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"] {
+      background: transparent !important;
+      border: rgba(var(--color-border), 1) 1px solid !important;
+      color: rgba(var(--color-text), 1) !important; }
+      .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"] {
+        cursor: text;
+        font-family: inherit !important;
+        margin: 0 !important;
+        min-height: 4rem !important; }
+        .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .utilities-body > .tab div[id*="_FUAspectNotes"] p {
+          margin: 0; }
+  body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .fu_button {
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .fu_button {
+      align-items: center;
+      display: inline-flex;
+      height: var(--emu-space-button-sm) !important;
+      justify-content: center;
+      width: var(--emu-space-button-sm) !important; }
+    body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities .fu_button:hover {
+      background-color: rgba(var(--color-primary), 1) !important;
+      color: rgba(var(--color-text-lightest), 1);
+      filter: none !important; }
+  body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:not([type="checkbox"]) {
+    background: transparent !important;
+    border: rgba(var(--color-border-lighter), 1) 1px solid !important; }
+    .-emu-layout body.-emu.system-fate-core-official #FateUtilities.window-app form#FateUtilities input:not([type="checkbox"]) {
+      font-family: inherit !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #ShowCharacter.window-app form#ShowCharacter {
+  font-family: inherit !important; }
+  .-emu-layout body.-emu.system-fate-core-official #ShowCharacter.window-app form#ShowCharacter p {
+    align-items: center;
+    display: flex; }
+    .-emu-layout body.-emu.system-fate-core-official #ShowCharacter.window-app form#ShowCharacter p > span {
+      align-items: center;
+      display: flex; }
+      .-emu-layout body.-emu.system-fate-core-official #ShowCharacter.window-app form#ShowCharacter p > span:first-child {
+        margin-inline-end: var(--emu-space-base);
+        width: auto !important; }
+  .-emu-layout body.-emu.system-fate-core-official #ShowCharacter.window-app form#ShowCharacter span {
+    padding: 0 !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #fu_aspects_pane {
+  margin-block-end: var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-fate-core-official #fu_aspects_pane > div {
+  font-family: inherit !important;
+  padding-block-start: var(--emu-space-sm) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #fu_aspects_pane > div > span {
+    display: flex;
+    padding-inline-start: var(--emu-space-sm) !important;
+    width: auto !important; }
+    .-emu-layout body.-emu.system-fate-core-official #fu_aspects_pane > div > span:first-child {
+      flex: 1 1 100%;
+      padding-inline-start: 0 !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #cd_panel > table {
+  font-family: inherit !important;
+  padding: 0 !important; }
+  .-emu-layout body.-emu.system-fate-core-official #cd_panel > table tr td {
+    min-width: 4.875rem;
+    width: auto !important; }
+
+body.-emu.system-fate-core-official #fu_rolls_tab tr th,
+body.-emu.system-fate-core-official #fu_rolls_tab tr td {
+  border: rgba(var(--color-border), 1) 1px solid !important; }
+
+body.-emu.system-fate-core-official #fu_rolls_tab table table th,
+body.-emu.system-fate-core-official #fu_rolls_tab table table td {
+  border: none !important; }
+
+body.-emu.system-fate-core-official #PlayerAspectSetup #aspect_editor {
+  display: grid;
+  grid-template-areas: "table table" "save add"; }
+  body.-emu.system-fate-core-official #PlayerAspectSetup #aspect_editor table {
+    background-color: transparent !important;
+    flex: 1 1 auto;
+    grid-area: table; }
+  body.-emu.system-fate-core-official #PlayerAspectSetup #aspect_editor #save_aspects {
+    grid-area: save; }
+  body.-emu.system-fate-core-official #PlayerAspectSetup #aspect_editor #new_aspect {
+    grid-area: add; }
+
+.-emu-layout body.-emu.system-fate-core-official #PlayerAspectSetup label {
+  font-family: inherit !important; }
+
+body.-emu.system-fate-core-official #PlayerAspectSetup select,
+body.-emu.system-fate-core-official #PlayerAspectSetup textarea,
+body.-emu.system-fate-core-official #PlayerAspectSetup input:not([type="checkbox"]) {
+  background: transparent !important;
+  border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #PlayerAspectSetup select, .-emu-layout
+  body.-emu.system-fate-core-official #PlayerAspectSetup textarea, .-emu-layout
+  body.-emu.system-fate-core-official #PlayerAspectSetup input:not([type="checkbox"]) {
+    font-family: inherit !important; }
+
+body.-emu.system-fate-core-official #PlayerAspectSetup button.fas,
+body.-emu.system-fate-core-official #PlayerAspectSetup div.fas {
+  background-color: rgba(var(--color-background-button), 1) !important;
+  color: rgba(var(--color-text-lightest), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #PlayerAspectSetup button.fas, .-emu-layout
+  body.-emu.system-fate-core-official #PlayerAspectSetup div.fas {
+    font-family: "Font Awesome 5 Free" !important;
+    height: var(--emu-space-button) !important;
+    width: var(--emu-space-button) !important; }
+  body.-emu.system-fate-core-official #PlayerAspectSetup button.fas:hover,
+  body.-emu.system-fate-core-official #PlayerAspectSetup div.fas:hover {
+    background-color: rgba(var(--color-primary), 1) !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #PlayerSkillSetup .row .column {
+  padding: 0 !important; }
+
+body.-emu.system-fate-core-official #PlayerSkillSetup .row button {
+  background-color: rgba(var(--color-background-button), 1) !important;
+  overflow: initial !important; }
+  body.-emu.system-fate-core-official #PlayerSkillSetup .row button:hover {
+    background-color: rgba(var(--color-primary), 1) !important; }
+
+.-emu-layout body.-emu.system-fate-core-official #GMSkillSetup table td {
+  padding: var(--emu-space-xs); }
+
+.-emu-layout body.-emu.system-fate-core-official #GMSkillSetup table td hr {
+  display: none; }
+
+body.-emu.system-fate-core-official #GMSkillSetup table td h3 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  body.-emu.system-fate-core-official #GMSkillSetup table td h3:empty {
+    display: none; }
+
+body.-emu.system-fate-core-official #PlayerTrackSetup select {
+  background: transparent !important;
+  border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #PlayerTrackSetup select {
+    font-family: inherit !important; }
+
+body.-emu.system-fate-core-official #PlayerTrackSetup #buttons {
+  display: flex; }
+
+body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table {
+  background-color: transparent !important; }
+  .-emu-layout body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table td {
+    align-items: center;
+    font-family: inherit !important;
+    padding: var(--emu-space-xs); }
+    .-emu-layout body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table td:last-child {
+      min-width: 8rem; }
+  body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table button {
+    background-color: rgba(var(--color-background-button), 1) !important;
+    color: rgba(var(--color-text-lightest), 1) !important; }
+    .-emu-layout body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table button {
+      height: var(--emu-space-button-sm) !important;
+      width: var(--emu-space-button-sm) !important; }
+    body.-emu.system-fate-core-official #PlayerTrackSetup #edit_tracks_body table button:hover {
+      background-color: rgba(var(--color-primary), 1) !important; }
+
+body.-emu.system-fate-core-official #EditEntityTrack .window-content {
+  padding: var(--emu-space-sm); }
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content #copy_entity,
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content #exportEntityTrack {
+    height: var(--emu-space-button) !important;
+    width: var(--emu-space-button) !important; }
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content #save_entity_track,
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content #edit_entity_linked_skills {
+    height: var(--emu-space-button) !important; }
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content select,
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content textarea,
+  body.-emu.system-fate-core-official #EditEntityTrack .window-content input:not([type="checkbox"]) {
+    background: transparent !important;
+    border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+    color: rgba(var(--color-text), 1) !important; }
+    .-emu-layout body.-emu.system-fate-core-official #EditEntityTrack .window-content select, .-emu-layout
+    body.-emu.system-fate-core-official #EditEntityTrack .window-content textarea, .-emu-layout
+    body.-emu.system-fate-core-official #EditEntityTrack .window-content input:not([type="checkbox"]) {
+      font-family: inherit !important;
+      height: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #PlayerStuntSetup form {
   color: rgba(var(--color-text), 1); }
+  body.-emu.system-fate-core-official #PlayerStuntSetup form #header > div {
+    border: none !important; }
+    body.-emu.system-fate-core-official #PlayerStuntSetup form #header > div table {
+      background-color: transparent !important; }
+      .-emu-layout body.-emu.system-fate-core-official #PlayerStuntSetup form #header > div table td {
+        font-family: inherit !important; }
+      .-emu-layout body.-emu.system-fate-core-official #PlayerStuntSetup form #header > div table i {
+        font-family: inherit !important; }
+
+body.-emu.system-fate-core-official #PlayerStuntSetup select,
+body.-emu.system-fate-core-official #PlayerStuntSetup textarea,
+body.-emu.system-fate-core-official #PlayerStuntSetup input:not([type="checkbox"]) {
+  background: transparent !important;
+  border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #PlayerStuntSetup select, .-emu-layout
+  body.-emu.system-fate-core-official #PlayerStuntSetup textarea, .-emu-layout
+  body.-emu.system-fate-core-official #PlayerStuntSetup input:not([type="checkbox"]) {
+    font-family: inherit !important;
+    height: var(--emu-space-button) !important; }
+
+body.-emu.system-fate-core-official #PlayerStuntSetup input[type="checkbox"] + b {
+  margin: 0 var(--emu-space-sm);
+  padding: 0 !important; }
+
+body.-emu.system-fate-core-official #StuntDB .window-content > div {
+  background-color: transparent !important; }
+  .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div {
+    font-family: inherit !important;
+    font-size: var(--emu-font-size-md) !important; }
+  body.-emu.system-fate-core-official #StuntDB .window-content > div:first-child > div {
+    background-color: transparent !important;
+    color: rgba(var(--color-text), 1) !important; }
+    .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div:first-child > div {
+      align-items: center;
+      display: flex !important; }
+    body.-emu.system-fate-core-official #StuntDB .window-content > div:first-child > div > div {
+      border-inline-end-color: rgba(var(--color-border), 1) !important; }
+      .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div:first-child > div > div {
+        align-items: center;
+        display: flex;
+        min-height: 2.25rem;
+        padding: var(--emu-space-base) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div:last-child {
+    max-height: 100% !important;
+    padding: 0 !important; }
+  body.-emu.system-fate-core-official #StuntDB .window-content > div:nth-child(2) {
+    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    body.-emu.system-fate-core-official #StuntDB .window-content > div:nth-child(2) > div {
+      background-color: transparent !important;
+      color: rgba(var(--color-text), 1) !important; }
+      .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div:nth-child(2) > div > div {
+        align-items: center;
+        display: flex !important; }
+      body.-emu.system-fate-core-official #StuntDB .window-content > div:nth-child(2) > div > div > div {
+        border-block-end-color: rgba(var(--color-border), 1) !important;
+        border-inline-end-color: rgba(var(--color-border), 1) !important; }
+        .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div:nth-child(2) > div > div > div {
+          align-items: center;
+          display: flex !important;
+          min-height: 2.25rem;
+          padding: var(--emu-space-base) !important; }
+  body.-emu.system-fate-core-official #StuntDB .window-content > div button.fas {
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-fate-core-official #StuntDB .window-content > div button.fas {
+      align-items: center;
+      display: inline-flex;
+      height: var(--emu-space-button-sm) !important;
+      justify-content: center;
+      width: var(--emu-space-button-sm) !important; }
+    body.-emu.system-fate-core-official #StuntDB .window-content > div button.fas:hover {
+      background-color: rgba(var(--color-primary), 1) !important;
+      color: rgba(var(--color-text-lightest), 1);
+      filter: none !important; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] select,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea,
+body.-emu.system-fate-core-official .window-app[id*="actor-"] input:not([type="checkbox"]),
+body.-emu.system-fate-core-official .window-app[id*="item-"] select,
+body.-emu.system-fate-core-official .window-app[id*="item-"] textarea,
+body.-emu.system-fate-core-official .window-app[id*="item-"] input:not([type="checkbox"]) {
+  background: transparent !important;
+  border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] select, .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] textarea, .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] input:not([type="checkbox"]), .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="item-"] select, .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="item-"] textarea, .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="item-"] input:not([type="checkbox"]) {
+    font-family: inherit !important; }
 
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .fu_button:hover, body.-emu.system-fate-core-official .window-app[id*="actor-"] .fu_button:focus,
 body.-emu.system-fate-core-official .window-app[id*="item-"] .fu_button:hover,
@@ -258,16 +1227,17 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] .checkmark {
   background-color: rgba(var(--color-background-lightest), 1);
   border-color: rgba(var(--color-border), 1); }
 
-.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content, .-emu-layout
-body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content {
-  padding: 0; }
-
-body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form,
+.-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form, .-emu-layout
 body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form {
+  padding: 0 !important; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form > table,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form > table {
   background-color: transparent !important; }
-  body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form > table,
-  body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form > table {
-    background-color: transparent !important; }
+  .-emu-layout body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content form > table td, .-emu-layout
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .window-content form > table td {
+    font-family: inherit !important;
+    font-size: var(--emu-font-size-lg) !important; }
 
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content .circle-input,
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .window-content .circle-input:disabled,
@@ -296,7 +1266,8 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet {
   body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__identity-name,
   body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__identity-name {
     border-color: rgba(var(--color-border), 1);
-    color: rgba(var(--color-text), 1); }
+    color: rgba(var(--color-text), 1);
+    font-family: inherit; }
   body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-sheet__meta-value,
   body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-sheet__meta-value {
     border-color: rgba(var(--color-border), 1); }
@@ -319,6 +1290,17 @@ body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__head
 body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header {
   background-color: rgba(var(--color-background), 1);
   color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header-button,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header-button {
+    color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header select,
+  body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header select {
+    color: rgba(var(--color-text-lightest), 1) !important; }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header-label, body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header-select,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header-label,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header-select {
+  font-family: inherit; }
 
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-panel__header-button:hover,
 body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-panel__header-button:hover {
@@ -339,6 +1321,10 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list_
 body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-skills-list__skill-name_item {
   border-color: rgba(var(--color-border-lighter), 1); }
 
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-aspects-list__label,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-aspects-list__label {
+  font-family: inherit; }
+
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-tracks__item + .mfate-tracks__item,
 body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-tracks__item + .mfate-tracks__item {
   box-shadow: inset 0 1px rgba(var(--color-border-lighter), 1); }
@@ -352,6 +1338,13 @@ body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__row
 body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__row {
   border-color: rgba(var(--color-border-lighter), 1); }
 
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__body, body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__row-header-cell, body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__row-body, body.-emu.system-fate-core-official .window-app[id*="actor-"] .mfate-stunts__row-footer-cell,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__body,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__row-header-cell,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__row-body,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .mfate-stunts__row-footer-cell {
+  font-family: inherit; }
+
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row,
 body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row {
   background-color: rgba(var(--color-background-lightest), 1);
@@ -360,3 +1353,219 @@ body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row {
 body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row-header-button,
 body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row-header-button {
   background-color: rgba(var(--color-background-lightest), 1); }
+
+body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row-header, body.-emu.system-fate-core-official .window-app[id*="actor-"] .fate-extras__row-body-content,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row-header,
+body.-emu.system-fate-core-official .window-app[id*="item-"] .fate-extras__row-body-content {
+  font-family: inherit; }
+
+.-emu-layout body.-emu.system-fate-core-official .cdbox, .-emu-layout
+body.-emu.system-fate-core-official .box {
+  margin: var(--emu-space-xs); }
+  .-emu-layout body.-emu.system-fate-core-official .cdbox > input,
+  .-emu-layout body.-emu.system-fate-core-official .cdbox .checkmark,
+  .-emu-layout body.-emu.system-fate-core-official .cdbox .cdcheckmark, .-emu-layout
+  body.-emu.system-fate-core-official .box > input,
+  .-emu-layout
+  body.-emu.system-fate-core-official .box .checkmark,
+  .-emu-layout
+  body.-emu.system-fate-core-official .box .cdcheckmark {
+    height: var(--emu-space-button-sm) !important;
+    width: var(--emu-space-button-sm) !important; }
+  .-emu-layout body.-emu.system-fate-core-official .cdbox > i, .-emu-layout
+  body.-emu.system-fate-core-official .box > i {
+    color: rgba(var(--color-text), 1) !important;
+    text-shadow: 2px 2px 0px rgba(var(--color-background-lightest), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official .cdbox + .box,
+  .-emu-layout body.-emu.system-fate-core-official .cdbox + .cdbox, .-emu-layout
+  body.-emu.system-fate-core-official .box + .box,
+  .-emu-layout
+  body.-emu.system-fate-core-official .box + .cdbox {
+    margin-inline-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-fate-core-official .cdbox + .aspect_box, .-emu-layout
+  body.-emu.system-fate-core-official .box + .aspect_box {
+    margin: var(--emu-space-xs) !important; }
+
+body.-emu.system-fate-core-official .cdbox .cdcheckmark,
+body.-emu.system-fate-core-official .cdbox .checkmark,
+body.-emu.system-fate-core-official .box .cdcheckmark,
+body.-emu.system-fate-core-official .box .checkmark {
+  background-color: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-controls, 0);
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-fate-core-official .cdbox .cdcheckmark, .-emu-layout
+  body.-emu.system-fate-core-official .cdbox .checkmark, .-emu-layout
+  body.-emu.system-fate-core-official .box .cdcheckmark, .-emu-layout
+  body.-emu.system-fate-core-official .box .checkmark {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center; }
+    .-emu-layout body.-emu.system-fate-core-official .cdbox .cdcheckmark::after, .-emu-layout
+    body.-emu.system-fate-core-official .cdbox .checkmark::after, .-emu-layout
+    body.-emu.system-fate-core-official .box .cdcheckmark::after, .-emu-layout
+    body.-emu.system-fate-core-official .box .checkmark::after {
+      height: auto;
+      left: auto;
+      position: relative;
+      top: auto;
+      transform: none;
+      width: auto; }
+  body.-emu.system-fate-core-official .cdbox .cdcheckmark:hover,
+  body.-emu.system-fate-core-official .cdbox .checkmark:hover,
+  body.-emu.system-fate-core-official .box .cdcheckmark:hover,
+  body.-emu.system-fate-core-official .box .checkmark:hover {
+    background-color: rgba(var(--color-primary), 1); }
+    body.-emu.system-fate-core-official .cdbox .cdcheckmark:hover::after,
+    body.-emu.system-fate-core-official .cdbox .checkmark:hover::after,
+    body.-emu.system-fate-core-official .box .cdcheckmark:hover::after,
+    body.-emu.system-fate-core-official .box .checkmark:hover::after {
+      color: rgba(var(--color-text-lightest), 1); }
+
+body.-emu.system-fate-core-official .aspect_box,
+body.-emu.system-fate-core-official .fu_aspect_box {
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official .aspect_box, .-emu-layout
+  body.-emu.system-fate-core-official .fu_aspect_box {
+    height: var(--emu-space-button) !important;
+    margin: 0 !important;
+    padding: 0 var(--emu-space-sm) !important; }
+
+body.-emu.system-fate-core-official #edit_aspect_description_rich,
+body.-emu.system-fate-core-official #edit_aspect_description,
+body.-emu.system-fate-core-official #scene_notes_rich,
+body.-emu.system-fate-core-official #scene_notes,
+body.-emu.system-fate-core-official #edit_track_when_marked_rich,
+body.-emu.system-fate-core-official #edit_track_when_marked,
+body.-emu.system-fate-core-official #edit_track_description_rich,
+body.-emu.system-fate-core-official #edit_track_description,
+body.-emu.system-fate-core-official #edit_track_when_recovers_rich,
+body.-emu.system-fate-core-official #edit_track_when_recovers,
+body.-emu.system-fate-core-official #game_date_time_rich,
+body.-emu.system-fate-core-official #game_date_time,
+body.-emu.system-fate-core-official #game_notes_rich,
+body.-emu.system-fate-core-official #game_notes,
+body.-emu.system-fate-core-official #cd_description,
+body.-emu.system-fate-core-official #game__FUAspectNotes,
+body.-emu.system-fate-core-official [id*="_FUTrackNotes"],
+body.-emu.system-fate-core-official [id*="_permValue"],
+body.-emu.system-fate-core-official [id*="_costsValue"],
+body.-emu.system-fate-core-official [id*="_descValue"],
+body.-emu.system-fate-core-official [id*="_overcomeValue"],
+body.-emu.system-fate-core-official [id*="_createValue"],
+body.-emu.system-fate-core-official [id*="_attackValue"],
+body.-emu.system-fate-core-official [id*="_defendValue"],
+body.-emu.system-fate-core-official [id*="aspect_description"],
+body.-emu.system-fate-core-official .aspect_notes,
+body.-emu.system-fate-core-official #edit_entity_track_description_rich,
+body.-emu.system-fate-core-official #edit_entity_track_description,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich,
+body.-emu.system-fate-core-official #edit_entity_track_when_marked,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich,
+body.-emu.system-fate-core-official #edit_entity_track_when_recovers,
+body.-emu.system-fate-core-official #edit_stunt_desc_rich,
+body.-emu.system-fate-core-official #edit_stunt_desc,
+body.-emu.system-fate-core-official .mfate-aspects-notes__input {
+  background: transparent !important;
+  border: rgba(var(--color-border-lighter), 1) 1px solid !important;
+  color: rgba(var(--color-text), 1) !important; }
+  .-emu-layout body.-emu.system-fate-core-official #edit_aspect_description_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_aspect_description, .-emu-layout
+  body.-emu.system-fate-core-official #scene_notes_rich, .-emu-layout
+  body.-emu.system-fate-core-official #scene_notes, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_when_marked_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_when_marked, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_description_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_description, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_when_recovers_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_track_when_recovers, .-emu-layout
+  body.-emu.system-fate-core-official #game_date_time_rich, .-emu-layout
+  body.-emu.system-fate-core-official #game_date_time, .-emu-layout
+  body.-emu.system-fate-core-official #game_notes_rich, .-emu-layout
+  body.-emu.system-fate-core-official #game_notes, .-emu-layout
+  body.-emu.system-fate-core-official #cd_description, .-emu-layout
+  body.-emu.system-fate-core-official #game__FUAspectNotes, .-emu-layout
+  body.-emu.system-fate-core-official [id*="_FUTrackNotes"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_permValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_costsValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_descValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_overcomeValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_createValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_attackValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="_defendValue"], .-emu-layout
+  body.-emu.system-fate-core-official [id*="aspect_description"], .-emu-layout
+  body.-emu.system-fate-core-official .aspect_notes, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_description_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_description, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_when_marked, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_entity_track_when_recovers, .-emu-layout
+  body.-emu.system-fate-core-official #edit_stunt_desc_rich, .-emu-layout
+  body.-emu.system-fate-core-official #edit_stunt_desc, .-emu-layout
+  body.-emu.system-fate-core-official .mfate-aspects-notes__input {
+    cursor: text;
+    font-family: inherit !important;
+    min-height: 4rem !important; }
+    .-emu-layout body.-emu.system-fate-core-official #edit_aspect_description_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_aspect_description p, .-emu-layout
+    body.-emu.system-fate-core-official #scene_notes_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #scene_notes p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_when_marked_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_when_marked p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_description_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_description p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_when_recovers_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_track_when_recovers p, .-emu-layout
+    body.-emu.system-fate-core-official #game_date_time_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #game_date_time p, .-emu-layout
+    body.-emu.system-fate-core-official #game_notes_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #game_notes p, .-emu-layout
+    body.-emu.system-fate-core-official #cd_description p, .-emu-layout
+    body.-emu.system-fate-core-official #game__FUAspectNotes p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_FUTrackNotes"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_permValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_costsValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_descValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_overcomeValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_createValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_attackValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="_defendValue"] p, .-emu-layout
+    body.-emu.system-fate-core-official [id*="aspect_description"] p, .-emu-layout
+    body.-emu.system-fate-core-official .aspect_notes p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_description_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_description p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_when_marked_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_when_marked p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_when_recovers_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_entity_track_when_recovers p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_stunt_desc_rich p, .-emu-layout
+    body.-emu.system-fate-core-official #edit_stunt_desc p, .-emu-layout
+    body.-emu.system-fate-core-official .mfate-aspects-notes__input p {
+      margin: 0; }
+
+.-emu-layout body.-emu.system-fate-core-official [id*="_permValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_costsValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_descValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_overcomeValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_createValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_attackValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="_defendValue"], .-emu-layout
+body.-emu.system-fate-core-official [id*="aspect_description"], .-emu-layout
+body.-emu.system-fate-core-official .aspect_notes, .-emu-layout
+body.-emu.system-fate-core-official .mfate-aspects-notes__input {
+  min-height: 2rem !important; }
+
+.-emu-layout body.-emu.system-fate-core-official button.fas, .-emu-layout
+body.-emu.system-fate-core-official div.fas {
+  font-family: "Font Awesome 5 Free" !important; }
+
+.-emu-layout body.-emu.system-fate-core-official table {
+  margin: 0; }
+
+.-emu-layout body.-emu.system-fate-core-official input[type="text"], .-emu-layout
+body.-emu.system-fate-core-official input[type="number"], .-emu-layout
+body.-emu.system-fate-core-official input[type="password"], .-emu-layout
+body.-emu.system-fate-core-official input[type="date"], .-emu-layout
+body.-emu.system-fate-core-official input[type="time"] {
+  height: var(--emu-space-button); }

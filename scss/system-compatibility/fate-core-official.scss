@@ -1,13 +1,974 @@
 @import "../base";
 
+// Holy mother of jazuz - inline styles and importants everywhere.
+// Highly suggest adding classes to style everything instead of relying on inline styles.
+// Sorry - this is bar far the worst markup I have come across
+
 body#{$emu}.system-fate-core-official {
+	.dialog {
+		.dialog-content > div {
+			background-color: transparent !important;
+			color: inherit !important;
+
+			> textarea {
+				background-color: transparent !important;
+				border-color: color("border") !important;
+				color: color("text") !important;
+			}
+		}
+
+		input#dialog_box {
+			@extend %input-text;
+
+			@include layout {
+				margin: 0 !important;
+				width: 100% !important;
+			}
+		}
+	}
+
+	.window-app {
+		.window-content form {
+			background-color: transparent !important;
+
+			@include layout {
+				font-family: inherit !important;
+				padding: 0 !important;
+			}
+		}
+	}
+
+	#TrackSetup.window-app,
+	#AspectSetup.window-app,
+	#SkillSetup.window-app {
+		table {
+			background-color: transparent;
+
+			@include layout {
+				margin: 0;
+			}
+
+			td,
+			tr {
+				@include layout {
+					padding: 0;
+				}
+			}
+
+			tbody {
+				tr {
+					&:first-child {
+						button {
+							@include layout {
+								margin-block-end: m("base");
+
+								&:last-child {
+									margin-block-end: 0;
+								}
+
+								+ p {
+									display: none;
+								}
+							}
+						}
+					}
+
+					&:last-child {
+						@include layout {
+							td {
+								padding-block-start: p("sm");
+							}
+
+							button {
+								width: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#TrackSetup.window-app {
+		#track_categories_select {
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				padding: p("sm");
+			}
+
+			option {
+				background-color: transparent;
+			}
+		}
+
+		#add_category,
+		#delete_category {
+			@include layout {
+				// @extend %font-awesome;
+				height: space("button") !important;
+				margin: 0;
+				width: space("button") !important;
+			}
+		}
+	}
+
+	#AspectSetup.window-app {
+		#aspectListBox {
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				padding: p("sm");
+			}
+
+			option {
+				background-color: transparent;
+			}
+		}
+	}
+
+	#SkillSetup.window-app {
+		#skillListBox {
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				padding: p("sm");
+			}
+
+			option {
+				background-color: transparent;
+			}
+		}
+	}
+
+	#EditAspect.window-app {
+		form > table {
+			background-color: transparent;
+
+			input[type="text"] {
+				background: transparent !important;
+				color: color("text") !important;
+
+				@include layout {
+					font-family: inherit !important;
+				}
+			}
+		}
+	}
+
+	#EditLinkedSkills.window-app {
+		table {
+			background-color: transparent;
+
+			@include layout {
+				margin: 0;
+			}
+
+			td {
+				@include layout {
+					padding: p("base") 0;
+				}
+			}
+		}
+
+		select {
+			@extend %input-select;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+				margin-inline-end: m("base");
+			}
+		}
+
+		input:not([type="checkbox"]) {
+			@extend %input-text;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+			}
+		}
+
+		input[type="checkbox"] {
+			@include layout {
+				margin-inline-end: m("base");
+			}
+		}
+
+		#delete_linked_skill,
+		#add_linked_skill {
+			// @extend %font-awesome;
+			height: space("button") !important;
+			margin: 0;
+			margin-inline-end: m("base");
+			width: space("button") !important;
+		}
+	}
+
+	#EditTrack.window-app {
+		table {
+			background-color: transparent;
+
+			@include layout {
+				margin: 0;
+			}
+
+			td {
+				@include layout {
+					padding: p("base") 0;
+				}
+			}
+		}
+
+		select {
+			@extend %input-select;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+				margin-inline-end: m("base");
+			}
+		}
+
+		input:not([type="checkbox"]) {
+			@extend %input-text;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+			}
+		}
+
+		input[type="checkbox"] {
+			@include layout {
+				float: left;
+				margin-inline-end: m("base");
+			}
+		}
+
+		button {
+			@include layout {
+				float: left;
+				height: space("button") !important;
+				margin: 0;
+				margin-inline-end: m("base");
+				width: auto !important;
+			}
+		}
+
+		#copy,
+		#exportTrack,
+		.fas.fa-trash {
+			@include layout {
+				// @extend %font-awesome;
+				width: space("button") !important;
+			}
+		}
+	}
+
+	#EditSkill.window-app {
+		table {
+			background-color: transparent;
+
+			@include layout {
+				margin: 0;
+			}
+
+			td {
+				@include layout {
+					padding: p("base") 0;
+				}
+			}
+		}
+
+		select {
+			@extend %input-select;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+				margin-inline-end: m("base");
+			}
+		}
+
+		input:not([type="checkbox"]) {
+			@extend %input-text;
+			background-color: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+			}
+		}
+
+		input[type="checkbox"] {
+			float: left;
+			margin-inline-end: m("base");
+		}
+
+		#edit_skill_description_rich,
+		#edit_skill_description,
+		#edit_skill_overcome_rich,
+		#edit_skill_overcome,
+		#edit_skill_caa_rich,
+		#edit_skill_caa,
+		#edit_skill_attack_rich,
+		#edit_skill_attack,
+		#edit_skill_defend_rich,
+		#edit_skill_defend {
+			@extend %input-textarea;
+			background: transparent !important;
+			color: color("text") !important;
+
+			@include layout {
+				cursor: text;
+				font-family: inherit !important;
+				min-height: to-rem(44px) !important;
+
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	#OrderAspects.window-app,
+	#OrderTracks.window-app {
+		form > div > div {
+			@include layout {
+				align-items: center;
+				display: flex;
+				height: auto !important;
+				margin-block-end: m("base");
+
+				> span {
+					align-items: center;
+					display: flex;
+
+					&:first-child {
+						flex: 1 1 100%;
+					}
+				}
+			}
+		}
+
+		button {
+			@include layout {
+				height: space("button") !important;
+
+				&.fas {
+					// @extend %font-awesome;
+				}
+			}
+		}
+
+		.fas.fa-sort-up,
+		.fas.fa-sort-down {
+			background-color: color("background-button") !important;
+
+			@include layout {
+				width: space("button") !important;
+			}
+		}
+
+		.fas.fa-save {
+			@include layout {
+				margin-block-start: m("base");
+			}
+		}
+	}
+
 	#FateUtilities.window-app {
 		form#FateUtilities {
-			button.fu_button {
+			background-color: transparent !important;
+
+			@include layout {
+				padding: p("sm") !important;
+			}
+
+			nav.navigation {
+				border-block-end: 2px solid color("primary");
+
+				@include layout {
+					display: flex;
+				}
+
+				> i {
+					@include layout {
+						display: none;
+					}
+				}
+
+				> .item {
+					background: transparent;
+					border: none;
+					box-shadow: none;
+					color: color("text");
+
+					@include layout {
+						font-size: fs("lg");
+						height: auto;
+						padding: p("md");
+						width: auto;
+					}
+
+					&.active {
+						background-color: color("primary");
+						color: color("text-lightest");
+					}
+				}
+
+				> div {
+					@include layout {
+						display: flex;
+						flex: 1 1 auto;
+						justify-content: flex-end;
+					}
+
+					&:last-child {
+						@include layout {
+							display: none;
+						}
+					}
+				}
+			}
+
+			.utilities-body {
+				@include layout {
+					padding: p("sm");
+				}
+
+				> .tab {
+					background-color: transparent !important;
+
+					@include layout {
+						font-family: inherit !important;
+						padding: 0 !important;
+					}
+
+
+					&#fu_scene_tab {
+						button {
+							@include layout {
+								height: space("button") !important;
+
+								&.fas {
+									// @extend %font-awesome;
+									width: space("button") !important;
+								}
+							}
+						}
+					}
+
+					> div {
+						background-color: transparent !important;
+					}
+
+					table {
+						background-color: transparent;
+
+						tr {
+							border-block-start: b("border") !important;
+						}
+
+						td {
+							@include layout {
+								font-family: inherit !important;
+								vertical-align: middle !important;
+
+								> div {
+									font-family: inherit !important;
+
+									&.fu_button {
+										font-family: "Font Awesome 5 Free" !important;
+									}
+
+									> div {
+										align-items: center !important;
+										padding: p("xs") !important;
+
+										> span {
+											align-items: center;
+											display: inline-flex;
+										}
+
+										.fu_button + b {
+											padding: p("base") !important;
+										}
+									}
+								}
+							}
+
+							> div > div {
+								border: none !important;
+								border-block-end: b("border-lighter") !important;
+
+								&:last-child {
+									border: none !important;
+								}
+							}
+						}
+					}
+
+					div[id*="_FUAspectNotes"] {
+						@extend %input-textarea;
+						background: transparent !important;
+						border: b("border") !important;
+						color: color("text") !important;
+
+						@include layout {
+							cursor: text;
+							font-family: inherit !important;
+							margin: 0 !important;
+							min-height: to-rem(64px) !important;
+
+							p {
+								margin: 0;
+							}
+						}
+					}
+				}
+			}
+
+			.fu_button {
 				color: color("text");
 
 				@include layout {
-					@extend %font-awesome;
+					// @extend %font-awesome;
+					align-items: center;
+					display: inline-flex;
+					height: space("button-sm") !important;
+					justify-content: center;
+					width: space("button-sm") !important;
+				}
+
+				&:hover {
+					background-color: color("primary") !important;
+					color: color("text-lightest");
+					filter: none !important;
+				}
+			}
+
+			input:not([type="checkbox"]) {
+				@extend %input-text;
+				background: transparent !important;
+				border: b("border-lighter") !important;
+
+				@include layout {
+					font-family: inherit !important;
+				}
+			}
+		}
+	}
+
+	#ShowCharacter.window-app {
+		form#ShowCharacter {
+			@include layout {
+				font-family: inherit !important;
+
+				p {
+					align-items: center;
+					display: flex;
+
+					> span {
+						align-items: center;
+						display: flex;
+
+						&:first-child {
+							margin-inline-end: m("base");
+							width: auto !important;
+						}
+					}
+				}
+
+				span {
+					padding: 0 !important;
+				}
+			}
+		}
+	}
+
+	#fu_aspects_pane {
+		@include layout {
+			margin-block-end: m("sm");
+		}
+
+		> div {
+			@include layout {
+				font-family: inherit !important;
+				padding-block-start: p("sm") !important;
+
+				> span {
+					display: flex;
+					padding-inline-start: p("sm") !important;
+					width: auto !important;
+
+					&:first-child {
+						flex: 1 1 100%;
+						padding-inline-start: 0 !important;
+					}
+				}
+			}
+		}
+	}
+
+	#cd_panel {
+		> table {
+			@include layout {
+				font-family: inherit !important;
+				padding: 0 !important;
+
+				tr td {
+					min-width: to-rem(78px);
+					width: auto !important;
+				}
+			}
+		}
+	}
+
+	#fu_rolls_tab {
+		tr th,
+		tr td {
+			border: b("border") !important;
+		}
+
+		table table th,
+		table table td {
+			border: none !important
+		}
+
+		button.fas {
+			@include layout {
+				// @extend %font-awesome;
+			}
+		}
+	}
+
+	#PlayerAspectSetup {
+		#aspect_editor {
+			display: grid;
+			grid-template-areas:
+				"table table"
+				"save add";
+
+			table {
+				background-color: transparent !important;
+				flex: 1 1 auto;
+				grid-area: table;
+			}
+
+			#save_aspects {
+				grid-area: save;
+			}
+
+			#new_aspect {
+				grid-area: add;
+			}
+		}
+
+		label {
+			@include layout {
+				font-family: inherit !important;
+			}
+		}
+
+		select,
+		textarea,
+		input:not([type="checkbox"]) {
+			background: transparent !important;
+			border: b("border-lighter") !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+			}
+		}
+
+		button.fas,
+		div.fas {
+			background-color: color("background-button") !important;
+			color: color("text-lightest") !important;
+
+			@include layout {
+				font-family: "Font Awesome 5 Free" !important;
+				height: space("button") !important;
+				width: space("button") !important;
+			}
+
+			&:hover {
+				background-color: color("primary") !important;
+			}
+		}
+	}
+
+	#PlayerSkillSetup {
+		.row {
+			.column {
+				@include layout {
+					padding: 0 !important;
+				}
+			}
+
+			button {
+				background-color: color("background-button") !important;
+				overflow: initial !important;
+
+				&:hover {
+					background-color: color("primary") !important;
+				}
+			}
+		}
+	}
+
+	#GMSkillSetup {
+		table {
+			td {
+				@include layout {
+					padding: p("xs");
+				}
+
+				hr {
+					@include layout {
+						display: none;
+					}
+				}
+
+				h3 {
+					border-block-end: b("border");
+
+					&:empty {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	#PlayerTrackSetup {
+		select {
+			background: transparent !important;
+			border: b("border-lighter") !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+			}
+		}
+
+		#buttons {
+			display: flex;
+		}
+
+		#edit_tracks_body {
+			table {
+				background-color: transparent !important;
+
+				td {
+					@include layout {
+						align-items: center;
+						font-family: inherit !important;
+						padding: p("xs");
+
+						&:last-child {
+							min-width: to-rem(128px);
+						}
+					}
+				}
+
+				button {
+					background-color: color("background-button") !important;
+					color: color("text-lightest") !important;
+
+					@include layout {
+						height: space("button-sm") !important;
+						width: space("button-sm") !important;
+					}
+
+					&:hover {
+						background-color: color("primary") !important;
+					}
+				}
+			}
+		}
+	}
+
+	#EditEntityTrack {
+		.window-content {
+			padding: p("sm");
+
+			#copy_entity,
+			#exportEntityTrack {
+				height: space("button") !important;
+				width: space("button") !important;
+			}
+
+			#save_entity_track,
+			#edit_entity_linked_skills {
+				height: space("button") !important;
+			}
+
+			select,
+			textarea,
+			input:not([type="checkbox"]) {
+				background: transparent !important;
+				border: b("border-lighter") !important;
+				color: color("text") !important;
+
+				@include layout {
+					font-family: inherit !important;
+					height: space("button") !important;
+				}
+			}
+		}
+	}
+
+	#PlayerStuntSetup {
+		form {
+			color: color("text");
+
+			#header > div {
+				border: none !important;
+
+				table {
+					background-color: transparent !important;
+
+					td {
+						@include layout {
+							font-family: inherit !important;
+						}
+					}
+
+					i {
+						@include layout {
+							font-family: inherit !important;
+						}
+					}
+				}
+			}
+		}
+
+		select,
+		textarea,
+		input:not([type="checkbox"]) {
+			background: transparent !important;
+			border: b("border-lighter") !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+				height: space("button") !important;
+			}
+		}
+
+		input[type="checkbox"] + b {
+			margin: 0 m("sm");
+			padding: 0 !important;
+		}
+	}
+
+	#StuntDB {
+		.window-content {
+			> div {
+				background-color: transparent !important;
+
+				@include layout {
+					font-family: inherit !important;
+					font-size: fs("md") !important;
+				}
+
+				&:first-child {
+					> div {
+						background-color: transparent !important;
+						color: color("text") !important;
+
+						@include layout {
+							align-items: center;
+							display: flex !important;
+						}
+
+						> div {
+							border-inline-end-color: color("border") !important;
+
+							@include layout {
+								align-items: center;
+								display: flex;
+								min-height: to-rem(36px);
+								padding: p("base") !important;
+							}
+						}
+					}
+				}
+
+				&:last-child {
+					@include layout {
+						max-height: 100% !important;
+						padding: 0 !important;
+					}
+				}
+
+				&:nth-child(2) {
+					border-block-start: b("border");
+
+					> div {
+						background-color: transparent !important;
+						color: color("text") !important;
+
+						> div {
+							@include layout {
+								align-items: center;
+								display: flex !important;
+							}
+
+							> div {
+								border-block-end-color: color("border") !important;
+								border-inline-end-color: color("border") !important;
+
+								@include layout {
+									align-items: center;
+									display: flex !important;
+									min-height: to-rem(36px);
+									padding: p("base") !important;
+								}
+							}
+						}
+					}
+				}
+
+				button.fas {
+					color: color("text");
+
+					@include layout {
+						// @extend %font-awesome;
+						align-items: center;
+						display: inline-flex;
+						height: space("button-sm") !important;
+						justify-content: center;
+						width: space("button-sm") !important;
+					}
+
+					&:hover {
+						background-color: color("primary") !important;
+						color: color("text-lightest");
+						filter: none !important;
+					}
 				}
 			}
 		}
@@ -16,6 +977,18 @@ body#{$emu}.system-fate-core-official {
 	.window-app[id*="actor-"],
 	.window-app[id*="item-"] {
 		@extend %clean-elements;
+
+		select,
+		textarea,
+		input:not([type="checkbox"]) {
+			background: transparent !important;
+			border: b("border-lighter") !important;
+			color: color("text") !important;
+
+			@include layout {
+				font-family: inherit !important;
+			}
+		}
 
 		.fu_button {
 			&:hover,
@@ -43,15 +1016,20 @@ body#{$emu}.system-fate-core-official {
 		}
 
 		.window-content {
-			@include layout {
-				padding: 0;
-			}
-
 			form {
-				background-color: transparent !important;
+				@include layout {
+					padding: 0 !important;
+				}
 
 				> table {
 					background-color: transparent !important;
+
+					td {
+						@include layout {
+							font-family: inherit !important;
+							font-size: fs("lg") !important;
+						}
+					}
 				}
 			}
 
@@ -86,7 +1064,7 @@ body#{$emu}.system-fate-core-official {
 			&__identity-name {
 				border-color: color("border");
 				color: color("text");
-				// font-family: inherit;
+				font-family: inherit;
 			}
 
 			&__meta-value {
@@ -115,11 +1093,19 @@ body#{$emu}.system-fate-core-official {
 			&__header {
 				background-color: color("background");
 				color: color("text-lightest");
+
+				&-button {
+					color: color("text-lightest");
+				}
+
+				select {
+					color: color("text-lightest") !important;
+				}
 			}
 
 			&__header-label,
 			&__header-select {
-				// font-family: inherit;
+				font-family: inherit;
 			}
 
 			&__header-button:hover {
@@ -141,7 +1127,7 @@ body#{$emu}.system-fate-core-official {
 		}
 
 		.mfate-aspects-list__label {
-			// font-family: inherit;
+			font-family: inherit;
 		}
 
 		.mfate-tracks__item + .mfate-tracks__item {
@@ -162,7 +1148,7 @@ body#{$emu}.system-fate-core-official {
 			&__row-header-cell,
 			&__row-body,
 			&__row-footer-cell {
-				// font-family: inherit;
+				font-family: inherit;
 			}
 		}
 
@@ -178,8 +1164,167 @@ body#{$emu}.system-fate-core-official {
 
 			&__row-header,
 			&__row-body-content {
-				// font-family: inherit;
+				font-family: inherit;
 			}
+		}
+	}
+
+	.cdbox,
+	.box {
+		@include layout {
+			margin: m("xs");
+
+			> input,
+			.checkmark,
+			.cdcheckmark {
+				height: space("button-sm") !important;
+				width: space("button-sm") !important;
+			}
+
+			> i {
+				color: color("text") !important;
+				text-shadow: 2px 2px 0px color("background-lightest") !important;
+			}
+
+			+ .box,
+			+ .cdbox {
+				margin-inline-start: m("sm");
+			}
+
+			+ .aspect_box {
+				margin: m("xs") !important;
+			}
+		}
+
+		.cdcheckmark,
+		.checkmark {
+			background-color: transparent;
+			border: b("border-lighter");
+			border-radius: $global-border-radius-controls;
+			color: color("text");
+
+			@include layout {
+				align-items: center;
+				display: inline-flex;
+				justify-content: center;
+
+				&::after {
+					height: auto;
+					left: auto;
+					position: relative;
+					top: auto;
+					transform: none;
+					width: auto;
+				}
+			}
+
+			&:hover {
+				background-color: color("primary");
+
+				&::after {
+					color: color("text-lightest");
+				}
+			}
+		}
+	}
+
+	.aspect_box,
+	.fu_aspect_box {
+		color: color("text") !important;
+
+		@include layout {
+			height: space("button") !important;
+			margin: 0 !important;
+			padding: 0 p("sm") !important;
+		}
+	}
+
+	#edit_aspect_description_rich,
+	#edit_aspect_description,
+	#scene_notes_rich,
+	#scene_notes,
+	#edit_track_when_marked_rich,
+	#edit_track_when_marked,
+	#edit_track_description_rich,
+	#edit_track_description,
+	#edit_track_when_recovers_rich,
+	#edit_track_when_recovers,
+	#game_date_time_rich,
+	#game_date_time,
+	#game_notes_rich,
+	#game_notes,
+	#cd_description,
+	#game__FUAspectNotes,
+	[id*="_FUTrackNotes"],
+	[id*="_permValue"],
+	[id*="_costsValue"],
+	[id*="_descValue"],
+	[id*="_overcomeValue"],
+	[id*="_createValue"],
+	[id*="_attackValue"],
+	[id*="_defendValue"],
+	[id*="aspect_description"],
+	.aspect_notes,
+	#edit_entity_track_description_rich,
+	#edit_entity_track_description,
+	#edit_entity_track_when_marked_rich,
+	#edit_entity_track_when_marked,
+	#edit_entity_track_when_recovers_rich,
+	#edit_entity_track_when_recovers,
+	#edit_stunt_desc_rich,
+	#edit_stunt_desc,
+	.mfate-aspects-notes__input {
+		@extend %input-textarea;
+		background: transparent !important;
+		border: b("border-lighter") !important;
+		color: color("text") !important;
+
+		@include layout {
+			cursor: text;
+			font-family: inherit !important;
+			min-height: to-rem(64px) !important;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	[id*="_permValue"],
+	[id*="_costsValue"],
+	[id*="_descValue"],
+	[id*="_overcomeValue"],
+	[id*="_createValue"],
+	[id*="_attackValue"],
+	[id*="_defendValue"],
+	[id*="aspect_description"],
+	.aspect_notes,
+	.mfate-aspects-notes__input {
+		@include layout {
+			min-height: to-rem(32px) !important;
+		}
+	}
+
+	button.fas,
+	div.fas {
+		@include layout {
+			font-family: "Font Awesome 5 Free" !important;
+		}
+	}
+
+	table {
+		@include layout {
+			margin: 0;
+		}
+	}
+
+	input[type="text"],
+	input[type="number"],
+	input[type="password"],
+	input[type="date"],
+	input[type="time"] {
+		@include layout {
+			height: space("button");
 		}
 	}
 }
