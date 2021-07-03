@@ -7,7 +7,7 @@
 
 **Systems:** Any*
 
-**Languages:** English, Spanish
+**Languages:** English, Español, 正體中文
 
 A clean and theme-able visual update for Foundry VTT.
 
