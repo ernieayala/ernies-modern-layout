@@ -1,0 +1,250 @@
+%clean-elements {
+	button {
+		background-color: color("background-button", $global-background-opacity-button-primary);
+		background-image: $global-image-background-controls;
+		border: none;
+		border-radius: $global-border-radius-controls;
+		box-shadow: none;
+		color: color("text-lightest");
+		text-shadow: none;
+		transition: t(background box-shadow color, "link");
+
+		&:hover {
+			@extend %global-hover;
+			background-color: color("primary");
+			background-image: none;
+			color: color("text-lightest");
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		&.active {
+			@extend %global-active;
+		}
+	}
+
+	input[type="text"],
+	input[type="number"],
+	input[type="date"],
+	input[type="time"],
+	input[type="password"],
+	input[type="datetime-local"] {
+		background: transparent;
+		// border: b("border-lighter");
+		border-radius: $global-border-radius-forms;
+		box-shadow: none;
+		color: color("text");
+		transition: t(box-shadow, "link");
+
+		&::placeholder {
+			color: color("text", 0.5);
+		}
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+
+	input[type="checkbox"] {
+		background: transparent;
+		border: b("border-lighter");
+		border-radius: $global-border-radius-forms;
+		box-shadow: none;
+		color: color("text");
+		transition: t(box-shadow, "link");
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		&:checked {
+			background-color: color("primary");
+			color: color("text-lightest");
+		}
+	}
+
+	input[type="color"],
+	input[type="color"][data-edit] {
+		background: transparent;
+		// border: b("border-lighter");
+		border-radius: $global-border-radius-forms;
+		transition: t(box-shadow, "link");
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+
+	select {
+		background: transparent;
+		// border: b("border-lighter");
+		border-radius: $global-border-radius-forms;
+		box-shadow: none;
+		color: color("text");
+		transition: t(box-shadow, "link");
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+
+		optgroup,
+		option {
+			background-color: color("background-lightest");
+			color: color("text");
+		}
+	}
+
+	textarea {
+		background: transparent;
+		// border: b("border-lighter");
+		border-radius: $global-border-radius-forms;
+		color: color("text");
+		transition: t(box-shadow, "link");
+
+		&::placeholder {
+			color: color("text", 0.5);
+		}
+
+		&:hover {
+			@extend %global-hover-alt;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&:disabled {
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+
+	fieldset {
+		border: none;
+	}
+
+	table {
+		background-color: color("black", 0.05);
+		border: none;
+
+		thead {
+			background-color: color("black", 0.2);
+			border-block-end: b("border");
+			color: color("text-lightest");
+			text-shadow: none;
+		}
+
+		tr:nth-child(even) {
+			background-color: color("white", 0.1);
+		}
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		font-weight: normal;
+	}
+
+	h1 {
+		border-block-end: 2px solid color("border");
+	}
+
+	h2 {
+		border-block-end: b("border");
+	}
+
+	a {
+		text-shadow: none;
+
+		&:hover {
+			color: color("primary");
+		}
+	}
+
+	a[href] {
+		color: color("primary");
+		text-decoration: none;
+		text-shadow: none;
+
+		&:hover {
+			text-decoration: underline;
+			text-shadow: none;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+	}
+
+	a.entity-link,
+	a.inline-roll {
+		background-color: color("background-lightest");
+		box-shadow: 0 0 0 1px inset color("border");
+		border: none;
+		border-radius: $global-border-radius-controls;
+
+		> i {
+			color: inherit;
+		}
+	}
+
+	hr {
+		border: none;
+		border-block-start: b("border");
+		border-block-end: none;
+	}
+
+	blockquote {
+		border-inline-start: 3px solid color("border");
+	}
+
+	section.secret {
+		background-color: color("background-light", 0.2);
+		border-block-start: b("border");
+		border-block-end: b("border");
+	}
+}

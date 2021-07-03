@@ -53,6 +53,9 @@
 	)
 );
 
+// Class Name
+$emu: '.-emu';
+
 // Shadows
 $global-box-shadow: 0 2px 4px color("black");
 $global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");
@@ -165,15 +168,9 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 	}
 }
 
-// Animations
-@keyframes emu-notification-flash {
-	0% { opacity: 0; }
-	50% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
 // Shared
 @import "./shared/buttons";
+@import "./shared/clean-elements";
 @import "./shared/form-elements";
 @import "./shared/panel";
 @import "./shared/states";

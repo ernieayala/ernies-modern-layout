@@ -1,6 +1,8 @@
 import * as THEME from './emu-theme.js';
 import * as FONTS from './emu-fonts.js';
+import * as SYSTEMS from './emu-systems.js';
 
+const myRoot = document.querySelector(':root');
 const myHtml = document.getElementsByTagName('html');
 const myHead = document.getElementsByTagName('head')[0];
 const myBody = document.getElementsByTagName('body');
@@ -83,58 +85,58 @@ function updateSettings(settings) {
 	} = settings;
 
 	// Theme
-	colorPrimary ? document.documentElement.style.setProperty('--color-primary', convertHexToRgb(colorPrimary)) : null;
-	colorBackground ? document.documentElement.style.setProperty('--color-background', convertHexToRgb(colorBackground)) : null;
-	colorBackgroundLightest ? document.documentElement.style.setProperty('--color-background-lightest', convertHexToRgb(colorBackgroundLightest)) : null;
-	colorBackgroundLight ? document.documentElement.style.setProperty('--color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
-	colorBackgroundDarkest ? document.documentElement.style.setProperty('--color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
-	colorBackgroundButton ? document.documentElement.style.setProperty('--color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
-	colorBackgroundChatMessage ? document.documentElement.style.setProperty('--color-background-chat-message', convertHexToRgb(colorBackgroundChatMessage)) : null;
-	colorBackgroundChatMessageWhisper ? document.documentElement.style.setProperty('--color-background-chat-message-whisper', convertHexToRgb(colorBackgroundChatMessageWhisper)) : null;
-	colorBackgroundChatMessageBlind ? document.documentElement.style.setProperty('--color-background-chat-message-blind', convertHexToRgb(colorBackgroundChatMessageBlind)) : null;
-	colorBorder ? document.documentElement.style.setProperty('--color-border', convertHexToRgb(colorBorder)) : null;
-	colorBorderLighter ? document.documentElement.style.setProperty('--color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
-	colorFolderHeader ? document.documentElement.style.setProperty('--color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
-	colorFolderDirectory ? document.documentElement.style.setProperty('--color-folder-directory', convertHexToRgb(colorFolderDirectory)) : null;
-	colorFolderSubdirectory ? document.documentElement.style.setProperty('--color-folder-subdirectory', convertHexToRgb(colorFolderSubdirectory)) : null;
-	colorText ? document.documentElement.style.setProperty('--color-text', convertHexToRgb(colorText)) : null;
-	colorTextLightest ? document.documentElement.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
-	colorTextDarker ? document.documentElement.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
+	colorPrimary ? myRoot.style.setProperty('--color-primary', convertHexToRgb(colorPrimary)) : null;
+	colorBackground ? myRoot.style.setProperty('--color-background', convertHexToRgb(colorBackground)) : null;
+	colorBackgroundLightest ? myRoot.style.setProperty('--color-background-lightest', convertHexToRgb(colorBackgroundLightest)) : null;
+	colorBackgroundLight ? myRoot.style.setProperty('--color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
+	colorBackgroundDarkest ? myRoot.style.setProperty('--color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
+	colorBackgroundButton ? myRoot.style.setProperty('--color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
+	colorBackgroundChatMessage ? myRoot.style.setProperty('--color-background-chat-message', convertHexToRgb(colorBackgroundChatMessage)) : null;
+	colorBackgroundChatMessageWhisper ? myRoot.style.setProperty('--color-background-chat-message-whisper', convertHexToRgb(colorBackgroundChatMessageWhisper)) : null;
+	colorBackgroundChatMessageBlind ? myRoot.style.setProperty('--color-background-chat-message-blind', convertHexToRgb(colorBackgroundChatMessageBlind)) : null;
+	colorBorder ? myRoot.style.setProperty('--color-border', convertHexToRgb(colorBorder)) : null;
+	colorBorderLighter ? myRoot.style.setProperty('--color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
+	colorFolderHeader ? myRoot.style.setProperty('--color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
+	colorFolderDirectory ? myRoot.style.setProperty('--color-folder-directory', convertHexToRgb(colorFolderDirectory)) : null;
+	colorFolderSubdirectory ? myRoot.style.setProperty('--color-folder-subdirectory', convertHexToRgb(colorFolderSubdirectory)) : null;
+	colorText ? myRoot.style.setProperty('--color-text', convertHexToRgb(colorText)) : null;
+	colorTextLightest ? myRoot.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
+	colorTextDarker ? myRoot.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
 	// Design
-	borderRadiusDefault ? document.documentElement.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : document.documentElement.style.setProperty('--emu-border-radius-default', `0px`);
-	borderRadiusControls ? document.documentElement.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : document.documentElement.style.setProperty('--emu-border-radius-controls', `0px`);
-	borderRadiusForms ? document.documentElement.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : document.documentElement.style.setProperty('--emu-border-radius-forms', `0px`);
-	borderRadiusImages ? document.documentElement.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : document.documentElement.style.setProperty('--emu-border-radius-images', `0px`);
+	borderRadiusDefault ? myRoot.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : myRoot.style.setProperty('--emu-border-radius-default', `0px`);
+	borderRadiusControls ? myRoot.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : myRoot.style.setProperty('--emu-border-radius-controls', `0px`);
+	borderRadiusForms ? myRoot.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : myRoot.style.setProperty('--emu-border-radius-forms', `0px`);
+	borderRadiusImages ? myRoot.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : myRoot.style.setProperty('--emu-border-radius-images', `0px`);
 
 	// Font Size
-	fontSizeMD ? document.documentElement.style.setProperty('--emu-font-size-md', `${toRem(fontSizeMD)}rem`) : document.documentElement.style.setProperty('--emu-font-size-md', `${toRem(14)}rem`);
-	fontSizeLG ? document.documentElement.style.setProperty('--emu-font-size-lg', `${toRem(fontSizeLG)}rem`) : document.documentElement.style.setProperty('--emu-font-size-lg', `${toRem(16)}rem`);
-	fontSizeXL ? document.documentElement.style.setProperty('--emu-font-size-xl', `${toRem(fontSizeXL)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xl', `${toRem(20)}rem`);
-	fontSizeXXL ? document.documentElement.style.setProperty('--emu-font-size-xxl', `${toRem(fontSizeXXL)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xxl', `${toRem(24)}rem`);
-	fontSizeSM ? document.documentElement.style.setProperty('--emu-font-size-sm', `${toRem(fontSizeSM)}rem`) : document.documentElement.style.setProperty('--emu-font-size-sm', `${toRem(12)}rem`);
-	fontSizeXS ? document.documentElement.style.setProperty('--emu-font-size-xs', `${toRem(fontSizeXS)}rem`) : document.documentElement.style.setProperty('--emu-font-size-xs', `${toRem(10)}rem`);
-	fontSizeChatRoll ? document.documentElement.style.setProperty('--emu-font-size-chat-roll', `${toRem(fontSizeChatRoll)}rem`) : document.documentElement.style.setProperty('--emu-font-size-chat-roll', `${toRem(18)}rem`);
+	fontSizeMD ? myRoot.style.setProperty('--emu-font-size-md', `${toRem(fontSizeMD)}rem`) : myRoot.style.setProperty('--emu-font-size-md', `${toRem(14)}rem`);
+	fontSizeLG ? myRoot.style.setProperty('--emu-font-size-lg', `${toRem(fontSizeLG)}rem`) : myRoot.style.setProperty('--emu-font-size-lg', `${toRem(16)}rem`);
+	fontSizeXL ? myRoot.style.setProperty('--emu-font-size-xl', `${toRem(fontSizeXL)}rem`) : myRoot.style.setProperty('--emu-font-size-xl', `${toRem(20)}rem`);
+	fontSizeXXL ? myRoot.style.setProperty('--emu-font-size-xxl', `${toRem(fontSizeXXL)}rem`) : myRoot.style.setProperty('--emu-font-size-xxl', `${toRem(24)}rem`);
+	fontSizeSM ? myRoot.style.setProperty('--emu-font-size-sm', `${toRem(fontSizeSM)}rem`) : myRoot.style.setProperty('--emu-font-size-sm', `${toRem(12)}rem`);
+	fontSizeXS ? myRoot.style.setProperty('--emu-font-size-xs', `${toRem(fontSizeXS)}rem`) : myRoot.style.setProperty('--emu-font-size-xs', `${toRem(10)}rem`);
+	fontSizeChatRoll ? myRoot.style.setProperty('--emu-font-size-chat-roll', `${toRem(fontSizeChatRoll)}rem`) : myRoot.style.setProperty('--emu-font-size-chat-roll', `${toRem(18)}rem`);
 
 	// Backgrounds
 	if(imageBackground != 'none' || imageBackground == null) {
-		imageBackground === '' ? document.documentElement.style.setProperty('--emu-image-background', `none`) : document.documentElement.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
+		imageBackground === '' ? myRoot.style.setProperty('--emu-image-background', `none`) : myRoot.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
 	}
 
 	if(imageBackgroundLightest != 'none' || imageBackgroundLightest == null) {
-		imageBackgroundLightest === '' ? document.documentElement.style.setProperty('--emu-image-background-lightest', `none`) : document.documentElement.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
+		imageBackgroundLightest === '' ? myRoot.style.setProperty('--emu-image-background-lightest', `none`) : myRoot.style.setProperty('--emu-image-background-lightest', `url('/${imageBackgroundLightest}')`);
 	}
 
 	if(imageBackgroundLight != 'none' || imageBackgroundLight == null) {
-		imageBackgroundLight === '' ? document.documentElement.style.setProperty('--emu-image-background-light', `none`) : document.documentElement.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
+		imageBackgroundLight === '' ? myRoot.style.setProperty('--emu-image-background-light', `none`) : myRoot.style.setProperty('--emu-image-background-light', `url('/${imageBackgroundLight}')`);
 	}
 
 	if(imageBackgroundDarkest != 'none' || imageBackgroundDarkest == null) {
-		imageBackgroundDarkest === '' ? document.documentElement.style.setProperty('--emu-image-background-darkest', `none`) : document.documentElement.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
+		imageBackgroundDarkest === '' ? myRoot.style.setProperty('--emu-image-background-darkest', `none`) : myRoot.style.setProperty('--emu-image-background-darkest', `url('/${imageBackgroundDarkest}')`);
 	}
 
 	if(imageBackgroundControls != 'none' || imageBackgroundControls == null) {
-		imageBackgroundControls === '' ? document.documentElement.style.setProperty('--emu-image-background-controls', `none`) : document.documentElement.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
+		imageBackgroundControls === '' ? myRoot.style.setProperty('--emu-image-background-controls', `none`) : myRoot.style.setProperty('--emu-image-background-controls', `url('/${imageBackgroundControls}')`);
 	}
 
 	if(imageLogo != 'none' || imageLogo == null) {
@@ -142,15 +144,15 @@ function updateSettings(settings) {
 	}
 
 	// Background Color Opacity
-	backgroundOpacityButtonPrimary ? document.documentElement.style.setProperty('--emu-background-opacity-button-primary', `${backgroundOpacityButtonPrimary}`) : document.documentElement.style.setProperty('--emu-background-opacity-button-primary', `1`);
-	backgroundOpacityHotbar ? document.documentElement.style.setProperty('--emu-background-opacity-hotbar', `${backgroundOpacityHotbar}`) : document.documentElement.style.setProperty('--emu-background-opacity-hotbar', `0.8`);
-	backgroundOpacityHud ? document.documentElement.style.setProperty('--emu-background-opacity-hud', `${backgroundOpacityHud}`) : document.documentElement.style.setProperty('--emu-background-opacity-hud', `0.8`);
-	backgroundOpacityPlayers ? document.documentElement.style.setProperty('--emu-background-opacity-players', `${backgroundOpacityPlayers}`) : document.documentElement.style.setProperty('--emu-background-opacity-players', `0.8`);
-	backgroundOpacitySceneControls ? document.documentElement.style.setProperty('--emu-background-opacity-scene-control', `${backgroundOpacitySceneControls}`) : document.documentElement.style.setProperty('--emu-background-opacity-scene-control', `0.8`);
-	backgroundOpacitySceneNavigation ? document.documentElement.style.setProperty('--emu-background-opacity-scene-navigation', `${backgroundOpacitySceneNavigation}`) : document.documentElement.style.setProperty('--emu-background-opacity-scene-navigation', `0.8`);
-	backgroundOpacitySidebar ? document.documentElement.style.setProperty('--emu-background-opacity-sidebar', `${backgroundOpacitySidebar}`) : document.documentElement.style.setProperty('--emu-background-opacity-sidebar', `0.8`);
-	backgroundOpacityWindow ? document.documentElement.style.setProperty('--emu-background-opacity-window', `${backgroundOpacityWindow}`) : document.documentElement.style.setProperty('--emu-background-opacity-window', `1`);
-	backgroundOpacityWindowContent ? document.documentElement.style.setProperty('--emu-background-opacity-window-content', `${backgroundOpacityWindowContent}`) : document.documentElement.style.setProperty('--emu-background-opacity-window-content', `1`);
+	backgroundOpacityButtonPrimary ? myRoot.style.setProperty('--emu-background-opacity-button-primary', `${backgroundOpacityButtonPrimary}`) : myRoot.style.setProperty('--emu-background-opacity-button-primary', `1`);
+	backgroundOpacityHotbar ? myRoot.style.setProperty('--emu-background-opacity-hotbar', `${backgroundOpacityHotbar}`) : myRoot.style.setProperty('--emu-background-opacity-hotbar', `0.8`);
+	backgroundOpacityHud ? myRoot.style.setProperty('--emu-background-opacity-hud', `${backgroundOpacityHud}`) : myRoot.style.setProperty('--emu-background-opacity-hud', `0.8`);
+	backgroundOpacityPlayers ? myRoot.style.setProperty('--emu-background-opacity-players', `${backgroundOpacityPlayers}`) : myRoot.style.setProperty('--emu-background-opacity-players', `0.8`);
+	backgroundOpacitySceneControls ? myRoot.style.setProperty('--emu-background-opacity-scene-control', `${backgroundOpacitySceneControls}`) : myRoot.style.setProperty('--emu-background-opacity-scene-control', `0.8`);
+	backgroundOpacitySceneNavigation ? myRoot.style.setProperty('--emu-background-opacity-scene-navigation', `${backgroundOpacitySceneNavigation}`) : myRoot.style.setProperty('--emu-background-opacity-scene-navigation', `0.8`);
+	backgroundOpacitySidebar ? myRoot.style.setProperty('--emu-background-opacity-sidebar', `${backgroundOpacitySidebar}`) : myRoot.style.setProperty('--emu-background-opacity-sidebar', `0.8`);
+	backgroundOpacityWindow ? myRoot.style.setProperty('--emu-background-opacity-window', `${backgroundOpacityWindow}`) : myRoot.style.setProperty('--emu-background-opacity-window', `1`);
+	backgroundOpacityWindowContent ? myRoot.style.setProperty('--emu-background-opacity-window-content', `${backgroundOpacityWindowContent}`) : myRoot.style.setProperty('--emu-background-opacity-window-content', `1`);
 
 	// Options
 	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
@@ -442,6 +444,16 @@ Hooks.once('ready', () => {
 		lockElement.onclick = function(){
 			sideBarElement.classList.toggle('is-locked');
 		};
+	}
+
+	// Apply System Sheets
+	const currentSystem = game.system.id;
+	if(SYSTEMS.SYSTEM.includes(currentSystem)) {
+		const systemCSS = document.createElement('link');
+		systemCSS.rel = 'stylesheet';
+		systemCSS.type = 'text/css';
+		systemCSS.href = `modules/${moduleName}/css/system-compatibility/${currentSystem}.css`;
+		document.head.appendChild(systemCSS);
 	}
 
 	// Say Hello

@@ -7,7 +7,7 @@
 
 **Systems:** Any*
 
-**Languages:** English, Spanish
+**Languages:** English, Español, 正體中文
 
 A clean and theme-able visual update for Foundry VTT.
 
@@ -40,6 +40,9 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 ### Systems Tested Continually
 - DND 5e
+
+### Systems Partially Tested as of June 27th, 2021
+- Fate
 
 ### Systems Partially Tested as of June 21th, 2021
 - Pathfinder 2e

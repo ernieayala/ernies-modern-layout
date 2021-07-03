@@ -1,7 +1,7 @@
 @import "base";
 @import "init";
 
-body.-emu {
+body#{$emu} {
 	// Base
 	.dialog,
 	#sidebar,
@@ -68,16 +68,7 @@ body.-emu {
 	@import "./sheets/user-config";
 	@import "./sheets/wall-config";
 
-	// System Compatibility
-	@import "./system-compatibility/callofcthulhu7";
-	@import "./system-compatibility/dasschwarzeauge5";
-	@import "./system-compatibility/dnd5e";
-	@import "./system-compatibility/fate";
-	@import "./system-compatibility/pathfinder1";
-	@import "./system-compatibility/pathfinder2";
-	@import "./system-compatibility/starfinder";
-
-	// // Module Compatibility
+	// Module Compatibility
 	@import "./module-compatibility/better-npc-sheet";
 	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/calendar-weather";
@@ -124,6 +115,7 @@ body.-emu {
 	@import "./module-compatibility/party-resources";
 	@import "./module-compatibility/pdf-foundry";
 	@import "./module-compatibility/permission-viewer";
+	@import "./module-compatibility/plutonium";
 	@import "./module-compatibility/polyglot";
 	@import "./module-compatibility/search-anywhere";
 	@import "./module-compatibility/simple-calendar";

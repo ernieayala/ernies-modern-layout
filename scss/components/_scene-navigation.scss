@@ -117,10 +117,20 @@
 				}
 			}
 
+			&:not(.gm) {
+				background-color: color("background", $global-background-opacity-scene-navigation);
+				background-image: $global-image-background;
+			}
+
 			&.active,
 			&.view {
 				@extend %global-active;
 				background-image: none;
+
+				&:not(.gm) {
+					@extend %global-active;
+					background-image: none;
+				}
 			}
 
 			&.view {
