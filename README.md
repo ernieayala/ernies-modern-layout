@@ -104,6 +104,7 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Dynamic Active Effects
 - Dynamic Active Effects SRD
 - Easy Target
+- Forien's Quest Log (FNS)
 - Forien's Unidentified Items
 - FPS Meter
 - FXMaster
@@ -162,7 +163,7 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - Wordl Anvil Integration
 
 ### Mods WIP
-- Forien's Quest Log
+- N/A
 
 ### Won't Support Currently
 - Tokenizer
