@@ -1,14 +1,19 @@
 @import "../base";
 
-body#{$emu} {
-	@include system("pf2e") {
-		.window-app.actor.pc {
-			.window-content {
-				padding: 0;
+body#{$emu}.system-pf2e {
+	#pf2e-player-config-panel {
+		@include layout {
+			form {
+				> div:not(.form-group) {
+					margin: 0 !important;
+					width: 100% !important;
+				}
 			}
 		}
+	}
 
-		#world-clock.window-app {
+	#world-clock {
+		@include layout {
 			h1 {
 				font-size: fs("lg");
 				margin-block-end: m("base");
@@ -22,95 +27,301 @@ body#{$emu} {
 				margin-block-start: m("xs");
 			}
 		}
+	}
 
-		#world-clock-settings.window-app {
-			form > .form-group:last-child {
+	#world-clock-settings,
+	#automation-settings {
+		form > .form-group:last-child {
+			background-color: transparent;
+			padding: 0;
+		}
+	}
+
+	#homebrew-settings {
+		@extend %window-hack-alt;
+
+		.form-group {
+			&.setting {
+				@include layout {
+					display: flex;
+
+					> label {
+						flex: 0 0 100%;
+						margin-block-end: m("base");
+					}
+				}
+			}
+
+			&.buttons {
+				background-color: color("background-lightest");
+				border-block-start: b("border");
+
+				@include layout {
+					bottom: 0;
+					margin-block-start: m("sm");
+					padding: p("sm") 0;
+					position: sticky;
+				}
+			}
+
+			.tagify {
 				background-color: transparent;
-				padding: 0;
+				border-color: color("border-lighter");
+				border-radius: $global-border-radius-forms;
+				transition: t(box-shadow, "link");
+
+				&--focus {
+					@extend %global-focus;
+				}
+			}
+		}
+	}
+
+	#variant-rules-settings {
+		@extend %window-hack-alt;
+
+		.form-group + h2 {
+			@include layout {
+				margin-block-start: m("base");
 			}
 		}
 
-		#sidebar,
-		.sidebar-popout {
-			.sidebar-tab {
-				.directory-footer .bestiary-browser-btn {
-					width: 100%;
-				}
+		.sheet-footer {
+			background-color: color("background-lightest");
+			border-block-start: b("border");
+
+			@include layout {
+				bottom: 0;
+				margin-block-start: m("sm");
+				padding: p("sm") 0;
+				position: sticky;
+			}
+		}
+	}
+
+	#trait-selector {
+		min-width: to-rem(280px);
+
+		.trait-header {
+			@include layout {
+				flex: 0 0 auto;
+				line-height: initial;
+				margin-block-end: m("base");
 			}
 
-			#chat #chat-log {
-				.message-sender,
-				.message-metadata {
-					background: transparent;
-					text-shadow: none;
+			.header-search {
+				@include layout {
+					align-items: center;
+					display: flex;
 				}
 
-				.card-header {
-					border-block-start: b("border-lighter");
-					border-block-end: b("border-lighter");
-					padding: p("xs") 0;
+				input {
+					background-color: color("background-lightest");
 
-					h3 {
-						margin-block-end: 0;
-					}
-				}
-
-				.card-content,
-				.card-buttons {
-					margin: m("base") 0;
-				}
-
-				.card-buttons button {
-					margin: 0;
-					margin-block-start: m("xs");
-					width: 100%;
-				}
-
-				.card-footer {
-					border-block-start: b("border-lighter");
-					padding: 0;
-				}
-
-				.message .flavor-text {
-					strong {
-						margin-inline-end: m("xs");
-					}
-				}
-
-				.dice-total {
-					.dmgBtn-container {
-						bottom: auto;
-						padding: 0 p("xs");
-
-						button {
-							font-size: fs("sm") !important;
-							height: space("button-sm") !important;
-							width: space("button-sm") !important;
-
-							> i {
-								margin: 0;
-							}
-						}
-					}
-				}
-
-				.chat-damage-buttons {
-					button > i {
+					@include layout {
 						margin: 0;
+						margin-inline-start: m("sm");
+						width: 100%;
 					}
 				}
 			}
 		}
 
-		.tab[data-tab].active {
-			display: block;
+		.trait-list {
+			@include layout {
+				margin-block-end: 0;
+
+				.form-group {
+					justify-content: flex-start;
+					padding-inline-start: 0;
+
+					.trait-label {
+						margin: 0 !important; // because inline
+					}
+
+					input[type="checkbox"] {
+						margin-inline-end: m("sm");
+					}
+				}
+			}
 		}
 
-		#trait-selector .trait-footer {
-			border: none;
-			flex: 0 0 auto;
-			line-height: 1;
+		.trait-footer {
+			@include layout {
+				flex: 0 0 auto;
+				line-height: initial;
+				margin: 0;
+
+				&:last-child {
+					margin-block-start: m("sm");
+				}
+			}
+
+			&.form-group-stacked {
+				border-block-start: b("border-lighter");
+
+				@include layout {
+					padding-block-start: p("sm");
+				}
+			}
+		}
+	}
+
+	#scroll-wand {
+		.form-group > p {
 			margin: 0;
 		}
 	}
+
+	.effect-panel {
+		@include layout {
+			right: calc(#{space("sidebar")} + #{space("base")});
+			top: calc(#{space("md")} / 2);
+		}
+
+		div[data-item-id] {
+			border: b("border-lighter");
+			box-shadow: none;
+
+			@include layout {
+				@include size(space("button"));
+				margin: 0;
+				margin-block-end: m("xs");
+			}
+		}
+	}
+
+	#compendium-browser {
+		.content-box {
+			nav {
+				@extend %modal-tabs;
+				background: transparent;
+				border: none;
+				border-block-end: b("primary", 2px);
+				border-image: none;
+				box-shadow: none;
+
+				a::after {
+					@include layout {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+
+
+	// @include system("pf2e") {
+	// 	.window-app.actor.pc {
+	// 		.window-content {
+	// 			padding: 0;
+	// 		}
+	// 	}
+
+	// 	#world-clock.window-app {
+	// 		h1 {
+	// 			font-size: fs("lg");
+	// 			margin-block-end: m("base");
+	// 		}
+
+	// 		.input-grid > * {
+	// 			font-size: fs("sm");
+	// 			height: space("button-sm");
+	// 			line-height: 1;
+	// 			margin: 0;
+	// 			margin-block-start: m("xs");
+	// 		}
+	// 	}
+
+	// 	#world-clock-settings.window-app {
+	// 		form > .form-group:last-child {
+	// 			background-color: transparent;
+	// 			padding: 0;
+	// 		}
+	// 	}
+
+	// 	#sidebar,
+	// 	.sidebar-popout {
+	// 		.sidebar-tab {
+	// 			.directory-footer .bestiary-browser-btn {
+	// 				width: 100%;
+	// 			}
+	// 		}
+
+	// 		#chat #chat-log {
+	// 			.message-sender,
+	// 			.message-metadata {
+	// 				background: transparent;
+	// 				text-shadow: none;
+	// 			}
+
+	// 			.card-header {
+	// 				border-block-start: b("border-lighter");
+	// 				border-block-end: b("border-lighter");
+	// 				padding: p("xs") 0;
+
+	// 				h3 {
+	// 					margin-block-end: 0;
+	// 				}
+	// 			}
+
+	// 			.card-content,
+	// 			.card-buttons {
+	// 				margin: m("base") 0;
+	// 			}
+
+	// 			.card-buttons button {
+	// 				margin: 0;
+	// 				margin-block-start: m("xs");
+	// 				width: 100%;
+	// 			}
+
+	// 			.card-footer {
+	// 				border-block-start: b("border-lighter");
+	// 				padding: 0;
+	// 			}
+
+	// 			.message .flavor-text {
+	// 				strong {
+	// 					margin-inline-end: m("xs");
+	// 				}
+	// 			}
+
+	// 			.dice-total {
+	// 				.dmgBtn-container {
+	// 					bottom: auto;
+	// 					padding: 0 p("xs");
+
+	// 					button {
+	// 						font-size: fs("sm") !important;
+	// 						height: space("button-sm") !important;
+	// 						width: space("button-sm") !important;
+
+	// 						> i {
+	// 							margin: 0;
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+
+	// 			.chat-damage-buttons {
+	// 				button > i {
+	// 					margin: 0;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+
+	// 	.tab[data-tab].active {
+	// 		display: block;
+	// 	}
+
+	// 	#trait-selector .trait-footer {
+	// 		border: none;
+	// 		flex: 0 0 auto;
+	// 		line-height: 1;
+	// 		margin: 0;
+	// 	}
+	// }
 }

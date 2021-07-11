@@ -1537,6 +1537,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header
   .-emu-layout body.-emu .dialog form h3.form-header, .-emu-layout
   body.-emu #sidebar form h3.form-header, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header {
+    font-family: inherit;
     font-size: var(--emu-font-size-lg);
     -webkit-margin-before: var(--emu-space-md);
             margin-block-start: var(--emu-space-md);
@@ -2625,10 +2626,12 @@ body.-emu .notification {
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
   color: rgba(var(--color-white), 1); }
   .-emu-layout body.-emu .notification {
+    line-height: initial;
     -webkit-margin-after: var(--emu-space-sm);
             margin-block-end: var(--emu-space-sm);
     padding: var(--emu-space-sm);
-    padding-inilne-end: var(--emu-space-xl); }
+    -webkit-padding-end: var(--emu-space-xl);
+            padding-inline-end: var(--emu-space-xl); }
   .-emu-layout body.-emu .notification::before {
     -webkit-margin-end: var(--emu-space-sm);
             margin-inline-end: var(--emu-space-sm); }

@@ -1,84 +1,193 @@
-.-emu-layout body.-emu.system-pf2e .window-app.actor.pc .window-content {
+body.-emu.system-pf2e #compendium-browser .content-box nav a {
+  background-image: var(--emu-image-background-controls, none);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text-lightest), 1);
+  text-shadow: none;
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a, body.-emu.system-pf2e #compendium-browser .content-box nav .-emu-layout a {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: var(--emu-font-size-lg);
+    font-family: inherit;
+    height: initial;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    padding: var(--emu-space-sm);
+    position: relative; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a > i, body.-emu.system-pf2e #compendium-browser .content-box nav .-emu-layout a > i {
+      margin-inline-end: var(--emu-space-sm); }
+  body.-emu.system-pf2e #compendium-browser .content-box nav a:hover {
+    background-color: rgba(var(--color-primary), 1);
+    background-image: none;
+    color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-pf2e #compendium-browser .content-box nav a:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav a {
+  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1)); }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav a:hover {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
+  text-shadow: none; }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav a:focus, body.-emu.system-pf2e #homebrew-settings .form-group .tagify--focus {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+  text-shadow: none;
+  outline: none; }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav a.active {
+  background-color: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-text-lightest), 1);
+  text-shadow: none; }
+  body.-emu.system-pf2e #compendium-browser .content-box nav a.active:hover {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1);
+    text-shadow: none; }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav {
+  border-block-start: none;
+  border-block-end: rgba(var(--color-primary), 1) 2px solid; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav, body.-emu.system-pf2e #compendium-browser .content-box .-emu-layout nav {
+    display: flex;
+    flex: 0 0 auto;
+    height: initial;
+    line-height: initial;
+    margin: 0;
+    position: relative; }
+  body.-emu.system-pf2e #compendium-browser .content-box nav a {
+    background-color: transparent;
+    background-image: none;
+    border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a, body.-emu.system-pf2e #compendium-browser .content-box .-emu-layout nav a {
+      flex: 1;
+      font-size: var(--emu-font-size-md);
+      text-shadow: none; }
+
+.-emu-layout body.-emu.system-pf2e #homebrew-settings .window-content, body.-emu.system-pf2e .-emu-layout #homebrew-settings .window-content, .-emu-layout body.-emu.system-pf2e #variant-rules-settings .window-content, body.-emu.system-pf2e .-emu-layout #variant-rules-settings .window-content {
+  overflow: hidden;
   padding: 0; }
 
-.-emu-layout body.-emu.system-pf2e #world-clock.window-app h1 {
+.-emu-layout body.-emu.system-pf2e #homebrew-settings form, body.-emu.system-pf2e .-emu-layout #homebrew-settings form, .-emu-layout body.-emu.system-pf2e #variant-rules-settings form, body.-emu.system-pf2e .-emu-layout #variant-rules-settings form {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: var(--emu-space-sm);
+  position: relative; }
+
+.-emu-layout body.-emu.system-pf2e #pf2e-player-config-panel form > div:not(.form-group) {
+  margin: 0 !important;
+  width: 100% !important; }
+
+.-emu-layout body.-emu.system-pf2e #world-clock h1 {
   font-size: var(--emu-font-size-lg);
   margin-block-end: var(--emu-space-base); }
 
-.-emu-layout body.-emu.system-pf2e #world-clock.window-app .input-grid > * {
+.-emu-layout body.-emu.system-pf2e #world-clock .input-grid > * {
   font-size: var(--emu-font-size-sm);
   height: var(--emu-space-button-sm);
   line-height: 1;
   margin: 0;
   margin-block-start: var(--emu-space-xs); }
 
-.-emu-layout body.-emu.system-pf2e #world-clock-settings.window-app form > .form-group:last-child {
+body.-emu.system-pf2e #world-clock-settings form > .form-group:last-child,
+body.-emu.system-pf2e #automation-settings form > .form-group:last-child {
   background-color: transparent;
   padding: 0; }
 
-.-emu-layout body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .bestiary-browser-btn,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout .sidebar-tab .directory-footer .bestiary-browser-btn {
-  width: 100%; }
+.-emu-layout body.-emu.system-pf2e #homebrew-settings .form-group.setting {
+  display: flex; }
+  .-emu-layout body.-emu.system-pf2e #homebrew-settings .form-group.setting > label {
+    flex: 0 0 100%;
+    margin-block-end: var(--emu-space-base); }
 
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .message-sender,
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .message-metadata,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message-sender,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message-metadata {
-  background: transparent;
-  text-shadow: none; }
+body.-emu.system-pf2e #homebrew-settings .form-group.buttons {
+  background-color: rgba(var(--color-background-lightest), 1);
+  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e #homebrew-settings .form-group.buttons {
+    bottom: 0;
+    margin-block-start: var(--emu-space-sm);
+    padding: var(--emu-space-sm) 0;
+    position: sticky; }
 
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-header,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-header {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
-  padding: var(--emu-space-xs) 0; }
-  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-header h3,
-  .-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-header h3 {
+body.-emu.system-pf2e #homebrew-settings .form-group .tagify {
+  background-color: transparent;
+  border-color: rgba(var(--color-border-lighter), 1);
+  border-radius: var(--emu-border-radius-forms, 0);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.-emu-layout body.-emu.system-pf2e #variant-rules-settings .form-group + h2 {
+  margin-block-start: var(--emu-space-base); }
+
+body.-emu.system-pf2e #variant-rules-settings .sheet-footer {
+  background-color: rgba(var(--color-background-lightest), 1);
+  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e #variant-rules-settings .sheet-footer {
+    bottom: 0;
+    margin-block-start: var(--emu-space-sm);
+    padding: var(--emu-space-sm) 0;
+    position: sticky; }
+
+body.-emu.system-pf2e #trait-selector {
+  min-width: 17.5rem; }
+  .-emu-layout body.-emu.system-pf2e #trait-selector .trait-header {
+    flex: 0 0 auto;
+    line-height: initial;
+    margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e #trait-selector .trait-header .header-search {
+    align-items: center;
+    display: flex; }
+  body.-emu.system-pf2e #trait-selector .trait-header .header-search input {
+    background-color: rgba(var(--color-background-lightest), 1); }
+    .-emu-layout body.-emu.system-pf2e #trait-selector .trait-header .header-search input {
+      margin: 0;
+      margin-inline-start: var(--emu-space-sm);
+      width: 100%; }
+  .-emu-layout body.-emu.system-pf2e #trait-selector .trait-list {
     margin-block-end: 0; }
+    .-emu-layout body.-emu.system-pf2e #trait-selector .trait-list .form-group {
+      justify-content: flex-start;
+      padding-inline-start: 0; }
+      .-emu-layout body.-emu.system-pf2e #trait-selector .trait-list .form-group .trait-label {
+        margin: 0 !important; }
+      .-emu-layout body.-emu.system-pf2e #trait-selector .trait-list .form-group input[type="checkbox"] {
+        margin-inline-end: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e #trait-selector .trait-footer {
+    flex: 0 0 auto;
+    line-height: initial;
+    margin: 0; }
+    .-emu-layout body.-emu.system-pf2e #trait-selector .trait-footer:last-child {
+      margin-block-start: var(--emu-space-sm); }
+  body.-emu.system-pf2e #trait-selector .trait-footer.form-group-stacked {
+    border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+    .-emu-layout body.-emu.system-pf2e #trait-selector .trait-footer.form-group-stacked {
+      padding-block-start: var(--emu-space-sm); }
 
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-content,
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-buttons,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-content,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-buttons {
-  margin: var(--emu-space-base) 0; }
-
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-buttons button,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-buttons button {
-  margin: 0;
-  margin-block-start: var(--emu-space-xs);
-  width: 100%; }
-
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-footer,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-footer {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
-  padding: 0; }
-
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .message .flavor-text strong,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message .flavor-text strong {
-  margin-inline-end: var(--emu-space-xs); }
-
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container {
-  bottom: auto;
-  padding: 0 var(--emu-space-xs); }
-  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container button,
-  .-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container button {
-    font-size: var(--emu-font-size-sm) !important;
-    height: var(--emu-space-button-sm) !important;
-    width: var(--emu-space-button-sm) !important; }
-    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container button > i,
-    .-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container button > i {
-      margin: 0; }
-
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button > i,
-.-emu-layout body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button > i {
+body.-emu.system-pf2e #scroll-wand .form-group > p {
   margin: 0; }
 
-.-emu-layout body.-emu.system-pf2e .tab[data-tab].active {
-  display: block; }
+.-emu-layout body.-emu.system-pf2e .effect-panel {
+  right: calc(var(--emu-space-sidebar) + var(--emu-space-base));
+  top: calc(var(--emu-space-md) / 2); }
 
-.-emu-layout body.-emu.system-pf2e #trait-selector .trait-footer {
+body.-emu.system-pf2e .effect-panel div[data-item-id] {
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  box-shadow: none; }
+  .-emu-layout body.-emu.system-pf2e .effect-panel div[data-item-id] {
+    width: var(--emu-space-button);
+    height: var(--emu-space-button);
+    margin: 0;
+    margin-block-end: var(--emu-space-xs); }
+
+body.-emu.system-pf2e #compendium-browser .content-box nav {
+  background: transparent;
   border: none;
-  flex: 0 0 auto;
-  line-height: 1;
-  margin: 0; }
+  border-block-end: rgba(var(--color-primary), 1) 2px solid;
+  border-image: none;
+  box-shadow: none; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a::after {
+    display: none; }

@@ -22,9 +22,10 @@
 	color: color("white");
 
 	@include layout {
+		line-height: initial;
 		margin-block-end: m("sm");
 		padding: p("sm");
-		padding-inilne-end: p("xl");
+		padding-inline-end: p("xl");
 	}
 
 	&::before {

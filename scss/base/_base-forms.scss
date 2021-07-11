@@ -5,6 +5,7 @@ form {
 		color: color("text");
 
 		@include layout {
+			font-family: inherit;
 			font-size: fs("lg");
 			margin-block-start: m("md");
 			margin-block-end: m("base");
