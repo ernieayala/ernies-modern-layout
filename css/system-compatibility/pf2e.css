@@ -1,4 +1,5 @@
-body.-emu.system-pf2e #compendium-browser .content-box nav a {
+body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a, body.-emu.system-pf2e .window-app.sheet.item button, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder,
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity {
   background-image: var(--emu-image-background-controls, none);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
@@ -6,7 +7,8 @@ body.-emu.system-pf2e #compendium-browser .content-box nav a {
   color: rgba(var(--color-text-lightest), 1);
   text-shadow: none;
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
-  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a, body.-emu.system-pf2e #compendium-browser .content-box nav .-emu-layout a {
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e #compendium-browser div.content-box nav .-emu-layout a, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .tabs .-emu-layout a, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs .-emu-layout a, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item button, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout button, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-folder,
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-entity {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
@@ -18,56 +20,318 @@ body.-emu.system-pf2e #compendium-browser .content-box nav a {
     margin: 0;
     padding: var(--emu-space-sm);
     position: relative; }
-    .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a > i, body.-emu.system-pf2e #compendium-browser .content-box nav .-emu-layout a > i {
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav a > i, body.-emu.system-pf2e #compendium-browser div.content-box nav .-emu-layout a > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs a > i, body.-emu.system-pf2e .window-app.sheet.item .tabs .-emu-layout a > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a > i, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item button > i, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout button > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i {
       margin-inline-end: var(--emu-space-sm); }
-  body.-emu.system-pf2e #compendium-browser .content-box nav a:hover {
+  body.-emu.system-pf2e #compendium-browser div.content-box nav a:hover, body.-emu.system-pf2e .window-app.sheet.item .tabs a:hover, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a:hover, body.-emu.system-pf2e .window-app.sheet.item button:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder:hover,
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity:hover {
     background-color: rgba(var(--color-primary), 1);
     background-image: none;
     color: rgba(var(--color-text-lightest), 1); }
-  body.-emu.system-pf2e #compendium-browser .content-box nav a:disabled {
+  body.-emu.system-pf2e #compendium-browser div.content-box nav a:disabled, body.-emu.system-pf2e .window-app.sheet.item .tabs a:disabled, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a:disabled, body.-emu.system-pf2e .window-app.sheet.item button:disabled, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder:disabled,
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity:disabled {
     opacity: 0.5;
     pointer-events: none; }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav a {
+body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a, body.-emu.system-pf2e .window-app.sheet.item button {
   background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1)); }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav a:hover {
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-folder,
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-entity {
+  width: var(--emu-space-button-sm);
+  height: var(--emu-space-button-sm);
+  flex: 0 0 auto;
+  font-size: var(--emu-font-size-sm);
+  margin-inline-start: var(--emu-space-xs);
+  padding: 0; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i {
+    margin: 0; }
+
+body.-emu.system-pf2e .window-app.sheet.item input[type="text"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="number"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="date"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="time"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="password"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="datetime-local"] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="text"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="text"],
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="number"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="number"],
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="date"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="date"],
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="time"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="time"],
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="password"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="password"],
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="datetime-local"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="datetime-local"] {
+    width: 100%;
+    height: var(--emu-space-button);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    min-width: var(--emu-space-xl);
+    padding: 0 var(--emu-space-sm);
+    position: relative;
+    user-select: text; }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="text"]::placeholder,
+  body.-emu.system-pf2e .window-app.sheet.item input[type="number"]::placeholder,
+  body.-emu.system-pf2e .window-app.sheet.item input[type="date"]::placeholder,
+  body.-emu.system-pf2e .window-app.sheet.item input[type="time"]::placeholder,
+  body.-emu.system-pf2e .window-app.sheet.item input[type="password"]::placeholder,
+  body.-emu.system-pf2e .window-app.sheet.item input[type="datetime-local"]::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="text"],
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="number"],
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="date"],
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="time"],
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="password"],
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="datetime-local"] {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item select {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item select, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout select {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    height: var(--emu-space-button);
+    margin: 0;
+    padding: 0 var(--emu-space-sm);
+    position: relative;
+    text-overflow: ellipsis; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item select[multiple], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout select[multiple] {
+      height: auto;
+      padding: var(--emu-space-sm); }
+  body.-emu.system-pf2e .window-app.sheet.item select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu.system-pf2e .window-app.sheet.item select optgroup,
+  body.-emu.system-pf2e .window-app.sheet.item select option {
+    background-color: rgba(var(--color-background-lightest), 1);
+    color: rgba(var(--color-text), 1); }
+
+body.-emu.system-pf2e .window-app.sheet.item input[type="checkbox"] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="checkbox"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="checkbox"] {
+    width: var(--emu-space-button-xs);
+    height: var(--emu-space-button-xs);
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin: 0;
+    position: relative;
+    top: auto; }
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="checkbox"] {
+    opacity: 0.5;
+    pointer-events: none; }
+  body.-emu.system-pf2e .window-app.sheet.item input:checked[type="checkbox"] {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="radio"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="radio"] {
+  margin: 0;
+  top: auto; }
+
+body.-emu.system-pf2e .window-app.sheet.item input[type="color"],
+body.-emu.system-pf2e .window-app.sheet.item input[type="color"][data-edit] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="color"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="color"] {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    height: var(--emu-space-button);
+    margin: 0;
+    padding: 0 var(--emu-space-sm);
+    position: relative; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="color"] + input[type="color"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="color"] + input[type="color"] {
+      margin-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="color"] {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item input[type="range"] {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  -webkit-appearance: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"] {
+    margin: 0;
+    width: 100%; }
+  body.-emu.system-pf2e .window-app.sheet.item input:hover[type="range"], body.-emu.system-pf2e .window-app.sheet.item input:focus[type="range"] {
+    box-shadow: none;
+    outline: none; }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-webkit-slider-runnable-track {
+    background-color: rgba(var(--color-background), 0.8);
+    border: rgba(var(--color-border), 1) 1px solid;
+    border-radius: var(--emu-border-radius-forms, 0);
+    box-shadow: none;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-webkit-slider-runnable-track, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 0.5rem;
+      cursor: pointer; }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]:focus::-webkit-slider-runnable-track {
+    background-color: rgba(var(--color-background), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]:focus::-ms-fill-lower {
+    background-color: rgba(var(--color-background), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]:focus::-ms-fill-upper {
+    background-color: rgba(var(--color-background), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-webkit-slider-thumb {
+    background-color: rgba(var(--color-primary), 1);
+    border-radius: var(--emu-border-radius-forms, 0);
+    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    box-shadow: none;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-appearance: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-webkit-slider-thumb, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"]::-webkit-slider-thumb {
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+      margin-block-start: -0.3125rem; }
+    body.-emu.system-pf2e .window-app.sheet.item input::-webkit-slider-thumb:hover[type="range"] {
+      box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-moz-range-track {
+    background-color: rgba(var(--color-background), 0.8);
+    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    border-radius: var(--emu-border-radius-forms, 0);
+    box-shadow: none;
+    transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-moz-range-track, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"]::-moz-range-track {
+      width: 100%;
+      height: 0.5rem;
+      cursor: pointer; }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-moz-range-thumb {
+    background-color: rgba(var(--color-primary), 1);
+    border-radius: var(--emu-border-radius-forms, 0);
+    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    box-shadow: none;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-appearance: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"]::-moz-range-thumb, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"]::-moz-range-thumb {
+      width: 1rem;
+      height: 1rem;
+      cursor: pointer;
+      margin-block-start: -0.3125rem; }
+    body.-emu.system-pf2e .window-app.sheet.item input::-moz-range-thumb:hover[type="range"] {
+      box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+  body.-emu.system-pf2e .window-app.sheet.item input[type="range"] + .range-value {
+    border: none;
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="range"] + .range-value, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="range"] + .range-value {
+      align-items: center;
+      display: flex;
+      flex: 0 0 auto;
+      font-size: var(--emu-font-size-md);
+      margin-inline-start: var(--emu-space-sm);
+      padding: 0; }
+
+body.-emu.system-pf2e .window-app.sheet.item textarea {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0);
+  color: rgba(var(--color-text), 1);
+  transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item textarea, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout textarea {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    min-height: 4rem;
+    padding: var(--emu-space-sm);
+    position: relative;
+    resize: none;
+    transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    user-select: text;
+    width: 100%; }
+  .-emu-layout.-emu-compact body.-emu.system-pf2e .window-app.sheet.item textarea, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout.-emu-compact textarea {
+    min-height: 3rem; }
+  body.-emu.system-pf2e .window-app.sheet.item textarea::placeholder {
+    color: rgba(var(--color-text), 0.5); }
+  body.-emu.system-pf2e .window-app.sheet.item textarea:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box nav a:hover, body.-emu.system-pf2e .window-app.sheet.item .tabs a:hover, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a:hover, body.-emu.system-pf2e .window-app.sheet.item button:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder:hover,
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
   text-shadow: none; }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav a:focus, body.-emu.system-pf2e #homebrew-settings .form-group .tagify--focus {
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="text"],
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="number"],
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="date"],
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="time"],
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="password"],
+body.-emu.system-pf2e .window-app.sheet.item input:hover[type="datetime-local"], body.-emu.system-pf2e .window-app.sheet.item select:hover, body.-emu.system-pf2e .window-app.sheet.item input:hover[type="checkbox"], body.-emu.system-pf2e .window-app.sheet.item input:hover[type="color"], body.-emu.system-pf2e .window-app.sheet.item textarea:hover, body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn:hover {
+  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
+  text-shadow: none; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box nav a:focus, body.-emu.system-pf2e .window-app.sheet.item .tabs a:focus, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a:focus, body.-emu.system-pf2e .window-app.sheet.item button:focus, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder:focus,
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity:focus, body.-emu.system-pf2e .window-app.sheet.item input:focus[type="text"],
+body.-emu.system-pf2e .window-app.sheet.item input:focus[type="number"],
+body.-emu.system-pf2e .window-app.sheet.item input:focus[type="date"],
+body.-emu.system-pf2e .window-app.sheet.item input:focus[type="time"],
+body.-emu.system-pf2e .window-app.sheet.item input:focus[type="password"],
+body.-emu.system-pf2e .window-app.sheet.item input:focus[type="datetime-local"], body.-emu.system-pf2e .window-app.sheet.item select:focus, body.-emu.system-pf2e .window-app.sheet.item input:focus[type="checkbox"], body.-emu.system-pf2e .window-app.sheet.item input:focus[type="color"], body.-emu.system-pf2e .window-app.sheet.item textarea:focus, body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn.tox-tbtn--enabled:focus, body.-emu.system-pf2e #homebrew-settings .form-group .tagify--focus, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item:focus, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header:focus, body.-emu.system-pf2e .window-app.sheet.item a[href]:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav a.active {
+body.-emu.system-pf2e #compendium-browser div.content-box nav a.active, body.-emu.system-pf2e .window-app.sheet.item .tabs a.active, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a.active, body.-emu.system-pf2e .window-app.sheet.item button.active, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .active.create-folder,
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .active.create-entity, body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn.tox-tbtn--enabled {
   background-color: rgba(var(--color-primary), 1);
   color: rgba(var(--color-text-lightest), 1);
   text-shadow: none; }
-  body.-emu.system-pf2e #compendium-browser .content-box nav a.active:hover {
+  body.-emu.system-pf2e #compendium-browser div.content-box nav a.active:hover, body.-emu.system-pf2e .window-app.sheet.item .tabs a.active:hover, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a.active:hover, body.-emu.system-pf2e .window-app.sheet.item button.active:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .active.create-folder:hover,
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .active.create-entity:hover, body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn.tox-tbtn--enabled:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav {
+body.-emu.system-pf2e #compendium-browser div.content-box nav, body.-emu.system-pf2e .window-app.sheet.item .tabs,
+body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs {
   border-block-start: none;
   border-block-end: rgba(var(--color-primary), 1) 2px solid; }
-  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav, body.-emu.system-pf2e #compendium-browser .content-box .-emu-layout nav {
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav, body.-emu.system-pf2e #compendium-browser div.content-box .-emu-layout nav, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .tabs,
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .sheet-tabs {
     display: flex;
     flex: 0 0 auto;
     height: initial;
     line-height: initial;
     margin: 0;
     position: relative; }
-  body.-emu.system-pf2e #compendium-browser .content-box nav a {
+  body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a {
     background-color: transparent;
     background-image: none;
     border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
     color: rgba(var(--color-text), 1); }
-    .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a, body.-emu.system-pf2e #compendium-browser .content-box .-emu-layout nav a {
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e #compendium-browser div.content-box .-emu-layout nav a, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .tabs a, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .sheet-tabs a {
       flex: 1;
       font-size: var(--emu-font-size-md);
+      font-weight: normal;
       text-shadow: none; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav a.active, body.-emu.system-pf2e #compendium-browser div.content-box .-emu-layout nav a.active, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs a.active, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .tabs a.active, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a.active, body.-emu.system-pf2e .window-app.sheet.item .-emu-layout .sheet-tabs a.active {
+      text-decoration: none; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h3 > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h4 > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header h3 > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout h3 > i {
+  margin-inline-end: var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .subdirectory {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .-emu-layout body.-emu.system-pf2e #homebrew-settings .window-content, body.-emu.system-pf2e .-emu-layout #homebrew-settings .window-content, .-emu-layout body.-emu.system-pf2e #variant-rules-settings .window-content, body.-emu.system-pf2e .-emu-layout #variant-rules-settings .window-content {
   overflow: hidden;
@@ -183,11 +447,894 @@ body.-emu.system-pf2e .effect-panel div[data-item-id] {
     margin: 0;
     margin-block-end: var(--emu-space-xs); }
 
-body.-emu.system-pf2e #compendium-browser .content-box nav {
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box {
+  display: flex;
+  flex-direction: column; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box nav {
   background: transparent;
   border: none;
   border-block-end: rgba(var(--color-primary), 1) 2px solid;
   border-image: none;
   box-shadow: none; }
-  .-emu-layout body.-emu.system-pf2e #compendium-browser .content-box nav a::after {
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box nav a::after {
     display: none; }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content {
+  flex: 1 1 auto;
+  height: 1px; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .tab {
+    flex: 1 1 auto; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .tab.active {
+      display: block;
+      height: 100%; }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .control-area {
+  padding: var(--emu-space-sm);
+  padding-inline-start: 0; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box section.content .sortcontainer {
+  border-radius: 0;
+  border: none; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .sortcontainer {
+    margin: 0;
+    margin-block-end: var(--emu-space-sm);
+    padding: 0; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box section.content .hint {
+  background-color: rgba(var(--color-blue-500), 1);
+  border: none;
+  border-radius: 0;
+  color: rgba(var(--color-white), 1); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .hint {
+    margin: var(--emu-space-xs) 0;
+    padding: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl {
+  margin: var(--emu-space-base) 0; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dt,
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dd {
+    padding: 0; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dt input[type=checkbox],
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dd input[type=checkbox] {
+      height: var(--emu-space-button-xs);
+      margin: 0; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dd select {
+    margin-inline-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl dd a.direction {
+    padding: var(--emu-space-xs); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl > label {
+    align-items: center;
+    display: flex; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl > label dt {
+      align-items: center;
+      display: inline-flex;
+      flex: 0 0 auto; }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content dl > label dd {
+      align-items: center;
+      display: inline-flex;
+      flex: 1 1 auto; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box section.content .filtercontainer {
+  border: none;
+  border-radius: 0; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .filtercontainer {
+    margin: 0;
+    margin-block-start: var(--emu-space-sm);
+    padding: 0; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .filtercontainer > h3 {
+    cursor: pointer;
+    margin-block-end: var(--emu-space-base);
+    padding: var(--emu-space-base); }
+  body.-emu.system-pf2e #compendium-browser div.content-box section.content .filtercontainer > h3:hover {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-text-lightest), 1); }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list {
+  overflow: auto;
+  padding: var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item {
+  line-height: initial;
+  margin: 0;
+  padding: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item .image {
+    height: var(--emu-space-button);
+    max-width: var(--emu-space-button); }
+    .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item .image + .image {
+      margin-inline-start: var(--emu-space-base) !important; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item .name {
+    line-height: initial;
+    padding-inline-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item .level {
+    flex: 0;
+    height: auto;
+    max-width: 100%; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item .controls {
+    flex: 0;
+    max-width: 100%;
+    margin-inline-start: var(--emu-space-base);
+    width: auto; }
+
+body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item:hover {
+  background-color: rgba(var(--color-primary), 1);
+  color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-pf2e #compendium-browser div.content-box section.content ul.item-list .item:hover a {
+    color: inherit; }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .compendium-browser-settings {
+  height: 100%; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .compendium-browser-settings form {
+    display: flex;
+    flex-direction: column; }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .settings-container {
+  flex: 1 1 auto;
+  height: 100%;
+  padding: var(--emu-space-sm); }
+
+body.-emu.system-pf2e #compendium-browser div.content-box section.content .settings-container .setting-section {
+  border: none;
+  border-radius: 0; }
+  .-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .settings-container .setting-section {
+    margin: 0;
+    margin-block-end: var(--emu-space-md);
+    padding: 0;
+    width: 100%; }
+
+.-emu-layout body.-emu.system-pf2e #compendium-browser div.content-box section.content .save-settings {
+  flex: 0 0 auto;
+  margin-block-start: var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-pf2e .dialog .dialog-content > form {
+  height: initial; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item button + button {
+  margin-inline-start: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list {
+  flex: 1 1 auto;
+  max-height: 100%;
+  min-height: 0.0625rem;
+  overflow-y: auto; }
+
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory {
+  background-color: rgba(var(--color-folder-subdirectory), 1);
+  background-image: none;
+  border: none;
+  border-inline-start: rgba(var(--color-primary), 1) 4px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory {
+    display: flex;
+    border-radius: 0 0 0 var(--emu-border-radius-default, 0);
+    flex-direction: column;
+    width: 100%; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .directory-item.folder {
+    padding-block-end: var(--emu-space-base);
+    padding-inline-end: 0; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .directory-item.folder + .directory-item.folder {
+    padding-block-start: 0; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .directory-item.folder + .directory-item:not(.folder) {
+    margin-block-start: 0; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .directory-item:not(.folder) + .directory-item:not(.folder) {
+    margin-block-start: 0; }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .subdirectory {
+    border-inline-start: rgba(var(--color-orange-700), 1) 4px solid; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list .subdirectory .subdirectory .subdirectory {
+      border-inline-start: rgba(var(--color-orange-900), 1) 4px solid; }
+
+body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item {
+  background-color: rgba(var(--color-folder-directory), 1);
+  background-image: none;
+  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0);
+  box-shadow: none;
+  color: rgba(var(--color-text-lightest), 1);
+  transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item {
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    line-height: 1;
+    margin: var(--emu-space-base) var(--emu-space-sm);
+    min-height: var(--emu-space-button);
+    padding: 0 var(--emu-space-sm);
+    position: relative;
+    width: auto; }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item:hover {
+    background-color: rgba(var(--color-primary), 1);
+    background-image: none;
+    color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item:focus {
+    background-image: none; }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.entity {
+    border: none; }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.context {
+    border: none;
+    box-shadow: none; }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder {
+    background: transparent; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder {
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding-block-start: var(--emu-space-base);
+      padding-block-end: 0;
+      padding-inline-start: var(--emu-space-sm);
+      padding-inline-end: var(--emu-space-sm);
+      position: relative;
+      width: 100%; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder:hover, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder:focus {
+      background: transparent;
+      box-shadow: none; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder.collapsed > .folder-header {
+      border-inline-start: none;
+      border-radius: var(--emu-border-radius-default, 0); }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder.collapsed > .folder-header .create-folder {
+        display: none; }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder.collapsed > .folder-header h3 i::before {
+        content: "\f07b"; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder.collapsed .subdirectory {
+      display: none; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder.collapsed .subdirectory .folder-header {
+      border-inline-start: none; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header {
+      background-color: rgba(var(--color-folder-header), 1);
+      background-image: none;
+      border: 0;
+      border-inline-start: rgba(var(--color-primary), 1) 4px solid;
+      border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
+      color: rgba(var(--color-text), 1);
+      transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: nowrap;
+        line-height: 1;
+        min-height: var(--emu-space-button);
+        padding: var(--emu-space-base) var(--emu-space-sm);
+        position: relative;
+        width: 100%; }
+      body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header:hover {
+        background-color: rgba(var(--color-primary), 1);
+        background-image: none;
+        color: rgba(var(--color-text-lightest), 1); }
+      body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header h3 {
+        border-block-end: 0;
+        color: inherit; }
+        .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header h3 {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          flex: 1 1 auto;
+          font-size: var(--emu-font-size-lg);
+          font-weight: normal;
+          line-height: 1;
+          margin: 0;
+          position: relative;
+          text-align: start;
+          text-shadow: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .subdirectory .directory-item.folder.collapsed .folder-header {
+      border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .subdirectory .directory-item.folder .folder-header {
+      border-radius: var(--emu-border-radius-default, 0) 0 0 0; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .subdirectory .folder-header {
+      border-color: rgba(var(--color-orange-700), 1); }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .subdirectory .subdirectory .folder-header {
+      border-color: rgba(var(--color-orange-900), 1); }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header.context,
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .directory-item.context {
+      background-color: rgba(var(--color-primary), 1) !important;
+      color: rgba(var(--color-text-lightest), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item img {
+    border-radius: var(--emu-border-radius-images, 0); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item img {
+      width: var(--emu-space-button);
+      height: var(--emu-space-button);
+      cursor: move;
+      flex: 0 0 auto;
+      margin: 0;
+      margin-block-start: var(--emu-space-base);
+      margin-block-end: var(--emu-space-base);
+      margin-inline-end: var(--emu-space-sm); }
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h3,
+  body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h4 {
+    color: inherit;
+    text-shadow: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h3, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h4 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1 1 auto;
+      font-size: var(--emu-font-size-lg);
+      font-weight: normal;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: start; }
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h3 > a,
+    body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h4 > a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background-color: transparent;
+      border-radius: 0;
+      color: inherit;
+      text-shadow: none;
+      transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h3 > a, .-emu-layout
+      body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item h4 > a {
+        cursor: pointer;
+        display: block;
+        flex: 1 1 auto;
+        font-size: var(--emu-font-size-lg);
+        line-height: var(--emu-space-button);
+        padding: 0;
+        position: relative;
+        text-shadow: none; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="text"] + input[type="color"] {
+  margin-inline-start: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item select {
+  box-shadow: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item fieldset {
+  border: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item fieldset {
+    margin: 0;
+    padding: 0; }
+
+body.-emu.system-pf2e .window-app.sheet.item form h3.form-header {
+  border: none;
+  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form h3.form-header {
+    font-family: inherit;
+    font-size: var(--emu-font-size-lg);
+    margin-block-start: var(--emu-space-md);
+    margin-block-end: var(--emu-space-base);
+    padding: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form .form-group {
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: var(--emu-font-size-lg);
+    height: auto;
+    justify-content: space-between;
+    margin: 0;
+    padding: var(--emu-space-sm); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group:nth-of-type(even) {
+      background-color: rgba(var(--color-background-light), 0.1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields {
+    align-items: center;
+    display: inline-flex;
+    width: 1px; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields input {
+    flex: 1 1 auto; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields input[type="text"] {
+      width: 1px; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields label {
+    flex: 0 0 auto;
+    padding-inline-start: var(--emu-space-sm);
+    padding-inline-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.stacked {
+    padding: 0;
+    padding-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.stacked textarea {
+    margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.hidden {
+    display: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields {
+    display: flex;
+    flex: 1 1 auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select {
+    flex: 1 1 100%; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input[type="checkbox"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select[type="checkbox"] {
+    -webkit-filter: initial;
+    flex: 0 0 auto;
+    width: var(--emu-space-button-xs); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input[type="radio"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select[type="radio"] {
+    flex: 0 0 auto;
+    margin-inline-end: var(--emu-space-sm);
+    width: auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input + input, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input + select, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select + input, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select + select {
+    flex: 1 1 25%;
+    margin-inline-start: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button {
+    margin-inline-start: var(--emu-space-base);
+    order: initial;
+    width: auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.file-picker > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.grid-config > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.capture-position > i {
+    margin-inline-end: 0; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button + input {
+    order: -1; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.file-picker + input[type="text"] {
+    margin-right: 0 !important; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields + .notes, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields + .hint, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .range-value + .notes, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group .range-value + .hint, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="checkbox"] + .notes, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="checkbox"] + .hint {
+    margin-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select {
+    flex: 1 1 auto;
+    width: 1px; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="checkbox"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select[type="checkbox"] {
+    -webkit-filter: initial;
+    flex: 0 0 auto;
+    width: var(--emu-space-button-xs); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="radio"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select[type="radio"] {
+    flex: 0 0 auto;
+    margin-inline-end: var(--emu-space-sm);
+    width: auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + .notes, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select + .notes {
+    margin-block-start: var(--emu-space-sm); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input {
+    flex: 1 1 25%;
+    margin-inline-start: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input[type="checkbox"], .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input[type="radio"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input[type="checkbox"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input[type="radio"] {
+    flex: 0 0 auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group > label {
+    flex: 0 0 40%; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label {
+    align-items: center;
+    display: inline-flex;
+    font-size: var(--emu-font-size-md);
+    font-weight: normal;
+    line-height: initial;
+    margin: 0;
+    padding-inline-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox {
+    height: auto; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox input[type="checkbox"] {
+    margin-inline-start: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox + input[type="range"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox + select {
+    margin-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: block;
+      font-size: var(--emu-font-size-sm);
+      line-height: initial;
+      margin: 0 var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label > i {
+    margin-inline-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group + button[type="submit"] {
+    margin-block-start: var(--emu-space-sm); }
+
+body.-emu.system-pf2e .window-app.sheet.item form .notes,
+body.-emu.system-pf2e .window-app.sheet.item form .hint {
+  color: rgba(var(--color-text-darker), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .hint {
+    flex: 0 0 auto;
+    font-size: var(--emu-font-size-md);
+    font-style: italic;
+    line-height: initial;
+    margin: 0;
+    width: 100%; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes:empty, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item form .hint:empty {
+      display: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes:first-child, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item form .hint:first-child {
+      margin-bottom: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes + .form-group, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form .hint + .form-group {
+    margin-block-start: var(--emu-space-sm); }
+
+body.-emu.system-pf2e .window-app.sheet.item img {
+  border: none;
+  border-radius: var(--emu-border-radius-images, 0); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item img {
+    position: relative; }
+
+body.-emu.system-pf2e .window-app.sheet.item table {
+  background-color: rgba(var(--color-black), 0.05);
+  border: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item table {
+    margin: var(--emu-space-base) 0; }
+  body.-emu.system-pf2e .window-app.sheet.item table thead {
+    background-color: rgba(var(--color-black), 0.2);
+    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    color: rgba(var(--color-text-lightest), 1);
+    text-shadow: none; }
+  body.-emu.system-pf2e .window-app.sheet.item table tr:nth-child(even) {
+    background-color: rgba(var(--color-white), 0.1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item table td:first-child {
+    padding-inline-start: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item table td, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item table th {
+    padding: var(--emu-space-xs) 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs ~ .tab, .-emu-layout
+body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs ~ .tab {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+body.-emu.system-pf2e .window-app.sheet.item h1,
+body.-emu.system-pf2e .window-app.sheet.item h2,
+body.-emu.system-pf2e .window-app.sheet.item h3,
+body.-emu.system-pf2e .window-app.sheet.item h4 {
+  font-weight: normal; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item h1, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item h2, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item h3, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item h4 {
+    margin: 0;
+    margin-block-end: var(--emu-space-base);
+    position: relative; }
+
+body.-emu.system-pf2e .window-app.sheet.item h1 {
+  border-block-end: 2px solid rgba(var(--color-border), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item h1 {
+    font-size: var(--emu-font-size-xxl); }
+
+body.-emu.system-pf2e .window-app.sheet.item h2 {
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item h2 {
+    font-size: var(--emu-font-size-xl); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item h3 {
+  font-size: var(--emu-font-size-lg); }
+
+body.-emu.system-pf2e .window-app.sheet.item a {
+  text-shadow: none; }
+  body.-emu.system-pf2e .window-app.sheet.item a:hover {
+    color: rgba(var(--color-primary), 1); }
+
+body.-emu.system-pf2e .window-app.sheet.item a[href] {
+  color: rgba(var(--color-primary), 1);
+  text-decoration: none;
+  text-shadow: none; }
+  body.-emu.system-pf2e .window-app.sheet.item a[href]:hover {
+    text-decoration: underline;
+    text-shadow: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item a.entity-link,
+body.-emu.system-pf2e .window-app.sheet.item a.inline-roll {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0);
+  text-shadow: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item a.entity-link, .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item a.inline-roll {
+    padding: var(--emu-space-pf) var(--emu-space-xs);
+    padding-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item a.entity-link:hover,
+  body.-emu.system-pf2e .window-app.sheet.item a.inline-roll:hover {
+    color: rgba(var(--color-primary), 1); }
+  body.-emu.system-pf2e .window-app.sheet.item a.entity-link > i,
+  body.-emu.system-pf2e .window-app.sheet.item a.inline-roll > i {
+    color: inherit; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item a.entity-link > i, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item a.inline-roll > i {
+      margin-inline-end: var(--emu-space-xs); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item p {
+  margin: var(--emu-space-base) 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item ul, .-emu-layout
+body.-emu.system-pf2e .window-app.sheet.item ol {
+  margin: var(--emu-space-base) 0;
+  margin-block-end: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item dl {
+  margin: var(--emu-space-base) 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item dd {
+  padding-inline-end: var(--emu-space-base);
+  margin: var(--emu-space-base) 0; }
+
+body.-emu.system-pf2e .window-app.sheet.item hr {
+  border: none;
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item button[hidden] {
+  display: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item blockquote {
+  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item blockquote {
+    margin: var(--emu-space-base) 0 var(--emu-space-base) var(--emu-space-md);
+    padding-inline-start: 1.5rem; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item blockquote em {
+      font-style: normal; }
+
+body.-emu.system-pf2e .window-app.sheet.item section.secret {
+  background-color: rgba(var(--color-background-light), 0.2);
+  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item section.secret {
+    padding: 0 var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item .tox-toolbar__primary {
+  background: transparent; }
+
+body.-emu.system-pf2e .window-app.sheet.item .tox.tox-tinymce .tox-edit-area__iframe {
+  background-color: rgba(var(--color-white), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tox.tox-tinymce .tox-edit-area__iframe {
+    padding: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn {
+  background: transparent;
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tox .tox-tbtn {
+    font-size: var(--emu-font-size-sm);
+    height: var(--emu-space-button-sm);
+    margin-block-start: var(--emu-space-xs);
+    padding: 0 var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item .sheet-header {
+  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-header {
+    flex: 0 0 auto;
+    height: auto;
+    padding-block-end: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item .sheet-header h1 {
+    border: none; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-header h1 {
+      margin: 0; }
+  body.-emu.system-pf2e .window-app.sheet.item .sheet-header h1 > input {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(var(--color-text), 1); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .sheet-header h1 > input {
+      font-family: inherit;
+      font-size: var(--emu-font-size-xl);
+      height: var(--emu-space-button-lg);
+      margin: 0;
+      padding: 0 var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article {
+  flex: 1 1 auto;
+  height: 100%;
+  padding-block-start: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar {
+  height: 100%; }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .sidebar-summary {
+  border-block-end: 2px solid rgba(var(--color-border), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .sidebar-summary {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    height: var(--emu-space-button);
+    justify-content: center;
+    line-height: initial;
+    margin-block-end: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .item-summary {
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .item-summary {
+    flex: 0 0 auto;
+    font-family: inherit;
+    font-size: var(--emu-font-size-lg);
+    line-height: initial; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .item-tags {
+  margin: var(--emu-space-base) 0;
+  padding: 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-sidebar .inventory-details {
+  padding: 0; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-body {
+  height: 100%;
+  padding-inline-start: var(--emu-space-sm); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-body .tab.active {
+  padding: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-body .tab.active .form-group label,
+body.-emu.system-pf2e .window-app.sheet.item form > article section.sheet-body .tab.active .form-group-stacked label {
+  color: inherit; }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .form-group {
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group {
+    padding: var(--emu-space-xs) var(--emu-space-base); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group:nth-of-type(even) {
+      background-color: rgba(var(--color-background-light), 0.1); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group > div {
+    display: flex; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group > div > select {
+      max-width: 100%;
+      width: 100%; }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group > div > select + select {
+        margin-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item form > article .form-group label {
+    color: inherit; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group label a {
+      margin-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e .window-app.sheet.item form > article .form-group select,
+  body.-emu.system-pf2e .window-app.sheet.item form > article .form-group input[type="text"],
+  body.-emu.system-pf2e .window-app.sheet.item form > article .form-group input[type="number"] {
+    background: transparent;
+    border: rgba(var(--color-border-lighter), 1) 1px solid; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group select, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item form > article .form-group input[type="text"], .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item form > article .form-group input[type="number"] {
+      height: var(--emu-space-button-sm);
+      font-size: var(--emu-font-size-md);
+      padding: 0 var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group-stacked {
+  margin: var(--emu-space-base) 0; }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .form-group-stacked label {
+  color: inherit; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-group-stacked label {
+    padding-inline-start: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .form-list {
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .form-list {
+    padding: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .item-mystification .identification-data > img {
+  width: var(--emu-space-button);
+  height: var(--emu-space-button); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .item-mystification input[type="text"],
+body.-emu.system-pf2e .window-app.sheet.item form > article .item-mystification input[type="number"] {
+  background: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .item-mystification input[type="text"], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item form > article .item-mystification input[type="number"] {
+    margin-inline-start: var(--emu-space-base);
+    padding: 0 var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .item-details label {
+  color: inherit; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form > article .item-details .additional-language span {
+  font-size: var(--emu-font-size-md);
+  padding-inline-start: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .details-container-flex-row label input[type="checkbox"] {
+  margin-inline-end: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item form > article .details-container-flex-row label span + input[type="checkbox"] {
+  margin: 0;
+  margin-inline-start: var(--emu-space-base); }
+
+body.-emu.system-pf2e .window-app.sheet.item .tag {
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0); }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tag {
+    font-size: var(--emu-font-size-sm);
+    line-height: initial;
+    margin-inline-end: var(--emu-space-xs);
+    margin-block-end: var(--emu-space-xs);
+    padding: 0 var(--emu-space-base); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tag:empty {
+      display: none; }
+
+body.-emu.system-pf2e .window-app.sheet.item .pf-value {
+  background-color: transparent;
+  border: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .pf-value {
+    height: auto;
+    padding: var(--emu-space-base);
+    padding-block-end: var(--emu-space-xs); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .pf-value:empty {
+      display: none; }
+
+.-emu-layout body.-emu.system-pf2e .window-app.actor.pc .window-content {
+  padding: 0; }
+
+body.-emu.system-pf2e a.editor-edit {
+  background-color: rgba(var(--color-background-button), 0.1);
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-controls, 0);
+  box-shadow: none; }
+  .-emu-layout body.-emu.system-pf2e a.editor-edit {
+    font-size: var(--emu-font-size-lg);
+    padding: var(--emu-space-xs);
+    right: var(--emu-space-base);
+    top: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .bestiary-browser-btn, .-emu-layout
+body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .compendium-browser-btn, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout .sidebar-tab .directory-footer .bestiary-browser-btn, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout .sidebar-tab .directory-footer .compendium-browser-btn {
+  width: 100%; }
+
+body.-emu.system-pf2e #sidebar #chat #chat-log .message-sender,
+body.-emu.system-pf2e #sidebar #chat #chat-log .message-metadata,
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message-sender,
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message-metadata {
+  background: transparent;
+  text-shadow: none; }
+
+body.-emu.system-pf2e #sidebar #chat #chat-log .card-header,
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-header {
+  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-header, .-emu-layout
+  body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-header {
+    padding: var(--emu-space-xs) 0; }
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-header h3, .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-header h3 {
+      margin-block-end: 0; }
+
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-content, .-emu-layout
+body.-emu.system-pf2e #sidebar #chat #chat-log .card-buttons, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-content, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-buttons {
+  margin: var(--emu-space-base) 0; }
+
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-buttons button, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-buttons button {
+  margin: 0;
+  margin-block-start: var(--emu-space-xs);
+  width: 100%; }
+
+body.-emu.system-pf2e #sidebar #chat #chat-log .card-footer,
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-footer {
+  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .card-footer, .-emu-layout
+  body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-footer {
+    padding: 0; }
+
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .message .flavor-text strong, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message .flavor-text strong {
+  margin-inline-end: var(--emu-space-xs); }
+
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container {
+  bottom: auto;
+  padding: 0 var(--emu-space-xs); }
+  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container button, .-emu-layout
+  body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container button {
+    font-size: var(--emu-font-size-sm) !important;
+    height: var(--emu-space-button-sm) !important;
+    width: var(--emu-space-button-sm) !important; }
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container button > i, .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container button > i {
+      margin: 0; }
+
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button > i, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button > i {
+  margin: 0; }
+
+body.-emu.system-pf2e [data-visibility=gm]:is(div, em, p, span) {
+  background-color: rgba(var(--color-background-light), 1);
+  border: 1px dotted rgba(var(--color-border-lighter), 1); }
+  .-emu-layout body.-emu.system-pf2e [data-visibility=gm]:is(div, em, p, span) {
+    margin-block-end: var(--emu-space-xs);
+    padding: var(--emu-space-xs); }

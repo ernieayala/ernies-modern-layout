@@ -843,6 +843,7 @@ body.-emu.system-dnd5e [id*="actor-type-"] form .form-group {
     display: flex;
     flex-wrap: wrap;
     font-size: var(--emu-font-size-lg);
+    height: auto;
     justify-content: space-between;
     margin: 0;
     padding: var(--emu-space-sm); }
@@ -1112,13 +1113,19 @@ body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll {
   background-color: rgba(var(--color-background-lightest), 1);
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
-  border-radius: var(--emu-border-radius-controls, 0); }
+  border-radius: var(--emu-border-radius-controls, 0);
+  text-shadow: none; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll {
     padding: var(--emu-space-pf) var(--emu-space-xs);
     padding-inline-start: var(--emu-space-base); }
+  body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link:hover,
+  body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link:hover,
+  body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll:hover {
+    color: rgba(var(--color-primary), 1); }
   body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll > i,
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link > i,

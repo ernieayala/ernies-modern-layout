@@ -1,16 +1,31 @@
 .tox-toolbar__primary {
 	background: transparent;
-
-	button {
-		background: transparent;
-		color: inherit;
-	}
 }
 
 .tox.tox-tinymce .tox-edit-area__iframe {
 	background-color: color("white");
 
 	@include layout {
-		padding: p("sm");
+		padding: p("base");
+	}
+}
+
+.tox .tox-tbtn {
+	background: transparent;
+	color: color("text");
+
+	@include layout {
+		font-size: fs("sm");
+		height: space("button-sm");
+		margin-block-start: m("xs");
+		padding: 0 p("base");
+	}
+
+	&:hover {
+		@extend %global-hover-alt;
+	}
+
+	&.tox-tbtn--enabled {
+		@extend %global-active;
 	}
 }
