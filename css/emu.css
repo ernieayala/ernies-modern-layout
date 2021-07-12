@@ -719,7 +719,7 @@ body.-emu #hotbar .bar-controls #macro-directory:focus,
 body.-emu #hotbar .bar-controls #bar-toggle:focus, body.-emu #hotbar .macro:focus, body.-emu #hud .control-icon:focus, body.-emu #controls .scene-control:focus,
 body.-emu #controls .control-tool:focus, body.-emu #controls .control-tool.toggle:focus, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.view, body.-emu #navigation #scene-list .scene:focus,
-body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
+body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu .dice-so-nice section.content .settings-list .select2:focus .select2-selection, body.-emu .dice-so-nice section.content .settings-list .select2.select2-container--focus .select2-selection, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
@@ -2440,7 +2440,7 @@ body.-emu #loading {
   top: var(--emu-space-sm);
   left: var(--emu-space-sm);
   position: absolute;
-  display: none;
+  display: none !important;
   height: auto !important;
   max-height: 2.75rem;
   max-width: 5.5rem;
@@ -2451,7 +2451,7 @@ body.-emu #loading {
   max-width: 4.25rem; }
 
 .-emu-layout.-emu-logo body.-emu #logo {
-  display: block; }
+  display: block !important; }
 
 body.-emu #menu {
   background: transparent;
@@ -2532,6 +2532,7 @@ body.-emu .notification {
 body.-emu #pause {
   background: transparent; }
   .-emu-layout body.-emu #pause {
+    top: auto;
     bottom: 12.5rem;
     left: 0;
     position: fixed;
@@ -5328,23 +5329,54 @@ body.-emu #df-curvy-walls-tools .control-tool {
 
 body.-emu .dice-so-nice .dice-more-theme {
   background: none;
-  border: none; }
+  border: none;
+  border-radius: none;
+  box-shadow: none; }
   .-emu-layout body.-emu .dice-so-nice .dice-more-theme {
+    font-size: var(--emu-font-size-lg);
+    margin: 0;
     padding: var(--emu-space-sm); }
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list {
+  overflow-x: hidden;
   padding: 0; }
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr min-content;
+  grid-template-columns: 1fr 1fr 1fr min-content min-content;
   line-height: initial; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx:nth-of-type(odd):not(.table-header) {
     background-color: rgba(var(--color-background-light), 0.1); }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div {
     width: auto; }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div.sfx-hidden {
+      display: none; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx select + input {
     margin-inline-start: var(--emu-space-base); }
+
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header {
+  grid-template-columns: 1fr 1fr 1fr min-content; }
+
+body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection {
+  background-color: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0); }
+  .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection {
+    height: auto;
+    min-height: var(--emu-space-button);
+    padding: 0; }
+  .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul {
+    margin: 0;
+    padding: 0 var(--emu-space-xs); }
+  body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li {
+    background-color: transparent;
+    border: rgba(var(--color-border), 1) 1px solid;
+    border-radius: var(--emu-border-radius-controls, 0); }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li {
+      margin: var(--emu-space-xs);
+      padding: 0; }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li button {
+      height: var(--emu-space-button-sm); }
 
 body.-emu #sidebar #chat section.dice-tray,
 body.-emu .sidebar-popout #chat section.dice-tray {
@@ -6964,6 +6996,10 @@ body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro
 .-emu-layout body.-emu .sheet.macro-sheet[id*="macro-config-"] .sheet-footer, .-emu-layout
 body.-emu .sheet.macro-sheet[id*="macro-config-"] .window-resizable-handle {
   z-index: 11; }
+
+body.-emu .theatre-emote-menu {
+  background-color: rgba(var(--color-background), 1);
+  color: rgba(var(--color-text), 1); }
 
 body.-emu .tidy5e.settings.window-app {
   background-color: rgba(var(--color-background-lightest), 1);

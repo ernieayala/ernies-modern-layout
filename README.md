@@ -41,11 +41,11 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Systems Tested Continually
 - DND 5e
 
+### Systems Partially Tested as of July 11th, 2021
+- Pathfinder 2e
+
 ### Systems Partially Tested as of June 27th, 2021
 - Fate
-
-### Systems Partially Tested as of June 21th, 2021
-- Pathfinder 2e
 
 ### Systems Partially Tested as of June 14th, 2021
 - DSA5
@@ -55,6 +55,11 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - CoC 7
 - Pathfinder 1e
 - Savage Worlds
+
+### Mods Tested as of July 11th, 2021
+- Dice So Nice!
+- Lock View (FNS)
+- Theater Inserts (FNS)
 
 ### Mods Tested as of June 21th, 2021
 - Custom Hotbar (FNS)
@@ -97,7 +102,6 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 - D&D Beyond Importer
 - DF Chat Enhancements
 - DF Curvy Walls
-- Dice So Nice!
 - Dice Tray
 - DNDBeyond Character Sheet for 5E
 - Drag Ruler
