@@ -21,11 +21,16 @@
 		@include layout {
 			flex: 1;
 			font-size: fs("md");
+			font-weight: normal;
 			text-shadow: none;
 		}
 
 		&.active {
 			@extend %global-active;
+
+			@include layout {
+				text-decoration: none;
+			}
 		}
 	}
 }

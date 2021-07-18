@@ -5,6 +5,7 @@ form {
 		color: color("text");
 
 		@include layout {
+			font-family: inherit;
 			font-size: fs("lg");
 			margin-block-start: m("md");
 			margin-block-end: m("base");
@@ -20,6 +21,7 @@ form {
 			display: flex;
 			flex-wrap: wrap;
 			font-size: fs("lg");
+			height: auto;
 			justify-content: space-between;
 			margin: 0;
 			padding: p("sm");

@@ -84,6 +84,11 @@ function updateSettings(settings) {
 		emuLayout
 	} = settings;
 
+	// Options
+	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
+	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
+	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
+
 	// Theme
 	colorPrimary ? myRoot.style.setProperty('--color-primary', convertHexToRgb(colorPrimary)) : null;
 	colorBackground ? myRoot.style.setProperty('--color-background', convertHexToRgb(colorBackground)) : null;
@@ -153,11 +158,6 @@ function updateSettings(settings) {
 	backgroundOpacitySidebar ? myRoot.style.setProperty('--emu-background-opacity-sidebar', `${backgroundOpacitySidebar}`) : myRoot.style.setProperty('--emu-background-opacity-sidebar', `0.8`);
 	backgroundOpacityWindow ? myRoot.style.setProperty('--emu-background-opacity-window', `${backgroundOpacityWindow}`) : myRoot.style.setProperty('--emu-background-opacity-window', `1`);
 	backgroundOpacityWindowContent ? myRoot.style.setProperty('--emu-background-opacity-window-content', `${backgroundOpacityWindowContent}`) : myRoot.style.setProperty('--emu-background-opacity-window-content', `1`);
-
-	// Options
-	toggleLogo ? myHtml[0].classList.remove('-emu-logo') : myHtml[0].classList.add('-emu-logo');
-	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
-	emuLayout ? myHtml[0].classList.add('-emu-layout') : myHtml[0].classList.remove('-emu-layout');
 }
 
 function setFontFamily(family) {

@@ -2,14 +2,19 @@
 	.dice-more-theme {
 		background: none;
 		border: none;
+		border-radius: none;
+		box-shadow: none;
 
 		@include layout {
+			font-size: fs("lg");
+			margin: 0;
 			padding: p("sm");
 		}
 	}
 
 	section.content .settings-list {
 		@include layout {
+			overflow-x: hidden;
 			padding: 0;
 		}
 
@@ -19,7 +24,7 @@
 
 				@include layout {
 					display: grid;
-					grid-template-columns: 1fr 1fr 1fr min-content;
+					grid-template-columns: 1fr 1fr 1fr min-content min-content;
 					line-height: initial;
 
 					&:nth-of-type(odd):not(.table-header) {
@@ -28,6 +33,10 @@
 
 					> div {
 						width: auto;
+
+						&.sfx-hidden {
+							display: none;
+						}
 					}
 
 					select + input {
@@ -38,6 +47,55 @@
 
 			.sfx-header {
 				@extend %table-header;
+
+				@include layout {
+					grid-template-columns: 1fr 1fr 1fr min-content;
+				}
+			}
+		}
+
+		.select2 {
+			&:focus,
+			&.select2-container--focus {
+				.select2-selection {
+					@extend %global-focus;
+				}
+			}
+
+			.select2-selection {
+				background-color: transparent;
+				border: b("border-lighter");
+				border-radius: $global-border-radius-forms;
+
+				@include layout {
+					height: auto;
+					min-height: space("button");
+					padding: 0;
+				}
+
+				> ul {
+					@include layout {
+						margin: 0;
+						padding: 0 p("xs");
+					}
+
+					> li {
+						background-color: transparent;
+						border: b("border");
+						border-radius: $global-border-radius-controls;
+
+						@include layout {
+							margin: m("xs");
+							padding: 0;
+						}
+
+						button {
+							@include layout {
+								height: space("button-sm");
+							}
+						}
+					}
+				}
 			}
 		}
 	}

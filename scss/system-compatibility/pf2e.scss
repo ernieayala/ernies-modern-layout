@@ -1,14 +1,19 @@
 @import "../base";
 
-body#{$emu} {
-	@include system("pf2e") {
-		.window-app.actor.pc {
-			.window-content {
-				padding: 0;
+body#{$emu}.system-pf2e {
+	#pf2e-player-config-panel {
+		@include layout {
+			form {
+				> div:not(.form-group) {
+					margin: 0 !important;
+					width: 100% !important;
+				}
 			}
 		}
+	}
 
-		#world-clock.window-app {
+	#world-clock {
+		@include layout {
 			h1 {
 				font-size: fs("lg");
 				margin-block-end: m("base");
@@ -22,63 +27,759 @@ body#{$emu} {
 				margin-block-start: m("xs");
 			}
 		}
+	}
 
-		#world-clock-settings.window-app {
-			form > .form-group:last-child {
+	#world-clock-settings,
+	#automation-settings {
+		form > .form-group:last-child {
+			background-color: transparent;
+			padding: 0;
+		}
+	}
+
+	#homebrew-settings {
+		@extend %window-hack-alt;
+
+		.form-group {
+			&.setting {
+				@include layout {
+					display: flex;
+
+					> label {
+						flex: 0 0 100%;
+						margin-block-end: m("base");
+					}
+				}
+			}
+
+			&.buttons {
+				background-color: color("background-lightest");
+				border-block-start: b("border");
+
+				@include layout {
+					bottom: 0;
+					margin-block-start: m("sm");
+					padding: p("sm") 0;
+					position: sticky;
+				}
+			}
+
+			.tagify {
 				background-color: transparent;
-				padding: 0;
+				border-color: color("border-lighter");
+				border-radius: $global-border-radius-forms;
+				transition: t(box-shadow, "link");
+
+				&--focus {
+					@extend %global-focus;
+				}
+			}
+		}
+	}
+
+	#variant-rules-settings {
+		@extend %window-hack-alt;
+
+		.form-group + h2 {
+			@include layout {
+				margin-block-start: m("base");
 			}
 		}
 
-		#sidebar,
-		.sidebar-popout {
-			.sidebar-tab {
-				.directory-footer .bestiary-browser-btn {
-					width: 100%;
+		.sheet-footer {
+			background-color: color("background-lightest");
+			border-block-start: b("border");
+
+			@include layout {
+				bottom: 0;
+				margin-block-start: m("sm");
+				padding: p("sm") 0;
+				position: sticky;
+			}
+		}
+	}
+
+	#trait-selector {
+		min-width: to-rem(280px);
+
+		.trait-header {
+			@include layout {
+				flex: 0 0 auto;
+				line-height: initial;
+				margin-block-end: m("base");
+			}
+
+			.header-search {
+				@include layout {
+					align-items: center;
+					display: flex;
+				}
+
+				input {
+					background-color: color("background-lightest");
+
+					@include layout {
+						margin: 0;
+						margin-inline-start: m("sm");
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.trait-list {
+			@include layout {
+				margin-block-end: 0;
+
+				.form-group {
+					justify-content: flex-start;
+					padding-inline-start: 0;
+
+					.trait-label {
+						margin: 0 !important; // because inline
+					}
+
+					input[type="checkbox"] {
+						margin-inline-end: m("sm");
+					}
+				}
+			}
+		}
+
+		.trait-footer {
+			@include layout {
+				flex: 0 0 auto;
+				line-height: initial;
+				margin: 0;
+
+				&:last-child {
+					margin-block-start: m("sm");
 				}
 			}
 
-			#chat #chat-log {
-				.message-sender,
-				.message-metadata {
-					background: transparent;
-					text-shadow: none;
+			&.form-group-stacked {
+				border-block-start: b("border-lighter");
+
+				@include layout {
+					padding-block-start: p("sm");
+				}
+			}
+		}
+	}
+
+	#scroll-wand {
+		.form-group > p {
+			margin: 0;
+		}
+	}
+
+	.effect-panel {
+		@include layout {
+			right: calc(#{space("sidebar")} + #{space("base")});
+			top: calc(#{space("md")} / 2);
+		}
+
+		div[data-item-id] {
+			border: b("border-lighter");
+			box-shadow: none;
+
+			@include layout {
+				@include size(space("button"));
+				margin: 0;
+				margin-block-end: m("xs");
+			}
+		}
+	}
+
+	#compendium-browser {
+		div.content-box {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+			}
+
+			nav {
+				@extend %modal-tabs;
+				background: transparent;
+				border: none;
+				border-block-end: b("primary", 2px);
+				border-image: none;
+				box-shadow: none;
+
+				a::after {
+					@include layout {
+						display: none;
+					}
+				}
+			}
+
+			section.content {
+				@include layout {
+					flex: 1 1 auto;
+					height: 1px; // flex hax
+
+					.tab {
+						flex: 1 1 auto;
+
+						&.active {
+							display: block;
+							height: 100%;
+						}
+					}
 				}
 
-				.card-header {
-					border-block-start: b("border-lighter");
-					border-block-end: b("border-lighter");
+				.control-area {
+					@include layout {
+						padding: p("sm");
+						padding-inline-start: 0;
+					}
+				}
+
+				.sortcontainer {
+					border-radius: 0;
+					border: none;
+
+					@include layout {
+						margin: 0;
+						margin-block-end: m("sm");
+						padding: 0;
+					}
+				}
+
+				.hint {
+					background-color: color("blue-500");
+					border: none;
+					border-radius: 0;
+					color: color("white");
+
+					@include layout {
+						margin: m("xs") 0;
+						padding: p("base");
+					}
+				}
+
+				dl {
+					@include layout {
+						margin: m("base") 0;
+
+						dt,
+						dd {
+							padding: 0;
+
+							input[type=checkbox] {
+								height: space("button-xs");
+								margin: 0;
+							}
+						}
+
+						dd select {
+							margin-inline-start: m("sm");
+						}
+
+						dd a.direction {
+							padding: p("xs");
+						}
+
+						> label {
+							align-items: center;
+							display: flex;
+
+							dt {
+								align-items: center;
+								display: inline-flex;
+								flex: 0 0 auto;
+							}
+
+							dd {
+								align-items: center;
+								display: inline-flex;
+								flex: 1 1 auto;
+							}
+						}
+					}
+				}
+
+				.filtercontainer {
+					border: none;
+					border-radius: 0;
+
+					@include layout {
+						margin: 0;
+						margin-block-start: m("sm");
+						padding: 0;
+					}
+
+					> h3 {
+						@include layout {
+							cursor: pointer;
+							margin-block-end: m("base");
+							padding: p("base");
+						}
+
+						&:hover {
+							background-color: color("primary");
+							color: color("text-lightest");
+						}
+					}
+				}
+
+				ul.item-list {
+					@include layout {
+						overflow: auto;
+						padding: p("sm");
+					}
+
+					.item {
+						@include layout {
+							line-height: initial;
+							margin: 0;
+							padding: p("base");
+
+							.image {
+								height: space("button");
+								max-width: space("button");
+
+								+ .image {
+									margin-inline-start: m("base") !important; // because inline styles
+								}
+							}
+
+							.name {
+								line-height: initial;
+								padding-inline-start: p("sm");
+							}
+
+							.level {
+								flex: 0;
+								height: auto;
+								max-width: 100%;
+							}
+
+							.controls {
+								flex: 0;
+								max-width: 100%;
+								margin-inline-start: m("base");
+								width: auto
+							}
+						}
+
+						&:hover {
+							background-color: color("primary");
+							color: color("text-lightest");
+
+							a {
+								color: inherit;
+							}
+						}
+					}
+				}
+
+				.compendium-browser-settings {
+					@include layout {
+						height: 100%;
+
+						form {
+							display: flex;
+							flex-direction: column;
+						}
+					}
+				}
+
+				.settings-container {
+					@include layout {
+						flex: 1 1 auto;
+						height: 100%;
+						padding: p("sm");
+					}
+
+					.setting-section {
+						border: none;
+						border-radius: 0;
+
+						@include layout {
+							margin: 0;
+							margin-block-end: m("md");
+							padding: 0;
+							width: 100%;
+						}
+					}
+				}
+
+				.save-settings {
+					@include layout {
+						flex: 0 0 auto;
+						margin-block-start: m("sm");
+					}
+				}
+			}
+		}
+	}
+
+	.dialog {
+		.dialog-content > form {
+			@include layout {
+				height: initial;
+			}
+		}
+	}
+
+	.window-app.sheet.item {
+		@import "../base/base-button";
+		@import "../base/base-directory";
+		@import "../base/base-form-elements";
+		@import "../base/base-forms";
+		@import "../base/base-image";
+		@import "../base/base-table";
+		@import "../base/base-tabs";
+		@import "../base/base-text";
+		@import "../base/base-tox-editor";
+	}
+
+	.window-app.sheet.item {
+		.sheet-header {
+			border-block-end: b("border");
+
+			@include layout {
+				flex: 0 0 auto;
+				height: auto;
+				padding-block-end: p("base");
+			}
+
+			h1 {
+				border: none;
+
+				@include layout {
+					margin: 0;
+				}
+			}
+
+			h1 > input {
+				background-color: transparent;
+				border-color: transparent;
+				color: color("text");
+
+				@include layout {
+					font-family: inherit;
+					font-size: fs("xl");
+					height: space("button-lg");
+					margin: 0;
+					padding: 0 p("sm");
+				}
+			}
+		}
+
+		form > article {
+			@include layout {
+				flex: 1 1 auto;
+				height: 100%;
+				padding-block-start: p("base");
+			}
+
+			section.sheet-sidebar {
+				@include layout {
+					height: 100%;
+				}
+
+				.sidebar-summary {
+					border-block-end: 2px solid color("border");
+
+					@include layout {
+						align-items: center;
+						display: flex;
+						flex: 0 0 auto;
+						height: space("button");
+						justify-content: center;
+						line-height: initial;
+						margin-block-end: m("base");
+					}
+				}
+
+				.item-summary {
+					color: color("text");
+
+					@include layout {
+						flex: 0 0 auto;
+						font-family: inherit;
+						font-size: fs("lg");
+						line-height: initial;
+					}
+				}
+
+				.item-tags {
+					@include layout {
+						margin: m("base") 0;
+						padding: 0;
+					}
+				}
+
+				.inventory-details {
+					@include layout {
+						padding: 0;
+					}
+				}
+			}
+
+			section.sheet-body {
+				@include layout {
+					height: 100%;
+					padding-inline-start: p("sm");
+				}
+
+				.tab {
+					&.active {
+						@include layout {
+							padding: p("base");
+						}
+
+						.form-group label,
+						.form-group-stacked label {
+							color: inherit;
+						}
+					}
+				}
+			}
+
+			.form-group {
+				color: color("text");
+
+				@include layout {
+					padding: p("xs") p("base");
+
+					&:nth-of-type(even) {
+						background-color: color("background-light", 0.1);
+					}
+				}
+
+				> div {
+					@include layout {
+						display: flex;
+
+						> select {
+							max-width: 100%;
+							width: 100%;
+
+							+ select {
+								margin-inline-start: m("base");
+							}
+						}
+					}
+				}
+
+				label {
+					color: inherit;
+
+					a {
+						@include layout {
+							margin-inline-start: m("base");
+						}
+					}
+				}
+
+				select,
+				input[type="text"],
+				input[type="number"] {
+					background: transparent;
+					border: b("border-lighter");
+
+					@include layout {
+						height: space("button-sm");
+						font-size: fs("md");
+						padding: 0 p("base");
+					}
+				}
+			}
+
+			.form-group-stacked {
+				@include layout {
+					margin: m("base") 0;
+				}
+
+				label {
+					color: inherit;
+
+					@include layout {
+						padding-inline-start: p("base");
+					}
+				}
+			}
+
+			.form-list {
+				border: b("border-lighter");
+				border-radius: $global-border-radius-default;
+
+				@include layout {
+					padding: p("base");
+				}
+			}
+
+			.item-mystification {
+				.identification-data {
+					> img {
+						@include size(space("button"));
+					}
+				}
+
+				input[type="text"],
+				input[type="number"] {
+					background: transparent;
+					border: b("border-lighter");
+
+					@include layout {
+						margin-inline-start: m("base");
+						padding: 0 p("base");
+					}
+				}
+			}
+
+			.item-details {
+				label {
+					color: inherit;
+				}
+
+				.additional-language {
+					span {
+						@include layout {
+							font-size: fs("md");
+							padding-inline-start: m("base");
+						}
+					}
+				}
+			}
+
+			.details-container-flex-row {
+				label {
+					input[type="checkbox"] {
+						margin-inline-end: m("base");
+					}
+
+					span + input[type="checkbox"] {
+						margin: 0;
+						margin-inline-start: m("base");
+					}
+				}
+			}
+		}
+
+		.tag {
+			border: b("border-lighter");
+			border-radius: $global-border-radius-default;
+
+			@include layout {
+				font-size: fs("sm");
+				line-height: initial;
+				margin-inline-end: m("xs");
+				margin-block-end: m("xs");
+				padding: 0 p("base");
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+
+		.pf-value {
+			background-color: transparent;
+			border: b("border");
+
+			@include layout {
+				height: auto;
+				padding: p("base");
+				padding-block-end: p("xs");
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.window-app.actor.pc {
+		.window-content {
+			@include layout {
+				padding: 0;
+			}
+		}
+	}
+
+	a.editor-edit {
+		background-color: color("background-button", 0.1);
+		border: b("border-lighter");
+		border-radius: $global-border-radius-controls;
+		box-shadow: none;
+
+		@include layout {
+			font-size: fs("lg");
+			padding: p("xs");
+			right: space("base");
+			top: space("base");
+		}
+	}
+
+	#sidebar,
+	.sidebar-popout {
+		.sidebar-tab {
+			.directory-footer .bestiary-browser-btn,
+			.directory-footer .compendium-browser-btn {
+				@include layout {
+					width: 100%;
+				}
+			}
+		}
+
+		#chat #chat-log {
+			.message-sender,
+			.message-metadata {
+				background: transparent;
+				text-shadow: none;
+			}
+
+			.card-header {
+				border-block-start: b("border-lighter");
+				border-block-end: b("border-lighter");
+
+				@include layout {
 					padding: p("xs") 0;
 
 					h3 {
 						margin-block-end: 0;
 					}
 				}
+			}
 
-				.card-content,
-				.card-buttons {
+			.card-content,
+			.card-buttons {
+				@include layout {
 					margin: m("base") 0;
 				}
+			}
 
-				.card-buttons button {
+			.card-buttons button {
+				@include layout {
 					margin: 0;
 					margin-block-start: m("xs");
 					width: 100%;
 				}
+			}
 
-				.card-footer {
-					border-block-start: b("border-lighter");
+			.card-footer {
+				border-block-start: b("border-lighter");
+
+				@include layout {
 					padding: 0;
 				}
+			}
 
-				.message .flavor-text {
+			.message .flavor-text {
+				@include layout {
 					strong {
 						margin-inline-end: m("xs");
 					}
 				}
+			}
 
-				.dice-total {
-					.dmgBtn-container {
+			.dice-total {
+				.dmgBtn-container {
+					@include layout {
 						bottom: auto;
 						padding: 0 p("xs");
 
@@ -93,24 +794,25 @@ body#{$emu} {
 						}
 					}
 				}
+			}
 
-				.chat-damage-buttons {
+			.chat-damage-buttons {
+				@include layout {
 					button > i {
 						margin: 0;
 					}
 				}
 			}
 		}
+	}
 
-		.tab[data-tab].active {
-			display: block;
-		}
+	[data-visibility=gm]:is(div, em, p, span) {
+		background-color: color("background-light");
+		border: 1px dotted color("border-lighter");
 
-		#trait-selector .trait-footer {
-			border: none;
-			flex: 0 0 auto;
-			line-height: 1;
-			margin: 0;
+		@include layout {
+			margin-block-end: m("xs");
+			padding: p("xs");
 		}
 	}
 }

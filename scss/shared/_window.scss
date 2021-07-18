@@ -69,3 +69,21 @@
 		}
 	}
 }
+
+%window-hack-alt {
+	.window-content {
+		@include layout {
+			overflow: hidden;
+			padding: 0;
+		}
+	}
+
+	form {
+		@include layout {
+			overflow-x: hidden;
+			overflow-y: auto;
+			padding: p("sm");
+			position: relative;
+		}
+	}
+}

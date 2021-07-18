@@ -4,6 +4,10 @@
 	}
 }
 
+.compendium-footer {
+	flex: 1 1 auto;
+}
+
 .compendium-browser.window-app {
 	@include layout {
 		overflow: hidden;

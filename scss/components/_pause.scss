@@ -2,7 +2,7 @@
 	background: transparent;
 
 	@include layout {
-		@include fixed(bottom to-rem(200px) left 0);
+		@include fixed(bottom to-rem(200px) left 0 top auto);
 		@include size(100%, auto);
 		align-items: center;
 		display: none;

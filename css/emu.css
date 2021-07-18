@@ -654,7 +654,9 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input:hover[type="c
 body.-emu #sidebar input:hover[type="color"],
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input:hover[type="color"], body.-emu .dialog textarea:hover,
 body.-emu #sidebar textarea:hover,
-body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea:hover, body.-emu #sidebar #combat #combat-tracker .combatant.defeated.active,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea:hover, body.-emu .dialog .tox .tox-tbtn:hover,
+body.-emu #sidebar .tox .tox-tbtn:hover,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn:hover, body.-emu #sidebar #combat #combat-tracker .combatant.defeated.active,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant.defeated.active, body.-emu #sidebar #playlists .directory-list .directory-item.playlist:not(.collapsed),
 body.-emu .sidebar-popout #playlists .directory-list .directory-item.playlist:not(.collapsed), body.-emu #npcgenerator-menu.window-app .npc-generator .npc-generator-header:hover, body.-emu .simple-dice-roller-popup li:hover {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
@@ -730,7 +732,9 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .active.sound-con
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active:focus, body.-emu #dfcp-rt-buttons button.active:focus, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control:focus, body.-emu #specials-config .fxmaster .special-effects .controls a.active:focus, body.-emu div.permission-viewer a.active:focus, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language:focus, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language:focus, body.-emu #smalltime-app #displayContainer .active.arrow:focus, body.-emu #token-action-hud .active#tah-reposition:focus,
 body.-emu #token-action-hud .active#tah-categories:focus, body.-emu #sidebar .token-mold > a.active:focus,
 body.-emu .sidebar-popout .token-mold > a.active:focus, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control:focus,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, body.-emu #hotbar .macro.active:focus, body.-emu #hud .control-icon.active:focus, body.-emu #controls .scene-control.active:focus,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:focus, body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled:focus,
+body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled:focus,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn.tox-tbtn--enabled:focus, body.-emu #hotbar .macro.active:focus, body.-emu #hud .control-icon.active:focus, body.-emu #controls .scene-control.active:focus,
 body.-emu #controls .control-tool.active:focus, body.-emu #controls .control-tool.toggle.active:focus, body.-emu #navigation #scene-list .scene.active:focus, body.-emu #navigation #scene-list .scene.view:focus,
 body.-emu #navigation .scene-list .scene.active:focus,
 body.-emu #navigation .scene-list .scene.view:focus, body.-emu #navigation #scene-list .scene.active:focus:not(.gm), body.-emu #navigation #scene-list .scene.view:focus:not(.gm),
@@ -751,7 +755,7 @@ body.-emu #hotbar .bar-controls #macro-directory:focus,
 body.-emu #hotbar .bar-controls #bar-toggle:focus, body.-emu #hotbar .macro:focus, body.-emu #hud .control-icon:focus, body.-emu #controls .scene-control:focus,
 body.-emu #controls .control-tool:focus, body.-emu #controls .control-tool.toggle:focus, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.view, body.-emu #navigation #scene-list .scene:focus,
-body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
+body.-emu #navigation .scene-list .scene:focus, body.-emu .window-app .window-resizable-handle:focus, body.-emu .sheet .sheet-header > img:focus, body.-emu .filepicker.window-app .filepicker-body.private, body.-emu #df-curvy-walls-tools .control-tool:focus, body.-emu #df-curvy-walls-tools .control-tool.active, body.-emu .dice-so-nice section.content .settings-list .select2:focus .select2-selection, body.-emu .dice-so-nice section.content .settings-list .select2.select2-container--focus .select2-selection, body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label, body.-emu #OneJournalShell.window-app .sidebar-toggle:focus, body.-emu #search-anywhere-modal #search-anywhere-autocomplete, body.-emu .window-app .window-draggable-handle:focus, body.-emu #tokenAttacher .control-tool:focus {
   box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
   text-shadow: none;
   outline: none; }
@@ -778,7 +782,9 @@ body.-emu .sidebar-popout #playlists #currently-playing .sound .active.sound-con
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active, body.-emu #dfcp-rt-buttons button.active, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control, body.-emu #specials-config .fxmaster .special-effects .controls a.active, body.-emu div.permission-viewer a.active, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language, body.-emu #smalltime-app #displayContainer .active.arrow, body.-emu #token-action-hud .active#tah-reposition,
 body.-emu #token-action-hud .active#tah-categories, body.-emu #sidebar .token-mold > a.active,
 body.-emu .sidebar-popout .token-mold > a.active, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control,
-body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control.active,
+body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control, body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn.tox-tbtn--enabled, body.-emu #hotbar .macro.active, body.-emu #hud .control-icon.active, body.-emu #controls .scene-control.active,
 body.-emu #controls .control-tool.active, body.-emu #controls .control-tool.toggle.active, body.-emu #navigation #scene-list .scene.active, body.-emu #navigation #scene-list .scene.view,
 body.-emu #navigation .scene-list .scene.active,
 body.-emu #navigation .scene-list .scene.view, body.-emu #navigation #scene-list .scene.active:not(.gm), body.-emu #navigation #scene-list .scene.view:not(.gm),
@@ -814,7 +820,9 @@ body.-emu .user-config.sheet.window-app .directory-item.context, body.-emu #df-c
   body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button.active:hover, body.-emu #dfcp-rt-buttons button.active:hover, body.-emu .active-effect-sheet[id*="ActiveEffectsConfig-"] .effect-special-duration .active.effect-control:hover, body.-emu #specials-config .fxmaster .special-effects .controls a.active:hover, body.-emu div.permission-viewer a.active:hover, .-emu-layout body.-emu #sidebar #chat #chat-log .message .active.button.polyglot-message-language:hover, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .active.button.polyglot-message-language:hover, body.-emu #smalltime-app #displayContainer .active.arrow:hover, body.-emu #token-action-hud .active#tah-reposition:hover,
   body.-emu #token-action-hud .active#tah-categories:hover, body.-emu #sidebar .token-mold > a.active:hover,
   body.-emu .sidebar-popout .token-mold > a.active:hover, body.-emu #sidebar .sidebar-tab .directory-header .active.header-control:hover,
-  body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, body.-emu #hotbar .macro.active:hover, body.-emu #hud .control-icon.active:hover, body.-emu #controls .scene-control.active:hover,
+  body.-emu .sidebar-popout .sidebar-tab .directory-header .active.header-control:hover, body.-emu .dialog .tox .tox-tbtn.tox-tbtn--enabled:hover,
+  body.-emu #sidebar .tox .tox-tbtn.tox-tbtn--enabled:hover,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn.tox-tbtn--enabled:hover, body.-emu #hotbar .macro.active:hover, body.-emu #hud .control-icon.active:hover, body.-emu #controls .scene-control.active:hover,
   body.-emu #controls .control-tool.active:hover, body.-emu #controls .control-tool.toggle.active:hover, body.-emu #navigation #scene-list .scene.active:hover, body.-emu #navigation #scene-list .scene.view:hover,
   body.-emu #navigation .scene-list .scene.active:hover,
   body.-emu #navigation .scene-list .scene.view:hover, body.-emu #navigation #scene-list .scene.active:hover:not(.gm), body.-emu #navigation #scene-list .scene.view:hover:not(.gm),
@@ -908,7 +916,10 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
     .-emu-layout body.-emu .dialog .tabs a, body.-emu .dialog .-emu-layout .tabs a, .-emu-layout body.-emu .dialog .sheet-tabs a, body.-emu .dialog .-emu-layout .sheet-tabs a, .-emu-layout body.-emu #sidebar .tabs a, body.-emu #sidebar .-emu-layout .tabs a, .-emu-layout body.-emu #sidebar .sheet-tabs a, body.-emu #sidebar .-emu-layout .sheet-tabs a, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .tabs a, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .sheet-tabs a, .-emu-layout body.-emu #module-management .list-filters a, body.-emu #module-management .-emu-layout .list-filters a {
       flex: 1;
       font-size: var(--emu-font-size-md);
+      font-weight: normal;
       text-shadow: none; }
+    .-emu-layout body.-emu .dialog .tabs a.active, body.-emu .dialog .-emu-layout .tabs a.active, .-emu-layout body.-emu .dialog .sheet-tabs a.active, body.-emu .dialog .-emu-layout .sheet-tabs a.active, .-emu-layout body.-emu #sidebar .tabs a.active, body.-emu #sidebar .-emu-layout .tabs a.active, .-emu-layout body.-emu #sidebar .sheet-tabs a.active, body.-emu #sidebar .-emu-layout .sheet-tabs a.active, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a.active, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .tabs a.active, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a.active, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout .sheet-tabs a.active, .-emu-layout body.-emu #module-management .list-filters a.active, body.-emu #module-management .-emu-layout .list-filters a.active {
+      text-decoration: none; }
 
 .-emu-layout body.-emu .dialog .directory .directory-item h3 > i, body.-emu .dialog .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .dialog .directory .directory-item h4 > i, body.-emu .dialog .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h3 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h4 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h4 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header h3 > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header h3 > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #context-menu ol.context-items .context-item > i, body.-emu #context-menu ol.context-items .-emu-layout .context-item > i, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-search > i, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-search > i {
   -webkit-margin-end: var(--emu-space-sm);
@@ -1537,6 +1548,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header
   .-emu-layout body.-emu .dialog form h3.form-header, .-emu-layout
   body.-emu #sidebar form h3.form-header, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header {
+    font-family: inherit;
     font-size: var(--emu-font-size-lg);
     -webkit-margin-before: var(--emu-space-md);
             margin-block-start: var(--emu-space-md);
@@ -1555,6 +1567,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
     display: flex;
     flex-wrap: wrap;
     font-size: var(--emu-font-size-lg);
+    height: auto;
     justify-content: space-between;
     margin: 0;
     padding: var(--emu-space-sm); }
@@ -1983,7 +1996,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
   background-color: rgba(var(--color-background-lightest), 1);
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
-  border-radius: var(--emu-border-radius-controls, 0); }
+  border-radius: var(--emu-border-radius-controls, 0);
+  text-shadow: none; }
   .-emu-layout body.-emu .dialog a.entity-link, .-emu-layout
   body.-emu .dialog a.inline-roll, .-emu-layout
   body.-emu #sidebar a.entity-link, .-emu-layout
@@ -1993,6 +2007,13 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
     padding: var(--emu-space-pf) var(--emu-space-xs);
     -webkit-padding-start: var(--emu-space-base);
             padding-inline-start: var(--emu-space-base); }
+  body.-emu .dialog a.entity-link:hover,
+  body.-emu .dialog a.inline-roll:hover,
+  body.-emu #sidebar a.entity-link:hover,
+  body.-emu #sidebar a.inline-roll:hover,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.entity-link:hover,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll:hover {
+    color: rgba(var(--color-primary), 1); }
   body.-emu .dialog a.entity-link > i,
   body.-emu .dialog a.inline-roll > i,
   body.-emu #sidebar a.entity-link > i,
@@ -2083,11 +2104,6 @@ body.-emu .dialog .tox-toolbar__primary,
 body.-emu #sidebar .tox-toolbar__primary,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox-toolbar__primary {
   background: transparent; }
-  body.-emu .dialog .tox-toolbar__primary button,
-  body.-emu #sidebar .tox-toolbar__primary button,
-  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox-toolbar__primary button {
-    background: transparent;
-    color: inherit; }
 
 body.-emu .dialog .tox.tox-tinymce .tox-edit-area__iframe,
 body.-emu #sidebar .tox.tox-tinymce .tox-edit-area__iframe,
@@ -2096,7 +2112,21 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox.tox-tinymce .t
   .-emu-layout body.-emu .dialog .tox.tox-tinymce .tox-edit-area__iframe, .-emu-layout
   body.-emu #sidebar .tox.tox-tinymce .tox-edit-area__iframe, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox.tox-tinymce .tox-edit-area__iframe {
-    padding: var(--emu-space-sm); }
+    padding: var(--emu-space-base); }
+
+body.-emu .dialog .tox .tox-tbtn,
+body.-emu #sidebar .tox .tox-tbtn,
+body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn {
+  background: transparent;
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu .dialog .tox .tox-tbtn, .-emu-layout
+  body.-emu #sidebar .tox .tox-tbtn, .-emu-layout
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn {
+    font-size: var(--emu-font-size-sm);
+    height: var(--emu-space-button-sm);
+    -webkit-margin-before: var(--emu-space-xs);
+            margin-block-start: var(--emu-space-xs);
+    padding: 0 var(--emu-space-base); }
 
 body.-emu #context-menu {
   background-color: rgba(var(--color-background-lightest), 1);
@@ -2558,7 +2588,7 @@ body.-emu #loading {
   top: var(--emu-space-sm);
   left: var(--emu-space-sm);
   position: absolute;
-  display: none;
+  display: none !important;
   height: auto !important;
   max-height: 2.75rem;
   max-width: 5.5rem;
@@ -2569,7 +2599,7 @@ body.-emu #loading {
   max-width: 4.25rem; }
 
 .-emu-layout.-emu-logo body.-emu #logo {
-  display: block; }
+  display: block !important; }
 
 body.-emu #menu {
   background: transparent;
@@ -2625,10 +2655,12 @@ body.-emu .notification {
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
   color: rgba(var(--color-white), 1); }
   .-emu-layout body.-emu .notification {
+    line-height: initial;
     -webkit-margin-after: var(--emu-space-sm);
             margin-block-end: var(--emu-space-sm);
     padding: var(--emu-space-sm);
-    padding-inilne-end: var(--emu-space-xl); }
+    -webkit-padding-end: var(--emu-space-xl);
+            padding-inline-end: var(--emu-space-xl); }
   .-emu-layout body.-emu .notification::before {
     -webkit-margin-end: var(--emu-space-sm);
             margin-inline-end: var(--emu-space-sm); }
@@ -2654,6 +2686,7 @@ body.-emu .notification {
 body.-emu #pause {
   background: transparent; }
   .-emu-layout body.-emu #pause {
+    top: auto;
     bottom: 12.5rem;
     left: 0;
     position: fixed;
@@ -5453,6 +5486,9 @@ body.-emu #cub-puter .terminal {
 .-emu-layout body.-emu .compendium-browser-btn {
   flex: 1 1 auto; }
 
+body.-emu .compendium-footer {
+  flex: 1 1 auto; }
+
 .-emu-layout body.-emu .compendium-browser.window-app {
   overflow: hidden; }
 
@@ -5654,25 +5690,57 @@ body.-emu #df-curvy-walls-tools .control-tool {
 
 body.-emu .dice-so-nice .dice-more-theme {
   background: none;
-  border: none; }
+  border: none;
+  border-radius: none;
+  box-shadow: none; }
   .-emu-layout body.-emu .dice-so-nice .dice-more-theme {
+    font-size: var(--emu-font-size-lg);
+    margin: 0;
     padding: var(--emu-space-sm); }
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list {
+  overflow-x: hidden;
   padding: 0; }
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr -webkit-min-content;
-  grid-template-columns: 1fr 1fr 1fr min-content;
+  grid-template-columns: 1fr 1fr 1fr -webkit-min-content -webkit-min-content;
+  grid-template-columns: 1fr 1fr 1fr min-content min-content;
   line-height: initial; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx:nth-of-type(odd):not(.table-header) {
     background-color: rgba(var(--color-background-light), 0.1); }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div {
     width: auto; }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div.sfx-hidden {
+      display: none; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx select + input {
     -webkit-margin-start: var(--emu-space-base);
             margin-inline-start: var(--emu-space-base); }
+
+.-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header {
+  grid-template-columns: 1fr 1fr 1fr -webkit-min-content;
+  grid-template-columns: 1fr 1fr 1fr min-content; }
+
+body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection {
+  background-color: transparent;
+  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-radius: var(--emu-border-radius-forms, 0); }
+  .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection {
+    height: auto;
+    min-height: var(--emu-space-button);
+    padding: 0; }
+  .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul {
+    margin: 0;
+    padding: 0 var(--emu-space-xs); }
+  body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li {
+    background-color: transparent;
+    border: rgba(var(--color-border), 1) 1px solid;
+    border-radius: var(--emu-border-radius-controls, 0); }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li {
+      margin: var(--emu-space-xs);
+      padding: 0; }
+    .-emu-layout body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection > ul > li button {
+      height: var(--emu-space-button-sm); }
 
 body.-emu #sidebar #chat section.dice-tray,
 body.-emu .sidebar-popout #chat section.dice-tray {
@@ -5819,6 +5887,36 @@ body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator-
     .-emu-layout body.-emu .dialog--dice-calculator.window-app .dice-calculator > button + button, .-emu-layout
     body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator--button + button {
       margin: 0; }
+
+.-emu-layout body.-emu #sidebar .dnd5ehelpers .dice-result, .-emu-layout
+body.-emu .sidebar-popout .dnd5ehelpers .dice-result {
+  -webkit-margin-before: var(--emu-space-base);
+          margin-block-start: var(--emu-space-base); }
+
+body.-emu #sidebar .dnd5ehelpers .dice-result .desc,
+body.-emu .sidebar-popout .dnd5ehelpers .dice-result .desc {
+  background-color: rgba(var(--color-background-light), var(--emu-background-opacity-window, 1));
+  border: rgba(var(--color-border), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0);
+  box-shadow: 0 2px 4px rgba(var(--color-black), 1);
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu #sidebar .dnd5ehelpers .dice-result .desc, .-emu-layout
+  body.-emu .sidebar-popout .dnd5ehelpers .dice-result .desc {
+    font-size: var(--emu-font-size-sm);
+    padding: var(--emu-space-sm); }
+
+.-emu-layout body.-emu #sidebar .dnd5ehelpers .cover-button, .-emu-layout
+body.-emu .sidebar-popout .dnd5ehelpers .cover-button {
+  flex-direction: row-reverse;
+  margin: 0;
+  -webkit-margin-before: var(--emu-space-base);
+          margin-block-start: var(--emu-space-base); }
+  .-emu-layout body.-emu #sidebar .dnd5ehelpers .cover-button img, .-emu-layout
+  body.-emu .sidebar-popout .dnd5ehelpers .cover-button img {
+    margin: 0;
+    -webkit-margin-start: var(--emu-space-base);
+            margin-inline-start: var(--emu-space-base);
+    width: var(--emu-space-button-xs); }
 
 .-emu-layout body.-emu .ddb-muncher.window-app .tab {
   -webkit-margin-before: var(--emu-space-sm);
@@ -7435,6 +7533,10 @@ body.-emu .sheet.macro-sheet[id*="macro-config-"] form .form-group.furnace-macro
 .-emu-layout body.-emu .sheet.macro-sheet[id*="macro-config-"] .sheet-footer, .-emu-layout
 body.-emu .sheet.macro-sheet[id*="macro-config-"] .window-resizable-handle {
   z-index: 11; }
+
+body.-emu .theatre-emote-menu {
+  background-color: rgba(var(--color-background), 1);
+  color: rgba(var(--color-text), 1); }
 
 body.-emu .tidy5e.settings.window-app {
   background-color: rgba(var(--color-background-lightest), 1);

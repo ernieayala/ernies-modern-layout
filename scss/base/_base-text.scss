@@ -62,10 +62,15 @@ a.inline-roll {
 	box-shadow: 0 0 0 1px inset color("border");
 	border: none;
 	border-radius: $global-border-radius-controls;
+	text-shadow: none;
 
 	@include layout {
 		padding: p("pf") p("xs");
 		padding-inline-start: p("base");
+	}
+
+	&:hover {
+		color: color("primary");
 	}
 
 	> i {
