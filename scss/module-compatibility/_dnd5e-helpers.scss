@@ -1,0 +1,37 @@
+#sidebar,
+.sidebar-popout {
+	.dnd5ehelpers {
+		.dice-result {
+			@include layout {
+				margin-block-start: m("base");
+			}
+
+			.desc {
+				background-color: color("background-light", $global-background-opacity-window);
+				border: b("border");
+				border-radius: $global-border-radius-default;
+				box-shadow: $global-box-shadow;
+				color: color("text-lightest");
+
+				@include layout {
+					font-size: fs("sm");
+					padding: p("sm");
+				}
+			}
+		}
+
+		@include layout {
+			.cover-button {
+				flex-direction: row-reverse;
+				margin: 0;
+				margin-block-start: m("base");
+
+				img {
+					margin: 0;
+					margin-inline-start: m("base");
+					width: space("button-xs");
+				}
+			}
+		}
+	}
+}

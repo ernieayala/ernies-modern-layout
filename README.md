@@ -58,6 +58,7 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 
 ### Mods Tested as of July 11th, 2021
 - Dice So Nice!
+- DND5e Helper
 - Lock View (FNS)
 - Theater Inserts (FNS)
 

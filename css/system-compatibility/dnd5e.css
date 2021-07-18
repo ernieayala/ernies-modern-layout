@@ -577,6 +577,8 @@ body.-emu.system-dnd5e .dnd5e.sheet .sheet-header {
       color: rgba(var(--color-text), 1); }
       body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary li:last-child {
         border-inline-end: none; }
+  body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .header-details h1 {
+    border: none; }
 
 body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item {
   border-color: rgba(var(--color-border), 1);
