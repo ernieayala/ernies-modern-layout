@@ -1116,6 +1116,7 @@ body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll {
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
+  color: rgba(var(--color-text), 1);
   text-shadow: none; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll, .-emu-layout

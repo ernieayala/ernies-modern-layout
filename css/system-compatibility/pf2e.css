@@ -436,7 +436,23 @@ body.-emu.system-pf2e #scroll-wand .form-group > p {
 
 .-emu-layout body.-emu.system-pf2e .effect-panel {
   right: calc(var(--emu-space-sidebar) + var(--emu-space-base));
-  top: calc(var(--emu-space-md) / 2); }
+  top: calc(var(--emu-space-md) / 2);
+  z-index: 1070; }
+  .-emu-layout body.-emu.system-pf2e .effect-panel .effect-item {
+    position: relative; }
+
+body.-emu.system-pf2e .effect-panel .effect-info {
+  background-color: rgba(var(--color-background-darkest), 0.8);
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu.system-pf2e .effect-panel .effect-info {
+    margin-inline-end: var(--emu-space-base);
+    max-height: var(--emu-space-button);
+    padding: var(--emu-space-base); }
+  body.-emu.system-pf2e .effect-panel .effect-info h1 {
+    color: inherit; }
+    .-emu-layout body.-emu.system-pf2e .effect-panel .effect-info h1 {
+      font-size: var(--emu-font-size-xs);
+      font-weight: normal; }
 
 body.-emu.system-pf2e .effect-panel div[data-item-id] {
   border: rgba(var(--color-border-lighter), 1) 1px solid;
@@ -1026,6 +1042,7 @@ body.-emu.system-pf2e .window-app.sheet.item a.inline-roll {
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
+  color: rgba(var(--color-text), 1);
   text-shadow: none; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item a.entity-link, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item a.inline-roll {
@@ -1268,6 +1285,28 @@ body.-emu.system-pf2e a.editor-edit {
     right: var(--emu-space-base);
     top: var(--emu-space-base); }
 
+body.-emu.system-pf2e a.entity-link,
+body.-emu.system-pf2e a.inline-roll {
+  background-color: rgba(var(--color-background-lightest), 1);
+  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  border: none;
+  border-radius: var(--emu-border-radius-controls, 0);
+  color: rgba(var(--color-text), 1);
+  text-shadow: none; }
+  .-emu-layout body.-emu.system-pf2e a.entity-link, .-emu-layout
+  body.-emu.system-pf2e a.inline-roll {
+    padding: var(--emu-space-pf) var(--emu-space-xs);
+    padding-inline-start: var(--emu-space-base); }
+  body.-emu.system-pf2e a.entity-link:hover,
+  body.-emu.system-pf2e a.inline-roll:hover {
+    color: rgba(var(--color-primary), 1); }
+  body.-emu.system-pf2e a.entity-link > i,
+  body.-emu.system-pf2e a.inline-roll > i {
+    color: inherit; }
+    .-emu-layout body.-emu.system-pf2e a.entity-link > i, .-emu-layout
+    body.-emu.system-pf2e a.inline-roll > i {
+      margin-inline-end: var(--emu-space-xs); }
+
 .-emu-layout body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .bestiary-browser-btn, .-emu-layout
 body.-emu.system-pf2e #sidebar .sidebar-tab .directory-footer .compendium-browser-btn, .-emu-layout
 body.-emu.system-pf2e .sidebar-popout .sidebar-tab .directory-footer .bestiary-browser-btn, .-emu-layout
@@ -1314,6 +1353,22 @@ body.-emu.system-pf2e .sidebar-popout #chat #chat-log .card-footer {
 .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .message .flavor-text strong, .-emu-layout
 body.-emu.system-pf2e .sidebar-popout #chat #chat-log .message .flavor-text strong {
   margin-inline-end: var(--emu-space-xs); }
+
+body.-emu.system-pf2e #sidebar #chat #chat-log .dice-roll .statuseffect-rules,
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-roll .statuseffect-rules {
+  background-color: rgba(var(--color-background), var(--emu-background-opacity-window, 1));
+  background-image: var(--emu-image-background, none);
+  border: rgba(var(--color-border), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0);
+  box-shadow: 0 2px 4px rgba(var(--color-black), 1);
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-roll .statuseffect-rules, .-emu-layout
+  body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-roll .statuseffect-rules {
+    font-size: var(--emu-font-size-sm);
+    left: -1.75rem;
+    padding: var(--emu-space-sm);
+    transition: opacity 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+    width: 18.25rem; }
 
 .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .dice-total .dmgBtn-container, .-emu-layout
 body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container {
