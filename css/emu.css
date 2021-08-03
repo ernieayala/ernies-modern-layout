@@ -1997,6 +1997,7 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
   box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
+  color: rgba(var(--color-text), 1);
   text-shadow: none; }
   .-emu-layout body.-emu .dialog a.entity-link, .-emu-layout
   body.-emu .dialog a.inline-roll, .-emu-layout
@@ -3540,6 +3541,7 @@ body.-emu .sidebar-popout {
       align-items: center;
       display: flex;
       flex: 0 0 auto;
+      flex-wrap: wrap;
       -webkit-margin-after: var(--emu-space-sm);
               margin-block-end: var(--emu-space-sm);
       position: relative;
@@ -4174,7 +4176,7 @@ body.-emu .sidebar-popout #playlists {
     body.-emu .sidebar-popout #playlists .global-control {
       display: flex;
       flex: 0 0 auto;
-      flex-direction: column;
+      flex-wrap: wrap;
       line-height: 1;
       margin: 0;
       padding: var(--emu-space-sm);
@@ -4191,6 +4193,7 @@ body.-emu .sidebar-popout #playlists {
       color: rgba(var(--color-text-lightest), 1); }
       .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-header, .-emu-layout
       body.-emu .sidebar-popout #playlists .global-control .playlist-header {
+        flex: 0 0 auto;
         font-size: var(--emu-font-size-md);
         padding: var(--emu-space-xs) 0;
         width: 100%; }
@@ -4217,6 +4220,7 @@ body.-emu .sidebar-popout #playlists {
               border-inline-start: none; }
       .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds, .-emu-layout
       body.-emu .sidebar-popout #playlists .global-control .playlist-sounds {
+        flex: 0 0 auto;
         height: auto !important;
         padding: 0 !important;
         width: 100%; }
@@ -4227,7 +4231,8 @@ body.-emu .sidebar-popout #playlists {
         color: rgba(var(--color-text-lightest), 1); }
         .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4, .-emu-layout
         body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 {
-          font-size: var(--emu-font-size-lg); }
+          font-size: var(--emu-font-size-lg);
+          margin: 0; }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4 + input[type="range"], .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 + input[type="range"] {
             -webkit-margin-start: var(--emu-space-base);
@@ -5753,8 +5758,8 @@ body.-emu .sidebar-popout #chat section.dice-tray {
   body.-emu .sidebar-popout #chat section.dice-tray > .flexrow {
     margin: 0;
     width: 100%; }
-    .-emu-layout body.-emu #sidebar #chat section.dice-tray > .flexrow:last-child, .-emu-layout
-    body.-emu .sidebar-popout #chat section.dice-tray > .flexrow:last-child {
+    .-emu-layout body.-emu #sidebar #chat section.dice-tray > .flexrow + .flexrow, .-emu-layout
+    body.-emu .sidebar-popout #chat section.dice-tray > .flexrow + .flexrow {
       -webkit-margin-before: var(--emu-space-base);
               margin-block-start: var(--emu-space-base); }
   body.-emu #sidebar #chat section.dice-tray button.dice-tray__button,

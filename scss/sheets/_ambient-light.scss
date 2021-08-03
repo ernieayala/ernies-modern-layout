@@ -1,0 +1,4 @@
+.sheet[id*="ambientlight-sheet-"] {
+	@extend %window-common;
+	@extend %window-hack;
+}

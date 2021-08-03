@@ -177,6 +177,31 @@ body#{$emu}.system-pf2e {
 		@include layout {
 			right: calc(#{space("sidebar")} + #{space("base")});
 			top: calc(#{space("md")} / 2);
+			z-index: z("tooltip");
+
+			.effect-item {
+				position: relative;
+			}
+		}
+
+		.effect-info {
+			background-color: color("background-darkest", 0.8);
+			color: color("text-lightest");
+
+			@include layout {
+				margin-inline-end: m("base");
+				max-height: space("button");
+				padding: p("base");
+			}
+
+			h1 {
+				color: inherit;
+
+				@include layout {
+					font-size: fs("xs");
+					font-weight: normal;
+				}
+			}
 		}
 
 		div[data-item-id] {
@@ -715,6 +740,33 @@ body#{$emu}.system-pf2e {
 		}
 	}
 
+	a.entity-link,
+	a.inline-roll {
+		background-color: color("background-lightest");
+		box-shadow: 0 0 0 1px inset color("border");
+		border: none;
+		border-radius: $global-border-radius-controls;
+		color: color("text");
+		text-shadow: none;
+
+		@include layout {
+			padding: p("pf") p("xs");
+			padding-inline-start: p("base");
+		}
+
+		&:hover {
+			color: color("primary");
+		}
+
+		> i {
+			color: inherit;
+
+			@include layout {
+				margin-inline-end: m("xs");
+			}
+		}
+	}
+
 	#sidebar,
 	.sidebar-popout {
 		.sidebar-tab {
@@ -773,6 +825,25 @@ body#{$emu}.system-pf2e {
 				@include layout {
 					strong {
 						margin-inline-end: m("xs");
+					}
+				}
+			}
+
+			.dice-roll {
+				.statuseffect-rules {
+					background-color: color("background", $global-background-opacity-window);
+					background-image: $global-image-background;
+					border: b("border");
+					border-radius: $global-border-radius-default;
+					box-shadow: 0 2px 4px color("black");
+					color: color("text-lightest");
+
+					@include layout {
+						font-size: fs("sm");
+						left: to-rem(-28px);
+						padding: p("sm");
+						transition: t(opacity, "shift");
+						width: to-rem(292px);
 					}
 				}
 			}
