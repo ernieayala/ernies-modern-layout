@@ -125,7 +125,7 @@ function updateSettings(settings) {
 
 	// Backgrounds
 	if(imageBackground != 'none' || imageBackground == null) {
-		imageBackground === '' ? myRoot.style.setProperty('--emu-image-background', `none`) : myRoot.style.setProperty('--emu-image-background', `url(/${imageBackground})`);
+		imageBackground === '' ? myRoot.style.setProperty('--emu-image-background', `none`) : myRoot.style.setProperty('--emu-image-background', `url('/${imageBackground})`);
 	}
 
 	if(imageBackgroundLightest != 'none' || imageBackgroundLightest == null) {
