@@ -2,6 +2,8 @@
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
 
+Note: Real life has been very busy. When I have down time again I will put some more love into this.
+
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 0.8.6+
 
