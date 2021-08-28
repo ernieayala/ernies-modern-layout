@@ -84,6 +84,7 @@
 	"emu.layout-control-align-hint": "這會將子控件對齊到屏幕頂部。",
 	"emu.layout-subtle-layout": "微妙的佈局",
 	"emu.layout-subtle-layout-opacity": "微妙的佈局不透明度",
+	"emu.layout-subtle-layout-sidebar-locked": "Subtle Layout Lock Sidebar",
 	"emu.toggle-logo": "切換 - 關閉標誌",
 	"emu.toggle-players": "切換 - 關閉玩家",
 	"emu.toggle-scene-thumbnails": "切換 - 關閉場景縮圖"

@@ -369,6 +369,15 @@
 		}
 	}
 
+	@include layout-subtle-locked {
+		opacity: 1;
+		right: 0;
+
+		#emu-sidebar-lock {
+			display: none;
+		}
+	}
+
 	#emu-sidebar-lock {
 		display: none;
 	}

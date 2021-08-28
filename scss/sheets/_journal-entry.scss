@@ -15,7 +15,7 @@
 			}
 
 			> select {
-				flex: 1 1 calc(30% - #{to-rem(36px))});
+				flex: 1 1 calc(30% - #{to-rem(36px)});
 				margin-inline-start: m("base");
 				margin-inline-end: to-rem(36px);
 			}
@@ -29,7 +29,7 @@
 
 		@include layout(compact) {
 			> select {
-				flex: 1 1 calc(30% - #{to-rem(28px))});
+				flex: 1 1 calc(30% - #{to-rem(28px)});
 				margin-inline-end: to-rem(28px);
 			}
 		}

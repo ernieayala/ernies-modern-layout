@@ -2701,11 +2701,6 @@ body.-emu #pause {
     .-emu-layout body.-emu #pause.paused {
       display: flex; }
   .-emu-layout body.-emu #pause img {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    width: 6.25rem;
-    height: 6.25rem;
     -webkit-animation-duration: 5s;
             animation-duration: 5s;
     -webkit-animation-iteration-count: infinite;
@@ -2714,10 +2709,6 @@ body.-emu #pause {
             animation-name: pause-rotation;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
-    -webkit-margin-before: -3.125rem;
-            margin-block-start: -3.125rem;
-    -webkit-margin-start: -3.125rem;
-            margin-inline-start: -3.125rem;
     opacity: 1; }
 
 @-webkit-keyframes pause-rotation {
@@ -2734,8 +2725,7 @@ body.-emu #pause {
   body.-emu #pause h3 {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #pause h3 {
-      font-size: var(--emu-font-size-xxl);
-      line-height: initial; }
+      font-size: var(--emu-font-size-xxl); }
 
 body.-emu #players {
   background-color: rgba(var(--color-background), var(--emu-background-opacity-players, 0.8));
@@ -2989,7 +2979,7 @@ body.-emu #navigation {
       right: calc(-1 * var(--emu-space-sm));
       top: calc(-1 * var(--emu-space-sm));
       position: absolute; }
-  .-emu-layout.-emu--subtle-layout.-emu-compact body.-emu #navigation {
+  .-emu-layout.-emu-subtle-layout.-emu-compact body.-emu #navigation {
     left: 4.625rem; }
   body.-emu #navigation #nav-toggle {
     background-color: rgba(var(--color-background), var(--emu-background-opacity-scene-navigation, 0.8));
@@ -3625,6 +3615,11 @@ body.-emu #sidebar {
         content: "\f0d9"; }
       .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock:hover::before {
         content: "\f023"; }
+  .-emu-layout.-emu-subtle-layout-sidebar-locked body.-emu #sidebar {
+    opacity: 1;
+    right: 0; }
+    .-emu-layout.-emu-subtle-layout-sidebar-locked body.-emu #sidebar #emu-sidebar-lock {
+      display: none; }
   body.-emu #sidebar #emu-sidebar-lock {
     display: none; }
 
