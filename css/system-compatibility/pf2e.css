@@ -1383,9 +1383,26 @@ body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-contai
     body.-emu.system-pf2e .sidebar-popout #chat #chat-log .dice-total .dmgBtn-container button > i {
       margin: 0; }
 
-.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button > i, .-emu-layout
-body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button > i {
-  margin: 0; }
+.-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons, .-emu-layout
+body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons {
+  margin-block-start: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button, .-emu-layout
+  body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button {
+    flex-direction: column; }
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button > i,
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button > img, .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button > i,
+    .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button > img {
+      left: auto;
+      margin: 0 0 var(--emu-space-base);
+      top: auto; }
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button .transparent-half, .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button .transparent-half {
+      display: none; }
+    .-emu-layout body.-emu.system-pf2e #sidebar #chat #chat-log .chat-damage-buttons button .label, .-emu-layout
+    body.-emu.system-pf2e .sidebar-popout #chat #chat-log .chat-damage-buttons button .label {
+      font-size: var(--emu-font-size-xs); }
 
 body.-emu.system-pf2e [data-visibility=gm]:is(div, em, p, span) {
   background-color: rgba(var(--color-background-light), 1);

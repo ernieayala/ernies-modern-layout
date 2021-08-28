@@ -869,8 +869,25 @@ body#{$emu}.system-pf2e {
 
 			.chat-damage-buttons {
 				@include layout {
-					button > i {
-						margin: 0;
+					margin-block-start: m("base");
+
+					button {
+						flex-direction: column;
+
+						> i,
+						> img {
+							left: auto;
+							margin: 0 0 m("base");
+							top: auto;
+						}
+
+						.transparent-half {
+							display: none;
+						}
+
+						.label {
+							font-size: fs("xs");
+						}
 					}
 				}
 			}
