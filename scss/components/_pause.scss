@@ -22,14 +22,14 @@
 				100% { transform: rotate(360deg); }
 			}
 
-			@include absolute(top 50% left 50%);
-			@include size(to-rem(100px));
+			// @include absolute(top 50% left 50%);
+			// @include size(to-rem(100px));
 			animation-duration: 5s;
 			animation-iteration-count: infinite;
 			animation-name: pause-rotation;
 			animation-timing-function: linear;
-			margin-block-start: to-rem(-50px);
-			margin-inline-start: to-rem(-50px);
+			// margin-block-start: to-rem(-50px);
+			// margin-inline-start: to-rem(-50px);
 			opacity: 1;
 		}
 	}
@@ -39,7 +39,6 @@
 
 		@include layout {
 			font-size: fs("xxl");
-			line-height: initial;
 		}
 	}
 }

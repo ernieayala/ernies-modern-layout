@@ -118,11 +118,26 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 			@content;
 		}
 	} @else {
-		.-emu-layout.-emu--subtle-layout.-emu-compact & {
+		.-emu-layout.-emu-subtle-layout.-emu-compact & {
 			@content;
 		}
 	}
 }
+
+
+
+@mixin layout-subtle-locked($compact: null) {
+	@if not $compact {
+		.-emu-layout.-emu-subtle-layout-sidebar-locked & {
+			@content;
+		}
+	} @else {
+		.-emu-layout.-emu-subtle-layout-sidebar-locked.-emu-compact & {
+			@content;
+		}
+	}
+}
+
 
 @mixin layout-control-align-top($compact: null) {
 	@if not $compact {

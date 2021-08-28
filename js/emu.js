@@ -393,7 +393,20 @@ Hooks.once('ready', () => {
 		}
 	});
 	const subtleLayoutOpacity = game.settings.get(moduleName, 'subtleLayoutOpacity');
-	subtleLayout ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${subtleLayoutOpacity}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
+	subtleLayoutOpacity ? document.documentElement.style.setProperty('--emu-subtle-opacity', `${subtleLayoutOpacity}`) : document.documentElement.style.setProperty('--emu-subtle-opacity', `0.3`);
+
+	game.settings.register(moduleName, 'subtleLayoutLockSidebar', {
+		name: game.i18n.localize('emu.layout-subtle-layout-sidebar-locked'),
+		scope: 'user',
+		config: emuLayoutStatus,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-subtle-layout-sidebar-locked') : myHtml[0].classList.remove('-emu-subtle-layout-sidebar-locked');
+		}
+	});
+	const subtleLayoutLockSidebar = game.settings.get(moduleName, 'subtleLayoutLockSidebar');
+	subtleLayoutLockSidebar ? myHtml[0].classList.add('-emu-subtle-layout-sidebar-locked') : myHtml[0].classList.remove('-emu-subtle-layout-sidebar-locked');
 
 	// Toggle
 	game.settings.register(moduleName, 'togglePlayers', {
