@@ -84,6 +84,7 @@
 		@include layout {
 			display: flex;
 			flex: 0 0 auto;
+			gap: space("base");
 			padding: p("sm");
 		}
 

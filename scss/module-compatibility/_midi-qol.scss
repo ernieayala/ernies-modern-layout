@@ -17,7 +17,7 @@
 
 #midi-qol-settings {
 	@extend %window-common;
-	@extend %window-hack;
+	@extend %window-hack !optional;
 
 	.midi-qol-box {
 		border: none;

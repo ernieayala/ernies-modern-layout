@@ -1,19 +1,12 @@
 #controls {
 	@include layout {
-		@extend %reset-list;
-		@include fixed(top space("sm") left space("sm"));
-		box-shadow: none;
-		display: block;
-		transition: t(opacity, "link");
-		z-index: z("fixed");
-	}
-
-	@include layout-logo {
-		top: to-rem(60px);
-	}
-
-	@include layout-logo(compact) {
-		top: to-rem(40px);
+		display: flex;
+		flex: 1 1 auto;
+		height: 0;
+		max-width: 100%;
+		padding-block-start: space("sm");
+		padding-inline-start: space("sm");
+		position: relative;
 	}
 
 	@include layout-subtle {
@@ -23,8 +16,9 @@
 			content: "";
 			bottom: calc(-1 * #{space("sm")});
 			left: calc(-1 * #{space("sm")});
-			right: to-rem(-54px);
+			right: calc(-1 * #{space("sm")});
 			top: calc(-1 * #{space("sm")});
+			pointer-events: all;
 			position: absolute;
 		}
 
@@ -32,113 +26,8 @@
 		&:active {
 			opacity: 1;
 
-			.scene-control {
-				&.active .control-tools {
-					opacity: 1;
-				}
-			}
-		}
-	}
-
-	.scene-control,
-	.control-tool {
-		border: none;
-		border-radius: $global-border-radius-controls;
-		box-shadow: none;
-		color: color("text-lightest");
-		font-size: fs("lg");
-		transition: t(background box-shadow color opacity, "link");
-
-		@include layout {
-			@include size(space("button-lg"));
-			align-items: center;
-			cursor: pointer;
-			display: flex;
-			justify-content: center;
-			line-height: initial;
-			margin: 0;
-			margin-block-end: space("base");
-			padding: 0;
-			pointer-events: all;
-			position: relative;
-
-			&:last-of-type {
-				margin-block-end: 0;
-			}
-
-			> i {
-				margin: 0;
-				position: relative;
-			}
-		}
-
-		&:hover {
-			@extend %global-hover;
-			background-image: none;
-		}
-
-		&:focus {
-			@extend %global-focus;
-			background-image: none;
-		}
-
-		&.active {
-			@extend %global-active;
-			@extend %global-hover;
-			background-image: none;
-		}
-	}
-
-	.scene-control {
-		background-color: color("background-darkest", $global-background-opacity-scene-control);
-		background-image: $global-image-background-controls;
-
-		&.active .control-tools {
-			opacity: 1;
-
-			@include layout {
-				display: inline-flex;
-			}
-
-			@include layout-subtle {
-				opacity: 0;
-			}
-		}
-
-		@include layout-control-align-top {
-			position: initial;
-		}
-	}
-
-	.control-tool {
-		background-color: color("background", $global-background-opacity-scene-control);
-		background-image: $global-image-background-controls;
-
-		@include layout {
-			margin-inline-end: space("base");
-		}
-
-		&.toggle {
-			background-color: color("background-lightest");
-			background-image: $global-image-background-controls;
-			color: color("text");
-
-			&:hover {
-				@extend %global-hover;
-				background-color: color("primary");
-				background-image: none;
-				color: color("text-lightest");
-			}
-
-			&:focus {
-				@extend %global-focus;
-			}
-
-			&.active {
-				@extend %global-active;
-				@extend %global-focus;
-				background-color: color("primary");
-				background-image: none;
+			.control-tools {
+				opacity: 1;
 			}
 		}
 	}
@@ -146,21 +35,137 @@
 	.control-tools {
 		@include layout {
 			@extend %reset-list;
-			@include absolute(top 0 left to-rem(44px));
 			flex-direction: column;
 			flex-wrap: wrap;
 			pointer-events: none;
-			max-height: 60vh;
-			opacity: 0;
+			opacity: 1;
+			overflow: visible;
+			padding: 0;
 			transition: t(opacity left, "link");
-		}
-
-		@include layout(compact) {
-			left: to-rem(34px);
+			width: auto;
 		}
 
 		@include layout-subtle {
-			opacity: 0;
+			opacity: $global-subtle-opacity;
+		}
+
+		&.main-controls {
+			@include layout {
+				display: flex;
+			}
+		}
+
+		&.sub-controls {
+			@include layout {
+				padding-inline-start: space("base");
+			}
+		}
+
+		.scene-control,
+		.control-tool {
+			border: none;
+			border-radius: $global-border-radius-controls;
+			box-shadow: none;
+			color: color("text-lightest");
+			font-size: fs("lg");
+			transition: t(background box-shadow color opacity, "link");
+
+			@include layout {
+				@include size(space("button-lg"));
+				align-items: center;
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				line-height: initial;
+				margin: 0;
+				margin-block-end: space("base");
+				padding: 0;
+				pointer-events: all;
+				position: relative;
+
+				&:last-of-type {
+					margin-block-end: 0;
+				}
+
+				> i {
+					margin: 0;
+					position: relative;
+				}
+			}
+
+			@include layout(compact) {
+				@include size(space("button-lg"));
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background-image: none;
+			}
+
+			&:focus {
+				@extend %global-focus;
+				background-image: none;
+			}
+
+			&.active {
+				@extend %global-active;
+				@extend %global-hover;
+				background-image: none;
+			}
+		}
+
+		.scene-control {
+			background-color: color("background-darkest", $global-background-opacity-scene-control);
+			background-image: $global-image-background-controls;
+
+			&.active .control-tools {
+				opacity: 1;
+
+				@include layout {
+					display: inline-flex;
+				}
+
+				@include layout-subtle {
+					opacity: 0;
+				}
+			}
+
+			@include layout-control-align-top {
+				position: initial;
+			}
+		}
+
+		.control-tool {
+			background-color: color("background", $global-background-opacity-scene-control);
+			background-image: $global-image-background-controls;
+
+			@include layout {
+				margin-inline-end: space("base");
+			}
+
+			&.toggle {
+				background-color: color("background-lightest");
+				background-image: $global-image-background-controls;
+				color: color("text");
+
+				&:hover {
+					@extend %global-hover;
+					background-color: color("primary");
+					background-image: none;
+					color: color("text-lightest");
+				}
+
+				&:focus {
+					@extend %global-focus;
+				}
+
+				&.active {
+					@extend %global-active;
+					@extend %global-focus;
+					background-color: color("primary");
+					background-image: none;
+				}
+			}
 		}
 	}
 }

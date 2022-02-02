@@ -1,4 +1,4 @@
-.journal-sheet.sheet.window-app .window-content {
+.window-app[id*="journalentry-sheet-"] {
 	form {
 		@include layout {
 			display: flex;
@@ -11,13 +11,11 @@
 			}
 
 			> input[type="text"] {
-				flex: 1 1 calc(70% - #{m("base")});
+				flex: 0 0 70%;
 			}
 
 			> select {
-				flex: 1 1 calc(30% - #{to-rem(36px)});
-				margin-inline-start: m("base");
-				margin-inline-end: to-rem(36px);
+				flex: 0 0 calc(35% - #{to-rem(74px)});
 			}
 
 			> button {
@@ -36,18 +34,17 @@
 
 		.editor {
 			@include layout {
-				height: calc(100% - #{to-rem(70px)});
-				margin-block-start: m("base");
+				height: calc(100% - #{to-rem(74px)});
 				overflow: visible;
 			}
 
 			@include layout(compact) {
-				height: calc(100% - #{to-rem(58px)});
+				height: calc(100% - #{to-rem(62px)});
 			}
 		}
 	}
 
-	.editor-edit {
+	a.editor-edit {
 		@extend %primary-button;
 
 		@include layout {
@@ -61,6 +58,10 @@
 			> i {
 				margin: 0;
 			}
+		}
+
+		&:hover {
+			color: color("text-lightest");
 		}
 
 		@include layout(compact) {

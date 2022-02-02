@@ -1,9 +1,5 @@
-.sheet.active-effect-sheet {
+.sheet[id*="activeeffect-sheet-"] {
 	.sheet-header {
-		@include layout {
-			margin-block-end: m("base");
-		}
-
 		h1 {
 			border: none;
 
@@ -17,12 +13,19 @@
 		@extend %table-header;
 	}
 
-	.changes-list li {
-		@extend %table-row;
-
+	.changes-list {
 		@include layout {
-			&:nth-of-type(even) {
-				background-color: color("background-light", 0.1);
+			@include reset-list;
+			width: 100%;
+		}
+
+		li {
+			@extend %table-row;
+
+			@include layout {
+				&:nth-of-type(even) {
+					background-color: color("background-light", 0.1);
+				}
 			}
 		}
 	}

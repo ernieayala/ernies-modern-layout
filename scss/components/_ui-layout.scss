@@ -1,0 +1,51 @@
+#ui-left,
+#ui-middle,
+#ui-right {
+	@include layout {
+		pointer-events: none;
+		position: relative;
+		z-index: z("fixed");
+	}
+}
+
+#ui-left {
+	@include layout {
+		display: flex;
+		flex: 0 0 auto;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+#ui-middle {
+	@include layout {
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+#ui-right {
+	@include layout {
+		flex	: none;
+	}
+}
+
+#ui-top {
+	margin: 0;
+	position: relative;
+
+	&.offset {
+		margin-inline-start: calc(#{space("sidebar")}/-4);
+	}
+}
+
+#ui-bottom {
+	position: relative;
+
+	> div {
+		display: flex;
+		justify-content: space-between;
+	}
+}

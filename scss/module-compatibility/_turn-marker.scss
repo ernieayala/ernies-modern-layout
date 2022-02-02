@@ -1,6 +1,6 @@
 #turnmarker-settings-form {
 	@extend %window-common;
-	@extend %window-hack;
+	@extend %window-hack !optional;
 
 	form > p:last-of-type {
 		@include layout {

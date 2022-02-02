@@ -1,6 +1,6 @@
 #healthestimate-style-form {
 	@extend %window-common;
-	@extend %window-hack;
+	@extend %window-hack !optional;
 
 	.window-content {
 		form {

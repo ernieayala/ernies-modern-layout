@@ -7,9 +7,10 @@
 	transition: t(opacity, "link");
 
 	@include layout {
-		@include fixed(bottom space("sm") left space("sm"));
 		display: block;
-		width: to-rem(200px);
+		margin: space("sm");
+		padding: 0;
+		pointer-events: all;
 		z-index: z("fixed");
 
 		&.hidden {
@@ -88,6 +89,7 @@
 
 			&:first-of-type {
 				@include layout {
+					margin-inline-start: 0;
 					margin-inline-end: m("sm");
 				}
 			}
@@ -95,6 +97,7 @@
 			&:last-of-type {
 				@include layout {
 					margin-inline-start: m("sm");
+					margin-inline-end: 0;
 				}
 			}
 		}
@@ -141,6 +144,7 @@
 				@include ellipsis;
 				flex: 1 1 auto;
 				position: relative;
+				word-break: break-all;
 			}
 
 			&.self {

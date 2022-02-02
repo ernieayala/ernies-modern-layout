@@ -1,22 +1,14 @@
 #client-settings.window-app.form {
-	.window-content {
-		@include layout {
-			padding: p("sm");
-		}
-	}
-
 	nav.tabs {
 		border-block-end: b("primary", 2px);
 
 		@include layout {
-			flex: 0 0 auto;
-			height: initial;
-			line-height: initial;
+			padding: 0;
 		}
 
 		.item {
 			@include layout {
-				padding: p("sm");
+				@extend %button-icon;
 			}
 		}
 	}
@@ -43,9 +35,12 @@
 				@include layout {
 					height: initial;
 					font-size: fs("lg");
+				}
 
-					label {
-						padding: 0;
+				label {
+					color: inherit;
+
+					@include layout {
 						pointer-events: none;
 					}
 				}
@@ -59,8 +54,6 @@
 		}
 
 		.settings-list {
-			border: none;
-
 			@include layout {
 				max-height: 100%;
 				overflow: initial;
@@ -69,40 +62,10 @@
 		}
 	}
 
-	form .form-group {
-		@include layout {
-			button label {
-				font-size: fs("lg");
-			}
-		}
-	}
-
-	.form-group.submenu {
-		.notes {
-			@include layout {
-				margin-block-start: m("sm");
-			}
-		}
-	}
-
 	.sheet-footer {
 		@include layout {
 			flex: 0 0 auto;
-			flex-wrap: nowrap;
-			padding: 0;
-			padding-block-start: p("sm");
-		}
-
-		button {
-			border: none;
-
-			@include layout {
-				margin: 0;
-
-				+ button {
-					margin-inline-start: m("base");
-				}
-			}
+			gap: space("base");
 		}
 	}
 }

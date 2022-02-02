@@ -6,8 +6,8 @@
 
 	@include layout {
 		height: auto;
-		margin-block-start: m("base");
 		padding: p("sm");
+		width: 100%;
 
 		> div {
 			height: auto;

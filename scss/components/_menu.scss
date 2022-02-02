@@ -21,6 +21,7 @@
 			@extend %reset-list;
 			display: flex;
 			flex-direction: column;
+			gap: space("sm");
 			padding: p("sm");
 		}
 
@@ -29,13 +30,6 @@
 
 			@include layout {
 				font-size: fs("xl");
-				margin-block-end: m("sm");
-			}
-
-			&:last-child {
-				@include layout {
-					margin-block-end: 0;
-				}
 			}
 
 			i,

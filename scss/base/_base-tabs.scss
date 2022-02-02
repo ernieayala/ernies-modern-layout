@@ -7,6 +7,16 @@
 			flex: 1 1 auto;
 			overflow-y: auto;
 			overflow-x: hidden;
+
+			&[data-tab] {
+				display: none;
+				flex-wrap: wrap;
+				gap: space("base");
+
+				&.active {
+					display: flex;
+				}
+			}
 		}
 	}
 }

@@ -41,7 +41,6 @@ body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.syste
   height: var(--emu-space-button-sm);
   flex: 0 0 auto;
   font-size: var(--emu-font-size-sm);
-  margin-inline-start: var(--emu-space-xs);
   padding: 0; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-folder > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .create-entity > i, body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i {
     margin: 0; }
@@ -157,8 +156,6 @@ body.-emu.system-pf2e .window-app.sheet.item input[type="color"][data-edit] {
     margin: 0;
     padding: 0 var(--emu-space-sm);
     position: relative; }
-    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="color"] + input[type="color"], body.-emu.system-pf2e .window-app.sheet.item .-emu-layout input[type="color"] + input[type="color"] {
-      margin-inline-start: var(--emu-space-base); }
   body.-emu.system-pf2e .window-app.sheet.item input:disabled[type="color"] {
     opacity: 0.5;
     pointer-events: none; }
@@ -236,7 +233,7 @@ body.-emu.system-pf2e .window-app.sheet.item input[type="range"] {
       display: flex;
       flex: 0 0 auto;
       font-size: var(--emu-font-size-md);
-      margin-inline-start: var(--emu-space-sm);
+      margin: 0;
       padding: 0; }
 
 body.-emu.system-pf2e .window-app.sheet.item textarea {
@@ -311,7 +308,9 @@ body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs {
     height: initial;
     line-height: initial;
     margin: 0;
-    position: relative; }
+    padding: 0;
+    position: relative;
+    width: 100%; }
   body.-emu.system-pf2e #compendium-browser div.content-box nav a, body.-emu.system-pf2e .window-app.sheet.item .tabs a, body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs a {
     background-color: transparent;
     background-image: none;
@@ -332,16 +331,6 @@ body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-.-emu-layout body.-emu.system-pf2e #homebrew-settings .window-content, body.-emu.system-pf2e .-emu-layout #homebrew-settings .window-content, .-emu-layout body.-emu.system-pf2e #variant-rules-settings .window-content, body.-emu.system-pf2e .-emu-layout #variant-rules-settings .window-content {
-  overflow: hidden;
-  padding: 0; }
-
-.-emu-layout body.-emu.system-pf2e #homebrew-settings form, body.-emu.system-pf2e .-emu-layout #homebrew-settings form, .-emu-layout body.-emu.system-pf2e #variant-rules-settings form, body.-emu.system-pf2e .-emu-layout #variant-rules-settings form {
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: var(--emu-space-sm);
-  position: relative; }
 
 .-emu-layout body.-emu.system-pf2e #pf2e-player-config-panel form > div:not(.form-group) {
   margin: 0 !important;
@@ -605,11 +594,11 @@ body.-emu.system-pf2e #compendium-browser div.content-box section.content .setti
 .-emu-layout body.-emu.system-pf2e .dialog .dialog-content > form {
   height: initial; }
 
-.-emu-layout body.-emu.system-pf2e .window-app.sheet.item button + button {
-  margin-inline-start: var(--emu-space-base); }
-
 .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .directory .directory-list {
+  display: flex;
   flex: 1 1 auto;
+  flex-wrap: wrap;
+  gap: var(--emu-space-xs);
   max-height: 100%;
   min-height: 0.0625rem;
   overflow-y: auto; }
@@ -654,11 +643,11 @@ body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item {
     flex-wrap: nowrap;
     height: auto;
     line-height: 1;
-    margin: var(--emu-space-base) var(--emu-space-sm);
+    margin: 0;
     min-height: var(--emu-space-button);
     padding: 0 var(--emu-space-sm);
     position: relative;
-    width: auto; }
+    width: 100%; }
   body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item:hover {
     background-color: rgba(var(--color-primary), 1);
     background-image: none;
@@ -795,9 +784,6 @@ body.-emu.system-pf2e .window-app.sheet.item .directory .directory-item {
         position: relative;
         text-shadow: none; }
 
-.-emu-layout body.-emu.system-pf2e .window-app.sheet.item input[type="text"] + input[type="color"] {
-  margin-inline-start: var(--emu-space-base); }
-
 body.-emu.system-pf2e .window-app.sheet.item select {
   box-shadow: none; }
 
@@ -825,10 +811,12 @@ body.-emu.system-pf2e .window-app.sheet.item form .form-group {
     display: flex;
     flex-wrap: wrap;
     font-size: var(--emu-font-size-lg);
+    gap: var(--emu-space-base);
     height: auto;
     justify-content: space-between;
     margin: 0;
-    padding: var(--emu-space-sm); }
+    padding: var(--emu-space-sm);
+    width: 100%; }
     .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group:nth-of-type(even) {
       background-color: rgba(var(--color-background-light), 0.1); }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields {
@@ -840,22 +828,23 @@ body.-emu.system-pf2e .window-app.sheet.item form .form-group {
     .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields input[type="text"] {
       width: 1px; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.initial-position .form-fields label {
-    flex: 0 0 auto;
-    padding-inline-start: var(--emu-space-sm);
-    padding-inline-end: var(--emu-space-base); }
+    flex: 0 0 auto; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.stacked {
-    padding: 0;
-    padding-block-start: var(--emu-space-sm); }
+    padding: 0; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.stacked textarea {
     margin-block-end: var(--emu-space-base); }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group.hidden {
     display: none; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields {
+    align-items: center;
     display: flex;
-    flex: 1 1 auto; }
+    gap: var(--emu-space-base);
+    flex: 1 1 auto;
+    justify-content: flex-end; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select {
-    flex: 1 1 100%; }
+    flex: 1 1 100%;
+    gap: var(--emu-space-base); }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input[type="checkbox"], .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select[type="checkbox"] {
     -webkit-filter: initial;
@@ -864,16 +853,13 @@ body.-emu.system-pf2e .window-app.sheet.item form .form-group {
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input[type="radio"], .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select[type="radio"] {
     flex: 0 0 auto;
-    margin-inline-end: var(--emu-space-sm);
     width: auto; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input + input, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields input + select, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select + input, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields select + select {
-    flex: 1 1 25%;
-    margin-inline-start: var(--emu-space-base); }
+    flex: 1 1 25%; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button {
-    margin-inline-start: var(--emu-space-base);
     order: initial;
     width: auto; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.file-picker > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.grid-config > i, .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.capture-position > i {
@@ -881,14 +867,7 @@ body.-emu.system-pf2e .window-app.sheet.item form .form-group {
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button + input {
     order: -1; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields button.file-picker + input[type="text"] {
-    margin-right: 0 !important; }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields + .notes, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group .form-fields + .hint, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group .range-value + .notes, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group .range-value + .hint, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="checkbox"] + .notes, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="checkbox"] + .hint {
-    margin-block-start: var(--emu-space-sm); }
+    margin-inline-end: 0 !important; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group select {
     flex: 1 1 auto;
@@ -901,50 +880,44 @@ body.-emu.system-pf2e .window-app.sheet.item form .form-group {
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input[type="radio"], .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group select[type="radio"] {
     flex: 0 0 auto;
-    margin-inline-end: var(--emu-space-sm);
     width: auto; }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + .notes, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group select + .notes {
-    margin-block-start: var(--emu-space-sm); }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input, .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input {
-    flex: 1 1 25%;
-    margin-inline-start: var(--emu-space-base); }
+    flex: 1 1 25%; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input[type="checkbox"], .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group input + input[type="radio"], .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input[type="checkbox"], .-emu-layout
   body.-emu.system-pf2e .window-app.sheet.item form .form-group select + input[type="radio"] {
     flex: 0 0 auto; }
   .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group > label {
     flex: 0 0 40%; }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label {
-    align-items: center;
-    display: inline-flex;
-    font-size: var(--emu-font-size-md);
-    font-weight: normal;
-    line-height: initial;
-    margin: 0;
-    padding-inline-end: var(--emu-space-base); }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox {
-    height: auto; }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox input[type="checkbox"] {
-    margin-inline-start: var(--emu-space-base); }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox + input[type="range"], .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox + select {
-    margin-inline-start: var(--emu-space-base); }
-  body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
+  body.-emu.system-pf2e .window-app.sheet.item form .form-group label {
     color: rgba(var(--color-text), 1); }
-    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      display: block;
-      font-size: var(--emu-font-size-sm);
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label {
+      align-items: center;
+      display: inline-flex;
+      font-size: var(--emu-font-size-md);
+      font-weight: normal;
       line-height: initial;
-      margin: 0 var(--emu-space-base); }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label > i {
-    margin-inline-end: var(--emu-space-base); }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group + button[type="submit"] {
-    margin-block-start: var(--emu-space-sm); }
+      margin: 0;
+      padding: 0; }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label.checkbox {
+      gap: var(--emu-space-base);
+      height: auto; }
+    body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
+      color: rgba(var(--color-text), 1); }
+      .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label .units {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        font-size: var(--emu-font-size-sm);
+        line-height: initial;
+        margin: 0 var(--emu-space-base); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group label > i {
+      margin-inline-end: var(--emu-space-base); }
+
+.-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .form-group-stacked {
+  margin: 0; }
 
 body.-emu.system-pf2e .window-app.sheet.item form .notes,
 body.-emu.system-pf2e .window-app.sheet.item form .hint {
@@ -960,12 +933,6 @@ body.-emu.system-pf2e .window-app.sheet.item form .hint {
     .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes:empty, .-emu-layout
     body.-emu.system-pf2e .window-app.sheet.item form .hint:empty {
       display: none; }
-    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes:first-child, .-emu-layout
-    body.-emu.system-pf2e .window-app.sheet.item form .hint:first-child {
-      margin-bottom: var(--emu-space-base); }
-  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item form .notes + .form-group, .-emu-layout
-  body.-emu.system-pf2e .window-app.sheet.item form .hint + .form-group {
-    margin-block-start: var(--emu-space-sm); }
 
 body.-emu.system-pf2e .window-app.sheet.item img {
   border: none;
@@ -996,6 +963,14 @@ body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs ~ .tab {
   flex: 1 1 auto;
   overflow-y: auto;
   overflow-x: hidden; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs ~ .tab[data-tab], .-emu-layout
+  body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs ~ .tab[data-tab] {
+    display: none;
+    flex-wrap: wrap;
+    gap: var(--emu-space-base); }
+    .-emu-layout body.-emu.system-pf2e .window-app.sheet.item .tabs ~ .tab[data-tab].active, .-emu-layout
+    body.-emu.system-pf2e .window-app.sheet.item .sheet-tabs ~ .tab[data-tab].active {
+      display: flex; }
 
 body.-emu.system-pf2e .window-app.sheet.item h1,
 body.-emu.system-pf2e .window-app.sheet.item h2,
@@ -1077,6 +1052,8 @@ body.-emu.system-pf2e .window-app.sheet.item hr {
   border: none;
   border-block-start: rgba(var(--color-border), 1) 1px solid;
   border-block-end: none; }
+  .-emu-layout body.-emu.system-pf2e .window-app.sheet.item hr {
+    width: 100%; }
 
 body.-emu.system-pf2e .window-app.sheet.item button[hidden] {
   display: none; }

@@ -38,7 +38,7 @@ body#{$emu}.system-pf2e {
 	}
 
 	#homebrew-settings {
-		@extend %window-hack-alt;
+		@extend %window-hack-alt !optional;
 
 		.form-group {
 			&.setting {
@@ -78,7 +78,7 @@ body#{$emu}.system-pf2e {
 	}
 
 	#variant-rules-settings {
-		@extend %window-hack-alt;
+		@extend %window-hack-alt !optional;
 
 		.form-group + h2 {
 			@include layout {

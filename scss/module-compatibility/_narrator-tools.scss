@@ -1,6 +1,6 @@
 #narrator-config {
 	@extend %window-common;
-	@extend %window-hack;
+	@extend %window-hack !optional;
 }
 
 .narrator-span {

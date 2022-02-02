@@ -10,6 +10,7 @@
 			display: flex;
 			flex: 1 1 auto;
 			flex-direction: column;
+			gap: base("base");
 			height: 100%;
 			padding: p("sm");
 			position: relative;
@@ -18,72 +19,66 @@
 }
 
 %window-hack {
-	.window-content {
-		@include layout {
-			overflow: hidden;
-		}
-	}
+	// .window-content {
+	// 	@include layout {
+	// 		overflow: hidden;
+	// 	}
+	// }
 
-	form {
-		@include layout {
-			overflow-x: hidden;
-			overflow-y: auto;
-		}
+	// form {
+	// 	@include layout {
+	// 		overflow-x: hidden;
+	// 		overflow-y: auto;
+	// 	}
 
-		&::after {
-			background-color: color("background-lightest");
-			background-image: $global-image-background-light;
-			border-block-start: 1px solid color("border");
+	// 	&::after {
+	// 		background-color: color("background-lightest");
+	// 		background-image: $global-image-background-light;
+	// 		// border-block-start: 1px solid color("border");
 
-			@include layout {
-				bottom: calc(-1 * #{space("sm")});
-				content: "";
-				flex: 0 0 auto;
-				height: to-rem(46px);
-				margin-block-start: to-rem(-38px);
-				position: sticky;
-				width: 100%;
-				z-index: 5;
-			}
+	// 		@include layout {
+	// 			bottom: calc(-1 * #{space("sm")});
+	// 			content: "";
+	// 			flex: 0 0 auto;
+	// 			height: to-rem(46px);
+	// 			margin-block-start: to-rem(-38px);
+	// 			position: sticky;
+	// 			width: 100%;
+	// 			z-index: 5;
+	// 		}
 
-			@include layout(compact) {
-				height: to-rem(38px);
-				margin-block-start: to-rem(-30px);
-			}
-		}
+	// 		@include layout(compact) {
+	// 			height: to-rem(38px);
+	// 			margin-block-start: to-rem(-30px);
+	// 		}
+	// 	}
 
-		.form-group:last-of-type {
-			@include layout {
-				margin-block-end: m("md");
-			}
-		}
+	// 	> button[type="submit"] {
+	// 		border-radius: $global-border-radius-controls;
 
-		> button[type="submit"] {
-			border-radius: $global-border-radius-controls;
-
-			@include layout {
-				bottom: 0;
-				position: sticky;
-				z-index: 10;
-			}
-		}
-	}
+	// 		@include layout {
+	// 			bottom: 0;
+	// 			position: sticky;
+	// 			z-index: 10;
+	// 		}
+	// 	}
+	// }
 }
 
 %window-hack-alt {
-	.window-content {
-		@include layout {
-			overflow: hidden;
-			padding: 0;
-		}
-	}
+	// .window-content {
+	// 	@include layout {
+	// 		overflow: hidden;
+	// 		padding: 0;
+	// 	}
+	// }
 
-	form {
-		@include layout {
-			overflow-x: hidden;
-			overflow-y: auto;
-			padding: p("sm");
-			position: relative;
-		}
-	}
+	// form {
+	// 	@include layout {
+	// 		overflow-x: hidden;
+	// 		overflow-y: auto;
+	// 		padding: p("sm");
+	// 		position: relative;
+	// 	}
+	// }
 }

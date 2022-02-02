@@ -2,7 +2,10 @@
 	.directory-list {
 		@include layout {
 			@extend %reset-list;
+			display: flex;
 			flex: 1 1 auto;
+			flex-wrap: wrap;
+			gap: space("xs");
 			max-height: 100%;
 			min-height: to-rem(1px);
 			overflow-y: auto;
@@ -75,11 +78,11 @@
 			flex-wrap: nowrap;
 			height: auto;
 			line-height: 1;
-			margin: m("base") m("sm");
+			margin: 0;
 			min-height: space("button");
 			padding: 0 p("sm");
 			position: relative;
-			width: auto;
+			width: 100%;
 		}
 
 		&:hover {

@@ -43,6 +43,7 @@
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
+			gap: space("xs");
 			line-height: initial;
 			margin: 0;
 			overflow: hidden;
@@ -146,7 +147,20 @@
 
 		form {
 			@include layout {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				gap: space("base");
 				height: 100%;
+
+				.form-body {
+					flex: 1 1 auto;
+					overflow: auto;
+				}
+
+				.form-footer {
+					flex: 0 0 auto;
+				}
 			}
 		}
 
@@ -195,6 +209,7 @@
 	.sheet-header {
 		@include layout {
 			display: flex;
+			gap: space("base");
 			position: relative;
 		}
 
@@ -205,7 +220,6 @@
 				@include size(space("button-lg"));
 				cursor: pointer;
 				flex: 0 0 auto;
-				margin-inline-end: m("sm");
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
@@ -221,6 +235,8 @@
 		}
 
 		> h1 {
+			border: none;
+
 			@include layout {
 				flex: 1 1 auto;
 				margin: 0;
@@ -243,9 +259,10 @@
 	.sheet-footer {
 		@include layout {
 			flex: 0 0 auto;
+			gap: space("base");
 			line-height: initial;
-			margin-block-start: m("sm");
-			z-index: 10;
+			width: 100%;
+			z-index: z("fixed");
 
 			// might not need anymore
 			+ ::after {

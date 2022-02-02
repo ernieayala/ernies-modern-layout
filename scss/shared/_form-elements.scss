@@ -137,10 +137,6 @@
 		margin: 0;
 		padding: 0 p("sm");
 		position: relative;
-
-		+ input[type="color"] {
-			margin-inline-start: m("base");
-		}
 	}
 
 	&:hover {
@@ -259,7 +255,7 @@
 			display: flex;
 			flex: 0 0 auto;
 			font-size: fs("md");
-			margin-inline-start: m("sm");
+			margin: 0;
 			padding: 0;
 		}
 	}

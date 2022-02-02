@@ -1,9 +1,5 @@
-.sheet.roll-table-config {
+.window-app[id*="rolltable-sheet-"] {
 	.sheet-header {
-		@include layout {
-			margin-block-end: m("base");
-		}
-
 		h1 {
 			border: none;
 

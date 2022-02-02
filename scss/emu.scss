@@ -20,6 +20,7 @@ body#{$emu} {
 	// Components
 	@import "./components/context-menu";
 	@import "./components/dialog";
+	@import "./components/fps";
 	@import "./components/hotbar";
 	@import "./components/hud";
 	@import "./components/loading-bar";
@@ -30,6 +31,7 @@ body#{$emu} {
 	@import "./components/players-connected";
 	@import "./components/scene-controls";
 	@import "./components/scene-navigation";
+	@import "./components/ui-layout";
 	@import "./components/window-app";
 
 	// Sidebar
@@ -47,27 +49,16 @@ body#{$emu} {
 
 	// Sheets
 	@import "./sheets/active-effects";
-	@import "./sheets/actor-flags";
-	// @import "./sheets/ambient-light";
 	@import "./sheets/av-config";
 	@import "./sheets/chat-popout";
 	@import "./sheets/client-settings";
-	@import "./sheets/combatant-config";
-	@import "./sheets/default-token-config";
-	@import "./sheets/drawing-config";
 	@import "./sheets/filepicker";
-	@import "./sheets/folder-edit";
 	@import "./sheets/journal-entry";
 	@import "./sheets/macro-config";
 	@import "./sheets/module-management";
 	@import "./sheets/roll-table-config";
-	@import "./sheets/scene";
 	@import "./sheets/template-config";
-	@import "./sheets/tile-config";
-	@import "./sheets/token-config";
 	@import "./sheets/trait-selector";
-	@import "./sheets/user-config";
-	@import "./sheets/wall-config";
 
 	// Module Compatibility
 	@import "./module-compatibility/better-npc-sheet";

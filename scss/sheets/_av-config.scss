@@ -4,14 +4,18 @@
 			border-block-end: b("primary", 2px);
 
 			@include layout {
-				flex: 0 0 auto;
+				padding: 0;
 			}
 		}
 
-		> button {
+		.webrtc-custom-turn-config {
 			@include layout {
-				margin-block-start: m("sm");
+				width: 100%;
 			}
+		}
+
+		label {
+			font-weight: 400;
 		}
 	}
 }

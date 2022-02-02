@@ -1,7 +1,0 @@
-.sheet[id*="folder-edit-"] {
-	label.checkbox + label.checkbox {
-		@include layout {
-			margin-inline-start: m("sm");
-		}
-	}
-}
