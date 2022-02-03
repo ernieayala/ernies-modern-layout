@@ -6,11 +6,6 @@
 			display: flex  !important;
 			flex: 1 1 100% !important;
 			margin: 0 !important;
-			margin-block-start: m("base") !important;
-
-			&:only-child {
-				margin-block-start: 0 !important;
-			}
 		}
 	}
 }

@@ -11,12 +11,9 @@
 
 			> .flexrow {
 				@include layout {
+					gap: space("base");
 					margin: 0;
 					width: 100%;
-
-					+ .flexrow {
-						margin-block-start: m("base");
-					}
 				}
 			}
 
@@ -30,19 +27,11 @@
 					flex: 1 1 auto;
 					font-weight: normal;
 					margin: 0;
-					margin-inline-end: m("base");
-				}
-
-				&:last-child {
-					@include layout {
-						margin-inline-end: 0;
-					}
 				}
 			}
 
 			button.dice-tray__button {
 				@include layout {
-					margin-inline-start: 0;
 					padding: p("base") p("sm");
 				}
 
@@ -111,16 +100,12 @@
 			input.dice-tray__input {
 				@extend %input-text;
 				background-color: color("background-lightest");
-
-				@include layout {
-					margin-inline-end: m("base");
-				}
 			}
 
 			.dice-tray__stacked {
 				@include layout {
 					height: space("button");
-					margin-inline-end: m("base");
+					margin: 0;
 				}
 			}
 
@@ -142,9 +127,7 @@
 .dialog--dice-calculator.window-app {
 	.dice-calculator {
 		@include layout {
-			margin-block-start: m("sm");
-			margin-block-end: 0;
-
+			margin: 0;
 			.dice-calculator__input > label {
 				font-size: fs("lg");
 				padding-inline-end: p("sm");

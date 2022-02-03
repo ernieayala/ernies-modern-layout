@@ -38,7 +38,7 @@ Make an issue on Github or message me on Discord: Ernie#4453.
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Systems Functionl as of Feb 2022
+### Systems Functional as of Feb 2022
 - DND 5e
 
 ### Mods Functional as of Feb 2022
@@ -48,12 +48,32 @@ Make an issue on Github or message me on Discord: Ernie#4453.
 - Alternative Pause Icon (0.3.0)
 - Ambient Doors (2.2.6)
 - Autocomplete Whisper (0.3.4)
-- Background Volumne (1.4.2)
+- Background Volume (1.4.2)
+- Better Rolls for 5e (1.7.1)
+- Beyond20 companion module (1.4.1)
+- Border Control (1.3.05)
 - Cautious Gamemaster Pack (0.6.1)
+- Chat Portrait (0.5.36)
+- Change Logs & Conflicts (0.7.7)
+- Character Actions List dnd5e (4.3.0)
+- Chat Images (2.5.6)
+- Chat Message Accessibility Indicators (1.0.0)
 - Chat Portrait (0.5.36)
 - Combat Focus (1.4.1)
 - Combat Utility Belt (1.8.1)
+- DFreds Convenient Effects (2.1.3)
+- Dice Tray (1.5.1)
+- Dice So Nice! (4.3.1)
+- libWrapper (1.12.2.0)
+- Perfect Vision (3.6.5)
+- Permission Viewer (0.9.3)
+- Pings (1.3.0)
+- Polyglot (1.7.29)
 - Simple Calendar (1.3.75)
+- Small Time (1.13.13)
+- Token Mold (2.15.1)
+- Turn Marker (2.9.0)
+- Universal Battlemap Importer (2.2.1)
 - Wall Height (3.6.0.2)
 - Weather Control (4.1.4)
 - World Anvil (1.3.1)

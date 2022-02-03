@@ -54,6 +54,8 @@
 		}
 
 		.settings-list {
+			border: none;
+
 			@include layout {
 				max-height: 100%;
 				overflow: initial;

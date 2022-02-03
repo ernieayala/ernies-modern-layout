@@ -64,7 +64,8 @@ body#{$emu} {
 
 	// Module Compatibility
 	// @import "./module-compatibility/better-npc-sheet";
-	// @import "./module-compatibility/better-roll-5e";
+	@import "./module-compatibility/better-roll-5e";
+	@import "./module-compatibility/better-roofs";
 	// @import "./module-compatibility/calendar-weather";
 	@import "./module-compatibility/cautious-gamemaster-pack";
 	@import "./module-compatibility/chat-portrait";
@@ -78,8 +79,8 @@ body#{$emu} {
 	// @import "./module-compatibility/df-chat-enhancements";
 	// @import "./module-compatibility/df-curvy-walls";
 	// @import "./module-compatibility/dfreds-droppables";
-	// @import "./module-compatibility/dice-so-nice";
-	// @import "./module-compatibility/dice-tray";
+	@import "./module-compatibility/dice-so-nice";
+	@import "./module-compatibility/dice-tray";
 	// @import "./module-compatibility/dnd5e-helpers";
 	// @import "./module-compatibility/dnd-beyond-importer";
 	// @import "./module-compatibility/dynamic-active-effects";
@@ -109,13 +110,13 @@ body#{$emu} {
 	// @import "./module-compatibility/one-journal";
 	// @import "./module-compatibility/party-resources";
 	// @import "./module-compatibility/pdf-foundry";
-	// @import "./module-compatibility/permission-viewer";
+	@import "./module-compatibility/permission-viewer";
 	// @import "./module-compatibility/plutonium";
-	// @import "./module-compatibility/polyglot";
-	// @import "./module-compatibility/search-anywhere";
+	@import "./module-compatibility/polyglot";
+	@import "./module-compatibility/search-anywhere";
 	@import "./module-compatibility/simple-calendar";
 	// @import "./module-compatibility/simple-dice-roller";
-	// @import "./module-compatibility/small-time";
+	@import "./module-compatibility/small-time";
 	// @import "./module-compatibility/tabbed-chat-log";
 	// @import "./module-compatibility/thanduls-toggle";
 	// @import "./module-compatibility/the-furnace";
@@ -128,8 +129,7 @@ body#{$emu} {
 	// @import "./module-compatibility/token-hud-wildcard";
 	// @import "./module-compatibility/token-info-icon";
 	// @import "./module-compatibility/token-magic-fx";
-	// @import "./module-compatibility/token-mold";
-	// @import "./module-compatibility/turn-marker";
-	// @import "./module-compatibility/universal-battlemap-importer";
+	@import "./module-compatibility/token-mold";
+	@import "./module-compatibility/universal-battlemap-importer";
 	@import "./module-compatibility/world-anvil";
 }

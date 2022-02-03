@@ -31,7 +31,7 @@
 		}
 	],
 	"minimumCoreVersion": "9.245",
-	"compatibleCoreVersion": "9.245",
+	"compatibleCoreVersion": "9.249",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
 	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.3.12.zip",

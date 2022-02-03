@@ -1,3 +1,5 @@
+// Revisit This
+
 #polyglot {
 	background-color: color("background", 0.5);
 	background-image: $global-image-background;
@@ -9,7 +11,6 @@
 		flex-wrap: nowrap;
 		margin: 0;
 		padding: 0 p("sm");
-		padding-block-end: p("base");
 	}
 
 	label {

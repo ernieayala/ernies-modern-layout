@@ -2,7 +2,6 @@
 .sidebar-popout {
 	.token-mold {
 		@extend %panel-block;
-		border-block-end: b("border");
 
 		@include layout {
 			flex-wrap: wrap;
@@ -13,7 +12,6 @@
 				font-size: fs("lg");
 				font-weight: normal;
 				margin: 0;
-				margin-block-end: m("base");
 				width: 100%;
 			}
 		}
@@ -21,7 +19,6 @@
 		> label {
 			@include layout {
 				flex: 1 1 auto;
-				padding: p("xs");
 			}
 
 			> span {
@@ -35,12 +32,6 @@
 					> span {
 						margin-inline-end: m("base");
 					}
-				}
-			}
-
-			&:first-of-type {
-				@include layout {
-					padding-inline-start: 0;
 				}
 			}
 		}
