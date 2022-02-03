@@ -74,8 +74,26 @@
 		~ .form-group.picker {
 			background-color: transparent;
 
+			@include layout {
+				left: auto;
+				max-width: 100%;
+				position: absolute;
+				top: auto;
+				width: 100%;
+			}
+
 			input {
 				background-color: color("background-lightest");
+
+				@include layout {
+					margin: 0 !important; // why? because inline
+				}
+			}
+
+			button > i {
+				@include layout {
+					margin: 0;
+				}
 			}
 		}
 	}

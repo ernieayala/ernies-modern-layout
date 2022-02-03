@@ -6,6 +6,7 @@
 
 			@include layout {
 				flex-direction: column;
+				gap: space("base");
 			}
 
 			.encounters {
@@ -13,11 +14,8 @@
 					align-items: center;
 					display: flex;
 					flex-wrap: nowrap;
+					gap: space("base");
 					width: 100%;
-
-					+ .encounters {
-						margin-block-start: m("base");
-					}
 				}
 
 				h3,
@@ -31,7 +29,6 @@
 						display: block;
 						flex: 1 1 auto;
 						font-size: fs("md");
-						margin-inline-start: m("base");
 						text-align: center;
 					}
 				}
@@ -41,6 +38,7 @@
 
 					@include layout {
 						font-size: fs("xl");
+						margin-inline-start: space("button-sm");
 					}
 				}
 
@@ -62,10 +60,6 @@
 		}
 
 		#combat-tracker {
-			@include layout {
-				padding-block-start: p("base");
-			}
-
 			.combatant {
 				background-color: color("background");
 				border: none;
@@ -78,7 +72,7 @@
 					flex-wrap: nowrap;
 					height: auto;
 					line-height: initial;
-					margin: m("base") m("sm");
+					margin: 0 m("sm");
 					padding: p("base") p("sm");
 					position: relative;
 					width: auto;
@@ -123,16 +117,6 @@
 					}
 				}
 
-				.token-image {
-					@include layout {
-						@include size(space("icon"));
-						cursor: default;
-						flex: 0 0 auto;
-						margin-inline-end: m("sm");
-						position: relative;
-					}
-				}
-
 				.token-name {
 					text-shadow: none;
 
@@ -140,6 +124,7 @@
 						display: flex;
 						flex: 1 1 auto;
 						flex-direction: column;
+						gap: space("base");
 						margin: 0;
 						overflow: hidden;
 						position: relative;
@@ -154,7 +139,6 @@
 							flex: initial;
 							font-size: fs("lg");
 							line-height: initial;
-							margin-block-end: m("base");
 						}
 					}
 				}
@@ -203,16 +187,12 @@
 					@include layout {
 						align-items: center;
 						display: flex;
+						gap: space("base");
 					}
 				}
 
 				.combatant-control {
 					@extend %control-button;
-
-					@include layout {
-						margin-inline-start: 0;
-						margin-inline-end: m("base");
-					}
 
 					// fa hack
 					&.roll {
@@ -237,11 +217,12 @@
 						display: flex;
 						flex: 1 1 auto;
 						flex-wrap: wrap;
+						gap: space("base");
 						height: auto;
 
 						img {
 							cursor: default;
-							margin: m("xs");
+							margin: 0;
 							max-height: to-rem(14px);
 							max-width: to-rem(14px);
 							opacity: 1;
@@ -257,6 +238,7 @@
 
 			@include layout {
 				flex-wrap: nowrap;
+				gap: space("base");
 				padding-block-start: m("sm");
 
 				&:empty {
@@ -271,10 +253,6 @@
 					&.center {
 						flex: 1 1 auto;
 						white-space: nowrap;
-					}
-
-					+ .combat-control {
-						margin-inline-start: m("base");
 					}
 
 					> i {

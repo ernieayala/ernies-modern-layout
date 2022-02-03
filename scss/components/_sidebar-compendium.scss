@@ -1,84 +1,70 @@
 #sidebar,
 .sidebar-popout {
 	#compendium {
-		> .directory-list {
+		h3 {
+			background-color: color("background");
+			border: b("border");
+			color: color("text-lightest");
+
 			@include layout {
-				padding: p("sm");
-			}
-		}
-
-		.directory-item {
-			@include layout {
-				flex-wrap: wrap;
-				line-height: 1;
-				margin: m("base");
-				padding: 0 p("sm");
-			}
-
-			h4 {
-				@include layout {
-					align-items: center;
-					display: flex;
-					width: 100%;
-				}
-
-				.status-icons {
-					color: color("text-lightest");
-
-					@include layout {
-						position: relative;
-
-						i {
-							margin: 0;
-							margin-inline-start: m("base");
-						}
-					}
-				}
-			}
-
-			.compendium-footer {
-				color: color("text-lightest");
-
-				@include layout {
-					flex: 0 0 auto;
-					font-size: fs("md");
-					padding-block-end: m("sm");
-					width: 100%;
-				}
+				margin: 0;
+				padding: p("base") p("sm");
 			}
 		}
 
 		.compendium-type {
-			background-color: color("folder-subdirectory");
-			background-image: none;
-			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-
 			@include layout {
 				display: flex;
 				flex-direction: column;
-				margin-block-end: m("base");
+				gap: space("base");
 			}
+		}
 
-			h3 {
-				background-color: color("folder-header");
-				background-image: none;
-				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-				color: color("text");
-				transition: t(background box-shadow color, "link");
+		.compendium-list {
+			display: flex;
+			flex-direction: column;
+			gap: space("xs");
 
+			.directory-item {
 				@include layout {
-					align-items: center;
-					border: 0;
-					cursor: default;
-					display: flex;
-					flex-wrap: nowrap;
-					font-size: fs("lg");
+					flex-wrap: wrap;
 					line-height: 1;
-					margin: 0;
-					min-height: space("button");
-					padding: p("base") p("sm");
-					position: relative;
-					width: 100%;
+				}
+
+				h4 {
+					@include layout {
+						align-items: center;
+						display: flex;
+						width: 100%;
+					}
+
+					a {
+						@extend %button-icon;
+					}
+
+					.status-icons {
+						color: color("text-lightest");
+
+						@include layout {
+							position: relative;
+
+							i {
+								margin: 0;
+								margin-inline-start: m("base");
+							}
+						}
+					}
+				}
+
+				.compendium-footer {
+					color: color("text-lightest");
+
+					@include layout {
+						flex: 0 0 auto;
+						font-size: fs("md");
+						padding-block-end: m("base");
+						width: 100%;
+					}
 				}
 			}
 		}

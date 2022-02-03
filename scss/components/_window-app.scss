@@ -136,7 +136,9 @@
 		color: color("text");
 
 		@include layout {
+			display: flex;
 			flex: 1 1 auto;
+			flex-direction: column;
 			font-size: fs("md");
 			margin: 0;
 			overflow-x: hidden;
@@ -151,7 +153,10 @@
 				flex-direction: column;
 				flex-wrap: nowrap;
 				gap: space("base");
-				height: 100%;
+
+				&.flexcol {
+					height: 100%;
+				}
 
 				.form-body {
 					flex: 1 1 auto;

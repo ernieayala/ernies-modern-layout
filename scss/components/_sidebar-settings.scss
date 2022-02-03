@@ -5,8 +5,11 @@
 			padding: p("sm");
 		}
 
-		div {
+		> div {
 			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: space("base");
 				margin: 0;
 			}
 		}
@@ -19,7 +22,7 @@
 
 			@include layout {
 				padding: 0;
-				margin-block-end: m("sm");
+				margin: 0;
 			}
 		}
 
@@ -43,7 +46,6 @@
 		button {
 			@include layout {
 				margin: 0;
-				margin-block-end: m("base");
 			}
 		}
 
@@ -55,5 +57,15 @@
 				padding: 0;
 			}
 		}
+	}
+
+	.notification-pip {
+		color: color("primary");
+		margin-inline-end: m("xs");
+		padding: 0;
+		position: relative;
+		right: auto;
+		text-shadow: none;
+		top: auto;
 	}
 }

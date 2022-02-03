@@ -52,7 +52,7 @@
 		.sidebar-tab,
 		.sidebar-tab.active {
 			@include layout {
-				display: none;
+				display: none !important;
 			}
 		}
 	}
@@ -168,6 +168,12 @@
 			min-height: to-rem(176px);
 		}
 
+		&.directory .directory-list {
+			@include layout {
+				padding-block-end: p("sm");
+			}
+		}
+
 		.directory-header,
 		.directory-footer {
 			@extend %panel-block;
@@ -198,11 +204,11 @@
 
 			.header-search {
 				@include layout {
-					@extend %button-icon-spacing;
 					align-items: center;
 					display: flex;
 					flex: 1 1 auto;
 					flex-wrap: nowrap;
+					gap: space("base");
 					position: relative;
 					width: 100%;
 
@@ -219,12 +225,6 @@
 						margin: 0;
 					}
 				}
-
-				+ .header-actions {
-					@include layout {
-						margin-block-start: m("sm");
-					}
-				}
 			}
 
 			.header-control {
@@ -233,7 +233,6 @@
 				@include layout {
 					@include size(to-rem(32px));
 					flex: 0 0 auto;
-					margin-inline-start: m("base");
 
 					> i {
 						margin: 0;
@@ -248,7 +247,6 @@
 					flex: 0 0 auto;
 					flex-wrap: wrap;
 					gap: m("base");
-					margin-block-end: m("sm");
 					position: relative;
 					width: 100%;
 
@@ -267,12 +265,6 @@
 					position: relative;
 					width: 100%;
 				}
-
-				+ .action-buttons {
-					@include layout {
-						margin-block-start: m("base");
-					}
-				}
 			}
 		}
 
@@ -282,13 +274,6 @@
 			@include layout {
 				flex-wrap: wrap;
 			}
-		}
-	}
-
-	> .directory-list {
-		@include layout {
-			display: flex;
-			flex-direction: column;
 		}
 	}
 }

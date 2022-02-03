@@ -858,12 +858,9 @@ body.-emu.system-dnd5e [id*="actor-type-"] form .form-group {
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.initial-position .form-fields label, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.initial-position .form-fields label {
     flex: 0 0 auto; }
-  .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.stacked, .-emu-layout
-  body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.stacked {
-    padding: 0; }
-  .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.stacked textarea, .-emu-layout
-  body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.stacked textarea {
-    margin-block-end: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.stacked > label, .-emu-layout
+  body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.stacked > label {
+    flex: 0 0 100%; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.hidden, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.hidden {
     display: none; }
@@ -987,6 +984,18 @@ body.-emu.system-dnd5e [id*="actor-type-"] form .form-group {
 .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group-stacked, .-emu-layout
 body.-emu.system-dnd5e [id*="actor-type-"] form .form-group-stacked {
   margin: 0; }
+
+.-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group-stacked label.checkbox, .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] form .form-group-stacked label.checkbox {
+  align-items: center;
+  display: inline-flex;
+  flex: auto;
+  font-size: var(--emu-font-size-sm);
+  gap: var(--emu-space-base);
+  height: auto;
+  line-height: initial;
+  margin: 0;
+  padding: 0; }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] form .notes,
 body.-emu.system-dnd5e [id*="actor-flags-"] form .hint,

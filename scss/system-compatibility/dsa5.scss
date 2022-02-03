@@ -1,35 +1,35 @@
-@import "../base";
+// @import "../base";
 
-body#{$emu} {
-	@include system("dsa5") {
-		#players,
-		#players h3,
-		#player-list,
-		#hotbar,
-		#sidebar {
-			&::before {
-				display: none;
-			}
-		}
+// body#{$emu} {
+// 	@include system("dsa5") {
+// 		#players,
+// 		#players h3,
+// 		#player-list,
+// 		#hotbar,
+// 		#sidebar {
+// 			&::before {
+// 				display: none;
+// 			}
+// 		}
 
-		.window-app {
-			&::after {
-				display: none;
-			}
+// 		.window-app {
+// 			&::after {
+// 				display: none;
+// 			}
 
-			.window-header {
-				top: auto;
-			}
-		}
+// 			.window-header {
+// 				top: auto;
+// 			}
+// 		}
 
-		.window-content form {
-			padding: 0;
-		}
+// 		.window-content form {
+// 			padding: 0;
+// 		}
 
-		.character-sheet form {
-			background: none;
-			border: none;
-			padding: 0;
-		}
-	}
-}
+// 		.character-sheet form {
+// 			background: none;
+// 			border: none;
+// 			padding: 0;
+// 		}
+// 	}
+// }

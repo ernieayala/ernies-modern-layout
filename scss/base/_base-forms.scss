@@ -60,13 +60,9 @@ form {
 		}
 
 		&.stacked {
-			@include layout {
-				padding: 0;
-			}
-
-			textarea {
+			> label {
 				@include layout {
-					margin-block-end: m("base");
+					flex: 0 0 100%;
 				}
 			}
 		}
@@ -232,6 +228,22 @@ form {
 	.form-group-stacked {
 		@include layout {
 			margin: 0;
+		}
+
+		label {
+			&.checkbox {
+				@include layout {
+					align-items: center;
+					display: inline-flex;
+					flex: auto;
+					font-size: fs("sm");
+					gap: space("base");
+					height: auto;
+					line-height: initial;
+					margin: 0;
+					padding: 0;
+				}
+			}
 		}
 	}
 

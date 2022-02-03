@@ -4,11 +4,12 @@
 			@extend %reset-list;
 			display: flex;
 			flex: 1 1 auto;
-			flex-wrap: wrap;
-			gap: space("xs");
+			flex-direction: column;
+			gap: space("base");
 			max-height: 100%;
 			min-height: to-rem(1px);
 			overflow-y: auto;
+			padding: 0 p("sm");
 		}
 
 		.subdirectory {
@@ -21,13 +22,14 @@
 				display: flex;
 				border-radius: 0 0 0 $global-border-radius-default;
 				flex-direction: column;
+				gap: space("base");
+				padding: p("base");
 				width: 100%;
 			}
 
 			.directory-item.folder {
 				@include layout {
-					padding-block-end: p("base");
-					padding-inline-end: 0;
+					padding: 0;
 				}
 
 				+ .directory-item.folder {
@@ -111,15 +113,8 @@
 
 			@include layout {
 				cursor: default;
-				display: flex;
 				flex-direction: column;
-				margin: 0;
-				padding-block-start: p("base");
-				padding-block-end: 0;
-				padding-inline-start: p("sm");
-				padding-inline-end: p("sm");
-				position: relative;
-				width: 100%;
+				padding: 0;
 			}
 
 			&:hover,
@@ -216,10 +211,6 @@
 			}
 
 			.subdirectory {
-				@include layout {
-					@extend %reset-list;
-				}
-
 				.directory-item.folder {
 					&.collapsed .folder-header {
 						@include layout {
@@ -250,6 +241,11 @@
 				background-color: color("primary") !important; // why the fuck...
 				color: color("text-lightest");
 			}
+		}
+
+		.create-folder,
+		.create-document {
+			@extend %control-button;
 		}
 
 		img {

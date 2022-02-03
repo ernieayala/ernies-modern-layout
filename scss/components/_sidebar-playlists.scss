@@ -107,10 +107,6 @@
 		}
 
 		.directory-list {
-			@include layout {
-				padding-block-start: p("base");
-			}
-
 			.directory-item {
 				&.playlist {
 					@include layout {
