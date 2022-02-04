@@ -535,6 +535,9 @@ body.-emu.system-dnd5e [id*="actor-type-"] button.active, body.-emu.system-dnd5e
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
 
+.-emu-layout body.-emu.system-dnd5e .dnd5e .window-content {
+  display: initial; }
+
 body.-emu.system-dnd5e .dnd5e .form-group label {
   color: rgba(var(--color-text), 1); }
 
@@ -547,6 +550,10 @@ body.-emu.system-dnd5e .dnd5e .tag {
 
 body.-emu.system-dnd5e .dnd5e.sheet .window-content {
   color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .window-content {
+    padding: 0; }
+  .-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .window-content form {
+    gap: initial; }
 
 body.-emu.system-dnd5e .dnd5e.sheet input[type="text"],
 body.-emu.system-dnd5e .dnd5e.sheet input[type="number"] {

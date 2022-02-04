@@ -22,14 +22,18 @@ A clean and theme-able visual update for Foundry VTT.
 ## Manifest URL
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
 
+## Want me to look at something?
+- If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
+- If you want me to look at supporting a mod or system; hop into my [![Discord](https://discord.gg/CWhdMWvZyD). State the mods or system you want look at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
+
 ## Contact and Support
-Make an issue on Github or message me on Discord: Ernie#4453.
+Message me on Discord: Ernie#4453.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T24X2VD)
 
 ## You should know
-- This is a fun side project for me and I made it to support my GMing tastes but I'm happy that other people are enjoying it.
-- Not all the modules and systems will have my styling.
+- This is a fun side project for me that I made to support my GMing tastes.
+- Many modules and systems will have my style.
 - Only tested on Chrome.
 
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
@@ -70,13 +74,23 @@ Make an issue on Github or message me on Discord: Ernie#4453.
 - DFreds Convenient Effects (2.1.3)
 - Dice So Nice! (4.3.1)
 - Dice Tray (1.5.1)
+- FoundryVTT Mount Up! (3.2.5)
 - FXMaster (2.2.4)
+- GM Notes (0.5.0)
+- GM Screen (2.9.0)
 - Health Estimate (2.6.24)
-- Hey Wait! (0.6.3)
+- Hey, listen! Chat Notifications (1.2.3)
+- Hey, Wait! (0.6.3)
 - Illandril's Chat Enhancements (1.2.4)
 - Let Me Roll That For You! (1.21)
 - lib Color Settings (2.8.2)
 - libWrapper (1.12.2.0)
+- Macro Editor (1.1.2)
+- Maestro (0.8.0)
+- Midi QOL (0.9.02)
+- Narrator Tools (0.70)
+- Party Resources (1.2.5)
+- PDFoundry (0.9.1)
 - Perfect Vision (3.6.5)
 - Permission Viewer (0.9.3)
 - Pings (1.3.0)
@@ -84,9 +98,15 @@ Make an issue on Github or message me on Discord: Ernie#4453.
 - Search Anywhere (2.3.4)
 - Settings Extender (1.2.0)
 - Simple Calendar (1.3.75)
+- Simple Dice Roller (1.3.4)
 - Small Time (1.13.13)
 - socketlib (1.0.10)
+- Tabbed Chat Log (1.6.4)
+- Tidy5e Sheet (0.5.22)
+- Token Action HUD (2.0.19)
+- Token Attacher (4.3.1)
 - Token Auras (1.15)
+- Token HUD Wildcard (1.5.0)
 - Token Info Icons (2.3.5)
 - Token Magic FX (0.5.3)
 - Token Mold (2.15.1)

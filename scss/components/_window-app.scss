@@ -172,6 +172,10 @@
 		.chat-message {
 			border-radius: 0;
 		}
+
+		.sheet-footer {
+			gap: space("base");
+		}
 	}
 
 	.window-resizable-handle {

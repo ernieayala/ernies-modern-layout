@@ -3,11 +3,6 @@
 		button {
 			@include layout {
 				margin: 0;
-				margin-block-end: m("base");
-
-				&:last-child {
-					margin-block-end: 0;
-				}
 			}
 		}
 	}
@@ -29,6 +24,8 @@
 
 #tokenAttacher {
 	@include layout {
+		display: flex;
+		gap: space("base");
 		left: to-rem(96px);
 		top: to-rem(52px);
 	}
@@ -84,9 +81,10 @@
 		@include layout {
 			@extend %reset-list;
 			box-sizing: border-box;
+			display: flex;
 			flex: 0 0 auto;
 			flex-direction: column;
-			margin-inline-start: m("base");
+			gap: space("base");
 			pointer-events: none;
 			opacity: 1;
 			transition: t(opacity left, "link");
@@ -112,13 +110,9 @@
 			flex: 0 0 auto;
 			justify-content: center;
 			line-height: initial;
-			margin-block-end: space("base");
+			margin: 0;
 			pointer-events: all;
 			position: relative;
-
-			&:last-of-type {
-				margin-block-end: 0;
-			}
 
 			> i {
 				font-size: inherit;

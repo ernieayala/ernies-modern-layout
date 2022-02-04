@@ -4,11 +4,7 @@
 			.field-row {
 				align-items: center;
 				display: flex;
-				margin-block-end: m("base");
-
-				> label {
-					margin-inline-end: m("sm");
-				}
+				gap: space("base");
 			}
 		}
 	}
@@ -16,14 +12,11 @@
 
 .pdf-app.app.window-app {
 	section.window-content {
-		background-image: $global-image-background-light !important;
+		background-color: color("background-lightest") !important; // because MOD important
+		background-image: $global-image-background-lightest !important; // because MOD important
 	}
 
 	div.flex {
-		@include layout {
-			margin-block-end: m("base");
-		}
-
 		> * {
 			@include layout {
 				height: auto;

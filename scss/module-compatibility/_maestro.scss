@@ -5,7 +5,7 @@
 			> .flexrow {
 				@include layout {
 					flex: 0 0 100%;
-					margin-block-end: m("base");
+					gap: space("base");
 				}
 			}
 		}

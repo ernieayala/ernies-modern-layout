@@ -1,6 +1,4 @@
 .tidy5e.settings.window-app {
-	background-color: color("background-lightest");
-	background-image: $global-image-background-light;
 	border: b("border");
 	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px color("black");
@@ -19,7 +17,7 @@
 
 	section.tab {
 		@include layout {
-			margin-block-start: m("base");
+			margin-block-start: 0;
 		}
 	}
 
@@ -34,18 +32,6 @@
 
 		&:nth-of-type(even) {
 			background-color: color("background-light", 0.1);
-		}
-
-		+ h3 {
-			@include layout {
-				margin-block-start: m("sm");
-			}
-		}
-
-		.description {
-			@include layout {
-				margin-inline-start: m("sm");
-			}
 		}
 	}
 }
