@@ -24,7 +24,7 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Want me to look at something?
 - If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
-- If you want me to look at supporting a mod or system; hop into my [![Discord](https://discord.gg/CWhdMWvZyD). State the mods or system you want look at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
+- If you want me to look at supporting a mod or system; hop into my [![Discord](https://discord.gg/CWhdMWvZyD)]. State the mods or system you want look at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
 
 ## Contact and Support
 Message me on Discord: Ernie#4453.
