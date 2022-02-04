@@ -30,11 +30,11 @@
 			"path": "lang/zh-tw.json"
 		}
 	],
-	"minimumCoreVersion": "9.245",
-	"compatibleCoreVersion": "9.249",
+	"minimumCoreVersion": "9",
+	"compatibleCoreVersion": "9",
 	"url": "https://github.com/ernieayala/ernies-modern-layout",
 	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
-	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.3.12.zip",
+	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.4.0.zip",
 	"license": "MIT",
 	"readme": "https://github.com/ernieayala/ernies-modern-layout",
 	"bugs": "https://github.com/ernieayala/ernies-modern-layout/issues",
