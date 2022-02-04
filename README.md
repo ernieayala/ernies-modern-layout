@@ -2,8 +2,6 @@
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
 
-## Note: Real life is currently very busy. When I have down time again I will put some more love into this.
-
 # Ernie's Modern UI
 **Compatibility:** FoundryVTT 9
 
@@ -26,7 +24,7 @@ https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.
 
 ## Want me to look at something?
 - If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
-- If you want me to look at supporting a mod or system; hop into my [![Discord](https://discord.gg/CWhdMWvZyD)]. State the mods or system you want look at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
+- If you want me to look at supporting a mod or system; hop into my [Discord](https://discord.gg/CWhdMWvZyD). State the mods or system you want looked at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
 
 ## Contact and Support
 Message me on Discord: Ernie#4453.
