@@ -1,7 +1,10 @@
-.typing-notify {
-	background-color: color("primary");
+#cgmp-typing-notify {
 	border-radius: 0;
 	color: color("text-lightest");
+
+	&.hidden {
+		display: none;
+	}
 
 	.dot {
 		background-color: color("white");

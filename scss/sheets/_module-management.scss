@@ -41,7 +41,7 @@
 			height: to-rem(600px);
 			margin: 0;
 			max-height: initial;
-			padding: p("sm") 0;
+			padding: 0;
 		}
 	}
 
@@ -125,23 +125,9 @@
 	}
 
 	form {
-		@include layout {
-			display: flex;
-			flex-direction: column;
-		}
-
-		> .notes {
-			@include layout {
-				margin-block-end: m("sm");
-			}
-		}
-
 		> footer {
 			@include layout {
-				flex: 0 0 auto;
-				flex-wrap: nowrap;
-				padding: 0;
-				padding-block-start: p("sm");
+				gap: space("base");
 			}
 		}
 	}

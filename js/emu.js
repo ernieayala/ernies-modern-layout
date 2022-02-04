@@ -422,19 +422,19 @@ Hooks.once('ready', () => {
 	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
 	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
 
-	game.settings.register(moduleName, 'controlAlignTop', {
-		name: game.i18n.localize('emu.layout-control-align'),
-		hint: game.i18n.localize('emu.layout-control-align-hint'),
-		scope: 'user',
-		config: emuLayoutStatus,
-		default: false,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
-		}
-	});
-	const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
-	controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+	// game.settings.register(moduleName, 'controlAlignTop', {
+	// 	name: game.i18n.localize('emu.layout-control-align'),
+	// 	hint: game.i18n.localize('emu.layout-control-align-hint'),
+	// 	scope: 'user',
+	// 	config: emuLayoutStatus,
+	// 	default: false,
+	// 	type: Boolean,
+	// 	onChange: data => {
+	// 		data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
+	// 	}
+	// });
+	// const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
+	// controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
 
 	// Timeout because i'm bad at javascript
 	setTimeout(function() {

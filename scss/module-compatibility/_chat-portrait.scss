@@ -1,6 +1,15 @@
-#chat-log .message .message-header img {
-	@include layout {
-		margin: m("xs") 0;
-		margin-inline-end: m("base");
+#chat-log .message .message-header {
+	.chat-portrait-text-size-name {
+		@include layout {
+			align-items: center;
+			display: flex;
+		}
+	}
+
+	img {
+		@include layout {
+			margin: m("xs") 0;
+			margin-inline-end: m("base");
+		}
 	}
 }

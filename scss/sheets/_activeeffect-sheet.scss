@@ -1,0 +1,32 @@
+.sheet[id*="activeeffect-sheet-"] {
+	.sheet-header {
+		h1 {
+			border: none;
+
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+
+	.effects-header {
+		@extend %table-header;
+	}
+
+	.changes-list {
+		@include layout {
+			@include reset-list;
+			width: 100%;
+		}
+
+		li {
+			@extend %table-row;
+
+			@include layout {
+				&:nth-of-type(even) {
+					background-color: color("background-light", 0.1);
+				}
+			}
+		}
+	}
+}

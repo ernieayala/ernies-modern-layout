@@ -5,7 +5,7 @@
 ## Note: Real life is currently very busy. When I have down time again I will put some more love into this.
 
 # Ernie's Modern UI
-**Compatibility:** FoundryVTT 0.8.6+
+**Compatibility:** FoundryVTT 9
 
 **Systems:** Any*
 
@@ -24,15 +24,19 @@ A clean and theme-able visual update for Foundry VTT.
 ## Manifest URL
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
 
+## Want me to look at something?
+- If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
+- If you want me to look at supporting a mod or system; hop into my [![Discord](https://discord.gg/CWhdMWvZyD)]. State the mods or system you want look at. I will be working on 3-5 mods and 1 system a month depending on the complexity.
+
 ## Contact and Support
-Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Foundry channel.
+Message me on Discord: Ernie#4453.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T24X2VD)
 
 ## You should know
-- This is a fun side project for me and I made it to support my GMing tastes but I'm happy that other people are enjoying it.
-- Not all the modules and systems will have my styling. Make an issue on Github if you want me to look at one.
-- Only tested on Chrome. Feel free to make a issue on Github for other browsers.
+- This is a fun side project for me that I made to support my GMing tastes.
+- Many modules and systems will have my style.
+- Only tested on Chrome.
 
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
      style="max-width: 100%;" />
@@ -40,140 +44,77 @@ Make an issue on Github or message me on Discord: Ernie#4453 or Ernie on the Fou
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Systems Tested Continually
+### Systems Functional as of Feb 2022
 - DND 5e
 
-### Systems Partially Tested as of July 11th, 2021
-- Pathfinder 2e
-
-### Systems Partially Tested as of June 27th, 2021
-- Fate
-
-### Systems Partially Tested as of June 14th, 2021
-- DSA5
-- Starfinder
-
-### Systems Partially Tested as of June 9th, 2021
-- CoC 7
-- Pathfinder 1e
-- Savage Worlds
-
-### Mods Tested as of July 11th, 2021
-- Dice So Nice!
-- DND5e Helper
-- Lock View (FNS)
-- Theater Inserts (FNS)
-
-### Mods Tested as of June 21th, 2021
-- Custom Hotbar (FNS)
-
-### Mods Tested as of June 19th, 2021
-- Combat Focus
-- Hey Listen: Chat Notifications (FNS)
-- Macro Folders
-
-### Mods Tested as of June 14th, 2021
-- Advanced Macros
-- Dfreds Droppables
-- Inititive Double Click
-- Mount Up
-- Simple Calendar (FNS)
-- Token HUD Wildcard (FNS)
-
-### Mods Tested as of June 9th, 2021
-- About Time
-- Active Effects to Chat
-- Actually Private Rolls
-- Ambient Doors
-- Autocomplete Whiser
-- Batch Permissions by Folder
-- Better NPC Sheet 5e
-- Better Rolls for 5e
-- Better Rolltables
-- Calendar/Weather
-- Cautious Gamemaster's Pack
-- Character Actions List dnd5e
-- Chat Alias
-- Chat Images
-- Chat Portrait
-- Combat Enhancements
-- Combat Ready
-- Combat Utility Belt
-- CommunityLighting by Blitz
-- Compendium Browser
-- Compendium Folders
-- D&D Beyond Importer
-- DF Chat Enhancements
-- DF Curvy Walls
-- Dice Tray
-- DNDBeyond Character Sheet for 5E
-- Drag Ruler
-- Dynamic Active Effects
-- Dynamic Active Effects SRD
-- Easy Target
-- Forien's Quest Log (FNS)
-- Forien's Unidentified Items
-- FPS Meter
-- FXMaster
-- GM Notes
-- GM Screen
-- Health Estimate
-- Hey, Wait!
-- Illandrils' Chat Enhancements
-- Less Fog
-- Let Me Roll That For You
-- Library: DF Hotkeys
-- libWrapper
-- Loot Sheet NPC 5E
-- Macro Editor
-- Maestro
-- Magic Items
-- Mess - Moerills enhancing super-suit(e)
-- Midi Quality of Life Improvements
-- Monk's Scene Navigation
-- Moulinette
-- Multilevel Tokens
-- Narrator Tools
-- Not Enough NPCs: A 5e NPC Generator
-- OneJournal
-- Parallaxia
-- Party Resources
-- PDFoundry
-- Perfect Vision
-- Permission Viewer
-- Pings
-- Polyglot
-- Search Anywhere
-- Settings Extender
-- Show Drag Distance
-- Simple Dice Roller
-- Simplefog - Manual Fog of War (FNS)
-- Skill Customization for D&D5e
-- SmallTime
-- SoundBoard by Blitz (FNS)
-- Tabbed Chat Log
-- Thandul's Togglable Effects
-- The Furnace
-- Tidy5e Sheet
-- Tidy UI Game Settings
-- Token Action HUD
-- Token Attacher
-- Token Auras
-- Token Info Icons
-- Token Magic FX
-- Token Mold
-- Torch
-- Trigger Happy
-- Turn Marker
-- Universal Battlemap Importer
-- Wall Height
-- Wordl Anvil Integration
-
-### Mods WIP
-- N/A
-
-### Won't Support Currently
-- Tokenizer
-
-#### Key
-FNS = Functions but not styled
+### Mods Functional as of Feb 2022
+- About Time (1.0.6)
+- Ace Library (1.3.0)
+- Active Token Effects (0.3.06)
+- Alternative Pause Icon (0.3.0)
+- Ambient Doors (2.2.6)
+- Autocomplete Whisper (0.3.4)
+- Background Volume (1.4.2)
+- Better Rolls for 5e (1.7.1)
+- Beyond20 companion module (1.4.1)
+- Border Control (1.3.05)
+- Cautious Gamemaster Pack (0.6.1)
+- Chat Portrait (0.5.36)
+- Change Logs & Conflicts (0.7.7)
+- Character Actions List dnd5e (4.3.0)
+- Chat Images (2.5.6)
+- Chat Message Accessibility Indicators (1.0.0)
+- Chat Portrait (0.5.36)
+- Combat Enhancements (1.1.0)
+- Combat Focus (1.4.1)
+- Combat Utility Belt (1.8.1)
+- Compendium Browser (0.7.2)
+- Compendium Folders (2.4.1)
+- DF Chat Enhancements (3.6.0)
+- DF Curvy Walls (3.3.0)
+- DFreds Droppables (1.4.0)
+- DFreds Convenient Effects (2.1.3)
+- Dice So Nice! (4.3.1)
+- Dice Tray (1.5.1)
+- FoundryVTT Mount Up! (3.2.5)
+- FXMaster (2.2.4)
+- GM Notes (0.5.0)
+- GM Screen (2.9.0)
+- Health Estimate (2.6.24)
+- Hey, listen! Chat Notifications (1.2.3)
+- Hey, Wait! (0.6.3)
+- Illandril's Chat Enhancements (1.2.4)
+- Let Me Roll That For You! (1.21)
+- lib Color Settings (2.8.2)
+- libWrapper (1.12.2.0)
+- Macro Editor (1.1.2)
+- Maestro (0.8.0)
+- Midi QOL (0.9.02)
+- Narrator Tools (0.70)
+- Party Resources (1.2.5)
+- PDFoundry (0.9.1)
+- Perfect Vision (3.6.5)
+- Permission Viewer (0.9.3)
+- Pings (1.3.0)
+- Polyglot (1.7.29)
+- Search Anywhere (2.3.4)
+- Settings Extender (1.2.0)
+- Simple Calendar (1.3.75)
+- Simple Dice Roller (1.3.4)
+- Small Time (1.13.13)
+- socketlib (1.0.10)
+- Tabbed Chat Log (1.6.4)
+- Tidy5e Sheet (0.5.22)
+- Token Action HUD (2.0.19)
+- Token Attacher (4.3.1)
+- Token Auras (1.15)
+- Token HUD Wildcard (1.5.0)
+- Token Info Icons (2.3.5)
+- Token Magic FX (0.5.3)
+- Token Mold (2.15.1)
+- Turn Marker (2.9.0)
+- Universal Battlemap Importer (2.2.1)
+- Wall Height (3.6.0.2)
+- Weather Control (4.1.4)
+- World Anvil (1.3.1)
+- Zoom/Pan Options (1.6.9)

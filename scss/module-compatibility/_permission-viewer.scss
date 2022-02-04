@@ -1,8 +1,8 @@
 div.permission-viewer {
 	@include layout {
 		flex: 0 0 auto;
+		gap: space("base");
 		margin: 0;
-		margin-inline-start: m("base");
 	}
 
 	a {

@@ -11,6 +11,12 @@ body#{$emu}.system-dnd5e {
 	.dnd5e {
 		@extend %clean-elements;
 
+		.window-content {
+			@include layout {
+				display: initial;
+			}
+		}
+
 		.form-group {
 			label {
 				color: color("text");
@@ -20,7 +26,6 @@ body#{$emu}.system-dnd5e {
 		.form-header {
 			border-block-start: b("border-lighter");
 			border-block-end: b("border-lighter");
-			// font-family: inherit;
 		}
 
 		.tag {
@@ -30,6 +35,16 @@ body#{$emu}.system-dnd5e {
 		&.sheet {
 			.window-content {
 				color: color("text");
+
+				@include layout {
+					padding: 0;
+				}
+
+				form {
+					@include layout {
+						gap: initial;
+					}
+				}
 			}
 
 			input[type="text"],

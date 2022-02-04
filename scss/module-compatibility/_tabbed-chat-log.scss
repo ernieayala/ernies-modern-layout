@@ -18,8 +18,7 @@
 			text-shadow: none;
 
 			@include layout {
-				margin-block-start: m("xs");
-				margin-inline-end: m("xs");
+				margin: 0;
 				padding: p("xs");
 				right: 0;
 				top: 0;

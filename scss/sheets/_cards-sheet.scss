@@ -1,0 +1,67 @@
+.window-app[id*="cards-sheet-"] {
+	.sheet-header {
+		h1 {
+			border: none;
+
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+
+	.cards-header {
+		@extend %table-header;
+
+		@include layout {
+			gap: space("base");
+			margin: 0;
+
+			h4 {
+				font-weight: 700;
+				margin: 0;
+			}
+
+			.card-controls {
+				[data-action="create"] {
+					@extend %button-icon-spacing;
+					padding: 0 p("base");
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.cards {
+		.card {
+			@extend %table-row;
+
+			@include layout {
+				gap: space("base");
+
+				.card-control[disabled] {
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}
+
+.window-app[id*="card-sheet-"] {
+	.sheet-header {
+		h1 {
+			border: none;
+
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+
+	button.face-control {
+		@include layout {
+			> i {
+				margin: 0;
+			}
+		}
+	}
+}

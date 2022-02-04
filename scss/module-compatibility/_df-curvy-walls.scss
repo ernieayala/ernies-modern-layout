@@ -1,6 +1,7 @@
 #df-curvy-walls-tools {
 	@include layout {
 		display: flex;
+		gap: space("base");
 		left: to-rem(96px);
 		top: to-rem(184px);
 	}
@@ -8,9 +9,11 @@
 	.control-tools {
 		@include layout {
 			@extend %reset-list;
+			display: flex;
 			flex-direction: column;
 			flex: 0 0 auto;
-			margin-inline-end: m("base");
+			gap: space("base");
+			margin: 0;
 			pointer-events: none;
 			transition: t(opacity left, "link");
 		}
@@ -34,7 +37,7 @@
 			justify-content: center;
 			font-size: fs("lg");
 			line-height: initial;
-			margin-block-end: space("base");
+			margin: 0;
 			pointer-events: all;
 			position: relative;
 		}

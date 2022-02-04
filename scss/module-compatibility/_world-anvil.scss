@@ -2,68 +2,11 @@
 .sidebar-popout {
 	.sidebar-tab .directory-header .header-actions {
 		#world-anvil {
-			@include layout {
-				flex: 0 0 auto;
-			}
-
 			img {
 				@include layout {
 					max-height: fs("lg");
 					top: auto;
 				}
-			}
-		}
-	}
-}
-
-#world-anvil-config.window-app.world-anvil {
-	.world-articles {
-		@include layout {
-			margin-block-start: m("lg");
-
-			&:first-child {
-				margin-block-start: 0;
-			}
-		}
-	}
-
-	article {
-		@include layout {
-			margin-block-end: m("base");
-		}
-	}
-
-	hr {
-		@include layout {
-			display: none;
-		}
-	}
-
-	h2 {
-		border: none;
-	}
-
-	h3 {
-		@include layout {
-			margin: 0;
-		}
-	}
-
-	header.section {
-		border-block-end: b("border");
-
-		@include layout {
-			margin-block-end: m("base");
-			padding: p("base") 0;
-		}
-	}
-
-	button.world-anvil-control[data-action="sync-folder"],
-	button.world-anvil-control[data-action="link-entry"],
-	button.world-anvil-control[data-action="link-folder"] {
-		i {
-			@include layout {
-				margin: 0;
 			}
 		}
 	}

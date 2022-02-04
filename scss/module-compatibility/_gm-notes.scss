@@ -10,6 +10,7 @@
 	.controlls {
 		@include layout {
 			display: flex;
+			gap: space("base");
 
 			button {
 				flex: 1 1 auto;

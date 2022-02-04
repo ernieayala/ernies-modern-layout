@@ -15,14 +15,6 @@ input[type="radio"] {
 	@extend %input-radio;
 }
 
-input[type="text"] {
-	@include layout {
-		+ input[type="color"] {
-			margin-inline-start: m("base");
-		}
-	}
-}
-
 input[type="color"],
 input[type="color"][data-edit] {
 	@extend %input-color;

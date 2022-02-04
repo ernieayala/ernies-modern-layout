@@ -1,144 +1,159 @@
 #client-settings.window-app.form {
-	.window-content #config-tabs {
-		.module-settings-wrapper {
-			div.form-group {
-				color: color("text");
+	.window-content {
+		@include layout {
+			padding: p("sm");
+		}
 
-				@include layout {
-					align-items: center !important; // overriding other importants
-					display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
-					font-size: fs("lg");
-					justify-content: space-between !important; // overriding other importants
-					margin: 0;
-					padding: p("sm");
-					transition: none;
+		.sheet-footer {
+			@include layout {
+				padding: 0;
 
-					&:nth-of-type(even) {
-						background-color: color("background-light", 0.1);
-					}
-				}
-
-				&.submenu {
-					> .notes {
-						@include layout {
-							margin-block-start: m("sm");
-						}
-					}
-
-					> button[type="button"] {
-						@include layout {
-							margin: 0;
-						}
-					}
-				}
-
-				.form-fields {
-					@include layout {
-						justify-content: flex-end;
-						margin: 0;
-
-						+ .notes {
-							margin-block-start: m("sm");
-						}
-
-						select {
-							flex: 1 1 auto;
-						}
-					}
-				}
-
-				input[type="checkbox"] {
-					@extend %input-checkbox;
-
-					@include layout {
-						appearance: auto;
-						left: auto;
-
-						&::after {
-							display: none;
-						}
-					}
-				}
-
-				label {
-					@include layout {
-						align-items: center;
-						display: inline-flex;
-						font-size: fs("md");
-						line-height: initial;
-						margin: 0;
-						order: initial;
-						padding-inline-end: p("base");
-					}
-				}
-
-				> label {
-					@include layout {
-						flex: 0 0 40% !important; // overriding other importants
-					}
-				}
-
-				> button {
-					@include layout {
-						flex: 1 1 auto !important;
-						margin: 0;
-						width: auto;
-
-						> label {
-							justify-content: center;
-							padding: 0;
-						}
-					}
-				}
-			}
-
-			.notes {
-				@include layout {
+				button {
 					margin: 0;
 				}
 			}
 		}
 
-		div.tab[data-tab="modules"] {
-			#searchField {
-				border: none;
-				border-radius: 0;
-
+		.sheet-tabs.tabs {
+			.item {
 				@include layout {
-					flex: 0 0 auto;
-					height: auto;
-					margin: m("sm");
+					padding: p("sm");
+				}
+			}
+		}
+
+		#config-tabs {
+			.module-settings-wrapper {
+				div.form-group {
+					border: none;
+					color: color("text");
+
+					@include layout {
+						align-items: center !important; // because MOD other important
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						font-size: fs("lg");
+						gap: space("base");
+						height: auto;
+						justify-content: space-between !important; // because MOD other important
+						margin: 0;
+						padding: p("sm");
+						transition: none;
+						width: 100%;
+
+						&:nth-of-type(even) {
+							background-color: color("background-light", 0.1);
+						}
+					}
+
+					.form-fields {
+						@include layout {
+							align-items: center;
+							display: flex;
+							gap: space("base");
+							flex: 1 1 auto;
+							justify-content: flex-end;
+							margin: 0;
+						}
+					}
+
+					input[type="checkbox"] {
+						@extend %input-checkbox;
+
+						@include layout {
+							appearance: auto;
+							left: auto;
+
+							&::after {
+								display: none;
+							}
+						}
+					}
+
+					label {
+						@include layout {
+							align-items: center;
+							display: inline-flex;
+							font-size: fs("md");
+							font-weight: normal;
+							line-height: initial;
+							margin: 0;
+							order: initial;
+							padding: 0;
+						}
+					}
+
+					> label {
+						@include layout {
+							flex: 0 0 40% !important; // because MOD other important
+						}
+					}
+
+					> button {
+						@include layout {
+							flex: 1 1 auto !important;
+							margin: 0;
+							width: auto;
+
+							> label {
+								justify-content: center;
+								padding: 0;
+							}
+						}
+					}
 				}
 
-				#searchInput {
-					@extend %input-text;
+				.notes {
+					@include layout {
+						margin: 0;
+					}
 				}
 			}
 
-			.module-wrapper h2.module-header {
-				border-block-end: b("border");
-
-				@include layout {
-					align-items: center;
-					display: flex;
-					font-size: fs("lg");
-					font-weight: normal;
-					margin: 0;
-					padding: p("sm");
-				}
-
-				&:hover {
-					background-color: color("primary");
-					color: color("text-lightest");
-				}
-
-				> span {
-					color: inherit;
+			div.tab[data-tab="modules"] {
+				#searchField {
+					border: none;
+					border-radius: 0;
 
 					@include layout {
-						margin-inline-end: m("sm");
+						flex: 0 0 auto;
+						height: auto;
+						margin: 0;
+						margin-block-end: m("base");
+					}
+
+					#searchInput {
+						@extend %input-text;
+					}
+				}
+
+				.module-wrapper {
+					h2.module-header {
+						border-block-end: b("border");
+
+						@include layout {
+							align-items: center;
+							display: flex;
+							font-size: fs("lg");
+							font-weight: normal;
+							gap: space("sm");
+							margin: 0;
+							padding: p("sm");
+						}
+
+						&:hover {
+							background-color: color("primary");
+							color: color("text-lightest");
+						}
+
+						> span {
+							color: inherit;
+
+							@include layout {
+								margin: 0;
+							}
+						}
 					}
 				}
 			}
@@ -149,13 +164,16 @@
 #module-management {
 	.enhanced-module-management {
 		@include layout {
+			gap: space("base");
 			justify-content: center;
-			margin-block-end: m("sm");
+			margin-block-end: 0;
 		}
 
 		button {
 			@include layout {
-				margin-inline-end: 0;
+				flex: 0 0 auto;
+				margin: 0;
+				width: auto;
 
 				> i {
 					margin: 0;
@@ -165,13 +183,28 @@
 			&.disable-all-modules {
 				background-color: color("negative");
 				color: color("white");
+
+				@include layout {
+					flex: 1 1 auto;
+				}
 			}
 
 			&.enable-all-modules {
 				background-color: color("positive");
 				color: color("white");
+
+				@include layout {
+					flex: 1 1 auto;
+				}
 			}
 		}
+	}
+
+	.package-list {
+		// @include layout {
+		// 	height: auto;
+		// 	overflow-y: auto;
+		// }
 	}
 
 	.package-title input[type="checkbox"] {

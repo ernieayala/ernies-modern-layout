@@ -114,6 +114,10 @@ hr {
 	border: none;
 	border-block-start: b("border");
 	border-block-end: none;
+
+	@include layout {
+		width: 100%;
+	}
 }
 
 button[hidden] {

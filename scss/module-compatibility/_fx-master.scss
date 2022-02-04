@@ -1,42 +1,42 @@
 #specials-config {
 	.fxmaster {
-		background-color: color("background-lightest");
-		background-image: $global-image-background-lightest;
-
 		.directory-header {
-			box-shadow: none;
-
 			@include layout {
 				flex-direction: row;
+			}
 
-				> div {
+			> div {
+				@include layout {
 					flex: 1 1 auto;
 
-					&:first-child {
-						padding-inline-end: p("base");
+					i {
+						margin: 0;
+					}
+				}
 
-						a {
-							i {
-								margin: 0;
-							}
-						}
+				&.active {
+					a {
+						background-color: color("primary");
 					}
 				}
 			}
 
 			a {
 				@extend %primary-button;
-				width: 100%;
 
-				> i {
-					margin-inline-start: m("sm");
+				@include layout {
+					width: 100%;
 				}
 			}
 		}
 
-		.special-effects {
-			background-color: color("folder-directory");
+		.directory-list {
+			@include layout {
+				padding-block-start: p("base");
+			}
+		}
 
+		.special-effects {
 			.preview {
 				background-color: color("black", 0.1);
 				border: none;
@@ -45,6 +45,7 @@
 					@include size(space("button"));
 					flex: 0 0 auto;
 					margin: m("base");
+					margin-inline-start: 0;
 					overflow: hidden;
 
 					> video {
@@ -58,7 +59,7 @@
 				@include layout {
 					align-items: center;
 					display: flex;
-					padding: p("sm");
+					padding: p("base");
 
 					h4 {
 						color: color("text-lightest");
@@ -91,27 +92,12 @@
 				}
 			}
 		}
-
-		.directory-item {
-			&:last-of-type {
-				@include layout {
-					margin-block-end: m("sm");
-				}
-			}
-		}
-
-		.directory-footer {
-			@include layout {
-				display: none;
-			}
-		}
 	}
 }
 
 #effects-config {
 	.directory-list {
-		background-color: color("background-lightest");
-		background-image: $global-image-background-lightest;
+		background: transparent;
 
 		@include layout {
 			height: auto;
@@ -130,14 +116,14 @@
 		header {
 			@include layout {
 				align-items: center;
+				gap: space("base");
 			}
 
 			label {
-				color: color("text");
+				color: color("text-lightest");
 				text-shadow: none;
 
 				@include layout {
-					padding-inline-start: p("sm");
 					text-indent: 0;
 				}
 
@@ -146,57 +132,100 @@
 				}
 			}
 		}
+
+		ol.config {
+			border: none;
+
+			li {
+				color: color("text-lightest");
+
+				@include layout {
+					display: flex;
+					gap: space("base");
+				}
+
+				.range-value {
+					color: color("text-lightest");
+				}
+			}
+		}
 	}
 
 	.form-footer {
-		background-color: color("background-lightest");
-		background-image: $global-image-background-lightest;
-
-		@include layout {
-			bottom: 0;
-			padding: p("sm");
-			position: sticky;
-		}
-	}
-
-	input[type="checkbox"] + input[type="color"] {
-		@include layout {
-			margin-inline-start: m("base");
-		}
+		background-color: transparent;
 	}
 }
 
-#filter-config {
-	.window-content form {
+#filters-config {
+	.directory-header {
 		@include layout {
-			height: auto;
+			align-items: center;
+			font-size: fs("sm");
+			line-height: 1.2;
+			gap: space("base");
+			justify-content: center;
+			margin: 0;
+			padding: p("base");
+		}
+
+		.layer-toggle {
+			color: color("text-lightest");
+
+			@include layout {
+				align-items: center;
+				display: flex;
+				gap: space("base");
+			}
 		}
 	}
 
 	.directory-list {
+		background: transparent;
+
 		@include layout {
 			height: auto;
 			overflow-x: hidden;
 			overflow-y: auto;
-			padding-block-end: p("sm");
+		}
+	}
+
+	.directory-item {
+		border-block-end: b("border");
+
+		@include layout {
+			padding: p("base");
+		}
+
+		header {
+			color: color("text-lightest");
+			text-shadow: none;
+
+			label {
+				&:hover {
+					color: color("primary");
+				}
+			}
+		}
+
+		ol.config {
+			border: none;
+
+			li {
+				color: color("text-lightest");
+
+				@include layout {
+					display: flex;
+					gap: space("base");
+				}
+
+				.range-value {
+					color: color("text-lightest");
+				}
+			}
 		}
 	}
 
 	.form-footer {
-		background-color: color("background-lightest");
-		background-image: $global-image-background-lightest;
-		border-block-start: b("border");
-
-		@include layout {
-			bottom: 0;
-			padding-block-start: p("sm");
-			position: sticky;
-		}
-	}
-
-	input[type="checkbox"] + input[type="color"] {
-		@include layout {
-			margin-inline-start: m("base");
-		}
+		background-color: transparent;
 	}
 }

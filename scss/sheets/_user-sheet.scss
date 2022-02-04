@@ -1,0 +1,10 @@
+.window-app[id*="user-sheet-"] {
+	.form-group.stacked {
+		@include layout {
+			#characters.directory-list {
+				padding: 0;
+				max-height: to-rem(320px);
+			}
+		}
+	}
+}

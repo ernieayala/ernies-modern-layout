@@ -1,39 +1,6 @@
 #pause {
 	background: transparent;
 
-	@include layout {
-		@include fixed(bottom to-rem(200px) left 0 top auto);
-		@include size(100%, auto);
-		align-items: center;
-		display: none;
-		flex-direction: column;
-		pointer-events: none;
-		z-index: z("fixed");
-
-		&.paused {
-			display: flex;
-		}
-	}
-
-	img {
-		@include layout {
-			@keyframes pause-rotation {
-				0% { transform: rotate(0deg); }
-				100% { transform: rotate(360deg); }
-			}
-
-			// @include absolute(top 50% left 50%);
-			// @include size(to-rem(100px));
-			animation-duration: 5s;
-			animation-iteration-count: infinite;
-			animation-name: pause-rotation;
-			animation-timing-function: linear;
-			// margin-block-start: to-rem(-50px);
-			// margin-inline-start: to-rem(-50px);
-			opacity: 1;
-		}
-	}
-
 	h3 {
 		color: color("text-lightest");
 

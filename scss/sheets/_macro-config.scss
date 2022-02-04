@@ -1,7 +1,36 @@
 .sheet[id*="macro-config-"] {
 	.sheet-header {
 		h1 {
-			border-block-end: none;
+			border: none;
+
+			@include layout {
+				margin: 0;
+			}
+		}
+	}
+
+	.form-group {
+		&.command.stacked {
+			@include layout {
+				flex-direction: column;
+				flex-wrap: nowrap;
+			}
+
+			> label {
+				@include layout {
+					align-items: flex-start;
+					flex: 0 0 auto !important; // fix later
+					height: auto;
+					width: 100%;
+				}
+			}
+
+			> textarea {
+				@include layout {
+					flex: 1 1 auto;
+					height: 100%;
+				}
+			}
 		}
 	}
 }

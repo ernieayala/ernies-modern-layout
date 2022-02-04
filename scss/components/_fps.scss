@@ -1,0 +1,18 @@
+#fps {
+	background-color: color("background-darkest", $global-background-opacity-sidebar);
+	background-image: $global-image-background-darkest;
+	border: b("border");
+	box-shadow: none;
+	transition: t(opacity, "link");
+
+	@include layout {
+		border-radius: $global-border-radius-default;
+		display: none;
+		line-height: initial;
+		margin: 0;
+		margin-block-end: space("sm");
+		margin-inline-end: space("sm");
+		padding: space("base");
+		width: auto;
+	}
+}

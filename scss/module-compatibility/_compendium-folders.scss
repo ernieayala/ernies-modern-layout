@@ -6,14 +6,13 @@
 			@include layout {
 				> .directory-item {
 					margin: 0;
-					margin-block-end: m("base");
 					padding: 0;
 
 					// holy fucking christ !importants - so gross
 					.compendium-pack {
 						cursor: pointer;
 						line-height: 1 !important;
-						margin: m("base") !important;
+						margin: 0 !important;
 						padding: 0 p("sm") !important;
 
 						&:hover {
@@ -27,7 +26,7 @@
 
 						.pack-title,
 						.compendium-footer {
-							color: color("text");
+							color: color("text-lightest");
 						}
 
 						.pack-title {

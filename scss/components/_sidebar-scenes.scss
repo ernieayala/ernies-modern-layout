@@ -1,24 +1,6 @@
 #sidebar,
 .sidebar-popout {
 	#scenes {
-		.directory-list {
-			@include layout {
-				padding-block-start: p("base");
-			}
-
-			.subdirectory {
-				border-inline-start: b("primary", 4px);
-
-				.subdirectory {
-					border-inline-start: b("orange-700", 4px);
-
-					.subdirectory {
-						border-inline-start: b("orange-900", 4px);
-					}
-				}
-			}
-		}
-
 		.scene {
 			background-position: 50%;
 			background-size: cover;
@@ -39,21 +21,7 @@
 				background-size: cover;
 			}
 
-			&.context {
-				@include layout {
-					margin-block-start: m("base");
-				}
-			}
-
 			h3 {
-				text-shadow: none;
-
-				@include layout {
-					font-size: fs("lg");
-					line-height: 1;
-					text-align: start;
-				}
-
 				> a {
 					text-shadow: $global-text-shadow;
 

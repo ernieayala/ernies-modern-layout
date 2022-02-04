@@ -5,11 +5,17 @@
 		}
 
 		.token-info-column-left {
-			left: to-rem(-120px);
+			@include layout {
+				justify-content: center;
+				left: to-rem(-120px);
+			}
 		}
 
 		.token-info-column-right {
-			right: to-rem(-120px);
+			@include layout {
+				justify-content: center;
+				right: to-rem(-120px);
+			}
 		}
 
 		.token-info-column-left,
@@ -22,38 +28,21 @@
 
 		.token-info-icon {
 			@include layout {
+				display: flex;
 				flex-wrap: wrap;
+				gap: space("base");
 				height: auto;
-				margin: 0 0 m("base") 0 !important;
-				min-height: space("button-lg");
+				margin: 0 !important; // because MOD important style
 				min-width: 0;
-				padding: 0 p("sm");
+				padding: p("sm");
 
 				.token-info-speed {
-					font-size: to-rem(12px);
-					margin: m("xs") 0;
+					font-size: fs("sm");
 					width: 100%;
-
-					&:first-child {
-						margin-block-start: m("base");
-					}
-
-					&:last-child {
-						margin-block-end: m("base");
-					}
-
-					> i {
-						font-size: to-rem(10px);
-					}
 
 					> span {
 						font-size: inherit !important;
 					}
-				}
-
-				i,
-				> i {
-					margin-inline-end: m("base");
 				}
 			}
 		}

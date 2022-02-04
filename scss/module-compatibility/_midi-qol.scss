@@ -16,14 +16,10 @@
 }
 
 #midi-qol-settings {
-	@extend %window-common;
-	@extend %window-hack;
-
 	.midi-qol-box {
 		border: none;
 
 		@include layout {
-			margin-block-start: m("sm");
 			padding: 0;
 
 			select[name="showItemDetails"] {
@@ -35,27 +31,14 @@
 	.midi-qol-faint {
 		color: color("text", 0.8);
 	}
-
-	.sheet-footer {
-		@include layout {
-			bottom: 0;
-			flex: 0 0 auto;
-			padding: 0;
-			padding-block-start: p("sm");
-			position: sticky;
-			z-index: 6;
-		}
-	}
 }
 
 #midi-qol-statistics {
 	.tab.active[data-tab="config"] {
 		@include layout {
 			display: flex;
-
-			button {
-				flex: 1 1 49%;
-			}
+			flex-direction: column;
+			gap: space("base");
 		}
 	}
 }

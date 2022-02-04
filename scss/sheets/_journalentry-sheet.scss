@@ -1,4 +1,4 @@
-.journal-sheet.sheet.window-app .window-content {
+.window-app[id*="journalentry-sheet-"] {
 	form {
 		@include layout {
 			display: flex;
@@ -11,13 +11,11 @@
 			}
 
 			> input[type="text"] {
-				flex: 1 1 calc(70% - #{m("base")});
+				flex: 0 0 70%;
 			}
 
 			> select {
-				flex: 1 1 calc(30% - #{to-rem(36px)});
-				margin-inline-start: m("base");
-				margin-inline-end: to-rem(36px);
+				flex: 0 0 calc(35% - #{to-rem(74px)});
 			}
 
 			> button {
@@ -36,18 +34,17 @@
 
 		.editor {
 			@include layout {
-				height: calc(100% - #{to-rem(70px)});
-				margin-block-start: m("base");
+				height: calc(100% - #{to-rem(74px)});
 				overflow: visible;
 			}
 
 			@include layout(compact) {
-				height: calc(100% - #{to-rem(58px)});
+				height: calc(100% - #{to-rem(62px)});
 			}
 		}
 	}
 
-	.editor-edit {
+	a.editor-edit {
 		@extend %primary-button;
 
 		@include layout {
@@ -63,6 +60,10 @@
 			}
 		}
 
+		&:hover {
+			color: color("text-lightest");
+		}
+
 		@include layout(compact) {
 			top: to-rem(-28px);
 		}
@@ -73,8 +74,26 @@
 		~ .form-group.picker {
 			background-color: transparent;
 
+			@include layout {
+				left: auto;
+				max-width: 100%;
+				position: absolute;
+				top: auto;
+				width: 100%;
+			}
+
 			input {
 				background-color: color("background-lightest");
+
+				@include layout {
+					margin: 0 !important; // why? because inline
+				}
+			}
+
+			button > i {
+				@include layout {
+					margin: 0;
+				}
 			}
 		}
 	}
