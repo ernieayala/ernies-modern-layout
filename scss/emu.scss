@@ -36,16 +36,14 @@ body#{$emu} {
 
 	// Sidebar
 	@import "./components/sidebar";
-	@import "./components/sidebar-chat"; // 1
-	@import "./components/sidebar-combat"; // 2
-	@import "./components/sidebar-scenes"; // 3
-	@import "./components/sidebar-actors"; // 4
-	@import "./components/sidebar-items"; // 5
-	@import "./components/sidebar-journal"; // 6
-	@import "./components/sidebar-tables"; // 7
-	@import "./components/sidebar-playlists"; // 8
-	@import "./components/sidebar-compendium"; // 9
-	@import "./components/sidebar-settings"; // 10
+	@import "./components/sidebar-chat";
+	@import "./components/sidebar-combat";
+	@import "./components/sidebar-scenes";
+	@import "./components/sidebar-actors";
+	@import "./components/sidebar-tables";
+	@import "./components/sidebar-playlists";
+	@import "./components/sidebar-compendium";
+	@import "./components/sidebar-settings";
 
 	// Sheets
 	@import "./sheets/activeeffect-sheet";
@@ -63,50 +61,40 @@ body#{$emu} {
 	@import "./sheets/user-sheet";
 
 	// Module Compatibility
-	// @import "./module-compatibility/better-npc-sheet";
 	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/better-roofs";
-	// @import "./module-compatibility/calendar-weather";
 	@import "./module-compatibility/cautious-gamemaster-pack";
 	@import "./module-compatibility/chat-portrait";
-	// @import "./module-compatibility/combat-enhancements";
+	@import "./module-compatibility/combat-enhancements";
 	@import "./module-compatibility/combat-focus";
 	@import "./module-compatibility/combat-ready";
 	@import "./module-compatibility/combat-utility-belt";
-	// @import "./module-compatibility/compendium-browser";
-	// @import "./module-compatibility/compendium-folders";
+	@import "./module-compatibility/compendium-browser";
+	@import "./module-compatibility/compendium-folders";
 	// @import "./module-compatibility/custom-hotbar";
-	// @import "./module-compatibility/df-chat-enhancements";
-	// @import "./module-compatibility/df-curvy-walls";
-	// @import "./module-compatibility/dfreds-droppables";
+	@import "./module-compatibility/df-chat-enhancements";
+	@import "./module-compatibility/df-curvy-walls";
+	@import "./module-compatibility/dfreds-droppables";
 	@import "./module-compatibility/dice-so-nice";
 	@import "./module-compatibility/dice-tray";
-	// @import "./module-compatibility/dnd5e-helpers";
-	// @import "./module-compatibility/dnd-beyond-importer";
-	// @import "./module-compatibility/dynamic-active-effects";
-	// @import "./module-compatibility/ernies-modern-ui";
-	// @import "./module-compatibility/foriens-quest-log";
-	// @import "./module-compatibility/foriens-unidentified-items";
-	// @import "./module-compatibility/fps-counter";
-	// @import "./module-compatibility/fx-master";
+	@import "./module-compatibility/dnd5e-helpers";
+	@import "./module-compatibility/dynamic-active-effects";
+	@import "./module-compatibility/ernies-modern-ui";
+	@import "./module-compatibility/fx-master";
 	// @import "./module-compatibility/gm-notes";
 	// @import "./module-compatibility/gm-screen";
-	// @import "./module-compatibility/health-estimate";
 	// @import "./module-compatibility/hey-listen";
-	// @import "./module-compatibility/hey-wait";
-	// @import "./module-compatibility/illandrils-chat-enhancements";
-	// @import "./module-compatibility/lib-wrapper";
-	// @import "./module-compatibility/lmrtfy";
+	@import "./module-compatibility/illandrils-chat-enhancements";
+	@import "./module-compatibility/lib-wrapper";
+	@import "./module-compatibility/lmrtfy";
 	// @import "./module-compatibility/macro-editor";
 	// @import "./module-compatibility/macro-folders";
 	// @import "./module-compatibility/maestro";
-	// @import "./module-compatibility/mess";
 	// @import "./module-compatibility/midi-qol";
 	// @import "./module-compatibility/monks-scene-navigation";
 	// @import "./module-compatibility/moulinette";
 	// @import "./module-compatibility/mount-up";
 	// @import "./module-compatibility/narrator-tools";
-	// @import "./module-compatibility/not-enough-npcs";
 	// @import "./module-compatibility/one-journal";
 	// @import "./module-compatibility/party-resources";
 	// @import "./module-compatibility/pdf-foundry";
@@ -118,17 +106,14 @@ body#{$emu} {
 	// @import "./module-compatibility/simple-dice-roller";
 	@import "./module-compatibility/small-time";
 	// @import "./module-compatibility/tabbed-chat-log";
-	// @import "./module-compatibility/thanduls-toggle";
-	// @import "./module-compatibility/the-furnace";
 	// @import "./module-compatibility/theater-inserts";
 	// @import "./module-compatibility/tidy-sheet";
 	@import "./module-compatibility/tidy-game-settings";
 	// @import "./module-compatibility/token-action-hud";
 	// @import "./module-compatibility/token-attacher";
-	// @import "./module-compatibility/token-auras";
 	// @import "./module-compatibility/token-hud-wildcard";
-	// @import "./module-compatibility/token-info-icon";
-	// @import "./module-compatibility/token-magic-fx";
+	@import "./module-compatibility/token-info-icon";
+	@import "./module-compatibility/token-magic-fx";
 	@import "./module-compatibility/token-mold";
 	@import "./module-compatibility/universal-battlemap-importer";
 	@import "./module-compatibility/world-anvil";

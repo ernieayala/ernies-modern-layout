@@ -198,6 +198,7 @@
 
 		@include layout {
 			@include size(to-rem(56px));
+			align-items: center;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -252,7 +253,7 @@
 			border: none;
 
 			@include layout {
-				@include size(to-rem(50px));
+				@include size(to-rem(48px));
 				max-height: 100%;
 				max-width: 100%;
 				object-fit: cover;
@@ -261,7 +262,7 @@
 			}
 
 			@include layout(compact) {
-				@include size(to-rem(34px));
+				@include size(to-rem(32px));
 			}
 		}
 
