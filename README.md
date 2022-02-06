@@ -33,7 +33,7 @@ Message me on Discord: Ernie#4453.
 
 ## You should know
 - This is a fun side project for me that I made to support my GMing tastes.
-- Many modules and systems will have my style.
+- Many modules and systems will not have my style.
 - Only tested on Chrome.
 
 <img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
