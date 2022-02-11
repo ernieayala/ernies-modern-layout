@@ -3,7 +3,7 @@
 	"I18N.MAINTAINERS": "SAD",
 	"emu.settings-name": "GM 設置",
 	"emu.settings-label": "設置",
-	"emu.modal-title": "Ernie的現代用戶界面",
+	"emu.modal-title": "Ernie的現代化用戶界面(UI)",
 	"emu.modal-tab-colors": "顏色",
 	"emu.modal-tab-design": "設計",
 	"emu.modal-tab-options": "選項",
@@ -78,14 +78,14 @@
 	"emu.design-background-opacity-window-content": "視窗內容",
 	"emu.design-logo-custom": "自定義標誌",
 	"emu.layout-emu-layout": "Ernie的版面",
-	"emu.layout-emu-layout-hint": "如果關閉，所有間距功能（包括緊湊和隱蔽模式）將不可用。只有顏色變化會套用。",
-	"emu.layout-compact": "緊湊模式",
+	"emu.layout-emu-layout-hint": "如果關閉，所有間距功能（包括緊密和隱蔽模式）將不可用。只有顏色變化會套用。",
+	"emu.layout-compact": "緊密模式(自動縮小所有組件)",
 	"emu.layout-control-align": "對齊控件頂部",
 	"emu.layout-control-align-hint": "這會將子控件對齊到屏幕頂部。",
 	"emu.layout-subtle-layout": "隱蔽模式(會自動最小化所有側邊欄)",
 	"emu.layout-subtle-layout-opacity": "隱蔽模式的不透明度",
 	"emu.layout-subtle-layout-sidebar-locked": "隱蔽模式鎖定側邊欄",
-	"emu.toggle-logo": "切換 - 關閉標誌",
-	"emu.toggle-players": "切換 - 關閉玩家",
-	"emu.toggle-scene-thumbnails": "切換 - 關閉場景縮圖"
+	"emu.toggle-logo": "開關 - 關閉Logo欄",
+	"emu.toggle-players": "開關 - 關閉玩家欄",
+	"emu.toggle-scene-thumbnails": "開關 - 關閉場景縮圖"
 }
