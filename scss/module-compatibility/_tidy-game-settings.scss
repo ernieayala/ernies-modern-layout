@@ -198,13 +198,14 @@
 				}
 			}
 		}
-	}
 
-	.package-list {
-		// @include layout {
-		// 	height: auto;
-		// 	overflow-y: auto;
-		// }
+
+		~ .package-list {
+			@include layout {
+				height: auto;
+				overflow-y: auto;
+			}
+		}
 	}
 
 	.package-title input[type="checkbox"] {

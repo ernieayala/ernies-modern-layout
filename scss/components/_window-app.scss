@@ -226,7 +226,7 @@
 			border: none;
 
 			@include layout {
-				@include size(space("button-lg"));
+				// @include size(space("button-lg"));
 				cursor: pointer;
 				flex: 0 0 auto;
 				object-fit: cover;

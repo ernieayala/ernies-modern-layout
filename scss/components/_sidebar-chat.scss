@@ -96,6 +96,10 @@
 
 				.message-content {
 					user-select: text;
+
+					.table-result {
+						padding: p("base") 0;
+					}
 				}
 
 				.flavor-text,

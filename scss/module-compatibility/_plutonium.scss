@@ -1,7 +1,7 @@
 .window-app {
 	.window-header {
 		a.pop__btn-open,
-		a.tit-menu__btn-open--sheet.px-2 {
+		a.tit-menu__btn-open--sheet {
 			display: flex !important;
 			flex: 0 0 auto;
 			padding: 0 !important;
@@ -17,30 +17,73 @@
 
 #sidebar,
 .sidebar-popout {
-	.flex-col.dir__wrp-header.w-100.no-shrink.min-w-100.dir__control-header {
-		margin-block-end: m("sm");
-		padding: 0;
+	.dir__wrp-header {
+		@include layout {
+			padding: 0;
 
-		hr {
-			display: none;
-		}
+			.w-100 {
+				gap: space("base");
 
-		.btn-group {
-			button:last-child {
-				margin-inline-start: m("xs") !important;
-			}
-		}
-
-		button {
-			flex: 0 0 auto;
-
-			&:first-child {
-				flex: 1 1 auto;
-
-				> span {
-					margin-inline-end: m("base");
+				> * {
+					margin: 0 !important;
 				}
 			}
+		}
+	}
+}
+
+.window-app {
+	.ve-window {
+		background: none;
+
+		@include layout {
+			gap: space("md");
+		}
+
+		> .mx-2 {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.imp-wiz__head-panel {
+			font-size: initial;
+			text-decoration: none;
+		}
+
+		.ve-flex-col {
+			@include layout {
+				gap: space("base");
+			}
+		}
+
+		.imp-wiz__row-mode {
+			@include layout {
+				gap: space("base");
+				margin: 0 !important;
+			}
+		}
+
+		.imp-wiz__btn-package-archive {
+			@include layout{
+				width: 100%;
+			}
+		}
+
+		.imp-wiz__btn-quick {
+			@include layout {
+				flex: 0 0 auto;
+
+				> i {
+					margin: 0 !important;
+				}
+			}
+		}
+
+		.btn-5et {
+			font-size: fs("md") !important;
+			overflow: hidden;
+			white-space: normal;
 		}
 	}
 }

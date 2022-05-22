@@ -1,292 +1,301 @@
-// @import "../base";
+@import "../base";
 
-// body#{$emu}.system-sfrpg {
-// 	#sidebar,
-// 	.sidebar-popout {
-// 		.sidebar-tab {
-// 			.directory-footer .browser-group {
-// 				@include layout {
-// 					flex-direction: row;
-// 					width: 100%;
-// 				}
+body#{$emu}.system-sfrpg {
+	#sidebar,
+	.sidebar-popout {
+		.sidebar-tab {
+			.directory-footer .browser-group {
+				@include layout {
+					gap: space("base");
+					width: 100%;
+				}
+			}
+		}
+	}
 
-// 				.spell-browser-btn {
-// 					@include layout {
-// 						flex: 1 1 auto;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+	#sidebar,
+	.sidebar-popout {
+		.sfrpg {
+			&.chat-card {
+				@include layout {
+					font-size: fs("sm");
+				}
 
-// 	#sidebar,
-// 	.sidebar-popout {
-// 		.sfrpg {
-// 			&.chat-card {
-// 				@include layout {
-// 					font-size: fs("sm");
-// 				}
+				.card-buttons button,
+				.card-header h3 {
+					color: color("text");
+					text-shadow: none;
 
-// 				.card-buttons button,
-// 				.card-header h3 {
-// 					color: color("text");
-// 					text-shadow: none;
+					@include layout {
+						font-family: inherit;
+						line-height: initial;
+						margin: 0;
+					}
 
-// 					@include layout {
-// 						font-family: inherit;
-// 						line-height: initial;
-// 						margin: 0;
-// 					}
+					> span {
+						border: 0;
 
-// 					> span {
-// 						border: 0;
+						@include layout {
+							padding: 0 p("base");
+						}
+					}
+				}
 
-// 						@include layout {
-// 							padding: 0 p("base");
-// 						}
-// 					}
-// 				}
+				.card-header h3 {
+					@include layout {
+						align-items: center;
+						display: inline-flex;
+					}
+				}
 
-// 				.card-header h3 {
-// 					@include layout {
-// 						align-items: center;
-// 						display: inline-flex;
-// 					}
-// 				}
+				.card-buttons button + button {
+					@include layout {
+						margin-block-start: m("base");
+					}
+				}
 
-// 				.card-buttons button + button {
-// 					@include layout {
-// 						margin-block-start: m("base");
-// 					}
-// 				}
+				.card-header {
+					border-block-start: b("border-lighter");
+					border-block-end: b("border-lighter");
+					margin-block-end: m("base");
 
-// 				.card-header {
-// 					border-block-start: b("border-lighter");
-// 					border-block-end: b("border-lighter");
-// 					margin-block-end: m("base");
+					@include layout {
+						padding: p("base") 0;
+					}
+				}
 
-// 					@include layout {
-// 						padding: p("base") 0;
-// 					}
-// 				}
+				.card-content {
+					@include layout {
+						margin: m("base") 0;
+					}
+				}
 
-// 				.card-footer {
-// 					border-block-start: b("border-lighter");
+				.card-footer {
+					border-block-start: b("border-lighter");
 
-// 					@include layout {
-// 						margin-block-start: m("base");
-// 						padding-block-start: p("base");
-// 					}
+					@include layout {
+						display: flex;
+						flex-wrap: wrap;
+						gap: space("base");
+						margin-block-start: m("base");
+						padding-block-start: p("base");
+					}
 
-// 					span {
-// 						border-inline-end: b("border");
+					span {
+						border-inline-end: b("border");
 
-// 						@include layout {
-// 							font-size: fs("xs");
-// 							margin-inline-end: m("xs");
-// 							padding-inline-end: p("base");
-// 						}
+						@include layout {
+							font-size: fs("xs");
+							padding: 0;
+							padding-inline-end: p("base");
+						}
 
-// 						&:last-child {
-// 							border-inline-end: none;
-// 						}
-// 					}
-// 				}
+						&:last-child {
+							border-inline-end: none;
+						}
+					}
+				}
 
-// 				.card-buttons {
-// 					@include layout {
-// 						margin: m("base") 0;
-// 					}
+				.card-buttons {
+					@include layout {
+						margin: m("base") 0;
+					}
 
-// 					button {
-// 						border: b("border");
-// 						color: color("text-lightest");
+					button {
+						border: b("border");
+						color: color("text-lightest");
 
-// 						@include layout {
-// 							font-weight: normal;
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+						@include layout {
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
 
-// 	.window-app {
-// 		@include layout {
-// 			font-family: inherit;
-// 		}
+	.window-app {
+		@include layout {
+			font-family: inherit;
+		}
 
-// 		.window-header {
-// 			background: none;
-// 		}
+		.window-header {
+			background: none;
+		}
 
-// 		.window-content {
-// 			@include layout {
-// 				font-family: inherit;
-// 			}
-// 		}
-// 	}
+		.window-content {
+			@include layout {
+				font-family: inherit;
+			}
+		}
+	}
 
-// 	.item-browser {
-// 		.control-area {
-// 			@include layout {
-// 				display: flex;
-// 				flex-direction: column;
-// 				height: 100%;
-// 				padding-inline-end: p("sm");
-// 				position: relative;
-// 			}
-// 		}
+	.sfrpg.sheet .sheet-header img.profile {
+		object-fit: contain;
+	}
 
-// 		.sortcontainer {
-// 			border: none;
-// 			border-radius: 0;
+	.item-browser {
+		.control-area {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding-inline-end: p("sm");
+				position: relative;
+			}
+		}
 
-// 			@include layout {
-// 				margin: 0;
-// 				margin-block-end: m("base");
-// 				padding: 0;
+		.sortcontainer {
+			border: none;
+			border-radius: 0;
 
-// 				&#tagfilter input[type="text"] {
-// 					height: space("button");
-// 				}
+			@include layout {
+				margin: 0;
+				margin-block-end: m("base");
+				padding: 0;
 
-// 				dl dt {
-// 					padding-inline-start: 0;
-// 				}
-// 			}
-// 		}
+				&#tagfilter input[type="text"] {
+					height: space("button");
+				}
 
-// 		.hint {
-// 			background-color: color("blue-500");
-// 			border: none;
-// 			border-radius: 0;
-// 			color: color("white");
+				dl dt {
+					padding-inline-start: 0;
+				}
+			}
+		}
 
-// 			@include layout {
-// 				margin: m("xs") 0;
-// 				padding: p("base");
-// 			}
-// 		}
+		.hint {
+			background-color: color("blue-500");
+			border: none;
+			border-radius: 0;
+			color: color("white");
 
-// 		.item-browser-filters {
-// 			margin-block-start: m("base");
+			@include layout {
+				margin: m("xs") 0;
+				padding: p("base");
+			}
+		}
 
-// 			.filtercontainer {
-// 				border: none;
-// 				border-radius: 0;
+		.item-browser-filters {
+			margin-block-start: m("base");
 
-// 				@include layout {
-// 					margin: 0;
-// 					margin-block-end: m("base");
-// 					padding: 0;
+			.filtercontainer {
+				border: none;
+				border-radius: 0;
 
-// 					&:last-child {
-// 						margin-block-end: 0;
-// 					}
-// 				}
+				@include layout {
+					margin: 0;
+					margin-block-end: m("base");
+					padding: 0;
 
-// 				h3 {
-// 					background-color: color("background-light");
-// 					border-block-end: b("border");
-// 					color: color("text-lightest");
+					&:last-child {
+						margin-block-end: 0;
+					}
+				}
 
-// 					@include layout {
-// 						padding: p("base") p("sm");
-// 					}
-// 				}
+				h3 {
+					background-color: color("background-light");
+					border-block-end: b("border");
+					color: color("text-lightest");
 
-// 				dl {
-// 					@include layout {
-// 						label {
-// 							align-items: center;
-// 							display: flex;
-// 							padding: p("xs") 0;
+					@include layout {
+						padding: p("base") p("sm");
+					}
+				}
 
-// 							dt {
-// 								display: inline-flex;
-// 								flex: 0 0 auto;
-// 								padding-inline-start: 0;
-// 								width: auto;
-// 							}
+				dl {
+					@include layout {
+						display: flex;
+						flex-wrap: wrap;
+						gap: space("base");
 
-// 							dd {
-// 								flex: 1 1 auto;
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
+						dt {
+							display: inline-flex;
+							flex: 0 0 auto;
+							padding: 0;
+							width: auto;
+						}
 
-// 		.header {
-// 			@include layout {
-// 				flex: 0 0 auto;
-// 				padding: p("xs") p("md");
+						dd {
+							align-items: center;
+							display: inline-flex;
+							flex: 1 1 auto;
+							margin: 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+		}
 
-// 				.item-image {
-// 					height: auto;
-// 					width: space("button");
-// 				}
+		.header {
+			@include layout {
+				flex: 0 0 auto;
+				padding: p("xs") p("md");
 
-// 				.item-sort-link {
-// 					height: auto;
-// 					margin: 0;
-// 					padding-inline-start: p("base");
-// 				}
-// 			}
+				.item-image {
+					height: auto;
+					width: space("button");
+				}
 
-// 			.item-sort-link:hover {
-// 				color: color("primary");
-// 				text-shadow: none;
-// 			}
-// 		}
+				.item-sort-link {
+					height: auto;
+					margin: 0;
+					padding-inline-start: p("base");
+				}
+			}
 
-// 		.item-list {
-// 			background-color: transparent;
+			.item-sort-link:hover {
+				color: color("primary");
+				text-shadow: none;
+			}
+		}
 
-// 			@include layout {
-// 				border-radius: 0;
-// 				margin-block-start: m("base");
-// 				padding: p("sm");
-// 			}
+		.item-list {
+			background-color: transparent;
 
-// 			li {
-// 				border-block-end: b("border-lighter");
+			@include layout {
+				border-radius: 0;
+				margin-block-start: m("base");
+				padding: p("sm");
+			}
 
-// 				@include layout {
-// 					line-height: initial;
-// 					margin: 0;
-// 					padding: p("xs") p("base");
+			li {
+				border-block-end: b("border-lighter");
 
-// 					.item-image {
-// 						height: space("button");
-// 						max-width: space("button");
-// 					}
+				@include layout {
+					line-height: initial;
+					margin: 0;
+					padding: p("xs") p("base");
 
-// 					.item-name,
-// 					.item-tags {
-// 						align-items: center;
-// 						display: inline-flex;
-// 						height: auto;
-// 						margin: 0;
-// 						padding-inline-start: p("base");
-// 					}
+					.item-image {
+						height: space("button");
+						max-width: space("button");
+					}
 
-// 					.item-tags {
-// 						justify-content: flex-end;
-// 					}
-// 				}
+					.item-name,
+					.item-tags {
+						align-items: center;
+						display: inline-flex;
+						height: auto;
+						margin: 0;
+						padding-inline-start: p("base");
+					}
 
-// 				&:hover {
-// 					background-color: color("primary");
-// 					color: color("text-lightest");
+					.item-tags {
+						justify-content: flex-end;
+					}
+				}
 
-// 					a:hover {
-// 						color: color("text-lightest");
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+				&:hover {
+					background-color: color("primary");
+					color: color("text-lightest");
+
+					a:hover {
+						color: color("text-lightest");
+					}
+				}
+			}
+		}
+	}
+}

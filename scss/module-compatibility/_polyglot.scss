@@ -80,22 +80,3 @@
 		}
 	}
 }
-
-#sidebar,
-.sidebar-popout {
-	#chat {
-		#chat-log {
-			.message {
-				.button.polyglot-message-language {
-					@extend %link-button;
-					color: color("text");
-
-					@include layout {
-						@extend %control-button;
-						color: color("text");
-					}
-				}
-			}
-		}
-	}
-}

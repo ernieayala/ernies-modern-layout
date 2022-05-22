@@ -114,3 +114,10 @@
 		display: none;
 	}
 }
+
+.st-scene-config > legend {
+	@include layout {
+		margin: initial;
+		padding: initial;
+	}
+}

@@ -1,0 +1,72 @@
+@import "../base";
+
+body#{$emu}.system-morkborg {
+
+	// because fucking horrible !importants added by System
+	::-webkit-scrollbar-thumb {
+		background-color: color("background-light") !important;
+		border: none !important;
+	}
+
+	.window-app .window-content {
+		form .notes,
+		.form-group span.units {
+			background-color: transparent;
+		}
+	}
+
+	.morkborg.sheet.actor.character .sheet-header {
+		@include layout {
+			gap: initial;
+		}
+	}
+
+	.morkborg.sheet .editor {
+		color: color("text");
+	}
+
+	.roll-card {
+		border: none;
+	}
+
+	.roll-card .card-title,
+	.roll-card .outcome-text .attack-outcome,
+	.roll-card .outcome-text .defend-outcome,
+	.roll-card .outcome-text .take-damage {
+		background-color: transparent;
+		color: color("text");
+	}
+
+	.roll-card .roll-result {
+		border: b("border");
+	}
+
+	.roll-card .roll-result span {
+		color: color("text");
+	}
+
+	#chat-controls i.fas:hover {
+		color: inherit;
+		text-shadow: none;
+	}
+
+	#hotbar #action-bar li.macro {
+		background-color: color("background", $global-background-opacity-hotbar);
+		background-image: $global-image-background-controls;
+		border: b("border");
+		color: color("text-lightest");
+
+		&:hover {
+			@extend %global-hover;
+		}
+
+		&:focus {
+			@extend %global-focus;
+		}
+
+		&.active {
+			@extend %global-active;
+			background-color: color("background", $global-background-opacity-hotbar);
+		}
+	}
+}

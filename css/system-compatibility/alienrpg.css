@@ -1,0 +1,23 @@
+body.-emu.system-alienrpg .chat-message .table-draw .table-results .table-result {
+  color: rgba(var(--color-primary), 1); }
+  .-emu-layout body.-emu.system-alienrpg .chat-message .table-draw .table-results .table-result {
+    gap: var(--emu-space-base); }
+  .-emu-layout body.-emu.system-alienrpg .chat-message .table-draw .table-results .table-result img.result-image {
+    margin: 0; }
+  .-emu-layout body.-emu.system-alienrpg .chat-message .table-draw .table-results .table-result .result-text {
+    line-height: initial; }
+
+body.-emu.system-alienrpg .alienrpg .actor-header {
+  background-color: transparent; }
+
+body.-emu.system-alienrpg .alienrpg h1.charname,
+body.-emu.system-alienrpg .alienrpg .grid-4col {
+  border: none; }
+
+body.-emu.system-alienrpg .alienrpg .tabs {
+  background-color: transparent;
+  border: none; }
+
+body.-emu.system-alienrpg .alienrpg .sheet-tabs {
+  border-block-start: none !important;
+  border-block-end: none !important; }

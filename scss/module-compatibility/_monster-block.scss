@@ -1,0 +1,152 @@
+.monsterblock {
+	&.compact-window .window-content {
+		box-shadow: none;
+	}
+
+	.window-header a.close {
+		@include layout {
+			height: space("button-sm") !important; // because other important
+			right: auto;
+		}
+	}
+
+	.window-content form.flexcol {
+		@include layout {
+			display: block;
+			gap: unset;
+		}
+	}
+
+	&.sheet.actor {
+		nav.switches {
+			@include layout {
+				height: space("button-xs");
+				left: 0;
+				padding-inline-start: 0;
+				position: absolute;
+				top: -2px;
+			}
+
+			.fa-cog {
+				background-color: color("background-button");
+				border: none;
+				border-block-start: color("background-lightest") 2px solid;
+				border-inline-end: color("background-lightest") 2px solid;
+				border-radius: 0 0 $global-border-radius-default 0;
+				color: color("text-lightest");
+				transition: t(background box-shadow color, "link");
+
+				@include layout {
+					@include absolute(bottom 0 left 0);
+					@include size(space("button-xs"));
+					align-items: center;
+					cursor: pointer;
+					display: inline-flex;
+					font-size: fs("md");
+					justify-content: center;
+					margin: 0;
+					padding: 0;
+					z-index: z("fixed");
+				}
+
+				&:hover {
+					@extend %global-hover;
+				}
+
+				&:focus {
+					@extend %global-focus;
+				}
+			}
+
+			ul {
+				background-color: color("background-lightest");
+				background-image: $global-image-background-lightest;
+				border-radius: $global-border-radius-default;
+				border: b("border");
+				box-shadow: 0 2px 4px color("black");
+				color: color("text");
+
+				li {
+					border-inline-start: 0;
+					border-block-end: b("border");
+
+					@include layout {
+						margin: 0;
+						position: relative;
+						display: inline-block;
+						padding: 0;
+					}
+
+					.switch-input {
+						@extend %input-text;
+					}
+
+					a {
+						&:hover {
+							color: color("primary");
+							text-shadow: none;
+						}
+
+						@include layout {
+							padding: p("xs");
+
+							&:not(:only-child)::after {
+								right: space("base");
+								top: space("xs");
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.tweak-menu {
+		ul {
+			background-color: color("background-lightest");
+			background-image: $global-image-background-lightest;
+			border-radius: $global-border-radius-default;
+			border: b("border");
+			box-shadow: 0 2px 4px color("black");
+			color: color("text");
+
+			li {
+				border-inline-start: 0;
+				border-block-end: b("border");
+
+				@include layout {
+					margin: 0;
+					position: relative;
+					display: inline-block;
+					padding: 0;
+				}
+
+				labal, // wtf hahahaha
+				a,
+				label {
+					&:hover {
+						color: color("primary");
+						text-shadow: none;
+					}
+
+					@include layout {
+						padding: p("xs");
+
+						&.menu-toggle {
+							padding-inline-start: p("md");
+						}
+
+						&:not(:only-child)::before {
+							left: space("base");
+							top: space("xs");
+						}
+					}
+				}
+
+				labal {
+					display: block;
+				}
+			}
+		}
+	}
+}
