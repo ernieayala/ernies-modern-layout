@@ -90,6 +90,7 @@ Message me on Discord: Ernie#4453.
 - Macro Editor (1.1.2)
 - Maestro (0.8.0)
 - Midi QOL (0.9.02)
+- Monster Block (3.3.0)
 - Narrator Tools (0.70)
 - Party Resources (1.2.5)
 - PDFoundry (0.9.1)

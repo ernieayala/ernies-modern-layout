@@ -130,6 +130,10 @@ body#{$emu}.system-sfrpg {
 		}
 	}
 
+	.sfrpg.sheet .sheet-header img.profile {
+		object-fit: contain;
+	}
+
 	.item-browser {
 		.control-area {
 			@include layout {

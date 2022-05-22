@@ -96,6 +96,9 @@ body.-emu.system-sfrpg .window-app .window-header {
 .-emu-layout body.-emu.system-sfrpg .window-app .window-content {
   font-family: inherit; }
 
+body.-emu.system-sfrpg .sfrpg.sheet .sheet-header img.profile {
+  object-fit: contain; }
+
 .-emu-layout body.-emu.system-sfrpg .item-browser .control-area {
   display: flex;
   flex-direction: column;
