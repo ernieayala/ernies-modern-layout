@@ -43,7 +43,7 @@ Message me on Discord: Ernie#4453.
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
 ### Systems Functional as of Feb 2022
-- DND 5e (9.249)
+- DND 5e (1.6.1)
 - MÖRK BORG (1.8.0)
 - Starfinder RPG (0.11.4)
 
