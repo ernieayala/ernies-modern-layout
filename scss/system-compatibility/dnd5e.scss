@@ -487,7 +487,18 @@ body#{$emu}.system-dnd5e {
 
 	[id*="actor-type-"] {
 		input[name="preview"]:disabled {
-			padding: 0;
+			@include layout {
+				padding: 0;
+			}
+		}
+	}
+
+	.trait-selector.subconfig {
+		ol.trait-list > li {
+			@include layout {
+				align-items: flex-start;
+				flex-direction: column;
+			}
 		}
 	}
 

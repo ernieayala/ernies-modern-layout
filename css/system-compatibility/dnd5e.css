@@ -1166,8 +1166,12 @@ body.-emu.system-dnd5e [id*="actor-type-"] section.secret {
   body.-emu.system-dnd5e [id*="actor-type-"] section.secret {
     padding: 0 var(--emu-space-base); }
 
-body.-emu.system-dnd5e [id*="actor-type-"] input[name="preview"]:disabled {
+.-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] input[name="preview"]:disabled {
   padding: 0; }
+
+.-emu-layout body.-emu.system-dnd5e .trait-selector.subconfig ol.trait-list > li {
+  align-items: flex-start;
+  flex-direction: column; }
 
 .-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content {
   padding: var(--emu-space-sm); }

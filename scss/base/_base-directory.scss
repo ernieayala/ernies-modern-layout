@@ -155,6 +155,12 @@
 				}
 			}
 
+			&.droptarget {
+				.folder-header {
+					@extend %global-focus;
+				}
+			}
+
 			.folder-header {
 				background-color: color("folder-header");
 				background-image: none;
@@ -203,6 +209,10 @@
 						text-align: start;
 						text-shadow: none;
 					}
+
+					> i {
+						text-shadow: none;
+					}
 				}
 
 				.create-folder,
@@ -247,6 +257,21 @@
 		.create-folder,
 		.create-document {
 			@extend %control-button;
+
+			.fa-plus {
+				align-items: center;
+				background: transparent;
+				border-radius: 50%;
+				color: inherit;
+				display: flex;
+				font-size: 8px;
+				height: 12px;
+				justify-content: center;
+				position: absolute;
+				right: -2px;
+				top: -2px;
+				width: 12px;
+			}
 		}
 
 		img {

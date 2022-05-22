@@ -94,6 +94,11 @@
 
 		.dialog-button {
 			@extend %primary-button-simple-reset;
+
+			@include layout {
+				@include ellipsis;
+				flex: 1 1 auto;
+			}
 		}
 	}
 
