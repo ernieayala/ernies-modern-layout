@@ -5,6 +5,8 @@
 		gap: $global-space-base;
 		height: 0;
 		max-width: 100%;
+		overflow: hidden;
+		padding: 0;
 		padding-block-start: $global-space-sm;
 		padding-inline-start: $global-space-sm;
 		position: relative;

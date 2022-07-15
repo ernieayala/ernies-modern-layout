@@ -36,7 +36,7 @@ body#{$emu}.system-dnd5e {
 			.window-content {
 				color: color("text");
 
-				@include layout {
+				nclude layout {@i
 					padding: 0;
 				}
 
@@ -69,6 +69,10 @@ body#{$emu}.system-dnd5e {
 
 			.sheet-header {
 				border-block-end: b("border-lighter");
+
+				@include layout {
+					gap: initial;
+				}
 
 				img.profile {
 					border-inline-end: b("border-lighter");

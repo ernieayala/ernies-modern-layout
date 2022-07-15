@@ -230,6 +230,12 @@ form {
 			margin: 0;
 		}
 
+		.checkbox-label {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+		}
+
 		label {
 			&.checkbox {
 				@include layout {

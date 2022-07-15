@@ -1,0 +1,15 @@
+.journal-show-dialog {
+	.form-group-stacked {
+		@include layout {
+			text-align: left;
+
+			.checkbox-label {
+				align-items: start;
+			}
+
+			label.checkbox {
+				flex-direction: row-reverse;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+#tooltip {
+	@include layout {
+		align-items: center;
+		border-radius: $global-border-radius-default;
+		display: inline-flex;
+		font-family: inherit;
+		font-size: $global-font-size-md;
+		line-height: 1.2;
+		max-width: 320px;
+		opacity: 0;
+		padding: $global-space-sm $global-space-md;
+		pointer-events: none;
+		transition: t(opacity visibility, "shift");
+		width: max-content;
+	}
+
+	background: color("background-darkest", 0.9);
+	border: none;
+	box-shadow: 0 0 4px color("black");
+	color: color("text-lightest");
+
+	&.active {
+		@include layout {
+			opacity: 1;
+		}
+	}
+}
