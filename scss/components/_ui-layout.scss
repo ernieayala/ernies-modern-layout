@@ -37,7 +37,7 @@
 	position: relative;
 
 	&.offset {
-		margin-inline-start: calc(#{space("sidebar")}/-4);
+		margin-inline-start: calc(#{$global-space-sidebar}/-4);
 	}
 }
 

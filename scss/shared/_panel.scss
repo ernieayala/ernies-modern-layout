@@ -8,10 +8,10 @@
 		align-items: center;
 		display: flex;
 		flex: 0 0 auto;
-		gap: space("base");
+		gap: $global-space-base;
 		line-height: initial;
 		margin: 0;
-		padding: p("sm");
+		padding: $global-space-sm;
 		position: relative;
 		text-align: start;
 

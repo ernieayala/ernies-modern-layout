@@ -3,7 +3,7 @@
 	.chat-message .chat-card {
 		.die-result-overlay-br {
 			@include layout {
-				padding: 0 p("xs");
+				padding: 0 $global-space-xs;
 			}
 
 			button {
@@ -11,7 +11,7 @@
 				@extend %font-awesome;
 
 				@include layout {
-					margin: 0 m("xs");
+					margin: 0 $global-space-xs;
 				}
 			}
 		}
@@ -23,14 +23,14 @@
 					display: flex;
 					justify-content: center;
 					margin: 0;
-					min-height: space("button");
+					min-height: $global-space-button;
 				}
 			}
 
 			.dice-total + .dice-total {
 				@include layout {
 					margin-block-start: 0;
-					margin-inline-start: m("base");
+					margin-inline-start: $global-space-base;
 				}
 			}
 		}

@@ -10,10 +10,10 @@
 			border-block-start: b("border");
 
 			@include layout {
-				padding: p("sm") 0;
+				padding: $global-space-sm 0;
 
 				.remove-override-wrapper {
-					margin-inline-start: m("base");
+					margin-inline-start: $global-space-base;
 
 					i {
 						margin: 0;
@@ -29,7 +29,7 @@
 				padding: 0;
 
 				h2 {
-					margin-block-start: m("sm");
+					margin-block-start: $global-space-sm;
 				}
 			}
 		}
@@ -38,7 +38,7 @@
 	.sheet-footer {
 		@include layout {
 			flex: 0 0 auto;
-			padding-block-start: p("sm");
+			padding-block-start: $global-space-sm;
 		}
 	}
 }

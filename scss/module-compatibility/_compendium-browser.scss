@@ -24,7 +24,7 @@
 		@include layout {
 			overflow-x: hidden;
 			overflow-y: auto;
-			padding: p("base");
+			padding: $global-space-base;
 		}
 	}
 
@@ -34,14 +34,14 @@
 		border-radius: 0;
 
 		@include layout {
-			margin-block-end: m("base");
+			margin-block-end: $global-space-base;
 
 			&:last-child {
 				margin-block-end: 0;
 			}
 
 			> div {
-				margin: m("base") 0;
+				margin: $global-space-base 0;
 			}
 		}
 
@@ -57,7 +57,7 @@
 			@include layout {
 				line-height: 1;
 				margin: 0;
-				padding: p("base");
+				padding: $global-space-base;
 			}
 		}
 
@@ -84,21 +84,21 @@
 
 		@include layout {
 			margin: 0;
-			padding: p("base");
+			padding: $global-space-base;
 		}
 
 		label {
 			@include layout {
 				align-items: center;
 				display: flex;
-				padding: p("base");
+				padding: $global-space-base;
 
 				&:nth-of-type(even) {
 					background-color: color("background-light", 0.1);
 				}
 
 				input[type="checkbox"] {
-					margin-inline-end: m("sm");
+					margin-inline-end: $global-space-sm;
 				}
 
 				h4 {

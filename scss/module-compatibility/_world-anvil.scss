@@ -4,7 +4,7 @@
 		#world-anvil {
 			img {
 				@include layout {
-					max-height: fs("lg");
+					max-height: $global-font-size-lg;
 					top: auto;
 				}
 			}

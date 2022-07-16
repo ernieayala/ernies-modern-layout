@@ -11,17 +11,17 @@
 		align-items: center;
 		cursor: pointer;
 		display: inline-flex;
-		font-size: fs("lg");
+		font-size: $global-font-size-lg;
 		font-family: inherit;
 		height: initial;
 		justify-content: center;
 		line-height: 1;
 		margin: 0;
-		padding: p("sm");
+		padding: $global-space-sm;
 		position: relative;
 
 		> i {
-			margin-inline-end: m("sm");
+			margin-inline-end: $global-space-sm;
 		}
 	}
 
@@ -75,9 +75,9 @@
 	@extend %default-button;
 
 	@include layout {
-		@include size(space("button-sm"));
+		@include size($global-space-button-sm);
 		flex: 0 0 auto;
-		font-size: fs("sm");
+		font-size: $global-font-size-sm;
 		padding: 0;
 
 		> i {

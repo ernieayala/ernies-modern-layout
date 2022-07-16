@@ -21,15 +21,15 @@
 			@extend %reset-list;
 			display: flex;
 			flex-direction: column;
-			gap: space("sm");
-			padding: p("sm");
+			gap: $global-space-sm;
+			padding: $global-space-sm;
 		}
 
 		li {
 			@extend %primary-button;
 
 			@include layout {
-				font-size: fs("xl");
+				font-size: $global-font-size-xl;
 			}
 
 			i,

@@ -2,7 +2,7 @@
 	table {
 		@include layout {
 			td {
-				padding: p("base");
+				padding: $global-space-base;
 			}
 
 			button > i {

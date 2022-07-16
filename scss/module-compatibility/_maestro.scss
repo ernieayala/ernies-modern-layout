@@ -5,7 +5,7 @@
 			> .flexrow {
 				@include layout {
 					flex: 0 0 100%;
-					gap: space("base");
+					gap: $global-space-base;
 				}
 			}
 		}

@@ -5,8 +5,8 @@
 	box-shadow: none;
 
 	@include layout {
-		@include absolute(top space("sm") left 0);
-		@include size(calc(100% - #{space("sm")} - #{space("sidebar")}), to-rem(24px));
+		@include absolute(top $global-space-sm left 0);
+		@include size(calc(100% - #{$global-space-sm} - #{$global-space-sidebar}), to-rem(24px));
 		display: none;
 		pointer-events: none;
 		z-index: z("fixed");
@@ -42,9 +42,9 @@
 			align-items: center;
 			display: flex;
 			height: 100%;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			line-height: initial;
-			margin: 0 m("md");
+			margin: 0 $global-space-md;
 			padding: 0;
 		}
 	}

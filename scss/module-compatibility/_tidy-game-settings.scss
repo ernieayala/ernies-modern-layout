@@ -1,7 +1,7 @@
 #client-settings.window-app.form {
 	.window-content {
 		@include layout {
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 
 		.sheet-footer {
@@ -17,7 +17,7 @@
 		.sheet-tabs.tabs {
 			.item {
 				@include layout {
-					padding: p("sm");
+					padding: $global-space-sm;
 				}
 			}
 		}
@@ -33,12 +33,12 @@
 						display: flex;
 						flex-direction: row;
 						flex-wrap: wrap;
-						font-size: fs("lg");
-						gap: space("base");
+						font-size: $global-font-size-lg;
+						gap: $global-space-base;
 						height: auto;
 						justify-content: space-between !important; // because MOD other important
 						margin: 0;
-						padding: p("sm");
+						padding: $global-space-sm;
 						transition: none;
 						width: 100%;
 
@@ -51,7 +51,7 @@
 						@include layout {
 							align-items: center;
 							display: flex;
-							gap: space("base");
+							gap: $global-space-base;
 							flex: 1 1 auto;
 							justify-content: flex-end;
 							margin: 0;
@@ -75,7 +75,7 @@
 						@include layout {
 							align-items: center;
 							display: inline-flex;
-							font-size: fs("md");
+							font-size: $global-font-size-md;
 							font-weight: normal;
 							line-height: initial;
 							margin: 0;
@@ -120,7 +120,7 @@
 						flex: 0 0 auto;
 						height: auto;
 						margin: 0;
-						margin-block-end: m("base");
+						margin-block-end: $global-space-base;
 					}
 
 					#searchInput {
@@ -135,11 +135,11 @@
 						@include layout {
 							align-items: center;
 							display: flex;
-							font-size: fs("lg");
+							font-size: $global-font-size-lg;
 							font-weight: normal;
-							gap: space("sm");
+							gap: $global-space-sm;
 							margin: 0;
-							padding: p("sm");
+							padding: $global-space-sm;
 						}
 
 						&:hover {
@@ -164,7 +164,7 @@
 #module-management {
 	.enhanced-module-management {
 		@include layout {
-			gap: space("base");
+			gap: $global-space-base;
 			justify-content: center;
 			margin-block-end: 0;
 		}
@@ -213,7 +213,7 @@
 
 		@include layout {
 			appearance: auto;
-			margin-inline-end: m("sm");
+			margin-inline-end: $global-space-sm;
 
 			&::after {
 				display: none;

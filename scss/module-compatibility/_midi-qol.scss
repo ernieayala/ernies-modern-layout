@@ -6,7 +6,7 @@
 				.card-buttons {
 					button[data-action="attack"] {
 						@include layout {
-							margin-block-end: m("base");
+							margin-block-end: $global-space-base;
 						}
 					}
 				}
@@ -38,7 +38,7 @@
 		@include layout {
 			display: flex;
 			flex-direction: column;
-			gap: space("base");
+			gap: $global-space-base;
 		}
 	}
 }

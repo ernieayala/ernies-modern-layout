@@ -32,7 +32,7 @@
 
 		.directory-list {
 			@include layout {
-				padding-block-start: p("base");
+				padding-block-start: $global-space-base;
 			}
 		}
 
@@ -42,9 +42,9 @@
 				border: none;
 
 				@include layout {
-					@include size(space("button"));
+					@include size($global-space-button);
 					flex: 0 0 auto;
-					margin: m("base");
+					margin: $global-space-base;
 					margin-inline-start: 0;
 					overflow: hidden;
 
@@ -59,11 +59,11 @@
 				@include layout {
 					align-items: center;
 					display: flex;
-					padding: p("base");
+					padding: $global-space-base;
 
 					h4 {
 						color: color("text-lightest");
-						font-size: fs("lg");
+						font-size: $global-font-size-lg;
 						height: auto;
 						text-indent: 0;
 					}
@@ -73,7 +73,7 @@
 					color: color("text-lightest");
 
 					@include layout {
-						font-size: fs("sm");
+						font-size: $global-font-size-sm;
 						line-height: 1.2;
 						text-align: left;
 					}
@@ -110,13 +110,13 @@
 		border-block-end: b("border");
 
 		@include layout {
-			padding: p("base");
+			padding: $global-space-base;
 		}
 
 		header {
 			@include layout {
 				align-items: center;
-				gap: space("base");
+				gap: $global-space-base;
 			}
 
 			label {
@@ -141,7 +141,7 @@
 
 				@include layout {
 					display: flex;
-					gap: space("base");
+					gap: $global-space-base;
 				}
 
 				.range-value {
@@ -160,12 +160,12 @@
 	.directory-header {
 		@include layout {
 			align-items: center;
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 			line-height: 1.2;
-			gap: space("base");
+			gap: $global-space-base;
 			justify-content: center;
 			margin: 0;
-			padding: p("base");
+			padding: $global-space-base;
 		}
 
 		.layer-toggle {
@@ -174,7 +174,7 @@
 			@include layout {
 				align-items: center;
 				display: flex;
-				gap: space("base");
+				gap: $global-space-base;
 			}
 		}
 	}
@@ -193,7 +193,7 @@
 		border-block-end: b("border");
 
 		@include layout {
-			padding: p("base");
+			padding: $global-space-base;
 		}
 
 		header {
@@ -215,7 +215,7 @@
 
 				@include layout {
 					display: flex;
-					gap: space("base");
+					gap: $global-space-base;
 				}
 
 				.range-value {

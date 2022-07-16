@@ -1,7 +1,7 @@
 #df-curvy-walls-tools {
 	@include layout {
 		display: flex;
-		gap: space("base");
+		gap: $global-space-base;
 		left: to-rem(96px);
 		top: to-rem(184px);
 	}
@@ -12,7 +12,7 @@
 			display: flex;
 			flex-direction: column;
 			flex: 0 0 auto;
-			gap: space("base");
+			gap: $global-space-base;
 			margin: 0;
 			pointer-events: none;
 			transition: t(opacity left, "link");
@@ -29,13 +29,13 @@
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(space("button-lg"));
+			@include size($global-space-button-lg);
 			align-items: center;
 			box-sizing: border-box;
 			cursor: pointer;
 			display: flex;
 			justify-content: center;
-			font-size: fs("lg");
+			font-size: $global-font-size-lg;
 			line-height: initial;
 			margin: 0;
 			pointer-events: all;

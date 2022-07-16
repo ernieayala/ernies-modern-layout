@@ -3,7 +3,7 @@ table {
 	border: none;
 
 	@include layout {
-		margin: m("base") 0;
+		margin: $global-space-base 0;
 	}
 
 	thead {
@@ -19,14 +19,14 @@ table {
 
 	td:first-child {
 		@include layout {
-			padding-inline-start: p("base");
+			padding-inline-start: $global-space-base;
 		}
 	}
 
 	td,
 	th {
 		@include layout {
-			padding: p("xs") 0;
+			padding: $global-space-xs 0;
 		}
 	}
 }

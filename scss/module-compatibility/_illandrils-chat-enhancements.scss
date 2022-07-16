@@ -7,6 +7,6 @@
 		display: flex;
 		flex: 0 0 auto;
 		margin: 0;
-		padding: p("base") p("sm");
+		padding: $global-space-base $global-space-sm;
 	}
 }

@@ -7,7 +7,7 @@
 				justify-content: flex-start;
 
 				input + label {
-					margin-inline-end: m("base");
+					margin-inline-end: $global-space-base;
 					padding: 0;
 				}
 			}
@@ -45,7 +45,7 @@
 			bottom: 0;
 			display: flex;
 			flex-wrap: nowrap;
-			padding: p("sm");
+			padding: $global-space-sm;
 			position: sticky;
 		}
 	}
@@ -63,7 +63,7 @@
 
 	select + select {
 		@include layout {
-			margin-inline-start: m("base");
+			margin-inline-start: $global-space-base;
 		}
 	}
 }

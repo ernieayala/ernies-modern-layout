@@ -7,28 +7,28 @@
 
 	div.dialog-content {
 		@include layout {
-			padding: 0 p("sm");
-			padding-block-start: p("sm");
+			padding: 0 $global-space-sm;
+			padding-block-start: $global-space-sm;
 		}
 
 		h4:first-child,
 		p:first-child {
 			@include layout {
-				margin-block-start: m("base");
+				margin-block-start: $global-space-base;
 			}
 		}
 
 		> p {
 			@include layout {
 				margin: 0;
-				margin-block-end: m("sm");
+				margin-block-end: $global-space-sm;
 			}
 		}
 	}
 
 	form.dialog-content {
 		@include layout {
-			padding-block-start: p("md");
+			padding-block-start: $global-space-md;
 		}
 	}
 
@@ -36,13 +36,13 @@
 		color: color("text");
 
 		@include layout {
-			font-size: fs("lg");
-			padding: p("sm");
+			font-size: $global-font-size-lg;
+			padding: $global-space-sm;
 		}
 
 		> p + .form-group {
 			@include layout {
-				margin-block-start: m("md");
+				margin-block-start: $global-space-md;
 			}
 		}
 
@@ -54,7 +54,7 @@
 			+ .dialog-buttons {
 				@include layout {
 					padding: 0;
-					padding-block-start: p("sm");
+					padding-block-start: $global-space-sm;
 				}
 			}
 		}
@@ -66,7 +66,7 @@
 
 			&:first-child {
 				@include layout {
-					margin-block-start: m("md");
+					margin-block-start: $global-space-md;
 				}
 			}
 		}
@@ -74,7 +74,7 @@
 		> p {
 			&:first-child {
 				@include layout {
-					margin-block-start: m("sm");
+					margin-block-start: $global-space-sm;
 				}
 			}
 		}
@@ -84,8 +84,8 @@
 		@include layout {
 			display: flex;
 			flex: 0 0 auto;
-			gap: space("base");
-			padding: p("sm");
+			gap: $global-space-base;
+			padding: $global-space-sm;
 		}
 
 		&:empty {

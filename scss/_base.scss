@@ -24,29 +24,6 @@
 		"text-darker": #293e40, // c500
 		"warning": #edb950 // y500
 	)
-	"font-sizes" (
-		"xxl": var(--emu-font-size-xxl),
-		"xl": var(--emu-font-size-xl),
-		"lg": var(--emu-font-size-lg),
-		"md": var(--emu-font-size-md),
-		"sm": var(--emu-font-size-sm),
-		"xs": var(--emu-font-size-xs),
-		"chat-roll": var(--emu-font-size-chat-roll)
-	)
-	"space" (
-		"button-lg": var(--emu-space-button-lg),
-		"button": var(--emu-space-button),
-		"button-sm": var(--emu-space-button-sm),
-		"button-xs": var(--emu-space-button-xs),
-		"sidebar": var(--emu-space-sidebar),
-		"icon": var(--emu-space-button),
-		"pf": var(--emu-space-pf),
-		"xs": var(--emu-space-xs),
-		"base": var(--emu-space-base),
-		"sm": var(--emu-space-sm),
-		"md": var(--emu-space-md),
-		"xl": var(--emu-space-xl)
-	)
 	"z-index" (
 		"fixed": 10,
 		"popover": 15
@@ -55,6 +32,30 @@
 
 // Class Name
 $emu: '.-emu';
+
+// Font Size
+$global-font-size-xxl: var(--emu-font-size-xxl, 24px);
+$global-font-size-xl: var(--emu-font-size-xl, 20px);
+$global-font-size-lg: var(--emu-font-size-lg, 16px);
+$global-font-size-md: var(--emu-font-size-md, 14px);
+$global-font-size-sm: var(--emu-font-size-sm, 12px);
+$global-font-size-xs: var(--emu-font-size-xs, 10px);
+$global-font-size-chat-roll: var(--emu-font-size-chat-roll, 18px);
+
+// Spacing
+$global-space-button-lg: var(--emu-space-button-lg, 40px);
+$global-space-button: var(--emu-space-button, 32px);
+$global-space-button-sm: var(--emu-space-button-sm, 24px);
+$global-space-button-xs: var(--emu-space-button-xs, 20px);
+$global-space-sidebar: var(--emu-space-sidebar, 320px);
+$global-space-icon: var(--emu-space-button, 32px);
+$global-space-pf: var(--emu-space-pf, 1px);
+$global-space-xs: var(--emu-space-xs, 2px);
+$global-space-base: var(--emu-space-base, 4px);
+$global-space-sm: var(--emu-space-sm, 8px);
+$global-space-md: var(--emu-space-md, 24px);
+$global-space-lg: var(--emu-space-lg, 24px);
+$global-space-xl: var(--emu-space-xl, 32px);
 
 // Shadows
 $global-box-shadow: 0 2px 4px color("black");
@@ -124,8 +125,6 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 	}
 }
 
-
-
 @mixin layout-subtle-locked($compact: null) {
 	@if not $compact {
 		.-emu-layout.-emu-subtle-layout-sidebar-locked & {
@@ -137,7 +136,6 @@ $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 		}
 	}
 }
-
 
 @mixin layout-control-align-top($compact: null) {
 	@if not $compact {

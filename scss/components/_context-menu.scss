@@ -34,7 +34,7 @@
 			@include layout {
 				cursor: pointer;
 				line-height: initial;
-				padding: p("base");
+				padding: $global-space-base;
 				text-align: left;
 			}
 

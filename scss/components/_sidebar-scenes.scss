@@ -26,7 +26,7 @@
 					text-shadow: $global-text-shadow;
 
 					@include layout {
-						padding: p("sm") 0;
+						padding: $global-space-sm 0;
 					}
 
 					@include layout-scene-thumbs {

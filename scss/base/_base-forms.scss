@@ -6,10 +6,10 @@ form {
 
 		@include layout {
 			font-family: inherit;
-			font-size: fs("lg");
-			margin-block-start: m("md");
-			margin-block-end: m("base");
-			padding: p("base");
+			font-size: $global-font-size-lg;
+			margin-block-start: $global-space-md;
+			margin-block-end: $global-space-base;
+			padding: $global-space-base;
 		}
 	}
 
@@ -20,12 +20,12 @@ form {
 			align-items: center;
 			display: flex;
 			flex-wrap: wrap;
-			font-size: fs("lg");
-			gap: space("base");
+			font-size: $global-font-size-lg;
+			gap: $global-space-base;
 			height: auto;
 			justify-content: space-between;
 			margin: 0;
-			padding: p("sm");
+			padding: $global-space-sm;
 			width: 100%;
 
 			&:nth-of-type(even) {
@@ -77,7 +77,7 @@ form {
 			@include layout {
 				align-items: center;
 				display: flex;
-				gap: space("base");
+				gap: $global-space-base;
 				flex: 1 1 auto;
 				justify-content: flex-end;
 			}
@@ -86,14 +86,14 @@ form {
 			select {
 				@include layout {
 					flex: 1 1 100%;
-					gap: space("base");
+					gap: $global-space-base;
 				}
 
 				&[type="checkbox"] {
 					@include layout {
 						-webkit-filter: initial;
 						flex: 0 0 auto;
-						width: space("button-xs");
+						width: $global-space-button-xs;
 					}
 				}
 
@@ -154,7 +154,7 @@ form {
 				@include layout {
 					-webkit-filter: initial;
 					flex: 0 0 auto;
-					width: space("button-xs");
+					width: $global-space-button-xs;
 				}
 			}
 
@@ -191,7 +191,7 @@ form {
 			@include layout {
 				align-items: center;
 				display: inline-flex;
-				font-size: fs("md");
+				font-size: $global-font-size-md;
 				font-weight: normal;
 				line-height: initial;
 				margin: 0;
@@ -200,7 +200,7 @@ form {
 
 			&.checkbox {
 				@include layout {
-					gap: space("base");
+					gap: $global-space-base;
 					height: auto;
 				}
 			}
@@ -211,15 +211,15 @@ form {
 				@include layout {
 					@include ellipsis;
 					display: block;
-					font-size: fs("sm");
+					font-size: $global-font-size-sm;
 					line-height: initial;
-					margin: 0 m("base");
+					margin: 0 $global-space-base;
 				}
 			}
 
 			> i {
 				@include layout {
-					margin-inline-end: m("base");
+					margin-inline-end: $global-space-base;
 				}
 			}
 		}
@@ -236,8 +236,8 @@ form {
 					align-items: center;
 					display: inline-flex;
 					flex: auto;
-					font-size: fs("sm");
-					gap: space("base");
+					font-size: $global-font-size-sm;
+					gap: $global-space-base;
 					height: auto;
 					line-height: initial;
 					margin: 0;
@@ -253,7 +253,7 @@ form {
 
 		@include layout {
 			flex: 0 0 auto;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			font-style: italic;
 			line-height: initial;
 			margin: 0;

@@ -38,7 +38,7 @@
 
 		@include layout {
 			height: auto;
-			padding: 0 p("base");
+			padding: 0 $global-space-base;
 			position: relative;
 			top: auto;
 		}
@@ -49,7 +49,7 @@
 			@include layout {
 				@include size(to-rem(20px));
 				font-family: "Font Awesome 5 Free";
-				margin: m("xs") 0;
+				margin: $global-space-xs 0;
 			}
 		}
 	}
@@ -61,9 +61,9 @@
 
 		@include layout {
 			display: none;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			justify-content: center;
-			padding: p("base");
+			padding: $global-space-base;
 			position: relative;
 			text-shadow: none;
 			transform: initial;
@@ -83,8 +83,8 @@
 		@include layout {
 			align-items: center;
 			display: inline-flex;
-			font-size: fs("md");
-			gap: space("xs");
+			font-size: $global-font-size-md;
+			gap: $global-space-xs;
 			justify-content: center;
 			padding: 0;
 		}
@@ -101,10 +101,10 @@
 		background: transparent;
 
 		@include layout {
-			bottom: calc(-1 * #{space("md")});
-			left: calc(-1 * #{space("md")});
-			right: calc(-1 * #{space("md")});
-			top: calc(-1 * #{space("md")});
+			bottom: calc(-1 * #{$global-space-md});
+			left: calc(-1 * #{$global-space-md});
+			right: calc(-1 * #{$global-space-md});
+			top: calc(-1 * #{$global-space-md});
 			position: absolute;
 			z-index: -1;
 		}

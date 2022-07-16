@@ -7,8 +7,8 @@
 	transition: t(opacity, "link");
 
 	@include layout {
-		@include fixed(top calc(#{space("md")} / 2) right 0 bottom auto);
-		@include size(space("sidebar"), calc(100% - #{space("md")}));
+		@include relative(top calc(#{$global-space-md} / 2) right 0 bottom auto);
+		@include size($global-space-sidebar, calc(100% - #{$global-space-md}));
 		display: flex;
 		flex-direction: column;
 		margin: 0;
@@ -66,7 +66,7 @@
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 			margin: 0;
 			position: relative;
 		}
@@ -84,12 +84,12 @@
 				cursor: pointer;
 				display: flex;
 				flex: 1 1 20%;
-				font-size: fs("sm");
+				font-size: $global-font-size-sm;
 				justify-content: center;
 				left: auto;
 				line-height: initial;
 				margin: 0;
-				padding: p("sm") p("base");
+				padding: $global-space-sm $global-space-base;
 				position: relative;
 				top: auto;
 			}
@@ -170,7 +170,7 @@
 
 		&.directory .directory-list {
 			@include layout {
-				padding-block-end: p("sm");
+				padding-block-end: $global-space-sm;
 			}
 		}
 
@@ -189,7 +189,7 @@
 					width: auto;
 
 					> i {
-						font-size: fs("md");
+						font-size: $global-font-size-md;
 					}
 				}
 			}
@@ -208,7 +208,7 @@
 					display: flex;
 					flex: 1 1 auto;
 					flex-wrap: nowrap;
-					gap: space("base");
+					gap: $global-space-base;
 					position: relative;
 					width: 100%;
 
@@ -246,7 +246,7 @@
 					display: flex;
 					flex: 0 0 auto;
 					flex-wrap: wrap;
-					gap: m("base");
+					gap: $global-space-base;
 					position: relative;
 					width: 100%;
 
@@ -285,7 +285,7 @@
 	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 		overflow: visible;
-		right: calc(-1 * #{space("sidebar")});
+		right: calc(-1 * #{$global-space-sidebar});
 		transition: t(opacity right, "shift");
 
 		&.collapsed {
@@ -320,11 +320,11 @@
 		}
 
 		&::before {
-			@include absolute(top calc(-1 * #{space("md")} / 2) right 0);
+			@include absolute(top calc(-1 * #{$global-space-md} / 2) right 0);
 			background-color: transparent;
 			content: "";
-			height: calc(100% + #{space("md")});
-			width: calc(100% + #{space("button")});
+			height: calc(100% + #{$global-space-md});
+			width: calc(100% + #{$global-space-button});
 			z-index: z("below");
 		}
 
@@ -341,7 +341,7 @@
 			height: to-rem(64px);
 			justify-content: center;
 			margin-block-start: to-rem(-32px);
-			width: space("button");
+			width: $global-space-button;
 
 			&::before {
 				content: "\f0d9";
@@ -375,7 +375,7 @@
 	@include layout {
 		height: auto;
 		min-height: 50vh;
-		min-width: space("sidebar");
+		min-width: $global-space-sidebar;
 	}
 
 	.window-content {

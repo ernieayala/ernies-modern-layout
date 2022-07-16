@@ -14,8 +14,8 @@
 
 		input {
 			@include layout {
-				margin-inline-end: m("base");
-				margin-block-end: m("base");
+				margin-inline-end: $global-space-base;
+				margin-block-end: $global-space-base;
 			}
 		}
 
@@ -24,8 +24,8 @@
 				height: auto;
 				justify-content: center;
 				margin: 0;
-				margin-inline-start: m("base");
-				margin-block-end: m("base");
+				margin-inline-start: $global-space-base;
+				margin-block-end: $global-space-base;
 				padding: 0;
 
 				> i {
@@ -49,7 +49,7 @@
 		border-block-end: b("border");
 
 		@include layout {
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 
 		&[data-module-name="ernies-modern-layout"] {
@@ -75,13 +75,13 @@
 			@include layout {
 				align-items: center;
 				display: inline-flex;
-				font-size: fs("sm");
+				font-size: $global-font-size-sm;
 				height: auto;
 				justify-content: center;
 				line-height: initial;
 				margin: 0;
-				margin-inline-start: m("xs");
-				padding: p("base");
+				margin-inline-start: $global-space-xs;
+				padding: $global-space-base;
 			}
 		}
 	}
@@ -98,7 +98,7 @@
 		@include layout {
 			align-items: center;
 			display: flex;
-			font-size: fs("lg");
+			font-size: $global-font-size-lg;
 			font-weight: normal;
 			height: initial;
 			line-height: 1;
@@ -107,7 +107,7 @@
 
 		input {
 			@include layout {
-				margin-inline-end: m("sm");
+				margin-inline-end: $global-space-sm;
 			}
 		}
 	}
@@ -120,14 +120,14 @@
 		color: color("text");
 
 		@include layout {
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 		}
 	}
 
 	form {
 		> footer {
 			@include layout {
-				gap: space("base");
+				gap: $global-space-base;
 			}
 		}
 	}

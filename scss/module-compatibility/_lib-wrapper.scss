@@ -15,12 +15,12 @@
 				width: auto !important;
 
 				button {
-					height: space("button");
+					height: $global-space-button;
 				}
 			}
 
 			.vertical-arrow-btn-group {
-				margin-inline-end: m("sm");
+				margin-inline-end: $global-space-sm;
 			}
 
 			.form-group {
@@ -37,14 +37,14 @@
 
 	h1 {
 		@include layout {
-			margin-block-start: m("sm");
+			margin-block-start: $global-space-sm;
 		}
 	}
 
 	select {
 		@include layout {
 			height: auto;
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 	}
 }

@@ -6,7 +6,7 @@ h4 {
 
 	@include layout {
 		margin: 0;
-		margin-block-end: m("base");
+		margin-block-end: $global-space-base;
 		position: relative;
 	}
 }
@@ -15,7 +15,7 @@ h1 {
 	border-block-end: 2px solid color("border");
 
 	@include layout {
-		font-size: fs("xxl");
+		font-size: $global-font-size-xxl;
 	}
 }
 
@@ -23,13 +23,13 @@ h2 {
 	border-block-end: b("border");
 
 	@include layout {
-		font-size: fs("xl");
+		font-size: $global-font-size-xl;
 	}
 }
 
 h3 {
 	@include layout {
-		font-size: fs("lg");
+		font-size: $global-font-size-lg;
 	}
 }
 
@@ -66,8 +66,8 @@ a.inline-roll {
 	text-shadow: none;
 
 	@include layout {
-		padding: p("pf") p("xs");
-		padding-inline-start: p("base");
+		padding: $global-space-pf $global-space-xs;
+		padding-inline-start: $global-space-base;
 	}
 
 	&:hover {
@@ -78,35 +78,35 @@ a.inline-roll {
 		color: inherit;
 
 		@include layout {
-			margin-inline-end: m("xs");
+			margin-inline-end: $global-space-xs;
 		}
 	}
 }
 
 p {
 	@include layout {
-		margin: m("base") 0;
+		margin: $global-space-base 0;
 	}
 }
 
 ul,
 ol {
 	@include layout {
-		margin: m("base") 0;
-		margin-block-end: m("base");
+		margin: $global-space-base 0;
+		margin-block-end: $global-space-base;
 	}
 }
 
 dl {
 	@include layout {
-		margin: m("base") 0;
+		margin: $global-space-base 0;
 	}
 }
 
 dd {
 	@include layout {
-		padding-inline-end: p("base");
-		margin: m("base") 0;
+		padding-inline-end: $global-space-base;
+		margin: $global-space-base 0;
 	}
 }
 
@@ -128,8 +128,8 @@ blockquote {
 	border-inline-start: 3px solid color("border");
 
 	@include layout {
-		margin: m("base") 0 m("base") m("md");
-		padding-inline-start: p("lg");
+		margin: $global-space-base 0 $global-space-base $global-space-md;
+		padding-inline-start: $global-space-lg;
 
 		em {
 			font-style: normal;
@@ -143,6 +143,6 @@ section.secret {
 	border-block-end: b("border");
 
 	@include layout {
-		padding: 0 p("base");
+		padding: 0 $global-space-base;
 	}
 }

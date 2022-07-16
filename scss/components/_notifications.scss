@@ -23,14 +23,14 @@
 
 	@include layout {
 		line-height: initial;
-		margin-block-end: m("sm");
-		padding: p("sm");
-		padding-inline-end: p("xl");
+		margin-block-end: $global-space-sm;
+		padding: $global-space-sm;
+		padding-inline-end: $global-space-xl;
 	}
 
 	&::before {
 		@include layout {
-			margin-inline-end: m("sm");
+			margin-inline-end: $global-space-sm;
 		}
 	}
 
@@ -52,10 +52,10 @@
 
 	.close {
 		@include layout {
-			@include absolute(top space("sm") right space("sm"));
+			@include absolute(top $global-space-sm right $global-space-sm);
 			line-height: 1;
 			margin: 0;
-			margin-block-start: m("xs");
+			margin-block-start: $global-space-xs;
 		}
 	}
 }

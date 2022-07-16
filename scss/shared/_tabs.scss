@@ -22,7 +22,7 @@
 
 		@include layout {
 			flex: 1;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			font-weight: normal;
 			text-shadow: none;
 		}

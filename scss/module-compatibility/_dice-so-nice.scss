@@ -6,9 +6,9 @@
 		box-shadow: none;
 
 		@include layout {
-			font-size: fs("lg");
+			font-size: $global-font-size-lg;
 			margin: 0;
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 	}
 
@@ -40,7 +40,7 @@
 					}
 
 					select + input {
-						margin-inline-start: m("base");
+						margin-inline-start: $global-space-base;
 					}
 				}
 			}
@@ -69,14 +69,14 @@
 
 				@include layout {
 					height: auto;
-					min-height: space("button");
+					min-height: $global-space-button;
 					padding: 0;
 				}
 
 				> ul {
 					@include layout {
 						margin: 0;
-						padding: 0 p("xs");
+						padding: 0 $global-space-xs;
 					}
 
 					> li {
@@ -85,13 +85,13 @@
 						border-radius: $global-border-radius-controls;
 
 						@include layout {
-							margin: m("xs");
+							margin: $global-space-xs;
 							padding: 0;
 						}
 
 						button {
 							@include layout {
-								height: space("button-sm");
+								height: $global-space-button-sm;
 							}
 						}
 					}
@@ -102,7 +102,7 @@
 
 	.sheet-footer {
 		@include layout {
-			gap: space("base");
+			gap: $global-space-base;
 		}
 	}
 }

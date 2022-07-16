@@ -2,14 +2,14 @@
 .sidebar-popout {
 	#settings {
 		@include layout {
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 
 		> div {
 			@include layout {
 				display: flex;
 				flex-direction: column;
-				gap: space("base");
+				gap: $global-space-base;
 				margin: 0;
 			}
 		}
@@ -30,8 +30,8 @@
 			border-block-end: b("border-lighter");
 
 			@include layout {
-				font-size: fs("xl");
-				margin-block-start: m("sm");
+				font-size: $global-font-size-xl;
+				margin-block-start: $global-space-sm;
 			}
 		}
 
@@ -39,7 +39,7 @@
 			color: color("primary");
 
 			@include layout {
-				font-size: fs("lg");
+				font-size: $global-font-size-lg;
 			}
 		}
 
@@ -61,7 +61,7 @@
 
 	.notification-pip {
 		color: color("primary");
-		margin-inline-end: m("xs");
+		margin-inline-end: $global-space-xs;
 		padding: 0;
 		position: relative;
 		right: auto;

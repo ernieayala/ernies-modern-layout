@@ -6,7 +6,7 @@
 
 			@include layout {
 				flex-direction: column;
-				gap: space("base");
+				gap: $global-space-base;
 			}
 
 			.encounters {
@@ -14,7 +14,7 @@
 					align-items: center;
 					display: flex;
 					flex-wrap: nowrap;
-					gap: space("base");
+					gap: $global-space-base;
 					width: 100%;
 				}
 
@@ -28,7 +28,7 @@
 						@include ellipsis;
 						display: block;
 						flex: 1 1 auto;
-						font-size: fs("md");
+						font-size: $global-font-size-md;
 						text-align: center;
 					}
 				}
@@ -37,8 +37,8 @@
 					color: color("text-lightest");
 
 					@include layout {
-						font-size: fs("xl");
-						margin-inline-start: space("button-sm");
+						font-size: $global-font-size-xl;
+						margin-inline-start: $global-space-button-sm;
 					}
 				}
 
@@ -72,8 +72,8 @@
 					flex-wrap: nowrap;
 					height: auto;
 					line-height: initial;
-					margin: 0 m("sm");
-					padding: p("base") p("sm");
+					margin: 0 $global-space-sm;
+					padding: $global-space-base $global-space-sm;
 					position: relative;
 					width: auto;
 				}
@@ -124,7 +124,7 @@
 						display: flex;
 						flex: 1 1 auto;
 						flex-direction: column;
-						gap: space("base");
+						gap: $global-space-base;
 						margin: 0;
 						overflow: hidden;
 						position: relative;
@@ -137,7 +137,7 @@
 						@include layout {
 							@include ellipsis(max-width 100%);
 							flex: initial;
-							font-size: fs("lg");
+							font-size: $global-font-size-lg;
 							line-height: initial;
 						}
 					}
@@ -159,17 +159,17 @@
 					border-inline-end: b("border-lighter");
 
 					@include layout {
-						font-size: fs("md");
+						font-size: $global-font-size-md;
 						line-height: 1;
-						margin-inline-start: m("sm");
-						padding-inline-end: p("sm");
+						margin-inline-start: $global-space-sm;
+						padding-inline-end: $global-space-sm;
 					}
 				}
 
 				.token-initiative {
 					@include layout {
 						padding: 0;
-						padding-inline-start: p("sm");
+						padding-inline-start: $global-space-sm;
 					}
 
 					.initiative {
@@ -177,7 +177,7 @@
 						text-shadow: none;
 
 						@include layout {
-							font-size: fs("lg");
+							font-size: $global-font-size-lg;
 							font-weight: normal;
 						}
 					}
@@ -187,7 +187,7 @@
 					@include layout {
 						align-items: center;
 						display: flex;
-						gap: space("base");
+						gap: $global-space-base;
 					}
 				}
 
@@ -200,9 +200,9 @@
 
 						@include layout {
 							@extend %font-awesome;
-							@include size(space("button"));
+							@include size($global-space-button);
 							background: transparent;
-							font-size: fs("xl");
+							font-size: $global-font-size-xl;
 							margin: 0;
 
 							&::before {
@@ -217,7 +217,7 @@
 						display: flex;
 						flex: 1 1 auto;
 						flex-wrap: wrap;
-						gap: space("base");
+						gap: $global-space-base;
 						height: auto;
 
 						img {
@@ -238,8 +238,8 @@
 
 			@include layout {
 				flex-wrap: nowrap;
-				gap: space("base");
-				padding-block-start: m("sm");
+				gap: $global-space-base;
+				padding-block-start: $global-space-sm;
 
 				&:empty {
 					display: none;

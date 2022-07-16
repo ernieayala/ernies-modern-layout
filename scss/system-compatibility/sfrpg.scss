@@ -6,7 +6,7 @@ body#{$emu}.system-sfrpg {
 		.sidebar-tab {
 			.directory-footer .browser-group {
 				@include layout {
-					gap: space("base");
+					gap: $global-space-base;
 					width: 100%;
 				}
 			}
@@ -18,7 +18,7 @@ body#{$emu}.system-sfrpg {
 		.sfrpg {
 			&.chat-card {
 				@include layout {
-					font-size: fs("sm");
+					font-size: $global-font-size-sm;
 				}
 
 				.card-buttons button,
@@ -36,7 +36,7 @@ body#{$emu}.system-sfrpg {
 						border: 0;
 
 						@include layout {
-							padding: 0 p("base");
+							padding: 0 $global-space-base;
 						}
 					}
 				}
@@ -50,23 +50,23 @@ body#{$emu}.system-sfrpg {
 
 				.card-buttons button + button {
 					@include layout {
-						margin-block-start: m("base");
+						margin-block-start: $global-space-base;
 					}
 				}
 
 				.card-header {
 					border-block-start: b("border-lighter");
 					border-block-end: b("border-lighter");
-					margin-block-end: m("base");
+					margin-block-end: $global-space-base;
 
 					@include layout {
-						padding: p("base") 0;
+						padding: $global-space-base 0;
 					}
 				}
 
 				.card-content {
 					@include layout {
-						margin: m("base") 0;
+						margin: $global-space-base 0;
 					}
 				}
 
@@ -76,18 +76,18 @@ body#{$emu}.system-sfrpg {
 					@include layout {
 						display: flex;
 						flex-wrap: wrap;
-						gap: space("base");
-						margin-block-start: m("base");
-						padding-block-start: p("base");
+						gap: $global-space-base;
+						margin-block-start: $global-space-base;
+						padding-block-start: $global-space-base;
 					}
 
 					span {
 						border-inline-end: b("border");
 
 						@include layout {
-							font-size: fs("xs");
+							font-size: $global-font-size-xs;
 							padding: 0;
-							padding-inline-end: p("base");
+							padding-inline-end: $global-space-base;
 						}
 
 						&:last-child {
@@ -98,7 +98,7 @@ body#{$emu}.system-sfrpg {
 
 				.card-buttons {
 					@include layout {
-						margin: m("base") 0;
+						margin: $global-space-base 0;
 					}
 
 					button {
@@ -140,7 +140,7 @@ body#{$emu}.system-sfrpg {
 				display: flex;
 				flex-direction: column;
 				height: 100%;
-				padding-inline-end: p("sm");
+				padding-inline-end: $global-space-sm;
 				position: relative;
 			}
 		}
@@ -151,11 +151,11 @@ body#{$emu}.system-sfrpg {
 
 			@include layout {
 				margin: 0;
-				margin-block-end: m("base");
+				margin-block-end: $global-space-base;
 				padding: 0;
 
 				&#tagfilter input[type="text"] {
-					height: space("button");
+					height: $global-space-button;
 				}
 
 				dl dt {
@@ -171,13 +171,13 @@ body#{$emu}.system-sfrpg {
 			color: color("white");
 
 			@include layout {
-				margin: m("xs") 0;
-				padding: p("base");
+				margin: $global-space-xs 0;
+				padding: $global-space-base;
 			}
 		}
 
 		.item-browser-filters {
-			margin-block-start: m("base");
+			margin-block-start: $global-space-base;
 
 			.filtercontainer {
 				border: none;
@@ -185,7 +185,7 @@ body#{$emu}.system-sfrpg {
 
 				@include layout {
 					margin: 0;
-					margin-block-end: m("base");
+					margin-block-end: $global-space-base;
 					padding: 0;
 
 					&:last-child {
@@ -199,7 +199,7 @@ body#{$emu}.system-sfrpg {
 					color: color("text-lightest");
 
 					@include layout {
-						padding: p("base") p("sm");
+						padding: $global-space-base $global-space-sm;
 					}
 				}
 
@@ -207,7 +207,7 @@ body#{$emu}.system-sfrpg {
 					@include layout {
 						display: flex;
 						flex-wrap: wrap;
-						gap: space("base");
+						gap: $global-space-base;
 
 						dt {
 							display: inline-flex;
@@ -231,17 +231,17 @@ body#{$emu}.system-sfrpg {
 		.header {
 			@include layout {
 				flex: 0 0 auto;
-				padding: p("xs") p("md");
+				padding: $global-space-xs $global-space-md;
 
 				.item-image {
 					height: auto;
-					width: space("button");
+					width: $global-space-button;
 				}
 
 				.item-sort-link {
 					height: auto;
 					margin: 0;
-					padding-inline-start: p("base");
+					padding-inline-start: $global-space-base;
 				}
 			}
 
@@ -256,8 +256,8 @@ body#{$emu}.system-sfrpg {
 
 			@include layout {
 				border-radius: 0;
-				margin-block-start: m("base");
-				padding: p("sm");
+				margin-block-start: $global-space-base;
+				padding: $global-space-sm;
 			}
 
 			li {
@@ -266,11 +266,11 @@ body#{$emu}.system-sfrpg {
 				@include layout {
 					line-height: initial;
 					margin: 0;
-					padding: p("xs") p("base");
+					padding: $global-space-xs $global-space-base;
 
 					.item-image {
-						height: space("button");
-						max-width: space("button");
+						height: $global-space-button;
+						max-width: $global-space-button;
 					}
 
 					.item-name,
@@ -279,7 +279,7 @@ body#{$emu}.system-sfrpg {
 						display: inline-flex;
 						height: auto;
 						margin: 0;
-						padding-inline-start: p("base");
+						padding-inline-start: $global-space-base;
 					}
 
 					.item-tags {

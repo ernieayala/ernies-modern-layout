@@ -61,6 +61,7 @@ body#{$emu} {
 	@import "./sheets/user-sheet";
 
 	// Module Compatibility
+	@import "./module-compatibility/always-hp";
 	@import "./module-compatibility/better-roll-5e";
 	@import "./module-compatibility/better-roofs";
 	@import "./module-compatibility/cautious-gamemaster-pack";
@@ -101,8 +102,8 @@ body#{$emu} {
 	@import "./module-compatibility/simple-dice-roller";
 	@import "./module-compatibility/small-time";
 	@import "./module-compatibility/tabbed-chat-log";
-	@import "./module-compatibility/tidy-sheet";
 	@import "./module-compatibility/tidy-game-settings";
+	@import "./module-compatibility/tidy-sheet";
 	@import "./module-compatibility/token-action-hud";
 	@import "./module-compatibility/token-attacher";
 	@import "./module-compatibility/token-hud-wildcard";

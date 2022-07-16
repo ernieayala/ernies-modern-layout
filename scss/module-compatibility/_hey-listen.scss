@@ -14,7 +14,7 @@
 
 				&:first-child {
 					flex: 1 1 auto;
-					margin-inline-end: m("base");
+					margin-inline-end: $global-space-base;
 
 					select {
 						flex: 1 1 100%;

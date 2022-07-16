@@ -1,45 +1,27 @@
 @import "../base";
 
 body#{$emu}.system-alienrpg {
-	.chat-message .table-draw .table-results .table-result {
-		color: color("primary");
-
-		@include layout {
-			gap: space("base");
-		}
-
-		img.result-image {
-			@include layout {
-				margin: 0;
-			}
-		}
-
-		.result-text {
-			@include layout {
-				line-height: initial;
-			}
+	.window-app[id*="actor-"],
+	.window-app[id*="item-"] {
+		.window-content {
+			color: color("white");
 		}
 	}
 
 	.alienrpg {
-		.actor-header {
-			background-color: transparent;
+		.window-content {
+			@include layout {
+				&::before,
+				&::after {
+					display: none;
+				}
+			}
 		}
+	}
 
-		h1.charname,
-		.grid-4col {
-			border: none;
-		}
-
-		.tabs {
-			background-color: transparent;
-			border: none;
-		}
-
-		// because system importants
-		.sheet-tabs {
-			border-block-start: none !important;
-			border-block-end: none !important;
+	.alien-Push-button {
+		@include layout {
+			width: 100%;
 		}
 	}
 }

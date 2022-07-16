@@ -4,6 +4,6 @@
 
 .narrator-sidebarBG {
 	@include layout {
-		width: space("sidebar");
+		width: $global-space-sidebar;
 	}
 }

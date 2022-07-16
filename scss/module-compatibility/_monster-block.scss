@@ -5,7 +5,7 @@
 
 	.window-header a.close {
 		@include layout {
-			height: space("button-sm") !important; // because other important
+			height: $global-space-button-sm !important; // because other important
 			right: auto;
 		}
 	}
@@ -20,7 +20,7 @@
 	&.sheet.actor {
 		nav.switches {
 			@include layout {
-				height: space("button-xs");
+				height: $global-space-button-xs;
 				left: 0;
 				padding-inline-start: 0;
 				position: absolute;
@@ -38,11 +38,11 @@
 
 				@include layout {
 					@include absolute(bottom 0 left 0);
-					@include size(space("button-xs"));
+					@include size($global-space-button-xs);
 					align-items: center;
 					cursor: pointer;
 					display: inline-flex;
-					font-size: fs("md");
+					font-size: $global-font-size-md;
 					justify-content: center;
 					margin: 0;
 					padding: 0;
@@ -88,11 +88,11 @@
 						}
 
 						@include layout {
-							padding: p("xs");
+							padding: $global-space-xs;
 
 							&:not(:only-child)::after {
-								right: space("base");
-								top: space("xs");
+								right: $global-space-base;
+								top: $global-space-xs;
 							}
 						}
 					}
@@ -130,15 +130,15 @@
 					}
 
 					@include layout {
-						padding: p("xs");
+						padding: $global-space-xs;
 
 						&.menu-toggle {
-							padding-inline-start: p("md");
+							padding-inline-start: $global-space-md;
 						}
 
 						&:not(:only-child)::before {
-							left: space("base");
-							top: space("xs");
+							left: $global-space-base;
+							top: $global-space-xs;
 						}
 					}
 				}

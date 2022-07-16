@@ -22,20 +22,20 @@
 			align-items: center;
 			display: flex;
 			margin: 0;
-			padding: p("sm");
+			padding: $global-space-sm;
 
 			&#dd-upload-files {
 				align-items: flex-start;
 				flex-direction: column;
 
 				.file-input {
-					margin-block-start: m("sm");
+					margin-block-start: $global-space-sm;
 				}
 			}
 
 			> label {
 				flex: 0 0 auto;
-				padding-inline-end: p("base");
+				padding-inline-end: $global-space-base;
 			}
 		}
 	}

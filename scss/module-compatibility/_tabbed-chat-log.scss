@@ -19,7 +19,7 @@
 
 			@include layout {
 				margin: 0;
-				padding: p("xs");
+				padding: $global-space-xs;
 				right: 0;
 				top: 0;
 			}

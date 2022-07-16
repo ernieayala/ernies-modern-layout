@@ -5,10 +5,10 @@
 			.combatant {
 				.ce-image-wrapper {
 					@include layout {
-						@include size(space("icon"));
+						@include size($global-space-icon);
 						cursor: default;
 						flex: 0 0 auto;
-						margin-inline-end: m("sm");
+						margin-inline-end: $global-space-sm;
 						position: relative;
 					}
 
@@ -33,8 +33,8 @@
 						align-items: center;
 						display: flex;
 						flex: 0 0 auto;
-						font-size: fs("sm");
-						padding: p("xs");
+						font-size: $global-font-size-sm;
+						padding: $global-space-xs;
 					}
 
 					input {
@@ -43,8 +43,8 @@
 
 						@include layout {
 							height: auto;
-							margin-inline-start: m("base");
-							width: space("button-lg");
+							margin-inline-start: $global-space-base;
+							width: $global-space-button-lg;
 						}
 					}
 				}

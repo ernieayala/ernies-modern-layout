@@ -3,7 +3,7 @@
 	.dnd5ehelpers {
 		.dice-result {
 			@include layout {
-				margin-block-start: m("base");
+				margin-block-start: $global-space-base;
 			}
 
 			.desc {
@@ -14,8 +14,8 @@
 				color: color("text-lightest");
 
 				@include layout {
-					font-size: fs("sm");
-					padding: p("sm");
+					font-size: $global-font-size-sm;
+					padding: $global-space-sm;
 				}
 			}
 		}
@@ -24,12 +24,12 @@
 			.cover-button {
 				flex-direction: row-reverse;
 				margin: 0;
-				margin-block-start: m("base");
+				margin-block-start: $global-space-base;
 
 				img {
 					margin: 0;
-					margin-inline-start: m("base");
-					width: space("button-xs");
+					margin-inline-start: $global-space-base;
+					width: $global-space-button-xs;
 				}
 			}
 		}

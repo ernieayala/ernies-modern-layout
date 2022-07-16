@@ -11,7 +11,7 @@
 			&[data-tab] {
 				display: none;
 				flex-direction: column;
-				gap: space("base");
+				gap: $global-space-base;
 
 				&.active {
 					display: flex;

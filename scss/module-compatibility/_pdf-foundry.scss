@@ -4,7 +4,7 @@
 			.field-row {
 				align-items: center;
 				display: flex;
-				gap: space("base");
+				gap: $global-space-base;
 			}
 		}
 	}

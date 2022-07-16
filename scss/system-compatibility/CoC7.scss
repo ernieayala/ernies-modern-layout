@@ -24,7 +24,7 @@
 // 				> button {
 // 					@include layout {
 // 						margin: 0;
-// 						margin-block-start: m("base");
+// 						margin-block-start: $global-space-base;
 // 					}
 // 				}
 // 			}
@@ -37,12 +37,12 @@
 // 				@include layout {
 // 					height: auto;
 // 					padding: 0;
-// 					padding-inline-end: p("base");
+// 					padding-inline-end: $global-space-base;
 // 				}
 
 // 				&.checkbox {
 // 					> input {
-// 						margin-inline-end: m("sm");
+// 						margin-inline-end: $global-space-sm;
 // 					}
 // 				}
 // 			}
@@ -52,7 +52,7 @@
 // 	#controls {
 // 		.scene-control + div {
 // 			@include layout {
-// 				margin-block-start: m("base");
+// 				margin-block-start: $global-space-base;
 // 			}
 
 // 			.custom-control {
@@ -77,7 +77,7 @@
 // 			> .flexcol > .flexrow {
 // 				@include layout {
 // 					align-items: center;
-// 					margin-block-end: m("base");
+// 					margin-block-end: $global-space-base;
 // 				}
 // 			}
 // 		}
