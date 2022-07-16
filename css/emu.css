@@ -71,7 +71,8 @@ body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control {
     padding: var(--emu-space-sm, 8px);
     position: relative; }
     .-emu-layout body.-emu .dialog .tabs a > i, body.-emu .dialog .tabs .-emu-layout a > i, .-emu-layout body.-emu .dialog .sheet-tabs a > i, body.-emu .dialog .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .tabs a > i, body.-emu #sidebar .tabs .-emu-layout a > i, .-emu-layout body.-emu #sidebar .sheet-tabs a > i, body.-emu #sidebar .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs .-emu-layout a > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs .-emu-layout a > i, .-emu-layout body.-emu #module-management .list-filters a > i, body.-emu #module-management .list-filters .-emu-layout a > i, .-emu-layout body.-emu .dialog button > i, body.-emu .dialog .-emu-layout button > i, .-emu-layout body.-emu #sidebar button > i, body.-emu #sidebar .-emu-layout button > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout button > i, .-emu-layout body.-emu #menu #menu-items li > i, body.-emu #menu #menu-items .-emu-layout li > i, .-emu-layout body.-emu #sidebar #combat #combat-controls .combat-control > i, body.-emu #sidebar #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-controls .combat-control > i, body.-emu .sidebar-popout #combat #combat-controls .-emu-layout .combat-control > i, .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .display-mode > i, body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .-emu-layout .display-mode > i, .-emu-layout body.-emu .window-app[id*="journalentry-sheet-"] a.editor-edit > i, body.-emu .window-app[id*="journalentry-sheet-"] .-emu-layout a.editor-edit > i, .-emu-layout body.-emu .alwayshp-btn > i, body.-emu .-emu-layout .alwayshp-btn > i, .-emu-layout body.-emu #sidebar #combat .add-temporary > i, body.-emu #sidebar #combat .-emu-layout .add-temporary > i, .-emu-layout body.-emu .sidebar-popout #combat .add-temporary > i, body.-emu .sidebar-popout #combat .-emu-layout .add-temporary > i, .-emu-layout body.-emu #specials-config .fxmaster .directory-header a > i, body.-emu #specials-config .fxmaster .directory-header .-emu-layout a > i, .-emu-layout body.-emu ul.command-menu li > i, body.-emu ul.command-menu .-emu-layout li > i, .-emu-layout body.-emu #token-action-hud button.tah-title-button > i, body.-emu #token-action-hud .-emu-layout button.tah-title-button > i, .-emu-layout body.-emu #token-action-hud .tah-action button > i, body.-emu #token-action-hud .tah-action .-emu-layout button > i, .-emu-layout body.-emu #sidebar .token-mold > label > span > i, body.-emu #sidebar .-emu-layout .token-mold > label > span > i, .-emu-layout body.-emu .sidebar-popout .token-mold > label > span > i, body.-emu .sidebar-popout .-emu-layout .token-mold > label > span > i, .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a > i, body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a > i, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a > i, body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a > i, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a > i, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a > i, .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a > i, body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a > i, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a > i, body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a > i, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a > i, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a > i, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a > i, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-folder > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header .create-entity > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-folder > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .create-entity > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout .create-entity > i, .-emu-layout body.-emu .dialog .directory .directory-item .create-folder > i, body.-emu .dialog .directory .directory-item .-emu-layout .create-folder > i, .-emu-layout body.-emu .dialog .directory .directory-item .create-document > i, body.-emu .dialog .directory .directory-item .-emu-layout .create-document > i, .-emu-layout body.-emu #sidebar .directory .directory-item .create-folder > i, body.-emu #sidebar .directory .directory-item .-emu-layout .create-folder > i, .-emu-layout body.-emu #sidebar .directory .directory-item .create-document > i, body.-emu #sidebar .directory .directory-item .-emu-layout .create-document > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .create-folder > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout .create-folder > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .create-document > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout .create-document > i, .-emu-layout body.-emu #navigation #nav-toggle > i, body.-emu #navigation .-emu-layout #nav-toggle > i, .-emu-layout body.-emu .window-app .window-header > a > i, .-emu-layout body.-emu .window-app .window-header a.header-button > i, .-emu-layout body.-emu #sidebar #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-log .message .button.message-delete > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .chat-control-icon .fa-dice-d20 > i, .-emu-layout body.-emu #sidebar #chat #chat-controls .control-buttons a > i, .-emu-layout body.-emu .sidebar-popout #chat #chat-controls .control-buttons a > i, .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a > i, body.-emu #sidebar #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-round .encounters a > i, body.-emu .sidebar-popout #combat #combat-round .encounters .-emu-layout a > i, .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .combatant-control > i, body.-emu #sidebar #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu .sidebar-popout #combat #combat-tracker .combatant .combatant-control > i, body.-emu .sidebar-popout #combat #combat-tracker .combatant .-emu-layout .combatant-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu #sidebar #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .playlist-header .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .sound-control > i, body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls .-emu-layout .sound-control > i, .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-control > i, body.-emu #sidebar #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-control > i, body.-emu .sidebar-popout #playlists #currently-playing .sound .-emu-layout .sound-control > i, .-emu-layout body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br button > i, body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br button > i, body.-emu #sidebar #chat #chat-log .chat-message .chat-card .die-result-overlay-br .-emu-layout button > i, .-emu-layout body.-emu #dfcp-rt-buttons button > i, body.-emu #dfcp-rt-buttons .-emu-layout button > i, .-emu-layout body.-emu #specials-config .fxmaster .special-effects .controls a > i, body.-emu #specials-config .fxmaster .special-effects .controls .-emu-layout a > i, .-emu-layout body.-emu div.permission-viewer a > i, body.-emu div.permission-viewer .-emu-layout a > i, .-emu-layout body.-emu #smalltime-app #displayContainer .arrow > i, body.-emu #smalltime-app #displayContainer .-emu-layout .arrow > i, .-emu-layout body.-emu #token-action-hud #tah-reposition > i, body.-emu #token-action-hud .-emu-layout #tah-reposition > i, .-emu-layout body.-emu #token-action-hud #tah-categories > i, body.-emu #token-action-hud .-emu-layout #tah-categories > i, .-emu-layout body.-emu #sidebar .token-mold > a > i, body.-emu #sidebar .-emu-layout .token-mold > a > i, .-emu-layout body.-emu .sidebar-popout .token-mold > a > i, body.-emu .sidebar-popout .-emu-layout .token-mold > a > i, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-control > i, body.-emu #sidebar .sidebar-tab .directory-header .-emu-layout .header-control > i, .-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-control > i, body.-emu .sidebar-popout .sidebar-tab .directory-header .-emu-layout .header-control > i {
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px); }
   body.-emu .dialog .tabs a:hover, body.-emu .dialog .sheet-tabs a:hover, body.-emu #sidebar .tabs a:hover, body.-emu #sidebar .sheet-tabs a:hover, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs a:hover, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs a:hover, body.-emu #module-management .list-filters a:hover, body.-emu .dialog button:hover,
   body.-emu #sidebar button:hover,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button:hover, body.-emu #menu #menu-items li:hover, body.-emu #sidebar #combat #combat-controls .combat-control:hover,
@@ -245,7 +246,30 @@ body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input, body.-
     min-width: var(--emu-space-xl, 32px);
     padding: 0 var(--emu-space-sm, 8px);
     position: relative;
-    user-select: text; }
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text; }
+  body.-emu .dialog input[type="text"]::-moz-placeholder,
+  body.-emu .dialog input[type="number"]::-moz-placeholder,
+  body.-emu .dialog input[type="date"]::-moz-placeholder,
+  body.-emu .dialog input[type="time"]::-moz-placeholder,
+  body.-emu .dialog input[type="password"]::-moz-placeholder,
+  body.-emu .dialog input[type="datetime-local"]::-moz-placeholder,
+  body.-emu #sidebar input[type="text"]::-moz-placeholder,
+  body.-emu #sidebar input[type="number"]::-moz-placeholder,
+  body.-emu #sidebar input[type="date"]::-moz-placeholder,
+  body.-emu #sidebar input[type="time"]::-moz-placeholder,
+  body.-emu #sidebar input[type="password"]::-moz-placeholder,
+  body.-emu #sidebar input[type="datetime-local"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="text"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="number"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="date"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="time"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="password"]::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="datetime-local"]::-moz-placeholder, body.-emu #hud input[type="text"]::-moz-placeholder, body.-emu #sidebar #chat section.dice-tray input.dice-tray__input::-moz-placeholder,
+  body.-emu .sidebar-popout #chat section.dice-tray input.dice-tray__input::-moz-placeholder, body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input::-moz-placeholder, body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput::-moz-placeholder {
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog input[type="text"]::placeholder,
   body.-emu .dialog input[type="number"]::placeholder,
   body.-emu .dialog input[type="date"]::placeholder,
@@ -446,7 +470,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input[type="range"]
       width: 1rem;
       height: 1rem;
       cursor: pointer;
-      margin-block-start: -0.3125rem; }
+      -webkit-margin-before: -0.3125rem;
+              margin-block-start: -0.3125rem; }
     body.-emu .dialog input::-webkit-slider-thumb:hover[type="range"],
     body.-emu #sidebar input::-webkit-slider-thumb:hover[type="range"],
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) input::-webkit-slider-thumb:hover[type="range"] {
@@ -515,12 +540,19 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea {
     position: relative;
     resize: none;
     transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
     width: 100%; }
   .-emu-layout.-emu-compact body.-emu .dialog textarea, body.-emu .dialog .-emu-layout.-emu-compact textarea,
   .-emu-layout.-emu-compact body.-emu #sidebar textarea, body.-emu #sidebar .-emu-layout.-emu-compact textarea,
   .-emu-layout.-emu-compact body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .-emu-layout.-emu-compact textarea {
     min-height: 3rem; }
+  body.-emu .dialog textarea::-moz-placeholder,
+  body.-emu #sidebar textarea::-moz-placeholder,
+  body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea::-moz-placeholder {
+    color: rgba(var(--color-text), 0.5); }
   body.-emu .dialog textarea::placeholder,
   body.-emu #sidebar textarea::placeholder,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) textarea::placeholder {
@@ -819,7 +851,8 @@ body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header, body.-emu .window-a
   align-items: center;
   background: rgba(var(--color-background), 0.1);
   border: none;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header, body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header, body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header {
     height: auto;
     padding: var(--emu-space-sm, 8px);
@@ -829,9 +862,11 @@ body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header, body.-emu .window-a
       line-height: initial;
       margin: 0;
       padding: 0;
-      padding-inline-start: var(--emu-space-base, 4px); }
+      -webkit-padding-start: var(--emu-space-base, 4px);
+              padding-inline-start: var(--emu-space-base, 4px); }
       .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header > div:first-of-type, body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header > div:first-of-type, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header > div:first-of-type, body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header > div:first-of-type, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header > div:first-of-type, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header > div:first-of-type, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header > div:first-of-type, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header > div:first-of-type {
-        padding-inline-start: 0; }
+        -webkit-padding-start: 0;
+                padding-inline-start: 0; }
   body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a, body.-emu .window-app[id*="cards-sheet-"] .cards-header a, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a {
     color: rgba(var(--color-text), 1); }
     .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .effects-header a, body.-emu .sheet[id*="activeeffect-sheet-"] .-emu-layout .effects-header a, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header a, body.-emu .window-app[id*="cards-sheet-"] .-emu-layout .cards-header a, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-header a, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-header a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx-header a {
@@ -850,9 +885,11 @@ body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li, body.-emu .window-
       line-height: initial;
       margin: 0;
       padding: 0;
-      padding-inline-start: var(--emu-space-base, 4px); }
+      -webkit-padding-start: var(--emu-space-base, 4px);
+              padding-inline-start: var(--emu-space-base, 4px); }
       .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li > div:first-of-type, body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li > div:first-of-type, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card > div:first-of-type, body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card > div:first-of-type, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result > div:first-of-type, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result > div:first-of-type, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div:first-of-type, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx > div:first-of-type {
-        padding-inline-start: 0; }
+        -webkit-padding-start: 0;
+                padding-inline-start: 0; }
   body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a, body.-emu .window-app[id*="cards-sheet-"] .cards .card a, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a {
     color: rgba(var(--color-text), 1); }
     .-emu-layout body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list li a, body.-emu .sheet[id*="activeeffect-sheet-"] .changes-list .-emu-layout li a, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards .card a, body.-emu .window-app[id*="cards-sheet-"] .cards .-emu-layout .card a, .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result a, body.-emu .window-app[id*="rolltable-sheet-"] .table-results .-emu-layout .table-result a, .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx a, body.-emu .dice-so-nice section.content .settings-list .sfxs-list .-emu-layout .sfx a {
@@ -864,8 +901,10 @@ body.-emu #sidebar .tabs,
 body.-emu #sidebar .sheet-tabs,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tabs,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-emu #module-management .list-filters {
-  border-block-start: none;
-  border-block-end: rgba(var(--color-primary), 1) 2px solid; }
+  -webkit-border-before: none;
+          border-block-start: none;
+  -webkit-border-after: rgba(var(--color-primary), 1) 2px solid;
+          border-block-end: rgba(var(--color-primary), 1) 2px solid; }
   .-emu-layout body.-emu .dialog .tabs, body.-emu .dialog .-emu-layout .tabs,
   .-emu-layout body.-emu .dialog .sheet-tabs, body.-emu .dialog .-emu-layout .sheet-tabs,
   .-emu-layout body.-emu #sidebar .tabs, body.-emu #sidebar .-emu-layout .tabs,
@@ -894,7 +933,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .sheet-tabs, body.-
       text-decoration: none; }
 
 .-emu-layout body.-emu .dialog .directory .directory-item h3 > i, body.-emu .dialog .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .dialog .directory .directory-item h4 > i, body.-emu .dialog .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h3 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item h4 > i, body.-emu #sidebar .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item h4 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item .-emu-layout h4 > i, .-emu-layout body.-emu #sidebar #compendium .compendium-list .directory-item h4 a > i, body.-emu #sidebar #compendium .compendium-list .directory-item h4 .-emu-layout a > i, .-emu-layout body.-emu .sidebar-popout #compendium .compendium-list .directory-item h4 a > i, body.-emu .sidebar-popout #compendium .compendium-list .directory-item h4 .-emu-layout a > i, .-emu-layout body.-emu #client-settings.window-app.form nav.tabs .item > i, .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header h3 > i, body.-emu .dialog .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #sidebar .directory .directory-item.folder .folder-header h3 > i, body.-emu #sidebar .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header h3 > i, body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header .-emu-layout h3 > i, .-emu-layout body.-emu #context-menu ol.context-items .context-item > i, body.-emu #context-menu ol.context-items .-emu-layout .context-item > i, .-emu-layout body.-emu .window-app[id*="cards-sheet-"] .cards-header .card-controls [data-action="create"] > i {
-  margin-inline-end: var(--emu-space-sm, 8px); }
+  -webkit-margin-end: var(--emu-space-sm, 8px);
+          margin-inline-end: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .dialog .directory .directory-list, .-emu-layout body.-emu #sidebar .directory .directory-list, .-emu-layout body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list, .-emu-layout body.-emu #context-menu ol.context-items, .-emu-layout body.-emu #hotbar #macro-list, .-emu-layout body.-emu #menu #menu-items, .-emu-layout body.-emu #notifications, .-emu-layout body.-emu #players > ol, .-emu-layout body.-emu #controls .control-tools, .-emu-layout body.-emu #navigation #scene-list, .-emu-layout body.-emu #sidebar #playlists .global-control.collapsed .playlist-sounds, .-emu-layout body.-emu .sidebar-popout #playlists .global-control.collapsed .playlist-sounds, .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds, .-emu-layout body.-emu .sidebar-popout #playlists .global-control .playlist-sounds, .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory, .-emu-layout body.-emu #df-curvy-walls-tools .control-tools, .-emu-layout body.-emu ul.command-menu, .-emu-layout body.-emu #tokenAttacher .control-tools {
   list-style: none;
@@ -917,10 +957,14 @@ body.-emu #sidebar #chat #oocNotification,
 body.-emu .sidebar-popout #chat #icNotification,
 body.-emu .sidebar-popout #chat #rollsNotification,
 body.-emu .sidebar-popout #chat #oocNotification {
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-  animation-name: emu-notification-flash;
-  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: emu-notification-flash;
+          animation-name: emu-notification-flash;
+  -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+          animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   background-color: rgba(var(--color-primary), 1);
   display: none;
   opacity: 0;
@@ -1103,6 +1147,14 @@ body.-emu .sidebar-popout #chat #oocNotification {
 *::after {
   box-sizing: border-box; }
 
+@-webkit-keyframes emu-notification-flash {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 @keyframes emu-notification-flash {
   0% {
     opacity: 0; }
@@ -1129,6 +1181,8 @@ body {
   box-shadow: none; }
   .-emu-layout body {
     font-size: var(--emu-font-size-md, 14px); }
+  body ::-moz-selection {
+    background-color: rgba(var(--color-gray-200), 1); }
   body ::selection {
     background-color: rgba(var(--color-gray-200), 1); }
 
@@ -1150,7 +1204,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
   background-color: rgba(var(--color-folder-subdirectory), 1);
   background-image: none;
   border: none;
-  border-inline-start: rgba(var(--color-primary), 1) 4px solid; }
+  -webkit-border-start: rgba(var(--color-primary), 1) 4px solid;
+          border-inline-start: rgba(var(--color-primary), 1) 4px solid; }
   .-emu-layout body.-emu .dialog .directory .directory-list .subdirectory, .-emu-layout
   body.-emu #sidebar .directory .directory-list .subdirectory, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory {
@@ -1167,30 +1222,36 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
   .-emu-layout body.-emu .dialog .directory .directory-list .subdirectory .directory-item.folder + .directory-item.folder, .-emu-layout
   body.-emu #sidebar .directory .directory-list .subdirectory .directory-item.folder + .directory-item.folder, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory .directory-item.folder + .directory-item.folder {
-    padding-block-start: 0; }
+    -webkit-padding-before: 0;
+            padding-block-start: 0; }
   .-emu-layout body.-emu .dialog .directory .directory-list .subdirectory .directory-item.folder + .directory-item:not(.folder), .-emu-layout
   body.-emu #sidebar .directory .directory-list .subdirectory .directory-item.folder + .directory-item:not(.folder), .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory .directory-item.folder + .directory-item:not(.folder) {
-    margin-block-start: 0; }
+    -webkit-margin-before: 0;
+            margin-block-start: 0; }
   .-emu-layout body.-emu .dialog .directory .directory-list .subdirectory .directory-item:not(.folder) + .directory-item:not(.folder), .-emu-layout
   body.-emu #sidebar .directory .directory-list .subdirectory .directory-item:not(.folder) + .directory-item:not(.folder), .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory .directory-item:not(.folder) + .directory-item:not(.folder) {
-    margin-block-start: 0; }
+    -webkit-margin-before: 0;
+            margin-block-start: 0; }
   body.-emu .dialog .directory .directory-list .subdirectory .subdirectory,
   body.-emu #sidebar .directory .directory-list .subdirectory .subdirectory,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory .subdirectory {
-    border-inline-start: rgba(var(--color-orange-700), 1) 4px solid; }
+    -webkit-border-start: rgba(var(--color-orange-700), 1) 4px solid;
+            border-inline-start: rgba(var(--color-orange-700), 1) 4px solid; }
     body.-emu .dialog .directory .directory-list .subdirectory .subdirectory .subdirectory,
     body.-emu #sidebar .directory .directory-list .subdirectory .subdirectory .subdirectory,
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-list .subdirectory .subdirectory .subdirectory {
-      border-inline-start: rgba(var(--color-orange-900), 1) 4px solid; }
+      -webkit-border-start: rgba(var(--color-orange-900), 1) 4px solid;
+              border-inline-start: rgba(var(--color-orange-900), 1) 4px solid; }
 
 body.-emu .dialog .directory .directory-item,
 body.-emu #sidebar .directory .directory-item,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item {
   background-color: rgba(var(--color-folder-directory), 1);
   background-image: none;
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   border-radius: var(--emu-border-radius-default, 0);
   box-shadow: none;
   color: rgba(var(--color-text-lightest), 1);
@@ -1250,7 +1311,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
     body.-emu .dialog .directory .directory-item.folder.collapsed > .folder-header,
     body.-emu #sidebar .directory .directory-item.folder.collapsed > .folder-header,
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder.collapsed > .folder-header {
-      border-inline-start: none;
+      -webkit-border-start: none;
+              border-inline-start: none;
       border-radius: var(--emu-border-radius-default, 0); }
       .-emu-layout body.-emu .dialog .directory .directory-item.folder.collapsed > .folder-header .create-folder, .-emu-layout
       body.-emu #sidebar .directory .directory-item.folder.collapsed > .folder-header .create-folder, .-emu-layout
@@ -1267,14 +1329,16 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
     body.-emu .dialog .directory .directory-item.folder.collapsed .subdirectory .folder-header,
     body.-emu #sidebar .directory .directory-item.folder.collapsed .subdirectory .folder-header,
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder.collapsed .subdirectory .folder-header {
-      border-inline-start: none; }
+      -webkit-border-start: none;
+              border-inline-start: none; }
     body.-emu .dialog .directory .directory-item.folder .folder-header,
     body.-emu #sidebar .directory .directory-item.folder .folder-header,
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header {
       background-color: rgba(var(--color-folder-header), 1);
       background-image: none;
       border: 0;
-      border-inline-start: rgba(var(--color-primary), 1) 4px solid;
+      -webkit-border-start: rgba(var(--color-primary), 1) 4px solid;
+              border-inline-start: rgba(var(--color-primary), 1) 4px solid;
       border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
       color: rgba(var(--color-text), 1);
       transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -1299,7 +1363,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
       body.-emu .dialog .directory .directory-item.folder .folder-header h3,
       body.-emu #sidebar .directory .directory-item.folder .folder-header h3,
       body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directory-item.folder .folder-header h3 {
-        border-block-end: 0;
+        -webkit-border-after: 0;
+                border-block-end: 0;
         color: inherit; }
         .-emu-layout body.-emu .dialog .directory .directory-item.folder .folder-header h3, .-emu-layout
         body.-emu #sidebar .directory .directory-item.folder .folder-header h3, .-emu-layout
@@ -1373,9 +1438,12 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .directory .directo
       cursor: move;
       flex: 0 0 auto;
       margin: 0;
-      margin-block-start: var(--emu-space-base, 4px);
-      margin-block-end: var(--emu-space-base, 4px);
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-before: var(--emu-space-base, 4px);
+              margin-block-start: var(--emu-space-base, 4px);
+      -webkit-margin-after: var(--emu-space-base, 4px);
+              margin-block-end: var(--emu-space-base, 4px);
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px); }
   body.-emu .dialog .directory .directory-item h3,
   body.-emu .dialog .directory .directory-item h4,
   body.-emu #sidebar .directory .directory-item h3,
@@ -1449,15 +1517,18 @@ body.-emu .dialog form h3.form-header,
 body.-emu #sidebar form h3.form-header,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header {
   border: none;
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu .dialog form h3.form-header, .-emu-layout
   body.-emu #sidebar form h3.form-header, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form h3.form-header {
     font-family: inherit;
     font-size: var(--emu-font-size-lg, 16px);
-    margin-block-start: var(--emu-space-md, 24px);
-    margin-block-end: var(--emu-space-base, 4px);
+    -webkit-margin-before: var(--emu-space-md, 24px);
+            margin-block-start: var(--emu-space-md, 24px);
+    -webkit-margin-after: var(--emu-space-base, 4px);
+            margin-block-end: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px); }
 
 body.-emu .dialog form .form-group,
@@ -1565,7 +1636,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group .form-fields button.file-picker > i, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group .form-fields button.grid-config > i, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group .form-fields button.capture-position > i {
-    margin-inline-end: 0; }
+    -webkit-margin-end: 0;
+            margin-inline-end: 0; }
   .-emu-layout body.-emu .dialog form .form-group .form-fields button + input, .-emu-layout
   body.-emu #sidebar form .form-group .form-fields button + input, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group .form-fields button + input {
@@ -1573,7 +1645,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
   .-emu-layout body.-emu .dialog form .form-group .form-fields button.file-picker + input[type="text"], .-emu-layout
   body.-emu #sidebar form .form-group .form-fields button.file-picker + input[type="text"], .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group .form-fields button.file-picker + input[type="text"] {
-    margin-inline-end: 0 !important; }
+    -webkit-margin-end: 0 !important;
+            margin-inline-end: 0 !important; }
   .-emu-layout body.-emu .dialog form .form-group input, .-emu-layout
   body.-emu .dialog form .form-group select, .-emu-layout
   body.-emu #sidebar form .form-group input, .-emu-layout
@@ -1658,7 +1731,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group {
     .-emu-layout body.-emu .dialog form .form-group label > i, .-emu-layout
     body.-emu #sidebar form .form-group label > i, .-emu-layout
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) form .form-group label > i {
-      margin-inline-end: var(--emu-space-base, 4px); }
+      -webkit-margin-end: var(--emu-space-base, 4px);
+              margin-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .dialog form .form-group-stacked, .-emu-layout
 body.-emu #sidebar form .form-group-stacked, .-emu-layout
@@ -1728,7 +1802,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) table {
   body.-emu #sidebar table thead,
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) table thead {
     background-color: rgba(var(--color-black), 0.2);
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     color: rgba(var(--color-text-lightest), 1);
     text-shadow: none; }
   body.-emu .dialog table tr:nth-child(even),
@@ -1738,7 +1813,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) table {
   .-emu-layout body.-emu .dialog table td:first-child, .-emu-layout
   body.-emu #sidebar table td:first-child, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) table td:first-child {
-    padding-inline-start: var(--emu-space-base, 4px); }
+    -webkit-padding-start: var(--emu-space-base, 4px);
+            padding-inline-start: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu .dialog table td, .-emu-layout
   body.-emu .dialog table th, .-emu-layout
   body.-emu #sidebar table td, .-emu-layout
@@ -1799,13 +1875,15 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h4 {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h3, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h4 {
     margin: 0;
-    margin-block-end: var(--emu-space-base, 4px);
+    -webkit-margin-after: var(--emu-space-base, 4px);
+            margin-block-end: var(--emu-space-base, 4px);
     position: relative; }
 
 body.-emu .dialog h1,
 body.-emu #sidebar h1,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h1 {
-  border-block-end: 2px solid rgba(var(--color-border), 1); }
+  -webkit-border-after: 2px solid rgba(var(--color-border), 1);
+          border-block-end: 2px solid rgba(var(--color-border), 1); }
   .-emu-layout body.-emu .dialog h1, .-emu-layout
   body.-emu #sidebar h1, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h1 {
@@ -1814,7 +1892,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h1 {
 body.-emu .dialog h2,
 body.-emu #sidebar h2,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h2 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu .dialog h2, .-emu-layout
   body.-emu #sidebar h2, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) h2 {
@@ -1865,7 +1944,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.entity-link, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
     padding: var(--emu-space-pf, 1px) var(--emu-space-xs, 2px);
-    padding-inline-start: var(--emu-space-base, 4px); }
+    -webkit-padding-start: var(--emu-space-base, 4px);
+            padding-inline-start: var(--emu-space-base, 4px); }
   body.-emu .dialog a.entity-link:hover,
   body.-emu .dialog a.inline-roll:hover,
   body.-emu #sidebar a.entity-link:hover,
@@ -1886,7 +1966,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll {
     body.-emu #sidebar a.inline-roll > i, .-emu-layout
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.entity-link > i, .-emu-layout
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) a.inline-roll > i {
-      margin-inline-end: var(--emu-space-xs, 2px); }
+      -webkit-margin-end: var(--emu-space-xs, 2px);
+              margin-inline-end: var(--emu-space-xs, 2px); }
 
 .-emu-layout body.-emu .dialog p, .-emu-layout
 body.-emu #sidebar p, .-emu-layout
@@ -1900,7 +1981,8 @@ body.-emu #sidebar ol, .-emu-layout
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) ul, .-emu-layout
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) ol {
   margin: var(--emu-space-base, 4px) 0;
-  margin-block-end: var(--emu-space-base, 4px); }
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .dialog dl, .-emu-layout
 body.-emu #sidebar dl, .-emu-layout
@@ -1910,15 +1992,18 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) dl {
 .-emu-layout body.-emu .dialog dd, .-emu-layout
 body.-emu #sidebar dd, .-emu-layout
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) dd {
-  padding-inline-end: var(--emu-space-base, 4px);
+  -webkit-padding-end: var(--emu-space-base, 4px);
+          padding-inline-end: var(--emu-space-base, 4px);
   margin: var(--emu-space-base, 4px) 0; }
 
 body.-emu .dialog hr,
 body.-emu #sidebar hr,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) hr {
   border: none;
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: none; }
+  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+          border-block-start: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: none;
+          border-block-end: none; }
   .-emu-layout body.-emu .dialog hr, .-emu-layout
   body.-emu #sidebar hr, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) hr {
@@ -1932,12 +2017,14 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) button[hidden] {
 body.-emu .dialog blockquote,
 body.-emu #sidebar blockquote,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) blockquote {
-  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+  -webkit-border-start: 3px solid rgba(var(--color-border), 1);
+          border-inline-start: 3px solid rgba(var(--color-border), 1); }
   .-emu-layout body.-emu .dialog blockquote, .-emu-layout
   body.-emu #sidebar blockquote, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) blockquote {
     margin: var(--emu-space-base, 4px) 0 var(--emu-space-base, 4px) var(--emu-space-md, 24px);
-    padding-inline-start: var(--emu-space-lg, 24px); }
+    -webkit-padding-start: var(--emu-space-lg, 24px);
+            padding-inline-start: var(--emu-space-lg, 24px); }
     .-emu-layout body.-emu .dialog blockquote em, .-emu-layout
     body.-emu #sidebar blockquote em, .-emu-layout
     body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) blockquote em {
@@ -1947,8 +2034,10 @@ body.-emu .dialog section.secret,
 body.-emu #sidebar section.secret,
 body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) section.secret {
   background-color: rgba(var(--color-background-light), 0.2);
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+          border-block-start: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu .dialog section.secret, .-emu-layout
   body.-emu #sidebar section.secret, .-emu-layout
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) section.secret {
@@ -1978,7 +2067,8 @@ body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn {
   body.-emu .window-app:not([id*="actor-"]):not([id*="item-"]) .tox .tox-tbtn {
     font-size: var(--emu-font-size-sm, 12px);
     height: var(--emu-space-button-sm, 24px);
-    margin-block-start: var(--emu-space-xs, 2px);
+    -webkit-margin-before: var(--emu-space-xs, 2px);
+            margin-block-start: var(--emu-space-xs, 2px);
     padding: 0 var(--emu-space-base, 4px); }
 
 body.-emu #context-menu {
@@ -2021,18 +2111,22 @@ body.-emu #context-menu {
 
 .-emu-layout body.-emu .dialog div.dialog-content {
   padding: 0 var(--emu-space-sm, 8px);
-  padding-block-start: var(--emu-space-sm, 8px); }
+  -webkit-padding-before: var(--emu-space-sm, 8px);
+          padding-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .dialog div.dialog-content h4:first-child, .-emu-layout
 body.-emu .dialog div.dialog-content p:first-child {
-  margin-block-start: var(--emu-space-base, 4px); }
+  -webkit-margin-before: var(--emu-space-base, 4px);
+          margin-block-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .dialog div.dialog-content > p {
   margin: 0;
-  margin-block-end: var(--emu-space-sm, 8px); }
+  -webkit-margin-after: var(--emu-space-sm, 8px);
+          margin-block-end: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .dialog form.dialog-content {
-  padding-block-start: var(--emu-space-md, 24px); }
+  -webkit-padding-before: var(--emu-space-md, 24px);
+          padding-block-start: var(--emu-space-md, 24px); }
 
 body.-emu .dialog .dialog-content {
   color: rgba(var(--color-text), 1); }
@@ -2040,18 +2134,23 @@ body.-emu .dialog .dialog-content {
     font-size: var(--emu-font-size-lg, 16px);
     padding: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu .dialog .dialog-content > p + .form-group {
-    margin-block-start: var(--emu-space-md, 24px); }
+    -webkit-margin-before: var(--emu-space-md, 24px);
+            margin-block-start: var(--emu-space-md, 24px); }
   .-emu-layout body.-emu .dialog .dialog-content > .form-group {
     padding: 0; }
   .-emu-layout body.-emu .dialog .dialog-content > .form-group + .dialog-buttons {
     padding: 0;
-    padding-block-start: var(--emu-space-sm, 8px); }
+    -webkit-padding-before: var(--emu-space-sm, 8px);
+            padding-block-start: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu .dialog .dialog-content > h3 {
-    margin-block-start: 0; }
+    -webkit-margin-before: 0;
+            margin-block-start: 0; }
   .-emu-layout body.-emu .dialog .dialog-content > h3:first-child {
-    margin-block-start: var(--emu-space-md, 24px); }
+    -webkit-margin-before: var(--emu-space-md, 24px);
+            margin-block-start: var(--emu-space-md, 24px); }
   .-emu-layout body.-emu .dialog .dialog-content > p:first-child {
-    margin-block-start: var(--emu-space-sm, 8px); }
+    -webkit-margin-before: var(--emu-space-sm, 8px);
+            margin-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .dialog .dialog-buttons {
   display: flex;
@@ -2082,8 +2181,10 @@ body.-emu #fps {
     display: none;
     line-height: initial;
     margin: 0;
-    margin-block-end: var(--emu-space-sm, 8px);
-    margin-inline-end: var(--emu-space-sm, 8px);
+    -webkit-margin-after: var(--emu-space-sm, 8px);
+            margin-block-end: var(--emu-space-sm, 8px);
+    -webkit-margin-end: var(--emu-space-sm, 8px);
+            margin-inline-end: var(--emu-space-sm, 8px);
     padding: var(--emu-space-base, 4px);
     width: auto; }
 
@@ -2092,7 +2193,8 @@ body.-emu #fps {
   height: auto;
   display: flex;
   flex-wrap: nowrap;
-  margin-block-end: var(--emu-space-sm, 8px);
+  -webkit-margin-after: var(--emu-space-sm, 8px);
+          margin-block-end: var(--emu-space-sm, 8px);
   pointer-events: none;
   transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   z-index: 10; }
@@ -2156,14 +2258,16 @@ body.-emu #hotbar .bar-controls {
   .-emu-layout body.-emu #hotbar .bar-controls:first-child {
     flex: 0 0 auto;
     flex-direction: column;
-    margin-inline-end: var(--emu-space-base, 4px); }
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #hotbar .bar-controls:first-child #macro-directory, .-emu-layout
   body.-emu #hotbar .bar-controls:first-child #bar-toggle {
     flex: 1 1 auto; }
   body.-emu #hotbar .bar-controls:first-child #macro-directory:first-of-type,
   body.-emu #hotbar .bar-controls:first-child #bar-toggle:first-of-type {
     border: none;
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0; }
   body.-emu #hotbar .bar-controls:first-child #macro-directory:last-of-type,
   body.-emu #hotbar .bar-controls:first-child #bar-toggle:last-of-type {
@@ -2171,7 +2275,8 @@ body.-emu #hotbar .bar-controls {
     border-radius: 0 0 var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0); }
   .-emu-layout body.-emu #hotbar .bar-controls:last-child {
     float: left;
-    margin-inline-start: var(--emu-space-base, 4px); }
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px); }
   body.-emu #hotbar .bar-controls .page-control:first-of-type {
     border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0; }
   body.-emu #hotbar .bar-controls .page-control:last-of-type {
@@ -2197,11 +2302,13 @@ body.-emu #hotbar .bar-controls {
     body.-emu #hotbar .bar-controls .page-control:first-of-type,
     body.-emu #hotbar .bar-controls #macro-directory:first-of-type,
     body.-emu #hotbar .bar-controls #bar-toggle:first-of-type {
-      border-block-end: rgba(var(--color-border), 1) 1px solid; }
+      -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+              border-block-end: rgba(var(--color-border), 1) 1px solid; }
     body.-emu #hotbar .bar-controls .page-control:last-of-type,
     body.-emu #hotbar .bar-controls #macro-directory:last-of-type,
     body.-emu #hotbar .bar-controls #bar-toggle:last-of-type {
-      border-block-start: rgba(var(--color-border), 1) 1px solid; }
+      -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+              border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout.-emu-compact body.-emu #hotbar .bar-controls .page-control {
     font-size: var(--emu-font-size-xs, 10px); }
   body.-emu #hotbar .bar-controls .page-number {
@@ -2232,7 +2339,8 @@ body.-emu #hotbar .macro {
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
-    margin-inline-start: -1px;
+    -webkit-margin-start: -1px;
+            margin-inline-start: -1px;
     position: relative; }
   .-emu-layout.-emu-compact body.-emu #hotbar .macro {
     width: 2.5rem;
@@ -2240,7 +2348,8 @@ body.-emu #hotbar .macro {
   body.-emu #hotbar .macro:first-child {
     border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0); }
     .-emu-layout body.-emu #hotbar .macro:first-child {
-      margin-inline-start: 0; }
+      -webkit-margin-start: 0;
+              margin-inline-start: 0; }
   body.-emu #hotbar .macro:last-child {
     border-radius: 0 var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0; }
   body.-emu #hotbar .macro.active {
@@ -2263,8 +2372,10 @@ body.-emu #hotbar .macro {
       height: 3rem;
       max-height: 100%;
       max-width: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: 50% 50%;
+         object-position: 50% 50%;
       position: relative; }
     .-emu-layout.-emu-compact body.-emu #hotbar .macro .macro-icon {
       width: 2rem;
@@ -2279,7 +2390,8 @@ body.-emu #hotbar .macro {
       height: auto;
       left: 0;
       line-height: auto;
-      margin-block-end: var(--emu-space-base, 4px);
+      -webkit-margin-after: var(--emu-space-base, 4px);
+              margin-block-end: var(--emu-space-base, 4px);
       min-width: 3.5rem;
       padding: var(--emu-space-base, 4px) var(--emu-space-sm, 8px); }
 
@@ -2425,8 +2537,10 @@ body.-emu #loading {
   border: none;
   border-radius: 0;
   height: auto !important;
-  margin-block-start: var(--emu-space-sm, 8px);
-  margin-inline-start: var(--emu-space-sm, 8px);
+  -webkit-margin-before: var(--emu-space-sm, 8px);
+          margin-block-start: var(--emu-space-sm, 8px);
+  -webkit-margin-start: var(--emu-space-sm, 8px);
+          margin-inline-start: var(--emu-space-sm, 8px);
   max-height: 2.75rem;
   max-width: 5.5rem;
   pointer-events: all;
@@ -2490,11 +2604,14 @@ body.-emu .notification {
   color: rgba(var(--color-white), 1); }
   .-emu-layout body.-emu .notification {
     line-height: initial;
-    margin-block-end: var(--emu-space-sm, 8px);
+    -webkit-margin-after: var(--emu-space-sm, 8px);
+            margin-block-end: var(--emu-space-sm, 8px);
     padding: var(--emu-space-sm, 8px);
-    padding-inline-end: var(--emu-space-xl, 32px); }
+    -webkit-padding-end: var(--emu-space-xl, 32px);
+            padding-inline-end: var(--emu-space-xl, 32px); }
   .-emu-layout body.-emu .notification::before {
-    margin-inline-end: var(--emu-space-sm, 8px); }
+    -webkit-margin-end: var(--emu-space-sm, 8px);
+            margin-inline-end: var(--emu-space-sm, 8px); }
   body.-emu .notification.info {
     background-color: rgba(var(--color-neutral), 1);
     border-color: rgba(var(--color-blue-800), 1); }
@@ -2511,7 +2628,8 @@ body.-emu .notification {
     position: absolute;
     line-height: 1;
     margin: 0;
-    margin-block-start: var(--emu-space-xs, 2px); }
+    -webkit-margin-before: var(--emu-space-xs, 2px);
+            margin-block-start: var(--emu-space-xs, 2px); }
 
 body.-emu #pause {
   background: transparent; }
@@ -2550,7 +2668,8 @@ body.-emu #players {
   .-emu-layout.-emu-players body.-emu #players {
     display: none; }
   body.-emu #players > h3 {
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
     color: rgba(var(--color-text-lightest), 1);
     transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -2578,11 +2697,15 @@ body.-emu #players {
     .-emu-layout body.-emu #players > h3 > i {
       position: relative; }
     .-emu-layout body.-emu #players > h3 > i:first-of-type {
-      margin-inline-start: 0;
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-start: 0;
+              margin-inline-start: 0;
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu #players > h3 > i:last-of-type {
-      margin-inline-start: var(--emu-space-sm, 8px);
-      margin-inline-end: 0; }
+      -webkit-margin-start: var(--emu-space-sm, 8px);
+              margin-inline-start: var(--emu-space-sm, 8px);
+      -webkit-margin-end: 0;
+              margin-inline-end: 0; }
   .-emu-layout body.-emu #players > ol {
     padding: var(--emu-space-sm, 8px); }
   .-emu-layout.-emu-subtle-layout body.-emu #players > ol {
@@ -2620,7 +2743,8 @@ body.-emu #players {
     border-radius: 50%;
     flex: 0 0 auto;
     margin: 0;
-    margin-inline-end: var(--emu-space-sm, 8px);
+    -webkit-margin-end: var(--emu-space-sm, 8px);
+            margin-inline-end: var(--emu-space-sm, 8px);
     position: relative; }
   body.-emu #players > ol .player-active.active {
     box-shadow: 0 1px 2px 0 rgba(var(--color-black), 0.3); }
@@ -2631,8 +2755,10 @@ body.-emu #players {
   gap: var(--emu-space-base, 4px);
   height: 0;
   max-width: 100%;
-  padding-block-start: var(--emu-space-sm, 8px);
-  padding-inline-start: var(--emu-space-sm, 8px);
+  -webkit-padding-before: var(--emu-space-sm, 8px);
+          padding-block-start: var(--emu-space-sm, 8px);
+  -webkit-padding-start: var(--emu-space-sm, 8px);
+          padding-inline-start: var(--emu-space-sm, 8px);
   position: relative; }
 
 .-emu-layout.-emu-subtle-layout body.-emu #controls {
@@ -2740,7 +2866,8 @@ body.-emu #navigation {
   box-shadow: none; }
   .-emu-layout body.-emu #navigation {
     margin: 0;
-    margin-block-start: var(--emu-space-sm, 8px);
+    -webkit-margin-before: var(--emu-space-sm, 8px);
+            margin-block-start: var(--emu-space-sm, 8px);
     padding: 0;
     pointer-events: none;
     transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -2765,7 +2892,8 @@ body.-emu #navigation {
     background-image: var(--emu-image-background-controls, none); }
     .-emu-layout body.-emu #navigation #nav-toggle {
       margin: 0;
-      margin-inline-end: var(--emu-space-base, 4px);
+      -webkit-margin-end: var(--emu-space-base, 4px);
+              margin-inline-end: var(--emu-space-base, 4px);
       z-index: 10; }
     .-emu-layout.-emu-subtle-layout body.-emu #navigation #nav-toggle {
       display: none; }
@@ -2773,7 +2901,8 @@ body.-emu #navigation {
     display: flex;
     gap: var(--emu-space-base, 4px);
     flex-wrap: wrap;
-    margin-block-end: var(--emu-space-sm, 8px);
+    -webkit-margin-after: var(--emu-space-sm, 8px);
+            margin-block-end: var(--emu-space-sm, 8px);
     position: relative;
     pointer-events: all; }
   body.-emu #navigation #scene-list .scene {
@@ -2800,7 +2929,8 @@ body.-emu #navigation {
       position: relative;
       text-align: center; }
       .-emu-layout body.-emu #navigation #scene-list .scene:last-of-type {
-        margin-inline-end: 0; }
+        -webkit-margin-end: 0;
+                margin-inline-end: 0; }
     .-emu-layout.-emu-compact body.-emu #navigation #scene-list .scene {
       height: 1.75rem;
       line-height: 1.75rem;
@@ -2832,7 +2962,8 @@ body.-emu #navigation {
         border: none;
         display: block; }
         .-emu-layout body.-emu #navigation #scene-list .scene a > i {
-          margin-inline-end: var(--emu-space-base, 4px); }
+          -webkit-margin-end: var(--emu-space-base, 4px);
+                  margin-inline-end: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #navigation #scene-list .scene-players {
     top: 0;
     left: 0;
@@ -2842,9 +2973,11 @@ body.-emu #navigation {
     gap: var(--emu-space-xs, 2px);
     list-style: none;
     margin: 0;
-    margin-block-start: calc(-1 * var(--emu-space-base, 4px));
+    -webkit-margin-before: calc(-1 * var(--emu-space-base, 4px));
+            margin-block-start: calc(-1 * var(--emu-space-base, 4px));
     padding: 0;
-    padding-inline-start: var(--emu-space-sm, 8px);
+    -webkit-padding-start: var(--emu-space-sm, 8px);
+            padding-inline-start: var(--emu-space-sm, 8px);
     pointer-events: none; }
   body.-emu #navigation #scene-list .scene-player {
     background-color: rgba(var(--color-white), 1);
@@ -2892,7 +3025,8 @@ body.-emu #ui-top {
   margin: 0;
   position: relative; }
   body.-emu #ui-top.offset {
-    margin-inline-start: calc(var(--emu-space-sidebar, 320px)/-4); }
+    -webkit-margin-start: calc(var(--emu-space-sidebar, 320px)/-4);
+            margin-inline-start: calc(var(--emu-space-sidebar, 320px)/-4); }
 
 body.-emu #ui-bottom {
   position: relative; }
@@ -2926,7 +3060,8 @@ body.-emu .window-app {
       display: none; }
   body.-emu .window-app .window-header {
     border: none;
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     border-radius: calc(var(--emu-border-radius-default, 0) - 4px) calc(var(--emu-border-radius-default, 0) - 4px) 0 0;
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu .window-app .window-header {
@@ -3002,7 +3137,8 @@ body.-emu .window-app {
       body.-emu .window-app .window-header > a > span.fas, .-emu-layout
       body.-emu .window-app .window-header a.header-button > i, .-emu-layout
       body.-emu .window-app .window-header a.header-button > span.fas {
-        margin-inline-end: var(--emu-space-base, 4px); }
+        -webkit-margin-end: var(--emu-space-base, 4px);
+                margin-inline-end: var(--emu-space-base, 4px); }
   body.-emu .window-app .window-content {
     background-color: rgba(var(--color-background-lightest), var(--emu-background-opacity-window-content, 1));
     background-image: var(--emu-image-background-lightest, none);
@@ -3036,8 +3172,10 @@ body.-emu .window-app {
   body.-emu .window-app .window-resizable-handle {
     background-color: rgba(var(--color-background-button), 1);
     border: none;
-    border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
-    border-inline-start: rgba(var(--color-background-lightest), 1) 2px solid;
+    -webkit-border-before: rgba(var(--color-background-lightest), 1) 2px solid;
+            border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
+    -webkit-border-start: rgba(var(--color-background-lightest), 1) 2px solid;
+            border-inline-start: rgba(var(--color-background-lightest), 1) 2px solid;
     border-radius: var(--emu-border-radius-default, 0) 0 0 0;
     color: rgba(var(--color-text-lightest), 1);
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -3068,8 +3206,10 @@ body.-emu .sheet .sheet-header > img {
   .-emu-layout body.-emu .sheet .sheet-header > img {
     cursor: pointer;
     flex: 0 0 auto;
-    object-fit: cover;
-    object-position: 50% 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
     position: relative; }
 
 body.-emu .sheet .sheet-header > h1 {
@@ -3136,7 +3276,8 @@ body.-emu .sidebar-popout {
       opacity: 1; }
   body.-emu #sidebar.collapsed #sidebar-tabs,
   body.-emu .sidebar-popout.collapsed #sidebar-tabs {
-    border-block-end: none; }
+    -webkit-border-after: none;
+            border-block-end: none; }
     .-emu-layout body.-emu #sidebar.collapsed #sidebar-tabs, .-emu-layout
     body.-emu .sidebar-popout.collapsed #sidebar-tabs {
       flex-wrap: wrap; }
@@ -3150,7 +3291,8 @@ body.-emu .sidebar-popout {
     display: none !important; }
   body.-emu #sidebar #sidebar-tabs,
   body.-emu .sidebar-popout #sidebar-tabs {
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     box-shadow: none;
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
     .-emu-layout body.-emu #sidebar #sidebar-tabs, .-emu-layout
@@ -3223,10 +3365,14 @@ body.-emu .sidebar-popout {
           bottom: 0;
           left: 0;
           position: absolute;
-          animation-duration: 0.8s;
-          animation-iteration-count: infinite;
-          animation-name: emu-notification-flash;
-          animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+          -webkit-animation-duration: 0.8s;
+                  animation-duration: 0.8s;
+          -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+          -webkit-animation-name: emu-notification-flash;
+                  animation-name: emu-notification-flash;
+          -webkit-animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+                  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
           display: none;
           opacity: 0;
           pointer-events: none;
@@ -3257,7 +3403,8 @@ body.-emu .sidebar-popout {
     min-height: 11rem; }
   .-emu-layout body.-emu #sidebar .sidebar-tab.directory .directory-list, .-emu-layout
   body.-emu .sidebar-popout .sidebar-tab.directory .directory-list {
-    padding-block-end: var(--emu-space-sm, 8px); }
+    -webkit-padding-after: var(--emu-space-sm, 8px);
+            padding-block-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions button, .-emu-layout
   body.-emu #sidebar .sidebar-tab .directory-footer button, .-emu-layout
   body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions button, .-emu-layout
@@ -3275,7 +3422,8 @@ body.-emu .sidebar-popout {
       font-size: var(--emu-font-size-md, 14px); }
   body.-emu #sidebar .sidebar-tab .directory-header,
   body.-emu .sidebar-popout .sidebar-tab .directory-header {
-    border-block-end: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header, .-emu-layout
     body.-emu .sidebar-popout .sidebar-tab .directory-header {
       flex-direction: column; }
@@ -3318,7 +3466,8 @@ body.-emu .sidebar-popout {
       .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions:last-child, .-emu-layout
       body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:only-child, .-emu-layout
       body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions:last-child {
-        margin-block-end: 0; }
+        -webkit-margin-after: 0;
+                margin-block-end: 0; }
     .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header > .action-buttons, .-emu-layout
     body.-emu .sidebar-popout .sidebar-tab .directory-header > .action-buttons {
       align-items: center;
@@ -3328,13 +3477,15 @@ body.-emu .sidebar-popout {
       width: 100%; }
   body.-emu #sidebar .sidebar-tab .directory-footer,
   body.-emu .sidebar-popout .sidebar-tab .directory-footer {
-    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer, .-emu-layout
     body.-emu .sidebar-popout .sidebar-tab .directory-footer {
       flex-wrap: wrap; }
 
 body.-emu #sidebar {
-  border-inline-end: none;
+  -webkit-border-end: none;
+          border-inline-end: none;
   border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0); }
   .-emu-layout.-emu-subtle-layout body.-emu #sidebar {
     opacity: var(--emu-subtle-opacity, 0.3);
@@ -3369,13 +3520,15 @@ body.-emu #sidebar {
       align-items: center;
       background-color: rgba(var(--color-background), 1);
       border: rgba(var(--color-border), 1) 1px solid;
-      border-inline-end: 0;
+      -webkit-border-end: 0;
+              border-inline-end: 0;
       color: rgba(var(--color-text-lightest), 1);
       cursor: pointer;
       display: flex;
       height: 4rem;
       justify-content: center;
-      margin-block-start: -2rem;
+      -webkit-margin-before: -2rem;
+              margin-block-start: -2rem;
       width: var(--emu-space-button, 32px); }
       .-emu-layout.-emu-subtle-layout body.-emu #sidebar #emu-sidebar-lock::before {
         content: "\f0d9"; }
@@ -3481,7 +3634,10 @@ body.-emu .sidebar-popout #chat #chat-log {
           color: rgba(var(--color-primary), 1); }
     body.-emu #sidebar #chat #chat-log .message .message-content,
     body.-emu .sidebar-popout #chat #chat-log .message .message-content {
-      user-select: text; }
+      -webkit-user-select: text;
+         -moz-user-select: text;
+          -ms-user-select: text;
+              user-select: text; }
       body.-emu #sidebar #chat #chat-log .message .message-content .table-result,
       body.-emu .sidebar-popout #chat #chat-log .message .message-content .table-result {
         padding: var(--emu-space-base, 4px) 0; }
@@ -3544,7 +3700,8 @@ body.-emu .sidebar-popout #chat #chat-log {
       order: initial; }
     body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-tooltip .part-header,
     body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-tooltip .part-header {
-      border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+      -webkit-border-after: rgba(var(--color-border-lighter), 1) 1px solid;
+              border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
       .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-tooltip .part-header, .-emu-layout
       body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-tooltip .part-header {
         line-height: initial;
@@ -3558,7 +3715,8 @@ body.-emu .sidebar-popout #chat #chat-log {
       body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-tooltip .part-header .part-total {
         background-color: rgba(var(--color-background-lightest), 1);
         border: rgba(var(--color-border-lighter), 1) 1px solid;
-        border-block-end: none; }
+        -webkit-border-after: none;
+                border-block-end: none; }
         .-emu-layout body.-emu #sidebar #chat #chat-log .message .dice-roll .dice-tooltip .part-header .part-total, .-emu-layout
         body.-emu .sidebar-popout #chat #chat-log .message .dice-roll .dice-tooltip .part-header .part-total {
           border-radius: var(--emu-border-radius-default, 0) var(--emu-border-radius-default, 0) 0 0;
@@ -3657,7 +3815,8 @@ body.-emu #sidebar #combat #combat-round .encounters h3,
 body.-emu #sidebar #combat #combat-round .encounters h4,
 body.-emu .sidebar-popout #combat #combat-round .encounters h3,
 body.-emu .sidebar-popout #combat #combat-round .encounters h4 {
-  border-block-end: none;
+  -webkit-border-after: none;
+          border-block-end: none;
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu #sidebar #combat #combat-round .encounters h3, .-emu-layout
   body.-emu #sidebar #combat #combat-round .encounters h4, .-emu-layout
@@ -3677,7 +3836,8 @@ body.-emu .sidebar-popout #combat #combat-round .encounters h3 {
   .-emu-layout body.-emu #sidebar #combat #combat-round .encounters h3, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-round .encounters h3 {
     font-size: var(--emu-font-size-xl, 20px);
-    margin-inline-start: var(--emu-space-button-sm, 24px); }
+    -webkit-margin-start: var(--emu-space-button-sm, 24px);
+            margin-inline-start: var(--emu-space-button-sm, 24px); }
 
 .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a[disabled], .-emu-layout
 body.-emu .sidebar-popout #combat #combat-round .encounters a[disabled] {
@@ -3686,7 +3846,8 @@ body.-emu .sidebar-popout #combat #combat-round .encounters a[disabled] {
 
 .-emu-layout body.-emu #sidebar #combat #combat-round .encounters a:first-child, .-emu-layout
 body.-emu .sidebar-popout #combat #combat-round .encounters a:first-child {
-  margin-inline-start: 0; }
+  -webkit-margin-start: 0;
+          margin-inline-start: 0; }
 
 body.-emu #sidebar #combat #combat-tracker .combatant,
 body.-emu .sidebar-popout #combat #combat-tracker .combatant {
@@ -3739,7 +3900,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
     body.-emu #sidebar #combat #combat-tracker .combatant .token-name h4,
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-name h4 {
       color: rgba(var(--color-text-lightest), 1);
-      border-block-end: 1px solid rgba(var(--color-border-lighter), 0.1); }
+      -webkit-border-after: 1px solid rgba(var(--color-border-lighter), 0.1);
+              border-block-end: 1px solid rgba(var(--color-border-lighter), 0.1); }
       .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-name h4, .-emu-layout
       body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-name h4 {
         max-width: 100%;
@@ -3764,17 +3926,21 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
       position: relative; }
   body.-emu #sidebar #combat #combat-tracker .combatant .token-resource,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource {
-    border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+    -webkit-border-end: rgba(var(--color-border-lighter), 1) 1px solid;
+            border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-resource, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-resource {
       font-size: var(--emu-font-size-md, 14px);
       line-height: 1;
-      margin-inline-start: var(--emu-space-sm, 8px);
-      padding-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-start: var(--emu-space-sm, 8px);
+              margin-inline-start: var(--emu-space-sm, 8px);
+      -webkit-padding-end: var(--emu-space-sm, 8px);
+              padding-inline-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative {
     padding: 0;
-    padding-inline-start: var(--emu-space-sm, 8px); }
+    -webkit-padding-start: var(--emu-space-sm, 8px);
+            padding-inline-start: var(--emu-space-sm, 8px); }
   body.-emu #sidebar #combat #combat-tracker .combatant .token-initiative .initiative,
   body.-emu .sidebar-popout #combat #combat-tracker .combatant .token-initiative .initiative {
     color: inherit;
@@ -3819,12 +3985,14 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant {
 
 body.-emu #sidebar #combat #combat-controls,
 body.-emu .sidebar-popout #combat #combat-controls {
-  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+          border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #sidebar #combat #combat-controls, .-emu-layout
   body.-emu .sidebar-popout #combat #combat-controls {
     flex-wrap: nowrap;
     gap: var(--emu-space-base, 4px);
-    padding-block-start: var(--emu-space-sm, 8px); }
+    -webkit-padding-before: var(--emu-space-sm, 8px);
+            padding-block-start: var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu #sidebar #combat #combat-controls:empty, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-controls:empty {
       display: none; }
@@ -3870,7 +4038,8 @@ body.-emu .sidebar-popout #playlists {
   body.-emu #sidebar #playlists .global-control,
   body.-emu .sidebar-popout #playlists .global-control {
     background-color: rgba(var(--color-background), 0.5);
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid;
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #sidebar #playlists .global-control, .-emu-layout
     body.-emu .sidebar-popout #playlists .global-control {
@@ -3904,17 +4073,20 @@ body.-emu .sidebar-popout #playlists {
         body.-emu .sidebar-popout #playlists .global-control .playlist-header h4 {
           height: auto;
           margin: 0;
-          padding-inline-start: 0; }
+          -webkit-padding-start: 0;
+                  padding-inline-start: 0; }
         body.-emu #sidebar #playlists .global-control .playlist-header h4 i.fa,
         body.-emu .sidebar-popout #playlists .global-control .playlist-header h4 i.fa {
           color: inherit; }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-header h4 i.fa, .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-header h4 i.fa {
-            margin-inline-start: var(--emu-space-xs, 2px); }
+            -webkit-margin-start: var(--emu-space-xs, 2px);
+                    margin-inline-start: var(--emu-space-xs, 2px); }
     body.-emu #sidebar #playlists .global-control .playlist-sounds,
     body.-emu .sidebar-popout #playlists .global-control .playlist-sounds {
       background: transparent;
-      border-inline-start: none; }
+      -webkit-border-start: none;
+              border-inline-start: none; }
       .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds, .-emu-layout
       body.-emu .sidebar-popout #playlists .global-control .playlist-sounds {
         flex: 0 0 auto;
@@ -3923,7 +4095,8 @@ body.-emu .sidebar-popout #playlists {
         width: 100%; }
       body.-emu #sidebar #playlists .global-control .playlist-sounds h4,
       body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 {
-        border-block-end: 0;
+        -webkit-border-after: 0;
+                border-block-end: 0;
         color: rgba(var(--color-text-lightest), 1); }
         .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4, .-emu-layout
         body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 {
@@ -3931,18 +4104,23 @@ body.-emu .sidebar-popout #playlists {
           margin: 0; }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds h4 + input[type="range"], .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-sounds h4 + input[type="range"] {
-            margin-inline-start: var(--emu-space-base, 4px); }
+            -webkit-margin-start: var(--emu-space-base, 4px);
+                    margin-inline-start: var(--emu-space-base, 4px); }
       body.-emu #sidebar #playlists .global-control .playlist-sounds .sound,
       body.-emu .sidebar-popout #playlists .global-control .playlist-sounds .sound {
-        border-block-end: 0; }
+        -webkit-border-after: 0;
+                border-block-end: 0; }
         .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds .sound, .-emu-layout
         body.-emu .sidebar-popout #playlists .global-control .playlist-sounds .sound {
           flex-wrap: nowrap;
-          padding-inline-start: 0;
-          padding-inline-end: 0; }
+          -webkit-padding-start: 0;
+                  padding-inline-start: 0;
+          -webkit-padding-end: 0;
+                  padding-inline-end: 0; }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds .sound:last-of-type, .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-sounds .sound:last-of-type {
-            padding-block-end: 0; }
+            -webkit-padding-after: 0;
+                    padding-block-end: 0; }
           .-emu-layout body.-emu #sidebar #playlists .global-control .playlist-sounds .sound .global-volume, .-emu-layout
           body.-emu .sidebar-popout #playlists .global-control .playlist-sounds .sound .global-volume {
             flex: 0 0 50%; }
@@ -3957,14 +4135,16 @@ body.-emu .sidebar-popout #playlists {
     background-color: rgba(var(--color-folder-directory), 1); }
   body.-emu #sidebar #playlists .directory-list .directory-item.playlist:not(.collapsed) .playlist-sounds .sound:first-child,
   body.-emu .sidebar-popout #playlists .directory-list .directory-item.playlist:not(.collapsed) .playlist-sounds .sound:first-child {
-    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #sidebar #playlists .directory-list .playlist-sounds, .-emu-layout
   body.-emu .sidebar-popout #playlists .directory-list .playlist-sounds {
     height: auto !important;
     width: 100%; }
   body.-emu #sidebar #playlists .directory-list .playlist-sounds .sound:first-child,
   body.-emu .sidebar-popout #playlists .directory-list .playlist-sounds .sound:first-child {
-    border-block-start: transparent 1px solid; }
+    -webkit-border-before: transparent 1px solid;
+            border-block-start: transparent 1px solid; }
   .-emu-layout body.-emu #sidebar #playlists .directory-list .playlist-header, .-emu-layout
   body.-emu #sidebar #playlists .directory-list .sound, .-emu-layout
   body.-emu .sidebar-popout #playlists .directory-list .playlist-header, .-emu-layout
@@ -3998,7 +4178,8 @@ body.-emu .sidebar-popout #playlists {
   body.-emu .sidebar-popout #playlists .directory-list .sound .sound-controls {
     flex: 0 0 auto;
     flex-wrap: nowrap;
-    margin-inline-start: var(--emu-space-base, 4px);
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px) 0;
     width: auto; }
   body.-emu #sidebar #playlists .directory-list .playlist-header .sound-controls .sound-control.inactive,
@@ -4032,7 +4213,8 @@ body.-emu .sidebar-popout #playlists {
   body.-emu #sidebar #playlists i + input[type="range"], .-emu-layout
   body.-emu .sidebar-popout #playlists h4 + input[type="range"], .-emu-layout
   body.-emu .sidebar-popout #playlists i + input[type="range"] {
-    margin-inline-start: var(--emu-space-base, 4px); }
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #sidebar #playlists h4, .-emu-layout
   body.-emu .sidebar-popout #playlists h4 {
     padding: var(--emu-space-base, 4px); }
@@ -4050,17 +4232,21 @@ body.-emu .sidebar-popout #playlists {
     display: grid;
     flex: 1 1 100%;
     grid-template-areas: "name controls" "playback playback";
+    grid-template-columns: 1fr -webkit-min-content;
     grid-template-columns: 1fr min-content;
+    grid-template-rows: -webkit-min-content -webkit-min-content;
     grid-template-rows: min-content min-content;
     margin: 0;
     text-decoration: none;
     width: 100%; }
   body.-emu #sidebar #playlists #currently-playing .sound + .sound,
   body.-emu .sidebar-popout #playlists #currently-playing .sound + .sound {
-    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound + .sound, .-emu-layout
     body.-emu .sidebar-popout #playlists #currently-playing .sound + .sound {
-      padding-block-start: var(--emu-space-sm, 8px); }
+      -webkit-padding-before: var(--emu-space-sm, 8px);
+              padding-block-start: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-name, .-emu-layout
   body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-name {
     overflow: hidden;
@@ -4076,7 +4262,8 @@ body.-emu .sidebar-popout #playlists {
     flex-wrap: nowrap;
     grid-area: controls;
     margin: 0;
-    margin-inline-start: var(--emu-space-base, 4px);
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px) 0;
     width: auto; }
   body.-emu #sidebar #playlists #currently-playing .sound .sound-control.inactive,
@@ -4094,10 +4281,12 @@ body.-emu .sidebar-popout #playlists {
     .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-playback .sound-timer, .-emu-layout
     body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .sound-timer {
       font-size: var(--emu-font-size-sm, 12px);
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #sidebar #playlists #currently-playing .sound .sound-playback .volume-icon, .-emu-layout
   body.-emu .sidebar-popout #playlists #currently-playing .sound .sound-playback .volume-icon {
-    margin-inline-end: var(--emu-space-base, 4px); }
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
 
 body.-emu #sidebar #compendium h3,
 body.-emu .sidebar-popout #compendium h3 {
@@ -4138,7 +4327,8 @@ body.-emu .sidebar-popout #compendium .compendium-list {
       .-emu-layout body.-emu #sidebar #compendium .compendium-list .directory-item h4 .status-icons i, .-emu-layout
       body.-emu .sidebar-popout #compendium .compendium-list .directory-item h4 .status-icons i {
         margin: 0;
-        margin-inline-start: var(--emu-space-base, 4px); }
+        -webkit-margin-start: var(--emu-space-base, 4px);
+                margin-inline-start: var(--emu-space-base, 4px); }
   body.-emu #sidebar #compendium .compendium-list .directory-item .compendium-footer,
   body.-emu .sidebar-popout #compendium .compendium-list .directory-item .compendium-footer {
     color: rgba(var(--color-text-lightest), 1); }
@@ -4146,7 +4336,8 @@ body.-emu .sidebar-popout #compendium .compendium-list {
     body.-emu .sidebar-popout #compendium .compendium-list .directory-item .compendium-footer {
       flex: 0 0 auto;
       font-size: var(--emu-font-size-md, 14px);
-      padding-block-end: var(--emu-space-base, 4px);
+      -webkit-padding-after: var(--emu-space-base, 4px);
+              padding-block-end: var(--emu-space-base, 4px);
       width: 100%; }
 
 .-emu-layout body.-emu #sidebar #settings, .-emu-layout
@@ -4176,11 +4367,13 @@ body.-emu .sidebar-popout #settings h4 {
 
 body.-emu #sidebar #settings h2,
 body.-emu .sidebar-popout #settings h2 {
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border-lighter), 1) 1px solid;
+          border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
   .-emu-layout body.-emu #sidebar #settings h2, .-emu-layout
   body.-emu .sidebar-popout #settings h2 {
     font-size: var(--emu-font-size-xl, 20px);
-    margin-block-start: var(--emu-space-sm, 8px); }
+    -webkit-margin-before: var(--emu-space-sm, 8px);
+            margin-block-start: var(--emu-space-sm, 8px); }
 
 body.-emu #sidebar #settings h4,
 body.-emu .sidebar-popout #settings h4 {
@@ -4204,7 +4397,8 @@ body.-emu .sidebar-popout #settings #game-details {
 body.-emu #sidebar .notification-pip,
 body.-emu .sidebar-popout .notification-pip {
   color: rgba(var(--color-primary), 1);
-  margin-inline-end: var(--emu-space-xs, 2px);
+  -webkit-margin-end: var(--emu-space-xs, 2px);
+          margin-inline-end: var(--emu-space-xs, 2px);
   padding: 0;
   position: relative;
   right: auto;
@@ -4226,7 +4420,8 @@ body.-emu .sheet[id*="activeeffect-sheet-"] .sheet-header h1 {
   background-color: rgba(var(--color-background-light), 0.1); }
 
 body.-emu #av-config form .sheet-tabs {
-  border-block-end: rgba(var(--color-primary), 1) 2px solid; }
+  -webkit-border-after: rgba(var(--color-primary), 1) 2px solid;
+          border-block-end: rgba(var(--color-primary), 1) 2px solid; }
   .-emu-layout body.-emu #av-config form .sheet-tabs {
     padding: 0; }
 
@@ -4275,7 +4470,8 @@ body.-emu .window-app[id*="chat-popout-"] .window-content .chat-message {
     padding: var(--emu-space-sm, 8px); }
 
 body.-emu #client-settings.window-app.form nav.tabs {
-  border-block-end: rgba(var(--color-primary), 1) 2px solid; }
+  -webkit-border-after: rgba(var(--color-primary), 1) 2px solid;
+          border-block-end: rgba(var(--color-primary), 1) 2px solid; }
   .-emu-layout body.-emu #client-settings.window-app.form nav.tabs {
     padding: 0; }
 
@@ -4286,8 +4482,10 @@ body.-emu #client-settings.window-app.form #config-tabs {
     overflow-y: auto; }
 
 .-emu-layout body.-emu #client-settings.window-app.form section.content h2.module-header {
-  margin-block-start: var(--emu-space-md, 24px);
-  margin-block-end: var(--emu-space-base, 4px); }
+  -webkit-margin-before: var(--emu-space-md, 24px);
+          margin-block-start: var(--emu-space-md, 24px);
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #client-settings.window-app.form section.content .submenu > button {
   height: initial;
@@ -4315,7 +4513,8 @@ body.-emu #client-settings.window-app.form section.content .settings-list {
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body.thumbs .filepicker-body .file {
   padding: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu .filepicker.window-app .filepicker-body.thumbs .filepicker-body .file img {
-    margin-inline-end: var(--emu-space-base, 4px);
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px);
     max-width: var(--emu-space-button, 32px);
     max-height: var(--emu-space-button, 32px); }
 
@@ -4340,11 +4539,13 @@ body.-emu #client-settings.window-app.form section.content .settings-list {
 
 body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .directory .file {
   border: 0;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .directory .file {
     display: grid;
     gap: var(--emu-space-base, 4px);
     grid-template-areas: "title" "image";
+    grid-template-rows: -webkit-min-content 1fr;
     grid-template-rows: min-content 1fr;
     justify-content: center;
     padding: var(--emu-space-base, 4px); }
@@ -4442,7 +4643,8 @@ body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .f
     position: relative; }
   body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir:last-child,
   body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file:last-child {
-    border-block-end: 0; }
+    -webkit-border-after: 0;
+            border-block-end: 0; }
   body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir:hover,
   body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file:hover {
     background-color: rgba(var(--color-primary), 1);
@@ -4454,12 +4656,14 @@ body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .f
 
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir {
   background-color: rgba(var(--color-folder-header), 0.9);
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   color: rgba(var(--color-text), 1); }
 
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file {
   background-color: rgba(var(--color-folder-directory), 0.9);
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   color: rgba(var(--color-text-lightest), 1); }
 
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-footer {
@@ -4481,12 +4685,14 @@ body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .f
     flex: 0 0 calc(35% - 4.625rem); }
   .-emu-layout body.-emu .window-app[id*="journalentry-sheet-"] form > button {
     height: var(--emu-space-button, 32px);
-    margin-block-start: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
     max-width: 100%; }
 
 .-emu-layout.-emu-compact body.-emu .window-app[id*="journalentry-sheet-"] form > select {
   flex: 1 1 calc(30% - 1.75rem);
-  margin-inline-end: 1.75rem; }
+  -webkit-margin-end: 1.75rem;
+          margin-inline-end: 1.75rem; }
 
 .-emu-layout body.-emu .window-app[id*="journalentry-sheet-"] form .editor {
   height: calc(100% - 4.625rem);
@@ -4557,15 +4763,19 @@ body.-emu .sheet[id*="macro-config-"] .sheet-header h1 {
   font-weight: normal; }
 
 .-emu-layout body.-emu #module-management .list-filters input {
-  margin-inline-end: var(--emu-space-base, 4px);
-  margin-block-end: var(--emu-space-base, 4px); }
+  -webkit-margin-end: var(--emu-space-base, 4px);
+          margin-inline-end: var(--emu-space-base, 4px);
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #module-management .list-filters .expand {
   height: auto;
   justify-content: center;
   margin: 0;
-  margin-inline-start: var(--emu-space-base, 4px);
-  margin-block-end: var(--emu-space-base, 4px);
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px);
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px);
   padding: 0; }
   .-emu-layout body.-emu #module-management .list-filters .expand > i {
     margin: 0; }
@@ -4578,7 +4788,8 @@ body.-emu .sheet[id*="macro-config-"] .sheet-header h1 {
   padding: 0; }
 
 body.-emu #module-management .package {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #module-management .package {
     padding: var(--emu-space-sm, 8px); }
   body.-emu #module-management .package[data-module-name="ernies-modern-layout"] {
@@ -4589,7 +4800,8 @@ body.-emu #module-management .package {
     body.-emu #module-management .package[data-module-name="ernies-modern-layout"] .package-metadata {
       color: rgba(var(--color-text-lightest), 1); }
   body.-emu #module-management .package:last-child {
-    border-block-end: none; }
+    -webkit-border-after: none;
+            border-block-end: none; }
   body.-emu #module-management .package .tag {
     border: none;
     border-radius: var(--emu-border-radius-controls, 0);
@@ -4602,7 +4814,8 @@ body.-emu #module-management .package {
       justify-content: center;
       line-height: initial;
       margin: 0;
-      margin-inline-start: var(--emu-space-xs, 2px);
+      -webkit-margin-start: var(--emu-space-xs, 2px);
+              margin-inline-start: var(--emu-space-xs, 2px);
       padding: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #module-management .package-overview {
@@ -4619,7 +4832,8 @@ body.-emu #module-management .package-title {
     line-height: 1;
     text-decoration: none; }
   .-emu-layout body.-emu #module-management .package-title input {
-    margin-inline-end: var(--emu-space-sm, 8px); }
+    -webkit-margin-end: var(--emu-space-sm, 8px);
+            margin-inline-end: var(--emu-space-sm, 8px); }
 
 body.-emu #module-management .package-description {
   color: rgba(var(--color-text-darker), 1); }
@@ -4643,7 +4857,8 @@ body.-emu .window-app[id*="rolltable-sheet-"] .sheet-header h1 {
   .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result:nth-of-type(odd):not(.table-header) {
     background-color: rgba(var(--color-background-light), 0.1); }
   .-emu-layout body.-emu .window-app[id*="rolltable-sheet-"] .table-results .table-result select + input {
-    margin-inline-start: var(--emu-space-base, 4px); }
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol, .-emu-layout
 body.-emu .window-app[id*="trait-selector-"] .window-content form > ul {
@@ -4651,10 +4866,12 @@ body.-emu .window-app[id*="trait-selector-"] .window-content form > ul {
 
 .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol li, .-emu-layout
 body.-emu .window-app[id*="trait-selector-"] .window-content form > ul li {
-  margin-block-end: var(--emu-space-base, 4px); }
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol li:last-child, .-emu-layout
   body.-emu .window-app[id*="trait-selector-"] .window-content form > ul li:last-child {
-    margin-block-end: 0; }
+    -webkit-margin-after: 0;
+            margin-block-end: 0; }
 
 body.-emu .window-app[id*="trait-selector-"] .window-content form > ol li,
 body.-emu .window-app[id*="trait-selector-"] .window-content form > ol label,
@@ -4675,7 +4892,8 @@ body.-emu .window-app[id*="trait-selector-"] .window-content form > ul label.che
   line-height: initial; }
   .-emu-layout body.-emu .window-app[id*="trait-selector-"] .window-content form > ol label.checkbox > input, .-emu-layout
   body.-emu .window-app[id*="trait-selector-"] .window-content form > ul label.checkbox > input {
-    margin-inline-end: var(--emu-space-base, 4px); }
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .window-app[id*="user-sheet-"] .form-group.stacked #characters.directory-list {
   padding: 0;
@@ -4727,7 +4945,9 @@ body.-emu #always-hp .resource {
 
 .-emu-layout body.-emu .alwayshp-content {
   display: grid;
+  grid-template-columns: -webkit-min-content -webkit-min-content 1fr -webkit-min-content -webkit-min-content;
   grid-template-columns: min-content min-content 1fr min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content;
   grid-template-areas: "resource resource resource resource resource" "death hurt input heal life" "deathfail deathfail . deathsave deathsave";
   gap: var(--emu-space-base, 4px); }
@@ -4788,8 +5008,10 @@ body.-emu #sidebar #chat #chat-log .chat-message .chat-card .red-dual .dice-row 
 
 .-emu-layout body.-emu .window-app[id*="chat-popout-"] .chat-message .chat-card .red-dual .dice-row .dice-total + .dice-total, .-emu-layout
 body.-emu #sidebar #chat #chat-log .chat-message .chat-card .red-dual .dice-row .dice-total + .dice-total {
-  margin-block-start: 0;
-  margin-inline-start: var(--emu-space-base, 4px); }
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px); }
 
 body.-emu #levels-elevator {
   display: flex;
@@ -4810,7 +5032,8 @@ body.-emu #cgmp-typing-notify {
 
 .-emu-layout body.-emu #chat-log .message .message-header img {
   margin: var(--emu-space-xs, 2px) 0;
-  margin-inline-end: var(--emu-space-base, 4px); }
+  -webkit-margin-end: var(--emu-space-base, 4px);
+          margin-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper, .-emu-layout
 body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper {
@@ -4818,7 +5041,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-image-wrapper {
   height: var(--emu-space-button, 32px);
   cursor: default;
   flex: 0 0 auto;
-  margin-inline-end: var(--emu-space-sm, 8px);
+  -webkit-margin-end: var(--emu-space-sm, 8px);
+          margin-inline-end: var(--emu-space-sm, 8px);
   position: relative; }
 
 .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-image-wrapper .token-image, .-emu-layout
@@ -4848,7 +5072,8 @@ body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapp
     .-emu-layout body.-emu #sidebar #combat #combat-tracker .combatant .ce-modify-hp-wrapper input, .-emu-layout
     body.-emu .sidebar-popout #combat #combat-tracker .combatant .ce-modify-hp-wrapper input {
       height: auto;
-      margin-inline-start: var(--emu-space-base, 4px);
+      -webkit-margin-start: var(--emu-space-base, 4px);
+              margin-inline-start: var(--emu-space-base, 4px);
       width: var(--emu-space-button-lg, 40px); }
 
 .-emu-layout body.-emu #sidebar #chat.small-chat + #combat {
@@ -4905,11 +5130,13 @@ body.-emu .sidebar-popout #settings #combat-utility-belt {
 
 body.-emu #sidebar #settings #combat-utility-belt h4,
 body.-emu .sidebar-popout #settings #combat-utility-belt h4 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu #sidebar #settings #combat-utility-belt h4, .-emu-layout
   body.-emu .sidebar-popout #settings #combat-utility-belt h4 {
-    margin-block-start: var(--emu-space-sm, 8px); }
+    -webkit-margin-before: var(--emu-space-sm, 8px);
+            margin-block-start: var(--emu-space-sm, 8px); }
 
 body.-emu #combat-utility-belt-about a {
   text-shadow: none; }
@@ -4940,12 +5167,15 @@ body.-emu .compendium-browser.window-app .list-area {
 
 body.-emu .compendium-browser.window-app .filtercontainer {
   border: none;
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid;
   border-radius: 0; }
   .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer {
-    margin-block-end: var(--emu-space-base, 4px); }
+    -webkit-margin-after: var(--emu-space-base, 4px);
+            margin-block-end: var(--emu-space-base, 4px); }
     .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer:last-child {
-      margin-block-end: 0; }
+      -webkit-margin-after: 0;
+              margin-block-end: 0; }
     .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer > div {
       margin: var(--emu-space-base, 4px) 0; }
   body.-emu .compendium-browser.window-app .filtercontainer:last-child {
@@ -4964,7 +5194,8 @@ body.-emu .compendium-browser.window-app .filtercontainer {
       flex: 1 1 auto;
       width: auto; }
       .-emu-layout body.-emu .compendium-browser.window-app .filtercontainer dd select + input {
-        border-inline-start: none;
+        -webkit-border-start: none;
+                border-inline-start: none;
         flex: 1 1 100%; }
 
 body.-emu .compendium-browser.window-app .settings-group {
@@ -4980,7 +5211,8 @@ body.-emu .compendium-browser.window-app .settings-group {
     .-emu-layout body.-emu .compendium-browser.window-app .settings-group label:nth-of-type(even) {
       background-color: rgba(var(--color-background-light), 0.1); }
     .-emu-layout body.-emu .compendium-browser.window-app .settings-group label input[type="checkbox"] {
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu .compendium-browser.window-app .settings-group label h4 {
       margin: 0; }
 
@@ -5036,7 +5268,8 @@ body.-emu #dfcp-rt-buttons button {
     min-height: 0;
     max-height: 100%; }
   .-emu-layout body.-emu #dfcp-rt-buttons button.chat-archive {
-    margin-inline-start: 0 !important; }
+    -webkit-margin-start: 0 !important;
+            margin-inline-start: 0 !important; }
   body.-emu #dfcp-rt-buttons button > i {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #dfcp-rt-buttons button > i {
@@ -5048,11 +5281,13 @@ body.-emu #dfcp-rt-buttons button {
 
 body.-emu #sidebar #settings #df-chat-enhance-settings h4,
 body.-emu .sidebar-popout #settings #df-chat-enhance-settings h4 {
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
+  -webkit-border-after: rgba(var(--color-border-lighter), 1) 1px solid;
+          border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
   color: rgba(var(--color-text-lightest), 1); }
   .-emu-layout body.-emu #sidebar #settings #df-chat-enhance-settings h4, .-emu-layout
   body.-emu .sidebar-popout #settings #df-chat-enhance-settings h4 {
-    margin-block-start: var(--emu-space-md, 24px) !important; }
+    -webkit-margin-before: var(--emu-space-md, 24px) !important;
+            margin-block-start: var(--emu-space-md, 24px) !important; }
 
 body.-emu .app.window-app .archive-new table {
   background-color: transparent;
@@ -5060,7 +5295,8 @@ body.-emu .app.window-app .archive-new table {
   .-emu-layout body.-emu .app.window-app .archive-new table tr td {
     padding: var(--emu-space-base, 4px); }
     .-emu-layout body.-emu .app.window-app .archive-new table tr td button {
-      margin-block-start: var(--emu-space-sm, 8px); }
+      -webkit-margin-before: var(--emu-space-sm, 8px);
+              margin-block-start: var(--emu-space-sm, 8px); }
 
 body.-emu .app.window-app #dfca-delete-all {
   background-color: rgba(var(--color-negative), 1);
@@ -5132,6 +5368,7 @@ body.-emu .dice-so-nice .dice-more-theme {
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr -webkit-min-content -webkit-min-content;
   grid-template-columns: 1fr 1fr 1fr min-content min-content;
   line-height: initial; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx:nth-of-type(odd):not(.table-header) {
@@ -5141,9 +5378,11 @@ body.-emu .dice-so-nice .dice-more-theme {
     .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx > div.sfx-hidden {
       display: none; }
   .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx select + input {
-    margin-inline-start: var(--emu-space-base, 4px); }
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .dice-so-nice section.content .settings-list .sfxs-list .sfx-header {
+  grid-template-columns: 1fr 1fr 1fr -webkit-min-content;
   grid-template-columns: 1fr 1fr 1fr min-content; }
 
 body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selection {
@@ -5172,7 +5411,8 @@ body.-emu .dice-so-nice section.content .settings-list .select2 .select2-selecti
 
 body.-emu #sidebar #chat section.dice-tray,
 body.-emu .sidebar-popout #chat section.dice-tray {
-  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+          border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #sidebar #chat section.dice-tray, .-emu-layout
   body.-emu .sidebar-popout #chat section.dice-tray {
     flex-direction: column; }
@@ -5270,13 +5510,15 @@ body.-emu .sidebar-popout #chat section.dice-tray {
     padding: 0; }
   body.-emu #sidebar #chat section.dice-tray button.dice-tray__ad.dice-tray__disadvantage,
   body.-emu .sidebar-popout #chat section.dice-tray button.dice-tray__ad.dice-tray__disadvantage {
-    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid; }
 
 .-emu-layout body.-emu .dialog--dice-calculator.window-app .dice-calculator {
   margin: 0; }
   .-emu-layout body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator__input > label {
     font-size: var(--emu-font-size-lg, 16px);
-    padding-inline-end: var(--emu-space-sm, 8px); }
+    -webkit-padding-end: var(--emu-space-sm, 8px);
+            padding-inline-end: var(--emu-space-sm, 8px); }
 
 body.-emu .dialog--dice-calculator.window-app .dice-calculator > button,
 body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator--button {
@@ -5290,7 +5532,8 @@ body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator-
 
 .-emu-layout body.-emu #sidebar .dnd5ehelpers .dice-result, .-emu-layout
 body.-emu .sidebar-popout .dnd5ehelpers .dice-result {
-  margin-block-start: var(--emu-space-base, 4px); }
+  -webkit-margin-before: var(--emu-space-base, 4px);
+          margin-block-start: var(--emu-space-base, 4px); }
 
 body.-emu #sidebar .dnd5ehelpers .dice-result .desc,
 body.-emu .sidebar-popout .dnd5ehelpers .dice-result .desc {
@@ -5308,11 +5551,13 @@ body.-emu .sidebar-popout .dnd5ehelpers .dice-result .desc {
 body.-emu .sidebar-popout .dnd5ehelpers .cover-button {
   flex-direction: row-reverse;
   margin: 0;
-  margin-block-start: var(--emu-space-base, 4px); }
+  -webkit-margin-before: var(--emu-space-base, 4px);
+          margin-block-start: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #sidebar .dnd5ehelpers .cover-button img, .-emu-layout
   body.-emu .sidebar-popout .dnd5ehelpers .cover-button img {
     margin: 0;
-    margin-inline-start: var(--emu-space-base, 4px);
+    -webkit-margin-start: var(--emu-space-base, 4px);
+            margin-inline-start: var(--emu-space-base, 4px);
     width: var(--emu-space-button-xs, 20px); }
 
 .-emu-layout body.-emu #emu-settings form {
@@ -5322,7 +5567,8 @@ body.-emu .sidebar-popout .dnd5ehelpers .cover-button {
   overflow: hidden; }
 
 body.-emu #emu-settings form h3 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
 
 .-emu-layout body.-emu #emu-settings .content {
   flex: 1 1 auto;
@@ -5346,7 +5592,8 @@ body.-emu #specials-config .fxmaster .directory-header > div.active a {
   width: 100%; }
 
 .-emu-layout body.-emu #specials-config .fxmaster .directory-list {
-  padding-block-start: var(--emu-space-base, 4px); }
+  -webkit-padding-before: var(--emu-space-base, 4px);
+          padding-block-start: var(--emu-space-base, 4px); }
 
 body.-emu #specials-config .fxmaster .special-effects .preview {
   background-color: rgba(var(--color-black), 0.1);
@@ -5356,7 +5603,8 @@ body.-emu #specials-config .fxmaster .special-effects .preview {
     height: var(--emu-space-button, 32px);
     flex: 0 0 auto;
     margin: var(--emu-space-base, 4px);
-    margin-inline-start: 0;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
     overflow: hidden; }
     .-emu-layout body.-emu #specials-config .fxmaster .special-effects .preview > video {
       height: 100%;
@@ -5392,7 +5640,8 @@ body.-emu #effects-config .directory-list {
     overflow-y: auto; }
 
 body.-emu #effects-config .directory-item {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #effects-config .directory-item {
     padding: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #effects-config .directory-item header {
@@ -5442,7 +5691,8 @@ body.-emu #filters-config .directory-list {
     overflow-y: auto; }
 
 body.-emu #filters-config .directory-item {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #filters-config .directory-item {
     padding: var(--emu-space-base, 4px); }
   body.-emu #filters-config .directory-item header {
@@ -5502,7 +5752,8 @@ body.-emu .chat-notifications.settings nav {
   flex-flow: row; }
   .-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child {
     flex: 1 1 auto;
-    margin-inline-end: var(--emu-space-base, 4px); }
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
     .-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child select {
       flex: 1 1 100%; }
 
@@ -5529,12 +5780,14 @@ body.-emu .illandril-chat-enhancements--currentSpeaker {
     float: initial !important;
     left: auto;
     margin: 0;
-    padding-block-start: 0 !important;
+    -webkit-padding-before: 0 !important;
+            padding-block-start: 0 !important;
     width: auto !important; }
     .-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group > div button {
       height: var(--emu-space-button, 32px); }
   .-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group .vertical-arrow-btn-group {
-    margin-inline-end: var(--emu-space-sm, 8px); }
+    -webkit-margin-end: var(--emu-space-sm, 8px);
+            margin-inline-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group .form-group {
     flex: 1 1 auto;
     flex-wrap: wrap; }
@@ -5543,18 +5796,21 @@ body.-emu .illandril-chat-enhancements--currentSpeaker {
       flex-wrap: wrap; }
 
 .-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form h1 {
-  margin-block-start: var(--emu-space-sm, 8px); }
+  -webkit-margin-before: var(--emu-space-sm, 8px);
+          margin-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form select {
   height: auto;
   padding: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content {
-  padding-block-end: 0; }
+  -webkit-padding-after: 0;
+          padding-block-end: 0; }
   .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content .form-group.lmrtfy-actor-avatars {
     justify-content: flex-start; }
     .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content .form-group.lmrtfy-actor-avatars input + label {
-      margin-inline-end: var(--emu-space-base, 4px);
+      -webkit-margin-end: var(--emu-space-base, 4px);
+              margin-inline-end: var(--emu-space-base, 4px);
       padding: 0; }
 
 .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor {
@@ -5570,12 +5826,14 @@ body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked + label i
 body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit {
   background-color: rgba(var(--color-background-lightest), 1);
   background-image: var(--emu-image-background-lightest, none);
-  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+          border-block-start: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit {
     bottom: 0;
     display: flex;
     flex-wrap: nowrap;
     padding: var(--emu-space-sm, 8px);
+    position: -webkit-sticky;
     position: sticky; }
 
 .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox] + label {
@@ -5586,7 +5844,8 @@ body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]:checked + label {
   font-weight: normal; }
 
 .-emu-layout body.-emu #lmrtfy.lmrtfy-parchment select + select {
-  margin-inline-start: var(--emu-space-base, 4px); }
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .window-app.sheet[id*="macro-config-"] .macro-editor-expand {
   bottom: var(--emu-space-base, 4px);
@@ -5603,7 +5862,8 @@ body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]:checked + label {
 .-emu-layout body.-emu .window-app.sheet[id*="macro-config-"] .macro-editor.ace_editor {
   flex: 1 1 auto;
   height: 100%;
-  margin-block-end: var(--emu-space-md, 24px); }
+  -webkit-margin-after: var(--emu-space-md, 24px);
+          margin-block-end: var(--emu-space-md, 24px); }
   .-emu-layout body.-emu .window-app.sheet[id*="macro-config-"] .macro-editor.ace_editor.fullscreen {
     height: calc(100% - 10rem);
     margin: 0;
@@ -5624,7 +5884,8 @@ body.-emu .sidebar-popout #playlists .header-actions > .flexrow {
 
 .-emu-layout body.-emu #sidebar #chat #chat-log .midi-qol-item-card.chat-card .card-buttons button[data-action="attack"], .-emu-layout
 body.-emu .sidebar-popout #chat #chat-log .midi-qol-item-card.chat-card .card-buttons button[data-action="attack"] {
-  margin-block-end: var(--emu-space-base, 4px); }
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px); }
 
 body.-emu #midi-qol-settings .midi-qol-box {
   border: none; }
@@ -5655,15 +5916,18 @@ body.-emu .monsterblock.compact-window .window-content {
 .-emu-layout body.-emu .monsterblock.sheet.actor nav.switches {
   height: var(--emu-space-button-xs, 20px);
   left: 0;
-  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
   position: absolute;
   top: -2px; }
 
 body.-emu .monsterblock.sheet.actor nav.switches .fa-cog {
   background-color: rgba(var(--color-background-button), 1);
   border: none;
-  border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
-  border-inline-end: rgba(var(--color-background-lightest), 1) 2px solid;
+  -webkit-border-before: rgba(var(--color-background-lightest), 1) 2px solid;
+          border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
+  -webkit-border-end: rgba(var(--color-background-lightest), 1) 2px solid;
+          border-inline-end: rgba(var(--color-background-lightest), 1) 2px solid;
   border-radius: 0 0 var(--emu-border-radius-default, 0) 0;
   color: rgba(var(--color-text-lightest), 1);
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -5690,8 +5954,10 @@ body.-emu .monsterblock.sheet.actor nav.switches ul {
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
   color: rgba(var(--color-text), 1); }
   body.-emu .monsterblock.sheet.actor nav.switches ul li {
-    border-inline-start: 0;
-    border-block-end: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-start: 0;
+            border-inline-start: 0;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li {
       margin: 0;
       position: relative;
@@ -5714,8 +5980,10 @@ body.-emu .monsterblock .tweak-menu ul {
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
   color: rgba(var(--color-text), 1); }
   body.-emu .monsterblock .tweak-menu ul li {
-    border-inline-start: 0;
-    border-block-end: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-start: 0;
+            border-inline-start: 0;
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu .monsterblock .tweak-menu ul li {
       margin: 0;
       position: relative;
@@ -5733,7 +6001,8 @@ body.-emu .monsterblock .tweak-menu ul {
       .-emu-layout body.-emu .monsterblock .tweak-menu ul li labal.menu-toggle, .-emu-layout
       body.-emu .monsterblock .tweak-menu ul li a.menu-toggle, .-emu-layout
       body.-emu .monsterblock .tweak-menu ul li label.menu-toggle {
-        padding-inline-start: var(--emu-space-md, 24px); }
+        -webkit-padding-start: var(--emu-space-md, 24px);
+                padding-inline-start: var(--emu-space-md, 24px); }
       .-emu-layout body.-emu .monsterblock .tweak-menu ul li labal:not(:only-child)::before, .-emu-layout
       body.-emu .monsterblock .tweak-menu ul li a:not(:only-child)::before, .-emu-layout
       body.-emu .monsterblock .tweak-menu ul li label:not(:only-child)::before {
@@ -5801,7 +6070,8 @@ body.-emu .window-app .window-header a.tit-menu__btn-open--sheet {
   body.-emu .window-app .window-header a.pop__btn-open > span.fas,
   body.-emu .window-app .window-header a.tit-menu__btn-open--sheet > i,
   body.-emu .window-app .window-header a.tit-menu__btn-open--sheet > span.fas {
-    margin-inline-end: 0; }
+    -webkit-margin-end: 0;
+            margin-inline-end: 0; }
 
 .-emu-layout body.-emu #sidebar .dir__wrp-header, .-emu-layout
 body.-emu .sidebar-popout .dir__wrp-header {
@@ -5852,7 +6122,8 @@ body.-emu #polyglot {
     color: rgba(var(--color-text-lightest), 1); }
     .-emu-layout body.-emu #polyglot label {
       flex: 0 0 auto;
-      margin-inline-end: var(--emu-space-base, 4px); }
+      -webkit-margin-end: var(--emu-space-base, 4px);
+              margin-inline-end: var(--emu-space-base, 4px); }
   body.-emu #polyglot select {
     background-color: rgba(var(--color-background), 0.5);
     color: rgba(var(--color-text-lightest), 1); }
@@ -5862,9 +6133,11 @@ body.-emu #polyglot {
 
 body.-emu #client-settings.window-app form .polyglot-group-header {
   background-color: transparent;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #client-settings.window-app form .polyglot-group-header {
-    margin-block-start: var(--emu-space-base, 4px); }
+    -webkit-margin-before: var(--emu-space-base, 4px);
+            margin-block-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form {
   display: flex;
@@ -5874,19 +6147,25 @@ body.-emu #client-settings.window-app form .polyglot-group-header {
   .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form > div:not(.sheet-footer) {
     flex: 1 1 auto;
     overflow: auto;
-    margin-block-end: var(--emu-space-base, 4px);
-    padding-inline-end: var(--emu-space-sm, 8px);
-    padding-block-end: var(--emu-space-sm, 8px); }
+    -webkit-margin-after: var(--emu-space-base, 4px);
+            margin-block-end: var(--emu-space-base, 4px);
+    -webkit-padding-end: var(--emu-space-sm, 8px);
+            padding-inline-end: var(--emu-space-sm, 8px);
+    -webkit-padding-after: var(--emu-space-sm, 8px);
+            padding-block-end: var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form > div:not(.sheet-footer) ul {
       padding: 0; }
     .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form > div:not(.sheet-footer) li {
-      margin-block-end: var(--emu-space-base, 4px); }
+      -webkit-margin-after: var(--emu-space-base, 4px);
+              margin-block-end: var(--emu-space-base, 4px); }
       .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form > div:not(.sheet-footer) li:last-child {
-        margin-block-end: 0; }
+        -webkit-margin-after: 0;
+                margin-block-end: 0; }
   .-emu-layout body.-emu #polyglot-death-form.window-app .window-content form .sheet-footer {
     flex: 0 0 auto;
     margin: 0;
-    margin-block-start: var(--emu-space-sm, 8px) !important; }
+    -webkit-margin-before: var(--emu-space-sm, 8px) !important;
+            margin-block-start: var(--emu-space-sm, 8px) !important; }
 
 body.-emu #search-anywhere-modal .modal-content {
   background-color: transparent;
@@ -5913,9 +6192,11 @@ body.-emu ul.command-menu {
     z-index: 1070; }
   .-emu-layout body.-emu ul.command-menu li {
     font-size: var(--emu-font-size-xl, 20px);
-    margin-block-end: var(--emu-space-sm, 8px); }
+    -webkit-margin-after: var(--emu-space-sm, 8px);
+            margin-block-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu ul.command-menu li:last-child {
-    margin-block-end: 0; }
+    -webkit-margin-after: 0;
+            margin-block-end: 0; }
   body.-emu ul.command-menu li h2 {
     color: inherit; }
     .-emu-layout body.-emu ul.command-menu li h2 {
@@ -5927,8 +6208,10 @@ body.-emu ul.command-menu {
 body.-emu .window-app .window-draggable-handle {
   background-color: rgba(var(--color-background-button), 1);
   border: none;
-  border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
-  border-inline-end: rgba(var(--color-background-lightest), 1) 2px solid;
+  -webkit-border-before: rgba(var(--color-background-lightest), 1) 2px solid;
+          border-block-start: rgba(var(--color-background-lightest), 1) 2px solid;
+  -webkit-border-end: rgba(var(--color-background-lightest), 1) 2px solid;
+          border-inline-end: rgba(var(--color-background-lightest), 1) 2px solid;
   border-radius: 0 var(--emu-border-radius-default, 0) 0 0;
   color: rgba(var(--color-text-lightest), 1);
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -5950,6 +6233,7 @@ body.-emu .window-app .window-draggable-handle {
       transform: rotate(45deg); }
 
 .-emu-layout body.-emu .simple-calendar-configuration.window-app #simpleCalendarConfiguration .config-save {
+  position: -webkit-sticky;
   position: sticky; }
 
 .-emu-layout body.-emu #controls .sdr-sub-controls {
@@ -5970,10 +6254,12 @@ body.-emu #controls #SDRpopup.simple-dice-roller-popup {
     margin: 0;
     pointer-events: all; }
   body.-emu #controls #SDRpopup.simple-dice-roller-popup ul {
-    border-block-end: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+            border-block-end: rgba(var(--color-border), 1) 1px solid; }
   body.-emu #controls #SDRpopup.simple-dice-roller-popup li {
     border: none;
-    border-inline-end: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-end: rgba(var(--color-border), 1) 1px solid;
+            border-inline-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu #controls #SDRpopup.simple-dice-roller-popup li {
       width: 3rem;
       height: 3rem;
@@ -5984,15 +6270,18 @@ body.-emu #controls #SDRpopup.simple-dice-roller-popup {
     .-emu-layout body.-emu #controls #SDRpopup.simple-dice-roller-popup li:first-child {
       width: 7rem; }
     body.-emu #controls #SDRpopup.simple-dice-roller-popup li:last-child {
-      border-inline-end: none; }
+      -webkit-border-end: none;
+              border-inline-end: none; }
     body.-emu #controls #SDRpopup.simple-dice-roller-popup li > i {
-      margin-inline-end: var(--emu-space-base, 4px); }
+      -webkit-margin-end: var(--emu-space-base, 4px);
+              margin-inline-end: var(--emu-space-base, 4px); }
 
 body.-emu #smalltime-app {
   box-shadow: none; }
   .-emu-layout body.-emu #smalltime-app {
     height: auto;
-    margin-inline-start: -0.375rem; }
+    -webkit-margin-start: -0.375rem;
+            margin-inline-start: -0.375rem; }
   .-emu-layout body.-emu #smalltime-app .window-header {
     display: none; }
   body.-emu #smalltime-app .window-content {
@@ -6008,7 +6297,8 @@ body.-emu #smalltime-app {
   body.-emu #smalltime-app #displayContainer {
     align-items: center;
     background-color: transparent;
-    border-block-start: rgba(var(--color-border), 1) 1px solid;
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid;
     box-shadow: none; }
     .-emu-layout body.-emu #smalltime-app #displayContainer {
       height: auto;
@@ -6129,7 +6419,9 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs .module-
     justify-content: flex-end;
     margin: 0; }
   .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group input[type="checkbox"] {
-    appearance: auto;
+    -webkit-appearance: auto;
+       -moz-appearance: auto;
+            appearance: auto;
     left: auto; }
     .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group input[type="checkbox"]::after {
       display: none; }
@@ -6162,10 +6454,12 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
     flex: 0 0 auto;
     height: auto;
     margin: 0;
-    margin-block-end: var(--emu-space-base, 4px); }
+    -webkit-margin-after: var(--emu-space-base, 4px);
+            margin-block-end: var(--emu-space-base, 4px); }
 
 body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  -webkit-border-after: rgba(var(--color-border), 1) 1px solid;
+          border-block-end: rgba(var(--color-border), 1) 1px solid; }
   .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header {
     align-items: center;
     display: flex;
@@ -6185,7 +6479,8 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
 .-emu-layout body.-emu #module-management .enhanced-module-management {
   gap: var(--emu-space-base, 4px);
   justify-content: center;
-  margin-block-end: 0; }
+  -webkit-margin-after: 0;
+          margin-block-end: 0; }
 
 .-emu-layout body.-emu #module-management .enhanced-module-management button {
   flex: 0 0 auto;
@@ -6211,8 +6506,11 @@ body.-emu #module-management .enhanced-module-management button.enable-all-modul
   overflow-y: auto; }
 
 .-emu-layout body.-emu #module-management .package-title input[type="checkbox"] {
-  appearance: auto;
-  margin-inline-end: var(--emu-space-sm, 8px); }
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  -webkit-margin-end: var(--emu-space-sm, 8px);
+          margin-inline-end: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #module-management .package-title input[type="checkbox"]::after {
     display: none; }
 
@@ -6225,7 +6523,8 @@ body.-emu .tidy5e.settings.window-app {
   .-emu-layout body.-emu .tidy5e.settings.window-app .sheet-tabs {
     padding: 0; }
   .-emu-layout body.-emu .tidy5e.settings.window-app section.tab {
-    margin-block-start: 0; }
+    -webkit-margin-before: 0;
+            margin-block-start: 0; }
   body.-emu .tidy5e.settings.window-app .setting {
     background-color: transparent;
     border-radius: 0; }
@@ -6248,14 +6547,16 @@ body.-emu .tidy5e.sheet.actor #item-info-container {
   background-image: var(--emu-image-background-lightest, none);
   border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0);
   border: rgba(var(--color-border), 1) 1px solid;
-  border-inline-end: 0;
+  -webkit-border-end: 0;
+          border-inline-end: 0;
   box-shadow: 0 2px 4px rgba(var(--color-black), 1);
   color: rgba(var(--color-text), 1); }
   .-emu-layout body.-emu .tidy5e.sheet.actor #item-info-container {
     transition: width 0.3s cubic-bezier(0.77, 0, 0.175, 1);
     transition-delay: 0s; }
   body.-emu .tidy5e.sheet.actor #item-info-container .info-wrap {
-    border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+    -webkit-border-end: rgba(var(--color-border-lighter), 1) 1px solid;
+            border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
   body.-emu .tidy5e.sheet.actor #item-info-container .info-card {
     border-radius: 0; }
     .-emu-layout body.-emu .tidy5e.sheet.actor #item-info-container .info-card {
@@ -6274,7 +6575,8 @@ body.-emu #token-action-hud #tah-hudTitle {
   .-emu-layout body.-emu #token-action-hud #tah-hudTitle {
     font-size: var(--emu-font-size-sm, 12px);
     margin: 0;
-    margin-inline-start: 1.75rem;
+    -webkit-margin-start: 1.75rem;
+            margin-inline-start: 1.75rem;
     padding: 0; }
 
 .-emu-layout body.-emu #token-action-hud #tah-reposition, .-emu-layout
@@ -6295,11 +6597,13 @@ body.-emu #token-action-hud #tah-categories i {
     text-align: initial; }
 
 .-emu-layout body.-emu #token-action-hud #tah-categories {
-  margin-inline-start: var(--emu-space-base, 4px); }
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #token-action-hud button.tah-title-button, .-emu-layout
 body.-emu #token-action-hud .tah-action button {
-  margin-inline-start: var(--emu-space-base, 4px); }
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #token-action-hud button.tah-title-button > .fa, .-emu-layout
   body.-emu #token-action-hud .tah-action button > .fa {
     display: none; }
@@ -6311,12 +6615,15 @@ body.-emu #token-action-hud .tah-subtitle {
     font-size: var(--emu-font-size-sm, 12px);
     line-height: initial;
     padding: 0;
-    padding-block-start: var(--emu-space-sm, 8px); }
+    -webkit-padding-before: var(--emu-space-sm, 8px);
+            padding-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu #token-action-hud .tah-action {
   margin: 0;
-  margin-block-end: var(--emu-space-base, 4px);
-  margin-inline-start: var(--emu-space-base, 4px);
+  -webkit-margin-after: var(--emu-space-base, 4px);
+          margin-block-end: var(--emu-space-base, 4px);
+  -webkit-margin-start: var(--emu-space-base, 4px);
+          margin-inline-start: var(--emu-space-base, 4px);
   padding: 0; }
 
 body.-emu #token-action-hud .tah-action button {
@@ -6325,7 +6632,8 @@ body.-emu #token-action-hud .tah-action button {
   body.-emu #token-action-hud .tah-action button > div {
     text-shadow: none; }
     .-emu-layout body.-emu #token-action-hud .tah-action button > div {
-      margin-inline-start: var(--emu-space-base, 4px); }
+      -webkit-margin-start: var(--emu-space-base, 4px);
+              margin-inline-start: var(--emu-space-base, 4px); }
   body.-emu #token-action-hud .tah-action button > .tah-img {
     border: none; }
     .-emu-layout body.-emu #token-action-hud .tah-action button > .tah-img {
@@ -6334,7 +6642,8 @@ body.-emu #token-action-hud .tah-action button {
       border-radius: 0;
       display: inline-block;
       margin: 0;
-      margin-inline-end: var(--emu-space-sm, 8px);
+      -webkit-margin-end: var(--emu-space-sm, 8px);
+              margin-inline-end: var(--emu-space-sm, 8px);
       padding: 0; }
 
 .-emu-layout body.-emu #token-action-hud .tah-content {
@@ -6345,7 +6654,8 @@ body.-emu #token-action-hud .tah-action button {
   margin: var(--emu-space-sm, 8px) 0; }
 
 .-emu-layout body.-emu #token-action-hud-index {
-  margin-inline-end: var(--emu-space-base, 4px); }
+  -webkit-margin-end: var(--emu-space-base, 4px);
+          margin-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .token-attacher-gm-menu.window-app.settings .window-content form button {
   margin: 0; }
@@ -6491,11 +6801,13 @@ body.-emu .tokenmagic.window-app.settings section.content {
   .-emu-layout body.-emu .tokenmagic.window-app.settings section.content {
     overflow-y: auto; }
   body.-emu .tokenmagic.window-app.settings section.content div.override-entry {
-    border-block-start: rgba(var(--color-border), 1) 1px solid; }
+    -webkit-border-before: rgba(var(--color-border), 1) 1px solid;
+            border-block-start: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry {
       padding: var(--emu-space-sm, 8px) 0; }
       .-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry .remove-override-wrapper {
-        margin-inline-start: var(--emu-space-base, 4px); }
+        -webkit-margin-start: var(--emu-space-base, 4px);
+                margin-inline-start: var(--emu-space-base, 4px); }
         .-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry .remove-override-wrapper i {
           margin: 0; }
   .-emu-layout body.-emu .tokenmagic.window-app.settings section.content .settings-list {
@@ -6503,11 +6815,13 @@ body.-emu .tokenmagic.window-app.settings section.content {
     overflow: hidden;
     padding: 0; }
     .-emu-layout body.-emu .tokenmagic.window-app.settings section.content .settings-list h2 {
-      margin-block-start: var(--emu-space-sm, 8px); }
+      -webkit-margin-before: var(--emu-space-sm, 8px);
+              margin-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu .tokenmagic.window-app.settings .sheet-footer {
   flex: 0 0 auto;
-  padding-block-start: var(--emu-space-sm, 8px); }
+  -webkit-padding-before: var(--emu-space-sm, 8px);
+          padding-block-start: var(--emu-space-sm, 8px); }
 
 .-emu-layout body.-emu #sidebar .token-mold, .-emu-layout
 body.-emu .sidebar-popout .token-mold {
@@ -6532,7 +6846,8 @@ body.-emu .sidebar-popout .token-mold > label > span {
   padding: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu #sidebar .token-mold > label > span > span, .-emu-layout
   body.-emu .sidebar-popout .token-mold > label > span > span {
-    margin-inline-end: var(--emu-space-base, 4px); }
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .window-app.token-mold .window-content {
   overflow: hidden; }
@@ -6547,11 +6862,13 @@ body.-emu .window-app.token-mold .window-content nav {
   flex-direction: column; }
 
 .-emu-layout body.-emu .window-app.token-mold .window-content form section + section {
-  margin-block-start: var(--emu-space-base, 4px); }
+  -webkit-margin-before: var(--emu-space-base, 4px);
+          margin-block-start: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu .window-app.token-mold .window-content form .add-attribute {
   display: flex;
-  margin-block-start: var(--emu-space-sm, 8px); }
+  -webkit-margin-before: var(--emu-space-sm, 8px);
+          margin-block-start: var(--emu-space-sm, 8px); }
 
 body.-emu .window-app.token-mold .window-content form .flexcol {
   border: none; }
@@ -6559,12 +6876,14 @@ body.-emu .window-app.token-mold .window-content form .flexcol {
     padding: 0;
     width: 1px; }
     .-emu-layout body.-emu .window-app.token-mold .window-content form .flexcol > select {
-      margin-block-start: var(--emu-space-base, 4px);
+      -webkit-margin-before: var(--emu-space-base, 4px);
+              margin-block-start: var(--emu-space-base, 4px);
       width: auto; }
 
 .-emu-layout body.-emu .window-app.token-mold .window-content .form-group input[type="checkbox"] + label {
   flex: 1 1 40%;
-  padding-inline-start: var(--emu-space-sm, 8px); }
+  -webkit-padding-start: var(--emu-space-sm, 8px);
+          padding-inline-start: var(--emu-space-sm, 8px); }
 
 body.-emu .window-app.token-mold .window-content .form-group.unlinked {
   border: none; }
@@ -6590,10 +6909,12 @@ body.-emu .sidebar-popout .import-dd {
     align-items: flex-start;
     flex-direction: column; }
     .-emu-layout body.-emu #dd-importer .form-group#dd-upload-files .file-input {
-      margin-block-start: var(--emu-space-sm, 8px); }
+      -webkit-margin-before: var(--emu-space-sm, 8px);
+              margin-block-start: var(--emu-space-sm, 8px); }
   .-emu-layout body.-emu #dd-importer .form-group > label {
     flex: 0 0 auto;
-    padding-inline-end: var(--emu-space-base, 4px); }
+    -webkit-padding-end: var(--emu-space-base, 4px);
+            padding-inline-end: var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil img, .-emu-layout
 body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil img {

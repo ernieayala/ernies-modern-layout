@@ -13,6 +13,7 @@
 	"emu.theme-preset-custom": "Personalizado",
 	"emu.theme-preset-dark": "Oscuro",
 	"emu.theme-preset-western": "Vaqueros",
+	"emu.theme-preset-alien": "Alien",
 	"emu.theme-primary": "Color del tema principal",
 	"emu.theme-primary-hint": "Por defecto: #e57509 - Azul: #386acf - Verde: #0fbd7d - Violeta: #773edc - Rojo: #dc143c - Amarillo: #edb950",
 	"emu.theme-background-default": "Fondo por defecto",
