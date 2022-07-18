@@ -7,7 +7,7 @@
 	transition: t(opacity, "link");
 
 	@include layout {
-		@include relative(top calc(#{$global-space-md} / 2) right 0 bottom auto);
+		@include fixed(top calc(#{$global-space-md} / 2) right 0 bottom auto);
 		@include size($global-space-sidebar, calc(100% - #{$global-space-md}));
 		display: flex;
 		flex-direction: column;
@@ -282,6 +282,10 @@
 #sidebar {
 	border-inline-end: none;
 	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+
+	@include layout {
+		position: relative;
+	}
 
 	@include layout-subtle {
 		opacity: $global-subtle-opacity;
