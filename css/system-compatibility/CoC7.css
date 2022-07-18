@@ -1,0 +1,77 @@
+.-emu-layout body.-emu.system-CoC7 .coc7.chat-card {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--emu-font-size-sm, 12px);
+  gap: var(--emu-space-base, 4px); }
+
+body.-emu.system-CoC7 .coc7.chat-card .card-header {
+  border-block-end: none;
+  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  .-emu-layout body.-emu.system-CoC7 .coc7.chat-card .card-header {
+    gap: var(--emu-space-base, 4px);
+    padding: var(--emu-space-base, 4px) 0; }
+  body.-emu.system-CoC7 .coc7.chat-card .card-header h3:hover {
+    color: rgba(var(--color-primary), 1);
+    text-shadow: none; }
+
+body.-emu.system-CoC7 .coc7 .panel-switch,
+body.-emu.system-CoC7 .coc7 .radio-switch,
+body.-emu.system-CoC7 .coc7 .toggle-switch,
+body.-emu.system-CoC7 .coc7 .weapon-property {
+  background: transparent;
+  border: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text), 1); }
+  .-emu-layout body.-emu.system-CoC7 .coc7 .panel-switch, .-emu-layout
+  body.-emu.system-CoC7 .coc7 .radio-switch, .-emu-layout
+  body.-emu.system-CoC7 .coc7 .toggle-switch, .-emu-layout
+  body.-emu.system-CoC7 .coc7 .weapon-property {
+    border-radius: var(--emu-border-radius-default, 0);
+    display: inline-flex;
+    font-size: var(--emu-font-size-xs, 10px);
+    font-style: italic;
+    line-height: 1;
+    margin: 0;
+    padding: var(--emu-space-base, 4px); }
+  body.-emu.system-CoC7 .coc7 .panel-switch.switched-on,
+  body.-emu.system-CoC7 .coc7 .radio-switch.switched-on,
+  body.-emu.system-CoC7 .coc7 .toggle-switch.switched-on,
+  body.-emu.system-CoC7 .coc7 .weapon-property.switched-on {
+    background-color: rgba(var(--color-primary), 1);
+    box-shadow: none;
+    color: rgba(var(--color-text-lightest), 1); }
+
+.-emu-layout body.-emu.system-CoC7 .coc7 .radio-switch, .-emu-layout
+body.-emu.system-CoC7 .coc7 .toggle-switch {
+  cursor: pointer; }
+
+body.-emu.system-CoC7 .coc7 .tag {
+  background: rgba(var(--color-background-light), 1);
+  border: rgba(var(--color-border), 1) 1px solid;
+  color: rgba(var(--color-text-lightest), 1); }
+  .-emu-layout body.-emu.system-CoC7 .coc7 .tag {
+    border-radius: var(--emu-border-radius-default, 0);
+    display: inline-flex;
+    font-size: var(--emu-font-size-xs, 10px);
+    font-style: italic;
+    line-height: 1;
+    margin: 0;
+    margin-inline-end: var(--emu-space-xs, 2px);
+    padding: var(--emu-space-base, 4px); }
+
+body.-emu.system-CoC7 .chat-card-v2.roll-card ol li.actor-roll .roll-details .header {
+  height: auto; }
+
+body.-emu.system-CoC7 .chat-card-v2.roll-card ol li.actor-roll.won {
+  border: rgba(var(--color-primary), 1) 1px solid; }
+
+body.-emu.system-CoC7 .chat-card-v2.roll-card h4.card-result {
+  background-color: rgba(var(--color-background), 0.1);
+  box-shadow: none;
+  border: rgba(var(--color-border), 1) 1px solid;
+  border-radius: var(--emu-border-radius-default, 0);
+  color: inherit; }
+  .-emu-layout body.-emu.system-CoC7 .chat-card-v2.roll-card h4.card-result {
+    line-height: initial;
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0; }
