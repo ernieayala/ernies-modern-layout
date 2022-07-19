@@ -44,6 +44,7 @@ Message me on Discord: Ernie#4453.
 
 ### Functional Systems
 - Alien RPG
+- Call of Cthulhu 7
 - DND 5e
 - MÖRK BORG
 - Starfinder RPG
