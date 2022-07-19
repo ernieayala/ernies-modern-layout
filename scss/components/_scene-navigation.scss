@@ -5,11 +5,11 @@
 
 	@include layout {
 		margin: 0;
-		margin-block-start: space("sm");
+		margin-block-start: $global-space-sm;
 		padding: 0;
 		pointer-events: none;
 		transition: t(opacity, "link");
-		width: calc(100% - #{space("sm")} - #{space("sidebar")});
+		width: calc(100% - #{$global-space-sm} - #{$global-space-sidebar});
 		z-index: z("fixed");
 	}
 
@@ -28,10 +28,10 @@
 
 		#scene-list::before {
 			content: "";
-			bottom: calc(-1 * #{space("sm")});
-			left: calc(-1 * #{space("sm")});
-			right: calc(-1 * #{space("sm")});
-			top: calc(-1 * #{space("sm")});
+			bottom: calc(-1 * #{$global-space-sm});
+			left: calc(-1 * #{$global-space-sm});
+			right: calc(-1 * #{$global-space-sm});
+			top: calc(-1 * #{$global-space-sm});
 			position: absolute;
 		}
 	}
@@ -43,7 +43,7 @@
 
 		@include layout {
 			margin: 0;
-			margin-inline-end: space("base");
+			margin-inline-end: $global-space-base;
 			z-index: z("fixed");
 		}
 
@@ -56,9 +56,9 @@
 		@include layout {
 			@extend %reset-list;
 			display: flex;
-			gap: space("base");
+			gap: $global-space-base;
 			flex-wrap: wrap;
-			margin-block-end: m("sm");
+			margin-block-end: $global-space-sm;
 			position: relative;
 			pointer-events: all;
 		}
@@ -82,7 +82,7 @@
 				margin: 0;
 				max-width: to-rem(240px);
 				min-width: to-rem(112px);
-				padding: 0 p("md");
+				padding: 0 $global-space-md;
 				pointer-events: all;
 				position: relative;
 				text-align: center;
@@ -147,7 +147,7 @@
 					display: block;
 
 					> i {
-						margin-inline-end: m("base");
+						margin-inline-end: $global-space-base;
 					}
 				}
 			}
@@ -158,12 +158,12 @@
 				@include absolute(top 0 left 0);
 				display: flex;
 				flex-wrap: wrap;
-				gap: space("xs");
+				gap: $global-space-xs;
 				list-style: none;
 				margin: 0;
-				margin-block-start: calc(-1 * #{m("base")});
+				margin-block-start: calc(-1 * #{$global-space-base});
 				padding: 0;
-				padding-inline-start: m("sm");
+				padding-inline-start: $global-space-sm;
 				pointer-events: none;
 			}
 		}
@@ -176,7 +176,7 @@
 				inset 0 0 0 1px color("primary"),
 				inset 0 0 0 2px color("white"), 0 1px 2px 0 color("black", 0.3);
 			color: transparent;
-			font-size: fs("xs");
+			font-size: $global-font-size-xs;
 
 			@include layout {
 				@include size(to-rem(12px));

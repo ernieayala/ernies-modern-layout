@@ -14,7 +14,7 @@
 				flex-wrap: wrap;
 				line-height: 1;
 				margin: 0;
-				padding: p("sm");
+				padding: $global-space-sm;
 				position: relative;
 			}
 
@@ -36,8 +36,8 @@
 
 				@include layout {
 					flex: 0 0 auto;
-					font-size: fs("md");
-					padding: p("xs") 0;
+					font-size: $global-font-size-md;
+					padding: $global-space-xs 0;
 					width: 100%;
 				}
 
@@ -54,7 +54,7 @@
 						color: inherit;
 
 						@include layout {
-							margin-inline-start: m("xs");
+							margin-inline-start: $global-space-xs;
 						}
 					}
 				}
@@ -77,11 +77,11 @@
 					color: color("text-lightest");
 
 					@include layout {
-						font-size: fs("lg");
+						font-size: $global-font-size-lg;
 						margin: 0;
 
 						+ input[type="range"] {
-							margin-inline-start: m("base");
+							margin-inline-start: $global-space-base;
 						}
 					}
 				}
@@ -112,7 +112,7 @@
 					@include layout {
 						flex-direction: column;
 						line-height: 1;
-						padding: 0 p("sm");
+						padding: 0 $global-space-sm;
 					}
 
 					&:not(.collapsed) {
@@ -160,7 +160,7 @@
 						display: inline-flex;
 						flex: 1 1 100%;
 						overflow: visible;
-						padding: p("base") 0;
+						padding: $global-space-base 0;
 						word-break: normal;
 						white-space: initial;
 						width: 100%;
@@ -175,8 +175,8 @@
 					@include layout {
 						flex: 0 0 auto;
 						flex-wrap: nowrap;
-						margin-inline-start: m("base");
-						padding: p("base") 0;
+						margin-inline-start: $global-space-base;
+						padding: $global-space-base 0;
 						width: auto;
 					}
 
@@ -219,14 +219,14 @@
 		i {
 			+ input[type="range"] {
 				@include layout {
-					margin-inline-start: m("base");
+					margin-inline-start: $global-space-base;
 				}
 			}
 		}
 
 		h4 {
 			@include layout {
-				padding: p("base");
+				padding: $global-space-base;
 			}
 		}
 
@@ -262,7 +262,7 @@
 					border-block-start: b("border");
 
 					@include layout {
-						padding-block-start: p("sm");
+						padding-block-start: $global-space-sm;
 					}
 				}
 
@@ -273,7 +273,7 @@
 						display: inline-flex;
 						grid-area: name;
 						margin: 0;
-						padding: p("base") 0;
+						padding: $global-space-base 0;
 					}
 				}
 
@@ -282,8 +282,8 @@
 						flex-wrap: nowrap;
 						grid-area: controls;
 						margin: 0;
-						margin-inline-start: m("base");
-						padding: p("base") 0;
+						margin-inline-start: $global-space-base;
+						padding: $global-space-base 0;
 						width: auto;
 					}
 				}
@@ -308,14 +308,14 @@
 						color: color("text-lightest");
 
 						@include layout {
-							font-size: fs("sm");
-							margin-inline-end: m("sm");
+							font-size: $global-font-size-sm;
+							margin-inline-end: $global-space-sm;
 						}
 					}
 
 					.volume-icon {
 						@include layout {
-							margin-inline-end: m("base");
+							margin-inline-end: $global-space-base;
 						}
 					}
 				}

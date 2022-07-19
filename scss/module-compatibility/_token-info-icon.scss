@@ -30,14 +30,14 @@
 			@include layout {
 				display: flex;
 				flex-wrap: wrap;
-				gap: space("base");
+				gap: $global-space-base;
 				height: auto;
 				margin: 0 !important; // because MOD important style
 				min-width: 0;
-				padding: p("sm");
+				padding: $global-space-sm;
 
 				.token-info-speed {
-					font-size: fs("sm");
+					font-size: $global-font-size-sm;
 					width: 100%;
 
 					> span {

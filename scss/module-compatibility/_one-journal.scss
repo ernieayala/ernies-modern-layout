@@ -1,7 +1,7 @@
 #OneJournalShell.window-app {
 	&.maximized {
 		@include layout {
-			width: calc(100% - #{space("sidebar")}) !important;
+			width: calc(100% - #{$global-space-sidebar}) !important;
 		}
 
 		> .window-header {
@@ -23,7 +23,7 @@
 
 		@include layout {
 			margin: 0;
-			padding: 0 p("sm");
+			padding: 0 $global-space-sm;
 		}
 
 		a {
@@ -66,8 +66,8 @@
 
 	.history-navigation {
 		@include layout {
-			right: space("sm");
-			top: space("sm");
+			right: $global-space-sm;
+			top: $global-space-sm;
 		}
 
 		a {
@@ -98,7 +98,7 @@
 			align-items: center;
 			cursor: pointer;
 			display: inline-flex;
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 			justify-content: center;
 			margin: 0;
 			padding: 0;
@@ -125,7 +125,7 @@
 		.directory-header {
 			@include layout {
 				margin: 0;
-				padding: p("sm");
+				padding: $global-space-sm;
 
 				button {
 					height: auto;
@@ -136,7 +136,7 @@
 				border: none;
 
 				@include layout {
-					margin-block-end: m("base");
+					margin-block-end: $global-space-base;
 
 					#world-anvil {
 						display: none;
@@ -186,7 +186,7 @@
 		button + button + button.one-journal-open {
 			@include layout {
 				margin: 0;
-				margin-block-start: m("base");
+				margin-block-start: $global-space-base;
 			}
 		}
 

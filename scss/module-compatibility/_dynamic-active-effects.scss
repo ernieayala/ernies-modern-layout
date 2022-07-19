@@ -15,9 +15,9 @@
 			// so confused
 			textarea {
 				@include layout {
-					min-height: space("button");
-					padding-block-start: calc(#{p("base")} + #{p("xs")});
-					padding-block-end: calc(#{p("base")} + #{p("xs")});
+					min-height: $global-space-button;
+					padding-block-start: calc(#{$global-space-base} + #{$global-space-xs});
+					padding-block-end: calc(#{$global-space-base} + #{$global-space-xs});
 				}
 			}
 		}
@@ -29,7 +29,7 @@
 
 		@include layout {
 			align-items: center;
-			padding: p("base") p("sm");
+			padding: $global-space-base $global-space-sm;
 
 			> div {
 				align-content: initial !important;
@@ -61,7 +61,7 @@
 	.changes-list .effect-change {
 		.keylist {
 			@include layout {
-				margin-inline-start: m("base");
+				margin-inline-start: $global-space-base;
 			}
 		}
 	}
@@ -110,7 +110,7 @@
 
 			@include layout {
 				flex: 1;
-				font-size: fs("md");
+				font-size: $global-font-size-md;
 				text-shadow: none;
 			}
 

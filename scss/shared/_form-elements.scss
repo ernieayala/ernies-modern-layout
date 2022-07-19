@@ -7,14 +7,14 @@
 	transition: t(box-shadow, "link");
 
 	@include layout {
-		@include size(100%, space("button"));
+		@include size(100%, $global-space-button);
 		font-family: inherit;
 		font-size: inherit;
 		font-weight: normal;
 		line-height: 1;
 		margin: 0;
-		min-width: space("xl");
-		padding: 0 p("sm");
+		min-width: $global-space-xl;
+		padding: 0 $global-space-sm;
 		position: relative;
 		user-select: text;
 	}
@@ -48,15 +48,15 @@
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
-		height: space("button");
+		height: $global-space-button;
 		margin: 0;
-		padding: 0 p("sm");
+		padding: 0 $global-space-sm;
 		position: relative;
 		text-overflow: ellipsis;
 
 		&[multiple] {
 			height: auto;
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 	}
 
@@ -89,7 +89,7 @@
 	transition: t(box-shadow, "link");
 
 	@include layout {
-		@include size(space("button-xs"));
+		@include size($global-space-button-xs);
 		cursor: pointer;
 		flex: 0 0 auto;
 		margin: 0;
@@ -133,9 +133,9 @@
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
-		height: space("button");
+		height: $global-space-button;
 		margin: 0;
-		padding: 0 p("sm");
+		padding: 0 $global-space-sm;
 		position: relative;
 	}
 
@@ -254,7 +254,7 @@
 			align-items: center;
 			display: flex;
 			flex: 0 0 auto;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			margin: 0;
 			padding: 0;
 		}
@@ -273,7 +273,7 @@
 		font-size: inherit;
 		margin: 0;
 		min-height: to-rem(64px);
-		padding: p("sm");
+		padding: $global-space-sm;
 		position: relative;
 		resize: none;
 		transition: t(box-shadow, "link");

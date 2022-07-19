@@ -1,10 +1,10 @@
 .window-app.sheet[id*="macro-config-"] {
 	.macro-editor-expand {
 		@include layout {
-			bottom: space("base");
+			bottom: $global-space-base;
 			position: absolute !important;
 			left: auto;
-			right: space("base");
+			right: $global-space-base;
 			top: auto;
 
 			&.fullscreen {
@@ -22,7 +22,7 @@
 		@include layout {
 			flex: 1 1 auto;
 			height: 100%;
-			margin-block-end: m("md");
+			margin-block-end: $global-space-md;
 
 			&.fullscreen {
 				height: calc(100% - 10rem);

@@ -16,7 +16,7 @@
 		text-shadow: 1px 1px 4px color("black");
 
 		@include layout {
-			font-size: fs("xl");
+			font-size: $global-font-size-xl;
 			line-height: initial;
 		}
 	}
@@ -25,7 +25,7 @@
 #tokenAttacher {
 	@include layout {
 		display: flex;
-		gap: space("base");
+		gap: $global-space-base;
 		left: to-rem(96px);
 		top: to-rem(52px);
 	}
@@ -60,10 +60,10 @@
 				bottom: auto;
 				box-sizing: border-box;
 				display: flex;
-				font-size: fs("lg");
+				font-size: $global-font-size-lg;
 				justify-content: center;
 				overflow: hidden;
-				padding: p("base");
+				padding: $global-space-base;
 				margin: 0;
 				max-width: 100%;
 				top: 100%;
@@ -84,7 +84,7 @@
 			display: flex;
 			flex: 0 0 auto;
 			flex-direction: column;
-			gap: space("base");
+			gap: $global-space-base;
 			pointer-events: none;
 			opacity: 1;
 			transition: t(opacity left, "link");
@@ -98,11 +98,11 @@
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
 		color: color("text-lightest");
-		font-size: fs("lg");
+		font-size: $global-font-size-lg;
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(space("button-lg"));
+			@include size($global-space-button-lg);
 			align-items: center;
 			box-sizing: border-box;
 			cursor: pointer;
@@ -135,7 +135,7 @@
 		}
 
 		&.close {
-			@include absolute(top space("pf") left space("pf"));
+			@include absolute(top $global-space-pf left $global-space-pf);
 			margin: 0;
 		}
 	}

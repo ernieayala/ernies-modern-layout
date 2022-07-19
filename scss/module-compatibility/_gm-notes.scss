@@ -1,7 +1,7 @@
 .app.window-app .open-gm-note {
 	> i {
 		@include layout {
-			margin: 0 m("base");
+			margin: 0 $global-space-base;
 		}
 	}
 }
@@ -10,7 +10,7 @@
 	.controlls {
 		@include layout {
 			display: flex;
-			gap: space("base");
+			gap: $global-space-base;
 
 			button {
 				flex: 1 1 auto;

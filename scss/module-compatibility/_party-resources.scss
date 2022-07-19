@@ -18,7 +18,7 @@
 		label.checkbox {
 			@include layout {
 				flex: 1 1 auto;
-				font-size: fs("md") !important;
+				font-size: $global-font-size-md !important;
 				margin: 0;
 
 				input[type="checkbox"] {

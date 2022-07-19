@@ -1,7 +1,7 @@
 div.permission-viewer {
 	@include layout {
 		flex: 0 0 auto;
-		gap: space("base");
+		gap: $global-space-base;
 		margin: 0;
 	}
 
@@ -10,7 +10,7 @@ div.permission-viewer {
 		text-shadow: none;
 
 		@include layout {
-			padding: 0 p("base");
+			padding: 0 $global-space-base;
 			width: auto;
 		}
 	}

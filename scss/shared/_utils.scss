@@ -1,7 +1,7 @@
 %button-icon-spacing {
 	@include layout {
 		> i {
-			margin-inline-end: m("sm");
+			margin-inline-end: $global-space-sm;
 		}
 	}
 }

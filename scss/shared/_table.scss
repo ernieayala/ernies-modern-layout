@@ -6,7 +6,7 @@
 
 	@include layout {
 		height: auto;
-		padding: p("sm");
+		padding: $global-space-sm;
 		width: 100%;
 
 		> div {
@@ -14,7 +14,7 @@
 			line-height: initial;
 			margin: 0;
 			padding: 0;
-			padding-inline-start: p("base");
+			padding-inline-start: $global-space-base;
 
 			&:first-of-type {
 				padding-inline-start: 0;
@@ -39,7 +39,7 @@
 
 	@include layout {
 		height: auto;
-		padding: p("sm");
+		padding: $global-space-sm;
 
 		> div {
 			align-items: center;
@@ -48,7 +48,7 @@
 			line-height: initial;
 			margin: 0;
 			padding: 0;
-			padding-inline-start: p("base");
+			padding-inline-start: $global-space-base;
 
 			&:first-of-type {
 				padding-inline-start: 0;

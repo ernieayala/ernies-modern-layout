@@ -5,7 +5,7 @@
 
 	.window-content {
 		@include layout {
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 	}
 
@@ -27,7 +27,7 @@
 
 		@include layout {
 			margin: 0;
-			padding: p("sm");
+			padding: $global-space-sm;
 		}
 
 		&:nth-of-type(even) {
@@ -71,7 +71,7 @@
 			border-radius: 0;
 
 			@include layout {
-				padding: p("sm");
+				padding: $global-space-sm;
 			}
 		}
 	}

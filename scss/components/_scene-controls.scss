@@ -2,11 +2,11 @@
 	@include layout {
 		display: flex;
 		flex: 1 1 auto;
-		gap: space("base");
+		gap: $global-space-base;
 		height: 0;
 		max-width: 100%;
-		padding-block-start: space("sm");
-		padding-inline-start: space("sm");
+		padding-block-start: $global-space-sm;
+		padding-inline-start: $global-space-sm;
 		position: relative;
 	}
 
@@ -15,10 +15,10 @@
 
 		&::before {
 			content: "";
-			bottom: calc(-1 * #{space("sm")});
-			left: calc(-1 * #{space("sm")});
-			right: calc(-1 * #{space("sm")});
-			top: calc(-1 * #{space("sm")});
+			bottom: calc(-1 * #{$global-space-sm});
+			left: calc(-1 * #{$global-space-sm});
+			right: calc(-1 * #{$global-space-sm});
+			top: calc(-1 * #{$global-space-sm});
 			pointer-events: all;
 			position: absolute;
 		}
@@ -38,7 +38,7 @@
 			@extend %reset-list;
 			flex-direction: column;
 			flex-wrap: wrap;
-			gap: space("base");
+			gap: $global-space-base;
 			opacity: 1;
 			overflow: visible;
 			padding: 0;
@@ -64,11 +64,11 @@
 			border-radius: $global-border-radius-controls;
 			box-shadow: none;
 			color: color("text-lightest");
-			font-size: fs("lg");
+			font-size: $global-font-size-lg;
 			transition: t(background box-shadow color opacity, "link");
 
 			@include layout {
-				@include size(space("button-lg"));
+				@include size($global-space-button-lg);
 				align-items: center;
 				cursor: pointer;
 				display: flex;
@@ -86,7 +86,7 @@
 			}
 
 			@include layout(compact) {
-				@include size(space("button-lg"));
+				@include size($global-space-button-lg);
 			}
 
 			&:hover {

@@ -8,7 +8,7 @@
 
 			@include layout {
 				margin: 0;
-				padding: p("base") p("sm");
+				padding: $global-space-base $global-space-sm;
 			}
 		}
 
@@ -16,14 +16,14 @@
 			@include layout {
 				display: flex;
 				flex-direction: column;
-				gap: space("base");
+				gap: $global-space-base;
 			}
 		}
 
 		.compendium-list {
 			display: flex;
 			flex-direction: column;
-			gap: space("xs");
+			gap: $global-space-xs;
 
 			.directory-item {
 				@include layout {
@@ -50,7 +50,7 @@
 
 							i {
 								margin: 0;
-								margin-inline-start: m("base");
+								margin-inline-start: $global-space-base;
 							}
 						}
 					}
@@ -61,8 +61,8 @@
 
 					@include layout {
 						flex: 0 0 auto;
-						font-size: fs("md");
-						padding-block-end: m("base");
+						font-size: $global-font-size-md;
+						padding-block-end: $global-space-base;
 						width: 100%;
 					}
 				}

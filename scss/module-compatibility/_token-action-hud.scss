@@ -17,7 +17,7 @@
 		text-shadow: 2px 2px 2px color("black");
 
 		@include layout {
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 			margin: 0;
 			margin-inline-start: to-rem(28px);
 			padding: 0;
@@ -39,7 +39,7 @@
 			text-shadow: 2px 2px 2px color("black");
 
 			@include layout {
-				font-size: fs("sm");
+				font-size: $global-font-size-sm;
 				padding: initial;
 				margin: initial;
 				text-align: initial;
@@ -49,7 +49,7 @@
 
 	#tah-categories {
 		@include layout {
-			margin-inline-start: m("base");
+			margin-inline-start: $global-space-base;
 		}
 	}
 
@@ -58,7 +58,7 @@
 		@extend %primary-button;
 
 		@include layout {
-			margin-inline-start: m("base");
+			margin-inline-start: $global-space-base;
 
 			> .fa {
 				display: none;
@@ -71,18 +71,18 @@
 		text-shadow: 2px 2px 2px color("black");
 
 		@include layout {
-			font-size: fs("sm");
+			font-size: $global-font-size-sm;
 			line-height: initial;
 			padding: 0;
-			padding-block-start: p("sm");
+			padding-block-start: $global-space-sm;
 		}
 	}
 
 	.tah-action {
 		@include layout {
 			margin: 0;
-			margin-block-end: m("base");
-			margin-inline-start: m("base");
+			margin-block-end: $global-space-base;
+			margin-inline-start: $global-space-base;
 			padding: 0;
 		}
 
@@ -94,7 +94,7 @@
 				text-shadow: none;
 
 				@include layout {
-					margin-inline-start: m("base");
+					margin-inline-start: $global-space-base;
 				}
 			}
 
@@ -106,7 +106,7 @@
 					border-radius: 0;
 					display: inline-block;
 					margin: 0;
-					margin-inline-end: m("sm");
+					margin-inline-end: $global-space-sm;
 					padding: 0;
 				}
 			}
@@ -116,19 +116,19 @@
 	.tah-content {
 		@include layout {
 			left: to-rem(-154px);
-			padding: p("sm") 0;
+			padding: $global-space-sm 0;
 		}
 	}
 }
 
 .token-action-hud-taginput {
 	@include layout {
-		margin: m("sm") 0;
+		margin: $global-space-sm 0;
 	}
 }
 
 #token-action-hud-index {
 	@include layout {
-		margin-inline-end: m("base");
+		margin-inline-end: $global-space-base;
 	}
 }

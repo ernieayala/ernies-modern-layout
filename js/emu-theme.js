@@ -57,3 +57,23 @@ export const WESTERN = {
 	colorTextLightest: '#ffffff',
 	colorTextDarker: '#000000'
 }
+
+export const ALIEN = {
+	colorPrimary: '#0fbd7d',
+	colorBackground: '#2e2e2e',
+	colorBackgroundLightest: '#151515',
+	colorBackgroundLight: '#4a4a4a',
+	colorBackgroundDarkest: '#151515',
+	colorBackgroundButton: '#444444',
+	colorBackgroundChatMessage: '#333333',
+	colorBackgroundChatMessageWhisper: '#192628',
+	colorBackgroundChatMessageBlind: '#293E40',
+	colorBorder: '#4a4a4a',
+	colorBorderLighter: '#7d7d7d',
+	colorFolderHeader: '#4a4a4a',
+	colorFolderDirectory: '#151515',
+	colorFolderSubdirectory: '#7d7d7d',
+	colorText: '#f1f1f1',
+	colorTextLightest: '#fafafa',
+	colorTextDarker: '#cbcbcb'
+}

@@ -1,11 +1,11 @@
 .-emu-layout body.-emu.system-sfrpg #sidebar .sidebar-tab .directory-footer .browser-group, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sidebar-tab .directory-footer .browser-group {
-  gap: var(--emu-space-base);
+  gap: var(--emu-space-base, 4px);
   width: 100%; }
 
 .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card {
-  font-size: var(--emu-font-size-sm); }
+  font-size: var(--emu-font-size-sm, 12px); }
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3,
@@ -29,7 +29,7 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 {
     body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3 > span, .-emu-layout
     body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button > span, .-emu-layout
     body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 > span {
-      padding: 0 var(--emu-space-base); }
+      padding: 0 var(--emu-space-base, 4px); }
 
 .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 {
@@ -38,20 +38,20 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 {
 
 .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button + button, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button + button {
-  margin-block-start: var(--emu-space-base); }
+  margin-block-start: var(--emu-space-base, 4px); }
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header {
   border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
   border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
-  margin-block-end: var(--emu-space-base); }
+  margin-block-end: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header, .-emu-layout
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header {
-    padding: var(--emu-space-base) 0; }
+    padding: var(--emu-space-base, 4px) 0; }
 
 .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-content, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-content {
-  margin: var(--emu-space-base) 0; }
+  margin: var(--emu-space-base, 4px) 0; }
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
@@ -60,24 +60,24 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--emu-space-base);
-    margin-block-start: var(--emu-space-base);
-    padding-block-start: var(--emu-space-base); }
+    gap: var(--emu-space-base, 4px);
+    margin-block-start: var(--emu-space-base, 4px);
+    padding-block-start: var(--emu-space-base, 4px); }
   body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer span,
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer span {
     border-inline-end: rgba(var(--color-border), 1) 1px solid; }
     .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer span, .-emu-layout
     body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer span {
-      font-size: var(--emu-font-size-xs);
+      font-size: var(--emu-font-size-xs, 10px);
       padding: 0;
-      padding-inline-end: var(--emu-space-base); }
+      padding-inline-end: var(--emu-space-base, 4px); }
     body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer span:last-child,
     body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer span:last-child {
       border-inline-end: none; }
 
 .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons, .-emu-layout
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons {
-  margin: var(--emu-space-base) 0; }
+  margin: var(--emu-space-base, 4px) 0; }
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button {
@@ -103,7 +103,7 @@ body.-emu.system-sfrpg .sfrpg.sheet .sheet-header img.profile {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding-inline-end: var(--emu-space-sm);
+  padding-inline-end: var(--emu-space-sm, 8px);
   position: relative; }
 
 body.-emu.system-sfrpg .item-browser .sortcontainer {
@@ -111,10 +111,10 @@ body.-emu.system-sfrpg .item-browser .sortcontainer {
   border-radius: 0; }
   .-emu-layout body.-emu.system-sfrpg .item-browser .sortcontainer {
     margin: 0;
-    margin-block-end: var(--emu-space-base);
+    margin-block-end: var(--emu-space-base, 4px);
     padding: 0; }
     .-emu-layout body.-emu.system-sfrpg .item-browser .sortcontainer#tagfilter input[type="text"] {
-      height: var(--emu-space-button); }
+      height: var(--emu-space-button, 32px); }
     .-emu-layout body.-emu.system-sfrpg .item-browser .sortcontainer dl dt {
       padding-inline-start: 0; }
 
@@ -124,17 +124,17 @@ body.-emu.system-sfrpg .item-browser .hint {
   border-radius: 0;
   color: rgba(var(--color-white), 1); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .hint {
-    margin: var(--emu-space-xs) 0;
-    padding: var(--emu-space-base); }
+    margin: var(--emu-space-xs, 2px) 0;
+    padding: var(--emu-space-base, 4px); }
 
 body.-emu.system-sfrpg .item-browser .item-browser-filters {
-  margin-block-start: var(--emu-space-base); }
+  margin-block-start: var(--emu-space-base, 4px); }
   body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer {
     border: none;
     border-radius: 0; }
     .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer {
       margin: 0;
-      margin-block-end: var(--emu-space-base);
+      margin-block-end: var(--emu-space-base, 4px);
       padding: 0; }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer:last-child {
         margin-block-end: 0; }
@@ -143,11 +143,11 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
       border-block-end: rgba(var(--color-border), 1) 1px solid;
       color: rgba(var(--color-text-lightest), 1); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer h3 {
-        padding: var(--emu-space-base) var(--emu-space-sm); }
+        padding: var(--emu-space-base, 4px) var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer dl {
       display: flex;
       flex-wrap: wrap;
-      gap: var(--emu-space-base); }
+      gap: var(--emu-space-base, 4px); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer dl dt {
         display: inline-flex;
         flex: 0 0 auto;
@@ -162,14 +162,14 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
 
 .-emu-layout body.-emu.system-sfrpg .item-browser .header {
   flex: 0 0 auto;
-  padding: var(--emu-space-xs) var(--emu-space-md); }
+  padding: var(--emu-space-xs, 2px) var(--emu-space-md, 24px); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .header .item-image {
     height: auto;
-    width: var(--emu-space-button); }
+    width: var(--emu-space-button, 32px); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .header .item-sort-link {
     height: auto;
     margin: 0;
-    padding-inline-start: var(--emu-space-base); }
+    padding-inline-start: var(--emu-space-base, 4px); }
 
 body.-emu.system-sfrpg .item-browser .header .item-sort-link:hover {
   color: rgba(var(--color-primary), 1);
@@ -179,24 +179,24 @@ body.-emu.system-sfrpg .item-browser .item-list {
   background-color: transparent; }
   .-emu-layout body.-emu.system-sfrpg .item-browser .item-list {
     border-radius: 0;
-    margin-block-start: var(--emu-space-base);
-    padding: var(--emu-space-sm); }
+    margin-block-start: var(--emu-space-base, 4px);
+    padding: var(--emu-space-sm, 8px); }
   body.-emu.system-sfrpg .item-browser .item-list li {
     border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
     .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li {
       line-height: initial;
       margin: 0;
-      padding: var(--emu-space-xs) var(--emu-space-base); }
+      padding: var(--emu-space-xs, 2px) var(--emu-space-base, 4px); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li .item-image {
-        height: var(--emu-space-button);
-        max-width: var(--emu-space-button); }
+        height: var(--emu-space-button, 32px);
+        max-width: var(--emu-space-button, 32px); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li .item-name,
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li .item-tags {
         align-items: center;
         display: inline-flex;
         height: auto;
         margin: 0;
-        padding-inline-start: var(--emu-space-base); }
+        padding-inline-start: var(--emu-space-base, 4px); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li .item-tags {
         justify-content: flex-end; }
     body.-emu.system-sfrpg .item-browser .item-list li:hover {

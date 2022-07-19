@@ -11,9 +11,9 @@
 		color: color("text");
 
 		@include layout {
-			font-size: fs("xl");
+			font-size: $global-font-size-xl;
 			height: auto;
-			padding: p("md");
+			padding: $global-space-md;
 		}
 	}
 }
@@ -29,7 +29,7 @@ ul.command-menu {
 		@extend %reset-list;
 		display: flex;
 		flex-direction: column;
-		padding: p("sm");
+		padding: $global-space-sm;
 		z-index: z("tooltip");
 	}
 
@@ -37,8 +37,8 @@ ul.command-menu {
 		@extend %primary-button;
 
 		@include layout {
-			font-size: fs("xl");
-			margin-block-end: m("sm");
+			font-size: $global-font-size-xl;
+			margin-block-end: $global-space-sm;
 		}
 
 		&:last-child {
@@ -72,11 +72,11 @@ ul.command-menu {
 
 		@include layout {
 			@include absolute(bottom 0 left 0);
-			@include size(space("button-xs"));
+			@include size($global-space-button-xs);
 			align-items: center;
 			cursor: pointer;
 			display: inline-flex;
-			font-size: fs("md");
+			font-size: $global-font-size-md;
 			justify-content: center;
 			margin: 0;
 			padding: 0;

@@ -10,9 +10,9 @@
 			display: flex;
 			flex: 1 1 auto;
 			flex-direction: column;
-			gap: space("base");
+			gap: $global-space-base;
 			height: 100%;
-			padding: p("sm");
+			padding: $global-space-sm;
 			position: relative;
 		}
 	}
@@ -37,7 +37,7 @@
 	// 		// border-block-start: 1px solid color("border");
 
 	// 		@include layout {
-	// 			bottom: calc(-1 * #{space("sm")});
+	// 			bottom: calc(-1 * #{$global-space-sm});
 	// 			content: "";
 	// 			flex: 0 0 auto;
 	// 			height: to-rem(46px);
@@ -77,7 +77,7 @@
 	// 	@include layout {
 	// 		overflow-x: hidden;
 	// 		overflow-y: auto;
-	// 		padding: p("sm");
+	// 		padding: $global-space-sm;
 	// 		position: relative;
 	// 	}
 	// }

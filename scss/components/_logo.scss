@@ -4,8 +4,8 @@
 		border: none;
 		border-radius: 0;
 		height: auto !important;
-		margin-block-start: space("sm");
-		margin-inline-start: space("sm");
+		margin-block-start: $global-space-sm;
+		margin-inline-start: $global-space-sm;
 		max-height: to-rem(44px);
 		max-width: to-rem(88px);
 		pointer-events: all;

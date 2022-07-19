@@ -9,7 +9,7 @@
 
 				li {
 					@include layout {
-						margin-block-end: m("base");
+						margin-block-end: $global-space-base;
 
 						&:last-child {
 							margin-block-end: 0;
@@ -30,11 +30,11 @@
 				label.checkbox {
 					@include layout {
 						height: auto;
-						font-size: fs("md");
+						font-size: $global-font-size-md;
 						line-height: initial;
 
 						> input {
-							margin-inline-end: m("base");
+							margin-inline-end: $global-space-base;
 						}
 					}
 				}

@@ -1,7 +1,7 @@
 #hud {
 	.placeable-hud .col {
 		@include layout {
-			gap: space("base");
+			gap: $global-space-base;
 		}
 	}
 
@@ -11,8 +11,8 @@
 		border: b("border");
 
 		@include layout {
-			font-size: fs("xl");
-			height: space("button-lg");
+			font-size: $global-font-size-xl;
+			height: $global-space-button-lg;
 		}
 	}
 
@@ -24,7 +24,7 @@
 
 		&.elevation {
 			@include layout {
-				@include size(space("button-lg"));
+				@include size($global-space-button-lg);
 				flex: 0 0 auto;
 				padding: 0;
 
@@ -66,13 +66,13 @@
 		transition: t(background box-shadow color opacity, "link");
 
 		@include layout {
-			@include size(space("button-lg"));
+			@include size($global-space-button-lg);
 			align-items: center;
 			cursor: pointer;
 			display: flex;
 			justify-content: center;
 			flex: 0 0 auto;
-			font-size: fs("lg");
+			font-size: $global-font-size-lg;
 			line-height: initial;
 			margin: 0;
 			pointer-events: all;
@@ -116,7 +116,7 @@
 			color: color("text-lightest");
 
 			@include layout {
-				padding: p("base");
+				padding: $global-space-base;
 				left: to-rem(48px);
 
 				.effect-control {

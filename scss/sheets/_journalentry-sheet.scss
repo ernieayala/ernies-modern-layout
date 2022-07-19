@@ -19,7 +19,7 @@
 			}
 
 			> button {
-				height: space("button");
+				height: $global-space-button;
 				margin-block-start: 0;
 				max-width: 100%;
 			}
@@ -49,11 +49,11 @@
 
 		@include layout {
 			display: inline-flex;
-			height: space("button");
+			height: $global-space-button;
 			position: absolute;
 			right: 0;
 			top: to-rem(-36px);
-			width: space("button");
+			width: $global-space-button;
 
 			> i {
 				margin: 0;

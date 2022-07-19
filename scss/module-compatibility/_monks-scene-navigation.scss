@@ -1,7 +1,7 @@
 #navigation .monks-scene-navigation {
 	@include layout {
 		height: auto;
-		margin-block-end: m("base");
+		margin-block-end: $global-space-base;
 		padding: 0;
 	}
 
@@ -26,8 +26,8 @@
 				flex: 0 0 auto;
 				height: auto;
 				line-height: initial;
-				margin-block-end: space("base");
-				margin-inline-end: space("base");
+				margin-block-end: $global-space-base;
+				margin-inline-end: $global-space-base;
 				max-width: initial;
 				min-width: initial;
 				padding: 0;
@@ -65,7 +65,7 @@
 					margin: 0;
 					max-width: to-rem(240px);
 					min-width: to-rem(112px);
-					padding: 0 p("md");
+					padding: 0 $global-space-md;
 					position: relative;
 					text-align: center;
 				}
@@ -90,7 +90,7 @@
 					height: auto;
 					line-height: 1;
 					margin: 0;
-					margin-inline-end: m("xs");
+					margin-inline-end: $global-space-xs;
 					width: auto;
 				}
 			}
@@ -129,11 +129,11 @@
 			@include layout {
 				align-items: center;
 				display: flex;
-				margin-inline-end: m("md");
-				padding: 0 p("md");
+				margin-inline-end: $global-space-md;
+				padding: 0 $global-space-md;
 
 				> i {
-					margin-inline-end: m("base");
+					margin-inline-end: $global-space-base;
 				}
 			}
 		}
@@ -148,7 +148,7 @@
 				max-width: 80%;
 
 				i {
-					margin-inline-end: m("base");
+					margin-inline-end: $global-space-base;
 				}
 			}
 		}
@@ -160,12 +160,12 @@
 			@include layout {
 				align-items: center;
 				display: inline-flex;
-				height: space("button-sm");
+				height: $global-space-button-sm;
 				left: auto;
-				padding: 0 p("base");
+				padding: 0 $global-space-base;
 				position: absolute;
 				right: 0;
-				top: space("base");
+				top: $global-space-base;
 				width: auto;
 
 				> i {

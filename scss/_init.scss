@@ -43,7 +43,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: #{space("sm")};
+	width: #{$global-space-sm};
 }
 
 ::-webkit-scrollbar-track {
@@ -89,7 +89,7 @@ body {
 	box-shadow: none;
 
 	@include layout {
-		font-size: fs("md");
+		font-size: $global-font-size-md;
 	}
 
 	::selection {

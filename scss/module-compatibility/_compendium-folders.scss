@@ -13,7 +13,7 @@
 						cursor: pointer;
 						line-height: 1 !important;
 						margin: 0 !important;
-						padding: 0 p("sm") !important;
+						padding: 0 $global-space-sm !important;
 
 						&:hover {
 							background-color: color("primary");

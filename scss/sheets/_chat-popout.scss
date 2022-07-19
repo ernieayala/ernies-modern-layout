@@ -10,7 +10,7 @@
 
 			@include layout {
 				margin: 0;
-				padding: p("sm");
+				padding: $global-space-sm;
 			}
 		}
 	}

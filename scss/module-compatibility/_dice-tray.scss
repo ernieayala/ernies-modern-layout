@@ -11,7 +11,7 @@
 
 			> .flexrow {
 				@include layout {
-					gap: space("base");
+					gap: $global-space-base;
 					margin: 0;
 					width: 100%;
 				}
@@ -32,7 +32,7 @@
 
 			button.dice-tray__button {
 				@include layout {
-					padding: p("base") p("sm");
+					padding: $global-space-base $global-space-sm;
 				}
 
 				&:hover svg * {
@@ -52,13 +52,13 @@
 
 				@include layout {
 					@include absolute(left 0 bottom 100%);
-					@include size(100%, space("button-xs"));
+					@include size(100%, $global-space-button-xs);
 					align-items: center;
 					display: flex;
-					font-size: fs("md");
+					font-size: $global-font-size-md;
 					justify-content: center;
 					line-height: 1;
-					max-height: space("button-xs");
+					max-height: $global-space-button-xs;
 					overflow: hidden;
 					width: 100%;
 
@@ -71,7 +71,7 @@
 			button.dice-tray__math,
 			button.dice-tray__roll {
 				@include layout {
-					@include size(auto, space("button"));
+					@include size(auto, $global-space-button);
 					flex: 0 0 auto;
 				}
 			}
@@ -79,7 +79,7 @@
 			button.dice-tray__math--add,
 			button.dice-tray__math--sub {
 				@include layout {
-					min-width: space("button");
+					min-width: $global-space-button;
 				}
 			}
 
@@ -104,14 +104,14 @@
 
 			.dice-tray__stacked {
 				@include layout {
-					height: space("button");
+					height: $global-space-button;
 					margin: 0;
 				}
 			}
 
 			button.dice-tray__ad {
 				@include layout {
-					font-size: fs("xs");
+					font-size: $global-font-size-xs;
 					margin: 0;
 					padding: 0;
 				}
@@ -129,8 +129,8 @@
 		@include layout {
 			margin: 0;
 			.dice-calculator__input > label {
-				font-size: fs("lg");
-				padding-inline-end: p("sm");
+				font-size: $global-font-size-lg;
+				padding-inline-end: $global-space-sm;
 			}
 		}
 

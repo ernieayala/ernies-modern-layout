@@ -9,7 +9,7 @@
 
 		h3 {
 			@include layout {
-				font-size: fs("lg");
+				font-size: $global-font-size-lg;
 				font-weight: normal;
 				margin: 0;
 				width: 100%;
@@ -25,12 +25,12 @@
 				@extend %primary-button;
 
 				@include layout {
-					@include size(100%, space("button-sm"));
-					font-size: fs("sm");
-					padding: p("base");
+					@include size(100%, $global-space-button-sm);
+					font-size: $global-font-size-sm;
+					padding: $global-space-base;
 
 					> span {
-						margin-inline-end: m("base");
+						margin-inline-end: $global-space-base;
 					}
 				}
 			}
@@ -63,7 +63,7 @@
 
 		section + section {
 			@include layout {
-				margin-block-start: m("base");
+				margin-block-start: $global-space-base;
 			}
 		}
 
@@ -76,7 +76,7 @@
 		.add-attribute {
 			@include layout {
 				display: flex;
-				margin-block-start: m("sm");
+				margin-block-start: $global-space-sm;
 			}
 		}
 
@@ -88,7 +88,7 @@
 				width: 1px; // super hack
 
 				> select {
-					margin-block-start: m("base");
+					margin-block-start: $global-space-base;
 					width: auto;
 				}
 			}
@@ -99,7 +99,7 @@
 		input[type="checkbox"] + label {
 			@include layout {
 				flex: 1 1 40%;
-				padding-inline-start: p("sm");
+				padding-inline-start: $global-space-sm;
 			}
 		}
 	}

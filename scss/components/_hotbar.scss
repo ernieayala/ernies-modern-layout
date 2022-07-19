@@ -3,7 +3,7 @@
 		@include size(auto);
 		display: flex;
 		flex-wrap: nowrap;
-		margin-block-end: space("sm");
+		margin-block-end: $global-space-sm;
 		pointer-events: none;
 		transition: t(opacity, "link");
 		z-index: z("fixed");
@@ -26,10 +26,10 @@
 
 		&::before {
 			content: "";
-			bottom: calc(-1 * #{space("sm")});
-			left: calc(-1 * #{space("sm")});
-			right: calc(-1 * #{space("sm")});
-			top: calc(-1 * #{space("sm")});
+			bottom: calc(-1 * #{$global-space-sm});
+			left: calc(-1 * #{$global-space-sm});
+			right: calc(-1 * #{$global-space-sm});
+			top: calc(-1 * #{$global-space-sm});
 			position: absolute;
 		}
 	}
@@ -90,7 +90,7 @@
 			@include layout {
 				flex: 0 0 auto;
 				flex-direction: column;
-				margin-inline-end: m("base");
+				margin-inline-end: $global-space-base;
 			}
 
 			#macro-directory,
@@ -115,7 +115,7 @@
 		&:last-child {
 			@include layout {
 				float: left;
-				margin-inline-start: m("base");
+				margin-inline-start: $global-space-base;
 			}
 		}
 
@@ -142,7 +142,7 @@
 				cursor: pointer;
 				display: flex;
 				flex: 0 0 auto;
-				font-size: fs("lg");
+				font-size: $global-font-size-lg;
 				justify-content: center;
 				line-height: initial;
 				position: relative;
@@ -167,7 +167,7 @@
 
 		.page-control {
 			@include layout(compact) {
-				font-size: fs("xs");
+				font-size: $global-font-size-xs;
 			}
 		}
 
@@ -180,7 +180,7 @@
 				align-items: center;
 				display: flex;
 				flex: 1 1 auto;
-				font-size: fs("md");
+				font-size: $global-font-size-md;
 				justify-content: center;
 				line-height: initial;
 			}
@@ -243,7 +243,7 @@
 			text-shadow: 2px 2px  2px color("black");
 
 			@include layout {
-				@include absolute(top space("xs") right space("base"));
+				@include absolute(top $global-space-xs right $global-space-base);
 				padding: 0;
 				z-index: 1;
 			}
@@ -273,13 +273,13 @@
 			color: color("text-lightest");
 
 			@include layout {
-				font-size: fs("md");
+				font-size: $global-font-size-md;
 				height: auto;
 				left: 0;
 				line-height: auto;
-				margin-block-end: m("base");
+				margin-block-end: $global-space-base;
 				min-width: to-rem(56px);
-				padding: p("base") p("sm");
+				padding: $global-space-base $global-space-sm;
 			}
 		}
 	}

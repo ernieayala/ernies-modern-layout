@@ -5,7 +5,7 @@
 			display: flex !important;
 			flex: 0 0 auto;
 			padding: 0 !important;
-			width: space("button-sm");
+			width: $global-space-button-sm;
 
 			> i,
 			> span.fas {
@@ -22,7 +22,7 @@
 			padding: 0;
 
 			.w-100 {
-				gap: space("base");
+				gap: $global-space-base;
 
 				> * {
 					margin: 0 !important;
@@ -37,7 +37,7 @@
 		background: none;
 
 		@include layout {
-			gap: space("md");
+			gap: $global-space-md;
 		}
 
 		> .mx-2 {
@@ -53,13 +53,13 @@
 
 		.ve-flex-col {
 			@include layout {
-				gap: space("base");
+				gap: $global-space-base;
 			}
 		}
 
 		.imp-wiz__row-mode {
 			@include layout {
-				gap: space("base");
+				gap: $global-space-base;
 				margin: 0 !important;
 			}
 		}
@@ -81,7 +81,7 @@
 		}
 
 		.btn-5et {
-			font-size: fs("md") !important;
+			font-size: $global-font-size-md !important;
 			overflow: hidden;
 			white-space: normal;
 		}

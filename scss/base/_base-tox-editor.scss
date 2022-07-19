@@ -6,7 +6,7 @@
 	background-color: color("white");
 
 	@include layout {
-		padding: p("base");
+		padding: $global-space-base;
 	}
 }
 
@@ -15,10 +15,10 @@
 	color: color("text");
 
 	@include layout {
-		font-size: fs("sm");
-		height: space("button-sm");
-		margin-block-start: m("xs");
-		padding: 0 p("base");
+		font-size: $global-font-size-sm;
+		height: $global-space-button-sm;
+		margin-block-start: $global-space-xs;
+		padding: 0 $global-space-base;
 	}
 
 	&:hover {

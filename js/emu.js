@@ -261,7 +261,8 @@ class emuForm extends FormApplication {
 					'custom': game.i18n.localize('emu.theme-preset-custom'),
 					'foundry': 'Foundry',
 					'dark': game.i18n.localize('emu.theme-preset-dark'),
-					'western': game.i18n.localize('emu.theme-preset-western')
+					'western': game.i18n.localize('emu.theme-preset-western'),
+					'alien': game.i18n.localize('emu.theme-preset-alien')
 				},
 				fontFamilyList: FONTS.GOOGLE_FONTS
 			},
@@ -294,6 +295,10 @@ class emuForm extends FormApplication {
 
 		if($('select[name="themePreset"]').val() === 'western') {
 			for (const [key, value] of Object.entries(THEME.WESTERN)) { $(`input[name="${key}"]`).prop('value', value); }
+		}
+
+		if($('select[name="themePreset"]').val() === 'alien') {
+			for (const [key, value] of Object.entries(THEME.ALIEN)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
 	}
 

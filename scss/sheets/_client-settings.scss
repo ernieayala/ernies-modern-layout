@@ -25,8 +25,8 @@
 	section.content {
 		h2.module-header {
 			@include layout {
-				margin-block-start: m("md");
-				margin-block-end: m("base");
+				margin-block-start: $global-space-md;
+				margin-block-end: $global-space-base;
 			}
 		}
 
@@ -34,7 +34,7 @@
 			> button {
 				@include layout {
 					height: initial;
-					font-size: fs("lg");
+					font-size: $global-font-size-lg;
 				}
 
 				label {
@@ -67,7 +67,7 @@
 	.sheet-footer {
 		@include layout {
 			flex: 0 0 auto;
-			gap: space("base");
+			gap: $global-space-base;
 		}
 	}
 }

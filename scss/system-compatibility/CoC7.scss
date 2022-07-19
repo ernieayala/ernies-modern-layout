@@ -1,85 +1,100 @@
-// @import "../base";
+@import "../base";
+body#{$emu}.system-CoC7 {
+	.coc7.chat-card {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			font-size: $global-font-size-sm;
+			gap: $global-space-base;
+		}
 
-// body#{$emu} {
-// 	.coc7 {
-// 		&.actor.window-app,
-// 		&.item.window-app {
-// 			@include layout {
-// 				.window-content {
-// 					padding: 0;
-// 				}
-// 			}
-// 		}
+		.card-header {
+			border-block-end: none;
+			border-block-start: b(border);
 
-// 		&.dialogue.actor-importer {
-// 			.dialog-buttons {
-// 				@include layout {
-// 					display: flex;
-// 				}
-// 			}
-// 		}
+			@include layout {
+				gap: $global-space-base;
+				padding: $global-space-base 0;
+			}
 
-// 		&#link-creation {
-// 			form#link-creation {
-// 				> button {
-// 					@include layout {
-// 						margin: 0;
-// 						margin-block-start: m("base");
-// 					}
-// 				}
-// 			}
+			h3:hover {
+				color: color("primary");
+				text-shadow: none;
+			}
+		}
+	}
 
-// 			.form-group label {
-// 				border: none;
-// 				color: color("text");
-// 				font-weight: normal;
+	.coc7 {
+		.panel-switch,
+		.radio-switch,
+		.toggle-switch,
+		.weapon-property {
+			@include layout {
+				border-radius: $global-border-radius-default;
+				display: inline-flex;
+				font-size: $global-font-size-xs;
+				font-style: italic;
+				line-height: 1;
+				margin: 0;
+				padding: $global-space-base;
+			}
 
-// 				@include layout {
-// 					height: auto;
-// 					padding: 0;
-// 					padding-inline-end: p("base");
-// 				}
+			background: transparent;
+			border: b("border");
+			color: color("text");
 
-// 				&.checkbox {
-// 					> input {
-// 						margin-inline-end: m("sm");
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
+			&.switched-on {
+				background-color: color("primary");
+				box-shadow: none;
+				color: color("text-lightest");
+			}
+		}
 
-// 	#controls {
-// 		.scene-control + div {
-// 			@include layout {
-// 				margin-block-start: m("base");
-// 			}
+		.radio-switch,
+		.toggle-switch {
+			@include layout {
+				cursor: pointer;
+			}
+		}
 
-// 			.custom-control {
-// 				background-color: color("background-darkest", 0.8) !important;
-// 				border: none !important;
+		.tag {
+			@include layout {
+				border-radius: $global-border-radius-default;
+				display: inline-flex;
+				font-size: $global-font-size-xs;
+				font-style: italic;
+				line-height: 1;
+				margin: 0;
+				margin-inline-end: $global-space-xs;
+				padding: $global-space-base;
+			}
 
-// 				&.active {
-// 					background-color: color("primary") !important;
-// 					box-shadow: inset 0 0 0 2px color("white") !important;
-// 					color: color("text-lightest") !important;
-// 				}
+			background: color("background-light");
+			border: b("border");
+			color: color("text-lightest");
+		}
+	}
 
-// 				&:hover {
-// 					box-shadow: inset 0 0 0 2px color("white") !important;
-// 				}
-// 			}
-// 		}
-// 	}
+	.chat-card-v2.roll-card ol li.actor-roll .roll-details .header {
+		height: auto;
+	}
 
-// 	.dialog {
-// 		#bonus-roll-form {
-// 			> .flexcol > .flexrow {
-// 				@include layout {
-// 					align-items: center;
-// 					margin-block-end: m("base");
-// 				}
-// 			}
-// 		}
-// 	}
-// }
+	.chat-card-v2.roll-card ol li.actor-roll.won {
+		border: b("primary");
+	}
+
+	.chat-card-v2.roll-card h4.card-result {
+		background-color: color("background", 0.1);
+		box-shadow: none;
+		border: b("border");
+		border-radius: $global-border-radius-default;
+		color: inherit;
+
+		@include layout {
+			line-height: initial;
+			font-size: inherit;
+			font-weight: normal;
+			margin: 0;
+		}
+	}
+}

@@ -471,7 +471,7 @@ body#{$emu}.system-dnd5e {
 
 				input[type="checkbox"] {
 					margin: 0;
-					margin-inline-end: m("sm");
+					margin-inline-end: $global-space-sm;
 				}
 			}
 		}
@@ -506,7 +506,7 @@ body#{$emu}.system-dnd5e {
 		.trait-list {
 			.radio {
 				input {
-					margin-inline-end: space("base");
+					margin-inline-end: $global-space-base;
 				}
 			}
 		}
@@ -515,10 +515,10 @@ body#{$emu}.system-dnd5e {
 	.hd-config.dialog {
 		.window-content {
 			@include layout {
-				padding: p("sm");
+				padding: $global-space-sm;
 
 				.form-group {
-					padding: p("sm") 0;
+					padding: $global-space-sm 0;
 
 					.form-fields {
 						flex-wrap: nowrap;
@@ -529,13 +529,13 @@ body#{$emu}.system-dnd5e {
 							}
 
 							+ input {
-								margin-inline-start: m("base");
+								margin-inline-start: $global-space-base;
 								order: initial;
 							}
 						}
 
 						.sep {
-							margin-inline-start: m("base");
+							margin-inline-start: $global-space-base;
 						}
 
 						.current,
@@ -550,7 +550,7 @@ body#{$emu}.system-dnd5e {
 				}
 
 				.dialog-buttons {
-					margin-block-start: m("base");
+					margin-block-start: $global-space-base;
 					padding: 0;
 				}
 			}
@@ -567,7 +567,7 @@ body#{$emu}.system-dnd5e {
 
 	#short-rest-hd {
 		@include layout {
-			padding-block-start: p("sm");
+			padding-block-start: $global-space-sm;
 
 			.form-fields select {
 				flex: 1 1 auto;
@@ -579,7 +579,7 @@ body#{$emu}.system-dnd5e {
 	.sidebar-popout {
 		.dnd5e.chat-card.item-card {
 			@include layout {
-				font-size: fs("sm");
+				font-size: $global-font-size-sm;
 			}
 
 			.card-header {
@@ -587,12 +587,12 @@ body#{$emu}.system-dnd5e {
 				border-block-end: b("border-lighter");
 
 				@include layout {
-					margin-block-end: m("base");
-					padding: p("base") 0;
+					margin-block-end: $global-space-base;
+					padding: $global-space-base 0;
 
 					img {
 						flex: 0 0 to-rem(36px);
-						margin-inline-end: m("base");
+						margin-inline-end: $global-space-base;
 					}
 				}
 
@@ -612,19 +612,19 @@ body#{$emu}.system-dnd5e {
 
 			.card-content {
 				@include layout {
-					margin: m("base") 0;
+					margin: $global-space-base 0;
 				}
 
 				h3 {
 					@include layout {
-						font-size: fs("sm");
+						font-size: $global-font-size-sm;
 					}
 				}
 			}
 
 			.card-buttons {
 				@include layout {
-					margin: m("base") 0;
+					margin: $global-space-base 0;
 				}
 
 				button {
@@ -636,7 +636,7 @@ body#{$emu}.system-dnd5e {
 
 					+ button {
 						@include layout {
-							margin-block-start: m("base");
+							margin-block-start: $global-space-base;
 						}
 					}
 				}
@@ -646,17 +646,17 @@ body#{$emu}.system-dnd5e {
 				border-block-start: b("border-lighter");
 
 				@include layout {
-					margin-block-start: m("base");
-					padding-block-start: p("base");
+					margin-block-start: $global-space-base;
+					padding-block-start: $global-space-base;
 				}
 
 				span {
 					border-inline-end: b("border");
 
 					@include layout {
-						font-size: fs("xs");
-						margin-inline-end: m("xs");
-						padding-inline-end: p("base");
+						font-size: $global-font-size-xs;
+						margin-inline-end: $global-space-xs;
+						padding-inline-end: $global-space-base;
 					}
 
 					&:last-child {

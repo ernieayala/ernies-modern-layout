@@ -7,7 +7,7 @@
 
 	@include layout {
 		box-sizing: border-box;
-		font-size: fs("lg");
+		font-size: $global-font-size-lg;
 		line-height: 1;
 		z-index: z("fixed");
 	}
@@ -58,17 +58,17 @@
 					padding: 0;
 
 					input {
-						margin: 0 m("base");
+						margin: 0 $global-space-base;
 						width: auto;
 					}
 
 					.option {
 						align-items: center;
 						display: flex;
-						margin-inline-end: m("sm");
+						margin-inline-end: $global-space-sm;
 
 						> i {
-							margin: 0 m("base");
+							margin: 0 $global-space-base;
 						}
 					}
 				}
@@ -79,7 +79,7 @@
 
 				footer {
 					.actions {
-						margin-block-start: m("base");
+						margin-block-start: $global-space-base;
 
 						&:empty {
 							display: none;
@@ -94,14 +94,14 @@
 				grid-area: logo;
 				max-width: initial;
 				padding: 0;
-				margin-block-start: m("sm");
-				margin-inline-end: m("sm");
+				margin-block-start: $global-space-sm;
+				margin-inline-end: $global-space-sm;
 			}
 
 			> p {
 				grid-area: logo-text;
 				margin: 0;
-				margin-block-start: m("sm");
+				margin-block-start: $global-space-sm;
 			}
 		}
 	}
@@ -109,12 +109,12 @@
 	&.mtte .list {
 		@include layout {
 			height: auto;
-			margin-block-start: m("base");
+			margin-block-start: $global-space-base;
 			overflow: auto;
 		}
 
 		> div {
-			padding: p("xs") p("base");
+			padding: $global-space-xs $global-space-base;
 
 			@include layout {
 				background-color: transparent;
@@ -151,7 +151,7 @@
 				}
 
 				> input {
-					margin-inline-end: m("sm");
+					margin-inline-end: $global-space-sm;
 				}
 			}
 		}
@@ -166,7 +166,7 @@
 			@extend %primary-button;
 
 			@include layout {
-				margin-inline-start: m("base");
+				margin-inline-start: $global-space-base;
 				width: auto;
 
 				> i {
