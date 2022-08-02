@@ -3,7 +3,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
 
 # Ernie's Modern UI
-**Compatibility:** FoundryVTT 9
+**Compatibility:** FoundryVTT 10
 
 **Systems:** Any*
 
