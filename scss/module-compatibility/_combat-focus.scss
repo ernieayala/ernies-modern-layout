@@ -1,5 +1,5 @@
 #sidebar {
-	#chat.small-chat {
+	[data-tab="chat"].small-chat {
 		+ #combat {
 			@include layout {
 				flex: 1;

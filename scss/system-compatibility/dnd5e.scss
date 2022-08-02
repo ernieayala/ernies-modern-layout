@@ -36,7 +36,7 @@ body#{$emu}.system-dnd5e {
 			.window-content {
 				color: color("text");
 
-				nclude layout {@i
+				@include layout {
 					padding: 0;
 				}
 

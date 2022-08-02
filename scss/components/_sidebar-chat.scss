@@ -1,6 +1,6 @@
 #sidebar,
 .sidebar-popout {
-	#chat {
+	[data-tab="chat"] {
 		#chat-log {
 			flex: 1 1 auto;
 			height: auto;

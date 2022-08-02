@@ -1,0 +1,41 @@
+.window-app[id*="JournalEntryPage-"] {
+	.journal-header .page-level {
+		@include layout {
+			flex: 0 0 auto;
+			gap: $global-space-base;
+			margin: 0;
+		}
+
+		.heading-level {
+			@include layout {
+				gap: $global-space-base;
+
+				label {
+					margin: 0;
+				}
+			}
+		}
+
+		.show-title {
+			@include layout {
+				display: flex;
+			}
+
+			label.checkbox {
+				@include layout {
+					align-items: center;
+					display: flex;
+					gap: $global-space-base;
+					height: auto;
+					line-height: auto;
+				}
+			}
+		}
+	}
+
+	.editor.tinymce {
+		@include layout {
+			margin: 0 $global-space-sm;
+		}
+	}
+}

@@ -1,8 +1,10 @@
 .window-app[id*="JournalEntry-"] {
-	.editable {
-		background: none;
+	.journal-entry-content {
+		background: color("background", 0.1);
+		border: none;
 
 		@include layout {
+			border-radius: 0;
 			padding: 0;
 		}
 	}
@@ -20,7 +22,7 @@
 		}
 	}
 
-	nav {
+	aside.sidebar {
 		background-color: color("background");
 		background-image: $global-image-background;
 		border: none;
@@ -32,10 +34,26 @@
 				flex-direction: column;
 				gap: $global-space-base;
 				margin-block-end: 0;
+				padding: $global-space-sm $global-space-base;
 			}
 
 			.header-search {
+				@include layout {
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+				}
+
+				> * {
+					@include layout {
+						flex: 0 0 $global-space-button-sm;
+					}
+				}
+
 				input {
+					@include layout {
+						flex: 1 1 auto;
+					}
+
 					color: color("text-lightest");
 
 					&::placeholder {
@@ -49,6 +67,7 @@
 			.directory-list {
 				.directory-item {
 					@include layout {
+						min-height: initial;
 						padding: $global-space-xs;
 					}
 
@@ -80,6 +99,7 @@
 						@include layout {
 							align-items: center;
 							display: flex;
+							font-size: $global-font-size-md;
 						}
 
 						.page-number {
@@ -94,6 +114,7 @@
 						.journal-entry-page-link {
 							@include layout {
 								padding: $global-space-base;
+								padding-inline-start: 0;
 							}
 						}
 					}
@@ -107,6 +128,9 @@
 
 						.heading {
 							@include layout {
+								height: auto;
+								line-height: initial;
+								margin: 0;
 								padding: 0;
 							}
 
@@ -116,9 +140,11 @@
 
 							.journal-entry-heading-link {
 								@include layout {
+									display: inline-flex;
 									font-size: $global-font-size-lg;
-									line-height: 1.2;
+									line-height: initial;
 									padding: $global-space-base $global-space-md;
+									padding-inline-start: 0;
 								}
 
 								&:hover {
@@ -136,6 +162,26 @@
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+
+		.action-buttons {
+			@include layout {
+				display: flex;
+				flex: 0 0 auto;
+				gap: $global-space-base;
+				padding: $global-space-sm $global-space-base;
+			}
+
+			button.previous,
+			button.next {
+				@include layout {
+					flex: 0 0 $global-space-button;
+
+					i {
+						margin: 0;
 					}
 				}
 			}
@@ -165,5 +211,18 @@
 		@include layout(compact) {
 			top: to-rem(-28px);
 		}
+	}
+}
+
+.journal-sheet .journal-header {
+	@include layout {
+		gap: $global-space-md;
+		margin: $global-space-sm;
+	}
+}
+
+.journal-entry-pages {
+	@include layout {
+		margin: 0 $global-space-sm $global-space-sm;
 	}
 }
