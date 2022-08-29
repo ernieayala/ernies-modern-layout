@@ -270,4 +270,24 @@ form {
 			}
 		}
 	}
+
+	label.checkbox {
+		@include layout {
+			align-items: center;
+			display: inline-flex;
+			gap: $global-space-sm;
+			height: auto;
+			line-height: initial;
+		}
+	}
+
+	.trait-list {
+		display: flex;
+		flex-direction: column;
+		gap: $global-space-base;
+
+		li {
+			display: flex;
+		}
+	}
 }

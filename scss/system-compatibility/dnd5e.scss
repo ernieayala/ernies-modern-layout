@@ -482,7 +482,14 @@ body#{$emu}.system-dnd5e {
 	}
 
 	[id*="actor-flags-"],
-	[id*="actor-type-"] {
+	[id*="actor-type-"],
+	[id*="ActorSkillConfig-"],
+	[id*="ActorSensesConfig"],
+	[id*="ActorAbilityConfig"],
+	[id*="ActorMovementConfig"],
+	[id*="TraitSelector"],
+	[id*="ProficiencySelector"],
+	[id*="ActorSheetFlags"] {
 		@import "../base/base-button";
 		@import "../base/base-form-elements";
 		@import "../base/base-forms";

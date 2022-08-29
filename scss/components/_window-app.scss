@@ -65,7 +65,7 @@
 
 			.document-id-link {
 				@include layout {
-					margin-inline-start: $global-space-base;
+					margin-inline-start: $global-space-sm;
 					opacity: 0.8;
 
 					i {

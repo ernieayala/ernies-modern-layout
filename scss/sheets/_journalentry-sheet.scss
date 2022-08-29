@@ -188,15 +188,25 @@
 		}
 	}
 
+	.edit-container {
+		@include layout {
+			height: auto;
+			pointer-events: initial;
+			position: absolute;
+			right: $global-space-base;
+			top: $global-space-base;
+		}
+	}
+
 	a.editor-edit {
 		@extend %primary-button;
 
 		@include layout {
 			display: inline-flex;
 			height: $global-space-button-sm;
-			position: absolute;
-			right: $global-space-base;
-			top: $global-space-base;
+			pointer-events: initial;
+			right: auto;
+			top: auto;
 			width: $global-space-button-sm;
 
 			> i {

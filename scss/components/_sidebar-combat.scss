@@ -1,15 +1,15 @@
 #sidebar,
 .sidebar-popout {
 	#combat {
-		#combat-round {
+		.combat-tracker-header {
 			@extend %panel-block;
 
 			@include layout {
 				flex-direction: column;
-				gap: $global-space-base;
 			}
 
-			.encounters {
+			.encounters,
+			.encounter-controls {
 				@include layout {
 					align-items: center;
 					display: flex;

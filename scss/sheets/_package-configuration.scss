@@ -1,0 +1,60 @@
+.package-configuration {
+	aside.sidebar {
+		border-inline-end: 1px solid color("border");
+
+		@include layout {
+			flex: 0 0 220px;
+			font-size: $global-font-size-md;
+			gap:  $global-space-md;
+			height: 100%;
+			padding: 0;
+			padding-inline-end: $global-space-sm;
+		}
+
+		.entry-filter {
+			@include layout {
+				margin: 0;
+			}
+		}
+
+		nav.filters {
+			.category-filter {
+				border-block-end: 1px solid color(border);
+				color: color("text");
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					font-weight: normal;
+					justify-content: space-between;
+					padding: $global-space-base;
+				}
+
+				&:hover {
+					color: inherit;
+				}
+
+				&.active {
+					background-color: color("primary");
+					color: color("text-lightest");
+
+					a {
+						color: color("text-lightest");
+					}
+				}
+			}
+		}
+	}
+
+	.categories {
+		.scrollable,
+		footer {
+			margin: 0;
+			padding: $global-space-sm;
+		}
+
+		footer {
+			padding-block-end: 0;
+		}
+	}
+}

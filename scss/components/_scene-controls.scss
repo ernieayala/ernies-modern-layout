@@ -136,6 +136,7 @@
 			&.toggle {
 				background-color: color("background-lightest");
 				background-image: $global-image-background-controls;
+				border: none;
 				color: color("text");
 
 				&:hover {

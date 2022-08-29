@@ -23,6 +23,14 @@
 		> i {
 			margin-inline-end: $global-space-sm;
 		}
+
+		> label {
+			color: inherit !important; // because the foundry css dev doesn't know how to code a button
+
+			@include layout {
+				font-size: inherit !important; // because the foundry css dev doesn't know how to code a button
+			}
+		}
 	}
 
 	&:hover {
