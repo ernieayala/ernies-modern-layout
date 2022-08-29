@@ -1,3 +1,5 @@
+CURRENTLY ALL MY ATTENTION IS FIXING THINGS FOR V10
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ernieayala/ernies-modern-layout?style=flat-square)
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
