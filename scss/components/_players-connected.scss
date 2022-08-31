@@ -51,6 +51,7 @@
 		transition: t(color, "link");
 
 		@include layout {
+			align-items: center;
 			cursor: pointer;
 			display: flex;
 			font-size: $global-font-size-md;

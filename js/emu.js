@@ -109,10 +109,10 @@ function updateSettings(settings) {
 	colorTextDarker ? myRoot.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
 	// Design
-	borderRadiusDefault ? myRoot.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : myRoot.style.setProperty('--emu-border-radius-default', `0px`);
-	borderRadiusControls ? myRoot.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : myRoot.style.setProperty('--emu-border-radius-controls', `0px`);
-	borderRadiusForms ? myRoot.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : myRoot.style.setProperty('--emu-border-radius-forms', `0px`);
-	borderRadiusImages ? myRoot.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : myRoot.style.setProperty('--emu-border-radius-images', `0px`);
+	borderRadiusDefault ? myRoot.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : myRoot.style.setProperty('--emu-border-radius-default', `0`);
+	borderRadiusControls ? myRoot.style.setProperty('--emu-border-radius-controls', `${borderRadiusControls}px`) : myRoot.style.setProperty('--emu-border-radius-controls', `0`);
+	borderRadiusForms ? myRoot.style.setProperty('--emu-border-radius-forms', `${borderRadiusForms}px`) : myRoot.style.setProperty('--emu-border-radius-forms', `0`);
+	borderRadiusImages ? myRoot.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : myRoot.style.setProperty('--emu-border-radius-images', `0`);
 
 	// Font Size
 	fontSizeMD ? myRoot.style.setProperty('--emu-font-size-md', `${toRem(fontSizeMD)}rem`) : myRoot.style.setProperty('--emu-font-size-md', `${toRem(14)}rem`);
@@ -186,10 +186,10 @@ class emuSettings {
 
 	static get defaultSettings() {
 		return {
-			borderRadiusDefault: '0',
-			borderRadiusControls: '0',
-			borderRadiusForms: '0',
-			borderRadiusImages: '0',
+			borderRadiusDefault: '4',
+			borderRadiusControls: '4',
+			borderRadiusForms: '4',
+			borderRadiusImages: '4',
 			colorPrimary: '#e57509',
 			colorBackground: '#293e40',
 			colorBackgroundLightest: '#e6e9eb',

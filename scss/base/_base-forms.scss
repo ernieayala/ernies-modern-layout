@@ -230,6 +230,12 @@ form {
 			margin: 0;
 		}
 
+		.checkbox-label {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+		}
+
 		label {
 			&.checkbox {
 				@include layout {
@@ -262,6 +268,26 @@ form {
 			&:empty {
 				display: none;
 			}
+		}
+	}
+
+	label.checkbox {
+		@include layout {
+			align-items: center;
+			display: inline-flex;
+			gap: $global-space-sm;
+			height: auto;
+			line-height: initial;
+		}
+	}
+
+	.trait-list {
+		display: flex;
+		flex-direction: column;
+		gap: $global-space-base;
+
+		li {
+			display: flex;
 		}
 	}
 }

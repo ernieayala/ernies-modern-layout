@@ -1,6 +1,6 @@
 #sidebar,
 .sidebar-popout {
-	#chat {
+	[data-tab="chat"] {
 		.tabbedchatlog {
 			border-radius: none;
 			box-shadow: none;

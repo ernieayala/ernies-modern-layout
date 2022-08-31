@@ -1,42 +1,50 @@
 {
-	"name": "ernies-modern-layout",
-	"title": "Ernie's Modern UI",
-	"description": "A visual update for Foundry VTT UI.",
-	"version": "0.4.2",
-	"author": "Ernie",
-	"authors": [
-		{
-			"name": "Ernie",
-			"email": "teafortwo.ea@gmail.com",
-			"url": "https://github.com/ernieayala"
-		}
-	],
-	"styles": ["./css/emu.css"],
-	"esmodules": ["./js/emu.js"],
-	"languages": [
-		{
-			"lang": "en",
-			"name": "English",
-			"path": "lang/en.json"
-		},
-		{
-			"lang": "es",
-			"name": "Español",
-			"path": "lang/es.json"
-		},
-		{
-			"lang": "zh-tw",
-			"name": "正體中文",
-			"path": "lang/zh-tw.json"
-		}
-	],
-	"minimumCoreVersion": "9",
-	"compatibleCoreVersion": "9",
-	"url": "https://github.com/ernieayala/ernies-modern-layout",
-	"manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
-	"download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.4.2.zip",
-	"license": "MIT",
-	"readme": "https://github.com/ernieayala/ernies-modern-layout",
-	"bugs": "https://github.com/ernieayala/ernies-modern-layout/issues",
-	"changelog": "https://github.com/ernieayala/ernies-modern-layout/releases"
+  "title": "Ernie's Modern UI",
+  "description": "A visual update for Foundry VTT UI.",
+  "version": "0.5.0",
+  "authors": [
+    {
+      "name": "Ernie",
+      "email": "teafortwo.ea@gmail.com",
+      "url": "https://github.com/ernieayala",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "css/emu.css"
+  ],
+  "esmodules": [
+    "js/emu.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "zh-tw",
+      "name": "正體中文",
+      "path": "lang/zh-tw.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/ernieayala/ernies-modern-layout",
+  "manifest": "https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json",
+  "download": "https://github.com/ernieayala/ernies-modern-layout/releases/latest/download/ernies-modern-layout-0.5.0.zip",
+  "license": "MIT",
+  "readme": "https://github.com/ernieayala/ernies-modern-layout",
+  "bugs": "https://github.com/ernieayala/ernies-modern-layout/issues",
+  "changelog": "https://github.com/ernieayala/ernies-modern-layout/releases",
+  "id": "ernies-modern-layout",
+  "compatibility": {
+    "minimum": "10"
+  }
 }

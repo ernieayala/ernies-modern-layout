@@ -41,3 +41,14 @@ fieldset {
 		padding: 0;
 	}
 }
+
+figure figcaption {
+	font-weight: 700;
+	margin-block-start: $global-space-base;
+	padding: 0 $global-space-sm;
+	text-align: center;
+
+	&:empty {
+		display: none;
+	}
+}

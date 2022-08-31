@@ -83,6 +83,10 @@ html.-emu-layout.-emu-compact {
 	--emu-space-sidebar: #{to-rem(286px)};
 }
 
+html.-emu-layout {
+	font-size: $global-font-size-lg !important;
+}
+
 body {
 	background-color: color("background-darkest");
 	background-image: $global-image-background-darkest;

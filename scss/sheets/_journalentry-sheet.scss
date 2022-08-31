@@ -1,46 +1,200 @@
-.window-app[id*="journalentry-sheet-"] {
-	form {
+.window-app[id*="JournalEntry-"] {
+	.journal-entry-content {
+		background: color("background", 0.1);
+		border: none;
+
 		@include layout {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
+			border-radius: 0;
 			padding: 0;
-
-			> * {
-				flex: 0 0 100%;
-			}
-
-			> input[type="text"] {
-				flex: 0 0 70%;
-			}
-
-			> select {
-				flex: 0 0 calc(35% - #{to-rem(74px)});
-			}
-
-			> button {
-				height: $global-space-button;
-				margin-block-start: 0;
-				max-width: 100%;
-			}
 		}
+	}
 
-		@include layout(compact) {
-			> select {
-				flex: 1 1 calc(30% - #{to-rem(28px)});
-				margin-inline-end: to-rem(28px);
-			}
+	.journal-sheet-container {
+		@include layout {
+			gap: $global-space-sm;
+			padding: 0;
 		}
+	}
 
-		.editor {
+	.directory {
+		@include layout {
+			gap: $global-space-base;
+		}
+	}
+
+	aside.sidebar {
+		background-color: color("background");
+		background-image: $global-image-background;
+		border: none;
+		color: color("text-lightest");
+
+		.directory-header {
 			@include layout {
-				height: calc(100% - #{to-rem(74px)});
-				overflow: visible;
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+				margin-block-end: 0;
+				padding: $global-space-sm $global-space-base;
 			}
 
-			@include layout(compact) {
-				height: calc(100% - #{to-rem(62px)});
+			.header-search {
+				@include layout {
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+				}
+
+				> * {
+					@include layout {
+						flex: 0 0 $global-space-button-sm;
+					}
+				}
+
+				input {
+					@include layout {
+						flex: 1 1 auto;
+					}
+
+					color: color("text-lightest");
+
+					&::placeholder {
+						color: color("text-lightest", 0.5);
+					}
+				}
 			}
+		}
+
+		.pages-list {
+			.directory-list {
+				.directory-item {
+					@include layout {
+						min-height: initial;
+						padding: $global-space-xs;
+					}
+
+					&:hover {
+						background-color: color("folder-directory");
+						box-shadow: none;
+					}
+
+					&.active {
+						@extend %global-hover-alt;
+
+						&:hover {
+							@extend %global-hover-alt;
+						}
+					}
+
+					.page-heading,
+					.headings {
+						@include layout {
+							margin: 0;
+							width: 100%;
+						}
+					}
+
+					.page-heading {
+						background-color: color("background-darkest", 0.5);
+						border: none;
+
+						@include layout {
+							align-items: center;
+							display: flex;
+							font-size: $global-font-size-md;
+						}
+
+						.page-number {
+							color: color("text-lightest");
+
+							@include layout {
+								flex: 0 0 auto;
+								padding: $global-space-base;
+							}
+						}
+
+						.journal-entry-page-link {
+							@include layout {
+								padding: $global-space-base;
+								padding-inline-start: 0;
+							}
+						}
+					}
+
+					.headings {
+						&:empty {
+							@include layout {
+								display: none;
+							}
+						}
+
+						.heading {
+							@include layout {
+								height: auto;
+								line-height: initial;
+								margin: 0;
+								padding: 0;
+							}
+
+							&:nth-child(even) {
+								background-color: color("background", 0.5);
+							}
+
+							.journal-entry-heading-link {
+								@include layout {
+									display: inline-flex;
+									font-size: $global-font-size-lg;
+									line-height: initial;
+									padding: $global-space-base $global-space-md;
+									padding-inline-start: 0;
+								}
+
+								&:hover {
+									color: color("primary");
+								}
+							}
+
+							h2,
+							h3,
+							h4 {
+								border: none;
+
+								@include layout {
+									margin: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.action-buttons {
+			@include layout {
+				display: flex;
+				flex: 0 0 auto;
+				gap: $global-space-base;
+				padding: $global-space-sm $global-space-base;
+			}
+
+			button.previous,
+			button.next {
+				@include layout {
+					flex: 0 0 $global-space-button;
+
+					i {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.edit-container {
+		@include layout {
+			height: auto;
+			pointer-events: initial;
+			position: absolute;
+			right: $global-space-base;
+			top: $global-space-base;
 		}
 	}
 
@@ -49,11 +203,11 @@
 
 		@include layout {
 			display: inline-flex;
-			height: $global-space-button;
-			position: absolute;
-			right: 0;
-			top: to-rem(-36px);
-			width: $global-space-button;
+			height: $global-space-button-sm;
+			pointer-events: initial;
+			right: auto;
+			top: auto;
+			width: $global-space-button-sm;
 
 			> i {
 				margin: 0;
@@ -68,33 +222,17 @@
 			top: to-rem(-28px);
 		}
 	}
+}
 
-	.lightbox-image {
-		~ .form-group.title,
-		~ .form-group.picker {
-			background-color: transparent;
+.journal-sheet .journal-header {
+	@include layout {
+		gap: $global-space-md;
+		margin: $global-space-sm;
+	}
+}
 
-			@include layout {
-				left: auto;
-				max-width: 100%;
-				position: absolute;
-				top: auto;
-				width: 100%;
-			}
-
-			input {
-				background-color: color("background-lightest");
-
-				@include layout {
-					margin: 0 !important; // why? because inline
-				}
-			}
-
-			button > i {
-				@include layout {
-					margin: 0;
-				}
-			}
-		}
+.journal-entry-pages {
+	@include layout {
+		margin: 0 $global-space-sm $global-space-sm;
 	}
 }

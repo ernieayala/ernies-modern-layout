@@ -1,6 +1,6 @@
 #sidebar,
 .sidebar-popout {
-	#chat {
+	[data-tab="chat"] {
 		#chat-log {
 			.midi-qol-item-card.chat-card {
 				.card-buttons {

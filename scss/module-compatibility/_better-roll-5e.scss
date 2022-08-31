@@ -1,5 +1,5 @@
 .window-app[id*="chat-popout-"],
-#sidebar #chat #chat-log {
+#sidebar [data-tab="chat"] #chat-log {
 	.chat-message .chat-card {
 		.die-result-overlay-br {
 			@include layout {

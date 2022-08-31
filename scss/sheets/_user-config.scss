@@ -1,0 +1,14 @@
+.window-app[id*="UserConfig-"] {
+	.form-group.stacked {
+		#characters.directory-list {
+			@include layout {
+				padding: 0;
+				max-height: to-rem(320px);
+			}
+
+			.directory-item.context {
+				background-color: color("primary");
+			}
+		}
+	}
+}

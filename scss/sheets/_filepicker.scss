@@ -1,5 +1,8 @@
 .filepicker.window-app {
 	.filepicker-body {
+		max-height: 100%;
+		overflow: hidden;
+
 		&.private {
 			@extend %global-focus;
 

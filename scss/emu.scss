@@ -5,7 +5,7 @@ body#{$emu} {
 	// Base
 	.dialog,
 	#sidebar,
-	.window-app:not([id*="actor-"]):not([id*="item-"]) {
+	.window-app:not([id*="Actor-"]):not([id*="Item-"]) {
 		@import "./base/base-button";
 		@import "./base/base-directory";
 		@import "./base/base-form-elements";
@@ -31,6 +31,7 @@ body#{$emu} {
 	@import "./components/players-connected";
 	@import "./components/scene-controls";
 	@import "./components/scene-navigation";
+	@import "./components/tooltip";
 	@import "./components/ui-layout";
 	@import "./components/window-app";
 
@@ -52,13 +53,17 @@ body#{$emu} {
 	@import "./sheets/chat-popout";
 	@import "./sheets/client-settings";
 	@import "./sheets/filepicker";
+	@import "./sheets/journal-show";
 	@import "./sheets/journalentry-sheet";
+	@import "./sheets/journalentrypage-sheet";
 	@import "./sheets/macro-config";
 	@import "./sheets/module-management";
+	@import "./sheets/package-configuration";
 	@import "./sheets/rolltable-sheet";
 	@import "./sheets/template-config";
 	@import "./sheets/trait-selector";
-	@import "./sheets/user-sheet";
+	@import "./sheets/user-config";
+	@import "./sheets/user-sheet"; // depricated
 
 	// Module Compatibility
 	@import "./module-compatibility/always-hp";
