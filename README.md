@@ -42,14 +42,14 @@ Message me on Discord: Ernie#4453.
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
 
-### Functional Systems
+### Functional Systems (TODO: recheck this list)
 - Alien RPG
 - Call of Cthulhu 7
 - DND 5e
 - MÖRK BORG
 - Starfinder RPG
 
-### Fuctional Mods
+### Fuctional Mods (TODO: recheck this list)
 - About Time
 - Ace Library
 - Active Token Effects
