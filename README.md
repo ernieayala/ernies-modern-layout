@@ -1,4 +1,4 @@
-CURRENTLY ALL MY ATTENTION IS FIXING THINGS FOR V10
+HEY FOLKS, MY COMPUTER TOOK A GIANT SHIT. I'M WORKING ON GETTING A NEW ONE - UNTIL THEN I AM ON HOLD.
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ernieayala/ernies-modern-layout?style=flat-square)
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
