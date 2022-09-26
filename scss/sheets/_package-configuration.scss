@@ -47,6 +47,8 @@
 	}
 
 	.categories {
+		overflow: hidden;
+
 		.scrollable,
 		footer {
 			margin: 0;
