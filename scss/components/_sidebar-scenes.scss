@@ -1,16 +1,9 @@
 #sidebar,
-.sidebar-popout {
-	#scenes {
+.sidebar-popout[id="scenes-popout"] .window-content {
+	[data-tab="scenes"] {
 		.scene {
 			background-position: 50%;
 			background-size: cover;
-			border: none;
-			box-shadow: none;
-
-			@include layout {
-				height: auto;
-				line-height: 1;
-			}
 
 			@include layout-scene-thumbs {
 				background-image: none !important;
@@ -24,10 +17,6 @@
 			h3 {
 				> a {
 					text-shadow: $global-text-shadow;
-
-					@include layout {
-						padding: $global-space-sm 0;
-					}
 
 					@include layout-scene-thumbs {
 						padding: 0;

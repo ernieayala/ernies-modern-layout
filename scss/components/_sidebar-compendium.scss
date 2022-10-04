@@ -1,6 +1,6 @@
 #sidebar,
-.sidebar-popout {
-	#compendium {
+.sidebar-popout[id="compendium-popout"] .window-content {
+	[data-tab="compendium"] {
 		h3 {
 			background-color: color("background");
 			border: b("border");
@@ -21,9 +21,12 @@
 		}
 
 		.compendium-list {
-			display: flex;
-			flex-direction: column;
-			gap: $global-space-xs;
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-xs;
+				margin: 0;
+			}
 
 			.directory-item {
 				@include layout {
