@@ -1,5 +1,3 @@
-HEY FOLKS, MY COMPUTER TOOK A GIANT SHIT. I'M WORKING ON GETTING A NEW ONE - UNTIL THEN I AM ON HOLD.
-
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ernieayala/ernies-modern-layout?style=flat-square)
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
