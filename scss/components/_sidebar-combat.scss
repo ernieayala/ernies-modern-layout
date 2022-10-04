@@ -1,6 +1,6 @@
 #sidebar,
-.sidebar-popout {
-	#combat {
+.sidebar-popout[id="combat-popout"] .window-content {
+	[data-tab="combat"] {
 		.combat-tracker-header {
 			@extend %panel-block;
 

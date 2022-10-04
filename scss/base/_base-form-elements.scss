@@ -3,7 +3,8 @@ input[type="number"],
 input[type="date"],
 input[type="time"],
 input[type="password"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+input[type="search"] {
 	@extend %input-text;
 }
 

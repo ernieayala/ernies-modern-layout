@@ -1,5 +1,5 @@
 #sidebar,
-.sidebar-popout {
+.sidebar-popout[id="chat-popout"] .window-content {
 	[data-tab="chat"] {
 		#chat-log {
 			flex: 1 1 auto;

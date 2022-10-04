@@ -1,6 +1,6 @@
 #sidebar,
-.sidebar-popout {
-	#playlists {
+.sidebar-popout[id="playlists-popout"] .window-content {
+	[data-tab="playlists"] {
 		color: color("text-lightest");
 
 		.global-control {

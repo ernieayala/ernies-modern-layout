@@ -1,6 +1,6 @@
 #sidebar,
-.sidebar-popout {
-	#settings {
+.sidebar-popout[id="settings-popout"] .window-content {
+	[data-tab="settings"] {
 		@include layout {
 			padding: $global-space-sm;
 		}
