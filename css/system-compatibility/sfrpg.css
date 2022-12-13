@@ -204,6 +204,5 @@ body.-emu.system-sfrpg .item-browser .item-list {
     body.-emu.system-sfrpg .item-browser .item-list li:hover {
       background-color: rgba(var(--color-primary), 1);
       color: rgba(var(--color-text-lightest), 1); }
-      body.-emu.system-sfrpg .app.chat-popout .card-buttons button,
       body.-emu.system-sfrpg .item-browser .item-list li:hover a:hover {
         color: rgba(var(--color-text-lightest), 1); }
