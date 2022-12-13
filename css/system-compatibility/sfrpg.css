@@ -9,6 +9,8 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card {
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3,
+body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button,
+body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3,
 body.-emu.system-sfrpg .app.chat-popout .message-header,
 body.-emu.system-sfrpg .app.chat-popout .message-header h4.message-sender,
 body.-emu.system-sfrpg .app.chat-popout .chat-message,
