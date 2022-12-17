@@ -1,6 +1,6 @@
 .window-app[id*="JournalEntry-"] {
 	.journal-entry-content {
-		background: color("background", 0.1);
+		background: RGBA($emu-color-background, 0.1);
 		border: none;
 
 		@include layout {
@@ -23,10 +23,10 @@
 	}
 
 	aside.sidebar {
-		background-color: color("background");
+		background-color: RGB($emu-color-background);
 		background-image: $global-image-background;
 		border: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		.directory-header {
 			@include layout {
@@ -54,10 +54,10 @@
 						flex: 1 1 auto;
 					}
 
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					&::placeholder {
-						color: color("text-lightest", 0.5);
+						color: RGBA($emu-color-text-lightest, 0.5);
 					}
 				}
 			}
@@ -72,7 +72,7 @@
 					}
 
 					&:hover {
-						background-color: color("folder-directory");
+						background-color: RGB($emu-color-folder-directory);
 						box-shadow: none;
 					}
 
@@ -93,7 +93,7 @@
 					}
 
 					.page-heading {
-						background-color: color("background-darkest", 0.5);
+						background-color: RGBA($emu-color-background-darkest, 0.5);
 						border: none;
 
 						@include layout {
@@ -103,7 +103,7 @@
 						}
 
 						.page-number {
-							color: color("text-lightest");
+							color: RGB($emu-color-text-lightest);
 
 							@include layout {
 								flex: 0 0 auto;
@@ -135,7 +135,7 @@
 							}
 
 							&:nth-child(even) {
-								background-color: color("background", 0.5);
+								background-color: RGBA($emu-color-background, 0.5);
 							}
 
 							.journal-entry-heading-link {
@@ -148,7 +148,7 @@
 								}
 
 								&:hover {
-									color: color("primary");
+									color: RGB($emu-color-primary);
 								}
 							}
 
@@ -215,11 +215,11 @@
 		}
 
 		&:hover {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 		}
 
 		@include layout(compact) {
-			top: to-rem(-28px);
+			top: -28px;
 		}
 	}
 }

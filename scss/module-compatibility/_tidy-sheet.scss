@@ -1,7 +1,7 @@
 .tidy5e.settings.window-app {
-	border: b("border");
+	border: 1px solid RGB($emu-color-border);
 	border-radius: $global-border-radius-default;
-	box-shadow: 0 2px 4px color("black");
+	box-shadow: 0 2px 4px RGB($emu-color-black);
 
 	.window-content {
 		@include layout {
@@ -31,13 +31,13 @@
 		}
 
 		&:nth-of-type(even) {
-			background-color: color("background-light", 0.1);
+			background-color: RGBA($emu-color-background-light, 0.1);
 		}
 	}
 }
 
 .tidy5e.sheet.actor.npc .spellcasting-ability {
-	background-color: color("background-lightest");
+	background-color: RGB($emu-color-background-lightest);
 	background-image: $global-image-background-lightest;
 }
 
@@ -50,13 +50,13 @@
 	}
 
 	#item-info-container {
-		background-color: color("background-lightest", $global-background-opacity-window-content);
+		background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
 		background-image: $global-image-background-lightest;
 		border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
-		border: b("border");
+		border: 1px solid RGB($emu-color-border);
 		border-inline-end: 0;
 		box-shadow: $global-box-shadow;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			transition: t(width, "shift");
@@ -64,7 +64,7 @@
 		}
 
 		.info-wrap {
-			border-inline-end: b("border-lighter")
+			border-inline-end: 1px solid RGB($emu-color-border-lighter)
 		}
 
 		.info-card {

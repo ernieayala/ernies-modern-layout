@@ -1,8 +1,8 @@
 form {
 	h3.form-header {
 		border: none;
-		border-block-end: b("border");
-		color: color("text");
+		border-block-end: 1px solid RGB($emu-color-border);
+		color: RGB($emu-color-text);
 
 		@include layout {
 			font-family: inherit;
@@ -14,7 +14,7 @@ form {
 	}
 
 	.form-group {
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			align-items: center;
@@ -25,11 +25,11 @@ form {
 			height: auto;
 			justify-content: space-between;
 			margin: 0;
-			padding: $global-space-sm;
+			padding: $global-space-base $global-space-sm;
 			width: 100%;
 
 			&:nth-of-type(even) {
-				background-color: color("background-light", 0.1);
+				background-color: RGBA($emu-color-background-light, 0.1);
 			}
 		}
 
@@ -186,7 +186,7 @@ form {
 		}
 
 		label {
-			color: color("text");
+			color: RGB($emu-color-text);
 
 			@include layout {
 				align-items: center;
@@ -206,10 +206,10 @@ form {
 			}
 
 			.units {
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				@include layout {
-					@include ellipsis;
+					@extend %ellipsis;
 					display: block;
 					font-size: $global-font-size-sm;
 					line-height: initial;
@@ -255,7 +255,7 @@ form {
 
 	.notes,
 	.hint {
-		color: color("text-darker");
+		color: RGB($emu-color-text-darker);
 
 		@include layout {
 			flex: 0 0 auto;

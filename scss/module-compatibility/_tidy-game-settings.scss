@@ -26,7 +26,7 @@
 			.module-settings-wrapper {
 				div.form-group {
 					border: none;
-					color: color("text");
+					color: RGB($emu-color-text);
 
 					@include layout {
 						align-items: center !important; // because MOD other important
@@ -43,7 +43,7 @@
 						width: 100%;
 
 						&:nth-of-type(even) {
-							background-color: color("background-light", 0.1);
+							background-color: RGBA($emu-color-background-light, 0.1);
 						}
 					}
 
@@ -130,7 +130,7 @@
 
 				.module-wrapper {
 					h2.module-header {
-						border-block-end: b("border");
+						border-block-end: 1px solid RGB($emu-color-border);
 
 						@include layout {
 							align-items: center;
@@ -143,8 +143,8 @@
 						}
 
 						&:hover {
-							background-color: color("primary");
-							color: color("text-lightest");
+							background-color: RGB($emu-color-primary);
+							color: RGB($emu-color-text-lightest);
 						}
 
 						> span {
@@ -181,8 +181,8 @@
 			}
 
 			&.disable-all-modules {
-				background-color: color("negative");
-				color: color("white");
+				background-color: RGB($emu-color-negative);
+				color: RGB($emu-color-white);
 
 				@include layout {
 					flex: 1 1 auto;
@@ -190,8 +190,8 @@
 			}
 
 			&.enable-all-modules {
-				background-color: color("positive");
-				color: color("white");
+				background-color: RGB($emu-color-positive);
+				color: RGB($emu-color-white);
 
 				@include layout {
 					flex: 1 1 auto;

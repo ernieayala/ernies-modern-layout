@@ -1,9 +1,9 @@
 #fps {
-	background-color: color("background-darkest", $global-background-opacity-sidebar);
+	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
 	background-image: $global-image-background-darkest;
-	border: b("border");
+	border: 1px solid RGB($emu-color-border);
 	box-shadow: none;
-	transition: t(opacity, "link");
+	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-default;

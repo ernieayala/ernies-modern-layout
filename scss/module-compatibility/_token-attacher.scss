@@ -12,8 +12,8 @@
 	background: transparent;
 
 	h3 {
-		color: color("primary");
-		text-shadow: 1px 1px 4px color("black");
+		color: RGB($emu-color-primary);
+		text-shadow: 1px 1px 4px RGB($emu-color-black);
 
 		@include layout {
 			font-size: $global-font-size-xl;
@@ -26,34 +26,35 @@
 	@include layout {
 		display: flex;
 		gap: $global-space-base;
-		left: to-rem(96px);
-		top: to-rem(52px);
+		left: 96px;
+		top: 52px;
 	}
 
 	@include layout(compact) {
-		left: to-rem(72px);
-		top: to-rem(38px);
+		left: 72px;
+		top: 38px;
 	}
 
 	.image {
-		background-color: color("background-darkest", 0.8);
+		background-color: RGBA($emu-color-background-darkest, 0.8);
 		background-image: $global-image-background-darkest;
 		border-radius: $global-border-radius-images $global-border-radius-images 0 0;
 		border: b("primary");
 
 		@include layout {
-			@include size(to-rem(104px));
 			flex: 0 0 auto;
+			height: 104px;
 			margin: 0;
 			min-width: 0;
+			width: 104px;
 		}
 
 		.token-name {
-			background-color: color("background-darkest");
+			background-color: RGB($emu-color-background-darkest);
 			background-image: $global-image-background-darkest;
-			border: b("primary");
+			border: 1px solid RGB($emu-color-primary);
 			border-radius: 0 0 $global-border-radius-images $global-border-radius-images;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -87,32 +88,39 @@
 			gap: $global-space-base;
 			pointer-events: none;
 			opacity: 1;
-			transition: t(opacity left, "link");
+			transition:
+				left $global-transition-time-base $global-transition-type-link,
+				opacity $global-transition-time-base $global-transition-type-link;
 		}
 	}
 
 	.control-tool {
-		background-color: color("background", 0.8);
+		background-color: RGBA($emu-color-background, 0.8);
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 		font-size: $global-font-size-lg;
-		transition: t(background box-shadow color opacity, "link");
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link,
+			opacity $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
-			@include size($global-space-button-lg);
 			align-items: center;
 			box-sizing: border-box;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
+			height: $global-space-button-lg;
 			justify-content: center;
 			line-height: initial;
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			width: $global-space-button-lg;
 
 			> i {
 				font-size: inherit;
@@ -135,8 +143,10 @@
 		}
 
 		&.close {
-			@include absolute(top $global-space-pf left $global-space-pf);
+			left: $global-space-pf;
 			margin: 0;
+			position: absolute;
+			top: $global-space-pf;
 		}
 	}
 }

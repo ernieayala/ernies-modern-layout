@@ -3,7 +3,7 @@
 
 	@include layout {
 		height: auto;
-		margin-inline-start: to-rem(-6px); // to off opening position
+		margin-inline-start: -6px; // to off opening position
 	}
 
 	.window-header {
@@ -13,7 +13,7 @@
 	}
 
 	.window-content {
-		background-color: color("background-darkest");
+		background-color: RGB($emu-color-background-darkest);
 		background-image: $global-image-background-darkest;
 		border-radius: 0;
 
@@ -33,7 +33,7 @@
 	#displayContainer {
 		align-items: center;
 		background-color: transparent;
-		border-block-start: b("border");
+		border-block-start: 1px solid RGB($emu-color-border);
 		box-shadow: none;
 
 		@include layout {
@@ -47,9 +47,10 @@
 			@extend %control-button;
 
 			@include layout {
-				@include size(to-rem(20px));
 				font-family: "Font Awesome 5 Free";
+				height: 20px;
 				margin: $global-space-xs 0;
+				width: 20px;
 			}
 		}
 	}
@@ -57,7 +58,7 @@
 	#dateDisplay {
 		background-color: transparent;
 		box-shadow: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			display: none;
@@ -77,7 +78,7 @@
 	}
 
 	#timeDisplay {
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
 
 		@include layout {

@@ -16,7 +16,7 @@
 
 				&.active {
 					a {
-						background-color: color("primary");
+						background-color: RGB($emu-color-primary);
 					}
 				}
 			}
@@ -38,15 +38,16 @@
 
 		.special-effects {
 			.preview {
-				background-color: color("black", 0.1);
+				background-color: RGBA($emu-color-black, 0.1);
 				border: none;
 
 				@include layout {
-					@include size($global-space-button);
 					flex: 0 0 auto;
+					height: $global-space-button;
 					margin: $global-space-base;
 					margin-inline-start: 0;
 					overflow: hidden;
+					width: $global-space-button;
 
 					> video {
 						height: 100%;
@@ -62,7 +63,7 @@
 					padding: $global-space-base;
 
 					h4 {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 						font-size: $global-font-size-lg;
 						height: auto;
 						text-indent: 0;
@@ -70,7 +71,7 @@
 				}
 
 				.author {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						font-size: $global-font-size-sm;
@@ -107,7 +108,7 @@
 	}
 
 	.directory-item {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			padding: $global-space-base;
@@ -120,7 +121,7 @@
 			}
 
 			label {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 				text-shadow: none;
 
 				@include layout {
@@ -128,7 +129,7 @@
 				}
 
 				&:hover {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 				}
 			}
 		}
@@ -137,7 +138,7 @@
 			border: none;
 
 			li {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					display: flex;
@@ -145,7 +146,7 @@
 				}
 
 				.range-value {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 			}
 		}
@@ -169,7 +170,7 @@
 		}
 
 		.layer-toggle {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -190,19 +191,19 @@
 	}
 
 	.directory-item {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			padding: $global-space-base;
 		}
 
 		header {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
 
 			label {
 				&:hover {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 				}
 			}
 		}
@@ -211,7 +212,7 @@
 			border: none;
 
 			li {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					display: flex;
@@ -219,7 +220,7 @@
 				}
 
 				.range-value {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 			}
 		}

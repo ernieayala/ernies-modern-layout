@@ -19,22 +19,22 @@ body#{$emu}.system-dnd5e {
 
 		.form-group {
 			label {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 		}
 
 		.form-header {
-			border-block-start: b("border-lighter");
-			border-block-end: b("border-lighter");
+			border-block-start: 1px solid RGB($emu-color-border-lighter);
+			border-block-end: 1px solid RGB($emu-color-border-lighter);
 		}
 
 		.tag {
-			border-color: color("border");
+			border-color: RGB($emu-color-border);
 		}
 
 		&.sheet {
 			.window-content {
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				@include layout {
 					padding: 0;
@@ -53,37 +53,37 @@ body#{$emu}.system-dnd5e {
 
 				&:hover,
 				&:focus {
-					border-color: color("border");
+					border-color: RGB($emu-color-border);
 				}
 			}
 
 			.editable h4.rollable:hover,
 			.editable .rollable:hover > h4 {
-				color: color("primary");
+				color: RGB($emu-color-primary);
 				text-shadow: none;
 			}
 
 			span.sep {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 			}
 
 			.sheet-header {
-				border-block-end: b("border-lighter");
+				border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 				@include layout {
 					gap: initial;
 				}
 
 				img.profile {
-					border-inline-end: b("border-lighter");
+					border-inline-end: 1px solid RGB($emu-color-border-lighter);
 				}
 
 				.summary {
-					border-block-start: b("border-lighter");
+					border-block-start: 1px solid RGB($emu-color-border-lighter);
 
 					li {
-						border-inline-end: b("border-lighter");
-						color: color("text");
+						border-inline-end: 1px solid RGB($emu-color-border-lighter);
+						color: RGB($emu-color-text);
 
 						&:last-child {
 							border-inline-end: none;
@@ -104,59 +104,59 @@ body#{$emu}.system-dnd5e {
 				// font-family: inherit;
 
 				.item {
-					border-color: color("border");
+					border-color: RGB($emu-color-border);
 					text-shadow: none;
 
 					&:hover {
-						color: color("primary");
+						color: RGB($emu-color-primary);
 					}
 
 					&.active {
-						border-color: color("primary");
-						color: color("primary");
+						border-color: RGB($emu-color-primary);
+						color: RGB($emu-color-primary);
 					}
 				}
 			}
 
 			.filter-list {
 				.filter-icon {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 
 				.filter-item {
-					border-color: color("border");
+					border-color: RGB($emu-color-border);
 					text-shadow: none;
 
 					&:hover {
-						border-color: color("border-lighter");
-						color: color("primary");
+						border-color: RGB($emu-color-border-lighter);
+						color: RGB($emu-color-primary);
 
 					}
 
 					&.active {
-						border-color: color("primary");
-						color: color("primary");
+						border-color: RGB($emu-color-primary);
+						color: RGB($emu-color-primary);
 					}
 				}
 			}
 
 			.traits .trait-selector {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			.items-list {
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				.item {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 
 					.item-name {
-						color: color("text");
+						color: RGB($emu-color-text);
 					}
 				}
 
 				.items-header {
-					border: b("border-lighter");
+					border: 1px solid RGB($emu-color-border-lighter);
 
 					h3 {
 						// font-family: inherit;
@@ -167,18 +167,18 @@ body#{$emu}.system-dnd5e {
 			.effects .item .effect-source,
 			.effects .item .effect-duration,
 			.effects .item .effect-controls {
-				border-color: color("border-lighter");
+				border-color: RGB($emu-color-border-lighter);
 			}
 		}
 
 		&.sheet.actor {
 			.sheet-header {
 				.summary {
-					border-block-end: b("border-lighter");
+					border-block-end: 1px solid RGB($emu-color-border-lighter);
 				}
 
 				.attributes .attribute {
-					border-inline-end: b("border-lighter");
+					border-inline-end: 1px solid RGB($emu-color-border-lighter);
 
 					&:last-child {
 						border-inline-end: none;
@@ -187,13 +187,13 @@ body#{$emu}.system-dnd5e {
 			}
 
 			h4.box-title {
-				border-color: color("border-lighter");
-				color: color("text");
+				border-color: RGB($emu-color-border-lighter);
+				color: RGB($emu-color-text);
 				// font-family: inherit;
 			}
 
 			ul.attributes li.attribute {
-				border: b("border-lighter");
+				border: 1px solid RGB($emu-color-border-lighter);
 
 				.attribute-value {
 					// font-family: inherit;
@@ -205,11 +205,11 @@ body#{$emu}.system-dnd5e {
 			}
 
 			.ability-scores {
-				border: b("border-lighter");
+				border: 1px solid RGB($emu-color-border-lighter);
 				// font-family: inherit;
 
 				.ability {
-					border-block-end: b("border-lighter");
+					border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 					&:last-child {
 						border-block-end: none;
@@ -217,222 +217,222 @@ body#{$emu}.system-dnd5e {
 
 					.ability-modifiers span.ability-mod,
 					.ability-modifiers span.ability-save {
-						border-block-start: b("border-lighter");
+						border-block-start: 1px solid RGB($emu-color-border-lighter);
 					}
 
 					.ability-modifiers span.ability-mod {
-						border-inline-end: b("border-lighter");
+						border-inline-end: 1px solid RGB($emu-color-border-lighter);
 					}
 
 					.ability-modifiers span.ability-save {
-						border-inline-start: b("border-lighter");
+						border-inline-start: 1px solid RGB($emu-color-border-lighter);
 					}
 				}
 			}
 
 			.proficiency-toggle {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 			}
 
 			.proficient .proficiency-toggle {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			.locked .proficiency-toggle {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 			}
 
 			ul.skills-list {
-				border: b("border-lighter");
+				border: 1px solid RGB($emu-color-border-lighter);
 
 				li.skill .skill-passive {
-					color: color("text-darker");
+					color: RGB($emu-color-text-darker);
 				}
 			}
 
 			.counters {
-				border-block-end: b("border-lighter");
+				border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 				.counter h4 {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 			}
 
 			.traits i.fas {
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				&:hover {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 					text-shadow: none;
 				}
 			}
 
 			.traits .inactive {
-				color: color("text");
+				color: RGB($emu-color-text);
 				opacity: 0.5;
 			}
 
 			.inventory-filters .currency {
 				label {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 
 				input[type="text"] {
-					border: b("border");
+					border: 1px solid RGB($emu-color-border);
 				}
 			}
 
 			.inventory-list {
 				.item .item-name i {
 					&.attuned {
-						color: color("primary");
+						color: RGB($emu-color-primary);
 					}
 
 					&.not-attuned {
-						color: color("text-darker");
+						color: RGB($emu-color-text-darker);
 					}
 				}
 
 				.item-detail {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 				}
 
 				.item-weight {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 				}
 
 				.item-summary {
-					border-color: color("border-lighter");
-					color: color("text");
+					border-color: RGB($emu-color-border-lighter);
+					color: RGB($emu-color-text);
 				}
 			}
 
 			.encumbrance {
-				border-color: color("border");
+				border-color: RGB($emu-color-border);
 
 				.encumbrance-bar {
-					background-color: color("primary");
-					border-color: color("border-lighter");
+					background-color: RGB($emu-color-primary);
+					border-color: RGB($emu-color-border-lighter);
 				}
 
 				.encumbrance-label {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 					text-shadow: none;
 				}
 
 				.arrow-up,
 				.arrow-down {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 				}
 
 				&.encumbered {
 					.arrow-up,
 					.arrow-down {
-						border-color: color("border");
+						border-color: RGB($emu-color-border);
 					}
 				}
 			}
 
 			.spell-slots,
 			.spell-comps {
-				border-color: color("border-lighter");
-				color: color("text");
+				border-color: RGB($emu-color-border-lighter);
+				color: RGB($emu-color-text);
 			}
 
 			.spellbook .spell-uses {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			.spell-school,
 			.spell-action,
 			.spell-target {
-				border-color: color("border-lighter");
-				color: color("text");
+				border-color: RGB($emu-color-border-lighter);
+				color: RGB($emu-color-text);
 			}
 
 			.spell-component.C,
 			.spell-component.R {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 			}
 
 			.features i.original-class {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 			}
 		}
 
 		&.sheet.item {
 			.sheet-header {
 				img.profile {
-					border: b("border");
+					border: 1px solid RGB($emu-color-border);
 				}
 
 				.item-subtitle {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 			}
 
 			.sheet-body .item-properties .properties-list li {
-				border: b("border-lighter");
+				border: 1px solid RGB($emu-color-border-lighter);
 			}
 
 			.details input[type="text"],
 			.details input[type="number"],
 			.details select {
-				border-color: color("border");
+				border-color: RGB($emu-color-border);
 			}
 
 			h4.damage-header {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			.damage-control {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 		}
 
 		&.sheet.actor.character {
 			.sheet-header {
 				.charlevel {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 
 				.experience span.max {
-					color: color("text");
+					color: RGB($emu-color-text);
 				}
 
 				.xpbar {
-					background-color: color("background");
-					border-color: color("border");
+					background-color: RGB($emu-color-background);
+					border-color: RGB($emu-color-border);
 
 					&.bar {
-						background-color: color("primary");
-						border: color("border");
+						background-color: RGB($emu-color-primary);
+						border: RGB($emu-color-border);
 					}
 				}
 
 				.attributes a.rest {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 				}
 			}
 
 			.resource .attribute-value label.recharge {
-				color: color("text");
+				color: RGB($emu-color-text);
 				// font-family: inherit;
 			}
 
 			.inventory .item-controls .item-toggle,
 			.spellbook .item-controls .item-toggle {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 			}
 
 			.inventory .item-controls .item-toggle.active,
 			.spellbook .item-controls .item-toggle.active {
-				color: color("primary");
+				color: RGB($emu-color-primary);
 			}
 
 			.inventory .item-controls .item-toggle.fixed,
 			.spellbook .item-controls .item-toggle.fixed {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			.characteristics {
@@ -441,7 +441,7 @@ body#{$emu}.system-dnd5e {
 				}
 
 				textarea {
-					border-color: color("border-lighter");
+					border-color: RGB($emu-color-border-lighter);
 					// font-family: inherit;
 				}
 			}
@@ -449,16 +449,16 @@ body#{$emu}.system-dnd5e {
 
 		&.sheet.actor.npc {
 			.header-exp .experience {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 		}
 
 		&.sheet.actor.vehicle {
 			.features .item-controls .item-toggle {
-				color: color("text-darker");
+				color: RGB($emu-color-text-darker);
 
 				&.active {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 				}
 			}
 		}
@@ -594,8 +594,8 @@ body#{$emu}.system-dnd5e {
 			}
 
 			.card-header {
-				border-block-start: b("border-lighter");
-				border-block-end: b("border-lighter");
+				border-block-start: 1px solid RGB($emu-color-border-lighter);
+				border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 				@include layout {
 					margin-block-end: $global-space-base;
@@ -608,7 +608,7 @@ body#{$emu}.system-dnd5e {
 				}
 
 				h3 {
-					color: color("text");
+					color: RGB($emu-color-text);
 					text-shadow: none;
 
 					@include layout {
@@ -639,7 +639,7 @@ body#{$emu}.system-dnd5e {
 				}
 
 				button {
-					border: b("border");
+					border: 1px solid RGB($emu-color-border);
 
 					@include layout {
 						margin: 0;
@@ -654,7 +654,7 @@ body#{$emu}.system-dnd5e {
 			}
 
 			.card-footer {
-				border-block-start: b("border-lighter");
+				border-block-start: 1px solid RGB($emu-color-border-lighter);
 
 				@include layout {
 					margin-block-start: $global-space-base;
@@ -662,7 +662,7 @@ body#{$emu}.system-dnd5e {
 				}
 
 				span {
-					border-inline-end: b("border");
+					border-inline-end: 1px solid RGB($emu-color-border);
 
 					@include layout {
 						font-size: $global-font-size-xs;

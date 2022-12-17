@@ -1,12 +1,13 @@
 .package-configuration {
 	aside.sidebar {
-		border-inline-end: 1px solid color("border");
+		border-inline-end: none;
 
 		@include layout {
 			flex: 0 0 220px;
 			font-size: $global-font-size-md;
-			gap:  $global-space-md;
+			gap:  $global-space-sm;
 			height: 100%;
+			overflow: auto;
 			padding: 0;
 			padding-inline-end: $global-space-sm;
 		}
@@ -19,8 +20,8 @@
 
 		nav.filters {
 			.category-filter {
-				border-block-end: 1px solid color(border);
-				color: color("text");
+				border-block-end: 1px solid RGB($emu-color-border);
+				color: RGB($emu-color-text);
 
 				@include layout {
 					align-items: center;
@@ -35,12 +36,23 @@
 				}
 
 				&.active {
-					background-color: color("primary");
-					color: color("text-lightest");
+					background-color: RGB($emu-color-primary);
+					color: RGB($emu-color-text-lightest);
 
 					a {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 					}
+				}
+			}
+		}
+
+		.tabs {
+			border-block-end: none !important;
+
+			.category-tab {
+				@include layout {
+					border-radius: none !important;
+					justify-content: space-between !important;
 				}
 			}
 		}

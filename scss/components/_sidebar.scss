@@ -1,20 +1,24 @@
 #sidebar,
 .sidebar-popout {
-	background-color: color("background-darkest", $global-background-opacity-sidebar);
+	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
 	background-image: $global-image-background-darkest;
-	border: b("border");
+	border: 1px solid RGB($emu-color-border);
 	box-shadow: none;
-	transition: t(opacity, "link");
+	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
-		@include fixed(top calc(#{$global-space-md} / 2) right 0 bottom auto);
-		@include size($global-space-sidebar, calc(100% - #{$global-space-md}));
+		bottom: auto;
 		display: flex;
 		flex-direction: column;
+		height: calc(100% - #{$global-space-md});
 		margin: 0;
 		overflow: hidden;
 		padding: 0;
-		z-index: z(fixed);
+		position: fixed;
+		right: 0;
+		top: calc(#{$global-space-md} / 2);
+		width: $global-space-sidebar;
+		z-index: $global-z-index-fixed;
 
 		ol,
 		ul {
@@ -26,7 +30,7 @@
 	&.collapsed {
 		@include layout {
 			height: auto !important;
-			width: to-rem(32px) !important;
+			width: 32px !important;
 		}
 
 		@include layout-subtle {
@@ -58,9 +62,12 @@
 	}
 
 	#sidebar-tabs {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 		box-shadow: none;
-		transition: t(background box-shadow color, "link");
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			display: flex;
@@ -76,8 +83,10 @@
 			border: none;
 			border-radius: 0;
 			box-shadow: none;
-			color: color("text-lightest");
-			transition: t(box-shadow color, "link");
+			color: RGB($emu-color-text-lightest);
+			transition:
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				align-items: center;
@@ -116,22 +125,26 @@
 				@include layout {
 					margin: 0;
 					position: relative;
-					z-index: z("above");
+					z-index: $global-z-index-above;
 				}
 			}
 
 			.notification-pip {
-				background-color: color("primary");
+				background-color: RGB($emu-color-primary);
 
 				@include layout {
-					@include absolute(zero);
-					animation-duration: time("x-slow");
+					animation-duration: $global-transition-time-x-slow;
 					animation-iteration-count: infinite;
 					animation-name: emu-notification-flash;
-					animation-timing-function: map-get($_default-transitions, "shift");
+					animation-timing-function: $global-transition-type-shift;
+					bottom: 0;
 					display: none;
+					left: 0;
 					opacity: 0;
 					pointer-events: none;
+					position: absolute;
+					right: 0;
+					top: 0;
 					z-index: 0;
 
 					&::before {
@@ -157,7 +170,7 @@
 			height: 100%;
 			justify-content: initial;
 			margin: 0;
-			min-height: to-rem(200px);
+			min-height: 200px;
 			position: relative;
 
 			&.active {
@@ -166,7 +179,7 @@
 		}
 
 		@include layout(compact) {
-			min-height: to-rem(176px);
+			min-height: 176px;
 		}
 
 		&.directory .directory-list {
@@ -184,7 +197,7 @@
 		.directory-footer {
 			button {
 				@include layout {
-					@include ellipsis;
+					@extend %ellipsis;
 					height: auto;
 					line-height: 1;
 					width: auto;
@@ -197,7 +210,7 @@
 		}
 
 		.directory-header {
-			border-block-end: b("border");
+			border-block-end: 1px solid RGB($emu-color-border);
 
 			@include layout {
 				flex-direction: column;
@@ -219,7 +232,7 @@
 				}
 
 				input {
-					background-color: color("background-lightest");
+					background-color: RGB($emu-color-background-lightest);
 
 					@include layout {
 						flex: 1 1 auto;
@@ -232,8 +245,9 @@
 				@extend %default-button;
 
 				@include layout {
-					@include size(to-rem(32px));
 					flex: 0 0 auto;
+					height: 32px;
+					width: 32px;
 
 					> i {
 						margin: 0;
@@ -270,7 +284,7 @@
 		}
 
 		.directory-footer {
-			border-block-start: b("border");
+			border-block-start: 1px solid RGB($emu-color-border);
 
 			@include layout {
 				flex-wrap: wrap;
@@ -291,7 +305,9 @@
 		opacity: $global-subtle-opacity;
 		overflow: visible;
 		right: calc(-1 * #{$global-space-sidebar});
-		transition: t(opacity right, "shift");
+		transition:
+			opacity $global-transition-time-base $global-transition-type-shift,
+			right $global-transition-time-base $global-transition-type-shift;
 
 		&.collapsed {
 			right: 0;
@@ -325,27 +341,31 @@
 		}
 
 		&::before {
-			@include absolute(top calc(-1 * #{$global-space-md} / 2) right 0);
 			background-color: transparent;
 			content: "";
 			height: calc(100% + #{$global-space-md});
+			position: absolute;
+			right: 0;
+			top: calc(-1 * #{$global-space-md} / 2);
 			width: calc(100% + #{$global-space-button});
-			z-index: z("below");
+			z-index: $global-z-index-below;
 		}
 
 		#emu-sidebar-lock {
-			@include absolute(top 50% right 100%);
 			@extend %font-awesome;
 			align-items: center;
-			background-color: color("background");
-			border: b("border");
+			background-color: RGB($emu-color-background);
 			border-inline-end: 0;
-			color: color("text-lightest");
+			border: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
 			cursor: pointer;
 			display: flex;
-			height: to-rem(64px);
+			height: 64px;
 			justify-content: center;
-			margin-block-start: to-rem(-32px);
+			margin-block-start: -32px;
+			position: absolute;
+			right: 100%;
+			top: 50%;
 			width: $global-space-button;
 
 			&::before {

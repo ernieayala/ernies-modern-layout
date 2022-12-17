@@ -12,7 +12,7 @@ h4 {
 }
 
 h1 {
-	border-block-end: 2px solid color("border");
+	border-block-end: 2px solid RGB($emu-color-border);
 
 	@include layout {
 		font-size: $global-font-size-xxl;
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-	border-block-end: b("border");
+	border-block-end: 1px solid RGB($emu-color-border);
 
 	@include layout {
 		font-size: $global-font-size-xl;
@@ -37,12 +37,12 @@ a {
 	text-shadow: none;
 
 	&:hover {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 	}
 }
 
 a[href] {
-	color: color("primary");
+	color: RGB($emu-color-primary);
 	text-decoration: none;
 	text-shadow: none;
 
@@ -58,11 +58,11 @@ a[href] {
 
 a.entity-link,
 a.inline-roll {
-	background-color: color("background-lightest");
-	box-shadow: 0 0 0 1px inset color("border");
+	background-color: RGB($emu-color-background-lightest);
+	box-shadow: 0 0 0 1px inset RGB($emu-color-border);
 	border: none;
 	border-radius: $global-border-radius-controls;
-	color: color("text");
+	color: RGB($emu-color-text);
 	text-shadow: none;
 
 	@include layout {
@@ -71,7 +71,7 @@ a.inline-roll {
 	}
 
 	&:hover {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 	}
 
 	> i {
@@ -112,7 +112,7 @@ dd {
 
 hr {
 	border: none;
-	border-block-start: b("border");
+	border-block-start: 1px solid RGB($emu-color-border);
 	border-block-end: none;
 
 	@include layout {
@@ -125,7 +125,7 @@ button[hidden] {
 }
 
 blockquote {
-	border-inline-start: 3px solid color("border");
+	border-inline-start: 3px solid RGB($emu-color-border);
 
 	@include layout {
 		margin: $global-space-base 0 $global-space-base $global-space-md;
@@ -138,9 +138,9 @@ blockquote {
 }
 
 section.secret {
-	background-color: color("background-light", 0.2);
-	border-block-start: b("border");
-	border-block-end: b("border");
+	background-color: RGBA($emu-color-background-light, 0.2);
+	border-block-start: 1px solid RGB($emu-color-border);
+	border-block-end: 1px solid RGB($emu-color-border);
 
 	@include layout {
 		padding: 0 $global-space-base;

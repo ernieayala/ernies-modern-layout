@@ -37,9 +37,9 @@
 	}
 
 	.lmrtfy-submit {
-		background-color: color("background-lightest");
+		background-color: RGB($emu-color-background-lightest);
 		background-image: $global-image-background-lightest;
-		border-block-start: b("border");
+		border-block-start: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			bottom: 0;
@@ -57,7 +57,7 @@
 	}
 
 	input[type=checkbox]:checked + label {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 		font-weight: normal;
 	}
 

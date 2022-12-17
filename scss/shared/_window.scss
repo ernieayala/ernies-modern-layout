@@ -32,9 +32,9 @@
 	// 	}
 
 	// 	&::after {
-	// 		background-color: color("background-lightest");
+	// 		background-color: RGB($emu-color-background-lightest);
 	// 		background-image: $global-image-background-light;
-	// 		// border-block-start: 1px solid color("border");
+	// 		// border-block-start: 1px solid RGB($emu-color-border);
 
 	// 		@include layout {
 	// 			bottom: calc(-1 * #{$global-space-sm});

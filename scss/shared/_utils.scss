@@ -16,6 +16,12 @@
 	padding: 0;
 }
 
+%ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 %font-awesome {
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
@@ -27,11 +33,11 @@
 }
 
 %notification-pip {
-	animation-duration: time("x-slow");
+	animation-duration: $global-transition-time-x-slow;
 	animation-iteration-count: infinite;
 	animation-name: emu-notification-flash;
-	animation-timing-function: map-get($_default-transitions, "shift");
-	background-color: color("primary");
+	animation-timing-function: $global-transition-type-shift;
+	background-color: RGB($emu-color-primary);
 	display: none;
 	opacity: 0;
 	pointer-events: none;

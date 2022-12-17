@@ -1,5 +1,7 @@
 export const FOUNDRY = {
 	colorPrimary: '#e57509',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#293e40',
 	colorBackgroundLightest: '#e6e9eb',
 	colorBackgroundLight: '#7d8a8c',
@@ -20,6 +22,8 @@ export const FOUNDRY = {
 
 export const DARK = {
 	colorPrimary: '#111a1c',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#2e2e2e',
 	colorBackgroundLightest: '#666666',
 	colorBackgroundLight: '#4a4a4a',
@@ -40,6 +44,8 @@ export const DARK = {
 
 export const WESTERN = {
 	colorPrimary: '#ef972d',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#4e321c',
 	colorBackgroundLightest: '#eddabe',
 	colorBackgroundLight: '#f0cb94',
@@ -60,6 +66,8 @@ export const WESTERN = {
 
 export const ALIEN = {
 	colorPrimary: '#0fbd7d',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#2e2e2e',
 	colorBackgroundLightest: '#151515',
 	colorBackgroundLight: '#4a4a4a',

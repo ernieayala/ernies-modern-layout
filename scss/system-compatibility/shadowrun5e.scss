@@ -6,66 +6,66 @@
 
 // 	// 	&.item {
 // 	// 		.item-header {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 
 // 	// 			.item-name {
 // 	// 				// font-family: inherit;
 // 	// 			}
 
 // 	// 			.source .source-button {
-// 	// 				color: color("text");
+// 	// 				color: RGB($emu-color-text);
 // 	// 			}
 
 // 	// 			.item-type {
-// 	// 				color: color("text");
+// 	// 				color: RGB($emu-color-text);
 // 	// 				// font-family: inherit;
 // 	// 			}
 
 // 	// 			.item-image {
-// 	// 				border-color: color("border");
+// 	// 				border-color: RGB($emu-color-border);
 // 	// 			}
 
 // 	// 			.item-info > :not(:last-child) {
-// 	// 				border-color: color("border");
+// 	// 				border-color: RGB($emu-color-border);
 // 	// 			}
 // 	// 		}
 
 // 	// 		.technology {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 			// font-family: inherit;
 // 	// 		}
 
 // 	// 		.description {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 		}
 
 // 	// 		.item-form {
 // 	// 			.header {
-// 	// 				border-color: color("border");
-// 	// 				color: color("text");
+// 	// 				border-color: RGB($emu-color-border);
+// 	// 				color: RGB($emu-color-text);
 // 	// 				// font-family: inherit;
 // 	// 				text-shadow: none;
 // 	// 			}
 
 // 	// 			.form-line .label {
-// 	// 				color: color("text");
+// 	// 				color: RGB($emu-color-text);
 // 	// 				// font-family: inherit;
 // 	// 			}
 
 // 	// 			.form-line {
 // 	// 				select {
-// 	// 					border-color: color("border");
-// 	// 					color: color("text");
+// 	// 					border-color: RGB($emu-color-border);
+// 	// 					color: RGB($emu-color-text);
 
 // 	// 					> option {
-// 	// 						background-color: color("background-lightest");
-// 	// 						color: color("text");
+// 	// 						background-color: RGB($emu-color-background-lightest);
+// 	// 						color: RGB($emu-color-text);
 // 	// 					}
 // 	// 				}
 
 // 	// 				input {
-// 	// 					border-color: color("border");
-// 	// 					color: color("text");
+// 	// 					border-color: RGB($emu-color-border);
+// 	// 					color: RGB($emu-color-text);
 // 	// 				}
 // 	// 			}
 // 	// 		}
@@ -77,37 +77,37 @@
 // 	// 		}
 
 // 	// 		.attributes {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 
 // 	// 			+ :not(.attributes) {
-// 	// 				border-color: color("border");
+// 	// 				border-color: RGB($emu-color-border);
 // 	// 			}
 
 // 	// 			&:last-child {
-// 	// 				border-color: color("border");
+// 	// 				border-color: RGB($emu-color-border);
 // 	// 			}
 
 // 	// 			.attribute {
-// 	// 				color: color("text");
+// 	// 				color: RGB($emu-color-text);
 // 	// 				// font-family: inherit;
 // 	// 				text-shadow: none;
 
 // 	// 				&:not(:last-child) {
-// 	// 					border-color: color("border");
+// 	// 					border-color: RGB($emu-color-border);
 // 	// 				}
 
 // 	// 				> .attribute-name.roll:hover {
-// 	// 					color: color("primary");
+// 	// 					color: RGB($emu-color-primary);
 // 	// 					text-shadow: none;
 // 	// 				}
 
 // 	// 				.value .value-modifiers {
 // 	// 					background-color: transparent;
-// 	// 					border-color: color("border-lighter");
+// 	// 					border-color: RGB($emu-color-border-lighter);
 
 // 	// 					> .value-modifiers-base,
 // 	// 					> .value-modifiers-total {
-// 	// 						border-color: color("border-lighter");
+// 	// 						border-color: RGB($emu-color-border-lighter);
 // 	// 					}
 // 	// 				}
 // 	// 			}
@@ -119,16 +119,16 @@
 // 	// 	}
 
 // 	// 	.chat-select-link img:hover {
-// 	// 		border-color: color("border");
+// 	// 		border-color: RGB($emu-color-border);
 // 	// 	}
 
 // 	// 	.Roll:hover {
-// 	// 		color: color("primary");
+// 	// 		color: RGB($emu-color-primary);
 // 	// 		text-shadow: none;
 // 	// 	}
 
 // 	// 	.input .unit {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 		text-shadow: none;
 // 	// 	}
 
@@ -137,23 +137,23 @@
 // 	// 	}
 
 // 	// 	button.plus1_button {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 	}
 
 // 	// 	input[type='checkbox'].display {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 
 // 	// 		&:hover {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 		}
 // 	// 	}
 
 // 	// 	input[type='text'].disabled-for-display {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 	}
 
 // 	// 	input[type='text'].display {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 		text-shadow: none;
 
 // 	// 		&::placeholder {
@@ -161,99 +161,99 @@
 // 	// 		}
 
 // 	// 		&:disabled {
-// 	// 			color: color("text");
+// 	// 			color: RGB($emu-color-text);
 // 	// 			opacity: 0.5;
 // 	// 			pointer-events: none;
 // 	// 		}
 // 	// 	}
 
 // 	// 	select.display {
-// 	// 		border-color: color("border");
-// 	// 		color: color("text");
+// 	// 		border-color: RGB($emu-color-border);
+// 	// 		color: RGB($emu-color-text);
 
 // 	// 		> option {
-// 	// 			background-color: color("background-lightest");
-// 	// 			color: color("text");
+// 	// 			background-color: RGB($emu-color-background-lightest);
+// 	// 			color: RGB($emu-color-text);
 // 	// 		}
 // 	// 	}
 
 // 	// 	.entity-link {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 	}
 
 // 	// 	.roll:hover {
-// 	// 		color: color("primary");
+// 	// 		color: RGB($emu-color-primary);
 // 	// 		text-shadow: none;
 // 	// 	}
 
 // 	// 	.editor .tox-edit-area {
-// 	// 		background-color: color("white");
+// 	// 		background-color: RGB($emu-color-white);
 // 	// 	}
 
 // 	// 	.window-content {
-// 	// 		background-color: color("background-lightest");
-// 	// 		color: color("text");
+// 	// 		background-color: RGB($emu-color-background-lightest);
+// 	// 		color: RGB($emu-color-text);
 // 	// 	}
 
 // 	// 	.description > .editor {
-// 	// 		color: color("text");
+// 	// 		color: RGB($emu-color-text);
 // 	// 	}
 
 // 	// 	.border-right {
-// 	// 		border-color: color("border");
+// 	// 		border-color: RGB($emu-color-border);
 // 	// 	}
 
 // 	// 	.tabs {
-// 	// 		border-color: color("border");
+// 	// 		border-color: RGB($emu-color-border);
 
 // 	// 		> a {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 
 // 	// 			&:hover {
-// 	// 				color: color("primary");
+// 	// 				color: RGB($emu-color-primary);
 // 	// 				text-shadow: none;
 // 	// 			}
 
 // 	// 			&.active {
-// 	// 				background-color: color("primary");
-// 	// 				color: color("text-lightest");
+// 	// 				background-color: RGB($emu-color-primary);
+// 	// 				color: RGB($emu-color-text-lightest);
 // 	// 				text-shadow: none;
 // 	// 			}
 // 	// 		}
 // 	// 	}
 
 // 	// 	.split-container > *:not(:last-child) {
-// 	// 		border-color: color("border");
+// 	// 		border-color: RGB($emu-color-border);
 // 	// 	}
 
 // 	// 	.block {
 // 	// 		&:not(:last-child) {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 		}
 
 // 	// 		.block-line.border-bottom {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 		}
 // 	// 	}
 
 // 	// 	.horizontal-cell-input .cell-container .cell {
-// 	// 		border-color: color("border");
-// 	// 		color: color("text");
+// 	// 		border-color: RGB($emu-color-border);
+// 	// 		color: RGB($emu-color-text);
 
 // 	// 		&.filled {
-// 	// 			background-color: color("background-light");
+// 	// 			background-color: RGB($emu-color-background-light);
 // 	// 		}
 
 // 	// 		&:hover {
-// 	// 			background-color: color("background-lightest");
+// 	// 			background-color: RGB($emu-color-background-lightest);
 // 	// 		}
 // 	// 	}
 
 // 	// 	.list-item {
-// 	// 		border-color: color("border");
+// 	// 		border-color: RGB($emu-color-border);
 
 // 	// 		.has-desc:hover {
-// 	// 			color: color("primary");
+// 	// 			color: RGB($emu-color-primary);
 // 	// 			text-shadow: none;
 // 	// 		}
 
@@ -263,19 +263,19 @@
 // 	// 		}
 
 // 	// 		.item-img.item-roll:hover {
-// 	// 			color: color("primary");
+// 	// 			color: RGB($emu-color-primary);
 // 	// 			text-shadow: none;
 // 	// 		}
 
 // 	// 		.item-desc .props > * {
-// 	// 			border-color: color("border");
+// 	// 			border-color: RGB($emu-color-border);
 // 	// 		}
 
 // 	// 		.item-text {
-// 	// 			border-color: color("border-lighter");
+// 	// 			border-color: RGB($emu-color-border-lighter);
 
 // 	// 			&.faded {
-// 	// 				color: color("text")
+// 	// 				color: RGB($emu-color-text)
 // 	// 			}
 // 	// 		}
 
@@ -283,17 +283,17 @@
 // 	// 		.add-new-ammo,
 // 	// 		.add-new-mod,
 // 	// 		.add-new-license {
-// 	// 			color: color("text");
+// 	// 			color: RGB($emu-color-text);
 // 	// 		}
 
 // 	// 		&.skill-header:hover {
-// 	// 			color: color("primary");
+// 	// 			color: RGB($emu-color-primary);
 // 	// 			text-shadow: none;
 // 	// 		}
 // 	// 	}
 
 // 	// 	.sunken {
-// 	// 		background-color: color("background-lightest");
+// 	// 		background-color: RGB($emu-color-background-lightest);
 // 	// 		box-shadow: none;
 
 // 	// 		tr {
@@ -312,12 +312,12 @@
 
 // 	// 	button,
 // 	// 	button.display {
-// 	// 		background-color: color("background-button");
-// 	// 		color: color("text-lightest");
+// 	// 		background-color: RGB($emu-color-background-button);
+// 	// 		color: RGB($emu-color-text-lightest);
 
 // 	// 		&.light {
-// 	// 			background-color: color("background-button");
-// 	// 			color: color("text-lightest");
+// 	// 			background-color: RGB($emu-color-background-button);
+// 	// 			color: RGB($emu-color-text-lightest);
 // 	// 		}
 // 	// 	}
 // 	// }
@@ -327,38 +327,38 @@
 // 		.sr5 {
 // 			&.chat-card {
 // 				.card-header {
-// 					border-color: color("border");
+// 					border-color: RGB($emu-color-border);
 
 // 					h3 {
 // 						font-family: inherit;
 // 					}
 
 // 					:first-of-type {
-// 						border-color: color("border");
+// 						border-color: RGB($emu-color-border);
 // 					}
 // 				}
 
 // 				.card-content {
-// 					border-color: color("border");
+// 					border-color: RGB($emu-color-border);
 // 				}
 
 // 				.card-buttons .button {
-// 					border-color: color("border");
+// 					border-color: RGB($emu-color-border);
 // 				}
 
 // 				.card-description {
 // 					span {
-// 						border-color: color("border");
+// 						border-color: RGB($emu-color-border);
 // 					}
 
 // 					.card-description-content {
-// 						border-color: color("border");
+// 						border-color: RGB($emu-color-border);
 // 					}
 // 				}
 
 // 				.damage-line .button {
-// 					background-color: color("background");
-// 					border-color: color("border");
+// 					background-color: RGB($emu-color-background);
+// 					border-color: RGB($emu-color-border);
 // 				}
 // 			}
 // 		}

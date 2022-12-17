@@ -11,7 +11,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] button {
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
   box-shadow: none;
-  color: rgba(var(--color-text-lightest), 1);
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
   text-shadow: none;
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] button, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout button,
@@ -49,9 +49,9 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] button {
   body.-emu.system-dnd5e [id*="TraitSelector"] button:hover,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] button:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] button:hover {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
     background-image: none;
-    color: rgba(var(--color-text-lightest), 1); }
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] button:disabled,
   body.-emu.system-dnd5e [id*="actor-type-"] button:disabled,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] button:disabled,
@@ -73,21 +73,21 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] button,
 body.-emu.system-dnd5e [id*="TraitSelector"] button,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] button,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] button {
-  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1)); }
+  background-color: RGBA(var(--emu-color-background-button, 125, 125, 125), var(--emu-background-opacity-button-primary, 1)); }
 
 body.-emu.system-dnd5e .dnd5e button {
-  background-color: rgba(var(--color-background-button), var(--emu-background-opacity-button-primary, 1));
+  background-color: RGBA(var(--emu-color-background-button, 125, 125, 125), var(--emu-background-opacity-button-primary, 1));
   background-image: var(--emu-image-background-controls, none);
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
   box-shadow: none;
-  color: rgba(var(--color-text-lightest), 1);
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
   text-shadow: none;
   transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.-emu.system-dnd5e .dnd5e button:hover {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
     background-image: none;
-    color: rgba(var(--color-text-lightest), 1); }
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
   body.-emu.system-dnd5e .dnd5e button:disabled {
     opacity: 0.5;
     pointer-events: none; }
@@ -101,7 +101,7 @@ body.-emu.system-dnd5e .dnd5e input[type="datetime-local"] {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.-emu.system-dnd5e .dnd5e input[type="text"]::placeholder,
   body.-emu.system-dnd5e .dnd5e input[type="number"]::placeholder,
@@ -109,7 +109,7 @@ body.-emu.system-dnd5e .dnd5e input[type="datetime-local"] {
   body.-emu.system-dnd5e .dnd5e input[type="time"]::placeholder,
   body.-emu.system-dnd5e .dnd5e input[type="password"]::placeholder,
   body.-emu.system-dnd5e .dnd5e input[type="datetime-local"]::placeholder {
-    color: rgba(var(--color-text), 0.5); }
+    color: RGBA(var(--emu-color-text, 9, 14, 16), 0.5); }
   body.-emu.system-dnd5e .dnd5e input[type="text"]:disabled,
   body.-emu.system-dnd5e .dnd5e input[type="number"]:disabled,
   body.-emu.system-dnd5e .dnd5e input[type="date"]:disabled,
@@ -121,17 +121,17 @@ body.-emu.system-dnd5e .dnd5e input[type="datetime-local"] {
 
 body.-emu.system-dnd5e .dnd5e input[type="checkbox"] {
   background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.-emu.system-dnd5e .dnd5e input[type="checkbox"]:disabled {
     opacity: 0.5;
     pointer-events: none; }
   body.-emu.system-dnd5e .dnd5e input[type="checkbox"]:checked {
-    background-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-text-lightest), 1); }
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
 
 body.-emu.system-dnd5e .dnd5e input[type="color"],
 body.-emu.system-dnd5e .dnd5e input[type="color"][data-edit] {
@@ -147,23 +147,23 @@ body.-emu.system-dnd5e .dnd5e select {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.-emu.system-dnd5e .dnd5e select:disabled {
     opacity: 0.5;
     pointer-events: none; }
   body.-emu.system-dnd5e .dnd5e select optgroup,
   body.-emu.system-dnd5e .dnd5e select option {
-    background-color: rgba(var(--color-background-lightest), 1);
-    color: rgba(var(--color-text), 1); }
+    background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235));
+    color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e textarea {
   background: transparent;
   border-radius: var(--emu-border-radius-forms, 0);
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   body.-emu.system-dnd5e .dnd5e textarea::placeholder {
-    color: rgba(var(--color-text), 0.5); }
+    color: RGB(var(--emu-color-text, 9, 14, 16), 0.5); }
   body.-emu.system-dnd5e .dnd5e textarea:disabled {
     opacity: 0.5;
     pointer-events: none; }
@@ -172,15 +172,15 @@ body.-emu.system-dnd5e .dnd5e fieldset {
   border: none; }
 
 body.-emu.system-dnd5e .dnd5e table {
-  background-color: rgba(var(--color-black), 0.05);
+  background-color: RGBA(var(--emu-color-black, 0, 0, 0), 0.05);
   border: none; }
   body.-emu.system-dnd5e .dnd5e table thead {
-    background-color: rgba(var(--color-black), 0.2);
-    border-block-end: rgba(var(--color-border), 1) 1px solid;
-    color: rgba(var(--color-text-lightest), 1);
+    background-color: RGBA(var(--emu-color-black, 0, 0, 0), 0.2);
+    border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
     text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e table tr:nth-child(even) {
-    background-color: rgba(var(--color-white), 0.1); }
+    background-color: RGBA(var(--emu-color-white, 255, 255, 255), 0.1); }
 
 body.-emu.system-dnd5e .dnd5e h1,
 body.-emu.system-dnd5e .dnd5e h2,
@@ -189,19 +189,19 @@ body.-emu.system-dnd5e .dnd5e h4 {
   font-weight: normal; }
 
 body.-emu.system-dnd5e .dnd5e h1 {
-  border-block-end: 2px solid rgba(var(--color-border), 1); }
+  border-block-end: 2px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 
 body.-emu.system-dnd5e .dnd5e h2 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e a {
   text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e a:hover {
-    color: rgba(var(--color-primary), 1); }
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e .dnd5e a[href] {
-  color: rgba(var(--color-primary), 1);
+  color: RGB(var(--emu-color-primary, 229, 117, 9));
   text-decoration: none;
   text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e a[href]:hover {
@@ -210,8 +210,8 @@ body.-emu.system-dnd5e .dnd5e a[href] {
 
 body.-emu.system-dnd5e .dnd5e a.entity-link,
 body.-emu.system-dnd5e .dnd5e a.inline-roll {
-  background-color: rgba(var(--color-background-lightest), 1);
-  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235));
+  box-shadow: 0 0 0 1px inset RGB(var(--emu-color-border, 33, 50, 52));
   border: none;
   border-radius: var(--emu-border-radius-controls, 0); }
   body.-emu.system-dnd5e .dnd5e a.entity-link > i,
@@ -220,16 +220,16 @@ body.-emu.system-dnd5e .dnd5e a.inline-roll {
 
 body.-emu.system-dnd5e .dnd5e hr {
   border: none;
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
   border-block-end: none; }
 
 body.-emu.system-dnd5e .dnd5e blockquote {
-  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+  border-inline-start: 3px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e section.secret {
-  background-color: rgba(var(--color-background-light), 0.2);
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  background-color: RGBA(var(--emu-color-background-light, 125, 138, 140), 0.2);
+  border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] input[type="text"],
 body.-emu.system-dnd5e [id*="actor-flags-"] input[type="number"],
@@ -294,11 +294,11 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="time"],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="password"],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="datetime-local"],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"] {
-  background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  background: RGB(var(--emu-color-background-lightest, 230, 233, 235));
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="text"], body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="text"],
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="number"], body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="number"],
@@ -363,17 +363,17 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"] {
   .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="password"], body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="password"],
   .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="datetime-local"], body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="datetime-local"],
   .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"], body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="search"] {
-    width: 100%;
-    height: var(--emu-space-button, 32px);
     font-family: inherit;
     font-size: inherit;
     font-weight: normal;
+    height: var(--emu-space-button, 32px);
     line-height: 1;
     margin: 0;
     min-width: var(--emu-space-xl, 32px);
     padding: 0 var(--emu-space-sm, 8px);
     position: relative;
-    user-select: text; }
+    user-select: text;
+    width: 100%; }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="text"]::placeholder,
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="number"]::placeholder,
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="date"]::placeholder,
@@ -437,7 +437,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"] {
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="password"]::placeholder,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="datetime-local"]::placeholder,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"]::placeholder {
-    color: rgba(var(--color-text), 0.5); }
+    color: RGBA(var(--emu-color-text, 9, 14, 16), 0.5); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input:disabled[type="text"],
   body.-emu.system-dnd5e [id*="actor-flags-"] input:disabled[type="number"],
   body.-emu.system-dnd5e [id*="actor-flags-"] input:disabled[type="date"],
@@ -514,9 +514,9 @@ body.-emu.system-dnd5e [id*="TraitSelector"] select,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] select,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] select {
   background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] select, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout select,
   .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] select, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout select,
@@ -567,8 +567,8 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] select {
   body.-emu.system-dnd5e [id*="TraitSelector"] select option,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] select option,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] select option {
-    background-color: rgba(var(--color-background-lightest), 1);
-    color: rgba(var(--color-text), 1); }
+    background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235));
+    color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] input[type="checkbox"],
 body.-emu.system-dnd5e [id*="actor-type-"] input[type="checkbox"],
@@ -580,10 +580,10 @@ body.-emu.system-dnd5e [id*="TraitSelector"] input[type="checkbox"],
 body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="checkbox"],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="checkbox"] {
   background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
   box-shadow: none;
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="checkbox"], body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="checkbox"],
   .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] input[type="checkbox"], body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout input[type="checkbox"],
@@ -594,13 +594,13 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="checkbox"] {
   .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="checkbox"], body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="checkbox"],
   .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="checkbox"], body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="checkbox"],
   .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="checkbox"], body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="checkbox"] {
-    width: var(--emu-space-button-xs, 20px);
-    height: var(--emu-space-button-xs, 20px);
     cursor: pointer;
     flex: 0 0 auto;
+    height: var(--emu-space-button-xs, 20px);
     margin: 0;
     position: relative;
-    top: auto; }
+    top: auto;
+    width: var(--emu-space-button-xs, 20px); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input:disabled[type="checkbox"],
   body.-emu.system-dnd5e [id*="actor-type-"] input:disabled[type="checkbox"],
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input:disabled[type="checkbox"],
@@ -621,8 +621,8 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="checkbox"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input:checked[type="checkbox"],
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input:checked[type="checkbox"],
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input:checked[type="checkbox"] {
-    background-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-text-lightest), 1); }
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
 
 .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="radio"], body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="radio"],
 .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] input[type="radio"], body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout input[type="radio"],
@@ -655,7 +655,7 @@ body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="color"][data-edit
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="color"],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="color"][data-edit] {
   background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="color"], body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="color"],
@@ -738,8 +738,8 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-webkit-slider-runnable-track {
-    background-color: rgba(var(--color-background), 0.8);
-    border: rgba(var(--color-border), 1) 1px solid;
+    background-color: RGBA(var(--emu-color-background, 41, 62, 64), 0.8);
+    border: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
     border-radius: var(--emu-border-radius-forms, 0);
     box-shadow: none;
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -752,9 +752,9 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-webkit-slider-runnable-track, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="range"]::-webkit-slider-runnable-track,
     .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-webkit-slider-runnable-track, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="range"]::-webkit-slider-runnable-track,
     .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-webkit-slider-runnable-track, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="range"]::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 0.5rem;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 8px;
+      width: 100%; }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]:focus::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]:focus::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]:focus::-webkit-slider-runnable-track,
@@ -764,7 +764,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]:focus::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]:focus::-webkit-slider-runnable-track,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]:focus::-webkit-slider-runnable-track {
-    background-color: rgba(var(--color-background), 1); }
+    background-color: RGB(var(--emu-color-background, 41, 62, 64)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]:focus::-ms-fill-lower,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]:focus::-ms-fill-lower,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]:focus::-ms-fill-lower,
@@ -774,7 +774,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]:focus::-ms-fill-lower,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]:focus::-ms-fill-lower,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]:focus::-ms-fill-lower {
-    background-color: rgba(var(--color-background), 1); }
+    background-color: RGB(var(--emu-color-background, 41, 62, 64)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]:focus::-ms-fill-upper,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]:focus::-ms-fill-upper,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]:focus::-ms-fill-upper,
@@ -784,7 +784,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]:focus::-ms-fill-upper,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]:focus::-ms-fill-upper,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]:focus::-ms-fill-upper {
-    background-color: rgba(var(--color-background), 1); }
+    background-color: RGB(var(--emu-color-background, 41, 62, 64)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]::-webkit-slider-thumb,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]::-webkit-slider-thumb,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]::-webkit-slider-thumb,
@@ -794,9 +794,9 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-webkit-slider-thumb,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-webkit-slider-thumb,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-webkit-slider-thumb {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
     border-radius: var(--emu-border-radius-forms, 0);
-    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
     box-shadow: none;
     transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-appearance: none; }
@@ -809,10 +809,10 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-webkit-slider-thumb, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="range"]::-webkit-slider-thumb,
     .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-webkit-slider-thumb, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="range"]::-webkit-slider-thumb,
     .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-webkit-slider-thumb, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="range"]::-webkit-slider-thumb {
-      width: 1rem;
-      height: 1rem;
       cursor: pointer;
-      margin-block-start: -0.3125rem; }
+      height: 16px;
+      margin-block-start: -5px;
+      width: 16px; }
     body.-emu.system-dnd5e [id*="actor-flags-"] input::-webkit-slider-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="actor-type-"] input::-webkit-slider-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input::-webkit-slider-thumb:hover[type="range"],
@@ -822,7 +822,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     body.-emu.system-dnd5e [id*="TraitSelector"] input::-webkit-slider-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ProficiencySelector"] input::-webkit-slider-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ActorSheetFlags"] input::-webkit-slider-thumb:hover[type="range"] {
-      box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+      box-shadow: inset 0 0 0 2px RGB(var(--emu-color-white, 255, 255, 255)), 0 1px 2px 0 RGBA(var(--emu-color-black, 0, 0, 0), 0.3); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]::-moz-range-track,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]::-moz-range-track,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]::-moz-range-track,
@@ -832,8 +832,8 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-moz-range-track,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-moz-range-track,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-moz-range-track {
-    background-color: rgba(var(--color-background), 0.8);
-    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    background-color: RGBA(var(--emu-color-background, 41, 62, 64), 0.8);
+    border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
     border-radius: var(--emu-border-radius-forms, 0);
     box-shadow: none;
     transition: background 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
@@ -846,9 +846,9 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-moz-range-track, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="range"]::-moz-range-track,
     .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-moz-range-track, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="range"]::-moz-range-track,
     .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-moz-range-track, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="range"]::-moz-range-track {
-      width: 100%;
-      height: 0.5rem;
-      cursor: pointer; }
+      cursor: pointer;
+      height: 8px;
+      width: 100%; }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"]::-moz-range-thumb,
   body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"]::-moz-range-thumb,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"]::-moz-range-thumb,
@@ -858,9 +858,9 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
   body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-moz-range-thumb,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-moz-range-thumb,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-moz-range-thumb {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
     border-radius: var(--emu-border-radius-forms, 0);
-    border: rgba(var(--color-border-lighter), 1) 1px solid;
+    border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
     box-shadow: none;
     transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-appearance: none; }
@@ -873,10 +873,10 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"]::-moz-range-thumb, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="range"]::-moz-range-thumb,
     .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"]::-moz-range-thumb, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="range"]::-moz-range-thumb,
     .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"]::-moz-range-thumb, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="range"]::-moz-range-thumb {
-      width: 1rem;
-      height: 1rem;
       cursor: pointer;
-      margin-block-start: -0.3125rem; }
+      height: 16px;
+      margin-block-start: -5px;
+      width: 16px; }
     body.-emu.system-dnd5e [id*="actor-flags-"] input::-moz-range-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="actor-type-"] input::-moz-range-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input::-moz-range-thumb:hover[type="range"],
@@ -886,10 +886,10 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] {
     body.-emu.system-dnd5e [id*="TraitSelector"] input::-moz-range-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ProficiencySelector"] input::-moz-range-thumb:hover[type="range"],
     body.-emu.system-dnd5e [id*="ActorSheetFlags"] input::-moz-range-thumb:hover[type="range"] {
-      box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3); }
+      box-shadow: inset 0 0 0 2px RGB(var(--emu-color-white, 255, 255, 255)), 0 1px 2px 0 RGBA(var(--emu-color-black, 0, 0, 0), 0.3); }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] + .range-value {
     border: none;
-    color: rgba(var(--color-text), 1); }
+    color: RGB(var(--emu-color-text, 9, 14, 16)); }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSkillConfig-"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSensesConfig"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorAbilityConfig"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorMovementConfig"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout input[type="range"] + .range-value, .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="range"] + .range-value, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout input[type="range"] + .range-value {
       align-items: center;
       display: flex;
@@ -908,9 +908,9 @@ body.-emu.system-dnd5e [id*="TraitSelector"] textarea,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] textarea,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea {
   background: transparent;
-  border: rgba(var(--color-border-lighter), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-radius: var(--emu-border-radius-forms, 0);
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   transition: box-shadow 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] textarea, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout textarea,
   .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] textarea, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout textarea,
@@ -924,7 +924,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea {
     font-family: inherit;
     font-size: inherit;
     margin: 0;
-    min-height: 4rem;
+    min-height: 64px;
     padding: var(--emu-space-sm, 8px);
     position: relative;
     resize: none;
@@ -940,7 +940,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea {
   .-emu-layout.-emu-compact body.-emu.system-dnd5e [id*="TraitSelector"] textarea, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout.-emu-compact textarea,
   .-emu-layout.-emu-compact body.-emu.system-dnd5e [id*="ProficiencySelector"] textarea, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout.-emu-compact textarea,
   .-emu-layout.-emu-compact body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout.-emu-compact textarea {
-    min-height: 3rem; }
+    min-height: 48px; }
   body.-emu.system-dnd5e [id*="actor-flags-"] textarea::placeholder,
   body.-emu.system-dnd5e [id*="actor-type-"] textarea::placeholder,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] textarea::placeholder,
@@ -950,7 +950,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea {
   body.-emu.system-dnd5e [id*="TraitSelector"] textarea::placeholder,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] textarea::placeholder,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea::placeholder {
-    color: rgba(var(--color-text), 0.5); }
+    color: RGBA(var(--emu-color-text, 9, 14, 16), 0.5); }
   body.-emu.system-dnd5e [id*="actor-flags-"] textarea:disabled,
   body.-emu.system-dnd5e [id*="actor-type-"] textarea:disabled,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] textarea:disabled,
@@ -972,7 +972,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] button:hover,
 body.-emu.system-dnd5e [id*="TraitSelector"] button:hover,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] button:hover,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] button:hover, body.-emu.system-dnd5e .dnd5e button:hover {
-  box-shadow: inset 0 0 0 2px rgba(var(--color-white), 1);
+  box-shadow: inset 0 0 0 2px RGB(var(--emu-color-white, 255, 255, 255));
   text-shadow: none; }
 
 body.-emu.system-dnd5e .dnd5e input[type="text"]:hover,
@@ -1076,7 +1076,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] textarea:hover,
 body.-emu.system-dnd5e [id*="TraitSelector"] textarea:hover,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] textarea:hover,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea:hover {
-  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1);
+  box-shadow: inset 0 0 0 2px RGB(var(--emu-color-primary, 229, 117, 9));
   text-shadow: none; }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] button:focus,
@@ -1204,7 +1204,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] a[href]:focus,
 body.-emu.system-dnd5e [id*="TraitSelector"] a[href]:focus,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] a[href]:focus,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] a[href]:focus {
-  box-shadow: inset 0 0 0 2px rgba(var(--color-primary), 1), inset 0 0 0 3px rgba(var(--color-white), 1), 0 1px 2px 0 rgba(var(--color-black), 0.3);
+  box-shadow: inset 0 0 0 2px RGB(var(--emu-color-primary, 229, 117, 9)), inset 0 0 0 3px RGB(var(--emu-color-white, 255, 255, 255)), 0 1px 2px 0 RGBA(var(--emu-color-black, 0, 0, 0), 0.3);
   text-shadow: none;
   outline: none; }
 
@@ -1217,8 +1217,8 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] button.active,
 body.-emu.system-dnd5e [id*="TraitSelector"] button.active,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] button.active,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] button.active, body.-emu.system-dnd5e .dnd5e button.active {
-  background-color: rgba(var(--color-primary), 1);
-  color: rgba(var(--color-text-lightest), 1);
+  background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
   text-shadow: none; }
   body.-emu.system-dnd5e [id*="actor-flags-"] button.active:hover,
   body.-emu.system-dnd5e [id*="actor-type-"] button.active:hover,
@@ -1229,25 +1229,30 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] button.active, body.-emu.system-d
   body.-emu.system-dnd5e [id*="TraitSelector"] button.active:hover,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] button.active:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] button.active:hover, body.-emu.system-dnd5e .dnd5e button.active:hover {
-    background-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-text-lightest), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
     text-shadow: none; }
+
+.-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ActorSensesConfig"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ActorAbilityConfig"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ActorMovementConfig"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group label .units, .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group label .units {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
 
 .-emu-layout body.-emu.system-dnd5e .dnd5e .window-content {
   display: initial; }
 
 body.-emu.system-dnd5e .dnd5e .form-group label {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e .form-header {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e .tag {
-  border-color: rgba(var(--color-border), 1); }
+  border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .window-content {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   .-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .window-content {
     padding: 0; }
   .-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .window-content form {
@@ -1259,248 +1264,248 @@ body.-emu.system-dnd5e .dnd5e.sheet input[type="number"] {
   body.-emu.system-dnd5e .dnd5e.sheet input[type="text"]:hover, body.-emu.system-dnd5e .dnd5e.sheet input[type="text"]:focus,
   body.-emu.system-dnd5e .dnd5e.sheet input[type="number"]:hover,
   body.-emu.system-dnd5e .dnd5e.sheet input[type="number"]:focus {
-    border-color: rgba(var(--color-border), 1); }
+    border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .editable h4.rollable:hover,
 body.-emu.system-dnd5e .dnd5e.sheet .editable .rollable:hover > h4 {
-  color: rgba(var(--color-primary), 1);
+  color: RGB(var(--emu-color-primary, 229, 117, 9));
   text-shadow: none; }
 
 body.-emu.system-dnd5e .dnd5e.sheet span.sep {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .sheet-header {
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   .-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .sheet-header {
     gap: initial; }
   body.-emu.system-dnd5e .dnd5e.sheet .sheet-header img.profile {
-    border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+    border-inline-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary {
-    border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+    border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary li {
-      border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid;
-      color: rgba(var(--color-text), 1); }
+      border-inline-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
+      color: RGB(var(--emu-color-text, 9, 14, 16)); }
       body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary li:last-child {
         border-inline-end: none; }
   body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .header-details h1 {
     border: none; }
 
 body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item {
-  border-color: rgba(var(--color-border), 1);
+  border-color: RGB(var(--emu-color-border, 33, 50, 52));
   text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item:hover {
-    color: rgba(var(--color-primary), 1); }
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
   body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item.active {
-    border-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-primary), 1); }
+    border-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-icon {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item {
-  border-color: rgba(var(--color-border), 1);
+  border-color: RGB(var(--emu-color-border, 33, 50, 52));
   text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item:hover {
-    border-color: rgba(var(--color-border-lighter), 1);
-    color: rgba(var(--color-primary), 1); }
+    border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178));
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
   body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active {
-    border-color: rgba(var(--color-primary), 1);
-    color: rgba(var(--color-primary), 1); }
+    border-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .traits .trait-selector {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .items-list {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   body.-emu.system-dnd5e .dnd5e.sheet .items-list .item {
-    border-color: rgba(var(--color-border-lighter), 1); }
+    border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     body.-emu.system-dnd5e .dnd5e.sheet .items-list .item .item-name {
-      color: rgba(var(--color-text), 1); }
+      color: RGB(var(--emu-color-text, 9, 14, 16)); }
   body.-emu.system-dnd5e .dnd5e.sheet .items-list .items-header {
-    border: rgba(var(--color-border-lighter), 1) 1px solid; }
+    border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-source,
 body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-duration,
 body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-controls {
-  border-color: rgba(var(--color-border-lighter), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .summary {
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .attributes .attribute {
-  border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-inline-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .attributes .attribute:last-child {
     border-inline-end: none; }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor h4.box-title {
-  border-color: rgba(var(--color-border-lighter), 1);
-  color: rgba(var(--color-text), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor ul.attributes li.attribute {
-  border: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores {
-  border: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability {
-    border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+    border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability:last-child {
       border-block-end: none; }
     body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod,
     body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save {
-      border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+      border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod {
-      border-inline-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+      border-inline-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save {
-      border-inline-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+      border-inline-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .proficiency-toggle {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .proficient .proficiency-toggle {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .locked .proficiency-toggle {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor ul.skills-list {
-  border: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor ul.skills-list li.skill .skill-passive {
-    color: rgba(var(--color-text-darker), 1); }
+    color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .counters {
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .counters .counter h4 {
-    color: rgba(var(--color-text), 1); }
+    color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .traits i.fas {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .traits i.fas:hover {
-    color: rgba(var(--color-primary), 1);
+    color: RGB(var(--emu-color-primary, 229, 117, 9));
     text-shadow: none; }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive {
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   opacity: 0.5; }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-filters .currency label {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-filters .currency input[type="text"] {
-  border: rgba(var(--color-border), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item .item-name i.attuned {
-  color: rgba(var(--color-primary), 1); }
+  color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item .item-name i.not-attuned {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-detail {
-  border-color: rgba(var(--color-border-lighter), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-weight {
-  border-color: rgba(var(--color-border-lighter), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-summary {
-  border-color: rgba(var(--color-border-lighter), 1);
-  color: rgba(var(--color-text), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance {
-  border-color: rgba(var(--color-border), 1); }
+  border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .encumbrance-bar {
-    background-color: rgba(var(--color-primary), 1);
-    border-color: rgba(var(--color-border-lighter), 1); }
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .encumbrance-label {
-    color: rgba(var(--color-text-lightest), 1);
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255));
     text-shadow: none; }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .arrow-up,
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .arrow-down {
-    border-color: rgba(var(--color-border-lighter), 1); }
+    border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance.encumbered .arrow-up,
   body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance.encumbered .arrow-down {
-    border-color: rgba(var(--color-border), 1); }
+    border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-slots,
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-comps {
-  border-color: rgba(var(--color-border-lighter), 1);
-  color: rgba(var(--color-text), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spellbook .spell-uses {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-school,
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-action,
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-target {
-  border-color: rgba(var(--color-border-lighter), 1);
-  color: rgba(var(--color-text), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-component.C,
 body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-component.R {
-  color: rgba(var(--color-text-lightest), 1); }
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor .features i.original-class {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-header img.profile {
-  border: rgba(var(--color-border), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-header .item-subtitle {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-body .item-properties .properties-list li {
-  border: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item .details input[type="text"],
 body.-emu.system-dnd5e .dnd5e.sheet.item .details input[type="number"],
 body.-emu.system-dnd5e .dnd5e.sheet.item .details select {
-  border-color: rgba(var(--color-border), 1); }
+  border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item h4.damage-header {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.item .damage-control {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .charlevel {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .experience span.max {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .xpbar {
-  background-color: rgba(var(--color-background), 1);
-  border-color: rgba(var(--color-border), 1); }
+  background-color: RGB(var(--emu-color-background, 41, 62, 64));
+  border-color: RGB(var(--emu-color-border, 33, 50, 52)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .xpbar.bar {
-    background-color: rgba(var(--color-primary), 1);
-    border: rgba(var(--color-border), 1); }
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+    border: RGB(var(--emu-color-border, 33, 50, 52)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .attributes a.rest {
-  border-color: rgba(var(--color-border-lighter), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .resource .attribute-value label.recharge {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle,
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active,
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active {
-  color: rgba(var(--color-primary), 1); }
+  color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.fixed,
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.fixed {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.character .characteristics textarea {
-  border-color: rgba(var(--color-border-lighter), 1); }
+  border-color: RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.npc .header-exp .experience {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
 
 body.-emu.system-dnd5e .dnd5e.sheet.actor.vehicle .features .item-controls .item-toggle {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
   body.-emu.system-dnd5e .dnd5e.sheet.actor.vehicle .features .item-controls .item-toggle.active {
-    color: rgba(var(--color-primary), 1); }
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 .-emu-layout body.-emu.system-dnd5e #ability-use-form label.checkbox {
   flex: 1 1 auto; }
@@ -1575,8 +1580,8 @@ body.-emu.system-dnd5e [id*="TraitSelector"] form h3.form-header,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] form h3.form-header,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] form h3.form-header {
   border: none;
-  border-block-end: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-text), 1); }
+  border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form h3.form-header, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form h3.form-header, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form h3.form-header, .-emu-layout
@@ -1601,7 +1606,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] form .form-group,
 body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
-  color: rgba(var(--color-text), 1); }
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form .form-group, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group, .-emu-layout
@@ -1619,7 +1624,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
     height: auto;
     justify-content: space-between;
     margin: 0;
-    padding: var(--emu-space-sm, 8px);
+    padding: var(--emu-space-base, 4px) var(--emu-space-sm, 8px);
     width: 100%; }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group:nth-of-type(even), .-emu-layout
     body.-emu.system-dnd5e [id*="actor-type-"] form .form-group:nth-of-type(even), .-emu-layout
@@ -1630,7 +1635,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
     body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group:nth-of-type(even), .-emu-layout
     body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group:nth-of-type(even), .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group:nth-of-type(even) {
-      background-color: rgba(var(--color-background-light), 0.1); }
+      background-color: RGBA(var(--emu-color-background-light, 125, 138, 140), 0.1); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group.initial-position .form-fields, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form .form-group.initial-position .form-fields, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group.initial-position .form-fields, .-emu-layout
@@ -1997,7 +2002,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
   body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group label,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group label,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group label {
-    color: rgba(var(--color-text), 1); }
+    color: RGB(var(--emu-color-text, 9, 14, 16)); }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group label, .-emu-layout
     body.-emu.system-dnd5e [id*="actor-type-"] form .form-group label, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group label, .-emu-layout
@@ -2034,7 +2039,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
     body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group label .units,
     body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group label .units,
     body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group label .units {
-      color: rgba(var(--color-text), 1); }
+      color: RGB(var(--emu-color-text, 9, 14, 16)); }
       .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group label .units, .-emu-layout
       body.-emu.system-dnd5e [id*="actor-type-"] form .form-group label .units, .-emu-layout
       body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group label .units, .-emu-layout
@@ -2044,9 +2049,6 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
       body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group label .units, .-emu-layout
       body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group label .units, .-emu-layout
       body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group label .units {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
         display: block;
         font-size: var(--emu-font-size-sm, 12px);
         line-height: initial;
@@ -2123,7 +2125,7 @@ body.-emu.system-dnd5e [id*="ProficiencySelector"] form .notes,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] form .hint,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .notes,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .hint {
-  color: rgba(var(--color-text-darker), 1); }
+  color: RGB(var(--emu-color-text-darker, 41, 62, 64)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .notes, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-flags-"] form .hint, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] form .notes, .-emu-layout
@@ -2292,7 +2294,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] h1,
 body.-emu.system-dnd5e [id*="TraitSelector"] h1,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] h1,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] h1 {
-  border-block-end: 2px solid rgba(var(--color-border), 1); }
+  border-block-end: 2px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] h1, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] h1, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] h1, .-emu-layout
@@ -2313,7 +2315,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] h2,
 body.-emu.system-dnd5e [id*="TraitSelector"] h2,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] h2,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] h2 {
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] h2, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] h2, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] h2, .-emu-layout
@@ -2355,7 +2357,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] a {
   body.-emu.system-dnd5e [id*="TraitSelector"] a:hover,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a:hover {
-    color: rgba(var(--color-primary), 1); }
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] a[href],
 body.-emu.system-dnd5e [id*="actor-type-"] a[href],
@@ -2366,7 +2368,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] a[href],
 body.-emu.system-dnd5e [id*="TraitSelector"] a[href],
 body.-emu.system-dnd5e [id*="ProficiencySelector"] a[href],
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] a[href] {
-  color: rgba(var(--color-primary), 1);
+  color: RGB(var(--emu-color-primary, 229, 117, 9));
   text-decoration: none;
   text-shadow: none; }
   body.-emu.system-dnd5e [id*="actor-flags-"] a[href]:hover,
@@ -2399,11 +2401,11 @@ body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll {
-  background-color: rgba(var(--color-background-lightest), 1);
-  box-shadow: 0 0 0 1px inset rgba(var(--color-border), 1);
+  background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235));
+  box-shadow: 0 0 0 1px inset RGB(var(--emu-color-border, 33, 50, 52));
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   text-shadow: none; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll, .-emu-layout
@@ -2443,7 +2445,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll {
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll:hover {
-    color: rgba(var(--color-primary), 1); }
+    color: RGB(var(--emu-color-primary, 229, 117, 9)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll > i,
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link > i,
@@ -2548,7 +2550,7 @@ body.-emu.system-dnd5e [id*="TraitSelector"] hr,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] hr,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] hr {
   border: none;
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
+  border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
   border-block-end: none; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] hr, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] hr, .-emu-layout
@@ -2581,7 +2583,7 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] blockquote,
 body.-emu.system-dnd5e [id*="TraitSelector"] blockquote,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] blockquote,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] blockquote {
-  border-inline-start: 3px solid rgba(var(--color-border), 1); }
+  border-inline-start: 3px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] blockquote, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] blockquote, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] blockquote, .-emu-layout
@@ -2613,9 +2615,9 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] section.secret,
 body.-emu.system-dnd5e [id*="TraitSelector"] section.secret,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] section.secret,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] section.secret {
-  background-color: rgba(var(--color-background-light), 0.2);
-  border-block-start: rgba(var(--color-border), 1) 1px solid;
-  border-block-end: rgba(var(--color-border), 1) 1px solid; }
+  background-color: RGBA(var(--emu-color-background-light, 125, 138, 140), 0.2);
+  border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] section.secret, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] section.secret, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] section.secret, .-emu-layout
@@ -2673,19 +2675,19 @@ body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card {
 
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header,
 body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header, .-emu-layout
   body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header {
     margin-block-end: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px) 0; }
     .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header img, .-emu-layout
     body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header img {
-      flex: 0 0 2.25rem;
+      flex: 0 0 to-rem(36px);
       margin-inline-end: var(--emu-space-base, 4px); }
   body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
   body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
-    color: rgba(var(--color-text), 1);
+    color: RGB(var(--emu-color-text, 9, 14, 16));
     text-shadow: none; }
     .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3, .-emu-layout
     body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
@@ -2709,7 +2711,7 @@ body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons 
 
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons button,
 body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons button {
-  border: rgba(var(--color-border), 1) 1px solid; }
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons button, .-emu-layout
   body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons button {
     margin: 0; }
@@ -2719,14 +2721,14 @@ body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons 
 
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer,
 body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer, .-emu-layout
   body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer {
     margin-block-start: var(--emu-space-base, 4px);
     padding-block-start: var(--emu-space-base, 4px); }
   body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span,
   body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span {
-    border-inline-end: rgba(var(--color-border), 1) 1px solid; }
+    border-inline-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
     .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span, .-emu-layout
     body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span {
       font-size: var(--emu-font-size-xs, 10px);

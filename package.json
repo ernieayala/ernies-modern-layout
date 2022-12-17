@@ -17,8 +17,7 @@
 		"autoprefixer": "9.1.0",
 		"cssnano": "4.1.10",
 		"node-sass": "*",
-		"postcss": "8.2.13",
-		"teq-tonic": "*"
+		"postcss": "8.2.13"
 	},
 	"dependencies": {
 		"postcss-cli": "8.1.0",

@@ -8,6 +8,6 @@
 	}
 
 	.small-chat::after {
-		border-color: color("primary");
+		border-color: RGB($emu-color-primary);
 	}
 }

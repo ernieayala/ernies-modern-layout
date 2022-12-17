@@ -7,7 +7,7 @@
 		}
 
 		div.override-entry {
-			border-block-start: b("border");
+			border-block-start: 1px solid RGB($emu-color-border);
 
 			@include layout {
 				padding: $global-space-sm 0;

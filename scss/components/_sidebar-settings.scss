@@ -18,7 +18,7 @@
 		h4 {
 			background: transparent;
 			border: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				padding: 0;
@@ -27,7 +27,7 @@
 		}
 
 		h2 {
-			border-block-end: b("border-lighter");
+			border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 			@include layout {
 				font-size: $global-font-size-xl;
@@ -36,7 +36,7 @@
 		}
 
 		h4 {
-			color: color("primary");
+			color: RGB($emu-color-primary);
 
 			@include layout {
 				font-size: $global-font-size-lg;
@@ -50,7 +50,7 @@
 		}
 
 		#game-details {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				margin: 0;
@@ -60,7 +60,7 @@
 	}
 
 	.notification-pip {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 		margin-inline-end: $global-space-xs;
 		padding: 0;
 		position: relative;

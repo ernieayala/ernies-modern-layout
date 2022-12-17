@@ -6,7 +6,7 @@
 			box-shadow: none;
 
 			a {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 			}
 		}
 
@@ -14,7 +14,7 @@
 		#rollsNotification,
 		#oocNotification {
 			@extend %notification-pip;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
 
 			@include layout {

@@ -1,5 +1,5 @@
 table {
-	background-color: color("black", 0.05);
+	background-color: RGBA($emu-color-black, 0.05);
 	border: none;
 
 	@include layout {
@@ -7,14 +7,14 @@ table {
 	}
 
 	thead {
-		background-color: color("black", 0.2);
-		border-block-end: b("border");
-		color: color("text-lightest");
+		background-color: RGBA($emu-color-black, 0.2);
+		border-block-end: 1px solid RGB($emu-color-border);
+		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
 	}
 
 	tr:nth-child(even) {
-		background-color: color("white", 0.1);
+		background-color: RGBA($emu-color-white, 0.1);
 	}
 
 	td:first-child {

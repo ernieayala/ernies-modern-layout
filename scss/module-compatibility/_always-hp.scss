@@ -42,8 +42,8 @@
 	}
 
 	.resource {
-		background-color: color("black", 0.5);
-		border: 1px solid color("border");
+		background-color: RGBA($emu-color-black, 0.5);
+		border: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			border-radius: $global-border-radius-default;
@@ -122,7 +122,7 @@
 }
 
 #alwayshp-hp {
-	background: color("background-lightest");
+	background: RGB($emu-color-background-lightest);
 
 	@include layout {
 		flex: 1 1 auto;

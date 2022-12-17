@@ -38,7 +38,7 @@
 	.package-list {
 		@include layout {
 			border: none;
-			height: to-rem(600px);
+			height: 600px;
 			margin: 0;
 			max-height: initial;
 			padding: 0;
@@ -46,20 +46,20 @@
 	}
 
 	.package {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			padding: $global-space-sm;
 		}
 
 		&[data-module-name="ernies-modern-layout"] {
-			background-color: color("primary", 0.8);
+			background-color: RGBA($emu-color-primary, 0.8);
 
 			a,
 			.package-title,
 			.package-description,
 			.package-metadata {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 			}
 		}
 
@@ -70,7 +70,7 @@
 		.tag {
 			border: none;
 			border-radius: $global-border-radius-controls;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -93,7 +93,7 @@
 	}
 
 	.package-title {
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			align-items: center;
@@ -113,11 +113,11 @@
 	}
 
 	.package-description {
-		color: color("text-darker");
+		color: RGB($emu-color-text-darker);
 	}
 
 	.package-metadata {
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			font-size: $global-font-size-sm;

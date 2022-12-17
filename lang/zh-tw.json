@@ -16,6 +16,8 @@
 	"emu.theme-preset-alien": "Alien",
 	"emu.theme-primary": "主要主題顏色",
 	"emu.theme-primary-hint": "橙色：#e57509 - 藍色：#386acf - 綠色：#0fbd7d - 紫色：#773edc - 紅色：#dc143c - 黃色：#edb950",
+	"emu.theme-primary-darker": "Primary Darker Theme Color",
+	"emu.theme-primary-darkest": "Primary Darkest Theme Color",
 	"emu.theme-background-default": "默認背景",
 	"emu.theme-background-lightest": "最明亮背景",
 	"emu.theme-background-light": "明亮背景",

@@ -1,8 +1,8 @@
 %table-header {
 	align-items: center;
-	background: color("background", 0.1);
+	background: RGBA($emu-color-background, 0.1);
 	border: none;
-	border-block-end: b("border");
+	border-block-end: 1px solid RGB($emu-color-border);
 
 	@include layout {
 		height: auto;
@@ -24,11 +24,11 @@
 
 	a {
 		@extend %link-button;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			@extend %control-button;
-			color: color("text");
+			color: RGB($emu-color-text);
 		}
 	}
 }
@@ -58,11 +58,11 @@
 
 	a {
 		@extend %link-button;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			@extend %control-button;
-			color: color("text");
+			color: RGB($emu-color-text);
 		}
 	}
 }

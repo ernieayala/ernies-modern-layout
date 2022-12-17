@@ -28,7 +28,7 @@
 					line-height: initial;
 
 					&:nth-of-type(odd):not(.table-header) {
-						background-color: color("background-light", 0.1);
+						background-color: RGBA($emu-color-background-light, 0.1);
 					}
 
 					> div {
@@ -64,7 +64,7 @@
 
 			.select2-selection {
 				background-color: transparent;
-				border: b("border-lighter");
+				border: 1px solid RGB($emu-color-border-lighter);
 				border-radius: $global-border-radius-forms;
 
 				@include layout {
@@ -81,7 +81,7 @@
 
 					> li {
 						background-color: transparent;
-						border: b("border");
+						border: 1px solid RGB($emu-color-border);
 						border-radius: $global-border-radius-controls;
 
 						@include layout {

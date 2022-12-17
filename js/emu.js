@@ -39,6 +39,8 @@ function updateSettings(settings) {
 		borderRadiusForms,
 		borderRadiusImages,
 		colorPrimary,
+		colorPrimaryDarker,
+		colorPrimaryDarkest,
 		colorBackground,
 		colorBackgroundLightest,
 		colorBackgroundLight,
@@ -90,23 +92,25 @@ function updateSettings(settings) {
 	toggleSceneThumbs ? myHtml[0].classList.add('-emu-scene-thumbs') : myHtml[0].classList.remove('-emu-scene-thumbs');
 
 	// Theme
-	colorPrimary ? myRoot.style.setProperty('--color-primary', convertHexToRgb(colorPrimary)) : null;
-	colorBackground ? myRoot.style.setProperty('--color-background', convertHexToRgb(colorBackground)) : null;
-	colorBackgroundLightest ? myRoot.style.setProperty('--color-background-lightest', convertHexToRgb(colorBackgroundLightest)) : null;
-	colorBackgroundLight ? myRoot.style.setProperty('--color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
-	colorBackgroundDarkest ? myRoot.style.setProperty('--color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
-	colorBackgroundButton ? myRoot.style.setProperty('--color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
-	colorBackgroundChatMessage ? myRoot.style.setProperty('--color-background-chat-message', convertHexToRgb(colorBackgroundChatMessage)) : null;
-	colorBackgroundChatMessageWhisper ? myRoot.style.setProperty('--color-background-chat-message-whisper', convertHexToRgb(colorBackgroundChatMessageWhisper)) : null;
-	colorBackgroundChatMessageBlind ? myRoot.style.setProperty('--color-background-chat-message-blind', convertHexToRgb(colorBackgroundChatMessageBlind)) : null;
-	colorBorder ? myRoot.style.setProperty('--color-border', convertHexToRgb(colorBorder)) : null;
-	colorBorderLighter ? myRoot.style.setProperty('--color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
-	colorFolderHeader ? myRoot.style.setProperty('--color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
-	colorFolderDirectory ? myRoot.style.setProperty('--color-folder-directory', convertHexToRgb(colorFolderDirectory)) : null;
-	colorFolderSubdirectory ? myRoot.style.setProperty('--color-folder-subdirectory', convertHexToRgb(colorFolderSubdirectory)) : null;
-	colorText ? myRoot.style.setProperty('--color-text', convertHexToRgb(colorText)) : null;
-	colorTextLightest ? myRoot.style.setProperty('--color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
-	colorTextDarker ? myRoot.style.setProperty('--color-text-darker', convertHexToRgb(colorTextDarker)) : null;
+	colorPrimary ? myRoot.style.setProperty('--emu-color-primary', convertHexToRgb(colorPrimary)) : null;
+	colorPrimaryDarker ? myRoot.style.setProperty('--emu-color-primary-darker', convertHexToRgb(colorPrimary)) : null;
+	colorPrimaryDarkest ? myRoot.style.setProperty('--emu-color-primary-darkest', convertHexToRgb(colorPrimary)) : null;
+	colorBackground ? myRoot.style.setProperty('--emu-color-background', convertHexToRgb(colorBackground)) : null;
+	colorBackgroundLightest ? myRoot.style.setProperty('--emu-color-background-lightest', convertHexToRgb(colorBackgroundLightest)) : null;
+	colorBackgroundLight ? myRoot.style.setProperty('--emu-color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
+	colorBackgroundDarkest ? myRoot.style.setProperty('--emu-color-background-darkest', convertHexToRgb(colorBackgroundDarkest)) : null;
+	colorBackgroundButton ? myRoot.style.setProperty('--emu-color-background-button', convertHexToRgb(colorBackgroundButton)) : null;
+	colorBackgroundChatMessage ? myRoot.style.setProperty('--emu-color-background-chat-message', convertHexToRgb(colorBackgroundChatMessage)) : null;
+	colorBackgroundChatMessageWhisper ? myRoot.style.setProperty('--emu-color-background-chat-message-whisper', convertHexToRgb(colorBackgroundChatMessageWhisper)) : null;
+	colorBackgroundChatMessageBlind ? myRoot.style.setProperty('--emu-color-background-chat-message-blind', convertHexToRgb(colorBackgroundChatMessageBlind)) : null;
+	colorBorder ? myRoot.style.setProperty('--emu-color-border', convertHexToRgb(colorBorder)) : null;
+	colorBorderLighter ? myRoot.style.setProperty('--emu-color-border-lighter', convertHexToRgb(colorBorderLighter)) : null;
+	colorFolderHeader ? myRoot.style.setProperty('--emu-color-folder-header', convertHexToRgb(colorFolderHeader)) : null;
+	colorFolderDirectory ? myRoot.style.setProperty('--emu-color-folder-directory', convertHexToRgb(colorFolderDirectory)) : null;
+	colorFolderSubdirectory ? myRoot.style.setProperty('--emu-color-folder-subdirectory', convertHexToRgb(colorFolderSubdirectory)) : null;
+	colorText ? myRoot.style.setProperty('--emu-color-text', convertHexToRgb(colorText)) : null;
+	colorTextLightest ? myRoot.style.setProperty('--emu-color-text-lightest', convertHexToRgb(colorTextLightest)) : null;
+	colorTextDarker ? myRoot.style.setProperty('--emu-color-text-darker', convertHexToRgb(colorTextDarker)) : null;
 
 	// Design
 	borderRadiusDefault ? myRoot.style.setProperty('--emu-border-radius-default', `${borderRadiusDefault}px`) : myRoot.style.setProperty('--emu-border-radius-default', `0`);
@@ -191,6 +195,8 @@ class emuSettings {
 			borderRadiusForms: '4',
 			borderRadiusImages: '4',
 			colorPrimary: '#e57509',
+			colorPrimaryDarker: '#a05108',
+			colorPrimaryDarkest: '#723906',
 			colorBackground: '#293e40',
 			colorBackgroundLightest: '#e6e9eb',
 			colorBackgroundLight: '#7d8a8c',

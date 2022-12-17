@@ -1,17 +1,17 @@
 #players {
-	background-color: color("background", $global-background-opacity-players);
+	background-color: RGBA($emu-color-background, $global-background-opacity-players);
 	background-image: $global-image-background;
-	border: b("border");
+	border: 1px solid RGB($emu-color-border);
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
-	transition: t(opacity, "link");
+	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		display: block;
 		margin: $global-space-sm;
 		padding: 0;
 		pointer-events: all;
-		z-index: z("fixed");
+		z-index: $global-z-index-fixed;
 
 		&.hidden {
 			display: none;
@@ -19,7 +19,7 @@
 	}
 
 	@include layout(compact) {
-		width: to-rem(168px);
+		width: 168px;
 	}
 
 	@include layout-subtle {
@@ -33,7 +33,7 @@
 			}
 
 			> ol {
-				max-height: to-rem(700px);
+				max-height: 700px;
 				overflow: visible;
 				padding: $global-space-sm;
 			}
@@ -45,10 +45,10 @@
 	}
 
 	> h3 {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-		color: color("text-lightest");
-		transition: t(color, "link");
+		color: RGB($emu-color-text-lightest);
+		transition: color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
@@ -68,8 +68,8 @@
 
 		&:hover,
 		&:active {
-			background-color: color("primary");
-			color: color("text-lightest");
+			background-color: RGB($emu-color-primary);
+			color: RGB($emu-color-text-lightest);
 		}
 
 		.players-mode {
@@ -131,40 +131,41 @@
 
 			&.context {
 				.player-name {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 					text-shadow: none;
 				}
 			}
 		}
 
 		.player-name {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
 
 			@include layout {
-				@include ellipsis;
+				@extend %ellipsis;
 				flex: 1 1 auto;
 				position: relative;
 				word-break: break-all;
 			}
 
 			&.self {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 			}
 		}
 
 		.player-active {
 			@include layout {
-				@include size(to-rem(8px));
 				border-radius: 50%;
 				flex: 0 0 auto;
+				height: 8px;
 				margin: 0;
 				margin-inline-end: $global-space-sm;
 				position: relative;
+				width: 8px;
 			}
 
 			&.active {
-				box-shadow: 0 1px 2px 0 color("black", 0.3);
+				box-shadow: 0 1px 2px 0 RGBA($emu-color-black, 0.3);
 			}
 		}
 	}

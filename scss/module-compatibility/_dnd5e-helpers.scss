@@ -7,11 +7,11 @@
 			}
 
 			.desc {
-				background-color: color("background-light", $global-background-opacity-window);
-				border: b("border");
+				background-color: RGBA($emu-color-background-light, $global-background-opacity-window);
+				border: 1px solid RGB($emu-color-border);
 				border-radius: $global-border-radius-default;
 				box-shadow: $global-box-shadow;
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					font-size: $global-font-size-sm;

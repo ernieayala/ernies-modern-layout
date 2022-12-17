@@ -16,6 +16,8 @@
 	"emu.theme-preset-alien": "Alien",
 	"emu.theme-primary": "Color del tema principal",
 	"emu.theme-primary-hint": "Por defecto: #e57509 - Azul: #386acf - Verde: #0fbd7d - Violeta: #773edc - Rojo: #dc143c - Amarillo: #edb950",
+	"emu.theme-primary-darker": "Primary Darker Theme Color",
+	"emu.theme-primary-darkest": "Primary Darkest Theme Color",
 	"emu.theme-background-default": "Fondo por defecto",
 	"emu.theme-background-lightest": "Fondo más claro",
 	"emu.theme-background-light": "Fondo claro",

@@ -34,7 +34,7 @@
 	}
 
 	.window-content {
-		background-color: color("background-lightest");
+		background-color: RGB($emu-color-background-lightest);
 		background-image: $global-image-background-lightest;
 	}
 
@@ -84,12 +84,12 @@
 	}
 
 	.sidebar-toggle {
-		background-color: color("background-button");
+		background-color: RGB($emu-color-background-button);
 		border: none;
-		border-block-end: color("background-lightest") 2px solid;
-		border-inline-start: color("background-lightest") 2px solid;
+		border-block-end: RGB($emu-color-background-lightest) 2px solid;
+		border-inline-start: RGB($emu-color-background-lightest) 2px solid;
 		border-radius: 0 0 0 $global-border-radius-default;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 		transition: t(background box-shadow color, "link");
 
 		@include layout {
@@ -102,7 +102,7 @@
 			justify-content: center;
 			margin: 0;
 			padding: 0;
-			z-index: z("fixed");
+			z-index: $global-z-index-fixed;
 		}
 
 		&:hover {
@@ -160,21 +160,21 @@
 
 		.directory-item {
 			&.selected {
-				background-color: color("primary");
+				background-color: RGB($emu-color-primary);
 			}
 
 			.folder-header {
-				background-color: color("folder-header");
+				background-color: RGB($emu-color-folder-header);
 				border-block-start: none;
 			}
 
 			h3 {
-				color: color("text");
+				color: RGB($emu-color-text);
 			}
 
 			a.create-folder,
 			a.create-entity {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 			}
 		}
 	}

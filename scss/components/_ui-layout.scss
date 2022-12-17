@@ -4,7 +4,7 @@
 	@include layout {
 		pointer-events: none;
 		position: relative;
-		z-index: z("fixed");
+		z-index: $global-z-index-fixed;
 	}
 }
 

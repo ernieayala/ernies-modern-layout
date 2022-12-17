@@ -1,6 +1,6 @@
 #client-settings.window-app.form {
 	nav.tabs {
-		border-block-end: b("primary", 2px);
+		border-block-end: 2px solid RGB($emu-color-primary);
 
 		@include layout {
 			padding: 0;

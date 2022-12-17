@@ -15,7 +15,7 @@
 
 	.changes-list {
 		@include layout {
-			@include reset-list;
+			@extend %reset-list;
 			width: 100%;
 		}
 
@@ -24,7 +24,7 @@
 
 			@include layout {
 				&:nth-of-type(even) {
-					background-color: color("background-light", 0.1);
+					background-color: RGBA($emu-color-background-light, 0.1);
 				}
 			}
 		}

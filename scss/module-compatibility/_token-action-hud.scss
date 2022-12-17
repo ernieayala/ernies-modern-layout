@@ -13,13 +13,13 @@
 	}
 
 	#tah-hudTitle {
-		color: color("text-lightest");
-		text-shadow: 2px 2px 2px color("black");
+		color: RGB($emu-color-text-lightest);
+		text-shadow: 2px 2px 2px RGB($emu-color-black);
 
 		@include layout {
 			font-size: $global-font-size-sm;
 			margin: 0;
-			margin-inline-start: to-rem(28px);
+			margin-inline-start: 28px;
 			padding: 0;
 		}
 	}
@@ -36,7 +36,7 @@
 
 		i {
 			color: inherit;
-			text-shadow: 2px 2px 2px color("black");
+			text-shadow: 2px 2px 2px RGB($emu-color-black);
 
 			@include layout {
 				font-size: $global-font-size-sm;
@@ -67,8 +67,8 @@
 	}
 
 	.tah-subtitle {
-		color: color("text-lightest");
-		text-shadow: 2px 2px 2px color("black");
+		color: RGB($emu-color-text-lightest);
+		text-shadow: 2px 2px 2px RGB($emu-color-black);
 
 		@include layout {
 			font-size: $global-font-size-sm;
@@ -87,7 +87,7 @@
 		}
 
 		button {
-			background-color: color("background");
+			background-color: RGB($emu-color-background);
 			background-image: $global-image-background-controls;
 
 			> div {
@@ -102,12 +102,13 @@
 				border: none;
 
 				@include layout {
-					@include size(to-rem(16px));
 					border-radius: 0;
 					display: inline-block;
+					height: 16px;
 					margin: 0;
 					margin-inline-end: $global-space-sm;
 					padding: 0;
+					width: 16px;
 				}
 			}
 		}
@@ -115,7 +116,7 @@
 
 	.tah-content {
 		@include layout {
-			left: to-rem(-154px);
+			left: -154px;
 			padding: $global-space-sm 0;
 		}
 	}

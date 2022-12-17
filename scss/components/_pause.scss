@@ -2,7 +2,7 @@
 	background: transparent;
 
 	h3 {
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			font-size: $global-font-size-xxl;

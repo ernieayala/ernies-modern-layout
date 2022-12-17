@@ -1,7 +1,7 @@
 // Revisit This
 
 #polyglot {
-	background-color: color("background", 0.5);
+	background-color: RGBA($emu-color-background, 0.5);
 	background-image: $global-image-background;
 
 	@include layout {
@@ -14,7 +14,7 @@
 	}
 
 	label {
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			flex: 0 0 auto;
@@ -23,8 +23,8 @@
 	}
 
 	select {
-		background-color: color("background", 0.5);
-		color: color("text-lightest");
+		background-color: RGBA($emu-color-background, 0.5);
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			flex: 1 1 auto;
@@ -36,7 +36,7 @@
 #client-settings.window-app form {
 	.polyglot-group-header {
 		background-color: transparent;
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			margin-block-start: $global-space-base;
