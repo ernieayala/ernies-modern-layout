@@ -222,13 +222,13 @@
 				}
 
 				.dir {
-					background-color: color("folder-header", 0.9);
+					background-color: RGBA($emu-color-folder-header, 0.9);
 					border-block-end: 1px solid RGB($emu-color-border);
 					color: RGB($emu-color-text);
 				}
 
 				.file {
-					background-color: color("folder-directory", 0.9);
+					background-color: RGBA($emu-color-folder-header, 0.9);
 					border-block-end: 1px solid RGB($emu-color-border);
 					color: RGB($emu-color-text-lightest);
 				}

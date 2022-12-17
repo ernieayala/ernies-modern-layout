@@ -5,6 +5,7 @@ $emu: '.-emu';
 $global-palette-default: (
 	"black": #000000,
 	"white": #ffffff,
+	"charcoal": #7d8a8c,
 	"background-lightest": #e6e9eb,
 	"background-light": #7d8a8c,
 	"background": #293e40,
@@ -36,6 +37,7 @@ $global-palette-default: (
 
 $emu-color-black: var(--emu-color-black, 0, 0, 0);
 $emu-color-white: var(--emu-color-white, 255, 255, 255);
+$emu-color-charcoal: var(--emu-color-charcoal, 125, 138, 140);
 $emu-color-background-lightest: var(--emu-color-background-lightest, 230, 233, 235);
 $emu-color-background-light: var(--emu-color-background-light, 125, 138, 140);
 $emu-color-background: var(--emu-color-background, 41, 62, 64);

@@ -74,7 +74,7 @@
 
 	#dfca-delete-all {
 		background-color: RGB($emu-color-negative);
-		border-color: color("red-800");
+		border-color: RGB($emu-color-negative-darkest);
 
 		@include layout {
 			margin: 0;
