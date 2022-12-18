@@ -10,8 +10,7 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card {
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button,
-body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3,
-body.-emu.system-sfrpg .app.chat-popout .chat-message {
+body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 {
   color: rgba(var(--color-text), 1);
   text-shadow: none; }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button, .-emu-layout
@@ -176,7 +175,6 @@ body.-emu.system-sfrpg .item-browser .header .item-sort-link:hover {
   color: rgba(var(--color-primary), 1);
   text-shadow: none; }
 
-body.-emu.system-sfrpg .app.chat-popout .message-header,
 body.-emu.system-sfrpg .item-browser .item-list {
   background-color: transparent; }
   .-emu-layout body.-emu.system-sfrpg .item-browser .item-list {
