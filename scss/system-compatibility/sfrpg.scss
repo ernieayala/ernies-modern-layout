@@ -114,6 +114,14 @@ body#{$emu}.system-sfrpg {
 		}
 	}
 
+	.app.chat-popout {
+		.chat-message {
+			color: color("text");
+			text-shadow: none;
+			background-color: transparent; }
+		}
+	}
+
 	.window-app {
 		@include layout {
 			font-family: inherit;
