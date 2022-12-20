@@ -116,7 +116,9 @@
 					@include layout {
 						display: flex;
 						flex-direction: column;
+						flex-wrap: wrap;
 						gap: $global-space-base;
+						justify-content: space-around;
 					}
 				}
 
@@ -255,7 +257,6 @@
 				color: RGB($emu-color-text-lightest);
 
 				@include layout {
-					height: 32px;
 					margin: 0;
 					width: auto;
 				}

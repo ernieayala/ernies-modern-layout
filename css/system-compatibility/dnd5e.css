@@ -28,6 +28,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] button {
     display: inline-flex;
     font-size: var(--emu-font-size-lg, 16px);
     font-family: inherit;
+    gap: var(--emu-space-sm, 8px);
     height: initial;
     justify-content: center;
     line-height: 1;
@@ -35,7 +36,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] button {
     padding: var(--emu-space-sm, 8px);
     position: relative; }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] button > i, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] button > i, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ActorSkillConfig-"] button > i, body.-emu.system-dnd5e [id*="ActorSkillConfig-"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ActorSensesConfig"] button > i, body.-emu.system-dnd5e [id*="ActorSensesConfig"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ActorAbilityConfig"] button > i, body.-emu.system-dnd5e [id*="ActorAbilityConfig"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ActorMovementConfig"] button > i, body.-emu.system-dnd5e [id*="ActorMovementConfig"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] button > i, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] button > i, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout button > i, .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] button > i, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout button > i {
-      margin-inline-end: var(--emu-space-sm, 8px); }
+      margin: 0; }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] button > label, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] button > label, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ActorSkillConfig-"] button > label, body.-emu.system-dnd5e [id*="ActorSkillConfig-"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ActorSensesConfig"] button > label, body.-emu.system-dnd5e [id*="ActorSensesConfig"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ActorAbilityConfig"] button > label, body.-emu.system-dnd5e [id*="ActorAbilityConfig"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ActorMovementConfig"] button > label, body.-emu.system-dnd5e [id*="ActorMovementConfig"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] button > label, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] button > label, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout button > label, .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] button > label, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout button > label {
       color: inherit !important; }
       .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] button > label, body.-emu.system-dnd5e [id*="actor-flags-"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="actor-type-"] button > label, body.-emu.system-dnd5e [id*="actor-type-"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ActorSkillConfig-"] button > label, body.-emu.system-dnd5e [id*="ActorSkillConfig-"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ActorSensesConfig"] button > label, body.-emu.system-dnd5e [id*="ActorSensesConfig"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ActorAbilityConfig"] button > label, body.-emu.system-dnd5e [id*="ActorAbilityConfig"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ActorMovementConfig"] button > label, body.-emu.system-dnd5e [id*="ActorMovementConfig"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="TraitSelector"] button > label, body.-emu.system-dnd5e [id*="TraitSelector"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ProficiencySelector"] button > label, body.-emu.system-dnd5e [id*="ProficiencySelector"] .-emu-layout .-emu-layout button > label, .-emu-layout .-emu-layout body.-emu.system-dnd5e [id*="ActorSheetFlags"] button > label, body.-emu.system-dnd5e [id*="ActorSheetFlags"] .-emu-layout .-emu-layout button > label {
@@ -1593,7 +1594,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form h3.form-header {
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] form h3.form-header {
     font-family: inherit;
     font-size: var(--emu-font-size-lg, 16px);
-    margin-block-start: var(--emu-space-md, 24px);
+    margin-block-start: var(--emu-space-md, 16px);
     margin-block-end: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px); }
 
@@ -1993,6 +1994,17 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group {
   body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group > label, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group > label {
     flex: 0 0 40%; }
+    .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="actor-type-"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSensesConfig"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorAbilityConfig"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorMovementConfig"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="TraitSelector"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ProficiencySelector"] form .form-group > label:only-child, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSheetFlags"] form .form-group > label:only-child {
+      flex: 0 0 100%;
+      gap: var(--emu-space-base, 4px); }
   body.-emu.system-dnd5e [id*="actor-flags-"] form .form-group label,
   body.-emu.system-dnd5e [id*="actor-type-"] form .form-group label,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] form .form-group label,
@@ -2385,104 +2397,149 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] a[href] {
 
 body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link,
 body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll,
+body.-emu.system-dnd5e [id*="actor-flags-"] a.content-link,
 body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link,
 body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll,
+body.-emu.system-dnd5e [id*="actor-type-"] a.content-link,
 body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.entity-link,
 body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.content-link,
 body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.entity-link,
 body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.content-link,
 body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.entity-link,
 body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.content-link,
 body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.entity-link,
 body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.content-link,
 body.-emu.system-dnd5e [id*="TraitSelector"] a.entity-link,
 body.-emu.system-dnd5e [id*="TraitSelector"] a.inline-roll,
+body.-emu.system-dnd5e [id*="TraitSelector"] a.content-link,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ProficiencySelector"] a.content-link,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link,
-body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll {
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll,
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.content-link {
   background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235));
-  box-shadow: 0 0 0 1px inset RGB(var(--emu-color-border, 33, 50, 52));
+  box-shadow: 0 0 0 1px inset RGB(var(--emu-color-black, 0, 0, 0));
   border: none;
   border-radius: var(--emu-border-radius-controls, 0);
   color: RGB(var(--emu-color-text, 9, 14, 16));
   text-shadow: none; }
   .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="actor-flags-"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="actor-type-"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="TraitSelector"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="TraitSelector"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="TraitSelector"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ProficiencySelector"] a.content-link, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link, .-emu-layout
-  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll {
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll, .-emu-layout
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.content-link {
     padding: var(--emu-space-pf, 1px) var(--emu-space-xs, 2px);
     padding-inline-start: var(--emu-space-base, 4px); }
   body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="actor-flags-"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="actor-type-"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="TraitSelector"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="TraitSelector"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="TraitSelector"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link:hover,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ProficiencySelector"] a.content-link:hover,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link:hover,
-  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll:hover {
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll:hover,
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.content-link:hover {
     color: RGB(var(--emu-color-primary, 229, 117, 9)); }
   body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="actor-flags-"] a.content-link > i,
   body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="actor-type-"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.content-link > i,
   body.-emu.system-dnd5e [id*="TraitSelector"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="TraitSelector"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="TraitSelector"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link > i,
   body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ProficiencySelector"] a.content-link > i,
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link > i,
-  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll > i {
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll > i,
+  body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.content-link > i {
     color: inherit; }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="actor-flags-"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="actor-flags-"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="actor-type-"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="actor-type-"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="actor-type-"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSkillConfig-"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSensesConfig"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorAbilityConfig"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorMovementConfig"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="TraitSelector"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="TraitSelector"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="TraitSelector"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ProficiencySelector"] a.entity-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ProficiencySelector"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ProficiencySelector"] a.content-link > i, .-emu-layout
     body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.entity-link > i, .-emu-layout
-    body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll > i {
+    body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.inline-roll > i, .-emu-layout
+    body.-emu.system-dnd5e [id*="ActorSheetFlags"] a.content-link > i {
       margin-inline-end: var(--emu-space-xs, 2px); }
 
 .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] p, .-emu-layout
@@ -2494,7 +2551,8 @@ body.-emu.system-dnd5e [id*="ActorMovementConfig"] p, .-emu-layout
 body.-emu.system-dnd5e [id*="TraitSelector"] p, .-emu-layout
 body.-emu.system-dnd5e [id*="ProficiencySelector"] p, .-emu-layout
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] p {
-  margin: var(--emu-space-base, 4px) 0; }
+  margin: var(--emu-space-base, 4px) 0;
+  min-height: var(--emu-font-size-sm, 12px); }
 
 .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] ul, .-emu-layout
 body.-emu.system-dnd5e [id*="actor-flags-"] ol, .-emu-layout
@@ -2593,7 +2651,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] blockquote {
   body.-emu.system-dnd5e [id*="TraitSelector"] blockquote, .-emu-layout
   body.-emu.system-dnd5e [id*="ProficiencySelector"] blockquote, .-emu-layout
   body.-emu.system-dnd5e [id*="ActorSheetFlags"] blockquote {
-    margin: var(--emu-space-base, 4px) 0 var(--emu-space-base, 4px) var(--emu-space-md, 24px);
+    margin: var(--emu-space-base, 4px) 0 var(--emu-space-base, 4px) var(--emu-space-md, 16px);
     padding-inline-start: var(--emu-space-lg, 24px); }
     .-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] blockquote em, .-emu-layout
     body.-emu.system-dnd5e [id*="actor-type-"] blockquote em, .-emu-layout
@@ -2737,3 +2795,15 @@ body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer {
     body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span:last-child,
     body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span:last-child {
       border-inline-end: none; }
+
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button:hover span,
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button:hover span {
+  border-color: RGB(var(--emu-color-white, 255, 255, 255)); }
+
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span,
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span {
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
+  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span, .-emu-layout
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span {
+    margin-inline-start: var(--emu-space-base, 4px);
+    padding: 0 var(--emu-space-xs, 2px); }

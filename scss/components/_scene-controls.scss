@@ -114,6 +114,10 @@
 				@extend %global-hover;
 				background-image: none;
 			}
+
+			.has-notes::after {
+				color: RGB($emu-color-primary-darkest);
+			}
 		}
 
 		.scene-control {

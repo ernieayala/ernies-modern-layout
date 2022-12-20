@@ -33,6 +33,7 @@
 	--emu-space-md: 16px;
 	--emu-space-lg: 24px;
 	--emu-space-xl: 32px;
+	--emu-space-button-xl: 56px;
 	--emu-space-button-lg: 40px;
 	--emu-space-button: 32px;
 	--emu-space-button-sm: 24px;
@@ -71,16 +72,17 @@
 }
 
 html.-emu-layout.-emu-compact {
-	--emu-space-base: 2px;
-	--emu-space-sm: 4px;
-	--emu-space-md: 8px;
-	--emu-space-lg: 12px;
-	--emu-space-xl: 16px;
-	--emu-space-button-lg: 32px;
-	--emu-space-button: 24px;
-	--emu-space-button-sm: 20px;
-	--emu-space-button-xs: 18px;
-	--emu-space-sidebar: 286px;
+	--emu-space-base: 2px !important;
+	--emu-space-sm: 4px !important;
+	--emu-space-md: 8px !important;
+	--emu-space-lg: 12px !important;
+	--emu-space-xl: 16px !important;
+	--emu-space-button-xl: 40px !important;
+	--emu-space-button-lg: 32px !important;
+	--emu-space-button: 24px !important;
+	--emu-space-button-sm: 20px !important;
+	--emu-space-button-xs: 18px !important;
+	--emu-space-sidebar: 286px !important;
 }
 
 html.-emu-layout {
@@ -115,7 +117,12 @@ body {
 		}
 	}
 
+	#emu-overlay.-hide {
+		opacity: 0 !important;
+		pointer-events: none;
+	}
+
 	::selection {
-		background-color: color("gray-200");
+		background-color: RGBA($emu-color-black, 0.5);
 	}
 }

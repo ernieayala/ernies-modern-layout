@@ -57,9 +57,10 @@ a[href] {
 }
 
 a.entity-link,
-a.inline-roll {
+a.inline-roll,
+a.content-link {
 	background-color: RGB($emu-color-background-lightest);
-	box-shadow: 0 0 0 1px inset RGB($emu-color-border);
+	box-shadow: 0 0 0 1px inset RGB($emu-color-black);
 	border: none;
 	border-radius: $global-border-radius-controls;
 	color: RGB($emu-color-text);
@@ -86,6 +87,7 @@ a.inline-roll {
 p {
 	@include layout {
 		margin: $global-space-base 0;
+		min-height: $global-font-size-sm;
 	}
 }
 

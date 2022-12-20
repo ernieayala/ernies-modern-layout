@@ -182,6 +182,11 @@ form {
 		> label {
 			@include layout {
 				flex: 0 0 40%;
+
+				&:only-child {
+					flex: 0 0 100%;
+					gap: $global-space-base;
+				}
 			}
 		}
 

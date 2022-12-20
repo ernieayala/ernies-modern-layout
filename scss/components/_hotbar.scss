@@ -77,16 +77,16 @@
 		@include layout {
 			display: flex;
 			flex-direction: column;
-			height: 56px;
+			height: $global-space-button-xl;
 			margin: 0;
 			pointer-events: all;
 			position: relative;
-			width: 40px;
+			width: $global-space-button-lg;
 		}
 
 		@include layout(compact) {
-			height: 40px;
-			width: 32px;
+			height: $global-space-button-xl;
+			width: $global-space-button-lg;
 		}
 
 		&:first-child {
@@ -206,16 +206,16 @@
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
-			height: 56px;
+			height: $global-space-button-xl;
 			justify-content: center;
 			margin-inline-start: -1px; // for the border and people messing with border color
 			position: relative;
-			width: 56px;
+			width: $global-space-button-xl;
 		}
 
 		@include layout(compact) {
-			height: 40px;
-			width: 40px;
+			height: $global-space-button-xl;
+			width: $global-space-button-xl;
 		}
 
 		&:first-child {
@@ -262,18 +262,18 @@
 			border: none;
 
 			@include layout {
-				height: 48px;
+				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
 				max-height: 100%;
 				max-width: 100%;
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
-				width: 48px;
+				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 
 			@include layout(compact) {
-				height: 32px;
-				width: 32px;
+				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
+				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 		}
 
@@ -289,7 +289,7 @@
 				left: 0;
 				line-height: auto;
 				margin-block-end: $global-space-base;
-				min-width: 56px;
+				min-width: $global-space-button-xl;
 				padding: $global-space-base $global-space-sm;
 			}
 		}

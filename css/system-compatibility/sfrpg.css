@@ -162,7 +162,7 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
 
 .-emu-layout body.-emu.system-sfrpg .item-browser .header {
   flex: 0 0 auto;
-  padding: var(--emu-space-xs, 2px) var(--emu-space-md, 24px); }
+  padding: var(--emu-space-xs, 2px) var(--emu-space-md, 16px); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .header .item-image {
     height: auto;
     width: var(--emu-space-button, 32px); }

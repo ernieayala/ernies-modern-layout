@@ -66,6 +66,18 @@ function updateSettings(settings) {
 		fontSizeSM,
 		fontSizeXS,
 		fontSizeChatRoll,
+		spacingBase,
+		spacingLG,
+		spacingMD,
+		spacingSM,
+		spacingXL,
+		spacingXS,
+		sizingButton,
+		sizingButtonLG,
+		sizingButtonSM,
+		sizingButtonXL,
+		sizingButtonXS,
+		sizingSidebar,
 		imageBackground,
 		imageBackgroundLightest,
 		imageBackgroundLight,
@@ -93,8 +105,8 @@ function updateSettings(settings) {
 
 	// Theme
 	colorPrimary ? myRoot.style.setProperty('--emu-color-primary', convertHexToRgb(colorPrimary)) : null;
-	colorPrimaryDarker ? myRoot.style.setProperty('--emu-color-primary-darker', convertHexToRgb(colorPrimary)) : null;
-	colorPrimaryDarkest ? myRoot.style.setProperty('--emu-color-primary-darkest', convertHexToRgb(colorPrimary)) : null;
+	colorPrimaryDarker ? myRoot.style.setProperty('--emu-color-primary-darker', convertHexToRgb(colorPrimaryDarker)) : null;
+	colorPrimaryDarkest ? myRoot.style.setProperty('--emu-color-primary-darkest', convertHexToRgb(colorPrimaryDarkest)) : null;
 	colorBackground ? myRoot.style.setProperty('--emu-color-background', convertHexToRgb(colorBackground)) : null;
 	colorBackgroundLightest ? myRoot.style.setProperty('--emu-color-background-lightest', convertHexToRgb(colorBackgroundLightest)) : null;
 	colorBackgroundLight ? myRoot.style.setProperty('--emu-color-background-light', convertHexToRgb(colorBackgroundLight)) : null;
@@ -119,13 +131,29 @@ function updateSettings(settings) {
 	borderRadiusImages ? myRoot.style.setProperty('--emu-border-radius-images', `${borderRadiusImages}px`) : myRoot.style.setProperty('--emu-border-radius-images', `0`);
 
 	// Font Size
-	fontSizeMD ? myRoot.style.setProperty('--emu-font-size-md', `${toRem(fontSizeMD)}rem`) : myRoot.style.setProperty('--emu-font-size-md', `${toRem(14)}rem`);
-	fontSizeLG ? myRoot.style.setProperty('--emu-font-size-lg', `${toRem(fontSizeLG)}rem`) : myRoot.style.setProperty('--emu-font-size-lg', `${toRem(16)}rem`);
-	fontSizeXL ? myRoot.style.setProperty('--emu-font-size-xl', `${toRem(fontSizeXL)}rem`) : myRoot.style.setProperty('--emu-font-size-xl', `${toRem(20)}rem`);
-	fontSizeXXL ? myRoot.style.setProperty('--emu-font-size-xxl', `${toRem(fontSizeXXL)}rem`) : myRoot.style.setProperty('--emu-font-size-xxl', `${toRem(24)}rem`);
-	fontSizeSM ? myRoot.style.setProperty('--emu-font-size-sm', `${toRem(fontSizeSM)}rem`) : myRoot.style.setProperty('--emu-font-size-sm', `${toRem(12)}rem`);
-	fontSizeXS ? myRoot.style.setProperty('--emu-font-size-xs', `${toRem(fontSizeXS)}rem`) : myRoot.style.setProperty('--emu-font-size-xs', `${toRem(10)}rem`);
-	fontSizeChatRoll ? myRoot.style.setProperty('--emu-font-size-chat-roll', `${toRem(fontSizeChatRoll)}rem`) : myRoot.style.setProperty('--emu-font-size-chat-roll', `${toRem(18)}rem`);
+	fontSizeMD ? myRoot.style.setProperty('--emu-font-size-md', `${fontSizeMD}px`) : myRoot.style.setProperty('--emu-font-size-md', `${14}px`);
+	fontSizeLG ? myRoot.style.setProperty('--emu-font-size-lg', `${fontSizeLG}px`) : myRoot.style.setProperty('--emu-font-size-lg', `${16}px`);
+	fontSizeXL ? myRoot.style.setProperty('--emu-font-size-xl', `${fontSizeXL}px`) : myRoot.style.setProperty('--emu-font-size-xl', `${20}px`);
+	fontSizeXXL ? myRoot.style.setProperty('--emu-font-size-xxl', `${fontSizeXXL}px`) : myRoot.style.setProperty('--emu-font-size-xxl', `${24}px`);
+	fontSizeSM ? myRoot.style.setProperty('--emu-font-size-sm', `${fontSizeSM}px`) : myRoot.style.setProperty('--emu-font-size-sm', `${12}px`);
+	fontSizeXS ? myRoot.style.setProperty('--emu-font-size-xs', `${fontSizeXS}px`) : myRoot.style.setProperty('--emu-font-size-xs', `${10}px`);
+	fontSizeChatRoll ? myRoot.style.setProperty('--emu-font-size-chat-roll', `${fontSizeChatRoll}px`) : myRoot.style.setProperty('--emu-font-size-chat-roll', `${18}px`);
+
+	// Spacing
+	spacingBase ? myRoot.style.setProperty('--emu-space-base', `${spacingBase}px`) : myRoot.style.setProperty('--emu-space-base', `${4}px`);
+	spacingLG ? myRoot.style.setProperty('--emu-space-lg', `${spacingLG}px`) : myRoot.style.setProperty('--emu-space-lg', `${32}px`);
+	spacingMD ? myRoot.style.setProperty('--emu-space-md', `${spacingMD}px`) : myRoot.style.setProperty('--emu-space-md', `${16}px`);
+	spacingSM ? myRoot.style.setProperty('--emu-space-sm', `${spacingSM}px`) : myRoot.style.setProperty('--emu-space-sm', `${8}px`);
+	spacingXL ? myRoot.style.setProperty('--emu-space-xl', `${spacingXL}px`) : myRoot.style.setProperty('--emu-space-xl', `${24}px`);
+	spacingXS ? myRoot.style.setProperty('--emu-space-xs', `${spacingXS}px`) : myRoot.style.setProperty('--emu-space-xs', `${2}px`);
+
+	// Sizing
+	sizingButton ? myRoot.style.setProperty('--emu-space-button', `${sizingButton}px`) : myRoot.style.setProperty('--emu-space-button', `${32}px`);
+	sizingButtonLG ? myRoot.style.setProperty('--emu-space-button-lg', `${sizingButtonLG}px`) : myRoot.style.setProperty('--emu-space-button-lg', `${40}px`);
+	sizingButtonSM ? myRoot.style.setProperty('--emu-space-button-sm', `${sizingButtonSM}px`) : myRoot.style.setProperty('--emu-space-button-sm', `${24}px`);
+	sizingButtonXL ? myRoot.style.setProperty('--emu-space-button-xl', `${sizingButtonXL}px`) : myRoot.style.setProperty('--emu-space-button-xl', `${56}px`);
+	sizingButtonXS ? myRoot.style.setProperty('--emu-space-button-xs', `${sizingButtonXS}px`) : myRoot.style.setProperty('--emu-space-button-xs', `${20}px`);
+	sizingSidebar ? myRoot.style.setProperty('--emu-space-sidebar', `${sizingSidebar}px`) : myRoot.style.setProperty('--emu-space-sidebar', `${320}px`);
 
 	// Backgrounds
 	if(imageBackground != 'none' || imageBackground == null) {
@@ -221,6 +249,18 @@ class emuSettings {
 			fontSizeXXL: 24,
 			fontSizeSM: 12,
 			fontSizeXS: 10,
+			spacingBase: 4,
+			spacingLG: 24,
+			spacingMD: 16,
+			spacingSM: 8,
+			spacingXL: 32,
+			spacingXS: 2,
+			sizingButton: 32,
+			sizingButtonLG: 40,
+			sizingButtonSM: 24,
+			sizingButtonXL: 56,
+			sizingButtonXS: 20,
+			sizingSidebar: 320,
 			fontSizeChatRoll: 18,
 			imageBackground: '',
 			imageBackgroundLightest: '',
@@ -268,7 +308,8 @@ class emuForm extends FormApplication {
 					'foundry': 'Foundry',
 					'dark': game.i18n.localize('emu.theme-preset-dark'),
 					'western': game.i18n.localize('emu.theme-preset-western'),
-					'alien': game.i18n.localize('emu.theme-preset-alien')
+					'alien': game.i18n.localize('emu.theme-preset-alien'),
+					'cyberpunk': game.i18n.localize('emu.theme-preset-cyberpunk'),
 				},
 				fontFamilyList: FONTS.GOOGLE_FONTS
 			},
@@ -305,6 +346,10 @@ class emuForm extends FormApplication {
 
 		if($('select[name="themePreset"]').val() === 'alien') {
 			for (const [key, value] of Object.entries(THEME.ALIEN)) { $(`input[name="${key}"]`).prop('value', value); }
+		}
+
+		if($('select[name="themePreset"]').val() === 'cyberpunk') {
+			for (const [key, value] of Object.entries(THEME.CYBERPUNK)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
 	}
 
@@ -347,6 +392,11 @@ Hooks.once('init', () => {
 		type: Object,
 		config: false
 	});
+
+	const overlay = document.createElement('div');
+	overlay.style.cssText += 'position: absolute;top:0;left:0;right:0;bottom:0;z-index:1000;background:black;transition: all ease-out 1s;opacity:1;';
+	overlay.setAttribute('id','emu-overlay');
+	document.body.appendChild(overlay);
 });
 
 Hooks.once('ready', () => {
@@ -433,20 +483,6 @@ Hooks.once('ready', () => {
 	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
 	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
 
-	// game.settings.register(moduleName, 'controlAlignTop', {
-	// 	name: game.i18n.localize('emu.layout-control-align'),
-	// 	hint: game.i18n.localize('emu.layout-control-align-hint'),
-	// 	scope: 'user',
-	// 	config: emuLayoutStatus,
-	// 	default: false,
-	// 	type: Boolean,
-	// 	onChange: data => {
-	// 		data === true ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
-	// 	}
-	// });
-	// const controlAlignTop = game.settings.get(moduleName, 'controlAlignTop');
-	// controlAlignTop ? myHtml[0].classList.add('-emu-control-align-top') : myHtml[0].classList.remove('-emu-control-align-top');
-
 	// Timeout because i'm bad at javascript
 	setTimeout(function() {
 		// Set Font Family
@@ -481,5 +517,8 @@ Hooks.once('ready', () => {
 	}
 
 	// Say Hello
-	console.log('Ernie\'s Modern UI Active');
+	console.log('%cErnie\'s Modern UI Active', 'color: #ff0055;');
+
+	const overlay = document.getElementById('emu-overlay');
+	overlay.classList.add('-hide');
 });

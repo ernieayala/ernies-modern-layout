@@ -55,11 +55,11 @@
 
 	.close {
 		@include layout {
-			left: $global-space-sm;
 			line-height: 1;
 			margin: 0;
 			margin-block-start: $global-space-xs;
 			position: absolute;
+			right: $global-space-sm;
 			top: $global-space-sm;
 		}
 	}

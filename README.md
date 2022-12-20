@@ -1,13 +1,9 @@
-HEY FOLKS, MY COMPUTER TOOK A GIANT SHIT. I'M WORKING ON GETTING A NEW ONE - UNTIL THEN I AM ON HOLD.
-
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ernieayala/ernies-modern-layout?style=flat-square)
 ![GitHub Latest Release](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/latest/total?style=flat-square)
 ![GitHub All Releases](https://img.shields.io/github/downloads/ernieayala/ernies-modern-layout/total?label=total%20downloads&style=flat-square)
 
 # Ernie's Modern UI
-**Compatibility:** FoundryVTT 10
-
-**Systems:** Any*
+**Compatibility:** FoundryVTT 10.286
 
 **Languages:** English, Español, 正體中文
 
@@ -22,7 +18,7 @@ A clean and theme-able visual update for Foundry VTT.
 - Ernie's Layout: Pushes pixels and adjusts fonts, heights, widths, padding and margins.
 
 ## Manifest URL
-https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/module.json
+https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.2/module.json
 
 ## Want me to look at something?
 - If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
@@ -34,7 +30,7 @@ Message me on Discord: Ernie#4453.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T24X2VD)
 
 ## You should know
-- This is a fun side project for me that I made to support my GMing tastes.
+- This is a side project for me that I made to support my GMing tastes.
 - Many modules and systems will not have my style.
 - Only tested on Chrome.
 
@@ -43,84 +39,3 @@ Message me on Discord: Ernie#4453.
      
 ### Features Video
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
-
-### Functional Systems (TODO: recheck this list)
-- Alien RPG
-- Call of Cthulhu 7
-- DND 5e
-- MÖRK BORG
-- Starfinder RPG
-
-### Fuctional Mods (TODO: recheck this list)
-- About Time
-- Ace Library
-- Active Token Effects
-- Alternative Pause Icon
-- Always HP
-- Ambient Doors
-- Autocomplete Whisper
-- Background Volume
-- Better Rolls for 5e
-- Beyond20 companion module
-- Border Control
-- Cautious Gamemaster Pack
-- Chat Portrait
-- Change Logs & Conflicts
-- Character Actions List dnd5e
-- Chat Images
-- Chat Message Accessibility Indicators
-- Chat Portrait
-- Combat Enhancements
-- Combat Focus
-- Combat Utility Belt
-- Compendium Browser
-- Compendium Folders
-- DF Chat Enhancements
-- DF Curvy Walls
-- DFreds Droppables
-- DFreds Convenient Effects
-- Dice So Nice!
-- Dice Tray
-- FoundryVTT Mount Up!
-- FXMaster
-- GM Notes
-- GM Screen
-- Health Estimate
-- Hey, listen! Chat Notifications
-- Hey, Wait!
-- Illandril's Chat Enhancements
-- Let Me Roll That For You!
-- lib Color Settings
-- libWrapper
-- Macro Editor
-- Maestro
-- Midi QOL
-- Monster Block
-- Narrator Tools
-- Party Resources
-- PDFoundry
-- Perfect Vision
-- Permission Viewer
-- Pings
-- Polyglot
-- Search Anywhere
-- Settings Extender)
-- Simple Calendar
-- Simple Dice Roller
-- Small Time
-- socketlib
-- Tabbed Chat Log
-- Tidy5e Sheet
-- Token Action HUD
-- Token Attacher
-- Token Auras
-- Token HUD Wildcard
-- Token Info Icons
-- Token Magic FX
-- Token Mold
-- Turn Marker
-- Universal Battlemap Importer
-- Wall Height
-- Weather Control
-- World Anvil
-- Zoom/Pan Options

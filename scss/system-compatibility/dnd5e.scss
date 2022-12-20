@@ -676,5 +676,22 @@ body#{$emu}.system-dnd5e {
 				}
 			}
 		}
+
+		.dnd5e.chat-card .card-buttons button {
+			&:hover {
+				span {
+					border-color: RGB($emu-color-white);
+				}
+			}
+
+			span {
+				border: 1px solid RGB($emu-color-border);
+
+				@include layout {
+					margin-inline-start: $global-space-base;
+					padding: 0 $global-space-xs;
+				}
+			}
+		}
 	}
 }

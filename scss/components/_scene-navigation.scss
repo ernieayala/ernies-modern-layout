@@ -79,10 +79,10 @@
 
 			@include layout {
 				width: auto;
-				height: 36px;
+				height: $global-space-button;
 				cursor: pointer;
 				display: block;
-				line-height: 36px;
+				line-height: $global-space-button;
 				margin: 0;
 				max-width: 240px;
 				min-width: 112px;
@@ -97,8 +97,8 @@
 			}
 
 			@include layout(compact) {
-				height: 28px;
-				line-height: 28px;
+				height: $global-space-button;
+				line-height: $global-space-button;
 				min-width: 88px;
 			}
 

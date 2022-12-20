@@ -97,6 +97,10 @@
 }
 
 #effects-config {
+	form {
+		height: 100%;
+	}
+
 	.directory-list {
 		background: transparent;
 
@@ -104,6 +108,20 @@
 			height: auto;
 			overflow-x: hidden;
 			overflow-y: auto;
+		}
+	}
+
+	.fxmaster-groups-list {
+		@include layout {
+			@extend %reset-list;
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+			gap: $global-space-base;
+			max-height: 100%;
+			min-height: 1px;
+			overflow-y: auto;
+			padding: 0 $global-space-sm;
 		}
 	}
 
@@ -152,8 +170,35 @@
 		}
 	}
 
+	.fxmaster-groups-list__item {
+		background-color: RGB($emu-color-folder-subdirectory);
+		background-image: none;
+		border: none;
+
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			gap: $global-space-base;
+			padding: $global-space-base;
+			width: 100%;
+		}
+	}
+
 	.form-footer {
 		background-color: transparent;
+	}
+
+	.fxmaster-groups-list__collapse,
+	.fxmaster-list__collapse {
+		text-shadow: none;
+
+		&:hover {
+			color: RGB($emu-color-primary);
+		}
+
+		@include layout {
+			font-size: $global-font-size-md;
+		}
 	}
 }
 

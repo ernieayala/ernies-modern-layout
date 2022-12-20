@@ -16,6 +16,7 @@
 		display: inline-flex;
 		font-size: $global-font-size-lg;
 		font-family: inherit;
+		gap: $global-space-sm;
 		height: initial;
 		justify-content: center;
 		line-height: 1;
@@ -24,14 +25,14 @@
 		position: relative;
 
 		> i {
-			margin-inline-end: $global-space-sm;
+			margin: 0;
 		}
 
 		> label {
-			color: inherit !important; // because the foundry css dev doesn't know how to code a button
+			color: inherit !important; // because inline
 
 			@include layout {
-				font-size: inherit !important; // because the foundry css dev doesn't know how to code a button
+				font-size: inherit !important; // because inline
 			}
 		}
 	}

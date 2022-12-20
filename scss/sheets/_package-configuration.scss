@@ -51,7 +51,7 @@
 
 			.category-tab {
 				@include layout {
-					border-radius: none !important;
+					border-radius: 0 !important;
 					justify-content: space-between !important;
 				}
 			}

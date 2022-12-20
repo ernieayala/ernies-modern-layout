@@ -1,12 +1,46 @@
-#df-curvy-walls-tools {
+#lib-df-buttons {
 	@include layout {
 		display: flex;
+		flex-direction: row-reverse;
 		gap: $global-space-base;
 		left: 96px;
+		margin: 0 !important;
 		top: 184px;
+
+		&.left #moduleControls {
+			position: relative;
+		}
 	}
 
-	.control-tools {
+	@include layout-subtle {
+		opacity: $global-subtle-opacity;
+
+		&::before {
+			content: "";
+			bottom: calc(-1 * #{$global-space-base});
+			left: calc(-1 * #{$global-space-base});
+			right: calc(-1 * #{$global-space-base});
+			top: calc(-1 * #{$global-space-base});
+			pointer-events: all;
+			position: absolute;
+		}
+
+		&:hover,
+		&:active {
+			opacity: 1;
+		}
+	}
+
+	#df-curvy-walls-tools {
+		left: calc(#{$global-space-button-lg} + #{$global-space-base}) !important;
+		top: 0 !important;
+	}
+
+	#magnet {
+		display: none;
+	}
+
+	.group-tools {
 		@include layout {
 			@extend %reset-list;
 			display: flex;
@@ -18,6 +52,10 @@
 			transition:
 				opacity $global-transition-time-base $global-transition-type-link,
 				left $global-transition-time-base $global-transition-type-link;
+
+			.controls {
+				gap: $global-space-base;
+			}
 		}
 	}
 
