@@ -24,6 +24,14 @@
 						.rsr-base-die {
 							align-self: flex-end;
 						}
+
+						.success {
+							color: RGB($emu-color-positive);
+						}
+
+						.failure {
+							color: RGB($emu-color-negative);
+						}
 					}
 				}
 
