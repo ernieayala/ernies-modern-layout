@@ -3,6 +3,7 @@
 		<a class="item" data-tab="colors">{{ localize "emu.modal-tab-colors" }}</a>
 		<a class="item" data-tab="design">{{ localize "emu.modal-tab-design" }}</a>
 		<a class="item" data-tab="options">{{ localize "emu.modal-tab-options" }}</a>
+		<a class="item" data-tab="reset">{{ localize "emu.modal-tab-reset" }}</a>
 	</nav>
 	<section id="config-tabs" class="content">
 		<div class="tab" data-tab="colors" data-group="sections">
@@ -507,6 +508,18 @@
 					{{ checked emuLayout }} />
 				<p class="notes">{{ localize "emu.layout-emu-layout-hint" }}</p>
 			</div>
+			<div class="form-group">
+				<button type="button" name="import-theme">
+					<i class="fas fa-file-import"></i>
+					<span>{{ localize "emu.modal-button-import" }}</span>
+				</button>
+				<button type="button" name="export-theme">
+					<i class="fas fa-file-export"></i>
+					<span>{{ localize "emu.modal-button-export" }}</span>
+				</button>
+			</div>
+		</div>
+		<div class="tab" data-tab="reset" data-group="sections">
 			<div class="form-group">
 				<button type="button" name="reset">
 					<i class="fas fa-undo"></i>

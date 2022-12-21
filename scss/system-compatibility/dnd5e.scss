@@ -588,7 +588,7 @@ body#{$emu}.system-dnd5e {
 
 	#sidebar,
 	.sidebar-popout {
-		.dnd5e.chat-card.item-card {
+		.dnd5e.chat-card {
 			@include layout {
 				font-size: $global-font-size-sm;
 			}
@@ -602,7 +602,7 @@ body#{$emu}.system-dnd5e {
 					padding: $global-space-base 0;
 
 					img {
-						flex: 0 0 to-rem(36px);
+						flex: 0 0 36px;
 						margin-inline-end: $global-space-base;
 					}
 				}

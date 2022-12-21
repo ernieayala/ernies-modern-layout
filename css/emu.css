@@ -5319,11 +5319,11 @@ body.-emu .combatready-timebar-fill {
   .-emu-layout body.-emu .combatready-timebar, .-emu-layout
   body.-emu .combatready-timebar-fill {
     bottom: 0;
-    height: to-rem(7px);
+    height: 7px;
     top: auto; }
   .-emu-layout.-emu-compact body.-emu .combatready-timebar, .-emu-layout.-emu-compact
   body.-emu .combatready-timebar-fill {
-    height: to-rem(3px); }
+    height: 3px; }
 
 body.-emu .combatready-timebar {
   background: RGBA(var(--emu-color-background-darkest, 9, 14, 16), 0.2); }
@@ -5488,6 +5488,9 @@ body.-emu .sidebar-popout #compendium > ul.directory-list > .directory-item {
 body.-emu #sidebar nav.damage-log-nav.tabs,
 body.-emu .sidebar-popout[id="chat-popout"] .window-content nav.damage-log-nav.tabs {
   box-shadow: none; }
+  .-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs, .-emu-layout
+  body.-emu .sidebar-popout[id="chat-popout"] .window-content nav.damage-log-nav.tabs {
+    border-radius: 0; }
   body.-emu #sidebar nav.damage-log-nav.tabs a,
   body.-emu .sidebar-popout[id="chat-popout"] .window-content nav.damage-log-nav.tabs a {
     color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
@@ -5792,6 +5795,60 @@ body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator-
     body.-emu .dialog--dice-calculator.window-app .dice-calculator .dice-calculator--button + button {
       margin: 0; }
 
+.-emu-layout body.-emu .ddb-muncher.window-app .tab {
+  -webkit-margin-before: var(--emu-space-sm, 8px);
+          margin-block-start: var(--emu-space-sm, 8px); }
+
+.-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-spell-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-item-config, .-emu-layout
+body.-emu .ddb-muncher.window-app .munching-monster-config {
+  align-items: center;
+  display: flex;
+  -webkit-margin-after: var(--emu-space-sm, 8px);
+          margin-block-end: var(--emu-space-sm, 8px); }
+  .-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-spell-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-item-config input[type="checkbox"], .-emu-layout
+  body.-emu .ddb-muncher.window-app .munching-monster-config input[type="checkbox"] {
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
+
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-adventure-config-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-adventure-import-start {
+  -webkit-margin-after: var(--emu-space-sm, 8px);
+          margin-block-end: var(--emu-space-sm, 8px);
+  width: auto; }
+
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-feats-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-races-start, .-emu-layout
+body.-emu .ddb-muncher.window-app #munch-classes-start {
+  margin: 0;
+  -webkit-margin-after: var(--emu-space-sm, 8px);
+          margin-block-end: var(--emu-space-sm, 8px); }
+
+body.-emu #ddb-importer-folders #ddb-importer-settings .form-content {
+  gap: var(--emu-space-base, 4px); }
+
+.-emu-layout body.-emu #ddb-importer-settings-dynamic-updates .form-group h3 {
+  border: none;
+  margin: 0; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium hr {
+  display: none; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium .form-group h3 {
+  border: none;
+  margin: 0; }
+
+.-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting {
+  align-items: center;
+  display: flex;
+  margin: var(--emu-space-sm, 8px) 0; }
+  .-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting input[type="checkbox"] {
+    -webkit-margin-end: var(--emu-space-base, 4px);
+            margin-inline-end: var(--emu-space-base, 4px); }
+
 .-emu-layout body.-emu #sidebar .dnd5ehelpers .dice-result, .-emu-layout
 body.-emu .sidebar-popout .dnd5ehelpers .dice-result {
   -webkit-margin-before: var(--emu-space-base, 4px);
@@ -5825,6 +5882,7 @@ body.-emu .sidebar-popout .dnd5ehelpers .cover-button {
 .-emu-layout body.-emu #emu-settings form {
   display: flex;
   flex-direction: column;
+  height: 100%;
   max-height: 80vh;
   overflow: hidden; }
 
@@ -6028,14 +6086,14 @@ body.-emu #filters-config .form-footer {
   width: auto; }
 
 .-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app {
-  transition: t(transform, "shift"); }
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
   .-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs {
     position: absolute; }
     .-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs button:empty {
       display: none; }
     .-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs .meta-actions {
       transition-delay: initial;
-      transition: t(transform, "shift"); }
+      transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1); }
       .-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs .meta-actions button > i {
         margin: 0; }
 
@@ -6486,12 +6544,6 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
     .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.failure, .-emu-layout
     body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.failure {
       color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
-  .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .success, .-emu-layout
-  body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .success {
-    color: RGB(var(--emu-color-positive, 15, 189, 125)); }
-  .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .failure, .-emu-layout
-  body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .failure {
-    color: RGB(var(--emu-color-negative, 220, 20, 60)); }
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .tooltip.dice-row-item, .-emu-layout
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .tooltip.dice-row-item {
@@ -6914,7 +6966,7 @@ body.-emu .tidy5e.sheet.actor #item-info-container {
   box-shadow: 0 2px 4px RGB(var(--emu-color-black, 0, 0, 0));
   color: RGB(var(--emu-color-text, 9, 14, 16)); }
   .-emu-layout body.-emu .tidy5e.sheet.actor #item-info-container {
-    transition: t(width, "shift");
+    transition: width 0.3s cubic-bezier(0.77, 0, 0.175, 1);
     transition-delay: 0s; }
   body.-emu .tidy5e.sheet.actor #item-info-container .info-wrap {
     -webkit-border-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
@@ -7133,11 +7185,11 @@ body.-emu #tokenAttacher .control-tool {
 
 .-emu-layout body.-emu #hud .token-info-container .token-info-column-left {
   justify-content: center;
-  left: to-rem(-120px); }
+  left: -120px; }
 
 .-emu-layout body.-emu #hud .token-info-container .token-info-column-right {
   justify-content: center;
-  right: to-rem(-120px); }
+  right: -120px; }
 
 .-emu-layout body.-emu #hud .token-info-container .token-info-column-left, .-emu-layout
 body.-emu #hud .token-info-container .token-info-column-right {

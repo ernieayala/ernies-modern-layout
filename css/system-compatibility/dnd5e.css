@@ -2727,73 +2727,73 @@ body.-emu.system-dnd5e .trait-selector.actor-type .trait-list .radio input {
   .-emu-layout body.-emu.system-dnd5e #short-rest-hd .form-fields select {
     flex: 1 1 auto; }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card, .-emu-layout
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card, .-emu-layout
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card {
   font-size: var(--emu-font-size-sm, 12px); }
 
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header,
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header {
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header,
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header {
   border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
-  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header, .-emu-layout
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header {
+  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header, .-emu-layout
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header {
     margin-block-end: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px) 0; }
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header img, .-emu-layout
-    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header img {
-      flex: 0 0 to-rem(36px);
+    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header img, .-emu-layout
+    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header img {
+      flex: 0 0 36px;
       margin-inline-end: var(--emu-space-base, 4px); }
-  body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3,
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
+  body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3,
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3 {
     color: RGB(var(--emu-color-text, 9, 14, 16));
     text-shadow: none; }
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-header h3, .-emu-layout
-    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-header h3 {
+    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3, .-emu-layout
+    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3 {
       align-items: center;
       display: inline-flex;
       font-family: inherit;
       line-height: initial;
       margin: 0; }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content, .-emu-layout
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-content, .-emu-layout
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-content {
   margin: var(--emu-space-base, 4px) 0; }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-content h3, .-emu-layout
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-content h3 {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-content h3, .-emu-layout
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-content h3 {
   font-size: var(--emu-font-size-sm, 12px); }
 
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons, .-emu-layout
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons {
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons, .-emu-layout
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons {
   margin: var(--emu-space-base, 4px) 0; }
 
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons button,
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons button {
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button,
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button {
   border: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
-  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons button, .-emu-layout
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons button {
+  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button, .-emu-layout
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button {
     margin: 0; }
-  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-buttons button + button, .-emu-layout
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-buttons button + button {
+  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button + button, .-emu-layout
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button + button {
     margin-block-start: var(--emu-space-base, 4px); }
 
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer,
-body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer {
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,
+body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
   border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
-  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer, .-emu-layout
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer {
+  .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer, .-emu-layout
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer {
     margin-block-start: var(--emu-space-base, 4px);
     padding-block-start: var(--emu-space-base, 4px); }
-  body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span,
-  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span {
+  body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span,
+  body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span {
     border-inline-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
-    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span, .-emu-layout
-    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span {
+    .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span, .-emu-layout
+    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span {
       font-size: var(--emu-font-size-xs, 10px);
       margin-inline-end: var(--emu-space-xs, 2px);
       padding-inline-end: var(--emu-space-base, 4px); }
-    body.-emu.system-dnd5e #sidebar .dnd5e.chat-card.item-card .card-footer span:last-child,
-    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card.item-card .card-footer span:last-child {
+    body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span:last-child,
+    body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span:last-child {
       border-inline-end: none; }
 
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button:hover span,

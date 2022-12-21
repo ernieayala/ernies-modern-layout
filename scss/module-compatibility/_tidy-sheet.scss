@@ -59,7 +59,7 @@
 		color: RGB($emu-color-text);
 
 		@include layout {
-			transition: t(width, "shift");
+			transition: width $global-transition-time-base $global-transition-type-shift;
 			transition-delay: 0s;
 		}
 

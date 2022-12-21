@@ -7,14 +7,14 @@
 		.token-info-column-left {
 			@include layout {
 				justify-content: center;
-				left: to-rem(-120px);
+				left: -120px;
 			}
 		}
 
 		.token-info-column-right {
 			@include layout {
 				justify-content: center;
-				right: to-rem(-120px);
+				right: -120px;
 			}
 		}
 

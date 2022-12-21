@@ -5,12 +5,12 @@
 
 	@include layout {
 		bottom: 0;
-		height: to-rem(7px);
+		height: 7px;
 		top: auto;
 	}
 
 	@include layout(compact) {
-		height: to-rem(3px);
+		height: 3px;
 	}
 }
 

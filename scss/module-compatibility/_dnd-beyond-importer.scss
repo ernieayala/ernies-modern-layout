@@ -38,24 +38,37 @@
 	}
 }
 
-#ddb-importer-settings-compendium {
+#ddb-importer-folders {
 	#ddb-importer-settings {
-		hr {
-			@include layout {
-				display: none;
+		.form-content {
+			gap: $global-space-base;
+		}
+	}
+}
+
+#ddb-importer-settings-dynamic-updates {
+	.form-group {
+		@include layout {
+			h3 {
+				border: none;
+				margin: 0;
 			}
+		}
+	}
+}
+
+#ddb-importer-settings-compendium {
+	hr {
+		@include layout {
+			display: none;
 		}
 	}
 
 	.form-group {
 		@include layout {
 			h3 {
-				flex: 1 1 auto;
+				border: none;
 				margin: 0;
-			}
-
-			select {
-				flex: 1 1 auto !important; //because of inline
 			}
 		}
 	}

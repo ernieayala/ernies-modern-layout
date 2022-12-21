@@ -18,7 +18,7 @@
 
 .gm-screen-app.gm-screen-drawer.window-app {
 	@include layout {
-		transition: t(transform, "shift");
+		transition: transform $global-transition-time-base $global-transition-type-shift;
 
 		.gm-screen-actions.tabs {
 			position: absolute;
@@ -31,7 +31,7 @@
 
 			.meta-actions {
 				transition-delay: initial;
-				transition: t(transform, "shift");
+				transition: transform $global-transition-time-base $global-transition-type-shift;
 
 				button > i {
 					margin: 0;

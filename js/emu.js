@@ -8,6 +8,8 @@ const myHead = document.getElementsByTagName('head')[0];
 const myBody = document.getElementsByTagName('body');
 const moduleName = 'ernies-modern-layout';
 
+let importedTheme;
+
 let __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
 	function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
 		return new (P || (P = Promise))(function (resolve, reject) {
@@ -27,9 +29,9 @@ function convertHexToRgb(color) {
 	return `${r}, ${g}, ${b}`;
 }
 
-// Get REM value
-function toRem(value) {
-	return value / 16;
+// Get Imported Theme Object
+function importThemeObject(file) {
+
 }
 
 function updateSettings(settings) {
@@ -328,6 +330,8 @@ class emuForm extends FormApplication {
 		html.find('select[name="themePreset"]').change(this.getThemePreset.bind(this));
 		html.find('select[name="fontFamily"]').change(this.getFontFamily.bind(this));
 		html.find('button[name="reset"]').click(this.onReset.bind(this));
+		html.find('button[name="export-theme"]').click(this.exportTheme.bind(this));
+		html.find('button[name="import-theme"]').click(this.importTheme.bind(this));
 		this.reset = false;
 	}
 
@@ -364,6 +368,41 @@ class emuForm extends FormApplication {
 	onReset() {
 		this.reset = true;
 		this.render();
+	}
+
+	exportTheme() {
+		const currentSettings = game.settings.get(moduleName, 'settings');
+		let theme = JSON.stringify(currentSettings);
+		saveDataToFile(theme, 'application/json', 'ernieTheme.json');
+	}
+
+	importTheme() {
+		const input = $('<input type="file">');
+		input.on('change', function(e) {
+			const file = this.files[0];
+			if (!file) {
+				return;
+			}
+
+			readTextFromFile(file).then(async (result) => {
+				try {
+					importedTheme = JSON.parse(result);
+
+					// for (const [key, value] of Object.entries(importedTheme)) {
+					// 	$(`input[name="${key}"]`).prop('value', value);
+					// }
+
+					return __awaiter(this, void 0, void 0, function* () {
+						let settings = mergeObject(emuSettings.settings, importedTheme, { insertKeys: false, insertValues: false });
+						yield game.settings.set(moduleName, 'settings', settings);
+						updateSettings(game.settings.get(moduleName, 'settings'));
+					});
+				} catch (e) {
+					console.log(e);
+				}
+			});
+		});
+		input.trigger('click');
 	}
 
 	_updateObject(event, formData) {
