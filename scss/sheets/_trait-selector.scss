@@ -19,7 +19,7 @@
 
 				li,
 				label {
-					color: color("text");
+					color: RGB($emu-color-text);
 
 					@include layout {
 						align-items: center;

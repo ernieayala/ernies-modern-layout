@@ -23,7 +23,7 @@ body#{$emu}.system-sfrpg {
 
 				.card-buttons button,
 				.card-header h3 {
-					color: color("text");
+					color: RGB($emu-color-text);
 					text-shadow: none;
 
 					@include layout {
@@ -55,8 +55,8 @@ body#{$emu}.system-sfrpg {
 				}
 
 				.card-header {
-					border-block-start: b("border-lighter");
-					border-block-end: b("border-lighter");
+					border-block-start: 1px solid RGB($emu-color-border-lighter);
+					border-block-end: 1px solid RGB($emu-color-border-lighter);
 					margin-block-end: $global-space-base;
 
 					@include layout {
@@ -71,7 +71,7 @@ body#{$emu}.system-sfrpg {
 				}
 
 				.card-footer {
-					border-block-start: b("border-lighter");
+					border-block-start: 1px solid RGB($emu-color-border-lighter);
 
 					@include layout {
 						display: flex;
@@ -82,7 +82,7 @@ body#{$emu}.system-sfrpg {
 					}
 
 					span {
-						border-inline-end: b("border");
+						border-inline-end: 1px solid RGB($emu-color-border);
 
 						@include layout {
 							font-size: $global-font-size-xs;
@@ -102,8 +102,8 @@ body#{$emu}.system-sfrpg {
 					}
 
 					button {
-						border: b("border");
-						color: color("text-lightest");
+						border: 1px solid RGB($emu-color-border);
+						color: RGB($emu-color-text-lightest);
 
 						@include layout {
 							font-weight: normal;
@@ -173,10 +173,10 @@ body#{$emu}.system-sfrpg {
 		}
 
 		.hint {
-			background-color: color("blue-500");
+			background-color: RGB($emu-color-neutral);
 			border: none;
 			border-radius: 0;
-			color: color("white");
+			color: RGB($emu-color-white);
 
 			@include layout {
 				margin: $global-space-xs 0;
@@ -202,9 +202,9 @@ body#{$emu}.system-sfrpg {
 				}
 
 				h3 {
-					background-color: color("background-light");
-					border-block-end: b("border");
-					color: color("text-lightest");
+					background-color: RGB($emu-color-background-light);
+					border-block-end: 1px solid RGB($emu-color-border);
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						padding: $global-space-base $global-space-sm;
@@ -254,7 +254,7 @@ body#{$emu}.system-sfrpg {
 			}
 
 			.item-sort-link:hover {
-				color: color("primary");
+				color: RGB($emu-color-primary);
 				text-shadow: none;
 			}
 		}
@@ -269,7 +269,7 @@ body#{$emu}.system-sfrpg {
 			}
 
 			li {
-				border-block-end: b("border-lighter");
+				border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 				@include layout {
 					line-height: initial;
@@ -296,11 +296,11 @@ body#{$emu}.system-sfrpg {
 				}
 
 				&:hover {
-					background-color: color("primary");
-					color: color("text-lightest");
+					background-color: RGB($emu-color-primary);
+					color: RGB($emu-color-text-lightest);
 
 					a:hover {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 					}
 				}
 			}

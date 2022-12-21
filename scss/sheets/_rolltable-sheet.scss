@@ -15,10 +15,10 @@
 
 			@include layout {
 				display: grid;
-				grid-template-columns: to-rem(40px) to-rem(128px) 1fr to-rem(60px) to-rem(80px) to-rem(60px);
+				grid-template-columns: 40px 128px 1fr 60px 80px 60px;
 
 				&:nth-of-type(odd):not(.table-header) {
-					background-color: color("background-light", 0.1);
+					background-color: RGBA($emu-color-background-light, 0.1);
 				}
 
 				select + input {

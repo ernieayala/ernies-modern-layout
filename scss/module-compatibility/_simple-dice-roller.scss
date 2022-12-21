@@ -8,12 +8,12 @@
 	}
 
 	#SDRpopup.simple-dice-roller-popup {
-		background-color: color("background");
+		background-color: RGB($emu-color-background);
 		background-image: $global-image-background;
-		border: b("border") !important;
+		border: 1px solid RGB($emu-color-border) !important;
 		border-radius: $global-border-radius-default;
 		box-shadow: none !important; // because MOD inline
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			flex-direction: column;
@@ -23,19 +23,19 @@
 		}
 
 		ul {
-			border-block-end: b("border");
+			border-block-end: 1px solid RGB($emu-color-border);
 		}
 
 		li {
 			border: none;
-			border-inline-end: b("border");
+			border-inline-end: 1px solid RGB($emu-color-border);
 
 			@include layout {
-				@include size(to-rem(48px));
 				align-items: center;
 				display: inline-flex;
 				height: auto;
 				justify-content: center;
+				width: 48px;
 			}
 
 			&:hover {
@@ -44,7 +44,7 @@
 
 			&:first-child {
 				@include layout {
-					width: to-rem(112px);
+					width: 112px;
 				}
 			}
 

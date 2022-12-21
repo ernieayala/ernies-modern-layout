@@ -2,9 +2,9 @@
 .sidebar-popout[id="compendium-popout"] .window-content {
 	[data-tab="compendium"] {
 		h3 {
-			background-color: color("background");
-			border: b("border");
-			color: color("text-lightest");
+			background-color: RGB($emu-color-background);
+			border: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				margin: 0;
@@ -46,7 +46,7 @@
 					}
 
 					.status-icons {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 
 						@include layout {
 							position: relative;
@@ -60,7 +60,7 @@
 				}
 
 				.compendium-footer {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						flex: 0 0 auto;

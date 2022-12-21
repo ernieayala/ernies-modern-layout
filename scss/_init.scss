@@ -1,5 +1,5 @@
 :root {
-	@include css-vars($_palette-default);
+	@include css-color-variable-creation($global-palette-default);
 	--emu-background-opacity-button-primary: 1;
 	--emu-background-opacity-hotbar: 0.8;
 	--emu-background-opacity-hud: 0.8;
@@ -18,27 +18,28 @@
 	--emu-image-background-light: none;
 	--emu-image-background-darkest: none;
 	--emu-image-background-controls: none;
-	--emu-font-size-xxl: #{to-rem(24px)};
-	--emu-font-size-xl: #{to-rem(20)};
-	--emu-font-size-lg: #{to-rem(16px)};
-	--emu-font-size-md: #{to-rem(14px)};
-	--emu-font-size-sm: #{to-rem(12px)};
-	--emu-font-size-xs: #{to-rem(10px)};
-	--emu-font-size-chat-roll: #{to-rem(18px)};
+	--emu-font-size-xxl: 24px;
+	--emu-font-size-xl: 20px;
+	--emu-font-size-lg: 16px;
+	--emu-font-size-md: 14px;
+	--emu-font-size-sm: 12px;
+	--emu-font-size-xs: 10px;
+	--emu-font-size-chat-roll: 18px;
 	--emu-subtle-opacity: 0.3;
-	--emu-space-pf: #{to-rem(1px)};
-	--emu-space-xs: #{to-rem(2px)};
-	--emu-space-base: #{to-rem(4px)};
-	--emu-space-sm: #{to-rem(8px)};
-	--emu-space-md: #{to-rem(16px)};
-	--emu-space-lg: #{to-rem(24px)};
-	--emu-space-xl: #{to-rem(32px)};
-	--emu-space-button-lg: #{to-rem(40px)};
-	--emu-space-button: #{to-rem(32px)};
-	--emu-space-button-sm: #{to-rem(24px)};
-	--emu-space-button-xs: #{to-rem(20px)};
-	--emu-space-sidebar: #{to-rem(320px)};
-	scrollbar-color: color("charcoal-300") color("black", 0.5);
+	--emu-space-pf: 1px;
+	--emu-space-xs: 2px;
+	--emu-space-base: 4px;
+	--emu-space-sm: 8px;
+	--emu-space-md: 16px;
+	--emu-space-lg: 24px;
+	--emu-space-xl: 32px;
+	--emu-space-button-xl: 56px;
+	--emu-space-button-lg: 40px;
+	--emu-space-button: 32px;
+	--emu-space-button-sm: 24px;
+	--emu-space-button-xs: 20px;
+	--emu-space-sidebar: 320px;
+	scrollbar-color: RGB($emu-color-charcoal) RGBA($emu-color-black, 0.5);
 	scrollbar-width: thin;
 }
 
@@ -47,13 +48,13 @@
 }
 
 ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 0 1px color("background-darkest", 0.5);
+	box-shadow: inset 0 0 0 1px RGBA($emu-color-background-darkest, 0.5);
 	border: none;
 	border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: color("background-light");
+	background-color: RGB($emu-color-background-light);
 	border: none;
 	border-radius: $global-border-radius-default;
 	outline: none;
@@ -71,16 +72,17 @@
 }
 
 html.-emu-layout.-emu-compact {
-	--emu-space-base: #{to-rem(2px)};
-	--emu-space-sm: #{to-rem(4px)};
-	--emu-space-md: #{to-rem(8px)};
-	--emu-space-lg: #{to-rem(12px)};
-	--emu-space-xl: #{to-rem(16px)};
-	--emu-space-button-lg: #{to-rem(32px)};
-	--emu-space-button: #{to-rem(24px)};
-	--emu-space-button-sm: #{to-rem(20px)};
-	--emu-space-button-xs: #{to-rem(18px)};
-	--emu-space-sidebar: #{to-rem(286px)};
+	--emu-space-base: 2px !important;
+	--emu-space-sm: 4px !important;
+	--emu-space-md: 8px !important;
+	--emu-space-lg: 12px !important;
+	--emu-space-xl: 16px !important;
+	--emu-space-button-xl: 40px !important;
+	--emu-space-button-lg: 32px !important;
+	--emu-space-button: 24px !important;
+	--emu-space-button-sm: 20px !important;
+	--emu-space-button-xs: 18px !important;
+	--emu-space-sidebar: 286px !important;
 }
 
 html.-emu-layout {
@@ -88,15 +90,39 @@ html.-emu-layout {
 }
 
 body {
-	background-color: color("background-darkest");
+	background-color: RGB($emu-color-background-darkest);
 	background-image: $global-image-background-darkest;
+	background-repeat: repeat;
+	background-size: auto;
 	box-shadow: none;
 
 	@include layout {
 		font-size: $global-font-size-md;
+		height: 100vh;
+		margin: 0;
+		overflow: hidden;
+		width: 100vw;
+
+		&.game {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&:not(.background) {
+			bottom: 0;
+			left: 0;
+			position: fixed;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	#emu-overlay.-hide {
+		opacity: 0 !important;
+		pointer-events: none;
 	}
 
 	::selection {
-		background-color: color("gray-200");
+		background-color: RGBA($emu-color-black, 0.5);
 	}
 }

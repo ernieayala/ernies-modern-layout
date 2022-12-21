@@ -1,17 +1,18 @@
 #context-menu {
-	background-color: color("background-lightest");
+	background-color: RGB($emu-color-background-lightest);
 	background-image: $global-image-background-lightest;
 	border-radius: $global-border-radius-default;
-	border: b("border");
-	box-shadow: 0 2px 4px color("black");
-	color: color("text");
+	border: 1px solid RGB($emu-color-border);
+	box-shadow: 0 2px 4px RGB($emu-color-black);
+	color: RGB($emu-color-text);
 
 	@include layout {
-		@include absolute(left 0);
-		max-width: to-rem(320px);
-		min-width: to-rem(152px);
+		left: 0;
+		max-width: 320px;
+		min-width: 152px;
+		position: absolute;
 		width: 100%;
-		z-index: z("tooltip");
+		z-index: $global-z-index-tooltip;
 
 		&.expand-down {
 			top: 100%;
@@ -47,8 +48,8 @@
 			}
 
 			&:hover {
-				background-color: color("primary");
-				color: color("text-lightest");
+				background-color: RGB($emu-color-primary);
+				color: RGB($emu-color-text-lightest);
 			}
 
 			&:focus {

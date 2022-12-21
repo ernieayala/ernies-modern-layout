@@ -4,18 +4,21 @@
 	box-shadow: none;
 
 	@include layout {
-		@include fixed(top 0 left 0);
-		@include size(100%);
 		align-items: center;
 		display: flex;
+		height: 100%;
 		justify-content: center;
-		z-index: z("tooltip");
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: $global-z-index-tooltip;
 	}
 
 	#menu-items {
-		background-color: color("background-darkest");
+		background-color: RGB($emu-color-background-darkest);
 		background-image: $global-image-background-darkest;
-		box-shadow: 0 2px 4px color("black");
+		box-shadow: 0 2px 4px RGB($emu-color-black);
 
 		@include layout {
 			@extend %reset-list;

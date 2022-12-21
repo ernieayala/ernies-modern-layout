@@ -11,11 +11,11 @@
 			overflow-x: hidden;
 
 			.message {
-				background-color: color("background-chat-message");
+				background-color: RGB($emu-color-background-chat-message);
 				background-image: $global-image-background-light;
-				border: b("border");
+				border: 1px solid RGB($emu-color-border);
 				border-radius: $global-border-radius-default;
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				@include layout {
 					display: flex;
@@ -36,11 +36,11 @@
 				}
 
 				&.whisper {
-					background-color: color("background-chat-message-whisper");
+					background-color: RGB($emu-color-background-chat-message-whisper);
 				}
 
 				&.blind {
-					background-color: color("background-chat-message-blind");
+					background-color: RGB($emu-color-background-chat-message-blind);
 				}
 
 				.message-header {
@@ -76,7 +76,7 @@
 				}
 
 				.message-metadata {
-					transition: t("opacity", "link");
+					transition: opacity $global-transition-time-base $global-transition-type-link;
 
 					@include layout {
 						display: flex;
@@ -89,7 +89,7 @@
 						color: inherit;
 
 						&:hover {
-							color: color("primary");
+							color: RGB($emu-color-primary);
 						}
 					}
 				}
@@ -116,15 +116,17 @@
 					@include layout {
 						display: flex;
 						flex-direction: column;
+						flex-wrap: wrap;
 						gap: $global-space-base;
+						justify-content: space-around;
 					}
 				}
 
 				.dice-roll .dice-formula,
 				.dice-roll .dice-total {
-					background-color: color("background", 0.1);
+					background-color: RGBA($emu-color-background, 0.1);
 					box-shadow: none;
-					border: b("border");
+					border: 1px solid RGB($emu-color-border);
 					border-radius: $global-border-radius-default;
 					color: inherit;
 
@@ -153,16 +155,16 @@
 				.dice-roll .dice-total {
 					&.critical,
 					&.success {
-						background-color: color("positive");
-						border-color: color("green-800");
-						color: color("white");
+						background-color: RGB($emu-color-positive);
+						border-color: RGB($emu-color-positive-darkest);
+						color: RGB($emu-color-white);
 					}
 
 					&.fumble,
 					&.failure {
-						background-color: color("negative");
-						border-color: color("red-800");
-						color: color("white");
+						background-color: RGB($emu-color-negative);
+						border-color: RGB($emu-color-negative-darkest);
+						color: RGB($emu-color-white);
 					}
 				}
 
@@ -172,7 +174,7 @@
 					}
 
 					.part-header {
-						border-block-end: b("border-lighter");
+						border-block-end: 1px solid RGB($emu-color-border-lighter);
 
 						@include layout {
 							line-height: initial;
@@ -188,8 +190,8 @@
 						}
 
 						.part-total {
-							background-color: color("background-lightest");
-							border: b("border-lighter");
+							background-color: RGB($emu-color-background-lightest);
+							border: 1px solid RGB($emu-color-border-lighter);
 							border-block-end: none;
 
 							@include layout {
@@ -211,21 +213,21 @@
 
 				.button.message-delete {
 					@extend %link-button;
-					color: color("text");
+					color: RGB($emu-color-text);
 
 					@include layout {
 						@extend %control-button;
-						color: color("text");
+						color: RGB($emu-color-text);
 					}
 				}
 			}
 		}
 
 		#chat-controls {
-			background-color: color("background", 0.5);
+			background-color: RGBA($emu-color-background, 0.5);
 			background-image: $global-image-background;
 			border: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -251,11 +253,10 @@
 			}
 
 			.roll-type-select {
-				background-color: color("background", 0.5);
-				color: color("text-lightest");
+				background-color: RGBA($emu-color-background, 0.5);
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
-					height: to-rem(32px);
 					margin: 0;
 					width: auto;
 				}
@@ -287,28 +288,29 @@
 		}
 
 		#chat-form {
-			background-color: color("background", 0.5);
+			background-color: RGBA($emu-color-background, 0.5);
 			background-image: $global-image-background;
 			border: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
 				display: flex;
 				flex: 0 0 auto;
-				height: to-rem(112px);
+				height: 112px;
 				margin: 0;
 				padding: $global-space-sm;
 				position: relative;
 			}
 
 			textarea {
-				background-color: color("background-lightest", 0.9);
+				background-color: RGBA($emu-color-background-lightest, 0.9);
 				background-image: $global-image-background-light;
 
 				@include layout {
-					@include size(100%);
+					height: 100%;
 					padding: $global-space-sm;
+					width: 100%;
 				}
 			}
 		}

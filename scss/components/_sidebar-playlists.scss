@@ -1,12 +1,12 @@
 #sidebar,
 .sidebar-popout[id="playlists-popout"] .window-content {
 	[data-tab="playlists"] {
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		.global-control {
-			background-color: color("background", 0.5);
-			border-block-end: b("border");
-			color: color("text-lightest");
+			background-color: RGBA($emu-color-background, 0.5);
+			border-block-end: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				display: flex;
@@ -32,7 +32,7 @@
 			.playlist-header {
 				background: transparent;
 				border: none;
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					flex: 0 0 auto;
@@ -74,7 +74,7 @@
 
 				h4 {
 					border-block-end: 0;
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						font-size: $global-font-size-lg;
@@ -120,12 +120,12 @@
 
 						&:hover,
 						&:focus {
-							background-color: color("folder-directory");
+							background-color: RGB($emu-color-folder-directory);
 						}
 
 						.playlist-sounds {
 							.sound:first-child {
-								border-block-start: b("border");
+								border-block-start: 1px solid RGB($emu-color-border);
 							}
 						}
 					}
@@ -139,7 +139,7 @@
 				}
 
 				.sound:first-child {
-					border-block-start: b("transparent");
+					border-block-start: 1px solid transparent;
 				}
 			}
 
@@ -198,7 +198,7 @@
 
 			.sound {
 				&:nth-child(even) {
-					background-color: color("background-darkest", 0.2);
+					background-color: RGBA($emu-color-background-darkest, 0.2);
 				}
 			}
 		}
@@ -259,7 +259,7 @@
 				}
 
 				+ .sound {
-					border-block-start: b("border");
+					border-block-start: 1px solid RGB($emu-color-border);
 
 					@include layout {
 						padding-block-start: $global-space-sm;
@@ -268,7 +268,7 @@
 
 				.sound-name {
 					@include layout {
-						@include ellipsis;
+						@extend %ellipsis;
 						align-items: center;
 						display: inline-flex;
 						grid-area: name;
@@ -305,7 +305,7 @@
 					}
 
 					.sound-timer {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 
 						@include layout {
 							font-size: $global-font-size-sm;

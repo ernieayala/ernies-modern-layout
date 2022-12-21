@@ -3,11 +3,11 @@
 		#characters.directory-list {
 			@include layout {
 				padding: 0;
-				max-height: to-rem(320px);
+				max-height: 320px;
 			}
 
 			.directory-item.context {
-				background-color: color("primary");
+				background-color: RGB($emu-color-primary);
 			}
 		}
 	}

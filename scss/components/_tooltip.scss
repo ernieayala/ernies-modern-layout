@@ -10,14 +10,16 @@
 		opacity: 0;
 		padding: $global-space-sm $global-space-md;
 		pointer-events: none;
-		transition: t(opacity visibility, "shift");
+		transition:
+			opacity $global-transition-time-base $global-transition-type-shift,
+			visibility $global-transition-time-base $global-transition-type-shift;
 		width: max-content;
 	}
 
-	background: color("background-darkest", 0.9);
-	border: none;
-	box-shadow: 0 0 4px color("black");
-	color: color("text-lightest");
+	background: RGBA($emu-color-background-darkest, 0.9);
+	border: 1px solid RGB($emu-color-border);
+	box-shadow: none;
+	color: RGB($emu-color-text-lightest);
 
 	&.active {
 		@include layout {

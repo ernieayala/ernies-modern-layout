@@ -1,15 +1,15 @@
 .moulinette-options {
-	background-color: color("background-darkest", 0.8);
+	background-color: RGBA($emu-color-background-darkest, 0.8);
 	background-image: $global-image-background-darkest;
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
-	color: color("text-lightest");
+	color: RGB($emu-color-text-lightest);
 
 	@include layout {
 		box-sizing: border-box;
 		font-size: $global-font-size-lg;
 		line-height: 1;
-		z-index: z("fixed");
+		z-index: $global-z-index-fixed;
 	}
 
 	li {
@@ -121,15 +121,15 @@
 				min-height: 0;
 
 				&:nth-of-type(even) {
-					background-color: color("background-light", 0.1);
+					background-color: RGBA($emu-color-background-light, 0.1);
 				}
 
 				&:hover {
-					background-color: color("primary");
-					color: color("text-lightest");
+					background-color: RGB($emu-color-primary);
+					color: RGB($emu-color-text-lightest);
 
 					> a {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 					}
 				}
 

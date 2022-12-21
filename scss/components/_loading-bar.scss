@@ -1,25 +1,32 @@
 #loading {
-	background-color: color("background");
+	background-color: RGB($emu-color-background);
 	border: none;
 	border-radius: $global-border-radius-default;
 	box-shadow: none;
 
 	@include layout {
-		@include absolute(top $global-space-sm left 0);
-		@include size(calc(100% - #{$global-space-sm} - #{$global-space-sidebar}), to-rem(24px));
 		display: none;
+		height: 24px;
+		left: 0;
 		pointer-events: none;
-		z-index: z("fixed");
+		position: absolute;
+		top: $global-space-sm;
+		width: calc(100% - #{$global-space-sm} - #{$global-space-sidebar});
+		z-index: $global-z-index-fixed;
 
 		&::after {
-			@include absolute(zero);
-			box-shadow: inset 0 0 0 1px color("white"), 0 1px 2px 0 color("black", 0.3);
+			bottom: 0;
+			box-shadow: inset 0 0 0 1px RGB($emu-color-white), 0 1px 2px 0 RGBA($emu-color-black, 0.3);
 			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
 		}
 	}
 
 	#loading-bar {
-		background-color: color("primary");
+		background-color: RGB($emu-color-primary);
 		border: none;
 		border-radius: $global-border-radius-default;
 
@@ -34,18 +41,19 @@
 	#context,
 	#progress {
 		background: transparent;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
 
 		@include layout {
-			@include absolute(top 0);
 			align-items: center;
 			display: flex;
-			height: 100%;
 			font-size: $global-font-size-md;
+			height: 100%;
 			line-height: initial;
 			margin: 0 $global-space-md;
 			padding: 0;
+			position: absolute;
+			top: 0;
 		}
 	}
 

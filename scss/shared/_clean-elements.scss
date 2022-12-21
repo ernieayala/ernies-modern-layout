@@ -1,19 +1,22 @@
 %clean-elements {
 	button {
-		background-color: color("background-button", $global-background-opacity-button-primary);
+		background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
-		transition: t(background box-shadow color, "link");
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link;
 
 		&:hover {
 			@extend %global-hover;
-			background-color: color("primary");
+			background-color: RGB($emu-color-primary);
 			background-image: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 		}
 
 		&:focus {
@@ -37,14 +40,13 @@
 	input[type="password"],
 	input[type="datetime-local"] {
 		background: transparent;
-		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		box-shadow: none;
-		color: color("text");
-		transition: t(box-shadow, "link");
+		color: RGB($emu-color-text);
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&::placeholder {
-			color: color("text", 0.5);
+			color: RGBA($emu-color-text, 0.5);
 		}
 
 		&:hover {
@@ -63,11 +65,11 @@
 
 	input[type="checkbox"] {
 		background: transparent;
-		border: b("border-lighter");
+		border: 1px solid RGB($emu-color-border-lighter);
 		border-radius: $global-border-radius-forms;
 		box-shadow: none;
-		color: color("text");
-		transition: t(box-shadow, "link");
+		color: RGB($emu-color-text);
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -83,17 +85,16 @@
 		}
 
 		&:checked {
-			background-color: color("primary");
-			color: color("text-lightest");
+			background-color: RGB($emu-color-primary);
+			color: RGB($emu-color-text-lightest);
 		}
 	}
 
 	input[type="color"],
 	input[type="color"][data-edit] {
 		background: transparent;
-		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
-		transition: t(box-shadow, "link");
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -111,11 +112,10 @@
 
 	select {
 		background: transparent;
-		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
 		box-shadow: none;
-		color: color("text");
-		transition: t(box-shadow, "link");
+		color: RGB($emu-color-text);
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -132,20 +132,19 @@
 
 		optgroup,
 		option {
-			background-color: color("background-lightest");
-			color: color("text");
+			background-color: RGB($emu-color-background-lightest);
+			color: RGB($emu-color-text);
 		}
 	}
 
 	textarea {
 		background: transparent;
-		// border: b("border-lighter");
 		border-radius: $global-border-radius-forms;
-		color: color("text");
-		transition: t(box-shadow, "link");
+		color: RGB($emu-color-text);
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&::placeholder {
-			color: color("text", 0.5);
+			color: RGB($emu-color-text, 0.5);
 		}
 
 		&:hover {
@@ -167,18 +166,18 @@
 	}
 
 	table {
-		background-color: color("black", 0.05);
+		background-color: RGBA($emu-color-black, 0.05);
 		border: none;
 
 		thead {
-			background-color: color("black", 0.2);
-			border-block-end: b("border");
-			color: color("text-lightest");
+			background-color: RGBA($emu-color-black, 0.2);
+			border-block-end: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
 		}
 
 		tr:nth-child(even) {
-			background-color: color("white", 0.1);
+			background-color: RGBA($emu-color-white, 0.1);
 		}
 	}
 
@@ -190,23 +189,23 @@
 	}
 
 	h1 {
-		border-block-end: 2px solid color("border");
+		border-block-end: 2px solid RGB($emu-color-border);
 	}
 
 	h2 {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 	}
 
 	a {
 		text-shadow: none;
 
 		&:hover {
-			color: color("primary");
+			color: RGB($emu-color-primary);
 		}
 	}
 
 	a[href] {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 		text-decoration: none;
 		text-shadow: none;
 
@@ -222,8 +221,8 @@
 
 	a.entity-link,
 	a.inline-roll {
-		background-color: color("background-lightest");
-		box-shadow: 0 0 0 1px inset color("border");
+		background-color: RGB($emu-color-background-lightest);
+		box-shadow: 0 0 0 1px inset RGB($emu-color-border);
 		border: none;
 		border-radius: $global-border-radius-controls;
 
@@ -234,17 +233,17 @@
 
 	hr {
 		border: none;
-		border-block-start: b("border");
+		border-block-start: 1px solid RGB($emu-color-border);
 		border-block-end: none;
 	}
 
 	blockquote {
-		border-inline-start: 3px solid color("border");
+		border-inline-start: 3px solid RGB($emu-color-border);
 	}
 
 	section.secret {
-		background-color: color("background-light", 0.2);
-		border-block-start: b("border");
-		border-block-end: b("border");
+		background-color: RGBA($emu-color-background-light, 0.2);
+		border-block-start: 1px solid RGB($emu-color-border);
+		border-block-end: 1px solid RGB($emu-color-border);
 	}
 }

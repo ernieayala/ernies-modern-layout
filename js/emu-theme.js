@@ -1,5 +1,7 @@
 export const FOUNDRY = {
 	colorPrimary: '#e57509',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#293e40',
 	colorBackgroundLightest: '#e6e9eb',
 	colorBackgroundLight: '#7d8a8c',
@@ -19,7 +21,9 @@ export const FOUNDRY = {
 }
 
 export const DARK = {
-	colorPrimary: '#111a1c',
+	colorPrimary: '#e57509',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#2e2e2e',
 	colorBackgroundLightest: '#666666',
 	colorBackgroundLight: '#4a4a4a',
@@ -40,6 +44,8 @@ export const DARK = {
 
 export const WESTERN = {
 	colorPrimary: '#ef972d',
+	colorPrimaryDarker: '#a05108',
+	colorPrimaryDarkest: '#723906',
 	colorBackground: '#4e321c',
 	colorBackgroundLightest: '#eddabe',
 	colorBackgroundLight: '#f0cb94',
@@ -60,6 +66,8 @@ export const WESTERN = {
 
 export const ALIEN = {
 	colorPrimary: '#0fbd7d',
+	colorPrimaryDarker: '#0a8456',
+	colorPrimaryDarkest: '#064b2e',
 	colorBackground: '#2e2e2e',
 	colorBackgroundLightest: '#151515',
 	colorBackgroundLight: '#4a4a4a',
@@ -69,6 +77,28 @@ export const ALIEN = {
 	colorBackgroundChatMessageWhisper: '#192628',
 	colorBackgroundChatMessageBlind: '#293E40',
 	colorBorder: '#4a4a4a',
+	colorBorderLighter: '#7d7d7d',
+	colorFolderHeader: '#4a4a4a',
+	colorFolderDirectory: '#151515',
+	colorFolderSubdirectory: '#7d7d7d',
+	colorText: '#f1f1f1',
+	colorTextLightest: '#fafafa',
+	colorTextDarker: '#cbcbcb'
+}
+
+export const CYBERPUNK = {
+	colorPrimary: '#710000',
+	colorPrimaryDarker: '#940101',
+	colorPrimaryDarkest: '#ab0202',
+	colorBackground: '#272932',
+	colorBackgroundLightest: '#151515',
+	colorBackgroundLight: '#4a4a4a',
+	colorBackgroundDarkest: '#151515',
+	colorBackgroundButton: '#272932',
+	colorBackgroundChatMessage: '#333333',
+	colorBackgroundChatMessageWhisper: '#192628',
+	colorBackgroundChatMessageBlind: '#293E40',
+	colorBorder: '#fdf500',
 	colorBorderLighter: '#7d7d7d',
 	colorFolderHeader: '#4a4a4a',
 	colorFolderDirectory: '#151515',

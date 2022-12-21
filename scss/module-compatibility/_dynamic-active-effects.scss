@@ -24,7 +24,7 @@
 	}
 
 	.effect-special-duration {
-		background-color: color("background", 0.05);
+		background-color: RGBA($emu-color-background, 0.05);
 		background-image: $global-image-background;
 
 		@include layout {
@@ -44,7 +44,7 @@
 
 		.effect-control {
 			@extend %control-button;
-			color: color("text");
+			color: RGB($emu-color-text);
 		}
 	}
 
@@ -106,7 +106,7 @@
 			@extend %primary-button;
 			background-color: transparent;
 			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-			color: color("text");
+			color: RGB($emu-color-text);
 
 			@include layout {
 				flex: 1;

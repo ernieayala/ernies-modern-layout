@@ -1,37 +1,70 @@
-@import "../node_modules/teq-tonic/core/_teq-tonic.scss";
-
-@include settings(
-	"animation-time" (
-		"x-slow": 0.8s
-	)
-	"color" (
-		"background-lightest": #e6e9eb, // c50
-		"background-light": #7d8a8c, // c300
-		"background": #293e40, // c500
-		"background-darkest": #090e10, // c900
-		"background-button": #7d7d7d, // g500
-		"background-chat-message": #e6e9eb, // c50,
-		"background-chat-message-whisper": #ecf1fc, //b50
-		"background-chat-message-blind": #ffecf0, // r50
-		"border-lighter": #a7b0b2, // c200
-		"border": #213234, // c600
-		"folder-header": #a7b0b2, // c200
-		"folder-directory":  #536466, // c400
-		"folder-subdirectory": #d1d6d8, // c100
-		"primary": #e57509, // o500
-		"text-lightest": #ffffff,
-		"text": #090e10, // c900
-		"text-darker": #293e40, // c500
-		"warning": #edb950 // y500
-	)
-	"z-index" (
-		"fixed": 10,
-		"popover": 15
-	)
-);
-
 // Class Name
 $emu: '.-emu';
+
+// Colors
+$global-palette-default: (
+	"black": #000000,
+	"white": #ffffff,
+	"charcoal": #7d8a8c,
+	"background-lightest": #e6e9eb,
+	"background-light": #7d8a8c,
+	"background": #293e40,
+	"background-darkest": #090e10,
+	"background-button": #7d7d7d,
+	"background-chat-message": #e6e9eb,
+	"background-chat-message-whisper": #ecf1fc,
+	"background-chat-message-blind": #ffecf0,
+	"border-lighter": #a7b0b2,
+	"border": #213234,
+	"folder-header": #a7b0b2,
+	"folder-directory":  #536466,
+	"folder-subdirectory": #d1d6d8,
+	"primary": #e57509,
+	"primary-darker": #a05108,
+	"primary-darkest": #723906,
+	"text-lightest": #ffffff,
+	"text": #090e10,
+	"text-darker": #293e40,
+	"negative": #dc143c,
+	"negative-darkest": #840c24,
+	"neutral": #386acf,
+	"neutral-darkest": #254990,
+	"positive": #0fbd7d,
+	"positive-darkest": #087149,
+	"warning": #edb950,
+	"warning-darkest": #8d6d2f
+);
+
+$emu-color-black: var(--emu-color-black, 0, 0, 0);
+$emu-color-white: var(--emu-color-white, 255, 255, 255);
+$emu-color-charcoal: var(--emu-color-charcoal, 125, 138, 140);
+$emu-color-background-lightest: var(--emu-color-background-lightest, 230, 233, 235);
+$emu-color-background-light: var(--emu-color-background-light, 125, 138, 140);
+$emu-color-background: var(--emu-color-background, 41, 62, 64);
+$emu-color-background-darkest: var(--emu-color-background-darkest, 9, 14, 16);
+$emu-color-background-button: var(--emu-color-background-button, 125, 125, 125);
+$emu-color-background-chat-message: var(--emu-color-background-chat-message, 230, 233, 235);
+$emu-color-background-chat-message-whisper: var(--emu-color-background-chat-message-whisper, 236, 241, 252);
+$emu-color-background-chat-message-blind: var(--emu-color-background-chat-message-blind, 255, 236, 240);
+$emu-color-border-lighter: var(--emu-color-border-lighter, 167, 176, 178);
+$emu-color-border: var(--emu-color-border, 33, 50, 52);
+$emu-color-folder-header: var(--emu-color-folder-header, 167, 176, 178);
+$emu-color-folder-directory: var(--emu-color-folder-directory, 83, 100, 102);
+$emu-color-folder-subdirectory: var(--emu-color-folder-subdirectory, 209, 214, 216);
+$emu-color-primary: var(--emu-color-primary, 229, 117, 9);
+$emu-color-primary-darker: var(--emu-color-primary-darker, 160, 81, 8);
+$emu-color-primary-darkest: var(--emu-color-primary-darkest, 114, 57, 6);
+$emu-color-text-lightest: var(--emu-color-text-lightest, 255, 255, 255);
+$emu-color-text: var(--emu-color-text, 9, 14, 16);
+$emu-color-text-darker: var(--emu-color-text-darker, 41, 62, 64);
+$emu-color-negative: var(--emu-color-negative, 220, 20, 60);
+$emu-color-negative-darkest: var(--emu-color-negative-darkest, 132, 12, 36);
+$emu-color-neutral: var(--emu-color-neutral, 56, 106, 207);
+$emu-color-neutral-darkest: var(--emu-color-neutral-darkest, 37, 73, 144);
+$emu-color-positive: var(--emu-color-positive, 15, 189, 125);
+$emu-color-positive-darkest: var(--emu-color-positive-darkest, 8, 113, 73);
+$emu-color-warning: var(--emu-color-warning, 237, 185, 80);
+$emu-color-warning-darkest: var(--emu-color-warning-darkest, 141, 109, 47);
 
 // Font Size
 $global-font-size-xxl: var(--emu-font-size-xxl, 24px);
@@ -43,6 +76,7 @@ $global-font-size-xs: var(--emu-font-size-xs, 10px);
 $global-font-size-chat-roll: var(--emu-font-size-chat-roll, 18px);
 
 // Spacing
+$global-space-button-xl: var(--emu-space-button-xl, 56px);
 $global-space-button-lg: var(--emu-space-button-lg, 40px);
 $global-space-button: var(--emu-space-button, 32px);
 $global-space-button-sm: var(--emu-space-button-sm, 24px);
@@ -53,13 +87,13 @@ $global-space-pf: var(--emu-space-pf, 1px);
 $global-space-xs: var(--emu-space-xs, 2px);
 $global-space-base: var(--emu-space-base, 4px);
 $global-space-sm: var(--emu-space-sm, 8px);
-$global-space-md: var(--emu-space-md, 24px);
+$global-space-md: var(--emu-space-md, 16px);
 $global-space-lg: var(--emu-space-lg, 24px);
 $global-space-xl: var(--emu-space-xl, 32px);
 
 // Shadows
-$global-box-shadow: 0 2px 4px color("black");
-$global-text-shadow: 1px 1px 2px color("black"), -1px -1px 2px color("black");
+$global-box-shadow: 0 2px 4px RGB($emu-color-black);
+$global-text-shadow: 1px 1px 2px RGB($emu-color-black), -1px -1px 2px RGB($emu-color-black);
 
 // Border Radius
 $global-border-radius-default: var(--emu-border-radius-default, 0);
@@ -88,7 +122,61 @@ $global-background-opacity-window-content: var(--emu-background-opacity-window-c
 // Opacity
 $global-subtle-opacity: var(--emu-subtle-opacity, 0.3);
 
-// Mixins
+// Transition Type
+$global-transition-type-link: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+$global-transition-type-shift: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+// Transition Time
+$global-transition-time-base: 0.3s;
+$global-transition-time-fast: 0.1s;
+$global-transition-time-slow: 0.5s;
+$global-transition-time-x-slow: 0.8s;
+
+// Z Index
+$global-z-index-below: -1;
+$global-z-index-above: 1;
+$global-z-index-navbar: 980;
+$global-z-index-dropdown-backdrop: 990;
+$global-z-index-dropdown: 1000;
+$global-z-index-sticky: 1020;
+$global-z-index-fixed: 10;
+$global-z-index-modal-backdrop: 1040;
+$global-z-index-modal: 1050;
+$global-z-index-popover: 15;
+$global-z-index-tooltip: 1070;
+
+// Function for Color
+@function hex-to-rgb($palette: null) {
+	$rgb-map: ();
+
+	@each $color in $palette {
+		$color-name: nth($color, 1);
+		$color-rgb: #{red(nth($color, 2)), green(nth($color, 2)), blue(nth($color, 2))};
+		$rgb-map: map-merge($rgb-map, ($color-name: $color-rgb));
+	}
+
+	@return $rgb-map;
+}
+
+// Mixin for Color
+@mixin css-color-variable-creation($palette: null) {
+	@if not $palette {
+		@warn "No palette entered. Property omitted.";
+	} @else {
+		// get rgb from hex value and re-map
+		$rgb-map: hex-to-rgb($palette);
+
+		// output the css variable name and the rgb value
+		@each $color in $rgb-map {
+			$color-name: nth($color, 1);
+			$color-value: nth($color, 2);
+
+			--emu-color-#{$color-name}: #{$color-value};
+		}
+	}
+}
+
+// Mixins for Layout
 @mixin layout($compact: null) {
 	@if not $compact {
 		.-emu-layout & {

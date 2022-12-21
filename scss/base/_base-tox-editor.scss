@@ -3,7 +3,7 @@
 }
 
 .tox.tox-tinymce .tox-edit-area__iframe {
-	background-color: color("white");
+	background-color: RGB($emu-color-white);
 
 	@include layout {
 		padding: $global-space-base;
@@ -12,7 +12,7 @@
 
 .tox .tox-tbtn {
 	background: transparent;
-	color: color("text");
+	color: RGB($emu-color-text);
 
 	@include layout {
 		font-size: $global-font-size-sm;

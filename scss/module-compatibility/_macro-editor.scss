@@ -9,7 +9,7 @@
 
 			&.fullscreen {
 				position: fixed !important;
-				z-index: z("popover") + 1;
+				z-index: $global-z-index-popover + 1;
 			}
 
 			> i {
@@ -25,14 +25,18 @@
 			margin-block-end: $global-space-md;
 
 			&.fullscreen {
-				height: calc(100% - 10rem);
+				height: calc(100% - 10px);
 				margin: 0;
-				z-index: z("popover");
+				z-index: $global-z-index-popover;
 
 				&::before {
-					@include fixed(zero);
-					background-color: color("black", 0.5);
+					background-color: RGBA($emu-color-black, 0.5);
+					bottom: 0;
 					content: "";
+					left: 0;
+					position: fixed;
+					right: 0;
+					top: 0;
 				}
 			}
 		}

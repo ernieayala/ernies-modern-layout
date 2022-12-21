@@ -5,17 +5,19 @@
 			.combatant {
 				.ce-image-wrapper {
 					@include layout {
-						@include size($global-space-icon);
 						cursor: default;
 						flex: 0 0 auto;
+						height: $global-space-icon;
 						margin-inline-end: $global-space-sm;
 						position: relative;
+						width: $global-space-icon;
 					}
 
 					.token-image {
 						@include layout {
-							@include size(100%);
+							height: 100%;
 							margin: 0;
+							width: 100%;
 						}
 					}
 
@@ -27,7 +29,7 @@
 				}
 
 				.ce-modify-hp-wrapper {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						align-items: center;
@@ -38,7 +40,7 @@
 					}
 
 					input {
-						background-color: color("background-lightest");
+						background-color: RGB($emu-color-background-lightest);
 						background-image: $global-image-background-lightest;
 
 						@include layout {

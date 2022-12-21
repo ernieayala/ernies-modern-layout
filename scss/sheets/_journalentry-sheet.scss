@@ -1,6 +1,10 @@
 .window-app[id*="JournalEntry-"] {
+	.journal-sidebar.collapsed {
+		--sidebar-width-collapsed: calc(#{$global-space-button} + #{$global-space-sm} + #{$global-space-base});
+	}
+
 	.journal-entry-content {
-		background: color("background", 0.1);
+		background: RGBA($emu-color-background, 0.1);
 		border: none;
 
 		@include layout {
@@ -23,23 +27,24 @@
 	}
 
 	aside.sidebar {
-		background-color: color("background");
+		background-color: RGB($emu-color-background);
 		background-image: $global-image-background;
 		border: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		.directory-header {
 			@include layout {
 				display: flex;
 				flex-direction: column;
 				gap: $global-space-base;
+				margin-block-start: 0;
 				margin-block-end: 0;
 				padding: $global-space-sm $global-space-base;
+				text-align: center;
 			}
 
 			.header-search {
 				@include layout {
-					flex-wrap: nowrap;
 					gap: $global-space-base;
 				}
 
@@ -52,12 +57,13 @@
 				input {
 					@include layout {
 						flex: 1 1 auto;
+						width: auto;
 					}
 
-					color: color("text-lightest");
+					color: RGB($emu-color-text);
 
 					&::placeholder {
-						color: color("text-lightest", 0.5);
+						color: RGBA($emu-color-text, 0.5);
 					}
 				}
 			}
@@ -72,7 +78,7 @@
 					}
 
 					&:hover {
-						background-color: color("folder-directory");
+						background-color: RGB($emu-color-folder-directory);
 						box-shadow: none;
 					}
 
@@ -93,7 +99,7 @@
 					}
 
 					.page-heading {
-						background-color: color("background-darkest", 0.5);
+						background-color: RGBA($emu-color-background-darkest, 0.5);
 						border: none;
 
 						@include layout {
@@ -103,7 +109,7 @@
 						}
 
 						.page-number {
-							color: color("text-lightest");
+							color: RGB($emu-color-text-lightest);
 
 							@include layout {
 								flex: 0 0 auto;
@@ -111,9 +117,18 @@
 							}
 						}
 
+						.page-title,
 						.journal-entry-page-link {
+							text-shadow: none;
+
+							&:hover {
+								color: RGB($emu-color-primary);
+							}
+
 							@include layout {
-								padding: $global-space-base;
+								font-size: $global-font-size-lg;
+								line-height: initial;
+								padding: $global-space-base $global-space-md;
 								padding-inline-start: 0;
 							}
 						}
@@ -135,9 +150,10 @@
 							}
 
 							&:nth-child(even) {
-								background-color: color("background", 0.5);
+								background-color: RGBA($emu-color-background, 0.5);
 							}
 
+							.heading-link,
 							.journal-entry-heading-link {
 								@include layout {
 									display: inline-flex;
@@ -148,7 +164,7 @@
 								}
 
 								&:hover {
-									color: color("primary");
+									color: RGB($emu-color-primary);
 								}
 							}
 
@@ -215,11 +231,11 @@
 		}
 
 		&:hover {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 		}
 
 		@include layout(compact) {
-			top: to-rem(-28px);
+			top: -28px;
 		}
 	}
 }

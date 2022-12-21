@@ -6,12 +6,12 @@
 
 body.-emu.system-CoC7 .coc7.chat-card .card-header {
   border-block-end: none;
-  border-block-start: rgba(var(--color-border), 1) 1px solid; }
+  border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout body.-emu.system-CoC7 .coc7.chat-card .card-header {
     gap: var(--emu-space-base, 4px);
     padding: var(--emu-space-base, 4px) 0; }
   body.-emu.system-CoC7 .coc7.chat-card .card-header h3:hover {
-    color: rgba(var(--color-primary), 1);
+    color: RGB(var(--emu-color-primary, 229, 117, 9));
     text-shadow: none; }
 
 body.-emu.system-CoC7 .coc7 .panel-switch,
@@ -19,8 +19,8 @@ body.-emu.system-CoC7 .coc7 .radio-switch,
 body.-emu.system-CoC7 .coc7 .toggle-switch,
 body.-emu.system-CoC7 .coc7 .weapon-property {
   background: transparent;
-  border: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-text), 1); }
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  color: RGB(var(--emu-color-text, 9, 14, 16)); }
   .-emu-layout body.-emu.system-CoC7 .coc7 .panel-switch, .-emu-layout
   body.-emu.system-CoC7 .coc7 .radio-switch, .-emu-layout
   body.-emu.system-CoC7 .coc7 .toggle-switch, .-emu-layout
@@ -36,18 +36,18 @@ body.-emu.system-CoC7 .coc7 .weapon-property {
   body.-emu.system-CoC7 .coc7 .radio-switch.switched-on,
   body.-emu.system-CoC7 .coc7 .toggle-switch.switched-on,
   body.-emu.system-CoC7 .coc7 .weapon-property.switched-on {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: RGB(var(--emu-color-primary, 229, 117, 9));
     box-shadow: none;
-    color: rgba(var(--color-text-lightest), 1); }
+    color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
 
 .-emu-layout body.-emu.system-CoC7 .coc7 .radio-switch, .-emu-layout
 body.-emu.system-CoC7 .coc7 .toggle-switch {
   cursor: pointer; }
 
 body.-emu.system-CoC7 .coc7 .tag {
-  background: rgba(var(--color-background-light), 1);
-  border: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-text-lightest), 1); }
+  background: RGB(var(--emu-color-background-light, 125, 138, 140));
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
   .-emu-layout body.-emu.system-CoC7 .coc7 .tag {
     border-radius: var(--emu-border-radius-default, 0);
     display: inline-flex;
@@ -62,12 +62,12 @@ body.-emu.system-CoC7 .chat-card-v2.roll-card ol li.actor-roll .roll-details .he
   height: auto; }
 
 body.-emu.system-CoC7 .chat-card-v2.roll-card ol li.actor-roll.won {
-  border: rgba(var(--color-primary), 1) 1px solid; }
+  border: b("primary"); }
 
 body.-emu.system-CoC7 .chat-card-v2.roll-card h4.card-result {
-  background-color: rgba(var(--color-background), 0.1);
+  background-color: RGBA(var(--emu-color-background, 41, 62, 64), 0.1);
   box-shadow: none;
-  border: rgba(var(--color-border), 1) 1px solid;
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
   border-radius: var(--emu-border-radius-default, 0);
   color: inherit; }
   .-emu-layout body.-emu.system-CoC7 .chat-card-v2.roll-card h4.card-result {

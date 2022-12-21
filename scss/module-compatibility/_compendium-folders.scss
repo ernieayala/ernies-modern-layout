@@ -16,17 +16,17 @@
 						padding: 0 $global-space-sm !important;
 
 						&:hover {
-							background-color: color("primary");
+							background-color: RGB($emu-color-primary);
 
 							.pack-title,
 							.compendium-footer {
-								color: color("text-lightest");
+								color: RGB($emu-color-text-lightest);
 							}
 						}
 
 						.pack-title,
 						.compendium-footer {
-							color: color("text-lightest");
+							color: RGB($emu-color-text-lightest);
 						}
 
 						.pack-title {

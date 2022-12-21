@@ -28,25 +28,31 @@
 			}
 
 			.fa-cog {
-				background-color: color("background-button");
+				background-color: RGB($emu-color-background-button);
 				border: none;
-				border-block-start: color("background-lightest") 2px solid;
-				border-inline-end: color("background-lightest") 2px solid;
+				border-block-start: RGB($emu-color-background-lightest) 2px solid;
+				border-inline-end: RGB($emu-color-background-lightest) 2px solid;
 				border-radius: 0 0 $global-border-radius-default 0;
-				color: color("text-lightest");
-				transition: t(background box-shadow color, "link");
+				color: RGB($emu-color-text-lightest);
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
 
 				@include layout {
-					@include absolute(bottom 0 left 0);
-					@include size($global-space-button-xs);
 					align-items: center;
+					bottom: 0;
 					cursor: pointer;
 					display: inline-flex;
 					font-size: $global-font-size-md;
+					height: $global-space-button-xs;
 					justify-content: center;
+					left: 0;
 					margin: 0;
 					padding: 0;
-					z-index: z("fixed");
+					position: absolute;
+					width: $global-space-button-xs;
+					z-index: $global-z-index-fixed;
 				}
 
 				&:hover {
@@ -59,16 +65,16 @@
 			}
 
 			ul {
-				background-color: color("background-lightest");
+				background-color: RGB($emu-color-background-lightest);
 				background-image: $global-image-background-lightest;
 				border-radius: $global-border-radius-default;
-				border: b("border");
-				box-shadow: 0 2px 4px color("black");
-				color: color("text");
+				border: 1px solid RGB($emu-color-border);
+				box-shadow: 0 2px 4px RGB($emu-color-black);
+				color: RGB($emu-color-text);
 
 				li {
 					border-inline-start: 0;
-					border-block-end: b("border");
+					border-block-end: 1px solid RGB($emu-color-border);
 
 					@include layout {
 						margin: 0;
@@ -83,7 +89,7 @@
 
 					a {
 						&:hover {
-							color: color("primary");
+							color: RGB($emu-color-primary);
 							text-shadow: none;
 						}
 
@@ -103,16 +109,16 @@
 
 	.tweak-menu {
 		ul {
-			background-color: color("background-lightest");
+			background-color: RGB($emu-color-background-lightest);
 			background-image: $global-image-background-lightest;
 			border-radius: $global-border-radius-default;
-			border: b("border");
-			box-shadow: 0 2px 4px color("black");
-			color: color("text");
+			border: 1px solid RGB($emu-color-border);
+			box-shadow: 0 2px 4px RGB($emu-color-black);
+			color: RGB($emu-color-text);
 
 			li {
 				border-inline-start: 0;
-				border-block-end: b("border");
+				border-block-end: 1px solid RGB($emu-color-border);
 
 				@include layout {
 					margin: 0;
@@ -125,7 +131,7 @@
 				a,
 				label {
 					&:hover {
-						color: color("primary");
+						color: RGB($emu-color-primary);
 						text-shadow: none;
 					}
 

@@ -4,7 +4,7 @@ body#{$emu}.system-alienrpg {
 	.window-app[id*="actor-"],
 	.window-app[id*="item-"] {
 		.window-content {
-			color: color("white");
+			color: RGB($emu-color-white);
 		}
 	}
 

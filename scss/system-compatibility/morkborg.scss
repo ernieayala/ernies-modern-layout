@@ -4,7 +4,7 @@ body#{$emu}.system-morkborg {
 
 	// because fucking horrible !importants added by System
 	::-webkit-scrollbar-thumb {
-		background-color: color("background-light") !important;
+		background-color: RGB($emu-color-background-light) !important;
 		border: none !important;
 	}
 
@@ -22,7 +22,7 @@ body#{$emu}.system-morkborg {
 	}
 
 	.morkborg.sheet .editor {
-		color: color("text");
+		color: RGB($emu-color-text);
 	}
 
 	.roll-card {
@@ -34,15 +34,15 @@ body#{$emu}.system-morkborg {
 	.roll-card .outcome-text .defend-outcome,
 	.roll-card .outcome-text .take-damage {
 		background-color: transparent;
-		color: color("text");
+		color: RGB($emu-color-text);
 	}
 
 	.roll-card .roll-result {
-		border: b("border");
+		border: 1px solid RGB($emu-color-border);
 	}
 
 	.roll-card .roll-result span {
-		color: color("text");
+		color: RGB($emu-color-text);
 	}
 
 	#chat-controls i.fas:hover {
@@ -51,10 +51,10 @@ body#{$emu}.system-morkborg {
 	}
 
 	#hotbar #action-bar li.macro {
-		background-color: color("background", $global-background-opacity-hotbar);
+		background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		background-image: $global-image-background-controls;
-		border: b("border");
-		color: color("text-lightest");
+		border: 1px solid RGB($emu-color-border);
+		color: RGB($emu-color-text-lightest);
 
 		&:hover {
 			@extend %global-hover;
@@ -66,7 +66,7 @@ body#{$emu}.system-morkborg {
 
 		&.active {
 			@extend %global-active;
-			background-color: color("background", $global-background-opacity-hotbar);
+			background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		}
 	}
 }

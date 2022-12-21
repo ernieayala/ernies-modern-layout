@@ -7,8 +7,8 @@
 
 	input[type="text"] {
 		@extend %input-text;
-		background: color("background-lightest");
-		border: b("border");
+		background: RGB($emu-color-background-lightest);
+		border: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			font-size: $global-font-size-xl;
@@ -24,9 +24,10 @@
 
 		&.elevation {
 			@include layout {
-				@include size($global-space-button-lg);
 				flex: 0 0 auto;
+				height: $global-space-button-lg;
 				padding: 0;
+				width: $global-space-button-lg;
 
 				> input {
 					height: 100%;
@@ -34,8 +35,8 @@
 			}
 
 			> i {
-				color: color("primary");
-				text-shadow: 2px 2px 2px color("black");
+				color: RGB($emu-color-primary);
+				text-shadow: 2px 2px 2px RGB($emu-color-black);
 
 				@include layout {
 					z-index: 1;
@@ -45,38 +46,43 @@
 
 		&.bar1 {
 			input[type="text"] {
-				border-color: color("positive");
+				border-color: RGB($emu-color-positive);
 			}
 		}
 
 		&.bar2 {
 			input[type="text"] {
-				border-color: color("neutral");
+				border-color: RGB($emu-color-neutral);
 			}
 		}
 	}
 
 	.control-icon {
-		background-color: color("background-darkest", $global-background-opacity-hud);
+		background-color: RGBA($emu-color-background-darkest, $global-background-opacity-hud);
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		color: color("text-lightest");
-		transition: t(background box-shadow color opacity, "link");
+		color: RGB($emu-color-text-lightest);
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link,
+			opacity $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
-			@include size($global-space-button-lg);
 			align-items: center;
 			cursor: pointer;
 			display: flex;
-			justify-content: center;
 			flex: 0 0 auto;
 			font-size: $global-font-size-lg;
+			height: $global-space-button-lg;
+			justify-content: center;
 			line-height: initial;
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			width: $global-space-button-lg;
 
 			> i {
 				margin: 0;
@@ -108,16 +114,16 @@
 
 	#token-hud {
 		.status-effects {
-			background-color: color("background-darkest");
+			background-color: RGB($emu-color-background-darkest);
 			background-image: $global-image-background-darkest;
-			border: b("border");
+			border: 1px solid RGB($emu-color-border);
 			border-radius: $global-border-radius-default;
 			box-shadow: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				padding: $global-space-base;
-				left: to-rem(48px);
+				left: 48px;
 
 				.effect-control {
 					opacity: 0.4;

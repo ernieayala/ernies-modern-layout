@@ -11,7 +11,7 @@ body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header h3 {
-  color: rgba(var(--color-text), 1);
+  color: RGB(var(--emu-color-text, 9, 14, 16));
   text-shadow: none; }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button, .-emu-layout
   body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header h3, .-emu-layout
@@ -42,8 +42,8 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button + b
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid;
-  border-block-end: rgba(var(--color-border-lighter), 1) 1px solid;
+  border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
+  border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178));
   margin-block-end: var(--emu-space-base, 4px); }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-header, .-emu-layout
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-header {
@@ -55,7 +55,7 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-content {
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
-  border-block-start: rgba(var(--color-border-lighter), 1) 1px solid; }
+  border-block-start: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer, .-emu-layout
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
     display: flex;
@@ -65,7 +65,7 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer {
     padding-block-start: var(--emu-space-base, 4px); }
   body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer span,
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer span {
-    border-inline-end: rgba(var(--color-border), 1) 1px solid; }
+    border-inline-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
     .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-footer span, .-emu-layout
     body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-footer span {
       font-size: var(--emu-font-size-xs, 10px);
@@ -81,8 +81,8 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons {
 
 body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button,
 body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button {
-  border: rgba(var(--color-border), 1) 1px solid;
-  color: rgba(var(--color-text-lightest), 1); }
+  border: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+  color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
   .-emu-layout body.-emu.system-sfrpg #sidebar .sfrpg.chat-card .card-buttons button, .-emu-layout
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button {
     font-weight: normal; }
@@ -119,10 +119,10 @@ body.-emu.system-sfrpg .item-browser .sortcontainer {
       padding-inline-start: 0; }
 
 body.-emu.system-sfrpg .item-browser .hint {
-  background-color: rgba(var(--color-blue-500), 1);
+  background-color: RGB(var(--emu-color-neutral, 56, 106, 207));
   border: none;
   border-radius: 0;
-  color: rgba(var(--color-white), 1); }
+  color: RGB(var(--emu-color-white, 255, 255, 255)); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .hint {
     margin: var(--emu-space-xs, 2px) 0;
     padding: var(--emu-space-base, 4px); }
@@ -139,9 +139,9 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer:last-child {
         margin-block-end: 0; }
     body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer h3 {
-      background-color: rgba(var(--color-background-light), 1);
-      border-block-end: rgba(var(--color-border), 1) 1px solid;
-      color: rgba(var(--color-text-lightest), 1); }
+      background-color: RGB(var(--emu-color-background-light, 125, 138, 140));
+      border-block-end: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
+      color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer h3 {
         padding: var(--emu-space-base, 4px) var(--emu-space-sm, 8px); }
     .-emu-layout body.-emu.system-sfrpg .item-browser .item-browser-filters .filtercontainer dl {
@@ -162,7 +162,7 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
 
 .-emu-layout body.-emu.system-sfrpg .item-browser .header {
   flex: 0 0 auto;
-  padding: var(--emu-space-xs, 2px) var(--emu-space-md, 24px); }
+  padding: var(--emu-space-xs, 2px) var(--emu-space-md, 16px); }
   .-emu-layout body.-emu.system-sfrpg .item-browser .header .item-image {
     height: auto;
     width: var(--emu-space-button, 32px); }
@@ -172,7 +172,7 @@ body.-emu.system-sfrpg .item-browser .item-browser-filters {
     padding-inline-start: var(--emu-space-base, 4px); }
 
 body.-emu.system-sfrpg .item-browser .header .item-sort-link:hover {
-  color: rgba(var(--color-primary), 1);
+  color: RGB(var(--emu-color-primary, 229, 117, 9));
   text-shadow: none; }
 
 body.-emu.system-sfrpg .item-browser .item-list {
@@ -182,7 +182,7 @@ body.-emu.system-sfrpg .item-browser .item-list {
     margin-block-start: var(--emu-space-base, 4px);
     padding: var(--emu-space-sm, 8px); }
   body.-emu.system-sfrpg .item-browser .item-list li {
-    border-block-end: rgba(var(--color-border-lighter), 1) 1px solid; }
+    border-block-end: 1px solid RGB(var(--emu-color-border-lighter, 167, 176, 178)); }
     .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li {
       line-height: initial;
       margin: 0;
@@ -200,7 +200,7 @@ body.-emu.system-sfrpg .item-browser .item-list {
       .-emu-layout body.-emu.system-sfrpg .item-browser .item-list li .item-tags {
         justify-content: flex-end; }
     body.-emu.system-sfrpg .item-browser .item-list li:hover {
-      background-color: rgba(var(--color-primary), 1);
-      color: rgba(var(--color-text-lightest), 1); }
+      background-color: RGB(var(--emu-color-primary, 229, 117, 9));
+      color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
       body.-emu.system-sfrpg .item-browser .item-list li:hover a:hover {
-        color: rgba(var(--color-text-lightest), 1); }
+        color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }

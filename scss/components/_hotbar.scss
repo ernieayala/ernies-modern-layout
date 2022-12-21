@@ -1,15 +1,16 @@
 #hotbar {
 	@include layout {
-		@include size(auto);
+		width: auto;
+		height: auto;
 		display: flex;
 		flex-wrap: nowrap;
 		margin-block-end: $global-space-sm;
 		pointer-events: none;
-		transition: t(opacity, "link");
-		z-index: z("fixed");
+		transition: opacity $global-transition-time-base $global-transition-type-link;
+		z-index: $global-z-index-fixed;
 
 		&:hover {
-			z-index: z("fixed") + 1;
+			z-index: $global-z-index-fixed + 1;
 		}
 	}
 
@@ -35,7 +36,7 @@
 	}
 
 	#action-bar {
-		transition: t(opacity, "link");
+		transition: opacity $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			display: flex;
@@ -69,21 +70,23 @@
 
 	.bar-controls {
 		background: transparent;
-		border: b("border");
+		border: 1px solid RGB($emu-color-border);
 		border-radius: $global-border-radius-default;
 		box-shadow: none;
 
 		@include layout {
-			@include size(to-rem(40px), to-rem(56px));
 			display: flex;
 			flex-direction: column;
+			height: $global-space-button-xl;
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			width: $global-space-button-lg;
 		}
 
 		@include layout(compact) {
-			@include size(to-rem(32px), to-rem(40px));
+			height: $global-space-button-xl;
+			width: $global-space-button-lg;
 		}
 
 		&:first-child {
@@ -101,7 +104,7 @@
 
 				&:first-of-type {
 					border: none;
-					border-block-end: b("border");
+					border-block-end: 1px solid RGB($emu-color-border);
 					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				}
 
@@ -132,10 +135,10 @@
 		.page-control,
 		#macro-directory,
 		#bar-toggle {
-			background-color: color("background", $global-background-opacity-hotbar);
+			background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 			background-image: $global-image-background-controls;
-			color: color("text-lightest");
-			transition: t(box-shadow, "link");
+			color: RGB($emu-color-text-lightest);
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				align-items: center;
@@ -157,11 +160,11 @@
 			}
 
 			&:first-of-type {
-				border-block-end: b("border");
+				border-block-end: 1px solid RGB($emu-color-border);
 			}
 
 			&:last-of-type {
-				border-block-start: b("border");
+				border-block-start: 1px solid RGB($emu-color-border);
 			}
 		}
 
@@ -172,9 +175,9 @@
 		}
 
 		.page-number {
-			background-color: color("background", $global-background-opacity-hotbar);
+			background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 			background-image: $global-image-background-controls;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -188,27 +191,31 @@
 	}
 
 	.macro {
-		background-color: color("background", $global-background-opacity-hotbar);
+		background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		background-image: $global-image-background-controls;
-		border: b("border");
+		border: 1px solid RGB($emu-color-border);
 		border-radius: 0;
 		box-shadow: none;
-		color: color("text-lightest");
-		transition: t(border box-shadow, "link");
+		color: RGB($emu-color-text-lightest);
+		transition:
+			border $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
-			@include size(to-rem(56px));
 			align-items: center;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
+			height: $global-space-button-xl;
 			justify-content: center;
 			margin-inline-start: -1px; // for the border and people messing with border color
 			position: relative;
+			width: $global-space-button-xl;
 		}
 
 		@include layout(compact) {
-			@include size(to-rem(40px));
+			height: $global-space-button-xl;
+			width: $global-space-button-xl;
 		}
 
 		&:first-child {
@@ -233,17 +240,19 @@
 
 		&.active {
 			@extend %global-active;
-			background-color: color("background", $global-background-opacity-hotbar);
+			background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		}
 
 		.macro-key {
 			background: transparent;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			font-weight: 600;
-			text-shadow: 2px 2px  2px color("black");
+			text-shadow: 2px 2px  2px RGB($emu-color-black);
 
 			@include layout {
-				@include absolute(top $global-space-xs right $global-space-base);
+				position: absolute;
+				top: $global-space-xs;
+				right: $global-space-base;
 				padding: 0;
 				z-index: 1;
 			}
@@ -253,24 +262,26 @@
 			border: none;
 
 			@include layout {
-				@include size(to-rem(48px));
+				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
 				max-height: 100%;
 				max-width: 100%;
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
+				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 
 			@include layout(compact) {
-				@include size(to-rem(32px));
+				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
+				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 		}
 
 		.tooltip {
-			background-color: color("background-darkest");
+			background-color: RGB($emu-color-background-darkest);
 			border: none;
 			border-radius: $global-border-radius-default;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				font-size: $global-font-size-md;
@@ -278,7 +289,7 @@
 				left: 0;
 				line-height: auto;
 				margin-block-end: $global-space-base;
-				min-width: to-rem(56px);
+				min-width: $global-space-button-xl;
 				padding: $global-space-base $global-space-sm;
 			}
 		}

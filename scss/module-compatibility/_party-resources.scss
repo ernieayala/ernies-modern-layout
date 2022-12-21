@@ -1,6 +1,6 @@
 #fvtt-party-resources-dashboard.fvtt-party-resources.window-app {
 	.version {
-		color: color("text", 0.5);
+		color: RGBA($emu-color-text, 0.5);
 
 		@include layout {
 			display: none;

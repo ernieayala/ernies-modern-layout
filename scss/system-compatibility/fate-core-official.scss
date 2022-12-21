@@ -12,8 +12,8 @@
 
 // 			> textarea {
 // 				background-color: transparent !important;
-// 				border-color: color("border") !important;
-// 				color: color("text") !important;
+// 				border-color: RGB($emu-color-border) !important;
+// 				color: RGB($emu-color-text) !important;
 // 			}
 // 		}
 
@@ -92,7 +92,7 @@
 // 	#TrackSetup.window-app {
 // 		#track_categories_select {
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -118,7 +118,7 @@
 // 	#AspectSetup.window-app {
 // 		#aspectListBox {
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -134,7 +134,7 @@
 // 	#SkillSetup.window-app {
 // 		#skillListBox {
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -153,7 +153,7 @@
 
 // 			input[type="text"] {
 // 				background: transparent !important;
-// 				color: color("text") !important;
+// 				color: RGB($emu-color-text) !important;
 
 // 				@include layout {
 // 					font-family: inherit !important;
@@ -180,7 +180,7 @@
 // 		select {
 // 			@extend %input-select;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -192,7 +192,7 @@
 // 		input:not([type="checkbox"]) {
 // 			@extend %input-text;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -234,7 +234,7 @@
 // 		select {
 // 			@extend %input-select;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -246,7 +246,7 @@
 // 		input:not([type="checkbox"]) {
 // 			@extend %input-text;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -299,7 +299,7 @@
 // 		select {
 // 			@extend %input-select;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -311,7 +311,7 @@
 // 		input:not([type="checkbox"]) {
 // 			@extend %input-text;
 // 			background-color: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -336,7 +336,7 @@
 // 		#edit_skill_defend {
 // 			@extend %input-textarea;
 // 			background: transparent !important;
-// 			color: color("text") !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				cursor: text;
@@ -382,7 +382,7 @@
 
 // 		.fas.fa-sort-up,
 // 		.fas.fa-sort-down {
-// 			background-color: color("background-button") !important;
+// 			background-color: RGB($emu-color-background-button) !important;
 
 // 			@include layout {
 // 				width: $global-space-button !important;
@@ -405,7 +405,7 @@
 // 			}
 
 // 			nav.navigation {
-// 				border-block-end: 2px solid color("primary");
+// 				border-block-end: 2px solid RGB($emu-color-primary);
 
 // 				@include layout {
 // 					display: flex;
@@ -421,7 +421,7 @@
 // 					background: transparent;
 // 					border: none;
 // 					box-shadow: none;
-// 					color: color("text");
+// 					color: RGB($emu-color-text);
 
 // 					@include layout {
 // 						font-size: $global-font-size-lg;
@@ -431,8 +431,8 @@
 // 					}
 
 // 					&.active {
-// 						background-color: color("primary");
-// 						color: color("text-lightest");
+// 						background-color: RGB($emu-color-primary);
+// 						color: RGB($emu-color-text-lightest);
 // 					}
 // 				}
 
@@ -486,7 +486,7 @@
 // 						background-color: transparent;
 
 // 						tr {
-// 							border-block-start: b("border") !important;
+// 							border-block-start: 1px solid RGB($emu-color-border) !important;
 // 						}
 
 // 						td {
@@ -519,7 +519,7 @@
 
 // 							> div > div {
 // 								border: none !important;
-// 								border-block-end: b("border-lighter") !important;
+// 								border-block-end: 1px solid RGB($emu-color-border-lighter) !important;
 
 // 								&:last-child {
 // 									border: none !important;
@@ -531,8 +531,8 @@
 // 					div[id*="_FUAspectNotes"] {
 // 						@extend %input-textarea;
 // 						background: transparent !important;
-// 						border: b("border") !important;
-// 						color: color("text") !important;
+// 						border: 1px solid RGB($emu-color-border) !important;
+// 						color: RGB($emu-color-text) !important;
 
 // 						@include layout {
 // 							cursor: text;
@@ -549,7 +549,7 @@
 // 			}
 
 // 			.fu_button {
-// 				color: color("text");
+// 				color: RGB($emu-color-text);
 
 // 				@include layout {
 // 					// @extend %font-awesome;
@@ -561,8 +561,8 @@
 // 				}
 
 // 				&:hover {
-// 					background-color: color("primary") !important;
-// 					color: color("text-lightest");
+// 					background-color: RGB($emu-color-primary) !important;
+// 					color: RGB($emu-color-text-lightest);
 // 					filter: none !important;
 // 				}
 // 			}
@@ -570,7 +570,7 @@
 // 			input:not([type="checkbox"]) {
 // 				@extend %input-text;
 // 				background: transparent !important;
-// 				border: b("border-lighter") !important;
+// 				border: 1px solid RGB($emu-color-border-lighter) !important;
 
 // 				@include layout {
 // 					font-family: inherit !important;
@@ -647,7 +647,7 @@
 // 	#fu_rolls_tab {
 // 		tr th,
 // 		tr td {
-// 			border: b("border") !important;
+// 			border: 1px solid RGB($emu-color-border) !important;
 // 		}
 
 // 		table table th,
@@ -694,8 +694,8 @@
 // 		textarea,
 // 		input:not([type="checkbox"]) {
 // 			background: transparent !important;
-// 			border: b("border-lighter") !important;
-// 			color: color("text") !important;
+// 			border: 1px solid RGB($emu-color-border-lighter) !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -704,8 +704,8 @@
 
 // 		button.fas,
 // 		div.fas {
-// 			background-color: color("background-button") !important;
-// 			color: color("text-lightest") !important;
+// 			background-color: RGB($emu-color-background-button) !important;
+// 			color: RGB($emu-color-text-lightest); !important;
 
 // 			@include layout {
 // 				font-family: "Font Awesome 5 Free" !important;
@@ -714,7 +714,7 @@
 // 			}
 
 // 			&:hover {
-// 				background-color: color("primary") !important;
+// 				background-color: RGB($emu-color-primary) !important;
 // 			}
 // 		}
 // 	}
@@ -728,11 +728,11 @@
 // 			}
 
 // 			button {
-// 				background-color: color("background-button") !important;
+// 				background-color: RGB($emu-color-background-button) !important;
 // 				overflow: initial !important;
 
 // 				&:hover {
-// 					background-color: color("primary") !important;
+// 					background-color: RGB($emu-color-primary) !important;
 // 				}
 // 			}
 // 		}
@@ -752,7 +752,7 @@
 // 				}
 
 // 				h3 {
-// 					border-block-end: b("border");
+// 					border-block-end: 1px solid RGB($emu-color-border);
 
 // 					&:empty {
 // 						display: none;
@@ -765,8 +765,8 @@
 // 	#PlayerTrackSetup {
 // 		select {
 // 			background: transparent !important;
-// 			border: b("border-lighter") !important;
-// 			color: color("text") !important;
+// 			border: 1px solid RGB($emu-color-border-lighter) !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -794,8 +794,8 @@
 // 				}
 
 // 				button {
-// 					background-color: color("background-button") !important;
-// 					color: color("text-lightest") !important;
+// 					background-color: RGB($emu-color-background-button) !important;
+// 					color: RGB($emu-color-text-lightest); !important;
 
 // 					@include layout {
 // 						height: $global-space-button-sm !important;
@@ -803,7 +803,7 @@
 // 					}
 
 // 					&:hover {
-// 						background-color: color("primary") !important;
+// 						background-color: RGB($emu-color-primary) !important;
 // 					}
 // 				}
 // 			}
@@ -829,8 +829,8 @@
 // 			textarea,
 // 			input:not([type="checkbox"]) {
 // 				background: transparent !important;
-// 				border: b("border-lighter") !important;
-// 				color: color("text") !important;
+// 				border: 1px solid RGB($emu-color-border-lighter) !important;
+// 				color: RGB($emu-color-text) !important;
 
 // 				@include layout {
 // 					font-family: inherit !important;
@@ -842,7 +842,7 @@
 
 // 	#PlayerStuntSetup {
 // 		form {
-// 			color: color("text");
+// 			color: RGB($emu-color-text);
 
 // 			#header > div {
 // 				border: none !important;
@@ -869,8 +869,8 @@
 // 		textarea,
 // 		input:not([type="checkbox"]) {
 // 			background: transparent !important;
-// 			border: b("border-lighter") !important;
-// 			color: color("text") !important;
+// 			border: 1px solid RGB($emu-color-border-lighter) !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -897,7 +897,7 @@
 // 				&:first-child {
 // 					> div {
 // 						background-color: transparent !important;
-// 						color: color("text") !important;
+// 						color: RGB($emu-color-text) !important;
 
 // 						@include layout {
 // 							align-items: center;
@@ -905,7 +905,7 @@
 // 						}
 
 // 						> div {
-// 							border-inline-end-color: color("border") !important;
+// 							border-inline-end-color: RGB($emu-color-border) !important;
 
 // 							@include layout {
 // 								align-items: center;
@@ -925,11 +925,11 @@
 // 				}
 
 // 				&:nth-child(2) {
-// 					border-block-start: b("border");
+// 					border-block-start: 1px solid RGB($emu-color-border);
 
 // 					> div {
 // 						background-color: transparent !important;
-// 						color: color("text") !important;
+// 						color: RGB($emu-color-text) !important;
 
 // 						> div {
 // 							@include layout {
@@ -938,8 +938,8 @@
 // 							}
 
 // 							> div {
-// 								border-block-end-color: color("border") !important;
-// 								border-inline-end-color: color("border") !important;
+// 								border-block-end-color: RGB($emu-color-border) !important;
+// 								border-inline-end-color: RGB($emu-color-border) !important;
 
 // 								@include layout {
 // 									align-items: center;
@@ -953,7 +953,7 @@
 // 				}
 
 // 				button.fas {
-// 					color: color("text");
+// 					color: RGB($emu-color-text);
 
 // 					@include layout {
 // 						// @extend %font-awesome;
@@ -965,8 +965,8 @@
 // 					}
 
 // 					&:hover {
-// 						background-color: color("primary") !important;
-// 						color: color("text-lightest");
+// 						background-color: RGB($emu-color-primary) !important;
+// 						color: RGB($emu-color-text-lightest);
 // 						filter: none !important;
 // 					}
 // 				}
@@ -982,8 +982,8 @@
 // 		textarea,
 // 		input:not([type="checkbox"]) {
 // 			background: transparent !important;
-// 			border: b("border-lighter") !important;
-// 			color: color("text") !important;
+// 			border: 1px solid RGB($emu-color-border-lighter) !important;
+// 			color: RGB($emu-color-text) !important;
 
 // 			@include layout {
 // 				font-family: inherit !important;
@@ -993,7 +993,7 @@
 // 		.fu_button {
 // 			&:hover,
 // 			&:focus {
-// 				color: color("primary");
+// 				color: RGB($emu-color-primary);
 // 				filter: none !important;
 // 			}
 // 		}
@@ -1001,18 +1001,18 @@
 // 		.cs_box,
 // 		.aspect_box,
 // 		.long_text_rich {
-// 			background-color: color("background-lightest") !important;
-// 			border-color: color("border") !important;
+// 			background-color: RGB($emu-color-background-lightest) !important;
+// 			border-color: RGB($emu-color-border) !important;
 // 		}
 
 // 		.notes,
 // 		.hint {
-// 			color: color("text-darker");
+// 			color: RGB($emu-color-text-darker);
 // 		}
 
 // 		.checkmark {
-// 			background-color: color("background-lightest");
-// 			border-color: color("border");
+// 			background-color: RGB($emu-color-background-lightest);
+// 			border-color: RGB($emu-color-border);
 // 		}
 
 // 		.window-content {
@@ -1035,8 +1035,8 @@
 
 // 			.circle-input,
 // 			.circle-input:disabled {
-// 				background-color: color("background-lightest") !important;
-// 				border-color: color("primary") !important;
+// 				background-color: RGB($emu-color-background-lightest) !important;
+// 				border-color: RGB($emu-color-primary) !important;
 // 			}
 // 		}
 
@@ -1044,40 +1044,40 @@
 // 			background-color: transparent !important;
 
 // 			*::-webkit-scrollbar-thumb {
-// 				background-color: color("background-light");
+// 				background-color: RGB($emu-color-background-light);
 // 				border: none;
 // 			}
 
 // 			button {
 // 				background-color: inherit;
-// 				color: color("text");
+// 				color: RGB($emu-color-text);
 // 			}
 
 // 			&__header {
-// 				box-shadow: inset 0px -1px 0 0 color("border");
+// 				box-shadow: inset 0px -1px 0 0 RGB($emu-color-border);
 // 			}
 
 // 			&__identity-avatar {
-// 				border-color: color("border");
+// 				border-color: RGB($emu-color-border);
 // 			}
 
 // 			&__identity-name {
-// 				border-color: color("border");
-// 				color: color("text");
+// 				border-color: RGB($emu-color-border);
+// 				color: RGB($emu-color-text);
 // 				font-family: inherit;
 // 			}
 
 // 			&__meta-value {
-// 				border-color: color("border");
+// 				border-color: RGB($emu-color-border);
 
 // 				&:hover {
-// 					border-color: color("primary");
+// 					border-color: RGB($emu-color-primary);
 // 				}
 // 			}
 
 // 			&__tabs-nav-link {
-// 				background-color: color("background-lightest");
-// 				border-color: color("border");
+// 				background-color: RGB($emu-color-background-lightest);
+// 				border-color: RGB($emu-color-border);
 
 // 				&:not(.active) {
 // 					box-shadow: none;
@@ -1087,19 +1087,19 @@
 
 // 		.mfate-panel {
 // 			&__panel {
-// 				border-color: color("border");
+// 				border-color: RGB($emu-color-border);
 // 			}
 
 // 			&__header {
-// 				background-color: color("background");
-// 				color: color("text-lightest");
+// 				background-color: RGB($emu-color-background);
+// 				color: RGB($emu-color-text-lightest);
 
 // 				&-button {
-// 					color: color("text-lightest");
+// 					color: RGB($emu-color-text-lightest);
 // 				}
 
 // 				select {
-// 					color: color("text-lightest") !important;
+// 					color: RGB($emu-color-text-lightest); !important;
 // 				}
 // 			}
 
@@ -1109,13 +1109,13 @@
 // 			}
 
 // 			&__header-button:hover {
-// 				color: color("primary");
+// 				color: RGB($emu-color-primary);
 // 				filter: none;
 // 			}
 // 		}
 
 // 		.mfate-sheet-notes {
-// 			background-color: color("background-lightest") !important;
+// 			background-color: RGB($emu-color-background-lightest) !important;
 // 			// font-family: inherit !important;
 // 		}
 
@@ -1123,7 +1123,7 @@
 // 		.mfate-skills-list__adjective,
 // 		.mfate-skills-list__skill-name,
 // 		.mfate-skills-list__skill-name_item {
-// 			border-color: color("border-lighter");
+// 			border-color: RGB($emu-color-border-lighter);
 // 		}
 
 // 		.mfate-aspects-list__label {
@@ -1131,17 +1131,17 @@
 // 		}
 
 // 		.mfate-tracks__item + .mfate-tracks__item {
-// 			box-shadow: inset 0 1px color("border-lighter");
+// 			box-shadow: inset 0 1px RGB($emu-color-border-lighter);
 // 		}
 
 // 		.mfate-stunts {
 // 			&__table {
-// 				background-color: color("background-lightest");
-// 				color: color("text");
+// 				background-color: RGB($emu-color-background-lightest);
+// 				color: RGB($emu-color-text);
 // 			}
 
 // 			&__row {
-// 				border-color: color("border-lighter");
+// 				border-color: RGB($emu-color-border-lighter);
 // 			}
 
 // 			&__body,
@@ -1154,12 +1154,12 @@
 
 // 		.fate-extras {
 // 			&__row {
-// 				background-color: color("background-lightest");
-// 				color: color("text");
+// 				background-color: RGB($emu-color-background-lightest);
+// 				color: RGB($emu-color-text);
 // 			}
 
 // 			&__row-header-button {
-// 				background-color: color("background-lightest");
+// 				background-color: RGB($emu-color-background-lightest);
 // 			}
 
 // 			&__row-header,
@@ -1182,8 +1182,8 @@
 // 			}
 
 // 			> i {
-// 				color: color("text") !important;
-// 				text-shadow: 2px 2px 0px color("background-lightest") !important;
+// 				color: RGB($emu-color-text) !important;
+// 				text-shadow: 2px 2px 0px RGB($emu-color-background-lightest) !important;
 // 			}
 
 // 			+ .box,
@@ -1199,9 +1199,9 @@
 // 		.cdcheckmark,
 // 		.checkmark {
 // 			background-color: transparent;
-// 			border: b("border-lighter");
+// 			border: 1px solid RGB($emu-color-border-lighter);
 // 			border-radius: $global-border-radius-controls;
-// 			color: color("text");
+// 			color: RGB($emu-color-text);
 
 // 			@include layout {
 // 				align-items: center;
@@ -1219,10 +1219,10 @@
 // 			}
 
 // 			&:hover {
-// 				background-color: color("primary");
+// 				background-color: RGB($emu-color-primary);
 
 // 				&::after {
-// 					color: color("text-lightest");
+// 					color: RGB($emu-color-text-lightest);
 // 				}
 // 			}
 // 		}
@@ -1230,7 +1230,7 @@
 
 // 	.aspect_box,
 // 	.fu_aspect_box {
-// 		color: color("text") !important;
+// 		color: RGB($emu-color-text) !important;
 
 // 		@include layout {
 // 			height: $global-space-button !important;
@@ -1276,8 +1276,8 @@
 // 	.mfate-aspects-notes__input {
 // 		@extend %input-textarea;
 // 		background: transparent !important;
-// 		border: b("border-lighter") !important;
-// 		color: color("text") !important;
+// 		border: 1px solid RGB($emu-color-border-lighter) !important;
+// 		color: RGB($emu-color-text) !important;
 
 // 		@include layout {
 // 			cursor: text;

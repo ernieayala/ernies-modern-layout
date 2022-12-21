@@ -2,22 +2,22 @@
 	background: none;
 	border-radius: 0;
 	box-shadow: none;
-	color: color("text-lightest");
+	color: RGB($emu-color-text-lightest);
 
 	@include layout {
 		margin: 0;
 		max-height: 100%;
 		padding: 0;
-		z-index: z("fixed");
+		z-index: $global-z-index-fixed;
 	}
 }
 
 .window-app {
-	background-color: color("background", $global-background-opacity-window);
+	background-color: RGBA($emu-color-background, $global-background-opacity-window);
 	background-image: $global-image-background;
-	border: b("border");
+	border: 1px solid RGB($emu-color-border);
 	border-radius: $global-border-radius-default;
-	box-shadow: 0 2px 4px color("black");
+	box-shadow: 0 2px 4px RGB($emu-color-black);
 
 	@include layout {
 		display: flex;
@@ -34,9 +34,9 @@
 
 	.window-header {
 		border: none;
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 		border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			align-items: center;
@@ -52,14 +52,15 @@
 		}
 
 		h4.window-title {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
-				@include ellipsis(max-width 100%);
-				color: color("text-lightest");
+				@extend %ellipsis;
+				color: RGB($emu-color-text-lightest);
 				flex: 1 1 auto;
 				font-weight: normal;
 				margin: 0;
+				max-width: 100%;
 				position: relative;
 			}
 
@@ -87,21 +88,21 @@
 				width: auto;
 
 				&:hover {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 
 				&:focus {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 					text-decoration: none;
 				}
 			}
 
 			&:hover {
-				color: color("primary");
+				color: RGB($emu-color-primary);
 			}
 
 			&:focus {
-				color: color("primary");
+				color: RGB($emu-color-primary);
 				text-decoration: underline;
 			}
 
@@ -120,14 +121,17 @@
 
 				> i {
 					@include layout {
-						@include absolute(top 0 left 0);
-						@include size(100%);
 						align-items: center;
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 						display: flex;
 						font-size: $global-font-size-lg;
+						height: 100%;
 						justify-content: center;
+						left: 0;
 						margin: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
 					}
 				}
 			}
@@ -136,20 +140,24 @@
 			> span.fas {
 				@include layout {
 					margin-inline-end: $global-space-base;
+
+					&:only-child {
+						margin-inline-end: 0;
+					}
 				}
 			}
 		}
 	}
 
 	.window-content {
-		background-color: color("background-lightest", $global-background-opacity-window-content);
+		background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
 		background-image: $global-image-background-lightest;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
-			display: flex;
+			display: block;
 			flex: 1 1 auto;
-			flex-direction: column;
+			flex-direction: initial;
 			font-size: $global-font-size-md;
 			margin: 0;
 			overflow-x: hidden;
@@ -180,6 +188,16 @@
 			}
 		}
 
+		> form {
+			> button[type="submit"]:last-child,
+			> .sheet-footer:last-child {
+				bottom: calc(-1 * #{$global-space-base});
+				outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
+				position: sticky;
+				z-index: 2;
+			}
+		}
+
 		.chat-message {
 			border-radius: 0;
 		}
@@ -190,25 +208,31 @@
 	}
 
 	.window-resizable-handle {
-		background-color: color("background-button");
+		background-color: RGB($emu-color-background-button);
 		border: none;
-		border-block-start: color("background-lightest") 2px solid;
-		border-inline-start: color("background-lightest") 2px solid;
+		border-block-start: RGB($emu-color-background-lightest) 2px solid;
+		border-inline-start: RGB($emu-color-background-lightest) 2px solid;
 		border-radius: $global-border-radius-default 0 0 0;
-		color: color("text-lightest");
-		transition: t(background box-shadow color, "link");
+		color: RGB($emu-color-text-lightest);
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
-			@include absolute(bottom 0 right 0);
-			@include size($global-space-button-xs);
 			align-items: center;
+			bottom: 0;
 			cursor: pointer;
 			display: inline-flex;
 			font-size: $global-font-size-md;
+			height: $global-space-button-xs;
 			justify-content: center;
 			margin: 0;
 			padding: 0;
-			z-index: z("fixed");
+			position: absolute;
+			right: 0;
+			width: $global-space-button-xs;
+			z-index: $global-z-index-fixed;
 
 			> i {
 				transform: rotate(45deg);
@@ -237,7 +261,6 @@
 			border: none;
 
 			@include layout {
-				// @include size($global-space-button-lg);
 				cursor: pointer;
 				flex: 0 0 auto;
 				object-fit: cover;
@@ -263,14 +286,15 @@
 			}
 
 			input {
-				background-color: color("background-light", 0.2);
+				background-color: RGBA($emu-color-background-light, 0.2);
 
 				@include layout {
-					@include size(100%, to-rem(40px));
 					flex: 0 0 auto;
 					font-size: $global-font-size-xxl;
+					height: 40px;
 					line-height: 1;
 					margin: 0;
+					width: 100%;
 				}
 			}
 		}
@@ -282,7 +306,7 @@
 			gap: $global-space-base;
 			line-height: initial;
 			width: 100%;
-			z-index: z("fixed");
+			z-index: $global-z-index-fixed;
 
 			// might not need anymore
 			+ ::after {

@@ -3,9 +3,12 @@
 	border: none;
 	border-radius: $global-border-radius-controls;
 	box-shadow: none;
-	color: color("text-lightest");
+	color: RGB($emu-color-text-lightest);
 	text-shadow: none;
-	transition: t(background box-shadow color, "link");
+	transition:
+		background $global-transition-time-base $global-transition-type-link,
+		box-shadow $global-transition-time-base $global-transition-type-link,
+		color $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		align-items: center;
@@ -13,6 +16,7 @@
 		display: inline-flex;
 		font-size: $global-font-size-lg;
 		font-family: inherit;
+		gap: $global-space-sm;
 		height: initial;
 		justify-content: center;
 		line-height: 1;
@@ -21,23 +25,23 @@
 		position: relative;
 
 		> i {
-			margin-inline-end: $global-space-sm;
+			margin: 0;
 		}
 
 		> label {
-			color: inherit !important; // because the foundry css dev doesn't know how to code a button
+			color: inherit !important; // because inline
 
 			@include layout {
-				font-size: inherit !important; // because the foundry css dev doesn't know how to code a button
+				font-size: inherit !important; // because inline
 			}
 		}
 	}
 
 	&:hover {
 		@extend %global-hover;
-		background-color: color("primary");
+		background-color: RGB($emu-color-primary);
 		background-image: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 	}
 
 	&:focus {
@@ -56,11 +60,11 @@
 
 %primary-button {
 	@extend %default-button;
-	background-color: color("background-button", $global-background-opacity-button-primary);
+	background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 }
 
 %primary-button-simple-reset {
-	background-color: color("background-button", $global-background-opacity-button-primary);
+	background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 	background-image: $global-image-background-controls;
 	border: none;
 
@@ -69,9 +73,9 @@
 	}
 
 	&:hover {
-		background-color: color("primary");
+		background-color: RGB($emu-color-primary);
 		background-image: none;
-		color: color("text-lightest");
+		color: RGB($emu-color-text-lightest);
 	}
 }
 
@@ -83,10 +87,11 @@
 	@extend %default-button;
 
 	@include layout {
-		@include size($global-space-button-sm);
 		flex: 0 0 auto;
 		font-size: $global-font-size-sm;
+		height: $global-space-button-sm;
 		padding: 0;
+		width: $global-space-button-sm;
 
 		> i {
 			margin: 0;
@@ -98,6 +103,6 @@
 	text-shadow: none;
 
 	&:hover {
-		color: color("primary");
+		color: RGB($emu-color-primary);
 	}
 }

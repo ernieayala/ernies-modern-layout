@@ -1,8 +1,8 @@
 %table-header {
 	align-items: center;
-	background: color("background", 0.1);
+	background: RGBA($emu-color-background, 0.1);
 	border: none;
-	border-block-end: b("border");
+	border-block-end: 1px solid RGB($emu-color-border);
 
 	@include layout {
 		height: auto;
@@ -24,45 +24,43 @@
 
 	a {
 		@extend %link-button;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			@extend %control-button;
-			color: color("text");
+			color: RGB($emu-color-text);
 		}
 	}
 }
 
 %table-row {
-	align-items: center;
 	border: none;
 
 	@include layout {
+		align-items: center;
+		display: flex;
+		gap: $global-space-base;
 		height: auto;
 		padding: $global-space-sm;
 
 		> div {
 			align-items: center;
 			display: flex;
+			gap: $global-space-base;
 			height: auto;
 			line-height: initial;
 			margin: 0;
 			padding: 0;
-			padding-inline-start: $global-space-base;
-
-			&:first-of-type {
-				padding-inline-start: 0;
-			}
 		}
 	}
 
 	a {
 		@extend %link-button;
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			@extend %control-button;
-			color: color("text");
+			color: RGB($emu-color-text);
 		}
 	}
 }

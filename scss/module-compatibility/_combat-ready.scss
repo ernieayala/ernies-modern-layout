@@ -15,12 +15,12 @@
 }
 
 .combatready-timebar {
-	background: color("background-darkest", 0.2);
+	background: RGBA($emu-color-background-darkest, 0.2);
 }
 
 .combatready-timebar-fill {
-	background-color: color("primary");
-	color: color("text-lightest");
+	background-color: RGB($emu-color-primary);
+	color: RGB($emu-color-text-lightest);
 
 	.combatready-timebaricon {
 		@include layout {

@@ -1,8 +1,8 @@
 %panel-block {
-	background-color: color("background", $global-background-opacity-sidebar);
+	background-color: RGBA($emu-color-background, $global-background-opacity-sidebar);
 	background-image: $global-image-background;
 	border: none;
-	color: color("text-lightest");
+	color: RGB($emu-color-text-lightest);
 
 	@include layout {
 		align-items: center;

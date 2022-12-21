@@ -3,7 +3,7 @@
 	[data-tab="chat"] {
 		section.dice-tray {
 			@extend %panel-block;
-			border-block-start: b("border");
+			border-block-start: 1px solid RGB($emu-color-border);
 
 			@include layout {
 				flex-direction: column;
@@ -36,7 +36,7 @@
 				}
 
 				&:hover svg * {
-					fill: color("white");
+					fill: RGB($emu-color-white);
 				}
 
 				svg {
@@ -45,21 +45,23 @@
 			}
 
 			.dice-tray__flag {
-				background-color: color("primary");
+				background-color: RGB($emu-color-primary);
 				border-radius: 0;
-				color: color("text-lightest");
-				transition: t(max-height, "shift", "fast");
+				color: RGB($emu-color-text-lightest);
+				transition: max-height $global-transition-time-fast $global-transition-type-shift;
 
 				@include layout {
-					@include absolute(left 0 bottom 100%);
-					@include size(100%, $global-space-button-xs);
 					align-items: center;
+					bottom: 100%;
 					display: flex;
 					font-size: $global-font-size-md;
+					height: $global-space-button-xs;
 					justify-content: center;
+					left: 0;
 					line-height: 1;
 					max-height: $global-space-button-xs;
 					overflow: hidden;
+					position: absolute;
 					width: 100%;
 
 					&.hide {
@@ -71,8 +73,9 @@
 			button.dice-tray__math,
 			button.dice-tray__roll {
 				@include layout {
-					@include size(auto, $global-space-button);
 					flex: 0 0 auto;
+					height: $global-space-button;
+					width: auto;
 				}
 			}
 
@@ -86,20 +89,20 @@
 			button.dice-tray__advantage,
 			button.dice-tray__math--add {
 				&:hover {
-					background-color: color("positive");
+					background-color: RGB($emu-color-positive);
 				}
 			}
 
 			button.dice-tray__disadvantage,
 			button.dice-tray__math--sub {
 				&:hover {
-					background-color: color("negative");
+					background-color: RGB($emu-color-negative);
 				}
 			}
 
 			input.dice-tray__input {
 				@extend %input-text;
-				background-color: color("background-lightest");
+				background-color: RGB($emu-color-background-lightest);
 			}
 
 			.dice-tray__stacked {
@@ -117,7 +120,7 @@
 				}
 
 				&.dice-tray__disadvantage {
-					border-block-start: b("border");
+					border-block-start: 1px solid RGB($emu-color-border);
 				}
 			}
 		}
@@ -128,6 +131,7 @@
 	.dice-calculator {
 		@include layout {
 			margin: 0;
+
 			.dice-calculator__input > label {
 				font-size: $global-font-size-lg;
 				padding-inline-end: $global-space-sm;
@@ -136,7 +140,7 @@
 
 		> button,
 		.dice-calculator--button {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				font-weight: normal;

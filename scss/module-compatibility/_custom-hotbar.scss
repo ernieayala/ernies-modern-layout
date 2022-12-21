@@ -1,5 +1,5 @@
 #custom-hotbar {
 	@include layout {
-		z-index: z("fixed");
+		z-index: $global-z-index-fixed;
 	}
 }

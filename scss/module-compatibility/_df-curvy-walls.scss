@@ -1,12 +1,46 @@
-#df-curvy-walls-tools {
+#lib-df-buttons {
 	@include layout {
 		display: flex;
+		flex-direction: row-reverse;
 		gap: $global-space-base;
-		left: to-rem(96px);
-		top: to-rem(184px);
+		left: 96px;
+		margin: 0 !important;
+		top: 184px;
+
+		&.left #moduleControls {
+			position: relative;
+		}
 	}
 
-	.control-tools {
+	@include layout-subtle {
+		opacity: $global-subtle-opacity;
+
+		&::before {
+			content: "";
+			bottom: calc(-1 * #{$global-space-base});
+			left: calc(-1 * #{$global-space-base});
+			right: calc(-1 * #{$global-space-base});
+			top: calc(-1 * #{$global-space-base});
+			pointer-events: all;
+			position: absolute;
+		}
+
+		&:hover,
+		&:active {
+			opacity: 1;
+		}
+	}
+
+	#df-curvy-walls-tools {
+		left: calc(#{$global-space-button-lg} + #{$global-space-base}) !important;
+		top: 0 !important;
+	}
+
+	#magnet {
+		display: none;
+	}
+
+	.group-tools {
 		@include layout {
 			@extend %reset-list;
 			display: flex;
@@ -15,38 +49,49 @@
 			gap: $global-space-base;
 			margin: 0;
 			pointer-events: none;
-			transition: t(opacity left, "link");
+			transition:
+				opacity $global-transition-time-base $global-transition-type-link,
+				left $global-transition-time-base $global-transition-type-link;
+
+			.controls {
+				gap: $global-space-base;
+			}
 		}
 	}
 
 	.control-tool {
-		background-color: color("background-lightest");
+		background-color: RGB($emu-color-background-lightest);
 		background-image: $global-image-background-controls;
 		border: none;
 		border-radius: $global-border-radius-controls;
 		box-shadow: none;
-		color: color("text");
-		transition: t(background box-shadow color opacity, "link");
+		color: RGB($emu-color-text);
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link,
+			opacity $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
-			@include size($global-space-button-lg);
 			align-items: center;
 			box-sizing: border-box;
 			cursor: pointer;
 			display: flex;
-			justify-content: center;
 			font-size: $global-font-size-lg;
+			height: $global-space-button-lg;
+			justify-content: center;
 			line-height: initial;
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			width: $global-space-button-lg;
 		}
 
 		&:hover {
 			@extend %global-hover;
-			background-color: color("primary");
+			background-color: RGB($emu-color-primary);
 			background-image: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 		}
 
 		&:focus {
@@ -56,7 +101,7 @@
 		&.active {
 			@extend %global-active;
 			@extend %global-focus;
-			background-color: color("primary");
+			background-color: RGB($emu-color-primary);
 			background-image: none;
 		}
 	}

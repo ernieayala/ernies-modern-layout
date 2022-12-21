@@ -1,6 +1,6 @@
 body.-emu.system-alienrpg .window-app[id*="actor-"] .window-content,
 body.-emu.system-alienrpg .window-app[id*="item-"] .window-content {
-  color: rgba(var(--color-white), 1); }
+  color: RGB(var(--emu-color-white, 255, 255, 255)); }
 
 .-emu-layout body.-emu.system-alienrpg .alienrpg .window-content::before, .-emu-layout body.-emu.system-alienrpg .alienrpg .window-content::after {
   display: none; }

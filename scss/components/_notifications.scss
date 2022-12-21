@@ -3,23 +3,26 @@
 
 	@include layout {
 		@extend %reset-list;
-		@include fixed(top to-rem(120px) left to-rem(148px));
-		width: calc(100% - #{to-rem(520px)});
-		z-index: z("tooltip");
+		left: 148px;
+		position: fixed;
+		top: 120px;
+		width: calc(100% - 520px);
+		z-index: $global-z-index-tooltip;
 	}
 
 	@include layout(compact) {
-		left: to-rem(112px);
-		top: to-rem(96px);
+		left: 112px;
+		top: 96px;
 	}
 }
 
 .notification {
-	background-color: color("charcoal-900");
-	border: b("border");
+	background-color: RGB($emu-color-background-darkest);
+	border: 1px solid RGB($emu-color-border);
 	border-radius: $global-border-radius-default;
 	box-shadow: $global-box-shadow;
-	color: color("white");
+	color: RGB($emu-color-white);
+	text-shadow: none;
 
 	@include layout {
 		line-height: initial;
@@ -35,27 +38,29 @@
 	}
 
 	&.info {
-		background-color: color("neutral");
-		border-color: color("blue-800");
+		background-color: RGB($emu-color-neutral);
+		border-color: RGB($emu-color-neutral-darkest);
 	}
 
 	&.warning {
-		background-color: color("warning");
-		border-color: color("yellow-800");
-		color: color("charcoal-900");
+		background-color: RGB($emu-color-warning);
+		border-color: RGB($emu-color-warning-darkest);
+		color: RGB($emu-color-black);
 	}
 
 	&.error {
-		background-color: color("negative");
-		border-color: color("red-800");
+		background-color: RGB($emu-color-negative);
+		border-color: RGB($emu-color-negative-darkest);
 	}
 
 	.close {
 		@include layout {
-			@include absolute(top $global-space-sm right $global-space-sm);
 			line-height: 1;
 			margin: 0;
 			margin-block-start: $global-space-xs;
+			position: absolute;
+			right: $global-space-sm;
+			top: $global-space-sm;
 		}
 	}
 }

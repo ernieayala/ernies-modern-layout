@@ -46,7 +46,9 @@
 			padding: 0;
 			pointer-events: none;
 			position: relative;
-			transition: t(opacity left, "link");
+			transition:
+				left $global-transition-time-base $global-transition-type-link,
+				opacity $global-transition-time-base $global-transition-type-link;
 			width: auto;
 		}
 
@@ -65,21 +67,26 @@
 			border: none;
 			border-radius: $global-border-radius-controls;
 			box-shadow: none;
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			font-size: $global-font-size-lg;
-			transition: t(background box-shadow color opacity, "link");
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link,
+				opacity $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
-				@include size($global-space-button-lg);
 				align-items: center;
 				cursor: pointer;
 				display: flex;
+				height: $global-space-button-lg;
 				justify-content: center;
 				line-height: initial;
 				margin: 0;
 				padding: 0;
 				pointer-events: all;
 				position: relative;
+				width: $global-space-button-lg;
 
 				> i {
 					margin: 0;
@@ -88,7 +95,8 @@
 			}
 
 			@include layout(compact) {
-				@include size($global-space-button-lg);
+				height: $global-space-button-lg;
+				width: $global-space-button-lg;
 			}
 
 			&:hover {
@@ -106,10 +114,14 @@
 				@extend %global-hover;
 				background-image: none;
 			}
+
+			.has-notes::after {
+				color: RGB($emu-color-primary-darkest);
+			}
 		}
 
 		.scene-control {
-			background-color: color("background-darkest", $global-background-opacity-scene-control);
+			background-color: RGBA($emu-color-background-darkest, $global-background-opacity-scene-control);
 			background-image: $global-image-background-controls;
 
 			&.active .control-tools {
@@ -130,20 +142,20 @@
 		}
 
 		.control-tool {
-			background-color: color("background", $global-background-opacity-scene-control);
+			background-color: RGBA($emu-color-background, $global-background-opacity-scene-control);
 			background-image: $global-image-background-controls;
 
 			&.toggle {
-				background-color: color("background-lightest");
+				background-color: RGB($emu-color-background-lightest);
 				background-image: $global-image-background-controls;
 				border: none;
-				color: color("text");
+				color: RGB($emu-color-text);
 
 				&:hover {
 					@extend %global-hover;
-					background-color: color("primary");
+					background-color: RGB($emu-color-primary);
 					background-image: none;
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 
 				&:focus {
@@ -153,7 +165,7 @@
 				&.active {
 					@extend %global-active;
 					@extend %global-focus;
-					background-color: color("primary");
+					background-color: RGB($emu-color-primary);
 					background-image: none;
 				}
 			}

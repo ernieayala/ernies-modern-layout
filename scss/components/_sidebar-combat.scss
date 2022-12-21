@@ -21,11 +21,11 @@
 				h3,
 				h4 {
 					border-block-end: none;
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 
 					@include layout {
-						@include ellipsis;
+						@extend %ellipsis;
 						display: block;
 						flex: 1 1 auto;
 						font-size: $global-font-size-md;
@@ -34,7 +34,7 @@
 				}
 
 				h3 {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						font-size: $global-font-size-xl;
@@ -61,10 +61,13 @@
 
 		#combat-tracker {
 			.combatant {
-				background-color: color("background");
+				background-color: RGB($emu-color-background);
 				border: none;
 				border-radius: $global-border-radius-default;
-				transition: t(background box-shadow opacity, "link");
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					opacity $global-transition-time-base $global-transition-type-link;
 
 				@include layout {
 					align-items: center;
@@ -95,24 +98,24 @@
 					@extend %global-active;
 
 					.token-name h4 {
-						border-color: color("text-lightest");
+						border-color: RGB($emu-color-text-lightest);
 					}
 
 					.combatant-control.active {
-						background-color: color("white");
-						color: color("primary");
+						background-color: RGB($emu-color-white);
+						color: RGB($emu-color-primary);
 					}
 				}
 
 				&.defeated {
-					background-color: color("red-600", 0.5);
+					background-color: RGBA($emu-color-negative, 0.5);
 
 					&.active {
 						@extend %global-hover-alt;
 
 						.combatant-control.active {
-							background-color: color("primary");
-							color: color("text-lightest");
+							background-color: RGB($emu-color-primary);
+							color: RGB($emu-color-text-lightest);
 						}
 					}
 				}
@@ -131,21 +134,22 @@
 					}
 
 					h4 {
-						color: color("text-lightest");
-						border-block-end: 1px solid color("border-lighter", 0.1);
+						color: RGB($emu-color-text-lightest);
+						border-block-end: 1px solid RGBA($emu-color-border-lighter, 0.1);
 
 						@include layout {
-							@include ellipsis(max-width 100%);
+							@extend %ellipsis;
 							flex: initial;
 							font-size: $global-font-size-lg;
 							line-height: initial;
+							max-width: 100%;
 						}
 					}
 				}
 
 				.token-resource,
 				.token-initiative {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						align-items: center;
@@ -156,7 +160,7 @@
 				}
 
 				.token-resource {
-					border-inline-end: b("border-lighter");
+					border-inline-end: 1px solid RGB($emu-color-border-lighter);
 
 					@include layout {
 						font-size: $global-font-size-md;
@@ -200,10 +204,11 @@
 
 						@include layout {
 							@extend %font-awesome;
-							@include size($global-space-button);
 							background: transparent;
 							font-size: $global-font-size-xl;
+							height: $global-space-button;
 							margin: 0;
+							width: $global-space-button;
 
 							&::before {
 								content: "\f6cf";
@@ -223,8 +228,8 @@
 						img {
 							cursor: default;
 							margin: 0;
-							max-height: to-rem(14px);
-							max-width: to-rem(14px);
+							max-height: 14px;
+							max-width: 14px;
 							opacity: 1;
 							transform: none;
 						}
@@ -234,7 +239,7 @@
 		}
 
 		#combat-controls {
-			border-block-start: b("border");
+			border-block-start: 1px solid RGB($emu-color-border);
 
 			@include layout {
 				flex-wrap: nowrap;

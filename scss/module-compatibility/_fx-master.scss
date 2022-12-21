@@ -16,7 +16,7 @@
 
 				&.active {
 					a {
-						background-color: color("primary");
+						background-color: RGB($emu-color-primary);
 					}
 				}
 			}
@@ -38,15 +38,16 @@
 
 		.special-effects {
 			.preview {
-				background-color: color("black", 0.1);
+				background-color: RGBA($emu-color-black, 0.1);
 				border: none;
 
 				@include layout {
-					@include size($global-space-button);
 					flex: 0 0 auto;
+					height: $global-space-button;
 					margin: $global-space-base;
 					margin-inline-start: 0;
 					overflow: hidden;
+					width: $global-space-button;
 
 					> video {
 						height: 100%;
@@ -62,7 +63,7 @@
 					padding: $global-space-base;
 
 					h4 {
-						color: color("text-lightest");
+						color: RGB($emu-color-text-lightest);
 						font-size: $global-font-size-lg;
 						height: auto;
 						text-indent: 0;
@@ -70,7 +71,7 @@
 				}
 
 				.author {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 
 					@include layout {
 						font-size: $global-font-size-sm;
@@ -96,6 +97,10 @@
 }
 
 #effects-config {
+	form {
+		height: 100%;
+	}
+
 	.directory-list {
 		background: transparent;
 
@@ -106,8 +111,22 @@
 		}
 	}
 
+	.fxmaster-groups-list {
+		@include layout {
+			@extend %reset-list;
+			display: flex;
+			flex: 1 1 auto;
+			flex-direction: column;
+			gap: $global-space-base;
+			max-height: 100%;
+			min-height: 1px;
+			overflow-y: auto;
+			padding: 0 $global-space-sm;
+		}
+	}
+
 	.directory-item {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			padding: $global-space-base;
@@ -120,7 +139,7 @@
 			}
 
 			label {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 				text-shadow: none;
 
 				@include layout {
@@ -128,7 +147,7 @@
 				}
 
 				&:hover {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 				}
 			}
 		}
@@ -137,7 +156,7 @@
 			border: none;
 
 			li {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					display: flex;
@@ -145,14 +164,41 @@
 				}
 
 				.range-value {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 			}
 		}
 	}
 
+	.fxmaster-groups-list__item {
+		background-color: RGB($emu-color-folder-subdirectory);
+		background-image: none;
+		border: none;
+
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			gap: $global-space-base;
+			padding: $global-space-base;
+			width: 100%;
+		}
+	}
+
 	.form-footer {
 		background-color: transparent;
+	}
+
+	.fxmaster-groups-list__collapse,
+	.fxmaster-list__collapse {
+		text-shadow: none;
+
+		&:hover {
+			color: RGB($emu-color-primary);
+		}
+
+		@include layout {
+			font-size: $global-font-size-md;
+		}
 	}
 }
 
@@ -169,7 +215,7 @@
 		}
 
 		.layer-toggle {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -190,19 +236,19 @@
 	}
 
 	.directory-item {
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 
 		@include layout {
 			padding: $global-space-base;
 		}
 
 		header {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
 
 			label {
 				&:hover {
-					color: color("primary");
+					color: RGB($emu-color-primary);
 				}
 			}
 		}
@@ -211,7 +257,7 @@
 			border: none;
 
 			li {
-				color: color("text-lightest");
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					display: flex;
@@ -219,7 +265,7 @@
 				}
 
 				.range-value {
-					color: color("text-lightest");
+					color: RGB($emu-color-text-lightest);
 				}
 			}
 		}

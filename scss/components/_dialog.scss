@@ -33,7 +33,7 @@
 	}
 
 	.dialog-content {
-		color: color("text");
+		color: RGB($emu-color-text);
 
 		@include layout {
 			font-size: $global-font-size-lg;
@@ -96,8 +96,8 @@
 			@extend %primary-button-simple-reset;
 
 			@include layout {
-				@include ellipsis;
-				flex: 1 1 auto;
+				@extend %ellipsis;
+				flex: 1 1 49%;
 			}
 		}
 	}

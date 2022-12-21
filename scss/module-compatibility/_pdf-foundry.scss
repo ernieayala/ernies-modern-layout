@@ -12,7 +12,7 @@
 
 .pdf-app.app.window-app {
 	section.window-content {
-		background-color: color("background-lightest") !important; // because MOD important
+		background-color: RGB($emu-color-background-lightest) !important; // because MOD important
 		background-image: $global-image-background-lightest !important; // because MOD important
 	}
 

@@ -1,4 +1,4 @@
-.sheet[id*="activeeffect-sheet-"] {
+.sheet[id*="ActiveEffectsConfig"] {
 	.sheet-header {
 		h1 {
 			border: none;
@@ -15,7 +15,7 @@
 
 	.changes-list {
 		@include layout {
-			@include reset-list;
+			@extend %reset-list;
 			width: 100%;
 		}
 
@@ -24,7 +24,13 @@
 
 			@include layout {
 				&:nth-of-type(even) {
-					background-color: color("background-light", 0.1);
+					background-color: RGBA($emu-color-background-light, 0.1);
+				}
+
+				textarea {
+					min-height: $global-space-button;
+					padding-block-end: $global-space-base;
+					padding-block-start: $global-space-base;
 				}
 			}
 		}

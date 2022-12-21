@@ -30,7 +30,7 @@
 
 	.filtercontainer {
 		border: none;
-		border-block-end: b("border");
+		border-block-end: 1px solid RGB($emu-color-border);
 		border-radius: 0;
 
 		@include layout {
@@ -50,7 +50,7 @@
 		}
 
 		.multiselect {
-			background: color("background", 0.1);
+			background: RGBA($emu-color-background, 0.1);
 			border: none;
 			border-radius: 0;
 
@@ -94,7 +94,7 @@
 				padding: $global-space-base;
 
 				&:nth-of-type(even) {
-					background-color: color("background-light", 0.1);
+					background-color: RGBA($emu-color-background-light, 0.1);
 				}
 
 				input[type="checkbox"] {

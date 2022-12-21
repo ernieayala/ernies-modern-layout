@@ -25,9 +25,10 @@
 				@extend %primary-button;
 
 				@include layout {
-					@include size(100%, $global-space-button-sm);
 					font-size: $global-font-size-sm;
+					height: $global-space-button-sm;
 					padding: $global-space-base;
+					width: 100%;
 
 					> span {
 						margin-inline-end: $global-space-base;

@@ -23,7 +23,7 @@
 		}
 
 		> i {
-			color: color("text-lightest");
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				font-size: $global-font-size-md;
@@ -41,8 +41,8 @@
 	#settings {
 		#df-chat-enhance-settings {
 			h4 {
-				border-block-end: b("border-lighter");
-				color: color("text-lightest");
+				border-block-end: 1px solid RGB($emu-color-border-lighter);
+				color: RGB($emu-color-text-lightest);
 
 				@include layout {
 					margin-block-start: $global-space-md !important;
@@ -73,8 +73,8 @@
 	}
 
 	#dfca-delete-all {
-		background-color: color("negative");
-		border-color: color("red-800");
+		background-color: RGB($emu-color-negative);
+		border-color: RGB($emu-color-negative-darkest);
 
 		@include layout {
 			margin: 0;
