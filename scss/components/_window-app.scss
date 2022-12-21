@@ -26,6 +26,7 @@
 		margin: 0;
 
 		&.minimized {
+			.window-header > *:not(.window-title):not(.close),
 			.window-resizable-handle {
 				display: none;
 			}

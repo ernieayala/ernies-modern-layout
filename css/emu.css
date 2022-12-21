@@ -3138,6 +3138,7 @@ body.-emu .window-app {
     flex-direction: column;
     flex-wrap: nowrap;
     margin: 0; }
+    .-emu-layout body.-emu .window-app.minimized .window-header > *:not(.window-title):not(.close),
     .-emu-layout body.-emu .window-app.minimized .window-resizable-handle {
       display: none; }
   body.-emu .window-app .window-header {
