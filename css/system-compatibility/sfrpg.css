@@ -87,6 +87,11 @@ body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button {
   body.-emu.system-sfrpg .sidebar-popout .sfrpg.chat-card .card-buttons button {
     font-weight: normal; }
 
+body.-emu.system-sfrpg .app.chat-popout .chat-message {
+  background-color: transparent;
+  color: RGB(var(--emu-color-text, 9, 14, 16));
+  text-shadow: none; }
+
 .-emu-layout body.-emu.system-sfrpg .window-app {
   font-family: inherit; }
 

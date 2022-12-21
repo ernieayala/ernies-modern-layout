@@ -6476,6 +6476,9 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
   .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row.rsr-totals, .-emu-layout
   body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row.rsr-totals {
     gap: var(--emu-space-base, 4px); }
+  .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die, .-emu-layout
+  body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die {
+    align-self: flex-end; }
 
 .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .tooltip.dice-row-item, .-emu-layout
 body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .tooltip.dice-row-item {

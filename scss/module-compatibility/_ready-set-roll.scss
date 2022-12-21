@@ -20,6 +20,10 @@
 						&.rsr-totals {
 							gap: $global-space-base;
 						}
+
+						.rsr-base-die {
+							align-self: flex-end;
+						}
 					}
 				}
 

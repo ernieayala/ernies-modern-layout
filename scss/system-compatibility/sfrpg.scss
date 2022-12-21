@@ -116,9 +116,9 @@ body#{$emu}.system-sfrpg {
 
 	.app.chat-popout {
 		.chat-message {
-			color: color("text");
+			background-color: transparent;
+			color: RGB($emu-color-text);
 			text-shadow: none;
-			background-color: transparent; }
 		}
 	}
 
