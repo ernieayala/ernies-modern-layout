@@ -6479,6 +6479,12 @@ body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #c
   .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die, .-emu-layout
   body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die {
     align-self: flex-end; }
+    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.success, .-emu-layout
+    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.success {
+      color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
+    .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.failure, .-emu-layout
+    body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .rsr-base-die.failure {
+      color: RGB(var(--emu-color-text-lightest, 255, 255, 255)); }
   .-emu-layout body.-emu #sidebar [data-tab="chat"] #chat-log .rsr-dual .dice-row .success, .-emu-layout
   body.-emu .sidebar-popout[id="chat-popout"] .window-content [data-tab="chat"] #chat-log .rsr-dual .dice-row .success {
     color: RGB(var(--emu-color-positive, 15, 189, 125)); }

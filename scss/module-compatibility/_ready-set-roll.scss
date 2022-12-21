@@ -23,6 +23,14 @@
 
 						.rsr-base-die {
 							align-self: flex-end;
+
+							&.success {
+								color: RGB($emu-color-text-lightest);
+							}
+
+							&.failure {
+								color: RGB($emu-color-text-lightest);
+							}
 						}
 
 						.success {
