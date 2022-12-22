@@ -385,8 +385,7 @@ body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"] {
     min-width: var(--emu-space-xl, 32px);
     padding: 0 var(--emu-space-sm, 8px);
     position: relative;
-    user-select: text;
-    width: 100%; }
+    user-select: text; }
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="text"]::placeholder,
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="number"]::placeholder,
   body.-emu.system-dnd5e [id*="actor-flags-"] input[type="date"]::placeholder,
@@ -1536,6 +1535,71 @@ body.-emu.system-dnd5e .dnd5e.sheet.actor.vehicle .features .item-controls .item
     margin: 0;
     margin-inline-end: var(--emu-space-sm, 8px); }
 
+.-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-flags-"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] input[type="search"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="text"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="number"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="date"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="time"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="password"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="datetime-local"], .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] input[type="search"] {
+  width: 100%; }
+
 body.-emu.system-dnd5e [id*="actor-flags-"] select,
 body.-emu.system-dnd5e [id*="actor-type-"] select,
 body.-emu.system-dnd5e [id*="ActorSkillConfig-"] select,
@@ -1546,6 +1610,17 @@ body.-emu.system-dnd5e [id*="TraitSelector"] select,
 body.-emu.system-dnd5e [id*="ProficiencySelector"] select,
 body.-emu.system-dnd5e [id*="ActorSheetFlags"] select {
   box-shadow: none; }
+
+.-emu-layout body.-emu.system-dnd5e [id*="actor-flags-"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="actor-type-"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSkillConfig-"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSensesConfig"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ActorAbilityConfig"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ActorMovementConfig"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="TraitSelector"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ProficiencySelector"] textarea, .-emu-layout
+body.-emu.system-dnd5e [id*="ActorSheetFlags"] textarea {
+  width: 100%; }
 
 body.-emu.system-dnd5e [id*="actor-flags-"] fieldset,
 body.-emu.system-dnd5e [id*="actor-type-"] fieldset,

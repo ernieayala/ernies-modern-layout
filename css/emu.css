@@ -310,8 +310,7 @@ body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray input.dice-tray__i
     -webkit-user-select: text;
        -moz-user-select: text;
         -ms-user-select: text;
-            user-select: text;
-    width: 100%; }
+            user-select: text; }
   body.-emu .dialog input[type="text"]::-moz-placeholder,
   body.-emu .dialog input[type="number"]::-moz-placeholder,
   body.-emu .dialog input[type="date"]::-moz-placeholder,
@@ -1597,10 +1596,38 @@ body.-emu .window-app:not(.actor):not(.item) .directory .directory-item {
         position: relative;
         text-shadow: none; }
 
+.-emu-layout body.-emu .dialog input[type="text"], .-emu-layout
+body.-emu .dialog input[type="number"], .-emu-layout
+body.-emu .dialog input[type="date"], .-emu-layout
+body.-emu .dialog input[type="time"], .-emu-layout
+body.-emu .dialog input[type="password"], .-emu-layout
+body.-emu .dialog input[type="datetime-local"], .-emu-layout
+body.-emu .dialog input[type="search"], .-emu-layout
+body.-emu #sidebar input[type="text"], .-emu-layout
+body.-emu #sidebar input[type="number"], .-emu-layout
+body.-emu #sidebar input[type="date"], .-emu-layout
+body.-emu #sidebar input[type="time"], .-emu-layout
+body.-emu #sidebar input[type="password"], .-emu-layout
+body.-emu #sidebar input[type="datetime-local"], .-emu-layout
+body.-emu #sidebar input[type="search"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="text"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="number"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="date"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="time"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="password"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="datetime-local"], .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) input[type="search"] {
+  width: 100%; }
+
 body.-emu .dialog select,
 body.-emu #sidebar select,
 body.-emu .window-app:not(.actor):not(.item) select {
   box-shadow: none; }
+
+.-emu-layout body.-emu .dialog textarea, .-emu-layout
+body.-emu #sidebar textarea, .-emu-layout
+body.-emu .window-app:not(.actor):not(.item) textarea {
+  width: 100%; }
 
 body.-emu .dialog fieldset,
 body.-emu #sidebar fieldset,
@@ -5928,6 +5955,9 @@ body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray {
   body.-emu #sidebar [data-tab="chat"] section.dice-tray input.dice-tray__input,
   body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray input.dice-tray__input {
     background-color: RGB(var(--emu-color-background-lightest, 230, 233, 235)); }
+    .-emu-layout body.-emu #sidebar [data-tab="chat"] section.dice-tray input.dice-tray__input, .-emu-layout
+    body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray input.dice-tray__input {
+      width: 100%; }
   .-emu-layout body.-emu #sidebar [data-tab="chat"] section.dice-tray .dice-tray__stacked, .-emu-layout
   body.-emu .sidebar-popout [data-tab="chat"] section.dice-tray .dice-tray__stacked {
     height: var(--emu-space-button, 32px);
@@ -6481,6 +6511,8 @@ body.-emu .monsterblock.sheet.actor nav.switches ul {
       position: relative;
       display: inline-block;
       padding: 0; }
+    .-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input {
+      width: 100%; }
     body.-emu .monsterblock.sheet.actor nav.switches ul li a:hover {
       color: RGB(var(--emu-color-primary, 229, 117, 9));
       text-shadow: none; }
@@ -7034,6 +7066,8 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[
     margin: 0;
     -webkit-margin-after: var(--emu-space-base, 4px);
             margin-block-end: var(--emu-space-base, 4px); }
+  .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] #searchField #searchInput {
+    width: 100%; }
 
 body.-emu #client-settings.window-app.form .window-content #config-tabs div.tab[data-tab="modules"] .module-wrapper h2.module-header {
   -webkit-border-after: 1px solid RGB(var(--emu-color-border, 33, 50, 52));
