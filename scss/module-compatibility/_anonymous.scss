@@ -1,0 +1,6 @@
+#anonymous-names-menu .window-content .buttons {
+	@include layout {
+		gap: $global-space-base;
+		margin: 0;
+	}
+}

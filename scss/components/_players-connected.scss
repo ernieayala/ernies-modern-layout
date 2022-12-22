@@ -66,9 +66,13 @@
 			border-width: 0;
 		}
 
-		&:hover,
-		&:active {
+		&:hover {
 			background-color: RGB($emu-color-primary);
+			color: RGB($emu-color-text-lightest);
+		}
+
+		&:active {
+			background-color: RGB($emu-color-primary-darker);
 			color: RGB($emu-color-text-lightest);
 		}
 

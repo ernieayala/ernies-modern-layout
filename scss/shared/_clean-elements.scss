@@ -19,6 +19,10 @@
 			color: RGB($emu-color-text-lightest);
 		}
 
+		&:active {
+			background-color: RGB($emu-color-primary-darker);
+		}
+
 		&:focus {
 			@extend %global-focus;
 		}

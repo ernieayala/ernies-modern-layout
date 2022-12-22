@@ -44,6 +44,10 @@
 		color: RGB($emu-color-text-lightest);
 	}
 
+	&:active {
+		background-color: RGB($emu-color-primary-darker);
+	}
+
 	&:focus {
 		@extend %global-focus;
 	}
@@ -77,6 +81,10 @@
 		background-image: none;
 		color: RGB($emu-color-text-lightest);
 	}
+
+	&:active {
+		background-color: RGB($emu-color-primary-darker);
+	}
 }
 
 %secondary-button {
@@ -104,5 +112,9 @@
 
 	&:hover {
 		color: RGB($emu-color-primary);
+	}
+
+	&:active {
+		color: RGB($emu-color-primary-darker);
 	}
 }

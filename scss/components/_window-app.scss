@@ -102,6 +102,10 @@
 				color: RGB($emu-color-primary);
 			}
 
+			&:active {
+				color: RGB($emu-color-primary-darker);
+			}
+
 			&:focus {
 				color: RGB($emu-color-primary);
 				text-decoration: underline;

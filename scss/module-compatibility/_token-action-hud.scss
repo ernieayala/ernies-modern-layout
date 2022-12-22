@@ -1,135 +1,213 @@
 #token-action-hud {
 	@include layout {
+		gap: $global-space-base;
+	}
+}
+
+#tah-categories {
+	@include layout {
+		gap: $global-space-xs;
+	}
+}
+
+#tah-character-name {
+	color: RGB($emu-color-text-lightest);
+	text-shadow: $global-text-shadow;
+
+	@include layout {
+		left: 0;
+		margin: 0;
+		padding: 0;
+		pointer-events: none;
+		position: absolute;
+		text-align: left;
+		top: -20px !important;
+	}
+}
+
+.tah-category {
+	&.hover {
+		@include layout {
+			filter: none !important;
+		}
+
+		> button {
+			@extend %global-focus;
+			background-color: RGB($emu-color-primary);
+			background-image: none;
+			color: RGB($emu-color-text-lightest);
+		}
+	}
+}
+
+.tah-category button,
+.tah-action button {
+	@extend %default-button;
+	min-height: $global-space-button;
+}
+
+.tah-title-button {
+	.fa-filter {
+		@include layout {
+			display: none;
+		}
+	}
+}
+
+.tah-content {
+	background: transparent;
+
+	@include layout {
+		border-radius: 0;
+		gap: $global-space-base;
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding: $global-space-xs;
+
+		&.expand-up {
+			bottom: 100%;
+			padding-block-end: $global-space-base;
+		}
+	}
+}
+
+.tah-subcategory {
+	@include layout {
+		padding: 0;
+	}
+}
+
+.tah-subtitle-wrapper {
+	@include layout {
+		height: $global-space-button;
+	}
+}
+
+.tah-subtitle {
+	color: RGB($emu-color-text-lightest);
+	text-shadow: $global-text-shadow;
+
+	@include layout {
+		font-size: $global-font-size-md;
+		gap: $global-space-base;
+		line-height: 1;
+		padding-inline-end: $global-space-sm;
+	}
+}
+
+.tah-actions {
+	@include layout {
+		gap: $global-space-base;
 		margin: 0;
 	}
+}
+
+.tah-action {
+	@include layout {
+		display: flex;
+
+		button {
+			padding: 0 $global-space-sm;
+		}
+	}
+}
+
+.tah-img {
+	@include layout {
+		border-radius: $global-border-radius-default;
+		height: $global-space-button-sm;
+		margin-inline-start: calc(-1 * (#{$global-space-sm} / 2));
+		width: $global-space-button-sm;
+	}
+}
+
+.tah-action-name {
+	@include layout {
+		display: inline-flex;
+		gap: $global-space-base;
+		margin: 0;
+		padding: 0;
+	}
+
+	.tah-info1 {
+		text-shadow: none;
+	}
+}
+
+.tah-info1,
+.tah-info2,
+.tah-info3 {
+	text-shadow: none;
+
+	@include layout {
+		font-size: inherit;
+		margin: 0;
+	}
+}
+
+.tah-info1 {
+	text-shadow: $global-text-shadow;
+}
+
+button.tags--removeAllBtn {
+	@include layout {
+		margin-block-start: $global-space-base;
+	}
+}
+
+#tah-collapse-expand {
+	left: -32px;
+}
+
+#tah-collapse-hud,
+#tah-expand-hud,
+#tah-edit-categories {
+	@extend %control-button;
 
 	&:hover {
-		#tah-reposition,
-		#tah-categories {
+		.fa,
+		.fas {
+			text-shadow: none;
+		}
+	}
+
+	.fa,
+	.fas {
+		color: inherit;
+		padding: 0;
+		text-shadow: $global-text-shadow;
+	}
+}
+
+#tah-collapse-hud,
+#tah-edit-categories {
+	@include layout {
+		visibility: hidden;
+	}
+}
+
+#tah-buttons {
+	&:hover {
+		#tah-edit-categories {
 			@include layout {
 				visibility: visible;
 			}
 		}
 	}
+}
 
-	#tah-hudTitle {
-		color: RGB($emu-color-text-lightest);
-		text-shadow: 2px 2px 2px RGB($emu-color-black);
-
-		@include layout {
-			font-size: $global-font-size-sm;
-			margin: 0;
-			margin-inline-start: 28px;
-			padding: 0;
-		}
-	}
-
-	#tah-reposition,
-	#tah-categories {
-		@extend %control-button;
-
-		@include layout {
-			left: initial;
-			margin: 0;
-			visibility: hidden;
-		}
-
-		i {
-			color: inherit;
-			text-shadow: 2px 2px 2px RGB($emu-color-black);
-
+#tah-collapse-expand {
+	&:hover {
+		#tah-collapse-hud {
 			@include layout {
-				font-size: $global-font-size-sm;
-				padding: initial;
-				margin: initial;
-				text-align: initial;
+				visibility: visible;
 			}
-		}
-	}
-
-	#tah-categories {
-		@include layout {
-			margin-inline-start: $global-space-base;
-		}
-	}
-
-	button.tah-title-button,
-	.tah-action button {
-		@extend %primary-button;
-
-		@include layout {
-			margin-inline-start: $global-space-base;
-
-			> .fa {
-				display: none;
-			}
-		}
-	}
-
-	.tah-subtitle {
-		color: RGB($emu-color-text-lightest);
-		text-shadow: 2px 2px 2px RGB($emu-color-black);
-
-		@include layout {
-			font-size: $global-font-size-sm;
-			line-height: initial;
-			padding: 0;
-			padding-block-start: $global-space-sm;
-		}
-	}
-
-	.tah-action {
-		@include layout {
-			margin: 0;
-			margin-block-end: $global-space-base;
-			margin-inline-start: $global-space-base;
-			padding: 0;
-		}
-
-		button {
-			background-color: RGB($emu-color-background);
-			background-image: $global-image-background-controls;
-
-			> div {
-				text-shadow: none;
-
-				@include layout {
-					margin-inline-start: $global-space-base;
-				}
-			}
-
-			> .tah-img {
-				border: none;
-
-				@include layout {
-					border-radius: 0;
-					display: inline-block;
-					height: 16px;
-					margin: 0;
-					margin-inline-end: $global-space-sm;
-					padding: 0;
-					width: 16px;
-				}
-			}
-		}
-	}
-
-	.tah-content {
-		@include layout {
-			left: -154px;
-			padding: $global-space-sm 0;
 		}
 	}
 }
 
-.token-action-hud-taginput {
+#tah-edit-categories {
 	@include layout {
-		margin: $global-space-sm 0;
-	}
-}
-
-#token-action-hud-index {
-	@include layout {
-		margin-inline-end: $global-space-base;
+		left: auto;
 	}
 }

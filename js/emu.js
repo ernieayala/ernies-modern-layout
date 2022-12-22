@@ -326,7 +326,7 @@ class emuForm extends FormApplication {
 		html.find('select[name="fontFamily"]').change(this.getFontFamily.bind(this));
 		html.find('button[name="reset"]').click(this.onReset.bind(this));
 		html.find('button[name="export-theme"]').click(this.exportTheme.bind(this));
-		html.find('button[name="import-theme"]').click(this.importTheme.bind(this));
+		html.find('button[name="import-theme"]').click(this.importTheme.bind(this, html));
 		this.reset = false;
 	}
 
@@ -371,7 +371,7 @@ class emuForm extends FormApplication {
 		saveDataToFile(theme, 'application/json', 'ernieTheme.json');
 	}
 
-	importTheme() {
+	importTheme(html) {
 		const input = $('<input type="file">');
 		input.on('change', function(e) {
 			const file = this.files[0];
@@ -383,9 +383,9 @@ class emuForm extends FormApplication {
 				try {
 					importedTheme = JSON.parse(result);
 
-					// for (const [key, value] of Object.entries(importedTheme)) {
-					// 	$(`input[name="${key}"]`).prop('value', value);
-					// }
+					for (const [key, value] of Object.entries(importedTheme)) {
+						$(`input[name="${key}"]`).prop('value', value);
+					}
 
 					return __awaiter(this, void 0, void 0, function* () {
 						let settings = mergeObject(emuSettings.settings, importedTheme, { insertKeys: false, insertValues: false });

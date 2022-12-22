@@ -61,6 +61,24 @@
 				border-radius: $global-border-radius-default;
 			}
 		}
+
+		.bar-change {
+			background-color: RGB($emu-color-background);
+			background-image: $global-image-background;
+			border: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				font-size: $global-font-size-lg;
+				font-weight: 700;
+				left: 50%;
+				margin: 0;
+				position: absolute;
+				text-align: center;
+				top: 14px;
+				transform: translateX(-50%);
+			}
+		}
 	}
 }
 
@@ -88,6 +106,14 @@
 			margin: 0;
 			padding: 0;
 		}
+	}
+
+	&.good-ones i {
+		color: RGB($emu-color-positive);
+	}
+
+	&.bad-ones i {
+		color: RGB($emu-color-negative);
 	}
 }
 

@@ -39,6 +39,10 @@ a {
 	&:hover {
 		color: RGB($emu-color-primary);
 	}
+
+	&:active {
+		color: RGB($emu-color-primary-darker);
+	}
 }
 
 a[href] {
@@ -49,6 +53,10 @@ a[href] {
 	&:hover {
 		text-decoration: underline;
 		text-shadow: none;
+	}
+
+	&:active {
+		color: RGB($emu-color-primary-darker);
 	}
 
 	&:focus {
@@ -73,6 +81,10 @@ a.content-link {
 
 	&:hover {
 		color: RGB($emu-color-primary);
+	}
+
+	&:active {
+		color: RGB($emu-color-primary-darker);
 	}
 
 	> i {

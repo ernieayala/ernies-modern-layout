@@ -137,6 +137,10 @@
 				background-image: none;
 			}
 
+			&:active {
+				background-color: RGB($emu-color-primary-darker);
+			}
+
 			&:focus {
 				@extend %global-focus;
 				background-image: none;

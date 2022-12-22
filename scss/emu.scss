@@ -67,6 +67,7 @@ body#{$emu} {
 
 	// Module Compatibility
 	@import "./module-compatibility/always-hp";
+	@import "./module-compatibility/anonymous";
 	@import "./module-compatibility/better-roofs";
 	@import "./module-compatibility/cautious-gamemaster-pack";
 	@import "./module-compatibility/chat-portrait";
@@ -116,6 +117,7 @@ body#{$emu} {
 	@import "./module-compatibility/token-info-icon";
 	@import "./module-compatibility/token-magic-fx";
 	@import "./module-compatibility/token-mold";
+	@import "./module-compatibility/token-variant-art";
 	@import "./module-compatibility/universal-battlemap-importer";
 	@import "./module-compatibility/world-anvil";
 }
