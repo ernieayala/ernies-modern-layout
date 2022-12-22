@@ -1226,6 +1226,7 @@ body.-emu .window-app:not(.actor):not(.item) .directory .directory-list .subdire
     border-radius: 0 0 0 var(--emu-border-radius-default, 0);
     flex-direction: column;
     gap: var(--emu-space-base, 4px);
+    margin: 0;
     padding: var(--emu-space-base, 4px);
     width: 100%; }
   .-emu-layout body.-emu .dialog .directory .directory-list .subdirectory .directory-item.folder, .-emu-layout

@@ -29,11 +29,6 @@ function convertHexToRgb(color) {
 	return `${r}, ${g}, ${b}`;
 }
 
-// Get Imported Theme Object
-function importThemeObject(file) {
-
-}
-
 function updateSettings(settings) {
 	const {
 		borderRadiusDefault,
