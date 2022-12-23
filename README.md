@@ -13,6 +13,7 @@ A clean and theme-able visual update for Foundry VTT.
 - Theming
 - Custom Theming
 - Dark Theme
+- Import/Export Theme
 - Compact Mode
 - Subtle Layout
 - Custom Logo
