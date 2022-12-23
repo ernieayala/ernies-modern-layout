@@ -75,21 +75,37 @@ $global-font-size-sm: var(--emu-font-size-sm, 12px);
 $global-font-size-xs: var(--emu-font-size-xs, 10px);
 $global-font-size-chat-roll: var(--emu-font-size-chat-roll, 18px);
 
-// Spacing
-$global-space-button-xl: var(--emu-space-button-xl, 56px);
-$global-space-button-lg: var(--emu-space-button-lg, 40px);
-$global-space-button: var(--emu-space-button, 32px);
-$global-space-button-sm: var(--emu-space-button-sm, 24px);
-$global-space-button-xs: var(--emu-space-button-xs, 20px);
-$global-space-sidebar: var(--emu-space-sidebar, 320px);
-$global-space-icon: var(--emu-space-button, 32px);
-$global-space-pf: var(--emu-space-pf, 1px);
-$global-space-xs: var(--emu-space-xs, 2px);
-$global-space-base: var(--emu-space-base, 4px);
-$global-space-sm: var(--emu-space-sm, 8px);
-$global-space-md: var(--emu-space-md, 16px);
-$global-space-lg: var(--emu-space-lg, 24px);
-$global-space-xl: var(--emu-space-xl, 32px);
+// Spacing Static
+$static-space-button-xl: 56px;
+$static-space-button-lg: 40px;
+$static-space-button: 32px;
+$static-space-button-sm: 24px;
+$static-space-button-xs: 20px;
+$static-space-sidebar: 320px;
+$static-space-icon: 32px;
+$static-space-pf: 1px;
+$static-space-xs: 2px;
+$static-space-base: 4px;
+$static-space-sm: 8px;
+$static-space-md: 16px;
+$static-space-lg: 24px;
+$static-space-xl: 32px;
+
+// Spacing Global
+$global-space-button-xl: var(--emu-space-button-xl, $static-space-button-xl);
+$global-space-button-lg: var(--emu-space-button-lg, $static-space-button-lg);
+$global-space-button: var(--emu-space-button, $static-space-button);
+$global-space-button-sm: var(--emu-space-button-sm, $static-space-button-sm);
+$global-space-button-xs: var(--emu-space-button-xs, $static-space-button-xs);
+$global-space-sidebar: var(--emu-space-sidebar, $static-space-sidebar);
+$global-space-icon: var(--emu-space-button, $static-space-button);
+$global-space-pf: var(--emu-space-pf, $static-space-pf);
+$global-space-xs: var(--emu-space-xs, $static-space-xs);
+$global-space-base: var(--emu-space-base, $static-space-base);
+$global-space-sm: var(--emu-space-sm, $static-space-sm);
+$global-space-md: var(--emu-space-md, $static-space-md);
+$global-space-lg: var(--emu-space-lg, $static-space-lg);
+$global-space-xl: var(--emu-space-xl, $static-space-xl);
 
 // Shadows
 $global-box-shadow: 0 2px 4px RGB($emu-color-black);
@@ -176,6 +192,21 @@ $global-z-index-tooltip: 1070;
 	}
 }
 
+// Mixin for Compact
+@mixin compact-variables {
+	--emu-space-base: #{floor($static-space-base / 2)} !important;
+	--emu-space-sm: #{floor($static-space-sm - (floor($static-space-sm * 0.25)))} !important;
+	--emu-space-md: #{floor($static-space-md - (floor($static-space-md * 0.25)))} !important;
+	--emu-space-lg: #{floor($static-space-lg - (floor($static-space-lg * 0.25)))} !important;
+	--emu-space-xl: #{floor($static-space-xl - (floor($static-space-xl * 0.25)))} !important;
+	--emu-space-button-xl: #{floor($static-space-button-xl - (floor($static-space-button-xl * 0.25)))} !important;
+	--emu-space-button-lg: #{floor($static-space-button-lg - (floor($static-space-button-lg * 0.25)))} !important;
+	--emu-space-button: #{floor($static-space-button - (floor($static-space-button * 0.25)))} !important;
+	--emu-space-button-sm: #{floor($static-space-button-sm - (floor($static-space-button-sm * 0.25)))} !important;
+	--emu-space-button-xs: #{floor($static-space-button-xs - (floor($static-space-button-xs * 0.25)))} !important;
+	--emu-space-sidebar: #{floor($static-space-sidebar - (floor($static-space-sidebar * 0.1)))} !important;
+}
+
 // Mixins for Layout
 @mixin layout($compact: null) {
 	@if not $compact {
@@ -256,6 +287,38 @@ $global-z-index-tooltip: 1070;
 		}
 	} @else {
 		.-emu-layout.-emu-players.-emu-compact & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-ui-left($compact: null) {
+	@if $compact {
+		.-emu-layout.-emu-compact-ui-left & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-ui-right($compact: null) {
+	@if $compact {
+		.-emu-layout.-emu-compact-ui-right & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-ui-top($compact: null) {
+	@if $compact {
+		.-emu-layout.-emu-compact-ui-top & {
+			@content;
+		}
+	}
+}
+
+@mixin layout-ui-bottom($compact: null) {
+	@if $compact {
+		.-emu-layout.-emu-compact-ui-bottom & {
 			@content;
 		}
 	}

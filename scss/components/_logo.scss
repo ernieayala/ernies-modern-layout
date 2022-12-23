@@ -17,6 +17,11 @@
 		max-width: 68px;
 	}
 
+	@include layout-ui-left(compact) {
+		max-height: 34px;
+		max-width: 68px;
+	}
+
 	@include layout-logo {
 		display: block !important; // fix for mods
 	}

@@ -97,8 +97,10 @@
 			}
 
 			@include layout(compact) {
-				height: $global-space-button;
-				line-height: $global-space-button;
+				min-width: 88px;
+			}
+
+			@include layout-ui-top(compact) {
 				min-width: 88px;
 			}
 
@@ -200,6 +202,11 @@
 			}
 
 			@include layout(compact) {
+				height: 8px;
+				width: 8px;
+			}
+
+			@include layout-ui-top(compact) {
 				height: 8px;
 				width: 8px;
 			}

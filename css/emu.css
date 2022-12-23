@@ -1241,16 +1241,16 @@ body.-emu .sidebar-popout [data-tab="chat"] #oocNotification {
 
 html.-emu-layout.-emu-compact {
   --emu-space-base: 2px !important;
-  --emu-space-sm: 4px !important;
-  --emu-space-md: 8px !important;
-  --emu-space-lg: 12px !important;
-  --emu-space-xl: 16px !important;
-  --emu-space-button-xl: 40px !important;
-  --emu-space-button-lg: 32px !important;
+  --emu-space-sm: 6px !important;
+  --emu-space-md: 12px !important;
+  --emu-space-lg: 18px !important;
+  --emu-space-xl: 24px !important;
+  --emu-space-button-xl: 42px !important;
+  --emu-space-button-lg: 30px !important;
   --emu-space-button: 24px !important;
-  --emu-space-button-sm: 20px !important;
-  --emu-space-button-xs: 18px !important;
-  --emu-space-sidebar: 286px !important; }
+  --emu-space-button-sm: 18px !important;
+  --emu-space-button-xs: 15px !important;
+  --emu-space-sidebar: 288px !important; }
 
 html.-emu-layout {
   font-size: var(--emu-font-size-lg, 16px) !important; }
@@ -2453,9 +2453,6 @@ body.-emu #hotbar .bar-controls {
     pointer-events: all;
     position: relative;
     width: var(--emu-space-button-lg, 40px); }
-  .-emu-layout.-emu-compact body.-emu #hotbar .bar-controls {
-    height: var(--emu-space-button-xl, 56px);
-    width: var(--emu-space-button-lg, 40px); }
   .-emu-layout body.-emu #hotbar .bar-controls:first-child {
     flex: 0 0 auto;
     flex-direction: column;
@@ -2512,6 +2509,8 @@ body.-emu #hotbar .bar-controls {
               border-block-start: 1px solid RGB(var(--emu-color-border, 33, 50, 52)); }
   .-emu-layout.-emu-compact body.-emu #hotbar .bar-controls .page-control {
     font-size: var(--emu-font-size-xs, 10px); }
+  .-emu-layout.-emu-compact-ui-bottom body.-emu #hotbar .bar-controls .page-control {
+    font-size: var(--emu-font-size-xs, 10px); }
   body.-emu #hotbar .bar-controls .page-number {
     background-color: RGBA(var(--emu-color-background, 41, 62, 64), var(--emu-background-opacity-hotbar, 0.8));
     background-image: var(--emu-image-background-controls, none);
@@ -2542,9 +2541,6 @@ body.-emu #hotbar .macro {
     -webkit-margin-start: -1px;
             margin-inline-start: -1px;
     position: relative;
-    width: var(--emu-space-button-xl, 56px); }
-  .-emu-layout.-emu-compact body.-emu #hotbar .macro {
-    height: var(--emu-space-button-xl, 56px);
     width: var(--emu-space-button-xl, 56px); }
   body.-emu #hotbar .macro:first-child {
     border-radius: var(--emu-border-radius-default, 0) 0 0 var(--emu-border-radius-default, 0); }
@@ -2579,9 +2575,6 @@ body.-emu #hotbar .macro {
       -o-object-position: 50% 50%;
          object-position: 50% 50%;
       position: relative;
-      width: calc(var(--emu-space-button-xl, 56px) - var(--emu-space-sm, 8px)); }
-    .-emu-layout.-emu-compact body.-emu #hotbar .macro .macro-icon {
-      height: calc(var(--emu-space-button-xl, 56px) - var(--emu-space-sm, 8px));
       width: calc(var(--emu-space-button-xl, 56px) - var(--emu-space-sm, 8px)); }
   body.-emu #hotbar .macro .tooltip {
     background-color: RGB(var(--emu-color-background-darkest, 9, 14, 16));
@@ -2755,6 +2748,10 @@ body.-emu #loading {
   max-height: 34px;
   max-width: 68px; }
 
+.-emu-layout.-emu-compact-ui-left body.-emu #logo {
+  max-height: 34px;
+  max-width: 68px; }
+
 .-emu-layout.-emu-logo body.-emu #logo {
   display: block !important; }
 
@@ -2860,6 +2857,8 @@ body.-emu #players {
     .-emu-layout body.-emu #players.hidden {
       display: none; }
   .-emu-layout.-emu-compact body.-emu #players {
+    width: 168px; }
+  .-emu-layout.-emu-compact-ui-left body.-emu #players {
     width: 168px; }
   .-emu-layout.-emu-subtle-layout body.-emu #players {
     opacity: var(--emu-subtle-opacity, 0.3); }
@@ -3028,10 +3027,6 @@ body.-emu #controls .control-tools .control-tool {
     body.-emu #controls .control-tools .control-tool > i {
       margin: 0;
       position: relative; }
-  .-emu-layout.-emu-compact body.-emu #controls .control-tools .scene-control, .-emu-layout.-emu-compact
-  body.-emu #controls .control-tools .control-tool {
-    height: var(--emu-space-button-lg, 40px);
-    width: var(--emu-space-button-lg, 40px); }
   body.-emu #controls .control-tools .scene-control:hover,
   body.-emu #controls .control-tools .control-tool:hover {
     background-image: none; }
@@ -3150,8 +3145,8 @@ body.-emu #navigation {
         -webkit-margin-end: 0;
                 margin-inline-end: 0; }
     .-emu-layout.-emu-compact body.-emu #navigation #scene-list .scene {
-      height: var(--emu-space-button, 32px);
-      line-height: var(--emu-space-button, 32px);
+      min-width: 88px; }
+    .-emu-layout.-emu-compact-ui-top body.-emu #navigation #scene-list .scene {
       min-width: 88px; }
     .-emu-layout.-emu-subtle-layout body.-emu #navigation #scene-list .scene {
       display: none;
@@ -3213,6 +3208,9 @@ body.-emu #navigation {
     .-emu-layout.-emu-compact body.-emu #navigation #scene-list .scene-player {
       height: 8px;
       width: 8px; }
+    .-emu-layout.-emu-compact-ui-top body.-emu #navigation #scene-list .scene-player {
+      height: 8px;
+      width: 8px; }
 
 body.-emu #tooltip {
   background: RGBA(var(--emu-color-background-darkest, 9, 14, 16), 0.9);
@@ -3244,6 +3242,19 @@ body.-emu #ui-right {
   position: relative;
   z-index: 10; }
 
+.-emu-layout.-emu-compact-ui-left body.-emu #ui-left {
+  --emu-space-base: 2px !important;
+  --emu-space-sm: 6px !important;
+  --emu-space-md: 12px !important;
+  --emu-space-lg: 18px !important;
+  --emu-space-xl: 24px !important;
+  --emu-space-button-xl: 42px !important;
+  --emu-space-button-lg: 30px !important;
+  --emu-space-button: 24px !important;
+  --emu-space-button-sm: 18px !important;
+  --emu-space-button-xs: 15px !important;
+  --emu-space-sidebar: 288px !important; }
+
 .-emu-layout body.-emu #ui-left {
   display: flex;
   flex: 0 0 auto;
@@ -3256,19 +3267,58 @@ body.-emu #ui-right {
   flex-direction: column;
   justify-content: space-between; }
 
+.-emu-layout.-emu-compact-ui-right body.-emu #ui-right {
+  --emu-space-base: 2px !important;
+  --emu-space-sm: 6px !important;
+  --emu-space-md: 12px !important;
+  --emu-space-lg: 18px !important;
+  --emu-space-xl: 24px !important;
+  --emu-space-button-xl: 42px !important;
+  --emu-space-button-lg: 30px !important;
+  --emu-space-button: 24px !important;
+  --emu-space-button-sm: 18px !important;
+  --emu-space-button-xs: 15px !important;
+  --emu-space-sidebar: 288px !important; }
+
 .-emu-layout body.-emu #ui-right {
   flex: none; }
 
-body.-emu #ui-top {
+.-emu-layout.-emu-compact-ui-top body.-emu #ui-top {
+  --emu-space-base: 2px !important;
+  --emu-space-sm: 6px !important;
+  --emu-space-md: 12px !important;
+  --emu-space-lg: 18px !important;
+  --emu-space-xl: 24px !important;
+  --emu-space-button-xl: 42px !important;
+  --emu-space-button-lg: 30px !important;
+  --emu-space-button: 24px !important;
+  --emu-space-button-sm: 18px !important;
+  --emu-space-button-xs: 15px !important;
+  --emu-space-sidebar: 288px !important; }
+
+.-emu-layout body.-emu #ui-top {
   margin: 0;
   position: relative; }
-  body.-emu #ui-top.offset {
+  .-emu-layout body.-emu #ui-top.offset {
     -webkit-margin-start: calc(var(--emu-space-sidebar, 320px)/-4);
             margin-inline-start: calc(var(--emu-space-sidebar, 320px)/-4); }
 
-body.-emu #ui-bottom {
+.-emu-layout.-emu-compact-ui-bottom body.-emu #ui-bottom {
+  --emu-space-base: 2px !important;
+  --emu-space-sm: 6px !important;
+  --emu-space-md: 12px !important;
+  --emu-space-lg: 18px !important;
+  --emu-space-xl: 24px !important;
+  --emu-space-button-xl: 42px !important;
+  --emu-space-button-lg: 30px !important;
+  --emu-space-button: 24px !important;
+  --emu-space-button-sm: 18px !important;
+  --emu-space-button-xs: 15px !important;
+  --emu-space-sidebar: 288px !important; }
+
+.-emu-layout body.-emu #ui-bottom {
   position: relative; }
-  body.-emu #ui-bottom > div {
+  .-emu-layout body.-emu #ui-bottom > div {
     display: flex;
     justify-content: space-between; }
 
@@ -3663,6 +3713,9 @@ body.-emu .sidebar-popout {
     body.-emu .sidebar-popout .sidebar-tab.active {
       display: flex; }
   .-emu-layout.-emu-compact body.-emu #sidebar .sidebar-tab, .-emu-layout.-emu-compact
+  body.-emu .sidebar-popout .sidebar-tab {
+    min-height: 176px; }
+  .-emu-layout.-emu-compact-ui-right body.-emu #sidebar .sidebar-tab, .-emu-layout.-emu-compact-ui-right
   body.-emu .sidebar-popout .sidebar-tab {
     min-height: 176px; }
   .-emu-layout body.-emu #sidebar .sidebar-tab.directory .directory-list, .-emu-layout

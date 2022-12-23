@@ -22,6 +22,10 @@
 		width: 168px;
 	}
 
+	@include layout-ui-left(compact) {
+		width: 168px;
+	}
+
 	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 

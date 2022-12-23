@@ -446,19 +446,6 @@ Hooks.once('ready', () => {
 	const emuLayoutStatus = game.settings.get(moduleName, 'settings').emuLayout;
 
 	// Layouts
-	game.settings.register(moduleName, 'compactMode', {
-		name: game.i18n.localize('emu.layout-compact'),
-		scope: 'user',
-		config: emuLayoutStatus,
-		default: false,
-		type: Boolean,
-		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
-		}
-	});
-	const compactMode = game.settings.get(moduleName, 'compactMode');
-	compactMode ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
-
 	game.settings.register(moduleName, 'subtleLayout', {
 		name: game.i18n.localize('emu.layout-subtle-layout'),
 		scope: 'user',
@@ -503,19 +490,75 @@ Hooks.once('ready', () => {
 	const subtleLayoutLockSidebar = game.settings.get(moduleName, 'subtleLayoutLockSidebar');
 	subtleLayoutLockSidebar ? myHtml[0].classList.add('-emu-subtle-layout-sidebar-locked') : myHtml[0].classList.remove('-emu-subtle-layout-sidebar-locked');
 
-	// Toggle
-	game.settings.register(moduleName, 'togglePlayers', {
-		name: game.i18n.localize('emu.toggle-players'),
+	game.settings.register(moduleName, 'compactMode', {
+		name: game.i18n.localize('emu.layout-compact'),
+		hint: game.i18n.localize('emu.layout-compact-hint'),
 		scope: 'user',
 		config: emuLayoutStatus,
 		default: false,
 		type: Boolean,
 		onChange: data => {
-			data === true ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+			data === true ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
 		}
 	});
-	const togglePlayers = game.settings.get(moduleName, 'togglePlayers');
-	togglePlayers ? myHtml[0].classList.add('-emu-players') : myHtml[0].classList.remove('-emu-players');
+	const compactMode = game.settings.get(moduleName, 'compactMode');
+	compactMode ? myHtml[0].classList.add('-emu-compact') : myHtml[0].classList.remove('-emu-compact');
+
+	game.settings.register(moduleName, 'compactModeUILeft', {
+		name: game.i18n.localize('emu.layout-compact-ui-left'),
+		hint: game.i18n.localize('emu.layout-compact-ui-left-hint'),
+		scope: 'user',
+		config: emuLayoutStatus,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-compact-ui-left') : myHtml[0].classList.remove('-emu-compact-ui-left');
+		}
+	});
+	const compactModeUILeft = game.settings.get(moduleName, 'compactModeUILeft');
+	compactModeUILeft ? myHtml[0].classList.add('-emu-compact-ui-left') : myHtml[0].classList.remove('-emu-compact-ui-left');
+
+	game.settings.register(moduleName, 'compactModeUIRight', {
+		name: game.i18n.localize('emu.layout-compact-ui-right'),
+		hint: game.i18n.localize('emu.layout-compact-ui-right-hint'),
+		scope: 'user',
+		config: emuLayoutStatus,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-compact-ui-right') : myHtml[0].classList.remove('-emu-compact-ui-right');
+		}
+	});
+	const compactModeUIRight = game.settings.get(moduleName, 'compactModeUIRight');
+	compactModeUIRight ? myHtml[0].classList.add('-emu-compact-ui-right') : myHtml[0].classList.remove('-emu-compact-ui-right');
+
+	game.settings.register(moduleName, 'compactModeUITop', {
+		name: game.i18n.localize('emu.layout-compact-ui-top'),
+		hint: game.i18n.localize('emu.layout-compact-ui-top-hint'),
+		scope: 'user',
+		config: emuLayoutStatus,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-compact-ui-top') : myHtml[0].classList.remove('-emu-compact-ui-top');
+		}
+	});
+	const compactModeUITop = game.settings.get(moduleName, 'compactModeUITop');
+	compactModeUITop ? myHtml[0].classList.add('-emu-compact-ui-top') : myHtml[0].classList.remove('-emu-compact-ui-top');
+
+	game.settings.register(moduleName, 'compactModeUIBottom', {
+		name: game.i18n.localize('emu.layout-compact-ui-bottom'),
+		hint: game.i18n.localize('emu.layout-compact-ui-bottom-hint'),
+		scope: 'user',
+		config: emuLayoutStatus,
+		default: false,
+		type: Boolean,
+		onChange: data => {
+			data === true ? myHtml[0].classList.add('-emu-compact-ui-bottom') : myHtml[0].classList.remove('-emu-compact-ui-bottom');
+		}
+	});
+	const compactModeUIBottom = game.settings.get(moduleName, 'compactModeUIBottom');
+	compactModeUIBottom ? myHtml[0].classList.add('-emu-compact-ui-bottom') : myHtml[0].classList.remove('-emu-compact-ui-bottom');
 
 	// Timeout because i'm bad at javascript
 	setTimeout(function() {

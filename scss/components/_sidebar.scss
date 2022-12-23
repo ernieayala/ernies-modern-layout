@@ -190,6 +190,10 @@
 			min-height: 176px;
 		}
 
+		@include layout-ui-right(compact) {
+			min-height: 176px;
+		}
+
 		&.directory .directory-list {
 			@include layout {
 				padding-block-end: $global-space-sm;

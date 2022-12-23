@@ -84,11 +84,6 @@
 			width: $global-space-button-lg;
 		}
 
-		@include layout(compact) {
-			height: $global-space-button-xl;
-			width: $global-space-button-lg;
-		}
-
 		&:first-child {
 			@include layout {
 				flex: 0 0 auto;
@@ -172,6 +167,10 @@
 			@include layout(compact) {
 				font-size: $global-font-size-xs;
 			}
+
+			@include layout-ui-bottom(compact) {
+				font-size: $global-font-size-xs;
+			}
 		}
 
 		.page-number {
@@ -210,11 +209,6 @@
 			justify-content: center;
 			margin-inline-start: -1px; // for the border and people messing with border color
 			position: relative;
-			width: $global-space-button-xl;
-		}
-
-		@include layout(compact) {
-			height: $global-space-button-xl;
 			width: $global-space-button-xl;
 		}
 
@@ -272,11 +266,6 @@
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
-				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
-			}
-
-			@include layout(compact) {
-				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
 				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 		}

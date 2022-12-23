@@ -94,11 +94,6 @@
 				}
 			}
 
-			@include layout(compact) {
-				height: $global-space-button-lg;
-				width: $global-space-button-lg;
-			}
-
 			&:hover {
 				@extend %global-hover;
 				background-image: none;
