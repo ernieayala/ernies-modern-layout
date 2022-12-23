@@ -91,6 +91,10 @@
 						&:hover {
 							color: RGB($emu-color-primary);
 						}
+
+						&:active {
+							color: RGB($emu-color-primary-darker);
+						}
 					}
 				}
 

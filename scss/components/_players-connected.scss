@@ -22,6 +22,10 @@
 		width: 168px;
 	}
 
+	@include layout-ui-left(compact) {
+		width: 168px;
+	}
+
 	@include layout-subtle {
 		opacity: $global-subtle-opacity;
 
@@ -66,9 +70,13 @@
 			border-width: 0;
 		}
 
-		&:hover,
-		&:active {
+		&:hover {
 			background-color: RGB($emu-color-primary);
+			color: RGB($emu-color-text-lightest);
+		}
+
+		&:active {
+			background-color: RGB($emu-color-primary-darker);
 			color: RGB($emu-color-text-lightest);
 		}
 

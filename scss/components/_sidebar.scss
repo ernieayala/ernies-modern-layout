@@ -107,6 +107,14 @@
 				@extend %global-hover;
 			}
 
+			&:active {
+				background-color: RGB($emu-color-primary-darker);
+			}
+
+			&:focus {
+				@extend %global-focus;
+			}
+
 			&.active {
 				@extend %global-active;
 				border-radius: 0;
@@ -179,6 +187,10 @@
 		}
 
 		@include layout(compact) {
+			min-height: 176px;
+		}
+
+		@include layout-ui-right(compact) {
 			min-height: 176px;
 		}
 

@@ -84,11 +84,6 @@
 			width: $global-space-button-lg;
 		}
 
-		@include layout(compact) {
-			height: $global-space-button-xl;
-			width: $global-space-button-lg;
-		}
-
 		&:first-child {
 			@include layout {
 				flex: 0 0 auto;
@@ -172,6 +167,10 @@
 			@include layout(compact) {
 				font-size: $global-font-size-xs;
 			}
+
+			@include layout-ui-bottom(compact) {
+				font-size: $global-font-size-xs;
+			}
 		}
 
 		.page-number {
@@ -213,11 +212,6 @@
 			width: $global-space-button-xl;
 		}
 
-		@include layout(compact) {
-			height: $global-space-button-xl;
-			width: $global-space-button-xl;
-		}
-
 		&:first-child {
 			border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 
@@ -232,6 +226,10 @@
 
 		&:hover {
 			@extend %global-hover;
+		}
+
+		&:active {
+			background-color: RGB($emu-color-primary-darker);
 		}
 
 		&:focus {
@@ -268,11 +266,6 @@
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
-				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
-			}
-
-			@include layout(compact) {
-				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
 				width: calc(#{$global-space-button-xl} - #{$global-space-sm});
 			}
 		}

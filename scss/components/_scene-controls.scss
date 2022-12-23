@@ -94,14 +94,13 @@
 				}
 			}
 
-			@include layout(compact) {
-				height: $global-space-button-lg;
-				width: $global-space-button-lg;
-			}
-
 			&:hover {
 				@extend %global-hover;
 				background-image: none;
+			}
+
+			&:active {
+				background-color: RGB($emu-color-primary-darker);
 			}
 
 			&:focus {
@@ -156,6 +155,10 @@
 					background-color: RGB($emu-color-primary);
 					background-image: none;
 					color: RGB($emu-color-text-lightest);
+				}
+
+				&:active {
+					background-color: RGB($emu-color-primary-darker);
 				}
 
 				&:focus {

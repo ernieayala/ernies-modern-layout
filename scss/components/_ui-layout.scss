@@ -9,6 +9,10 @@
 }
 
 #ui-left {
+	@include layout-ui-left(compact) {
+		@include compact-variables;
+	}
+
 	@include layout {
 		display: flex;
 		flex: 0 0 auto;
@@ -27,25 +31,41 @@
 }
 
 #ui-right {
+	@include layout-ui-right(compact) {
+		@include compact-variables;
+	}
+
 	@include layout {
 		flex	: none;
 	}
 }
 
 #ui-top {
-	margin: 0;
-	position: relative;
+	@include layout-ui-top(compact) {
+		@include compact-variables;
+	}
 
-	&.offset {
-		margin-inline-start: calc(#{$global-space-sidebar}/-4);
+	@include layout {
+		margin: 0;
+		position: relative;
+
+		&.offset {
+			margin-inline-start: calc(#{$global-space-sidebar}/-4);
+		}
 	}
 }
 
 #ui-bottom {
-	position: relative;
+	@include layout-ui-bottom(compact) {
+		@include compact-variables;
+	}
 
-	> div {
-		display: flex;
-		justify-content: space-between;
+	@include layout {
+		position: relative;
+
+		> div {
+			display: flex;
+			justify-content: space-between;
+		}
 	}
 }

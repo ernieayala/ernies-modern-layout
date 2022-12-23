@@ -103,6 +103,10 @@
 			input.dice-tray__input {
 				@extend %input-text;
 				background-color: RGB($emu-color-background-lightest);
+
+				@include layout {
+					width: 100%;
+				}
 			}
 
 			.dice-tray__stacked {

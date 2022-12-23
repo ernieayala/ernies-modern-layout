@@ -23,6 +23,7 @@
 				border-radius: 0 0 0 $global-border-radius-default;
 				flex-direction: column;
 				gap: $global-space-base;
+				margin: 0;
 				padding: $global-space-base;
 				width: 100%;
 			}
@@ -96,6 +97,10 @@
 			background-color: RGB($emu-color-primary);
 			background-image: none;
 			color: RGB($emu-color-text-lightest);
+		}
+
+		&:active {
+			background-color: RGB($emu-color-primary-darker);
 		}
 
 		&:focus {
@@ -193,6 +198,10 @@
 					background-color: RGB($emu-color-primary);
 					background-image: none;
 					color: RGB($emu-color-text-lightest);
+				}
+
+				&:active {
+					background-color: RGB($emu-color-primary-darker);
 				}
 
 				&:focus {

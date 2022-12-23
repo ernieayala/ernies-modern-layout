@@ -6,6 +6,10 @@ input[type="password"],
 input[type="datetime-local"],
 input[type="search"] {
 	@extend %input-text;
+
+	@include layout {
+		width: 100%;
+	}
 }
 
 input[type="checkbox"] {
@@ -32,6 +36,10 @@ select {
 
 textarea {
 	@extend %input-textarea;
+
+	@include layout {
+		width: 100%;
+	}
 }
 
 fieldset {

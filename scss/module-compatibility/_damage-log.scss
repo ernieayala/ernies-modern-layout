@@ -3,6 +3,10 @@
 	nav.damage-log-nav.tabs {
 		box-shadow: none;
 
+		@include layout {
+			border-radius: 0;
+		}
+
 		a {
 			color: RGB($emu-color-text-lightest);
 		}

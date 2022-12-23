@@ -72,17 +72,7 @@
 }
 
 html.-emu-layout.-emu-compact {
-	--emu-space-base: 2px !important;
-	--emu-space-sm: 4px !important;
-	--emu-space-md: 8px !important;
-	--emu-space-lg: 12px !important;
-	--emu-space-xl: 16px !important;
-	--emu-space-button-xl: 40px !important;
-	--emu-space-button-lg: 32px !important;
-	--emu-space-button: 24px !important;
-	--emu-space-button-sm: 20px !important;
-	--emu-space-button-xs: 18px !important;
-	--emu-space-sidebar: 286px !important;
+	@include compact-variables;
 }
 
 html.-emu-layout {

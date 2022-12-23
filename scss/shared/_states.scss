@@ -30,6 +30,10 @@
 		text-shadow: none;
 	}
 
+	&:active {
+		background-color: RGB($emu-color-primary-darker);
+	}
+
 	&:focus {
 		@extend %global-focus;
 	}

@@ -85,6 +85,10 @@
 
 					.switch-input {
 						@extend %input-text;
+
+						@include layout {
+							width: 100%;
+						}
 					}
 
 					a {
