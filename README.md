@@ -10,15 +10,16 @@
 A clean and theme-able visual update for Foundry VTT.
 
 ## Features
-- Theming (includes a dark mode theme)
+- Theming
+- Custom Theming
+- Dark Theme
 - Compact Mode
 - Subtle Layout
 - Custom Logo
-- Various UI toggles (hide logo, hide players, hide scene thumbnails, and more)
-- Ernie's Layout: Pushes pixels and adjusts fonts, heights, widths, padding and margins.
+- Various UI toggles (hide logo, hide scene thumbnails, and more)
 
 ## Manifest URL
-https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.2/module.json
+https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.3/module.json
 
 ## Want me to look at something?
 - If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
