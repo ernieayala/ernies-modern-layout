@@ -65,7 +65,7 @@ Here is a breif visual overview.
      style="max-width: 100%; display: block;" />
 
 ### Subtle Mode
-<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/04-subtle-example.png"
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/04-subtle-exmple.png"
      style="max-width: 100%; display: block;" />
      
 <p>This is a setting for those who really want to see everything on the screen. There are a couple modifiers here. The opacity setting will let you set the initial opacity of the elements "off" state and the lock sidebar setting will lock the sidebar on the right portion of the screen to always be on. I recommend playing with this one to see if it works for you.</p>
