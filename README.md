@@ -36,6 +36,9 @@ Message me on Discord: Ernie#4453.
 - Many modules and systems will not have my style.
 - Only tested on Chrome.
 
+## Overview
+Here is a breif visual overview.
+
 ### Default View
 <img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/01-overview.png"
      style="max-width: 100%; display: block;" />
