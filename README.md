@@ -36,8 +36,88 @@ Message me on Discord: Ernie#4453.
 - Many modules and systems will not have my style.
 - Only tested on Chrome.
 
-<img src="https://github.com/ernieayala/ernies-modern-layout/raw/master/images/eml-default.jpg"
+###Default View
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/01-overview.png"
+     style="max-width: 100%;" />
+
+###Dark Mode
+I will go over this a bit more further down.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/01-overview-dark.png"
+     style="max-width: 100%;" />
+
+###Settings
+If you navigate to the module settings for Ernie's Modern UI you'll see the screen below. Everything in the initial settings (i.e. Subtle and Compact Modes) are individual client settings.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/02-settings.png"
+     style="max-width: 100%;" />
+
+###Compact Mode
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/06-compact-example.png"
+     style="max-width: 100%;" />
+Here you will find a few variations of Compact Mode. The first options is to make everything in the application follow the compact setting. The other options are if you choose to make certain areas smaller. For example, if you only wanted the left portion of the UI to follow Compact Mode, you would only select the Compact Mode UI Left checkbox. Of course you can mix and match.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/05-compact-settings.png"
+     style="max-width: 100%;" />
+
+###Subtle Mode
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/04-subtle-example.png"
+     style="max-width: 100%;" />
+This is a setting for those who really want to see everything on the screen. There are a couple modifiers here. The opacity setting will let you set the initial opacity of the elements "off" state and the lock sidebar setting will lock the sidebar on the right portion of the screen to always be on. I recommend playing with this one to see if it works for you.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/03-subtle-settings.png"
+     style="max-width: 100%;" />
+
+###GM Settings
+The settings here will apply to all your users. There are four tabs in this area.
+- Colors, which lets you set all the colors throughout the application.
+- Design, which lets you mess with fonts, spacing, sizing and other visual elements.
+- Options, which has a couple toggles and the Import and Export Theme ability.
+- Reset, if you want to reset all your work to the default.
+You will need to push the Save button at the bottom of the modal after you make any changes.
+
+###Colors
+This is the bread and butter for most people. Here you can adjust colors in a semantic fashion through either hex values or using the color pick next to the field.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/07-color-settings.png"
+     style="max-width: 100%;" />
+
+There are also a few presets here which includes Dark Mode.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/08-color-presets.png"
+     style="max-width: 100%;" />
+
+###Font Family and Sizes
+The first section on the Design tab allows you to adjust the font family by either picking from a predefined list or using a Google Fonts link.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/09-font-family.png"
+     style="max-width: 100%;" />
+
+You also have the ability to adjust the font size to your liking.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/10-font-size.png"
+     style="max-width: 100%;" />
+
+###Border Radius
+This one is pretty easy. You can adjust a numerical value to change the border radius. The lower the number the less curvy, the higher, more curvy. You can give yourself a more block look by setting everything to 0 or give yourself round buttons by setting to a higher number like 24px.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/11-border-radius.png"
+     style="max-width: 100%;" />
+
+###Background Images
+This is if you miss the textured background from base Foundry. These map 1:1 with the color naming conventions on the Colors tab. This is one that is better to test out if you're not sure what it does. In the screenshot below you can see I replaced the lightest background with a default Foundry texture instead.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/12-background-image.png"
+     style="max-width: 100%;" />
+
+###Background Opacity
+You might have noticed that the main components have a slight opacity to them. This opacity is baked into the background color using RGBA. If you want to increase or decrease the intensity of the background you can adjust theme here.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/13-background-opacity.png"
+     style="max-width: 100%;" />
+
+###Sizing and Spacing
+If you want to touch every single spacing modifier I use. Here you go. Small tweaks to this section would be best as you could really blow up your UI if you mess with this too much.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/14-spacing-sizing.png"
+     style="max-width: 100%;" />
+
+###Options
+On the options tab you'll find three things. One, you can toggle the logo in the top left on and off. Two, you can toggle the scene background images in the right navigation on and off.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/15-options.png"
+     style="max-width: 100%;" />
+
+And three, you can Export all your hard work and share it with someone else or keep it for backup just in case.
+<img src="https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/images/16-eport.png"
      style="max-width: 100%;" />
      
-### Features Video
+### Features Video (Old)
 [![Features Walkthrough](https://img.youtube.com/vi/bU7sclPTFQU/0.jpg)](https://www.youtube.com/watch?v=bU7sclPTFQU)
