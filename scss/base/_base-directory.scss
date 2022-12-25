@@ -296,10 +296,10 @@
 				cursor: move;
 				flex: 0 0 auto;
 				height: $global-space-icon;
-				margin: 0;
 				margin-block-end: $global-space-base;
 				margin-block-start: $global-space-base;
 				margin-inline-end: $global-space-sm;
+				margin-inline-start: calc(-1 * #{$global-space-base});
 				width: $global-space-icon;
 			}
 		}
@@ -335,7 +335,7 @@
 					display: block;
 					flex: 1 1 auto;
 					font-size: $global-font-size-lg;
-					line-height: $global-space-button; // figure out a better way
+					// line-height: $global-space-button; // figure out a better way
 					padding: 0;
 					position: relative;
 					text-shadow: none;

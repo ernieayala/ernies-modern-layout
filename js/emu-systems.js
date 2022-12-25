@@ -3,5 +3,8 @@ export const SYSTEM = [
 	'CoC7',
 	'dnd5e',
 	'morkborg',
-	'sfrpg'
+	'pf2e',
+	'sfrpg',
+	'swade',
+	'twodsix'
 ]

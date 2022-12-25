@@ -84,6 +84,7 @@
 
 			@include layout {
 				@extend %control-button;
+				min-width: $global-space-button-sm;
 				padding: $global-space-base;
 				position: relative;
 				width: auto;

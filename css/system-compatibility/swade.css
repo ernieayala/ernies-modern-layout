@@ -1,0 +1,5 @@
+.-emu-layout body.-emu.system-swade .window-app[class*="actor"] .window-content > form, .-emu-layout
+body.-emu.system-swade .window-app[class*="item"] .window-content > form {
+  display: grid;
+  flex-direction: row;
+  gap: 0.5em; }

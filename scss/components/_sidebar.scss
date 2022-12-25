@@ -226,6 +226,10 @@
 
 			@include layout {
 				flex-direction: column;
+
+				~ .directory-list {
+					padding-block-start: $global-space-base;
+				}
 			}
 
 			.header-search {
