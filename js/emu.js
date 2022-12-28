@@ -409,6 +409,16 @@ class emuForm extends FormApplication {
 	}
 }
 
+Hooks.on('renderActorSheet', (app, html) => {
+	const sheet = html.find('id').prevObject[0];
+	sheet.classList.add('-emu-clean-sheet');
+});
+
+Hooks.on('renderItemSheet', (app, html) => {
+	const sheet = html.find('id').prevObject[0];
+	sheet.classList.add('-emu-clean-sheet');
+});
+
 Hooks.once('init', () => {
 	myBody[0].classList.add('-emu');
 

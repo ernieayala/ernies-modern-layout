@@ -5,7 +5,7 @@ body#{$emu} {
 	// Base
 	.dialog,
 	#sidebar,
-	.window-app:not([class*="actor"]):not([class*="item"]) {
+	.window-app:not(.-emu-clean-sheet) {
 		@import "./base/base-button";
 		@import "./base/base-directory";
 		@import "./base/base-form-elements";

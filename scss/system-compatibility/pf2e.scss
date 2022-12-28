@@ -1,16 +1,5 @@
 @import "../base";
 
-body#{$emu}.system-pf2e {
-	.window-app[class*="actor"] {
-		.window-content > form {
-			@include layout {
-				flex-direction: row;
-				gap: 0;
-			}
-		}
-	}
-}
-
 // body#{$emu}.system-pf2e {
 // 	#pf2e-player-config-panel {
 // 		@include layout {

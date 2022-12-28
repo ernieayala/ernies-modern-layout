@@ -36,10 +36,6 @@ body#{$emu}.system-dnd5e {
 			.window-content {
 				color: RGB($emu-color-text);
 
-				@include layout {
-					padding: 0;
-				}
-
 				form {
 					@include layout {
 						gap: initial;
@@ -462,10 +458,6 @@ body#{$emu}.system-dnd5e {
 				}
 			}
 		}
-
-		.modesto {
-			// font-family: inherit;
-		}
 	}
 
 	#ability-use-form {
@@ -490,10 +482,10 @@ body#{$emu}.system-dnd5e {
 	[id*="TraitSelector"],
 	[id*="ProficiencySelector"],
 	[id*="ActorSheetFlags"] {
-		@import "../base/base-button";
-		@import "../base/base-form-elements";
-		@import "../base/base-forms";
-		@import "../base/base-text";
+		// @import "../base/base-button";
+		// @import "../base/base-form-elements";
+		// @import "../base/base-forms";
+		// @import "../base/base-text";
 	}
 
 	[id*="actor-type-"] {

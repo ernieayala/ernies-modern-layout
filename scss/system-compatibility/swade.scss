@@ -1,14 +1,1 @@
 @import "../base";
-
-body#{$emu}.system-swade {
-	.window-app[class*="actor"],
-	.window-app[class*="item"] {
-		.window-content > form {
-			@include layout {
-				display: grid;
-				flex-direction: row;
-				gap: 0.5em;
-			}
-		}
-	}
-}

@@ -280,6 +280,7 @@ form {
 		@include layout {
 			align-items: center;
 			display: inline-flex;
+			font-size: initial;
 			gap: $global-space-sm;
 			height: auto;
 			line-height: initial;

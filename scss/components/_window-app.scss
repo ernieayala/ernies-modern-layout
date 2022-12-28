@@ -33,10 +33,68 @@
 		}
 	}
 
+	&:not(.-emu-clean-sheet) {
+		.window-content {
+			@include layout {
+				display: block;
+				flex: 1 1 auto;
+				flex-direction: initial;
+				font-size: $global-font-size-md;
+				margin: 0;
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding: $global-space-sm;
+				position: relative;
+			}
+
+			form {
+				@include layout {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+
+					&.flexcol {
+						height: 100%;
+					}
+
+					.form-body {
+						flex: 1 1 auto;
+						overflow: auto;
+					}
+
+					.form-footer {
+						flex: 0 0 auto;
+					}
+				}
+			}
+
+			> form {
+				> button[type="submit"]:last-child,
+				> .sheet-footer:last-child {
+					bottom: calc(-1 * #{$global-space-base});
+					outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
+					position: sticky;
+					z-index: 2;
+				}
+			}
+
+			.chat-message {
+				border-radius: 0;
+			}
+
+			.sheet-footer {
+				gap: $global-space-base;
+			}
+		}
+	}
+
 	.window-header {
+		background: none;
 		border: none;
 		border-block-end: 1px solid RGB($emu-color-border);
 		border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
+		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 
 		@include layout {
@@ -44,6 +102,7 @@
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
+			font-size: inherit;
 			gap: $global-space-xs;
 			line-height: initial;
 			margin: 0;
@@ -159,58 +218,8 @@
 		background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
 		background-image: $global-image-background-lightest;
 		color: RGB($emu-color-text);
-
-		@include layout {
-			display: block;
-			flex: 1 1 auto;
-			flex-direction: initial;
-			font-size: $global-font-size-md;
-			margin: 0;
-			overflow-x: hidden;
-			overflow-y: auto;
-			padding: $global-space-sm;
-			position: relative;
-		}
-
-		form {
-			@include layout {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				gap: $global-space-base;
-
-				&.flexcol {
-					height: 100%;
-				}
-
-				.form-body {
-					flex: 1 1 auto;
-					overflow: auto;
-				}
-
-				.form-footer {
-					flex: 0 0 auto;
-				}
-			}
-		}
-
-		> form {
-			> button[type="submit"]:last-child,
-			> .sheet-footer:last-child {
-				bottom: calc(-1 * #{$global-space-base});
-				outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
-				position: sticky;
-				z-index: 2;
-			}
-		}
-
-		.chat-message {
-			border-radius: 0;
-		}
-
-		.sheet-footer {
-			gap: $global-space-base;
-		}
+		border: none;
+		box-shadow: none;
 	}
 
 	.window-resizable-handle {
