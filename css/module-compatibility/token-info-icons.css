@@ -1,0 +1,7 @@
+.-emu-layout body.-emu #hud .token-info-container{margin:0}
+.-emu-layout body.-emu #hud .token-info-container .token-info-column-left{justify-content:center;left:-120px}
+.-emu-layout body.-emu #hud .token-info-container .token-info-column-right{justify-content:center;right:-120px}
+.-emu-layout body.-emu #hud .token-info-container .token-info-column-left,.-emu-layout body.-emu #hud .token-info-container .token-info-column-right{padding:0;width:auto}
+.-emu-layout body.-emu #hud .token-info-container .token-info-icon{display:flex;flex-wrap:wrap;gap:var(--emu-space-base,4px);height:auto;margin:0!important;min-width:0;padding:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu #hud .token-info-container .token-info-icon .token-info-speed{font-size:var(--emu-font-size-sm, 12px);width:100%}
+.-emu-layout body.-emu #hud .token-info-container .token-info-icon .token-info-speed>span{font-size:inherit!important}

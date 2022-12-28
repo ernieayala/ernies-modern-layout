@@ -1,0 +1,54 @@
+@import "../base";
+
+@include module {
+	#hud {
+		.token-info-container {
+			@include layout {
+				margin: 0;
+			}
+
+			.token-info-column-left {
+				@include layout {
+					justify-content: center;
+					left: -120px;
+				}
+			}
+
+			.token-info-column-right {
+				@include layout {
+					justify-content: center;
+					right: -120px;
+				}
+			}
+
+			.token-info-column-left,
+			.token-info-column-right, {
+				@include layout {
+					padding: 0;
+					width: auto;
+				}
+			}
+
+			.token-info-icon {
+				@include layout {
+					display: flex;
+					flex-wrap: wrap;
+					gap: $global-space-base;
+					height: auto;
+					margin: 0 !important; // because MOD important style
+					min-width: 0;
+					padding: $global-space-sm;
+
+					.token-info-speed {
+						font-size: $global-font-size-sm;
+						width: 100%;
+
+						> span {
+							font-size: inherit !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

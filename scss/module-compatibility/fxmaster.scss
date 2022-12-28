@@ -1,0 +1,281 @@
+@import "../base";
+
+@include module {
+	#specials-config {
+		.fxmaster {
+			.directory-header {
+				@include layout {
+					flex-direction: row;
+				}
+
+				> div {
+					@include layout {
+						flex: 1 1 auto;
+
+						i {
+							margin: 0;
+						}
+					}
+
+					&.active {
+						a {
+							background-color: RGB($emu-color-primary);
+						}
+					}
+				}
+
+				a {
+					@extend %primary-button;
+
+					@include layout {
+						width: 100%;
+					}
+				}
+			}
+
+			.directory-list {
+				@include layout {
+					padding-block-start: $global-space-base;
+				}
+			}
+
+			.special-effects {
+				.preview {
+					background-color: RGBA($emu-color-black, 0.1);
+					border: none;
+
+					@include layout {
+						flex: 0 0 auto;
+						height: $global-space-button;
+						margin: $global-space-base;
+						margin-inline-start: 0;
+						overflow: hidden;
+						width: $global-space-button;
+
+						> video {
+							height: 100%;
+							width: 100%;
+						}
+					}
+				}
+
+				.description {
+					@include layout {
+						align-items: center;
+						display: flex;
+						padding: $global-space-base;
+
+						h4 {
+							color: RGB($emu-color-text-lightest);
+							font-size: $global-font-size-lg;
+							height: auto;
+							text-indent: 0;
+						}
+					}
+
+					.author {
+						color: RGB($emu-color-text-lightest);
+
+						@include layout {
+							font-size: $global-font-size-sm;
+							line-height: 1.2;
+							text-align: left;
+						}
+					}
+				}
+
+				.controls {
+					@include layout {
+						flex: 0 0 auto;
+						line-height: 1;
+						padding: 0;
+					}
+
+					a {
+						@extend %control-button;
+					}
+				}
+			}
+		}
+	}
+
+	#effects-config {
+		form {
+			height: 100%;
+		}
+
+		.directory-list {
+			background: transparent;
+
+			@include layout {
+				height: auto;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		}
+
+		.fxmaster-groups-list {
+			@include layout {
+				@extend %reset-list;
+				display: flex;
+				flex: 1 1 auto;
+				flex-direction: column;
+				gap: $global-space-base;
+				max-height: 100%;
+				min-height: 1px;
+				overflow-y: auto;
+				padding: 0 $global-space-sm;
+			}
+		}
+
+		.directory-item {
+			border-block-end: 1px solid RGB($emu-color-border);
+
+			@include layout {
+				padding: $global-space-base;
+			}
+
+			header {
+				@include layout {
+					align-items: center;
+					gap: $global-space-base;
+				}
+
+				label {
+					color: RGB($emu-color-text-lightest);
+					text-shadow: none;
+
+					@include layout {
+						text-indent: 0;
+					}
+
+					&:hover {
+						color: RGB($emu-color-primary);
+					}
+				}
+			}
+
+			ol.config {
+				border: none;
+
+				li {
+					color: RGB($emu-color-text-lightest);
+
+					@include layout {
+						display: flex;
+						gap: $global-space-base;
+					}
+
+					.range-value {
+						color: RGB($emu-color-text-lightest);
+					}
+				}
+			}
+		}
+
+		.fxmaster-groups-list__item {
+			background-color: RGB($emu-color-folder-subdirectory);
+			background-image: none;
+			border: none;
+
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+				padding: $global-space-base;
+				width: 100%;
+			}
+		}
+
+		.form-footer {
+			background-color: transparent;
+		}
+
+		.fxmaster-groups-list__collapse,
+		.fxmaster-list__collapse {
+			text-shadow: none;
+
+			&:hover {
+				color: RGB($emu-color-primary);
+			}
+
+			@include layout {
+				font-size: $global-font-size-md;
+			}
+		}
+	}
+
+	#filters-config {
+		.directory-header {
+			@include layout {
+				align-items: center;
+				font-size: $global-font-size-sm;
+				line-height: 1.2;
+				gap: $global-space-base;
+				justify-content: center;
+				margin: 0;
+				padding: $global-space-base;
+			}
+
+			.layer-toggle {
+				color: RGB($emu-color-text-lightest);
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					gap: $global-space-base;
+				}
+			}
+		}
+
+		.directory-list {
+			background: transparent;
+
+			@include layout {
+				height: auto;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		}
+
+		.directory-item {
+			border-block-end: 1px solid RGB($emu-color-border);
+
+			@include layout {
+				padding: $global-space-base;
+			}
+
+			header {
+				color: RGB($emu-color-text-lightest);
+				text-shadow: none;
+
+				label {
+					&:hover {
+						color: RGB($emu-color-primary);
+					}
+				}
+			}
+
+			ol.config {
+				border: none;
+
+				li {
+					color: RGB($emu-color-text-lightest);
+
+					@include layout {
+						display: flex;
+						gap: $global-space-base;
+					}
+
+					.range-value {
+						color: RGB($emu-color-text-lightest);
+					}
+				}
+			}
+		}
+
+		.form-footer {
+			background-color: transparent;
+		}
+	}
+}

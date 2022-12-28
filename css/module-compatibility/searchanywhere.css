@@ -1,0 +1,28 @@
+body.-emu ul.command-menu li{background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu ul.command-menu li,body.-emu ul.command-menu .-emu-layout li{align-items:center;border-radius:var(--emu-border-radius-controls,0);cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:1;margin:0;padding:var(--emu-space-sm,8px);position:relative}
+.-emu-layout body.-emu ul.command-menu li>i,body.-emu ul.command-menu .-emu-layout li>i{margin:0}
+.-emu-layout body.-emu ul.command-menu li>label,body.-emu ul.command-menu .-emu-layout li>label{color:inherit!important}
+.-emu-layout .-emu-layout body.-emu ul.command-menu li>label,body.-emu ul.command-menu .-emu-layout .-emu-layout li>label{font-size:inherit!important}
+body.-emu ul.command-menu li:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu ul.command-menu li:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+body.-emu ul.command-menu li:disabled{opacity:.5;pointer-events:none}
+body.-emu ul.command-menu li{background-color:RGBA(var(--emu-color-background-button,125,125,125),var(--emu-background-opacity-button-primary,1))}
+body.-emu .window-app .window-draggable-handle:hover,body.-emu ul.command-menu li:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu #search-anywhere-modal #search-anywhere-autocomplete,body.-emu .window-app .window-draggable-handle:focus,body.-emu ul.command-menu li:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu ul.command-menu li.active{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu ul.command-menu li.active:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu ul.command-menu li.active:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+.-emu-layout body.-emu ul.command-menu{list-style:none;margin:0;padding:0}
+body.-emu #search-anywhere-modal .modal-content{background-color:transparent;border:none}
+.-emu-layout body.-emu #search-anywhere-modal .modal-content{border-radius:0}
+body.-emu #search-anywhere-modal #search-anywhere-autocomplete{background:RGB(var(--emu-color-background-lightest,230,233,235));color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu #search-anywhere-modal #search-anywhere-autocomplete{font-size:var(--emu-font-size-xl, 20px);height:auto;padding:var(--emu-space-md,16px)}
+body.-emu ul.command-menu{background-color:RGBA(var(--emu-color-background-darkest,9,14,16),.8);background-image:var(--emu-image-background-darkest,none);box-shadow:0 2px 4px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu ul.command-menu{border-radius:var(--emu-border-radius-default,0);display:flex;flex-direction:column;padding:var(--emu-space-sm,8px);z-index:1070}
+.-emu-layout body.-emu ul.command-menu li{font-size:var(--emu-font-size-xl, 20px);margin-block-end:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu ul.command-menu li:last-child{margin-block-end:0}
+body.-emu ul.command-menu li h2{color:inherit}
+.-emu-layout body.-emu ul.command-menu li h2{flex:initial;font-size:inherit;line-height:1;padding:0}
+body.-emu .window-app .window-draggable-handle{background-color:RGB(var(--emu-color-background-button,125,125,125));border:none;border-block-start:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;border-inline-end:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;color:RGB(var(--emu-color-text-lightest,255,255,255));transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu .window-app .window-draggable-handle{align-items:center;border-radius:0 var(--emu-border-radius-default,0) 0 0;bottom:0;cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-md, 14px);height:var(--emu-space-button-xs,20px);justify-content:center;left:0;margin:0;padding:0;position:absolute;width:var(--emu-space-button-xs,20px);z-index:10}
+.-emu-layout body.-emu .window-app .window-draggable-handle>i{transform:rotate(45deg)}

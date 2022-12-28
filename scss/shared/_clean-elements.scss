@@ -3,7 +3,6 @@
 		background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 		background-image: $global-image-background-controls;
 		border: none;
-		border-radius: $global-border-radius-controls;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
@@ -11,6 +10,10 @@
 			background $global-transition-time-base $global-transition-type-link,
 			box-shadow $global-transition-time-base $global-transition-type-link,
 			color $global-transition-time-base $global-transition-type-link;
+
+		> label {
+			color: inherit !important; // because inline
+		}
 
 		&:hover {
 			@extend %global-hover;
@@ -44,7 +47,6 @@
 	input[type="password"],
 	input[type="datetime-local"] {
 		background: transparent;
-		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
@@ -70,7 +72,6 @@
 	input[type="checkbox"] {
 		background: transparent;
 		border: 1px solid RGB($emu-color-border-lighter);
-		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
@@ -97,7 +98,6 @@
 	input[type="color"],
 	input[type="color"][data-edit] {
 		background: transparent;
-		border-radius: $global-border-radius-forms;
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&:hover {
@@ -116,7 +116,6 @@
 
 	select {
 		background: transparent;
-		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
@@ -143,7 +142,6 @@
 
 	textarea {
 		background: transparent;
-		border-radius: $global-border-radius-forms;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
@@ -228,7 +226,6 @@
 		background-color: RGB($emu-color-background-lightest);
 		box-shadow: 0 0 0 1px inset RGB($emu-color-border);
 		border: none;
-		border-radius: $global-border-radius-controls;
 
 		> i {
 			color: inherit;

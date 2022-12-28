@@ -1,0 +1,48 @@
+@import "../base";
+
+@include module {
+	// a ton of inline styles
+	#sidebar,
+	.sidebar-popout {
+		#compendium {
+			> ul.directory-list {
+				@include layout {
+					> .directory-item {
+						margin: 0;
+						padding: 0;
+
+						// holy fucking christ !importants - so gross
+						.compendium-pack {
+							cursor: pointer;
+							line-height: 1 !important;
+							margin: 0 !important;
+							padding: 0 $global-space-sm !important;
+
+							&:hover {
+								background-color: RGB($emu-color-primary);
+
+								.pack-title,
+								.compendium-footer {
+									color: RGB($emu-color-text-lightest);
+								}
+							}
+
+							.pack-title,
+							.compendium-footer {
+								color: RGB($emu-color-text-lightest);
+							}
+
+							.pack-title {
+								margin: 0 !important;
+							}
+
+							i.folder {
+								border: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

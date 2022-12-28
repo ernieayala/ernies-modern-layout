@@ -46,10 +46,10 @@
 
 			@include layout {
 				flex-wrap: wrap;
-			}
 
-			> .collapse {
-				border-radius: 0 0 0 $global-border-radius-default;
+				> .collapse {
+					border-radius: 0 0 0 $global-border-radius-default;
+				}
 			}
 		}
 
@@ -81,7 +81,6 @@
 		> .item,
 		> .collapse {
 			border: none;
-			border-radius: 0;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
 			transition:
@@ -90,6 +89,7 @@
 
 			@include layout {
 				align-items: center;
+				border-radius: 0;
 				cursor: pointer;
 				display: flex;
 				flex: 1 1 20%;
@@ -117,16 +117,21 @@
 
 			&.active {
 				@extend %global-active;
-				border-radius: 0;
 				border: none;
 
-				&:first-child {
-					border-radius: $global-border-radius-default 0 0 0;
+				@include layout {
+					border-radius: 0;
+
+					&:first-child {
+						border-radius: $global-border-radius-default 0 0 0;
+					}
 				}
 			}
 
 			&:first-child {
-				border-radius: $global-border-radius-default 0 0 0;
+				@include layout {
+					border-radius: $global-border-radius-default 0 0 0;
+				}
 			}
 
 			> i {
@@ -311,9 +316,9 @@
 
 #sidebar {
 	border-inline-end: none;
-	border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 
 	@include layout {
+		border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 		position: relative;
 	}
 
@@ -411,9 +416,8 @@
 }
 
 .sidebar-popout {
-	border-radius: $global-border-radius-default;
-
 	@include layout {
+		border-radius: $global-border-radius-default;
 		height: auto;
 		min-height: 50vh;
 		min-width: $global-space-sidebar;

@@ -1,0 +1,114 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout[id="chat-popout"] .window-content {
+		[data-tab="chat"] {
+			#chat-log {
+				.rsr5e-roll-label {
+					@include layout {
+						font-size: $global-font-size-sm;
+						text-align: center;
+					}
+				}
+
+				.rsr-dual {
+					.dice-row {
+						@include layout {
+							clear: both;
+							display: flex;
+							justify-content: space-between;
+							position: relative;
+
+							&.rsr-totals {
+								gap: $global-space-base;
+							}
+
+							.rsr-base-die {
+								align-self: flex-end;
+
+								&.success {
+									color: RGB($emu-color-text-lightest);
+								}
+
+								&.failure {
+									color: RGB($emu-color-text-lightest);
+								}
+							}
+						}
+					}
+
+					.tooltip.dice-row-item {
+						@include layout {
+							padding: 0 $global-space-base;
+						}
+					}
+				}
+
+				.dnd5e.rsr-full.chat-card .dice-tooltip {
+					font-size: $global-font-size-md;
+				}
+
+				.die-result-overlay-br {
+					span {
+						@include layout {
+							display: flex;
+							gap: $global-space-xs;
+						}
+					}
+
+					button {
+						@extend %control-button;
+					}
+
+					.overlay-healing,
+					.overlay-healing-temp,
+					.overlay-damage-full,
+					.overlay-damage-half,
+					.overlay-damage-double,
+					.overlay-damage-quarter {
+						&::before {
+							@extend %font-awesome;
+						}
+					}
+
+					.overlay-healing::before {
+						@include layout {
+							content: "\f234";
+						}
+					}
+
+					.overlay-healing-temp::before {
+						@include layout {
+							content: "\f4fd";
+						}
+					}
+
+					.overlay-damage-full::before {
+						@include layout {
+							content: "\f503";
+						}
+					}
+
+					.overlay-damage-half::before {
+						@include layout {
+							content: "\f505";
+						}
+					}
+
+					.overlay-damage-quarter::before {
+						@include layout {
+							content: "\f507";
+						}
+					}
+
+					.overlay-damage-double::before {
+						@include layout {
+							content: "\f728";
+						}
+					}
+				}
+			}
+		}
+	}
+}

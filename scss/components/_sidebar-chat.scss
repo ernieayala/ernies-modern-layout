@@ -14,10 +14,10 @@
 				background-color: RGB($emu-color-background-chat-message);
 				background-image: $global-image-background-light;
 				border: 1px solid RGB($emu-color-border);
-				border-radius: $global-border-radius-default;
 				color: RGB($emu-color-text);
 
 				@include layout {
+					border-radius: $global-border-radius-default;
 					display: flex;
 					flex-direction: column;
 					flex-wrap: nowrap;
@@ -131,10 +131,10 @@
 					background-color: RGBA($emu-color-background, 0.1);
 					box-shadow: none;
 					border: 1px solid RGB($emu-color-border);
-					border-radius: $global-border-radius-default;
 					color: inherit;
 
 					@include layout {
+						border-radius: $global-border-radius-default;
 						line-height: initial;
 						font-size: inherit;
 						font-weight: normal;

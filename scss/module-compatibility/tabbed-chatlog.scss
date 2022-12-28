@@ -1,0 +1,35 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		[data-tab="chat"] {
+			.tabbedchatlog {
+				box-shadow: none;
+
+				@include layout {
+					border-radius: none;
+				}
+
+				a {
+					color: RGB($emu-color-text-lightest);
+				}
+			}
+
+			#icNotification,
+			#rollsNotification,
+			#oocNotification {
+				@extend %notification-pip;
+				color: RGB($emu-color-text-lightest);
+				text-shadow: none;
+
+				@include layout {
+					margin: 0;
+					padding: $global-space-xs;
+					right: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+}

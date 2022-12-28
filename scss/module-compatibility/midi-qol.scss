@@ -1,0 +1,48 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		[data-tab="chat"] {
+			#chat-log {
+				.midi-qol-item-card.chat-card {
+					.card-buttons {
+						button[data-action="attack"] {
+							@include layout {
+								margin-block-end: $global-space-base;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#midi-qol-settings {
+		.midi-qol-box {
+			border: none;
+
+			@include layout {
+				padding: 0;
+
+				select[name="showItemDetails"] {
+					width: auto;
+				}
+			}
+		}
+
+		.midi-qol-faint {
+			color: RGBA($emu-color-text, 0.8);
+		}
+	}
+
+	#midi-qol-statistics {
+		.tab.active[data-tab="config"] {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+			}
+		}
+	}
+}

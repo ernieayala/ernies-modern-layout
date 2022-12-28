@@ -1,0 +1,17 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		#playlists {
+			.header-actions {
+				> .flexrow {
+					@include layout {
+						flex: 0 0 100%;
+						gap: $global-space-base;
+					}
+				}
+			}
+		}
+	}
+}

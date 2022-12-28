@@ -7,7 +7,7 @@
 // sense config
 // trait-selector
 
-body#{$emu}.system-dnd5e {
+@include system("dnd5e") {
 	.dnd5e {
 		@extend %clean-elements;
 

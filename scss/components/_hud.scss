@@ -61,7 +61,6 @@
 		background-color: RGBA($emu-color-background-darkest, $global-background-opacity-hud);
 		background-image: $global-image-background-controls;
 		border: none;
-		border-radius: $global-border-radius-controls;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 		transition:
@@ -72,6 +71,7 @@
 
 		@include layout {
 			align-items: center;
+			border-radius: $global-border-radius-controls;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -121,11 +121,11 @@
 			background-color: RGB($emu-color-background-darkest);
 			background-image: $global-image-background-darkest;
 			border: 1px solid RGB($emu-color-border);
-			border-radius: $global-border-radius-default;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
+				border-radius: $global-border-radius-default;
 				padding: $global-space-base;
 				left: 48px;
 

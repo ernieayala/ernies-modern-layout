@@ -228,6 +228,12 @@ form {
 				}
 			}
 		}
+
+		button {
+			> label {
+				color: $emu-color-text-lightest;
+			}
+		}
 	}
 
 	.form-group-stacked {

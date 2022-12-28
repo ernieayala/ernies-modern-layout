@@ -1,0 +1,6 @@
+.-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .midi-qol-item-card.chat-card .card-buttons button[data-action=attack],.-emu-layout body.-emu .sidebar-popout [data-tab=chat] #chat-log .midi-qol-item-card.chat-card .card-buttons button[data-action=attack]{margin-block-end:var(--emu-space-base,4px)}
+body.-emu #midi-qol-settings .midi-qol-box{border:none}
+.-emu-layout body.-emu #midi-qol-settings .midi-qol-box{padding:0}
+.-emu-layout body.-emu #midi-qol-settings .midi-qol-box select[name=showItemDetails]{width:auto}
+body.-emu #midi-qol-settings .midi-qol-faint{color:RGBA(var(--emu-color-text,9,14,16),.8)}
+.-emu-layout body.-emu #midi-qol-statistics .tab.active[data-tab=config]{display:flex;flex-direction:column;gap:var(--emu-space-base,4px)}

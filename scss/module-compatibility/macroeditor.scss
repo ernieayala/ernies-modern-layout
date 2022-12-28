@@ -1,0 +1,48 @@
+@import "../base";
+
+@include module {
+	.window-app.sheet[id*="macro-config-"] {
+		.macro-editor-expand {
+			@include layout {
+				bottom: $global-space-base;
+				position: absolute !important;
+				left: auto;
+				right: $global-space-base;
+				top: auto;
+
+				&.fullscreen {
+					position: fixed !important;
+					z-index: $global-z-index-popover + 1;
+				}
+
+				> i {
+					margin: 0;
+				}
+			}
+		}
+
+		.macro-editor.ace_editor {
+			@include layout {
+				flex: 1 1 auto;
+				height: 100%;
+				margin-block-end: $global-space-md;
+
+				&.fullscreen {
+					height: calc(100% - 10px);
+					margin: 0;
+					z-index: $global-z-index-popover;
+
+					&::before {
+						background-color: RGBA($emu-color-black, 0.5);
+						bottom: 0;
+						content: "";
+						left: 0;
+						position: fixed;
+						right: 0;
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}

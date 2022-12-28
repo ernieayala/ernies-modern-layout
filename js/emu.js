@@ -1,6 +1,7 @@
 import * as THEME from './emu-theme.js';
 import * as FONTS from './emu-fonts.js';
 import * as SYSTEMS from './emu-systems.js';
+import * as MODULES from './emu-modules.js';
 
 const myRoot = document.querySelector(':root');
 const myHtml = document.getElementsByTagName('html');
@@ -409,16 +410,6 @@ class emuForm extends FormApplication {
 	}
 }
 
-Hooks.on('renderActorSheet', (app, html) => {
-	const sheet = html.find('id').prevObject[0];
-	sheet.classList.add('-emu-clean-sheet');
-});
-
-Hooks.on('renderItemSheet', (app, html) => {
-	const sheet = html.find('id').prevObject[0];
-	sheet.classList.add('-emu-clean-sheet');
-});
-
 Hooks.once('init', () => {
 	myBody[0].classList.add('-emu');
 
@@ -603,9 +594,32 @@ Hooks.once('ready', () => {
 		document.head.appendChild(systemCSS);
 	}
 
+	// Apply Module Sheets
+	const currentModules = game.modules;
+	currentModules.forEach((mod) => {
+		const moduleID = mod.id;
+		if(mod.active === true && MODULES.MODULE.includes(moduleID)) {
+			const moduleCSS = document.createElement('link');
+			moduleCSS.rel = 'stylesheet';
+			moduleCSS.type = 'text/css';
+			moduleCSS.href = `modules/${moduleName}/css/module-compatibility/${moduleID}.css`;
+			document.head.appendChild(moduleCSS);
+		}
+	});
+
 	// Say Hello
 	console.log('%cErnie\'s Modern UI Active', 'color: #ff0055;');
 
 	const overlay = document.getElementById('emu-overlay');
 	overlay.classList.add('-hide');
+});
+
+Hooks.on('renderActorSheet', (app, html) => {
+	const sheet = html.find('id').prevObject[0];
+	sheet.classList.add('-emu-clean-sheet');
+});
+
+Hooks.on('renderItemSheet', (app, html) => {
+	const sheet = html.find('id').prevObject[0];
+	sheet.classList.add('-emu-clean-sheet');
 });

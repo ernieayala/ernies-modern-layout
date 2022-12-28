@@ -1,0 +1,5 @@
+.-emu-layout body.-emu #token-variants-side-button{height:var(--emu-space-button-sm,24px);width:var(--emu-space-button-sm,24px)}
+.-emu-layout body.-emu #tile-hud .token-variants-wrap .control-icon,.-emu-layout body.-emu #token-hud .token-variants-wrap .control-icon{display:inline-flex;height:auto;width:auto}
+.-emu-layout body.-emu #tile-hud .token-variants-wrap .control-icon>i,.-emu-layout body.-emu #token-hud .token-variants-wrap .control-icon>i{position:absolute}
+.-emu-layout body.-emu .tva-setting-nav{height:auto!important;margin:0!important}
+.-emu-layout body.-emu .tva-setting-nav .item{white-space:nowrap}

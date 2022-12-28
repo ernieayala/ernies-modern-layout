@@ -1,0 +1,30 @@
+body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input{background:RGB(var(--emu-color-background-lightest,230,233,235));border:1px solid RGB(var(--emu-color-border-lighter,167,176,178));box-shadow:none;color:RGB(var(--emu-color-text,9,14,16));transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input,body.-emu .monsterblock.sheet.actor nav.switches ul li .-emu-layout .switch-input{border-radius:var(--emu-border-radius-forms,0);font-family:inherit;font-size:inherit;font-weight:400;height:var(--emu-space-button,32px);line-height:1;margin:0;min-width:var(--emu-space-xl,32px);padding:0 var(--emu-space-sm,8px);position:relative;user-select:text}
+body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input::placeholder{color:RGBA(var(--emu-color-text,9,14,16),.5)}
+body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input:disabled{opacity:.5;pointer-events:none}
+body.-emu .monsterblock.sheet.actor nav.switches .fa-cog:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
+body.-emu .monsterblock.sheet.actor nav.switches .fa-cog:focus,body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu .monsterblock.compact-window .window-content{box-shadow:none}
+.-emu-layout body.-emu .monsterblock .window-header a.close{height:var(--emu-space-button-sm,24px)!important;right:auto}
+.-emu-layout body.-emu .monsterblock .window-content form.flexcol{display:block;gap:unset}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches{height:var(--emu-space-button-xs,20px);left:0;padding-inline-start:0;position:absolute;top:-2px}
+body.-emu .monsterblock.sheet.actor nav.switches .fa-cog{background-color:RGB(var(--emu-color-background-button,125,125,125));border:none;border-block-start:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;border-inline-end:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;color:RGB(var(--emu-color-text-lightest,255,255,255));transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches .fa-cog{align-items:center;border-radius:0 0 var(--emu-border-radius-default,0) 0;bottom:0;cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-md, 14px);height:var(--emu-space-button-xs,20px);justify-content:center;left:0;margin:0;padding:0;position:absolute;width:var(--emu-space-button-xs,20px);z-index:10}
+body.-emu .monsterblock.sheet.actor nav.switches ul{background-color:RGB(var(--emu-color-background-lightest,230,233,235));background-image:var(--emu-image-background-lightest,none);border:1px solid RGB(var(--emu-color-border,33,50,52));box-shadow:0 2px 4px RGB(var(--emu-color-black,0,0,0));color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul{border-radius:var(--emu-border-radius-default,0)}
+body.-emu .monsterblock.sheet.actor nav.switches ul li{border-inline-start:0;border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li{margin:0;position:relative;display:inline-block;padding:0}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li .switch-input{width:100%}
+body.-emu .monsterblock.sheet.actor nav.switches ul li a:hover{color:RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li a{padding:var(--emu-space-xs,2px)}
+.-emu-layout body.-emu .monsterblock.sheet.actor nav.switches ul li a:not(:only-child)::after{right:var(--emu-space-base,4px);top:var(--emu-space-xs,2px)}
+body.-emu .monsterblock .tweak-menu ul{background-color:RGB(var(--emu-color-background-lightest,230,233,235));background-image:var(--emu-image-background-lightest,none);border:1px solid RGB(var(--emu-color-border,33,50,52));box-shadow:0 2px 4px RGB(var(--emu-color-black,0,0,0));color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu .monsterblock .tweak-menu ul{border-radius:var(--emu-border-radius-default,0)}
+body.-emu .monsterblock .tweak-menu ul li{border-inline-start:0;border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu .monsterblock .tweak-menu ul li{margin:0;position:relative;display:inline-block;padding:0}
+body.-emu .monsterblock .tweak-menu ul li a:hover,body.-emu .monsterblock .tweak-menu ul li labal:hover,body.-emu .monsterblock .tweak-menu ul li label:hover{color:RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
+.-emu-layout body.-emu .monsterblock .tweak-menu ul li a,.-emu-layout body.-emu .monsterblock .tweak-menu ul li labal,.-emu-layout body.-emu .monsterblock .tweak-menu ul li label{padding:var(--emu-space-xs,2px)}
+.-emu-layout body.-emu .monsterblock .tweak-menu ul li a.menu-toggle,.-emu-layout body.-emu .monsterblock .tweak-menu ul li labal.menu-toggle,.-emu-layout body.-emu .monsterblock .tweak-menu ul li label.menu-toggle{padding-inline-start:var(--emu-space-md,16px)}
+.-emu-layout body.-emu .monsterblock .tweak-menu ul li a:not(:only-child)::before,.-emu-layout body.-emu .monsterblock .tweak-menu ul li labal:not(:only-child)::before,.-emu-layout body.-emu .monsterblock .tweak-menu ul li label:not(:only-child)::before{left:var(--emu-space-base,4px);top:var(--emu-space-xs,2px)}
+body.-emu .monsterblock .tweak-menu ul li labal{display:block}

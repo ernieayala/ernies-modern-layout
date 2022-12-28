@@ -1,0 +1,8 @@
+.-emu-layout body.-emu .gm-screen-config.window-app.app table td{padding:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .gm-screen-config.window-app.app table button>i{margin:0}
+.-emu-layout body.-emu .gm-screen-config.window-app.app table~button{width:auto}
+.-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app{transition:transform .3s cubic-bezier(.77, 0, .175, 1)}
+.-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs{position:absolute}
+.-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs button:empty{display:none}
+.-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs .meta-actions{transition-delay:initial;transition:transform .3s cubic-bezier(.77, 0, .175, 1)}
+.-emu-layout body.-emu .gm-screen-app.gm-screen-drawer.window-app .gm-screen-actions.tabs .meta-actions button>i{margin:0}

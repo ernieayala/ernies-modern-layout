@@ -1,0 +1,28 @@
+body.-emu #dfcp-rt-buttons button{background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu #dfcp-rt-buttons button,body.-emu #dfcp-rt-buttons .-emu-layout button{align-items:center;border-radius:var(--emu-border-radius-controls,0);cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:1;margin:0;padding:var(--emu-space-sm,8px);position:relative}
+.-emu-layout body.-emu #dfcp-rt-buttons button>i,body.-emu #dfcp-rt-buttons .-emu-layout button>i{margin:0}
+.-emu-layout body.-emu #dfcp-rt-buttons button>label,body.-emu #dfcp-rt-buttons .-emu-layout button>label{color:inherit!important}
+.-emu-layout .-emu-layout body.-emu #dfcp-rt-buttons button>label,body.-emu #dfcp-rt-buttons .-emu-layout .-emu-layout button>label{font-size:inherit!important}
+body.-emu #dfcp-rt-buttons button:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu #dfcp-rt-buttons button:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+body.-emu #dfcp-rt-buttons button:disabled{opacity:.5;pointer-events:none}
+.-emu-layout body.-emu #dfcp-rt-buttons button,body.-emu #dfcp-rt-buttons .-emu-layout button{flex:0 0 auto;font-size:var(--emu-font-size-sm, 12px);height:var(--emu-space-button-sm,24px);padding:0;width:var(--emu-space-button-sm,24px)}
+.-emu-layout body.-emu #dfcp-rt-buttons button>i,body.-emu #dfcp-rt-buttons .-emu-layout button>i{margin:0}
+body.-emu #dfcp-rt-buttons button:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu #dfcp-rt-buttons button:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu #dfcp-rt-buttons button.active{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #dfcp-rt-buttons button.active:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #dfcp-rt-buttons button.active:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+.-emu-layout body.-emu #dfcp-rt-buttons{gap:var(--emu-space-base,4px);justify-content:flex-end;margin:0!important}
+body.-emu #dfcp-rt-buttons button{background:0 0}
+.-emu-layout body.-emu #dfcp-rt-buttons button{font-size:var(--emu-font-size-md, 14px);margin:0;min-height:0;max-height:100%}
+.-emu-layout body.-emu #dfcp-rt-buttons button.chat-archive{margin-inline-start:0!important}
+body.-emu #dfcp-rt-buttons button>i{color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #dfcp-rt-buttons button>i{font-size:var(--emu-font-size-md, 14px);height:auto;line-height:1;margin:0;width:auto}
+body.-emu #sidebar #settings #df-chat-enhance-settings h4,body.-emu .sidebar-popout #settings #df-chat-enhance-settings h4{border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #sidebar #settings #df-chat-enhance-settings h4,.-emu-layout body.-emu .sidebar-popout #settings #df-chat-enhance-settings h4{margin-block-start:var(--emu-space-md,16px)!important}
+body.-emu .app.window-app .archive-new table{background-color:transparent;border:none}
+.-emu-layout body.-emu .app.window-app .archive-new table tr td{padding:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .app.window-app .archive-new table tr td button{margin-block-start:var(--emu-space-sm,8px)}
+body.-emu .app.window-app #dfca-delete-all{background-color:RGB(var(--emu-color-negative,220,20,60));border-color:RGB(var(--emu-color-negative-darkest,132,12,36))}
+.-emu-layout body.-emu .app.window-app #dfca-delete-all{margin:0;width:100%}

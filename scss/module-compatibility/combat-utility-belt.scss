@@ -1,0 +1,74 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		#combat {
+			#combat-tracker {
+				.token-resource {
+					input {
+						background-color: transparent;
+						border: none;
+						color: RGB($emu-color-text-lightest);
+
+						@include layout {
+							height: $global-space-button-sm;
+							padding: 0;
+							text-align: center;
+							width: $global-space-button-sm;
+						}
+					}
+				}
+			}
+
+			.add-temporary {
+				@extend %primary-button;
+
+				@include layout {
+					margin: $global-space-sm;
+					text-shadow: none;
+					width: 100%;
+				}
+			}
+		}
+
+		#settings {
+			#combat-utility-belt {
+				@include layout {
+					display: flex;
+					flex-direction: column;
+					gap: $global-space-base;
+					margin: 0;
+				}
+
+				h4 {
+					border-block-end: 1px solid RGB($emu-color-border);
+					color: RGB($emu-color-text-lightest);
+
+					@include layout {
+						margin-block-start: $global-space-sm;
+					}
+				}
+			}
+		}
+	}
+
+	#combat-utility-belt-about {
+		a {
+			text-shadow: none;
+		}
+	}
+
+	#cub-puter {
+		@include layout {
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+
+		.terminal {
+			color: RGB($emu-color-primary);
+		}
+	}
+}

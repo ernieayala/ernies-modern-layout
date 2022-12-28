@@ -1,6 +1,6 @@
 @import "../base";
 
-body#{$emu}.system-twodsix {
+@include system("twodsix") {
 	.window-app[id*="Token-"] {
 		.sheet-tabs.tabs {
 			@include layout {

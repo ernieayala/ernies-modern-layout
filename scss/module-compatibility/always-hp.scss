@@ -1,0 +1,177 @@
+@import "../base";
+
+@include module {
+	#always-hp {
+		@include layout {
+			height: auto !important;
+		}
+
+		.window-content {
+			border: none;
+
+			@include layout {
+				padding: $global-space-sm;
+			}
+		}
+
+		.window-title {
+			@include layout {
+				align-items: center;
+			}
+
+			.token-stats {
+				@include layout {
+					flex-grow: 0;
+					flex-wrap: nowrap;
+					font-size: $global-font-size-sm;
+					height: auto;
+					padding: 0;
+					text-align: right;
+				}
+
+				.stat {
+					@include layout {
+						border-radius: $global-border-radius-default;
+						display: inline-block;
+						font-weight: 700;
+						line-height: 1;
+						padding: $global-space-xs $global-space-base;
+						text-align: center;
+						vertical-align: baseline;
+						white-space: nowrap;
+					}
+				}
+			}
+		}
+
+		.resource {
+			background-color: RGBA($emu-color-black, 0.5);
+			border: 1px solid RGB($emu-color-border);
+
+			@include layout {
+				border-radius: $global-border-radius-default;
+				height: 10px;
+				grid-area: resource;
+				margin: 0;
+				position: relative;
+				top: auto;
+				width: 100%;
+				z-index: 2;
+			}
+
+			.bar {
+				@include layout {
+					border-radius: $global-border-radius-default;
+				}
+			}
+
+			.bar-change {
+				background-color: RGB($emu-color-background);
+				background-image: $global-image-background;
+				border: 1px solid RGB($emu-color-border);
+				color: RGB($emu-color-text-lightest);
+
+				@include layout {
+					font-size: $global-font-size-lg;
+					font-weight: 700;
+					left: 50%;
+					margin: 0;
+					position: absolute;
+					text-align: center;
+					top: 14px;
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+
+	.alwayshp-content {
+		@include layout {
+			display: grid;
+			grid-template-columns: min-content min-content 1fr min-content min-content;
+			grid-template-rows: min-content min-content min-content;
+			grid-template-areas:
+				"resource resource resource resource resource"
+				"death hurt input heal life"
+				"deathfail deathfail . deathsave deathsave";
+			gap: $global-space-base;
+		}
+	}
+
+	.alwayshp-btn {
+		@extend %primary-button;
+
+		@include layout {
+			flex: 0 0 auto;
+			line-height: 1;
+
+			i {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		&.good-ones i {
+			color: RGB($emu-color-positive);
+		}
+
+		&.bad-ones i {
+			color: RGB($emu-color-negative);
+		}
+	}
+
+	#alwayshp-btn-dead {
+		@include layout {
+			grid-area: death;
+		}
+	}
+
+	#alwayshp-btn-hurt {
+		@include layout {
+			grid-area: hurt;
+		}
+	}
+
+	#alwayshp-btn-heal {
+		@include layout {
+			grid-area: heal;
+		}
+	}
+
+	#alwayshp-btn-fullheal {
+		@include layout {
+			grid-area: life;
+		}
+
+		i {
+			@include layout {
+				padding: 0;
+			}
+		}
+	}
+
+	#alwayshp-hp {
+		background: RGB($emu-color-background-lightest);
+
+		@include layout {
+			flex: 1 1 auto;
+			font-size: $global-font-size-lg;
+			font-weight: 700;
+			grid-area: input;
+			text-align: center;
+			width: auto;
+		}
+	}
+
+	.death-savingthrow.fail {
+		@include layout {
+			grid-area: deathfail;
+		}
+	}
+
+	.death-savingthrow.save {
+		@include layout {
+			grid-area: deathsave;
+		}
+	}
+}

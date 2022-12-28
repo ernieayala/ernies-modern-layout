@@ -1,7 +1,6 @@
 @import "../base";
 
-body#{$emu}.system-morkborg {
-
+@include system("morkborg") {
 	// because fucking horrible !importants added by System
 	::-webkit-scrollbar-thumb {
 		background-color: RGB($emu-color-background-light) !important;

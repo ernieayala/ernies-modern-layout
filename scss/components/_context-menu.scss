@@ -1,12 +1,12 @@
 #context-menu {
 	background-color: RGB($emu-color-background-lightest);
 	background-image: $global-image-background-lightest;
-	border-radius: $global-border-radius-default;
 	border: 1px solid RGB($emu-color-border);
 	box-shadow: 0 2px 4px RGB($emu-color-black);
 	color: RGB($emu-color-text);
 
 	@include layout {
+		border-radius: $global-border-radius-default;
 		left: 0;
 		max-width: 320px;
 		min-width: 152px;
@@ -37,14 +37,14 @@
 				line-height: initial;
 				padding: $global-space-base;
 				text-align: left;
-			}
 
-			&:first-child {
-				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-			}
+				&:first-child {
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+				}
 
-			&:last-child {
-				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+				&:last-child {
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+				}
 			}
 
 			&:hover {

@@ -1,5 +1,6 @@
 @import "../base";
-body#{$emu}.system-CoC7 {
+
+@include system("CoC7") {
 	.coc7.chat-card {
 		@include layout {
 			display: flex;
@@ -87,10 +88,10 @@ body#{$emu}.system-CoC7 {
 		background-color: RGBA($emu-color-background, 0.1);
 		box-shadow: none;
 		border: 1px solid RGB($emu-color-border);
-		border-radius: $global-border-radius-default;
 		color: inherit;
 
 		@include layout {
+			border-radius: $global-border-radius-default;
 			line-height: initial;
 			font-size: inherit;
 			font-weight: normal;

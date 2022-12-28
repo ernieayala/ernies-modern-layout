@@ -1,0 +1,119 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		.token-mold {
+			@extend %panel-block;
+
+			@include layout {
+				flex-wrap: wrap;
+			}
+
+			h3 {
+				@include layout {
+					font-size: $global-font-size-lg;
+					font-weight: normal;
+					margin: 0;
+					width: 100%;
+				}
+			}
+
+			> label {
+				@include layout {
+					flex: 1 1 auto;
+				}
+
+				> span {
+					@extend %primary-button;
+
+					@include layout {
+						font-size: $global-font-size-sm;
+						height: $global-space-button-sm;
+						padding: $global-space-base;
+						width: 100%;
+
+						> span {
+							margin-inline-end: $global-space-base;
+						}
+					}
+				}
+			}
+
+			> a {
+				@extend %control-button;
+			}
+		}
+	}
+
+	.window-app.token-mold .window-content {
+		@include layout {
+			overflow: hidden;
+		}
+
+		nav {
+			background-color: transparent;
+
+			@include layout {
+				padding: 0;
+			}
+		}
+
+		form {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+			}
+
+			section + section {
+				@include layout {
+					margin-block-start: $global-space-base;
+				}
+			}
+
+			select.icon.fas.fa {
+				@include layout {
+					@extend %font-awesome;
+				}
+			}
+
+			.add-attribute {
+				@include layout {
+					display: flex;
+					margin-block-start: $global-space-sm;
+				}
+			}
+
+			.flexcol {
+				border: none;
+
+				@include layout {
+					padding: 0;
+					width: 1px; // super hack
+
+					> select {
+						margin-block-start: $global-space-base;
+						width: auto;
+					}
+				}
+			}
+		}
+
+		.form-group {
+			input[type="checkbox"] + label {
+				@include layout {
+					flex: 1 1 40%;
+					padding-inline-start: $global-space-sm;
+				}
+			}
+		}
+
+		.form-group.unlinked {
+			border: none;
+		}
+
+		.info {
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,128 @@
+@import "../base";
+
+@include module {
+	#smalltime-app {
+		box-shadow: none;
+
+		@include layout {
+			height: auto;
+			margin-inline-start: -6px; // to off opening position
+		}
+
+		.window-header {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.window-content {
+			background-color: RGB($emu-color-background-darkest);
+			background-image: $global-image-background-darkest;
+
+			@include layout {
+				border-radius: 0;
+				height: 100%;
+				overflow: visible;
+			}
+		}
+
+		#slideContainer {
+			@include layout {
+				flex: 0 0 auto;
+				position: relative;
+			}
+		}
+
+		#displayContainer {
+			align-items: center;
+			background-color: transparent;
+			border-block-start: 1px solid RGB($emu-color-border);
+			box-shadow: none;
+
+			@include layout {
+				height: auto;
+				padding: 0 $global-space-base;
+				position: relative;
+				top: auto;
+			}
+
+			.arrow {
+				@extend %control-button;
+
+				@include layout {
+					font-family: "Font Awesome 5 Free";
+					height: 20px;
+					margin: $global-space-xs 0;
+					width: 20px;
+				}
+			}
+		}
+
+		#dateDisplay {
+			background-color: transparent;
+			box-shadow: none;
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				display: none;
+				font-size: $global-font-size-md;
+				justify-content: center;
+				padding: $global-space-base;
+				position: relative;
+				text-shadow: none;
+				transform: initial;
+				transition: none;
+				top: auto;
+
+				&.active {
+					display: flex;
+				}
+			}
+		}
+
+		#timeDisplay {
+			color: RGB($emu-color-text-lightest);
+			text-shadow: none;
+
+			@include layout {
+				align-items: center;
+				display: inline-flex;
+				font-size: $global-font-size-md;
+				gap: $global-space-xs;
+				justify-content: center;
+				padding: 0;
+			}
+		}
+
+		#timeSeparator {
+			@include layout {
+				margin: 0;
+				top: auto;
+			}
+		}
+
+		#dragHandle {
+			background: transparent;
+
+			@include layout {
+				bottom: calc(-1 * #{$global-space-md});
+				left: calc(-1 * #{$global-space-md});
+				right: calc(-1 * #{$global-space-md});
+				top: calc(-1 * #{$global-space-md});
+				position: absolute;
+				z-index: -1;
+			}
+		}
+
+		.window-draggable-handle {
+			display: none;
+		}
+	}
+
+	.st-scene-config > legend {
+		@include layout {
+			margin: initial;
+			padding: initial;
+		}
+	}
+}

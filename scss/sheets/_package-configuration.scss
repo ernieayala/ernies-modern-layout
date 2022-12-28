@@ -50,6 +50,8 @@
 			border-block-end: none !important;
 
 			.category-tab {
+				border: none;
+
 				@include layout {
 					border-radius: 0 !important;
 					justify-content: space-between !important;

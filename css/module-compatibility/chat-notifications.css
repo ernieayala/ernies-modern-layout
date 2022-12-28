@@ -1,0 +1,6 @@
+body.-emu .chat-notifications.settings nav{background-color:transparent}
+.-emu-layout body.-emu .chat-notifications.settings nav{padding:0}
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col{flex-flow:row}
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child{flex:1 1 auto;margin-inline-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row .input-group-col:first-child select{flex:1 1 100%}
+.-emu-layout body.-emu .chat-notifications.settings .multi-input-row>*{margin:0}

@@ -1,0 +1,119 @@
+@import "../base";
+
+@include module {
+	.compendium-browser-btn {
+		@include layout {
+			flex: 1 1 auto;
+		}
+	}
+
+	.compendium-footer {
+		flex: 1 1 auto;
+	}
+
+	.compendium-browser.window-app {
+		@include layout {
+			overflow: hidden;
+		}
+
+		.tabs {
+			@include layout {
+				max-height: 100%;
+			}
+		}
+
+		.control-area,
+		.list-area {
+			@include layout {
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding: $global-space-base;
+			}
+		}
+
+		.filtercontainer {
+			border: none;
+			border-block-end: 1px solid RGB($emu-color-border);
+
+			@include layout {
+				border-radius: 0;
+				margin-block-end: $global-space-base;
+
+				&:last-child {
+					margin-block-end: 0;
+				}
+
+				> div {
+					margin: $global-space-base 0;
+				}
+			}
+
+			&:last-child {
+				border: none;
+			}
+
+			.multiselect {
+				background: RGBA($emu-color-background, 0.1);
+				border: none;
+
+				@include layout {
+					border-radius: 0;
+					line-height: 1;
+					margin: 0;
+					padding: $global-space-base;
+				}
+			}
+
+			dd {
+				@include layout {
+					display: inline-flex;
+
+					select {
+						flex: 1 1 auto;
+						width: auto;
+
+						+ input {
+							border-inline-start: none;
+							flex: 1 1 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.settings-group {
+			border: none;
+
+			@include layout {
+				border-radius: 0;
+				margin: 0;
+				padding: $global-space-base;
+			}
+
+			label {
+				@include layout {
+					align-items: center;
+					display: flex;
+					padding: $global-space-base;
+
+					&:nth-of-type(even) {
+						background-color: RGBA($emu-color-background-light, 0.1);
+					}
+
+					input[type="checkbox"] {
+						margin-inline-end: $global-space-sm;
+					}
+
+					h4 {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

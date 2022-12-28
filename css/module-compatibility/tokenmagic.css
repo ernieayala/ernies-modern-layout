@@ -1,0 +1,9 @@
+body.-emu .tokenmagic.window-app.settings section.content{border:none}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content{overflow-y:auto}
+body.-emu .tokenmagic.window-app.settings section.content div.override-entry{border-block-start:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry{padding:var(--emu-space-sm,8px) 0}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry .remove-override-wrapper{margin-inline-start:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content div.override-entry .remove-override-wrapper i{margin:0}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content .settings-list{max-height:100%;overflow:hidden;padding:0}
+.-emu-layout body.-emu .tokenmagic.window-app.settings section.content .settings-list h2{margin-block-start:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .tokenmagic.window-app.settings .sheet-footer{flex:0 0 auto;padding-block-start:var(--emu-space-sm,8px)}

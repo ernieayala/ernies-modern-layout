@@ -75,11 +75,11 @@
 
 					.filename {
 						background-color: RGBA($emu-color-background-darkest, 0.8);
-						border-radius: 0;
 						color: RGB($emu-color-text-lightest);
 
 						@include layout {
 							@extend %ellipsis;
+							border-radius: 0;
 							display: block;
 							font-size: $global-font-size-md;
 							grid-area: title;
@@ -167,7 +167,6 @@
 					@extend %reset-list;
 					background: none;
 					border: 0;
-					border-radius: 0;
 					flex: 1;
 					min-height: 100px;
 					list-style: none;
@@ -176,6 +175,10 @@
 					position: relative;
 					margin: 0;
 					width: 100%;
+
+					@include layout {
+						border-radius: 0;
+					}
 
 					+ .directory {
 						border: 1px solid RGB($emu-color-folder-directory);

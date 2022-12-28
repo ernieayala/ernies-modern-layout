@@ -1,0 +1,7 @@
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-header .header-actions #world-anvil img,.-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-header .header-actions #world-anvil img{max-height:var(--emu-font-size-lg,16px);top:auto}
+body.-emu .wa-link{background-color:RGB(var(--emu-color-background-lightest,230,233,235));box-shadow:0 0 0 1px inset RGB(var(--emu-color-black,0,0,0));border:none;color:RGB(var(--emu-color-text,9,14,16));text-shadow:none}
+.-emu-layout body.-emu .wa-link{border-radius:var(--emu-border-radius-controls,0);padding:var(--emu-space-pf,1px) var(--emu-space-xs,2px);padding-inline-start:var(--emu-space-md,16px)}
+body.-emu .wa-link:hover{color:RGB(var(--emu-color-primary,229,117,9))}
+body.-emu .wa-link>i{color:inherit}
+.-emu-layout body.-emu .wa-link>i{margin-inline-end:var(--emu-space-xs,2px)}
+body.-emu #wa-external-link{color:RGB(var(--emu-color-text-lightest,255,255,255));text-decoration:none}

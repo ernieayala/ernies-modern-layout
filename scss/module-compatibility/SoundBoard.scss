@@ -1,0 +1,9 @@
+@import "../base";
+
+@include module {
+	#soundboard-app.window-app {
+		.window-content {
+			margin: 0;
+		}
+	}
+}

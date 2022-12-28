@@ -68,7 +68,6 @@
 		background-color: RGB($emu-color-folder-directory);
 		background-image: none;
 		border-block-end: 1px solid RGB($emu-color-border);
-		border-radius: $global-border-radius-default;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 		transition:
@@ -79,6 +78,7 @@
 		@include layout {
 			align-items: center;
 			border: none;
+			border-radius: $global-border-radius-default;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -135,7 +135,10 @@
 			&.collapsed {
 				> .folder-header {
 					border-inline-start: none;
-					border-radius: $global-border-radius-default;
+
+					@include layout {
+						border-radius: $global-border-radius-default;
+					}
 
 					.create-folder {
 						@include layout {
@@ -174,7 +177,6 @@
 				background-image: none;
 				border: 0;
 				border-inline-start: 4px solid RGB($emu-color-primary);
-				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 				color: RGB($emu-color-text);
 				transition:
 					background $global-transition-time-base $global-transition-type-link,
@@ -183,6 +185,7 @@
 
 				@include layout {
 					align-items: center;
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 					cursor: pointer;
 					display: flex;
 					flex-wrap: nowrap;
@@ -276,7 +279,6 @@
 			.fa-plus {
 				align-items: center;
 				background: transparent;
-				border-radius: 50%;
 				color: inherit;
 				display: flex;
 				font-size: 8px;
@@ -286,13 +288,16 @@
 				right: -2px;
 				top: -2px;
 				width: 12px;
+
+				@include layout {
+					border-radius: 50%;
+				}
 			}
 		}
 
 		img {
-			border-radius: $global-border-radius-images;
-
 			@include layout {
+				border-radius: $global-border-radius-images;
 				cursor: move;
 				flex: 0 0 auto;
 				height: $global-space-icon;
@@ -325,12 +330,12 @@
 			> a {
 				@extend %ellipsis;
 				background-color: transparent;
-				border-radius: 0;
 				color: inherit;
 				text-shadow: none;
 				transition: color $global-transition-time-base $global-transition-type-link;
 
 				@include layout {
+					border-radius: 0;
 					cursor: pointer;
 					display: block;
 					flex: 1 1 auto;

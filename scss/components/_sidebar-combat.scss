@@ -63,7 +63,6 @@
 			.combatant {
 				background-color: RGB($emu-color-background);
 				border: none;
-				border-radius: $global-border-radius-default;
 				transition:
 					background $global-transition-time-base $global-transition-type-link,
 					box-shadow $global-transition-time-base $global-transition-type-link,
@@ -71,6 +70,7 @@
 
 				@include layout {
 					align-items: center;
+					border-radius: $global-border-radius-default;
 					display: flex;
 					flex-wrap: nowrap;
 					height: auto;

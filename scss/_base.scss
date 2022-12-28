@@ -324,11 +324,15 @@ $global-z-index-tooltip: 1070;
 	}
 }
 
-@mixin system($system, $compact: null) {
-	@if not $compact {
-		@at-root .-emu-layout body.-emu.system-#{$system} {
-			@content;
-		}
+@mixin system($system) {
+	body#{$emu}.system-#{$system} {
+		@content;
+	}
+}
+
+@mixin module($module: null) {
+	body#{$emu} {
+		@content;
 	}
 }
 

@@ -2,11 +2,11 @@
 	background-color: RGBA($emu-color-background, $global-background-opacity-players);
 	background-image: $global-image-background;
 	border: 1px solid RGB($emu-color-border);
-	border-radius: $global-border-radius-default;
 	box-shadow: none;
 	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-default;
 		display: block;
 		margin: $global-space-sm;
 		padding: 0;
@@ -50,12 +50,12 @@
 
 	> h3 {
 		border-block-end: 1px solid RGB($emu-color-border);
-		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: RGB($emu-color-text-lightest);
 		transition: color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
+			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 			cursor: pointer;
 			display: flex;
 			font-size: $global-font-size-md;

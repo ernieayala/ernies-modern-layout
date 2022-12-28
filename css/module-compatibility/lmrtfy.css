@@ -1,0 +1,15 @@
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content{padding-block-end:0}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content .form-group.lmrtfy-actor-avatars{justify-content:flex-start}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .window-content .form-group.lmrtfy-actor-avatars input+label{margin-inline-end:var(--emu-space-base,4px);padding:0}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor{flex:0 0 auto}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label{justify-content:center}
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-actor-avatars input:checked+label img{background-color:transparent;box-shadow:none}
+body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit{background-color:RGB(var(--emu-color-background-lightest,230,233,235));background-image:var(--emu-image-background-lightest,none);border-block-start:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment .lmrtfy-submit{bottom:0;display:flex;flex-wrap:nowrap;padding:var(--emu-space-sm,8px);position:sticky}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]+label{cursor:pointer}
+body.-emu #lmrtfy.lmrtfy-parchment input[type=checkbox]:checked+label{color:RGB(var(--emu-color-primary,229,117,9));font-weight:400}
+.-emu-layout body.-emu #lmrtfy.lmrtfy-parchment select+select{margin-inline-start:var(--emu-space-base,4px)}

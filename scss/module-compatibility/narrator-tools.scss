@@ -1,0 +1,13 @@
+@import "../base";
+
+@include module {
+	.narrator-span {
+		text-shadow: none;
+	}
+
+	.narrator-sidebarBG {
+		@include layout {
+			width: $global-space-sidebar;
+		}
+	}
+}

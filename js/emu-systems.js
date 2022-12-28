@@ -5,6 +5,5 @@ export const SYSTEM = [
 	'morkborg',
 	'pf2e',
 	'sfrpg',
-	'swade',
 	'twodsix'
 ]

@@ -1,0 +1,11 @@
+@import "../base";
+
+@include module {
+	.simple-calendar-configuration.window-app {
+		#simpleCalendarConfiguration .config-save {
+			@include layout {
+				position: sticky;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.-emu-layout body.-emu .ddb-muncher.window-app .tab{margin-block-start:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config,.-emu-layout body.-emu .ddb-muncher.window-app .munching-item-config,.-emu-layout body.-emu .ddb-muncher.window-app .munching-monster-config,.-emu-layout body.-emu .ddb-muncher.window-app .munching-spell-config{align-items:center;display:flex;margin-block-end:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .ddb-muncher.window-app .munching-generic-config input[type=checkbox],.-emu-layout body.-emu .ddb-muncher.window-app .munching-item-config input[type=checkbox],.-emu-layout body.-emu .ddb-muncher.window-app .munching-monster-config input[type=checkbox],.-emu-layout body.-emu .ddb-muncher.window-app .munching-spell-config input[type=checkbox]{margin-inline-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-adventure-config-start,.-emu-layout body.-emu .ddb-muncher.window-app #munch-adventure-import-start{margin-block-end:var(--emu-space-sm,8px);width:auto}
+.-emu-layout body.-emu .ddb-muncher.window-app #munch-classes-start,.-emu-layout body.-emu .ddb-muncher.window-app #munch-feats-start,.-emu-layout body.-emu .ddb-muncher.window-app #munch-races-start{margin:0;margin-block-end:var(--emu-space-sm,8px)}
+body.-emu #ddb-importer-folders #ddb-importer-settings .form-content{gap:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #ddb-importer-settings-dynamic-updates .form-group h3{border:none;margin:0}
+.-emu-layout body.-emu #ddb-importer-settings-compendium hr{display:none}
+.-emu-layout body.-emu #ddb-importer-settings-compendium .form-group h3{border:none;margin:0}
+.-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting{align-items:center;display:flex;margin:var(--emu-space-sm,8px) 0}
+.-emu-layout body.-emu #ddb-importer-settings-compendium .munching-compendium-setting input[type=checkbox]{margin-inline-end:var(--emu-space-base,4px)}

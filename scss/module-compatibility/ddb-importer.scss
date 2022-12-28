@@ -1,0 +1,91 @@
+@import "../base";
+
+@include module {
+	.ddb-muncher.window-app {
+		.tab {
+			@include layout {
+				margin-block-start: $global-space-sm;
+			}
+		}
+
+		.munching-generic-config,
+		.munching-spell-config,
+		.munching-item-config,
+		.munching-monster-config {
+			@include layout {
+				align-items: center;
+				display: flex;
+				margin-block-end: $global-space-sm;
+
+				input[type="checkbox"] {
+					margin-inline-end: $global-space-base;
+				}
+			}
+		}
+
+		#munch-adventure-config-start,
+		#munch-adventure-import-start {
+			@include layout {
+				margin-block-end: $global-space-sm;
+				width: auto
+			}
+		}
+
+		#munch-feats-start,
+		#munch-races-start,
+		#munch-classes-start {
+			@include layout {
+				margin: 0;
+				margin-block-end: $global-space-sm;
+			}
+		}
+	}
+
+	#ddb-importer-folders {
+		#ddb-importer-settings {
+			.form-content {
+				gap: $global-space-base;
+			}
+		}
+	}
+
+	#ddb-importer-settings-dynamic-updates {
+		.form-group {
+			@include layout {
+				h3 {
+					border: none;
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	#ddb-importer-settings-compendium {
+		hr {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.form-group {
+			@include layout {
+				h3 {
+					border: none;
+					margin: 0;
+				}
+			}
+		}
+
+		.munching-compendium-setting {
+			@include layout {
+				align-items: center;
+				display: flex;
+				margin: $global-space-sm 0;
+
+				input[type="checkbox"] {
+					margin-inline-end: $global-space-base;
+				}
+			}
+		}
+	}
+}

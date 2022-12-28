@@ -1,0 +1,6 @@
+body.-emu .combatready-timebar,body.-emu .combatready-timebar-fill{box-shadow:none}
+.-emu-layout body.-emu .combatready-timebar,.-emu-layout body.-emu .combatready-timebar-fill{border-radius:var(--emu-border-radius-default,0);bottom:0;height:7px;top:auto}
+.-emu-layout.-emu-compact body.-emu .combatready-timebar,.-emu-layout.-emu-compact body.-emu .combatready-timebar-fill{height:3px}
+body.-emu .combatready-timebar{background:RGBA(var(--emu-color-background-darkest,9,14,16),.2)}
+body.-emu .combatready-timebar-fill{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu .combatready-timebar-fill .combatready-timebaricon{display:none}

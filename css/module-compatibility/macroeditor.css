@@ -1,0 +1,6 @@
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor-expand{bottom:var(--emu-space-base,4px);position:absolute!important;left:auto;right:var(--emu-space-base,4px);top:auto}
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor-expand.fullscreen{position:fixed!important;z-index:16}
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor-expand>i{margin:0}
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor.ace_editor{flex:1 1 auto;height:100%;margin-block-end:var(--emu-space-md,16px)}
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor.ace_editor.fullscreen{height:calc(100% - 10px);margin:0;z-index:15}
+.-emu-layout body.-emu .window-app.sheet[id*=macro-config-] .macro-editor.ace_editor.fullscreen::before{background-color:RGBA(var(--emu-color-black,0,0,0),.5);bottom:0;content:"";left:0;position:fixed;right:0;top:0}

@@ -1,0 +1,112 @@
+@import "../base";
+
+@include module {
+	.dice-so-nice {
+		.dice-more-theme {
+			background: none;
+			border: none;
+			box-shadow: none;
+
+			@include layout {
+				border-radius: none;
+				font-size: $global-font-size-lg;
+				margin: 0;
+				padding: $global-space-sm;
+			}
+		}
+
+		section.content .settings-list {
+			@include layout {
+				overflow-x: hidden;
+				padding: 0;
+			}
+
+			.sfxs-list {
+				.sfx {
+					@extend %table-row;
+
+					@include layout {
+						display: grid;
+						grid-template-columns: 1fr 1fr 1fr min-content min-content;
+						line-height: initial;
+
+						&:nth-of-type(odd):not(.table-header) {
+							background-color: RGBA($emu-color-background-light, 0.1);
+						}
+
+						> div {
+							width: auto;
+
+							&.sfx-hidden {
+								display: none;
+							}
+						}
+
+						select + input {
+							margin-inline-start: $global-space-base;
+						}
+					}
+				}
+
+				.sfx-header {
+					@extend %table-header;
+
+					@include layout {
+						grid-template-columns: 1fr 1fr 1fr min-content;
+					}
+				}
+			}
+
+			.select2 {
+				&:focus,
+				&.select2-container--focus {
+					.select2-selection {
+						@extend %global-focus;
+					}
+				}
+
+				.select2-selection {
+					background-color: transparent;
+					border: 1px solid RGB($emu-color-border-lighter);
+
+					@include layout {
+						border-radius: $global-border-radius-forms;
+						height: auto;
+						min-height: $global-space-button;
+						padding: 0;
+					}
+
+					> ul {
+						@include layout {
+							margin: 0;
+							padding: 0 $global-space-xs;
+						}
+
+						> li {
+							background-color: transparent;
+							border: 1px solid RGB($emu-color-border);
+
+							@include layout {
+								border-radius: $global-border-radius-controls;
+								margin: $global-space-xs;
+								padding: 0;
+							}
+
+							button {
+								@include layout {
+									height: $global-space-button-sm;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.sheet-footer {
+			@include layout {
+				gap: $global-space-base;
+			}
+		}
+	}
+}

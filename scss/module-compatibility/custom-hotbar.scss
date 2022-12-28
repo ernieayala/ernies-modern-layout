@@ -1,0 +1,9 @@
+@import "../base";
+
+@include module {
+	#custom-hotbar {
+		@include layout {
+			z-index: $global-z-index-fixed;
+		}
+	}
+}
