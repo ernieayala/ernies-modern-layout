@@ -1,0 +1,11 @@
+@import "../base";
+
+@include module {
+	#mountup-settings-form {
+		@extend %window-common;
+
+		hr {
+			display: none;
+		}
+	}
+}

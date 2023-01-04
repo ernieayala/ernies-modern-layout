@@ -1,0 +1,5 @@
+body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .version{color:RGBA(var(--emu-color-text,9,14,16),.5)}
+.-emu-layout body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .version{display:none}
+.-emu-layout body.-emu #fvtt-party-resources-dashboard.fvtt-party-resources.window-app .version+p{margin:0}
+.-emu-layout body.-emu #add-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox,.-emu-layout body.-emu #edit-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox{flex:1 1 auto;font-size:var(--emu-font-size-md, 14px)!important;margin:0}
+.-emu-layout body.-emu #add-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox input[type=checkbox],.-emu-layout body.-emu #edit-resource-form.fvtt-party-resources.window-app form .form-group label.checkbox input[type=checkbox]{margin:0}

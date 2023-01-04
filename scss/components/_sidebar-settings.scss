@@ -57,15 +57,15 @@
 				padding: 0;
 			}
 		}
-	}
 
-	.notification-pip {
-		color: RGB($emu-color-primary);
-		margin-inline-end: $global-space-xs;
-		padding: 0;
-		position: relative;
-		right: auto;
-		text-shadow: none;
-		top: auto;
+		.notification-pip {
+			color: RGB($emu-color-primary);
+			margin-inline-end: $global-space-xs;
+			padding: 0;
+			position: relative;
+			right: auto;
+			text-shadow: none;
+			top: auto;
+		}
 	}
 }

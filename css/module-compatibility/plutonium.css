@@ -1,0 +1,15 @@
+body.-emu .window-app .window-header a.pop__btn-open,body.-emu .window-app .window-header a.tit-menu__btn-open--sheet{display:flex!important;flex:0 0 auto;padding:0!important;width:var(--emu-space-button-sm,24px)}
+body.-emu .window-app .window-header a.pop__btn-open>i,body.-emu .window-app .window-header a.pop__btn-open>span.fas,body.-emu .window-app .window-header a.tit-menu__btn-open--sheet>i,body.-emu .window-app .window-header a.tit-menu__btn-open--sheet>span.fas{margin-inline-end:0}
+.-emu-layout body.-emu #sidebar .dir__wrp-header,.-emu-layout body.-emu .sidebar-popout .dir__wrp-header{padding:0}
+.-emu-layout body.-emu #sidebar .dir__wrp-header .w-100,.-emu-layout body.-emu .sidebar-popout .dir__wrp-header .w-100{gap:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #sidebar .dir__wrp-header .w-100>*,.-emu-layout body.-emu .sidebar-popout .dir__wrp-header .w-100>*{margin:0!important}
+body.-emu .window-app .ve-window{background:0 0}
+.-emu-layout body.-emu .window-app .ve-window{gap:var(--emu-space-md,16px)}
+.-emu-layout body.-emu .window-app .ve-window>.mx-2{display:none}
+body.-emu .window-app .ve-window .imp-wiz__head-panel{font-size:initial;text-decoration:none}
+.-emu-layout body.-emu .window-app .ve-window .ve-flex-col{gap:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .window-app .ve-window .imp-wiz__row-mode{gap:var(--emu-space-base,4px);margin:0!important}
+.-emu-layout body.-emu .window-app .ve-window .imp-wiz__btn-package-archive{width:100%}
+.-emu-layout body.-emu .window-app .ve-window .imp-wiz__btn-quick{flex:0 0 auto}
+.-emu-layout body.-emu .window-app .ve-window .imp-wiz__btn-quick>i{margin:0!important}
+body.-emu .window-app .ve-window .btn-5et{font-size:var(--emu-font-size-md, 14px)!important;overflow:hidden;white-space:normal}

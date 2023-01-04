@@ -1,0 +1,48 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		.sidebar-tab .directory-header .header-actions {
+			#world-anvil {
+				img {
+					@include layout {
+						max-height: $global-font-size-lg;
+						top: auto;
+					}
+				}
+			}
+		}
+	}
+
+	.wa-link {
+		background-color: RGB($emu-color-background-lightest);
+		box-shadow: 0 0 0 1px inset RGB($emu-color-black);
+		border: none;
+		color: RGB($emu-color-text);
+		text-shadow: none;
+
+		@include layout {
+			border-radius: $global-border-radius-controls;
+			padding: $global-space-pf $global-space-xs;
+			padding-inline-start: $global-space-md;
+		}
+
+		&:hover {
+			color: RGB($emu-color-primary);
+		}
+
+		> i {
+			color: inherit;
+
+			@include layout {
+				margin-inline-end: $global-space-xs;
+			}
+		}
+	}
+
+	#wa-external-link {
+		color: RGB($emu-color-text-lightest);
+		text-decoration: none;
+	}
+}

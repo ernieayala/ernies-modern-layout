@@ -1,0 +1,93 @@
+@import "../base";
+
+@include module {
+	.window-app {
+		.window-header {
+			a.pop__btn-open,
+			a.tit-menu__btn-open--sheet {
+				display: flex !important;
+				flex: 0 0 auto;
+				padding: 0 !important;
+				width: $global-space-button-sm;
+
+				> i,
+				> span.fas {
+					margin-inline-end: 0;
+				}
+			}
+		}
+	}
+
+	#sidebar,
+	.sidebar-popout {
+		.dir__wrp-header {
+			@include layout {
+				padding: 0;
+
+				.w-100 {
+					gap: $global-space-base;
+
+					> * {
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+	}
+
+	.window-app {
+		.ve-window {
+			background: none;
+
+			@include layout {
+				gap: $global-space-md;
+			}
+
+			> .mx-2 {
+				@include layout {
+					display: none;
+				}
+			}
+
+			.imp-wiz__head-panel {
+				font-size: initial;
+				text-decoration: none;
+			}
+
+			.ve-flex-col {
+				@include layout {
+					gap: $global-space-base;
+				}
+			}
+
+			.imp-wiz__row-mode {
+				@include layout {
+					gap: $global-space-base;
+					margin: 0 !important;
+				}
+			}
+
+			.imp-wiz__btn-package-archive {
+				@include layout{
+					width: 100%;
+				}
+			}
+
+			.imp-wiz__btn-quick {
+				@include layout {
+					flex: 0 0 auto;
+
+					> i {
+						margin: 0 !important;
+					}
+				}
+			}
+
+			.btn-5et {
+				font-size: $global-font-size-md !important;
+				overflow: hidden;
+				white-space: normal;
+			}
+		}
+	}
+}

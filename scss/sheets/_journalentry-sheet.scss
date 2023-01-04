@@ -191,6 +191,12 @@
 				padding: $global-space-sm $global-space-base;
 			}
 
+			button {
+				@include layout {
+					margin: 0;
+				}
+			}
+
 			button.previous,
 			button.next {
 				@include layout {

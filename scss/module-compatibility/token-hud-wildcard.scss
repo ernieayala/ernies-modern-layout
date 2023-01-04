@@ -1,0 +1,12 @@
+@import "../base";
+
+@include module {
+	#hud {
+		#token-hud .thwildcard-button-select {
+			@include layout {
+				display: inline-flex;
+				height: auto;
+			}
+		}
+	}
+}

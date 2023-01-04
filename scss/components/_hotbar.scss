@@ -55,10 +55,10 @@
 
 	#macro-list {
 		border: none;
-		border-radius: $global-border-radius-default;
 
 		@include layout {
 			@extend %reset-list;
+			border-radius: $global-border-radius-default;
 			display: flex;
 			flex: 0 0 auto;
 			float: left;
@@ -71,10 +71,10 @@
 	.bar-controls {
 		background: transparent;
 		border: 1px solid RGB($emu-color-border);
-		border-radius: $global-border-radius-default;
 		box-shadow: none;
 
 		@include layout {
+			border-radius: $global-border-radius-default;
 			display: flex;
 			flex-direction: column;
 			height: $global-space-button-xl;
@@ -100,12 +100,18 @@
 				&:first-of-type {
 					border: none;
 					border-block-end: 1px solid RGB($emu-color-border);
-					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+
+					@include layout {
+						border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+					}
 				}
 
 				&:last-of-type {
 					border: none;
-					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+
+					@include layout {
+						border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+					}
 				}
 			}
 		}
@@ -118,12 +124,14 @@
 		}
 
 		.page-control {
-			&:first-of-type {
-				border-radius: $global-border-radius-default $global-border-radius-default 0 0;
-			}
+			@include layout {
+				&:first-of-type {
+					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+				}
 
-			&:last-of-type {
-				border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+				&:last-of-type {
+					border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+				}
 			}
 		}
 
@@ -193,7 +201,6 @@
 		background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		background-image: $global-image-background-controls;
 		border: 1px solid RGB($emu-color-border);
-		border-radius: 0;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 		transition:
@@ -202,6 +209,7 @@
 
 		@include layout {
 			align-items: center;
+			border-radius: 0;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -213,15 +221,16 @@
 		}
 
 		&:first-child {
-			border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
-
 			@include layout {
+				border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
 				margin-inline-start: 0;
 			}
 		}
 
 		&:last-child {
-			border-radius: 0 $global-border-radius-default $global-border-radius-default 0;
+			@include layout {
+				border-radius: 0 $global-border-radius-default $global-border-radius-default 0;
+			}
 		}
 
 		&:hover {
@@ -273,10 +282,10 @@
 		.tooltip {
 			background-color: RGB($emu-color-background-darkest);
 			border: none;
-			border-radius: $global-border-radius-default;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
+				border-radius: $global-border-radius-default;
 				font-size: $global-font-size-md;
 				height: auto;
 				left: 0;

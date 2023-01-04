@@ -1,0 +1,2 @@
+.-emu-layout body.-emu #chat-log .message .message-header .chat-portrait-text-size-name{align-items:center;display:flex}
+.-emu-layout body.-emu #chat-log .message .message-header img{margin:var(--emu-space-xs,2px) 0;margin-inline-end:var(--emu-space-base,4px)}

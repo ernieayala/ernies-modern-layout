@@ -1,0 +1,16 @@
+@import "../base";
+
+@include module {
+	.illandril-chat-enhancements--currentSpeaker {
+		align-items: center;
+		background-color: RGBA($emu-color-background, 0.5);
+		background-image: $global-image-background;
+
+		@include layout {
+			display: flex;
+			flex: 0 0 auto;
+			margin: 0;
+			padding: $global-space-base $global-space-sm;
+		}
+	}
+}

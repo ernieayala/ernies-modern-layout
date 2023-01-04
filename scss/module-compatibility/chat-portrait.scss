@@ -1,0 +1,19 @@
+@import "../base";
+
+@include module {
+	#chat-log .message .message-header {
+		.chat-portrait-text-size-name {
+			@include layout {
+				align-items: center;
+				display: flex;
+			}
+		}
+
+		img {
+			@include layout {
+				margin: $global-space-xs 0;
+				margin-inline-end: $global-space-base;
+			}
+		}
+	}
+}

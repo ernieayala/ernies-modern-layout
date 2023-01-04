@@ -1,0 +1,47 @@
+body.-emu #tah-collapse-hud,body.-emu #tah-edit-categories,body.-emu #tah-expand-hud,body.-emu .tah-action button,body.-emu .tah-category button{background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu #tah-collapse-hud,.-emu-layout body.-emu #tah-edit-categories,.-emu-layout body.-emu #tah-expand-hud,.-emu-layout body.-emu .tah-action button,.-emu-layout body.-emu .tah-category button,body.-emu .-emu-layout #tah-collapse-hud,body.-emu .-emu-layout #tah-edit-categories,body.-emu .-emu-layout #tah-expand-hud,body.-emu .tah-action .-emu-layout button,body.-emu .tah-category .-emu-layout button{align-items:center;border-radius:var(--emu-border-radius-controls,0);cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:1;margin:0;padding:var(--emu-space-sm,8px);position:relative}
+.-emu-layout body.-emu #tah-collapse-hud>i,.-emu-layout body.-emu #tah-edit-categories>i,.-emu-layout body.-emu #tah-expand-hud>i,.-emu-layout body.-emu .tah-action button>i,.-emu-layout body.-emu .tah-category button>i,body.-emu .-emu-layout #tah-collapse-hud>i,body.-emu .-emu-layout #tah-edit-categories>i,body.-emu .-emu-layout #tah-expand-hud>i,body.-emu .tah-action .-emu-layout button>i,body.-emu .tah-category .-emu-layout button>i{margin:0}
+.-emu-layout body.-emu #tah-collapse-hud>label,.-emu-layout body.-emu #tah-edit-categories>label,.-emu-layout body.-emu #tah-expand-hud>label,.-emu-layout body.-emu .tah-action button>label,.-emu-layout body.-emu .tah-category button>label,body.-emu .-emu-layout #tah-collapse-hud>label,body.-emu .-emu-layout #tah-edit-categories>label,body.-emu .-emu-layout #tah-expand-hud>label,body.-emu .tah-action .-emu-layout button>label,body.-emu .tah-category .-emu-layout button>label{color:inherit!important}
+.-emu-layout .-emu-layout body.-emu #tah-collapse-hud>label,.-emu-layout .-emu-layout body.-emu #tah-edit-categories>label,.-emu-layout .-emu-layout body.-emu #tah-expand-hud>label,.-emu-layout .-emu-layout body.-emu .tah-action button>label,.-emu-layout .-emu-layout body.-emu .tah-category button>label,body.-emu .-emu-layout .-emu-layout #tah-collapse-hud>label,body.-emu .-emu-layout .-emu-layout #tah-edit-categories>label,body.-emu .-emu-layout .-emu-layout #tah-expand-hud>label,body.-emu .tah-action .-emu-layout .-emu-layout button>label,body.-emu .tah-category .-emu-layout .-emu-layout button>label{font-size:inherit!important}
+body.-emu #tah-collapse-hud:hover,body.-emu #tah-edit-categories:hover,body.-emu #tah-expand-hud:hover,body.-emu .tah-action button:hover,body.-emu .tah-category button:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu #tah-collapse-hud:active,body.-emu #tah-edit-categories:active,body.-emu #tah-expand-hud:active,body.-emu .tah-action button:active,body.-emu .tah-category button:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+body.-emu #tah-collapse-hud:disabled,body.-emu #tah-edit-categories:disabled,body.-emu #tah-expand-hud:disabled,body.-emu .tah-action button:disabled,body.-emu .tah-category button:disabled{opacity:.5;pointer-events:none}
+.-emu-layout body.-emu #tah-collapse-hud,.-emu-layout body.-emu #tah-edit-categories,.-emu-layout body.-emu #tah-expand-hud,body.-emu .-emu-layout #tah-collapse-hud,body.-emu .-emu-layout #tah-edit-categories,body.-emu .-emu-layout #tah-expand-hud{flex:0 0 auto;font-size:var(--emu-font-size-sm, 12px);height:var(--emu-space-button-sm,24px);padding:0;width:var(--emu-space-button-sm,24px)}
+.-emu-layout body.-emu #tah-collapse-hud>i,.-emu-layout body.-emu #tah-edit-categories>i,.-emu-layout body.-emu #tah-expand-hud>i,body.-emu .-emu-layout #tah-collapse-hud>i,body.-emu .-emu-layout #tah-edit-categories>i,body.-emu .-emu-layout #tah-expand-hud>i{margin:0}
+body.-emu #tah-collapse-hud:hover,body.-emu #tah-edit-categories:hover,body.-emu #tah-expand-hud:hover,body.-emu .tah-action button:hover,body.-emu .tah-category button:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu #tah-collapse-hud:focus,body.-emu #tah-edit-categories:focus,body.-emu #tah-expand-hud:focus,body.-emu .tah-action button:focus,body.-emu .tah-category button:focus,body.-emu .tah-category.hover>button{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu .active#tah-collapse-hud,body.-emu .active#tah-edit-categories,body.-emu .active#tah-expand-hud,body.-emu .tah-action button.active,body.-emu .tah-category button.active{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu .active#tah-collapse-hud:hover,body.-emu .active#tah-edit-categories:hover,body.-emu .active#tah-expand-hud:hover,body.-emu .tah-action button.active:hover,body.-emu .tah-category button.active:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu .active#tah-collapse-hud:active,body.-emu .active#tah-edit-categories:active,body.-emu .active#tah-expand-hud:active,body.-emu .tah-action button.active:active,body.-emu .tah-category button.active:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+.-emu-layout body.-emu #token-action-hud{gap:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #tah-categories{gap:var(--emu-space-xs,2px)}
+body.-emu #tah-character-name{color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:1px 1px 2px RGB(var(--emu-color-black,0,0,0)),-1px -1px 2px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu #tah-character-name{left:0;margin:0;padding:0;pointer-events:none;position:absolute;text-align:left;top:-20px!important}
+.-emu-layout body.-emu .tah-category.hover{filter:none!important}
+body.-emu .tah-category.hover>button{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu .tah-action button,body.-emu .tah-category button{min-height:var(--emu-space-button,32px)}
+.-emu-layout body.-emu .tah-title-button .fa-filter{display:none}
+body.-emu .tah-content{background:0 0}
+.-emu-layout body.-emu .tah-content{border-radius:0;gap:var(--emu-space-base,4px);overflow-x:hidden;overflow-y:auto;padding:var(--emu-space-xs,2px)}
+.-emu-layout body.-emu .tah-content.expand-up{bottom:100%;padding-block-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .tah-subcategory{padding:0}
+.-emu-layout body.-emu .tah-subtitle-wrapper{height:var(--emu-space-button,32px)}
+body.-emu .tah-subtitle{color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:1px 1px 2px RGB(var(--emu-color-black,0,0,0)),-1px -1px 2px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu .tah-subtitle{font-size:var(--emu-font-size-md, 14px);gap:var(--emu-space-base,4px);line-height:1;padding-inline-end:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .tah-actions{gap:var(--emu-space-base,4px);margin:0}
+.-emu-layout body.-emu .tah-action{display:flex}
+.-emu-layout body.-emu .tah-action button{padding:0 var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .tah-img{border-radius:var(--emu-border-radius-default,0);height:var(--emu-space-button-sm,24px);margin-inline-start:calc(-1 * (var(--emu-space-sm,8px)/ 2));width:var(--emu-space-button-sm,24px)}
+.-emu-layout body.-emu .tah-action-name{display:inline-flex;gap:var(--emu-space-base,4px);margin:0;padding:0}
+body.-emu .tah-action-name .tah-info1{text-shadow:none}
+body.-emu .tah-info1,body.-emu .tah-info2,body.-emu .tah-info3{text-shadow:none}
+.-emu-layout body.-emu .tah-info1,.-emu-layout body.-emu .tah-info2,.-emu-layout body.-emu .tah-info3{font-size:inherit;margin:0}
+body.-emu .tah-info1{text-shadow:1px 1px 2px RGB(var(--emu-color-black,0,0,0)),-1px -1px 2px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu button.tags--removeAllBtn{margin-block-start:var(--emu-space-base,4px)}
+body.-emu #tah-collapse-expand{left:-32px}
+body.-emu #tah-collapse-hud:hover .fa,body.-emu #tah-collapse-hud:hover .fas,body.-emu #tah-edit-categories:hover .fa,body.-emu #tah-edit-categories:hover .fas,body.-emu #tah-expand-hud:hover .fa,body.-emu #tah-expand-hud:hover .fas{text-shadow:none}
+body.-emu #tah-collapse-hud .fa,body.-emu #tah-collapse-hud .fas,body.-emu #tah-edit-categories .fa,body.-emu #tah-edit-categories .fas,body.-emu #tah-expand-hud .fa,body.-emu #tah-expand-hud .fas{color:inherit;padding:0;text-shadow:1px 1px 2px RGB(var(--emu-color-black,0,0,0)),-1px -1px 2px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu #tah-collapse-hud,.-emu-layout body.-emu #tah-edit-categories{visibility:hidden}
+.-emu-layout body.-emu #tah-buttons:hover #tah-edit-categories{visibility:visible}
+.-emu-layout body.-emu #tah-collapse-expand:hover #tah-collapse-hud{visibility:visible}
+.-emu-layout body.-emu #tah-edit-categories{left:auto}

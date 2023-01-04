@@ -1,0 +1,41 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		.dnd5ehelpers {
+			.dice-result {
+				@include layout {
+					margin-block-start: $global-space-base;
+				}
+
+				.desc {
+					background-color: RGBA($emu-color-background-light, $global-background-opacity-window);
+					border: 1px solid RGB($emu-color-border);
+					box-shadow: $global-box-shadow;
+					color: RGB($emu-color-text-lightest);
+
+					@include layout {
+						border-radius: $global-border-radius-default;
+						font-size: $global-font-size-sm;
+						padding: $global-space-sm;
+					}
+				}
+			}
+
+			@include layout {
+				.cover-button {
+					flex-direction: row-reverse;
+					margin: 0;
+					margin-block-start: $global-space-base;
+
+					img {
+						margin: 0;
+						margin-inline-start: $global-space-base;
+						width: $global-space-button-xs;
+					}
+				}
+			}
+		}
+	}
+}

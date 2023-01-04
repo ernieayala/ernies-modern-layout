@@ -70,11 +70,11 @@ a.content-link {
 	background-color: RGB($emu-color-background-lightest);
 	box-shadow: 0 0 0 1px inset RGB($emu-color-black);
 	border: none;
-	border-radius: $global-border-radius-controls;
 	color: RGB($emu-color-text);
 	text-shadow: none;
 
 	@include layout {
+		border-radius: $global-border-radius-controls;
 		padding: $global-space-pf $global-space-xs;
 		padding-inline-start: $global-space-base;
 	}

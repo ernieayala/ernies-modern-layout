@@ -5,7 +5,7 @@ body#{$emu} {
 	// Base
 	.dialog,
 	#sidebar,
-	.window-app:not(.actor):not(.item) {
+	.window-app:not(.-emu-clean-sheet) {
 		@import "./base/base-button";
 		@import "./base/base-directory";
 		@import "./base/base-form-elements";
@@ -64,60 +64,4 @@ body#{$emu} {
 	@import "./sheets/trait-selector";
 	@import "./sheets/user-config";
 	@import "./sheets/user-sheet"; // depricated
-
-	// Module Compatibility
-	@import "./module-compatibility/always-hp";
-	@import "./module-compatibility/anonymous";
-	@import "./module-compatibility/better-roofs";
-	@import "./module-compatibility/cautious-gamemaster-pack";
-	@import "./module-compatibility/chat-portrait";
-	@import "./module-compatibility/combat-enhancements";
-	@import "./module-compatibility/combat-ready";
-	@import "./module-compatibility/combat-utility-belt";
-	@import "./module-compatibility/compendium-browser";
-	@import "./module-compatibility/compendium-folders";
-	@import "./module-compatibility/custom-hotbar";
-	@import "./module-compatibility/damage-log";
-	@import "./module-compatibility/df-chat-enhancements";
-	@import "./module-compatibility/df-curvy-walls";
-	@import "./module-compatibility/dfreds-droppables";
-	@import "./module-compatibility/dice-so-nice";
-	@import "./module-compatibility/dice-tray";
-	@import "./module-compatibility/dnd-beyond-importer";
-	@import "./module-compatibility/dnd5e-helpers";
-	@import "./module-compatibility/ernies-modern-ui";
-	@import "./module-compatibility/fx-master";
-	@import "./module-compatibility/gm-notes";
-	@import "./module-compatibility/gm-screen";
-	@import "./module-compatibility/hey-listen";
-	@import "./module-compatibility/illandrils-chat-enhancements";
-	@import "./module-compatibility/lib-wrapper";
-	@import "./module-compatibility/lmrtfy";
-	@import "./module-compatibility/macro-editor";
-	@import "./module-compatibility/maestro";
-	@import "./module-compatibility/midi-qol";
-	@import "./module-compatibility/monster-block";
-	@import "./module-compatibility/narrator-tools";
-	@import "./module-compatibility/party-resources";
-	@import "./module-compatibility/pdf-foundry";
-	@import "./module-compatibility/permission-viewer";
-	@import "./module-compatibility/plutonium";
-	@import "./module-compatibility/polyglot";
-	@import "./module-compatibility/ready-set-roll";
-	@import "./module-compatibility/search-anywhere";
-	@import "./module-compatibility/simple-calendar";
-	@import "./module-compatibility/simple-dice-roller";
-	@import "./module-compatibility/small-time";
-	@import "./module-compatibility/tabbed-chat-log";
-	@import "./module-compatibility/tidy-game-settings";
-	@import "./module-compatibility/tidy-sheet";
-	@import "./module-compatibility/token-action-hud";
-	@import "./module-compatibility/token-attacher";
-	@import "./module-compatibility/token-hud-wildcard";
-	@import "./module-compatibility/token-info-icon";
-	@import "./module-compatibility/token-magic-fx";
-	@import "./module-compatibility/token-mold";
-	@import "./module-compatibility/token-variant-art";
-	@import "./module-compatibility/universal-battlemap-importer";
-	@import "./module-compatibility/world-anvil";
 }

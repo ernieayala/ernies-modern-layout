@@ -1,0 +1,21 @@
+@import "../base";
+
+@include module {
+	#cgmp-typing-notify {
+		color: RGB($emu-color-text-lightest);
+
+		@include layout {
+			border-radius: 0;
+		}
+
+		&.hidden {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.dot {
+			background-color: RGB($emu-color-white);
+		}
+	}
+}

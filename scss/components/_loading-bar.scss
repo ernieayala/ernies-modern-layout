@@ -1,10 +1,10 @@
 #loading {
 	background-color: RGB($emu-color-background);
 	border: none;
-	border-radius: $global-border-radius-default;
 	box-shadow: none;
 
 	@include layout {
+		border-radius: $global-border-radius-default;
 		display: none;
 		height: 24px;
 		left: 0;
@@ -28,9 +28,9 @@
 	#loading-bar {
 		background-color: RGB($emu-color-primary);
 		border: none;
-		border-radius: $global-border-radius-default;
 
 		@include layout {
+			border-radius: $global-border-radius-default;
 			height: 100%;
 			margin: 0;
 			min-width: 25%;

@@ -1,10 +1,10 @@
 .app {
 	background: none;
-	border-radius: 0;
 	box-shadow: none;
 	color: RGB($emu-color-text-lightest);
 
 	@include layout {
+		border-radius: 0;
 		margin: 0;
 		max-height: 100%;
 		padding: 0;
@@ -16,10 +16,10 @@
 	background-color: RGBA($emu-color-background, $global-background-opacity-window);
 	background-image: $global-image-background;
 	border: 1px solid RGB($emu-color-border);
-	border-radius: $global-border-radius-default;
 	box-shadow: 0 2px 4px RGB($emu-color-black);
 
 	@include layout {
+		border-radius: $global-border-radius-default;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -33,17 +33,82 @@
 		}
 	}
 
+	&:not(.-emu-clean-sheet) {
+		.window-content {
+			@include layout {
+				display: block;
+				flex: 1 1 auto;
+				flex-direction: initial;
+				font-size: $global-font-size-md;
+				margin: 0;
+				overflow-x: hidden;
+				overflow-y: auto;
+				padding: $global-space-sm;
+				position: relative;
+			}
+
+			form {
+				@include layout {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+
+					&.flexcol {
+						height: 100%;
+					}
+
+					.form-body {
+						flex: 1 1 auto;
+						overflow: auto;
+					}
+
+					.form-footer {
+						flex: 0 0 auto;
+					}
+				}
+			}
+
+			> form {
+				> button[type="submit"]:last-child,
+				> .sheet-footer:last-child {
+					@include layout {
+						bottom: calc(-1 * #{$global-space-base});
+						outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
+						position: sticky;
+						z-index: 2;
+					}
+				}
+			}
+
+			.chat-message {
+				@include layout {
+					border-radius: 0;
+				}
+			}
+
+			.sheet-footer {
+				@include layout {
+					gap: $global-space-base;
+				}
+			}
+		}
+	}
+
 	.window-header {
+		background: none;
 		border: none;
 		border-block-end: 1px solid RGB($emu-color-border);
-		border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
+		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			align-items: center;
+			border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
+			font-size: inherit;
 			gap: $global-space-xs;
 			line-height: initial;
 			margin: 0;
@@ -84,6 +149,7 @@
 
 			@include layout {
 				@extend %control-button;
+				min-width: $global-space-button-sm;
 				padding: $global-space-base;
 				position: relative;
 				width: auto;
@@ -158,58 +224,8 @@
 		background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
 		background-image: $global-image-background-lightest;
 		color: RGB($emu-color-text);
-
-		@include layout {
-			display: block;
-			flex: 1 1 auto;
-			flex-direction: initial;
-			font-size: $global-font-size-md;
-			margin: 0;
-			overflow-x: hidden;
-			overflow-y: auto;
-			padding: $global-space-sm;
-			position: relative;
-		}
-
-		form {
-			@include layout {
-				display: flex;
-				flex-direction: column;
-				flex-wrap: nowrap;
-				gap: $global-space-base;
-
-				&.flexcol {
-					height: 100%;
-				}
-
-				.form-body {
-					flex: 1 1 auto;
-					overflow: auto;
-				}
-
-				.form-footer {
-					flex: 0 0 auto;
-				}
-			}
-		}
-
-		> form {
-			> button[type="submit"]:last-child,
-			> .sheet-footer:last-child {
-				bottom: calc(-1 * #{$global-space-base});
-				outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
-				position: sticky;
-				z-index: 2;
-			}
-		}
-
-		.chat-message {
-			border-radius: 0;
-		}
-
-		.sheet-footer {
-			gap: $global-space-base;
-		}
+		border: none;
+		box-shadow: none;
 	}
 
 	.window-resizable-handle {
@@ -217,7 +233,6 @@
 		border: none;
 		border-block-start: RGB($emu-color-background-lightest) 2px solid;
 		border-inline-start: RGB($emu-color-background-lightest) 2px solid;
-		border-radius: $global-border-radius-default 0 0 0;
 		color: RGB($emu-color-text-lightest);
 		transition:
 			background $global-transition-time-base $global-transition-type-link,
@@ -226,6 +241,7 @@
 
 		@include layout {
 			align-items: center;
+			border-radius: $global-border-radius-default 0 0 0;
 			bottom: 0;
 			cursor: pointer;
 			display: inline-flex;

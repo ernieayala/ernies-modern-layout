@@ -69,11 +69,11 @@
 
 		.tag {
 			border: none;
-			border-radius: $global-border-radius-controls;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
+				border-radius: $global-border-radius-controls;
 				display: inline-flex;
 				font-size: $global-font-size-sm;
 				height: auto;

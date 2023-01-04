@@ -63,7 +63,6 @@
 			.combatant {
 				background-color: RGB($emu-color-background);
 				border: none;
-				border-radius: $global-border-radius-default;
 				transition:
 					background $global-transition-time-base $global-transition-type-link,
 					box-shadow $global-transition-time-base $global-transition-type-link,
@@ -71,11 +70,12 @@
 
 				@include layout {
 					align-items: center;
+					border-radius: $global-border-radius-default;
 					display: flex;
 					flex-wrap: nowrap;
 					height: auto;
 					line-height: initial;
-					margin: 0 $global-space-sm;
+					margin: 0;
 					padding: $global-space-base $global-space-sm;
 					position: relative;
 					width: auto;
@@ -263,6 +263,18 @@
 					> i {
 						margin: 0;
 					}
+				}
+			}
+		}
+	}
+}
+
+.sidebar-popout[id="combat-popout"] .window-content {
+	[data-tab="combat"] {
+		#combat-tracker {
+			.combatant {
+				@include layout {
+					margin: 0 $global-space-sm;
 				}
 			}
 		}

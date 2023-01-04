@@ -1,5 +1,5 @@
 .dialog {
-	&.window-app > .window-content {
+	&.window-app > .window-content:not(.-emu-clean-sheet) {
 		@include layout {
 			padding: 0;
 		}

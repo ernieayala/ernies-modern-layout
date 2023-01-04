@@ -1,0 +1,34 @@
+body.-emu #smalltime-app #displayContainer .arrow{background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow,body.-emu #smalltime-app #displayContainer .-emu-layout .arrow{align-items:center;border-radius:var(--emu-border-radius-controls,0);cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:1;margin:0;padding:var(--emu-space-sm,8px);position:relative}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow>i,body.-emu #smalltime-app #displayContainer .-emu-layout .arrow>i{margin:0}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow>label,body.-emu #smalltime-app #displayContainer .-emu-layout .arrow>label{color:inherit!important}
+.-emu-layout .-emu-layout body.-emu #smalltime-app #displayContainer .arrow>label,body.-emu #smalltime-app #displayContainer .-emu-layout .-emu-layout .arrow>label{font-size:inherit!important}
+body.-emu #smalltime-app #displayContainer .arrow:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu #smalltime-app #displayContainer .arrow:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+body.-emu #smalltime-app #displayContainer .arrow:disabled{opacity:.5;pointer-events:none}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow,body.-emu #smalltime-app #displayContainer .-emu-layout .arrow{flex:0 0 auto;font-size:var(--emu-font-size-sm, 12px);height:var(--emu-space-button-sm,24px);padding:0;width:var(--emu-space-button-sm,24px)}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow>i,body.-emu #smalltime-app #displayContainer .-emu-layout .arrow>i{margin:0}
+body.-emu #smalltime-app #displayContainer .arrow:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu #smalltime-app #displayContainer .arrow:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+body.-emu #smalltime-app #displayContainer .active.arrow{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #smalltime-app #displayContainer .active.arrow:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+body.-emu #smalltime-app #displayContainer .active.arrow:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
+body.-emu #smalltime-app{box-shadow:none}
+.-emu-layout body.-emu #smalltime-app{height:auto;margin-inline-start:-6px}
+.-emu-layout body.-emu #smalltime-app .window-header{display:none}
+body.-emu #smalltime-app .window-content{background-color:RGB(var(--emu-color-background-darkest,9,14,16));background-image:var(--emu-image-background-darkest,none)}
+.-emu-layout body.-emu #smalltime-app .window-content{border-radius:0;height:100%;overflow:visible}
+.-emu-layout body.-emu #smalltime-app #slideContainer{flex:0 0 auto;position:relative}
+body.-emu #smalltime-app #displayContainer{align-items:center;background-color:transparent;border-block-start:1px solid RGB(var(--emu-color-border,33,50,52));box-shadow:none}
+.-emu-layout body.-emu #smalltime-app #displayContainer{height:auto;padding:0 var(--emu-space-base,4px);position:relative;top:auto}
+.-emu-layout body.-emu #smalltime-app #displayContainer .arrow{font-family:"Font Awesome 5 Free";height:20px;margin:var(--emu-space-xs,2px) 0;width:20px}
+body.-emu #smalltime-app #dateDisplay{background-color:transparent;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #smalltime-app #dateDisplay{display:none;font-size:var(--emu-font-size-md, 14px);justify-content:center;padding:var(--emu-space-base,4px);position:relative;text-shadow:none;transform:initial;transition:none;top:auto}
+.-emu-layout body.-emu #smalltime-app #dateDisplay.active{display:flex}
+body.-emu #smalltime-app #timeDisplay{color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+.-emu-layout body.-emu #smalltime-app #timeDisplay{align-items:center;display:inline-flex;font-size:var(--emu-font-size-md, 14px);gap:var(--emu-space-xs,2px);justify-content:center;padding:0}
+.-emu-layout body.-emu #smalltime-app #timeSeparator{margin:0;top:auto}
+body.-emu #smalltime-app #dragHandle{background:0 0}
+.-emu-layout body.-emu #smalltime-app #dragHandle{bottom:calc(-1 * var(--emu-space-md,16px));left:calc(-1 * var(--emu-space-md,16px));right:calc(-1 * var(--emu-space-md,16px));top:calc(-1 * var(--emu-space-md,16px));position:absolute;z-index:-1}
+body.-emu #smalltime-app .window-draggable-handle{display:none}
+.-emu-layout body.-emu .st-scene-config>legend{margin:initial;padding:initial}

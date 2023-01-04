@@ -1,6 +1,6 @@
 @import "../base";
 
-body#{$emu}.system-alienrpg {
+@include system("alienrpg") {
 	.window-app[id*="actor-"],
 	.window-app[id*="item-"] {
 		.window-content {

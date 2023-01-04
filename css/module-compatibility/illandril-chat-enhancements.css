@@ -1,0 +1,2 @@
+body.-emu .illandril-chat-enhancements--currentSpeaker{align-items:center;background-color:RGBA(var(--emu-color-background,41,62,64),.5);background-image:var(--emu-image-background,none)}
+.-emu-layout body.-emu .illandril-chat-enhancements--currentSpeaker{display:flex;flex:0 0 auto;margin:0;padding:var(--emu-space-base,4px) var(--emu-space-sm,8px)}

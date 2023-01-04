@@ -65,7 +65,6 @@
 		.scene-control,
 		.control-tool {
 			border: none;
-			border-radius: $global-border-radius-controls;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
 			font-size: $global-font-size-lg;
@@ -77,6 +76,7 @@
 
 			@include layout {
 				align-items: center;
+				border-radius: $global-border-radius-controls;
 				cursor: pointer;
 				display: flex;
 				height: $global-space-button-lg;

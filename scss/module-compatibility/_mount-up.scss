@@ -1,8 +1,0 @@
-#mountup-settings-form {
-	@extend %window-common;
-	@extend %window-hack !optional;
-
-	hr {
-		display: none;
-	}
-}

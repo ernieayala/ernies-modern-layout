@@ -1,0 +1,41 @@
+@import "../base";
+
+@include module {
+	.app.window-app {
+		form.pdf-item-sheet {
+			@include layout {
+				.field-row {
+					align-items: center;
+					display: flex;
+					gap: $global-space-base;
+				}
+			}
+		}
+	}
+
+	.pdf-app.app.window-app {
+		section.window-content {
+			background-color: RGB($emu-color-background-lightest) !important; // because MOD important
+			background-image: $global-image-background-lightest !important; // because MOD important
+		}
+
+		div.flex {
+			> * {
+				@include layout {
+					height: auto;
+				}
+			}
+		}
+	}
+
+	#sidebar,
+	.sidebar-popout {
+		.sidebar-tab .directory-footer {
+			button.create-pdf {
+				@include layout {
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+}

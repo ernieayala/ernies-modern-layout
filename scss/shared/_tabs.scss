@@ -17,10 +17,10 @@
 		@extend %primary-button;
 		background-color: transparent;
 		background-image: none;
-		border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 		color: RGB($emu-color-text);
 
 		@include layout {
+			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
 			flex: 1;
 			font-size: $global-font-size-md;
 			font-weight: normal;

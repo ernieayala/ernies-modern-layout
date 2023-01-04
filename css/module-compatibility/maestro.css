@@ -1,0 +1,1 @@
+.-emu-layout body.-emu #sidebar #playlists .header-actions>.flexrow,.-emu-layout body.-emu .sidebar-popout #playlists .header-actions>.flexrow{flex:0 0 100%;gap:var(--emu-space-base,4px)}

@@ -1,0 +1,3 @@
+body.-emu #sidebar nav.damage-log-nav.tabs,body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs{box-shadow:none}
+.-emu-layout body.-emu #sidebar nav.damage-log-nav.tabs,.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs{border-radius:0}
+body.-emu #sidebar nav.damage-log-nav.tabs a,body.-emu .sidebar-popout[id=chat-popout] .window-content nav.damage-log-nav.tabs a{color:RGB(var(--emu-color-text-lightest,255,255,255))}

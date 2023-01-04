@@ -1,0 +1,15 @@
+@import "../base";
+
+@include system("twodsix") {
+	.window-app[id*="Token-"] {
+		.sheet-tabs.tabs {
+			@include layout {
+				top: initial !important;
+
+				.item {
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}

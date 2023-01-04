@@ -1,8 +1,7 @@
 #notifications {
-	border-radius: 0;
-
 	@include layout {
 		@extend %reset-list;
+		border-radius: 0;
 		left: 148px;
 		position: fixed;
 		top: 120px;
@@ -19,12 +18,12 @@
 .notification {
 	background-color: RGB($emu-color-background-darkest);
 	border: 1px solid RGB($emu-color-border);
-	border-radius: $global-border-radius-default;
 	box-shadow: $global-box-shadow;
 	color: RGB($emu-color-white);
 	text-shadow: none;
 
 	@include layout {
+		border-radius: $global-border-radius-default;
 		line-height: initial;
 		margin-block-end: $global-space-sm;
 		padding: $global-space-sm;

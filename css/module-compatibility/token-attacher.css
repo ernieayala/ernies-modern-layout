@@ -1,0 +1,21 @@
+body.-emu #tokenAttacher .control-tool:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
+body.-emu #tokenAttacher .control-tool:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
+.-emu-layout body.-emu #tokenAttacher .control-tools{list-style:none;margin:0;padding:0}
+.-emu-layout body.-emu .token-attacher-gm-menu.window-app.settings .window-content form button{margin:0}
+body.-emu #tokenAttacherQuickEdit{background:0 0}
+body.-emu #tokenAttacherQuickEdit h3{color:RGB(var(--emu-color-primary,229,117,9));text-shadow:1px 1px 4px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu #tokenAttacherQuickEdit h3{font-size:var(--emu-font-size-xl, 20px);line-height:initial}
+.-emu-layout body.-emu #tokenAttacher{display:flex;gap:var(--emu-space-base,4px);left:96px;top:52px}
+.-emu-layout.-emu-compact body.-emu #tokenAttacher{left:72px;top:38px}
+body.-emu #tokenAttacher .image{background-color:RGBA(var(--emu-color-background-darkest,9,14,16),.8);background-image:var(--emu-image-background-darkest,none);border:1px solid var(--emu-color-primary,229,117,9)}
+.-emu-layout body.-emu #tokenAttacher .image{border-radius:var(--emu-border-radius-images,0) var(--emu-border-radius-images,0) 0 0;flex:0 0 auto;height:104px;margin:0;min-width:0;width:104px}
+body.-emu #tokenAttacher .image .token-name{background-color:RGB(var(--emu-color-background-darkest,9,14,16));background-image:var(--emu-image-background-darkest,none);border:1px solid RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #tokenAttacher .image .token-name{align-items:center;border-radius:0 0 var(--emu-border-radius-images,0) var(--emu-border-radius-images,0);bottom:auto;box-sizing:border-box;display:flex;font-size:var(--emu-font-size-lg, 16px);justify-content:center;overflow:hidden;padding:var(--emu-space-base,4px);margin:0;max-width:100%;top:100%}
+.-emu-layout body.-emu #tokenAttacher .image .token-name span{height:auto;margin:0;width:auto}
+.-emu-layout body.-emu #tokenAttacher .control-tools{box-sizing:border-box;display:flex;flex:0 0 auto;flex-direction:column;gap:var(--emu-space-base,4px);pointer-events:none;opacity:1;transition:left .3s cubic-bezier(.075, .82, .165, 1),opacity .3s cubic-bezier(.075, .82, .165, 1)}
+body.-emu #tokenAttacher .control-tool{background-color:RGBA(var(--emu-color-background,41,62,64),.8);background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));font-size:var(--emu-font-size-lg, 16px);transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1),opacity .3s cubic-bezier(.075, .82, .165, 1)}
+.-emu-layout body.-emu #tokenAttacher .control-tool{align-items:center;border-radius:var(--emu-border-radius-controls,0);box-sizing:border-box;cursor:pointer;display:flex;flex:0 0 auto;height:var(--emu-space-button-lg,40px);justify-content:center;line-height:initial;margin:0;pointer-events:all;position:relative;width:var(--emu-space-button-lg,40px)}
+.-emu-layout body.-emu #tokenAttacher .control-tool>i{font-size:inherit;height:auto;line-height:1;margin:0;position:relative;width:auto}
+body.-emu #tokenAttacher .control-tool:hover{background-image:none}
+body.-emu #tokenAttacher .control-tool:focus{background-image:none}
+body.-emu #tokenAttacher .control-tool.close{left:var(--emu-space-pf,1px);margin:0;position:absolute;top:var(--emu-space-pf,1px)}

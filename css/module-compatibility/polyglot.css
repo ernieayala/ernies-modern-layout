@@ -1,0 +1,14 @@
+body.-emu #polyglot{background-color:RGBA(var(--emu-color-background,41,62,64),.5);background-image:var(--emu-image-background,none)}
+.-emu-layout body.-emu #polyglot{align-items:center;display:flex;flex:0 0 auto;flex-wrap:nowrap;margin:0;padding:0 var(--emu-space-sm,8px)}
+body.-emu #polyglot label{color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #polyglot label{flex:0 0 auto;margin-inline-end:var(--emu-space-base,4px)}
+body.-emu #polyglot select{background-color:RGBA(var(--emu-color-background,41,62,64),.5);color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #polyglot select{flex:1 1 auto;width:1px}
+body.-emu #client-settings.window-app form .polyglot-group-header{background-color:transparent;border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu #client-settings.window-app form .polyglot-group-header{margin-block-start:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form{display:flex;flex-direction:column;overflow:hidden;padding:0!important}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form>div:not(.sheet-footer){flex:1 1 auto;overflow:auto;margin-block-end:var(--emu-space-base,4px);padding-inline-end:var(--emu-space-sm,8px);padding-block-end:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form>div:not(.sheet-footer) ul{padding:0}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form>div:not(.sheet-footer) li{margin-block-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form>div:not(.sheet-footer) li:last-child{margin-block-end:0}
+.-emu-layout body.-emu #polyglot-death-form.window-app .window-content form .sheet-footer{flex:0 0 auto;margin:0;margin-block-start:var(--emu-space-sm,8px)!important}

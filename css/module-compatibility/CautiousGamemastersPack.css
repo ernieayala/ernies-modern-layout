@@ -1,0 +1,4 @@
+body.-emu #cgmp-typing-notify{color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #cgmp-typing-notify{border-radius:0}
+.-emu-layout body.-emu #cgmp-typing-notify.hidden{display:none}
+body.-emu #cgmp-typing-notify .dot{background-color:RGB(var(--emu-color-white,255,255,255))}

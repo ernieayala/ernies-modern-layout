@@ -1,12 +1,12 @@
 %input-text {
 	background: RGB($emu-color-background-lightest);
 	border: 1px solid RGB($emu-color-border-lighter);
-	border-radius: $global-border-radius-forms;
 	box-shadow: none;
 	color: RGB($emu-color-text);
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-forms;
 		font-family: inherit;
 		font-size: inherit;
 		font-weight: normal;
@@ -40,11 +40,11 @@
 %input-select {
 	background: transparent;
 	border: 1px solid RGB($emu-color-border-lighter);
-	border-radius: $global-border-radius-forms;
 	color: RGB($emu-color-text);
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-forms;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
@@ -83,12 +83,12 @@
 %input-checkbox {
 	background: transparent;
 	border: 1px solid RGB($emu-color-border-lighter);
-	border-radius: $global-border-radius-forms;
 	box-shadow: none;
 	color: RGB($emu-color-text);
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-forms;
 		cursor: pointer;
 		flex: 0 0 auto;
 		height: $global-space-button-xs;
@@ -127,10 +127,10 @@
 %input-color {
 	background: transparent;
 	border: 1px solid RGB($emu-color-border-lighter);
-	border-radius: $global-border-radius-forms;
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-forms;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
@@ -174,11 +174,11 @@
 	&::-webkit-slider-runnable-track {
 		background-color: RGBA($emu-color-background, 0.8);
 		border: 1px solid RGB($emu-color-border);
-		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		transition: background $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
+			border-radius: $global-border-radius-forms;
 			cursor: pointer;
 			height: 8px;
 			width: 100%;
@@ -199,13 +199,13 @@
 
 	&::-webkit-slider-thumb {
 		background-color: RGB($emu-color-primary);
-		border-radius: $global-border-radius-forms;
 		border: 1px solid RGB($emu-color-border-lighter);
 		box-shadow: none;
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		-webkit-appearance: none;
 
 		@include layout {
+			border-radius: $global-border-radius-forms;
 			cursor: pointer;
 			height: 16px;
 			margin-block-start: -5px;
@@ -222,11 +222,11 @@
 	&::-moz-range-track {
 		background-color: RGBA($emu-color-background, 0.8);
 		border: 1px solid RGB($emu-color-border-lighter);
-		border-radius: $global-border-radius-forms;
 		box-shadow: none;
 		transition: background $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
+			border-radius: $global-border-radius-forms;
 			cursor: pointer;
 			height: 8px;
 			width: 100%;
@@ -235,13 +235,13 @@
 
 	&::-moz-range-thumb {
 		background-color: RGB($emu-color-primary);
-		border-radius: $global-border-radius-forms;
 		border: 1px solid RGB($emu-color-border-lighter);
 		box-shadow: none;
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		-webkit-appearance: none;
 
 		@include layout {
+			border-radius: $global-border-radius-forms;
 			cursor: pointer;
 			height: 16px;
 			margin-block-start: -5px;
@@ -273,11 +273,11 @@
 %input-textarea {
 	background: transparent;
 	border: 1px solid RGB($emu-color-border-lighter);
-	border-radius: $global-border-radius-forms;
 	color: RGB($emu-color-text);
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
+		border-radius: $global-border-radius-forms;
 		font-family: inherit;
 		font-size: inherit;
 		margin: 0;

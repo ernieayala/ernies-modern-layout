@@ -228,6 +228,12 @@ form {
 				}
 			}
 		}
+
+		button {
+			> label {
+				color: $emu-color-text-lightest;
+			}
+		}
 	}
 
 	.form-group-stacked {
@@ -280,6 +286,7 @@ form {
 		@include layout {
 			align-items: center;
 			display: inline-flex;
+			font-size: initial;
 			gap: $global-space-sm;
 			height: auto;
 			line-height: initial;

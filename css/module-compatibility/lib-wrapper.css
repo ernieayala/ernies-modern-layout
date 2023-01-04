@@ -1,0 +1,8 @@
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group{display:flex;height:auto}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group>div{display:flex;flex-flow:initial;flex:0 0 auto;float:initial!important;left:auto;margin:0;padding-block-start:0!important;width:auto!important}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group>div button{height:var(--emu-space-button,32px)}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group .vertical-arrow-btn-group{margin-inline-end:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group .form-group{flex:1 1 auto;flex-wrap:wrap}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form .package-priority-group .form-group>label{flex:1 1 auto;flex-wrap:wrap}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form h1{margin-block-start:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu .lib-wrapper.settings.window-app .window-content form select{height:auto;padding:var(--emu-space-sm,8px)}

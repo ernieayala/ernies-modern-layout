@@ -1,0 +1,4 @@
+.-emu-layout body.-emu #emu-settings form{display:flex;flex-direction:column;height:100%;max-height:80vh;overflow:hidden}
+body.-emu #emu-settings form h3{border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu #emu-settings .content{flex:1 1 auto;overflow:auto}
+.-emu-layout body.-emu #emu-settings .sheet-footer{flex:0 0 auto}

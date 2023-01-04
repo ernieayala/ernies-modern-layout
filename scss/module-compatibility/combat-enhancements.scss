@@ -1,0 +1,60 @@
+@import "../base";
+
+@include module {
+	#sidebar,
+	.sidebar-popout {
+		#combat {
+			#combat-tracker {
+				.combatant {
+					.ce-image-wrapper {
+						@include layout {
+							cursor: default;
+							flex: 0 0 auto;
+							height: $global-space-icon;
+							margin-inline-end: $global-space-sm;
+							position: relative;
+							width: $global-space-icon;
+						}
+
+						.token-image {
+							@include layout {
+								height: 100%;
+								margin: 0;
+								width: 100%;
+							}
+						}
+
+						svg {
+							@include layout {
+								box-shadow: none;
+							}
+						}
+					}
+
+					.ce-modify-hp-wrapper {
+						color: RGB($emu-color-text-lightest);
+
+						@include layout {
+							align-items: center;
+							display: flex;
+							flex: 0 0 auto;
+							font-size: $global-font-size-sm;
+							padding: $global-space-xs;
+						}
+
+						input {
+							background-color: RGB($emu-color-background-lightest);
+							background-image: $global-image-background-lightest;
+
+							@include layout {
+								height: auto;
+								margin-inline-start: $global-space-base;
+								width: $global-space-button-lg;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

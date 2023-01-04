@@ -1,0 +1,4 @@
+.-emu-layout body.-emu .app.window-app form.pdf-item-sheet .field-row{align-items:center;display:flex;gap:var(--emu-space-base,4px)}
+body.-emu .pdf-app.app.window-app section.window-content{background-color:RGB(var(--emu-color-background-lightest,230,233,235))!important;background-image:var(--emu-image-background-lightest,none)!important}
+.-emu-layout body.-emu .pdf-app.app.window-app div.flex>*{height:auto}
+.-emu-layout body.-emu #sidebar .sidebar-tab .directory-footer button.create-pdf,.-emu-layout body.-emu .sidebar-popout .sidebar-tab .directory-footer button.create-pdf{flex:1 1 auto}

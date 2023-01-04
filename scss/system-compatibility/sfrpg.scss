@@ -1,6 +1,6 @@
 @import "../base";
 
-body#{$emu}.system-sfrpg {
+@include system("sfrpg") {
 	#sidebar,
 	.sidebar-popout {
 		.sidebar-tab {
@@ -155,9 +155,9 @@ body#{$emu}.system-sfrpg {
 
 		.sortcontainer {
 			border: none;
-			border-radius: 0;
 
 			@include layout {
+				border-radius: 0;
 				margin: 0;
 				margin-block-end: $global-space-base;
 				padding: 0;
@@ -175,10 +175,10 @@ body#{$emu}.system-sfrpg {
 		.hint {
 			background-color: RGB($emu-color-neutral);
 			border: none;
-			border-radius: 0;
 			color: RGB($emu-color-white);
 
 			@include layout {
+				border-radius: 0;
 				margin: $global-space-xs 0;
 				padding: $global-space-base;
 			}
@@ -189,9 +189,9 @@ body#{$emu}.system-sfrpg {
 
 			.filtercontainer {
 				border: none;
-				border-radius: 0;
 
 				@include layout {
+					border-radius: 0;
 					margin: 0;
 					margin-block-end: $global-space-base;
 					padding: 0;
