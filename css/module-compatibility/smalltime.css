@@ -14,7 +14,7 @@ body.-emu #smalltime-app #displayContainer .active.arrow{background-color:RGB(va
 body.-emu #smalltime-app #displayContainer .active.arrow:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
 body.-emu #smalltime-app #displayContainer .active.arrow:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
 body.-emu #smalltime-app{box-shadow:none}
-.-emu-layout body.-emu #smalltime-app{height:auto;margin-inline-start:-6px}
+.-emu-layout body.-emu #smalltime-app{height:auto;margin:0;margin-inline-start:var(--emu-space-sm,8px)}
 .-emu-layout body.-emu #smalltime-app .window-header{display:none}
 body.-emu #smalltime-app .window-content{background-color:RGB(var(--emu-color-background-darkest,9,14,16));background-image:var(--emu-image-background-darkest,none)}
 .-emu-layout body.-emu #smalltime-app .window-content{border-radius:0;height:100%;overflow:visible}

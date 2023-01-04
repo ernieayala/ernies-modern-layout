@@ -6,7 +6,8 @@
 
 		@include layout {
 			height: auto;
-			margin-inline-start: -6px; // to off opening position
+			margin: 0;
+			margin-inline-start: $global-space-sm;
 		}
 
 		.window-header {
