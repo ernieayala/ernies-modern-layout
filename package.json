@@ -11,7 +11,7 @@
 		"watch": "sass scss:css --watch --style=expanded --no-source-map",
 		"build": "sass scss:css --no-source-map && cleancss --batch --batch-suffix \"\" css/*.css --format keep-breaks -O1 all:on,normalize:off && cleancss --batch --batch-suffix \"\" css/*/*.css --format keep-breaks -O1 all:on,normalize:off"
 	},
-	"version": "0.5.4",
+	"version": "0.5.5",
 	"devDependencies": {
 		"clean-css-cli": "5.6.1",
 		"sass": "1.32.13"
