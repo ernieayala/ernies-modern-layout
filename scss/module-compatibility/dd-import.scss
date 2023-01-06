@@ -33,12 +33,18 @@
 
 					.file-input {
 						margin-block-start: $global-space-sm;
+						width: 100%;
 					}
 				}
 
 				> label {
 					flex: 0 0 auto;
+					gap: $global-space-base;
 					padding-inline-end: $global-space-base;
+
+					+ div {
+						gap: $global-space-base;
+					}
 				}
 			}
 		}

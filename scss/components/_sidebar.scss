@@ -415,13 +415,19 @@
 	}
 }
 
-.sidebar-popout {
+.sidebar-popout.window-app:not(.-emu-clean-sheet) {
 	@include layout {
 		border-radius: $global-border-radius-default;
 		height: auto;
 		min-height: 50vh;
 		min-width: $global-space-sidebar;
 		top: initial;
+	}
+
+	.sidebar-popout {
+		@include layout {
+			top: initial;
+		}
 	}
 
 	.window-content {
