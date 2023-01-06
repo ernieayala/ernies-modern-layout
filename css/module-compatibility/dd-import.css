@@ -2,5 +2,6 @@
 .-emu-layout body.-emu #dd-importer .window-content{overflow:auto}
 .-emu-layout body.-emu #dd-importer .form-group{align-items:center;display:flex;margin:0;padding:var(--emu-space-sm,8px)}
 .-emu-layout body.-emu #dd-importer .form-group#dd-upload-files{align-items:flex-start;flex-direction:column}
-.-emu-layout body.-emu #dd-importer .form-group#dd-upload-files .file-input{margin-block-start:var(--emu-space-sm,8px)}
-.-emu-layout body.-emu #dd-importer .form-group>label{flex:0 0 auto;padding-inline-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #dd-importer .form-group#dd-upload-files .file-input{margin-block-start:var(--emu-space-sm,8px);width:100%}
+.-emu-layout body.-emu #dd-importer .form-group>label{flex:0 0 auto;gap:var(--emu-space-base,4px);padding-inline-end:var(--emu-space-base,4px)}
+.-emu-layout body.-emu #dd-importer .form-group>label+div{gap:var(--emu-space-base,4px)}

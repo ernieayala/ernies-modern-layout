@@ -1,6 +1,7 @@
 :root {
 	@include css-color-variable-creation($global-palette-default);
 	--emu-background-opacity-button-primary: 1;
+	--emu-background-opacity-form-field: 1;
 	--emu-background-opacity-hotbar: 0.8;
 	--emu-background-opacity-hud: 0.8;
 	--emu-background-opacity-players: 0.8;

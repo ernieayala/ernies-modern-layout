@@ -1,5 +1,5 @@
 %input-text {
-	background: RGB($emu-color-background-lightest);
+	background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 	border: 1px solid RGB($emu-color-border-lighter);
 	box-shadow: none;
 	color: RGB($emu-color-text);
@@ -38,7 +38,7 @@
 }
 
 %input-select {
-	background: transparent;
+	background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 	border: 1px solid RGB($emu-color-border-lighter);
 	color: RGB($emu-color-text);
 	transition: box-shadow $global-transition-time-base $global-transition-type-link;

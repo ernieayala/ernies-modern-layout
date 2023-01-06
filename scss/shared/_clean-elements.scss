@@ -46,7 +46,7 @@
 	input[type="time"],
 	input[type="password"],
 	input[type="datetime-local"] {
-		background: transparent;
+		background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 		box-shadow: none;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;
@@ -115,7 +115,7 @@
 	}
 
 	select {
-		background: transparent;
+		background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 		box-shadow: none;
 		color: RGB($emu-color-text);
 		transition: box-shadow $global-transition-time-base $global-transition-type-link;

@@ -82,6 +82,7 @@ function updateSettings(settings) {
 		imageBackgroundDarkest,
 		imageBackgroundControls,
 		backgroundOpacityButtonPrimary,
+		backgroundOpacityFormField,
 		backgroundOpacityHotbar,
 		backgroundOpacityHud,
 		backgroundOpacityPlayers,
@@ -180,6 +181,7 @@ function updateSettings(settings) {
 
 	// Background Color Opacity
 	backgroundOpacityButtonPrimary ? myRoot.style.setProperty('--emu-background-opacity-button-primary', `${backgroundOpacityButtonPrimary}`) : myRoot.style.setProperty('--emu-background-opacity-button-primary', `1`);
+	backgroundOpacityFormField ? myRoot.style.setProperty('--emu-background-opacity-form-field', `${backgroundOpacityFormField}`) : myRoot.style.setProperty('--emu-background-opacity-form-field', `1`);
 	backgroundOpacityHotbar ? myRoot.style.setProperty('--emu-background-opacity-hotbar', `${backgroundOpacityHotbar}`) : myRoot.style.setProperty('--emu-background-opacity-hotbar', `0.8`);
 	backgroundOpacityHud ? myRoot.style.setProperty('--emu-background-opacity-hud', `${backgroundOpacityHud}`) : myRoot.style.setProperty('--emu-background-opacity-hud', `0.8`);
 	backgroundOpacityPlayers ? myRoot.style.setProperty('--emu-background-opacity-players', `${backgroundOpacityPlayers}`) : myRoot.style.setProperty('--emu-background-opacity-players', `0.8`);
@@ -266,6 +268,7 @@ class emuSettings {
 			imageBackgroundDarkest: '',
 			imageBackgroundControls: '',
 			backgroundOpacityButtonPrimary: 1,
+			backgroundOpacityFormField: 1,
 			backgroundOpacityHotbar: 0.8,
 			backgroundOpacityHud: 0.8,
 			backgroundOpacityPlayers: 0.8,
