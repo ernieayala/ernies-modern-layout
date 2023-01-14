@@ -1,1 +1,3 @@
-body.-emu .window-app.item-piles-config:not(.-emu-clean-sheet) form .form-group label{display:unset}
+body.-emu .window-app[class*=item-piles-]:not(.-emu-clean-sheet) form .form-group label {
+  display: unset;
+}

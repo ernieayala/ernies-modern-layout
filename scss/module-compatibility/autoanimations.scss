@@ -1,0 +1,11 @@
+@import "../base";
+
+@include module {
+	#AA-autorec-settings {
+		.window-content {
+			@include layout {
+				display: flex;
+			}
+		}
+	}
+}

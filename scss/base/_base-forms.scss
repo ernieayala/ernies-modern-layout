@@ -121,6 +121,13 @@ form {
 			}
 		}
 
+		.notes,
+		.hint {
+			@include layout {
+				padding: $global-space-base 0;
+			}
+		}
+
 		input,
 		select {
 			&[type="checkbox"] {
@@ -234,6 +241,7 @@ form {
 			font-style: italic;
 			line-height: initial;
 			margin: 0;
+			padding: $global-space-sm;
 			width: 100%;
 
 			&:empty {

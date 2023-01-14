@@ -1,4 +1,10 @@
 .window-app[id*="JournalEntry-"] {
+	.window-content {
+		@include layout {
+			padding: 0;
+		}
+	}
+
 	.journal-sidebar.collapsed {
 		--sidebar-width-collapsed: calc(#{$global-space-button} + #{$global-space-sm} + #{$global-space-base});
 	}
@@ -9,13 +15,14 @@
 
 		@include layout {
 			border-radius: 0;
+			border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
 			padding: 0;
 		}
 	}
 
 	.journal-sheet-container {
 		@include layout {
-			gap: $global-space-sm;
+			gap: 0;
 			padding: 0;
 		}
 	}
@@ -34,6 +41,7 @@
 
 		.directory-header {
 			@include layout {
+				border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
 				display: flex;
 				flex-direction: column;
 				gap: $global-space-base;

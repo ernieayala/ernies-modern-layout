@@ -7,7 +7,7 @@
 
 	@include layout {
 		border-radius: $global-border-radius-default;
-		font-size: initial;
+		font-size: $global-font-size-md;
 		left: 0;
 		max-width: 320px;
 		min-width: 152px;

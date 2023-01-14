@@ -1,6 +1,7 @@
 export const MODULE = [
 	'always-hp',
 	'anonymous',
+	'autoanimations',
 	'betterroofs',
 	'CautiousGamemastersPack',
 	'chat-notifications',

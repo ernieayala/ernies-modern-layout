@@ -38,9 +38,9 @@
 			@include layout {
 				border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
 				border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
-				display: block;
+				display: flex;
 				flex: 1 1 auto;
-				flex-direction: initial;
+				flex-direction: column;
 				font-size: $global-font-size-md;
 				margin: 0;
 				overflow-x: hidden;
@@ -51,9 +51,9 @@
 
 			form {
 				@include layout {
-					display: flex;
-					flex-direction: column;
-					flex-wrap: nowrap;
+					// display: flex;
+					// flex-direction: column;
+					// flex-wrap: nowrap;
 					gap: $global-space-base;
 
 					&.flexcol {
@@ -73,9 +73,11 @@
 
 			> form {
 				> button[type="submit"]:last-child,
-				> .sheet-footer:last-child {
+				> .sheet-footer:last-child,
+				> footer {
 					@include layout {
 						bottom: calc(-1 * #{$global-space-base});
+						margin-block-start: $global-space-sm;
 						outline: $global-space-base solid RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
 						position: sticky;
 						z-index: 2;

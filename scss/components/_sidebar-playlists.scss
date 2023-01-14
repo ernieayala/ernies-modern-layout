@@ -190,6 +190,13 @@
 				}
 			}
 
+			.sound {
+				@include layout {
+					padding-inline-start: $global-space-sm;
+					padding-inline-end: $global-space-sm;
+				}
+			}
+
 			.playlist-header {
 				@include layout {
 					flex: 0 0 auto;

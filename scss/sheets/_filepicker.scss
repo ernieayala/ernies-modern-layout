@@ -1,7 +1,11 @@
 .filepicker.window-app {
 	.filepicker-body {
-		max-height: 100%;
-		overflow: hidden;
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			max-height: 100%;
+			overflow: hidden;
+		}
 
 		&.private {
 			@extend %global-focus;

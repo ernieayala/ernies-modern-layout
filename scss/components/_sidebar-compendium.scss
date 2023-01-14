@@ -88,3 +88,11 @@
 		}
 	}
 }
+
+.window-app .window-content .compendium {
+	&.directory .directory-list {
+		@include layout {
+			padding: 0;
+		}
+	}
+}
