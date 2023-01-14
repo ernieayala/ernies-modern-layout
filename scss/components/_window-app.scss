@@ -51,9 +51,6 @@
 
 			form {
 				@include layout {
-					// display: flex;
-					// flex-direction: column;
-					// flex-wrap: nowrap;
 					gap: $global-space-base;
 
 					&.flexcol {
@@ -289,6 +286,9 @@
 			@include layout {
 				cursor: pointer;
 				flex: 0 0 auto;
+				height: auto;
+				margin: 0;
+				max-height: 64px;
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;

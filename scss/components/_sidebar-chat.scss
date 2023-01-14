@@ -253,6 +253,10 @@
 			}
 
 			.chat-control-icon {
+				@include layout {
+					flex: 0 0 auto;
+				}
+
 				.fa-dice-d20 {
 					@extend %link-button;
 
@@ -296,6 +300,13 @@
 							line-height: initial;
 						}
 					}
+				}
+			}
+
+			i.fas {
+				@include layout {
+					font-size: inherit;
+					line-height: inherit;
 				}
 			}
 		}

@@ -70,6 +70,8 @@ body.-emu.system-alienrpg #sidebar .chat-message button.active.alien-Push-button
 body.-emu.system-alienrpg #sidebar .chat-message button.active.alien-Push-button:hover,body.-emu.system-alienrpg .active.alien-crit-button:hover,body.-emu.system-alienrpg .active.creature-attack-roll:hover,body.-emu.system-alienrpg .active.pwr-btn:hover,body.-emu.system-alienrpg .active.stunt-btn:hover,body.-emu.system-alienrpg .active.supply-btn:hover,body.-emu.system-alienrpg .alienrpg .crt .active.minus-btn:hover,body.-emu.system-alienrpg .alienrpg .crt .active.plus-btn:hover,body.-emu.system-alienrpg .alienrpg .editor .active.editor-edit:hover,body.-emu.system-alienrpg .alienrpg button.active:hover,body.-emu.system-alienrpg .journal-sheet button.active:hover,body.-emu.system-alienrpg .minus-btn .active.plus-btn:hover,body.-emu.system-alienrpg .resource-content button.active:hover,body.-emu.system-alienrpg .sidebar-popout[id=chat-popout] .window-content .chat-message button.active.alien-Push-button:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
 body.-emu.system-alienrpg #sidebar .chat-message button.active.alien-Push-button:active,body.-emu.system-alienrpg .active.alien-crit-button:active,body.-emu.system-alienrpg .active.creature-attack-roll:active,body.-emu.system-alienrpg .active.pwr-btn:active,body.-emu.system-alienrpg .active.stunt-btn:active,body.-emu.system-alienrpg .active.supply-btn:active,body.-emu.system-alienrpg .alienrpg .crt .active.minus-btn:active,body.-emu.system-alienrpg .alienrpg .crt .active.plus-btn:active,body.-emu.system-alienrpg .alienrpg .editor .active.editor-edit:active,body.-emu.system-alienrpg .alienrpg button.active:active,body.-emu.system-alienrpg .journal-sheet button.active:active,body.-emu.system-alienrpg .minus-btn .active.plus-btn:active,body.-emu.system-alienrpg .resource-content button.active:active,body.-emu.system-alienrpg .sidebar-popout[id=chat-popout] .window-content .chat-message button.active.alien-Push-button:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
 body.-emu.system-alienrpg{--aliengreen:RGB(var(--emu-color-primary, 229, 117, 9));--aliendarkergreen:RGB(var(--emu-color-primary-darker, 160, 81, 8));--alienitemselect:RGB(var(--emu-color-primary, 229, 117, 9));--alienoddtab:RGB(var(--emu-color-primary, 229, 117, 9));--blue:RGB(var(--emu-color-neutral, 56, 106, 207));--black:RGB(var(--emu-color-black, 0, 0, 0));--white:RGB(var(--emu-color-white, 255, 255, 255));--alientextjournal:RGB(var(--emu-color-text-lightest, 255, 255, 255));--alienchatwhite:RGB(var(--emu-color-text-lightest, 255, 255, 255));--alienchatred:RGB(var(--emu-color-negative, 220, 20, 60));--alienchatredshadow:RGB(var(--emu-color-negative-darkest, 132, 12, 36));--alienchatblue:RGB(var(--emu-color-neutral-darkest, 37, 73, 144));--alienchatlightblue:RGB(var(--emu-color-neutral, 56, 106, 207));--alienchatlightgreen:RGB(var(--emu-color-negative, 220, 20, 60));--alienchatgoldenrod:RGB(var(--emu-color-warning, 237, 185, 80))}
+body.-emu.system-alienrpg img{border-color:transparent}
+.-emu-layout body.-emu.system-alienrpg img{border-radius:var(--emu-border-radius-images,0);border-style:solid;border-width:0}
 .-emu-layout body.-emu.system-alienrpg .alienrpg.window-app .window-content{padding-inline-end:0}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .window-content{padding:var(--emu-space-sm,8px)}
 .-emu-layout body.-emu.system-alienrpg .alienrpg #context-menu{height:max-content;left:-900%;text-align:left}
@@ -213,7 +215,7 @@ body.-emu.system-alienrpg .grid-attr{border-color:RGB(var(--emu-color-border,33,
 .-emu-layout body.-emu.system-alienrpg .Attr4{grid-area:Attr4}
 .-emu-layout body.-emu.system-alienrpg .grid-Consumables{display:grid;gap:var(--emu-space-base,4px);grid-template-areas:"Heading Heading " "Air1 Air2" "Food1 Food2" "Water1 Water2" "Power1 Power2";grid-template-columns:1fr min-content}
 .-emu-layout body.-emu.system-alienrpg .grid-Consumables .resource-content{align-items:center;display:flex;gap:var(--emu-space-base,4px)}
-body.-emu.system-alienrpg .grid-Consumables h3.resource-label{background-color:RGB(var(--emu-color-background,41,62,64))}
+body.-emu.system-alienrpg .grid-Consumables h3.resource-label{background-color:RGB(var(--emu-color-background,41,62,64));color:RGB(var(--emu-color-text-lightest,255,255,255))}
 .-emu-layout body.-emu.system-alienrpg .grid-Consumables h3.resource-label{align-items:center;display:flex;height:100%;justify-content:center;width:100%}
 .-emu-layout body.-emu.system-alienrpg .Heading{grid-area:Heading;justify-self:flex-start}
 .-emu-layout body.-emu.system-alienrpg .Air1{align-self:center;grid-area:Air1;justify-content:flex-start}
@@ -265,9 +267,10 @@ body.-emu.system-alienrpg .grid-weapon-body{border-color:RGB(var(--emu-color-bor
 .-emu-layout body.-emu.system-alienrpg .wCol12{grid-area:wCol12;justify-self:center}
 .-emu-layout body.-emu.system-alienrpg .wCol13{grid-area:wCol13;justify-self:left}
 .-emu-layout body.-emu.system-alienrpg .wCol14{grid-area:wCol14;justify-self:left}
+.-emu-layout body.-emu.system-alienrpg .items-list li.grid-items.item-header{border-width:1px;margin-block-start:var(--emu-space-sm,8px);padding:0}
 .-emu-layout body.-emu.system-alienrpg .grid-items{align-items:center;display:grid;grid-template-areas:"lCol1 lCol2 lCol17 lCol15 lCol13 lCol11 lCol10 lCol3 lCol4" "lCol5 lCol6 lCol18 lCol16 lCol14 lCol12 lCol9 lCol7 lCol8";grid-template-columns:10% 25% repeat(6,10%) 5%;padding:0}
 body.-emu.system-alienrpg .grid-items.item{border-color:RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-alienrpg .grid-items.item{border-style:solid;border-width:1px;border-block-start-width:0;border-block-end-width:0}
+.-emu-layout body.-emu.system-alienrpg .grid-items.item{border-style:solid;border-width:1px;border-block-start-width:0;border-block-end-width:1px}
 .-emu-layout body.-emu.system-alienrpg .grid-items>*{align-items:center;display:flex;padding:var(--emu-space-base,4px) var(--emu-space-sm,8px)}
 body.-emu.system-alienrpg .grid-items .item-name.lCol1{background-color:RGB(var(--emu-color-background-light,125,138,140))}
 .-emu-layout body.-emu.system-alienrpg .grid-items input[type=text]{height:var(--emu-space-button-sm,24px)}
@@ -337,7 +340,7 @@ body.-emu.system-alienrpg .grid-creature{border-color:RGB(var(--emu-color-border
 .-emu-layout body.-emu.system-alienrpg .vCre7{grid-area:vCre7}
 .-emu-layout body.-emu.system-alienrpg .vCre8{grid-area:vCre8}
 body.-emu.system-alienrpg .grid-planet-header{border-color:RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-alienrpg .grid-planet-header{align-items:center;border-style:solid;border-width:0;display:grid;gap:var(--emu-space-base,4px);grid-template-areas:"hplan1 hplan2 " "hplan3 hplan4" "hplan5 hplan6 " "hplan7 hplan8";grid-template-columns:auto;padding:var(--emu-space-base,4px)}
+.-emu-layout body.-emu.system-alienrpg .grid-planet-header{align-items:center;border-style:solid;border-width:1px;display:grid;gap:var(--emu-space-base,4px);grid-template-areas:"hplan1 hplan2 " "hplan3 hplan4" "hplan5 hplan6 " "hplan7 hplan8";grid-template-columns:auto;padding:var(--emu-space-base,4px)}
 .-emu-layout body.-emu.system-alienrpg .hplan1{grid-area:hplan1}
 .-emu-layout body.-emu.system-alienrpg .hplan2{grid-area:hplan2}
 .-emu-layout body.-emu.system-alienrpg .hplan3{grid-area:hplan3}
@@ -559,11 +562,10 @@ body.-emu.system-alienrpg .alienrpg .item-form{background-color:transparent}
 body.-emu.system-alienrpg .alienrpg .actor-header{background-color:RGB(var(--emu-color-background-lightest,230,233,235));background-image:var(--emu-image-background-lightest,none)}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .actor-header{display:flex;flex-direction:row;flex-wrap:wrap;flex:0 0 150px;gap:var(--emu-space-base,4px);justify-content:flex-start;margin:0;overflow:hidden;position:sticky;top:0;z-index:5}
 body.-emu.system-alienrpg .alienrpg .vehicle-header{background-color:transparent;border-color:RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header{border-style:solid;border-width:1px;display:flex;flex:0 0 auto;gap:var(--emu-space-base,4px);margin:0;overflow:hidden}
-.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header h1.charname{border-width:0}
+.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header{border-style:solid;border-width:0;display:flex;flex:0 0 auto;gap:var(--emu-space-base,4px);margin:0;overflow:hidden}
 body.-emu.system-alienrpg .alienrpg .vehicle-header .grid-2col{border-color:RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header .grid-2col{align-items:flex-start;border-block-start-style:solid;border-block-start-width:1px;display:flex;padding:var(--emu-space-sm,8px)}
-.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header .grid-2col .grid-weapon{flex:1 1 auto}
+.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header .grid-2col{align-items:flex-start;border-style:solid;border-width:1px;display:flex;padding:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu.system-alienrpg .alienrpg .vehicle-header .grid-2col .grid-weapon{border-width:0;flex:1 1 auto}
 body.-emu.system-alienrpg .alienrpg .profile-img{border-color:RGB(var(--emu-color-border,33,50,52))}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .profile-img{border-radius:var(--emu-border-radius-images,0);border-style:solid;border-width:0;flex:0 0 auto;height:150px;margin:0;max-width:200px;width:auto}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .profile-img-item{flex:0 0 100px;height:100px;justify-self:center;margin:0;width:auto}
@@ -618,7 +620,7 @@ body.-emu.system-alienrpg .alienrpg .tab{background-color:transparent}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .items-list:empty{display:none}
 body.-emu.system-alienrpg .alienrpg .items-list .item-header{border-color:RGB(var(--emu-color-border,33,50,52))}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .items-list .item-header{border-style:solid;border-width:1px;border-block-start-width:0;padding-block-start:var(--emu-space-sm,8px)}
-body.-emu.system-alienrpg .alienrpg .items-list>h2{background-color:RGB(var(--emu-color-background,41,62,64));border-color:RGB(var(--emu-color-border,33,50,52))}
+body.-emu.system-alienrpg .alienrpg .items-list>h2{background-color:RGB(var(--emu-color-background,41,62,64));border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .items-list>h2{border-style:solid;border-width:1px;font-weight:400;margin-block-start:var(--emu-space-sm,8px)!important;padding:var(--emu-space-base,4px) var(--emu-space-sm,8px)!important}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .items-list>br{display:none}
 body.-emu.system-alienrpg .alienrpg .item-header{background-color:transparent}
@@ -644,7 +646,7 @@ body.-emu.system-alienrpg .alienrpg .crt .synth-stresslabel{border-color:RGBA(va
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .synth-stresslabel{align-items:center;animation:none;border-radius:var(--emu-border-radius-controls,0);border-style:solid;border-width:1px;display:flex;font-weight:400;height:var(--emu-space-button,32px);justify-content:center;text-align:center;text-transform:uppercase;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1);width:90%}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .rollable-stress:hover{animation:none}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .resource-content .maxboxsize{vertical-align:initial}
-body.-emu.system-alienrpg .alienrpg .crt .crt-grid-Char-Att{background-color:RGB(var(--emu-color-background-light,125,138,140));border-color:RGB(var(--emu-color-border,33,50,52))}
+body.-emu.system-alienrpg .alienrpg .crt .crt-grid-Char-Att{background-color:RGBA(var(--emu-color-background-light,125,138,140),.5);border-color:RGB(var(--emu-color-border,33,50,52))}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt-grid-Char-Att{align-items:center;border-style:solid;border-width:1px;border-block-start-width:0;display:grid;float:unset;grid-column-gap:0;grid-row-gap:var(--emu-space-base,4px);grid-template-areas:"crt_gCol1 crt_gCol2 crt_gCol3 crt_gCol4 crt_gCol5 crt_gCol6" "crt_gCol7 crt_gCol8 crt_gCol9 crt_gCol10 crt_gCol11 crt_gCol12";grid-template-columns:25% 8% 25% 8% 25% 8%;margin:0;padding:var(--emu-space-base,4px) 0;width:100%}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol1,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol10,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol11,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol12,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol2,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol3,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol4,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol5,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol6,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol7,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol8,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .crt_gCol9{align-self:center;justify-self:center}
 body.-emu.system-alienrpg .alienrpg .crt .crt_gCol11{color:RGB(var(--emu-color-primary,229,117,9))}
@@ -741,7 +743,7 @@ body.-emu.system-alienrpg .alienrpg .crt .rollItem{border-color:RGBA(var(--emu-c
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .rollItem{align-items:center;animation:none;border-radius:var(--emu-border-radius-controls,0);border-style:solid;border-width:0;display:flex;font-weight:400;justify-content:flex-start;padding:var(--emu-space-base,4px);text-align:left;text-transform:unset;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1);width:100%}
 body.-emu.system-alienrpg .alienrpg .crt .rollItem:focus,body.-emu.system-alienrpg .alienrpg .crt .rollItem:hover{background-color:transparent;border-color:transparent;box-shadow:none;color:RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .rollItem:focus,.-emu-layout body.-emu.system-alienrpg .alienrpg .crt .rollItem:hover{font-weight:400;text-transform:unset}
-body.-emu.system-alienrpg .alienrpg .crt .talTitle{background-color:RGB(var(--emu-color-background,41,62,64));border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text,9,14,16))}
+body.-emu.system-alienrpg .alienrpg .crt .talTitle{background-color:RGB(var(--emu-color-background,41,62,64));border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .talTitle{align-items:center;border-style:solid;border-width:0;border-block-end-width:1px;display:flex;font-size:var(--emu-font-size-lg, 16px);padding:var(--emu-space-base,4px) var(--emu-space-sm,8px);text-transform:uppercase}
 .-emu-layout body.-emu.system-alienrpg .alienrpg .crt .talTitle+.item-name{display:none}
 body.-emu.system-alienrpg .alienrpg .crt .textbox{color:RGB(var(--emu-color-white,255,255,255))}

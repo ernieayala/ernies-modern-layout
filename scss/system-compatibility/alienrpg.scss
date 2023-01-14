@@ -1,6 +1,16 @@
 @import "../base";
 
 @mixin alien-global-window {
+	img {
+		border-color: transparent;
+
+		@include layout {
+			border-radius: $global-border-radius-images;
+			border-style: solid;
+			border-width: 0;
+		}
+	}
+
 	.alienrpg {
 		&.window-app {
 			.window-content {
@@ -1046,6 +1056,7 @@
 
 		h3.resource-label {
 			background-color: RGB($emu-color-background);
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
@@ -1392,6 +1403,16 @@
 		}
 	}
 
+	.items-list li.grid-items {
+		&.item-header {
+			@include layout {
+				border-width: 1px;
+				margin-block-start: $global-space-sm;
+				padding: 0;
+			}
+		}
+	}
+
 	.grid-items {
 		@include layout {
 			align-items: center;
@@ -1410,7 +1431,7 @@
 				border-style: solid;
 				border-width: 1px;
 				border-block-start-width: 0;
-				border-block-end-width: 0;
+				border-block-end-width: 1px;
 			}
 		}
 
@@ -1923,7 +1944,7 @@
 		@include layout {
 			align-items: center;
 			border-style: solid;
-			border-width: 0;
+			border-width: 1px;
 			display: grid;
 			gap: $global-space-base;
 			grid-template-areas:
@@ -2677,7 +2698,7 @@
 
 		@include layout {
 			border-style: solid;
-			border-width: 1px;
+			border-width: 0;
 			display: flex;
 			flex: 0 0 auto;
 			gap: $global-space-base;
@@ -2687,7 +2708,7 @@
 
 		h1.charname {
 			@include layout {
-				border-width: 0;
+				// border-width: 0;
 			}
 		}
 
@@ -2696,12 +2717,13 @@
 
 			@include layout {
 				align-items: flex-start;
-				border-block-start-style: solid;
-				border-block-start-width: 1px;
+				border-style: solid;
+				border-width: 1px;
 				display: flex;
 				padding: $global-space-sm;
 
 				.grid-weapon {
+					border-width: 0;
 					flex: 1 1 auto;
 				}
 			}
@@ -3112,6 +3134,7 @@
 		> h2 {
 			background-color: RGB($emu-color-background);
 			border-color: RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				border-style: solid;
@@ -3934,7 +3957,7 @@
 		}
 
 		.crt-grid-Char-Att {
-			background-color: RGB($emu-color-background-light);
+			background-color: RGBA($emu-color-background-light, 0.5);
 			border-color: RGB($emu-color-border);
 
 			@include layout {
@@ -4664,7 +4687,7 @@
 		.talTitle {
 			background-color: RGB($emu-color-background);
 			border-color: RGB($emu-color-border);
-			color: RGB($emu-color-text);
+			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;

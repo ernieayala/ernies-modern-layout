@@ -241,7 +241,7 @@ form {
 			font-style: italic;
 			line-height: initial;
 			margin: 0;
-			padding: $global-space-sm;
+			padding: $global-space-base $global-space-sm;
 			width: 100%;
 
 			&:empty {

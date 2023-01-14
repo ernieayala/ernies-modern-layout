@@ -15,7 +15,7 @@
 
 		@include layout {
 			border-radius: 0;
-			border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
+			border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
 			padding: 0;
 		}
 	}
@@ -39,9 +39,12 @@
 		border: none;
 		color: RGB($emu-color-text-lightest);
 
+		@include layout {
+			border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
+		}
+
 		.directory-header {
 			@include layout {
-				border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
 				display: flex;
 				flex-direction: column;
 				gap: $global-space-base;

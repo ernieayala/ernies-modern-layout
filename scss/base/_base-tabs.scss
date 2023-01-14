@@ -12,6 +12,7 @@
 				display: none;
 				flex-direction: column;
 				gap: $global-space-base;
+				padding-block-start: $global-space-base;
 
 				&.active {
 					display: flex;
