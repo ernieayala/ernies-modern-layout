@@ -20,7 +20,11 @@ A clean and theme-able visual update for Foundry VTT.
 - Various UI toggles (hide logo, hide scene thumbnails, and more)
 
 ## Manifest URL
-https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.5/module.json
+https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.6/module.json
+
+## Want to use my test version?
+This might break your game - but this is a manule install of a pre-release version.
+https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/prerelease/module.json
 
 ## Want me to look at something?
 - If you find a bug with a mod that I have marked a function - create an Issue in Github for me.
