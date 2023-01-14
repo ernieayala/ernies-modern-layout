@@ -22,8 +22,8 @@ A clean and theme-able visual update for Foundry VTT.
 ## Manifest URL
 https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.5/module.json
 
-## Want to use my test version?
-This might break your game - but this is a manual install of a pre-release version.
+## Pre-release URL (Use at your own risk)
+This might break your game (visually) - but this is a manual install of a pre-release version.
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/prerelease/module.json
 
 If you want to revert to the stable version - re-install using the link under Manifest URL.
