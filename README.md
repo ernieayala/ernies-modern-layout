@@ -23,7 +23,7 @@ A clean and theme-able visual update for Foundry VTT.
 https://github.com/ernieayala/ernies-modern-layout/releases/download/0.5.6/module.json
 
 ## Want to use my test version?
-This might break your game - but this is a manule install of a pre-release version.
+This might break your game - but this is a manual install of a pre-release version.
 https://raw.githubusercontent.com/ernieayala/ernies-modern-layout/master/prerelease/module.json
 
 ## Want me to look at something?
