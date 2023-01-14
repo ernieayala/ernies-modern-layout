@@ -1,4 +1,9 @@
 #tooltip {
+	background: RGBA($emu-color-background-darkest, 0.9);
+	border: 1px solid RGB($emu-color-border);
+	box-shadow: none;
+	color: RGB($emu-color-text-lightest);
+
 	@include layout {
 		align-items: center;
 		border-radius: $global-border-radius-default;
@@ -15,11 +20,6 @@
 			visibility $global-transition-time-base $global-transition-type-shift;
 		width: max-content;
 	}
-
-	background: RGBA($emu-color-background-darkest, 0.9);
-	border: 1px solid RGB($emu-color-border);
-	box-shadow: none;
-	color: RGB($emu-color-text-lightest);
 
 	&.active {
 		@include layout {

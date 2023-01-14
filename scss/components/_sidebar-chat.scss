@@ -14,6 +14,7 @@
 				background-color: RGB($emu-color-background-chat-message);
 				background-image: $global-image-background-light;
 				border: 1px solid RGB($emu-color-border);
+				box-shadow: none;
 				color: RGB($emu-color-text);
 
 				@include layout {
@@ -24,6 +25,7 @@
 					gap: $global-space-base;
 					font-family: inherit;
 					font-size: $global-font-size-md;
+					font-weight: normal;
 					padding: $global-space-base;
 					margin: $global-space-base;
 
@@ -79,6 +81,7 @@
 					transition: opacity $global-transition-time-base $global-transition-type-link;
 
 					@include layout {
+						align-self: flex-start;
 						display: flex;
 						gap: $global-space-base;
 						opacity: 0;
@@ -223,6 +226,12 @@
 						@extend %control-button;
 						color: RGB($emu-color-text);
 					}
+				}
+			}
+
+			> li {
+				@include layout {
+					padding: $global-space-base;
 				}
 			}
 		}

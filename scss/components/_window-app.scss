@@ -36,6 +36,8 @@
 	&:not(.-emu-clean-sheet) {
 		.window-content {
 			@include layout {
+				border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
+				border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
 				display: block;
 				flex: 1 1 auto;
 				flex-direction: initial;
@@ -149,6 +151,7 @@
 
 			@include layout {
 				@extend %control-button;
+				gap: $global-space-base;
 				min-width: $global-space-button-sm;
 				padding: $global-space-base;
 				position: relative;

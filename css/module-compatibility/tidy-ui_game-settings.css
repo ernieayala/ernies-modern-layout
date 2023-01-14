@@ -19,7 +19,6 @@ body.-emu #client-settings.window-app.form .window-content #config-tabs .module-
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group input[type=checkbox]{appearance:auto;left:auto}
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group input[type=checkbox]::after{display:none}
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group label{align-items:center;display:inline-flex;font-size:var(--emu-font-size-md, 14px);font-weight:400;line-height:initial;margin:0;order:initial;padding:0}
-.-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group>label{flex:0 0 40%!important}
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group>button{flex:1 1 auto!important;margin:0;width:auto}
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper div.form-group>button>label{justify-content:center;padding:0}
 .-emu-layout body.-emu #client-settings.window-app.form .window-content #config-tabs .module-settings-wrapper .notes{margin:0}

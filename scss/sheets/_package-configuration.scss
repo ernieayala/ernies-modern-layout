@@ -7,13 +7,14 @@
 			font-size: $global-font-size-md;
 			gap:  $global-space-sm;
 			height: 100%;
-			overflow: auto;
+			overflow: hidden;
 			padding: 0;
 			padding-inline-end: $global-space-sm;
 		}
 
 		.entry-filter {
 			@include layout {
+				flex: 0 0 auto;
 				margin: 0;
 			}
 		}
@@ -49,13 +50,26 @@
 		.tabs {
 			border-block-end: none !important;
 
+			@include layout {
+				flex: 1 1 auto;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+
 			.category-tab {
 				border: none;
 
 				@include layout {
 					border-radius: 0 !important;
+					flex: 0 0 auto;
 					justify-content: space-between !important;
 				}
+			}
+		}
+
+		.reset-all {
+			@include layout {
+				flex: 0 0 auto;
 			}
 		}
 	}

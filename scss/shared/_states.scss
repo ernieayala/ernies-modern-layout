@@ -19,6 +19,19 @@
 	outline: none;
 }
 
+%global-focus-subtle {
+	box-shadow: inset 0 0 0 1px RGB($emu-color-primary);
+	text-shadow: none;
+	outline: none;
+}
+
+%global-focus-outer {
+	box-shadow: none;
+	outline-offset: 1px;
+	outline: 2px solid RGB($emu-color-primary);
+	text-shadow: none;
+}
+
 %global-active {
 	background-color: RGB($emu-color-primary);
 	color: RGB($emu-color-text-lightest);

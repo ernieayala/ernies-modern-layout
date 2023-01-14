@@ -23,7 +23,6 @@ form {
 			font-size: $global-font-size-lg;
 			gap: $global-space-base;
 			height: auto;
-			justify-content: space-between;
 			margin: 0;
 			padding: $global-space-base $global-space-sm;
 			width: 100%;
@@ -38,17 +37,6 @@ form {
 				@include layout {
 					align-items: center;
 					display: inline-flex;
-					width: 1px; // hacky hack hack
-				}
-
-				input {
-					@include layout {
-						flex: 1 1 auto;
-
-						&[type="text"] {
-							width: 1px; // hack hack
-						}
-					}
 				}
 
 				label {
@@ -78,14 +66,12 @@ form {
 				align-items: center;
 				display: flex;
 				gap: $global-space-base;
-				flex: 1 1 auto;
 				justify-content: flex-end;
 			}
 
 			input,
 			select {
 				@include layout {
-					flex: 1 1 100%;
 					gap: $global-space-base;
 				}
 
@@ -99,15 +85,7 @@ form {
 
 				&[type="radio"] {
 					@include layout {
-						flex: 0 0 auto;
 						width: auto;
-					}
-				}
-
-				+ input,
-				+ select {
-					@include layout {
-						flex: 1 1 25%;
 					}
 				}
 			}
@@ -145,46 +123,23 @@ form {
 
 		input,
 		select {
-			@include layout {
-				flex: 1 1 auto;
-				width: 1px; // hack
-			}
-
 			&[type="checkbox"] {
 				@include layout {
 					-webkit-filter: initial;
-					flex: 0 0 auto;
 					width: $global-space-button-xs;
 				}
 			}
 
 			&[type="radio"] {
 				@include layout {
-					flex: 0 0 auto;
 					width: auto;
-				}
-			}
-
-			+ input {
-				@include layout {
-					flex: 1 1 25%;
-				}
-
-				&[type="checkbox"],
-				&[type="radio"] {
-					@include layout {
-						flex: 0 0 auto;
-					}
 				}
 			}
 		}
 
 		> label {
 			@include layout {
-				flex: 0 0 40%;
-
 				&:only-child {
-					flex: 0 0 100%;
 					gap: $global-space-base;
 				}
 			}
@@ -234,6 +189,12 @@ form {
 				color: $emu-color-text-lightest;
 			}
 		}
+
+		+ h3 {
+			@include layout {
+				margin-block-start: $global-space-base;
+			}
+		}
 	}
 
 	.form-group-stacked {
@@ -252,7 +213,6 @@ form {
 				@include layout {
 					align-items: center;
 					display: inline-flex;
-					flex: auto;
 					font-size: $global-font-size-sm;
 					gap: $global-space-base;
 					height: auto;

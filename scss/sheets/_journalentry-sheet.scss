@@ -83,10 +83,10 @@
 					}
 
 					&.active {
-						@extend %global-hover-alt;
+						@extend %global-focus-subtle;
 
 						&:hover {
-							@extend %global-hover-alt;
+							@extend %global-focus-subtle;
 						}
 					}
 
@@ -132,6 +132,16 @@
 								padding-inline-start: 0;
 							}
 						}
+
+						.page-ownership {
+							@include layout {
+								margin: 0;
+							}
+
+							&.none {
+								color: RGB($emu-color-neutral);
+							}
+						}
 					}
 
 					.headings {
@@ -143,6 +153,7 @@
 
 						.heading {
 							@include layout {
+								display: flex;
 								height: auto;
 								line-height: initial;
 								margin: 0;
@@ -156,7 +167,7 @@
 							.heading-link,
 							.journal-entry-heading-link {
 								@include layout {
-									display: inline-flex;
+									display: inline-block;
 									font-size: $global-font-size-lg;
 									line-height: initial;
 									padding: $global-space-base $global-space-md;
@@ -255,6 +266,9 @@
 
 .journal-entry-pages {
 	@include layout {
-		margin: 0 $global-space-sm $global-space-sm;
+		margin-block-end: $global-space-sm;
+		margin-block-start: 0;
+		margin-inline-end: $global-space-sm;
+		margin-inline-start: $global-space-md;
 	}
 }

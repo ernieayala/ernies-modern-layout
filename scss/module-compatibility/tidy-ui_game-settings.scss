@@ -87,12 +87,6 @@
 							}
 						}
 
-						> label {
-							@include layout {
-								flex: 0 0 40% !important; // because MOD other important
-							}
-						}
-
 						> button {
 							@include layout {
 								flex: 1 1 auto !important;
