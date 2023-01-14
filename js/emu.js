@@ -599,6 +599,7 @@ Hooks.once('ready', () => {
 
 	// Apply Module Sheets
 	const currentModules = game.modules;
+	console.log(currentModules);
 	currentModules.forEach((mod) => {
 		const moduleID = mod.id;
 		if(mod.active === true && MODULES.MODULE.includes(moduleID)) {

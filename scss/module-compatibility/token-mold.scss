@@ -7,6 +7,7 @@
 			@extend %panel-block;
 
 			@include layout {
+				justify-content: flex-start;
 				flex-wrap: wrap;
 			}
 
@@ -14,6 +15,7 @@
 				@include layout {
 					font-size: $global-font-size-lg;
 					font-weight: normal;
+					justify-self: center;
 					margin: 0;
 					width: 100%;
 				}
@@ -61,8 +63,7 @@
 
 		form {
 			@include layout {
-				display: flex;
-				flex-direction: column;
+				height: 100%;
 			}
 
 			section + section {
@@ -102,7 +103,6 @@
 		.form-group {
 			input[type="checkbox"] + label {
 				@include layout {
-					flex: 1 1 40%;
 					padding-inline-start: $global-space-sm;
 				}
 			}

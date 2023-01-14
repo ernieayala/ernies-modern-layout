@@ -32,6 +32,10 @@ input[type="range"] {
 select {
 	@extend %input-select;
 	box-shadow: none;
+
+	@include layout {
+		width: 100%;
+	}
 }
 
 textarea {

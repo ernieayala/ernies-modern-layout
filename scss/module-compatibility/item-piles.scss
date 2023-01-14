@@ -1,0 +1,7 @@
+@import "../base";
+
+@include module {
+	.window-app[class*="item-piles-"]:not(.-emu-clean-sheet) form .form-group label {
+		display: unset;
+	}
+}

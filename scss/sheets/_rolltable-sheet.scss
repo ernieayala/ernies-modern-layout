@@ -1,4 +1,5 @@
-.window-app[id*="rolltable-sheet-"] {
+.window-app[id*="rolltable-sheet-"],
+.window-app[id*="RollTableConfig-"] {
 	.sheet-header {
 		h1 {
 			border: none;
@@ -14,8 +15,8 @@
 			@extend %table-row;
 
 			@include layout {
-				display: grid;
-				grid-template-columns: 40px 128px 1fr 60px 80px 60px;
+				// display: grid;
+				// grid-template-columns: 40px 128px 1fr 60px 80px 60px;
 
 				&:nth-of-type(odd):not(.table-header) {
 					background-color: RGBA($emu-color-background-light, 0.1);

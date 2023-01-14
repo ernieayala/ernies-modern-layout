@@ -1,0 +1,48 @@
+@import "../base";
+
+@include module {
+	#moulinette.window-app.forge {
+		.window-content {
+			@include layout {
+				display: flex;
+
+				.body {
+					display: flex;
+					flex-direction: column;
+
+					.header {
+						flex: 0 0 auto;
+						height: auto;
+						position: relative;
+
+						.sheet-tabs {
+							flex-wrap: wrap;
+
+							.item {
+								white-space: nowrap;
+							}
+						}
+					}
+
+					.list {
+						bottom: unset;
+						flex: 1 1 auto;
+						position: relative;
+						top: unset;
+					}
+
+					.footer {
+						bottom: unset;
+						flex: 0 0 auto;
+						position: relative;
+					}
+				}
+
+				.actions {
+					gap: $global-space-base;
+					flex-wrap: wrap;
+				}
+			}
+		}
+	}
+}

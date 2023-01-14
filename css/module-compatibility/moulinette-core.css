@@ -1,0 +1,8 @@
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content{display:flex}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body{display:flex;flex-direction:column}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body .header{flex:0 0 auto;height:auto;position:relative}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body .header .sheet-tabs{flex-wrap:wrap}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body .header .sheet-tabs .item{white-space:nowrap}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body .list{bottom:unset;flex:1 1 auto;position:relative;top:unset}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .body .footer{bottom:unset;flex:0 0 auto;position:relative}
+.-emu-layout body.-emu #moulinette.window-app.forge .window-content .actions{gap:var(--emu-space-base,4px);flex-wrap:wrap}

@@ -28,6 +28,8 @@ h2 {
 }
 
 h3 {
+	border-block-end: 1px solid RGB($emu-color-border);
+
 	@include layout {
 		font-size: $global-font-size-lg;
 	}
@@ -45,7 +47,9 @@ a {
 	}
 }
 
-a[href] {
+a[href],
+a.nue-tab,
+a.nue-action {
 	color: RGB($emu-color-primary);
 	text-decoration: none;
 	text-shadow: none;

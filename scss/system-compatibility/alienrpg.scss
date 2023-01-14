@@ -1,17 +1,341 @@
 @import "../base";
 
-@include system("alienrpg") {
-	.window-app[id*="actor-"],
-	.window-app[id*="item-"] {
+@mixin alien-global-window {
+	.alienrpg {
+		&.window-app {
+			.window-content {
+				@include layout {
+					padding-inline-end: 0;
+				}
+			}
+		}
+
 		.window-content {
-			color: RGB($emu-color-white);
+			@include layout {
+				padding: $global-space-sm;
+			}
+		}
+
+		#context-menu {
+			@include layout {
+				height: max-content;
+				left: -900%;
+				text-align: left;
+			}
+		}
+
+		.inputtext {
+			background-color: inherit;
+			color: inherit;
+		}
+
+		.fa-xs {
+			@include layout {
+				font-size: inherit;
+				line-height: unset;
+				vertical-align: unset;
+			}
+		}
+
+		ul ol {
+			@include layout {
+				margin-inline-start: $global-space-base;
+			}
+		}
+
+		form {
+			background-color: transparent;
+			border-color: transparent;
+			color: RGB($emu-color-text);
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				font-family: inherit;
+				font-size: $global-font-size-lg;
+				gap: $global-space-base;
+				overflow-x: auto;
+				overflow-y: scroll;
+				padding: 0;
+				padding-inline-end: $global-space-xs;
+
+				&::-webkit-scrollbar {
+					width: #{$global-space-base};
+				}
+			}
+		}
+
+		h1 {
+			@include layout {
+				font-size: $global-font-size-xxl;
+			}
+		}
+
+		h2 {
+			@include layout {
+				font-size: $global-font-size-xl;
+			}
+		}
+
+		h3 {
+			@include layout {
+				font-size: $global-font-size-lg;
+			}
+		}
+
+		h2,
+		h3,
+		h4 {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				padding: 0;
+				margin: 0;
+			}
 		}
 	}
 
-	.alienrpg {
-		.window-content {
+	.journal-sheet {
+		form {
+			background: transparent !important;
+			border-color: transparent;
+			color: RGB($emu-color-text) !important;
+
 			@include layout {
-				&::before,
+				border-radius: initial;
+				border-style: solid;
+				border-width: 0;
+			}
+		}
+
+		select {
+			@extend %input-select;
+		}
+
+		input {
+			@extend %input-text;
+		}
+
+		button {
+			@extend %default-button;
+		}
+
+		.tox .tox-editor-container {
+			background-color: RGB($emu-color-white);
+		}
+	}
+
+	.chat-message {
+		.table-draw .table-results .table-result {
+			color: RGB($emu-color-primary);
+
+			.chatBG {
+				background: transparent;
+				color: inherit;
+
+				@include layout {
+					padding: 0;
+				}
+			}
+		}
+
+		.critchat {
+			border-color: transparent;
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				display: flex;
+				align-items: center;
+				padding: 0;
+			}
+		}
+	}
+
+	.dice-tooltip {
+		background-color: transparent;
+		border-color: transparent;
+
+		@include layout {
+			border-radius: 0;
+			border-style: solid;
+			border-width: 0;
+		}
+
+		.dice-rolls {
+			background-color: transparent;
+			color: inherit;
+
+			.roll,
+			.roll.max,
+			.roll.min {
+				display: flex;;
+				filter: none;
+			}
+		}
+
+		.part-header {
+			background-color: transparent;
+			color: inherit;
+		}
+
+		.roll > img {
+			@include layout {
+				width: 24px;
+			}
+		}
+	}
+
+	.inline-roll .dice-tooltip {
+		background: RGBA($emu-color-background-darkest, 0.9);
+		border-color: RGB($emu-color-border);
+		box-shadow: none;
+		color: RGB($emu-color-text-lightest);
+
+		@include layout {
+			border-radius: $global-border-radius-default;
+			border-style: solid;
+			border-width: 1px;
+			padding: $global-space-sm;
+		}
+	}
+
+	.resource-content {
+		button {
+			@extend %control-button;
+		}
+	}
+
+	.rollableVeh,
+	.rollItem,
+	.openItem {
+		&:hover,
+		&:focus {
+			color: RGB($emu-color-primary);
+			text-shadow: none;
+
+			@include layout {
+				cursor: pointer;
+				font-size: inherit;
+				font-weight: inherit;
+			}
+		}
+	}
+
+	.minus-btn .plus-btn,
+	.supply-btn,
+	.pwr-btn,
+	.stunt-btn {
+		@extend %control-button;
+	}
+
+	.creature-attack-roll,
+	.alien-crit-button {
+		@extend %primary-button;
+
+		@include layout {
+			animation: none;
+			font-weight: normal;
+			height: $global-space-button;
+			width: 280px;
+		}
+
+		&:hover {
+			text-shadow: none;
+
+			@include layout {
+				border-radius: $global-border-radius-controls;
+			}
+		}
+
+		&:active {
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				border-radius: $global-border-radius-controls;
+				top: unset;
+			}
+		}
+	}
+
+	.alien-Push-button {
+		@include layout {
+			font-weight: 700;
+			width: 100%;
+		}
+	}
+
+	.alien-diceface-b0,
+	.alien-diceface-b6,
+	.alien-diceface-y0,
+	.alien-diceface-y1,
+	.alien-diceface-y6 {
+		@include layout {
+			display: inline-flex;
+			height: 30px;
+			margin: 0;
+			margin-block-end: $global-space-base;
+			margin-inline-end: $global-space-base;
+			padding: 0;
+			width: 30px;
+		}
+	}
+
+	.tooltip {
+		border-color: transparent;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+			display: inline-flex;
+			position: relative;
+		}
+
+		&:hover {
+			.tooltiptext {
+				@include layout {
+					opacity: 1;
+					right: 150%;
+					visibility: visible;
+				}
+			}
+		}
+
+		.tooltiptext {
+			background: RGBA($emu-color-background-darkest, 0.9);
+			border: 1px solid RGB($emu-color-border);
+			box-shadow: none;
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				align-items: center;
+				border-radius: $global-border-radius-default;
+				display: inline-flex;
+				font-family: inherit;
+				font-size: $global-font-size-md;
+				line-height: 1.2;
+				margin: 0;
+				max-width: 250px;
+				opacity: 0;
+				padding: $global-space-sm $global-space-md;
+				pointer-events: none;
+				position: absolute;
+				right: 120%;
+				top: -200%;
+				transition:
+					opacity $global-transition-time-base $global-transition-type-shift,
+					right $global-transition-time-base $global-transition-type-shift,
+					visibility $global-transition-time-base $global-transition-type-shift;
+				visibility: hidden;
+				width: max-content;
+				z-index: 1;
+
 				&::after {
 					display: none;
 				}
@@ -19,9 +343,4521 @@
 		}
 	}
 
-	.alien-Push-button {
+	.ctooltip {
+		border-color: transparent;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+			display: inline-flex;
+			position: relative;
+		}
+
+		&:hover {
+			.ctooltiptext {
+				@include layout {
+					visibility: visible;
+				}
+			}
+		}
+
+		.ctooltiptext {
+			background: RGBA($emu-color-background-darkest, 0.9);
+			border: 1px solid RGB($emu-color-border);
+			box-shadow: none;
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				align-items: center;
+				border-radius: $global-border-radius-default;
+				display: inline-flex;
+				font-family: inherit;
+				font-size: $global-font-size-md;
+				line-height: 1.2;
+				margin: 0;
+				max-width: 150px;
+				padding: $global-space-sm $global-space-md;
+				pointer-events: none;
+				position: absolute;
+				transition:
+					opacity $global-transition-time-base $global-transition-type-shift,
+					visibility $global-transition-time-base $global-transition-type-shift;
+				visibility: hidden;
+				width: max-content;
+				z-index: 1;
+
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.alienchatwhite {
+		color: RGB($emu-color-white);
+	}
+
+	.alienchatred {
+		background-color: transparent;
+		color: RGB($emu-color-negative);
+
+		@include layout {
+			background-clip: text;
+			font-size: $global-font-size-lg;
+			font-weight: 700;
+		}
+	}
+
+	.alienchatblue {
+		color: RGB($emu-color-neutral);
+	}
+
+	.alienchatlightblue {
+		color: RGB($emu-color-neutral);
+
+		@include layout {
+			font-size: $global-font-size-lg;
+			font-weight: 700;
+		}
+	}
+
+	.alienchatlightgreen {
+		color: RGB($emu-color-positive);
+	}
+
+	.alienchatgoldenrod {
+		color: RGB($emu-color-warning);
+
+		@include layout {
+			font-weight: 700;
+		}
+	}
+}
+
+@mixin alien-global-grid {
+	.grid {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-column: span 2 / span 2;
+			padding: 0;
+		}
+	}
+
+	.grid-2col {
+		@include layout {
+			align-items: center;
+			display: grid;
+			gap: $global-space-base;
+			grid-column: span 2;
+			grid-template-columns: 1fr 1fr;
+			padding: 0;
+		}
+	}
+
+	.grid-3col {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			grid-column: span 3 / span 3;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			justify-items: center;
+			margin: 0;
+		}
+	}
+
+	.grid-4col {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			grid-column: span 4 / span 4;
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+			padding: 0;
+		}
+	}
+
+	.grid-synPage {
+		@include layout {
+			display: grid;
+			grid-template-areas:
+				'Item1 Item2 Item2'
+				'Item1 Item4 Item4'
+				'Item8 Item4 Item4'
+				'Item8 Item5 Item5'
+				'Item8 Item3 Item3'
+				'Item9 Item6 Item6'
+				'Item10 Item7 Item7'
+				'Item11 Item11 Item11';
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	.grid-genPage {
+		@include layout {
+			display: grid;
+			grid-template-areas:
+				'Item1 Item2 Item2'
+				'Item1 Item4 Item4'
+				'Item8 Item4 Item4'
+				'Item8 Item5 Item5'
+				'Item8 Item3 Item3'
+				'Item9 Item6 Item6'
+				'Item10 Item7 Item7'
+				'Item11 Item11 Item11';
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	.Item1 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item1;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.Item2 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item2;
+		}
+	}
+
+	.Item3 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item3;
+			padding: 0;
+		}
+	}
+	.Item4 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item4;
+			padding: 0;
+		}
+	}
+
+	.Item5 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item5;
+			padding: 0;
+		}
+	}
+
+	.Item6 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item6;
+			padding: 0;
+		}
+	}
+
+	.Item7 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item7;
+			height: auto;
+			padding: 0;
+		}
+	}
+
+	.Item8 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item8;
+			padding: 0;
+		}
+	}
+
+	.Item9 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item9;
+			padding: 0;
+		}
+	}
+
+	.Item10 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item10;
+			padding: 0;
+		}
+	}
+
+	.Item11 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-content: center;
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Item11;
+			justify-content: center;
+			padding: 0;
+		}
+	}
+
+	.grid-2col-border {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-column: span 2;
+			grid-template-columns: 1fr 1fr;
+			padding: 0;
+		}
+	}
+
+	.grid-spacecraft {
+		@include layout {
+			display: grid;
+			grid-template-areas: 'spacec1 spacec2 ';
+			grid-template-columns: 40% 60%;
+		}
+	}
+
+	.spacec1 {
+		@include layout {
+			grid-area: spacec1;
+			align-content: center;
+		}
+	}
+
+	.spacec2 {
+		@include layout {
+			grid-area: spacec2;
+			align-content: center;
+		}
+	}
+
+	.s1-header {
+		@include layout {
+			display: grid;
+			grid-template-areas:
+				'. . s1h1 s1h1 s1h1 .'
+				's1h2 s1h2 s1h2 s1h2 s1h2 s1h2'
+				'. . s1h3 s1h3 s1h3 .'
+				's1h4 s1h4 s1h4 s1h4 s1h4 s1h4'
+				'. . s1h5 s1h5 s1h5 .'
+				's1h6 s1h6 s1h6 s1h6 s1h6 s1h6'
+				's1space1 s1h7 s1h8 s1space s1h9 s1h10'
+				's1space1 s1h11 s1h12 s1space s1h13 s1h14'
+				's1space1 s1h15 s1h16 s1space s1h17 s1h18'
+				's1space1 s1h19 s1h20 s1space s1h21 s1h22'
+				's1h23 s1h23 s1h23 s1h23 s1h23 s1h23'
+				's1h24 s1h24 s1h24 s1h24 s1h24 s1h24'
+				's1h25 s1h25 s1h25 s1h25 s1h25 s1h25'
+				's1h26 s1h26 s1h26 s1h26 s1h26 s1h26';
+			grid-template-columns: 5% 10% 30% 5% 30% 10%;
+			padding: 0;
+		}
+	}
+
+	.s1space {
+		@include layout {
+			grid-area: s1space;
+		}
+	}
+
+	.s1space1 {
+		@include layout {
+			grid-area: s1space1;
+		}
+	}
+
+	.s1h1 {
+		@include layout {
+			align-content: center;
+			font-weight: 700;
+			grid-area: s1h1;
+		}
+	}
+
+	.s1h2 {
+		@include layout {
+			align-content: center;
+			grid-area: s1h2;
+		}
+	}
+
+	.s1h3 {
+		@include layout {
+			align-content: center;
+			font-weight: 700;
+			grid-area: s1h3;
+		}
+	}
+
+	.s1h4 {
+		@include layout {
+			align-content: center;
+			grid-area: s1h4;
+		}
+	}
+
+	.s1h5 {
+		@include layout {
+			align-content: center;
+			font-weight: 700;
+			grid-area: s1h5;
+		}
+	}
+
+	.s1h6 {
+		@include layout {
+			align-content: center;
+			grid-area: s1h6;
+		}
+	}
+
+	.s1h7 {
+		@include layout {
+			grid-area: s1h7;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h8 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h8;
+			height: $global-space-button;
+			margin: 0;
+		}
+	}
+
+	.s1h9 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h9;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h10 {
+		@include layout {
+			grid-area: s1h10;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h11 {
+		@include layout {
+			grid-area: s1h11;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h12 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h12;
+			height: $global-space-button;
+			margin: 0;
+		}
+	}
+
+	.s1h13 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h13;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h14 {
+		@include layout {
+			grid-area: s1h14;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h15 {
+		@include layout {
+			grid-area: s1h15;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h16 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h16;
+			height: $global-space-button;
+			margin: 0;
+		}
+	}
+
+	.s1h17 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h17;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h18 {
+		@include layout {
+			grid-area: s1h18;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h19 {
+		@include layout {
+			grid-area: s1h19;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h20 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h20;
+			height: $global-space-button;
+			margin: 0;
+		}
+	}
+
+	.s1h21 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h21;
+			height: $global-space-button;
+		}
+	}
+
+	.s1h22 {
+		@include layout {
+			grid-area: s1h22;
+			height: $global-space-button;
+			justify-self: center;
+		}
+	}
+
+	.s1h23 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h23;
+			height: $global-space-button-sm;
+			justify-self: center;
+		}
+	}
+
+	.s1h24 {
+		@include layout {
+			grid-area: s1h24;
+			height: $global-space-button;
+			justify-self: center;
+		}
+	}
+
+	.s1h25 {
+		@include layout {
+			font-weight: 700;
+			grid-area: s1h25;
+			height: $global-space-button-sm;
+			justify-self: center;
+		}
+	}
+
+	.s1h26 {
+		@include layout {
+			grid-area: s1h26;
+			height: $global-space-button;
+			justify-self: center;
+		}
+	}
+
+	.grid-container {
+		@include layout {
+			display: grid;
+			grid-column-gap: $global-space-md;
+			grid-row-gap: $global-space-base;
+			grid-template-areas:
+				'Col1 Col2'
+				'Col1 Col2'
+				'Col1 Col2'
+				'Col1 Col4'
+				'Col3 Col3';
+			grid-template-columns: 1fr 1fr;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.Col1 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-self: center;
+			border-style: solid;
+			border-width: 1px;
+			display: flex;
+			flex-direction: column;
+			gap: $global-space-base;
+			grid-area: Col1;
+			padding: $global-space-base;
+		}
+	}
+
+	.Col2 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Col2;
+		}
+	}
+
+	.Col3 {
+		@include layout {
+			font-family: inherit !important;
+			font-size: $global-font-size-lg !important;
+			grid-area: Col3;
+		}
+
+		.panel {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				margin: 0;
+				padding: $global-space-sm;
+			}
+		}
+	}
+
+	.Col4 {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			grid-area: Col4;
+		}
+	}
+
+	.grid-attr {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-content: center;
+			border-style: solid;
+			border-width: 0;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas: 'Attr1 Attr2 Attr3';
+			grid-template-columns: 1fr min-content min-content;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.Attr1 {
+		@include layout {
+			grid-area: Attr1;
+		}
+	}
+
+	h3.Attr1.resource-label.rollable {
 		@include layout {
 			width: 100%;
 		}
+	}
+
+	.Attr2 {
+		@include layout {
+			grid-area: Attr2;
+		}
+	}
+
+	.Attr3 {
+		@include layout {
+			grid-area: Attr3;
+			width: auto;
+		}
+	}
+
+	.Attr4 {
+		@include layout {
+			grid-area: Attr4;
+		}
+	}
+
+	.grid-Consumables {
+		@include layout {
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas:
+				'Heading Heading '
+				'Air1 Air2'
+				'Food1 Food2'
+				'Water1 Water2'
+				'Power1 Power2';
+			grid-template-columns: 1fr min-content;
+		}
+
+		.resource-content {
+			@include layout {
+				align-items: center;
+				display: flex;
+				gap: $global-space-base;
+			}
+		}
+
+		h3.resource-label {
+			background-color: RGB($emu-color-background);
+
+			@include layout {
+				align-items: center;
+				display: flex;
+				height: 100%;
+				justify-content: center;
+				width: 100%;
+			}
+		}
+	}
+
+	.Heading {
+		@include layout {
+			grid-area: Heading;
+			justify-self: flex-start;
+		}
+	}
+
+	.Air1 {
+		@include layout {
+			align-self: center;
+			grid-area: Air1;
+			justify-content: flex-start;
+		}
+	}
+
+	.Air2 {
+		@include layout {
+			grid-area: Air2;
+		}
+	}
+
+	.Food1 {
+		@include layout {
+			align-self: center;
+			grid-area: Food1;
+			justify-self: flex-start;
+		}
+	}
+
+	.Food2 {
+		@include layout {
+			grid-area: Food2;
+		}
+	}
+
+	.Power1 {
+		@include layout {
+			align-self: center;
+			grid-area: Power1;
+			justify-self: flex-start;
+		}
+	}
+
+	.Power2 {
+		@include layout {
+			grid-area: Power2;
+		}
+	}
+
+	.Water1 {
+		@include layout {
+			align-self: center;
+			grid-area: Water1;
+			justify-self: flex-start;
+		}
+	}
+
+	.Water2 {
+		@include layout {
+			grid-area: Water2;
+		}
+	}
+
+	.grid-vehicle-header {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			grid-template-areas: 'vChar vChar';
+			grid-template-columns: auto;
+		}
+	}
+
+	.grid-vehicle {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas:
+				'vItem1 vItem2 vItem3 vItem4'
+				'vItem5 vItem6 vItem7 vItem8';
+			grid-template-columns: auto;
+			padding: $global-space-sm;
+
+			h2 {
+				align-items: center;
+				display: flex;
+				font-weight: normal;
+			}
+		}
+	}
+
+	.vChar {
+		@include layout {
+			grid-area: vChar;
+		}
+	}
+
+	.vItem1 {
+		@include layout {
+			grid-area: vItem1;
+		}
+	}
+
+	.vItem2 {
+		@include layout {
+			grid-area: vItem2;
+		}
+	}
+
+	.vItem3 {
+		@include layout {
+			grid-area: vItem3;
+		}
+	}
+
+	.vItem4 {
+		@include layout {
+			grid-area: vItem4;
+		}
+	}
+
+	.vItem5 {
+		@include layout {
+			grid-area: vItem5;
+		}
+	}
+
+	.vItem6 {
+		@include layout {
+			grid-area: vItem6;
+		}
+	}
+
+	.vItem7 {
+		@include layout {
+			grid-area: vItem7;
+		}
+	}
+
+	.vItem8 {
+		@include layout {
+			grid-area: vItem8;
+		}
+	}
+
+	.grid-weapon {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-items: center;
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			grid-column-gap: 0;
+			grid-row-gap: $global-space-base;
+			grid-template-areas:
+				'wItem1 wItem2 wItem3 wItem4'
+				'wItem5 wItem6 wItem7 wItem7';
+			grid-template-columns: auto;
+			padding: $global-space-sm;
+		}
+	}
+
+	.wItem1 {
+		@include layout {
+			grid-area: wItem1;
+		}
+	}
+
+	.wItem2 {
+		@include layout {
+			grid-area: wItem2;
+		}
+	}
+
+	.wItem3 {
+		@include layout {
+			grid-area: wItem3;
+		}
+	}
+
+	.wItem4 {
+		@include layout {
+			grid-area: wItem4;
+		}
+	}
+
+	.wItem5 {
+		@include layout {
+			grid-area: wItem5;
+		}
+	}
+
+	.wItem6 {
+		@include layout {
+			grid-area: wItem6;
+		}
+	}
+
+	.wItem7 {
+		@include layout {
+			grid-area: wItem7;
+
+			.resource-label {
+				margin-inline-end: calc(#{$global-space-xs} + 1px);
+			}
+		}
+	}
+
+	.grid-weapon-body {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-items: center;
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas:
+				'wCol1 wCol2 wCol3 wCol4 wCol5 wCol6'
+				'wCol7 wCol8 wCol9 wCol10 wCol11 wCol12'
+				'wCol13 wCol14 . . . .';
+			grid-template-columns: 1fr 1.2fr 0.81fr 0.5fr 0.5fr 1fr;
+			padding: $global-space-sm;
+
+			> * {
+				margin-block-start: 0 !important;
+			}
+		}
+	}
+
+	.wCol1 {
+		@include layout {
+			grid-area: wCol1;
+			justify-self: left;
+		}
+	}
+
+	.wCol2 {
+		@include layout {
+			grid-area: wCol2;
+			justify-self: left;
+		}
+	}
+
+	.wCol3 {
+		@include layout {
+			grid-area: wCol3;
+			justify-self: left;
+		}
+	}
+
+	.wCol4 {
+		@include layout {
+			grid-area: wCol4;
+			justify-self: center;
+		}
+	}
+
+	.wCol5 {
+		@include layout {
+			grid-area: wCol5;
+			justify-self: left;
+		}
+	}
+
+	.wCol6 {
+		@include layout {
+			grid-area: wCol6;
+			justify-self: center;
+		}
+	}
+
+	.wCol7 {
+		@include layout {
+			grid-area: wCol7;
+			justify-self: left;
+		}
+	}
+
+	.wCol8 {
+		@include layout {
+			grid-area: wCol8;
+			justify-self: left;
+		}
+	}
+
+	.wCol9 {
+		@include layout {
+			grid-area: wCol9;
+			justify-self: left;
+		}
+	}
+
+	.wCol10 {
+		@include layout {
+			grid-area: wCol10;
+			justify-self: center;
+		}
+	}
+
+	.wCol11 {
+		@include layout {
+			grid-area: wCol11;
+			justify-self: left;
+		}
+	}
+
+	.wCol12 {
+		@include layout {
+			grid-area: wCol12;
+			justify-self: center;
+		}
+	}
+
+	.wCol13 {
+		@include layout {
+			grid-area: wCol13;
+			justify-self: left;
+		}
+	}
+
+	.wCol14 {
+		@include layout {
+			grid-area: wCol14;
+			justify-self: left;
+		}
+	}
+
+	.grid-items {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-template-areas:
+				'lCol1 lCol2 lCol17 lCol15 lCol13 lCol11 lCol10 lCol3 lCol4'
+				'lCol5 lCol6 lCol18 lCol16 lCol14 lCol12 lCol9 lCol7 lCol8';
+			grid-template-columns: 10% 25% repeat(6, 10%) 5%;
+			padding: 0;
+		}
+
+		&.item {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				border-block-start-width: 0;
+				border-block-end-width: 0;
+			}
+		}
+
+		> * {
+			@include layout {
+				align-items: center;
+				display: flex;
+				padding: $global-space-base $global-space-sm;
+			}
+		}
+
+		.item-name {
+			&.lCol1 {
+				background-color: RGB($emu-color-background-light);
+			}
+		}
+
+		input[type="text"] {
+			@include layout {
+				height: $global-space-button-sm;
+			}
+		}
+	}
+
+	.lCol1 {
+		@include layout {
+			grid-area: lCol1;
+			justify-self: flex-start;
+		}
+	}
+
+	.lCol2 {
+		@include layout {
+			grid-area: lCol2;
+			justify-self: flex-start;
+		}
+	}
+
+	.lCol3 {
+		@include layout {
+			grid-area: lCol3;
+			justify-self: center;
+		}
+	}
+
+	.lCol4 {
+		@include layout {
+			grid-area: lCol4;
+			justify-self: flex-end;
+		}
+	}
+
+	.lCol5 {
+		@include layout {
+			grid-area: lCol5;
+			justify-self: flex-start;
+		}
+	}
+
+	.lCol6 {
+		@include layout {
+			grid-area: lCol6;
+			justify-self: flex-start;
+		}
+	}
+
+	.lCol7 {
+		@include layout {
+			grid-area: lCol7;
+			justify-self: center;
+		}
+	}
+
+	.lCol8 {
+		@include layout {
+			grid-area: lCol8;
+			justify-self: flex-end;
+		}
+	}
+
+	.lCol9 {
+		@include layout {
+			grid-area: lCol9;
+			justify-self: center;
+		}
+	}
+
+	.lCol10 {
+		@include layout {
+			grid-area: lCol10;
+			justify-self: center;
+		}
+	}
+
+	.lCol11 {
+		@include layout {
+			grid-area: lCol11;
+			justify-self: center;
+		}
+	}
+
+	.lCol12 {
+		@include layout {
+			grid-area: lCol12;
+			justify-self: center;
+		}
+	}
+
+	.lCol13 {
+		@include layout {
+			grid-area: lCol13;
+			justify-self: center;
+		}
+	}
+
+	.lCol14 {
+		@include layout {
+			grid-area: lCol14;
+			justify-self: center;
+		}
+	}
+
+	.lCol15 {
+		@include layout {
+			grid-area: lCol15;
+			justify-self: center;
+		}
+	}
+
+	.lCol16 {
+		@include layout {
+			grid-area: lCol16;
+			justify-self: center;
+		}
+	}
+
+	.lCol17 {
+		@include layout {
+			grid-area: lCol17;
+			justify-self: center;
+		}
+	}
+
+	.lCol18 {
+		@include layout {
+			grid-area: lCol18;
+			justify-self: center;
+		}
+	}
+
+	.grid-talents {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-template-areas:
+				'talTitle talTitle'
+				'tal1 tal2'
+				'tal3 tal4';
+			grid-template-columns: 1fr min-content;
+			padding: 0;
+			text-align: left;
+		}
+	}
+
+	.tal1 {
+		@include layout {
+			grid-area: tal1;
+			justify-self: center;
+			padding: 0;
+		}
+	}
+
+	.tal2 {
+		@include layout {
+			grid-area: tal2;
+			justify-self: right;
+			padding: 0;
+		}
+	}
+
+	.tal3 {
+		@include layout {
+			align-self: center;
+			grid-area: tal3;
+		}
+	}
+
+	.tal4 {
+		@include layout {
+			grid-area: tal4;
+			justify-self: flex-end;
+			padding: $global-space-base;
+		}
+	}
+
+	.talTitle {
+		background-color: transparent;
+
+		@include layout {
+			grid-area: talTitle;
+		}
+	}
+
+	.grid-special {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-template-areas: 'spe1 spe2 spe3';
+			grid-template-columns: 5% 70% 25%;
+		}
+	}
+
+	.spe1 {
+		@include layout {
+			grid-area: spe1;
+			justify-self: left;
+			padding: 0;
+		}
+	}
+
+	.spe2 {
+		@include layout {
+			grid-area: spe2;
+			font-weight: 700;
+			padding: 0;
+		}
+	}
+
+	.spe3 {
+		@include layout {
+			grid-area: spe3;
+			justify-self: right;
+		}
+	}
+
+	.critical-inj {
+		@include layout {
+			align-items: center;
+			display: grid;
+			gap: $global-space-sm;
+			grid-template-areas: 'crit1 crit2 crit3 crit4';
+			grid-template-columns: min-content 1fr 1fr min-content;
+			padding: 0;
+		}
+
+		> .item-image,
+		> .item-name {
+			color: inherit;
+
+			&:hover {
+				color: inherit;
+			}
+
+			@include layout {
+				cursor: default;
+			}
+		}
+	}
+
+	.crit1 {
+		@include layout {
+			grid-area: crit1;
+			justify-self: flex-start;
+			min-width: 24px;
+			padding: 0;
+
+			img {
+				display: flex;
+			}
+		}
+	}
+
+	.crit2 {
+		@include layout {
+			font-weight: normal;
+			grid-area: crit2;
+			justify-self: flex-start;
+			overflow: hidden;
+			padding: 0;
+			white-space: nowrap;
+		}
+	}
+
+	.crit3 {
+		@include layout {
+			align-items: flex-start;
+			font-weight: normal;
+			grid-area: crit3;
+			justify-self: flex-start;
+			padding: 0;
+		}
+	}
+
+	.crit4 {
+		@include layout {
+			grid-area: crit4;
+			justify-self: flex-end;
+		}
+	}
+
+	.grid-two {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-template-areas:
+				'box1 box2'
+				'box3 box4';
+			grid-template-columns: 25% 75%;
+			padding: 0;
+		}
+	}
+
+	.box1 {
+		@include layout {
+			grid-area: box1;
+			justify-self: center;
+			padding: 0;
+		}
+	}
+
+	.box2 {
+		@include layout {
+			grid-area: box2;
+			justify-self: right;
+			padding: 0;
+		}
+	}
+
+	.box3 {
+		@include layout {
+			grid-area: box3;
+			justify-self: center;
+			padding: 0;
+		}
+	}
+
+	.box4 {
+		@include layout {
+			grid-area: box4;
+			padding: 0;
+		}
+	}
+
+	.grid-2 {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-template-areas: 'box11 box21 box23 box22';
+			grid-template-columns: 1fr 33px 15px 33px;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.box11 {
+		@include layout {
+			grid-area: box11;
+			justify-self: center;
+		}
+	}
+
+	.box21 {
+		@include layout {
+			grid-area: box21;
+			justify-self: right;
+			padding: 0;
+		}
+	}
+
+	.box22 {
+		@include layout {
+			grid-area: box22;
+			justify-self: right;
+			padding: 0;
+		}
+	}
+
+	.box23 {
+		@include layout {
+			grid-area: box23;
+			justify-self: center;
+		}
+	}
+
+	.grid-crit {
+		@include layout {
+			display: grid;
+			grid-template-areas: 'crit1 crit2';
+			grid-template-columns: 1fr min-content;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.crit1 {
+		@include layout {
+			grid-area: crit1;
+		}
+	}
+
+	.crit2 {
+		@include layout {
+			grid-area: crit2;
+			margin: 0;
+		}
+	}
+
+	.grid-rTables {
+		@include layout {
+			align-items: center;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas: 'rTable1 rTable2';
+			grid-template-columns: 1fr 0.5fr;
+			margin: 0 !important;
+			padding: 0;
+
+			+ div.items-list {
+				margin-block-start: $global-space-base !important;
+			}
+		}
+	}
+
+	.rTable1 {
+		@include layout {
+			grid-area: rTable1;
+			justify-self: center;
+		}
+	}
+
+	.rTable2 {
+		@include layout {
+			grid-area: rTable2;
+			justify-self: center;
+			padding: 0;
+		}
+	}
+
+	.grid-creature {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-items: center;
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas:
+				// 'vChar1 vChar1  '
+				'vCre1 vCre2 '
+				'vCre3 vCre4 '
+				'vCre5 vCre6 '
+				'vCre7 vCre8';
+			grid-template-columns: 1fr 1fr;
+			padding: $global-space-sm;
+		}
+	}
+
+	.vCre1 {
+		@include layout {
+			grid-area: vCre1;
+		}
+	}
+
+	.vCre2 {
+		@include layout {
+			grid-area: vCre2;
+		}
+	}
+
+	.vCre3 {
+		@include layout {
+			grid-area: vCre3;
+		}
+	}
+
+	.vCre4 {
+		@include layout {
+			grid-area: vCre4;
+		}
+	}
+
+	.vCre5 {
+		@include layout {
+			grid-area: vCre5;
+		}
+	}
+
+	.vCre6 {
+		@include layout {
+			grid-area: vCre6;
+		}
+	}
+
+	.vCre7 {
+		@include layout {
+			grid-area: vCre7;
+		}
+	}
+
+	.vCre8 {
+		@include layout {
+			grid-area: vCre8;
+		}
+	}
+
+	.grid-planet-header {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			align-items: center;
+			border-style: solid;
+			border-width: 0;
+			display: grid;
+			gap: $global-space-base;
+			grid-template-areas:
+				'hplan1 hplan2 '
+				'hplan3 hplan4'
+				'hplan5 hplan6 '
+				'hplan7 hplan8';
+			grid-template-columns: auto;
+			padding: $global-space-base;
+		}
+	}
+
+	.hplan1 {
+		@include layout {
+			grid-area: hplan1;
+		}
+	}
+
+	.hplan2 {
+		@include layout {
+			grid-area: hplan2;
+		}
+	}
+
+	.hplan3 {
+		@include layout {
+			grid-area: hplan3;
+		}
+	}
+
+	.hplan4 {
+		@include layout {
+			grid-area: hplan4;
+		}
+	}
+
+	.hplan5 {
+		@include layout {
+			grid-area: hplan5;
+		}
+	}
+
+	.hplan6 {
+		@include layout {
+			grid-area: hplan6;
+		}
+	}
+
+	.hplan7 {
+		@include layout {
+			grid-area: hplan7;
+		}
+	}
+
+	.hplan8 {
+		@include layout {
+			grid-area: hplan8;
+		}
+	}
+
+	.grid-planet {
+		@include layout {
+			display: grid;
+			grid-template-areas:
+				'plan1 plan1 plan1 plan1'
+				'plan2 plan2 plan3 plan3 '
+				// 'plan3 plan3 plan3 plan3 '
+				'plan4 plan4 plan4 plan4 ';
+			grid-template-columns: 220px 1fr;
+			margin: 0;
+			padding: 0;
+
+			~ .resource-label,
+			.resource-label {
+				margin-block-start: $global-space-sm;
+			}
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.plan1 {
+		@include layout {
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+			grid-area: plan1;
+			justify-self: flex-start;
+
+			.resource-label {
+				margin-block-start: $global-space-sm;
+			}
+		}
+	}
+
+	.plan2 {
+		@include layout {
+			grid-area: plan2;
+			justify-self: left;
+		}
+	}
+
+	.plan3 {
+		@include layout {
+			grid-area: plan3;
+			justify-self: left;
+		}
+	}
+
+	.plan4 {
+		@include layout {
+			grid-area: plan4;
+			justify-self: left;
+		}
+	}
+
+	.systems {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			border-block-end-width: 0;
+		}
+	}
+
+	.grid-systems {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 1px;
+			display: grid;
+			padding: $global-space-base $global-space-sm;
+			grid-template-areas:
+				'sys1 sys2 sys3 sys4'
+				'sys5 sys6 sys7 sys8';
+			grid-template-columns: 1fr 1fr 1fr $global-space-button;
+		}
+
+		.item-control.item-create {
+			color: inherit;
+
+			&:hover {
+				color: inherit;
+			}
+		}
+	}
+
+	.sys1 {
+		@include layout {
+			grid-area: sys1;
+			justify-self: left;
+		}
+	}
+
+	.sys2 {
+		@include layout {
+			grid-area: sys2;
+			justify-self: left;
+		}
+	}
+
+	.sys3 {
+		@include layout {
+			grid-area: sys3;
+			justify-self: left;
+		}
+	}
+
+	.sys4 {
+		@include layout {
+			grid-area: sys4;
+			justify-self: right;
+		}
+	}
+
+	.sys5 {
+		@include layout {
+			grid-area: sys5;
+			justify-self: left;
+		}
+	}
+
+	.sys6 {
+		@include layout {
+			grid-area: sys6;
+			justify-self: left;
+		}
+	}
+
+	.sys7 {
+		@include layout {
+			grid-area: sys7;
+			justify-self: left;
+		}
+	}
+
+	.sys8 {
+		@include layout {
+			grid-area: sys8;
+			justify-self: right;
+		}
+	}
+
+	.grid-Char-Att {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			grid-column-gap: $global-space-base;
+			grid-row-gap: 0;
+			align-items: center;
+			grid-template-areas:
+				'gCol1 gCol2 gCol3 gCol4 gCol5'
+				'gCol6 gCol7 gCol8 gCol9 gCol10';
+			grid-template-columns: 110px 50px 110px 50px 65px;
+			padding: $global-space-sm;
+		}
+	}
+
+	.gCol1 {
+		@include layout {
+			grid-area: gCol1;
+			justify-self: left;
+		}
+	}
+
+	.gCol2 {
+		@include layout {
+			align-self: center;
+			grid-area: gCol2;
+			justify-self: center;
+		}
+	}
+
+	.gCol3 {
+		@include layout {
+			grid-area: gCol3;
+			justify-self: left;
+		}
+	}
+
+	.gCol4 {
+		@include layout {
+			align-self: center;
+			grid-area: gCol4;
+			justify-self: center;
+		}
+	}
+
+	.gCol5 {
+		@include layout {
+			grid-area: gCol5;
+			justify-self: center;
+		}
+	}
+
+	.gCol6 {
+		@include layout {
+			grid-area: gCol6;
+			justify-self: left;
+		}
+	}
+
+	.gCol7 {
+		@include layout {
+			align-self: center;
+			grid-area: gCol7;
+			justify-self: center;
+		}
+	}
+
+	.gCol8 {
+		@include layout {
+			grid-area: gCol8;
+			justify-self: left;
+		}
+	}
+
+	.gCol9 {
+		@include layout {
+			align-self: center;
+			grid-area: gCol9;
+			justify-self: center;
+		}
+	}
+
+	.gCol10 {
+		@include layout {
+			grid-area: gCol10;
+			justify-self: center;
+		}
+	}
+
+	.grid-item-xtras {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-column-gap: 0;
+			grid-row-gap: 0;
+			grid-template-areas:
+				'xCol1 xCol2 xCol3 xCol4 xCol5 xCol6'
+				'. xCol7 xCol7 xCol8 .  .';
+			grid-template-columns: 110px 50px 110px 50px 110px 50px;
+			padding: 0;
+		}
+	}
+
+	.xCol1 {
+		@include layout {
+			grid-area: xCol1;
+			justify-self: left;
+		}
+	}
+
+	.xCol2 {
+		@include layout {
+			grid-area: xCol2;
+			justify-self: left;
+		}
+	}
+
+	.xCol3 {
+		@include layout {
+			grid-area: xCol3;
+			justify-self: left;
+		}
+	}
+
+	.xCol4 {
+		@include layout {
+			grid-area: xCol4;
+			justify-self: center;
+		}
+	}
+
+	.xCol5 {
+		@include layout {
+			grid-area: xCol5;
+			justify-self: left;
+		}
+	}
+
+	.xCol6 {
+		@include layout {
+			grid-area: xCol6;
+			justify-self: center;
+		}
+	}
+
+	.xCol7 {
+		@include layout {
+			grid-area: xCol7;
+			justify-self: center;
+		}
+	}
+
+	.xCol8 {
+		@include layout {
+			grid-area: xCol8;
+			justify-self: center;
+		}
+	}
+
+	.flex-group-center,
+	.flex-group-left,
+	.flex-group-right {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: $global-space-base;
+		}
+	}
+
+	.flex-group-left {
+		@include layout {
+			justify-content: flex-start;
+			text-align: left;
+		}
+	}
+
+	.flex-group-right {
+		@include layout {
+			justify-content: flex-end;
+			text-align: right;
+		}
+	}
+
+	.crew {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+
+			br {
+				display: none;
+			}
+		}
+
+		> .grid-crew {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
+				padding: $global-space-base;
+			}
+		}
+
+		> div:last-of-type {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+				padding: $global-space-base;
+			}
+		}
+	}
+
+	.grid-crew {
+		@include layout {
+			align-items: center;
+			display: grid;
+			grid-column-gap: $global-space-base;
+			grid-template-areas:
+				'gC1 gC2 gC3 gC4'
+				'gC5 gC6 gC7 gC8';
+			grid-template-columns: 1fr 1fr 1fr $global-space-button-lg;
+		}
+	}
+
+	.gC1 {
+		@include layout {
+			grid-area: gC1;
+			justify-self: center;
+		}
+	}
+
+	.gC2 {
+		@include layout {
+			grid-area: gC2;
+			justify-self: center;
+		}
+	}
+
+	.gC3 {
+		@include layout {
+			grid-area: gC3;
+			justify-self: center;
+		}
+	}
+
+	.gC4 {
+		@include layout {
+			grid-area: gC4;
+			justify-self: flex-end;
+		}
+	}
+
+	.gC5 {
+		@include layout {
+			grid-area: gC5;
+			justify-self: center;
+		}
+	}
+
+	.gC6 {
+		@include layout {
+			grid-area: gC6;
+			justify-self: center;
+		}
+	}
+
+	.gC7 {
+		@include layout {
+			grid-area: gC7;
+			justify-self: center;
+		}
+	}
+
+	.gC8 {
+		@include layout {
+			display: flex;
+			gap: $global-space-sm;
+			grid-area: gC8;
+			justify-self: flex-end;
+		}
+	}
+
+	.grid-actor {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			display: grid;
+			grid-template-areas: 'gaItem1 gaItem2 gaItem3 gaItem4';
+			grid-template-columns: 20% 30% 20% 30%;
+			padding: $global-space-base 0;
+
+			.rollable {
+				margin: 0 !important;
+			}
+		}
+	}
+
+	.gaItem1 {
+		@include layout {
+			grid-area: gaItem1;
+		}
+	}
+
+	.gaItem2 {
+		@include layout {
+			align-items: center;
+			display: flex;
+			gap: $global-space-base;
+			grid-area: gaItem2;
+
+			> span {
+				vertical-align: 0 !important;
+			}
+		}
+	}
+
+	.gaItem3 {
+		@include layout {
+			grid-area: gaItem3;
+		}
+	}
+
+	.gaItem4 {
+		@include layout {
+			align-items: center;
+			display: flex;
+			gap: $global-space-base;
+			grid-area: gaItem4;
+		}
+	}
+}
+
+@mixin alien-global-flex {
+	.flex-center {
+		@include layout {
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.flex-between {
+		@include layout {
+			justify-content: space-between;
+		}
+	}
+
+	.alienrpg {
+		@include layout {
+			.flexcol {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+			}
+
+			.flexcol .flex1 {
+				flex: 1;
+			}
+
+			.flexcol .flex2 {
+				flex: 2;
+			}
+
+			.flexcol .flex3 {
+				flex: 3;
+			}
+
+			.flexcol .flex4 {
+				flex: 4;
+			}
+
+			.flexrow {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+
+				> * {
+					flex: 1;
+				}
+
+				.flex1 {
+					flex: 1;
+				}
+
+				.flex2 {
+					flex: 2;
+				}
+
+				.flex3 {
+					flex: 3;
+				}
+
+				.flex4 {
+					flex: 4;
+				}
+			}
+		}
+	}
+}
+
+@mixin alien-global-item-list {
+	.alienrpg.actor .encumbrance-label {
+		@include layout {
+			margin-block-start: $global-space-sm;
+		}
+	}
+
+	.alienrpg.actor .encumbrance {
+		background-color: transparent;
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-radius: $global-border-radius-default;
+			border-style: solid;
+			border-width: 1px;
+			height: 12px;
+			margin: 0;
+			position: relative;
+			width: 100%;
+		}
+
+		&.encumbered {
+			&.blink {
+				background-color: transparent;
+			}
+
+			.encumbrance-bar {
+				background-color: RGB($emu-color-negative-darkest);
+				border-color: RGB($emu-color-primary);
+			}
+		}
+
+		.encumbrance-bar {
+			background-color: RGB($emu-color-primary-darkest);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-radius: calc(#{$global-border-radius-default} - 1px);
+				border-style: solid;
+				border-width: 0;
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+
+		.encumbrance-label {
+			background-color: transparent;
+			color: inherit;
+
+			@include layout {
+				font-size: $global-font-size-lg;
+				height: auto;
+				line-height: initial;
+				padding: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+
+		.encumbrance-breakpoint {
+			@include layout {
+				position: absolute;
+				left: 50%;
+			}
+		}
+
+		.arrow-up {
+			@include layout {
+				border-bottom: 4px solid RGB($emu-color-border);
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				bottom: 0;
+				height: 0;
+				width: 0;
+			}
+		}
+
+		.arrow-down {
+			@include layout {
+				border-left: 4px solid transparent;
+				border-right: 4px solid transparent;
+				border-top: 4px solid RGB($emu-color-border);
+				height: 0;
+				top: 0;
+				width: 0;
+			}
+		}
+	}
+
+	.blink {
+		animation: blink 2s linear infinite;
+	}
+}
+
+@mixin alien-forms {
+	.item-form {
+		background-color: transparent;
+
+		@include layout {
+			font-family: inherit;
+		}
+	}
+
+	.actor-header {
+		background-color: RGB($emu-color-background-lightest);
+		background-image: $global-image-background-lightest;
+
+		@include layout {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			flex: 0 0 150px;
+			gap: $global-space-base;
+			justify-content: flex-start;
+			margin: 0;
+			overflow: hidden;
+			position: sticky;
+			top: 0;
+			z-index: 5;
+		}
+	}
+
+	.vehicle-header {
+		background-color: transparent;
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			display: flex;
+			flex: 0 0 auto;
+			gap: $global-space-base;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		h1.charname {
+			@include layout {
+				border-width: 0;
+			}
+		}
+
+		.grid-2col {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				align-items: flex-start;
+				border-block-start-style: solid;
+				border-block-start-width: 1px;
+				display: flex;
+				padding: $global-space-sm;
+
+				.grid-weapon {
+					flex: 1 1 auto;
+				}
+			}
+		}
+	}
+
+	.profile-img {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-radius: $global-border-radius-images;
+			border-style: solid;
+			border-width: 0;
+			flex: 0 0 auto;
+			height: 150px;
+			margin: 0;
+			max-width: 200px;
+			width: auto;
+		}
+	}
+
+	.profile-img-item {
+		@include layout {
+			flex: 0 0 100px;
+			height: 100px;
+			justify-self: center;
+			margin: 0;
+			width: auto;
+		}
+	}
+
+	.profile-img-vehicle {
+		@include layout {
+			flex: 0 0 100px;
+			height: 160px;
+			margin: 0;
+			width: 300px;
+		}
+	}
+
+	.header-fields {
+		flex: 1;
+	}
+
+	h1.charname {
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			border-block-end-width: 0;
+			font-size: $global-font-size-lg;
+			height: auto;
+			margin: 0;
+			padding: 0;
+
+			&:only-child {
+				border-block-end-width: 1px;
+			}
+		}
+
+		input {
+			@extend %input-text;
+
+			@include layout {
+				border-width: 0;
+				text-transform: unset;
+				width: 100%;
+			}
+		}
+	}
+
+	.editor {
+		background-color: transparent;
+
+		@include layout {
+			height: 100%;
+			min-height: 200px;
+
+			&:hover {
+				.editor-edit {
+					opacity: 1;
+					pointer-events: all;
+					top: $static-space-xs;
+				}
+			}
+		}
+
+		.editor-edit {
+			@extend %control-button;
+
+			@include layout {
+				opacity: 0;
+				pointer-events: none;
+				position: absolute;
+				right: 0;
+				top: -($static-space-base);
+				transition:
+					opacity $global-transition-time-base $global-transition-type-shift,
+					top $global-transition-time-base $global-transition-type-shift;
+			}
+
+			> i {
+				color: inherit;
+			}
+		}
+	}
+
+	.tox {
+		.tox-editor-container {
+			background-color: RGB($emu-color-white);
+		}
+
+		.tox-edit-area {
+			@include layout {
+				padding: 0;
+			}
+		}
+
+		.tox-tbtn {
+			background-color: RGB($emu-color-white);
+			color: RGB($emu-color-black);
+
+			@include layout {
+				cursor: pointer;
+			}
+
+			&:hover {
+				@extend %global-hover-alt;
+			}
+		}
+	}
+
+	.maxboxsize {
+		@extend %input-text;
+
+		@include layout {
+			max-width: 40px;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.healboxsize {
+		@extend %input-text;
+
+		@include layout {
+			max-width: 80px;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.cashboxsize {
+		@extend %input-text;
+
+		@include layout {
+			max-width: 150px;
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	.textbox {
+		@extend %input-text;
+	}
+
+	.textbox1 {
+		@extend %input-text;
+
+		@include layout {
+			padding: 0;
+			text-align: center;
+			width: 230px;
+		}
+	}
+
+	.textbox2 {
+		@extend %input-text;
+
+		@include layout {
+			width: 400px;
+		}
+	}
+
+	.textbox3 {
+		@extend %input-text;
+
+		@include layout {
+			width: 180px;
+		}
+	}
+
+	.textbox4 {
+		@extend %input-textarea;
+
+		@include layout {
+			width: 450px;
+		}
+	}
+
+	textarea {
+		@extend %input-textarea;
+
+		@include layout {
+			font-weight: normal;
+			letter-spacing: initial;
+		}
+	}
+
+	form .sheet-content .click-stat-level {
+		@extend %input-text;
+
+		@include layout {
+			font-weight: 700;
+			height: $global-space-button-sm;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	.click-stat-level {
+		display: flex;
+		flex-wrap: wrap;
+		gap: $global-space-xs;
+		max-width: 160px;
+
+		.fas {
+			@include layout {
+				display: none;
+				cursor: pointer;
+			}
+		}
+
+		.far {
+			@include layout {
+				letter-spacing: initial;
+			}
+		}
+	}
+
+	.dots {
+		@include layout {
+			cursor: unset;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			font-size: $global-font-size-md;
+			font-weight: 700;
+			margin: 0;
+
+			+ .dots.experience.xp_faded {
+				margin-block-start: $global-space-sm;
+			}
+		}
+	}
+}
+
+@mixin alien-resource {
+	.resource-label,
+	.speciality-label {
+		@include layout {
+			flex: auto;
+			font-family: inherit;
+			justify-self: center;
+			padding: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	.tab .resource-label,
+	.tab .speciality-label {
+		@include layout {
+			display: flex;
+			// margin-block-start: $global-space-sm;
+		}
+	}
+
+	.attr-label {
+		@include layout {
+			font-weight: 700;
+			padding: 0;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@mixin alien-tabs {
+	.tabs {
+		background-color: transparent;
+		border-color: RGB($emu-color-primary);
+		color: RGB($emu-color-text);
+		text-shadow: none;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+			border-block-end-width: 2px;
+			height: $global-space-button;
+			text-transform: uppercase;
+		}
+
+		.item {
+			@include layout {
+				align-items: center;
+				display: flex;
+				font-weight: normal;
+				justify-content: center;
+				padding: 0;
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
+				width: 100%;
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background-color: transparent;
+				color: inherit;
+
+				@include layout {
+					margin: 0;
+					padding: 0;
+				}
+			}
+
+			&:active {
+				background-color: RGB($emu-color-primary-darker);
+			}
+
+			&.active {
+				background-color: RGB($emu-color-primary);
+				box-shadow: none;
+				color: RGB($emu-color-text-lightest);
+				text-shadow: none;
+
+				@include layout {
+					cursor: default;
+					font-size: inherit;
+					padding: 0;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.sheet nav.sheet-tabs,
+	.sheet-tabs {
+		border-color: RGB($emu-color-primary) !important;
+
+		@include layout {
+			border-style: solid !important;
+			border-width: 1px !important;
+			flex: 0 0 $global-space-button;
+			height: $global-space-button;
+			line-height: initial;
+			margin: 0;
+		}
+	}
+
+	.tab {
+		background-color: transparent;
+
+		@include layout {
+			height: auto;
+
+			> h2.resource-label,
+			> h3.resource-label,
+			> label.resource-label {
+				padding-block-start: $global-space-sm;
+			}
+		}
+	}
+}
+
+@mixin alien-items {
+	.items-list {
+		@include layout {
+			list-style: none;
+			margin: 0 !important;
+			padding: 0;
+
+			br {
+				display: none;
+			}
+
+			.items-list {
+				margin-block-start: $global-space-sm !important;
+			}
+
+			&:empty {
+				display: none;
+			}
+		}
+
+		.item-header {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				border-block-start-width: 0;
+				padding-block-start: $global-space-sm;
+			}
+		}
+
+		> h2 {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				font-weight: normal;
+				margin-block-start: $global-space-sm !important;
+				padding: $global-space-base $global-space-sm !important;
+			}
+		}
+
+		> br {
+			@include layout {
+				display: none;
+			}
+		}
+	}
+
+	.item-header {
+		background-color: transparent;
+	}
+
+	.item-name {
+		@include layout {
+			margin: 0;
+		}
+	}
+
+	.item-controls {
+		@include layout {
+			text-align: right;
+		}
+	}
+
+	.item-label {
+		@include layout {
+			font-family: inherit;
+			font-size: $global-font-size-sm;
+			padding: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	.biog,
+	.biog-full {
+		@include layout {
+			font-family: inherit;
+			height: auto;
+			min-height: 300px;
+			padding: 0;
+			width: 100%;
+		}
+
+		.biog-image {
+			@include layout {
+				flex: 0 0 $global-space-button-sm;
+				margin: 0;
+			}
+		}
+
+		.editor-content {
+			font-family: inherit;
+			word-wrap: break-word;
+		}
+
+		img {
+			@include layout {
+				display: block;
+			}
+		}
+	}
+
+	.biog-full {
+		@include layout {
+			height: 600px;
+		}
+	}
+}
+
+@mixin alien-global-select-css {
+	.select-css {
+		@extend %input-select;
+		appearance: auto;
+		background-position: right 0.7em top 50%, 0 0;
+		background-repeat: no-repeat, repeat;
+		background-size: 1em auto, 100%;
+
+		@include layout {
+			max-width: 100%;
+			width: 100%;
+
+			&::-ms-expand {
+				display: none;
+			}
+		}
+
+		&:disabled,
+		&[aria-disabled='true'] {
+			border-color: inherit;
+			color: inherit;
+			opacity: 0.5;
+		}
+	}
+}
+
+@mixin alien-global-module {
+	.sheet.journal-entry .journal-entry-content {
+		background: RGB($emu-color-background) !important;
+		color: RGB($emu-color-text-lightest);
+	}
+
+	.alienrpg {
+		.arpgtable {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				height: $global-space-button;
+				margin: 0 auto;
+				width: 80%;
+			}
+
+			tr:nth-child(even) {
+				background-color: transparent;
+			}
+		}
+
+		.caption {
+			color: inherit;
+
+			@include layout {
+				font-size: xx-large;
+				text-align: center;
+			}
+		}
+
+		.arpgtablesmall {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				height: $global-space-button;
+				margin: 0 auto;
+				width: 34%;
+			}
+
+			tr:nth-child(even) {
+				background-color: transparent;
+			}
+		}
+
+		.tdstyle {
+			@include layout {
+				height: 18px;
+				text-align: left;
+				width: 40%;
+			}
+		}
+
+		.tdstyleR {
+			@include layout {
+				height: 18px;
+				text-align: right;
+				width: 40%;
+			}
+		}
+
+		.tdstyleC {
+			@include layout {
+				height: 18px;
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		.tdstyle3D {
+			@include layout {
+				height: 18px;
+				text-align: center;
+				width: 30%;
+			}
+		}
+
+		.tdstyle2D {
+			@include layout {
+				height: 18px;
+				text-align: center;
+				width: 50%;
+			}
+		}
+
+		.arpglink {
+			background-color: transparent;
+			color: RGB($emu-color-primary);
+			text-decoration: none;
+			text-shadow: none;
+
+			&:hover {
+				text-decoration: underline;
+				text-shadow: none;
+			}
+
+			&:active {
+				color: RGB($emu-color-primary-darker);
+			}
+		}
+
+		.mess {
+			color: RGB($emu-color-warning);
+		}
+
+		.ntable {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				margin: 0 auto;
+				padding: 0;
+				width: 99%;
+			}
+
+			tr:nth-child(even) {
+				background-color: transparent;
+			}
+		}
+
+		.trhead {
+			@include layout {
+				font-weight: 700;
+				text-align: center;
+				width: 45%;
+			}
+		}
+
+		.tcol1 {
+			@include layout {
+				width: 2.5%;
+			}
+		}
+
+		.tcol2 {
+			@include layout {
+				text-align: justify;
+				vertical-align: top;
+				width: 45%;
+			}
+		}
+
+		.tcol3 {
+			@include layout {
+				width: 5%;
+			}
+		}
+
+		.etable {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				margin: 0 auto;
+				padding: 0;
+				width: 40%;
+
+				td:first-child {
+					padding-inline-start: $global-space-base;
+				}
+			}
+		}
+
+		.etr {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+			}
+		}
+
+		.ehead {
+				text-align: center;
+				font-weight: 700;
+		}
+
+		.ecol1 {
+				width: 50%;
+				text-align: center;
+		}
+
+		.ecol2 {
+				width: 50%;
+				text-align: center;
+		}
+
+		.ecol3 {
+				width: 3%;
+		}
+
+		.stable {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				margin: 0 auto;
+				padding: 0;
+				width: 90%;
+			}
+		}
+
+		.strhead {
+			@include layout {
+				font-weight: 700;
+				text-align: center;
+			}
+		}
+
+		@include layout {
+			.scol1 {
+				width: 16%;
+			}
+
+			.scol2 {
+				width: 3%;
+			}
+
+			.scol3 {
+				width: 80%;
+			}
+
+			.scol4 {
+				width: 25%;
+			}
+
+			.scol5 {
+				text-align: left;
+				width: 60%;
+			}
+
+			.scol6 {
+				width: 90%;
+			}
+
+			.scol7 {
+				text-align: left;
+				width: 20%;
+			}
+
+			.scol8 {
+				text-align: left;
+				width: 65%;
+			}
+
+			.scol9 {
+				width: 12%;
+			}
+
+			.scol10 {
+				width: 50%;
+			}
+		}
+
+		.skltable {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				margin: 0 auto;
+				width: 35%;
+			}
+		}
+
+		.oddstable {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				height: 16px;
+				margin: 0 auto;
+				padding: 0;
+				width: 96%;
+			}
+		}
+
+		@include layout {
+			.oddhead {
+				font-weight: 700;
+			}
+
+			.oddcol1 {
+				width: 25%;
+			}
+
+			.oddcol2 {
+				width: 39%;
+			}
+
+			.oddcol3 {
+				width: 36%;
+			}
+
+			.oddcol4 {
+				width: 40%;
+			}
+		}
+
+		.bigtable {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				margin: 0 auto;
+				padding: 0;
+				width: 99%;
+			}
+		}
+
+		@include layout {
+			.die {
+				text-align: center;
+				width: 6%;
+			}
+
+			.inj {
+				width: 16%;
+			}
+
+			.fatal {
+				width: 6%;
+			}
+
+			.tim {
+				text-align: center;
+				width: 7%;
+			}
+
+			.eff {
+				width: 56%;
+			}
+
+			.heal {
+				text-align: center;
+				width: 15%;
+			}
+
+			.crit {
+				text-align: center;
+				width: 19%;
+			}
+
+			.eff2 {
+				width: 55%;
+			}
+
+			.aframe {
+				position: relative;
+			}
+
+			.leftcol {
+				left: 1.2%;
+				position: absolute;
+				text-align: justify;
+				width: 45%;
+			}
+
+			.rightcol {
+				left: 50%;
+				position: absolute;
+				text-align: justify;
+				width: 45%;
+			}
+		}
+
+		.heading {
+			border-color: RGB($emu-color-border);
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 2px;
+				font-size: $global-font-size-xxl;
+			}
+		}
+
+		.heading2 {
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				text-align: center;
+			}
+		}
+
+		.heading3 {
+			color: RGB($emu-color-primary);
+		}
+
+		.imagecontainer {
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				position: relative;
+				text-align: center;
+			}
+		}
+
+		.container {
+			@include layout {
+				width: 100%;
+			}
+		}
+
+		.listHeading {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
+				margin-bottom: 0;
+				padding: 0;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+
+		.twogridcol {
+			@include layout {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(160px, 50%));
+			}
+		}
+
+		.twogridcol input[type='checkbox'] {
+			@include layout {
+				vertical-align: middle;
+			}
+		}
+
+		.actors.content,
+		.items.content,
+		.journal.content,
+		.scenes.content,
+		.tables.content,
+		.macros.content {
+			background-color: RGB($emu-color-background);
+		}
+
+		.actors.content.toggle-display,
+		.items.content.toggle-display,
+		.journal.content.toggle-display,
+		.scenes.content.toggle-display,
+		.tables.content.toggle-display,
+		.macros.content.toggle-display {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.title {
+			@include layout {
+				cursor: pointer;
+			}
+		}
+
+		.footer {
+			background-color: RGB($emu-color-background);
+
+			@include layout {
+				bottom: 0;
+				height: auto;
+				left: 0;
+				position: sticky;
+				width: inherit;
+			}
+		}
+
+		.cinsymbol,
+		.camsymbol,
+		.stresssymbol,
+		.basesymbol  {
+			border-color: transparent;
+
+			@include layout {
+				background-size: $static-space-button;
+				border-style: solid;
+				border-width: 0;
+				border: 0;
+				display: inline-block;
+				height: $static-space-button;
+				vertical-align: middle;
+				width: $static-space-button;
+			}
+		}
+	}
+}
+
+@mixin alien-crt-ui {
+	combobox:focus {
+		@extend %global-focus;
+		background-color: inherit;
+		color: inherit;
+	}
+
+	#pause {
+		background: none;
+
+		& > img {
+			@include layout {
+				--fa-animation-duration: 10s;
+				height: 200px;
+				left: calc(50% - 100px);
+				opacity: 0.7;
+				top: -50px;
+				width: 200px;
+			}
+		}
+
+		h3 {
+			text-shadow: $global-text-shadow;
+
+			@include layout {
+				font-size: $global-font-size-xxl;
+			}
+		}
+	}
+
+	.sidebar-tab .fas.fa-trash:hover {
+		@include layout {
+			animation: none;
+		}
+	}
+
+	#sidebar,
+	.sidebar-popout[id="chat-popout"] .window-content {
+		.chat-message {
+			.message-header .message-sender {
+				@include layout {
+					padding: 0;
+				}
+			}
+
+			button.alien-Push-button {
+				@extend %primary-button;
+
+				@include layout {
+					margin-block-start: $global-space-sm;
+					width: 100%;
+				}
+			}
+
+			span + input[type=checkbox].multiPush {
+				@include layout {
+					margin: 0;
+					margin-inline-start: $global-space-base;
+					top: $global-space-xs;
+				}
+			}
+		}
+	}
+
+	.chat-message.whisper h2 {
+		color: RGB($emu-color-neutral);
+	}
+
+	.chat-message.whisper h4 {
+		color: RGB($emu-color-neutral);
+	}
+
+	.chat-message.whisper .blink {
+		background-color: transparent;
+		color: inherit;
+		text-shadow: none;
+
+		@include layout {
+			animation: none;
+		}
+	}
+
+	.blink {
+		color: RGB($emu-color-text-lightest);
+		text-shadow: none;
+
+		@include layout {
+			animation: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.warnblink {
+		text-shadow: none;
+
+		@include layout {
+			animation: none;
+		}
+	}
+
+	.message-sender {
+		@include layout {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			width: auto;
+		}
+	}
+
+	.journal-sheet ::-webkit-scrollbar-thumb {
+		background-color: RGB($emu-color-background-light);
+		border-color: transparent;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+		}
+	}
+}
+
+@mixin alien-crt-actor {
+	.crt {
+		.window-content {
+			border-color: transparent;
+			color: RGB($emu-color-text-lightest);
+			text-shadow: none;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				padding: inherit;
+
+				&::before,
+				&::after {
+					display: none;
+				}
+			}
+		}
+
+		label,
+		h2 {
+			@include layout {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.grid-4col {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+			}
+		}
+
+		.grid-synth {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				grid-column: 3;
+				grid-template-columns: 25% 25% 50%;
+				padding: $global-space-base 0;
+
+				.rollable {
+					margin: 0 !important;
+				}
+			}
+		}
+
+		.resource-content {
+			> span {
+				@include layout {
+					vertical-align: unset !important;
+				}
+			}
+		}
+
+		.synth-stresslabel {
+			border-color: RGBA($emu-color-border);
+
+			@include layout {
+				align-items: center;
+				animation: none;
+				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 1px;
+				display: flex;
+				font-weight: normal;
+				height: $global-space-button;
+				justify-content: center;
+				text-align: center;
+				text-transform: uppercase;
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
+				width: 90%;
+			}
+		}
+
+		.minus-btn,
+		.plus-btn {
+			@extend %control-button;
+		}
+
+		.rollable-stress:hover {
+			@include layout {
+				animation: none;
+			}
+		}
+
+		.resource-content .maxboxsize {
+			@include layout {
+				vertical-align: initial;
+			}
+		}
+
+		.crt-grid-Char-Att {
+			background-color: RGB($emu-color-background-light);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				align-items: center;
+				border-style: solid;
+				border-width: 1px;
+				border-block-start-width: 0;
+				display: grid;
+				float: unset;
+				grid-column-gap: 0;
+				grid-row-gap: $global-space-base;
+				grid-template-areas: 'crt_gCol1 crt_gCol2 crt_gCol3 crt_gCol4 crt_gCol5 crt_gCol6' 'crt_gCol7 crt_gCol8 crt_gCol9 crt_gCol10 crt_gCol11 crt_gCol12';
+				grid-template-columns: 25% 8% 25% 8% 25% 8%;
+				margin: 0;
+				padding: $global-space-base 0;
+				width: 100%;
+			}
+		}
+
+		.crt_gCol1,
+		.crt_gCol2,
+		.crt_gCol3,
+		.crt_gCol4,
+		.crt_gCol5,
+		.crt_gCol6,
+		.crt_gCol7,
+		.crt_gCol8,
+		.crt_gCol9,
+		.crt_gCol10,
+		.crt_gCol11,
+		.crt_gCol12 {
+			@include layout {
+				align-self: center;
+				justify-self: center;
+			}
+		}
+
+		.crt_gCol11 {
+			color: RGB($emu-color-primary);
+		}
+
+		.crt-crt-grid-Char-Att .maxboxsize {
+			@include layout {
+				min-width: 40px;
+				z-index: 1;
+			}
+		}
+
+		.NPC {
+			@extend %input-checkbox;
+		}
+
+		.crt-grid-Char-Att .crt-gCol6:focus,
+		.grid-Consumables .maxboxsize:focus {
+			@include layout {
+				cursor: not-allowed;
+			}
+		}
+
+		.crt-grid-Char-Att .crt_gCol6:hover,
+		.grid-Consumables .maxboxsize:hover {
+			@include layout {
+				cursor: default;
+			}
+		}
+
+		.synthsdont {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-inline-start-style: solid;
+				border-inline-start-width: 0;
+				margin: 0;
+				padding: 0 $global-space-sm;
+			}
+		}
+
+		.imitate-human {
+			@include layout {
+				text-align: center;
+			}
+		}
+
+		.text {
+			background-color: RGB($emu-color-primary-darker);
+		}
+
+		.grid-genPage h2 {
+			@include layout {
+				text-transform: uppercase;
+			}
+		}
+
+		.grid-2col-border {
+			@include layout {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.grid-crtPage {
+			@include layout {
+				display: grid;
+				gap: $global-space-base;
+				grid-template-areas: 'crt_Col1 crt_Col2';
+				grid-template-columns: 220px;
+			}
+		}
+
+		.crt_Col1 {
+			@include layout {
+				display: grid;
+				gap: $global-space-base;
+				grid-template-areas: 'crt_Item1' 'crt_Item2' 'crt_Item3';
+				grid-template-columns: 100%;
+				grid-template-rows: min-content 1fr min-content;
+			}
+
+			h2 {
+				color: RGB($emu-color-text-darker);
+
+				@include layout {
+					padding: 0 $global-space-sm;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.crt_Col2 {
+			@include layout {
+				display: grid;
+				gap: $global-space-base;
+				grid-template-areas: 'crt_Item4' 'crt_Item5' 'crt_Item7' 'crt_Item8' 'crt_Item9' 'crt_Item6';
+				grid-template-columns: 100%;
+				grid-template-rows: repeat(5, min-content) 1fr;
+				padding: 0;
+			}
+		}
+
+		.crt_Item1,
+		.crt_Item2_char,
+		.crt_Item2_synth,
+		.crt_Item3 {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				padding: 0;
+			}
+		}
+
+		.crt_Item1 {
+			@include layout {
+				display: flex;
+				flex-wrap: wrap;
+				height: auto;
+				padding: $global-space-sm;
+				text-align: center;
+			}
+
+			h2 {
+				@include layout {
+					padding: 0;
+				}
+			}
+
+			.sp_faded,
+			.xp_faded {
+				color: RGB($emu-color-primary-darker);
+
+				@include layout {
+					padding: 0;
+
+					.click-stat-level {
+						cursor: pointer;
+					}
+				}
+			}
+
+			.experience {
+				@include layout {
+					display: inline-flex;
+					margin: 0;
+					width: 100%;
+				}
+			}
+
+			.xp_dots_pos {
+				@include layout {
+					padding: 0;
+
+					.click-stat-level {
+						cursor: pointer;
+						margin-block-start: $global-space-base;
+					}
+				}
+			}
+		}
+
+		.crt_Item2_char,
+		.crt_Item2_synth {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				height: auto;
+				padding: $global-space-sm 0 0;
+				position: relative;
+			}
+		}
+
+		.crt_Item2_synth {
+			@include layout {
+				.dots_conditions {
+					margin-block-start: 0;
+				}
+			}
+		}
+
+		.dots_conditions {
+			@include layout {
+				align-items: flex-start;
+				display: flex;
+				flex: 1 1 auto;
+				flex-direction: column;
+				gap: 0;
+				margin-block-start: $global-space-base;
+			}
+
+			.dots {
+				background-color: transparent;
+
+				@include layout {
+					height: auto;
+					padding: 0;
+					width: 100%;
+
+					.resource-label {
+						align-items: center;
+						cursor: pointer;
+						gap: $global-space-sm;
+						height: $global-space-button;
+						padding: $static-space-pf $global-space-sm 0;
+						position: relative;
+						width: 100%;
+
+						&:hover {
+							color: RGB($emu-color-primary);
+						}
+
+						> i {
+							font-size: calc(#{$global-font-size-md} - 1px);
+						}
+					}
+
+					input[value="1"] + .resource-label {
+						background-color: RGB($emu-color-primary-darker);
+						color: RGB($emu-color-text-lightest);
+						font-weight: normal;
+					}
+				}
+			}
+		}
+
+		.overwatch,
+		.overwatch_synth {
+			@include layout {
+				align-items: center;
+				display: flex;
+				gap: $global-space-sm;
+				height: $global-space-button;
+				padding: 0 $global-space-sm;
+				margin: 0;
+				width: 100%;
+			}
+		}
+
+		.dots.panic {
+			input[value="1"] + .resource-label.panicked {
+				background-color: RGB($emu-color-negative);
+			}
+
+			.resource-label.panicked {
+				box-shadow: none;
+				color: RGB($emu-color-text);
+				border-color: transparent;
+
+				@include layout {
+					animation: none;
+					border-style: solid;
+					border-width: 0;
+					margin: 0;
+					max-width: 100%;
+				}
+			}
+
+			.panicked-textarea {
+				@include layout {
+					height: $global-space-button-sm;
+					margin-block-start: -($static-space-pf);
+				}
+			}
+		}
+
+		.dots.radiation {
+			border-color: RGB($emu-color-border);
+
+			&.rad_glow {
+				background-color: RGB($emu-color-primary-darker);
+				box-shadow: none;
+				color: RGB($emu-color-text-lightest);
+
+				@include layout {
+					border-radius: $global-border-radius-default;
+				}
+
+				.resource-label:hover {
+					color: inherit;
+				}
+			}
+
+			@include layout {
+				align-items: center;
+				border-style: solid;
+				border-width: 0;
+				border-block-start-width: 1px;
+				flex-wrap: nowrap;
+				margin: 0;
+				padding: $global-space-base $global-space-base $global-space-sm;
+				width: 100%;
+
+				.resource-label {
+					cursor: default;
+					height: auto;
+					justify-content: center;
+				}
+
+				.click-stat-level-con {
+					cursor: pointer;
+					display: flex;
+					gap: $global-space-xs;
+				}
+			}
+		}
+
+		#bottom {
+			@include layout {
+				bottom: 0;
+				left: 0;
+				position: absolute;
+
+				&.dots.radiation {
+					bottom: unset;
+					left: unset;
+					margin-block-start: auto;
+					position: relative;
+				}
+			}
+		}
+
+		.crt_grid_SynthStress {
+			@include layout {
+				display: grid;
+				gap: $global-space-sm;
+				grid-template-areas: 'imitate-human_left imitate-human_right';
+				grid-template-columns: min-content 1fr;
+				padding: $global-space-md $global-space-sm $global-space-base;
+			}
+		}
+
+		.imitate-human_left {
+			@include layout {
+				padding: 0;
+
+				input[type="checkbox"] {
+					@extend %input-checkbox;
+				}
+			}
+		}
+
+		.imitate-human_right {
+			@include layout {
+				padding: 0;
+			}
+		}
+
+		.synth-label {
+			@include layout {
+				margin: 0;
+				padding: 0 $global-space-sm;
+				text-align: left;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+
+		.alienrpgv .synth_fake_check {
+			background-color: transparent;
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+
+		.fas.fa-parachute-box {
+			@include layout {
+				padding: 0;
+				vertical-align: top;
+
+				&::before {
+					content: "\f49e";
+				}
+			}
+		}
+
+		.crt_Item3 {
+			@include layout {
+				padding: $global-space-sm;
+
+				h2 {
+					padding: 0;
+				}
+			}
+
+			.supply-btn.Power2 {
+				@include layout {
+					font-size: $global-font-size-xl;
+					padding: 0;
+				}
+			}
+		}
+
+		.crt_gridCarrer {
+			@include layout {
+				align-items: center;
+				display: grid;
+				grid-template-areas: 'crt_box1 crt_box2 crt_box3 crt_box4';
+				grid-template-columns: 17% 36% 17% 30%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.crt_gridCarrer .crt_box1,
+		.crt_gridCarrer .crt_box2,
+		.crt_gridCarrer .crt_box3,
+		.crt_gridCarrer .crt_box4 {
+			@include layout {
+				justify-self: center;
+				max-width: 100%;
+				padding: 0;
+			}
+		}
+
+		.crt_gridSpecialty {
+			@include layout {
+				display: grid;
+				grid-template-areas: 'crt_sbox1 crt_sbox2';
+				grid-template-columns: 17% 83%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.crt_gridSpecialty .crt_sbox1,
+		.crt_gridSpecialty .crt_sbox2 {
+			@include layout {
+				justify-self: center;
+				max-width: 100%;
+				padding: 0;
+			}
+		}
+
+		.crt_grid-special {
+			@include layout {
+				display: grid;
+				grid-area: crt_sbox2;
+				grid-template-areas: 'crt_spe1 crt_spe2';
+				grid-template-columns: 75% 25%;
+				width: 100%;
+			}
+		}
+
+		.crt .crt_spe1 {
+			@include layout {
+				font-weight: normal;
+				grid-area: crt_spe1;
+				text-transform: uppercase;
+			}
+		}
+
+		.crt_spe2 {
+			@include layout {
+				grid-area: crt_spe2;
+				justify-self: right;
+				padding: 0;
+			}
+		}
+
+		.crt_Item4,
+		.crt_Item5,
+		.crt_Item6,
+		.crt_Item7,
+		.crt_Item8,
+		.crt_Item9 {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				display: flex;
+				flex-direction: column;
+				margin: 0;
+			}
+
+			input,
+			textarea {
+				border-color: RGB($emu-color-border);
+			}
+		}
+
+		.crt_Item4 .resource-label-header,
+		.crt_Item5 .resource-label-header,
+		.crt_Item6 .resource-label-header,
+		.crt_Item7 .resource-label-header,
+		.crt_Item8 .resource-label-header,
+		.crt_Item9 .resource-label-header {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+			color: RGB($emu-color-text-lightest);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				border-block-end-width: 0;
+				display: block;
+				font-weight: normal;
+				line-height: 1;
+				padding: $global-space-base $global-space-sm;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+
+		.crt_Item4 {
+			@include layout {
+				height: auto;
+				padding: $global-space-sm;
+			}
+		}
+
+		.crt_Item5 textarea {
+			@include layout {
+				height: 64px;
+			}
+		}
+
+		.crt_Item6 {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+				height: auto;
+				margin: 0;
+			}
+		}
+
+		.crt_Item7 textarea {
+			@include layout {
+				height: 64px;
+			}
+		}
+
+		.crt_Item8 {
+			@include layout {
+				padding: 0;
+			}
+		}
+
+		.crt_Item8 input,
+		.crt_Item9 input {
+			@include layout {
+				margin: 0;
+				width: 100%;
+			}
+		}
+
+		.crt_Relat {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				border-block-start-width: 0;
+				display: grid;
+				grid-gap: $global-space-base;
+				grid-template-areas: 'crt_Relat_Buddy crt_Relat_Rival';
+				grid-template-columns: 49%;
+				padding: $global-space-base $global-space-sm;
+			}
+		}
+
+		.crt_Col3 {
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				font-family: inherit;
+				grid-area: crt_Col3;
+				padding: 0;
+			}
+		}
+
+		.crt.grid-attr {
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+			}
+		}
+
+		.talent-btn {
+			@include layout {
+				padding: $global-space-xs $global-space-sm;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				box-shadow: none;
+				color: RGB($emu-color-primary);
+				text-shadow: none;
+
+				@include layout {
+					cursor: pointer;
+					font-size: $global-font-size-lg;
+					font-weight: normal;
+					text-transform: unset;
+				}
+			}
+		}
+
+		.rollable,
+		.creature-acid-roll {
+			border-color: RGBA($emu-color-primary-darkest, 0.8);
+
+			@include layout {
+				align-items: center;
+				animation: none;
+				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 1px;
+				display: flex;
+				font-weight: normal;
+				height: $global-space-button;
+				justify-content: center;
+				text-align: center;
+				text-transform: uppercase;
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
+				width: 90%;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: RGB($emu-color-primary);
+				border-color: transparent;
+				box-shadow: none;
+				color: RGB($emu-color-text-lightest);
+				text-shadow: none;
+			}
+
+			&:hover {
+				@extend %global-hover;
+			}
+
+			&:focus {
+				@extend %global-focus;
+			}
+		}
+
+		.rollItem {
+			border-color: RGBA($emu-color-primary-darkest, 0.8);
+
+			@include layout {
+				align-items: center;
+				animation: none;
+				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 0;
+				display: flex;
+				font-weight: normal;
+				justify-content: flex-start;
+				padding: $global-space-base;
+				text-align: left;
+				text-transform: unset;
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
+				width: 100%;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				border-color: transparent;
+				box-shadow: none;
+				color: RGB($emu-color-primary);
+				text-shadow: none;
+
+				@include layout {
+					font-weight: normal;
+					text-transform: unset;
+				}
+			}
+		}
+
+		.talTitle {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+			color: RGB($emu-color-text);
+
+			@include layout {
+				align-items: center;
+				border-style: solid;
+				border-width: 0;
+				border-block-end-width: 1px;
+				display: flex;
+				font-size: $global-font-size-lg;
+				padding: $global-space-base $global-space-sm;
+				text-transform: uppercase;
+
+				+ .item-name {
+					display: none;
+				}
+			}
+		}
+
+		.textbox {
+			color: RGB($emu-color-white);
+
+			@include layout {
+				font-family: inherit;
+				font-size: $global-font-size-md;
+				font-weight: normal;
+				letter-spacing: unset;
+
+				&:focus {
+					font-weight: normal;
+				}
+			}
+		}
+
+		.blink {
+			background-color: RGB($emu-color-negative);
+			color: RGB($emu-color-text);
+			text-shadow: none;
+
+			@include layout {
+				animation: none;
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.crt_lCol6 {
+			@include layout {
+				justify-self: center;
+			}
+		}
+
+		.crit-injuries {
+			@include layout {
+				margin: 0;
+			}
+		}
+
+		.crt_crit2 {
+			@include layout {
+				font-size: $global-font-size-lg;
+				text-align: center;
+			}
+		}
+
+		.Item11 {
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				height: 100%;
+				padding: $global-space-base;
+			}
+
+			.items-list {
+				@include layout {
+					height: auto;
+					margin-block-start: 0 !important;
+				}
+			}
+		}
+
+		.resource-label-header.rollCrit {
+			@include layout {
+				animation: none;
+				border-inline-start-width: 0;
+				cursor: pointer;
+				font-size: inherit;
+			}
+
+			&:hover {
+				background-color: RGB($emu-color-primary);
+			}
+
+			&:active {
+				background-color: RGB($emu-color-primary-darker);
+			}
+		}
+
+		.crt_box4 {
+			@include layout {
+				padding: 0;
+			}
+		}
+
+		.crt_Col1 {
+			@include layout {
+				margin: 0;
+			}
+		}
+
+		.fas.fa-tools {
+			@include layout {
+				padding: 0;
+				vertical-align: unset;
+			}
+
+			&:hover {
+				@include layout {
+					cursor: inherit;
+				}
+			}
+
+			&::before {
+				@include layout {
+					content: "\f022";
+				}
+			}
+		}
+
+		.fas:hover {
+			color: inherit;
+			text-shadow: none;
+
+			@include layout {
+				animation: none;
+			}
+		}
+
+		.tab.inventory .fas {
+			@include layout {
+				margin: 0;
+			}
+		}
+
+		.profile-img-item {
+			@include layout {
+				border-radius: $global-border-radius-images;
+				height: 125px;
+				margin: 0;
+				width: auto;
+			}
+		}
+
+		.textbox1 {
+			@include layout {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@include system("alienrpg") {
+	--aliengreen: RGB(#{$emu-color-primary});
+	--aliendarkergreen: RGB(#{$emu-color-primary-darker});
+	--alienitemselect: RGB(#{$emu-color-primary});
+	--alienoddtab: RGB(#{$emu-color-primary});
+	--blue: RGB(#{$emu-color-neutral});
+	--black: RGB(#{$emu-color-black});
+	--white: RGB(#{$emu-color-white});
+	--alientextjournal: RGB(#{$emu-color-text-lightest});
+	--alienchatwhite: RGB(#{$emu-color-text-lightest});
+	--alienchatred: RGB(#{$emu-color-negative});
+	--alienchatredshadow: RGB(#{$emu-color-negative-darkest});
+	--alienchatblue: RGB(#{$emu-color-neutral-darkest});
+	--alienchatlightblue: RGB(#{$emu-color-neutral});
+	--alienchatlightgreen: RGB(#{$emu-color-negative});
+	--alienchatgoldenrod: RGB(#{$emu-color-warning});
+
+	@include alien-global-window;
+	@include alien-global-grid;
+	@include alien-global-flex;
+	@include alien-global-item-list;
+	@include alien-global-select-css;
+	@include alien-crt-ui;
+	@include alien-global-module;
+
+	.alienrpg {
+		@extend %clean-elements;
+
+		@include alien-forms;
+		@include alien-resource;
+		@include alien-tabs;
+		@include alien-items;
+		@include alien-crt-actor;
 	}
 }
