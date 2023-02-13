@@ -38,6 +38,7 @@ Message me on Discord: Ernie#4453.
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T24X2VD)
 
 ## You should know
+- I work a full time job and have a family, my time is very limited to work on this.
 - This is a side project for me that I made to support my GMing tastes.
 - Many modules and systems will not have my style.
 - Only tested on Chrome.
