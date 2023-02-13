@@ -273,6 +273,16 @@
 }
 
 .sheet {
+	&.-emu-clean-sheet {
+		.sheet-header {
+			> img {
+				@include layout {
+					max-height: initial;
+				}
+			}
+		}
+	}
+
 	.sheet-header {
 		@include layout {
 			display: flex;

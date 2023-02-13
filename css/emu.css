@@ -508,6 +508,7 @@ body.-emu .window-app .window-content{background-color:RGBA(var(--emu-color-back
 body.-emu .window-app .window-resizable-handle{background-color:RGB(var(--emu-color-background-button,125,125,125));border:none;border-block-start:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;border-inline-start:RGB(var(--emu-color-background-lightest,230,233,235)) 2px solid;color:RGB(var(--emu-color-text-lightest,255,255,255));transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
 .-emu-layout body.-emu .window-app .window-resizable-handle{align-items:center;border-radius:var(--emu-border-radius-default,0) 0 0 0;bottom:0;cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-md, 14px);height:var(--emu-space-button-xs,20px);justify-content:center;margin:0;padding:0;position:absolute;right:0;width:var(--emu-space-button-xs,20px);z-index:10}
 .-emu-layout body.-emu .window-app .window-resizable-handle>i{transform:rotate(45deg)}
+.-emu-layout body.-emu .sheet.-emu-clean-sheet .sheet-header>img{max-height:initial}
 .-emu-layout body.-emu .sheet .sheet-header{display:flex;gap:var(--emu-space-base,4px);position:relative}
 body.-emu .sheet .sheet-header>img{border:none}
 .-emu-layout body.-emu .sheet .sheet-header>img{cursor:pointer;flex:0 0 auto;height:auto;margin:0;max-height:64px;object-fit:cover;object-position:50% 50%;position:relative}
