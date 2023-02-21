@@ -5,10 +5,12 @@
 
 		.global-control {
 			background-color: RGBA($emu-color-background, 0.5);
-			border-block-end: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
 				display: flex;
 				flex: 0 0 auto;
 				flex-wrap: wrap;
@@ -31,10 +33,12 @@
 
 			.playlist-header {
 				background: transparent;
-				border: none;
+				border-color: transparent;
 				color: RGB($emu-color-text-lightest);
 
 				@include layout {
+					border-style: solid;
+					border-width: 0;
 					flex: 0 0 auto;
 					font-size: $global-font-size-md;
 					padding: $global-space-xs 0;
@@ -42,12 +46,11 @@
 				}
 
 				h4 {
-					text-decoration: none;
-
 					@include layout {
 						height: auto;
 						margin: 0;
 						padding-inline-start: 0;
+						text-decoration: none;
 					}
 
 					i.fa {
@@ -62,10 +65,12 @@
 
 			.playlist-sounds {
 				background: transparent;
-				border-inline-start: none;
+				border-color: transparent;
 
 				@include layout {
 					@extend %reset-list;
+					border-inline-start-style: solid;
+					border-inline-start-width: 0;
 					flex: 0 0 auto;
 					height: auto !important;
 					padding: 0 !important;
@@ -73,10 +78,12 @@
 				}
 
 				h4 {
-					border-block-end: 0;
+					border-color: transparent;
 					color: RGB($emu-color-text-lightest);
 
 					@include layout {
+						border-block-end-style: solid;
+						border-block-end-width: 0;
 						font-size: $global-font-size-lg;
 						margin: 0;
 
@@ -87,9 +94,11 @@
 				}
 
 				.sound {
-					border-block-end: 0;
+					border-color: transparent;
 
 					@include layout {
+						border-block-end-style: solid;
+						border-block-end-width: 0;
 						flex-wrap: nowrap;
 						padding-inline-start: 0;
 						padding-inline-end: 0;
@@ -125,7 +134,12 @@
 
 						.playlist-sounds {
 							.sound:first-child {
-								border-block-start: 1px solid RGB($emu-color-border);
+								border-color: RGB($emu-color-border);
+
+								@include layout {
+									border-block-start-style: solid;
+									border-block-start-width: 1px;
+								}
 							}
 						}
 					}
@@ -139,7 +153,12 @@
 				}
 
 				.sound:first-child {
-					border-block-start: 1px solid transparent;
+					border-color: transparent;
+
+					@include layout {
+						border-block-start-style: solid;
+						border-block-start-width: 1px;
+					}
 				}
 			}
 
@@ -184,7 +203,9 @@
 						@extend %control-button;
 
 						&.inactive {
-							opacity: 0.5;
+							@include layout {
+								opacity: 0.5;
+							}
 						}
 					}
 				}
@@ -266,9 +287,11 @@
 				}
 
 				+ .sound {
-					border-block-start: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 
 					@include layout {
+						border-block-start-style: solid;
+						border-block-start-width: 1px;
 						padding-block-start: $global-space-sm;
 					}
 				}
@@ -299,7 +322,9 @@
 					@extend %control-button;
 
 					&.inactive {
-						opacity: 0.5;
+						@include layout {
+							opacity: 0.5;
+						}
 					}
 				}
 

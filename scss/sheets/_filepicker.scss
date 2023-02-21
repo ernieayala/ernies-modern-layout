@@ -41,10 +41,13 @@
 				}
 
 				.file {
+					border-color: transparent;
+
 					@include layout {
 						align-items: center;
 						background-color: RGBA($emu-color-background-darkest, 0.05);
-						border: none;
+						border-style: solid;
+						border-width: 0;
 						display: flex;
 						flex: 0 0 auto;
 						justify-content: center;
@@ -65,10 +68,12 @@
 		&.images {
 			.filepicker-body .directory {
 				.file {
-					border: 0;
-					border-block-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 
 					@include layout {
+						border-width: 0;
+						border-block-end-style: solid;
+						border-block-end-width: 1px;
 						display: grid;
 						gap: $global-space-base;
 						grid-template-areas: "title" "image";
@@ -167,10 +172,14 @@
 			}
 
 			.directory {
+				background: none;
+				border-color: transparent;
+
 				@include layout {
 					@extend %reset-list;
-					background: none;
-					border: 0;
+					border-radius: 0;
+					border-style: solid;
+					border-width: 0;
 					flex: 1;
 					min-height: 100px;
 					list-style: none;
@@ -179,13 +188,14 @@
 					position: relative;
 					margin: 0;
 					width: 100%;
+				}
+
+				+ .directory {
+					border-color: RGB($emu-color-folder-directory);
 
 					@include layout {
-						border-radius: 0;
-					}
-
-					+ .directory {
-						border: 1px solid RGB($emu-color-folder-directory);
+						border-style: solid;
+						border-width: 1px;
 						padding: $global-space-base;
 					}
 				}
@@ -193,10 +203,6 @@
 				.dir,
 				.file {
 					text-shadow: none;
-					transition:
-						background $global-transition-time-base $global-transition-type-link,
-						box-shadow $global-transition-time-base $global-transition-type-link,
-						color $global-transition-time-base $global-transition-type-link;
 
 					@include layout {
 						@extend %ellipsis;
@@ -209,10 +215,19 @@
 						line-height: $global-space-button;
 						padding: 0 $global-space-sm;
 						position: relative;
+						transition:
+							background $global-transition-time-base $global-transition-type-link,
+							box-shadow $global-transition-time-base $global-transition-type-link,
+							color $global-transition-time-base $global-transition-type-link;
 					}
 
 					&:last-child {
-						border-block-end: 0;
+						border-color: transparent;
+
+						@include layout {
+							border-block-end-style: solid;
+							border-block-end-width: 0;
+						}
 					}
 
 					&:hover {
@@ -230,14 +245,24 @@
 
 				.dir {
 					background-color: RGBA($emu-color-folder-header, 0.9);
-					border-block-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 					color: RGB($emu-color-text);
+
+					@include layout {
+						border-block-end-style: solid;
+						border-block-end-width: 1px;
+					}
 				}
 
 				.file {
 					background-color: RGBA($emu-color-folder-header, 0.9);
-					border-block-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 					color: RGB($emu-color-text-lightest);
+
+					@include layout {
+						border-block-end-style: solid;
+						border-block-end-width: 1px;
+					}
 				}
 			}
 		}

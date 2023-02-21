@@ -1,9 +1,11 @@
 #av-config {
 	form {
 		.sheet-tabs {
-			border-block-end: 2px solid RGB($emu-color-primary);
+			border-color: RGB($emu-color-primary);
 
 			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 2px;
 				padding: 0;
 			}
 		}
@@ -15,7 +17,9 @@
 		}
 
 		label {
-			font-weight: 400;
+			@include layout {
+				font-weight: 400;
+			}
 		}
 	}
 }

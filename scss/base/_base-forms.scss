@@ -1,10 +1,12 @@
 form {
 	h3.form-header {
-		border: none;
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		color: RGB($emu-color-text);
 
 		@include layout {
+			border-block-end-style: solid;
+			border-width: 0;
+			border-block-end-width: 1px;
 			font-family: inherit;
 			font-size: $global-font-size-lg;
 			margin-block-start: $global-space-md;
@@ -206,13 +208,16 @@ form {
 
 	.form-group-stacked {
 		@include layout {
+			gap: $global-space-base;
 			margin: 0;
 		}
 
 		.checkbox-label {
-			display: flex;
-			flex-direction: column;
-			padding: 0;
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				padding: 0;
+			}
 		}
 
 		label {
@@ -258,16 +263,6 @@ form {
 			gap: $global-space-sm;
 			height: auto;
 			line-height: initial;
-		}
-	}
-
-	.trait-list {
-		display: flex;
-		flex-direction: column;
-		gap: $global-space-base;
-
-		li {
-			display: flex;
 		}
 	}
 }

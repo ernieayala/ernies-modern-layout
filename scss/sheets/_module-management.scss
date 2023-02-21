@@ -36,8 +36,11 @@
 	}
 
 	.package-list {
+		border-color: transparent;
+
 		@include layout {
-			border: none;
+			border-style: solid;
+			border-width: 0;
 			height: 600px;
 			margin: 0;
 			max-height: initial;
@@ -46,9 +49,11 @@
 	}
 
 	.package {
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 
 		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 1px;
 			padding: $global-space-sm;
 		}
 
@@ -64,16 +69,23 @@
 		}
 
 		&:last-child {
-			border-block-end: none;
+			border-color: transparent;
+
+			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 0;
+			}
 		}
 
 		.tag {
-			border: none;
+			border-color: transparent;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
 				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 1px;
 				display: inline-flex;
 				font-size: $global-font-size-sm;
 				height: auto;

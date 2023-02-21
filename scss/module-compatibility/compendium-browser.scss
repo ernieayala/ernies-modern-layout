@@ -8,7 +8,9 @@
 	}
 
 	.compendium-footer {
-		flex: 1 1 auto;
+		@include layout {
+			flex: 1 1 auto;
+		}
 	}
 
 	.compendium-browser.window-app {
@@ -32,11 +34,13 @@
 		}
 
 		.filtercontainer {
-			border: none;
-			border-block-end: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 
 			@include layout {
 				border-radius: 0;
+				border-width: 0;
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
 				margin-block-end: $global-space-base;
 
 				&:last-child {
@@ -49,15 +53,22 @@
 			}
 
 			&:last-child {
-				border: none;
+				border-color: transparent;
+
+				@include layout {
+					border-style: solid;
+					border-width: 0;
+				}
 			}
 
 			.multiselect {
 				background: RGBA($emu-color-background, 0.1);
-				border: none;
+				border-color: transparent;
 
 				@include layout {
 					border-radius: 0;
+					border-style: solid;
+					border-width: 0;
 					line-height: 1;
 					margin: 0;
 					padding: $global-space-base;
@@ -73,7 +84,7 @@
 						width: auto;
 
 						+ input {
-							border-inline-start: none;
+							border-inline-start: 0;
 							flex: 1 1 100%;
 						}
 					}
@@ -82,10 +93,12 @@
 		}
 
 		.settings-group {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
 				border-radius: 0;
+				border-style: solid;
+				border-width: 0;
 				margin: 0;
 				padding: $global-space-base;
 			}
@@ -112,8 +125,10 @@
 		}
 
 		ul {
-			margin: 0;
-			padding: 0;
+			@include layout {
+				margin: 0;
+				padding: 0;
+			}
 		}
 	}
 }

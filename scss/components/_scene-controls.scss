@@ -64,28 +64,30 @@
 
 		.scene-control,
 		.control-tool {
-			border: none;
+			border-color: transparent;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
-			font-size: $global-font-size-lg;
-			transition:
-				background $global-transition-time-base $global-transition-type-link,
-				box-shadow $global-transition-time-base $global-transition-type-link,
-				color $global-transition-time-base $global-transition-type-link,
-				opacity $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				align-items: center;
 				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 0;
 				cursor: pointer;
 				display: flex;
 				height: $global-space-button;
 				justify-content: center;
+				font-size: $global-font-size-lg;
 				line-height: initial;
 				margin: 0;
 				padding: 0;
 				pointer-events: all;
 				position: relative;
+				transition:
+					background $global-transition-time-base $global-transition-type-link,
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link,
+					opacity $global-transition-time-base $global-transition-type-link;
 				width: $global-space-button;
 
 				> i {
@@ -124,10 +126,9 @@
 			background-image: $global-image-background-controls;
 
 			&.active .control-tools {
-				opacity: 1;
-
 				@include layout {
 					display: inline-flex;
+					opacity: 1;
 				}
 
 				@include layout-subtle {
@@ -147,8 +148,13 @@
 			&.toggle {
 				background-color: RGB($emu-color-background-lightest);
 				background-image: $global-image-background-controls;
-				border: none;
+				border-color: transparent;
 				color: RGB($emu-color-text);
+
+				@include layout {
+					border-style: solid;
+					border-width: 0;
+				}
 
 				&:hover {
 					@extend %global-hover;

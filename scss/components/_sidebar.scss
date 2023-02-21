@@ -1,10 +1,7 @@
 #sidebar,
 .sidebar-popout {
-	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
-	background-image: $global-image-background-darkest;
 	border: 1px solid RGB($emu-color-border);
 	box-shadow: none;
-	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		bottom: auto;
@@ -17,7 +14,7 @@
 		position: fixed;
 		right: 0;
 		top: calc(#{$global-space-md} / 2);
-		width: $global-space-sidebar;
+		transition: opacity $global-transition-time-base $global-transition-type-link;
 		z-index: $global-z-index-fixed;
 
 		ol,
@@ -42,9 +39,11 @@
 		}
 
 		#sidebar-tabs {
-			border-block-end: none;
+			border-color: transparent;
 
 			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 0;
 				flex-wrap: wrap;
 
 				> .collapse {
@@ -62,20 +61,22 @@
 	}
 
 	#sidebar-tabs {
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		box-shadow: none;
-		transition:
-			background $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link,
-			color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 1px;
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
 			font-size: $global-font-size-sm;
 			margin: 0;
 			position: relative;
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link;
 		}
 
 		> .item,
@@ -83,9 +84,6 @@
 			border: none;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
-			transition:
-				box-shadow $global-transition-time-base $global-transition-type-link,
-				color $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				align-items: center;
@@ -101,6 +99,9 @@
 				padding: $global-space-sm $global-space-base;
 				position: relative;
 				top: auto;
+				transition:
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link;
 			}
 
 			&:hover {
@@ -117,10 +118,12 @@
 
 			&.active {
 				@extend %global-active;
-				border: none;
+				border-color: transparent;
 
 				@include layout {
 					border-radius: 0;
+					border-style: solid;
+					border-width: 0;
 
 					&:first-child {
 						border-radius: $global-border-radius-default 0 0 0;
@@ -227,9 +230,11 @@
 		}
 
 		.directory-header {
-			border-block-end: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 
 			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
 				flex-direction: column;
 
 				~ .directory-list {
@@ -305,9 +310,11 @@
 		}
 
 		.directory-footer {
-			border-block-start: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 
 			@include layout {
+				border-block-start-style: solid;
+				border-block-start-width: 1px;
 				flex-wrap: wrap;
 			}
 		}
@@ -315,11 +322,16 @@
 }
 
 #sidebar {
-	border-inline-end: none;
+	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
+	background-image: $global-image-background-darkest;
+	border-color: transparent;
 
 	@include layout {
 		border-radius: $global-border-radius-default 0 0 $global-border-radius-default;
+		border-inline-end-style: solid;
+		border-inline-end-width: 0;
 		position: relative;
+		width: $global-space-sidebar;
 	}
 
 	@include layout-subtle {
@@ -424,17 +436,25 @@
 		top: initial;
 	}
 
-	.sidebar-popout {
+	&.window-app:not(.-emu-clean-sheet) .window-content {
 		@include layout {
-			top: initial;
+			padding: 0;
 		}
 	}
 
 	.window-content {
 		background-color: transparent;
+	}
+
+	.sidebar-popout {
+		border-color: transparent;
 
 		@include layout {
-			padding: 0;
+			border-style: solid;
+			border-width: 0;
+			height: auto;
+			min-height: initial;
+			min-width: 1px;
 		}
 	}
 }

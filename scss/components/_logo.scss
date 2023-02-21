@@ -1,8 +1,11 @@
 #logo {
+	border-color: transparent;
+
 	@include layout {
 		display: none !important; // fix for mods
-		border: none;
 		border-radius: 0;
+		border-style: solid;
+		border-width: 0;
 		height: auto !important;
 		margin-block-start: $global-space-sm;
 		margin-inline-start: $global-space-sm;

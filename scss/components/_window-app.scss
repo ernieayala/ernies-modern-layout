@@ -15,14 +15,17 @@
 .window-app {
 	background-color: RGBA($emu-color-background, $global-background-opacity-window);
 	background-image: $global-image-background;
-	border: 1px solid RGB($emu-color-border);
-	box-shadow: 0 2px 4px RGB($emu-color-black);
+	border-color: RGB($emu-color-border);
+	box-shadow: $global-box-shadow;
 
 	@include layout {
 		border-radius: $global-border-radius-default;
+		border-style: solid;
+		border-width: 1px;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		font-family: inherit;
 		margin: 0;
 
 		&.minimized {
@@ -35,12 +38,20 @@
 
 	&:not(.-emu-clean-sheet) {
 		.window-content {
+			background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
+			background-image: $global-image-background-lightest;
+			color: RGB($emu-color-text);
+			border-color: transparent;
+			box-shadow: none;
+
 			@include layout {
 				border-end-end-radius: calc(#{$global-border-radius-default} - 1px);
 				border-end-start-radius: calc(#{$global-border-radius-default} - 1px);
+				border-width: 0;
 				display: flex;
 				flex: 1 1 auto;
 				flex-direction: column;
+				font-family: inherit;
 				font-size: $global-font-size-md;
 				margin: 0;
 				overflow-x: hidden;
@@ -98,17 +109,20 @@
 
 	.window-header {
 		background: none;
-		border: none;
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 
 		@include layout {
 			align-items: center;
 			border-radius: calc(#{$global-border-radius-default} - 4px) calc(#{$global-border-radius-default} - 4px) 0 0;
+			border-block-end-style: solid;
+			border-width: 0;
+			border-block-end-width: 1px;
 			display: flex;
 			flex: 0 0 auto;
 			flex-wrap: nowrap;
+			font-family: inherit;
 			font-size: inherit;
 			gap: $global-space-xs;
 			line-height: initial;
@@ -222,28 +236,19 @@
 		}
 	}
 
-	.window-content {
-		background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
-		background-image: $global-image-background-lightest;
-		color: RGB($emu-color-text);
-		border: none;
-		box-shadow: none;
-	}
-
 	.window-resizable-handle {
 		background-color: RGB($emu-color-background-button);
-		border: none;
-		border-block-start: RGB($emu-color-background-lightest) 2px solid;
-		border-inline-start: RGB($emu-color-background-lightest) 2px solid;
+		border-color: RGB($emu-color-background-lightest);
 		color: RGB($emu-color-text-lightest);
-		transition:
-			background $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link,
-			color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
 			border-radius: $global-border-radius-default 0 0 0;
+			border-block-start-style: solid;
+			border-inline-start-style: solid;
+			border-width: 0;
+			border-block-start-width: 2px;
+			border-inline-start-width: 2px;
 			bottom: 0;
 			cursor: pointer;
 			display: inline-flex;
@@ -254,6 +259,10 @@
 			padding: 0;
 			position: absolute;
 			right: 0;
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link;
 			width: $global-space-button-xs;
 			z-index: $global-z-index-fixed;
 
@@ -273,16 +282,6 @@
 }
 
 .sheet {
-	&.-emu-clean-sheet {
-		.sheet-header {
-			> img {
-				@include layout {
-					max-height: initial;
-				}
-			}
-		}
-	}
-
 	.sheet-header {
 		@include layout {
 			display: flex;
@@ -291,14 +290,15 @@
 		}
 
 		> img {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				cursor: pointer;
 				flex: 0 0 auto;
 				height: auto;
 				margin: 0;
-				max-height: 64px;
 				object-fit: cover;
 				object-position: 50% 50%;
 				position: relative;
@@ -314,9 +314,11 @@
 		}
 
 		> h1 {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				flex: 1 1 auto;
 				margin: 0;
 			}

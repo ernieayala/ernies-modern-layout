@@ -2,14 +2,19 @@
 	button {
 		background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 		background-image: $global-image-background-controls;
-		border: none;
+		border-color: transparent;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
 		text-shadow: none;
-		transition:
-			background $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link,
-			color $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link;
+		}
 
 		> label {
 			color: inherit !important; // because inline
@@ -31,8 +36,10 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 
 		&.active {
@@ -49,7 +56,10 @@
 		background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 		box-shadow: none;
 		color: RGB($emu-color-text);
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
+		}
 
 		&::placeholder {
 			color: RGBA($emu-color-text, 0.5);
@@ -64,17 +74,24 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 	}
 
 	input[type="checkbox"] {
 		background: transparent;
-		border: 1px solid RGB($emu-color-border-lighter);
+		border-color: RGB($emu-color-border-lighter);
 		box-shadow: none;
 		color: RGB($emu-color-text);
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			border-style: solid;
+			border-width: 1px;
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
+		}
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -85,8 +102,10 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 
 		&:checked {
@@ -98,7 +117,10 @@
 	input[type="color"],
 	input[type="color"][data-edit] {
 		background: transparent;
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
+		}
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -109,8 +131,10 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 	}
 
@@ -118,7 +142,10 @@
 		background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
 		box-shadow: none;
 		color: RGB($emu-color-text);
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
+		}
 
 		&:hover {
 			@extend %global-hover-alt;
@@ -129,8 +156,10 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 
 		optgroup,
@@ -143,7 +172,10 @@
 	textarea {
 		background: transparent;
 		color: RGB($emu-color-text);
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
+
+		@include layout {
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
+		}
 
 		&::placeholder {
 			color: RGB($emu-color-text, 0.5);
@@ -158,24 +190,41 @@
 		}
 
 		&:disabled {
-			opacity: 0.5;
-			pointer-events: none;
+			@include layout {
+				opacity: 0.5;
+				pointer-events: none;
+			}
 		}
 	}
 
 	fieldset {
-		border: none;
+		border-color: transparent;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+		}
 	}
 
 	table {
 		background-color: RGBA($emu-color-black, 0.05);
-		border: none;
+		border-color: transparent;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+		}
 
 		thead {
 			background-color: RGBA($emu-color-black, 0.2);
-			border-block-end: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 			color: RGB($emu-color-text-lightest);
 			text-shadow: none;
+
+			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
+			}
 		}
 
 		tr:nth-child(even) {
@@ -187,15 +236,27 @@
 	h2,
 	h3,
 	h4 {
-		font-weight: normal;
+		@include layout {
+			font-weight: normal;
+		}
 	}
 
 	h1 {
-		border-block-end: 2px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 2px;
+		}
 	}
 
 	h2 {
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 1px;
+		}
 	}
 
 	a {
@@ -224,8 +285,13 @@
 	a.entity-link,
 	a.inline-roll {
 		background-color: RGB($emu-color-background-lightest);
+		border-color: transparent;
 		box-shadow: 0 0 0 1px inset RGB($emu-color-border);
-		border: none;
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+		}
 
 		> i {
 			color: inherit;
@@ -233,18 +299,33 @@
 	}
 
 	hr {
-		border: none;
-		border-block-start: 1px solid RGB($emu-color-border);
-		border-block-end: none;
+		border-color: RGB($emu-color-border-lighter);
+
+		@include layout {
+			border-style: solid;
+			border-width: 0;
+			border-block-start-width: 1px;
+		}
 	}
 
 	blockquote {
-		border-inline-start: 3px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-inline-start-style: solid;
+			border-inline-start-width: 3px;
+		}
 	}
 
 	section.secret {
 		background-color: RGBA($emu-color-background-light, 0.2);
-		border-block-start: 1px solid RGB($emu-color-border);
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
+
+		@include layout {
+			border-block-start-style: solid;
+			border-block-end-style: solid;
+			border-block-start-width: 1px;
+			border-block-end-width: 1px;
+		}
 	}
 }

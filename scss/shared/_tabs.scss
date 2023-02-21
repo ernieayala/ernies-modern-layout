@@ -1,8 +1,11 @@
 %modal-tabs {
-	border-block-start: none;
-	border-block-end: 2px solid RGB($emu-color-primary);
+	border-color: RGB($emu-color-primary);
 
 	@include layout {
+		border-block-start-style: solid;
+		border-block-end-style: solid;
+		border-block-start-width: 0;
+		border-block-end-width: 2px;
 		display: flex;
 		flex: 0 0 auto;
 		height: initial;

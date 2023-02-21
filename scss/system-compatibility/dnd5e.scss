@@ -1,583 +1,6 @@
 @import "../base";
 
-// can't target
-// movement-config
-// polymorph-prompt
-// select-items-prompt
-// sense config
-// trait-selector
-
 @include system("dnd5e") {
-	.dnd5e {
-		@extend %clean-elements;
-
-		.window-content {
-			@include layout {
-				display: initial;
-			}
-		}
-
-		.form-group {
-			label {
-				color: RGB($emu-color-text);
-			}
-		}
-
-		.form-header {
-			border-block-start: 1px solid RGB($emu-color-border-lighter);
-			border-block-end: 1px solid RGB($emu-color-border-lighter);
-		}
-
-		.tag {
-			border-color: RGB($emu-color-border);
-		}
-
-		&.sheet {
-			.window-content {
-				color: RGB($emu-color-text);
-
-				form {
-					@include layout {
-						gap: initial;
-					}
-				}
-			}
-
-			input[type="text"],
-			input[type="number"] {
-				border-color: transparent;
-
-				&:hover,
-				&:focus {
-					border-color: RGB($emu-color-border);
-				}
-			}
-
-			.editable h4.rollable:hover,
-			.editable .rollable:hover > h4 {
-				color: RGB($emu-color-primary);
-				text-shadow: none;
-			}
-
-			span.sep {
-				color: RGB($emu-color-text-darker);
-			}
-
-			.sheet-header {
-				border-block-end: 1px solid RGB($emu-color-border-lighter);
-
-				@include layout {
-					gap: initial;
-				}
-
-				img.profile {
-					border-inline-end: 1px solid RGB($emu-color-border-lighter);
-				}
-
-				.summary {
-					border-block-start: 1px solid RGB($emu-color-border-lighter);
-
-					li {
-						border-inline-end: 1px solid RGB($emu-color-border-lighter);
-						color: RGB($emu-color-text);
-
-						&:last-child {
-							border-inline-end: none;
-						}
-					}
-				}
-
-				.header-details {
-					// font-family: inherit;
-
-					h1 {
-						border: none;
-					}
-				}
-			}
-
-			.sheet-navigation {
-				// font-family: inherit;
-
-				.item {
-					border-color: RGB($emu-color-border);
-					text-shadow: none;
-
-					&:hover {
-						color: RGB($emu-color-primary);
-					}
-
-					&.active {
-						border-color: RGB($emu-color-primary);
-						color: RGB($emu-color-primary);
-					}
-				}
-			}
-
-			.filter-list {
-				.filter-icon {
-					color: RGB($emu-color-text);
-				}
-
-				.filter-item {
-					border-color: RGB($emu-color-border);
-					text-shadow: none;
-
-					&:hover {
-						border-color: RGB($emu-color-border-lighter);
-						color: RGB($emu-color-primary);
-
-					}
-
-					&.active {
-						border-color: RGB($emu-color-primary);
-						color: RGB($emu-color-primary);
-					}
-				}
-			}
-
-			.traits .trait-selector {
-				color: RGB($emu-color-text);
-			}
-
-			.items-list {
-				color: RGB($emu-color-text);
-
-				.item {
-					border-color: RGB($emu-color-border-lighter);
-
-					.item-name {
-						color: RGB($emu-color-text);
-					}
-				}
-
-				.items-header {
-					border: 1px solid RGB($emu-color-border-lighter);
-
-					h3 {
-						// font-family: inherit;
-					}
-				}
-			}
-
-			.effects .item .effect-source,
-			.effects .item .effect-duration,
-			.effects .item .effect-controls {
-				border-color: RGB($emu-color-border-lighter);
-			}
-		}
-
-		&.sheet.actor {
-			.sheet-header {
-				.summary {
-					border-block-end: 1px solid RGB($emu-color-border-lighter);
-				}
-
-				.attributes .attribute {
-					border-inline-end: 1px solid RGB($emu-color-border-lighter);
-
-					&:last-child {
-						border-inline-end: none;
-					}
-				}
-			}
-
-			h4.box-title {
-				border-color: RGB($emu-color-border-lighter);
-				color: RGB($emu-color-text);
-				// font-family: inherit;
-			}
-
-			ul.attributes li.attribute {
-				border: 1px solid RGB($emu-color-border-lighter);
-
-				.attribute-value {
-					// font-family: inherit;
-				}
-
-				.attribute-footer {
-					// font-family: inherit;
-				}
-			}
-
-			.ability-scores {
-				border: 1px solid RGB($emu-color-border-lighter);
-				// font-family: inherit;
-
-				.ability {
-					border-block-end: 1px solid RGB($emu-color-border-lighter);
-
-					&:last-child {
-						border-block-end: none;
-					}
-
-					.ability-modifiers span.ability-mod,
-					.ability-modifiers span.ability-save {
-						border-block-start: 1px solid RGB($emu-color-border-lighter);
-					}
-
-					.ability-modifiers span.ability-mod {
-						border-inline-end: 1px solid RGB($emu-color-border-lighter);
-					}
-
-					.ability-modifiers span.ability-save {
-						border-inline-start: 1px solid RGB($emu-color-border-lighter);
-					}
-				}
-			}
-
-			.proficiency-toggle {
-				color: RGB($emu-color-text-darker);
-			}
-
-			.proficient .proficiency-toggle {
-				color: RGB($emu-color-text);
-			}
-
-			.locked .proficiency-toggle {
-				color: RGB($emu-color-text-darker);
-			}
-
-			ul.skills-list {
-				border: 1px solid RGB($emu-color-border-lighter);
-
-				li.skill .skill-passive {
-					color: RGB($emu-color-text-darker);
-				}
-			}
-
-			.counters {
-				border-block-end: 1px solid RGB($emu-color-border-lighter);
-
-				.counter h4 {
-					color: RGB($emu-color-text);
-				}
-			}
-
-			.traits i.fas {
-				color: RGB($emu-color-text);
-
-				&:hover {
-					color: RGB($emu-color-primary);
-					text-shadow: none;
-				}
-			}
-
-			.traits .inactive {
-				color: RGB($emu-color-text);
-				opacity: 0.5;
-			}
-
-			.inventory-filters .currency {
-				label {
-					color: RGB($emu-color-text);
-				}
-
-				input[type="text"] {
-					border: 1px solid RGB($emu-color-border);
-				}
-			}
-
-			.inventory-list {
-				.item .item-name i {
-					&.attuned {
-						color: RGB($emu-color-primary);
-					}
-
-					&.not-attuned {
-						color: RGB($emu-color-text-darker);
-					}
-				}
-
-				.item-detail {
-					border-color: RGB($emu-color-border-lighter);
-				}
-
-				.item-weight {
-					border-color: RGB($emu-color-border-lighter);
-				}
-
-				.item-summary {
-					border-color: RGB($emu-color-border-lighter);
-					color: RGB($emu-color-text);
-				}
-			}
-
-			.encumbrance {
-				border-color: RGB($emu-color-border);
-
-				.encumbrance-bar {
-					background-color: RGB($emu-color-primary);
-					border-color: RGB($emu-color-border-lighter);
-				}
-
-				.encumbrance-label {
-					color: RGB($emu-color-text-lightest);
-					text-shadow: none;
-				}
-
-				.arrow-up,
-				.arrow-down {
-					border-color: RGB($emu-color-border-lighter);
-				}
-
-				&.encumbered {
-					.arrow-up,
-					.arrow-down {
-						border-color: RGB($emu-color-border);
-					}
-				}
-			}
-
-			.spell-slots,
-			.spell-comps {
-				border-color: RGB($emu-color-border-lighter);
-				color: RGB($emu-color-text);
-			}
-
-			.spellbook .spell-uses {
-				color: RGB($emu-color-text);
-			}
-
-			.spell-school,
-			.spell-action,
-			.spell-target {
-				border-color: RGB($emu-color-border-lighter);
-				color: RGB($emu-color-text);
-			}
-
-			.spell-component.C,
-			.spell-component.R {
-				color: RGB($emu-color-text-lightest);
-			}
-
-			.features i.original-class {
-				color: RGB($emu-color-text-darker);
-			}
-		}
-
-		&.sheet.item {
-			.sheet-header {
-				img.profile {
-					border: 1px solid RGB($emu-color-border);
-				}
-
-				.item-subtitle {
-					color: RGB($emu-color-text);
-				}
-			}
-
-			.sheet-body .item-properties .properties-list li {
-				border: 1px solid RGB($emu-color-border-lighter);
-			}
-
-			.details input[type="text"],
-			.details input[type="number"],
-			.details select {
-				border-color: RGB($emu-color-border);
-			}
-
-			h4.damage-header {
-				color: RGB($emu-color-text);
-			}
-
-			.damage-control {
-				color: RGB($emu-color-text);
-			}
-		}
-
-		&.sheet.actor.character {
-			.sheet-header {
-				.charlevel {
-					color: RGB($emu-color-text);
-				}
-
-				.experience span.max {
-					color: RGB($emu-color-text);
-				}
-
-				.xpbar {
-					background-color: RGB($emu-color-background);
-					border-color: RGB($emu-color-border);
-
-					&.bar {
-						background-color: RGB($emu-color-primary);
-						border: RGB($emu-color-border);
-					}
-				}
-
-				.attributes a.rest {
-					border-color: RGB($emu-color-border-lighter);
-				}
-			}
-
-			.resource .attribute-value label.recharge {
-				color: RGB($emu-color-text);
-				// font-family: inherit;
-			}
-
-			.inventory .item-controls .item-toggle,
-			.spellbook .item-controls .item-toggle {
-				color: RGB($emu-color-text-darker);
-			}
-
-			.inventory .item-controls .item-toggle.active,
-			.spellbook .item-controls .item-toggle.active {
-				color: RGB($emu-color-primary);
-			}
-
-			.inventory .item-controls .item-toggle.fixed,
-			.spellbook .item-controls .item-toggle.fixed {
-				color: RGB($emu-color-text);
-			}
-
-			.characteristics {
-				label {
-					// font-family: inherit;
-				}
-
-				textarea {
-					border-color: RGB($emu-color-border-lighter);
-					// font-family: inherit;
-				}
-			}
-		}
-
-		&.sheet.actor.npc {
-			.header-exp .experience {
-				color: RGB($emu-color-text);
-			}
-		}
-
-		&.sheet.actor.vehicle {
-			.features .item-controls .item-toggle {
-				color: RGB($emu-color-text-darker);
-
-				&.active {
-					color: RGB($emu-color-primary);
-				}
-			}
-		}
-	}
-
-	#ability-use-form {
-		label.checkbox {
-			@include layout {
-				flex: 1 1 auto;
-
-				input[type="checkbox"] {
-					margin: 0;
-					margin-inline-end: $global-space-sm;
-				}
-			}
-		}
-	}
-
-	[id*="actor-flags-"],
-	[id*="actor-type-"],
-	[id*="ActorSkillConfig-"],
-	[id*="ActorSensesConfig"],
-	[id*="ActorAbilityConfig"],
-	[id*="ActorMovementConfig"],
-	[id*="TraitSelector"],
-	[id*="ProficiencySelector"],
-	[id*="ActorSheetFlags"] {
-		// @import "../base/base-button";
-		// @import "../base/base-form-elements";
-		// @import "../base/base-forms";
-		// @import "../base/base-text";
-	}
-
-	[id*="actor-type-"] {
-		input[name="preview"]:disabled {
-			@include layout {
-				padding: 0;
-			}
-		}
-	}
-
-	.trait-selector.subconfig {
-		ol.trait-list > li {
-			@include layout {
-				align-items: flex-start;
-				flex-direction: column;
-			}
-		}
-	}
-
-	.trait-selector.actor-type {
-		.trait-list {
-			.radio {
-				input {
-					margin-inline-end: $global-space-base;
-				}
-			}
-		}
-	}
-
-	.hd-config.dialog {
-		.window-content {
-			@include layout {
-				padding: $global-space-sm;
-
-				.form-group {
-					padding: $global-space-sm 0;
-
-					.form-fields {
-						flex-wrap: nowrap;
-
-						button {
-							&:first-child {
-								margin: 0;
-							}
-
-							+ input {
-								margin-inline-start: $global-space-base;
-								order: initial;
-							}
-						}
-
-						.sep {
-							margin-inline-start: $global-space-base;
-						}
-
-						.current,
-						.max {
-							flex: 1;
-						}
-
-						.roll-hd {
-							flex: 1 1 100%;
-						}
-					}
-				}
-
-				.dialog-buttons {
-					margin-block-start: $global-space-base;
-					padding: 0;
-				}
-			}
-		}
-	}
-
-	#long-rest {
-		> p {
-			@include layout {
-				margin-block-start: 0;
-			}
-		}
-	}
-
-	#short-rest-hd {
-		@include layout {
-			padding-block-start: $global-space-sm;
-
-			.form-fields select {
-				flex: 1 1 auto;
-			}
-		}
-	}
-
 	#sidebar,
 	.sidebar-popout {
 		.dnd5e.chat-card {
@@ -586,10 +9,12 @@
 			}
 
 			.card-header {
-				border-block-start: 1px solid RGB($emu-color-border-lighter);
-				border-block-end: 1px solid RGB($emu-color-border-lighter);
+				border-color: RGB($emu-color-border-lighter);
 
 				@include layout {
+					border-style: solid;
+					border-block-start-width: 1px;
+					border-block-end-width: 1px;
 					margin-block-end: $global-space-base;
 					padding: $global-space-base 0;
 
@@ -600,11 +25,14 @@
 				}
 
 				h3 {
+					border-color: transparent;
 					color: RGB($emu-color-text);
 					text-shadow: none;
 
 					@include layout {
 						align-items: center;
+						border-style: solid;
+						border-width: 0;
 						display: inline-flex;
 						font-family: inherit;
 						line-height: initial;
@@ -631,9 +59,11 @@
 				}
 
 				button {
-					border: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 
 					@include layout {
+						border-style: solid;
+						border-width: 1px;
 						margin: 0;
 					}
 
@@ -646,17 +76,21 @@
 			}
 
 			.card-footer {
-				border-block-start: 1px solid RGB($emu-color-border-lighter);
+				border-color: RGB($emu-color-border-lighter);
 
 				@include layout {
+					border-block-start-style: solid;
+					border-block-start-width: 1px;
 					margin-block-start: $global-space-base;
 					padding-block-start: $global-space-base;
 				}
 
 				span {
-					border-inline-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 
 					@include layout {
+						border-inline-end-style: solid;
+						border-inline-end-width: 1px;
 						font-size: $global-font-size-xs;
 						margin-inline-end: $global-space-xs;
 						padding-inline-end: $global-space-base;
@@ -677,9 +111,11 @@
 			}
 
 			span {
-				border: 1px solid RGB($emu-color-border);
+				border-color: RGB($emu-color-border);
 
 				@include layout {
+					border-style: solid;
+					border-width: 1px;
 					margin-inline-start: $global-space-base;
 					padding: 0 $global-space-xs;
 				}

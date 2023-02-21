@@ -1,9 +1,11 @@
 #navigation {
 	background: none;
-	border: none;
+	border-color: transparent;
 	box-shadow: none;
 
 	@include layout {
+		border-style: solid;
+		border-width: 0;
 		margin: 0;
 		margin-block-start: $global-space-sm;
 		padding: 0;
@@ -66,18 +68,16 @@
 		.scene {
 			background-color: RGBA($emu-color-background-darkest, $global-background-opacity-scene-navigation);
 			background-image: $global-image-background-controls;
-			border: none;
+			border-color: transparent;
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
 			outline: none;
 			text-shadow: none;
-			transition:
-				box-shadow $global-transition-time-base $global-transition-type-link,
-				color $global-transition-time-base $global-transition-type-link,
-				opacity $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 0;
 				cursor: pointer;
 				display: block;
 				height: $global-space-button;
@@ -89,6 +89,10 @@
 				pointer-events: all;
 				position: relative;
 				text-align: center;
+				transition:
+					box-shadow $global-transition-time-base $global-transition-type-link,
+					color $global-transition-time-base $global-transition-type-link,
+					opacity $global-transition-time-base $global-transition-type-link;
 				width: auto;
 
 				&:last-of-type {
@@ -149,11 +153,13 @@
 			}
 
 			a {
+				border-color: transparent;
 				text-shadow: none;
 
 				@include layout {
 					@extend %ellipsis;
-					border: none;
+					border-style: solid;
+					border-width: 0;
 					display: block;
 					width: 100%;
 
@@ -182,17 +188,19 @@
 
 		.scene-player {
 			background-color: RGB($emu-color-white);
-			border: none;
+			border-color: transparent;
 			box-shadow:
 				inset 0 0 0 1px RGB($emu-color-primary),
 				inset 0 0 0 2px RGB($emu-color-white), 0 1px 2px 0 RGBA($emu-color-black, 0.3);
 			color: transparent;
-			font-size: $global-font-size-xs;
 
 			@include layout {
 				align-items: center;
 				border-radius: $global-border-radius-controls;
+				border-style: solid;
+				border-width: 0;
 				display: flex;
+				font-size: $global-font-size-xs;
 				height: 12px;
 				justify-content: center;
 				margin: 0;

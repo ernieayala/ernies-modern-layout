@@ -20,12 +20,13 @@
 
 				h3,
 				h4 {
-					border-block-end: none;
+					border-color: transparent;
 					color: RGB($emu-color-text-lightest);
-
 
 					@include layout {
 						@extend %ellipsis;
+						border-block-end-style: solid;
+						border-block-end-width: 0;
 						display: block;
 						flex: 1 1 auto;
 						font-size: $global-font-size-md;
@@ -62,15 +63,13 @@
 		#combat-tracker {
 			.combatant {
 				background-color: RGB($emu-color-background);
-				border: none;
-				transition:
-					background $global-transition-time-base $global-transition-type-link,
-					box-shadow $global-transition-time-base $global-transition-type-link,
-					opacity $global-transition-time-base $global-transition-type-link;
+				border-color: transparent;
 
 				@include layout {
 					align-items: center;
 					border-radius: $global-border-radius-default;
+					border-style: solid;
+					border-width: 0;
 					display: flex;
 					flex-wrap: nowrap;
 					height: auto;
@@ -78,6 +77,10 @@
 					margin: 0;
 					padding: $global-space-base $global-space-sm;
 					position: relative;
+					transition:
+						background $global-transition-time-base $global-transition-type-link,
+						box-shadow $global-transition-time-base $global-transition-type-link,
+						opacity $global-transition-time-base $global-transition-type-link;
 					width: auto;
 				}
 
@@ -135,10 +138,12 @@
 
 					h4 {
 						color: RGB($emu-color-text-lightest);
-						border-block-end: 1px solid RGBA($emu-color-border-lighter, 0.1);
+						border-color: RGBA($emu-color-border-lighter, 0.1);
 
 						@include layout {
 							@extend %ellipsis;
+							border-block-end-style: solid;
+							border-block-end-width: 1px;
 							flex: initial;
 							font-size: $global-font-size-lg;
 							line-height: initial;
@@ -160,9 +165,11 @@
 				}
 
 				.token-resource {
-					border-inline-end: 1px solid RGB($emu-color-border-lighter);
+					border-color: RGB($emu-color-border-lighter);
 
 					@include layout {
+						border-inline-end-style: solid;
+						border-inline-end-width: 1px;
 						font-size: $global-font-size-md;
 						line-height: 1;
 						margin-inline-start: $global-space-sm;
@@ -239,9 +246,11 @@
 		}
 
 		#combat-controls {
-			border-block-start: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 
 			@include layout {
+				border-block-start-style: solid;
+				border-block-start-width: 1px;
 				flex-wrap: nowrap;
 				gap: $global-space-base;
 				padding-block-start: $global-space-sm;

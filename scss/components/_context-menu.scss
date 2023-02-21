@@ -1,12 +1,14 @@
 #context-menu {
 	background-color: RGB($emu-color-background-lightest);
 	background-image: $global-image-background-lightest;
-	border: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 	box-shadow: 0 2px 4px RGB($emu-color-black);
 	color: RGB($emu-color-text);
 
 	@include layout {
 		border-radius: $global-border-radius-default;
+		border-style: solid;
+		border-width: 1px;
 		font-size: $global-font-size-md;
 		left: 0;
 		max-width: 320px;
@@ -65,6 +67,8 @@
 
 	// legacy - keep in case
 	.window-app & {
-		z-index: 101;
+		@include layout {
+			z-index: 101;
+		}
 	}
 }

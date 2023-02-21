@@ -1,12 +1,13 @@
 %input-text {
 	background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
-	border: 1px solid RGB($emu-color-border-lighter);
+	border-color: RGB($emu-color-border-lighter);
 	box-shadow: none;
 	color: RGB($emu-color-text);
-	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-forms;
+		border-style: solid;
+		border-width: 1px;
 		font-family: inherit;
 		font-size: inherit;
 		font-weight: normal;
@@ -16,6 +17,7 @@
 		min-width: $global-space-xl;
 		padding: 0 $global-space-sm;
 		position: relative;
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		user-select: text;
 	}
 
@@ -32,19 +34,22 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 }
 
 %input-select {
 	background: RGBA($emu-color-background-lightest, $global-background-opacity-form-field);
-	border: 1px solid RGB($emu-color-border-lighter);
+	border-color: RGB($emu-color-border-lighter);
 	color: RGB($emu-color-text);
-	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-forms;
+		border-style: solid;
+		border-width: 1px;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
@@ -53,6 +58,7 @@
 		padding: 0 $global-space-sm;
 		position: relative;
 		text-overflow: ellipsis;
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 		&[multiple] {
 			height: auto;
@@ -69,8 +75,10 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 
 	optgroup,
@@ -82,19 +90,21 @@
 
 %input-checkbox {
 	background: transparent;
-	border: 1px solid RGB($emu-color-border-lighter);
+	border-color: RGB($emu-color-border-lighter);
 	box-shadow: none;
 	color: RGB($emu-color-text);
-	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-forms;
+		border-style: solid;
+		border-width: 1px;
 		cursor: pointer;
 		flex: 0 0 auto;
 		height: $global-space-button-xs;
 		margin: 0;
 		position: relative;
 		top: auto;
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		width: $global-space-button-xs;
 	}
 
@@ -107,8 +117,10 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 
 	&:checked {
@@ -126,11 +138,12 @@
 
 %input-color {
 	background: transparent;
-	border: 1px solid RGB($emu-color-border-lighter);
-	transition: box-shadow $global-transition-time-base $global-transition-type-link;
+	border-color: RGB($emu-color-border-lighter);
 
 	@include layout {
 		border-radius: $global-border-radius-forms;
+		border-style: solid;
+		border-width: 1px;
 		cursor: pointer;
 		font-family: inherit;
 		font-size: inherit;
@@ -138,6 +151,7 @@
 		margin: 0;
 		padding: 0 $global-space-sm;
 		position: relative;
+		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 	}
 
 	&:hover {
@@ -149,18 +163,22 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 }
 
 %input-range {
 	background: transparent;
-	border: 0;
+	border-color: transparent;
 	box-shadow: none;
 	-webkit-appearance: none;
 
 	@include layout {
+		border-style: solid;
+		border-width: 0;
 		margin: 0;
 		width: 100%;
 	}
@@ -173,14 +191,16 @@
 
 	&::-webkit-slider-runnable-track {
 		background-color: RGBA($emu-color-background, 0.8);
-		border: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		box-shadow: none;
-		transition: background $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			border-radius: $global-border-radius-forms;
+			border-style: solid;
+			border-width: 1px;
 			cursor: pointer;
 			height: 8px;
+			transition: background $global-transition-time-base $global-transition-type-link;
 			width: 100%;
 		}
 	}
@@ -199,16 +219,18 @@
 
 	&::-webkit-slider-thumb {
 		background-color: RGB($emu-color-primary);
-		border: 1px solid RGB($emu-color-border-lighter);
+		border-color: RGB($emu-color-border-lighter);
 		box-shadow: none;
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		-webkit-appearance: none;
 
 		@include layout {
 			border-radius: $global-border-radius-forms;
+			border-style: solid;
+			border-width: 1px;
 			cursor: pointer;
 			height: 16px;
 			margin-block-start: -5px;
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
 			width: 16px;
 		}
 
@@ -221,30 +243,34 @@
 
 	&::-moz-range-track {
 		background-color: RGBA($emu-color-background, 0.8);
-		border: 1px solid RGB($emu-color-border-lighter);
+		border-color: RGB($emu-color-border-lighter);
 		box-shadow: none;
-		transition: background $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			border-radius: $global-border-radius-forms;
+			border-style: solid;
+			border-width: 1px;
 			cursor: pointer;
 			height: 8px;
+			transition: background $global-transition-time-base $global-transition-type-link;
 			width: 100%;
 		}
 	}
 
 	&::-moz-range-thumb {
 		background-color: RGB($emu-color-primary);
-		border: 1px solid RGB($emu-color-border-lighter);
+		border-color: RGB($emu-color-border-lighter);
 		box-shadow: none;
-		transition: box-shadow $global-transition-time-base $global-transition-type-link;
 		-webkit-appearance: none;
 
 		@include layout {
 			border-radius: $global-border-radius-forms;
+			border-style: solid;
+			border-width: 1px;
 			cursor: pointer;
 			height: 16px;
 			margin-block-start: -5px;
+			transition: box-shadow $global-transition-time-base $global-transition-type-link;
 			width: 16px;
 		}
 
@@ -256,11 +282,13 @@
 	}
 
 	+ .range-value {
-		border: none;
+		border-color: transparent;
 		color: RGB($emu-color-text);
 
 		@include layout {
 			align-items: center;
+			border-style: solid;
+			border-width: 0;
 			display: flex;
 			flex: 0 0 auto;
 			font-size: $global-font-size-md;
@@ -272,12 +300,13 @@
 
 %input-textarea {
 	background: transparent;
-	border: 1px solid RGB($emu-color-border-lighter);
+	border-color: RGB($emu-color-border-lighter);
 	color: RGB($emu-color-text);
-	transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-forms;
+		border-style: solid;
+		border-width: 1px;
 		font-family: inherit;
 		font-size: inherit;
 		margin: 0;
@@ -307,8 +336,10 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 }
 

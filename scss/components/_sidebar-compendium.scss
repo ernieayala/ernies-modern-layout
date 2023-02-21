@@ -3,10 +3,12 @@
 	[data-tab="compendium"] {
 		h3 {
 			background-color: RGB($emu-color-background);
-			border: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
+				border-style: solid;
+				border-width: 1px;
 				margin: 0;
 				padding: $global-space-base $global-space-sm;
 			}

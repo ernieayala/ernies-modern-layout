@@ -1,10 +1,12 @@
 %table-header {
 	align-items: center;
 	background: RGBA($emu-color-background, 0.1);
-	border: none;
-	border-block-end: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 
 	@include layout {
+		border-block-end-style: solid;
+		border-width: 0;
+		border-block-end-width: 1px;
 		height: auto;
 		padding: $global-space-sm;
 		width: 100%;
@@ -34,10 +36,12 @@
 }
 
 %table-row {
-	border: none;
+	border-color: transparent;
 
 	@include layout {
 		align-items: center;
+		border-style: solid;
+		border-width: 0;
 		display: flex;
 		gap: $global-space-base;
 		height: auto;

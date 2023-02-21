@@ -1,8 +1,10 @@
 .package-configuration {
 	aside.sidebar {
-		border-inline-end: none;
+		border-color: transparent;
 
 		@include layout {
+			border-inline-end-style: solid;
+			border-inline-end-width: 0;
 			flex: 0 0 220px;
 			font-size: $global-font-size-md;
 			gap:  $global-space-sm;
@@ -21,11 +23,13 @@
 
 		nav.filters {
 			.category-filter {
-				border-block-end: 1px solid RGB($emu-color-border);
+				border-color: RGB($emu-color-border);
 				color: RGB($emu-color-text);
 
 				@include layout {
 					align-items: center;
+					border-inline-end-style: solid;
+					border-inline-end-width: 1px;
 					display: flex;
 					font-weight: normal;
 					justify-content: space-between;
@@ -48,7 +52,12 @@
 		}
 
 		.tabs {
-			border-block-end: none !important;
+			border-color: transparent !important;
+
+			@include layout {
+				border-block-end-style: solid !important;
+				border-block-end-width: 0 !important;
+			}
 
 			@include layout {
 				flex: 1 1 auto;
@@ -57,10 +66,12 @@
 			}
 
 			.category-tab {
-				border: none;
+				border-color: transparent;
 
 				@include layout {
 					border-radius: 0 !important;
+					border-style: solid;
+					border-width: 0;
 					flex: 0 0 auto;
 					justify-content: space-between !important;
 				}
@@ -75,16 +86,18 @@
 	}
 
 	.categories {
-		overflow: hidden;
+		@include layout {
+			overflow: hidden;
 
-		.scrollable,
-		footer {
-			margin: 0;
-			padding: $global-space-sm;
-		}
+			.scrollable,
+			footer {
+				margin: 0;
+				padding: $global-space-sm;
+			}
 
-		footer {
-			padding-block-end: 0;
+			footer {
+				padding-block-end: 0;
+			}
 		}
 	}
 }

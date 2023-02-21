@@ -12,5 +12,6 @@ body.-emu.system-morkborg .roll-card .card-title,body.-emu.system-morkborg .roll
 body.-emu.system-morkborg .roll-card .roll-result{border:1px solid RGB(var(--emu-color-border,33,50,52))}
 body.-emu.system-morkborg .roll-card .roll-result span{color:RGB(var(--emu-color-text,9,14,16))}
 body.-emu.system-morkborg #chat-controls i.fas:hover{color:inherit;text-shadow:none}
-body.-emu.system-morkborg #hotbar #action-bar li.macro{background-color:RGBA(var(--emu-color-background,41,62,64),var(--emu-background-opacity-hotbar,.8));background-image:var(--emu-image-background-controls,none);border:1px solid RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+body.-emu.system-morkborg #hotbar #action-bar li.macro{background-color:RGBA(var(--emu-color-background,41,62,64),var(--emu-background-opacity-hotbar,.8));background-image:var(--emu-image-background-controls,none);border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu.system-morkborg #hotbar #action-bar li.macro{border-style:solid;border-width:1px}
 body.-emu.system-morkborg #hotbar #action-bar li.macro.active{background-color:RGBA(var(--emu-color-background,41,62,64),var(--emu-background-opacity-hotbar,.8))}

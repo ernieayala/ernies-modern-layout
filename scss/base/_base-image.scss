@@ -1,8 +1,10 @@
 img {
-	border: none;
+	border-color: transparent;
 
 	@include layout {
 		border-radius: $global-border-radius-images;
+		border-style: solid;
+		border-width: 0;
 		position: relative;
 	}
 }

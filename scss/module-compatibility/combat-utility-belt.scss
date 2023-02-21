@@ -8,10 +8,12 @@
 				.token-resource {
 					input {
 						background-color: transparent;
-						border: none;
+						border-color: transparent;
 						color: RGB($emu-color-text-lightest);
 
 						@include layout {
+							border-style: solid;
+							border-width: 0;
 							height: $global-space-button-sm;
 							padding: 0;
 							text-align: center;
@@ -42,10 +44,12 @@
 				}
 
 				h4 {
-					border-block-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 					color: RGB($emu-color-text-lightest);
 
 					@include layout {
+						border-block-end-style: solid;
+						border-block-end-width: 1px;
 						margin-block-start: $global-space-sm;
 					}
 				}

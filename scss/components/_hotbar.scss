@@ -36,8 +36,6 @@
 	}
 
 	#action-bar {
-		transition: opacity $global-transition-time-base $global-transition-type-link;
-
 		@include layout {
 			display: flex;
 			flex: 1 1 auto;
@@ -46,6 +44,7 @@
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			transition: opacity $global-transition-time-base $global-transition-type-link;
 		}
 
 		@include layout-subtle {
@@ -54,11 +53,13 @@
 	}
 
 	#macro-list {
-		border: none;
+		border-color: transparent;
 
 		@include layout {
 			@extend %reset-list;
 			border-radius: $global-border-radius-default;
+			border-style: solid;
+			border-width: 0;
 			display: flex;
 			flex: 0 0 auto;
 			float: left;
@@ -70,11 +71,13 @@
 
 	.bar-controls {
 		background: transparent;
-		border: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		box-shadow: none;
 
 		@include layout {
 			border-radius: $global-border-radius-default;
+			border-style: solid;
+			border-width: 1px;
 			display: flex;
 			flex-direction: column;
 			height: $global-space-button-xl;
@@ -98,19 +101,23 @@
 				}
 
 				&:first-of-type {
-					border: none;
-					border-block-end: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 
 					@include layout {
 						border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+						border-block-end-style: solid;
+						border-width: 0;
+						border-block-end-width: 1px;
 					}
 				}
 
 				&:last-of-type {
-					border: none;
+					border-color: transparent;
 
 					@include layout {
 						border-radius: 0 0 $global-border-radius-default $global-border-radius-default;
+						border-style: solid;
+						border-width: 0;
 					}
 				}
 			}
@@ -140,11 +147,13 @@
 		#bar-toggle {
 			background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 			background-image: $global-image-background-controls;
+			border-color: RGB($emu-color-border);
 			color: RGB($emu-color-text-lightest);
-			transition: box-shadow $global-transition-time-base $global-transition-type-link;
 
 			@include layout {
 				align-items: center;
+				border-style: solid;
+				border-width: 0;
 				cursor: pointer;
 				display: flex;
 				flex: 0 0 auto;
@@ -152,6 +161,7 @@
 				justify-content: center;
 				line-height: initial;
 				position: relative;
+				transition: box-shadow $global-transition-time-base $global-transition-type-link;
 			}
 
 			&:hover {
@@ -163,11 +173,17 @@
 			}
 
 			&:first-of-type {
-				border-block-end: 1px solid RGB($emu-color-border);
+				@include layout {
+					border-block-end-style: solid;
+					border-block-end-width: 1px;
+				}
 			}
 
 			&:last-of-type {
-				border-block-start: 1px solid RGB($emu-color-border);
+				@include layout {
+					border-block-start-style: solid;
+					border-block-start-width: 1px;
+				}
 			}
 		}
 
@@ -200,16 +216,15 @@
 	.macro {
 		background-color: RGBA($emu-color-background, $global-background-opacity-hotbar);
 		background-image: $global-image-background-controls;
-		border: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
-		transition:
-			border $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
 			border-radius: 0;
+			border-style: solid;
+			border-width: 1px;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -217,6 +232,9 @@
 			justify-content: center;
 			margin-inline-start: -1px; // for the border and people messing with border color
 			position: relative;
+			transition:
+				border $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link;
 			width: $global-space-button-xl;
 		}
 
@@ -266,9 +284,11 @@
 		}
 
 		.macro-icon {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				height: calc(#{$global-space-button-xl} - #{$global-space-sm});
 				max-height: 100%;
 				max-width: 100%;
@@ -281,11 +301,13 @@
 
 		.tooltip {
 			background-color: RGB($emu-color-background-darkest);
-			border: none;
+			border-color: transparent;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				border-radius: $global-border-radius-default;
+				border-style: solid;
+				border-width: 0;
 				font-size: $global-font-size-md;
 				height: auto;
 				left: 0;

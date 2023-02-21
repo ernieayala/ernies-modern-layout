@@ -30,6 +30,10 @@
 		.radio-switch,
 		.toggle-switch,
 		.weapon-property {
+			background: transparent;
+			border: 1px solid RGB($emu-color-border);
+			color: RGB($emu-color-text);
+
 			@include layout {
 				border-radius: $global-border-radius-default;
 				display: inline-flex;
@@ -39,10 +43,6 @@
 				margin: 0;
 				padding: $global-space-base;
 			}
-
-			background: transparent;
-			border: 1px solid RGB($emu-color-border);
-			color: RGB($emu-color-text);
 
 			&.switched-on {
 				background-color: RGB($emu-color-primary);

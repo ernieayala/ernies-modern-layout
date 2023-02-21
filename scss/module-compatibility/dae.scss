@@ -5,9 +5,11 @@
 	.active-effect-sheet[id*="ActiveEffectsConfig-"] {
 		.tab {
 			> div:last-of-type:not(.form-group) {
-				// you made me do this
+				border-color: transparent !important;
+
 				@include layout {
-					border: none !important;
+					border-style: solid !important;
+					border-width: 0 !important;
 					padding: 0 !important;
 					text-align: initial !important;
 				}
@@ -90,10 +92,12 @@
 			}
 
 			ul.filter-list {
-				border-block-start: none;
-				border-block-end: b("primary", 2px);
+				border-color: RGB($emu-color-primary);
 
 				@include layout {
+					border-style: solid;
+					border-width: 0;
+					border-block-end-width: 2px;
 					display: flex;
 					flex: 0 0 auto;
 					height: initial;
@@ -141,10 +145,12 @@
 					}
 
 					> div {
-						align-items: center;
-						border: none;
+						border-color: transparent;
 
 						@include layout {
+							align-items: center;
+							border-style: solid;
+							border-width: 0;
 							flex-wrap: nowrap;
 						}
 					}

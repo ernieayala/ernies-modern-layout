@@ -1,8 +1,10 @@
 #client-settings.window-app.form {
 	nav.tabs {
-		border-block-end: 2px solid RGB($emu-color-primary);
+		border-color: RGB($emu-color-primary);
 
 		@include layout {
+			border-block-end-style: solid;
+			border-block-end-width: 2px;
 			padding: 0;
 		}
 
@@ -14,9 +16,11 @@
 	}
 
 	#config-tabs {
-		border: none;
+		border-color: transparent;
 
 		@include layout {
+			border-style: solid;
+			border-width: 0;
 			flex: 1 1 auto;
 			overflow-y: auto;
 		}
@@ -54,9 +58,11 @@
 		}
 
 		.settings-list {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				max-height: 100%;
 				overflow: initial;
 				padding: 0;

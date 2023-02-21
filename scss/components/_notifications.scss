@@ -17,13 +17,15 @@
 
 .notification {
 	background-color: RGB($emu-color-background-darkest);
-	border: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 	box-shadow: $global-box-shadow;
 	color: RGB($emu-color-white);
 	text-shadow: none;
 
 	@include layout {
 		border-radius: $global-border-radius-default;
+		border-style: solid;
+		border-width: 1px;
 		line-height: initial;
 		margin-block-end: $global-space-sm;
 		padding: $global-space-sm;

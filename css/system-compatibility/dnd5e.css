@@ -1,165 +1,20 @@
-body.-emu.system-dnd5e .dnd5e button{background-color:RGBA(var(--emu-color-background-button,125,125,125),var(--emu-background-opacity-button-primary,1));background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e button>label{color:inherit!important}
-body.-emu.system-dnd5e .dnd5e button:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
-body.-emu.system-dnd5e .dnd5e button:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
-body.-emu.system-dnd5e .dnd5e button:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e input[type=date],body.-emu.system-dnd5e .dnd5e input[type=datetime-local],body.-emu.system-dnd5e .dnd5e input[type=number],body.-emu.system-dnd5e .dnd5e input[type=password],body.-emu.system-dnd5e .dnd5e input[type=text],body.-emu.system-dnd5e .dnd5e input[type=time]{background:RGBA(var(--emu-color-background-lightest,230,233,235),var(--emu-background-opacity-form-field,1));box-shadow:none;color:RGB(var(--emu-color-text,9,14,16));transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e input[type=date]::placeholder,body.-emu.system-dnd5e .dnd5e input[type=datetime-local]::placeholder,body.-emu.system-dnd5e .dnd5e input[type=number]::placeholder,body.-emu.system-dnd5e .dnd5e input[type=password]::placeholder,body.-emu.system-dnd5e .dnd5e input[type=text]::placeholder,body.-emu.system-dnd5e .dnd5e input[type=time]::placeholder{color:RGBA(var(--emu-color-text,9,14,16),.5)}
-body.-emu.system-dnd5e .dnd5e input[type=date]:disabled,body.-emu.system-dnd5e .dnd5e input[type=datetime-local]:disabled,body.-emu.system-dnd5e .dnd5e input[type=number]:disabled,body.-emu.system-dnd5e .dnd5e input[type=password]:disabled,body.-emu.system-dnd5e .dnd5e input[type=text]:disabled,body.-emu.system-dnd5e .dnd5e input[type=time]:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e input[type=checkbox]{background:0 0;border:1px solid RGB(var(--emu-color-border-lighter,167,176,178));box-shadow:none;color:RGB(var(--emu-color-text,9,14,16));transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e input[type=checkbox]:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e input[type=checkbox]:checked{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255))}
-body.-emu.system-dnd5e .dnd5e input[type=color]{background:0 0;transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e input[type=color]:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e select{background:RGBA(var(--emu-color-background-lightest,230,233,235),var(--emu-background-opacity-form-field,1));box-shadow:none;color:RGB(var(--emu-color-text,9,14,16));transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e select:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e select optgroup,body.-emu.system-dnd5e .dnd5e select option{background-color:RGB(var(--emu-color-background-lightest,230,233,235));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e textarea{background:0 0;color:RGB(var(--emu-color-text,9,14,16));transition:box-shadow .3s cubic-bezier(.075, .82, .165, 1)}
-body.-emu.system-dnd5e .dnd5e textarea::placeholder{color:RGB(var(--emu-color-text,9,14,16),.5)}
-body.-emu.system-dnd5e .dnd5e textarea:disabled{opacity:.5;pointer-events:none}
-body.-emu.system-dnd5e .dnd5e fieldset{border:none}
-body.-emu.system-dnd5e .dnd5e table{background-color:RGBA(var(--emu-color-black,0,0,0),.05);border:none}
-body.-emu.system-dnd5e .dnd5e table thead{background-color:RGBA(var(--emu-color-black,0,0,0),.2);border-block-end:1px solid RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e table tr:nth-child(2n){background-color:RGBA(var(--emu-color-white,255,255,255),.1)}
-body.-emu.system-dnd5e .dnd5e h1,body.-emu.system-dnd5e .dnd5e h2,body.-emu.system-dnd5e .dnd5e h3,body.-emu.system-dnd5e .dnd5e h4{font-weight:400}
-body.-emu.system-dnd5e .dnd5e h1{border-block-end:2px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e h2{border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e a{text-shadow:none}
-body.-emu.system-dnd5e .dnd5e a:hover{color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e a[href]{color:RGB(var(--emu-color-primary,229,117,9));text-decoration:none;text-shadow:none}
-body.-emu.system-dnd5e .dnd5e a[href]:hover{text-decoration:underline;text-shadow:none}
-body.-emu.system-dnd5e .dnd5e a.entity-link,body.-emu.system-dnd5e .dnd5e a.inline-roll{background-color:RGB(var(--emu-color-background-lightest,230,233,235));box-shadow:0 0 0 1px inset RGB(var(--emu-color-border,33,50,52));border:none}
-body.-emu.system-dnd5e .dnd5e a.entity-link>i,body.-emu.system-dnd5e .dnd5e a.inline-roll>i{color:inherit}
-body.-emu.system-dnd5e .dnd5e hr{border:none;border-block-start:1px solid RGB(var(--emu-color-border,33,50,52));border-block-end:none}
-body.-emu.system-dnd5e .dnd5e blockquote{border-inline-start:3px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e section.secret{background-color:RGBA(var(--emu-color-background-light,125,138,140),.2);border-block-start:1px solid RGB(var(--emu-color-border,33,50,52));border-block-end:1px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e button:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e input[type=checkbox]:hover,body.-emu.system-dnd5e .dnd5e input[type=color]:hover,body.-emu.system-dnd5e .dnd5e input[type=date]:hover,body.-emu.system-dnd5e .dnd5e input[type=datetime-local]:hover,body.-emu.system-dnd5e .dnd5e input[type=number]:hover,body.-emu.system-dnd5e .dnd5e input[type=password]:hover,body.-emu.system-dnd5e .dnd5e input[type=text]:hover,body.-emu.system-dnd5e .dnd5e input[type=time]:hover,body.-emu.system-dnd5e .dnd5e select:hover,body.-emu.system-dnd5e .dnd5e textarea:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e a[href]:focus,body.-emu.system-dnd5e .dnd5e button:focus,body.-emu.system-dnd5e .dnd5e input[type=checkbox]:focus,body.-emu.system-dnd5e .dnd5e input[type=color]:focus,body.-emu.system-dnd5e .dnd5e input[type=date]:focus,body.-emu.system-dnd5e .dnd5e input[type=datetime-local]:focus,body.-emu.system-dnd5e .dnd5e input[type=number]:focus,body.-emu.system-dnd5e .dnd5e input[type=password]:focus,body.-emu.system-dnd5e .dnd5e input[type=text]:focus,body.-emu.system-dnd5e .dnd5e input[type=time]:focus,body.-emu.system-dnd5e .dnd5e select:focus,body.-emu.system-dnd5e .dnd5e textarea:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
-body.-emu.system-dnd5e .dnd5e button.active{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e button.active:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e button.active:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
-.-emu-layout body.-emu.system-dnd5e .dnd5e .window-content{display:initial}
-body.-emu.system-dnd5e .dnd5e .form-group label{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e .form-header{border-block-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178));border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e .tag{border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet .window-content{color:RGB(var(--emu-color-text,9,14,16))}
-.-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .window-content form{gap:initial}
-body.-emu.system-dnd5e .dnd5e.sheet input[type=number],body.-emu.system-dnd5e .dnd5e.sheet input[type=text]{border-color:transparent}
-body.-emu.system-dnd5e .dnd5e.sheet input[type=number]:focus,body.-emu.system-dnd5e .dnd5e.sheet input[type=number]:hover,body.-emu.system-dnd5e .dnd5e.sheet input[type=text]:focus,body.-emu.system-dnd5e .dnd5e.sheet input[type=text]:hover{border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet .editable .rollable:hover>h4,body.-emu.system-dnd5e .dnd5e.sheet .editable h4.rollable:hover{color:RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e.sheet span.sep{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header{border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-.-emu-layout body.-emu.system-dnd5e .dnd5e.sheet .sheet-header{gap:initial}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header img.profile{border-inline-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary{border-block-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary li{border-inline-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .summary li:last-child{border-inline-end:none}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-header .header-details h1{border:none}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item{border-color:RGB(var(--emu-color-border,33,50,52));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item:hover{color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet .sheet-navigation .item.active{border-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-icon{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item{border-color:RGB(var(--emu-color-border,33,50,52));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item:hover{border-color:RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet .filter-list .filter-item.active{border-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet .traits .trait-selector{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet .items-list{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet .items-list .item{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet .items-list .item .item-name{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet .items-list .items-header{border:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-controls,body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-duration,body.-emu.system-dnd5e .dnd5e.sheet .effects .item .effect-source{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .summary{border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .attributes .attribute{border-inline-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .sheet-header .attributes .attribute:last-child{border-inline-end:none}
-body.-emu.system-dnd5e .dnd5e.sheet.actor h4.box-title{border-color:RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor ul.attributes li.attribute{border:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores{border:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability{border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability:last-child{border-block-end:none}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod,body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save{border-block-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-mod{border-inline-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .ability-scores .ability .ability-modifiers span.ability-save{border-inline-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .proficiency-toggle{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .proficient .proficiency-toggle{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .locked .proficiency-toggle{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor ul.skills-list{border:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor ul.skills-list li.skill .skill-passive{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .counters{border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .counters .counter h4{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .traits i.fas{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .traits i.fas:hover{color:RGB(var(--emu-color-primary,229,117,9));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .traits .inactive{color:RGB(var(--emu-color-text,9,14,16));opacity:.5}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-filters .currency label{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-filters .currency input[type=text]{border:1px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item .item-name i.attuned{color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item .item-name i.not-attuned{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-detail{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-weight{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .inventory-list .item-summary{border-color:RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance{border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .encumbrance-bar{background-color:RGB(var(--emu-color-primary,229,117,9));border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .encumbrance-label{color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .arrow-down,body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance .arrow-up{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance.encumbered .arrow-down,body.-emu.system-dnd5e .dnd5e.sheet.actor .encumbrance.encumbered .arrow-up{border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-comps,body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-slots{border-color:RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .spellbook .spell-uses{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-action,body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-school,body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-target{border-color:RGB(var(--emu-color-border-lighter,167,176,178));color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-component.C,body.-emu.system-dnd5e .dnd5e.sheet.actor .spell-component.R{color:RGB(var(--emu-color-text-lightest,255,255,255))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor .features i.original-class{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-header img.profile{border:1px solid RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-header .item-subtitle{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.item .sheet-body .item-properties .properties-list li{border:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.item .details input[type=number],body.-emu.system-dnd5e .dnd5e.sheet.item .details input[type=text],body.-emu.system-dnd5e .dnd5e.sheet.item .details select{border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.item h4.damage-header{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.item .damage-control{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .charlevel{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .experience span.max{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .xpbar{background-color:RGB(var(--emu-color-background,41,62,64));border-color:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .xpbar.bar{background-color:RGB(var(--emu-color-primary,229,117,9));border:RGB(var(--emu-color-border,33,50,52))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .sheet-header .attributes a.rest{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .resource .attribute-value label.recharge{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle,body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active,body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active{color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.fixed,body.-emu.system-dnd5e .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.fixed{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.character .characteristics textarea{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.npc .header-exp .experience{color:RGB(var(--emu-color-text,9,14,16))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.vehicle .features .item-controls .item-toggle{color:RGB(var(--emu-color-text-darker,41,62,64))}
-body.-emu.system-dnd5e .dnd5e.sheet.actor.vehicle .features .item-controls .item-toggle.active{color:RGB(var(--emu-color-primary,229,117,9))}
-.-emu-layout body.-emu.system-dnd5e #ability-use-form label.checkbox{flex:1 1 auto}
-.-emu-layout body.-emu.system-dnd5e #ability-use-form label.checkbox input[type=checkbox]{margin:0;margin-inline-end:var(--emu-space-sm,8px)}
-.-emu-layout body.-emu.system-dnd5e [id*=actor-type-] input[name=preview]:disabled{padding:0}
-.-emu-layout body.-emu.system-dnd5e .trait-selector.subconfig ol.trait-list>li{align-items:flex-start;flex-direction:column}
-body.-emu.system-dnd5e .trait-selector.actor-type .trait-list .radio input{margin-inline-end:var(--emu-space-base,4px)}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content{padding:var(--emu-space-sm,8px)}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group{padding:var(--emu-space-sm,8px) 0}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields{flex-wrap:nowrap}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields button:first-child{margin:0}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields button+input{margin-inline-start:var(--emu-space-base,4px);order:initial}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields .sep{margin-inline-start:var(--emu-space-base,4px)}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields .current,.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields .max{flex:1}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .form-group .form-fields .roll-hd{flex:1 1 100%}
-.-emu-layout body.-emu.system-dnd5e .hd-config.dialog .window-content .dialog-buttons{margin-block-start:var(--emu-space-base,4px);padding:0}
-.-emu-layout body.-emu.system-dnd5e #long-rest>p{margin-block-start:0}
-.-emu-layout body.-emu.system-dnd5e #short-rest-hd{padding-block-start:var(--emu-space-sm,8px)}
-.-emu-layout body.-emu.system-dnd5e #short-rest-hd .form-fields select{flex:1 1 auto}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card{font-size:var(--emu-font-size-sm, 12px)}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header{border-block-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178));border-block-end:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header{margin-block-end:var(--emu-space-base,4px);padding:var(--emu-space-base,4px) 0}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header{border-style:solid;border-block-start-width:1px;border-block-end-width:1px;margin-block-end:var(--emu-space-base,4px);padding:var(--emu-space-base,4px) 0}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header img,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header img{flex:0 0 36px;margin-inline-end:var(--emu-space-base,4px)}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3{color:RGB(var(--emu-color-text,9,14,16));text-shadow:none}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3{align-items:center;display:inline-flex;font-family:inherit;line-height:initial;margin:0}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3{border-color:transparent;color:RGB(var(--emu-color-text,9,14,16));text-shadow:none}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-header h3,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-header h3{align-items:center;border-style:solid;border-width:0;display:inline-flex;font-family:inherit;line-height:initial;margin:0}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-content,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-content{margin:var(--emu-space-base,4px) 0}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-content h3,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-content h3{font-size:var(--emu-font-size-sm, 12px)}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons{margin:var(--emu-space-base,4px) 0}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button{border:1px solid RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button{margin:0}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button{border-color:RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button{border-style:solid;border-width:1px;margin:0}
 .-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button+button,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button+button{margin-block-start:var(--emu-space-base,4px)}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer{border-block-start:1px solid RGB(var(--emu-color-border-lighter,167,176,178))}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer{margin-block-start:var(--emu-space-base,4px);padding-block-start:var(--emu-space-base,4px)}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span{border-inline-end:1px solid RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span{font-size:var(--emu-font-size-xs, 10px);margin-inline-end:var(--emu-space-xs,2px);padding-inline-end:var(--emu-space-base,4px)}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer{border-color:RGB(var(--emu-color-border-lighter,167,176,178))}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer{border-block-start-style:solid;border-block-start-width:1px;margin-block-start:var(--emu-space-base,4px);padding-block-start:var(--emu-space-base,4px)}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span{border-color:RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span{border-inline-end-style:solid;border-inline-end-width:1px;font-size:var(--emu-font-size-xs, 10px);margin-inline-end:var(--emu-space-xs,2px);padding-inline-end:var(--emu-space-base,4px)}
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-footer span:last-child,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-footer span:last-child{border-inline-end:none}
 body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button:hover span,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button:hover span{border-color:RGB(var(--emu-color-white,255,255,255))}
-body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span{border:1px solid RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span{margin-inline-start:var(--emu-space-base,4px);padding:0 var(--emu-space-xs,2px)}
+body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span,body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span{border-color:RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu.system-dnd5e #sidebar .dnd5e.chat-card .card-buttons button span,.-emu-layout body.-emu.system-dnd5e .sidebar-popout .dnd5e.chat-card .card-buttons button span{border-style:solid;border-width:1px;margin-inline-start:var(--emu-space-base,4px);padding:0 var(--emu-space-xs,2px)}

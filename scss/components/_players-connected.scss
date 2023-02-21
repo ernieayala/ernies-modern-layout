@@ -1,16 +1,18 @@
 #players {
 	background-color: RGBA($emu-color-background, $global-background-opacity-players);
 	background-image: $global-image-background;
-	border: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 	box-shadow: none;
-	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-default;
+		border-style: solid;
+		border-width: 1px;
 		display: block;
 		margin: $global-space-sm;
 		padding: 0;
 		pointer-events: all;
+		transition: opacity $global-transition-time-base $global-transition-type-link;
 		z-index: $global-z-index-fixed;
 
 		&.hidden {
@@ -33,6 +35,7 @@
 			opacity: 1;
 
 			> h3 {
+				border-style: solid;
 				border-width: 1px;
 			}
 
@@ -49,13 +52,14 @@
 	}
 
 	> h3 {
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 		color: RGB($emu-color-text-lightest);
-		transition: color $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
 			border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+			border-block-end-style: solid;
+			border-block-end-width: 1px;
 			cursor: pointer;
 			display: flex;
 			font-size: $global-font-size-md;
@@ -64,6 +68,7 @@
 			padding: $global-space-sm;
 			position: relative;
 			text-transform: uppercase;
+			transition: color $global-transition-time-base $global-transition-type-link;
 		}
 
 		@include layout-subtle {
@@ -125,9 +130,12 @@
 		}
 
 		.player {
+			border-color: transparent;
+
 			@include layout {
 				align-items: center;
-				border: none;
+				border-style: solid;
+				border-width: 0;
 				display: flex;
 				flex-wrap: nowrap;
 				line-height: initial;

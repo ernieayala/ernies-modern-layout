@@ -1,17 +1,15 @@
 %default-button {
 	background-image: $global-image-background-controls;
-	border: none;
+	border-color: transparent;
 	box-shadow: none;
 	color: RGB($emu-color-text-lightest);
 	text-shadow: none;
-	transition:
-		background $global-transition-time-base $global-transition-type-link,
-		box-shadow $global-transition-time-base $global-transition-type-link,
-		color $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		align-items: center;
 		border-radius: $global-border-radius-controls;
+		border-style: solid;
+		border-width: 0;
 		cursor: pointer;
 		display: inline-flex;
 		font-size: $global-font-size-lg;
@@ -21,19 +19,16 @@
 		justify-content: center;
 		line-height: unset;
 		margin: 0;
-		padding: $global-space-sm;
+		min-height: $global-space-button;
+		padding: $global-space-base $global-space-sm;
 		position: relative;
+		transition:
+			background $global-transition-time-base $global-transition-type-link,
+			box-shadow $global-transition-time-base $global-transition-type-link,
+			color $global-transition-time-base $global-transition-type-link;
 
 		> i {
 			margin: 0;
-		}
-
-		> label {
-			color: inherit !important; // because inline
-
-			@include layout {
-				font-size: inherit !important; // because inline
-			}
 		}
 	}
 
@@ -53,12 +48,22 @@
 	}
 
 	&:disabled {
-		opacity: 0.5;
-		pointer-events: none;
+		@include layout {
+			opacity: 0.5;
+			pointer-events: none;
+		}
 	}
 
 	&.active {
 		@extend %global-active;
+	}
+
+	> label {
+		color: inherit !important; // because inline
+
+		@include layout {
+			font-size: inherit !important; // because inline
+		}
 	}
 }
 
@@ -70,9 +75,11 @@
 %primary-button-simple-reset {
 	background-color: RGBA($emu-color-background-button, $global-background-opacity-button-primary);
 	background-image: $global-image-background-controls;
-	border: none;
+	border-color: transparent;
 
 	@include layout {
+		border-style: solid;
+		border-width: 0;
 		margin: 0;
 	}
 
@@ -98,6 +105,7 @@
 		flex: 0 0 auto;
 		font-size: $global-font-size-sm;
 		height: $global-space-button-sm;
+		min-height: $global-space-button-sm;
 		padding: 0;
 		width: $global-space-button-sm;
 

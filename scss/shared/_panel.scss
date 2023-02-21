@@ -1,11 +1,13 @@
 %panel-block {
 	background-color: RGBA($emu-color-background, $global-background-opacity-sidebar);
 	background-image: $global-image-background;
-	border: none;
+	border-color: transparent;
 	color: RGB($emu-color-text-lightest);
 
 	@include layout {
 		align-items: center;
+		border-style: solid;
+		border-width: 0;
 		display: flex;
 		flex: 0 0 auto;
 		gap: $global-space-base;

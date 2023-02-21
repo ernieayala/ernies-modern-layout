@@ -15,12 +15,14 @@
 		.subdirectory {
 			background-color: RGB($emu-color-folder-subdirectory);
 			background-image: none;
-			border: none;
-			border-inline-start: 4px solid RGB($emu-color-primary);
+			border-color: RGB($emu-color-primary);
 
 			@include layout {
 				display: flex;
 				border-radius: 0 0 0 $global-border-radius-default;
+				border-inline-start-style: solid;
+				border-width: 0;
+				border-inline-start-width: 4px;
 				flex-direction: column;
 				gap: $global-space-base;
 				margin: 0;
@@ -55,10 +57,20 @@
 			}
 
 			.subdirectory {
-				border-inline-start: 4px solid RGB($emu-color-primary-darker);
+				border-color: RGB($emu-color-primary-darker);
+
+				@include layout {
+					border-inline-start-style: solid;
+					border-inline-start-width: 4px;
+				}
 
 				.subdirectory {
-					border-inline-start: 4px solid RGB($emu-color-primary-darkest);
+					border-color: RGB($emu-color-primary-darkest);
+
+					@include layout {
+						border-inline-start-style: solid;
+						border-inline-start-width: 4px;
+					}
 				}
 			}
 		}
@@ -67,18 +79,16 @@
 	.directory-item {
 		background-color: RGB($emu-color-folder-directory);
 		background-image: none;
-		border-block-end: 1px solid RGB($emu-color-border);
+		border-color: transparent;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
-		transition:
-			background $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link,
-			color $global-transition-time-base $global-transition-type-link;
+
 
 		@include layout {
 			align-items: center;
-			border: none;
 			border-radius: $global-border-radius-default;
+			border-style: solid;
+			border-width: 0;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -89,6 +99,10 @@
 			min-height: $global-space-button;
 			padding: 0 $global-space-sm;
 			position: relative;
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link;
 			width: 100%;
 		}
 
@@ -109,12 +123,22 @@
 		}
 
 		&.entity {
-			border: none;
+			border-color: transparent;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+			}
 		}
 
 		&.context {
-			border: none;
+			border-color: transparent;
 			box-shadow: none;
+
+			@include layout {
+				border-style: solid;
+				border-width: 0;
+			}
 		}
 
 		&.folder {
@@ -134,10 +158,12 @@
 
 			&.collapsed {
 				> .folder-header {
-					border-inline-start: none;
+					border-color: transparent;
 
 					@include layout {
 						border-radius: $global-border-radius-default;
+						border-inline-start-style: solid;
+						border-inline-start-width: 0;
 					}
 
 					.create-folder {
@@ -161,7 +187,12 @@
 					}
 
 					.folder-header {
-						border-inline-start: none;
+						border-color: transparent;
+
+						@include layout {
+							border-inline-start-style: solid;
+							border-inline-start-width: 0;
+						}
 					}
 				}
 			}
@@ -175,17 +206,15 @@
 			.folder-header {
 				background-color: RGB($emu-color-folder-header);
 				background-image: none;
-				border: 0;
-				border-inline-start: 4px solid RGB($emu-color-primary);
+				border-color: RGB($emu-color-primary);
 				color: RGB($emu-color-text);
-				transition:
-					background $global-transition-time-base $global-transition-type-link,
-					box-shadow $global-transition-time-base $global-transition-type-link,
-					color $global-transition-time-base $global-transition-type-link;
 
 				@include layout {
 					align-items: center;
 					border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+					border-inline-start-style: solid;
+					border-width: 0;
+					border-inline-start-width: 4px;
 					cursor: pointer;
 					display: flex;
 					flex-wrap: nowrap;
@@ -193,6 +222,10 @@
 					min-height: $global-space-button;
 					padding: $global-space-base $global-space-sm;
 					position: relative;
+					transition:
+						background $global-transition-time-base $global-transition-type-link,
+						box-shadow $global-transition-time-base $global-transition-type-link,
+						color $global-transition-time-base $global-transition-type-link;
 					width: 100%;
 				}
 
@@ -213,11 +246,13 @@
 
 				h3 {
 					@extend %button-icon-spacing;
-					border-block-end: 0;
+					border-color: transparent;
 					color: inherit;
 
 					@include layout {
 						@extend %ellipsis;
+						border-block-end-style: solid;
+						border-block-end-width: 0;
 						flex: 1 1 auto;
 						font-size: $global-font-size-lg;
 						font-weight: normal;
@@ -277,20 +312,20 @@
 			@extend %control-button;
 
 			.fa-plus {
-				align-items: center;
 				background: transparent;
 				color: inherit;
-				display: flex;
-				font-size: 8px;
-				height: 12px;
-				justify-content: center;
-				position: absolute;
-				right: -2px;
-				top: -2px;
-				width: 12px;
 
 				@include layout {
+					align-items: center;
 					border-radius: 50%;
+					display: flex;
+					font-size: 8px;
+					height: 12px;
+					justify-content: center;
+					position: absolute;
+					right: -2px;
+					top: -2px;
+					width: 12px;
 				}
 			}
 		}
@@ -332,7 +367,6 @@
 				background-color: transparent;
 				color: inherit;
 				text-shadow: none;
-				transition: color $global-transition-time-base $global-transition-type-link;
 
 				@include layout {
 					border-radius: 0;
@@ -343,7 +377,7 @@
 					line-height: $global-space-button; // figure out a better way
 					padding: 0;
 					position: relative;
-					text-shadow: none;
+					transition: color $global-transition-time-base $global-transition-type-link;
 				}
 			}
 		}

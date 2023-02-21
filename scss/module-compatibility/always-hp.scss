@@ -7,9 +7,11 @@
 		}
 
 		.window-content {
-			border: none;
+			border-color: transparent;
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				padding: $global-space-sm;
 			}
 		}
@@ -46,10 +48,12 @@
 
 		.resource {
 			background-color: RGBA($emu-color-black, 0.5);
-			border: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 
 			@include layout {
 				border-radius: $global-border-radius-default;
+				border-style: solid;
+				border-width: 1px;
 				height: 10px;
 				grid-area: resource;
 				margin: 0;
@@ -68,10 +72,12 @@
 			.bar-change {
 				background-color: RGB($emu-color-background);
 				background-image: $global-image-background;
-				border: 1px solid RGB($emu-color-border);
+				border-color: RGB($emu-color-border);
 				color: RGB($emu-color-text-lightest);
 
 				@include layout {
+					border-style: solid;
+					border-width: 1px;
 					font-size: $global-font-size-lg;
 					font-weight: 700;
 					left: 50%;

@@ -1,11 +1,11 @@
-body.-emu .alwayshp-btn{background-image:var(--emu-image-background-controls,none);border:none;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
-.-emu-layout body.-emu .alwayshp-btn,body.-emu .-emu-layout .alwayshp-btn{align-items:center;border-radius:var(--emu-border-radius-controls,0);cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:unset;margin:0;padding:var(--emu-space-sm,8px);position:relative}
+body.-emu .alwayshp-btn{background-image:var(--emu-image-background-controls,none);border-color:transparent;box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
+.-emu-layout body.-emu .alwayshp-btn,body.-emu .-emu-layout .alwayshp-btn{align-items:center;border-radius:var(--emu-border-radius-controls,0);border-style:solid;border-width:0;cursor:pointer;display:inline-flex;font-size:var(--emu-font-size-lg, 16px);font-family:inherit;gap:var(--emu-space-sm,8px);height:initial;justify-content:center;line-height:unset;margin:0;min-height:var(--emu-space-button,32px);padding:var(--emu-space-base,4px) var(--emu-space-sm,8px);position:relative;transition:background .3s cubic-bezier(.075, .82, .165, 1),box-shadow .3s cubic-bezier(.075, .82, .165, 1),color .3s cubic-bezier(.075, .82, .165, 1)}
 .-emu-layout body.-emu .alwayshp-btn>i,body.-emu .-emu-layout .alwayshp-btn>i{margin:0}
-.-emu-layout body.-emu .alwayshp-btn>label,body.-emu .-emu-layout .alwayshp-btn>label{color:inherit!important}
-.-emu-layout .-emu-layout body.-emu .alwayshp-btn>label,body.-emu .-emu-layout .-emu-layout .alwayshp-btn>label{font-size:inherit!important}
 body.-emu .alwayshp-btn:hover{background-color:RGB(var(--emu-color-primary,229,117,9));background-image:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}
 body.-emu .alwayshp-btn:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
-body.-emu .alwayshp-btn:disabled{opacity:.5;pointer-events:none}
+.-emu-layout body.-emu .alwayshp-btn:disabled,body.-emu .-emu-layout .alwayshp-btn:disabled{opacity:.5;pointer-events:none}
+body.-emu .alwayshp-btn>label{color:inherit!important}
+.-emu-layout body.-emu .alwayshp-btn>label,body.-emu .-emu-layout .alwayshp-btn>label{font-size:inherit!important}
 body.-emu .alwayshp-btn{background-color:RGBA(var(--emu-color-background-button,125,125,125),var(--emu-background-opacity-button-primary,1))}
 body.-emu .alwayshp-btn:hover{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-white,255,255,255));text-shadow:none}
 body.-emu .alwayshp-btn:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3);text-shadow:none;outline:0}
@@ -13,16 +13,16 @@ body.-emu .active.alwayshp-btn{background-color:RGB(var(--emu-color-primary,229,
 body.-emu .active.alwayshp-btn:hover{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
 body.-emu .active.alwayshp-btn:active{background-color:RGB(var(--emu-color-primary-darker,160,81,8))}
 .-emu-layout body.-emu #always-hp{height:auto!important}
-body.-emu #always-hp .window-content{border:none}
-.-emu-layout body.-emu #always-hp .window-content{padding:var(--emu-space-sm,8px)}
+body.-emu #always-hp .window-content{border-color:transparent}
+.-emu-layout body.-emu #always-hp .window-content{border-style:solid;border-width:0;padding:var(--emu-space-sm,8px)}
 .-emu-layout body.-emu #always-hp .window-title{align-items:center}
 .-emu-layout body.-emu #always-hp .window-title .token-stats{flex-grow:0;flex-wrap:nowrap;font-size:var(--emu-font-size-sm, 12px);height:auto;padding:0;text-align:right}
 .-emu-layout body.-emu #always-hp .window-title .token-stats .stat{border-radius:var(--emu-border-radius-default,0);display:inline-block;font-weight:700;line-height:1;padding:var(--emu-space-xs,2px) var(--emu-space-base,4px);text-align:center;vertical-align:baseline;white-space:nowrap}
-body.-emu #always-hp .resource{background-color:RGBA(var(--emu-color-black,0,0,0),.5);border:1px solid RGB(var(--emu-color-border,33,50,52))}
-.-emu-layout body.-emu #always-hp .resource{border-radius:var(--emu-border-radius-default,0);height:10px;grid-area:resource;margin:0;position:relative;top:auto;width:100%;z-index:2}
+body.-emu #always-hp .resource{background-color:RGBA(var(--emu-color-black,0,0,0),.5);border-color:RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu #always-hp .resource{border-radius:var(--emu-border-radius-default,0);border-style:solid;border-width:1px;height:10px;grid-area:resource;margin:0;position:relative;top:auto;width:100%;z-index:2}
 .-emu-layout body.-emu #always-hp .resource .bar{border-radius:var(--emu-border-radius-default,0)}
-body.-emu #always-hp .resource .bar-change{background-color:RGB(var(--emu-color-background,41,62,64));background-image:var(--emu-image-background,none);border:1px solid RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
-.-emu-layout body.-emu #always-hp .resource .bar-change{font-size:var(--emu-font-size-lg, 16px);font-weight:700;left:50%;margin:0;position:absolute;text-align:center;top:14px;transform:translateX(-50%)}
+body.-emu #always-hp .resource .bar-change{background-color:RGB(var(--emu-color-background,41,62,64));background-image:var(--emu-image-background,none);border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu #always-hp .resource .bar-change{border-style:solid;border-width:1px;font-size:var(--emu-font-size-lg, 16px);font-weight:700;left:50%;margin:0;position:absolute;text-align:center;top:14px;transform:translateX(-50%)}
 .-emu-layout body.-emu .alwayshp-content{display:grid;grid-template-columns:min-content min-content 1fr min-content min-content;grid-template-rows:min-content min-content min-content;grid-template-areas:"resource resource resource resource resource" "death hurt input heal life" "deathfail deathfail . deathsave deathsave";gap:var(--emu-space-base,4px)}
 .-emu-layout body.-emu .alwayshp-btn{flex:0 0 auto;line-height:1}
 .-emu-layout body.-emu .alwayshp-btn i{margin:0;padding:0}

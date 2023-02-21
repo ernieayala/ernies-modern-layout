@@ -2,9 +2,8 @@ h1,
 h2,
 h3,
 h4 {
-	font-weight: normal;
-
 	@include layout {
+		font-weight: normal;
 		margin: 0;
 		margin-block-end: $global-space-base;
 		position: relative;
@@ -12,17 +11,21 @@ h4 {
 }
 
 h1 {
-	border-block-end: 2px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 
 	@include layout {
+		border-block-end-style: solid;
+		border-block-end-width: 2px;
 		font-size: $global-font-size-xxl;
 	}
 }
 
 h2 {
-	border-block-end: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 
 	@include layout {
+		border-block-end-style: solid;
+		border-block-end-width: 1px;
 		font-size: $global-font-size-xl;
 	}
 }
@@ -79,12 +82,14 @@ a.inline-roll,
 a.content-link {
 	background-color: RGB($emu-color-background-lightest);
 	box-shadow: 0 0 0 1px inset RGB($emu-color-black);
-	border: none;
+	border-color: transparent;
 	color: RGB($emu-color-text);
 	text-shadow: none;
 
 	@include layout {
 		border-radius: $global-border-radius-controls;
+		border-style: solid;
+		border-width: 0;
 		padding: $global-space-pf $global-space-xs;
 		padding-inline-start: $global-space-base;
 	}
@@ -135,23 +140,28 @@ dd {
 }
 
 hr {
-	border: none;
-	border-block-start: 1px solid RGB($emu-color-border);
-	border-block-end: none;
+	border-color: RGB($emu-color-border-lighter);
 
 	@include layout {
+		border-block-start-style: solid;
+		border-width: 0;
+		border-block-start-width: 1px;
 		width: 100%;
 	}
 }
 
 button[hidden] {
-	display: none;
+	@include layout {
+		display: none;
+	}
 }
 
 blockquote {
-	border-inline-start: 3px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 
 	@include layout {
+		border-inline-start-style: solid;
+		border-inline-start-width: 3px;
 		margin: $global-space-base 0 $global-space-base $global-space-md;
 		padding-inline-start: $global-space-lg;
 
@@ -163,10 +173,13 @@ blockquote {
 
 section.secret {
 	background-color: RGBA($emu-color-background-light, 0.2);
-	border-block-start: 1px solid RGB($emu-color-border);
-	border-block-end: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 
 	@include layout {
+		border-block-start-style: solid;
+		border-block-end-style: solid;
+		border-block-start-width: 1px;
+		border-block-end-width: 1px;
 		padding: 0 $global-space-base;
 	}
 }

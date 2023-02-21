@@ -86,10 +86,10 @@
 			flex: 0 0 auto;
 			gap: $global-space-base;
 			padding: $global-space-sm;
-		}
 
-		&:empty {
-			display: none;
+			&:empty {
+				display: none;
+			}
 		}
 
 		.dialog-button {

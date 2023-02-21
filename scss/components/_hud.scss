@@ -8,9 +8,11 @@
 	input[type="text"] {
 		@extend %input-text;
 		background: RGB($emu-color-background-lightest);
-		border: 1px solid RGB($emu-color-border);
+		border-color: RGB($emu-color-border);
 
 		@include layout {
+			border-style: solid;
+			border-width: 1px;
 			font-size: $global-font-size-xl;
 			height: $global-space-button-lg;
 		}
@@ -60,18 +62,15 @@
 	.control-icon {
 		background-color: RGBA($emu-color-background-darkest, $global-background-opacity-hud);
 		background-image: $global-image-background-controls;
-		border: none;
+		border-color: transparent;
 		box-shadow: none;
 		color: RGB($emu-color-text-lightest);
-		transition:
-			background $global-transition-time-base $global-transition-type-link,
-			box-shadow $global-transition-time-base $global-transition-type-link,
-			color $global-transition-time-base $global-transition-type-link,
-			opacity $global-transition-time-base $global-transition-type-link;
 
 		@include layout {
 			align-items: center;
 			border-radius: $global-border-radius-controls;
+			border-style: solid;
+			border-width: 0;
 			cursor: pointer;
 			display: flex;
 			flex: 0 0 auto;
@@ -82,6 +81,11 @@
 			margin: 0;
 			pointer-events: all;
 			position: relative;
+			transition:
+				background $global-transition-time-base $global-transition-type-link,
+				box-shadow $global-transition-time-base $global-transition-type-link,
+				color $global-transition-time-base $global-transition-type-link,
+				opacity $global-transition-time-base $global-transition-type-link;
 			width: $global-space-button-lg;
 
 			> i {
@@ -120,12 +124,14 @@
 		.status-effects {
 			background-color: RGB($emu-color-background-darkest);
 			background-image: $global-image-background-darkest;
-			border: 1px solid RGB($emu-color-border);
+			border-color: RGB($emu-color-border);
 			box-shadow: none;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				border-radius: $global-border-radius-default;
+				border-style: solid;
+				border-width: 1px;
 				padding: $global-space-base;
 				left: 48px;
 

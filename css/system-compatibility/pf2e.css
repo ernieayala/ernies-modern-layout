@@ -1,0 +1,35 @@
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content{font-size:var(--emu-font-size-md, 14px)}
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content h1{font-size:inherit;text-align:center}
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content .input-grid{align-items:center;display:flex;flex-wrap:wrap;font-size:inherit;gap:var(--emu-space-base,4px);justify-content:space-evenly}
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content .input-grid>*{flex:1 1 32%;height:var(--emu-space-button,32px);line-height:unset}
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content .input-grid button{align-items:center;display:flex;font-size:inherit;justify-content:center;margin:0}
+.-emu-layout body.-emu.system-pf2e #world-clock section.window-content .input-grid .time-of-day{display:flex;flex:0 0 100%;gap:var(--emu-space-base,4px);margin:0}
+body.-emu.system-pf2e #darkness-adjuster{background-color:RGBA(var(--emu-color-background,41,62,64),var(--emu-background-opacity-window,1));background-image:var(--emu-image-background,none);border-color:RGB(var(--emu-color-border,33,50,52));box-shadow:0 2px 4px RGB(var(--emu-color-black,0,0,0))}
+.-emu-layout body.-emu.system-pf2e #darkness-adjuster{height:calc(34px + var(--emu-space-sm,8px))!important}
+.-emu-layout body.-emu.system-pf2e #darkness-adjuster .window-header{display:none}
+body.-emu.system-pf2e #darkness-adjuster .window-content{background-color:RGBA(var(--emu-color-background-lightest,230,233,235),var(--emu-background-opacity-window-content,1));background-image:var(--emu-image-background-lightest,none);border-color:transparent}
+.-emu-layout body.-emu.system-pf2e #darkness-adjuster .window-content{border-start-start-radius:calc(var(--emu-border-radius-default,0) - 1px);border-start-end-radius:calc(var(--emu-border-radius-default,0) - 1px);border-width:0;padding:var(--emu-space-sm,8px) var(--emu-space-md,16px) 0}
+.-emu-layout body.-emu.system-pf2e .bestiary-browser-btn{flex:1 1 auto}
+.-emu-layout body.-emu.system-pf2e .dice-checks .check-modifiers-content{padding:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu.system-pf2e .dice-checks .dialog-row{align-items:center;display:grid;grid:"mod type value exclude" 1fr/1.5fr 1fr 36px 50px;padding:var(--emu-space-base,4px) 0}
+.-emu-layout body.-emu.system-pf2e .dice-checks .dialog-row.header{font-size:var(--emu-font-size-md, 14px);font-weight:700;padding-block-end:0}
+body.-emu.system-pf2e .dice-checks .dialog-row .modifier-container .dialog-row{border-color:RGB(var(--emu-color-border,33,50,52))}
+.-emu-layout body.-emu.system-pf2e .dice-checks .dialog-row .modifier-container .dialog-row{border-style:solid;border-block-end-width:0}
+.-emu-layout body.-emu.system-pf2e .dice-checks .dialog-row .modifier-container+hr{margin-block-start:0}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row.disabled .exclude.toggle{background-color:RGB(var(--emu-color-background,41,62,64))}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row.disabled .exclude.toggle input[type=checkbox]+label{left:calc(var(--emu-space-base,4px) - 1px);right:initial}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle{background:RGB(var(--emu-color-primary,229,117,9));box-shadow:none}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle{align-items:center;border-radius:50px;cursor:pointer;display:inline-flex;height:var(--emu-space-button-xs,20px);letter-spacing:.5px;margin:var(--emu-space-base,4px) 0;position:relative;width:46px}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle label{background:RGB(var(--emu-color-white,255,255,255));box-shadow:none}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle label{border-radius:50px;cursor:pointer;display:block;height:calc(var(--emu-space-button-xs,20px) - var(--emu-space-base,4px));position:absolute;right:calc(var(--emu-space-base,4px) - 1px);top:50%;transition:unset;transform:translateY(-50%);width:40%;z-index:1}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::after,body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::before{text-shadow:none}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::after,.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::before{font-family:inherit;font-size:var(--emu-font-size-xs, 10px);letter-spacing:initial;text-rendering:optimizeLegibility;text-transform:uppercase;top:unset}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::before{color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::before{left:var(--emu-space-base,4px)}
+body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::after{color:RGB(var(--emu-color-text-lightest,255,255,255))}
+.-emu-layout body.-emu.system-pf2e .dice-checks .modifier-container .dialog-row .exclude.toggle::after{right:var(--emu-space-base,4px)}
+.-emu-layout body.-emu.system-pf2e .dice-checks .add-modifier-panel{gap:var(--emu-space-base,4px)}
+body.-emu.system-pf2e .tags .tag,body.-emu.system-pf2e .tags .tag option{background-color:RGB(var(--emu-color-background,41,62,64));box-shadow:none;color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu.system-pf2e .tags .tag,.-emu-layout body.-emu.system-pf2e .tags .tag option{border-radius:var(--emu-border-radius-controls,0);font-family:inherit;font-size:var(--emu-font-size-xs, 10px);padding:var(--emu-space-base,4px) var(--emu-space-sm,8px);text-transform:uppercase;width:fit-content}
+.-emu-layout body.-emu.system-pf2e .effect-panel{pointer-events:auto;position:absolute;right:var(--emu-space-base,4px);top:var(--emu-space-sm,8px)}
+body.-emu.system-pf2e .effect-panel .effect-item .icon{align-items:center;background-repeat:no-repeat;background-size:contain;border:1px solid rgba(0,0,0,.5);box-shadow:0 0 0 1px silver,0 0 0 2px grey;box-shadow:0 0 0 1px silver,0 0 0 2px grey,inset 0 0 4px rgba(0,0,0,.5);color:transparent;display:flex;height:48px;justify-content:center;margin:2px 0;position:relative}

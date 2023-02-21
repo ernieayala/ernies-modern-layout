@@ -1,5 +1,255 @@
 @import "../base";
 
 @include system("pf2e") {
+	#world-clock {
+		section.window-content {
+			@include layout {
+				font-size: $global-font-size-md;
+			}
 
+			h1 {
+				@include layout {
+					font-size: inherit;
+					text-align: center;
+				}
+			}
+
+			.input-grid {
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex-wrap: wrap;
+					font-size: inherit;
+					gap: $global-space-base;
+					justify-content: space-evenly;
+
+					> * {
+						flex: 1 1 32%;
+						height: $global-space-button;
+						line-height: unset;
+					}
+
+					button {
+						align-items: center;
+						display: flex;
+						font-size: inherit;
+						justify-content: center;
+						margin: 0;
+					}
+
+					.time-of-day {
+						display: flex;
+						flex: 0 0 100%;
+						gap: $global-space-base;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	#darkness-adjuster {
+		background-color: RGBA($emu-color-background, $global-background-opacity-window);
+		background-image: $global-image-background;
+		border-color: RGB($emu-color-border);
+		box-shadow: $global-box-shadow;
+
+		@include layout {
+			height: calc(34px + #{$global-space-sm}) !important;
+		}
+
+		.window-header {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.window-content {
+			background-color: RGBA($emu-color-background-lightest, $global-background-opacity-window-content);
+			background-image: $global-image-background-lightest;
+			border-color: transparent;
+
+			@include layout {
+				border-start-start-radius: calc(#{$global-border-radius-default} - 1px);
+				border-start-end-radius: calc(#{$global-border-radius-default} - 1px);
+				border-width: 0;
+				padding: $global-space-sm $global-space-md 0;
+			}
+		}
+	}
+
+	.bestiary-browser-btn {
+		@include layout {
+			flex: 1 1 auto;
+		}
+	}
+
+	.dice-checks {
+		.check-modifiers-content {
+			@include layout {
+				padding: $global-space-sm;
+			}
+		}
+
+		.dialog-row {
+			@include layout {
+				align-items: center;
+				display: grid;
+				grid: "mod type value exclude" 1fr/1.5fr 1fr 36px 50px;
+				padding: $global-space-base 0;
+
+				&.header {
+					font-size: $global-font-size-md;
+					font-weight: 700;
+					padding-block-end: 0;
+				}
+			}
+
+			.modifier-container {
+				.dialog-row {
+					border-color: RGB($emu-color-border);
+
+					@include layout {
+						border-style: solid;
+						border-block-end-width: 0;
+					}
+				}
+
+				+ hr {
+					@include layout {
+						margin-block-start: 0;
+					}
+				}
+			}
+		}
+
+		.modifier-container {
+			.dialog-row {
+				&.disabled {
+					.exclude.toggle {
+						background-color: RGB($emu-color-background);
+
+						input[type=checkbox] + label {
+							@include layout {
+								left: calc(#{$global-space-base} - 1px);
+								right: initial;
+							}
+						}
+					}
+				}
+
+				.exclude.toggle {
+					background: RGB($emu-color-primary);
+					box-shadow: none;
+
+					@include layout {
+						align-items: center;
+						border-radius: 50px;
+						cursor: pointer;
+						display: inline-flex;
+						height: $global-space-button-xs;
+						letter-spacing: 0.5px;
+						margin: $global-space-base 0;
+						position: relative;
+						width: 46px;
+					}
+
+					label {
+						background: RGB($emu-color-white);
+						box-shadow: none;
+
+						@include layout {
+							border-radius: 50px;
+							cursor: pointer;
+							display: block;
+							height: calc(#{$global-space-button-xs} - #{$global-space-base});
+							position: absolute;
+							right: calc(#{$global-space-base} - 1px);
+							top: 50%;
+							transition: unset;
+							transform: translateY(-50%);
+							width: 40%;
+							z-index: 1;
+						}
+					}
+
+					&::before,
+					&::after {
+						text-shadow: none;
+
+						@include layout {
+							font-family: inherit;
+							font-size: $global-font-size-xs;
+							letter-spacing: initial;
+							text-rendering: optimizeLegibility;
+							text-transform: uppercase;
+							top: unset;
+						}
+					}
+
+					&::before {
+						color: RGB($emu-color-text-lightest);
+
+						@include layout {
+							left: $global-space-base;
+						}
+					}
+
+					&::after {
+						color: RGB($emu-color-text-lightest);
+
+						@include layout {
+							right: $global-space-base;
+						}
+					}
+				}
+			}
+		}
+
+		.add-modifier-panel {
+			@include layout {
+				gap: $global-space-base;
+			}
+		}
+	}
+
+	.tags .tag,
+	.tags .tag option {
+		background-color: RGB($emu-color-background);
+		box-shadow: none;
+		color: RGB($emu-color-text);
+
+		@include layout {
+			border-radius: $global-border-radius-controls;
+			font-family: inherit;
+			font-size: $global-font-size-xs;
+			padding: $global-space-base $global-space-sm;
+			text-transform: uppercase;
+			width: fit-content;
+		}
+	}
+
+	.effect-panel {
+		@include layout {
+			pointer-events: auto;
+			position: absolute;
+			right: $global-space-base;
+			top: $global-space-sm;
+		}
+
+		.effect-item .icon {
+			align-items: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			border: 1px solid rgba(0,0,0,.5);
+			box-shadow: 0 0 0 1px silver, 0 0 0 2px grey;
+			box-shadow: 0 0 0 1px silver, 0 0 0 2px grey, inset 0 0 4px rgb(0 0 0 / 50%);
+			color: transparent;
+			display: flex;
+			height: 48px;
+			justify-content: center;
+			margin: 2px 0;
+			position: relative;
+		}
+	}
 }

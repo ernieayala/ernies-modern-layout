@@ -1,18 +1,20 @@
 #fps {
 	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
 	background-image: $global-image-background-darkest;
-	border: 1px solid RGB($emu-color-border);
+	border-color: RGB($emu-color-border);
 	box-shadow: none;
-	transition: opacity $global-transition-time-base $global-transition-type-link;
 
 	@include layout {
 		border-radius: $global-border-radius-default;
+		border-style: solid;
+		border-width: 1px;
 		display: none;
 		line-height: initial;
 		margin: 0;
 		margin-block-end: $global-space-sm;
 		margin-inline-end: $global-space-sm;
 		padding: $global-space-base;
+		transition: opacity $global-transition-time-base $global-transition-type-link;
 		width: auto;
 	}
 }

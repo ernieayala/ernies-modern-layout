@@ -2,23 +2,27 @@
 .sidebar-popout[id="chat-popout"] .window-content {
 	[data-tab="chat"] {
 		#chat-log {
-			flex: 1 1 auto;
-			height: auto;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			overflow-y: auto;
-			overflow-x: hidden;
+			@include layout {
+				flex: 1 1 auto;
+				height: auto;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
 
 			.message {
 				background-color: RGB($emu-color-background-chat-message);
 				background-image: $global-image-background-light;
-				border: 1px solid RGB($emu-color-border);
 				box-shadow: none;
+				border-color: RGB($emu-color-border);
 				color: RGB($emu-color-text);
 
 				@include layout {
 					border-radius: $global-border-radius-default;
+					border-style: solid;
+					border-width: 1px;
 					display: flex;
 					flex-direction: column;
 					flex-wrap: nowrap;
@@ -78,14 +82,13 @@
 				}
 
 				.message-metadata {
-					transition: opacity $global-transition-time-base $global-transition-type-link;
-
 					@include layout {
 						align-self: flex-start;
 						display: flex;
 						gap: $global-space-base;
 						opacity: 0;
 						justify-content: flex-end;
+						transition: opacity $global-transition-time-base $global-transition-type-link;
 					}
 
 					a {
@@ -102,10 +105,12 @@
 				}
 
 				.message-content {
-					user-select: text;
+					@include layout {
+						user-select: text;
 
-					.table-result {
-						padding: $global-space-base 0;
+						.table-result {
+							padding: $global-space-base 0;
+						}
 					}
 				}
 
@@ -133,11 +138,13 @@
 				.dice-roll .dice-total {
 					background-color: RGBA($emu-color-background, 0.1);
 					box-shadow: none;
-					border: 1px solid RGB($emu-color-border);
+					border-color: RGB($emu-color-border);
 					color: inherit;
 
 					@include layout {
 						border-radius: $global-border-radius-default;
+						border-style: solid;
+						border-width: 1px;
 						line-height: initial;
 						font-size: inherit;
 						font-weight: normal;
@@ -181,9 +188,11 @@
 					}
 
 					.part-header {
-						border-block-end: 1px solid RGB($emu-color-border-lighter);
+						border-color: RGB($emu-color-border-lighter);
 
 						@include layout {
+							border-block-end-style: solid;
+							border-block-end-width: 1px;
 							line-height: initial;
 							margin: 0;
 						}
@@ -198,11 +207,13 @@
 
 						.part-total {
 							background-color: RGB($emu-color-background-lightest);
-							border: 1px solid RGB($emu-color-border-lighter);
-							border-block-end: none;
+							border-color: RGB($emu-color-border-lighter);
 
 							@include layout {
 								border-radius: $global-border-radius-default $global-border-radius-default 0 0;
+								border-style: solid;
+								border-width: 1px;
+								border-block-end-width: 0;
 								flex: none;
 								font-size: $global-font-size-md;
 								font-weight: 700;
@@ -239,11 +250,13 @@
 		#chat-controls {
 			background-color: RGBA($emu-color-background, 0.5);
 			background-image: $global-image-background;
-			border: none;
+			border-color: transparent;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
+				border-style: solid;
+				border-width: 0;
 				display: flex;
 				flex: 0 0 auto;
 				gap: $global-space-base;
@@ -314,11 +327,13 @@
 		#chat-form {
 			background-color: RGBA($emu-color-background, 0.5);
 			background-image: $global-image-background;
-			border: none;
+			border-color: transparent;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				align-items: center;
+				border-style: solid;
+				border-width: 0;
 				display: flex;
 				flex: 0 0 auto;
 				height: 112px;

@@ -17,19 +17,23 @@
 		h2,
 		h4 {
 			background: transparent;
-			border: none;
+			border-color: transparent;
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
+				border-style: solid;
+				border-width: 0;
 				padding: 0;
 				margin: 0;
 			}
 		}
 
 		h2 {
-			border-block-end: 1px solid RGB($emu-color-border-lighter);
+			border-color: RGB($emu-color-border-lighter);
 
 			@include layout {
+				border-block-end-style: solid;
+				border-block-end-width: 1px;
 				font-size: $global-font-size-xl;
 				margin-block-start: $global-space-sm;
 			}
@@ -60,12 +64,15 @@
 
 		.notification-pip {
 			color: RGB($emu-color-primary);
-			margin-inline-end: $global-space-xs;
-			padding: 0;
-			position: relative;
-			right: auto;
 			text-shadow: none;
-			top: auto;
+
+			@include layout {
+				margin-inline-end: $global-space-xs;
+				padding: 0;
+				position: relative;
+				right: auto;
+				top: auto;
+			}
 		}
 	}
 }
