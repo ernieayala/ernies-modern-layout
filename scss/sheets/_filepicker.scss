@@ -22,7 +22,7 @@
 						padding: $global-space-base;
 
 						img {
-							margin-inline-end: $global-space-base;
+							margin-inline-end: $global-space-sm;
 							max-width: $global-space-icon;
 							max-height: $global-space-icon;
 						}
@@ -38,27 +38,27 @@
 						gap: $global-space-base;
 						grid-template-columns: repeat(5, 1fr);
 					}
-				}
 
-				.file {
-					border-color: transparent;
+					.file {
+						border-color: transparent;
 
-					@include layout {
-						align-items: center;
-						background-color: RGBA($emu-color-background-darkest, 0.05);
-						border-style: solid;
-						border-width: 0;
-						display: flex;
-						flex: 0 0 auto;
-						justify-content: center;
-						max-width: 100%;
-						min-height: 100px;
-						padding: $global-space-base;
-						width: 100%;
-
-						img {
-							max-height: 100%;
+						@include layout {
+							align-items: center;
+							background-color: RGBA($emu-color-background-darkest, 0.05);
+							border-style: solid;
+							border-width: 0;
+							display: flex;
+							flex: 0 0 auto;
+							justify-content: center;
 							max-width: 100%;
+							min-height: 100px;
+							padding: $global-space-base;
+							width: 100%;
+
+							img {
+								max-height: 100%;
+								max-width: 100%;
+							}
 						}
 					}
 				}
@@ -165,10 +165,10 @@
 
 		.filepicker-body {
 			@include layout {
-				display: flex;
-				flex-direction: column;
+				display: grid;
 				flex: 1 1 auto;
 				gap: $global-space-base;
+				grid-template-rows: 1fr;
 			}
 
 			.directory {
@@ -257,11 +257,12 @@
 				.file {
 					background-color: RGBA($emu-color-folder-header, 0.9);
 					border-color: RGB($emu-color-border);
-					color: RGB($emu-color-text-lightest);
+					color: RGB($emu-color-text);
 
 					@include layout {
 						border-block-end-style: solid;
 						border-block-end-width: 1px;
+						padding: $global-space-base $global-space-sm;
 					}
 				}
 			}

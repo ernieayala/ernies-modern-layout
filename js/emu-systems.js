@@ -3,7 +3,7 @@ export const SYSTEM = [
 	'CoC7',
 	'dnd5e',
 	'morkborg',
-	'pf2e',
+	// 'pf2e',
 	'sfrpg',
 	'twodsix'
 ]

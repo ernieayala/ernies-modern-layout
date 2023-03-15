@@ -114,6 +114,7 @@
 
 				.dice-tray__stacked {
 					@include layout {
+						gap: $global-space-pf;
 						height: $global-space-button;
 						margin: 0;
 					}
@@ -123,11 +124,8 @@
 					@include layout {
 						font-size: $global-font-size-xs;
 						margin: 0;
+						min-height: 0;
 						padding: 0;
-					}
-
-					&.dice-tray__disadvantage {
-						border-block-start: 1px solid RGB($emu-color-border);
 					}
 				}
 			}

@@ -112,7 +112,10 @@ body.-emu.system-alienrpg .chat-message .critchat{border-color:transparent;color
 body.-emu.system-alienrpg .dice-tooltip{background-color:transparent;border-color:transparent}
 .-emu-layout body.-emu.system-alienrpg .dice-tooltip{border-radius:0;border-style:solid;border-width:0}
 body.-emu.system-alienrpg .dice-tooltip .dice-rolls{background-color:transparent;color:inherit}
-body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll,body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.max,body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.min{display:flex;filter:none}
+.-emu-layout body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll,.-emu-layout body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.max,.-emu-layout body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.min{align-items:center;display:flex;justify-content:center;filter:none}
+body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll{color:RGB(var(--emu-color-text,9,14,16))}
+body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.max{color:RGB(var(--emu-color-positive-darkest,8,113,73))}
+body.-emu.system-alienrpg .dice-tooltip .dice-rolls .roll.min{color:RGB(var(--emu-color-negative-darkest,132,12,36))}
 body.-emu.system-alienrpg .dice-tooltip .part-header{background-color:transparent;color:inherit}
 .-emu-layout body.-emu.system-alienrpg .dice-tooltip .roll>img{width:24px}
 body.-emu.system-alienrpg .inline-roll .dice-tooltip{background:RGBA(var(--emu-color-background-darkest,9,14,16),.9);border-color:RGB(var(--emu-color-border,33,50,52));box-shadow:none;color:RGB(var(--emu-color-text-lightest,255,255,255))}

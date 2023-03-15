@@ -49,6 +49,8 @@ body.-emu #effects-config .form-footer{background-color:transparent}
 body.-emu #effects-config .fxmaster-groups-list__collapse,body.-emu #effects-config .fxmaster-list__collapse{text-shadow:none}
 body.-emu #effects-config .fxmaster-groups-list__collapse:hover,body.-emu #effects-config .fxmaster-list__collapse:hover{color:RGB(var(--emu-color-primary,229,117,9))}
 .-emu-layout body.-emu #effects-config .fxmaster-groups-list__collapse,.-emu-layout body.-emu #effects-config .fxmaster-list__collapse{font-size:var(--emu-font-size-md, 14px)}
+body.-emu #filters-config ol.fxmaster-list{border:none}
+body.-emu #filters-config ol.fxmaster-list li{color:RGB(var(--emu-color-text-lightest,255,255,255))}
 .-emu-layout body.-emu #filters-config .directory-header{align-items:center;font-size:var(--emu-font-size-sm, 12px);line-height:1.2;gap:var(--emu-space-base,4px);justify-content:center;margin:0;padding:var(--emu-space-base,4px)}
 body.-emu #filters-config .directory-header .layer-toggle{color:RGB(var(--emu-color-text-lightest,255,255,255))}
 .-emu-layout body.-emu #filters-config .directory-header .layer-toggle{align-items:center;display:flex;gap:var(--emu-space-base,4px)}
@@ -58,8 +60,4 @@ body.-emu #filters-config .directory-item{border-block-end:1px solid RGB(var(--e
 .-emu-layout body.-emu #filters-config .directory-item{padding:var(--emu-space-base,4px)}
 body.-emu #filters-config .directory-item header{color:RGB(var(--emu-color-text-lightest,255,255,255));text-shadow:none}
 body.-emu #filters-config .directory-item header label:hover{color:RGB(var(--emu-color-primary,229,117,9))}
-body.-emu #filters-config .directory-item ol.config{border:none}
-body.-emu #filters-config .directory-item ol.config li{color:RGB(var(--emu-color-text-lightest,255,255,255))}
-.-emu-layout body.-emu #filters-config .directory-item ol.config li{display:flex;gap:var(--emu-space-base,4px)}
-body.-emu #filters-config .directory-item ol.config li .range-value{color:RGB(var(--emu-color-text-lightest,255,255,255))}
 body.-emu #filters-config .form-footer{background-color:transparent}

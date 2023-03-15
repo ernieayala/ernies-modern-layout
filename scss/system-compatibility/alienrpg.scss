@@ -185,8 +185,24 @@
 			.roll,
 			.roll.max,
 			.roll.min {
-				display: flex;;
-				filter: none;
+				@include layout {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+					filter: none;
+				}
+			}
+
+			.roll {
+				color: RGB($emu-color-text);
+			}
+
+			.roll.max {
+				color: RGB($emu-color-positive-darkest);
+			}
+
+			.roll.min {
+				color: RGB($emu-color-negative-darkest);
 			}
 		}
 

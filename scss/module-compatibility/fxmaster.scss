@@ -206,6 +206,15 @@
 	}
 
 	#filters-config {
+
+		ol.fxmaster-list {
+			border: none;
+
+			li {
+				color: RGB($emu-color-text-lightest);
+			}
+		}
+
 		.directory-header {
 			@include layout {
 				align-items: center;
@@ -252,23 +261,6 @@
 				label {
 					&:hover {
 						color: RGB($emu-color-primary);
-					}
-				}
-			}
-
-			ol.config {
-				border: none;
-
-				li {
-					color: RGB($emu-color-text-lightest);
-
-					@include layout {
-						display: flex;
-						gap: $global-space-base;
-					}
-
-					.range-value {
-						color: RGB($emu-color-text-lightest);
 					}
 				}
 			}

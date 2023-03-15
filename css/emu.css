@@ -106,7 +106,6 @@ body{background-color:RGB(var(--emu-color-background-darkest,9,14,16));backgroun
 .-emu-layout body.game{display:flex;justify-content:flex-start}
 .-emu-layout body:not(.background){bottom:0;left:0;position:fixed;right:0;top:0}
 body #emu-overlay.-hide{opacity:0!important;pointer-events:none}
-body ::selection{background-color:RGBA(var(--emu-color-black,0,0,0),.5)}
 .-emu-layout body.-emu #sidebar .directory .directory-list,.-emu-layout body.-emu .dialog .directory .directory-list,.-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-list{display:flex;flex:1 1 auto;flex-direction:column;gap:var(--emu-space-base,4px);max-height:100%;min-height:1px;overflow-y:auto;padding:0 var(--emu-space-sm,8px)}
 body.-emu #sidebar .directory .directory-list .subdirectory,body.-emu .dialog .directory .directory-list .subdirectory,body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-list .subdirectory{background-color:RGB(var(--emu-color-folder-subdirectory,209,214,216));background-image:none;border-color:RGB(var(--emu-color-primary,229,117,9))}
 .-emu-layout body.-emu #sidebar .directory .directory-list .subdirectory,.-emu-layout body.-emu .dialog .directory .directory-list .subdirectory,.-emu-layout body.-emu .window-app:not(.-emu-clean-sheet) .directory .directory-list .subdirectory{display:flex;border-radius:0 0 0 var(--emu-border-radius-default,0);border-inline-start-style:solid;border-width:0;border-inline-start-width:4px;flex-direction:column;gap:var(--emu-space-base,4px);margin:0;padding:var(--emu-space-base,4px);width:100%}
@@ -581,11 +580,12 @@ body.-emu #sidebar{background-color:RGBA(var(--emu-color-background-darkest,9,14
 .-emu-layout.-emu-subtle-layout-sidebar-locked body.-emu #sidebar{opacity:1;right:0}
 .-emu-layout.-emu-subtle-layout-sidebar-locked body.-emu #sidebar #emu-sidebar-lock{display:none}
 body.-emu #sidebar #emu-sidebar-lock{display:none}
+body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet){background-color:RGBA(var(--emu-color-background-darkest,9,14,16),var(--emu-background-opacity-sidebar,.8));background-image:var(--emu-image-background-darkest,none);border-color:transparent}
 .-emu-layout body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet){border-radius:var(--emu-border-radius-default,0);height:auto;min-height:50vh;min-width:var(--emu-space-sidebar,320px);top:initial}
 .-emu-layout body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet).window-app:not(.-emu-clean-sheet) .window-content{padding:0}
 body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet) .window-content{background-color:transparent}
 body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet) .sidebar-popout{border-color:transparent}
-.-emu-layout body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet) .sidebar-popout{border-style:solid;border-width:0;height:auto;min-height:initial;min-width:1px}
+.-emu-layout body.-emu .sidebar-popout.window-app:not(.-emu-clean-sheet) .sidebar-popout{border-style:solid;border-width:0;height:auto;min-height:initial;min-width:1px;top:initial}
 .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log,.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log{flex:1 1 auto;height:auto;list-style:none;margin:0;padding:0;overflow-y:auto;overflow-x:hidden}
 body.-emu #sidebar [data-tab=chat] #chat-log .message,body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message{background-color:RGB(var(--emu-color-background-chat-message,230,233,235));background-image:var(--emu-image-background-light,none);box-shadow:none;border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text,9,14,16))}
 .-emu-layout body.-emu #sidebar [data-tab=chat] #chat-log .message,.-emu-layout body.-emu .sidebar-popout[id=chat-popout] .window-content [data-tab=chat] #chat-log .message{border-radius:var(--emu-border-radius-default,0);border-style:solid;border-width:1px;display:flex;flex-direction:column;flex-wrap:nowrap;gap:var(--emu-space-base,4px);font-family:inherit;font-size:var(--emu-font-size-md, 14px);font-weight:400;padding:var(--emu-space-base,4px);margin:var(--emu-space-base,4px)}
@@ -791,11 +791,11 @@ body.-emu #client-settings.window-app.form section.content .settings-list{border
 .-emu-layout body.-emu #client-settings.window-app.form .sheet-footer{flex:0 0 auto;gap:var(--emu-space-base,4px)}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body{display:flex;flex-direction:column;max-height:100%;overflow:hidden}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body.thumbs .filepicker-body .file{padding:var(--emu-space-base,4px)}
-.-emu-layout body.-emu .filepicker.window-app .filepicker-body.thumbs .filepicker-body .file img{margin-inline-end:var(--emu-space-base,4px);max-width:var(--emu-space-button,32px);max-height:var(--emu-space-button,32px)}
+.-emu-layout body.-emu .filepicker.window-app .filepicker-body.thumbs .filepicker-body .file img{margin-inline-end:var(--emu-space-sm,8px);max-width:var(--emu-space-button,32px);max-height:var(--emu-space-button,32px)}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .tiles-list{gap:var(--emu-space-base,4px);grid-template-columns:repeat(5,1fr)}
-body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .file{border-color:transparent}
-.-emu-layout body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .file{align-items:center;background-color:RGBA(var(--emu-color-background-darkest,9,14,16),.05);border-style:solid;border-width:0;display:flex;flex:0 0 auto;justify-content:center;max-width:100%;min-height:100px;padding:var(--emu-space-base,4px);width:100%}
-.-emu-layout body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .file img{max-height:100%;max-width:100%}
+body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .tiles-list .file{border-color:transparent}
+.-emu-layout body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .tiles-list .file{align-items:center;background-color:RGBA(var(--emu-color-background-darkest,9,14,16),.05);border-style:solid;border-width:0;display:flex;flex:0 0 auto;justify-content:center;max-width:100%;min-height:100px;padding:var(--emu-space-base,4px);width:100%}
+.-emu-layout body.-emu .filepicker.window-app .filepicker-body.tiles .filepicker-body .tiles-list .file img{max-height:100%;max-width:100%}
 body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .directory .file{border-color:RGB(var(--emu-color-border,33,50,52))}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .directory .file{border-width:0;border-block-end-style:solid;border-block-end-width:1px;display:grid;gap:var(--emu-space-base,4px);grid-template-areas:"title" "image";grid-template-rows:min-content 1fr;justify-content:center;padding:var(--emu-space-base,4px)}
 body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .directory .file .filename{background-color:RGBA(var(--emu-color-background-darkest,9,14,16),.8);color:RGB(var(--emu-color-text-lightest,255,255,255))}
@@ -808,7 +808,7 @@ body.-emu .filepicker.window-app .filepicker-body.images .filepicker-body .direc
 body.-emu .filepicker.window-app .filepicker-body .filepicker-header .display-modes .display-mode.active{background-color:RGB(var(--emu-color-primary,229,117,9));color:RGB(var(--emu-color-text-lightest,255,255,255))}
 body.-emu .filepicker.window-app .filepicker-body .filepicker-header .units{color:RGB(var(--emu-color-text,9,14,16))}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-header .units{display:block;flex:0 0 auto;font-size:var(--emu-font-size-sm, 12px);line-height:initial;margin:0}
-.-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body{display:flex;flex-direction:column;flex:1 1 auto;gap:var(--emu-space-base,4px)}
+.-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body{display:grid;flex:1 1 auto;gap:var(--emu-space-base,4px);grid-template-rows:1fr}
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory{background:0 0;border-color:transparent}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory{border-radius:0;border-style:solid;border-width:0;flex:1;min-height:100px;list-style:none;overflow-x:hidden;overflow-y:auto;position:relative;margin:0;width:100%}
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory+.directory{border-color:RGB(var(--emu-color-folder-directory,83,100,102))}
@@ -821,8 +821,8 @@ body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .d
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir:focus,body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file:focus{box-shadow:inset 0 0 0 2px RGB(var(--emu-color-primary,229,117,9)),inset 0 0 0 3px RGB(var(--emu-color-white,255,255,255)),0 1px 2px 0 RGBA(var(--emu-color-black,0,0,0),.3)}
 body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir{background-color:RGBA(var(--emu-color-folder-header,167,176,178),.9);border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text,9,14,16))}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .dir{border-block-end-style:solid;border-block-end-width:1px}
-body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file{background-color:RGBA(var(--emu-color-folder-header,167,176,178),.9);border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text-lightest,255,255,255))}
-.-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file{border-block-end-style:solid;border-block-end-width:1px}
+body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file{background-color:RGBA(var(--emu-color-folder-header,167,176,178),.9);border-color:RGB(var(--emu-color-border,33,50,52));color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-body .directory .file{border-block-end-style:solid;border-block-end-width:1px;padding:var(--emu-space-base,4px) var(--emu-space-sm,8px)}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-footer{flex:0 0 auto;position:relative}
 .-emu-layout body.-emu .filepicker.window-app .filepicker-body .filepicker-footer:empty{display:none}
 .-emu-layout body.-emu .journal-show-dialog .form-group-stacked{text-align:left}

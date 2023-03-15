@@ -428,6 +428,10 @@
 }
 
 .sidebar-popout.window-app:not(.-emu-clean-sheet) {
+	background-color: RGBA($emu-color-background-darkest, $global-background-opacity-sidebar);
+	background-image: $global-image-background-darkest;
+	border-color: transparent;
+
 	@include layout {
 		border-radius: $global-border-radius-default;
 		height: auto;
@@ -455,6 +459,7 @@
 			height: auto;
 			min-height: initial;
 			min-width: 1px;
+			top: initial;
 		}
 	}
 }
