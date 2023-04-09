@@ -513,7 +513,7 @@ body.-emu .window-app .window-resizable-handle{background-color:RGB(var(--emu-co
 .-emu-layout body.-emu .window-app .window-resizable-handle>i{transform:rotate(45deg)}
 .-emu-layout body.-emu .sheet .sheet-header{display:flex;gap:var(--emu-space-base,4px);position:relative}
 body.-emu .sheet .sheet-header>img{border-color:transparent}
-.-emu-layout body.-emu .sheet .sheet-header>img{border-style:solid;border-width:0;cursor:pointer;flex:0 0 auto;height:auto;margin:0;object-fit:cover;object-position:50% 50%;position:relative}
+.-emu-layout body.-emu .sheet .sheet-header>img{border-style:solid;border-width:0;cursor:pointer;flex:0 0 auto;margin:0;object-fit:cover;object-position:50% 50%;position:relative}
 body.-emu .sheet .sheet-header>h1{border-color:transparent}
 .-emu-layout body.-emu .sheet .sheet-header>h1{border-style:solid;border-width:0;flex:1 1 auto;margin:0}
 body.-emu .sheet .sheet-header>h1 input{background-color:RGBA(var(--emu-color-background-light,125,138,140),.2)}
