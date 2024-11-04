@@ -13,6 +13,7 @@
 		padding: 0;
 		pointer-events: all;
 		transition: opacity $global-transition-time-base $global-transition-type-link;
+		width: 180px;
 		z-index: $global-z-index-fixed;
 
 		&.hidden {

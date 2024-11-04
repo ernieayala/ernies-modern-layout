@@ -268,9 +268,26 @@
 					}
 				}
 
-				.create-folder,
-				.create-entity, {
+				.create-button {
 					@extend %control-button;
+
+					.fa-plus {
+						background: transparent;
+						color: inherit;
+
+						@include layout {
+							align-items: center;
+							border-radius: 50%;
+							display: flex;
+							font-size: 8px;
+							height: 12px;
+							justify-content: center;
+							position: absolute;
+							right: -2px;
+							top: -2px;
+							width: 12px;
+						}
+					}
 				}
 			}
 
@@ -304,29 +321,6 @@
 			.directory-item.context {
 				background-color: RGB($emu-color-primary) !important; // why the fuck...
 				color: RGB($emu-color-text-lightest);
-			}
-		}
-
-		.create-folder,
-		.create-document {
-			@extend %control-button;
-
-			.fa-plus {
-				background: transparent;
-				color: inherit;
-
-				@include layout {
-					align-items: center;
-					border-radius: 50%;
-					display: flex;
-					font-size: 8px;
-					height: 12px;
-					justify-content: center;
-					position: absolute;
-					right: -2px;
-					top: -2px;
-					width: 12px;
-				}
 			}
 		}
 

@@ -1,0 +1,1210 @@
+@import "../base";
+
+@keyframes stutter {
+	0% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	10% {
+		transform: translate(-1px, -1px);
+		opacity: 0.9;
+	}
+	20% {
+		transform: translate(1px, 1px);
+		opacity: 0.8;
+	}
+	30% {
+		transform: translate(-1px, 0px);
+		opacity: 1;
+	}
+	40% {
+		transform: translate(1px, -1px);
+		opacity: 0.9;
+	}
+	50% {
+		transform: translate(0px, 1px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../../fonts/GillSans.woff2") format("woff2"),
+			 url("../../fonts/GillSans.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Cormorant";
+	src: url("../../fonts/Cormorant-Regular.woff2") format("woff2"),
+			 url("../../fonts/Cormorant-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@include system("vtm5e") {
+	prose-mirror {
+		@include layout {
+			min-height: 0;
+		}
+
+		.editor-content {
+			@extend %input-textarea;
+		}
+
+		button.icon.toggle {
+			@extend %control-button;
+
+			@include layout {
+				right: $global-space-base;
+				position: absolute;
+				top: $global-space-base;
+				z-index: 1;
+			}
+		}
+
+		.editor-menu {
+			@include layout {
+				z-index: 1;
+			}
+		}
+	}
+
+	.-gap-base {
+		gap: $global-space-base;
+	}
+
+	.-gap-sm {
+		gap: $global-space-sm;
+	}
+
+	.-gap-xl {
+		gap: $global-space-xl;
+	}
+
+	.-player & {
+		#ui-top.offset {
+			margin-inline-start: calc(-1 * (180px + #{$global-space-sm}));
+		}
+
+		#nav-toggle,
+		.scene-control[data-control="token"],
+		.scene-control[data-control="measure"],
+		.scene-control[data-control="notes"],
+		#tools-panel-token,
+		#hotbar,
+		#pause,
+		#chat-controls .chat-control-icon,
+		#sidebar-tabs .item[data-tab="combat"],
+		#sidebar-tabs .item[data-tab="items"],
+		#sidebar-tabs .item[data-tab="tables"],
+		#sidebar-tabs .item[data-tab="cards"],
+		#settings h2,
+		#game-details,
+		#settings-documentation,
+		#settings-game button[data-action="controls"],
+		#settings-game button[data-action="modules"],
+		#settings-game button[data-action="tours"],
+		.tab[data-category="core"] > .submenu,
+		.tab[data-category="core"] .form-group[data-setting-id="core.noCanvas"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.language"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.colorScheme"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.fontSize"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.photosensitiveMode"],
+		.tab[data-category="system"],
+		#client-settings .item[data-tab="system"],
+		#client-settings .count,
+		.lock-btn {
+			display: none !important;
+		}
+	}
+
+	.sheet-banner {
+		@include layout {
+			display: none;
+		}
+	}
+
+	#sidebar #actors,
+	.sidebar-popout[id="actors"] .window-content {
+		.directory .directory-item > img {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.group-item {
+			@include layout {
+				cursor: default;
+				padding: 0;
+			}
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: RGB($emu-color-folder-directory);
+				box-shadow: none;
+				color: RGB($emu-color-text-lightest);
+			}
+
+			// in case we want the collapse back
+			// &.collapsed {
+			// 	.group-header.coterie ~ .subdirectory {
+			// 		@include layout {
+			// 			display: none;
+			// 		}
+			// 	}
+			// }
+		}
+
+		.group-header.coterie {
+			background-color: transparent !important;
+
+			@include layout {
+				align-items: center;
+				border-width: 0;
+				line-height: 1;
+				padding: $global-space-base $global-space-sm;
+				width: 100%;
+
+				~ .subdirectory:empty,
+				h3 > i {
+					display: none;
+				}
+			}
+
+			.create-button {
+				@extend %control-button;
+
+				@include layout {
+					flex: 0 0 auto;
+					margin: 0;
+				}
+
+				&:hover {
+					color: RGB($emu-color-text-lightest);
+				}
+			}
+		}
+	}
+
+	.sheet.wod5e.application {
+		&.locked {
+			.charname input,
+			.header-info-group input,
+			.header-info-group .header-details-edit,
+			.resource-value-empty,
+			.resource-control,
+			.item-edit,
+			.item-delete,
+			.item-create,
+			.discipline-delete,
+			.edit-skill,
+			.-boons {
+				@include layout {
+					display: none;
+				}
+			}
+
+			.attributes,
+			.skills,
+			.item-header.-powers {
+				.resource-value-step {
+					@include layout {
+						cursor: default;
+						pointer-events: none;
+					}
+				}
+			}
+		}
+
+		&:not(.locked) {
+			.charname span,
+			.header-info-group .header-details {
+				@include layout {
+					display: none;
+				}
+			}
+		}
+
+		.window-content {
+			background-image: url("../../img/vtm/vtm-background-img.jpg");
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: 2000px;
+		}
+
+		.tab[data-tab="disciplines"] {
+			@include layout {
+				padding: $global-space-base $global-space-xl $global-space-xl;
+			}
+		}
+
+		.tab[data-tab="features"] {
+			@include layout {
+				padding: $global-space-md $global-space-xl $global-space-xl;
+
+				> .flexcol > .flexrow {
+					align-items: start;
+				}
+
+				.resource-value-step {
+					cursor: default;
+					pointer-events: none;
+				}
+
+				.items-list .item-name {
+					flex: 1 1 100%;
+					width: 1px;
+
+					span {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						text-wrap: nowrap;
+					}
+				}
+			}
+
+			.item.-flaw {
+				--emu-color-primary: 36,98,121;
+			}
+		}
+
+		.tab[data-tab="experience"] {
+			@include layout {
+				.item-level {
+					flex: 1 1 auto;
+				}
+			}
+		}
+
+		.tab[data-tab="biography"],
+		.tab[data-tab="notepad"],
+		.tab[data-tab="experience"],
+		.tab[data-tab="equipment"] {
+			@include layout {
+				padding: $global-space-md $global-space-xl $global-space-xl;
+			}
+		}
+
+		.item-control {
+			@extend %control-button;
+		}
+
+		.actor-header {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 0;
+				padding: 0 $global-space-xl;
+
+				.resource-counter,
+				.resource-value {
+					width: 200px;
+				}
+
+				input {
+					max-width: 200px;
+				}
+			}
+		}
+
+		.header-row-top {
+			@include layout {
+				align-items: center;
+				flex-wrap: nowrap;
+				gap: $global-space-sm;
+
+				.flexcol + .flexcol {
+					flex: 1 1 auto;
+				}
+
+				.flexrow {
+					display: inline-flex;
+					flex: 0 0 auto;
+				}
+
+				.header-elements {
+					gap: $global-space-md;
+				}
+			}
+		}
+
+		.header-row-bottom {
+			@include layout {
+				align-items: start;
+				flex-wrap: nowrap;
+				justify-content: center;
+				margin: 0;
+			}
+		}
+
+		.profile-img-zone {
+			@include layout {
+				flex: 0 0 auto;
+				height: 78px;
+				position: relative;
+				width: 78px;
+
+				&::after {
+					background-image: url("../../img/vtm/vtm-portrait.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+					bottom: 0;
+					content: "";
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 1;
+				}
+
+				.profile-img {
+					border-radius: 50%;
+					height: 100%;
+					width: 100%;
+				}
+
+				.lock-btn {
+					border-radius: 50%;
+					font-size: $global-font-size-md;
+					height: 32px;
+					left: 0;
+					padding: 0;
+					position: absolute;
+					top: 0;
+					width: 32px;
+					z-index: 2;
+				}
+			}
+		}
+
+		.charname {
+				@include layout {
+					border-width: 0;
+					display: flex;
+					margin: 0;
+				}
+
+				input {
+					@include layout {
+						font-size: $global-font-size-xxl;
+						height: auto;
+						text-align-last: left;
+						text-transform: uppercase;
+						width: auto;
+					}
+				}
+
+				span {
+					color: RGB($emu-color-text);
+
+					@include layout {
+						font-family: "Cormorant";
+						font-size: 32px;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+		.header-info-group {
+			@include layout {
+				display: flex;
+				flex: 0 0 auto;
+				gap: $global-space-base;
+			}
+
+			.header-details,
+			.header-details-edit {
+				@include layout {
+					align-items: center;
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+				}
+			}
+
+			input {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					display: inline-block;
+					height: auto;
+					font-size: $global-font-size-lg;
+					text-transform: uppercase;
+					width: 50%;
+				}
+			}
+
+			span {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-md;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.resource {
+			@include layout {
+				align-items: center;
+				display: flex;
+				margin: 0;
+			}
+
+			&.rouse,
+			&.frenzy {
+				@include layout {
+					align-self: end;
+					border-width: 0;
+					display: inline-flex;
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+					position: relative;
+
+					&::before {
+						background-image: url("../../img/vtm/vtm-blood-stats.png");
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: "";
+						height: 68px;
+						left: 50%;
+						position: absolute;
+						top: 50%;
+						transform: translateX(-50%) translateY(-50%);
+						width: 68px;
+						margin-block: -14px;
+					}
+
+					.resource-content {
+						display: flex;
+						justify-content: center;
+					}
+
+					.resource-label {
+						text-align: center;
+						white-space: nowrap;
+						z-index: 1;
+					}
+
+					button {
+						background-color: transparent;
+						border-radius: 50%;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						height: 42px;
+						padding: 0;
+						text-shadow: none;
+						text-transform: uppercase;
+						width: 42px;
+
+						&:hover,
+						&:focus,
+						&:active {
+							background: radial-gradient(circle, RGB($emu-color-primary) 0%, RGB(0,0,0,0) 75%);
+							box-shadow: none;
+						}
+					}
+				}
+
+				&.-active {
+					.resource-label {
+						animation: stutter 0.3s steps(2, start) infinite;
+						color: RGA($emu-color-primary);
+					}
+				}
+			}
+
+			&.exp {
+				@include layout {
+					align-self: end;
+					border-width: 0;
+					display: inline-flex;
+					flex: 0 0 90px;
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+					position: relative;
+
+					.resource-content {
+						color: RGB($emu-color-text-darker);
+						flex-wrap: nowrap;
+						font-size: 18px;
+
+						input {
+							color: RGB($emu-color-primary);
+							font-size: 26px;
+							min-width: 0;
+							padding: 0 $global-space-xs;
+
+							~ input {
+								color: RGB($emu-color-text-darker);
+								font-size: 18px;
+							}
+						}
+
+						span {
+							flex: 0 0 auto;
+						}
+					}
+				}
+			}
+
+			&.health,
+			&.willpower,
+			&.humanity,
+			&.hunger,
+			&.blood-potency,
+			&.blood-resonance {
+				@include layout {
+					gap: $global-space-sm;
+					justify-content: end;
+					min-height: $global-space-button-sm;
+					padding: 0;
+
+					.resource-content {
+						width: 200px;
+					}
+				}
+			}
+
+			&.health,
+			&.willpower {
+				> .flexrow {
+					@include layout {
+						align-items: center;
+						flex-wrap: nowrap;
+						gap: $global-space-base;
+					}
+				}
+			}
+
+			&.blood-potency {
+				.resource-value {
+					@include layout {
+						width: 130px;
+					}
+				}
+			}
+
+			&.blood-resonance {
+				> span {
+					@include layout {
+						align-items: center;
+						flex: 0 0 130px;
+						flex-wrap: nowrap;
+						gap: $global-space-xs;
+						width: 130px;
+					}
+				}
+			}
+
+			.resource-label {
+				@include layout {
+					flex: 0 0 auto;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-sm;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.resource-counter,
+		.resource-value {
+			@include layout {
+				display: flex;
+				flex-wrap: nowrap;
+				gap: $global-space-base;
+				margin: 0;
+			}
+		}
+
+		.resource-value {
+			@include layout {
+				align-self: center;
+			}
+		}
+
+		.resource-counter-step {
+			background: none;
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+			color: transparent;
+			text-shadow: none;
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				cursor: pointer;
+				display: inline-flex;
+				height: 16px;
+				margin: 0;
+				position: relative;
+				width: 16px;
+
+				&::before {
+					bottom: 0;
+					content: "";
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+
+			&:hover {
+				border-color: RGB($emu-color-primary);
+			}
+
+			&[data-state="/"] {
+				&::before {
+					background:
+						linear-gradient(
+							135deg,
+							transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%);
+				}
+			}
+
+			&[data-state="x"] {
+				&::before {
+					background:
+						linear-gradient(
+							45deg, transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%),
+						linear-gradient(
+							135deg,
+							transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%);
+				}
+			}
+
+			&[data-state="-"] {
+				background-color: RGB($emu-color-primary);
+			}
+		}
+
+		.hunger-value,
+		.resource-value-step,
+		.resource-value-empty {
+			background: none;
+			background-color: RGB($emu-color-background-darkest);
+			border-color: RGB($emu-color-border);
+			color: transparent;
+			text-shadow: none;
+
+			@include layout {
+				border-radius: 50%;
+				border-style: solid;
+				border-width: 1px;
+				cursor: pointer;
+				display: inline-flex;
+				height: 12px;
+				margin: 0;
+				position: relative;
+				width: 12px;
+			}
+
+			&:hover {
+				border-color: RGB($emu-color-primary);
+			}
+
+			&.active {
+				background-color: RGB($emu-color-primary);
+				border-color: RGB($emu-color-primary);
+			}
+		}
+
+		.resource-value-empty {
+			background-color: RGB($emu-color-border);
+		}
+
+		.resource-control {
+			@extend %control-button;
+		}
+
+		.resource-label-fancy {
+			@include layout {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				flex-wrap: nowrap;
+				margin-block-start: $global-space-sm;
+				margin-block-end: $global-space-base;
+				width: 100%;
+			}
+
+			.resource-label {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+					font-family: "Cormorant";
+					font-size: 18px;
+					font-weight: 700;
+					gap: $global-space-sm;
+					position: relative;
+					text-transform: uppercase;
+					z-index: 3;
+				}
+
+				&::before,
+				&::after {
+					@include layout {
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: "";
+						flex: 0 0 auto;
+						height: 18px;
+						width: 26px
+					}
+				}
+
+				&::before {
+					@include layout {
+						background-image: url("../../img/vtm/sheet-inner-left.png");
+						background-position-x: 8px;
+					}
+				}
+
+				&::after {
+					@include layout {
+						background-image: url("../../img/vtm/sheet-inner-right.png");
+					}
+				}
+			}
+
+			&::before,
+			&::after {
+				@include layout {
+					background-repeat: no-repeat;
+					background-size: contain;
+					content: "";
+					flex: 0 0 auto;
+					height: 18px;
+					margin-block-start: -1px;
+					width: 50px
+				}
+			}
+
+			&::before {
+				@include layout {
+					background-image: url("../../img/vtm/sheet-divider-outer-left.png");
+					background-position-x: 8px;
+				}
+			}
+
+			&::after {
+				@include layout {
+					background-image: url("../../img/vtm/sheet-divider-outer-right.png");
+				}
+			}
+
+			hr {
+				background-color: RGB($emu-color-primary-darkest);
+				background-image: none;
+
+				@include layout {
+					border-width: 0;
+					flex: 1 1 auto;
+					height: 1px;
+					margin: 0;
+
+					&:first-of-type {
+						margin-inline-end: -12px;
+						margin-inline-start: -5px;
+					}
+
+					&:last-of-type {
+						margin-inline-end: -5px;
+						margin-inline-start: -12px;
+					}
+				}
+			}
+		}
+
+		.stats-container {
+			@include layout {
+				gap: $global-space-base;
+				margin: 0;
+				padding: 0 $global-space-xl;
+			}
+		}
+
+		.stats-content {
+			@include layout {
+				gap: $global-space-xl;
+				margin: 0;
+				width: 100%;
+			}
+		}
+
+		.stats-list {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+				gap: $global-space-sm;
+			}
+
+			&.skills {
+				background-color: RGB($emu-color-background);
+
+				@include layout {
+					gap: 0;
+				}
+			}
+
+			.attribute {
+				background-color: RGB($emu-color-background);
+
+				@include layout {
+					gap: $global-space-sm;
+					margin: 0;
+					padding: 0;
+
+					.resource-label {
+						cursor: pointer;
+						flex: 1 1 auto;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						line-height: 1;
+						padding: $global-space-sm;
+						padding-inline-start: $global-space-sm;
+						text-align: start;
+						text-shadow: none;
+						text-transform: uppercase;
+
+						&:hover {
+							color: RGB($emu-color-primary);
+						}
+					}
+
+					.resource-value {
+						flex: 0 0 auto;
+						padding-inline-end: $global-space-sm;
+					}
+				}
+			}
+
+			.skill {
+				@include layout {
+					gap: $global-space-sm;
+					margin: 0;
+					padding: 0;
+					position: relative;
+
+					.resource-label {
+						display: flex;
+						flex: 1 1 auto;
+						position: relative;
+
+						> .rollable {
+							cursor: pointer;
+							flex: 1 1 100%;
+							font-family: "Gill Sans";
+							font-size: $global-font-size-sm;
+							line-height: 1;
+							padding: $global-space-sm;
+							padding-inline-start: $global-space-sm;
+							text-align: start;
+							text-shadow: none;
+							text-transform: uppercase;
+
+							&:hover {
+								color: RGB($emu-color-primary);
+							}
+						}
+					}
+
+					.specialty {
+						font-size: $global-font-size-xs;
+						font-weight: 400;
+						left: calc(-100% + #{$global-space-sm});
+						position: relative;
+						top: 0;
+					}
+
+					.resource-value {
+						flex: 0 0 auto;
+						padding-inline-end: $global-space-sm;
+					}
+				}
+
+				.edit-skill {
+					@include layout {
+						font-size: $global-font-size-sm;
+						left: calc(-1 * #{$global-space-md});
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		.stats-container .field-headers,
+		.subtle-header {
+			color: RGB($emu-color-text-darker);
+
+			@include layout {
+				font-family: "Cormorant";
+				font-size: $global-font-size-md;
+				gap: $global-space-xl;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+
+		.subtle-header {
+			@include layout {
+				align-items: center;
+				display: flex;
+				gap: $global-space-sm;
+			}
+
+			hr {
+				background-image: none;
+				border-color: RGB($emu-color-text-darker);
+
+				@include layout {
+					flex: 1 1 100%;
+				}
+			}
+		}
+	}
+
+	.sheet.wod5e.application .sheet-tabs {
+		background-image: url("../../img/vtm/vtm-marble-red.jpg");
+		background-position: bottom center;
+		background-repeat: repeat;
+		background-size: 100% auto;
+
+		@include layout {
+			border: 1px solid RGB($emu-color-primary-darkest);
+			margin: $global-space-sm 0 0;
+		}
+
+		.item {
+			bacground: none;
+			color: RGB($emu-color-text-darker);
+			text-shadow: none;
+
+			@include layout {
+				border-width: 0;
+				cursor: pointer;
+				flex: 1 1 auto;
+				font-family: "Cormorant";
+				font-size: $global-font-size-lg;
+				font-weight: 700;
+				opacity: 0.6;
+				padding: $global-space-sm 0;
+				text-align: center;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&.active {
+				background: none;
+				color: RGB($emu-color-text);
+				opacity: 1;
+			}
+		}
+	}
+
+	.sheet.wod5e.application .items-list {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			gap: $global-space-base;
+		}
+
+		.item-header:not(.item) {
+			@include layout {
+				align-items: center;
+				border-width: 0;
+				display: flex;
+				gap: $global-space-xl;
+				margin: $global-space-sm 0 0;
+				min-height: $global-space-button-sm;
+				padding: 0 $global-space-md;
+			}
+
+			.item-name {
+				color: RGB($emu-color-text);
+				text-shadow: none;
+
+				@include layout {
+					flex: 0 0 auto;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-lg;
+					text-transform: uppercase;
+				}
+
+				&:hover {
+					color: RGB($emu-color-primary);
+				}
+			}
+
+			.resource-value {
+				@include layout {
+					flex: 1 1 100%;
+				}
+			}
+		}
+
+		.item {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-primary-darkest);
+
+			@include layout {
+				align-items: center;
+				border-style: solid;
+				border-width: 1px;
+				display: flex;
+				flex-wrap: nowrap;
+				gap: $global-space-sm;
+				line-height: 1;
+				margin: 0;
+				min-height: $global-space-button-lg;
+				padding: 0 $global-space-md;
+				width: 100%;
+			}
+
+			.item-image {
+				display: none;
+			}
+
+			.item-name {
+				color: RGB($emu-color-text-darker);
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 30%;
+					font-size: $global-font-size-lg;
+					margin: 0;
+					min-height: $global-space-button-lg;
+					text-transform: uppercase;
+				}
+			}
+
+			.item-rouse,
+			.item-level {
+				@include layout {
+					font-family: "Gill Sans";
+					font-size: $global-font-size-sm;
+					text-transform: uppercase;
+				}
+			}
+
+			.item-rouse,
+			.resource-value {
+				@include layout {
+					flex: 1 1 auto;
+				}
+			}
+
+			.item-level,
+			.resource-value {
+				@include layout {
+					justify-content: end;
+
+					~ .item-controls {
+						flex: 0 0 auto;
+					}
+				}
+			}
+		}
+
+		.item-controls {
+			@include layout {
+				display: flex;
+				flex: 1 1 auto;
+				gap: $global-space-xs;
+				justify-content: end;
+			}
+		}
+
+		+ .item-create {
+			margin-block-start: $global-space-base;
+		}
+	}
+
+	.sheet.wod5e.application .detail-row {
+		@include layout {
+			gap: $global-space-base;
+		}
+
+		.field-header {
+			color: RGB($emu-color-primary);
+
+			@include layout {
+				font-family: "Gill Sans";
+				font-size: $global-font-size-sm;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+
+		input {
+			@include layout {
+				width: 100%;
+			}
+		}
+	}
+
+	.system-rollable {
+		text-shadow: none;
+
+		@include layout {
+			cursor: pointer;
+		}
+
+		&.-red {
+			&:hover {
+				color: RGB($emu-color-primary) !important; // :(
+
+				@include layout {
+					text-decoration: none;
+				}
+			}
+		}
+
+		&:hover {
+			@include layout {
+				text-decoration: underline;
+			}
+		}
+	}
+}

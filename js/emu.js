@@ -431,6 +431,7 @@ Hooks.once('init', () => {
 		config: false
 	});
 
+	// Make a smooth overlay
 	const overlay = document.createElement('div');
 	overlay.style.cssText += 'position: absolute;top:0;left:0;right:0;bottom:0;z-index:1000;background:black;transition: all ease-out 1s;opacity:1;';
 	overlay.setAttribute('id','emu-overlay');
@@ -445,6 +446,13 @@ Hooks.once('ready', () => {
 	googleFontPre.rel  = 'preconnect';
 	googleFontPre.href = 'https://fonts.gstatic.com';
 	myHead.appendChild(googleFontPre);
+
+	// Check to see who is playing
+	if (game.user.isGM) {
+		myHtml[0].classList.add('-gm');
+	} else {
+		myHtml[0].classList.add('-player');
+	}
 
 	// Status of Ernie's Layout
 	const emuLayoutStatus = game.settings.get(moduleName, 'settings').emuLayout;
@@ -564,7 +572,7 @@ Hooks.once('ready', () => {
 	const compactModeUIBottom = game.settings.get(moduleName, 'compactModeUIBottom');
 	compactModeUIBottom ? myHtml[0].classList.add('-emu-compact-ui-bottom') : myHtml[0].classList.remove('-emu-compact-ui-bottom');
 
-	// Timeout because i'm bad at javascript
+	// Timeout because I'm bad at javascript
 	setTimeout(function() {
 		// Set Font Family
 		const _fontFamilyCustom = game.settings.get(moduleName, 'settings').fontFamilyCustom;
@@ -599,7 +607,6 @@ Hooks.once('ready', () => {
 
 	// Apply Module Sheets
 	const currentModules = game.modules;
-
 	currentModules.forEach((mod) => {
 		const moduleID = mod.id;
 		if(mod.active === true && MODULES.MODULE.includes(moduleID)) {
@@ -619,11 +626,19 @@ Hooks.once('ready', () => {
 });
 
 Hooks.on('renderActorSheet', (app, html) => {
-	const sheet = html.find('id').prevObject[0];
-	sheet.classList.add('-emu-clean-sheet');
+	const currentSystem = game.system.id;
+
+	if(currentSystem != 'vtm5e') {
+		const sheet = html.find('id').prevObject[0];
+		sheet.classList.add('-emu-clean-sheet');
+	}
 });
 
 Hooks.on('renderItemSheet', (app, html) => {
-	const sheet = html.find('id').prevObject[0];
-	sheet.classList.add('-emu-clean-sheet');
+	const currentSystem = game.system.id;
+
+	if(currentSystem != 'vtm5e') {
+		const sheet = html.find('id').prevObject[0];
+		sheet.classList.add('-emu-clean-sheet');
+	}
 });
