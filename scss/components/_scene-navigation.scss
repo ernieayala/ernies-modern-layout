@@ -63,7 +63,7 @@
 			flex-wrap: wrap;
 			margin-block-end: $global-space-sm;
 			position: relative;
-			pointer-events: all;
+			pointer-events: none;
 		}
 
 		.scene {

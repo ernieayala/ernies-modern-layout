@@ -193,6 +193,15 @@
 		}
 	}
 
+	#sidebar #items,
+	.sidebar-popout[id="items"] .window-content {
+		@include layout {
+			.directory .directory-item img {
+				display: none;
+			}
+		}
+	}
+
 	.sheet.wod5e.application {
 		&.locked {
 			.charname input,
@@ -290,10 +299,6 @@
 			@include layout {
 				padding: $global-space-md $global-space-xl $global-space-xl;
 			}
-		}
-
-		.item-control {
-			@extend %control-button;
 		}
 
 		.actor-header {
@@ -1001,47 +1006,6 @@
 		}
 	}
 
-	.sheet.wod5e.application .sheet-tabs {
-		background-image: url("../../img/vtm/vtm-marble-red.jpg");
-		background-position: bottom center;
-		background-repeat: repeat;
-		background-size: 100% auto;
-
-		@include layout {
-			border: 1px solid RGB($emu-color-primary-darkest);
-			margin: $global-space-sm 0 0;
-		}
-
-		.item {
-			bacground: none;
-			color: RGB($emu-color-text-darker);
-			text-shadow: none;
-
-			@include layout {
-				border-width: 0;
-				cursor: pointer;
-				flex: 1 1 auto;
-				font-family: "Cormorant";
-				font-size: $global-font-size-lg;
-				font-weight: 700;
-				opacity: 0.6;
-				padding: $global-space-sm 0;
-				text-align: center;
-				text-transform: uppercase;
-
-				&:hover {
-					text-decoration: underline;
-				}
-			}
-
-			&.active {
-				background: none;
-				color: RGB($emu-color-text);
-				opacity: 1;
-			}
-		}
-	}
-
 	.sheet.wod5e.application .items-list {
 		@include layout {
 			display: flex;
@@ -1184,6 +1148,265 @@
 		}
 	}
 
+	.item.wod5e.application {
+		@include layout {
+			.profile-img {
+				display: none;
+			}
+		}
+
+		.header-fields {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+			}
+
+			.itemname {
+				@include layout {
+					font-size: $global-font-size-xxl;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.window-app:not(.-emu-clean-sheet) {
+		.dice-group-header {
+			background-color: RGB($emu-color-primary-darker);
+
+			@include layout {
+				display: flex;
+				gap: $global-space-base;
+
+				&:empty {
+					display: none;
+				}
+			}
+
+			label {
+				@include layout {
+					align-items: center;
+					display: inline-flex;
+					flex: 1 1 50%;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-md;
+					justify-content: center;
+					padding: $global-font-size-sm;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.base-dice-group {
+			border-color: RGB($emu-color-primary-darker);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				display: flex;
+				gap: $global-space-base;
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+
+		.dice-input {
+			@include layout {
+				align-items: center;
+				display: inline-flex;
+				flex: 1 1 50%;
+				font-family: "Gill Sans";
+				font-size: $global-font-size-md;
+				gap: $global-space-base;
+				justify-content: center;
+				padding: $global-font-size-sm;
+				text-transform: uppercase;
+
+				input {
+					height: $global-space-button-sm;
+					text-align: center;
+					width: $global-space-button-sm;
+				}
+			}
+		}
+
+		.situational-modifiers {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				left: 100%;
+				padding: $global-space-sm;
+				position: absolute;
+				top: -1px;
+				width: 320px;
+			}
+
+			.mod-header {
+				background-color: RGB($emu-color-background-darkest);
+			}
+
+			.modifier,
+			.custom-modifier {
+				@include layout {
+					> * {
+						align-self: center;
+						align-items: center;
+						display: flex;
+						gap: $global-space-base;
+					}
+				}
+			}
+
+			.list-title ~ .list-title {
+				@include layout {
+					margin-block-start: $global-space-sm;
+				}
+			}
+		}
+
+		.selectors-group {
+			@include layout {
+				flex-wrap: nowrap;
+			}
+
+			.primary-selector {
+				@include layout {
+					flex: 1 1 auto;
+				}
+			}
+
+			.middle {
+				@include layout {
+					align-items: center;
+					align-self: end;
+					display: flex;
+					flex: 0 0 auto;
+					height: $global-space-button;
+				}
+			}
+		}
+
+		.selector-title {
+			@include layout {
+				font-size: $global-font-size-md;
+
+				+ select {
+					flex: 0 0 auto;
+				}
+			}
+		}
+
+		.flexrow.-gap-base.secondary-selector {
+			background-color: RGB($emu-color-primary-darkest);
+
+			@include layout {
+				align-items: center;
+				font-family: "Gill Sans";
+				justify-content: center;
+				padding: $global-space-sm;
+				text-transform: uppercase;
+
+				> * {
+					flex: 0 0 auto;
+				}
+			}
+		}
+	}
+
+	.window-app:not(.-emu-clean-sheet).wod5e.dialog {
+		@include layout {
+			.window-content {
+				overflow: visible;
+			}
+		}
+	}
+
+	.modifiers-list {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			gap: $global-space-sm;
+		}
+
+		.modifier {
+			background-color: RGB($emu-color-background);
+
+			@include layout {
+				padding: $global-space-base $global-space-sm;
+			}
+		}
+
+		.form-group {
+			@include layout {
+				margin: 0;
+			}
+		}
+
+		.flexdatalist-multiple {
+			@include layout {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	.application .sheet-tabs {
+		background-image: url("../../img/vtm/vtm-marble-red.jpg");
+		background-position: bottom center;
+		background-repeat: repeat;
+		background-size: 100% auto;
+
+		@include layout {
+			border: 1px solid RGB($emu-color-primary-darkest);
+			margin: $global-space-sm 0 0;
+		}
+
+		a,
+		.item {
+			bacground: none;
+			color: RGB($emu-color-text-darker);
+			text-shadow: none;
+
+			@include layout {
+				border-width: 0;
+				cursor: pointer;
+				flex: 1 1 auto;
+				font-family: "Cormorant";
+				font-size: $global-font-size-lg;
+				font-weight: 700;
+				opacity: 0.6;
+				padding: $global-space-sm 0;
+				text-align: center;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background: none;
+			}
+
+			&.active {
+				background: none;
+				color: RGB($emu-color-text);
+				opacity: 1;
+			}
+		}
+	}
+
+	.item-control {
+		@extend %control-button;
+	}
+
 	.system-rollable {
 		text-shadow: none;
 
@@ -1204,6 +1427,146 @@
 		&:hover {
 			@include layout {
 				text-decoration: underline;
+			}
+		}
+	}
+
+	.wod-dice-row {
+		@include layout {
+			gap: $global-space-base;
+			padding: $global-space-md 0;
+		}
+	}
+
+	.wod-dice {
+		@include layout {
+			flex: 0 0 42px;
+			height: 42px;
+			position: relative;
+			width: 42px
+		}
+	}
+
+	.willpower-reroll {
+		@include layout {
+			gap: $global-space-base;
+			justify-content: center;
+			margin: 0;
+
+			.die {
+				flex: 0 0 auto;
+			}
+		}
+
+		.die.selected {
+			@extend %global-hover-alt;
+		}
+	}
+
+	#sidebar #chat,
+	.sidebar-popout[id="chat"] .window-content {
+		.chat-message {
+			border-color: RGB($emu-color-primary);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+			}
+
+			.roll-label {
+				background-color: RGB($emu-color-primary);
+
+				@include layout {
+					font-family: "Cormorant";
+					padding: $global-space-base;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+
+			.dice-result {
+				@include layout {
+					text-align: center;
+				}
+
+				> .flexcol > .flexrow {
+					@include layout {
+						justify-content: center;
+					}
+				}
+			}
+
+			.dice-roll {
+				.modifiers {
+					@include layout {
+						display: flex;
+						flex-wrap: wrap;
+						gap: $global-space-base;
+					}
+
+					.mod {
+						background-color: RGB($emu-color-primary-darkest);
+
+						@include layout {
+							border-radius: $global-border-radius-default;
+							padding: $global-space-xs $global-space-md;
+						}
+					}
+				}
+			}
+
+			.roll-result-label {
+				@include layout {
+					padding: $global-space-base;
+				}
+
+				&.failure {
+					background-color: RGB($emu-color-negative);
+				}
+
+				&.success {
+					background-color: RGB($emu-color-positive);
+				}
+			}
+
+			.wod-chat-message {
+				@include layout {
+					padding-block-end: $global-space-sm;
+					text-align: center;
+				}
+
+				header {
+					background-color: RGB($emu-color-primary);
+
+					@include layout {
+						font-family: "Cormorant";
+						padding: $global-space-base;
+						text-transform: uppercase;
+
+						h3 {
+							font-size: $global-font-size-md;
+						}
+					}
+				}
+
+				img {
+					@include layout {
+						flex: 0 0 auto;
+					}
+				}
+
+				.item-name {
+					@include layout {
+						border-width: 0;
+						margin: 0;
+					}
+				}
+
+				.br-text {
+					@include layout {
+						margin-block-start: $global-space-sm;
+					}
+				}
 			}
 		}
 	}
