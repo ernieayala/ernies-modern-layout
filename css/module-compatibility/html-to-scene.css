@@ -1,0 +1,19 @@
+body.-emu.-google #interface::before {
+  background-color: RGB(var(--emu-color-background-darkest, 9, 14, 16));
+}
+.-emu-layout body.-emu.-google #interface::before {
+  content: "";
+  height: 66px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.-emu-layout body.-emu.-kumu #navigation {
+  padding-inline-start: 366px;
+}
+.-emu-layout body.-emu #navigation {
+  transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), padding 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+}

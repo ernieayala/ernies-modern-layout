@@ -22,11 +22,12 @@ export const MODULE = [
 	// 'dice-calculator',
 	// 'dice-so-nice',
 	// 'dnd5e-helpers',
-	'ernies-modern-layout'
+	'ernies-modern-layout',
 	// 'foundryvtt-simple-calendar',
 	// 'fvtt-party-resources',
 	// 'fxmaster',
 	// 'gm-screen',
+	'html-to-scene'
 	// 'illandril-chat-enhancements',
 	// 'item-piles',
 	// 'lib-wrapper',

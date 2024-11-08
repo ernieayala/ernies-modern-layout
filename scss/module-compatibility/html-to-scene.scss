@@ -1,0 +1,34 @@
+@import "../base";
+
+@include module {
+	&.-google #interface {
+		&::before {
+			background-color: RGB($emu-color-background-darkest);
+
+			@include layout {
+				content: "";
+				height: 66px;
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+				z-index: 1;
+			}
+		}
+	}
+
+	&.-kumu #navigation {
+		@include layout {
+			padding-inline-start: 366px;
+		}
+	}
+
+	#navigation {
+		@include layout {
+			transition:
+				opacity $global-transition-time-base $global-transition-type-link,
+				padding $global-transition-time-base $global-transition-type-shift;
+		}
+	}
+}
