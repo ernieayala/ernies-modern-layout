@@ -97,6 +97,15 @@
 			justify-content: end;
 		}
 
+		.profile-img-zone {
+			cursor: default;
+			pointer-events: none;
+
+			.lock-btn {
+				pointer-events: all;
+			}
+		}
+
 		#nav-toggle,
 		.scene-control[data-control="token"],
 		.scene-control[data-control="measure"],
@@ -351,6 +360,17 @@
 					@include layout {
 						cursor: default;
 						pointer-events: none;
+					}
+				}
+			}
+
+			.profile-img-zone {
+				@include layout {
+					cursor: default;
+					pointer-events: none;
+
+					.lock-btn {
+						pointer-events: all;
 					}
 				}
 			}
@@ -1461,6 +1481,14 @@
 					overflow: visible;
 				}
 			}
+
+			&.attribute {
+				.selectors-group {
+					@include layout {
+						flex-direction: row-reverse;
+					}
+				}
+			}
 		}
 
 		.dice-group-header {
@@ -1595,6 +1623,7 @@
 
 		.flexrow.-gap-base.secondary-selector {
 			background-color: RGB($emu-color-primary-darkest);
+			background-image: url("../../img/vtm/vtm-marble-red.jpg");
 
 			@include layout {
 				align-items: center;
@@ -1654,6 +1683,8 @@
 			}
 		}
 	}
+
+
 
 	// Sheet Tabs
 	.application .sheet-tabs {
