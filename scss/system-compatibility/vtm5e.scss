@@ -92,6 +92,11 @@
 			margin-inline-start: calc(-1 * (180px + #{$global-space-sm}));
 		}
 
+		.control-tools,
+		.sub-controls {
+			justify-content: end;
+		}
+
 		#nav-toggle,
 		.scene-control[data-control="token"],
 		.scene-control[data-control="measure"],
@@ -119,7 +124,10 @@
 		.tab[data-category="system"],
 		#client-settings .item[data-tab="system"],
 		#client-settings .count,
-		#license-information {
+		#license-information,
+		.header-control[data-action="copyUuid"],
+		.header-control[data-action="configureSheet"],
+		.header-control[data-action="toggleControls"] {
 			display: none !important;
 		}
 	}
@@ -217,6 +225,7 @@
 
 			.roll-label {
 				background-color: RGB($emu-color-primary);
+				background-image: url("../../img/vtm/vtm-marble-red.jpg");
 
 				@include layout {
 					font-family: "Cormorant";
@@ -279,6 +288,7 @@
 
 				header {
 					background-color: RGB($emu-color-primary);
+					background-image: url("../../img/vtm/vtm-marble-red.jpg");
 
 					@include layout {
 						font-family: "Cormorant";
@@ -390,6 +400,23 @@
 			.header-row-bottom {
 				@include layout {
 					align-self: center;
+				}
+			}
+		}
+
+		&.item {
+			.tab[data-tab="settings"],
+			.tab[data-tab="description"],
+			.tab[data-tab="macro"],
+			.tab[data-tab="modifiers"],
+			.tab[data-tab="bane"],
+			.tab[data-tab="effects"],
+			.tab[data-tab="creedDetails"],
+			.tab[data-tab="dicepool"],
+			.tab[data-tab="redemption"],
+			.tab[data-tab="patronSpirit"] {
+				@include layout {
+					padding: $global-space-sm;
 				}
 			}
 		}
@@ -1642,7 +1669,7 @@
 
 		a,
 		.item {
-			bacground: none;
+			background: none;
 			color: RGB($emu-color-text-darker);
 			text-shadow: none;
 

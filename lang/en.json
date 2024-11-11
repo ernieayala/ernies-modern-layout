@@ -18,6 +18,7 @@
 	"emu.theme-preset-western": "Western",
 	"emu.theme-preset-alien": "Alien",
 	"emu.theme-preset-cyberpunk": "Cyberpunk",
+	"emu.theme-preset-vampire": "Vampire",
 	"emu.theme-primary": "Primary Theme Color",
 	"emu.theme-primary-hint": "Orange: #e57509 - Blue: #386acf - Green: #0fbd7d - Purple: #773edc - Red: #dc143c - Yellow: #edb950",
 	"emu.theme-primary-darker": "Primary Darker Theme Color",

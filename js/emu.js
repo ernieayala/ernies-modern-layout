@@ -311,6 +311,7 @@ class emuForm extends FormApplication {
 					'western': game.i18n.localize('emu.theme-preset-western'),
 					'alien': game.i18n.localize('emu.theme-preset-alien'),
 					'cyberpunk': game.i18n.localize('emu.theme-preset-cyberpunk'),
+					'vampire': game.i18n.localize('emu.theme-preset-vampire')
 				},
 				fontFamilyList: FONTS.GOOGLE_FONTS
 			},
@@ -353,6 +354,10 @@ class emuForm extends FormApplication {
 
 		if($('select[name="themePreset"]').val() === 'cyberpunk') {
 			for (const [key, value] of Object.entries(THEME.CYBERPUNK)) { $(`input[name="${key}"]`).prop('value', value); }
+		}
+
+	if($('select[name="themePreset"]').val() === 'vampire') {
+			for (const [key, value] of Object.entries(THEME.VAMPIRE)) { $(`input[name="${key}"]`).prop('value', value); }
 		}
 	}
 

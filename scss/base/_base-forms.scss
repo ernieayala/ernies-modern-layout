@@ -1,140 +1,91 @@
-form {
-	h3.form-header {
-		border-color: RGB($emu-color-border);
-		color: RGB($emu-color-text);
+h3.form-header {
+	border-color: RGB($emu-color-border);
+	color: RGB($emu-color-text);
 
+	@include layout {
+		border-block-end-style: solid;
+		border-width: 0;
+		border-block-end-width: 1px;
+		font-family: inherit;
+		font-size: $global-font-size-lg;
+		margin-block-start: $global-space-md;
+		margin-block-end: $global-space-base;
+		padding: $global-space-base;
+	}
+}
+
+.form-group {
+	color: RGB($emu-color-text);
+
+	> * {
 		@include layout {
-			border-block-end-style: solid;
-			border-width: 0;
-			border-block-end-width: 1px;
-			font-family: inherit;
-			font-size: $global-font-size-lg;
-			margin-block-start: $global-space-md;
-			margin-block-end: $global-space-base;
-			padding: $global-space-base;
+			flex: 3;
 		}
 	}
 
-	.form-group {
-		color: RGB($emu-color-text);
+	@include layout {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: $global-font-size-lg;
+		gap: $global-space-base;
+		height: auto;
+		margin: 0;
+		padding: $global-space-base $global-space-sm;
+		width: 100%;
 
-		@include layout {
-			align-items: center;
-			display: flex;
-			flex-wrap: wrap;
-			font-size: $global-font-size-lg;
-			gap: $global-space-base;
-			height: auto;
-			margin: 0;
-			padding: $global-space-base $global-space-sm;
-			width: 100%;
-
-			&:nth-of-type(even) {
-				background-color: RGBA($emu-color-background-light, 0.1);
-			}
+		&:nth-of-type(even) {
+			background-color: RGBA($emu-color-background-light, 0.1);
 		}
+	}
 
-		&.initial-position {
-			.form-fields {
-				@include layout {
-					align-items: center;
-					display: inline-flex;
-				}
-
-				label {
-					@include layout {
-						flex: 0 0 auto;
-					}
-				}
-			}
-		}
-
-		&.stacked {
-			> label {
-				@include layout {
-					flex: 0 0 100%;
-				}
-			}
-		}
-
-		&.hidden {
-			@include layout {
-				display: none;
-			}
-		}
-
+	&.initial-position {
 		.form-fields {
 			@include layout {
 				align-items: center;
-				display: flex;
-				gap: $global-space-base;
-				justify-content: flex-end;
+				display: inline-flex;
 			}
 
-			input,
-			select {
+			label {
 				@include layout {
-					gap: $global-space-base;
-				}
-
-				&[type="checkbox"] {
-					@include layout {
-						-webkit-filter: initial;
-						flex: 0 0 auto;
-						width: $global-space-button-xs;
-					}
-				}
-
-				&[type="radio"] {
-					@include layout {
-						width: auto;
-					}
-				}
-			}
-
-			button {
-				@include layout {
-					order: initial;
-					width: auto;
-				}
-
-				&.file-picker,
-				&.grid-config,
-				&.capture-position {
-					@include layout {
-						> i {
-							margin-inline-end: 0;
-						}
-					}
-				}
-
-				+ input {
-					@include layout {
-						order: -1;
-					}
-				}
-
-				// :(
-				&.file-picker + input[type="text"] {
-					@include layout {
-						margin-inline-end: 0 !important;
-					}
+					flex: 0 0 auto;
 				}
 			}
 		}
+	}
 
-		.notes,
-		.hint {
+	&.stacked {
+		> label {
 			@include layout {
-				padding: $global-space-base 0;
+				flex: 0 0 100%;
 			}
+		}
+	}
+
+	&.hidden {
+		@include layout {
+			display: none;
+		}
+	}
+
+	.form-fields {
+		@include layout {
+			align-items: center;
+			display: flex;
+			gap: $global-space-base;
+			justify-content: flex-end;
 		}
 
 		input,
 		select {
+			@include layout {
+				gap: $global-space-base;
+			}
+
 			&[type="checkbox"] {
 				@include layout {
 					-webkit-filter: initial;
+					flex: 0 0 auto;
 					width: $global-space-button-xs;
 				}
 			}
@@ -146,91 +97,32 @@ form {
 			}
 		}
 
-		> label {
-			@include layout {
-				&:only-child {
-					gap: $global-space-base;
-				}
-			}
-		}
-
-		label {
-			color: RGB($emu-color-text);
-
-			@include layout {
-				align-items: center;
-				display: inline-flex;
-				font-size: $global-font-size-md;
-				font-weight: normal;
-				line-height: initial;
-				margin: 0;
-				padding: 0;
-			}
-
-			&.checkbox {
-				@include layout {
-					gap: $global-space-base;
-					height: auto;
-				}
-			}
-
-			.units {
-				color: RGB($emu-color-text);
-
-				@include layout {
-					@extend %ellipsis;
-					display: block;
-					font-size: $global-font-size-sm;
-					line-height: initial;
-					margin: 0 $global-space-base;
-				}
-			}
-
-			> i {
-				@include layout {
-					margin-inline-end: $global-space-base;
-				}
-			}
-		}
-
 		button {
-			> label {
-				color: $emu-color-text-lightest;
-			}
-		}
-
-		+ h3 {
 			@include layout {
-				margin-block-start: $global-space-base;
+				order: initial;
+				width: auto;
 			}
-		}
-	}
 
-	.form-group-stacked {
-		@include layout {
-			gap: $global-space-base;
-			margin: 0;
-		}
-
-		.checkbox-label {
-			@include layout {
-				display: flex;
-				flex-direction: column;
-				padding: 0;
-			}
-		}
-
-		label {
-			&.checkbox {
+			&.file-picker,
+			&.grid-config,
+			&.capture-position {
 				@include layout {
-					align-items: center;
-					display: inline-flex;
-					font-size: $global-font-size-sm;
-					gap: $global-space-base;
-					height: auto;
-					line-height: initial;
-					margin: 0;
-					padding: 0;
+					> i {
+						margin-inline-end: 0;
+					}
+				}
+			}
+
+			+ input {
+				@include layout {
+					order: -1;
+				}
+			}
+
+			// :(
+			&.file-picker + input[type="text"] {
+				@include layout {
+					margin-inline-end: 0 !important;
 				}
 			}
 		}
@@ -238,31 +130,144 @@ form {
 
 	.notes,
 	.hint {
-		color: RGB($emu-color-text-darker);
-
 		@include layout {
-			flex: 0 0 auto;
-			font-size: $global-font-size-md;
-			font-style: italic;
-			line-height: initial;
-			margin: 0;
-			padding: $global-space-base $global-space-sm;
-			width: 100%;
+			padding: $global-space-base 0;
+		}
+	}
 
-			&:empty {
-				display: none;
+	input,
+	select {
+		&[type="checkbox"] {
+			@include layout {
+				-webkit-filter: initial;
+				width: $global-space-button-xs;
+			}
+		}
+
+		&[type="radio"] {
+			@include layout {
+				width: auto;
 			}
 		}
 	}
 
-	label.checkbox {
+	> label {
+		@include layout {
+			&:only-child {
+				gap: $global-space-base;
+			}
+		}
+	}
+
+	label {
+		color: RGB($emu-color-text);
+
 		@include layout {
 			align-items: center;
 			display: inline-flex;
-			font-size: initial;
-			gap: $global-space-sm;
-			height: auto;
+			flex: 2;
+			font-size: $global-font-size-md;
+			font-weight: normal;
 			line-height: initial;
+			margin: 0;
+			padding: 0;
 		}
+
+		&.checkbox {
+			@include layout {
+				gap: $global-space-base;
+				height: auto;
+			}
+		}
+
+		.units {
+			color: RGB($emu-color-text);
+
+			@include layout {
+				@extend %ellipsis;
+				display: block;
+				font-size: $global-font-size-sm;
+				line-height: initial;
+				margin: 0 $global-space-base;
+			}
+		}
+
+		> i {
+			@include layout {
+				margin-inline-end: $global-space-base;
+			}
+		}
+	}
+
+	button {
+		> label {
+			color: $emu-color-text-lightest;
+		}
+	}
+
+	+ h3 {
+		@include layout {
+			margin-block-start: $global-space-base;
+		}
+	}
+}
+
+.form-group-stacked {
+	@include layout {
+		gap: $global-space-base;
+		margin: 0;
+	}
+
+	.checkbox-label {
+		@include layout {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+		}
+	}
+
+	label {
+		&.checkbox {
+			@include layout {
+				align-items: center;
+				display: inline-flex;
+				font-size: $global-font-size-sm;
+				gap: $global-space-base;
+				height: auto;
+				line-height: initial;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}
+
+.notes,
+.hint {
+	color: RGB($emu-color-text-darker);
+
+	@include layout {
+		flex: 0 0 auto;
+		font-size: $global-font-size-md;
+		font-style: italic;
+		line-height: initial;
+		margin: 0;
+		padding: $global-space-base $global-space-sm;
+		width: 100%;
+
+		&:empty {
+			display: none;
+		}
+	}
+}
+
+label.checkbox {
+	@include layout {
+		align-items: center;
+		display: inline-flex;
+		font-size: initial;
+		gap: $global-space-sm;
+		height: auto;
+		line-height: initial;
 	}
 }

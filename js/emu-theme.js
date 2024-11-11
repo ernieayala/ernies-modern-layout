@@ -107,3 +107,25 @@ export const CYBERPUNK = {
 	colorTextLightest: '#fafafa',
 	colorTextDarker: '#cbcbcb'
 }
+
+export const VAMPIRE = {
+	colorPrimary: '#c82434',
+	colorPrimaryDarker: '#9e1522',
+	colorPrimaryDarkest: '#68111a',
+	colorBackground: '#202020',
+	colorBackgroundLightest: '#101010',
+	colorBackgroundLight: '#010101',
+	colorBackgroundDarkest: '#101010',
+	colorBackgroundButton: '#4a4a4a',
+	colorBackgroundChatMessage: '#666666',
+	colorBackgroundChatMessageWhisper: '#192628',
+	colorBackgroundChatMessageBlind: '#293E40',
+	colorBorder: '#4a4a4a',
+	colorBorderLighter: '#6d6d6d',
+	colorFolderHeader: '#4a4a4a',
+	colorFolderDirectory: '#666666',
+	colorFolderSubdirectory: '#7d7d7d',
+	colorText: '#fbf7ee',
+	colorTextLightest: '#ffffff',
+	colorTextDarker: '#cbcbcb'
+}
