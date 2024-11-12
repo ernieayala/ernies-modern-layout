@@ -119,6 +119,7 @@
 		#sidebar-tabs .item[data-tab="tables"],
 		#sidebar-tabs .item[data-tab="cards"],
 		#settings h2,
+		.sidebar-popout[id="settings-popout"] .window-content h2,
 		#game-details,
 		#settings-documentation,
 		#settings-game button[data-action="controls"],
@@ -149,7 +150,7 @@
 
 	// Actor Sidebar
 	#sidebar #actors,
-	.sidebar-popout[id="actors"] .window-content {
+	.sidebar-popout[id="actors-popout"] .window-content {
 		.directory .directory-item > img {
 			@include layout {
 				display: none;
@@ -223,7 +224,7 @@
 
 	// Chat Sidebar
 	#sidebar #chat,
-	.sidebar-popout[id="chat"] .window-content {
+	.sidebar-popout[id="chat-popout"] .window-content {
 		.chat-message {
 			border-color: RGB($emu-color-primary);
 
@@ -489,6 +490,14 @@
 			@include layout {
 				.item-level {
 					flex: 1 1 auto;
+				}
+			}
+		}
+
+		.tab[data-tab="notepad"] {
+			@include layout {
+				> .flexrow {
+					align-items: start;
 				}
 			}
 		}
@@ -1473,6 +1482,16 @@
 		}
 	}
 
+	// Itesm Sidebar
+	#sidebar #items,
+	.sidebar-popout[id="items-popout"] .window-content {
+		.directory-list .directory-item img.thumbnail {
+			@include layout {
+				display: none;
+			}
+		}
+	}
+
 	// Dice Rolls Popups
 	.window-app:not(.-emu-clean-sheet) {
 		&.wod5e.dialog {
@@ -1683,8 +1702,6 @@
 			}
 		}
 	}
-
-
 
 	// Sheet Tabs
 	.application .sheet-tabs {
