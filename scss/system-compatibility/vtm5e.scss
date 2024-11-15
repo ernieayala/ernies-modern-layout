@@ -51,6 +51,7 @@
 	prose-mirror {
 		@include layout {
 			min-height: 0;
+			overflow-y: auto;
 		}
 
 		.editor-content {
@@ -323,11 +324,19 @@
 						margin: 0;
 					}
 				}
+			}
+		}
 
-				.br-text {
-					@include layout {
-						margin-block-start: $global-space-sm;
-					}
+		.br-text {
+			@include layout {
+				margin-block-start: $global-space-sm;
+				padding: 0 $global-space-base;
+				text-align: start;
+
+				ul {
+					list-style: revert;
+					margin: revert;
+					padding: revert;
 				}
 			}
 		}
@@ -542,6 +551,10 @@
 					flex: 1 1 auto;
 				}
 
+				.flexcol + .flexcol.header-details-clan {
+					flex: 0 0 auto;
+				}
+
 				.flexrow {
 					display: inline-flex;
 					flex: 0 0 auto;
@@ -677,15 +690,68 @@
 
 				@include layout {
 					align-items: center;
+					cursor: pointer;
 					display: flex;
 					flex: 0 0 auto;
 					font-family: "Gill Sans";
 					font-size: $global-font-size-md;
 					font-weight: 700;
 					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
+
+		.header-details-clan {
+				background-image: url("../../img/vtm/vtm-marble-red.jpg");
+				background-position: bottom center;
+				background-repeat: repeat;
+				background-size: 100% auto;
+				border-color: RGB($emu-color-primary-darkest);
+
+				@include layout {
+					border-style: solid;
+					border-width: 1px;
+					gap: $global-space-base;
+					justify-content: center;
+					padding: $global-space-sm $global-space-md;
+				}
+
+				span {
+					color: RGB($emu-color-text);
+
+					@include layout {
+						align-items: center;
+						display: inline-flex;
+						flex: 0 0 auto;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						justify-content: end;
+						text-transform: uppercase;
+						text-wrap: nowrap;
+					}
+
+					+ span {
+						color: RGB($emu-color-text-darker);
+
+						@include layout {
+							cursor: pointer;
+							font-size: $global-font-size-md;
+							justify-content: start;
+							text-transform: revert;
+						}
+
+						&:hover {
+							@include layout {
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
 
 		// Resources
 		.resource {
@@ -861,6 +927,7 @@
 
 			&.blood-resonance {
 				> span {
+					color: RGB($emu-color-primary);
 					@include layout {
 						align-items: center;
 						flex: 0 0 130px;

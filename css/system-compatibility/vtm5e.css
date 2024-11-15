@@ -30,7 +30,7 @@ body.-emu.system-vtm5e #sidebar #actors .group-header.coterie .active.create-but
 }
 @font-face{font-family:"Gill Sans";src:url("../../fonts/GillSans.woff2") format("woff2"),url("../../fonts/GillSans.woff") format("woff");font-style:normal;font-weight:400}
 @font-face{font-family:Cormorant;src:url("../../fonts/Cormorant-Regular.woff2") format("woff2"),url("../../fonts/Cormorant-Regular.woff") format("woff");font-style:normal;font-weight:400}
-.-emu-layout body.-emu.system-vtm5e prose-mirror{min-height:0}
+.-emu-layout body.-emu.system-vtm5e prose-mirror{min-height:0;overflow-y:auto}
 .-emu-layout body.-emu.system-vtm5e prose-mirror button.icon.toggle{right:var(--emu-space-base,4px);position:absolute;top:var(--emu-space-base,4px);z-index:1}
 .-emu-layout body.-emu.system-vtm5e prose-mirror .editor-menu{z-index:1}
 body.-emu.system-vtm5e .-gap-base{gap:var(--emu-space-base,4px)}
@@ -69,7 +69,8 @@ body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message header,bod
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message header h3,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message header h3{font-size:var(--emu-font-size-md, 14px)}
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message img,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message img{flex:0 0 auto}
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message .item-name,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message .item-name{border-width:0;margin:0}
-.-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message .br-text,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message .br-text{margin-block-start:var(--emu-space-sm,8px)}
+.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text{margin-block-start:var(--emu-space-sm,8px);padding:0 var(--emu-space-base,4px);text-align:start}
+.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text ul,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text ul{list-style:revert;margin:revert;padding:revert}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .-boons,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .charname input,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .discipline-delete,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .edit-skill,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .header-info-group .header-details-edit,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .header-info-group input,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-create,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-delete,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-edit,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item[data-tab=settings],.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .resource-control,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .resource-value-empty{display:none}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .attributes .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-header.-powers .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .items-list .resource-value .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .skills .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .tab[data-tab=disciplines] .resource-value .resource-value-step{cursor:default;pointer-events:none}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .profile-img-zone{cursor:default;pointer-events:none}
@@ -97,6 +98,7 @@ body.-emu.system-vtm5e .sheet.wod5e.application .tab[data-tab=features] .item.-f
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .actor-header input{max-width:200px}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-top{align-items:center;flex-wrap:nowrap;gap:var(--emu-space-sm,8px)}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-top .flexcol+.flexcol{flex:1 1 auto}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-top .flexcol+.flexcol.header-details-clan{flex:0 0 auto}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-top .flexrow{display:inline-flex;flex:0 0 auto}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-top .header-elements{gap:var(--emu-space-md,16px)}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-row-bottom{align-items:start;flex-wrap:nowrap;justify-content:center;margin:0}
@@ -115,7 +117,15 @@ body.-emu.system-vtm5e .sheet.wod5e.application .charname span{color:RGB(var(--e
 body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group input{color:RGB(var(--emu-color-primary,229,117,9))}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group input{display:inline-block;height:auto;font-size:var(--emu-font-size-lg, 16px);text-transform:uppercase;width:50%}
 body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group span{color:RGB(var(--emu-color-primary,229,117,9))}
-.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group span{align-items:center;display:flex;flex:0 0 auto;font-family:"Gill Sans";font-size:var(--emu-font-size-md, 14px);font-weight:700;text-transform:uppercase}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group span{align-items:center;cursor:pointer;display:flex;flex:0 0 auto;font-family:"Gill Sans";font-size:var(--emu-font-size-md, 14px);font-weight:700;text-transform:uppercase}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-info-group span:hover{text-decoration:underline}
+body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan{background-image:url("../../img/vtm/vtm-marble-red.jpg");background-position:bottom center;background-repeat:repeat;background-size:100% auto;border-color:RGB(var(--emu-color-primary-darkest,114,57,6))}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan{border-style:solid;border-width:1px;gap:var(--emu-space-base,4px);justify-content:center;padding:var(--emu-space-sm,8px) var(--emu-space-md,16px)}
+body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan span{color:RGB(var(--emu-color-text,9,14,16))}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan span{align-items:center;display:inline-flex;flex:0 0 auto;font-family:"Gill Sans";font-size:var(--emu-font-size-sm, 12px);justify-content:end;text-transform:uppercase;text-wrap:nowrap}
+body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan span+span{color:RGB(var(--emu-color-text-darker,41,62,64))}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan span+span{cursor:pointer;font-size:var(--emu-font-size-md, 14px);justify-content:start;text-transform:revert}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .header-details-clan span+span:hover{text-decoration:underline}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource{align-items:center;display:flex;margin:0}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.frenzy,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.rouse{align-self:end;border-width:0;display:inline-flex;flex-direction:column;justify-content:center;padding:0;position:relative}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.frenzy::before,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.rouse::before{background-image:url("../../img/vtm/vtm-blood-stats.png");background-position:center;background-repeat:no-repeat;background-size:contain;content:"";height:68px;left:50%;position:absolute;top:50%;transform:translateX(-50%) translateY(-50%);width:68px;margin-block:-14px}
@@ -138,6 +148,7 @@ body.-emu.system-vtm5e .sheet.wod5e.application .resource.hunt{background-color:
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.blood-potency .resource-content,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.blood-resonance .resource-content,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.health .resource-content,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.humanity .resource-content,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.hunger .resource-content,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.willpower .resource-content{width:200px}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.health>.flexrow,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.willpower>.flexrow{align-items:center;flex-wrap:nowrap;gap:var(--emu-space-base,4px)}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.blood-potency .resource-value{width:130px}
+body.-emu.system-vtm5e .sheet.wod5e.application .resource.blood-resonance>span{color:RGB(var(--emu-color-primary,229,117,9))}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource.blood-resonance>span{align-items:center;flex:0 0 130px;flex-wrap:nowrap;gap:var(--emu-space-xs,2px);width:130px}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource .resource-label{flex:0 0 auto;font-family:"Gill Sans";font-size:var(--emu-font-size-sm, 12px);text-transform:uppercase}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource-counter,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .resource-value{display:flex;flex-wrap:nowrap;gap:var(--emu-space-base,4px);margin:0}
