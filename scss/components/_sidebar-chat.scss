@@ -240,6 +240,36 @@
 				}
 			}
 
+			.table-draw {
+				.table-description {
+					border-color: RGB($emu-color-border);
+					color: RGB($emu-color-primary-darker);
+
+					@include layout {
+						border-block-start-style: solid;
+						border-block-start-width: 1px;
+						font-size: $global-font-size-sm;
+						padding: $global-space-base 0;
+					}
+				}
+
+				.table-results {
+					.table-result {
+						.result-image {
+							@include layout {
+								display: none;
+							}
+						}
+
+						.result-text {
+							@include layout {
+								line-height: 1;
+							}
+						}
+					}
+				}
+			}
+
 			> li {
 				@include layout {
 					padding: $global-space-base;
