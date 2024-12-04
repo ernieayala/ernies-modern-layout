@@ -88,6 +88,10 @@
 		gap: $global-space-xl;
 	}
 
+	.-align-start {
+		align-items: start;
+	}
+
 	.-player & {
 		#ui-top.offset {
 			margin-inline-start: calc(-1 * (180px + #{$global-space-sm}));
@@ -327,7 +331,8 @@
 			}
 		}
 
-		.br-text {
+		.br-text,
+		.collapsible-content {
 			@include layout {
 				margin-block-start: $global-space-sm;
 				padding: 0 $global-space-base;
@@ -1473,6 +1478,26 @@
 				}
 			}
 
+			.item-description {
+				@include layout {
+					max-height: 0;
+					overflow: hidden;
+				}
+
+				> span {
+					background-color: RGBA($emu-color-background, 0.5);
+					border-color: RGB($emu-color-primary-darkest);
+
+					@include layout {
+						border-style: solid;
+						border-width: 1px;
+						border-block-start-width: 0;
+						display: block;
+						padding: $global-space-sm $global-space-md;
+					}
+				}
+			}
+
 			.item-controls {
 				@include layout {
 					display: flex;
@@ -1861,6 +1886,10 @@
 		@include layout {
 			gap: $global-space-base;
 			padding: $global-space-md 0;
+
+			+ .collapsible-content {
+				display: none;
+			}
 		}
 	}
 

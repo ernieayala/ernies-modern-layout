@@ -36,6 +36,7 @@ body.-emu.system-vtm5e #sidebar #actors .group-header.coterie .active.create-but
 body.-emu.system-vtm5e .-gap-base{gap:var(--emu-space-base,4px)}
 body.-emu.system-vtm5e .-gap-sm{gap:var(--emu-space-sm,8px)}
 body.-emu.system-vtm5e .-gap-xl{gap:var(--emu-space-xl,32px)}
+body.-emu.system-vtm5e .-align-start{align-items:start}
 .-player body.-emu.system-vtm5e #ui-top.offset{margin-inline-start:calc(-1 * (180px + var(--emu-space-sm,8px)))}
 .-player body.-emu.system-vtm5e .control-tools,.-player body.-emu.system-vtm5e .sub-controls{justify-content:end}
 .-player body.-emu.system-vtm5e .profile-img-zone{cursor:default;pointer-events:none}
@@ -69,8 +70,8 @@ body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message header,bod
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message header h3,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message header h3{font-size:var(--emu-font-size-md, 14px)}
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message img,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message img{flex:0 0 auto}
 .-emu-layout body.-emu.system-vtm5e #sidebar #chat .chat-message .wod-chat-message .item-name,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .chat-message .wod-chat-message .item-name{border-width:0;margin:0}
-.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text{margin-block-start:var(--emu-space-sm,8px);padding:0 var(--emu-space-base,4px);text-align:start}
-.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text ul,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text ul{list-style:revert;margin:revert;padding:revert}
+.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text,.-emu-layout body.-emu.system-vtm5e #sidebar #chat .collapsible-content,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .collapsible-content{margin-block-start:var(--emu-space-sm,8px);padding:0 var(--emu-space-base,4px);text-align:start}
+.-emu-layout body.-emu.system-vtm5e #sidebar #chat .br-text ul,.-emu-layout body.-emu.system-vtm5e #sidebar #chat .collapsible-content ul,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .br-text ul,.-emu-layout body.-emu.system-vtm5e .sidebar-popout[id=chat-popout] .window-content .collapsible-content ul{list-style:revert;margin:revert;padding:revert}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .-boons,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .charname input,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .discipline-delete,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .edit-skill,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .header-info-group .header-details-edit,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .header-info-group input,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-create,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-delete,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-edit,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item[data-tab=settings],.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .resource-control,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .resource-value-empty{display:none}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .attributes .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .item-header.-powers .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .items-list .resource-value .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .skills .resource-value-step,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .tab[data-tab=disciplines] .resource-value .resource-value-step{cursor:default;pointer-events:none}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application.locked .profile-img-zone{cursor:default;pointer-events:none}
@@ -221,6 +222,9 @@ body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .item-name{col
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .item-rouse,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .resource-value{flex:1 1 auto}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .item-level,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .resource-value{justify-content:end}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .item-level~.item-controls,.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item .resource-value~.item-controls{flex:0 0 auto}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item-description{max-height:0;overflow:hidden}
+body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item-description>span{background-color:RGBA(var(--emu-color-background,41,62,64),.5);border-color:RGB(var(--emu-color-primary-darkest,114,57,6))}
+.-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item-description>span{border-style:solid;border-width:1px;border-block-start-width:0;display:block;padding:var(--emu-space-sm,8px) var(--emu-space-md,16px)}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .items-list .item-controls{display:flex;flex:1 1 auto;gap:var(--emu-space-xs,2px);justify-content:end}
 body.-emu.system-vtm5e .sheet.wod5e.application .items-list+.item-create{margin-block-start:var(--emu-space-base,4px)}
 .-emu-layout body.-emu.system-vtm5e .sheet.wod5e.application .detail-row{gap:var(--emu-space-base,4px)}
@@ -279,4 +283,5 @@ body.-emu.system-vtm5e .system-hover.-red:hover,body.-emu.system-vtm5e .system-r
 .-emu-layout body.-emu.system-vtm5e .system-hover:hover,.-emu-layout body.-emu.system-vtm5e .system-rollable:hover{text-decoration:underline}
 .-emu-layout body.-emu.system-vtm5e .rollable,.-emu-layout body.-emu.system-vtm5e .system-rollable{cursor:url("../../img/vtm/vtm-add-dice-pointer.svg") 0 20,auto}
 .-emu-layout body.-emu.system-vtm5e .wod-dice-row{gap:var(--emu-space-base,4px);padding:var(--emu-space-md,16px) 0}
+.-emu-layout body.-emu.system-vtm5e .wod-dice-row+.collapsible-content{display:none}
 .-emu-layout body.-emu.system-vtm5e .wod-dice{flex:0 0 42px;height:42px;position:relative;width:42px}
