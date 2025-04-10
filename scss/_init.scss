@@ -61,6 +61,11 @@
 	outline: none;
 }
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: RGB($emu-color-primary-darker) RGBA($emu-color-background-darkest, 0.5);
+}
+
 *::before,
 *::after {
 	box-sizing: border-box;

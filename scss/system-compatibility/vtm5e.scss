@@ -1,0 +1,1908 @@
+@import "../base";
+
+@keyframes stutter {
+	0% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	10% {
+		transform: translate(-1px, -1px);
+		opacity: 0.9;
+	}
+	20% {
+		transform: translate(1px, 1px);
+		opacity: 0.8;
+	}
+	30% {
+		transform: translate(-1px, 0px);
+		opacity: 1;
+	}
+	40% {
+		transform: translate(1px, -1px);
+		opacity: 0.9;
+	}
+	50% {
+		transform: translate(0px, 1px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+}
+
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../../fonts/GillSans.woff2") format("woff2"),
+			 url("../../fonts/GillSans.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Cormorant";
+	src: url("../../fonts/Cormorant-Regular.woff2") format("woff2"),
+			 url("../../fonts/Cormorant-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@include system("vtm5e") {
+	prose-mirror {
+		@include layout {
+			min-height: 0;
+			overflow-y: auto;
+		}
+
+		.editor-content {
+			@extend %input-textarea;
+		}
+
+		button.icon.toggle {
+			@extend %control-button;
+
+			@include layout {
+				right: $global-space-base;
+				position: absolute;
+				top: $global-space-base;
+				z-index: 1;
+			}
+		}
+
+		.editor-menu {
+			@include layout {
+				z-index: 1;
+			}
+		}
+	}
+
+	.-gap-base {
+		gap: $global-space-base;
+	}
+
+	.-gap-sm {
+		gap: $global-space-sm;
+	}
+
+	.-gap-xl {
+		gap: $global-space-xl;
+	}
+
+	.-align-start {
+		align-items: start;
+	}
+
+	.-player & {
+		#ui-top.offset {
+			margin-inline-start: calc(-1 * (180px + #{$global-space-sm}));
+		}
+
+		.control-tools,
+		.sub-controls {
+			justify-content: end;
+		}
+
+		.profile-img-zone {
+			cursor: default;
+			pointer-events: none;
+
+			.lock-btn {
+				pointer-events: all;
+			}
+		}
+
+		#nav-toggle,
+		.scene-control[data-control="token"],
+		.scene-control[data-control="measure"],
+		.scene-control[data-control="notes"],
+		#tools-panel-token,
+		#hotbar,
+		#pause,
+		#chat-controls .chat-control-icon,
+		#sidebar-tabs .item[data-tab="combat"],
+		#sidebar-tabs .item[data-tab="items"],
+		#sidebar-tabs .item[data-tab="tables"],
+		#sidebar-tabs .item[data-tab="cards"],
+		#settings h2,
+		.sidebar-popout[id="settings-popout"] .window-content h2,
+		#game-details,
+		#settings-documentation,
+		#settings-game button[data-action="controls"],
+		#settings-game button[data-action="modules"],
+		#settings-game button[data-action="tours"],
+		.tab[data-category="core"] > .submenu,
+		.tab[data-category="core"] .form-group[data-setting-id="core.noCanvas"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.language"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.colorScheme"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.fontSize"],
+		.tab[data-category="core"] .form-group[data-setting-id="core.photosensitiveMode"],
+		.tab[data-category="system"],
+		#client-settings .item[data-tab="system"],
+		#client-settings .count,
+		#license-information,
+		.header-control[data-action="copyUuid"],
+		.header-control[data-action="configureSheet"],
+		.header-control[data-action="toggleControls"] {
+			display: none !important;
+		}
+	}
+
+	.sheet-banner {
+		@include layout {
+			display: none;
+		}
+	}
+
+	// Actor Sidebar
+	#sidebar #actors,
+	.sidebar-popout[id="actors-popout"] .window-content {
+		.directory .directory-item > img {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.group-item {
+			@include layout {
+				cursor: default;
+				padding: 0;
+			}
+
+			&:hover,
+			&:active,
+			&:focus {
+				background-color: RGB($emu-color-folder-directory);
+				box-shadow: none;
+				color: RGB($emu-color-text-lightest);
+			}
+
+			// in case we want the collapse back
+			// &.collapsed {
+			// 	.group-header.coterie ~ .subdirectory {
+			// 		@include layout {
+			// 			display: none;
+			// 		}
+			// 	}
+			// }
+		}
+
+		.group-header.coterie {
+			background-color: transparent !important;
+
+			@include layout {
+				align-items: center;
+				border-width: 0;
+				line-height: 1;
+				padding: $global-space-base $global-space-sm;
+				width: 100%;
+
+				~ .subdirectory:empty,
+				h3 > i {
+					display: none;
+				}
+			}
+
+			.create-button {
+				@extend %control-button;
+
+				@include layout {
+					flex: 0 0 auto;
+					margin: 0;
+				}
+
+				&:hover {
+					color: RGB($emu-color-text-lightest);
+				}
+			}
+		}
+	}
+
+	// Items Sidebar
+	#sidebar #items,
+	.sidebar-popout[id="items"] .window-content {
+		@include layout {
+			.directory .directory-item img {
+				display: none;
+			}
+		}
+	}
+
+	// Chat Sidebar
+	#sidebar #chat,
+	.sidebar-popout[id="chat-popout"] .window-content {
+		.chat-message {
+			border-color: RGB($emu-color-primary);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+			}
+
+			.roll-label {
+				background-color: RGB($emu-color-primary);
+				background-image: url("../../img/vtm/vtm-marble-red.jpg");
+
+				@include layout {
+					font-family: "Cormorant";
+					padding: $global-space-base;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+
+			.dice-result {
+				@include layout {
+					text-align: center;
+				}
+
+				> .flexcol > .flexrow {
+					@include layout {
+						justify-content: center;
+					}
+				}
+			}
+
+			.dice-roll {
+				.modifiers {
+					@include layout {
+						display: flex;
+						flex-wrap: wrap;
+						gap: $global-space-base;
+					}
+
+					.mod {
+						background-color: RGB($emu-color-primary-darkest);
+
+						@include layout {
+							border-radius: $global-border-radius-default;
+							padding: $global-space-xs $global-space-md;
+						}
+					}
+				}
+			}
+
+			.roll-result-label {
+				@include layout {
+					padding: $global-space-base;
+				}
+
+				&.failure {
+					background-color: RGB($emu-color-negative);
+				}
+
+				&.success {
+					background-color: RGB($emu-color-positive);
+				}
+			}
+
+			.wod-chat-message {
+				@include layout {
+					padding-block-end: $global-space-sm;
+					text-align: center;
+				}
+
+				header {
+					background-color: RGB($emu-color-primary);
+					background-image: url("../../img/vtm/vtm-marble-red.jpg");
+
+					@include layout {
+						font-family: "Cormorant";
+						padding: $global-space-base;
+						text-transform: uppercase;
+
+						h3 {
+							font-size: $global-font-size-md;
+						}
+					}
+				}
+
+				img {
+					@include layout {
+						flex: 0 0 auto;
+					}
+				}
+
+				.item-name {
+					@include layout {
+						border-width: 0;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.br-text,
+		.collapsible-content {
+			@include layout {
+				margin-block-start: $global-space-sm;
+				padding: 0 $global-space-base;
+				text-align: start;
+
+				ul {
+					list-style: revert;
+					margin: revert;
+					padding: revert;
+				}
+			}
+		}
+	}
+
+	.sheet.wod5e.application {
+		&.locked {
+			.charname input,
+			.header-info-group input,
+			.header-info-group .header-details-edit,
+			.resource-value-empty,
+			.resource-control,
+			.item-edit,
+			.item-delete,
+			.item-create,
+			.discipline-delete,
+			.edit-skill,
+			.-boons,
+			.item[data-tab="settings"] {
+				@include layout {
+					display: none;
+				}
+			}
+
+			.attributes,
+			.skills,
+			.item-header.-powers,
+			.tab[data-tab="disciplines"] .resource-value,
+			.items-list .resource-value {
+				.resource-value-step {
+					@include layout {
+						cursor: default;
+						pointer-events: none;
+					}
+				}
+			}
+
+			.profile-img-zone {
+				@include layout {
+					cursor: default;
+					pointer-events: none;
+
+					.lock-btn {
+						pointer-events: all;
+					}
+				}
+			}
+		}
+
+		&:not(.locked) {
+			.charname span,
+			.header-info-group .header-details {
+				@include layout {
+					display: none;
+				}
+			}
+		}
+
+		&.item {
+			@include layout {
+				.profile-img {
+					display: none;
+				}
+			}
+
+			.header-fields {
+				@include layout {
+					display: flex;
+					flex-direction: column;
+					gap: $global-space-base;
+				}
+
+				.itemname {
+					@include layout {
+						font-size: $global-font-size-xxl;
+						height: auto;
+					}
+				}
+			}
+		}
+
+		&.ghoul,
+		&.mortal {
+			.actor-header {
+				@include layout {
+					flex-direction: row;
+					justify-content: space-between;
+				}
+			}
+
+			.header-row-bottom {
+				@include layout {
+					align-self: center;
+				}
+			}
+		}
+
+		&.item {
+			.tab[data-tab="settings"],
+			.tab[data-tab="description"],
+			.tab[data-tab="macro"],
+			.tab[data-tab="modifiers"],
+			.tab[data-tab="bane"],
+			.tab[data-tab="effects"],
+			.tab[data-tab="creedDetails"],
+			.tab[data-tab="dicepool"],
+			.tab[data-tab="redemption"],
+			.tab[data-tab="patronSpirit"] {
+				@include layout {
+					padding: $global-space-sm;
+				}
+			}
+		}
+
+		.window-content {
+			background-image: url("../../img/vtm/vtm-background-img.jpg");
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: 2000px;
+		}
+
+		// Actor Tabs
+		.tab[data-tab="disciplines"] {
+			@include layout {
+				padding: $global-space-base $global-space-xl $global-space-xl;
+			}
+		}
+
+		.tab[data-tab="features"] {
+			@include layout {
+				padding: $global-space-md $global-space-xl $global-space-xl;
+
+				> .flexcol > .flexrow {
+					align-items: start;
+				}
+
+				.resource-value-step {
+					cursor: default;
+					pointer-events: none;
+				}
+
+				.items-list .item-name {
+					flex: 1 1 100%;
+					width: 1px;
+
+					span {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						text-wrap: nowrap;
+					}
+				}
+			}
+
+			.item.-flaw {
+				--emu-color-primary: 36,98,121;
+			}
+		}
+
+		.tab[data-tab="experience"] {
+			@include layout {
+				.item-level {
+					flex: 1 1 auto;
+				}
+			}
+		}
+
+		.tab[data-tab="notepad"] {
+			@include layout {
+				> .flexrow {
+					align-items: start;
+				}
+			}
+		}
+
+		.tab[data-tab="biography"],
+		.tab[data-tab="notepad"],
+		.tab[data-tab="experience"],
+		.tab[data-tab="equipment"],
+		.tab[data-tab="settings"],
+		.tab[data-tab="members"] {
+			@include layout {
+				padding: $global-space-md $global-space-xl $global-space-xl;
+			}
+		}
+
+		// Header
+		.actor-header {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 0;
+				padding: 0 $global-space-xl;
+
+				.resource-counter,
+				.resource-value {
+					width: 200px;
+				}
+
+				input {
+					max-width: 200px;
+				}
+			}
+		}
+
+		.header-row-top {
+			@include layout {
+				align-items: center;
+				flex-wrap: nowrap;
+				gap: $global-space-sm;
+
+				.flexcol + .flexcol {
+					flex: 1 1 auto;
+				}
+
+				.flexcol + .flexcol.header-details-clan {
+					flex: 0 0 auto;
+				}
+
+				.flexrow {
+					display: inline-flex;
+					flex: 0 0 auto;
+				}
+
+				.header-elements {
+					gap: $global-space-md;
+				}
+			}
+		}
+
+		.header-row-bottom {
+			@include layout {
+				align-items: start;
+				flex-wrap: nowrap;
+				justify-content: center;
+				margin: 0;
+			}
+		}
+
+		.profile-img-zone {
+			@include layout {
+				flex: 0 0 auto;
+				height: 78px;
+				position: relative;
+				width: 78px;
+
+				&:hover {
+					.lock-btn {
+						opacity: 1;
+					}
+				}
+
+				&::after {
+					background-image: url("../../img/vtm/vtm-portrait.png");
+					background-repeat: no-repeat;
+					background-size: contain;
+					bottom: 0;
+					content: "";
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+					z-index: 1;
+				}
+
+				.profile-img {
+					border-radius: 50%;
+					height: 100%;
+					width: 100%;
+				}
+
+				.lock-btn {
+					border-radius: 50%;
+					font-size: $global-font-size-md;
+					height: 32px;
+					left: 0;
+					opacity: 0;
+					padding: 0;
+					position: absolute;
+					top: 0;
+					transition: opacity $global-transition-time-base $global-transition-type-link;
+					width: 32px;
+					z-index: 2;
+				}
+			}
+		}
+
+		.charname {
+				@include layout {
+					border-width: 0;
+					display: flex;
+					margin: 0;
+				}
+
+				input {
+					@include layout {
+						font-size: $global-font-size-xxl;
+						height: auto;
+						text-align-last: left;
+						text-transform: uppercase;
+						width: auto;
+					}
+				}
+
+				span {
+					color: RGB($emu-color-text);
+
+					@include layout {
+						font-family: "Cormorant";
+						font-size: 32px;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+				}
+			}
+
+		.header-info-group {
+			@include layout {
+				display: flex;
+				flex: 0 0 auto;
+				gap: $global-space-base;
+			}
+
+			.header-details,
+			.header-details-edit {
+				@include layout {
+					align-items: center;
+					flex-wrap: nowrap;
+					gap: $global-space-base;
+
+					span {
+						display: inline-flex;
+						gap: $global-space-base;
+					}
+				}
+			}
+
+			input {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					display: inline-block;
+					height: auto;
+					font-size: $global-font-size-lg;
+					text-transform: uppercase;
+					width: 50%;
+				}
+			}
+
+			span {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					align-items: center;
+					cursor: pointer;
+					display: flex;
+					flex: 0 0 auto;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-md;
+					font-weight: 700;
+					text-transform: uppercase;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		.header-details-clan {
+				background-image: url("../../img/vtm/vtm-marble-red.jpg");
+				background-position: bottom center;
+				background-repeat: repeat;
+				background-size: 100% auto;
+				border-color: RGB($emu-color-primary-darkest);
+
+				@include layout {
+					border-style: solid;
+					border-width: 1px;
+					gap: $global-space-base;
+					justify-content: center;
+					padding: $global-space-sm $global-space-md;
+				}
+
+				span {
+					color: RGB($emu-color-text);
+
+					@include layout {
+						align-items: center;
+						display: inline-flex;
+						flex: 0 0 auto;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						justify-content: end;
+						text-transform: uppercase;
+						text-wrap: nowrap;
+					}
+
+					+ span {
+						color: RGB($emu-color-text-darker);
+
+						@include layout {
+							cursor: pointer;
+							font-size: $global-font-size-md;
+							justify-content: start;
+							text-transform: revert;
+						}
+
+						&:hover {
+							@include layout {
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+
+		// Resources
+		.resource {
+			@include layout {
+				align-items: center;
+				display: flex;
+				margin: 0;
+			}
+
+			&.rouse,
+			&.frenzy {
+				@include layout {
+					align-self: end;
+					border-width: 0;
+					display: inline-flex;
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+					position: relative;
+
+					&::before {
+						background-image: url("../../img/vtm/vtm-blood-stats.png");
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: "";
+						height: 68px;
+						left: 50%;
+						position: absolute;
+						top: 50%;
+						transform: translateX(-50%) translateY(-50%);
+						width: 68px;
+						margin-block: -14px;
+					}
+
+					.resource-content {
+						display: flex;
+						justify-content: center;
+					}
+
+					.resource-label {
+						text-align: center;
+						white-space: nowrap;
+						z-index: 1;
+					}
+
+					button {
+						background-color: transparent;
+						border-radius: 50%;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						height: 42px;
+						padding: 0;
+						text-shadow: none;
+						text-transform: uppercase;
+						width: 42px;
+
+						&:hover,
+						&:focus,
+						&:active {
+							background: radial-gradient(circle, RGB($emu-color-primary) 0%, RGB(0,0,0,0) 75%);
+							box-shadow: none;
+						}
+					}
+				}
+
+				&.-active {
+					.resource-label {
+						animation: stutter 0.3s steps(2, start) infinite;
+						color: RGA($emu-color-primary);
+					}
+				}
+			}
+
+			&.exp {
+				@include layout {
+					align-self: end;
+					border-width: 0;
+					display: inline-flex;
+					flex: 0 0 90px;
+					flex-direction: column;
+					justify-content: center;
+					padding: 0;
+					position: relative;
+
+					.resource-content {
+						color: RGB($emu-color-text-darker);
+						flex-wrap: nowrap;
+						font-size: 18px;
+
+						input {
+							color: RGB($emu-color-primary);
+							font-size: 26px;
+							min-width: 0;
+							padding: 0 $global-space-xs;
+
+							~ input {
+								color: RGB($emu-color-text-darker);
+								font-size: 18px;
+							}
+						}
+
+						span {
+							flex: 0 0 auto;
+						}
+					}
+				}
+			}
+
+			&.coterie {
+				@include layout {
+					gap: $global-space-sm;
+					justify-content: end;
+					min-height: $global-space-button-sm;
+					padding: 0;
+
+					.resource-value {
+						width: auto;
+					}
+				}
+			}
+
+			&.hunt {
+				background-color: RGB($emu-color-primary);
+
+				@include layout {
+					gap: $global-space-sm;
+					justify-content: center;
+					padding: $global-space-base;
+
+					.resource-value {
+						width: auto;
+					}
+				}
+			}
+
+			&.health,
+			&.willpower,
+			&.humanity,
+			&.hunger,
+			&.blood-potency,
+			&.blood-resonance {
+				@include layout {
+					gap: $global-space-sm;
+					justify-content: end;
+					min-height: $global-space-button-sm;
+					padding: 0;
+
+					.resource-content {
+						width: 200px;
+					}
+				}
+			}
+
+			&.health,
+			&.willpower {
+				> .flexrow {
+					@include layout {
+						align-items: center;
+						flex-wrap: nowrap;
+						gap: $global-space-base;
+					}
+				}
+			}
+
+			&.blood-potency {
+				.resource-value {
+					@include layout {
+						width: 130px;
+					}
+				}
+			}
+
+			&.blood-resonance {
+				> span {
+					color: RGB($emu-color-primary);
+					@include layout {
+						align-items: center;
+						flex: 0 0 130px;
+						flex-wrap: nowrap;
+						gap: $global-space-xs;
+						width: 130px;
+					}
+				}
+			}
+
+			.resource-label {
+				@include layout {
+					flex: 0 0 auto;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-sm;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.resource-counter,
+		.resource-value {
+			@include layout {
+				display: flex;
+				flex-wrap: nowrap;
+				gap: $global-space-base;
+				margin: 0;
+			}
+		}
+
+		.resource-value {
+			@include layout {
+				align-self: center;
+			}
+		}
+
+		.resource-counter-step {
+			background: none;
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+			color: transparent;
+			text-shadow: none;
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				cursor: pointer;
+				display: inline-flex;
+				height: 16px;
+				margin: 0;
+				position: relative;
+				width: 16px;
+
+				&::before {
+					bottom: 0;
+					content: "";
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+			}
+
+			&:hover {
+				border-color: RGB($emu-color-primary);
+			}
+
+			&[data-state="/"] {
+				&::before {
+					background:
+						linear-gradient(
+							135deg,
+							transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%);
+				}
+			}
+
+			&[data-state="x"] {
+				&::before {
+					background:
+						linear-gradient(
+							45deg, transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%),
+						linear-gradient(
+							135deg,
+							transparent 0%,
+							transparent 43%,
+							RGB($emu-color-primary) 45%,
+							RGB($emu-color-primary) 55%,
+							transparent 57%,
+							transparent 100%);
+				}
+			}
+
+			&[data-state="-"] {
+				background-color: RGB($emu-color-primary);
+			}
+		}
+
+		.hunger-value,
+		.resource-value-step,
+		.resource-value-empty {
+			background: none;
+			background-color: RGB($emu-color-background-darkest);
+			border-color: RGB($emu-color-border);
+			color: transparent;
+			text-shadow: none;
+
+			@include layout {
+				border-radius: 50%;
+				border-style: solid;
+				border-width: 1px;
+				cursor: pointer;
+				display: inline-flex;
+				height: 12px;
+				margin: 0;
+				position: relative;
+				width: 12px;
+			}
+
+			&:hover {
+				border-color: RGB($emu-color-primary);
+			}
+
+			&.active {
+				background-color: RGB($emu-color-primary);
+				border-color: RGB($emu-color-primary);
+			}
+		}
+
+		.resource-value-empty {
+			background-color: RGB($emu-color-border);
+		}
+
+		.resource-control {
+			@extend %control-button;
+		}
+
+		.resource-label-fancy {
+			@include layout {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				flex-wrap: nowrap;
+				margin-block-start: $global-space-sm;
+				margin-block-end: $global-space-base;
+				width: 100%;
+			}
+
+			.resource-label {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					align-items: center;
+					display: flex;
+					flex: 0 0 auto;
+					font-family: "Cormorant";
+					font-size: 18px;
+					font-weight: 700;
+					gap: $global-space-sm;
+					position: relative;
+					text-transform: uppercase;
+					z-index: 3;
+				}
+
+				&::before,
+				&::after {
+					@include layout {
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: "";
+						flex: 0 0 auto;
+						height: 18px;
+						width: 26px
+					}
+				}
+
+				&::before {
+					@include layout {
+						background-image: url("../../img/vtm/sheet-inner-left.png");
+						background-position-x: 8px;
+					}
+				}
+
+				&::after {
+					@include layout {
+						background-image: url("../../img/vtm/sheet-inner-right.png");
+					}
+				}
+			}
+
+			&::before,
+			&::after {
+				@include layout {
+					background-repeat: no-repeat;
+					background-size: contain;
+					content: "";
+					flex: 0 0 auto;
+					height: 18px;
+					margin-block-start: -1px;
+					width: 50px
+				}
+			}
+
+			&::before {
+				@include layout {
+					background-image: url("../../img/vtm/sheet-divider-outer-left.png");
+					background-position-x: 8px;
+				}
+			}
+
+			&::after {
+				@include layout {
+					background-image: url("../../img/vtm/sheet-divider-outer-right.png");
+				}
+			}
+
+			hr {
+				background-color: RGB($emu-color-primary-darkest);
+				background-image: none;
+
+				@include layout {
+					border-width: 0;
+					flex: 1 1 auto;
+					height: 1px;
+					margin: 0;
+
+					&:first-of-type {
+						margin-inline-end: -12px;
+						margin-inline-start: -5px;
+					}
+
+					&:last-of-type {
+						margin-inline-end: -5px;
+						margin-inline-start: -12px;
+					}
+				}
+			}
+		}
+
+		// Stats
+		.stats-container {
+			@include layout {
+				gap: $global-space-base;
+				margin: 0;
+				padding: 0 $global-space-xl;
+			}
+		}
+
+		.stats-content {
+			@include layout {
+				gap: $global-space-xl;
+				margin: 0;
+				width: 100%;
+			}
+		}
+
+		.stats-list {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-sm;
+			}
+
+			&.skills {
+				background-color: RGB($emu-color-background);
+
+				@include layout {
+					gap: 0;
+				}
+			}
+
+			.attribute {
+				background-color: RGB($emu-color-background);
+
+				@include layout {
+					gap: $global-space-sm;
+					margin: 0;
+					padding: 0;
+
+					.resource-label {
+						flex: 1 1 auto;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						line-height: 1;
+						padding: $global-space-sm;
+						padding-inline-start: $global-space-sm;
+						text-align: start;
+						text-shadow: none;
+						text-transform: uppercase;
+
+						&:hover {
+							color: RGB($emu-color-primary);
+						}
+					}
+
+					.resource-value {
+						flex: 0 0 auto;
+						padding-inline-end: $global-space-sm;
+					}
+				}
+			}
+
+			.skill {
+				@include layout {
+					gap: $global-space-sm;
+					margin: 0;
+					padding: 0;
+					position: relative;
+
+					.resource-label {
+						display: flex;
+						flex: 1 1 auto;
+						position: relative;
+
+						> .rollable {
+							flex: 1 1 100%;
+							font-family: "Gill Sans";
+							font-size: $global-font-size-sm;
+							line-height: 1;
+							padding: $global-space-sm;
+							padding-inline-start: $global-space-sm;
+							text-align: start;
+							text-shadow: none;
+							text-transform: uppercase;
+
+							&:hover {
+								color: RGB($emu-color-primary);
+							}
+						}
+					}
+
+					.specialty {
+						font-size: $global-font-size-xs;
+						font-weight: 400;
+						left: calc(-100% + #{$global-space-sm});
+						position: relative;
+						top: 0;
+					}
+
+					.resource-value {
+						flex: 0 0 auto;
+						padding-inline-end: $global-space-sm;
+					}
+				}
+
+				.edit-skill {
+					@include layout {
+						font-size: $global-font-size-sm;
+						left: calc(-1 * #{$global-space-md});
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+			}
+		}
+
+		.stats-container .field-headers,
+		.subtle-header {
+			color: RGB($emu-color-text-darker);
+
+			@include layout {
+				font-family: "Cormorant";
+				font-size: $global-font-size-md;
+				gap: $global-space-xl;
+				text-transform: uppercase;
+				width: 100%;
+			}
+		}
+
+		// SPC
+		.spc-stats-body {
+			@include layout {
+				padding: $global-space-md $global-space-xl $global-space-xl;
+
+				> .flexrow {
+					align-items: start;
+				}
+
+				.item-header .item-name,
+				.resource-value input {
+					width: 120px;
+				}
+			}
+
+			.stats-list.attributes,
+			.stats-list.skills {
+				input.resource-value {
+					@include layout {
+						max-width: $global-space-button-lg;
+						text-align: center;
+					}
+				}
+			}
+
+			.stats-list.skills {
+				@include layout {
+					gap: $global-space-sm;
+				}
+			}
+		}
+
+		// Other Elements
+		.subtle-header {
+			@include layout {
+				align-items: center;
+				display: flex;
+				gap: $global-space-sm;
+			}
+
+			hr {
+				background-image: none;
+				border-color: RGB($emu-color-text-darker);
+
+				@include layout {
+					flex: 1 1 100%;
+				}
+			}
+		}
+
+		.items-list {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-base;
+			}
+
+			.item-header:not(.item) {
+				@include layout {
+					align-items: center;
+					border-width: 0;
+					display: flex;
+					gap: $global-space-xl;
+					margin: $global-space-sm 0 0;
+					min-height: $global-space-button-sm;
+					padding: 0 $global-space-md;
+				}
+
+				.item-name {
+					color: RGB($emu-color-text);
+					text-shadow: none;
+
+					@include layout {
+						flex: 0 0 auto;
+						font-family: "Gill Sans";
+						font-size: $global-font-size-lg;
+						text-transform: uppercase;
+					}
+				}
+
+				.resource-value {
+					@include layout {
+						flex: 1 1 100%;
+					}
+				}
+			}
+
+			.item {
+				background-color: RGB($emu-color-background);
+				border-color: RGB($emu-color-primary-darkest);
+
+				@include layout {
+					align-items: center;
+					border-style: solid;
+					border-width: 1px;
+					display: flex;
+					flex-wrap: nowrap;
+					gap: $global-space-sm;
+					line-height: 1;
+					margin: 0;
+					min-height: $global-space-button-lg;
+					padding: 0 $global-space-md;
+					width: 100%;
+				}
+
+				&.group-item {
+					@include layout {
+						padding: 0 $global-space-sm;
+
+						.item-image {
+							background-position: center;
+							background-size: cover;
+							display: flex;
+							flex: 0 0 auto;
+							height: $global-space-button;
+							width: $global-space-button;
+						}
+					}
+				}
+
+				.item-image {
+					display: none;
+				}
+
+				.item-name {
+					color: RGB($emu-color-text-darker);
+
+					@include layout {
+						align-items: center;
+						display: flex;
+						flex: 0 0 30%;
+						font-size: $global-font-size-lg;
+						margin: 0;
+						min-height: $global-space-button-lg;
+						text-transform: uppercase;
+					}
+				}
+
+				.item-rouse,
+				.item-level {
+					@include layout {
+						font-family: "Gill Sans";
+						font-size: $global-font-size-sm;
+						text-transform: uppercase;
+					}
+				}
+
+				.item-rouse,
+				.resource-value {
+					@include layout {
+						flex: 1 1 auto;
+					}
+				}
+
+				.item-level,
+				.resource-value {
+					@include layout {
+						justify-content: end;
+
+						~ .item-controls {
+							flex: 0 0 auto;
+						}
+					}
+				}
+			}
+
+			.item-description {
+				@include layout {
+					max-height: 0;
+					overflow: hidden;
+				}
+
+				> span {
+					background-color: RGBA($emu-color-background, 0.5);
+					border-color: RGB($emu-color-primary-darkest);
+
+					@include layout {
+						border-style: solid;
+						border-width: 1px;
+						border-block-start-width: 0;
+						display: block;
+						padding: $global-space-sm $global-space-md;
+					}
+				}
+			}
+
+			.item-controls {
+				@include layout {
+					display: flex;
+					flex: 1 1 auto;
+					gap: $global-space-xs;
+					justify-content: end;
+				}
+			}
+
+			+ .item-create {
+				margin-block-start: $global-space-base;
+			}
+		}
+
+		.detail-row {
+			@include layout {
+				gap: $global-space-base;
+			}
+
+			.field-header {
+				color: RGB($emu-color-primary);
+
+				@include layout {
+					font-family: "Gill Sans";
+					font-size: $global-font-size-sm;
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+			}
+
+			input {
+				@include layout {
+					width: 100%;
+				}
+			}
+		}
+
+		input[type="checkbox"] {
+			&::before,
+			&::after {
+				@include layout {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.group-stats {
+		@include layout {
+			align-items: start;
+			flex: 1 1 auto;
+			flex-wrap: nowrap;
+			padding: $global-space-base 0;
+
+			> .flexcol {
+				align-items: start;
+			}
+		}
+
+		.detail-row {
+			@include layout {
+				flex-wrap: nowrap;
+
+				.field-header {
+					display: inline-flex;
+					justify-content: end;
+					min-width: 70px;
+				}
+
+				.resource-counter {
+					justify-content: start;
+				}
+			}
+		}
+	}
+
+	// Itesm Sidebar
+	#sidebar #items,
+	.sidebar-popout[id="items-popout"] .window-content {
+		.directory-list .directory-item img.thumbnail {
+			@include layout {
+				display: none;
+			}
+		}
+	}
+
+	// Dice Rolls Popups
+	.window-app:not(.-emu-clean-sheet) {
+		&.wod5e.dialog {
+			@include layout {
+				.window-content {
+					overflow: visible;
+				}
+			}
+
+			&.attribute {
+				.selectors-group {
+					@include layout {
+						flex-direction: row-reverse;
+					}
+				}
+			}
+		}
+
+		.dice-group-header {
+			background-color: RGB($emu-color-primary-darker);
+
+			@include layout {
+				display: flex;
+				gap: $global-space-base;
+
+				&:empty {
+					display: none;
+				}
+			}
+
+			label {
+				@include layout {
+					align-items: center;
+					display: inline-flex;
+					flex: 1 1 50%;
+					font-family: "Gill Sans";
+					font-size: $global-font-size-md;
+					justify-content: center;
+					padding: $global-font-size-sm;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.base-dice-group {
+			border-color: RGB($emu-color-primary-darker);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				display: flex;
+				gap: $global-space-base;
+
+				&:empty {
+					display: none;
+				}
+			}
+		}
+
+		.dice-input {
+			@include layout {
+				align-items: center;
+				display: inline-flex;
+				flex: 1 1 50%;
+				font-family: "Gill Sans";
+				font-size: $global-font-size-md;
+				gap: $global-space-base;
+				justify-content: center;
+				padding: $global-font-size-sm;
+				text-transform: uppercase;
+
+				input {
+					height: $global-space-button-sm;
+					text-align: center;
+					width: $global-space-button-sm;
+				}
+			}
+		}
+
+		.situational-modifiers {
+			background-color: RGB($emu-color-background);
+			border-color: RGB($emu-color-border);
+
+			@include layout {
+				border-style: solid;
+				border-width: 1px;
+				left: 100%;
+				padding: $global-space-sm;
+				position: absolute;
+				top: -1px;
+				width: 320px;
+			}
+
+			.mod-header {
+				background-color: RGB($emu-color-background-darkest);
+			}
+
+			.modifier,
+			.custom-modifier {
+				@include layout {
+					> * {
+						align-self: center;
+						align-items: center;
+						display: flex;
+						gap: $global-space-base;
+					}
+				}
+			}
+
+			.list-title ~ .list-title {
+				@include layout {
+					margin-block-start: $global-space-sm;
+				}
+			}
+		}
+
+		.selectors-group {
+			@include layout {
+				flex-wrap: nowrap;
+			}
+
+			.primary-selector {
+				@include layout {
+					flex: 1 1 auto;
+				}
+			}
+
+			.middle {
+				@include layout {
+					align-items: center;
+					align-self: end;
+					display: flex;
+					flex: 0 0 auto;
+					height: $global-space-button;
+				}
+			}
+		}
+
+		.selector-title {
+			@include layout {
+				font-size: $global-font-size-md;
+
+				+ select {
+					flex: 0 0 auto;
+				}
+			}
+		}
+
+		.flexrow.-gap-base.secondary-selector {
+			background-color: RGB($emu-color-primary-darkest);
+			background-image: url("../../img/vtm/vtm-marble-red.jpg");
+
+			@include layout {
+				align-items: center;
+				font-family: "Gill Sans";
+				justify-content: center;
+				padding: $global-space-sm;
+				text-transform: uppercase;
+
+				> * {
+					flex: 0 0 auto;
+				}
+			}
+		}
+
+		.modifiers-list {
+			@include layout {
+				display: flex;
+				flex-direction: column;
+				gap: $global-space-sm;
+			}
+
+			.modifier {
+				background-color: RGB($emu-color-background);
+
+				@include layout {
+					padding: $global-space-base $global-space-sm;
+				}
+			}
+
+			.form-group {
+				@include layout {
+					margin: 0;
+				}
+			}
+
+			.flexdatalist-multiple {
+				@include layout {
+					margin: 0;
+					padding: 0;
+				}
+			}
+		}
+
+		.willpower-reroll {
+			@include layout {
+				gap: $global-space-base;
+				justify-content: center;
+				margin: 0;
+
+				.die {
+					flex: 0 0 auto;
+				}
+			}
+
+			.die.selected {
+				@extend %global-hover-alt;
+			}
+		}
+	}
+
+	// Sheet Tabs
+	.application .sheet-tabs {
+		background-image: url("../../img/vtm/vtm-marble-red.jpg");
+		background-position: bottom center;
+		background-repeat: repeat;
+		background-size: 100% auto;
+
+		@include layout {
+			border: 1px solid RGB($emu-color-primary-darkest);
+			margin: $global-space-sm 0 0;
+		}
+
+		a,
+		.item {
+			background: none;
+			color: RGB($emu-color-text-darker);
+			text-shadow: none;
+
+			@include layout {
+				border-width: 0;
+				cursor: pointer;
+				flex: 1 1 auto;
+				font-family: "Cormorant";
+				font-size: $global-font-size-lg;
+				font-weight: 700;
+				opacity: 0.6;
+				padding: $global-space-sm 0;
+				text-align: center;
+				text-transform: uppercase;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			&:hover {
+				@extend %global-hover;
+				background: none;
+			}
+
+			&.active {
+				background: none;
+				color: RGB($emu-color-text);
+				opacity: 1;
+			}
+		}
+	}
+
+	// Button
+	.item-control {
+		@extend %control-button;
+	}
+
+	// Roll Button
+	.system-rollable,
+	.system-hover {
+		text-shadow: none;
+
+		@include layout {
+			cursor: pointer;
+		}
+
+		&.-red {
+			&:hover {
+				color: RGB($emu-color-primary) !important; // :(
+
+				@include layout {
+					text-decoration: none;
+				}
+			}
+		}
+
+		&:hover {
+			@include layout {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.rollable,
+	.system-rollable {
+		@include layout {
+			cursor: url("../../img/vtm/vtm-add-dice-pointer.svg") 0 20, auto;
+		}
+	}
+
+	// Dice
+	.wod-dice-row {
+		@include layout {
+			gap: $global-space-base;
+			padding: $global-space-md 0;
+
+			+ .collapsible-content {
+				display: none;
+			}
+		}
+	}
+
+	.wod-dice {
+		@include layout {
+			flex: 0 0 42px;
+			height: 42px;
+			position: relative;
+			width: 42px;
+
+			&.rerolled{
+				display: none;
+			}
+		}
+	}
+}

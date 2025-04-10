@@ -40,6 +40,7 @@
 			display: flex;
 			flex: 1 1 auto;
 			flex-wrap: nowrap;
+			gap: $global-space-base;
 			height: auto;
 			margin: 0;
 			pointer-events: all;
@@ -66,6 +67,17 @@
 			height: auto;
 			position: relative;
 			width: auto;
+		}
+	}
+
+	#hotbar-lock {
+		.page-control {
+			@include layout {
+				border: none;
+				border-radius: $global-border-radius-controls;
+				font-size: $global-font-size-md;
+				height: 100%;
+			}
 		}
 	}
 

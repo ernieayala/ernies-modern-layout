@@ -183,3 +183,17 @@ section.secret {
 		padding: 0 $global-space-base;
 	}
 }
+
+.fa-classic,
+.fa-light,
+.fa-regular,
+.fa-solid,
+.fa-thin,
+.fal,
+.far,
+.fas,
+.fat {
+	@include layout {
+		font-family: "Font Awesome 6 Pro" !important;
+	}
+}

@@ -48,10 +48,6 @@
 	@include layout {
 		margin: 0;
 		position: relative;
-
-		&.offset {
-			margin-inline-start: calc(#{$global-space-sidebar}/-4);
-		}
 	}
 }
 

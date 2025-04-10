@@ -11,7 +11,7 @@
 		padding: 0;
 		pointer-events: none;
 		transition: opacity $global-transition-time-base $global-transition-type-link;
-		width: calc(100% - #{$global-space-sm} - #{$global-space-sidebar});
+		width: calc(100% - #{$global-space-sm});
 		z-index: $global-z-index-fixed;
 	}
 
@@ -45,6 +45,7 @@
 
 		@include layout {
 			margin: 0;
+			margin-inline-start: calc(-1 * (#{$global-space-button-sm} + #{$global-space-base}));
 			margin-inline-end: $global-space-base;
 			z-index: $global-z-index-fixed;
 		}
@@ -62,7 +63,7 @@
 			flex-wrap: wrap;
 			margin-block-end: $global-space-sm;
 			position: relative;
-			pointer-events: all;
+			pointer-events: none;
 		}
 
 		.scene {

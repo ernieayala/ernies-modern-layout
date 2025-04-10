@@ -49,14 +49,15 @@
 			transition:
 				left $global-transition-time-base $global-transition-type-link,
 				opacity $global-transition-time-base $global-transition-type-link;
-			width: auto;
+			width: $global-space-button;
 		}
 
 		@include layout-subtle {
 			opacity: $global-subtle-opacity;
 		}
 
-		&.main-controls {
+		&.main-controls,
+		&.sub-controls.active {
 			@include layout {
 				display: flex;
 			}

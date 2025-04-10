@@ -12,6 +12,7 @@
 	}
 }
 
+.application,
 .window-app {
 	background-color: RGBA($emu-color-background, $global-background-opacity-window);
 	background-image: $global-image-background;
@@ -132,14 +133,23 @@
 			position: relative;
 		}
 
-		h4.window-title {
+		.window-icon {
+			@include layout {
+				display: none;
+			}
+		}
+
+		.window-title {
 			color: RGB($emu-color-text-lightest);
 
 			@include layout {
 				@extend %ellipsis;
+				border-width: 0;
 				color: RGB($emu-color-text-lightest);
 				flex: 1 1 auto;
+				font-size: $global-font-size-md;
 				font-weight: normal;
+				line-height: 1;
 				margin: 0;
 				max-width: 100%;
 				position: relative;
@@ -158,7 +168,8 @@
 		}
 
 		> a,
-		a.header-button {
+		a.header-button,
+		.header-control {
 			background: transparent;
 			text-shadow: none;
 
