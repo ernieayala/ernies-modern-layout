@@ -1898,7 +1898,11 @@
 			flex: 0 0 42px;
 			height: 42px;
 			position: relative;
-			width: 42px
+			width: 42px;
+
+			&.rerolled{
+				display: none;
+			}
 		}
 	}
 }

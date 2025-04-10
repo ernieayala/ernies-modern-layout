@@ -285,3 +285,4 @@ body.-emu.system-vtm5e .system-hover.-red:hover,body.-emu.system-vtm5e .system-r
 .-emu-layout body.-emu.system-vtm5e .wod-dice-row{gap:var(--emu-space-base,4px);padding:var(--emu-space-md,16px) 0}
 .-emu-layout body.-emu.system-vtm5e .wod-dice-row+.collapsible-content{display:none}
 .-emu-layout body.-emu.system-vtm5e .wod-dice{flex:0 0 42px;height:42px;position:relative;width:42px}
+.-emu-layout body.-emu.system-vtm5e .wod-dice.rerolled{display:none}
